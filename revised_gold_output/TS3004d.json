@@ -752,20 +752,20 @@
       {
         "source_type": "dialogue",
         "source": "ami-corpus/dialogueActs/TS3004d.json",
-        "locator": "TS3004d.A.dialog-act.dharshi.311"
-      },
-      {
-        "source_type": "dialogue",
-        "source": "ami-corpus/dialogueActs/TS3004d.json",
         "locator": "TS3004d.C.dialog-act.dharshi.258"
       }
     ],
-    "owner": null,
-    "owner_basis": "unreviewed",
+    "owner": [
+      "MTD013PM",
+      "MTD014ID",
+      "MTD015UID",
+      "MTD016ME"
+    ],
+    "owner_basis": "inferred",
     "deadline": null,
-    "deadline_basis": "unreviewed",
-    "status": "unknown",
-    "prior_context_needed": null,
+    "deadline_basis": "missing",
+    "status": "open",
+    "prior_context_needed": false,
     "related_items": []
   },
   {
@@ -784,9 +784,14 @@
         "locator": "TS3004d.C.dialog-act.dharshi.24"
       }
     ],
-    "status": "unknown",
-    "prior_context_needed": null,
-    "related_items": []
+    "status": "adopted",
+    "prior_context_needed": false,
+    "related_items": [
+      {
+        "id": "TS3004c.JacquelinePalmer.s.19",
+        "relation": "continues"
+      }
+    ]
   },
   {
     "id": "TS3004d.dharshi.s.13",
@@ -804,18 +809,73 @@
         "locator": "TS3004d.B.dialog-act.dharshi.42"
       }
     ],
-    "status": "unknown",
-    "prior_context_needed": null,
-    "related_items": []
+    "status": "adopted",
+    "prior_context_needed": false,
+    "related_items": [
+      {
+        "id": "TS3004c.JacquelinePalmer.s.16",
+        "relation": "continues"
+      }
+    ]
   },
   {
     "id": "TS3004d.dharshi.s.14",
     "text": "The remote control will feature speech recognition and a slide-out second level.",
     "type": "decisions",
-    "reference": [],
-    "status": "unknown",
-    "prior_context_needed": null,
-    "related_items": []
+    "reference": [
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004d.json",
+        "locator": "TS3004d.A.dialog-act.dharshi.13"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004d.json",
+        "locator": "TS3004d.A.dialog-act.dharshi.14"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004d.json",
+        "locator": "TS3004d.A.dialog-act.dharshi.16"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004d.json",
+        "locator": "TS3004d.A.dialog-act.dharshi.17"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004d.json",
+        "locator": "TS3004d.A.dialog-act.dharshi.18"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004d.json",
+        "locator": "TS3004d.A.dialog-act.dharshi.59"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004d.json",
+        "locator": "TS3004d.B.dialog-act.dharshi.6"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004d.json",
+        "locator": "TS3004d.C.dialog-act.dharshi.5"
+      }
+    ],
+    "status": "adopted",
+    "prior_context_needed": true,
+    "related_items": [
+      {
+        "id": "TS3004c.JacquelinePalmer.s.23",
+        "relation": "continues"
+      },
+      {
+        "id": "TS3004c.revised.s.25",
+        "relation": "updates"
+      }
+    ]
   },
   {
     "id": "TS3004d.dharshi.s.15",
@@ -838,8 +898,8 @@
         "locator": "TS3004d.D.dialog-act.dharshi.23"
       }
     ],
-    "status": "unknown",
-    "prior_context_needed": null,
+    "status": "resolved",
+    "prior_context_needed": false,
     "related_items": []
   },
   {
@@ -888,8 +948,8 @@
         "locator": "TS3004d.C.dialog-act.dharshi.71"
       }
     ],
-    "status": "unknown",
-    "prior_context_needed": null,
+    "status": "open",
+    "prior_context_needed": false,
     "related_items": []
   },
   {
@@ -908,8 +968,8 @@
         "locator": "TS3004d.B.dialog-act.dharshi.241"
       }
     ],
-    "status": "unknown",
-    "prior_context_needed": null,
+    "status": "open",
+    "prior_context_needed": false,
     "related_items": []
   },
   {
@@ -933,8 +993,8 @@
         "locator": "TS3004d.B.dialog-act.dharshi.243"
       }
     ],
-    "status": "unknown",
-    "prior_context_needed": null,
+    "status": "open",
+    "prior_context_needed": false,
     "related_items": []
   },
   {
@@ -978,8 +1038,136 @@
         "locator": "TS3004d.C.dialog-act.dharshi.212"
       }
     ],
-    "status": "unknown",
-    "prior_context_needed": null,
+    "status": "open",
+    "prior_context_needed": false,
+    "related_items": []
+  },
+  {
+    "id": "TS3004d.revised.s.20",
+    "text": "The Project Manager will write the final report.",
+    "type": "actions",
+    "reference": [
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004d.json",
+        "locator": "TS3004d.A.dialog-act.dharshi.311"
+      }
+    ],
+    "owner": [
+      "MTD013PM"
+    ],
+    "owner_basis": "explicit",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "status": "open",
+    "prior_context_needed": false,
+    "related_items": []
+  },
+  {
+    "id": "TS3004d.revised.s.21",
+    "text": "The designers still need to draw the recharger (home station).",
+    "type": "actions",
+    "reference": [
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004d.json",
+        "locator": "TS3004d.A.dialog-act.dharshi.187"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004d.json",
+        "locator": "TS3004d.A.dialog-act.dharshi.200"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004d.json",
+        "locator": "TS3004d.C.dialog-act.dharshi.147"
+      }
+    ],
+    "owner": [
+      "MTD014ID",
+      "MTD015UID"
+    ],
+    "owner_basis": "inferred",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "status": "open",
+    "prior_context_needed": false,
+    "related_items": []
+  },
+  {
+    "id": "TS3004d.revised.s.22",
+    "text": "The remote will have three buttons to switch the backlight colour.",
+    "type": "decisions",
+    "reference": [
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004d.json",
+        "locator": "TS3004d.D.dialog-act.dharshi.34"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004d.json",
+        "locator": "TS3004d.D.dialog-act.dharshi.38"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004d.json",
+        "locator": "TS3004d.D.dialog-act.dharshi.41"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004d.json",
+        "locator": "TS3004d.A.dialog-act.dharshi.71"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004d.json",
+        "locator": "TS3004d.A.dialog-act.dharshi.72"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004d.json",
+        "locator": "TS3004d.A.dialog-act.dharshi.73"
+      }
+    ],
+    "status": "adopted",
+    "prior_context_needed": false,
+    "related_items": []
+  },
+  {
+    "id": "TS3004d.revised.s.23",
+    "text": "The home station will keep a button that makes the remote beep so it can be found.",
+    "type": "decisions",
+    "reference": [
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004d.json",
+        "locator": "TS3004d.D.dialog-act.dharshi.208"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004d.json",
+        "locator": "TS3004d.D.dialog-act.dharshi.211"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004d.json",
+        "locator": "TS3004d.A.dialog-act.dharshi.222"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004d.json",
+        "locator": "TS3004d.B.dialog-act.dharshi.219"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004d.json",
+        "locator": "TS3004d.C.dialog-act.dharshi.173"
+      }
+    ],
+    "status": "adopted",
+    "prior_context_needed": true,
     "related_items": []
   }
 ]

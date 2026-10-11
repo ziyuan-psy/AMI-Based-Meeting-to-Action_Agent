@@ -574,44 +574,49 @@
     "id": "ES2011c.JacquelinePalmer.s.14",
     "text": "The Project Manager instructed the User Interface Designer and the Industrial Designer to construct the prototype and the Marketing Expert to work on the prototype evaluation.",
     "type": "abstract",
-    "reference": []
+    "reference": [
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/ES2011c.json",
+        "locator": "ES2011c.A.dialog-act.dharshi.218"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/ES2011c.json",
+        "locator": "ES2011c.A.dialog-act.dharshi.219"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/ES2011c.json",
+        "locator": "ES2011c.A.dialog-act.dharshi.220"
+      }
+    ]
   },
   {
     "id": "ES2011c.JacquelinePalmer.s.15",
-    "text": "The Project Manager instructed the User Interface Designer and the Industrial Designer to construct the prototype.",
+    "text": "The User Interface Designer and the Industrial Designer will build the prototype, working on the user interface and the look and feel.",
     "type": "actions",
     "reference": [
       {
         "source_type": "dialogue",
         "source": "ami-corpus/dialogueActs/ES2011c.json",
         "locator": "ES2011c.A.dialog-act.dharshi.218"
-      }
-    ],
-    "owner": null,
-    "owner_basis": "unreviewed",
-    "deadline": null,
-    "deadline_basis": "unreviewed",
-    "status": "unknown",
-    "prior_context_needed": null,
-    "related_items": []
-  },
-  {
-    "id": "ES2011c.JacquelinePalmer.s.16",
-    "text": "The User Interface Designer will work on the interface and the Industrial Designer will work on the look and feel of the device.",
-    "type": "actions",
-    "reference": [
+      },
       {
         "source_type": "dialogue",
         "source": "ami-corpus/dialogueActs/ES2011c.json",
         "locator": "ES2011c.A.dialog-act.dharshi.219"
       }
     ],
-    "owner": null,
-    "owner_basis": "unreviewed",
+    "owner": [
+      "FEE042",
+      "FEE043"
+    ],
+    "owner_basis": "inferred",
     "deadline": null,
-    "deadline_basis": "unreviewed",
-    "status": "unknown",
-    "prior_context_needed": null,
+    "deadline_basis": "missing",
+    "status": "open",
+    "prior_context_needed": false,
     "related_items": []
   },
   {
@@ -625,12 +630,14 @@
         "locator": "ES2011c.A.dialog-act.dharshi.220"
       }
     ],
-    "owner": null,
-    "owner_basis": "unreviewed",
+    "owner": [
+      "FEE044"
+    ],
+    "owner_basis": "inferred",
     "deadline": null,
-    "deadline_basis": "unreviewed",
-    "status": "unknown",
-    "prior_context_needed": null,
+    "deadline_basis": "missing",
+    "status": "open",
+    "prior_context_needed": false,
     "related_items": []
   },
   {
@@ -644,8 +651,8 @@
         "locator": "ES2011c.C.dialog-act.dharshi.187"
       }
     ],
-    "status": "unknown",
-    "prior_context_needed": null,
+    "status": "adopted",
+    "prior_context_needed": false,
     "related_items": []
   },
   {
@@ -659,8 +666,8 @@
         "locator": "ES2011c.B.dialog-act.dharshi.98"
       }
     ],
-    "status": "unknown",
-    "prior_context_needed": null,
+    "status": "proposed",
+    "prior_context_needed": false,
     "related_items": []
   },
   {
@@ -679,8 +686,8 @@
         "locator": "ES2011c.A.dialog-act.dharshi.136"
       }
     ],
-    "status": "unknown",
-    "prior_context_needed": null,
+    "status": "adopted",
+    "prior_context_needed": false,
     "related_items": []
   },
   {
@@ -724,8 +731,8 @@
         "locator": "ES2011c.C.dialog-act.dharshi.218"
       }
     ],
-    "status": "unknown",
-    "prior_context_needed": null,
+    "status": "open",
+    "prior_context_needed": false,
     "related_items": []
   },
   {
@@ -754,8 +761,62 @@
         "locator": "ES2011c.B.dialog-act.dharshi.144"
       }
     ],
-    "status": "unknown",
-    "prior_context_needed": null,
+    "status": "open",
+    "prior_context_needed": false,
     "related_items": []
+  },
+  {
+    "id": "ES2011c.revised.s.23",
+    "text": "The remote will not have its own screen; menus will be shown on the television.",
+    "type": "decisions",
+    "reference": [
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/ES2011c.json",
+        "locator": "ES2011c.C.dialog-act.dharshi.98"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/ES2011c.json",
+        "locator": "ES2011c.C.dialog-act.dharshi.104"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/ES2011c.json",
+        "locator": "ES2011c.A.dialog-act.dharshi.58"
+      }
+    ],
+    "status": "adopted",
+    "prior_context_needed": false,
+    "related_items": []
+  },
+  {
+    "id": "ES2011c.revised.s.24",
+    "text": "The remote will not support DVD players.",
+    "type": "decisions",
+    "reference": [
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/ES2011c.json",
+        "locator": "ES2011c.A.dialog-act.dharshi.34"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/ES2011c.json",
+        "locator": "ES2011c.A.dialog-act.dharshi.37"
+      }
+    ],
+    "status": "adopted",
+    "prior_context_needed": true,
+    "related_items": [
+      {
+        "id": "ES2011b.JacquelinePalmer.s.21",
+        "relation": "resolves"
+      },
+      {
+        "id": "ES2011b.revised.s.22",
+        "relation": "completes"
+      }
+    ]
   }
 ]

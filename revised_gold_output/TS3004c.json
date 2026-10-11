@@ -1509,27 +1509,48 @@
         "source_type": "dialogue",
         "source": "ami-corpus/dialogueActs/TS3004c.json",
         "locator": "TS3004c.A.dialog-act.vkaraisk.211"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004c.json",
+        "locator": "TS3004c.A.dialog-act.vkaraisk.213"
       }
     ],
-    "owner": null,
-    "owner_basis": "unreviewed",
-    "deadline": null,
-    "deadline_basis": "unreviewed",
-    "status": "unknown",
-    "prior_context_needed": null,
+    "owner": [
+      "MTD015UID",
+      "MTD014ID"
+    ],
+    "owner_basis": "explicit",
+    "deadline": "That's for the next one",
+    "deadline_basis": "explicit",
+    "status": "open",
+    "prior_context_needed": false,
     "related_items": []
   },
   {
     "id": "TS3004c.JacquelinePalmer.s.15",
-    "text": "The User Interface Designer was instructed to finalize the placement of the buttons.",
+    "text": "The User Interface Designer will look again at where the channel buttons go.",
     "type": "actions",
-    "reference": [],
-    "owner": null,
-    "owner_basis": "unreviewed",
+    "reference": [
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004c.json",
+        "locator": "TS3004c.A.dialog-act.vkaraisk.275"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004c.json",
+        "locator": "TS3004c.B.dialog-act.vkaraisk.317"
+      }
+    ],
+    "owner": [
+      "MTD015UID"
+    ],
+    "owner_basis": "explicit",
     "deadline": null,
-    "deadline_basis": "unreviewed",
-    "status": "unknown",
-    "prior_context_needed": null,
+    "deadline_basis": "missing",
+    "status": "open",
+    "prior_context_needed": false,
     "related_items": []
   },
   {
@@ -1558,23 +1579,58 @@
         "locator": "TS3004c.A.dialog-act.vkaraisk.170"
       }
     ],
-    "status": "unknown",
-    "prior_context_needed": null,
+    "status": "adopted",
+    "prior_context_needed": false,
     "related_items": []
   },
   {
     "id": "TS3004c.JacquelinePalmer.s.17",
-    "text": "It will be small and yellow, to use one of the colors of the Real Reaction logo.",
+    "text": "The scroll wheel could be small and yellow, to match the Real Reaction colours.",
     "type": "decisions",
     "reference": [
       {
         "source_type": "dialogue",
         "source": "ami-corpus/dialogueActs/TS3004c.json",
         "locator": "TS3004c.A.dialog-act.vkaraisk.330"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004c.json",
+        "locator": "TS3004c.C.dialog-act.vkaraisk.349"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004c.json",
+        "locator": "TS3004c.D.dialog-act.vkaraisk.196"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004c.json",
+        "locator": "TS3004c.D.dialog-act.vkaraisk.197"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004c.json",
+        "locator": "TS3004c.B.dialog-act.vkaraisk.400"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004c.json",
+        "locator": "TS3004c.B.dialog-act.vkaraisk.401"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004c.json",
+        "locator": "TS3004c.B.dialog-act.vkaraisk.402"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004c.json",
+        "locator": "TS3004c.B.dialog-act.vkaraisk.403"
       }
     ],
-    "status": "unknown",
-    "prior_context_needed": null,
+    "status": "proposed",
+    "prior_context_needed": false,
     "related_items": []
   },
   {
@@ -1613,9 +1669,14 @@
         "locator": "TS3004c.A.dialog-act.vkaraisk.196"
       }
     ],
-    "status": "unknown",
-    "prior_context_needed": null,
-    "related_items": []
+    "status": "adopted",
+    "prior_context_needed": true,
+    "related_items": [
+      {
+        "id": "TS3004a.JacquelinePalmer.s.14",
+        "relation": "resolves"
+      }
+    ]
   },
   {
     "id": "TS3004c.JacquelinePalmer.s.19",
@@ -1653,8 +1714,8 @@
         "locator": "TS3004c.A.dialog-act.vkaraisk.200"
       }
     ],
-    "status": "unknown",
-    "prior_context_needed": null,
+    "status": "adopted",
+    "prior_context_needed": false,
     "related_items": []
   },
   {
@@ -1668,13 +1729,18 @@
         "locator": "TS3004c.A.dialog-act.vkaraisk.173"
       }
     ],
-    "status": "unknown",
-    "prior_context_needed": null,
-    "related_items": []
+    "status": "adopted",
+    "prior_context_needed": false,
+    "related_items": [
+      {
+        "id": "TS3004b.JacquelinePalmer.s.14",
+        "relation": "continues"
+      }
+    ]
   },
   {
     "id": "TS3004c.JacquelinePalmer.s.21",
-    "text": "The remote will feature a double-curved, rounded square design.",
+    "text": "The remote will have rounded corners and be curved in two dimensions only, not in depth.",
     "type": "decisions",
     "reference": [
       {
@@ -1706,11 +1772,36 @@
         "source_type": "dialogue",
         "source": "ami-corpus/dialogueActs/TS3004c.json",
         "locator": "TS3004c.A.dialog-act.vkaraisk.321"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004c.json",
+        "locator": "TS3004c.C.dialog-act.vkaraisk.221"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004c.json",
+        "locator": "TS3004c.C.dialog-act.vkaraisk.222"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004c.json",
+        "locator": "TS3004c.B.dialog-act.vkaraisk.252"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004c.json",
+        "locator": "TS3004c.A.dialog-act.vkaraisk.166"
       }
     ],
-    "status": "unknown",
-    "prior_context_needed": null,
-    "related_items": []
+    "status": "adopted",
+    "prior_context_needed": false,
+    "related_items": [
+      {
+        "id": "TS3004a.JacquelinePalmer.s.15",
+        "relation": "resolves"
+      }
+    ]
   },
   {
     "id": "TS3004c.JacquelinePalmer.s.22",
@@ -1728,8 +1819,8 @@
         "locator": "TS3004c.A.dialog-act.vkaraisk.286"
       }
     ],
-    "status": "unknown",
-    "prior_context_needed": null,
+    "status": "adopted",
+    "prior_context_needed": false,
     "related_items": []
   },
   {
@@ -1753,9 +1844,14 @@
         "locator": "TS3004c.B.dialog-act.vkaraisk.455"
       }
     ],
-    "status": "unknown",
-    "prior_context_needed": null,
-    "related_items": []
+    "status": "adopted",
+    "prior_context_needed": true,
+    "related_items": [
+      {
+        "id": "TS3004b.JacquelinePalmer.s.14",
+        "relation": "updates"
+      }
+    ]
   },
   {
     "id": "TS3004c.JacquelinePalmer.s.24",
@@ -1878,8 +1974,43 @@
         "locator": "TS3004c.B.dialog-act.vkaraisk.455"
       }
     ],
-    "status": "unknown",
-    "prior_context_needed": null,
+    "status": "open",
+    "prior_context_needed": false,
+    "related_items": []
+  },
+  {
+    "id": "TS3004c.revised.s.25",
+    "text": "The remote will open up to hold the speech recognition functions.",
+    "type": "decisions",
+    "reference": [
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004c.json",
+        "locator": "TS3004c.B.dialog-act.vkaraisk.425"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004c.json",
+        "locator": "TS3004c.B.dialog-act.vkaraisk.426"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004c.json",
+        "locator": "TS3004c.A.dialog-act.vkaraisk.357"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004c.json",
+        "locator": "TS3004c.A.dialog-act.vkaraisk.358"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004c.json",
+        "locator": "TS3004c.A.dialog-act.vkaraisk.359"
+      }
+    ],
+    "status": "adopted",
+    "prior_context_needed": false,
     "related_items": []
   }
 ]

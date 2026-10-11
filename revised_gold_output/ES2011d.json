@@ -470,7 +470,7 @@
   },
   {
     "id": "ES2011d.JacquelinePalmer.s.13",
-    "text": "The Project Manager instructed all participants to write a final report at the end of the meeting.",
+    "text": "The Project Manager mentioned writing final reports at the end of the meeting, but was unsure who had to write them.",
     "type": "abstract",
     "reference": [
       {
@@ -497,7 +497,7 @@
   },
   {
     "id": "ES2011d.JacquelinePalmer.s.14",
-    "text": "All participants will write a final report.",
+    "text": "Final reports may need to be written, but it was unclear whether all participants or only the Project Manager would write one.",
     "type": "actions",
     "reference": [
       {
@@ -509,44 +509,29 @@
         "source_type": "dialogue",
         "source": "ami-corpus/dialogueActs/ES2011d.json",
         "locator": "ES2011d.A.dialog-act.dharshi.288"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/ES2011d.json",
+        "locator": "ES2011d.B.dialog-act.dharshi.195"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/ES2011d.json",
+        "locator": "ES2011d.A.dialog-act.dharshi.290"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/ES2011d.json",
+        "locator": "ES2011d.A.dialog-act.dharshi.291"
       }
     ],
     "owner": null,
-    "owner_basis": "unreviewed",
+    "owner_basis": "ambiguous",
     "deadline": null,
-    "deadline_basis": "unreviewed",
-    "status": "unknown",
-    "prior_context_needed": null,
-    "related_items": []
-  },
-  {
-    "id": "ES2011d.JacquelinePalmer.s.15",
-    "text": "The group decided that the fruit and vegetable shapes of the device were uncomfortable to hold.",
-    "type": "decisions",
-    "reference": [
-      {
-        "source_type": "dialogue",
-        "source": "ami-corpus/dialogueActs/ES2011d.json",
-        "locator": "ES2011d.C.dialog-act.dharshi.56"
-      },
-      {
-        "source_type": "dialogue",
-        "source": "ami-corpus/dialogueActs/ES2011d.json",
-        "locator": "ES2011d.B.dialog-act.dharshi.91"
-      },
-      {
-        "source_type": "dialogue",
-        "source": "ami-corpus/dialogueActs/ES2011d.json",
-        "locator": "ES2011d.A.dialog-act.dharshi.136"
-      },
-      {
-        "source_type": "dialogue",
-        "source": "ami-corpus/dialogueActs/ES2011d.json",
-        "locator": "ES2011d.C.dialog-act.dharshi.70"
-      }
-    ],
-    "status": "unknown",
-    "prior_context_needed": null,
+    "deadline_basis": "missing",
+    "status": "open",
+    "prior_context_needed": false,
     "related_items": []
   },
   {
@@ -580,9 +565,18 @@
         "locator": "ES2011d.B.dialog-act.dharshi.123"
       }
     ],
-    "status": "unknown",
-    "prior_context_needed": null,
-    "related_items": []
+    "status": "adopted",
+    "prior_context_needed": true,
+    "related_items": [
+      {
+        "id": "ES2011c.JacquelinePalmer.s.20",
+        "relation": "updates"
+      },
+      {
+        "id": "ES2011c.JacquelinePalmer.s.19",
+        "relation": "updates"
+      }
+    ]
   },
   {
     "id": "ES2011d.JacquelinePalmer.s.17",
@@ -600,8 +594,8 @@
         "locator": "ES2011d.A.dialog-act.dharshi.282"
       }
     ],
-    "status": "unknown",
-    "prior_context_needed": null,
+    "status": "adopted",
+    "prior_context_needed": false,
     "related_items": []
   },
   {
@@ -630,8 +624,8 @@
         "locator": "ES2011d.C.dialog-act.dharshi.70"
       }
     ],
-    "status": "unknown",
-    "prior_context_needed": null,
+    "status": "resolved",
+    "prior_context_needed": false,
     "related_items": []
   },
   {
@@ -645,8 +639,8 @@
         "locator": "ES2011d.B.dialog-act.dharshi.135"
       }
     ],
-    "status": "unknown",
-    "prior_context_needed": null,
+    "status": "open",
+    "prior_context_needed": false,
     "related_items": []
   },
   {
@@ -690,8 +684,38 @@
         "locator": "ES2011d.D.dialog-act.dharshi.188"
       }
     ],
-    "status": "unknown",
-    "prior_context_needed": null,
+    "status": "open",
+    "prior_context_needed": false,
     "related_items": []
+  },
+  {
+    "id": "ES2011d.revised.s.21",
+    "text": "The locator's sender button had not been designed yet.",
+    "type": "problems",
+    "reference": [
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/ES2011d.json",
+        "locator": "ES2011d.C.dialog-act.dharshi.13"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/ES2011d.json",
+        "locator": "ES2011d.B.dialog-act.dharshi.27"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/ES2011d.json",
+        "locator": "ES2011d.B.dialog-act.dharshi.28"
+      }
+    ],
+    "status": "open",
+    "prior_context_needed": true,
+    "related_items": [
+      {
+        "id": "ES2011b.JacquelinePalmer.s.12",
+        "relation": "continues"
+      }
+    ]
   }
 ]

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Parsed AMI transcript",
+  "description": "DialogueActs-style records from TXT. Unavailable word IDs and dialogue-act labels are null; attributes await metadata lookup.",
+  "type": "array",
+  "minItems": 1,
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "id", "speaker", "starttime", "startwordid", "endtime",
+      "endwordid", "text", "label", "attributes"
+    ],
+    "properties": {
+      "id": { "type": "string", "minLength": 1 },
+      "speaker": { "type": "string", "minLength": 1 },
+      "starttime": { "type": "string", "minLength": 1 },
+      "startwordid": { "type": ["string", "null"] },
+      "endtime": { "type": "string", "minLength": 1 },
+      "endwordid": { "type": ["string", "null"] },
+      "text": { "type": "string" },
+      "label": { "type": ["string", "null"] },
+      "attributes": {
+        "type": "object",
+        "additionalProperties": { "type": "string" }
+      }
+    }
+  }
+}

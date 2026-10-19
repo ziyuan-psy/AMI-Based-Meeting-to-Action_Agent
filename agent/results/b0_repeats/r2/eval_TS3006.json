@@ -1,0 +1,199 @@
+{
+ "series": "TS3006",
+ "mode": "b0",
+ "items": {
+  "actions": {
+   "tp": 6,
+   "sys": 31,
+   "gold": 13,
+   "precision": 0.194,
+   "recall": 0.462,
+   "f1": 0.273
+  },
+  "decisions": {
+   "tp": 2,
+   "sys": 14,
+   "gold": 22,
+   "precision": 0.143,
+   "recall": 0.091,
+   "f1": 0.111
+  },
+  "problems": {
+   "tp": 4,
+   "sys": 14,
+   "gold": 12,
+   "precision": 0.286,
+   "recall": 0.333,
+   "f1": 0.308
+  }
+ },
+ "owner_exact": {
+  "correct": 4,
+  "total": 6,
+  "rate": 0.667
+ },
+ "owner_basis": {
+  "correct": 5,
+  "total": 6,
+  "rate": 0.833
+ },
+ "deadline_match": {
+  "correct": 4,
+  "total": 6,
+  "rate": 0.667
+ },
+ "deadline_basis": {
+  "correct": 4,
+  "total": 6,
+  "rate": 0.667
+ },
+ "invented_deadline": {
+  "count": 1,
+  "of_gold_null": 5
+ },
+ "status": {
+  "actions": {
+   "correct": 1,
+   "total": 6,
+   "rate": 0.167
+  },
+  "decisions": {
+   "correct": 2,
+   "total": 2,
+   "rate": 1.0
+  },
+  "problems": {
+   "correct": 1,
+   "total": 4,
+   "rate": 0.25
+  }
+ },
+ "prior_context_needed": {
+  "correct": 6,
+  "total": 12,
+  "rate": 0.5
+ },
+ "prior_context_needed_recall_on_gold_true": {
+  "correct": 0,
+  "total": 6
+ },
+ "related_items": {
+  "tp": 0,
+  "sys": 0,
+  "gold": 8,
+  "precision": 0.0,
+  "recall": 0.0,
+  "f1": 0.0
+ },
+ "evidence_overlap_proxy": {
+  "system_refs_also_in_gold": 0.167,
+  "gold_refs_covered": 0.065
+ },
+ "per_meeting": {
+  "TS3006a": {
+   "actions": {
+    "tp": 4,
+    "sys": 11,
+    "gold": 4,
+    "precision": 0.364,
+    "recall": 1.0,
+    "f1": 0.533
+   },
+   "decisions": {
+    "tp": 0,
+    "sys": 7,
+    "gold": 4,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+   },
+   "problems": {
+    "tp": 0,
+    "sys": 7,
+    "gold": 0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+   }
+  },
+  "TS3006b": {
+   "actions": {
+    "tp": 1,
+    "sys": 13,
+    "gold": 4,
+    "precision": 0.077,
+    "recall": 0.25,
+    "f1": 0.118
+   },
+   "decisions": {
+    "tp": 0,
+    "sys": 0,
+    "gold": 8,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+   },
+   "problems": {
+    "tp": 0,
+    "sys": 0,
+    "gold": 3,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+   }
+  },
+  "TS3006c": {
+   "actions": {
+    "tp": 1,
+    "sys": 7,
+    "gold": 2,
+    "precision": 0.143,
+    "recall": 0.5,
+    "f1": 0.222
+   },
+   "decisions": {
+    "tp": 0,
+    "sys": 0,
+    "gold": 5,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+   },
+   "problems": {
+    "tp": 0,
+    "sys": 0,
+    "gold": 5,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+   }
+  },
+  "TS3006d": {
+   "actions": {
+    "tp": 0,
+    "sys": 0,
+    "gold": 3,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+   },
+   "decisions": {
+    "tp": 2,
+    "sys": 7,
+    "gold": 5,
+    "precision": 0.286,
+    "recall": 0.4,
+    "f1": 0.333
+   },
+   "problems": {
+    "tp": 4,
+    "sys": 7,
+    "gold": 4,
+    "precision": 0.571,
+    "recall": 1.0,
+    "f1": 0.727
+   }
+  }
+ },
+ "note": "alignment is LLM-judged; evidence overlap is a proxy, not an evidence-support judgement"
+}

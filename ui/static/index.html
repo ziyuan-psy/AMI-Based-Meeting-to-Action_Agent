@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Review AMI development meetings, supporting evidence, and the agent's choices across meetings.">
+  <title>AMI · Meeting review</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to meeting record</a>
+  <aside class="sidebar" aria-label="Meeting library">
+    <a class="brand" href="/" aria-label="AMI meeting review home"><img src="/favicon.svg" width="38" height="38" alt=""><span>AMI<span class="brand-sub">Meeting to action</span></span></a>
+    <div class="workspace-label"><span class="workspace-dot"></span> DEVELOPMENT WORKSPACE</div>
+    <div class="sidebar-heading">Meeting library <span id="meeting-count">16</span></div>
+    <label class="select-label" for="series-select">Project series</label>
+    <select id="series-select" aria-label="Project series"><option>Loading…</option></select>
+    <nav id="meeting-list" class="meeting-list" aria-label="Meetings in series"></nav>
+    <div class="library-legend"><span class="dot teal"></span> Saved record available</div>
+    <section class="sidebar-note"><span class="note-symbol">↳</span><div><strong>Context follows the meeting</strong><p>Earlier meetings in the same series are available as history.</p></div></section>
+    <div class="sidebar-footer"><span class="dot teal"></span><span>Development set only<br><small>4 series · 16 transcripts</small></span></div>
+  </aside>
+  <div class="app-shell">
+    <header class="topbar"><div class="breadcrumb">Workspace <span>/</span> Meeting review</div><div class="saved-label"><span class="dot teal"></span> Saved development outputs</div></header>
+    <main id="main" tabindex="-1"><div class="loading-page" role="status">Opening meeting library…</div></main>
+    <footer class="page-footer"><span>AMI Meeting Corpus · Development workspace</span><span>Structured records · Traceable evidence</span></footer>
+  </div>
+  <div id="status-message" class="sr-only" role="status" aria-live="polite"></div>
+  <dialog id="inspector" aria-labelledby="inspector-title"><div class="drawer-heading"><div><p class="eyebrow" id="inspector-eyebrow">SOURCE DETAIL</p><h2 id="inspector-title">Supporting evidence</h2></div><button class="icon-button" id="close-inspector" aria-label="Close detail panel">×</button></div><div id="inspector-body"></div></dialog>
+</body>
+</html>

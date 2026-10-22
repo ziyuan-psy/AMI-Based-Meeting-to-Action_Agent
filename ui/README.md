@@ -6,6 +6,13 @@ export JSON or Markdown. No model calls, credentials, or cloud services are need
 
 ## Run
 
+**Windows shortcut:** double-click `preview-ui.cmd` at the repository root.
+The script prepares dependencies and opens
+the browser. See [PREVIEW.md](../PREVIEW.md) for the short teammate instructions.
+Keep its terminal window open while reviewing; Ctrl+C stops the server.
+
+Manual setup, if preferred:
+
 From the repository root (Python 3.10+):
 
 ```powershell

@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import json
 import os
+import threading
 from types import SimpleNamespace as NS
 
 from . import config
@@ -41,9 +42,11 @@ class OpenAIAdapter:
                         out.append({"role": "tool", "tool_call_id": b["tool_use_id"], "content": body})
         return out
 
-    def create(self, model, system, messages, max_tokens=4096, tools=None, tool_choice=None):
+    def create(self, model, system, messages, max_tokens=4096, tools=None, tool_choice=None, reasoning_effort=None):
         kw = dict(model=model, messages=self._messages(system, messages),
                   max_completion_tokens=max(max_tokens, config.OPENAI_MIN_COMPLETION_TOKENS))
+        if reasoning_effort:
+            kw["reasoning_effort"] = reasoning_effort
         if tools:
             kw["tools"] = [{"type": "function", "function": {
                 "name": t["name"], "description": t["description"], "parameters": t["input_schema"]}} for t in tools]
@@ -80,29 +83,64 @@ class LLM:
                 raise RuntimeError("Set OPENAI_API_KEY (or ANTHROPIC_API_KEY) in .env")
         self.client = client
         self.model = model or config.MODEL
+        # Reasoning effort is an OpenAI reasoning-model parameter; other clients never receive it.
+        self.supports_effort = isinstance(client, OpenAIAdapter)
         self.in_tokens = 0
         self.out_tokens = 0
+        self.calls = 0
+        # Per pipeline stage (extract, consolidate, agent, abstract, ...): {"calls", "in", "out"}. Every completed
+        # request counts, including retries inside forced_tool; the SDK's own HTTP retries are not visible here.
+        self.stages: dict[str, dict] = {}
+        self._lock = threading.Lock()  # calls run in parallel threads; keep the counters exact
 
     def create(self, system: str, messages: list, tools: list | None = None,
-               tool_choice: dict | None = None, max_tokens: int = 4096):
+               tool_choice: dict | None = None, max_tokens: int = 4096, effort: str | None = None,
+               stage: str | None = None):
         kw = dict(model=self.model, system=system, messages=messages, max_tokens=max_tokens)
         if tools:
             kw["tools"] = tools
             if tool_choice:
                 kw["tool_choice"] = tool_choice
+        if effort and self.supports_effort:
+            kw["reasoning_effort"] = effort
         resp = self.client.messages.create(**kw)
         u = getattr(resp, "usage", None)
-        if u:
-            self.in_tokens += getattr(u, "input_tokens", 0)
-            self.out_tokens += getattr(u, "output_tokens", 0)
+        t_in = getattr(u, "input_tokens", 0) if u else 0
+        t_out = getattr(u, "output_tokens", 0) if u else 0
+        with self._lock:
+            self.calls += 1
+            self.in_tokens += t_in
+            self.out_tokens += t_out
+            s = self.stages.setdefault(stage or "other", {"calls": 0, "in": 0, "out": 0})
+            s["calls"] += 1
+            s["in"] += t_in
+            s["out"] += t_out
         return resp
 
-    def forced_tool(self, system: str, user: str, name: str, schema: dict, max_tokens: int = 8192) -> dict:
+    def usage_snapshot(self) -> dict:
+        with self._lock:
+            return {"calls": self.calls, "in": self.in_tokens, "out": self.out_tokens,
+                    "stages": {k: dict(v) for k, v in self.stages.items()}}
+
+    @staticmethod
+    def usage_since(before: dict, after: dict) -> dict:
+        """What was spent between two snapshots (one meeting, when the LLM object is shared across a series)."""
+        stages = {}
+        for k, v in after["stages"].items():
+            b = before["stages"].get(k, {"calls": 0, "in": 0, "out": 0})
+            d = {f: v[f] - b[f] for f in ("calls", "in", "out")}
+            if d["calls"]:
+                stages[k] = d
+        return {"calls": after["calls"] - before["calls"], "in": after["in"] - before["in"],
+                "out": after["out"] - before["out"], "stages": stages}
+
+    def forced_tool(self, system: str, user: str, name: str, schema: dict, max_tokens: int = 8192,
+                    effort: str | None = None, stage: str | None = None) -> dict:
         """One call that must return the input of tool `name` (structured output). Retries with a bigger budget."""
         tool = {"name": name, "description": "Submit the result.", "input_schema": schema}
         for attempt in range(3):
             resp = self.create(system, [{"role": "user", "content": user}], [tool],
-                               {"type": "tool", "name": name}, max_tokens * (2 ** attempt))
+                               {"type": "tool", "name": name}, max_tokens * (2 ** attempt), effort, stage)
             for block in resp.content:
                 if block.type == "tool_use" and block.name == name and block.input:
                     return block.input

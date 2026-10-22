@@ -4,7 +4,6 @@ FIELD_TEMPLATE = """\
 OUTPUT FIELD TEMPLATE (schema 0.5.0). Every item you produce must follow it. Do not add, drop or rename fields.
 
 type: one of  abstract | actions | decisions | problems
-Required fields per type: abstract 4, decisions 7, problems 7, actions 11.
 
 field                 applies to                 meaning
 id                    all                        stable item id, assigned by the system
@@ -103,10 +102,29 @@ drop items that only describe in-meeting procedure, small talk, or things too mi
 {FIELD_TEMPLATE}
 {EXAMPLES}
 For every kept item return the indexes of the candidates it merges (members) and one clear, self-contained text that
-preserves conditions and scope. Do not invent content that is not in the candidates. Aim for about 1-5 actions,
-2-9 decisions and 0-5 problems for the whole meeting; fewer is fine if the meeting had fewer. Actions are follow-up
-work for after the meeting, not things done during it: one item per role and task, merging small steps of the
-same task into one sentence."""
+preserves conditions and scope. Do not invent content that is not in the candidates. The text is a plain sentence:
+never put candidate indexes or brackets like [12, 15] into it.
+
+HOW MANY: a meeting record is short. Typically 2-4 actions, 3-6 decisions and 1-3 problems; never more than 5
+actions, 7 decisions or 4 problems. Fewer is fine if the meeting had fewer. Within each type, list the most
+important items first (the ones a project manager would put in the minutes).
+
+TYPE: decide the type from what the item is, not from the candidate's label.
+- actions: a named role or person takes on work to be done AFTER this meeting ("the designer will work out ...").
+  A statement about what the product will be or have ("the remote will have a hatch door", "we will use
+  batteries") is a decision, not an action. One action per role and task; merge small steps of the same task.
+- decisions: a choice the group agreed on (or explicitly left as proposed / conditional) about the product or the
+  project. Several details of the same component or choice form ONE decision.
+- problems: an obstacle or concern the participants treated as a problem for the project or team work
+  (including equipment trouble that held up the work). An open question that simply has not been decided yet is
+  not a problem unless the participants raised it as a concern.
+
+DROP (these are not in a project record):
+- in-meeting procedure: agenda, order of presentations, who speaks next, time keeping, saving or sending a file
+  during the meeting, using the pen or whiteboard, "we will work from top to bottom";
+- passing suggestions nobody took up, jokes, and restatements of something already listed;
+- generic follow-ups with no specific task ("assign owners and next steps", "the team will finalise things");
+- small details already covered by a broader item you keep."""
 
 AGENT_SYSTEM = f"""You verify ONE item from a meeting before it goes into the meeting record. The item was flagged
 because something about it is unclear. Decide what to look up, then call finish.

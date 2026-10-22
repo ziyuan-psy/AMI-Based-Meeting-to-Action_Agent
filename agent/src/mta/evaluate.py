@@ -62,25 +62,49 @@ MATCH_SCHEMA = {"type": "object", "properties": {"pairs": {"type": "array", "ite
     "required": ["sys", "gold"]}}}, "required": ["pairs"]}
 
 
-def make_llm_matcher(llm, cache_file: Path):
-    """LLM alignment (cached on disk by the item texts), used instead of the heuristic when --judge is set."""
+def make_llm_matcher(llm, cache=None, votes: int | None = None):
+    """LLM alignment by majority vote, used instead of the heuristic when --judge is set.
+
+    The judge aligns the same two lists `votes` times; a pair counts when a majority of the runs give it, and the
+    accepted pairs are then made one-to-one (most votes first). Every run is cached by the item texts, in the shared
+    judge cache by default, so identical lists are never judged twice and raising `votes` only adds the missing runs.
+    `cache`: a dict-like store (mta.judge.JsonCache); default the shared "align_votes" cache of this judge.
+    """
+    import contextlib
     import hashlib
-    cache = json.loads(cache_file.read_text(encoding="utf-8")) if cache_file.exists() else {}
+    from collections import Counter
+    from .judge import shared_cache
+    store = shared_cache("align_votes", llm) if cache is None else cache
+    votes = votes or config.EVAL_VOTES
+    need = votes // 2 + 1
 
     def matcher(ss: list[dict], gg: list[dict]) -> dict[str, str]:
         if not ss or not gg:
             return {}
         key = hashlib.sha256(json.dumps([[s["text"] for s in ss], [g["text"] for g in gg]]).encode()).hexdigest()[:20]
-        if key not in cache:
-            sys_lines = [f"[{i}] {s['text']}" for i, s in enumerate(ss)]
-            gold_lines = [f"[{j}] {g['text']}" for j, g in enumerate(gg)]
-            user = "SYSTEM items:\n" + "\n".join(sys_lines) + "\n\nGOLD items:\n" + "\n".join(gold_lines)
-            cache[key] = llm.forced_tool(MATCH_SYSTEM, user, "submit_matches", MATCH_SCHEMA)["pairs"]
-            cache_file.write_text(json.dumps(cache), encoding="utf-8")
+        # Another thread (e.g. the other mode, with the same items) may be judging the same lists: wait for it.
+        with (store.lock_for(key) if hasattr(store, "lock_for") else contextlib.nullcontext()):
+            runs = list(store.get_value(key, []) if hasattr(store, "get_value") else store.get(key, []))
+            if len(runs) < votes:
+                sys_lines = [f"[{i}] {s['text']}" for i, s in enumerate(ss)]
+                gold_lines = [f"[{j}] {g['text']}" for j, g in enumerate(gg)]
+                user = "SYSTEM items:\n" + "\n".join(sys_lines) + "\n\nGOLD items:\n" + "\n".join(gold_lines)
+                while len(runs) < votes:
+                    runs.append(llm.forced_tool(MATCH_SYSTEM, user, "submit_matches", MATCH_SCHEMA).get("pairs") or [])
+                    store[key] = list(runs)
+        count = Counter()
+        for pairs in runs[:votes]:
+            seen = set()
+            for p in pairs:
+                i, j = (p.get("sys"), p.get("gold")) if isinstance(p, dict) else (None, None)
+                if isinstance(i, int) and isinstance(j, int) and 0 <= i < len(ss) and 0 <= j < len(gg) and (i, j) not in seen:
+                    seen.add((i, j))
+                    count[(i, j)] += 1
         out, used = {}, set()
-        for p in cache[key]:
-            i, j = p["sys"], p["gold"]
-            if 0 <= i < len(ss) and 0 <= j < len(gg) and ss[i]["id"] not in out and j not in used:
+        for (i, j), c in sorted(count.items(), key=lambda kv: (-kv[1], kv[0])):
+            if c < need:
+                break
+            if ss[i]["id"] not in out and j not in used:
                 out[ss[i]["id"]] = gg[j]["id"]
                 used.add(j)
         return out
@@ -237,12 +261,12 @@ def main(argv=None) -> int:
     ap.add_argument("--mode", default="s2")
     ap.add_argument("--gold", type=Path, default=GOLD_DIR)
     ap.add_argument("--verbose", action="store_true")
-    ap.add_argument("--judge", action="store_true", help="align with an LLM instead of the heuristic")
+    ap.add_argument("--judge", action="store_true", help="align with the LLM judge (mta.judge.get_judge) instead of the heuristic")
     a = ap.parse_args(argv)
     matcher = None
     if a.judge:
-        from .llm import LLM
-        matcher = make_llm_matcher(LLM(), a.run / a.mode / "align_cache.json")
+        from .judge import get_judge
+        matcher = make_llm_matcher(get_judge())
     r = evaluate(a.series, a.run, a.mode, a.gold, a.verbose, matcher)
     show(r)
     out = a.run / a.mode / f"eval_{a.series}.json"

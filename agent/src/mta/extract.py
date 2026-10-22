@@ -4,6 +4,8 @@ from __future__ import annotations
 import hashlib
 import json
 import re
+from collections import Counter
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 from . import config
@@ -70,9 +72,16 @@ def _clean(it: dict, ev: list[str]) -> dict | None:
 
 
 NL = chr(10)
-ACTION_PASS_NOTE = ("List ONLY actions (follow-up work assigned to a role for after this meeting). You see the whole "
-                    "meeting: assignments are usually settled late, often when the manager wraps up; use the roster IDs. "
-                    "Do not list decisions or problems.")
+CHUNK_NOTE = "List only decisions and problems for this chunk (actions are collected in a separate pass)."
+B0_NOTE = "List actions, decisions and problems."
+ACTION_PASS_NOTE = (
+    "List ONLY actions: follow-up work that a person takes on for the period AFTER this meeting. You see the whole "
+    "meeting. Go through the roster one role at a time and ask: what did this person agree, or get asked, to do "
+    "before the next meeting (prepare, research, design, draw, write, send, report, finish)? Assignments are usually "
+    "settled late, when the manager wraps up and says what each person does next: read the last part of the meeting "
+    "line by line, but also catch tasks taken on earlier. A task given to everyone (e.g. filling in a questionnaire) "
+    "is still an action. Joint tasks list every assigned person. Use the roster IDs. Do not list decisions, problems, "
+    "or work done during the meeting itself.")
 
 
 def _lines(acts: list[dict], a: int, b: int) -> list[str]:
@@ -80,44 +89,114 @@ def _lines(acts: list[dict], a: int, b: int) -> list[str]:
             for i in range(a, b)]
 
 
-def _call(llm: LLM, roster_txt: str, note: str, acts: list[dict], a: int, b: int, keep: set[str]) -> list[dict]:
+def _call(llm: LLM, roster_txt: str, note: str, acts: list[dict], a: int, b: int, keep: set[str],
+          retry_empty: bool = False) -> list[dict]:
+    """One extraction call. `retry_empty`: for whole-meeting passes, where zero usable items almost always means a
+    bad response (e.g. an empty list or no valid evidence), ask again up to EMPTY_RETRIES times."""
     user = f"Roster:{NL}{roster_txt}{NL}{NL}{note}{NL}{NL}Transcript:{NL}" + NL.join(_lines(acts, a, b))
-    res = llm.forced_tool(EXTRACT_SYSTEM, user, "submit_candidates", CANDIDATE_SCHEMA)
-    out = []
-    for it in res.get("items", []):
-        if it.get("type") not in keep:
-            continue
-        ev = [acts[i]["id"] for i in dict.fromkeys(it.get("evidence", [])) if isinstance(i, int) and a <= i < b]
-        clean = _clean(it, ev) if ev else None  # candidates without real evidence are dropped
-        if clean:
-            out.append(clean)
+    out: list[dict] = []
+    for _ in range(1 + (config.EMPTY_RETRIES if retry_empty else 0)):
+        res = llm.forced_tool(EXTRACT_SYSTEM, user, "submit_candidates", CANDIDATE_SCHEMA, effort=config.EFFORT_EXTRACT,
+                              stage="extract")
+        out = []
+        for it in res.get("items") or []:
+            if not isinstance(it, dict) or it.get("type") not in keep:
+                continue
+            ev = [acts[i]["id"] for i in dict.fromkeys(it.get("evidence") or []) if isinstance(i, int) and a <= i < b]
+            clean = _clean(it, ev) if ev else None  # candidates without real evidence are dropped
+            if clean:
+                out.append(clean)
+        if out:
+            break
     return out
+
+
+def _key(*parts) -> str:
+    p = list(parts)
+    if config.EFFORT_EXTRACT:
+        p.append(config.EFFORT_EXTRACT)
+    return hashlib.sha256(json.dumps(p).encode()).hexdigest()[:16]
+
+
+def _overlap(a: list[str], b: list[str]) -> float:
+    sa, sb = set(a), set(b)
+    return len(sa & sb) / min(len(sa), len(sb)) if sa and sb else 0.0
+
+
+def union_actions(samples: list[list[dict]]) -> list[dict]:
+    """Actions from several samples of the action pass: the first sample in order, then whatever later samples add.
+    A candidate is a repeat when it cites mostly the same lines or says nearly the same thing."""
+    kept: list[dict] = []
+    for sample in samples:
+        for c in sample:
+            if any(_overlap(c["evidence_da_ids"], k["evidence_da_ids"]) >= 0.5 or _jaccard(c["text"], k["text"]) >= 0.5
+                   for k in kept):
+                continue
+            kept.append(c)
+    return kept
 
 
 def extract_candidates(llm: LLM, acts: list[dict], roster: list[dict], single_chunk: bool = False,
                        cache: Path | None = None) -> list[dict]:
-    """Decisions/problems come from overlapping chunks (they are local); actions from one pass over the whole
-    meeting (they are global: assignments refer back to the whole discussion). `single_chunk` is the one-shot
-    baseline: one call, all types.  `cache` stores the raw candidates on disk so reruns skip the slow calls."""
-    key = hashlib.sha256(json.dumps([EXTRACT_SYSTEM, ACTION_PASS_NOTE, llm.model, single_chunk, config.CHUNK,
-                                     config.OVERLAP, [a["id"] for a in acts]]).encode()).hexdigest()[:16]
+    """Decisions/problems come from overlapping chunks (they are local); actions from passes over the whole
+    meeting (they are global: assignments refer back to the whole discussion), sampled config.ACTION_SAMPLES times
+    and united to raise recall. `single_chunk` is the one-shot baseline: one call, all types.
+
+    `cache` keeps each part under its own key, so changing the action pass does not redo the chunk pass and adding
+    action samples only runs the missing ones. Empty results are never cached."""
+    ids = [a["id"] for a in acts]
+    roster_txt = NL.join(f"{r['participant_id']} = {r['role']}" for r in roster)
+    saved = {}
     if cache and cache.exists():
         saved = json.loads(cache.read_text(encoding="utf-8"))
-        if saved.get("key") == key:
-            return saved["candidates"]
-    roster_txt = NL.join(f"{r['participant_id']} = {r['role']}" for r in roster)
+        if saved.get("version") != 2:  # the old single-key format cannot be split into parts
+            saved = {}
+    keys = {"single": _key(EXTRACT_SYSTEM, B0_NOTE, llm.model, ids),
+            "chunk_pass": _key(EXTRACT_SYSTEM, CHUNK_NOTE, llm.model, config.CHUNK, config.OVERLAP, ids),
+            "action_pass": _key(EXTRACT_SYSTEM, ACTION_PASS_NOTE, llm.model, ids)}
+
+    def cached(part: str):
+        p = saved.get(part) or {}
+        return p if p.get("key") == keys[part] else None
+
+    jobs = []  # (part, note, a, b, keep, retry_empty)
     if single_chunk:
-        out = _call(llm, roster_txt, "List actions, decisions and problems.", acts, 0, len(acts), set(VALID_STATUS))
+        if not (cached("single") or {}).get("candidates"):
+            jobs.append(("single", B0_NOTE, 0, len(acts), set(VALID_STATUS), True))
     else:
-        out = []
-        for a, b in chunks(len(acts), config.CHUNK, config.OVERLAP):
-            out += _call(llm, roster_txt, "List only decisions and problems for this chunk (actions are collected "
-                         "in a separate pass).", acts, a, b, {"decisions", "problems"})
-        out += _call(llm, roster_txt, ACTION_PASS_NOTE, acts, 0, len(acts), {"actions"})
-    if cache:
+        if cached("chunk_pass") is None:  # an empty chunk pass is a real answer (nothing local to list); keep it
+            jobs += [("chunk_pass", CHUNK_NOTE, a, b, {"decisions", "problems"}, False)
+                     for a, b in chunks(len(acts), config.CHUNK, config.OVERLAP)]
+        have = [s for s in (cached("action_pass") or {}).get("samples", []) if s]
+        jobs += [("action_pass", ACTION_PASS_NOTE, 0, len(acts), {"actions"}, True)] * max(0, config.ACTION_SAMPLES - len(have))
+    # The calls are independent: run them together; results keep the job order (chunks in transcript order).
+    with ThreadPoolExecutor(max_workers=max(1, config.WORKERS)) as pool:
+        parts = list(pool.map(lambda j: _call(llm, roster_txt, j[1], acts, j[2], j[3], j[4], retry_empty=j[5]), jobs))
+    new = {"single": [], "chunk_pass": [], "action_pass": []}
+    for (part, *_), res in zip(jobs, parts):
+        if part == "action_pass":
+            new[part].append(res)
+        else:
+            new[part] += res
+
+    out_parts = {}
+    for part in ("single", "chunk_pass"):
+        ran = any(j[0] == part for j in jobs)
+        got = new[part] if ran else (cached(part) or {}).get("candidates", [])
+        out_parts[part] = got
+        # Whole-meeting results are never cached empty (an empty b0 answer is almost always a bad response).
+        if ran and (got or part == "chunk_pass"):
+            saved[part] = {"key": keys[part], "candidates": got}
+    samples = [s for s in ((cached("action_pass") or {}).get("samples", []) + new["action_pass"]) if s]
+    if samples:
+        saved["action_pass"] = {"key": keys["action_pass"], "samples": samples}
+    if cache and jobs and any(saved.get(p, {}).get("candidates") or saved.get(p, {}).get("samples") for p in keys):
+        saved["version"] = 2
         cache.parent.mkdir(parents=True, exist_ok=True)
-        cache.write_text(json.dumps({"key": key, "candidates": out}, ensure_ascii=False), encoding="utf-8")
-    return out
+        cache.write_text(json.dumps(saved, ensure_ascii=False), encoding="utf-8")
+    if single_chunk:
+        return out_parts["single"]
+    return out_parts["chunk_pass"] + union_actions(samples[:config.ACTION_SAMPLES])
 
 
 def _jaccard(a: str, b: str) -> float:
@@ -170,25 +249,70 @@ CONSOLIDATE_SCHEMA = {
 }
 
 
+_INDEX_LIST = re.compile(r"\s*\[\s*\d+(?:\s*[,;]\s*\d+)*\s*\]")
+
+
+def _strip_indexes(text: str) -> str:
+    """The model sometimes copies candidate indexes ("... [93, 89, 90]") into the item text."""
+    return re.sub(r"\s{2,}", " ", _INDEX_LIST.sub("", text)).strip()
+
+
 def _merge_groups(groups: list[dict], cands: list[dict]) -> list[dict]:
     out = []
     for g in groups:
         members = [cands[i] for i in dict.fromkeys(g.get("members", [])) if isinstance(i, int) and 0 <= i < len(cands)]
-        if g.get("type") not in VALID_STATUS or not members or not str(g.get("text", "")).strip():
+        text = _strip_indexes(str(g.get("text", "")))
+        if g.get("type") not in VALID_STATUS or not members or not text:
             continue
+        typ = g["type"]
+        member_types = Counter(m["type"] for m in members)
+        if typ == "actions" and "actions" not in member_types:
+            # Actions only come from the action pass. A group without any action candidate was relabelled by the
+            # model (typically a decision rewritten as "X will ..."): keep the members' own type.
+            typ = member_types.most_common(1)[0][0]
         rank = {"explicit": 0, "inferred": 1, "ambiguous": 2, "missing": 3}
-        best = min(members, key=lambda m: (m["type"] != g["type"], rank[m["owner_basis"]]))
+        best = min(members, key=lambda m: (m["type"] != typ, rank[m["owner_basis"]]))
         with_dl = [m for m in members if m.get("deadline")]
-        owners = list(dict.fromkeys(o for m in members if m["type"] == g["type"] for o in m["owner_ids"]))
+        owners = list(dict.fromkeys(o for m in members if m["type"] == typ for o in m["owner_ids"]))
         merged = dict(best)
-        merged.update(type=g["type"], text=str(g["text"]).strip(),
+        merged.update(type=typ, text=text,
                       evidence_da_ids=list(dict.fromkeys(e for m in members for e in m["evidence_da_ids"])),
                       owner_ids=owners if best["owner_basis"] in ("explicit", "inferred") else [])
         if with_dl:
             merged.update(deadline=with_dl[0]["deadline"], deadline_basis=with_dl[0]["deadline_basis"],
                           deadline_cue=with_dl[0].get("deadline_cue"))
         out.append(merged)
-    return out
+    return _cap(out)
+
+
+def _cap(items: list[dict]) -> list[dict]:
+    """Hard cap per type. The prompt asks for the most important items first, so the tail is what gets cut."""
+    kept, seen = [], Counter()
+    for it in items:
+        seen[it["type"]] += 1
+        if seen[it["type"]] <= config.MAX_ITEMS[it["type"]]:
+            kept.append(it)
+    return kept
+
+
+def restore_actions(items: list[dict], cands: list[dict]) -> list[dict]:
+    """Put back action candidates that consolidation dropped, then cap again.
+
+    The action pass reads the whole meeting and already lists few candidates, but consolidation sometimes drops all
+    of a meeting's actions. A candidate counts as absorbed when all of its evidence lines are inside one kept item
+    (a merged item's evidence is the union of its members' evidence); the others are appended in candidate order.
+    """
+    kept_evidence = [set(it["evidence_da_ids"]) for it in items]
+    restored = []
+    for c in cands:
+        if c["type"] != "actions":
+            continue
+        ev = set(c["evidence_da_ids"])
+        if any(ev <= k for k in kept_evidence):
+            continue
+        restored.append({**c, "text": _strip_indexes(c["text"]), "restored": True})
+        kept_evidence.append(ev)  # a later candidate on the same lines is a duplicate of this one
+    return _cap(items + restored)
 
 
 def consolidate(llm: LLM, cands: list[dict], cache: Path | None = None) -> list[dict]:
@@ -200,16 +324,56 @@ def consolidate(llm: LLM, cands: list[dict], cache: Path | None = None) -> list[
                         + (f" | owner cue: {c['owner_cue']}" if c.get("owner_cue") else "")
                         + (f" | deadline: {c['deadline']}" if c.get("deadline") else "")
                         for i, c in enumerate(cands))
-    key = hashlib.sha256((CONSOLIDATE_SYSTEM + llm.model + listing).encode()).hexdigest()[:16]
+    key = hashlib.sha256((CONSOLIDATE_SYSTEM + llm.model + listing + (config.EFFORT_CONSOLIDATE or "")
+                          + json.dumps(config.MAX_ITEMS, sort_keys=True)).encode()).hexdigest()[:16]
+    # The cache holds each sampled consolidation (the model's items); voting and restore_actions run after it on
+    # both paths, so changing those rules, or adding samples, needs no repeated consolidation call.
+    runs: list[list[dict]] = []
     if cache and cache.exists():
         saved = json.loads(cache.read_text(encoding="utf-8"))
         if saved.get("key") == key:
-            return saved["items"]
-    for _ in range(3):  # the model sometimes returns an empty or unusable list; never fall back to the raw candidates
-        res = llm.forced_tool(CONSOLIDATE_SYSTEM, "Candidates:" + chr(10) + listing, "submit_final_items", CONSOLIDATE_SCHEMA)
-        out = _merge_groups([g for g in res.get("items", []) if g.get("type") in VALID_STATUS], cands)
-        if out:
-            if cache:
-                cache.write_text(json.dumps({"key": key, "items": out}, ensure_ascii=False), encoding="utf-8")
-            return out
-    raise RuntimeError("consolidation produced no usable items after 3 attempts")
+            runs = saved.get("runs") or ([saved["items"]] if saved.get("items") else [])
+    missing = max(0, config.CONSOLIDATE_SAMPLES - len(runs))
+    if missing:
+        def one_run(_):
+            for _attempt in range(3):  # the model sometimes returns an empty or unusable list
+                res = llm.forced_tool(CONSOLIDATE_SYSTEM, "Candidates:" + chr(10) + listing, "submit_final_items",
+                                      CONSOLIDATE_SCHEMA, effort=config.EFFORT_CONSOLIDATE, stage="consolidate")
+                out = _merge_groups([g for g in res.get("items", []) if g.get("type") in VALID_STATUS], cands)
+                if out:
+                    return out
+            return None
+        with ThreadPoolExecutor(max_workers=max(1, min(missing, config.WORKERS))) as pool:
+            runs += [r for r in pool.map(one_run, range(missing)) if r]
+        if cache and runs:
+            cache.write_text(json.dumps({"key": key, "runs": runs}, ensure_ascii=False), encoding="utf-8")
+    if not runs:  # never fall back to the raw candidates
+        raise RuntimeError("consolidation produced no usable items after 3 attempts")
+    runs = runs[:config.CONSOLIDATE_SAMPLES]
+    return restore_actions(vote_items(runs) if len(runs) > 1 else runs[0], cands)
+
+
+def vote_items(runs: list[list[dict]]) -> list[dict]:
+    """Keep the items that a majority of the sampled consolidations agree on.
+
+    Two items from different runs are the same item when they have the same type and cite mostly the same lines
+    (overlap >= 0.5 of the smaller evidence set). Each cluster is represented by its item from the earliest run;
+    clusters keep the importance order the runs gave them (mean position within their type)."""
+    clusters: list[dict] = []
+    for r, items in enumerate(runs):
+        pos = Counter()
+        for it in items:
+            p = pos[it["type"]]
+            pos[it["type"]] += 1
+            options = [(c, _overlap(c["rep"]["evidence_da_ids"], it["evidence_da_ids"])) for c in clusters
+                       if r not in c["runs"] and c["rep"]["type"] == it["type"]]
+            best = max(options, key=lambda o: o[1], default=(None, 0.0))
+            if best[0] is not None and best[1] >= 0.5:
+                best[0]["runs"].add(r)
+                best[0]["pos"].append(p)
+            else:
+                clusters.append({"rep": it, "runs": {r}, "pos": [p], "order": len(clusters)})
+    need = len(runs) // 2 + 1
+    kept = [c for c in clusters if len(c["runs"]) >= need]
+    kept.sort(key=lambda c: (sum(c["pos"]) / len(c["pos"]), c["order"]))
+    return [c["rep"] for c in kept]

@@ -26,6 +26,16 @@ set PYTHONPATH=src
 Outputs go to `runs/<mode>/`: `<meeting>.json`, `<meeting>_report.md`, `<meeting>.trace.jsonl`.
 Held-out series (ES2004, TS3007) are refused unless `--allow-sc`; use it once, after the design is frozen.
 
+Evaluation (`mta.evaluate --judge`, `mta.support`, `scripts/full_eval.py`) uses the pipeline model as the LLM judge.
+Optional: `MTA_JUDGE=claude` switches the judge to Claude (`claude-opus-5-5`, effort `high`; override with
+`MTA_JUDGE_MODEL`, `MTA_JUDGE_EFFORT`); this needs `anthropic` and `ANTHROPIC_API_KEY`, and keeps separate caches.
+
+Speed settings (environment variables, optional):
+- `MTA_WORKERS` (default 4): parallel model calls inside one meeting (extraction chunks, agent items, abstracts). `1` = sequential.
+- `MTA_EFFORT_EXTRACT`, `MTA_EFFORT_CONSOLIDATE`, `MTA_EFFORT_AGENT`, `MTA_EFFORT_ABSTRACT`: reasoning effort for
+  OpenAI reasoning models (`minimal` / `low` / `medium` / `high`; empty = model default). Defaults: agent and abstract
+  `low`, extraction and consolidation model default. Consolidation at `low` roughly halved item F1 on TS3006.
+
 ## Tests (no API calls)
 ```
 set PYTHONPATH=src

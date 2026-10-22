@@ -2,7 +2,8 @@
 from __future__ import annotations
 
 import json
-from dataclasses import dataclass
+import threading
+from dataclasses import dataclass, field
 
 from . import config
 from .extract import VALID_STATUS
@@ -58,10 +59,19 @@ def tool_defs(allow_prior: bool) -> list[dict]:
 
 @dataclass
 class MeetingBudget:
+    """Lookups shared by all items of one meeting. Items run in parallel threads, so a lookup is reserved under a lock."""
     used: int = 0
+    _lock: threading.Lock = field(default_factory=threading.Lock, repr=False)
 
     def left(self) -> int:
         return config.MAX_CALLS_PER_MEETING - self.used
+
+    def take(self) -> bool:
+        with self._lock:
+            if self.used >= config.MAX_CALLS_PER_MEETING:
+                return False
+            self.used += 1
+            return True
 
 
 def meeting_of(da_id: str) -> str:
@@ -177,17 +187,26 @@ def run_agent(llm: LLM, store: Store, item: dict, budget: MeetingBudget, trace: 
     while True:
         force = (calls >= config.MAX_CALLS_PER_ITEM or budget.left() <= 0
                  or no_progress >= config.MAX_NO_PROGRESS or invalid >= config.MAX_INVALID_ACTIONS)
-        if force and finish_tries >= 3:
-            trace.log(item=item_key, step=step, outcome="gave_up", reason="no valid finish")
+        if force and finish_tries >= config.MAX_FINISH_TRIES:
+            trace.log(item=item_key, step=step, flags=item["flags"], action=None, outcome="gave_up",
+                      reason="no valid finish")
+            return None
+        if step >= config.MAX_AGENT_STEPS:
+            trace.log(item=item_key, step=step, flags=item["flags"], action=None, outcome="gave_up",
+                      reason="step limit")
             return None
         choice = {"type": "tool", "name": "finish"} if force else {"type": "any"}
-        resp = llm.create(system, messages, tools, choice)
+        resp = llm.create(system, messages, tools, choice, effort=config.EFFORT_AGENT, stage="agent")
         blocks = _blocks(resp)
-        messages.append({"role": "assistant", "content": blocks})
+        # An empty reply would become an assistant message with null content, which the API rejects on the next call.
+        messages.append({"role": "assistant", "content": blocks or [{"type": "text", "text": "(no tool call)"}]})
         uses = [b for b in blocks if b["type"] == "tool_use"]
         step += 1
         if not uses:
             invalid += 1
+            if force:
+                finish_tries += 1  # a forced finish that returns no tool call still uses up a try
+            trace.log(item=item_key, step=step, flags=item["flags"], action=None, outcome="no_tool_call", forced=force)
             messages.append({"role": "user", "content": "Call exactly one tool."})
             continue
         results = []
@@ -214,10 +233,15 @@ def run_agent(llm: LLM, store: Store, item: dict, budget: MeetingBudget, trace: 
                 trace.log(**entry, outcome="invalid_action")
                 results.append({"type": "tool_result", "tool_use_id": tu["id"], "is_error": True,
                                 "content": f"Unknown or unavailable tool {name}."})
+            elif not budget.take():
+                # other items used up the meeting's lookups while this step was in flight: finish next
+                trace.log(**entry, outcome="budget_exhausted")
+                results.append({"type": "tool_result", "tool_use_id": tu["id"], "is_error": True,
+                                "content": "The meeting's lookup budget is used up. Call finish now."})
             else:
                 key = name + json.dumps(args, sort_keys=True)
                 calls += 1
-                budget.used += 1
+                error = None
                 if key in cache:
                     data, new_info = {"note": "duplicate call; same result as before", **cache[key]}, False
                 else:
@@ -229,12 +253,16 @@ def run_agent(llm: LLM, store: Store, item: dict, budget: MeetingBudget, trace: 
                         if name == "search_project_doc":
                             pages_seen |= {r["page"] for r in data["results"]}
                         cache[key] = data
-                    except (PermissionError, KeyError, ValueError) as e:
+                    except (PermissionError, KeyError, ValueError, TypeError) as e:
                         invalid += 1
+                        error = f"{type(e).__name__}: {e}"
                         data, new_info = {"error": str(e)}, False
                 no_progress = 0 if new_info else no_progress + 1
-                trace.log(**entry, outcome="ok", new_info=new_info, n_results=len(data.get("results", [])),
-                          observation_ids=sorted(_ids_in(name, data))[:12])
+                if error:
+                    trace.log(**entry, outcome="tool_error", error=error)
+                else:
+                    trace.log(**entry, outcome="ok", new_info=new_info, n_results=len(data.get("results", [])),
+                              observation_ids=sorted(_ids_in(name, data))[:12])
                 results.append({"type": "tool_result", "tool_use_id": tu["id"],
                                 "content": json.dumps(data)[:6000], "is_error": "error" in data})
         messages.append({"role": "user", "content": results})

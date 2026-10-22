@@ -6,11 +6,11 @@ Node.js, model account, or separate dataset download is needed.
 ## 1. Get the UI branch
 
 ```powershell
-git clone --branch codex/meeting-demo-ui https://github.com/ziyuan-psy/AMI-Based-Meeting-to-Action_Agent.git
+git clone --branch meeting-demo-ui https://github.com/ziyuan-psy/AMI-Based-Meeting-to-Action_Agent.git
 cd AMI-Based-Meeting-to-Action_Agent
 ```
 
-Already cloned? Run `git fetch origin`, then `git switch codex/meeting-demo-ui`.
+Already cloned? Run `git fetch origin`, then `git switch meeting-demo-ui`.
 If you have local edits, save them before switching branches.
 
 ## 2. Launch

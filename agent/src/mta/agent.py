@@ -233,6 +233,10 @@ def run_agent(llm: LLM, store: Store, item: dict, budget: MeetingBudget, trace: 
                 trace.log(**entry, outcome="invalid_action")
                 results.append({"type": "tool_result", "tool_use_id": tu["id"], "is_error": True,
                                 "content": f"Unknown or unavailable tool {name}."})
+            elif calls >= config.MAX_CALLS_PER_ITEM:
+                trace.log(**entry, outcome="item_budget_exhausted")
+                results.append({"type": "tool_result", "tool_use_id": tu["id"], "is_error": True,
+                                "content": "This item's lookup budget is used up. Call finish now."})
             elif not budget.take():
                 # other items used up the meeting's lookups while this step was in flight: finish next
                 trace.log(**entry, outcome="budget_exhausted")

@@ -5,11 +5,12 @@ import hashlib
 import json
 import re
 from collections import Counter
-from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 from . import config
+from .control import stage_pool
 from .llm import LLM
+from .observation import write_json
 from .prompts import CONSOLIDATE_SYSTEM, EXTRACT_SYSTEM
 from .store import tokenize
 from .trace import StageTrace
@@ -183,7 +184,7 @@ def extract_candidates(llm: LLM, acts: list[dict], roster: list[dict], single_ch
         have = cached_action_samples
         jobs += [("action_pass", ACTION_PASS_NOTE, 0, len(acts), {"actions"}, True)] * max(0, config.ACTION_SAMPLES - len(have))
     # The calls are independent: run them together; results keep the job order (chunks in transcript order).
-    with ThreadPoolExecutor(max_workers=max(1, config.WORKERS)) as pool:
+    with stage_pool(max(1, config.WORKERS), getattr(llm, "control", None)) as pool:
         parts = list(pool.map(lambda ij: _call(
             llm, roster_txt, ij[1][1], acts, ij[1][2], ij[1][3], ij[1][4], retry_empty=ij[1][5], trace=trace,
             job={"index": ij[0], "part": ij[1][0], "start": ij[1][2], "end": ij[1][3]}), enumerate(jobs)))
@@ -210,8 +211,7 @@ def extract_candidates(llm: LLM, acts: list[dict], roster: list[dict], single_ch
         saved["action_pass"] = {"key": keys["action_pass"], "samples": samples}
     if cache and jobs and any(saved.get(p, {}).get("candidates") or saved.get(p, {}).get("samples") for p in keys):
         saved["version"] = 2
-        cache.parent.mkdir(parents=True, exist_ok=True)
-        cache.write_text(json.dumps(saved, ensure_ascii=False), encoding="utf-8")
+        write_json(cache, saved, getattr(llm, "control", None))
     if single_chunk:
         out = out_parts["single"]
     else:
@@ -395,13 +395,13 @@ def consolidate(llm: LLM, cands: list[dict], cache: Path | None = None, trace=No
                 if out:
                     return out, attempts
             return None, attempts
-        with ThreadPoolExecutor(max_workers=max(1, min(missing, config.WORKERS))) as pool:
+        with stage_pool(max(1, min(missing, config.WORKERS)), getattr(llm, "control", None)) as pool:
             for items, details in pool.map(one_run, range(first_sample, first_sample + missing)):
                 if items:
                     runs.append(items)
                     run_traces.append(details)
         if cache and runs:
-            cache.write_text(json.dumps({"key": key, "runs": runs, "run_traces": run_traces}, ensure_ascii=False), encoding="utf-8")
+            write_json(cache, {"key": key, "runs": runs, "run_traces": run_traces}, getattr(llm, "control", None))
     if not runs:  # never fall back to the raw candidates
         raise RuntimeError("consolidation produced no usable items after 3 attempts")
     runs = runs[:config.CONSOLIDATE_SAMPLES]

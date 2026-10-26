@@ -89,12 +89,28 @@ these timings as cold end-to-end comparisons. Final quality evaluation remains a
 Saved capture: [TS3006a/b trace baseline](results/dev_baselines/trace-v1-ts3006ab/BASELINE.md),
 with real S1/S2 outputs, source/input snapshots and checksummed artifacts.
 
+## Meeting budgets and failure recovery
+
+Each meeting shares one model-call/token budget and deadline across extraction, consolidation, agent
+follow-up and abstracts, including retries and parallel requests. Defaults are 80 model attempts,
+1,000,000 total input/output tokens, 300 seconds per request, 1,200 seconds per meeting and up to
+4 simultaneous model requests. Environment overrides, accounting rules and failure codes are documented
+in [Runtime control](docs/RUNTIME_CONTROL.md).
+
+Completed stages are checkpointed under `runs/<mode>/_attempts/<meeting>/<run_id>/`. Failed, timed-out,
+cancelled or budget-exhausted runs retain their checkpoints and traces, with a `partial.json` index;
+only validated, completed runs publish the final record/report. The latest `.run.json` records the
+failure stage, stop reason and per-attempt budget ledger. The series runner stops on failure and skips
+only prior successful record/report pairs whose hashes still match. The frozen development baseline
+above is unchanged; budget-control regression tests use offline transports.
+
 Evaluation (`mta.evaluate --judge`, `mta.support`, `scripts/full_eval.py`) uses the pipeline model as the LLM judge.
 Optional: `MTA_JUDGE=claude` switches the judge to Claude (`claude-opus-5-5`, effort `high`; override with
 `MTA_JUDGE_MODEL`, `MTA_JUDGE_EFFORT`); this needs `anthropic` and `ANTHROPIC_API_KEY`, and keeps separate caches.
 
 Speed settings (environment variables, optional):
-- `MTA_WORKERS` (default 4): parallel model calls inside one meeting (extraction chunks, agent items, abstracts). `1` = sequential.
+- `MTA_WORKERS` (default 4): stage workers inside one meeting (extraction chunks, agent items, abstracts).
+  `1` = sequential; `MTA_MAX_INFLIGHT` also limits simultaneous model requests across these workers.
 - `MTA_EFFORT_EXTRACT`, `MTA_EFFORT_CONSOLIDATE`, `MTA_EFFORT_AGENT`, `MTA_EFFORT_ABSTRACT`: reasoning effort for
   OpenAI reasoning models (`minimal` / `low` / `medium` / `high`; empty = model default). Defaults: agent and abstract
   `low`, extraction and consolidation model default. Consolidation at `low` roughly halved item F1 on TS3006.

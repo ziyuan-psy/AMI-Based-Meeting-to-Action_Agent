@@ -256,16 +256,17 @@ def test_empty_reply_leaves_no_empty_assistant_message(tmp_path):
     assert converted[1]["content"]  # no null content goes to the OpenAI API
 
 
-def test_agent_exception_falls_back_for_that_item(tmp_path):
+def test_agent_api_exception_stops_meeting_and_preserves_partial_results(tmp_path):
     run_meeting(A, "s2", LLM(Fake([])), tmp_path, tmp_path / "c")
 
     def boom(kw):
         raise RuntimeError("API down")
 
     rb = run_meeting(B, "s2", LLM(Fake([("finish", boom)])), tmp_path, tmp_path / "c")
-    assert rb["status"] == "COMPLETED" and rb["agent fallbacks"] == 1
-    last = read_trace(tmp_path / "s2" / "TS3006b.trace.jsonl")[-1]
-    assert last["outcome"] == "agent_error" and "API down" in last["error"]
+    assert rb["status"] == "FAILED" and rb["failed_stage"] == "agent"
+    assert rb["reason"] == "model_request_failed"
+    assert Path(rb["partial_artifact"]).is_file()
+    assert not (tmp_path / "s2" / "TS3006b.json").exists()
 
 
 def test_stage_usage_adds_up(tmp_path):

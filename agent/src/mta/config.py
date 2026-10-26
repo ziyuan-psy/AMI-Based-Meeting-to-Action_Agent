@@ -52,6 +52,16 @@ MAX_FINISH_TRIES = 3
 # Hard stop on model turns per item, whatever the model returns (normal worst case is about 9).
 MAX_AGENT_STEPS = 12
 
+# Whole-meeting limits. Every model attempt, including every kind of retry, shares these.
+MAX_MODEL_CALLS = int(os.environ.get("MTA_MAX_MODEL_CALLS", "80"))
+MAX_TOTAL_TOKENS = int(os.environ.get("MTA_MAX_TOTAL_TOKENS", "1000000"))
+REQUEST_TIMEOUT = float(os.environ.get("MTA_REQUEST_TIMEOUT", "300"))
+MEETING_TIMEOUT = float(os.environ.get("MTA_MEETING_TIMEOUT", "1200"))
+MAX_INFLIGHT = int(os.environ.get("MTA_MAX_INFLIGHT", os.environ.get("MTA_WORKERS", "4")))
+TRANSPORT_RETRIES = int(os.environ.get("MTA_TRANSPORT_RETRIES", "2"))
+RETRY_BACKOFF = float(os.environ.get("MTA_RETRY_BACKOFF", "0.5"))
+INPUT_TOKEN_PADDING = 1024  # conservative UTF-8 request-byte bound plus framing allowance
+
 # Speed.  WORKERS: parallel model calls within one meeting (chunk extraction, agent items, abstracts); 1 = sequential.
 WORKERS = int(os.environ.get("MTA_WORKERS", "4"))
 # Whole-meeting extraction passes that return no usable item are asked again this many times.

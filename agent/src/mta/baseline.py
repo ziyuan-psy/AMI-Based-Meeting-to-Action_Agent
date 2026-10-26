@@ -113,7 +113,7 @@ def capture(destination: Path, meetings: list[str], modes: list[str], llm=None) 
                 write_json(metadata_path, manifest)
                 print(f"Finished {mode} {meeting}: {result['status']}", flush=True)
                 if result["status"] != "COMPLETED":
-                    manifest["status"] = "BLOCKED"
+                    manifest["status"] = result["status"]
                     return manifest
         manifest["status"] = "COMPLETED"
         return manifest

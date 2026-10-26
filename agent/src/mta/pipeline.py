@@ -4,14 +4,14 @@ from __future__ import annotations
 import json
 import re
 import time
-from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 from . import config
 from .agent import MeetingBudget, build_reference, run_agent
+from .control import Limits, RunControl, RunStopped, launch, stage_pool
 from .extract import _strip_indexes, consolidate, extract_candidates, normalize
 from .llm import LLM
-from .observation import RunObservation, sha256
+from .observation import RunObservation, sha256, write_json
 from .prompts import ABSTRACT_SYSTEM
 from .render import render_report
 from .store import Store, split_meeting_id
@@ -90,10 +90,12 @@ def _safe_agent(llm: LLM, store: Store, item: dict, budget: MeetingBudget, trace
     """One item's agent failing (e.g. an API error after the SDK's retries) falls back for that item only."""
     try:
         return run_agent(llm, store, item, budget, trace, key)
-    except Exception as e:  # noqa: BLE001 - logged and counted as a fallback in the report
+    except RunStopped:
+        raise
+    except Exception as e:
         trace.log(item=key, step=None, flags=item["flags"], action=None, outcome="agent_error",
-                  error=f"{type(e).__name__}: {str(e)[:300]}")
-        return None
+                  error_type=type(e).__name__)
+        raise
 
 
 def _warm_store(store: Store) -> None:
@@ -104,21 +106,79 @@ def _warm_store(store: Store) -> None:
 
 
 def run_meeting(txt_path: Path, mode: str, llm: LLM, out_root: Path, cache_dir: Path | None = None) -> dict:
-    """Run unchanged decisions/limits while recording independent provenance and stage snapshots."""
+    """One supervised meeting: shared admission, bounded waits, durable checkpoints and publication."""
     assert mode in MODES
-    effective_cache = cache_dir or config.RUNS / "_cache"
-    observation = RunObservation(txt_path, mode, llm, out_root, effective_cache)
-    before = llm.usage_snapshot()
     try:
-        result = _run_meeting(txt_path, mode, llm, out_root, effective_cache, observation)
+        limits = Limits.configured()
+    except ValueError:
+        return {"mode": mode, "meeting_id": txt_path.stem, "status": "FAILED", "failed_stage": "configuration",
+                "reason": "invalid_limits", "artifacts_saved": False}
+    effective_cache = cache_dir or config.RUNS / "_cache"
+    try:
+        observation = RunObservation(txt_path, mode, llm, out_root, effective_cache)
     except Exception as error:
-        # Observe failures without adding retries or changing the existing exception policy.
-        observation.finish({"status": "ERROR", "error_type": type(error).__name__},
-                           LLM.usage_since(before, llm.usage_snapshot()))
-        raise
+        return {"mode": mode, "meeting_id": txt_path.stem, "status": "FAILED", "failed_stage": "initialize",
+                "reason": "artifact_initialization_failed", "error_type": type(error).__name__, "artifacts_saved": False}
+    before = llm.usage_snapshot()
+    control = None
+    try:
+        control = RunControl(limits, trace=observation.trace)
+        observation.control = control
+        scoped = llm.scoped(control)
+        future = launch(lambda: _run_meeting(txt_path, mode, scoped, out_root, effective_cache, observation))
+        result = control.wait(future)
+        if result["status"] == "COMPLETED":
+            record, report = result.pop("_record"), result.pop("_report")
+            observation.enter("publish")
+            result["output"] = observation.publish(result["meeting_id"], record, report)
+            result["output_sha256"] = sha256(Path(result["output"]))
+            result["report_sha256"] = sha256(Path(result["output"]).with_name(f"{result['meeting_id']}_report.md"))
+    except RunStopped as error:
+        result = {"mode": mode, "meeting_id": observation.data["meeting_id"],
+                  "status": error.failure["status"], "reason": error.failure["code"],
+                  "failed_stage": error.failure["stage"], "failure": error.failure}
+    except KeyboardInterrupt:
+        failure = (control.stop("cancelled", "CANCELLED").failure if control else
+                   {"code": "cancelled", "status": "CANCELLED", "stage": "configuration"})
+        result = {"mode": mode, "meeting_id": observation.data["meeting_id"], "status": failure["status"],
+                  "reason": failure["code"], "failed_stage": failure["stage"], "failure": failure}
+    except Exception as error:
+        failure = (control.stop("stage_failed", "FAILED", error_type=type(error).__name__).failure if control else
+                   {"code": "invalid_limits", "status": "FAILED", "stage": "configuration", "error_type": type(error).__name__})
+        result = {"mode": mode, "meeting_id": observation.data["meeting_id"], "status": failure["status"],
+                  "reason": failure["code"], "failed_stage": failure["stage"], "failure": failure}
+    if control is not None:
+        control.seal()
+        result["runtime_control"] = control.snapshot()
     result.update(run_metadata=str(observation.path), stage_trace=str(observation.stage_path))
-    observation.finish(result, LLM.usage_since(before, llm.usage_snapshot()))
+    usage = control.usage_snapshot() if control is not None else LLM.usage_since(before, llm.usage_snapshot())
+    try:
+        observation.finish(result, usage)
+    except Exception as error:
+        observation.agent_trace.close()
+        if result["status"] == "COMPLETED":
+            result.update(status="FAILED", failed_stage="finalize", reason="artifact_persistence_failed")
+        result.update(artifacts_saved=False, persistence_error_type=type(error).__name__)
+        # A failure to archive traces must not leave a successful commit marker behind.
+        # If persistence itself is unavailable, the returned result is still authoritative.
+        observation.data.update(status=result["status"], result=result)
+        try:
+            observation.trace.finish(stage="run", event="finalization_failed", error_type=type(error).__name__)
+            observation.save(final=True)
+        except Exception:
+            pass
     return result
+
+
+def saved_run_complete(record_path: Path) -> bool:
+    """A prior JSON alone is insufficient after a failed rerun or interrupted publication."""
+    try:
+        metadata = json.loads(record_path.with_suffix(".run.json").read_text(encoding="utf-8"))
+        report = record_path.with_name(f"{record_path.stem}_report.md")
+        return (metadata["status"] == "COMPLETED" and metadata["result"].get("output_sha256") == sha256(record_path)
+                and metadata["result"].get("report_sha256") == sha256(report))
+    except (OSError, ValueError, KeyError, TypeError):
+        return False
 
 
 def _run_meeting(txt_path: Path, mode: str, llm: LLM, out_root: Path, cache_dir: Path,
@@ -131,72 +191,98 @@ def _run_meeting(txt_path: Path, mode: str, llm: LLM, out_root: Path, cache_dir:
     usage0 = llm.usage_snapshot()
     t0 = time.time()
     seconds: dict[str, float] = {}
+    control = observation.control
 
     # N0/N1: input and parser
+    observation.enter("parse")
     try:
         acts = parse_transcript_file(txt_path)
     except (TranscriptParseError, OSError) as e:
-        return {**result, "status": "BLOCKED", "reason": f"parse_error: {e}"}
+        return {**result, "status": "BLOCKED", "reason": "parse_error", "failed_stage": "parse", "error_type": type(e).__name__}
     meeting_id = acts[0]["id"].split(".")[0]
-    observation.data["meeting_id"] = meeting_id
-    observation.trace.context["meeting_id"] = meeting_id
+    observation.update(meeting_id=meeting_id)
+    with control.guard():
+        observation.trace.context["meeting_id"] = meeting_id
     stages = observation.trace
     stages.log(stage="parse", event="completed", dialogue_acts=len(acts))
     series, order = split_meeting_id(meeting_id)
     result["meeting_id"] = meeting_id
-    trace = Trace(out_dir / f"{meeting_id}.trace.jsonl")
+    trace = observation.agent_trace
+    observation.checkpoint("parsed", acts)
 
     # N1b: participants
+    observation.enter("participants")
     store = Store(meeting_id, allow_prior=(mode == "s2"), run_dir=out_dir)
-    observation.data["prior_context"] = [
+    prior_context = [
         {"meeting_id": mid,
          "transcript_sha256": sha256(config.TRANSCRIPTS / f"{mid}.txt")
          if (config.TRANSCRIPTS / f"{mid}.txt").is_file() else None,
          "record_sha256": sha256(out_dir / f"{mid}.json") if (out_dir / f"{mid}.json").is_file() else None}
         for mid in store.visible_ids("prior")
     ]
-    observation.save()
+    observation.update(prior_context=prior_context)
     if meeting_id not in store.participants:
-        return {**result, "status": "BLOCKED", "reason": "participant_error: no roster for this meeting"}
+        return {**result, "status": "BLOCKED", "reason": "participant_error", "failed_stage": "participants"}
     try:
         cur = store.meeting(meeting_id, path=txt_path)
     except KeyError as e:
-        return {**result, "status": "BLOCKED", "reason": f"participant_error: speaker {e} has no roster entry"}
+        return {**result, "status": "BLOCKED", "reason": "participant_error", "failed_stage": "participants"}
 
     # N2/N3: extract and normalise
+    observation.enter("extract")
     t = time.time()
     cands = extract_candidates(llm, cur.acts, store.roster(meeting_id), single_chunk=(mode == "b0"),
                                cache=cache_dir / f"extract_{mode == 'b0'}_{meeting_id}.json", trace=stages)
     seconds["extract"] = round(time.time() - t, 1)
+    observation.checkpoint("extracted", cands)
     if mode != "b0":
+        observation.enter("consolidate")
         t = time.time()
         try:
             cands = consolidate(llm, cands, cache_dir / f"consolidate_{meeting_id}.json", trace=stages)
         except RuntimeError as e:
-            return {**result, "status": "BLOCKED", "reason": f"consolidation_failed: {e}"}
+            return {**result, "status": "BLOCKED", "reason": "consolidation_failed", "failed_stage": "consolidate"}
         seconds["consolidate"] = round(time.time() - t, 1)
+        observation.checkpoint("consolidated", cands)
+    observation.enter("normalize")
     items = normalize(cands, store.participant_ids())
     stages.log(stage="normalize", event="completed", items=items)
+    observation.checkpoint("normalized", items)
 
     # N4: triage (b0 has no follow-up)
+    observation.enter("triage")
     if mode == "b0":
         for it in items:
             it["flags"] = []
     else:
         flag_items(items, store)
     stages.log(stage="triage", event="completed", items=items)
+    observation.checkpoint("triaged", items)
 
     # N5: follow-up agent for flagged items only. Items are independent (they share only the meeting's lookup
     # budget, which is locked), so they run in parallel; the abstract call runs alongside them.
     budget = MeetingBudget()
     flagged = [n for n, it in enumerate(items) if it["flags"]]
+    observation.enter("context")
     _warm_store(store)
+    observation.enter("agent+abstract")
     t = time.time()
-    with ThreadPoolExecutor(max_workers=max(1, config.WORKERS)) as pool:
-        drafts_job = pool.submit(draft_abstracts, llm, items)
-        jobs = {n: pool.submit(_safe_agent, llm, store, items[n], budget, trace, f"{meeting_id}#{n}") for n in flagged}
-        agent_fields = {n: j.result() for n, j in jobs.items()}
-        drafts = drafts_job.result()
+
+    def abstracts():
+        drafts = draft_abstracts(llm, items)
+        observation.checkpoint("abstracts", drafts)
+        return drafts
+
+    def agent_item(n):
+        fields = _safe_agent(llm, store, items[n], budget, trace, f"{meeting_id}#{n}")
+        observation.checkpoint(f"agent_item_{n}", {"item": n, "fields": fields})
+        return fields
+
+    with stage_pool(max(1, config.WORKERS), control) as pool:
+        drafts_job = pool.submit(abstracts)
+        jobs = {n: pool.submit(agent_item, n) for n in flagged}
+        agent_fields = {n: control.wait(j) for n, j in jobs.items()}
+        drafts = control.wait(drafts_job)
     seconds["agent+abstract"] = round(time.time() - t, 1)  # the two run in parallel
     agent_runs, fallbacks = len(flagged), sum(1 for f in agent_fields.values() if f is None)
     for n, it in enumerate(items):
@@ -206,31 +292,35 @@ def _run_meeting(txt_path: Path, mode: str, llm: LLM, out_root: Path, cache_dir:
         it["fields"] = fields or default_fields(store, it)
 
     # N7: assemble
+    observation.enter("assemble")
     record = make_record(meeting_id, items, attach_abstract_refs(drafts, items))
     stages.log(stage="assemble", event="completed", records=record,
                item_record_map={f"{meeting_id}#{n}": r["id"] for n, r in enumerate(record[:len(items)])})
+    observation.checkpoint("assembled", record)
 
     # N8/N9: validate, repair once, validate again
+    observation.enter("validate")
     errors = check(record, store)
     repairs = []
     if errors:
         repairs = repair(record, store)
         errors = check(record, store)
     stages.log(stage="validate", event="completed", errors=errors, repairs=repairs)
+    observation.checkpoint("validated", {"draft": record, "errors": errors, "repairs": repairs})
     if errors:
-        (out_dir / f"{meeting_id}.blocked.json").write_text(
-            json.dumps({"errors": errors, "draft": record}, indent=1, ensure_ascii=False), encoding="utf-8")
-        return {**result, "status": "BLOCKED", "reason": "validation_failed", "errors": errors[:10]}
+        write_json(out_dir / f"{meeting_id}.blocked.json", {"errors": errors, "draft": record}, control)
+        return {**result, "status": "BLOCKED", "reason": "validation_failed", "failed_stage": "validate", "errors": errors[:10]}
 
     # N10: write outputs (the JSON also feeds the next meeting's context store)
-    (out_dir / f"{meeting_id}.json").write_text(json.dumps(record, indent=1, ensure_ascii=False), encoding="utf-8")
+    observation.enter("render")
     usage = LLM.usage_since(usage0, llm.usage_snapshot())
     seconds["total"] = round(time.time() - t0, 1)
     notes = {"items": sum(1 for r in record if r["type"] != "abstract"), "flagged": sum(1 for i in items if i["flags"]),
              "agent runs": agent_runs, "agent fallbacks": fallbacks, "lookups used": budget.used,
              "repairs": len(repairs), "input tokens": usage["in"], "output tokens": usage["out"],
              "llm calls": usage["calls"], "seconds": seconds["total"]}
-    (out_dir / f"{meeting_id}_report.md").write_text(render_report(record, store, mode, notes), encoding="utf-8")
+    report = render_report(record, store, mode, notes)
+    observation.checkpoint("report", {"markdown": report})
     # Per-stage cost (calls / tokens) and wall time; cache hits cost nothing and do not appear in `stages`.
     return {**result, **notes, "stages": usage["stages"], "stage_seconds": seconds,
-            "output": str(out_dir / f"{meeting_id}.json")}
+            "_record": record, "_report": report}

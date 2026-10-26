@@ -2,18 +2,21 @@
 from __future__ import annotations
 
 import hashlib
+import copy
 from importlib.metadata import PackageNotFoundError, version
 import json
+import os
 from pathlib import Path
 import platform
 import subprocess
+import shutil
 import time
 from datetime import datetime, timezone
 from urllib.parse import urlsplit, urlunsplit
 from uuid import uuid4
 
 from . import config
-from .trace import StageTrace
+from .trace import StageTrace, Trace
 
 REPOSITORY = Path(__file__).resolve().parents[3]
 SETTINGS = (
@@ -21,6 +24,8 @@ SETTINGS = (
     "EFFORT_EXTRACT", "EFFORT_CONSOLIDATE", "EFFORT_AGENT", "EFFORT_ABSTRACT", "PRIOR_JACCARD",
     "MAX_CALLS_PER_ITEM", "MAX_CALLS_PER_MEETING", "MAX_INVALID_ACTIONS", "MAX_NO_PROGRESS",
     "MAX_FINISH_TRIES", "MAX_AGENT_STEPS", "OPENAI_MIN_COMPLETION_TOKENS",
+    "MAX_MODEL_CALLS", "MAX_TOTAL_TOKENS", "REQUEST_TIMEOUT", "MEETING_TIMEOUT", "MAX_INFLIGHT",
+    "TRANSPORT_RETRIES", "RETRY_BACKOFF", "INPUT_TOKEN_PADDING",
 )
 
 
@@ -36,9 +41,24 @@ def utc_now() -> str:
     return datetime.now(timezone.utc).isoformat()
 
 
-def write_json(path: Path, value) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(value, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+def write_text(path: Path, text: str, control=None) -> None:
+    def write():
+        path.parent.mkdir(parents=True, exist_ok=True)
+        temporary = path.with_name(f".{path.name}.{uuid4().hex}.tmp")
+        try:
+            temporary.write_text(text, encoding="utf-8")
+            os.replace(temporary, path)
+        finally:
+            temporary.unlink(missing_ok=True)
+    if control is None:
+        write()
+    else:
+        with control.guard():
+            write()
+
+
+def write_json(path: Path, value, control=None) -> None:
+    write_text(path, json.dumps(value, indent=2, ensure_ascii=False) + "\n", control)
 
 
 def source_files() -> list[Path]:
@@ -101,24 +121,93 @@ class RunObservation:
         self.path = out_root / mode / f"{txt_path.stem}.run.json"
         self.stage_path = out_root / mode / f"{txt_path.stem}.stages.jsonl"
         run_id = uuid4().hex
+        self.control = None
+        self.agent_path = out_root / mode / f"{txt_path.stem}.trace.jsonl"
+        self.attempt_dir = out_root / mode / "_attempts" / txt_path.stem / run_id
+        self.attempt_dir.mkdir(parents=True, exist_ok=False)
+        # Preserve earlier outputs/traces before the latest-run sidecars are replaced.
+        previous = [self.path, self.stage_path, self.agent_path,
+                    out_root / mode / f"{txt_path.stem}.json", out_root / mode / f"{txt_path.stem}_report.md"]
+        for path in previous:
+            if path.is_file():
+                target = self.attempt_dir / "previous" / path.name
+                target.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copyfile(path, target)
         self.trace = StageTrace(self.stage_path, run_id=run_id)
-        self.data = {"format_version": 1, "run_id": run_id, "meeting_id": txt_path.stem, "mode": mode,
+        self.agent_trace = Trace(self.agent_path)
+        self.data = {"format_version": 2, "run_id": run_id, "meeting_id": txt_path.stem, "mode": mode,
                      "status": "RUNNING", "started_at": utc_now(), **runtime_identity(llm),
                      "input": {"path": str(txt_path.resolve()),
                                "sha256": sha256(txt_path) if txt_path.is_file() else None},
                      "context_sha256": {p.name: sha256(p) for p in
                                         (config.PARTICIPANTS, config.SCENARIO, config.SCHEMA) if p.is_file()},
                      "cache_directory": str(cache_dir.resolve()),
-                     "artifacts": {"metadata": str(self.path), "stages": str(self.stage_path)}}
+                     "checkpoints": {}, "artifacts": {"metadata": str(self.path), "stages": str(self.stage_path),
+                     "agent_trace": str(self.agent_path), "attempt_directory": str(self.attempt_dir)}}
         self.save()
         self.trace.log(stage="run", event="started", meeting_id=txt_path.stem, mode=mode)
 
-    def save(self):
-        write_json(self.path, self.data)
+    def save(self, final=False):
+        write_json(self.path, self.data, None if final else self.control)
+
+    def enter(self, stage):
+        self.control.enter(stage)
+        with self.control.guard():
+            self.data["current_stage"] = stage
+            self.save()
+
+    def update(self, **data):
+        with self.control.guard():
+            self.data.update(data)
+            self.save()
+
+    def checkpoint(self, name, value):
+        with self.control.guard():
+            path = self.attempt_dir / "checkpoints" / f"{name}.json"
+            write_json(path, copy.deepcopy(value))
+            self.data["checkpoints"][name] = str(path)
+            self.save()
+
+    def publish(self, meeting_id, record, report):
+        """Only the supervisor publishes validated results; restore old bytes on any failure."""
+        record_path = self.path.parent / f"{meeting_id}.json"
+        report_path = self.path.parent / f"{meeting_id}_report.md"
+        with self.control.guard():
+            old = {p: p.read_bytes() if p.is_file() else None for p in (record_path, report_path)}
+            try:
+                write_json(record_path, record)
+                write_text(report_path, report)
+                self.control.check("publish")
+            except BaseException:
+                for path, contents in old.items():
+                    if contents is None:
+                        path.unlink(missing_ok=True)
+                    else:
+                        temporary = path.with_name(f".{path.name}.{uuid4().hex}.rollback")
+                        temporary.write_bytes(contents)
+                        os.replace(temporary, path)
+                raise
+        return str(record_path)
 
     def finish(self, result: dict, usage: dict):
+        self.agent_trace.close()
         self.data.update(status=result["status"], finished_at=utc_now(),
                          elapsed_seconds=round(time.monotonic() - self.started, 3), usage=usage)
         self.data["result"] = result
-        self.trace.log(stage="run", event="finished", status=result["status"], usage=usage)
-        self.save()
+        if self.control is not None:
+            self.data["runtime_control"] = self.control.snapshot()
+        self.trace.finish(stage="run", event="finished", status=result["status"], usage=usage)
+        if result["status"] != "COMPLETED":
+            partial = self.attempt_dir / "partial.json"
+            write_json(partial, {"run_id": self.data["run_id"], "status": result["status"],
+                                "failure": result.get("failure", {"code": result.get("reason")}),
+                                "checkpoints": self.data["checkpoints"],
+                                "stages": str(self.attempt_dir / "stages.jsonl"),
+                                "agent_trace": str(self.attempt_dir / "agent.trace.jsonl")})
+            result["partial_artifact"] = str(partial)
+        write_json(self.attempt_dir / "run.json", self.data)
+        shutil.copyfile(self.stage_path, self.attempt_dir / "stages.jsonl")
+        shutil.copyfile(self.agent_path, self.attempt_dir / "agent.trace.jsonl")
+        # The latest terminal metadata is the commit marker used by the series runner.
+        # Do not expose COMPLETED until the attempt's required artifacts are durable.
+        self.save(final=True)

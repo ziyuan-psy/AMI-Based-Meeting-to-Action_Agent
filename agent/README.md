@@ -15,6 +15,26 @@ py -V:Astral/CPython3.13.7 -m venv .venv
 .venv\Scripts\python scripts\prepare_data.py --ami-dir "<...>\ami-corpus\ami-corpus"   # already done: data/participants.json
 ```
 
+## Shared transcript parser
+
+The only parser implementation is [`../transcript_parser.py`](../transcript_parser.py).
+`src/mta/transcript_parser.py` forwards its public functions, exceptions and CLI to that module;
+existing agent commands with `PYTHONPATH=src` still work from `agent/`. Keep the full repository
+checkout available when running the agent. Parser fixes belong in the root module only.
+
+Parsing returns the dialogue-act records directly in memory. Writing an intermediate JSON file
+is optional. The root parser CLI remains available; the compatibility CLI can also be used from
+`agent/` (PowerShell):
+
+```powershell
+$env:PYTHONPATH = "src"
+python -m mta.transcript_parser --help
+```
+
+[`../scripts/export_transcripts.py`](../scripts/export_transcripts.py) stays a separate data-preparation
+tool: it converts original AMI dialogue-act JSON to TXT. Participant/role enrichment remains a
+separate step after parsing. Output paths and annotation-write protections use the repository root.
+
 ## Run
 ```
 set PYTHONPATH=src

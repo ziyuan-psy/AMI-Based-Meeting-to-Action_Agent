@@ -46,6 +46,49 @@ set PYTHONPATH=src
 Outputs go to `runs/<mode>/`: `<meeting>.json`, `<meeting>_report.md`, `<meeting>.trace.jsonl`.
 Held-out series (ES2004, TS3007) are refused unless `--allow-sc`; use it once, after the design is frozen.
 
+## Stage trace and development baselines
+
+Every `run_meeting` call now also writes two sidecar files (the item schema is unchanged):
+
+- `<meeting>.stages.jsonl`: raw extraction attempts and rejected candidates; final candidate order;
+  each consolidation attempt's raw groups, member-index lineage, merged items and per-type caps;
+  majority-vote clusters and counts; restored actions and final caps; normalization, triage and validation.
+- `<meeting>.run.json`: unique run ID, actual model/client, effective settings, prompt text/hashes,
+  Git commit/branch and hashes of runtime source (including uncommitted files), input/context hashes,
+  cache location, final status and per-meeting usage. Credentials and `.env` files are excluded.
+
+The original `.trace.jsonl` remains the agent's tool-decision log for existing consumers. Stage snapshots
+are deep copies, so later normalization/triage does not rewrite earlier evidence. Candidate `members`
+indexes refer to the ordered candidates in the `extract/completed` event. Each `consolidate/attempt`
+contains nested `raw_groups`, `merged` and `cap` events; `merged.lineage` maps groups back to candidate indexes.
+The `consolidate/vote` event explains which clusters reached the majority threshold; `cap.dropped`
+shows the items removed by quantity limits. `assemble.item_record_map` links agent item keys to final IDs.
+
+Cache hits are explicitly labeled. New consolidation caches preserve their recorded intermediate events;
+older caches still work but report `detail_available: false` when pre-cap/group information was not saved.
+Those missing historical details cannot be reconstructed from the already-capped cached items.
+
+To save a new SB development baseline, run from `agent/` (PowerShell):
+
+```powershell
+$env:PYTHONPATH = "src"
+.\.venv\Scripts\python.exe -m mta.baseline --out results/dev_baselines/trace-v1 --meetings TS3006a TS3006b --modes s1 s2
+```
+
+This calls the configured model. The destination must be new; earlier captures are never overwritten.
+The bundle contains `BASELINE.md`, `baseline.json`, all meeting artifacts and local caches, plus a `source/`
+snapshot of runtime code and selected inputs/context. Its manifest hashes every saved artifact. Model names
+and a Git hash alone do not identify uncommitted source; use the source digest and captured files as well.
+For S2, all earlier meetings must be selected so the context comes from that baseline's own system outputs.
+Only SB series are accepted, and no gold labels or evaluation judges are used.
+
+The cache starts cold and is shared across modes inside the bundle so S1/S2 see the same extracted items.
+Consequently, S2 latency can include cache reuse; consult each run's stage trace/usage rather than treating
+these timings as cold end-to-end comparisons. Final quality evaluation remains a separate task.
+
+Saved capture: [TS3006a/b trace baseline](results/dev_baselines/trace-v1-ts3006ab/BASELINE.md),
+with real S1/S2 outputs, source/input snapshots and checksummed artifacts.
+
 Evaluation (`mta.evaluate --judge`, `mta.support`, `scripts/full_eval.py`) uses the pipeline model as the LLM judge.
 Optional: `MTA_JUDGE=claude` switches the judge to Claude (`claude-opus-5-5`, effort `high`; override with
 `MTA_JUDGE_MODEL`, `MTA_JUDGE_EFFORT`); this needs `anthropic` and `ANTHROPIC_API_KEY`, and keeps separate caches.

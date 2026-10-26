@@ -11,6 +11,7 @@ from . import config
 from .agent import MeetingBudget, build_reference, run_agent
 from .extract import _strip_indexes, consolidate, extract_candidates, normalize
 from .llm import LLM
+from .observation import RunObservation, sha256
 from .prompts import ABSTRACT_SYSTEM
 from .render import render_report
 from .store import Store, split_meeting_id
@@ -103,6 +104,25 @@ def _warm_store(store: Store) -> None:
 
 
 def run_meeting(txt_path: Path, mode: str, llm: LLM, out_root: Path, cache_dir: Path | None = None) -> dict:
+    """Run unchanged decisions/limits while recording independent provenance and stage snapshots."""
+    assert mode in MODES
+    effective_cache = cache_dir or config.RUNS / "_cache"
+    observation = RunObservation(txt_path, mode, llm, out_root, effective_cache)
+    before = llm.usage_snapshot()
+    try:
+        result = _run_meeting(txt_path, mode, llm, out_root, effective_cache, observation)
+    except Exception as error:
+        # Observe failures without adding retries or changing the existing exception policy.
+        observation.finish({"status": "ERROR", "error_type": type(error).__name__},
+                           LLM.usage_since(before, llm.usage_snapshot()))
+        raise
+    result.update(run_metadata=str(observation.path), stage_trace=str(observation.stage_path))
+    observation.finish(result, LLM.usage_since(before, llm.usage_snapshot()))
+    return result
+
+
+def _run_meeting(txt_path: Path, mode: str, llm: LLM, out_root: Path, cache_dir: Path,
+                 observation: RunObservation) -> dict:
     assert mode in MODES
     out_dir = out_root / mode
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -118,12 +138,24 @@ def run_meeting(txt_path: Path, mode: str, llm: LLM, out_root: Path, cache_dir: 
     except (TranscriptParseError, OSError) as e:
         return {**result, "status": "BLOCKED", "reason": f"parse_error: {e}"}
     meeting_id = acts[0]["id"].split(".")[0]
+    observation.data["meeting_id"] = meeting_id
+    observation.trace.context["meeting_id"] = meeting_id
+    stages = observation.trace
+    stages.log(stage="parse", event="completed", dialogue_acts=len(acts))
     series, order = split_meeting_id(meeting_id)
     result["meeting_id"] = meeting_id
     trace = Trace(out_dir / f"{meeting_id}.trace.jsonl")
 
     # N1b: participants
     store = Store(meeting_id, allow_prior=(mode == "s2"), run_dir=out_dir)
+    observation.data["prior_context"] = [
+        {"meeting_id": mid,
+         "transcript_sha256": sha256(config.TRANSCRIPTS / f"{mid}.txt")
+         if (config.TRANSCRIPTS / f"{mid}.txt").is_file() else None,
+         "record_sha256": sha256(out_dir / f"{mid}.json") if (out_dir / f"{mid}.json").is_file() else None}
+        for mid in store.visible_ids("prior")
+    ]
+    observation.save()
     if meeting_id not in store.participants:
         return {**result, "status": "BLOCKED", "reason": "participant_error: no roster for this meeting"}
     try:
@@ -134,16 +166,17 @@ def run_meeting(txt_path: Path, mode: str, llm: LLM, out_root: Path, cache_dir: 
     # N2/N3: extract and normalise
     t = time.time()
     cands = extract_candidates(llm, cur.acts, store.roster(meeting_id), single_chunk=(mode == "b0"),
-                               cache=(cache_dir or config.RUNS / "_cache") / f"extract_{mode == 'b0'}_{meeting_id}.json")
+                               cache=cache_dir / f"extract_{mode == 'b0'}_{meeting_id}.json", trace=stages)
     seconds["extract"] = round(time.time() - t, 1)
     if mode != "b0":
         t = time.time()
         try:
-            cands = consolidate(llm, cands, (cache_dir or config.RUNS / "_cache") / f"consolidate_{meeting_id}.json")
+            cands = consolidate(llm, cands, cache_dir / f"consolidate_{meeting_id}.json", trace=stages)
         except RuntimeError as e:
             return {**result, "status": "BLOCKED", "reason": f"consolidation_failed: {e}"}
         seconds["consolidate"] = round(time.time() - t, 1)
     items = normalize(cands, store.participant_ids())
+    stages.log(stage="normalize", event="completed", items=items)
 
     # N4: triage (b0 has no follow-up)
     if mode == "b0":
@@ -151,6 +184,7 @@ def run_meeting(txt_path: Path, mode: str, llm: LLM, out_root: Path, cache_dir: 
             it["flags"] = []
     else:
         flag_items(items, store)
+    stages.log(stage="triage", event="completed", items=items)
 
     # N5: follow-up agent for flagged items only. Items are independent (they share only the meeting's lookup
     # budget, which is locked), so they run in parallel; the abstract call runs alongside them.
@@ -173,6 +207,8 @@ def run_meeting(txt_path: Path, mode: str, llm: LLM, out_root: Path, cache_dir: 
 
     # N7: assemble
     record = make_record(meeting_id, items, attach_abstract_refs(drafts, items))
+    stages.log(stage="assemble", event="completed", records=record,
+               item_record_map={f"{meeting_id}#{n}": r["id"] for n, r in enumerate(record[:len(items)])})
 
     # N8/N9: validate, repair once, validate again
     errors = check(record, store)
@@ -180,6 +216,7 @@ def run_meeting(txt_path: Path, mode: str, llm: LLM, out_root: Path, cache_dir: 
     if errors:
         repairs = repair(record, store)
         errors = check(record, store)
+    stages.log(stage="validate", event="completed", errors=errors, repairs=repairs)
     if errors:
         (out_dir / f"{meeting_id}.blocked.json").write_text(
             json.dumps({"errors": errors, "draft": record}, indent=1, ensure_ascii=False), encoding="utf-8")

@@ -12,6 +12,12 @@ from . import config
 from .llm import LLM
 from .prompts import CONSOLIDATE_SYSTEM, EXTRACT_SYSTEM
 from .store import tokenize
+from .trace import StageTrace
+
+
+def _audit(trace, stage: str, event: str, **data):
+    if trace is not None:
+        trace.log(stage=stage, event=event, **data)
 
 BASIS = ["explicit", "inferred", "ambiguous", "missing"]
 STATUSES = ["open", "in_progress", "completed", "cancelled", "deferred", "unknown",
@@ -90,22 +96,28 @@ def _lines(acts: list[dict], a: int, b: int) -> list[str]:
 
 
 def _call(llm: LLM, roster_txt: str, note: str, acts: list[dict], a: int, b: int, keep: set[str],
-          retry_empty: bool = False) -> list[dict]:
+          retry_empty: bool = False, trace=None, job: dict | None = None) -> list[dict]:
     """One extraction call. `retry_empty`: for whole-meeting passes, where zero usable items almost always means a
     bad response (e.g. an empty list or no valid evidence), ask again up to EMPTY_RETRIES times."""
     user = f"Roster:{NL}{roster_txt}{NL}{NL}{note}{NL}{NL}Transcript:{NL}" + NL.join(_lines(acts, a, b))
     out: list[dict] = []
-    for _ in range(1 + (config.EMPTY_RETRIES if retry_empty else 0)):
+    for attempt in range(1 + (config.EMPTY_RETRIES if retry_empty else 0)):
         res = llm.forced_tool(EXTRACT_SYSTEM, user, "submit_candidates", CANDIDATE_SCHEMA, effort=config.EFFORT_EXTRACT,
                               stage="extract")
-        out = []
-        for it in res.get("items") or []:
+        out, rejected, accepted = [], [], []
+        for index, it in enumerate(res.get("items") or []):
             if not isinstance(it, dict) or it.get("type") not in keep:
+                rejected.append({"raw_index": index, "reason": "invalid_or_unrequested_type"})
                 continue
             ev = [acts[i]["id"] for i in dict.fromkeys(it.get("evidence") or []) if isinstance(i, int) and a <= i < b]
             clean = _clean(it, ev) if ev else None  # candidates without real evidence are dropped
             if clean:
+                accepted.append({"raw_index": index, "candidate_index": len(out)})
                 out.append(clean)
+            else:
+                rejected.append({"raw_index": index, "reason": "no_valid_evidence" if not ev else "empty_text"})
+        _audit(trace, "extract", "attempt", job=job, attempt=attempt, raw_items=res.get("items"),
+               candidates=out, accepted=accepted, rejected=rejected)
         if out:
             break
     return out
@@ -137,7 +149,7 @@ def union_actions(samples: list[list[dict]]) -> list[dict]:
 
 
 def extract_candidates(llm: LLM, acts: list[dict], roster: list[dict], single_chunk: bool = False,
-                       cache: Path | None = None) -> list[dict]:
+                       cache: Path | None = None, trace=None) -> list[dict]:
     """Decisions/problems come from overlapping chunks (they are local); actions from passes over the whole
     meeting (they are global: assignments refer back to the whole discussion), sampled config.ACTION_SAMPLES times
     and united to raise recall. `single_chunk` is the one-shot baseline: one call, all types.
@@ -159,6 +171,7 @@ def extract_candidates(llm: LLM, acts: list[dict], roster: list[dict], single_ch
         p = saved.get(part) or {}
         return p if p.get("key") == keys[part] else None
 
+    cached_action_samples = [s for s in (cached("action_pass") or {}).get("samples", []) if s]
     jobs = []  # (part, note, a, b, keep, retry_empty)
     if single_chunk:
         if not (cached("single") or {}).get("candidates"):
@@ -167,11 +180,13 @@ def extract_candidates(llm: LLM, acts: list[dict], roster: list[dict], single_ch
         if cached("chunk_pass") is None:  # an empty chunk pass is a real answer (nothing local to list); keep it
             jobs += [("chunk_pass", CHUNK_NOTE, a, b, {"decisions", "problems"}, False)
                      for a, b in chunks(len(acts), config.CHUNK, config.OVERLAP)]
-        have = [s for s in (cached("action_pass") or {}).get("samples", []) if s]
+        have = cached_action_samples
         jobs += [("action_pass", ACTION_PASS_NOTE, 0, len(acts), {"actions"}, True)] * max(0, config.ACTION_SAMPLES - len(have))
     # The calls are independent: run them together; results keep the job order (chunks in transcript order).
     with ThreadPoolExecutor(max_workers=max(1, config.WORKERS)) as pool:
-        parts = list(pool.map(lambda j: _call(llm, roster_txt, j[1], acts, j[2], j[3], j[4], retry_empty=j[5]), jobs))
+        parts = list(pool.map(lambda ij: _call(
+            llm, roster_txt, ij[1][1], acts, ij[1][2], ij[1][3], ij[1][4], retry_empty=ij[1][5], trace=trace,
+            job={"index": ij[0], "part": ij[1][0], "start": ij[1][2], "end": ij[1][3]}), enumerate(jobs)))
     new = {"single": [], "chunk_pass": [], "action_pass": []}
     for (part, *_), res in zip(jobs, parts):
         if part == "action_pass":
@@ -187,6 +202,9 @@ def extract_candidates(llm: LLM, acts: list[dict], roster: list[dict], single_ch
         # Whole-meeting results are never cached empty (an empty b0 answer is almost always a bad response).
         if ran and (got or part == "chunk_pass"):
             saved[part] = {"key": keys[part], "candidates": got}
+        if part == ("single" if single_chunk else "chunk_pass"):
+            _audit(trace, "extract", "part", part=part, cache_key=keys[part],
+                   source="model" if ran else "cache", candidates=got)
     samples = [s for s in ((cached("action_pass") or {}).get("samples", []) + new["action_pass"]) if s]
     if samples:
         saved["action_pass"] = {"key": keys["action_pass"], "samples": samples}
@@ -195,8 +213,16 @@ def extract_candidates(llm: LLM, acts: list[dict], roster: list[dict], single_ch
         cache.parent.mkdir(parents=True, exist_ok=True)
         cache.write_text(json.dumps(saved, ensure_ascii=False), encoding="utf-8")
     if single_chunk:
-        return out_parts["single"]
-    return out_parts["chunk_pass"] + union_actions(samples[:config.ACTION_SAMPLES])
+        out = out_parts["single"]
+    else:
+        selected = samples[:config.ACTION_SAMPLES]
+        actions = union_actions(selected)
+        _audit(trace, "extract", "action_union", cache_key=keys["action_pass"], samples=selected, kept=actions,
+               cached_samples=min(len(cached_action_samples), config.ACTION_SAMPLES))
+        out = out_parts["chunk_pass"] + actions
+    _audit(trace, "extract", "completed", candidates=out,
+           counts=dict(Counter(c["type"] for c in out)))
+    return out
 
 
 def _jaccard(a: str, b: str) -> float:
@@ -257,12 +283,14 @@ def _strip_indexes(text: str) -> str:
     return re.sub(r"\s{2,}", " ", _INDEX_LIST.sub("", text)).strip()
 
 
-def _merge_groups(groups: list[dict], cands: list[dict]) -> list[dict]:
-    out = []
-    for g in groups:
-        members = [cands[i] for i in dict.fromkeys(g.get("members", [])) if isinstance(i, int) and 0 <= i < len(cands)]
+def _merge_groups(groups: list[dict], cands: list[dict], trace=None) -> list[dict]:
+    out, lineage, rejected = [], [], []
+    for group_index, g in enumerate(groups):
+        member_indexes = [i for i in dict.fromkeys(g.get("members", [])) if isinstance(i, int) and 0 <= i < len(cands)]
+        members = [cands[i] for i in member_indexes]
         text = _strip_indexes(str(g.get("text", "")))
         if g.get("type") not in VALID_STATUS or not members or not text:
+            rejected.append({"group_index": group_index, "reason": "invalid_type_members_or_text"})
             continue
         typ = g["type"]
         member_types = Counter(m["type"] for m in members)
@@ -281,21 +309,28 @@ def _merge_groups(groups: list[dict], cands: list[dict]) -> list[dict]:
         if with_dl:
             merged.update(deadline=with_dl[0]["deadline"], deadline_basis=with_dl[0]["deadline_basis"],
                           deadline_cue=with_dl[0].get("deadline_cue"))
+        lineage.append({"group_index": group_index, "candidate_indexes": member_indexes, "item_index": len(out),
+                        "requested_type": g["type"], "actual_type": typ})
         out.append(merged)
-    return _cap(out)
+    _audit(trace, "consolidate", "merged", groups=groups, items=out, lineage=lineage, rejected=rejected)
+    return _cap(out, trace, phase="sample")
 
 
-def _cap(items: list[dict]) -> list[dict]:
+def _cap(items: list[dict], trace=None, phase: str = "final") -> list[dict]:
     """Hard cap per type. The prompt asks for the most important items first, so the tail is what gets cut."""
-    kept, seen = [], Counter()
+    kept, dropped, seen = [], [], Counter()
     for it in items:
         seen[it["type"]] += 1
         if seen[it["type"]] <= config.MAX_ITEMS[it["type"]]:
             kept.append(it)
+        else:
+            dropped.append({"item": it, "reason": "type_limit", "rank": seen[it["type"]],
+                            "limit": config.MAX_ITEMS[it["type"]]})
+    _audit(trace, "consolidate", "cap", phase=phase, limits=config.MAX_ITEMS, before=items, kept=kept, dropped=dropped)
     return kept
 
 
-def restore_actions(items: list[dict], cands: list[dict]) -> list[dict]:
+def restore_actions(items: list[dict], cands: list[dict], trace=None) -> list[dict]:
     """Put back action candidates that consolidation dropped, then cap again.
 
     The action pass reads the whole meeting and already lists few candidates, but consolidation sometimes drops all
@@ -312,13 +347,15 @@ def restore_actions(items: list[dict], cands: list[dict]) -> list[dict]:
             continue
         restored.append({**c, "text": _strip_indexes(c["text"]), "restored": True})
         kept_evidence.append(ev)  # a later candidate on the same lines is a duplicate of this one
-    return _cap(items + restored)
+    _audit(trace, "consolidate", "restored_actions", before=items, restored=restored)
+    return _cap(items + restored, trace, phase="after_restore")
 
 
-def consolidate(llm: LLM, cands: list[dict], cache: Path | None = None) -> list[dict]:
+def consolidate(llm: LLM, cands: list[dict], cache: Path | None = None, trace=None) -> list[dict]:
     """One pass over all chunk candidates: select substantive items and merge duplicates.
     Cached on disk so that systems being compared (S1/S2) start from the same consolidated items."""
     if len(cands) <= 1:
+        _audit(trace, "consolidate", "skipped", reason="at_most_one_candidate", items=cands)
         return cands
     listing = "\n".join(f"[{i}] ({c['type']}) {c['text']}"
                         + (f" | owner cue: {c['owner_cue']}" if c.get("owner_cue") else "")
@@ -329,31 +366,57 @@ def consolidate(llm: LLM, cands: list[dict], cache: Path | None = None) -> list[
     # The cache holds each sampled consolidation (the model's items); voting and restore_actions run after it on
     # both paths, so changing those rules, or adding samples, needs no repeated consolidation call.
     runs: list[list[dict]] = []
+    run_traces = []
     if cache and cache.exists():
         saved = json.loads(cache.read_text(encoding="utf-8"))
         if saved.get("key") == key:
             runs = saved.get("runs") or ([saved["items"]] if saved.get("items") else [])
+            run_traces = saved.get("run_traces", [])
+    run_traces += [None] * (len(runs) - len(run_traces))
+    for index, items in enumerate(runs[:config.CONSOLIDATE_SAMPLES]):
+        _audit(trace, "consolidate", "sample", sample=index, source="cache", cache_key=key, items=items,
+               recorded_attempts=run_traces[index],
+               detail_available=run_traces[index] is not None)
     missing = max(0, config.CONSOLIDATE_SAMPLES - len(runs))
     if missing:
-        def one_run(_):
+        first_sample = len(runs)
+
+        def one_run(index):
+            attempts = []
             for _attempt in range(3):  # the model sometimes returns an empty or unusable list
                 res = llm.forced_tool(CONSOLIDATE_SYSTEM, "Candidates:" + chr(10) + listing, "submit_final_items",
                                       CONSOLIDATE_SCHEMA, effort=config.EFFORT_CONSOLIDATE, stage="consolidate")
-                out = _merge_groups([g for g in res.get("items", []) if g.get("type") in VALID_STATUS], cands)
+                detail = StageTrace()
+                detail.log(stage="consolidate", event="raw_groups", groups=res.get("items", []))
+                out = _merge_groups([g for g in res.get("items", []) if g.get("type") in VALID_STATUS], cands, detail)
+                attempts.append({"attempt": _attempt, "events": detail.events})
+                _audit(trace, "consolidate", "attempt", sample=index, attempt=_attempt, cache_key=key,
+                       source="model", events=detail.events, items=out)
                 if out:
-                    return out
-            return None
+                    return out, attempts
+            return None, attempts
         with ThreadPoolExecutor(max_workers=max(1, min(missing, config.WORKERS))) as pool:
-            runs += [r for r in pool.map(one_run, range(missing)) if r]
+            for items, details in pool.map(one_run, range(first_sample, first_sample + missing)):
+                if items:
+                    runs.append(items)
+                    run_traces.append(details)
         if cache and runs:
-            cache.write_text(json.dumps({"key": key, "runs": runs}, ensure_ascii=False), encoding="utf-8")
+            cache.write_text(json.dumps({"key": key, "runs": runs, "run_traces": run_traces}, ensure_ascii=False), encoding="utf-8")
     if not runs:  # never fall back to the raw candidates
         raise RuntimeError("consolidation produced no usable items after 3 attempts")
     runs = runs[:config.CONSOLIDATE_SAMPLES]
-    return restore_actions(vote_items(runs) if len(runs) > 1 else runs[0], cands)
+    _audit(trace, "consolidate", "samples", runs=runs, cache_key=key)
+    if len(runs) > 1:
+        voted = vote_items(runs, trace)
+    else:
+        voted = runs[0]
+        _audit(trace, "consolidate", "vote_skipped", reason="one_usable_sample", kept=voted)
+    out = restore_actions(voted, cands, trace)
+    _audit(trace, "consolidate", "completed", items=out)
+    return out
 
 
-def vote_items(runs: list[list[dict]]) -> list[dict]:
+def vote_items(runs: list[list[dict]], trace=None) -> list[dict]:
     """Keep the items that a majority of the sampled consolidations agree on.
 
     Two items from different runs are the same item when they have the same type and cite mostly the same lines
@@ -376,4 +439,7 @@ def vote_items(runs: list[list[dict]]) -> list[dict]:
     need = len(runs) // 2 + 1
     kept = [c for c in clusters if len(c["runs"]) >= need]
     kept.sort(key=lambda c: (sum(c["pos"]) / len(c["pos"]), c["order"]))
+    _audit(trace, "consolidate", "vote", samples=len(runs), threshold=need,
+           clusters=[{"item": c["rep"], "runs": sorted(c["runs"]), "votes": len(c["runs"]),
+                      "kept": len(c["runs"]) >= need} for c in clusters], kept=[c["rep"] for c in kept])
     return [c["rep"] for c in kept]

@@ -239,7 +239,8 @@ def _run_meeting(txt_path: Path, mode: str, llm: LLM, out_root: Path, cache_dir:
         observation.enter("consolidate")
         t = time.time()
         try:
-            cands = consolidate(llm, cands, cache_dir / f"consolidate_{meeting_id}.json", trace=stages)
+            cands = consolidate(llm, cands, cache_dir / f"consolidate_{meeting_id}.json", trace=stages,
+                                enable_decision_pass=config.DECISION_RECONSOLIDATE)
         except RuntimeError as e:
             return {**result, "status": "BLOCKED", "reason": "consolidation_failed", "failed_stage": "consolidate"}
         seconds["consolidate"] = round(time.time() - t, 1)

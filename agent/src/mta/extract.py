@@ -11,9 +11,9 @@ from . import config
 from .control import stage_pool
 from .llm import LLM
 from .observation import write_json
-from .prompts import CONSOLIDATE_SYSTEM, EXTRACT_SYSTEM
+from .prompts import CONSOLIDATE_SYSTEM, DECISION_CONSOLIDATE_SYSTEM, EXTRACT_SYSTEM
 from .store import tokenize
-from .trace import StageTrace
+from .trace import StageTrace, StageTraceView
 
 
 def _audit(trace, stage: str, event: str, **data):
@@ -305,7 +305,8 @@ def _merge_groups(groups: list[dict], cands: list[dict], trace=None) -> list[dic
         merged = dict(best)
         merged.update(type=typ, text=text,
                       evidence_da_ids=list(dict.fromkeys(e for m in members for e in m["evidence_da_ids"])),
-                      owner_ids=owners if best["owner_basis"] in ("explicit", "inferred") else [])
+                      owner_ids=owners if best["owner_basis"] in ("explicit", "inferred") else [],
+                      candidate_indexes=member_indexes)
         if with_dl:
             merged.update(deadline=with_dl[0]["deadline"], deadline_basis=with_dl[0]["deadline_basis"],
                           deadline_cue=with_dl[0].get("deadline_cue"))
@@ -351,17 +352,19 @@ def restore_actions(items: list[dict], cands: list[dict], trace=None) -> list[di
     return _cap(items + restored, trace, phase="after_restore")
 
 
-def consolidate(llm: LLM, cands: list[dict], cache: Path | None = None, trace=None) -> list[dict]:
+def consolidate(llm: LLM, cands: list[dict], cache: Path | None = None, trace=None,
+                decision_pass=False, enable_decision_pass=False) -> list[dict]:
     """One pass over all chunk candidates: select substantive items and merge duplicates.
     Cached on disk so that systems being compared (S1/S2) start from the same consolidated items."""
     if len(cands) <= 1:
         _audit(trace, "consolidate", "skipped", reason="at_most_one_candidate", items=cands)
         return cands
+    prompt = DECISION_CONSOLIDATE_SYSTEM if decision_pass else CONSOLIDATE_SYSTEM
     listing = "\n".join(f"[{i}] ({c['type']}) {c['text']}"
                         + (f" | owner cue: {c['owner_cue']}" if c.get("owner_cue") else "")
                         + (f" | deadline: {c['deadline']}" if c.get("deadline") else "")
                         for i, c in enumerate(cands))
-    key = hashlib.sha256((CONSOLIDATE_SYSTEM + llm.model + listing + (config.EFFORT_CONSOLIDATE or "")
+    key = hashlib.sha256(("candidate-lineage-v1" + prompt + llm.model + listing + (config.EFFORT_CONSOLIDATE or "")
                           + json.dumps(config.MAX_ITEMS, sort_keys=True)).encode()).hexdigest()[:16]
     # The cache holds each sampled consolidation (the model's items); voting and restore_actions run after it on
     # both paths, so changing those rules, or adding samples, needs no repeated consolidation call.
@@ -384,8 +387,8 @@ def consolidate(llm: LLM, cands: list[dict], cache: Path | None = None, trace=No
         def one_run(index):
             attempts = []
             for _attempt in range(3):  # the model sometimes returns an empty or unusable list
-                res = llm.forced_tool(CONSOLIDATE_SYSTEM, "Candidates:" + chr(10) + listing, "submit_final_items",
-                                      CONSOLIDATE_SCHEMA, effort=config.EFFORT_CONSOLIDATE, stage="consolidate")
+                res = llm.forced_tool(prompt, "Candidates:" + chr(10) + listing, "submit_final_items",
+                                      CONSOLIDATE_SCHEMA, effort=config.EFFORT_CONSOLIDATE, stage="decision_consolidate" if decision_pass else "consolidate")
                 detail = StageTrace()
                 detail.log(stage="consolidate", event="raw_groups", groups=res.get("items", []))
                 out = _merge_groups([g for g in res.get("items", []) if g.get("type") in VALID_STATUS], cands, detail)
@@ -407,21 +410,30 @@ def consolidate(llm: LLM, cands: list[dict], cache: Path | None = None, trace=No
     runs = runs[:config.CONSOLIDATE_SAMPLES]
     _audit(trace, "consolidate", "samples", runs=runs, cache_key=key)
     if len(runs) > 1:
-        voted = vote_items(runs, trace)
+        voted = vote_items(runs, trace, refine_decisions=decision_pass)
     else:
         voted = runs[0]
         _audit(trace, "consolidate", "vote_skipped", reason="one_usable_sample", kept=voted)
     out = restore_actions(voted, cands, trace)
+    if enable_decision_pass and not decision_pass and any(c["type"] == "decisions" for c in cands):
+        before = [i for i in out if i["type"] == "decisions"]
+        decision_cache = cache.with_name(cache.stem + ".decisions.json") if cache else None
+        selected = consolidate(llm, cands, decision_cache, StageTraceView(trace, "decision_consolidate") if trace else None,
+                               decision_pass=True)
+        decisions = [i for i in selected if i["type"] == "decisions"]
+        out = [i for i in out if i["type"] != "decisions"] + decisions
+        _audit(trace, "decision_consolidate", "replaced", before=before, items=decisions)
     _audit(trace, "consolidate", "completed", items=out)
     return out
 
 
-def vote_items(runs: list[list[dict]], trace=None) -> list[dict]:
+def vote_items(runs: list[list[dict]], trace=None, refine_decisions=False) -> list[dict]:
     """Keep the items that a majority of the sampled consolidations agree on.
 
-    Two items from different runs are the same item when they have the same type and cite mostly the same lines
+    Actions/problems from different runs are the same item when they have the same type and cite mostly the same lines
     (overlap >= 0.5 of the smaller evidence set). Each cluster is represented by its item from the earliest run;
-    clusters keep the importance order the runs gave them (mean position within their type)."""
+    clusters keep the importance order the runs gave them (mean position within their type).
+    Decisions use candidate lineage so a broad merged item cannot consume another choice's vote."""
     clusters: list[dict] = []
     for r, items in enumerate(runs):
         pos = Counter()
@@ -437,9 +449,54 @@ def vote_items(runs: list[list[dict]], trace=None) -> list[dict]:
             else:
                 clusters.append({"rep": it, "runs": {r}, "pos": [p], "order": len(clusters)})
     need = len(runs) // 2 + 1
+    decisions = [(r, p, it) for r, run in enumerate(runs)
+                 for p, it in enumerate(i for i in run if i["type"] == "decisions")]
+    if refine_decisions and decisions and all(it.get("candidate_indexes") for _, _, it in decisions):
+        clusters = [c for c in clusters if c["rep"]["type"] != "decisions"]
+        clusters += _decision_clusters(runs, decisions, trace)
+    elif refine_decisions and decisions:
+        _audit(trace, "consolidate", "decision_vote_fallback", reason="candidate_lineage_unavailable")
     kept = [c for c in clusters if len(c["runs"]) >= need]
     kept.sort(key=lambda c: (sum(c["pos"]) / len(c["pos"]), c["order"]))
     _audit(trace, "consolidate", "vote", samples=len(runs), threshold=need,
            clusters=[{"item": c["rep"], "runs": sorted(c["runs"]), "votes": len(c["runs"]),
                       "kept": len(c["runs"]) >= need} for c in clusters], kept=[c["rep"] for c in kept])
     return [c["rep"] for c in kept]
+
+
+def _decision_clusters(runs, decisions, trace=None):
+    """Vote for the finest observed choices, allowing a broad group to support each of its parts.
+
+    A vote means that sample included the representative's source candidates. It is not a fresh evidence
+    verification. Exact candidate containment avoids confusing different choices citing the same dialogue.
+    Never manufacture a new statement: representatives are actual sampled consolidation outputs.
+    """
+    representatives, suppressed = [], []
+    for r, p, item in sorted(decisions, key=lambda v: (len(set(v[2]["candidate_indexes"])), v[0], v[1])):
+        members = set(item["candidate_indexes"])
+        narrower = [c for c in representatives if c["members"] <= members]
+        if narrower and set().union(*(c["members"] for c in narrower)) == members:
+            suppressed.append({"sample": r, "position": p, "item": item,
+                               "covered_by": [sorted(c["members"]) for c in narrower]})
+            continue
+        representatives.append({"rep": item, "members": members, "source_sample": r, "source_position": p})
+    clusters, details = [], []
+    need = len(runs) // 2 + 1
+    for order, representative in enumerate(representatives):
+        supports = []
+        for r, run in enumerate(runs):
+            options = [(p, it) for p, it in enumerate(i for i in run if i["type"] == "decisions")
+                       if representative["members"] <= set(it["candidate_indexes"])]
+            if options:
+                p, item = min(options, key=lambda v: (len(set(v[1]["candidate_indexes"])), v[0]))
+                supports.append({"sample": r, "position": p, "candidate_indexes": item["candidate_indexes"],
+                                 "broad": set(item["candidate_indexes"]) != representative["members"]})
+        cluster = {"rep": representative["rep"], "runs": {s["sample"] for s in supports},
+                   "pos": [s["position"] for s in supports], "order": order}
+        clusters.append(cluster)
+        details.append({"item": representative["rep"], "source_sample": representative["source_sample"],
+                        "candidate_indexes": sorted(representative["members"]), "supports": supports,
+                        "votes": len(supports), "kept": len(supports) >= need})
+    _audit(trace, "consolidate", "decision_vote", policy="candidate_containment_finest_observed",
+           threshold=need, clusters=details, suppressed_broad_groups=suppressed)
+    return clusters

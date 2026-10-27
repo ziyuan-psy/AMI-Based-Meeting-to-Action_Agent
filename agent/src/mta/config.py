@@ -70,6 +70,7 @@ EMPTY_RETRIES = 2
 # CONSOLIDATE_SAMPLES times and keeps the items a majority of the runs agree on.
 ACTION_SAMPLES = int(os.environ.get("MTA_ACTION_SAMPLES", "2"))
 CONSOLIDATE_SAMPLES = int(os.environ.get("MTA_CONSOLIDATE_SAMPLES", "3"))
+DECISION_RECONSOLIDATE = os.environ.get("MTA_DECISION_RECONSOLIDATE", "1") != "0"
 
 
 def _effort(name: str, default: str | None) -> str | None:

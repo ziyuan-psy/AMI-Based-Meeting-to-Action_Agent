@@ -34,6 +34,16 @@ class Trace:
             self._closed = True
 
 
+class StageTraceView:
+    """Forward nested stage events immediately, so partial traces survive a failed refinement."""
+    def __init__(self, parent, stage):
+        self.parent, self.stage = parent, stage
+
+    def log(self, **event):
+        source_stage = event.pop("stage", None)
+        self.parent.log(stage=self.stage, source_stage=source_stage, **event)
+
+
 class StageTrace:
     """Independent stage snapshots; the existing agent decision-log format stays unchanged."""
 

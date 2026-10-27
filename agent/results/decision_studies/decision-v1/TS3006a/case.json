@@ -1,0 +1,107 @@
+{
+  "status": "COMPLETED",
+  "meeting_id": "TS3006a",
+  "input_sha256": "989aaffb32827a926df149f62f651310067368cef0e6638de23df1f4acc24efe",
+  "candidate_source": "frozen_live_trace-v1-ts3006ab",
+  "candidate_sha256": "12e783e57d08cda6d66ad8504ef361449fbde164d3b826006457fae69edbf3f8",
+  "before_prompt_sha256": "e9bf6902cf04f1d3dec5c458da13edbf0faf0ae04175c2ec6ffa667e64cb3577",
+  "after_prompt_sha256": "85008bc69443ad5fadc2bda7319fe38c63773af646ff7f8012e8826bcfc8227a",
+  "runtime_control": {
+    "limits": {
+      "calls": 80,
+      "tokens": 1000000,
+      "request_seconds": 300.0,
+      "meeting_seconds": 1200.0,
+      "inflight": 4,
+      "retries": 2,
+      "backoff": 0.5
+    },
+    "attempted_calls": 5,
+    "charged_tokens": 59386,
+    "unknown_usage_tokens": 0,
+    "reserved_tokens": 0,
+    "max_inflight_seen": 3,
+    "failure": null,
+    "attempts": [
+      {
+        "attempt": 0,
+        "stage": "consolidate",
+        "reserved_tokens": 41541,
+        "input_bound": 9541,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 8363,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 1712,
+        "output_tokens": 6651
+      },
+      {
+        "attempt": 1,
+        "stage": "consolidate",
+        "reserved_tokens": 41541,
+        "input_bound": 9541,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 11831,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 1712,
+        "output_tokens": 10119
+      },
+      {
+        "attempt": 2,
+        "stage": "consolidate",
+        "reserved_tokens": 41541,
+        "input_bound": 9541,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 9897,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 1712,
+        "output_tokens": 8185
+      },
+      {
+        "attempt": 3,
+        "stage": "consolidate",
+        "reserved_tokens": 41541,
+        "input_bound": 9541,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 13312,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 1712,
+        "output_tokens": 11600
+      },
+      {
+        "attempt": 4,
+        "stage": "consolidate",
+        "reserved_tokens": 41541,
+        "input_bound": 9541,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 15983,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 1712,
+        "output_tokens": 14271
+      }
+    ],
+    "input_bound_method": "utf8_request_bytes_plus_padding",
+    "unknown_usage_policy": "charge_full_reservation"
+  },
+  "usage": {
+    "calls": 5,
+    "in": 8560,
+    "out": 50826,
+    "stages": {
+      "consolidate": {
+        "calls": 5,
+        "in": 8560,
+        "out": 50826
+      }
+    }
+  }
+}

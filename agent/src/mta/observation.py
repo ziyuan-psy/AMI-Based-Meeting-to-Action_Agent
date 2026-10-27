@@ -20,7 +20,7 @@ from .trace import StageTrace, Trace
 
 REPOSITORY = Path(__file__).resolve().parents[3]
 SETTINGS = (
-    "CHUNK", "OVERLAP", "WORKERS", "EMPTY_RETRIES", "ACTION_SAMPLES", "CONSOLIDATE_SAMPLES", "MAX_ITEMS",
+    "CHUNK", "OVERLAP", "WORKERS", "EMPTY_RETRIES", "ACTION_SAMPLES", "CONSOLIDATE_SAMPLES", "MAX_ITEMS", "DECISION_RECONSOLIDATE",
     "EFFORT_EXTRACT", "EFFORT_CONSOLIDATE", "EFFORT_AGENT", "EFFORT_ABSTRACT", "PRIOR_JACCARD",
     "MAX_CALLS_PER_ITEM", "MAX_CALLS_PER_MEETING", "MAX_INVALID_ACTIONS", "MAX_NO_PROGRESS",
     "MAX_FINISH_TRIES", "MAX_AGENT_STEPS", "OPENAI_MIN_COMPLETION_TOKENS",
@@ -90,7 +90,7 @@ def runtime_identity(llm) -> dict:
     from . import extract, prompts
     settings = {name: getattr(config, name) for name in SETTINGS}
     texts = {name: getattr(prompts, name) for name in
-             ("EXTRACT_SYSTEM", "CONSOLIDATE_SYSTEM", "AGENT_SYSTEM", "ABSTRACT_SYSTEM")}
+             ("EXTRACT_SYSTEM", "CONSOLIDATE_SYSTEM", "DECISION_CONSOLIDATE_SYSTEM", "AGENT_SYSTEM", "ABSTRACT_SYSTEM")}
     texts.update({name: getattr(extract, name) for name in ("ACTION_PASS_NOTE", "CHUNK_NOTE", "B0_NOTE")})
     packages = {}
     for name in ("openai", "anthropic", "jsonschema"):

@@ -64,6 +64,18 @@ contains nested `raw_groups`, `merged` and `cap` events; `merged.lineage` maps g
 The `consolidate/vote` event explains which clusters reached the majority threshold; `cap.dropped`
 shows the items removed by quantity limits. `assemble.item_record_map` links agent item keys to final IDs.
 
+Consolidation items also retain `candidate_indexes`. A separate `decision_consolidate` pass uses the same
+candidates and three additional samples, then replaces only Decisions. Its prompt preserves independent choices;
+its `decision_vote` event records representatives, supporting samples/groups and suppressed broad duplicates.
+Action/problem results stay with the original pass. A broad group can support multiple observed narrower choices,
+once per sample and choice; this measures candidate inclusion, not independent evidence support. Old standalone
+caches without lineage are labeled `decision_vote_fallback`. Cache keys distinguish the prompts/policy; all type
+caps remain unchanged. `MTA_DECISION_RECONSOLIDATE=0` disables this pass for the legacy ablation (default is on).
+The additional samples/retries share the existing meeting budgets and deadlines.
+
+See [Decision recall diagnosis and paired comparison](docs/DECISION_RECALL.md) for fixed inputs, source snapshots,
+all three trial results, remaining misses and the unchanged Action/Issue control. This is development analysis.
+
 Cache hits are explicitly labeled. New consolidation caches preserve their recorded intermediate events;
 older caches still work but report `detail_available: false` when pre-cap/group information was not saved.
 Those missing historical details cannot be reconstructed from the already-capped cached items.

@@ -126,6 +126,19 @@ DROP (these are not in a project record):
 - generic follow-ups with no specific task ("assign owners and next steps", "the team will finalise things");
 - small details already covered by a broader item you keep."""
 
+DECISION_CONSOLIDATE_SYSTEM = CONSOLIDATE_SYSTEM.replace(
+    """- decisions: a choice the group agreed on (or explicitly left as proposed / conditional) about the product or the
+  project. Several details of the same component or choice form ONE decision.
+""",
+    """- decisions: one independently testable choice the group agreed on (or explicitly left as proposed /
+  conditional) about the product or project. Merge repeated statements of the SAME choice. Sharing a component,
+  topic, speaker or paragraph does not make different choices duplicates: feature inclusion, target audience,
+  control layout and product scope are different choices. Keep their conditions and status separate. Do not
+  compress independent choices into a broad sentence to meet the typical item count. Candidate members may
+  support more than one decision if a candidate itself contains several independent choices.
+""",
+)
+
 AGENT_SYSTEM = f"""You verify ONE item from a meeting before it goes into the meeting record. The item was flagged
 because something about it is unclear. Decide what to look up, then call finish.
 

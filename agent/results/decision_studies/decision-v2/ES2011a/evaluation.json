@@ -1,0 +1,201 @@
+{
+  "meeting": "ES2011a",
+  "gold_sha256": "45ccd96875f012fefed4ca3775c110d1fa558e27c7abf2fc94c49a50731d290f",
+  "coverage": {
+    "votes": 3,
+    "raw_votes": [
+      [],
+      [],
+      []
+    ],
+    "matches": []
+  },
+  "arms": {
+    "before": {
+      "metrics": {
+        "actions": {
+          "tp": 3,
+          "sys": 4,
+          "gold": 3,
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1": 0.857
+        },
+        "decisions": {
+          "tp": 0,
+          "sys": 3,
+          "gold": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "problems": {
+          "tp": 0,
+          "sys": 3,
+          "gold": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "pairs": {
+        "2": "ES2011a.JacquelinePalmer.s.10",
+        "6": "ES2011a.JacquelinePalmer.s.11",
+        "9": "ES2011a.JacquelinePalmer.s.12"
+      },
+      "diagnosis": [
+        {
+          "gold_id": "ES2011a.JacquelinePalmer.s.13",
+          "gold_text": "NA.",
+          "matched": false,
+          "attribution": "initial_extraction_or_type",
+          "candidate_witnesses": [],
+          "candidate_items": [],
+          "merged_samples": [
+            [],
+            [],
+            []
+          ],
+          "after_sample_caps": [
+            [],
+            [],
+            []
+          ],
+          "after_vote": [],
+          "after_final_cap_and_normalize": []
+        }
+      ]
+    },
+    "after": {
+      "metrics": {
+        "actions": {
+          "tp": 3,
+          "sys": 4,
+          "gold": 3,
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1": 0.857
+        },
+        "decisions": {
+          "tp": 0,
+          "sys": 5,
+          "gold": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "problems": {
+          "tp": 0,
+          "sys": 3,
+          "gold": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "pairs": {
+        "1": "ES2011a.JacquelinePalmer.s.10",
+        "4": "ES2011a.JacquelinePalmer.s.11",
+        "6": "ES2011a.JacquelinePalmer.s.12"
+      },
+      "diagnosis": [
+        {
+          "gold_id": "ES2011a.JacquelinePalmer.s.13",
+          "gold_text": "NA.",
+          "matched": false,
+          "attribution": "initial_extraction_or_type",
+          "candidate_witnesses": [],
+          "candidate_items": [],
+          "merged_samples": [
+            [],
+            [],
+            []
+          ],
+          "after_sample_caps": [
+            [],
+            [],
+            []
+          ],
+          "after_vote": [],
+          "after_final_cap_and_normalize": []
+        }
+      ]
+    }
+  },
+  "unscored_types": {
+    "decisions": "gold contains NA placeholder; entire meeting/type excluded in both arms",
+    "problems": "gold contains NA placeholder; entire meeting/type excluded in both arms"
+  },
+  "usage": {
+    "calls": 3,
+    "in": 903,
+    "out": 1861,
+    "stages": {
+      "other": {
+        "calls": 3,
+        "in": 903,
+        "out": 1861
+      }
+    }
+  },
+  "runtime_control": {
+    "limits": {
+      "calls": 80,
+      "tokens": 1000000,
+      "request_seconds": 300.0,
+      "meeting_seconds": 1200.0,
+      "inflight": 4,
+      "retries": 2,
+      "backoff": 0.5
+    },
+    "attempted_calls": 3,
+    "charged_tokens": 2764,
+    "unknown_usage_tokens": 0,
+    "reserved_tokens": 0,
+    "max_inflight_seen": 1,
+    "failure": null,
+    "attempts": [
+      {
+        "attempt": 0,
+        "stage": "other",
+        "reserved_tokens": 34202,
+        "input_bound": 2202,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 1028,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 301,
+        "output_tokens": 727
+      },
+      {
+        "attempt": 1,
+        "stage": "other",
+        "reserved_tokens": 34202,
+        "input_bound": 2202,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 772,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 301,
+        "output_tokens": 471
+      },
+      {
+        "attempt": 2,
+        "stage": "other",
+        "reserved_tokens": 34202,
+        "input_bound": 2202,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 964,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 301,
+        "output_tokens": 663
+      }
+    ],
+    "input_bound_method": "utf8_request_bytes_plus_padding",
+    "unknown_usage_policy": "charge_full_reservation"
+  }
+}

@@ -81,6 +81,12 @@ valid finish after the permitted turns) remain counted in the report. Unexpected
 and exhausted API retries stop the meeting instead of being reported as a completed fallback.
 Provider error messages are not stored; error type and HTTP status are sufficient for these failures.
 
+With P2 enabled, unresolved policy outcomes are explicit pending items rather than extractor fallbacks.
+Semantic checks and tool-selection turns use this same controller. A COMPLETED meeting can contain pending
+fields or quarantined statements; consult `.p2.json` and `.clarifications.json`. These sidecars are published
+and rolled back with the record/report, hashed for batch completion checks, and saved as partial artifacts on
+interruption. See [P2 control](P2_CONTROL.md) for the per-item state machine.
+
 Every initialized run has an attempt directory:
 
 ```text

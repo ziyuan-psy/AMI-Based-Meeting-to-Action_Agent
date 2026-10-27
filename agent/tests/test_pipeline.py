@@ -15,6 +15,12 @@ from mta.store import Store  # noqa: E402
 A, B = config.TRANSCRIPTS / "TS3006a.txt", config.TRANSCRIPTS / "TS3006b.txt"
 
 
+@pytest.fixture(autouse=True)
+def legacy_protocol_ablation(monkeypatch):
+    """These scripted conversations specify the original agent protocol; P2 has its own protocol tests."""
+    monkeypatch.setattr(config, "P2_ENABLED", False)
+
+
 def use(name, inp, i=1):
     return NS(type="tool_use", id=f"tu{i}", name=name, input=inp)
 

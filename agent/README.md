@@ -116,6 +116,22 @@ failure stage, stop reason and per-attempt budget ledger. The series runner stop
 only prior successful record/report pairs whose hashes still match. The frozen development baseline
 above is unchanged; budget-control regression tests use offline transports.
 
+## P2 checks and clarification requests
+
+S1/S2 now check every item for statement support, owner/deadline ambiguity, end-of-meeting status, conflicts
+and historical relationships. The controller drives accept, retrieval, changed searches or pending review from
+those findings; it rejects unread/inexact quotes and prevents `finish` from bypassing unresolved checks.
+Queries and lookup choice remain the agent's. All model turns share the meeting's existing budget.
+
+Runs also publish `<meeting>.p2.json` and `<meeting>.clarifications.json`, with checked fields, actual actions,
+termination reasons and questions linked to item/record IDs and evidence. Unknown owner/deadline values are
+cleared; unsupported statements are quarantined from both the record and abstract. Questions appear in the report.
+Pending items are explicitly distinguished from accepted items. `MTA_P2_ENABLED=0` restores the legacy ablation;
+B0 keeps its original behavior. The output record schema and UI remain unchanged.
+
+See [P2 control and output contract](docs/P2_CONTROL.md) for schemas, state transitions, partial artifacts,
+source constraints and the distinction between automated checks and independent human evaluation.
+
 Evaluation (`mta.evaluate --judge`, `mta.support`, `scripts/full_eval.py`) uses the pipeline model as the LLM judge.
 Optional: `MTA_JUDGE=claude` switches the judge to Claude (`claude-opus-5-5`, effort `high`; override with
 `MTA_JUDGE_MODEL`, `MTA_JUDGE_EFFORT`); this needs `anthropic` and `ANTHROPIC_API_KEY`, and keeps separate caches.

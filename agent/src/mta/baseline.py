@@ -98,7 +98,7 @@ def capture(destination: Path, meetings: list[str], modes: list[str], llm=None) 
     metadata_path = destination / "baseline.json"
     # Save only runtime code and approved input/context files. Never copy the worktree or .env wholesale.
     inputs = [config.TRANSCRIPTS / f"{m}.txt" for m in meetings]
-    for path in sorted(set(source_files() + inputs + [config.PARTICIPANTS, config.SCENARIO, config.SCHEMA])):
+    for path in sorted(set(source_files() + inputs + [config.PARTICIPANTS, config.SCENARIO, config.SCHEMA, config.P2_SCHEMA])):
         target = destination / "source" / path.relative_to(REPOSITORY)
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_bytes(path.read_bytes())

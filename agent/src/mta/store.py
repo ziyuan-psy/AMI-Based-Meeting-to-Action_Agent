@@ -99,6 +99,7 @@ class Store:
             raise PermissionError(f"{meeting_id} is not readable from {self.current}")
 
     def meeting(self, meeting_id: str, path: Path | None = None) -> Meeting:
+        self._check_visible(meeting_id)
         if meeting_id not in self._meetings:
             acts = parse_transcript_file(path or config.TRANSCRIPTS / f"{meeting_id}.txt")
             roster = self.participants[meeting_id]

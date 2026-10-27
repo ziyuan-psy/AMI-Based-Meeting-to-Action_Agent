@@ -10,6 +10,7 @@ TRANSCRIPTS = DATA / "transcripts"
 PARTICIPANTS = DATA / "participants.json"
 SCENARIO = DATA / "scenario_text.txt"
 SCHEMA = ROOT / "schemas" / "output_schema.json"
+P2_SCHEMA = ROOT / "schemas" / "p2_output_schema.json"
 RUNS = ROOT / "runs"
 
 def _load_dotenv() -> None:
@@ -51,6 +52,7 @@ MAX_NO_PROGRESS = 2
 MAX_FINISH_TRIES = 3
 # Hard stop on model turns per item, whatever the model returns (normal worst case is about 9).
 MAX_AGENT_STEPS = 12
+P2_ENABLED = os.environ.get("MTA_P2_ENABLED", "1") != "0"
 
 # Whole-meeting limits. Every model attempt, including every kind of retry, shares these.
 MAX_MODEL_CALLS = int(os.environ.get("MTA_MAX_MODEL_CALLS", "80"))

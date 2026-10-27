@@ -172,7 +172,15 @@ def item_prompt(store: Store, item: dict) -> str:
             + "\n\nEvidence lines found so far:\n" + "\n".join(ev))
 
 
-def run_agent(llm: LLM, store: Store, item: dict, budget: MeetingBudget, trace: Trace, item_key: str) -> dict | None:
+def run_agent(llm: LLM, store: Store, item: dict, budget: MeetingBudget, trace: Trace, item_key: str,
+              progress=None) -> dict | None:
+    if config.P2_ENABLED:
+        from .p2 import run_p2_agent
+        return run_p2_agent(llm, store, item, budget, trace, item_key, progress)
+    return _run_legacy_agent(llm, store, item, budget, trace, item_key)
+
+
+def _run_legacy_agent(llm: LLM, store: Store, item: dict, budget: MeetingBudget, trace: Trace, item_key: str) -> dict | None:
     """Returns the final fields, or None when the agent could not produce a valid finish (caller falls back)."""
     system = AGENT_SYSTEM.replace("{max_calls}", str(config.MAX_CALLS_PER_ITEM))
     if not store.allow_prior:

@@ -431,12 +431,19 @@ def test_agent_local_exception_is_failed_instead_of_silent_fallback(tmp_path, mo
 
 
 def test_meeting_timeout_wins_over_longer_request_timeout():
-    release = threading.Event()
-    client = Client(lambda kwargs: release.wait(2))
-    control = RunControl(limits(meeting_seconds=0.03, request_seconds=1))
+    release, started = threading.Event(), threading.Event()
+    def transport(kwargs):
+        started.set()
+        release.wait(2)
+    client = Client(transport)
+    control = RunControl(limits(meeting_seconds=2, request_seconds=3))
     try:
-        with pytest.raises(RunStopped, match="meeting_timeout"):
-            request(LLM(client).scoped(control))
+        with ThreadPoolExecutor(1) as pool:
+            job = pool.submit(request, LLM(client).scoped(control))
+            assert started.wait(1)  # test a request already in flight, independent of thread startup latency
+            control.deadline = time.monotonic() + 0.03
+            with pytest.raises(RunStopped, match="meeting_timeout"):
+                job.result(timeout=1)
         assert client.calls == 1
     finally:
         control.seal()

@@ -121,9 +121,19 @@ class FixtureClient:
             payload = {"items": items}
         elif name == "submit_abstracts":
             payload = {"abstracts": [{"text": "Menu work was assigned.", "items": [0]}]}
+        elif name == "assess_item":
+            initial = json.loads(kwargs["messages"][0]["content"])
+            quote = initial["observed_dialogue"][0]
+            checks = {k: {"result": "pass", "reason": "offline protocol fixture", "fields": [],
+                           "quotes": [{"da_id": quote["da_id"], "quote": quote["text"]}]}
+                      for k in ("statement", "owner", "deadline", "status", "conflict", "relation")}
+            checks["deadline"].update(result="uncertain", reason="deadline missing", quotes=[])
+            checks["relation"].update(result="not_applicable", quotes=[])
+            payload = {"fields": initial["fields"], "checks": checks,
+                       "next_action": "request_clarification", "reason": "Save a missing-deadline question"}
         else:
             raise AssertionError(name)
-        return NS(content=[NS(type="tool_use", name=name, input=payload)],
+        return NS(content=[NS(type="tool_use", id="fixture-tool", name=name, input=payload)],
                   usage=NS(input_tokens=10, output_tokens=5))
 
 
@@ -141,7 +151,8 @@ def test_run_metadata_and_cached_stages_preserve_record_schema(tmp_path):
     assert meta["input"]["sha256"] == sha256(path)
     assert meta["code"]["git_commit"] and meta["code"]["source_digest"]
     assert meta["config"]["ACTION_SAMPLES"] == config.ACTION_SAMPLES
-    assert (tmp_path / "s1" / "TS3006a.trace.jsonl").read_text(encoding="utf-8") == ""
+    trace = (tmp_path / "s1" / "TS3006a.trace.jsonl").read_text(encoding="utf-8")
+    assert "assess_item" in trace
     second = run_meeting(path, "s1", llm, tmp_path, tmp_path / "cache")
     assert Path(second["output"]).read_bytes() == record
     events = [json.loads(line) for line in Path(second["stage_trace"]).read_text(encoding="utf-8").splitlines()]

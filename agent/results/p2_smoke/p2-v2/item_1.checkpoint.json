@@ -1,0 +1,232 @@
+{
+  "item_key": "TS3006a#1",
+  "state": "accepted",
+  "recordable": true,
+  "fields": {
+    "status": "proposed",
+    "prior_context_needed": false,
+    "related_items": [],
+    "reference": [
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3006a.json",
+        "locator": "TS3006a.A.dialog-act.vkaraisk.130"
+      }
+    ]
+  },
+  "draft_fields": {
+    "owner": null,
+    "owner_basis": "missing",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "status": "proposed",
+    "prior_context_needed": false,
+    "related_items": [],
+    "evidence_da_ids": [
+      "TS3006a.A.dialog-act.vkaraisk.130"
+    ],
+    "used_participant_lookup": false
+  },
+  "checks": {
+    "statement": {
+      "result": "pass",
+      "reason": "The observed dialogue statement exactly asserts the selling price as twenty five Euros; the scope matches the item.",
+      "quotes": [
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.130",
+          "quote": "Um we can sell them at twenty five Euros . Uh"
+        }
+      ],
+      "fields": [
+        "statement"
+      ]
+    },
+    "owner": {
+      "result": "not_applicable",
+      "reason": "field_not_applicable",
+      "quotes": [],
+      "fields": [
+        "owner"
+      ]
+    },
+    "deadline": {
+      "result": "not_applicable",
+      "reason": "field_not_applicable",
+      "quotes": [],
+      "fields": [
+        "deadline"
+      ]
+    },
+    "status": {
+      "result": "pass",
+      "reason": "Status is a valid proposed state for a provisional decision item.",
+      "quotes": [
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.130",
+          "quote": "Um we can sell them at twenty five Euros . Uh"
+        }
+      ],
+      "fields": [
+        "status"
+      ]
+    },
+    "conflict": {
+      "result": "pass",
+      "reason": "No contradictions found in the available evidence regarding the item.",
+      "quotes": [
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.130",
+          "quote": "Um we can sell them at twenty five Euros . Uh"
+        }
+      ],
+      "fields": [
+        "statement",
+        "owner",
+        "deadline",
+        "status",
+        "related_items"
+      ]
+    },
+    "relation": {
+      "result": "not_applicable",
+      "reason": "No earlier item to relate to; this is the first item in the current discussion.",
+      "quotes": [
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.130",
+          "quote": "Um we can sell them at twenty five Euros . Uh"
+        }
+      ],
+      "fields": [
+        "statement",
+        "owner",
+        "deadline",
+        "status",
+        "related_items"
+      ]
+    }
+  },
+  "unresolved_fields": [],
+  "history": [
+    {
+      "item": "TS3006a#1",
+      "step": 1,
+      "flags": [],
+      "action": "assess_item",
+      "outcome": "invalid_action",
+      "error": "Correct these argument fields: : 'next_action' is a required property; : Additional properties are not allowed ('evidence_da_ids', 'used_participant_lookup' were unexpected)"
+    },
+    {
+      "item": "TS3006a#1",
+      "step": 2,
+      "flags": [],
+      "action": "assess_item",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "The observed dialogue statement exactly asserts the selling price as twenty five Euros; the scope matches the item.",
+          "quotes": [
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.130",
+              "quote": "Um we can sell them at twenty five Euros . Uh"
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Status is a valid proposed state for a provisional decision item.",
+          "quotes": [
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.130",
+              "quote": "Um we can sell them at twenty five Euros . Uh"
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions found in the available evidence regarding the item.",
+          "quotes": [
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.130",
+              "quote": "Um we can sell them at twenty five Euros . Uh"
+            }
+          ],
+          "fields": [
+            "statement",
+            "owner",
+            "deadline",
+            "status",
+            "related_items"
+          ]
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No earlier item to relate to; this is the first item in the current discussion.",
+          "quotes": [
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.130",
+              "quote": "Um we can sell them at twenty five Euros . Uh"
+            }
+          ],
+          "fields": [
+            "statement",
+            "owner",
+            "deadline",
+            "status",
+            "related_items"
+          ]
+        }
+      },
+      "decision": "accept",
+      "reason": "all_required_checks_passed",
+      "requested_action": "request_clarification",
+      "proposed_fields": {
+        "owner": null,
+        "owner_basis": "missing",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "proposed",
+        "prior_context_needed": false,
+        "related_items": [],
+        "evidence_da_ids": [
+          "TS3006a.A.dialog-act.vkaraisk.130"
+        ],
+        "used_participant_lookup": false
+      }
+    },
+    {
+      "item": "TS3006a#1",
+      "step": 2,
+      "flags": [],
+      "action": "accept",
+      "outcome": "accepted",
+      "termination_reason": "all_required_checks_passed",
+      "unresolved_fields": []
+    }
+  ],
+  "lookups": 0,
+  "termination_reason": "all_required_checks_passed",
+  "clarifications": []
+}

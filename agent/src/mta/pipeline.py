@@ -86,10 +86,10 @@ def attach_abstract_refs(drafts: list[dict], items: list[dict]) -> list[dict]:
     return out
 
 
-def _safe_agent(llm: LLM, store: Store, item: dict, budget: MeetingBudget, trace: Trace, key: str) -> dict | None:
-    """One item's agent failing (e.g. an API error after the SDK's retries) falls back for that item only."""
+def _safe_agent(llm: LLM, store: Store, item: dict, budget: MeetingBudget, trace: Trace, key: str, progress=None) -> dict | None:
+    """Keep model/control failures terminal; only explicit policy outcomes may remain pending."""
     try:
-        return run_agent(llm, store, item, budget, trace, key)
+        return run_agent(llm, store, item, budget, trace, key, progress=progress)
     except RunStopped:
         raise
     except Exception as e:
@@ -130,9 +130,14 @@ def run_meeting(txt_path: Path, mode: str, llm: LLM, out_root: Path, cache_dir: 
         if result["status"] == "COMPLETED":
             record, report = result.pop("_record"), result.pop("_report")
             observation.enter("publish")
-            result["output"] = observation.publish(result["meeting_id"], record, report)
+            p2, clarifications = result.pop("_p2"), result.pop("_clarifications")
+            result["output"] = observation.publish(result["meeting_id"], record, report, {"p2": p2, "clarifications": clarifications})
             result["output_sha256"] = sha256(Path(result["output"]))
             result["report_sha256"] = sha256(Path(result["output"]).with_name(f"{result['meeting_id']}_report.md"))
+            for name in ("p2", "clarifications"):
+                artifact = Path(result["output"]).with_suffix(f".{name}.json")
+                result[name + "_artifact"] = str(artifact)
+                result[name + "_sha256"] = sha256(artifact)
     except RunStopped as error:
         result = {"mode": mode, "meeting_id": observation.data["meeting_id"],
                   "status": error.failure["status"], "reason": error.failure["code"],
@@ -175,8 +180,12 @@ def saved_run_complete(record_path: Path) -> bool:
     try:
         metadata = json.loads(record_path.with_suffix(".run.json").read_text(encoding="utf-8"))
         report = record_path.with_name(f"{record_path.stem}_report.md")
-        return (metadata["status"] == "COMPLETED" and metadata["result"].get("output_sha256") == sha256(record_path)
-                and metadata["result"].get("report_sha256") == sha256(report))
+        enabled = config.P2_ENABLED and metadata["mode"] != "b0"
+        result = metadata["result"]
+        return (metadata["status"] == "COMPLETED" and result.get("output_sha256") == sha256(record_path)
+                and result.get("report_sha256") == sha256(report) and result.get("p2_enabled", False) == enabled
+                and (not enabled or all(result.get(name + "_sha256") == sha256(record_path.with_suffix(f".{name}.json"))
+                                        for name in ("p2", "clarifications"))))
     except (OSError, ValueError, KeyError, TypeError):
         return False
 
@@ -260,43 +269,72 @@ def _run_meeting(txt_path: Path, mode: str, llm: LLM, out_root: Path, cache_dir:
     stages.log(stage="triage", event="completed", items=items)
     observation.checkpoint("triaged", items)
 
-    # N5: follow-up agent for flagged items only. Items are independent (they share only the meeting's lookup
-    # budget, which is locked), so they run in parallel; the abstract call runs alongside them.
+    # N5: P2 checks every non-baseline item; the legacy ablation keeps flag-only follow-up.
+    p2_enabled = config.P2_ENABLED and mode != "b0"
     budget = MeetingBudget()
     flagged = [n for n, it in enumerate(items) if it["flags"]]
+    selected = list(range(len(items))) if p2_enabled else flagged
+    for n, item in enumerate(items):
+        item["run_id"] = observation.data["run_id"]
+        item["peer_items"] = [{"item_key": f"{meeting_id}#{j}", "type": peer["type"], "text": peer["text"]}
+                              for j, peer in enumerate(items) if j < n]
     observation.enter("context")
     _warm_store(store)
     observation.enter("agent+abstract")
     t = time.time()
 
-    def abstracts():
-        drafts = draft_abstracts(llm, items)
-        observation.checkpoint("abstracts", drafts)
-        return drafts
-
     def agent_item(n):
-        fields = _safe_agent(llm, store, items[n], budget, trace, f"{meeting_id}#{n}")
+        progress = (lambda state: observation.checkpoint(f"p2_item_{n}", state)) if p2_enabled else None
+        fields = _safe_agent(llm, store, items[n], budget, trace, f"{meeting_id}#{n}", progress)
         observation.checkpoint(f"agent_item_{n}", {"item": n, "fields": fields})
         return fields
 
     with stage_pool(max(1, config.WORKERS), control) as pool:
-        drafts_job = pool.submit(abstracts)
-        jobs = {n: pool.submit(agent_item, n) for n in flagged}
+        jobs = {n: pool.submit(agent_item, n) for n in selected}
         agent_fields = {n: control.wait(j) for n, j in jobs.items()}
-        drafts = control.wait(drafts_job)
-    seconds["agent+abstract"] = round(time.time() - t, 1)  # the two run in parallel
-    agent_runs, fallbacks = len(flagged), sum(1 for f in agent_fields.values() if f is None)
+    agent_runs, fallbacks = len(selected), sum(1 for f in agent_fields.values() if f is None)
+    original_items = items
+    retained, p2_items = [], []
     for n, it in enumerate(items):
         fields = agent_fields.get(n)
-        if fields is not None and "STATUS_CHECK" not in it["flags"]:
-            fields["status"] = it["status"]  # status was settled at extraction; the agent only revisits it on STATUS_CHECK
-        it["fields"] = fields or default_fields(store, it)
+        if p2_enabled:
+            if fields is None:
+                raise ValueError("P2 requires an explicit checked or pending outcome")
+            fields.update(record_id=None, item_type=it["type"], item_text=it["text"])
+            p2_items.append(fields)
+            it["fields"] = fields["fields"]
+            if not fields["recordable"]:
+                continue
+        else:
+            if fields is not None and "STATUS_CHECK" not in it["flags"]:
+                fields["status"] = it["status"]
+            it["fields"] = fields or default_fields(store, it)
+        it["item_key"] = f"{meeting_id}#{n}"
+        retained.append(it)
+    items = retained
+    p2_payload = {"format_version": 1, "run_id": observation.data["run_id"], "meeting_id": meeting_id,
+                  "enabled": p2_enabled, "items": p2_items}
+    # Summaries are generated only after quarantining unsupported statements.
+    drafts = draft_abstracts(llm, items)
+    observation.checkpoint("abstracts", drafts)
+    seconds["agent+abstract"] = round(time.time() - t, 1)
 
     # N7: assemble
     observation.enter("assemble")
     record = make_record(meeting_id, items, attach_abstract_refs(drafts, items))
+    mapped = {it["item_key"]: rec["id"] for it, rec in zip(items, record)}
+    requests = []
+    for outcome in p2_items:
+        outcome["record_id"] = mapped.get(outcome["item_key"])
+        for request in outcome["clarifications"]:
+            request["record_id"] = outcome["record_id"]
+            requests.append(request)
+    clarifications = {"format_version": 1, "run_id": observation.data["run_id"], "meeting_id": meeting_id,
+                      "requests": requests}
+    observation.checkpoint("p2", p2_payload)
+    observation.checkpoint("clarifications", clarifications)
     stages.log(stage="assemble", event="completed", records=record,
-               item_record_map={f"{meeting_id}#{n}": r["id"] for n, r in enumerate(record[:len(items)])})
+               item_record_map=mapped)
     observation.checkpoint("assembled", record)
 
     # N8/N9: validate, repair once, validate again
@@ -306,6 +344,8 @@ def _run_meeting(txt_path: Path, mode: str, llm: LLM, out_root: Path, cache_dir:
     if errors:
         repairs = repair(record, store)
         errors = check(record, store)
+    from .p2 import validate_outputs
+    errors += validate_outputs(p2_payload, clarifications, record, store)
     stages.log(stage="validate", event="completed", errors=errors, repairs=repairs)
     observation.checkpoint("validated", {"draft": record, "errors": errors, "repairs": repairs})
     if errors:
@@ -320,8 +360,12 @@ def _run_meeting(txt_path: Path, mode: str, llm: LLM, out_root: Path, cache_dir:
              "agent runs": agent_runs, "agent fallbacks": fallbacks, "lookups used": budget.used,
              "repairs": len(repairs), "input tokens": usage["in"], "output tokens": usage["out"],
              "llm calls": usage["calls"], "seconds": seconds["total"]}
-    report = render_report(record, store, mode, notes)
+    notes.update({"p2 accepted": sum(o["state"] == "accepted" for o in p2_items),
+                  "p2 pending": sum(o["state"] == "pending" for o in p2_items),
+                  "quarantined": len(original_items) - len(items), "clarification requests": len(requests)})
+    report = render_report(record, store, mode, notes, p2_payload)
     observation.checkpoint("report", {"markdown": report})
     # Per-stage cost (calls / tokens) and wall time; cache hits cost nothing and do not appear in `stages`.
     return {**result, **notes, "stages": usage["stages"], "stage_seconds": seconds,
-            "_record": record, "_report": report}
+            "p2_enabled": p2_enabled, "_record": record, "_report": report,
+            "_p2": p2_payload, "_clarifications": clarifications}

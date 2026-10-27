@@ -12,7 +12,7 @@ def _short(locator: str) -> str:
     return locator.split(" ")[0].split(".")[-1] if "dialog-act" in locator else locator
 
 
-def render_report(items: list[dict], store: Store, mode: str, notes: dict) -> str:
+def render_report(items: list[dict], store: Store, mode: str, notes: dict, p2: dict | None = None) -> str:
     prior = {i["id"]: i for i in store.prior_items()}
     cur = store.meeting(store.current)
     role = {p["participant_id"]: p["role"] for p in store.roster(store.current)}
@@ -58,10 +58,22 @@ def render_report(items: list[dict], store: Store, mode: str, notes: dict) -> st
     open_items = [i for i in by_type["actions"]
                   if i["owner_basis"] in ("ambiguous", "missing") or i["deadline_basis"] == "ambiguous"]
     out += ["", "## Needs human confirmation", "",
-            "_Nobody could be asked during processing, so these were left unresolved rather than guessed._", ""]
-    if not open_items:
+            "_Questions are saved for human review; no answer was available during processing._", ""]
+    pending = [i for i in (p2 or {}).get("items", []) if i["state"] == "pending"]
+    if p2 and p2["enabled"]:
+        if not pending:
+            out.append("All items passed the automated checks.")
+        for item in pending:
+            label = item["record_id"] or item["item_key"]
+            qualifier = "fields need confirmation" if item["recordable"] else "unverified draft; excluded from the record and summary"
+            out.append(f"- **{_cell(label)}** ({qualifier}): {_cell(item['item_text'])}")
+            for request in item["clarifications"]:
+                out.append(f"  - **{request['field']}**: {_cell(request['question'])} Reason: {_cell(request['reason'])}")
+        accepted = sum(i["state"] == "accepted" for i in p2["items"])
+        out += ["", f"Automated review: {accepted} accepted; {len(pending)} pending. Pending does not mean accepted."]
+    elif not open_items:
         out.append("Nothing flagged.")
-    for i in open_items:
+    for i in ([] if p2 and p2["enabled"] else open_items):
         why = []
         if i["owner_basis"] in ("ambiguous", "missing"):
             why.append(f"owner {i['owner_basis']}")

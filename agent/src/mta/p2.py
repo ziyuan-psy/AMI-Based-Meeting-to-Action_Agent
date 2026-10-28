@@ -11,6 +11,7 @@ from . import config
 from .agent import _blocks, _execute, build_reference, check_finish, meeting_of, tool_defs
 from .prompts import P2_SYSTEM
 from .linking import LINK_SCHEMA, link_error, witnesses
+from .documents import SELECTION, evidence_error, selected_evidence, selected_references, validate_outcome
 from .store import tokenize
 
 CHECKS = ("statement", "owner", "deadline", "status", "conflict", "relation")
@@ -26,7 +27,7 @@ FINDING = {"type": "object", "properties": {
     "required": ["result", "reason", "quotes", "fields"], "additionalProperties": False}
 
 
-def assessment_tool(allow_prior, item_type=None, require_relation=False):
+def assessment_tool(allow_prior, item_type=None, require_relation=False, require_evidence=False):
     fields = copy.deepcopy(tool_defs(allow_prior)[-1]["input_schema"])
     if item_type in (None, "actions"):
         fields["required"] += ["owner", "owner_basis", "deadline", "deadline_basis"]
@@ -34,12 +35,18 @@ def assessment_tool(allow_prior, item_type=None, require_relation=False):
     finding_schemas = {k: copy.deepcopy(FINDING) for k in CHECKS}
     for name in CHECKS:
         finding_schemas[name]["required"].remove("fields")
+        finding_schemas[name]["required"].remove("quotes")
         legacy_quote = copy.deepcopy(FINDING["properties"]["quotes"]["items"])
         legacy_quote["required"] = ["da_id"]
         finding_schemas[name]["properties"]["quotes"] = {"type": "array", "description": "Prefer a list of full delivered dialogue IDs; code binds their exact text. Legacy quote objects are also accepted.",
             "items": {"anyOf": [{"type": "string"}, legacy_quote]}}
         if name != "conflict":  # field identity is already determined by the check's name
             finding_schemas[name]["properties"]["fields"]["items"] = {"type": "string"}
+        finding_schemas[name]["properties"]["documents"] = {"type": "array", "items": SELECTION,
+            "description": "Explicitly assess scenario passages used for this check. Omit unused search hits. Documents supplement, never replace, current meeting evidence."}
+        if require_evidence and name in ("statement", "status", "conflict"):
+            finding_schemas[name]["allOf"] = [{"if": {"properties": {"result": {"const": "pass"}}},
+                "then": {"required": ["quotes"], "properties": {"quotes": {"minItems": 1}}}}]
     finding_schemas["relation"]["properties"]["links"] = {"type": "array", "items": LINK_SCHEMA,
         "description": "Required when fields.related_items is nonempty; identify the change and both sets of quoted source IDs."}
     if require_relation:
@@ -74,6 +81,18 @@ def relation_tool():
                 "related_items": copy.deepcopy(tool_defs(True)[-1]["input_schema"]["properties"]["related_items"]),
                 "next_action": {"enum": list(ACTIONS)}},
                 "required": ["result", "reason", "quotes", "related_items"], "additionalProperties": False}}
+
+
+def document_context_tool(item_type):
+    checks = assessment_tool(False, item_type, require_evidence=True)["input_schema"]["properties"]["checks"]["properties"]
+    return {"name": "assess_document_context",
+            "description": "Check the current statement against delivered scenario passages. Select current dialogue IDs and document assessments. If status remains unresolved, optionally reassess it in status_check. You may request more context, change search, or stop pending.",
+            "input_schema": {"type": "object", "properties": {
+                **{k: copy.deepcopy(v) for k, v in checks["statement"]["properties"].items() if k != "fields"},
+                "status_check": copy.deepcopy(checks["status"]),
+                "status": copy.deepcopy(tool_defs(False)[-1]["input_schema"]["properties"]["status"]),
+                "next_action": {"enum": list(ACTIONS)}},
+                "required": ["result", "reason", "quotes", "documents"], "additionalProperties": False}}
 
 
 def quote_line(store, da_id):
@@ -115,7 +134,7 @@ def bind_evidence(payload, observed, current, item_type=None):
             checks.setdefault(field, {"result": "not_applicable", "reason": "field_not_applicable", "quotes": [], "fields": []})
     for name, finding in checks.items():
         resolved = []
-        for quote in finding["quotes"]:
+        for quote in finding.get("quotes", []):
             quote = {"da_id": quote} if isinstance(quote, str) else copy.deepcopy(quote)
             identifier = quote["da_id"]
             if "quote" not in quote:
@@ -146,7 +165,7 @@ def bind_evidence(payload, observed, current, item_type=None):
     return payload, bindings
 
 
-def evaluate(store, item, payload, observed, prior_seen, pages_seen, prior_attempted=False):
+def evaluate(store, item, payload, observed, prior_seen, pages_seen, prior_attempted=False, documents_seen=None):
     """Validate provenance and combine semantic findings with mandatory code checks."""
     checks = copy.deepcopy(payload["checks"])
     proposed = payload["fields"]
@@ -168,6 +187,9 @@ def evaluate(store, item, payload, observed, prior_seen, pages_seen, prior_attem
             finding.update(result="uncertain", reason="required_check_cannot_be_skipped")
         if finding["result"] == "pass" and not any(meeting_of(q["da_id"]) == store.current for q in finding["quotes"]):
             finding.update(result="uncertain", reason="current_meeting_support_required")
+        document_error = evidence_error(store, finding, documents_seen or {})
+        if document_error:
+            finding.update(result="uncertain", reason=document_error)
     unread = set(proposed["evidence_da_ids"]) - set(observed)
     if unread:
         checks["statement"].update(result="uncertain", reason="finish_cites_unobserved_evidence")
@@ -195,6 +217,13 @@ def evaluate(store, item, payload, observed, prior_seen, pages_seen, prior_attem
     fields, error = check_finish(store, item, proposed, pages_seen)
     if error:
         checks["statement"].update(result="uncertain", reason="invalid_proposed_fields: " + error)
+    if item.get("verify_project_context") and checks["statement"]["result"] == "pass":
+        reviewed = any(finding["result"] == "pass" and d["result"] in ("supports", "context", "irrelevant")
+                       and (documents_seen or {}).get(d["passage_id"]) is not None
+                       and store.documents.valid_row(documents_seen[d["passage_id"]])
+                       for finding in checks.values() for d in finding.get("documents", []))
+        if not reviewed:
+            checks["statement"].update(result="uncertain", reason="requested_document_context_not_checked")
     return checks, fields
 
 
@@ -235,10 +264,12 @@ def clarifications_for(item_key, item, checks, reason, available_evidence=()):
                          "item_text": item["text"], "reason": "; ".join(v["reason"] for v in relevant) or reason,
                          "evidence_da_ids": evidence, "available_evidence_da_ids": list(available_evidence),
                          "status": "open", "termination_reason": reason})
+        if field == "statement" and any(v["reason"].startswith(("document_", "requested_document_")) for v in relevant):
+            requests[-1]["question"] = "Which scenario passage supports this item's project context, and is it consistent with the current meeting evidence?"
     return requests
 
 
-def safe_fields(store, item, proposed, checks, fields):
+def safe_fields(store, item, proposed, checks, fields, documents_seen=None):
     """Keep supported claims; clear uncertain values instead of restoring extractor guesses."""
     blocked = unresolved(checks)
     statement_ok = checks.get("statement", {}).get("result") == "pass" and "statement" not in blocked
@@ -259,6 +290,7 @@ def safe_fields(store, item, proposed, checks, fields):
     allowed = list(dict.fromkeys(q["da_id"] for c in checks.values() for q in c.get("quotes", [])
                                 if c["result"] == "pass" and ("related_items" not in blocked or meeting_of(q["da_id"]) == store.current)))
     fields["reference"] = build_reference(store, allowed, fields.get("owner"), False, [])
+    fields["reference"] += selected_references(selected_evidence(store, checks, documents_seen or {}, statement_ok, blocked))
     fields["prior_context_needed"] = bool(fields["related_items"]) or any(meeting_of(d) != store.current for d in allowed)
     return fields, statement_ok
 
@@ -271,7 +303,7 @@ def run_p2_agent(llm, store, item, budget, trace, item_key, progress=None):
             context.setdefault(nearby["da_id"], nearby)
     delivered = bounded_result({"results": list(context.values())})
     observed = {row["da_id"]: row for row in delivered["results"]}
-    prior_seen, pages_seen, cache = {}, set(), {}
+    prior_seen, pages_seen, cache, documents_seen = {}, set(), {}, {}
     prior_attempted = False
     proposed = provisional(item)
     checks = {k: {"result": "uncertain", "reason": "not_checked", "quotes": [], "fields": []} for k in CHECKS}
@@ -283,10 +315,13 @@ def run_p2_agent(llm, store, item, budget, trace, item_key, progress=None):
     fields = None
     history, calls, no_progress, invalid, semantic_stalls = [], 0, 0, 0, 0
     applicability_reassessed = False
+    evidence_reassessed = False
     allow_prior = store.allow_prior and store.order > 1
-    effort = config.EFFORT_LINK if allow_prior and {"POSSIBLE_PRIOR", "STATUS_CHECK"}.intersection(item["flags"]) else config.EFFORT_AGENT
+    effort = config.EFFORT_LINK if (item.get("verify_project_context") or
+        allow_prior and {"POSSIBLE_PRIOR", "STATUS_CHECK"}.intersection(item["flags"])) else config.EFFORT_AGENT
     assessor = assessment_tool(allow_prior, item["type"],
-                               bool(allow_prior and {"POSSIBLE_PRIOR", "STATUS_CHECK"}.intersection(item["flags"])))
+                               bool(allow_prior and {"POSSIBLE_PRIOR", "STATUS_CHECK"}.intersection(item["flags"])),
+                               require_evidence=bool(item.get("verify_project_context")))
     lookup_tools = [t for t in tool_defs(allow_prior) if t["name"] != "finish"]
     terminal = [{"name": name, "description": "Leave unresolved checks pending for human review.",
                  "input_schema": {"type": "object", "properties": {"reason": {"type": "string"}}, "required": ["reason"]}}
@@ -295,16 +330,22 @@ def run_p2_agent(llm, store, item, budget, trace, item_key, progress=None):
                "current_meeting": store.current, "earlier_meetings": store.visible_ids("prior"),
                "roster": store.roster(store.current), "observed_dialogue": list(observed.values())}
     initial["peer_items"] = item.get("peer_items", [])
+    if item.get("verification_request"):
+        initial["verification_request"] = item["verification_request"]
+    if item.get("verify_project_context"):
+        initial["verify_project_context"] = True
     messages = [{"role": "user", "content": json.dumps(initial, ensure_ascii=False)}]
     phase, next_action = "check", "retrieve"
 
     def snapshot(state="running", reason="in_progress"):
-        published, recordable = safe_fields(store, item, proposed, checks, fields)
+        published, recordable = safe_fields(store, item, proposed, checks, fields, documents_seen)
         return {"item_key": item_key, "record_id": None, "item_type": item["type"], "item_text": item["text"],
                 "state": state, "recordable": recordable, "fields": published,
                 "draft_fields": proposed, "checks": checks, "unresolved_fields": unresolved(checks),
                 "observed_evidence_da_ids": list(observed),
                 "initial_context": initial,
+                "observed_documents": list(documents_seen.values()),
+                "document_evidence": selected_evidence(store, checks, documents_seen, recordable, unresolved(checks)),
                 "relation_evidence": witnesses(item_key, item, published, checks["relation"], prior_seen,
                                                 recordable, "related_items" in unresolved(checks)),
                 "history": history, "lookups": calls, "termination_reason": reason,
@@ -335,22 +376,30 @@ def run_p2_agent(llm, store, item, budget, trace, item_key, progress=None):
     for step in range(1, config.MAX_AGENT_STEPS + 1):
         relation_focus = (allow_prior and "related_items" in unresolved(checks)
                           and checks["statement"]["result"] == checks["conflict"]["result"] == "pass")
+        document_focus = checks["statement"]["reason"] in ("requested_document_context_not_checked", "document_passage_not_delivered")
         if phase == "check":
             read_history = any(set(r["evidence"]).intersection(observed) for r in prior_seen.values())
             focused = relation_focus and read_history
             tools = [relation_tool(), assessor] if focused else [assessor]
             choice = {"type": "tool", "name": "assess_relation" if focused else "assess_item"}
+            if documents_seen and item.get("verify_project_context") and checks["statement"]["result"] != "pass":
+                tools = [document_context_tool(item["type"]), assessor]
+                choice = {"type": "tool", "name": "assess_document_context"}
         else:
             allowed = lookup_tools if next_action == "retrieve" else [t for t in lookup_tools if t["name"] in (
                 "search_dialogue", "get_prior_items", "search_project_doc")]
             if relation_focus:
                 allowed = [copy.deepcopy(t) for t in allowed if t["name"] in (
-                    "get_prior_items", "read_prior_item", "search_dialogue", "read_dialogue")]
+                    "get_prior_items", "read_prior_item", "search_dialogue", "read_dialogue", "search_project_doc", "read_project_doc")]
                 for definition in allowed:
                     if definition["name"] == "search_dialogue":
                         definition["input_schema"]["properties"]["scope"] = {"enum": ["prior"]}
                     elif definition["name"] == "read_dialogue":
                         definition["input_schema"]["properties"]["meeting_id"] = {"enum": store.visible_ids("prior")}
+            if document_focus:
+                allowed = [t for t in allowed if t["name"] in ("search_project_doc", "read_project_doc")]
+                if documents_seen and next_action == "retrieve":
+                    allowed = [t for t in allowed if t["name"] != "search_project_doc"]
             # A retrieve action verifies already-returned records. A new item search remains available
             # through search_again; the Agent still chooses the record, evidence, query or a pending stop.
             if next_action == "retrieve" and prior_seen and checks["relation"]["result"] == "uncertain":
@@ -368,7 +417,18 @@ def run_p2_agent(llm, store, item, budget, trace, item_key, progress=None):
         else:
             use = uses[0]
             name, args = use["name"], use["input"]
+            raw_args = copy.deepcopy(args)
+            normalizations = []
             definition = next((t for t in tools if t["name"] == name), None)
+            if name == "assess_item" and isinstance(args, dict) and isinstance(args.get("fields"), dict):
+                args = copy.deepcopy(args)
+                for key in tool_defs(allow_prior)[-1]["input_schema"]["properties"]:
+                    if key in args and key in args["fields"] and args[key] == args["fields"][key]:
+                        del args[key]
+                        normalizations.append("removed_identical_root_duplicate:" + key)
+                if args.get("documents") == []:
+                    del args["documents"]
+                    normalizations.append("removed_empty_root_documents")
             schema_errors = list(Draft202012Validator(definition["input_schema"]).iter_errors(args)) if definition else []
             if not definition:
                 error = "Use one of: " + ", ".join(t["name"] for t in tools)
@@ -383,18 +443,29 @@ def run_p2_agent(llm, store, item, budget, trace, item_key, progress=None):
                 invalid = 0
                 submitted = copy.deepcopy(args)
                 if name == "assess_relation":
-                    relation = {k: args[k] for k in ("result", "reason", "quotes", "links") if k in args}
+                    relation = {k: args[k] for k in ("result", "reason", "quotes", "links", "documents") if k in args}
                     relation["fields"] = ["related_items"]
                     args = {"fields": {**proposed, "related_items": args["related_items"],
                               "evidence_da_ids": list(dict.fromkeys(proposed["evidence_da_ids"] + [q if isinstance(q, str) else q["da_id"] for q in args["quotes"]]))},
                             "checks": {**checks, "relation": relation},
                             **({"next_action": args["next_action"]} if "next_action" in args else {})}
+                elif name == "assess_document_context":
+                    finding = {k: args[k] for k in ("result", "reason", "quotes", "documents")}
+                    finding["fields"] = ["statement"]
+                    merged = {**checks, "statement": finding}
+                    if "status_check" in args:
+                        merged["status"] = args["status_check"]
+                    ids = [q if isinstance(q, str) else q["da_id"] for q in args["quotes"]]
+                    ids += [q if isinstance(q, str) else q["da_id"] for q in args.get("status_check", {}).get("quotes", [])]
+                    args = {"fields": {**proposed, "status": args.get("status", proposed["status"]),
+                              "evidence_da_ids": list(dict.fromkeys(proposed["evidence_da_ids"] + ids))},
+                            "checks": merged, **({"next_action": args["next_action"]} if "next_action" in args else {})}
                 submitted_checks = copy.deepcopy(args["checks"])
                 args, bindings = bind_evidence(args, observed, store.current, item["type"])
                 before = json.dumps({k: (v["result"], v["reason"], v["fields"]) for k, v in checks.items()
                                      if v["result"] not in ("pass", "not_applicable")}, sort_keys=True)
                 proposed = copy.deepcopy(args["fields"])
-                checks, fields = evaluate(store, item, args, observed, prior_seen, pages_seen, prior_attempted)
+                checks, fields = evaluate(store, item, args, observed, prior_seen, pages_seen, prior_attempted, documents_seen)
                 after = json.dumps({k: (v["result"], v["reason"], v["fields"]) for k, v in checks.items()
                                     if v["result"] not in ("pass", "not_applicable")}, sort_keys=True)
                 semantic_stalls = semantic_stalls + 1 if calls and before == after else 0
@@ -406,16 +477,34 @@ def run_p2_agent(llm, store, item, budget, trace, item_key, progress=None):
                 if reassess:
                     applicability_reassessed = True
                     next_action, reason = "reassess", "clarification_hint_used_inapplicable_fields"
+                correct_applicability = reassess
+                repair_evidence = (not evidence_reassessed and args.get("next_action") not in ("stop", "request_clarification")
+                    and any(f["reason"] == "current_meeting_support_required"
+                            and submitted_checks.get(k, {}).get("result") == "pass"
+                            and not submitted_checks[k].get("quotes") for k, f in checks.items()))
+                if repair_evidence:
+                    evidence_reassessed = True
+                    reassess = True
+                    next_action, reason = "reassess", "missing_current_evidence_selection"
                 record(step, name, "checked", checks=checks, decision=next_action, reason=reason,
                        requested_action=args.get("next_action"), proposed_fields=proposed,
-                       submitted_checks=submitted_checks, submitted_assessment=submitted, evidence_bindings=bindings)
+                       submitted_checks=submitted_checks, submitted_assessment=submitted, evidence_bindings=bindings,
+                       raw_tool_input=raw_args, protocol_normalizations=normalizations)
                 if next_action == "accept":
                     return finish("accepted", reason)
                 if next_action in ("request_clarification", "stop"):
                     return finish("pending", reason)
                 feedback = {"decision": next_action, "unresolved_fields": unresolved(checks), "checks": checks}
-                if reassess:
+                if documents_seen:
+                    feedback["delivered_document_passages"] = list(documents_seen)
+                    feedback["document_instruction"] = "Select relevant delivered passage IDs in checks.<name>.documents with result and reason; unused search hits are not citations. Read more context or search again if needed."
+                elif item.get("verify_project_context"):
+                    feedback["document_instruction"] = "The user explicitly requested a scenario-context check. Current dialogue support does not complete that request. Search the project document, inspect useful context and select passages, or stop pending. You choose queries and pages."
+                if correct_applicability:
                     feedback["applicability_correction"] = "This is not an Action: owner and deadline do not apply. Reassess the corrected checks and choose retrieve/search/stop for the actual unresolved fields. You may still stop pending if those cannot be settled."
+                if repair_evidence:
+                    feedback["evidence_selection_correction"] = "A pass needs a supporting current dialogue ID. Select an actually delivered current ID for the indicated check, or mark it uncertain; document IDs cannot replace meeting evidence."
+                    feedback["available_current_dialogue"] = [r for d, r in observed.items() if meeting_of(d) == store.current]
                 bad_ids = {q["da_id"] for finding in args["checks"].values() for q in finding["quotes"]
                            if q["da_id"] in observed and (not q["quote"].strip()
                            or q["quote"].strip().casefold() not in observed[q["da_id"]]["text"].casefold())}
@@ -455,8 +544,11 @@ def run_p2_agent(llm, store, item, budget, trace, item_key, progress=None):
                             new_info |= row["id"] not in prior_seen
                             prior_seen[row["id"]] = row
                             prior_attempted = True
-                        elif name == "search_project_doc":
-                            new_info |= row["page"] not in pages_seen
+                        elif name in ("search_project_doc", "read_project_doc"):
+                            if not store.documents.valid_row(row):
+                                continue
+                            new_info |= row["passage_id"] not in documents_seen
+                            documents_seen[row["passage_id"]] = row
                             pages_seen.add(row["page"])
                 no_progress = 0 if new_info else no_progress + 1
                 record(step, name, "lookup", decision=next_action, args=args, tool_result=data, new_info=new_info)
@@ -494,6 +586,7 @@ def validate_outputs(p2, clarifications, record, store):
     if expected_requests != clarifications["requests"]:
         errors.append("p2: clarification index differs from item requests")
     for item in p2["items"]:
+        errors += validate_outcome(store, item)
         if item["state"] == "accepted" and (item["unresolved_fields"] or not item["recordable"]):
             errors.append("p2: accepted item still has unresolved checks")
         if item["recordable"] and (item["checks"]["statement"]["result"] != "pass" or "statement" in item["unresolved_fields"]):

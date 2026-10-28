@@ -177,14 +177,16 @@ class Store:
 
     # ---- scenario ----------------------------------------------------------
     def _load_scenario(self) -> tuple[list[tuple[int, str]], BM25]:
-        raw = config.SCENARIO.read_text(encoding="utf-8")
-        parts = re.split(r"=== PDF PAGE (\d+) ===", raw)
-        pages = [(int(n), body.strip()) for n, body in zip(parts[1::2], parts[2::2])]
+        from .documents import ScenarioDocument
+        self.documents = ScenarioDocument(config.SCENARIO, BM25, history_tokens)
+        pages = list(self.documents.pages.items())
         return pages, BM25([b for _, b in pages])
 
     def search_project_doc(self, query: str, k: int = 3) -> list[dict]:
-        pages, idx = self._scenario
-        return [{"page": pages[i][0], "snippet": pages[i][1][:500], "score": round(s, 2)} for i, s in idx.top(query, k)]
+        return self.documents.search(query, k)
+
+    def read_project_doc(self, page: int, offset: int = 0, limit: int = 1800) -> list[dict]:
+        return self.documents.read(page, offset, limit)
 
     # ---- prior system outputs ----------------------------------------------
     def _prior_snapshot(self, mid):

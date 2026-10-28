@@ -118,6 +118,9 @@ above is unchanged; budget-control regression tests use offline transports.
 
 ## P2 checks and clarification requests
 
+[Scenario passage retrieval and P2 citations](docs/SCENARIO_CONTEXT.md) describes `read_project_doc`, explicit
+document assessment, source/range validation and citation retention under the existing budgets.
+
 Cross-meeting retrieval, per-link evidence witnesses, time boundaries and the real development demonstration
 are documented in [Cross-meeting linking](docs/CROSS_MEETING.md).
 The [TS3006a → TS3006b case](results/cross_meeting/CASE.md) includes a fresh live run, actual source evidence,

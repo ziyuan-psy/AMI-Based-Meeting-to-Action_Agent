@@ -114,6 +114,12 @@
               "related_items"
             ]
           }
+        },
+        "documents": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/documentSelection"
+          }
         }
       },
       "required": [
@@ -409,6 +415,18 @@
         },
         "initial_context": {
           "type": "object"
+        },
+        "observed_documents": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/documentPassage"
+          }
+        },
+        "document_evidence": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/documentEvidence"
+          }
         }
       },
       "required": [
@@ -543,6 +561,12 @@
           "items": {
             "$ref": "#/$defs/relationAssessment"
           }
+        },
+        "documents": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/documentSelection"
+          }
         }
       },
       "required": [
@@ -550,6 +574,157 @@
         "reason",
         "quotes",
         "fields"
+      ],
+      "additionalProperties": false
+    },
+    "documentSelection": {
+      "type": "object",
+      "properties": {
+        "passage_id": {
+          "type": "string"
+        },
+        "result": {
+          "enum": [
+            "supports",
+            "context",
+            "irrelevant",
+            "contradicts",
+            "uncertain"
+          ]
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "passage_id",
+        "result",
+        "reason"
+      ],
+      "additionalProperties": false
+    },
+    "documentPassage": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "const": "project_document"
+        },
+        "passage_id": {
+          "type": "string"
+        },
+        "source": {
+          "const": "amiScenario.pdf"
+        },
+        "source_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "page": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "start": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "end": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "origin": {
+          "enum": [
+            "search",
+            "read"
+          ]
+        },
+        "page_length": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "next_offset": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "page_metadata": {
+          "type": "object"
+        },
+        "score": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "kind",
+        "passage_id",
+        "source",
+        "source_sha256",
+        "page",
+        "start",
+        "end",
+        "text",
+        "origin",
+        "page_length",
+        "next_offset",
+        "page_metadata"
+      ],
+      "additionalProperties": false
+    },
+    "documentEvidence": {
+      "type": "object",
+      "properties": {
+        "check": {
+          "enum": [
+            "statement",
+            "owner",
+            "deadline",
+            "status",
+            "conflict",
+            "relation"
+          ]
+        },
+        "passage_id": {
+          "type": "string"
+        },
+        "result": {
+          "enum": [
+            "supports",
+            "context",
+            "irrelevant",
+            "contradicts",
+            "uncertain"
+          ]
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        },
+        "retained": {
+          "type": "boolean"
+        },
+        "evidence": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/documentPassage"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "check",
+        "passage_id",
+        "result",
+        "reason",
+        "retained",
+        "evidence"
       ],
       "additionalProperties": false
     }

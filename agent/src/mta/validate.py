@@ -28,8 +28,7 @@ def _ref_ok(store: Store, ref: dict) -> bool:
         except (ValueError, KeyError):
             return False
     if st == "project_document":
-        m = re.match(r"PDF page (\d+)", loc)
-        return bool(m) and any(p == int(m.group(1)) for p, _ in store._scenario[0])
+        return store.documents.valid_reference(ref)
     return False
 
 

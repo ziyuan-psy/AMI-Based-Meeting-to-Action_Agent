@@ -49,6 +49,10 @@ owner/deadline 对非 Action 不适用；其余必要检查不能用 not_applica
 工具返回保持完整 JSON；超出 6,000 字符时只保留完整结果行，并注明省略数量。
 只有模型实际收到的行才进入可引用证据集合。
 
+Scenario 文档使用独立的 passage registry 和 `documents` 选择，不混入 dialogue ID。
+检索、分页阅读、逐段验证和引用保留见 [Scenario 文档证据](SCENARIO_CONTEXT.md)。
+显式的文档核验请求可以使用 `assess_document_context` 聚焦处理；其余未解决字段仍待确认。
+
 ## 硬约束和能力边界
 
 - pass 必须有实际读过的原文支持。模型选择 ID，代码保存原文；旧格式引文必须逐字匹配。
@@ -113,6 +117,7 @@ accepted 表示所有必要检查通过。pending 表示仍有待解决字段，
 
 `schemas/p2_output_schema.json` 校验两个 sidecar 的结构；额外检查 run、问题、记录 ID 的一致性，
 已接受项没有未解决字段，正式字段与检查字段一致，没有未检查条目混入正式记录。
+文档引用还必须对应实际交付、由模型选用且通过检查的段落；最终 JSON、sidecar 和报告均保留其出处。
 报告的 Needs human confirmation 区域会显示这些问题，并标明被隔离的草稿。
 
 这是问题输出协议，不包含向他人发送消息、接收回答或恢复执行；这些可以作为后续独立功能。

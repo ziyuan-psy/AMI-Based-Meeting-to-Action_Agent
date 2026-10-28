@@ -54,6 +54,9 @@ MAX_FINISH_TRIES = 3
 MAX_AGENT_STEPS = 12
 P2_ENABLED = os.environ.get("MTA_P2_ENABLED", "1") != "0"
 LINK_POLICY_VERSION = 1
+DOCUMENT_POLICY_VERSION = 1
+SCENARIO_PASSAGE_CHARS = 1000
+SCENARIO_PASSAGE_OVERLAP = 150
 
 # Whole-meeting limits. Every model attempt, including every kind of retry, shares these.
 MAX_MODEL_CALLS = int(os.environ.get("MTA_MAX_MODEL_CALLS", "80"))

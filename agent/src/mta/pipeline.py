@@ -185,6 +185,10 @@ def saved_run_complete(record_path: Path) -> bool:
         return (metadata["status"] == "COMPLETED" and result.get("output_sha256") == sha256(record_path)
                 and result.get("report_sha256") == sha256(report) and result.get("p2_enabled", False) == enabled
                 and (not enabled or metadata["mode"] != "s2" or metadata["config"].get("LINK_POLICY_VERSION", 0) == config.LINK_POLICY_VERSION)
+                and (not enabled or metadata["config"].get("DOCUMENT_POLICY_VERSION", 0) == config.DOCUMENT_POLICY_VERSION)
+                and (not enabled or metadata.get("context_sha256", {}).get(config.SCENARIO.name) == sha256(config.SCENARIO))
+                and (not enabled or all(metadata["config"].get(k) == getattr(config, k)
+                                        for k in ("SCENARIO_PASSAGE_CHARS", "SCENARIO_PASSAGE_OVERLAP")))
                 and (not enabled or all(result.get(name + "_sha256") == sha256(record_path.with_suffix(f".{name}.json"))
                                         for name in ("p2", "clarifications"))))
     except (OSError, ValueError, KeyError, TypeError):

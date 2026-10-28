@@ -31,8 +31,12 @@ def tool_defs(allow_prior: bool) -> list[dict]:
         {"name": "get_participants", "description": "Speaker letters, participant IDs and roles of a meeting.",
          "input_schema": {"type": "object", "properties": {"meeting_id": {"type": "string"}},
                           "required": ["meeting_id"]}},
-        {"name": "search_project_doc", "description": "Search the AMI scenario / project documents.",
+        {"name": "search_project_doc", "description": "BM25 search of scenario passages. Returns exact text, page, range and passage ID; use read_project_doc for surrounding context.",
          "input_schema": {"type": "object", "properties": {"query": {"type": "string"}}, "required": ["query"]}},
+        {"name": "read_project_doc", "description": "Read an AMI scenario page in bounded portions. Use next_offset to continue; page numbers are physical PDF pages, one-based.",
+         "input_schema": {"type": "object", "properties": {
+             "page": {"type": "integer", "minimum": 1}, "offset": {"type": "integer", "minimum": 0},
+             "limit": {"type": "integer", "minimum": 1, "maximum": 2000}}, "required": ["page"]}},
     ]
     if allow_prior:
         tools.append({"name": "get_prior_items",
@@ -268,7 +272,7 @@ def _run_legacy_agent(llm: LLM, store: Store, item: dict, budget: MeetingBudget,
                         ids = _ids_in(name, data)
                         new_info = bool(ids - seen_ids)
                         seen_ids |= ids
-                        if name == "search_project_doc":
+                        if name in ("search_project_doc", "read_project_doc"):
                             pages_seen |= {r["page"] for r in data["results"]}
                         cache[key] = data
                     except (PermissionError, KeyError, ValueError, TypeError) as e:
@@ -299,6 +303,8 @@ def _execute(store: Store, name: str, a: dict) -> dict:
         return {"results": store.read_prior_item(a["item_id"], a.get("query", ""), a.get("offset", 0), a.get("limit", 8), a.get("window", 1))}
     if name == "search_project_doc":
         return {"results": store.search_project_doc(a["query"], 3)}
+    if name == "read_project_doc":
+        return {"results": store.read_project_doc(a["page"], a.get("offset", 0), a.get("limit", 1800))}
     raise ValueError(f"unknown tool {name}")
 
 
@@ -310,8 +316,8 @@ def _ids_in(name: str, data: dict) -> set:
         return {r["id"] for r in res}
     if name == "read_prior_item":
         return {r.get("id", r.get("da_id")) for r in res}
-    if name == "search_project_doc":
-        return {f"p{r['page']}" for r in res}
+    if name in ("search_project_doc", "read_project_doc"):
+        return {r["passage_id"] for r in res}
     if name == "get_participants":
         return {r["participant_id"] for r in res}
     return set()

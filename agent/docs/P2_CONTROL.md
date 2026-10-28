@@ -5,7 +5,8 @@ S1/S2 默认启用 P2，B0 保持无跟进基线。设置 `MTA_P2_ENABLED=0` 可
 
 ## 检查如何驱动动作
 
-P2 检查每个条目，包括原来没有 triage flag 的条目。模型先通过 `assess_item` 提交拟输出字段和六项检查：
+P2 检查每个条目，包括原来没有 triage flag 的条目。模型通过 `assess_item` 提交拟输出字段和适用检查。
+正式 sidecar 始终保留六项；非 Action 的 owner/deadline 由代码填为不适用，无需模型重复提交：
 
 | 检查 | 要回答的问题 |
 | --- | --- |
@@ -16,7 +17,9 @@ P2 检查每个条目，包括原来没有 triage flag 的条目。模型先通�
 | conflict | 是否存在未消除的矛盾，影响 statement、owner、deadline、status 或 related_items 哪个字段？ |
 | relation | 是否检索到相关历史记录，并实际读到了它的支持证据和本次变化证据？ |
 
-每项检查给出 `pass / fail / uncertain / not_applicable`、简短原因、精确引文和受影响字段。
+每项检查给出 `pass / fail / uncertain / not_applicable`、简短原因和已读对话 ID。
+代码将 ID 绑定为原文引文；兼容旧的 `{da_id, quote}` 输入，但不会替模型修正伪造引文。
+受影响字段仅 conflict 需要选择，其他检查的字段身份由代码按检查名确定。
 owner/deadline 对非 Action 不适用；其余必要检查不能用 not_applicable 跳过。
 `next_action` 是可选建议；缺少建议时，控制器仍从完整检查结果推导安全动作，不能据此跳过检查。
 
@@ -34,6 +37,11 @@ owner/deadline 对非 Action 不适用；其余必要检查不能用 not_applica
 例如，模型建议 accept，但 owner 仍 uncertain，代码会改为 retrieve 或待确认；
 检索为空后可以改查询再次搜索；检索到历史条目后可以继续 read_dialogue，再检查关联。
 查询文本、工具选择及何时主动请求澄清仍由 Agent 决定，代码负责允许范围、门槛和停止条件。
+非 Action 若因不适用的 owner/deadline 提议停止，最多先反馈一次适用性纠正，再由 Agent 重新选择；
+它仍可以保留实际未解决字段并停止。这次重审也计入统一模型预算和回合上限。
+
+跨会议核验可用 `read_prior_item` 读取旧条目及其原文，随后用 `assess_relation` 聚焦比较。
+具体边界、证据绑定和真实案例见[跨会议关联](CROSS_MEETING.md)与[人工核对案例](../results/cross_meeting/CASE.md)。
 
 重复关键词（包括大小写和顺序变化）会复用结果、计为无进展，不能无限重查。
 新增对话 ID 也不必然代表检查有进展：连续重复的未解决结论会触发停止。
@@ -43,7 +51,9 @@ owner/deadline 对非 Action 不适用；其余必要检查不能用 not_applica
 
 ## 硬约束和能力边界
 
-- pass 必须有实际读过的、逐字匹配的短引文。未读 ID、伪造／空白引文不能通过。
+- pass 必须有实际读过的原文支持。模型选择 ID，代码保存原文；旧格式引文必须逐字匹配。
+  未读 ID、伪造／空白引文不能通过。无矛盾的 pass 可绑定已核验 statement 引文作为检查范围，
+  不把某一引文当作不存在任何矛盾的证明；fail/uncertain 不会因此被改成 pass。
 - 当前条目需要当前会议的支持；只引用上次会议的指派不能证明这次的责任、状态或新承诺。
 - 声称历史关联时，需要实际检索到的记录 ID、当前变化引文，以及该历史条目的支持原文。
   只有历史检索命中或任意一条历史引文不够。

@@ -118,6 +118,11 @@ above is unchanged; budget-control regression tests use offline transports.
 
 ## P2 checks and clarification requests
 
+Cross-meeting retrieval, per-link evidence witnesses, time boundaries and the real development demonstration
+are documented in [Cross-meeting linking](docs/CROSS_MEETING.md).
+The [TS3006a → TS3006b case](results/cross_meeting/CASE.md) includes a fresh live run, actual source evidence,
+a separate human confirmation, a missing-record ablation and all development attempts.
+
 S1/S2 now check every item for statement support, owner/deadline ambiguity, end-of-meeting status, conflicts
 and historical relationships. The controller drives accept, retrieval, changed searches or pending review from
 those findings; it rejects unread/inexact quotes and prevents `finish` from bypassing unresolved checks.

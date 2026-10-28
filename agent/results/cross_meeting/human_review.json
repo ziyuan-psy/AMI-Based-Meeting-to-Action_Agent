@@ -1,0 +1,32 @@
+{
+  "format_version": 1,
+  "status": "confirmed",
+  "reviewer": "human user in this Codex conversation",
+  "recorded_at": "2026-10-28T00:18:08.805593+00:00",
+  "question": "Do the TS3006a TV+video assumption and TS3006b one-device/television-only statements support updates with changed field scope, preserving old history?",
+  "response_verbatim": "确认，updates（范围更新）正确",
+  "review_scope": "The quoted before/after device scope and updates relation only; not full meeting accuracy or final evaluation.",
+  "claim": {
+    "prior_item_id": "TS3006a.sys.s.6",
+    "current_source_item_id": "TS3006b.sys.s.11",
+    "relation": "updates",
+    "changed_fields": [
+      "scope"
+    ],
+    "before": "Initial scope assumption: TV and video",
+    "after": "Only one device: the television",
+    "prior_evidence_da_ids": [
+      "TS3006a.A.dialog-act.vkaraisk.243"
+    ],
+    "current_evidence_da_ids": [
+      "TS3006b.D.dialog-act.dharshi.132",
+      "TS3006b.B.dialog-act.dharshi.68"
+    ]
+  },
+  "original_live_choice": {
+    "run_id": "3ec8eaf70e8f48748e0cc07cf5126f05",
+    "path": "link-v10/agent.trace.jsonl",
+    "sha256": "d8b65678456c532411ec754a5afca5dcd522ac94e7c3a5554b452b3703df2c6c",
+    "note": "Original live run stayed pending because of missing/inexact quotations; the relation was selected by the model. Deterministic binding replay passes."
+  }
+}

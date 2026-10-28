@@ -6,8 +6,10 @@ the SAME series are visible. Gold files are never read here.
 from __future__ import annotations
 
 import json
+import hashlib
 import math
 import re
+import threading
 from collections import Counter
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -22,6 +24,17 @@ def tokenize(text: str) -> list[str]:
     return _TOKEN.findall(text.lower())
 
 
+def history_tokens(text: str) -> list[str]:
+    """Normalize spoken acronyms without changing extraction/deduplication's token rules."""
+    text = re.sub(r"\b(?:[A-Za-z]_){2,}", lambda m: m.group().replace("_", ""), text)
+    aliases = {"tv": ["television"], "lcd": ["display", "screen"], "ui": ["interface"], "id": ["industrial", "designer"]}
+    out = []
+    for token in tokenize(text):
+        out.append(token)
+        out.extend(aliases.get(token, []))
+    return out
+
+
 def split_meeting_id(meeting_id: str) -> tuple[str, int]:
     m = re.fullmatch(r"([A-Za-z]+[0-9]+)([a-d])", meeting_id)
     if not m:
@@ -30,9 +43,10 @@ def split_meeting_id(meeting_id: str) -> tuple[str, int]:
 
 
 class BM25:
-    def __init__(self, docs: list[str], k1: float = 1.5, b: float = 0.75):
+    def __init__(self, docs: list[str], k1: float = 1.5, b: float = 0.75, tokenizer=tokenize):
         self.k1, self.b = k1, b
-        self.toks = [tokenize(d) for d in docs]
+        self.tokenize = tokenizer
+        self.toks = [tokenizer(d) for d in docs]
         self.n = len(docs)
         self.avg = (sum(len(t) for t in self.toks) / self.n) if self.n else 0.0
         df: Counter = Counter()
@@ -43,7 +57,7 @@ class BM25:
 
     def score(self, query: str, i: int) -> float:
         tf, dl, s = self.tf[i], len(self.toks[i]), 0.0
-        for w in set(tokenize(query)):
+        for w in set(self.tokenize(query)):
             if w in tf:
                 f = tf[w]
                 s += self.idf[w] * f * (self.k1 + 1) / (f + self.k1 * (1 - self.b + self.b * dl / (self.avg or 1)))
@@ -56,7 +70,7 @@ class BM25:
 
     def self_score(self, query: str) -> float:
         """Upper-bound-ish score of the query against a doc made of itself (for normalisation)."""
-        q = set(tokenize(query))
+        q = set(self.tokenize(query))
         return sum(self.idf.get(w, 0.0) * (self.k1 + 1) / (1 + self.k1 * (1 - self.b + self.b)) for w in q) or 1.0
 
 
@@ -84,6 +98,8 @@ class Store:
         self._meetings: dict[str, Meeting] = {}
         self._bm25: dict[str, BM25] = {}
         self._scenario = self._load_scenario()
+        self._history_lock = threading.RLock()
+        self._prior_snapshots = {}
 
     # ---- meetings ---------------------------------------------------------
     def visible_ids(self, scope: str = "both") -> list[str]:
@@ -135,7 +151,7 @@ class Store:
     # ---- dialogue retrieval ----------------------------------------------
     def _index(self, meeting_id: str) -> BM25:
         if meeting_id not in self._bm25:
-            self._bm25[meeting_id] = BM25([a["text"] for a in self.meeting(meeting_id).acts])
+            self._bm25[meeting_id] = BM25([a["text"] for a in self.meeting(meeting_id).acts], tokenizer=history_tokens)
         return self._bm25[meeting_id]
 
     def search_dialogue(self, query: str, scope: str = "prior", k: int = 5) -> list[dict]:
@@ -171,36 +187,99 @@ class Store:
         return [{"page": pages[i][0], "snippet": pages[i][1][:500], "score": round(s, 2)} for i, s in idx.top(query, k)]
 
     # ---- prior system outputs ----------------------------------------------
+    def _prior_snapshot(self, mid):
+        if mid not in self.visible_ids("prior") or self.run_dir is None:
+            raise PermissionError("Prior snapshot outside this series/time window")
+        with self._history_lock:
+            if mid not in self._prior_snapshots:
+                path = self.run_dir / f"{mid}.json"
+                raw = path.read_bytes() if path.is_file() else None
+                self._prior_snapshots[mid] = (json.loads(raw) if raw is not None else [],
+                                               hashlib.sha256(raw).hexdigest() if raw is not None else None)
+            return self._prior_snapshots[mid]
+
     def prior_items(self) -> list[dict]:
         if not self.allow_prior or self.run_dir is None:
             return []
         items = []
         for mid in self.visible_ids("prior"):
-            f = self.run_dir / f"{mid}.json"
-            if f.exists():
-                for it in json.loads(f.read_text(encoding="utf-8")):
-                    if it["type"] != "abstract":
-                        items.append(it)
+            for it in self._prior_snapshot(mid)[0]:
+                if it["type"] != "abstract" and str(it.get("id", "")).split(".")[0] == mid:
+                    items.append(it)
         return items
 
     def prior_index(self) -> tuple[list[dict], BM25 | None]:
         items = self.prior_items()
-        return items, (BM25([i["text"] for i in items]) if items else None)
+        return items, (BM25([i["text"] for i in items], tokenizer=history_tokens) if items else None)
+
+    def _prior_metadata(self, item: dict) -> dict:
+        mid = item["id"].split(".")[0]
+        if mid not in self.visible_ids("prior") or self.run_dir is None:
+            raise PermissionError("Only earlier recorded items of this series can be read")
+        path = self.run_dir / f"{mid}.json"
+        all_evidence = list(dict.fromkeys(r["locator"].split(" ")[0] for r in item.get("reference", []) if r["source_type"] == "dialogue"))
+        old_series, old_order = split_meeting_id(mid)
+        allowed = {f"{old_series}{c}" for c in "abcd"[:old_order]}
+        evidence = [d for d in all_evidence if d.split(".")[0] in allowed]
+        result = {"id": item["id"], "meeting_id": mid, "type": item["type"], "text": item["text"],
+                  "owner": item.get("owner"), "owner_basis": item.get("owner_basis"),
+                  "deadline": item.get("deadline"), "deadline_basis": item.get("deadline_basis"),
+                  "status": item.get("status", "unknown"), "evidence": evidence,
+                  "source_file": path.name, "source_sha256": self._prior_snapshot(mid)[1],
+                  "review_state": "legacy_unchecked", "unresolved_fields": []}
+        result["unreadable_reference_ids"] = [d for d in all_evidence if d not in evidence]
+        sidecar = path.with_suffix(".p2.json")
+        if sidecar.is_file():
+            saved = json.loads(sidecar.read_text(encoding="utf-8"))
+            for outcome in saved.get("items", []):
+                if (outcome.get("record_id") == item["id"] and outcome.get("recordable")
+                        and all(item.get(k) == v for k, v in outcome.get("fields", {}).items())):
+                    result.update(review_state=outcome["state"], unresolved_fields=outcome["unresolved_fields"])
+        return result
 
     def get_prior_items(self, query: str, item_type: str | None = None, k: int = 3) -> list[dict]:
-        items, idx = self.prior_index()
-        if not idx:
+        # Filter before ranking: unrelated high-scoring types must not hide the requested type.
+        items = [i for i in self.prior_items() if not item_type or i["type"] == item_type]
+        if not items:
             return []
+        k = max(1, min(int(k), 8))
+        idx = BM25([i["text"] for i in items], tokenizer=history_tokens)
         out = []
-        for i, s in idx.top(query, k * 3):
+        for i, s in idx.top(query, max(1, min(int(k), 8))):
             it = items[i]
-            if item_type and it["type"] != item_type:
-                continue
-            out.append({"id": it["id"], "type": it["type"], "text": it["text"], "owner": it.get("owner"),
-                        "deadline": it.get("deadline"), "status": it.get("status"),
-                        "evidence": [r["locator"] for r in it["reference"] if r["source_type"] == "dialogue"][:5],
-                        "score": round(s, 2)})
+            out.append({**self._prior_metadata(it), "score": round(s, 2)})
         return out[:k]
+
+    def read_prior_item(self, item_id: str, query: str = "", offset: int = 0, limit: int = 8, window: int = 1) -> list[dict]:
+        """One bounded read of a retrieved record and actual cited dialogue; never edits history."""
+        mid = item_id.split(".")[0]
+        if mid not in self.visible_ids("prior"):
+            raise PermissionError("Only same-series earlier records are readable")
+        item = next((i for i in self.prior_items() if i["id"] == item_id), None)
+        if item is None:
+            raise KeyError(item_id)
+        metadata = self._prior_metadata(item)
+        readable = [d for d in metadata["evidence"] if self.da_exists(d.split(".")[0], d)]
+        if query and readable:
+            idx = BM25([self.meeting(d.split(".")[0]).acts[self.meeting(d.split(".")[0]).by_id[d]]["text"] for d in readable],
+                       tokenizer=history_tokens)
+            ranked = [readable[i] for i, _ in idx.top(query, len(readable))]
+            readable = ranked + [d for d in readable if d not in ranked]
+        offset, limit, window = max(0, int(offset)), max(1, min(int(limit), 12)), max(0, min(int(window), 2))
+        selected = readable[offset:offset + limit]
+        rows = [{"kind": "prior_item", **metadata, "selected_reference_ids": selected,
+                 "next_offset": offset + limit if offset + limit < len(readable) else None,
+                 "unreadable_reference_ids": metadata["unreadable_reference_ids"] + [d for d in metadata["evidence"] if d not in readable]}]
+        seen = set()
+        for d in selected:
+            m = self.meeting(d.split(".")[0]); pos = m.by_id[d]
+            for act in m.acts[max(0, pos-window):pos+window+1]:
+                if act["id"] not in seen:
+                    rows.append({"kind": "dialogue", "da_id": act["id"], "meeting_id": m.meeting_id,
+                                 "text": act["text"], **act["attributes"], "supports_item_id": item_id,
+                                 "is_reference": act["id"] in metadata["evidence"]})
+                    seen.add(act["id"])
+        return rows
 
     def prior_item_exists(self, item_id: str) -> bool:
         return any(i["id"] == item_id for i in self.prior_items())

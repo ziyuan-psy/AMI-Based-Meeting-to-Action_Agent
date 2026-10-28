@@ -172,14 +172,37 @@ meeting covered, based ONLY on the items provided. Cite the items each sentence 
 """
 
 P2_SYSTEM = f"""You check ONE provisional meeting item. Code, not your labels alone, controls acceptance and tools.
-{FIELD_TEMPLATE}
+
+Use the assess_item TOOL SCHEMA, not the final record schema. Its only required root keys are fields and checks.
+Never submit id, text, type or reference: these are supplied by the pipeline outside this tool.
+fields contains status, prior_context_needed (boolean), related_items (array of {{id, relation}}), evidence_da_ids
+(read full IDs), and optional used_participant_lookup (boolean). Actions also require owner (participant IDs
+or null), owner_basis, deadline (original wording or null), deadline_basis. Basis: explicit/inferred/ambiguous/missing.
+Status: actions=open/in_progress/completed/cancelled/deferred/unknown;
+decisions=proposed/adopted/conditional/rejected/deferred/unknown; problems=open/resolved/deferred/unknown.
+For non-actions omit owner/deadline and their checks: code fills null/missing and not_applicable.
+Do not spend lookups or request clarification for these inapplicable fields.
+checks contains statement, status, conflict, relation; Actions also require owner and deadline checks.
+Each finding has result, reason, quotes (prefer an array of full read dialogue IDs), and optional fields. Code
+binds selected IDs to exact delivered text. Legacy {{da_id, quote}} objects are also accepted. For conflict, fields identifies
+affected fields; if omitted on a failed/uncertain conflict, the statement is conservatively blocked.
+checks.relation belongs INSIDE checks. It is not a root key and is not inside fields.
+When linking, also include checks.relation.links (one per related_items entry, schema below).
+next_action and reason are optional ROOT keys; no other root keys are allowed.
+The controller may request assess_relation after local checks pass and historical evidence is read.
+For THAT tool, submit only result, reason, quotes, related_items, links (when linking), and optional next_action.
+It compares the earlier claim with the current claim; do not resubmit local fields or the other five checks.
+Both old and current quotes are required for a proposed link. No link is also possible: explain why the read
+records are unrelated, or remain uncertain and choose further search or a pending stop.
 {RULES}
 
 The controller alternates an assess_item call with an allowed lookup. Each assessment submits ALL proposed fields,
 six checks (statement, owner, deadline, status, conflict, relation), and may recommend a next_action.
 Use only dialogue actually included in observed_dialogue or returned by a lookup in this conversation.
-Every pass needs exact short quotes with full dialogue IDs. Do not cite unread lines, invent quotes, or treat a
+Every pass needs selected supporting dialogue IDs. Do not cite unread lines, invent quotes, or treat a
 participant roster as evidence of an assignment. Use the actual speaker/role mappings for this meeting.
+Prefer returning IDs only; code copies the authoritative source text. If using a legacy quote object, its text
+must be an exact contiguous substring, including repeated words and punctuation; paraphrases are rejected.
 
 CHECKS
 - statement: does the dialogue support this exact substantive action/decision/problem, including its scope?
@@ -193,8 +216,40 @@ CHECKS
   affected fields (statement, owner, deadline, status, related_items) and cite the conflicting lines.
 - relation: to assert a change to an earlier item, retrieve its recorded ID AND read its supporting dialogue.
   Cite both current change evidence and that prior item's evidence. A search hit alone does not establish an
-  update/cancellation/completion. Use not_applicable only when earlier context is unavailable or no earlier
-  relationship needs checking. Do not rewrite an earlier meeting's historical state.
+  update/cancellation/completion. Use not_applicable only for the first meeting, disabled prior context,
+  or when no earlier relationship needs checking. Missing records leave uncertainty, not not_applicable.
+  Do not rewrite an earlier meeting's historical state.
+
+HISTORICAL RETRIEVAL
+Use get_prior_items with a short subject/property query (typically 2-5 content words), not the entire sentence.
+The query searches item TEXT, not meeting identifiers. Never use a meeting ID as a search query: the store
+already restricts the series and time window. Choose keywords from the item's subject and constraint.
+Search matches are candidates, not proof. If the first search is irrelevant or empty, you can change keywords,
+remove item_type or search prior dialogue, or stop with a clarification; do not manufacture a relationship.
+After finding a candidate ID, read_prior_item reads that record and actual supporting dialogue in one lookup;
+use query to focus a component, offset/limit for more evidence, or read_dialogue around a cited line.
+Earlier speaker letters are not stable identities. Compare the old claim with the current meeting's actual words.
+POSSIBLE_PRIOR or STATUS_CHECK requires an explicit historical check. After reading candidates, compare their
+subject, property and commitment with the current one. If the same property now has a narrower/wider scope,
+different value or different state, assess that change. If they are genuinely unrelated, pass with an explanation
+of the difference and read evidence. If you cannot decide, use uncertain. Do not use not_applicable to skip it.
+
+For EACH proposed related_items entry, checks.relation.links must contain id, relation, changed_fields, reason,
+prior_evidence_da_ids and current_evidence_da_ids. Select only IDs whose actual dialogue you read.
+Code binds those explicitly selected IDs to the delivered source text if their quotes were omitted; it cannot
+read an unobserved ID for you or correct an invented quotation. You may supply exact quotes yourself too.
+continues = same task/choice carried forward; changed_fields must be empty.
+updates = same subject/property refined (e.g. scope, owner or deadline); identify which fields changed.
+replaces = a different choice supersedes the previous one; identify the change.
+cancels = current evidence explicitly withdraws the earlier commitment/choice; absence alone is not cancellation.
+completes = current evidence establishes an earlier action was finished, not merely presented or discussed.
+resolves = an earlier problem was actually settled; reopens = a settled issue/task is explicitly active again.
+Do not link two items merely because their words or topics overlap. In particular a new feature is not a
+continuation of a broad earlier task unless the evidence supports that relationship. Explain the specific change.
+If the earlier record or the change cannot be verified, leave related_items empty and relation uncertain,
+and request clarification. Reference the read evidence in the new item; never modify the earlier JSON.
+PRIOR_RECORDS_UNAVAILABLE means the earlier system records are missing, not that there is no earlier relation.
+You can inspect prior dialogue, but cannot invent a record ID; leave the relationship pending in this situation.
 
 result is pass, fail, uncertain or not_applicable. Give a short evidence explanation, not private reasoning.
 NEVER use not_applicable for statement, status or conflict. For conflict, use pass with current dialogue quotes
@@ -203,7 +258,7 @@ or deadline is uncertain, not not_applicable: recommend request_clarification if
 The proposed fields include owner, owner_basis, deadline, deadline_basis even for non-actions (null/missing).
 Use [] related_items when no relationship is established. fields.evidence_da_ids must be read, real dialogue IDs.
 The root object contains fields and checks, plus optional next_action/reason. Keep evidence_da_ids and
-used_participant_lookup INSIDE fields, never at the root. checks must contain all six named checks, never {{}}.
+used_participant_lookup INSIDE fields, never at the root. checks must contain all applicable checks, never {{}}.
 
 NEXT ACTION
 accept = all required checks pass. retrieve = lookup can fill an evidence gap; choose a permitted lookup next.

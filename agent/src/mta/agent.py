@@ -36,10 +36,16 @@ def tool_defs(allow_prior: bool) -> list[dict]:
     ]
     if allow_prior:
         tools.append({"name": "get_prior_items",
-                      "description": "Items recorded for earlier meetings of this series, with IDs.",
+                      "description": "Keyword search of earlier record TEXT in this series. Choose subject/property keywords, not a meeting ID. Returns candidate records and evidence locators, not the dialogue text.",
                       "input_schema": {"type": "object", "properties": {
-                          "query": {"type": "string"}, "item_type": {"enum": ["actions", "decisions", "problems"]}},
+                          "query": {"type": "string", "description": "Short content keywords from the item; meeting IDs are not indexed."},
+                          "item_type": {"enum": ["actions", "decisions", "problems"]}},
                           "required": ["query"]}})
+        tools.append({"name": "read_prior_item", "description": "Read a returned prior record and its actual supporting dialogue; use query to focus evidence or offset for more.",
+                      "input_schema": {"type": "object", "properties": {
+                          "item_id": {"type": "string"}, "query": {"type": "string"},
+                          "offset": {"type": "integer", "minimum": 0}, "limit": {"type": "integer", "minimum": 1, "maximum": 12},
+                          "window": {"type": "integer", "minimum": 0, "maximum": 2}}, "required": ["item_id"]}})
     tools.append({"name": "finish", "description": "Submit the final fields for this item.",
                   "input_schema": {"type": "object", "properties": {
                       "owner": {"type": ["array", "null"], "items": {"type": "string"}},
@@ -289,6 +295,8 @@ def _execute(store: Store, name: str, a: dict) -> dict:
         return {"results": store.roster(a["meeting_id"])}
     if name == "get_prior_items":
         return {"results": store.get_prior_items(a["query"], a.get("item_type"), 3)}
+    if name == "read_prior_item":
+        return {"results": store.read_prior_item(a["item_id"], a.get("query", ""), a.get("offset", 0), a.get("limit", 8), a.get("window", 1))}
     if name == "search_project_doc":
         return {"results": store.search_project_doc(a["query"], 3)}
     raise ValueError(f"unknown tool {name}")
@@ -300,6 +308,8 @@ def _ids_in(name: str, data: dict) -> set:
         return {r["da_id"] for r in res}
     if name == "get_prior_items":
         return {r["id"] for r in res}
+    if name == "read_prior_item":
+        return {r.get("id", r.get("da_id")) for r in res}
     if name == "search_project_doc":
         return {f"p{r['page']}" for r in res}
     if name == "get_participants":

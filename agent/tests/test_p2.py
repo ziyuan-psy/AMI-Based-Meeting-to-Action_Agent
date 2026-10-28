@@ -242,6 +242,9 @@ def test_relation_requires_retrieving_record_and_reading_its_actual_evidence():
     final["checks"]["relation"].update(result="pass", quotes=[
         {"da_id": D4, "quote": store.meeting(CUR).acts[-1]["text"]},
         {"da_id": P1, "quote": store.meeting(OLD).acts[0]["text"]}])
+    final["checks"]["relation"]["links"] = [{"id": store.prior["id"], "relation": "cancels",
+        "changed_fields": ["status"], "reason": "Current meeting explicitly cancels the earlier LCD choice",
+        "prior_evidence_da_ids": [P1], "current_evidence_da_ids": [D4]}]
     result, _, _, _ = execute(store, it, [("assess_item", initial),
         ("get_prior_items", {"query": "LCD", "item_type": "decisions"}), ("assess_item", need_read),
         ("read_dialogue", {"meeting_id": OLD, "da_id": P1}), ("assess_item", final)])

@@ -53,6 +53,7 @@ MAX_FINISH_TRIES = 3
 # Hard stop on model turns per item, whatever the model returns (normal worst case is about 9).
 MAX_AGENT_STEPS = 12
 P2_ENABLED = os.environ.get("MTA_P2_ENABLED", "1") != "0"
+LINK_POLICY_VERSION = 1
 
 # Whole-meeting limits. Every model attempt, including every kind of retry, shares these.
 MAX_MODEL_CALLS = int(os.environ.get("MTA_MAX_MODEL_CALLS", "80"))
@@ -85,6 +86,7 @@ EFFORT_EXTRACT = _effort("EXTRACT", None)      # finding items is the step that 
 # Not lowered: on TS3006, "low" kept about twice as many items and relabelled decisions as actions (F1 roughly halved).
 EFFORT_CONSOLIDATE = _effort("CONSOLIDATE", None)
 EFFORT_AGENT = _effort("AGENT", "low")
+EFFORT_LINK = _effort("LINK", "medium")  # comparing old/new commitments needs more than a local field check
 EFFORT_ABSTRACT = _effort("ABSTRACT", "low")
 
 # Upper bound per type after consolidation (gold on the 16 development meetings: actions 1-5, decisions 0-9,

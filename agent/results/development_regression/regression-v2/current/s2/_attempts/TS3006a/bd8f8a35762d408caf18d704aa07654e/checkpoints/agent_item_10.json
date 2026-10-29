@@ -1,0 +1,1281 @@
+{
+  "item": 10,
+  "fields": {
+    "item_key": "TS3006a#10",
+    "record_id": null,
+    "item_type": "decisions",
+    "item_text": "Phase one will be the functional design.",
+    "state": "pending",
+    "recordable": true,
+    "fields": {
+      "status": "unknown",
+      "prior_context_needed": false,
+      "related_items": [],
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3006a.json",
+          "locator": "TS3006a.B.dialog-act.vkaraisk.90"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3006a.json",
+          "locator": "TS3006a.A.dialog-act.vkaraisk.209"
+        }
+      ]
+    },
+    "draft_fields": {
+      "owner": null,
+      "owner_basis": "missing",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "status": "adopted",
+      "prior_context_needed": false,
+      "related_items": [],
+      "evidence_da_ids": [
+        "TS3006a.B.dialog-act.vkaraisk.90",
+        "TS3006a.A.dialog-act.vkaraisk.209"
+      ],
+      "used_participant_lookup": false
+    },
+    "checks": {
+      "statement": {
+        "result": "pass",
+        "reason": "Current dialogue indicates agreement that phase one corresponds to the functional design; supporting excerpts include UI asking about phase one functional design and PM's confirmation.",
+        "quotes": [
+          {
+            "da_id": "TS3006a.B.dialog-act.vkaraisk.90",
+            "quote": "Do we only have to to do uh phase one , the functional design uh ?"
+          },
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.209",
+            "quote": "Yeah ."
+          }
+        ],
+        "fields": [
+          "statement"
+        ]
+      },
+      "owner": {
+        "result": "not_applicable",
+        "reason": "field_not_applicable",
+        "quotes": [],
+        "fields": [
+          "owner"
+        ]
+      },
+      "deadline": {
+        "result": "not_applicable",
+        "reason": "field_not_applicable",
+        "quotes": [],
+        "fields": [
+          "deadline"
+        ]
+      },
+      "status": {
+        "result": "uncertain",
+        "reason": "current_meeting_support_required",
+        "quotes": [],
+        "fields": [
+          "status"
+        ]
+      },
+      "conflict": {
+        "result": "pass",
+        "reason": "No conflicting evidence found in the available dialogue.",
+        "quotes": [
+          {
+            "da_id": "TS3006a.B.dialog-act.vkaraisk.90",
+            "quote": "Do we only have to to do uh phase one , the functional design uh ?"
+          },
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.209",
+            "quote": "Yeah ."
+          }
+        ],
+        "fields": []
+      },
+      "relation": {
+        "result": "not_applicable",
+        "reason": "No prior related item to relate to in this context.",
+        "quotes": [],
+        "fields": [
+          "related_items"
+        ]
+      }
+    },
+    "unresolved_fields": [
+      "status"
+    ],
+    "observed_evidence_da_ids": [
+      "TS3006a.B.dialog-act.vkaraisk.90",
+      "TS3006a.A.dialog-act.vkaraisk.209",
+      "TS3006a.B.dialog-act.vkaraisk.89",
+      "TS3006a.A.dialog-act.vkaraisk.210",
+      "TS3006a.A.dialog-act.vkaraisk.17",
+      "TS3006a.C.dialog-act.vkaraisk.86",
+      "TS3006a.D.dialog-act.vkaraisk.27",
+      "TS3006a.D.dialog-act.vkaraisk.33"
+    ],
+    "initial_context": {
+      "item": {
+        "type": "decisions",
+        "text": "Phase one will be the functional design.",
+        "flags": []
+      },
+      "fields": {
+        "owner": null,
+        "owner_basis": "missing",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "adopted",
+        "prior_context_needed": false,
+        "related_items": [],
+        "evidence_da_ids": [
+          "TS3006a.B.dialog-act.vkaraisk.90",
+          "TS3006a.A.dialog-act.vkaraisk.209"
+        ],
+        "used_participant_lookup": false
+      },
+      "current_meeting": "TS3006a",
+      "earlier_meetings": [],
+      "roster": [
+        {
+          "speaker": "A",
+          "participant_id": "MTD021PM",
+          "role": "PM"
+        },
+        {
+          "speaker": "B",
+          "participant_id": "MTD023UID",
+          "role": "UI"
+        },
+        {
+          "speaker": "C",
+          "participant_id": "MTD022ID",
+          "role": "ID"
+        },
+        {
+          "speaker": "D",
+          "participant_id": "MTD024ME",
+          "role": "ME"
+        }
+      ],
+      "observed_dialogue": [
+        {
+          "da_id": "TS3006a.B.dialog-act.vkaraisk.90",
+          "meeting_id": "TS3006a",
+          "text": "Do we only have to to do uh phase one , the functional design uh ?",
+          "participant": "MTD023UID",
+          "role": "UI"
+        },
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.209",
+          "meeting_id": "TS3006a",
+          "text": "Yeah .",
+          "participant": "MTD021PM",
+          "role": "PM"
+        },
+        {
+          "da_id": "TS3006a.B.dialog-act.vkaraisk.89",
+          "participant": "MTD023UID",
+          "role": "UI",
+          "text": "Yeah ."
+        },
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.210",
+          "participant": "MTD021PM",
+          "role": "PM",
+          "text": "Because then we have a <disfmarker>"
+        }
+      ],
+      "peer_items": [
+        {
+          "item_key": "TS3006a#0",
+          "type": "problems",
+          "text": "There is a hardware/display problem as the presenter reports the screen is missing ('where has my screen gone?' and 'My screen is gone')."
+        },
+        {
+          "item_key": "TS3006a#1",
+          "type": "actions",
+          "text": "The Project Manager will summarize the discussed items and place the summary in the project folder."
+        },
+        {
+          "item_key": "TS3006a#2",
+          "type": "problems",
+          "text": "Participants report being slow and under-prepared for the kickoff, indicating preparation/co-ordination gaps."
+        },
+        {
+          "item_key": "TS3006a#3",
+          "type": "actions",
+          "text": "The Industrial Designer will create an overview for the three design phases."
+        },
+        {
+          "item_key": "TS3006a#4",
+          "type": "actions",
+          "text": "The Industrial Designer will work on the conceptual design."
+        },
+        {
+          "item_key": "TS3006a#5",
+          "type": "problems",
+          "text": "Unclear scope: unclear which animal to draw and lack of agreement on the subject, as well as unclear which components to include in the design."
+        },
+        {
+          "item_key": "TS3006a#6",
+          "type": "actions",
+          "text": "The Marketing Expert will conduct internet searches and user interviews to determine user requirements."
+        },
+        {
+          "item_key": "TS3006a#7",
+          "type": "actions",
+          "text": "The Project Manager will defend our design."
+        },
+        {
+          "item_key": "TS3006a#8",
+          "type": "decisions",
+          "text": "The activity is introduction and get acquainted."
+        },
+        {
+          "item_key": "TS3006a#9",
+          "type": "decisions",
+          "text": "Pricing will be set at 25 Euros, with a target of 50 million Euros in sales and production cost equal to half of the selling price."
+        }
+      ]
+    },
+    "observed_documents": [],
+    "document_evidence": [],
+    "relation_evidence": [],
+    "history": [
+      {
+        "item": "TS3006a#10",
+        "step": 1,
+        "flags": [],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Current dialogue indicates agreement that phase one corresponds to the functional design; supporting excerpts include UI asking about phase one functional design and PM's confirmation.",
+            "quotes": [
+              {
+                "da_id": "TS3006a.B.dialog-act.vkaraisk.90",
+                "quote": "Do we only have to to do uh phase one , the functional design uh ?"
+              },
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.209",
+                "quote": "Yeah ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "uncertain",
+            "reason": "current_meeting_support_required",
+            "quotes": [],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting evidence found in the available dialogue.",
+            "quotes": [
+              {
+                "da_id": "TS3006a.B.dialog-act.vkaraisk.90",
+                "quote": "Do we only have to to do uh phase one , the functional design uh ?"
+              },
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.209",
+                "quote": "Yeah ."
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related item to relate to in this context.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "decision": "reassess",
+        "reason": "missing_current_evidence_selection",
+        "requested_action": "accept",
+        "proposed_fields": {
+          "owner": null,
+          "owner_basis": "missing",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "status": "adopted",
+          "prior_context_needed": false,
+          "related_items": [],
+          "evidence_da_ids": [
+            "TS3006a.B.dialog-act.vkaraisk.90",
+            "TS3006a.A.dialog-act.vkaraisk.209"
+          ],
+          "used_participant_lookup": false
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Current dialogue indicates agreement that phase one corresponds to the functional design; supporting excerpts include UI asking about phase one functional design and PM's confirmation.",
+            "quotes": [
+              "TS3006a.B.dialog-act.vkaraisk.90",
+              "TS3006a.A.dialog-act.vkaraisk.209"
+            ]
+          },
+          "owner": {
+            "result": "uncertain",
+            "reason": "No explicit owner identified in this meeting for this decision."
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "This decision has no deadline specified."
+          },
+          "status": {
+            "result": "pass",
+            "reason": "The item is marked adopted and the dialogue shows alignment with that state."
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting evidence found in the available dialogue."
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related item to relate to in this context."
+          }
+        },
+        "submitted_assessment": {
+          "fields": {
+            "owner": null,
+            "owner_basis": "missing",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "adopted",
+            "prior_context_needed": false,
+            "related_items": [],
+            "evidence_da_ids": [
+              "TS3006a.B.dialog-act.vkaraisk.90",
+              "TS3006a.A.dialog-act.vkaraisk.209"
+            ],
+            "used_participant_lookup": false
+          },
+          "checks": {
+            "statement": {
+              "result": "pass",
+              "reason": "Current dialogue indicates agreement that phase one corresponds to the functional design; supporting excerpts include UI asking about phase one functional design and PM's confirmation.",
+              "quotes": [
+                "TS3006a.B.dialog-act.vkaraisk.90",
+                "TS3006a.A.dialog-act.vkaraisk.209"
+              ]
+            },
+            "owner": {
+              "result": "uncertain",
+              "reason": "No explicit owner identified in this meeting for this decision."
+            },
+            "deadline": {
+              "result": "not_applicable",
+              "reason": "This decision has no deadline specified."
+            },
+            "status": {
+              "result": "pass",
+              "reason": "The item is marked adopted and the dialogue shows alignment with that state."
+            },
+            "conflict": {
+              "result": "pass",
+              "reason": "No conflicting evidence found in the available dialogue."
+            },
+            "relation": {
+              "result": "not_applicable",
+              "reason": "No prior related item to relate to in this context."
+            }
+          },
+          "next_action": "accept"
+        },
+        "evidence_bindings": {
+          "statement": [
+            "TS3006a.B.dialog-act.vkaraisk.90",
+            "TS3006a.A.dialog-act.vkaraisk.209"
+          ],
+          "conflict_scope": [
+            "TS3006a.B.dialog-act.vkaraisk.90",
+            "TS3006a.A.dialog-act.vkaraisk.209"
+          ]
+        },
+        "raw_tool_input": {
+          "fields": {
+            "owner": null,
+            "owner_basis": "missing",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "adopted",
+            "prior_context_needed": false,
+            "related_items": [],
+            "evidence_da_ids": [
+              "TS3006a.B.dialog-act.vkaraisk.90",
+              "TS3006a.A.dialog-act.vkaraisk.209"
+            ],
+            "used_participant_lookup": false
+          },
+          "checks": {
+            "statement": {
+              "result": "pass",
+              "reason": "Current dialogue indicates agreement that phase one corresponds to the functional design; supporting excerpts include UI asking about phase one functional design and PM's confirmation.",
+              "quotes": [
+                "TS3006a.B.dialog-act.vkaraisk.90",
+                "TS3006a.A.dialog-act.vkaraisk.209"
+              ]
+            },
+            "owner": {
+              "result": "uncertain",
+              "reason": "No explicit owner identified in this meeting for this decision."
+            },
+            "deadline": {
+              "result": "not_applicable",
+              "reason": "This decision has no deadline specified."
+            },
+            "status": {
+              "result": "pass",
+              "reason": "The item is marked adopted and the dialogue shows alignment with that state."
+            },
+            "conflict": {
+              "result": "pass",
+              "reason": "No conflicting evidence found in the available dialogue."
+            },
+            "relation": {
+              "result": "not_applicable",
+              "reason": "No prior related item to relate to in this context."
+            }
+          },
+          "next_action": "accept"
+        },
+        "protocol_normalizations": []
+      },
+      {
+        "item": "TS3006a#10",
+        "step": 2,
+        "flags": [],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Current dialogue indicates agreement that phase one corresponds to the functional design; supporting excerpts include UI asking about phase one functional design and PM's confirmation.",
+            "quotes": [
+              {
+                "da_id": "TS3006a.B.dialog-act.vkaraisk.90",
+                "quote": "Do we only have to to do uh phase one , the functional design uh ?"
+              },
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.209",
+                "quote": "Yeah ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "uncertain",
+            "reason": "current_meeting_support_required",
+            "quotes": [],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting evidence found in the available dialogue.",
+            "quotes": [
+              {
+                "da_id": "TS3006a.B.dialog-act.vkaraisk.90",
+                "quote": "Do we only have to to do uh phase one , the functional design uh ?"
+              },
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.209",
+                "quote": "Yeah ."
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related item to relate to in this context.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "decision": "retrieve",
+        "reason": "unresolved_checks",
+        "requested_action": "accept",
+        "proposed_fields": {
+          "owner": null,
+          "owner_basis": "missing",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "status": "adopted",
+          "prior_context_needed": false,
+          "related_items": [],
+          "evidence_da_ids": [
+            "TS3006a.B.dialog-act.vkaraisk.90",
+            "TS3006a.A.dialog-act.vkaraisk.209"
+          ],
+          "used_participant_lookup": false
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Current dialogue indicates agreement that phase one corresponds to the functional design; supporting excerpts include UI asking about phase one functional design and PM's confirmation.",
+            "quotes": [
+              "TS3006a.B.dialog-act.vkaraisk.90",
+              "TS3006a.A.dialog-act.vkaraisk.209"
+            ]
+          },
+          "owner": {
+            "result": "uncertain",
+            "reason": "No explicit owner identified in this meeting for this decision."
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "This decision has no deadline specified."
+          },
+          "status": {
+            "result": "pass",
+            "reason": "The item is marked adopted and the dialogue shows alignment with that state."
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting evidence found in the available dialogue."
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related item to relate to in this context."
+          }
+        },
+        "submitted_assessment": {
+          "fields": {
+            "owner": null,
+            "owner_basis": "missing",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "adopted",
+            "prior_context_needed": false,
+            "related_items": [],
+            "evidence_da_ids": [
+              "TS3006a.B.dialog-act.vkaraisk.90",
+              "TS3006a.A.dialog-act.vkaraisk.209"
+            ],
+            "used_participant_lookup": false
+          },
+          "checks": {
+            "statement": {
+              "result": "pass",
+              "reason": "Current dialogue indicates agreement that phase one corresponds to the functional design; supporting excerpts include UI asking about phase one functional design and PM's confirmation.",
+              "quotes": [
+                "TS3006a.B.dialog-act.vkaraisk.90",
+                "TS3006a.A.dialog-act.vkaraisk.209"
+              ]
+            },
+            "owner": {
+              "result": "uncertain",
+              "reason": "No explicit owner identified in this meeting for this decision."
+            },
+            "deadline": {
+              "result": "not_applicable",
+              "reason": "This decision has no deadline specified."
+            },
+            "status": {
+              "result": "pass",
+              "reason": "The item is marked adopted and the dialogue shows alignment with that state."
+            },
+            "conflict": {
+              "result": "pass",
+              "reason": "No conflicting evidence found in the available dialogue."
+            },
+            "relation": {
+              "result": "not_applicable",
+              "reason": "No prior related item to relate to in this context."
+            }
+          },
+          "next_action": "accept"
+        },
+        "evidence_bindings": {
+          "statement": [
+            "TS3006a.B.dialog-act.vkaraisk.90",
+            "TS3006a.A.dialog-act.vkaraisk.209"
+          ],
+          "conflict_scope": [
+            "TS3006a.B.dialog-act.vkaraisk.90",
+            "TS3006a.A.dialog-act.vkaraisk.209"
+          ]
+        },
+        "raw_tool_input": {
+          "fields": {
+            "owner": null,
+            "owner_basis": "missing",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "adopted",
+            "prior_context_needed": false,
+            "related_items": [],
+            "evidence_da_ids": [
+              "TS3006a.B.dialog-act.vkaraisk.90",
+              "TS3006a.A.dialog-act.vkaraisk.209"
+            ],
+            "used_participant_lookup": false
+          },
+          "checks": {
+            "statement": {
+              "result": "pass",
+              "reason": "Current dialogue indicates agreement that phase one corresponds to the functional design; supporting excerpts include UI asking about phase one functional design and PM's confirmation.",
+              "quotes": [
+                "TS3006a.B.dialog-act.vkaraisk.90",
+                "TS3006a.A.dialog-act.vkaraisk.209"
+              ]
+            },
+            "owner": {
+              "result": "uncertain",
+              "reason": "No explicit owner identified in this meeting for this decision."
+            },
+            "deadline": {
+              "result": "not_applicable",
+              "reason": "This decision has no deadline specified."
+            },
+            "status": {
+              "result": "pass",
+              "reason": "The item is marked adopted and the dialogue shows alignment with that state."
+            },
+            "conflict": {
+              "result": "pass",
+              "reason": "No conflicting evidence found in the available dialogue."
+            },
+            "relation": {
+              "result": "not_applicable",
+              "reason": "No prior related item to relate to in this context."
+            }
+          },
+          "next_action": "accept"
+        },
+        "protocol_normalizations": []
+      },
+      {
+        "item": "TS3006a#10",
+        "step": 3,
+        "flags": [],
+        "action": "get_participants",
+        "outcome": "lookup",
+        "decision": "retrieve",
+        "args": {
+          "meeting_id": "TS3006a"
+        },
+        "tool_result": {
+          "results": [
+            {
+              "speaker": "A",
+              "participant_id": "MTD021PM",
+              "role": "PM"
+            },
+            {
+              "speaker": "B",
+              "participant_id": "MTD023UID",
+              "role": "UI"
+            },
+            {
+              "speaker": "C",
+              "participant_id": "MTD022ID",
+              "role": "ID"
+            },
+            {
+              "speaker": "D",
+              "participant_id": "MTD024ME",
+              "role": "ME"
+            }
+          ]
+        },
+        "new_info": false
+      },
+      {
+        "item": "TS3006a#10",
+        "step": 4,
+        "flags": [],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Current dialogue indicates agreement that phase one corresponds to the functional design; supporting excerpts include UI asking about phase one functional design and PM's confirmation.",
+            "quotes": [
+              {
+                "da_id": "TS3006a.B.dialog-act.vkaraisk.90",
+                "quote": "Do we only have to to do uh phase one , the functional design uh ?"
+              },
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.209",
+                "quote": "Yeah ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "uncertain",
+            "reason": "current_meeting_support_required",
+            "quotes": [],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting evidence found in the available dialogue.",
+            "quotes": [
+              {
+                "da_id": "TS3006a.B.dialog-act.vkaraisk.90",
+                "quote": "Do we only have to to do uh phase one , the functional design uh ?"
+              },
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.209",
+                "quote": "Yeah ."
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related item to relate to in this context.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "decision": "search_again",
+        "reason": "unresolved_checks",
+        "requested_action": "accept",
+        "proposed_fields": {
+          "owner": null,
+          "owner_basis": "missing",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "status": "adopted",
+          "prior_context_needed": false,
+          "related_items": [],
+          "evidence_da_ids": [
+            "TS3006a.B.dialog-act.vkaraisk.90",
+            "TS3006a.A.dialog-act.vkaraisk.209"
+          ],
+          "used_participant_lookup": false
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Current dialogue indicates agreement that phase one corresponds to the functional design; supporting excerpts include UI asking about phase one functional design and PM's confirmation.",
+            "quotes": [
+              "TS3006a.B.dialog-act.vkaraisk.90",
+              "TS3006a.A.dialog-act.vkaraisk.209"
+            ]
+          },
+          "owner": {
+            "result": "uncertain",
+            "reason": "No explicit owner identified in this meeting for this decision."
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "This decision has no deadline specified."
+          },
+          "status": {
+            "result": "pass",
+            "reason": "The item is marked adopted and the dialogue shows alignment with that state."
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting evidence found in the available dialogue."
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related item to relate to in this context."
+          }
+        },
+        "submitted_assessment": {
+          "fields": {
+            "owner": null,
+            "owner_basis": "missing",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "adopted",
+            "prior_context_needed": false,
+            "related_items": [],
+            "evidence_da_ids": [
+              "TS3006a.B.dialog-act.vkaraisk.90",
+              "TS3006a.A.dialog-act.vkaraisk.209"
+            ],
+            "used_participant_lookup": false
+          },
+          "checks": {
+            "statement": {
+              "result": "pass",
+              "reason": "Current dialogue indicates agreement that phase one corresponds to the functional design; supporting excerpts include UI asking about phase one functional design and PM's confirmation.",
+              "quotes": [
+                "TS3006a.B.dialog-act.vkaraisk.90",
+                "TS3006a.A.dialog-act.vkaraisk.209"
+              ]
+            },
+            "owner": {
+              "result": "uncertain",
+              "reason": "No explicit owner identified in this meeting for this decision."
+            },
+            "deadline": {
+              "result": "not_applicable",
+              "reason": "This decision has no deadline specified."
+            },
+            "status": {
+              "result": "pass",
+              "reason": "The item is marked adopted and the dialogue shows alignment with that state."
+            },
+            "conflict": {
+              "result": "pass",
+              "reason": "No conflicting evidence found in the available dialogue."
+            },
+            "relation": {
+              "result": "not_applicable",
+              "reason": "No prior related item to relate to in this context."
+            }
+          },
+          "next_action": "accept"
+        },
+        "evidence_bindings": {
+          "statement": [
+            "TS3006a.B.dialog-act.vkaraisk.90",
+            "TS3006a.A.dialog-act.vkaraisk.209"
+          ],
+          "conflict_scope": [
+            "TS3006a.B.dialog-act.vkaraisk.90",
+            "TS3006a.A.dialog-act.vkaraisk.209"
+          ]
+        },
+        "raw_tool_input": {
+          "fields": {
+            "owner": null,
+            "owner_basis": "missing",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "adopted",
+            "prior_context_needed": false,
+            "related_items": [],
+            "evidence_da_ids": [
+              "TS3006a.B.dialog-act.vkaraisk.90",
+              "TS3006a.A.dialog-act.vkaraisk.209"
+            ],
+            "used_participant_lookup": false
+          },
+          "checks": {
+            "statement": {
+              "result": "pass",
+              "reason": "Current dialogue indicates agreement that phase one corresponds to the functional design; supporting excerpts include UI asking about phase one functional design and PM's confirmation.",
+              "quotes": [
+                "TS3006a.B.dialog-act.vkaraisk.90",
+                "TS3006a.A.dialog-act.vkaraisk.209"
+              ]
+            },
+            "owner": {
+              "result": "uncertain",
+              "reason": "No explicit owner identified in this meeting for this decision."
+            },
+            "deadline": {
+              "result": "not_applicable",
+              "reason": "This decision has no deadline specified."
+            },
+            "status": {
+              "result": "pass",
+              "reason": "The item is marked adopted and the dialogue shows alignment with that state."
+            },
+            "conflict": {
+              "result": "pass",
+              "reason": "No conflicting evidence found in the available dialogue."
+            },
+            "relation": {
+              "result": "not_applicable",
+              "reason": "No prior related item to relate to in this context."
+            }
+          },
+          "next_action": "accept"
+        },
+        "protocol_normalizations": []
+      },
+      {
+        "item": "TS3006a#10",
+        "step": 5,
+        "flags": [],
+        "action": "search_dialogue",
+        "outcome": "lookup",
+        "decision": "search_again",
+        "args": {
+          "query": "Phase one functional design",
+          "scope": "current"
+        },
+        "tool_result": {
+          "results": [
+            {
+              "da_id": "TS3006a.B.dialog-act.vkaraisk.90",
+              "meeting_id": "TS3006a",
+              "participant": "MTD023UID",
+              "role": "UI",
+              "text": "Do we only have to to do uh phase one , the functional design uh ?",
+              "score": 9.66
+            },
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.17",
+              "meeting_id": "TS3006a",
+              "participant": "MTD021PM",
+              "role": "PM",
+              "text": "Um we're work we're working uh from top to bottom . Uh functional design ,",
+              "score": 4.97
+            },
+            {
+              "da_id": "TS3006a.C.dialog-act.vkaraisk.86",
+              "meeting_id": "TS3006a",
+              "participant": "MTD022ID",
+              "role": "ID",
+              "text": "I think was the functional .",
+              "score": 4.93
+            },
+            {
+              "da_id": "TS3006a.D.dialog-act.vkaraisk.27",
+              "meeting_id": "TS3006a",
+              "participant": "MTD024ME",
+              "role": "ME",
+              "text": "<vocalsound> Should it be one <disfmarker>",
+              "score": 3.97
+            },
+            {
+              "da_id": "TS3006a.D.dialog-act.vkaraisk.33",
+              "meeting_id": "TS3006a",
+              "participant": "MTD024ME",
+              "role": "ME",
+              "text": "then m make a new one .",
+              "score": 3.97
+            }
+          ]
+        },
+        "new_info": true
+      },
+      {
+        "item": "TS3006a#10",
+        "step": 6,
+        "flags": [],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Current dialogue indicates agreement that phase one corresponds to the functional design; supporting excerpts include UI asking about phase one functional design and PM's confirmation.",
+            "quotes": [
+              {
+                "da_id": "TS3006a.B.dialog-act.vkaraisk.90",
+                "quote": "Do we only have to to do uh phase one , the functional design uh ?"
+              },
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.209",
+                "quote": "Yeah ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "uncertain",
+            "reason": "current_meeting_support_required",
+            "quotes": [],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting evidence found in the available dialogue.",
+            "quotes": [
+              {
+                "da_id": "TS3006a.B.dialog-act.vkaraisk.90",
+                "quote": "Do we only have to to do uh phase one , the functional design uh ?"
+              },
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.209",
+                "quote": "Yeah ."
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related item to relate to in this context.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "decision": "request_clarification",
+        "reason": "no_progress",
+        "requested_action": "accept",
+        "proposed_fields": {
+          "owner": null,
+          "owner_basis": "missing",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "status": "adopted",
+          "prior_context_needed": false,
+          "related_items": [],
+          "evidence_da_ids": [
+            "TS3006a.B.dialog-act.vkaraisk.90",
+            "TS3006a.A.dialog-act.vkaraisk.209"
+          ],
+          "used_participant_lookup": false
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Current dialogue indicates agreement that phase one corresponds to the functional design; supporting excerpts include UI asking about phase one functional design and PM's confirmation.",
+            "quotes": [
+              "TS3006a.B.dialog-act.vkaraisk.90",
+              "TS3006a.A.dialog-act.vkaraisk.209"
+            ]
+          },
+          "owner": {
+            "result": "uncertain",
+            "reason": "No explicit owner identified in this meeting for this decision."
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "This decision has no deadline specified."
+          },
+          "status": {
+            "result": "pass",
+            "reason": "The item is marked adopted and the dialogue shows alignment with that state."
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting evidence found in the available dialogue."
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related item to relate to in this context."
+          }
+        },
+        "submitted_assessment": {
+          "fields": {
+            "owner": null,
+            "owner_basis": "missing",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "adopted",
+            "prior_context_needed": false,
+            "related_items": [],
+            "evidence_da_ids": [
+              "TS3006a.B.dialog-act.vkaraisk.90",
+              "TS3006a.A.dialog-act.vkaraisk.209"
+            ],
+            "used_participant_lookup": false
+          },
+          "checks": {
+            "statement": {
+              "result": "pass",
+              "reason": "Current dialogue indicates agreement that phase one corresponds to the functional design; supporting excerpts include UI asking about phase one functional design and PM's confirmation.",
+              "quotes": [
+                "TS3006a.B.dialog-act.vkaraisk.90",
+                "TS3006a.A.dialog-act.vkaraisk.209"
+              ]
+            },
+            "owner": {
+              "result": "uncertain",
+              "reason": "No explicit owner identified in this meeting for this decision."
+            },
+            "deadline": {
+              "result": "not_applicable",
+              "reason": "This decision has no deadline specified."
+            },
+            "status": {
+              "result": "pass",
+              "reason": "The item is marked adopted and the dialogue shows alignment with that state."
+            },
+            "conflict": {
+              "result": "pass",
+              "reason": "No conflicting evidence found in the available dialogue."
+            },
+            "relation": {
+              "result": "not_applicable",
+              "reason": "No prior related item to relate to in this context."
+            }
+          },
+          "next_action": "accept"
+        },
+        "evidence_bindings": {
+          "statement": [
+            "TS3006a.B.dialog-act.vkaraisk.90",
+            "TS3006a.A.dialog-act.vkaraisk.209"
+          ],
+          "conflict_scope": [
+            "TS3006a.B.dialog-act.vkaraisk.90",
+            "TS3006a.A.dialog-act.vkaraisk.209"
+          ]
+        },
+        "raw_tool_input": {
+          "fields": {
+            "owner": null,
+            "owner_basis": "missing",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "adopted",
+            "prior_context_needed": false,
+            "related_items": [],
+            "evidence_da_ids": [
+              "TS3006a.B.dialog-act.vkaraisk.90",
+              "TS3006a.A.dialog-act.vkaraisk.209"
+            ],
+            "used_participant_lookup": false
+          },
+          "checks": {
+            "statement": {
+              "result": "pass",
+              "reason": "Current dialogue indicates agreement that phase one corresponds to the functional design; supporting excerpts include UI asking about phase one functional design and PM's confirmation.",
+              "quotes": [
+                "TS3006a.B.dialog-act.vkaraisk.90",
+                "TS3006a.A.dialog-act.vkaraisk.209"
+              ]
+            },
+            "owner": {
+              "result": "uncertain",
+              "reason": "No explicit owner identified in this meeting for this decision."
+            },
+            "deadline": {
+              "result": "not_applicable",
+              "reason": "This decision has no deadline specified."
+            },
+            "status": {
+              "result": "pass",
+              "reason": "The item is marked adopted and the dialogue shows alignment with that state."
+            },
+            "conflict": {
+              "result": "pass",
+              "reason": "No conflicting evidence found in the available dialogue."
+            },
+            "relation": {
+              "result": "not_applicable",
+              "reason": "No prior related item to relate to in this context."
+            }
+          },
+          "next_action": "accept"
+        },
+        "protocol_normalizations": []
+      },
+      {
+        "item": "TS3006a#10",
+        "step": 6,
+        "flags": [],
+        "action": "stop",
+        "outcome": "pending",
+        "termination_reason": "no_progress",
+        "unresolved_fields": [
+          "status"
+        ]
+      }
+    ],
+    "lookups": 2,
+    "termination_reason": "no_progress",
+    "clarifications": [
+      {
+        "request_id": "1560dfbb2ccaf8c6",
+        "item_key": "TS3006a#10",
+        "record_id": null,
+        "field": "status",
+        "question": "What is this item's status at the end of the current meeting?",
+        "item_text": "Phase one will be the functional design.",
+        "reason": "current_meeting_support_required",
+        "evidence_da_ids": [],
+        "available_evidence_da_ids": [
+          "TS3006a.B.dialog-act.vkaraisk.90",
+          "TS3006a.A.dialog-act.vkaraisk.209",
+          "TS3006a.B.dialog-act.vkaraisk.89",
+          "TS3006a.A.dialog-act.vkaraisk.210",
+          "TS3006a.A.dialog-act.vkaraisk.17",
+          "TS3006a.C.dialog-act.vkaraisk.86",
+          "TS3006a.D.dialog-act.vkaraisk.27",
+          "TS3006a.D.dialog-act.vkaraisk.33"
+        ],
+        "status": "open",
+        "termination_reason": "no_progress"
+      }
+    ]
+  }
+}

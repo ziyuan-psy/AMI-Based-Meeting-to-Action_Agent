@@ -5,6 +5,7 @@ decision log) -> validation -> readable report + JSON in the revised-gold schema
 
 Method (English): `docs/METHOD_EN.md`. Handoff, run commands and the tuning/test protocol: `docs/HANDOFF.md`.
 Earlier design notes (Chinese): `ARCHITECTURE_V4.md`, `ARCHITECTURE_GUIDE.md`.
+Item retention, atomic Decision selection and bounded P2 revision: [`docs/ITEM_QUALITY_REPAIR.md`](docs/ITEM_QUALITY_REPAIR.md).
 
 ## Setup (once)
 ```
@@ -150,6 +151,12 @@ Speed settings (environment variables, optional):
 - `MTA_EFFORT_EXTRACT`, `MTA_EFFORT_CONSOLIDATE`, `MTA_EFFORT_AGENT`, `MTA_EFFORT_ABSTRACT`: reasoning effort for
   OpenAI reasoning models (`minimal` / `low` / `medium` / `high`; empty = model default). Defaults: agent and abstract
   `low`, extraction and consolidation model default. Consolidation at `low` roughly halved item F1 on TS3006.
+
+For a paired check against the frozen teammate branch, see [development regression](docs/DEVELOPMENT_REGRESSION.md).
+It records fresh SB runs, three-vote alignment, P2 quarantine and actual usage; it is separate from final evaluation.
+
+P2 uses a flat evidence-ID protocol, separates pending fields from supported statements, and reserves first
+checks and summary attempts inside the original meeting budget. See [the protocol repair](docs/P2_PROTOCOL_REPAIR.md).
 
 ## Tests (no API calls)
 ```

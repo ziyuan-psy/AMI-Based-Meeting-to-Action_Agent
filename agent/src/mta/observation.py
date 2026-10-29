@@ -25,6 +25,8 @@ SETTINGS = (
     "MAX_CALLS_PER_ITEM", "MAX_CALLS_PER_MEETING", "MAX_INVALID_ACTIONS", "MAX_NO_PROGRESS",
     "MAX_FINISH_TRIES", "MAX_AGENT_STEPS", "P2_ENABLED", "LINK_POLICY_VERSION", "DOCUMENT_POLICY_VERSION",
     "SCENARIO_PASSAGE_CHARS", "SCENARIO_PASSAGE_OVERLAP", "OPENAI_MIN_COMPLETION_TOKENS",
+    "P2_PROTOCOL_VERSION", "P2_RESERVED_COMPLETION_CALLS",
+    "ITEM_SELECTION_ENABLED", "ITEM_POLICY_VERSION",
     "MAX_MODEL_CALLS", "MAX_TOTAL_TOKENS", "REQUEST_TIMEOUT", "MEETING_TIMEOUT", "MAX_INFLIGHT",
     "TRANSPORT_RETRIES", "RETRY_BACKOFF", "INPUT_TOKEN_PADDING",
 )
@@ -45,10 +47,24 @@ def utc_now() -> str:
 def write_text(path: Path, text: str, control=None) -> None:
     def write():
         path.parent.mkdir(parents=True, exist_ok=True)
-        temporary = path.with_name(f".{path.name}.{uuid4().hex}.tmp")
+        # A unique sibling preserves atomic replacement without extending a long checkpoint filename.
+        temporary = path.with_name(f".{uuid4().hex}.tmp")
         try:
             temporary.write_text(text, encoding="utf-8")
-            os.replace(temporary, path)
+            for attempt in range(4):
+                if control is not None:
+                    control.check()
+                try:
+                    os.replace(temporary, path)
+                    break
+                except PermissionError as exc:
+                    # Windows sync/indexing software may briefly hold the destination open.
+                    # Retry the atomic rename only, never a partial overwrite or a permanent
+                    # non-Windows permission denial. Total extra delay is at most 150 ms.
+                    exc.mta_io_operation = "atomic_replace"
+                    if getattr(exc, "winerror", None) not in (5,32,33) or attempt == 3:
+                        raise
+                    time.sleep(0.025 * (attempt+1))
         finally:
             temporary.unlink(missing_ok=True)
     if control is None:

@@ -38,7 +38,7 @@ class Fake:
     def create(self, **kw):
         self.n_calls += 1
         choice = (kw.get("tool_choice") or {}).get("name")
-        key = choice if choice in ("submit_candidates", "submit_final_items", "submit_abstracts") else "agent"
+        key = choice if choice in ("submit_candidates", "submit_final_items", "submit_abstracts", "select_record_items") else "agent"
         self.efforts.setdefault(key, set()).add(kw.get("reasoning_effort"))
         usage = NS(input_tokens=10, output_tokens=5)
         if choice == "submit_candidates":
@@ -57,6 +57,10 @@ class Fake:
                 "members": [0]}]})])
         if choice == "submit_abstracts":
             return NS(usage=usage, content=[use(choice, {"abstracts": [{"text": "Layout work was assigned.", "items": [0]}]})])
+        if choice == "select_record_items":
+            data = json.loads(kw["messages"][0]["content"])
+            return NS(usage=usage, content=[use(choice, {key:{'keep':True,'claims':[{'text':c['text'],'priority':3}],
+                'reason':'Substantive fixture task'} for key,c in data['candidates'].items()})])
         step = self.agent_script.pop(0)
         if step is None:  # the model answers without any tool call (e.g. it ran out of output budget)
             self.agent_calls.append(None)

@@ -1,0 +1,1450 @@
+{
+  "item": 0,
+  "fields": {
+    "item_key": "TS3006b#0",
+    "record_id": null,
+    "item_type": "actions",
+    "item_text": "The User Interface Designer will design the LCD screen function menu.",
+    "state": "pending",
+    "recordable": false,
+    "fields": {
+      "status": "unknown",
+      "prior_context_needed": false,
+      "related_items": [],
+      "owner": [
+        "MTD023UID"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3006b.json",
+          "locator": "TS3006b.A.dialog-act.dharshi.305"
+        }
+      ]
+    },
+    "draft_fields": {
+      "owner": [
+        "MTD023UID"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "status": "open",
+      "prior_context_needed": false,
+      "related_items": [],
+      "evidence_da_ids": [
+        "TS3006b.A.dialog-act.dharshi.305",
+        "TS3006b.D.dialog-act.dharshi.357",
+        "TS3006b.A.dialog-act.dharshi.306"
+      ],
+      "used_participant_lookup": false
+    },
+    "checks": {
+      "statement": {
+        "result": "uncertain",
+        "reason": "Dialogue uses 'can design' rather than a definitive 'will design'; no explicit commitment to LCD screen function menu is stated in the observed dialogue.",
+        "quotes": [
+          {
+            "da_id": "TS3006b.A.dialog-act.dharshi.305",
+            "quote": "The User Interface Designer can design a menu for all these function"
+          },
+          {
+            "da_id": "TS3006b.A.dialog-act.dharshi.306",
+            "quote": "I put them on the <vocalsound> <disfmarker>"
+          }
+        ],
+        "fields": [
+          "statement"
+        ]
+      },
+      "owner": {
+        "result": "pass",
+        "reason": "Dialogue references 'The User Interface Designer' as the designer for a function menu;owner is explicitly assigned to UI in roster and supported by dialogue.",
+        "quotes": [
+          {
+            "da_id": "TS3006b.A.dialog-act.dharshi.305",
+            "quote": "The User Interface Designer can design a menu for all these function"
+          }
+        ],
+        "fields": [
+          "owner"
+        ]
+      },
+      "deadline": {
+        "result": "uncertain",
+        "reason": "deadline_unresolved",
+        "fields": [
+          "deadline"
+        ],
+        "quotes": []
+      },
+      "status": {
+        "result": "uncertain",
+        "reason": "No explicit status commitment in dialogue; action appears as a plan or ongoing discussion.",
+        "fields": [
+          "status"
+        ],
+        "quotes": []
+      },
+      "conflict": {
+        "result": "uncertain",
+        "reason": "current_meeting_support_required",
+        "quotes": [],
+        "fields": []
+      },
+      "relation": {
+        "result": "uncertain",
+        "reason": "prior_context_not_checked",
+        "fields": [
+          "related_items"
+        ],
+        "quotes": []
+      }
+    },
+    "unresolved_fields": [
+      "statement",
+      "deadline",
+      "status",
+      "related_items"
+    ],
+    "observed_evidence_da_ids": [
+      "TS3006b.A.dialog-act.dharshi.305",
+      "TS3006b.D.dialog-act.dharshi.357",
+      "TS3006b.A.dialog-act.dharshi.306",
+      "TS3006b.A.dialog-act.dharshi.303",
+      "TS3006b.B.dialog-act.dharshi.147"
+    ],
+    "initial_context": {
+      "item": {
+        "type": "actions",
+        "text": "The User Interface Designer will design the LCD screen function menu.",
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ]
+      },
+      "fields": {
+        "owner": [
+          "MTD023UID"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "open",
+        "prior_context_needed": false,
+        "related_items": [],
+        "evidence_da_ids": [
+          "TS3006b.A.dialog-act.dharshi.305",
+          "TS3006b.D.dialog-act.dharshi.357",
+          "TS3006b.A.dialog-act.dharshi.306"
+        ],
+        "used_participant_lookup": false
+      },
+      "current_meeting": "TS3006b",
+      "earlier_meetings": [
+        "TS3006a"
+      ],
+      "roster": [
+        {
+          "speaker": "A",
+          "participant_id": "MTD021PM",
+          "role": "PM"
+        },
+        {
+          "speaker": "B",
+          "participant_id": "MTD023UID",
+          "role": "UI"
+        },
+        {
+          "speaker": "C",
+          "participant_id": "MTD022ID",
+          "role": "ID"
+        },
+        {
+          "speaker": "D",
+          "participant_id": "MTD024ME",
+          "role": "ME"
+        }
+      ],
+      "observed_dialogue": [
+        {
+          "da_id": "TS3006b.A.dialog-act.dharshi.305",
+          "meeting_id": "TS3006b",
+          "text": "The User Interface Designer can design a menu for all these function",
+          "participant": "MTD021PM",
+          "role": "PM"
+        },
+        {
+          "da_id": "TS3006b.D.dialog-act.dharshi.357",
+          "meeting_id": "TS3006b",
+          "text": "Yeah k kind of structure into layers .",
+          "participant": "MTD024ME",
+          "role": "ME"
+        },
+        {
+          "da_id": "TS3006b.A.dialog-act.dharshi.306",
+          "meeting_id": "TS3006b",
+          "text": "I put them on the <vocalsound> <disfmarker>",
+          "participant": "MTD021PM",
+          "role": "PM"
+        },
+        {
+          "da_id": "TS3006b.A.dialog-act.dharshi.303",
+          "participant": "MTD021PM",
+          "role": "PM",
+          "text": "Um <disfmarker>"
+        },
+        {
+          "da_id": "TS3006b.B.dialog-act.dharshi.147",
+          "participant": "MTD023UID",
+          "role": "UI",
+          "text": "On the uh"
+        }
+      ],
+      "peer_items": []
+    },
+    "observed_documents": [],
+    "document_evidence": [],
+    "relation_evidence": [],
+    "history": [
+      {
+        "item": "TS3006b#0",
+        "step": 1,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "uncertain",
+            "reason": "Dialogue uses 'can design' rather than a definitive 'will design'; no explicit commitment to LCD screen function menu is stated in the observed dialogue.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              },
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.306",
+                "quote": "I put them on the <vocalsound> <disfmarker>"
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Dialogue references 'The User Interface Designer' as the designer for a function menu;owner is explicitly assigned to UI in roster and supported by dialogue.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              }
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "deadline_unresolved",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "uncertain",
+            "reason": "No explicit status commitment in dialogue; action appears as a plan or ongoing discussion.",
+            "quotes": [],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "uncertain",
+            "reason": "current_meeting_support_required",
+            "quotes": [],
+            "fields": []
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "prior_context_not_checked",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "decision": "reassess",
+        "reason": "missing_current_evidence_selection",
+        "requested_action": null,
+        "proposed_fields": {
+          "owner": [
+            "MTD023UID"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "status": "open",
+          "prior_context_needed": false,
+          "related_items": [],
+          "evidence_da_ids": [
+            "TS3006b.A.dialog-act.dharshi.305",
+            "TS3006b.D.dialog-act.dharshi.357",
+            "TS3006b.A.dialog-act.dharshi.306"
+          ],
+          "used_participant_lookup": false
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "uncertain",
+            "reason": "Dialogue uses 'can design' rather than a definitive 'will design'; no explicit commitment to LCD screen function menu is stated in the observed dialogue.",
+            "quotes": [
+              "TS3006b.A.dialog-act.dharshi.305",
+              "TS3006b.A.dialog-act.dharshi.306"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Dialogue references 'The User Interface Designer' as the designer for a function menu;owner is explicitly assigned to UI in roster and supported by dialogue.",
+            "quotes": [
+              "TS3006b.A.dialog-act.dharshi.305"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "No explicit deadline is stated in current dialogue; deadline_basis marked as missing."
+          },
+          "status": {
+            "result": "uncertain",
+            "reason": "No explicit status commitment in dialogue; action appears as a plan or ongoing discussion."
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions found in the available dialogue about ownership or scope."
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "No earlier item relationship is asserted or can be verified from the current dialogue."
+          }
+        },
+        "submitted_assessment": {
+          "fields": {
+            "owner": [
+              "MTD023UID"
+            ],
+            "owner_basis": "explicit",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": [],
+            "evidence_da_ids": [
+              "TS3006b.A.dialog-act.dharshi.305",
+              "TS3006b.D.dialog-act.dharshi.357",
+              "TS3006b.A.dialog-act.dharshi.306"
+            ],
+            "used_participant_lookup": false
+          },
+          "checks": {
+            "statement": {
+              "result": "uncertain",
+              "reason": "Dialogue uses 'can design' rather than a definitive 'will design'; no explicit commitment to LCD screen function menu is stated in the observed dialogue.",
+              "quotes": [
+                "TS3006b.A.dialog-act.dharshi.305",
+                "TS3006b.A.dialog-act.dharshi.306"
+              ]
+            },
+            "owner": {
+              "result": "pass",
+              "reason": "Dialogue references 'The User Interface Designer' as the designer for a function menu;owner is explicitly assigned to UI in roster and supported by dialogue.",
+              "quotes": [
+                "TS3006b.A.dialog-act.dharshi.305"
+              ]
+            },
+            "deadline": {
+              "result": "uncertain",
+              "reason": "No explicit deadline is stated in current dialogue; deadline_basis marked as missing."
+            },
+            "status": {
+              "result": "uncertain",
+              "reason": "No explicit status commitment in dialogue; action appears as a plan or ongoing discussion."
+            },
+            "conflict": {
+              "result": "pass",
+              "reason": "No contradictions found in the available dialogue about ownership or scope."
+            },
+            "relation": {
+              "result": "uncertain",
+              "reason": "No earlier item relationship is asserted or can be verified from the current dialogue."
+            }
+          }
+        },
+        "evidence_bindings": {
+          "statement": [
+            "TS3006b.A.dialog-act.dharshi.305",
+            "TS3006b.A.dialog-act.dharshi.306"
+          ],
+          "owner": [
+            "TS3006b.A.dialog-act.dharshi.305"
+          ]
+        },
+        "raw_tool_input": {
+          "fields": {
+            "owner": [
+              "MTD023UID"
+            ],
+            "owner_basis": "explicit",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": [],
+            "evidence_da_ids": [
+              "TS3006b.A.dialog-act.dharshi.305",
+              "TS3006b.D.dialog-act.dharshi.357",
+              "TS3006b.A.dialog-act.dharshi.306"
+            ],
+            "used_participant_lookup": false
+          },
+          "checks": {
+            "statement": {
+              "result": "uncertain",
+              "reason": "Dialogue uses 'can design' rather than a definitive 'will design'; no explicit commitment to LCD screen function menu is stated in the observed dialogue.",
+              "quotes": [
+                "TS3006b.A.dialog-act.dharshi.305",
+                "TS3006b.A.dialog-act.dharshi.306"
+              ]
+            },
+            "owner": {
+              "result": "pass",
+              "reason": "Dialogue references 'The User Interface Designer' as the designer for a function menu;owner is explicitly assigned to UI in roster and supported by dialogue.",
+              "quotes": [
+                "TS3006b.A.dialog-act.dharshi.305"
+              ]
+            },
+            "deadline": {
+              "result": "uncertain",
+              "reason": "No explicit deadline is stated in current dialogue; deadline_basis marked as missing."
+            },
+            "status": {
+              "result": "uncertain",
+              "reason": "No explicit status commitment in dialogue; action appears as a plan or ongoing discussion."
+            },
+            "conflict": {
+              "result": "pass",
+              "reason": "No contradictions found in the available dialogue about ownership or scope."
+            },
+            "relation": {
+              "result": "uncertain",
+              "reason": "No earlier item relationship is asserted or can be verified from the current dialogue."
+            }
+          }
+        },
+        "protocol_normalizations": []
+      },
+      {
+        "item": "TS3006b#0",
+        "step": 2,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "uncertain",
+            "reason": "Dialogue uses 'can design' rather than a definitive 'will design'; no explicit commitment to LCD screen function menu is stated in the observed dialogue.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              },
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.306",
+                "quote": "I put them on the <vocalsound> <disfmarker>"
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Dialoguereferences 'The User Interface Designer' as the designer for a function menu;owner is explicitly assigned to UI in roster and supported by dialogue.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              }
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "deadline_unresolved",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "uncertain",
+            "reason": "No explicit status commitment in dialogue; action appears as a plan or ongoing discussion.",
+            "quotes": [],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "uncertain",
+            "reason": "current_meeting_support_required",
+            "quotes": [],
+            "fields": []
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "prior_context_not_checked",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "decision": "retrieve",
+        "reason": "unresolved_checks",
+        "requested_action": null,
+        "proposed_fields": {
+          "owner": [
+            "MTD023UID"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "status": "open",
+          "prior_context_needed": false,
+          "related_items": [],
+          "evidence_da_ids": [
+            "TS3006b.A.dialog-act.dharshi.305",
+            "TS3006b.D.dialog-act.dharshi.357",
+            "TS3006b.A.dialog-act.dharshi.306"
+          ],
+          "used_participant_lookup": false
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "uncertain",
+            "reason": "Dialogue uses 'can design' rather than a definitive 'will design'; no explicit commitment to LCD screen function menu is stated in the observed dialogue.",
+            "quotes": [
+              "TS3006b.A.dialog-act.dharshi.305",
+              "TS3006b.A.dialog-act.dharshi.306"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Dialoguereferences 'The User Interface Designer' as the designer for a function menu;owner is explicitly assigned to UI in roster and supported by dialogue.",
+            "quotes": [
+              "TS3006b.A.dialog-act.dharshi.305"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "deadline_unresolved",
+            "quotes": []
+          },
+          "status": {
+            "result": "uncertain",
+            "reason": "No explicit status commitment in dialogue; action appears as a plan or ongoing discussion.",
+            "quotes": []
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions found in the available dialogue about ownership or scope.",
+            "quotes": []
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "prior_context_not_checked",
+            "quotes": []
+          }
+        },
+        "submitted_assessment": {
+          "fields": {
+            "owner": [
+              "MTD023UID"
+            ],
+            "owner_basis": "explicit",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": [],
+            "evidence_da_ids": [
+              "TS3006b.A.dialog-act.dharshi.305",
+              "TS3006b.D.dialog-act.dharshi.357",
+              "TS3006b.A.dialog-act.dharshi.306"
+            ],
+            "used_participant_lookup": false
+          },
+          "checks": {
+            "statement": {
+              "result": "uncertain",
+              "reason": "Dialogue uses 'can design' rather than a definitive 'will design'; no explicit commitment to LCD screen function menu is stated in the observed dialogue.",
+              "quotes": [
+                "TS3006b.A.dialog-act.dharshi.305",
+                "TS3006b.A.dialog-act.dharshi.306"
+              ]
+            },
+            "owner": {
+              "result": "pass",
+              "reason": "Dialoguereferences 'The User Interface Designer' as the designer for a function menu;owner is explicitly assigned to UI in roster and supported by dialogue.",
+              "quotes": [
+                "TS3006b.A.dialog-act.dharshi.305"
+              ]
+            },
+            "deadline": {
+              "result": "uncertain",
+              "reason": "deadline_unresolved",
+              "quotes": []
+            },
+            "status": {
+              "result": "uncertain",
+              "reason": "No explicit status commitment in dialogue; action appears as a plan or ongoing discussion.",
+              "quotes": []
+            },
+            "conflict": {
+              "result": "pass",
+              "reason": "No contradictions found in the available dialogue about ownership or scope.",
+              "quotes": []
+            },
+            "relation": {
+              "result": "uncertain",
+              "reason": "prior_context_not_checked",
+              "quotes": []
+            }
+          }
+        },
+        "evidence_bindings": {
+          "statement": [
+            "TS3006b.A.dialog-act.dharshi.305",
+            "TS3006b.A.dialog-act.dharshi.306"
+          ],
+          "owner": [
+            "TS3006b.A.dialog-act.dharshi.305"
+          ]
+        },
+        "raw_tool_input": {
+          "fields": {
+            "owner": [
+              "MTD023UID"
+            ],
+            "owner_basis": "explicit",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": [],
+            "evidence_da_ids": [
+              "TS3006b.A.dialog-act.dharshi.305",
+              "TS3006b.D.dialog-act.dharshi.357",
+              "TS3006b.A.dialog-act.dharshi.306"
+            ],
+            "used_participant_lookup": false
+          },
+          "checks": {
+            "statement": {
+              "result": "uncertain",
+              "reason": "Dialogue uses 'can design' rather than a definitive 'will design'; no explicit commitment to LCD screen function menu is stated in the observed dialogue.",
+              "quotes": [
+                "TS3006b.A.dialog-act.dharshi.305",
+                "TS3006b.A.dialog-act.dharshi.306"
+              ]
+            },
+            "owner": {
+              "result": "pass",
+              "reason": "Dialoguereferences 'The User Interface Designer' as the designer for a function menu;owner is explicitly assigned to UI in roster and supported by dialogue.",
+              "quotes": [
+                "TS3006b.A.dialog-act.dharshi.305"
+              ]
+            },
+            "deadline": {
+              "result": "uncertain",
+              "reason": "deadline_unresolved",
+              "quotes": []
+            },
+            "status": {
+              "result": "uncertain",
+              "reason": "No explicit status commitment in dialogue; action appears as a plan or ongoing discussion.",
+              "quotes": []
+            },
+            "conflict": {
+              "result": "pass",
+              "reason": "No contradictions found in the available dialogue about ownership or scope.",
+              "quotes": []
+            },
+            "relation": {
+              "result": "uncertain",
+              "reason": "prior_context_not_checked",
+              "quotes": []
+            }
+          }
+        },
+        "protocol_normalizations": []
+      },
+      {
+        "item": "TS3006b#0",
+        "step": 3,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "get_prior_items",
+        "outcome": "lookup",
+        "decision": "retrieve",
+        "args": {
+          "query": "The User Interface Designer will design the LCD screen function menu",
+          "item_type": "actions"
+        },
+        "tool_result": {
+          "results": [
+            {
+              "id": "TS3006a.sys.s.2",
+              "meeting_id": "TS3006a",
+              "type": "actions",
+              "text": "The Project Manager will defend our design.",
+              "owner": null,
+              "owner_basis": "ambiguous",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "unknown",
+              "evidence": [
+                "TS3006a.A.dialog-act.vkaraisk.216"
+              ],
+              "source_file": "TS3006a.json",
+              "source_sha256": "0b8e7e3159b5995ed729ff00368e21b73220dea1d1f4a7475d1a6a5b1be7e4e4",
+              "review_state": "pending",
+              "unresolved_fields": [
+                "owner",
+                "deadline",
+                "status"
+              ],
+              "unreadable_reference_ids": [],
+              "score": 0.86
+            }
+          ]
+        },
+        "new_info": true
+      },
+      {
+        "item": "TS3006b#0",
+        "step": 4,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "uncertain",
+            "reason": "Dialogue uses 'can design' rather than a definitive 'will design'; no explicit commitment to LCD screen function menu is stated in the observed dialogue.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              },
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.306",
+                "quote": "I put them on the <vocalsound> <disfmarker>"
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Dialogue references 'The User Interface Designer' as the designer for a function menu;owner is explicitly assigned to UI in roster and supported by dialogue.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              }
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "deadline_unresolved",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "uncertain",
+            "reason": "No explicit status commitment in dialogue; action appears as a plan or ongoing discussion.",
+            "quotes": [],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "uncertain",
+            "reason": "current_meeting_support_required",
+            "quotes": [],
+            "fields": []
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "prior_context_not_checked",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "decision": "retrieve",
+        "reason": "unresolved_checks",
+        "requested_action": null,
+        "proposed_fields": {
+          "owner": [
+            "MTD023UID"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "status": "open",
+          "prior_context_needed": false,
+          "related_items": [],
+          "evidence_da_ids": [
+            "TS3006b.A.dialog-act.dharshi.305",
+            "TS3006b.D.dialog-act.dharshi.357",
+            "TS3006b.A.dialog-act.dharshi.306"
+          ],
+          "used_participant_lookup": false
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "uncertain",
+            "reason": "Dialogue uses 'can design' rather than a definitive 'will design'; no explicit commitment to LCD screen function menu is stated in the observed dialogue.",
+            "quotes": [
+              "TS3006b.A.dialog-act.dharshi.305",
+              "TS3006b.A.dialog-act.dharshi.306"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Dialogue references 'The User Interface Designer' as the designer for a function menu;owner is explicitly assigned to UI in roster and supported by dialogue.",
+            "quotes": [
+              "TS3006b.A.dialog-act.dharshi.305"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "deadline_unresolved",
+            "quotes": []
+          },
+          "status": {
+            "result": "uncertain",
+            "reason": "No explicit status commitment in dialogue; action appears as a plan or ongoing discussion.",
+            "quotes": []
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions found in the available dialogue about ownership or scope.",
+            "quotes": []
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "prior_context_not_checked",
+            "quotes": []
+          }
+        },
+        "submitted_assessment": {
+          "fields": {
+            "owner": [
+              "MTD023UID"
+            ],
+            "owner_basis": "explicit",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": [],
+            "evidence_da_ids": [
+              "TS3006b.A.dialog-act.dharshi.305",
+              "TS3006b.D.dialog-act.dharshi.357",
+              "TS3006b.A.dialog-act.dharshi.306"
+            ],
+            "used_participant_lookup": false
+          },
+          "checks": {
+            "statement": {
+              "result": "uncertain",
+              "reason": "Dialogue uses 'can design' rather than a definitive 'will design'; no explicit commitment to LCD screen function menu is stated in the observed dialogue.",
+              "quotes": [
+                "TS3006b.A.dialog-act.dharshi.305",
+                "TS3006b.A.dialog-act.dharshi.306"
+              ]
+            },
+            "owner": {
+              "result": "pass",
+              "reason": "Dialogue references 'The User Interface Designer' as the designer for a function menu;owner is explicitly assigned to UI in roster and supported by dialogue.",
+              "quotes": [
+                "TS3006b.A.dialog-act.dharshi.305"
+              ]
+            },
+            "deadline": {
+              "result": "uncertain",
+              "reason": "deadline_unresolved",
+              "quotes": []
+            },
+            "status": {
+              "result": "uncertain",
+              "reason": "No explicit status commitment in dialogue; action appears as a plan or ongoing discussion.",
+              "quotes": []
+            },
+            "conflict": {
+              "result": "pass",
+              "reason": "No contradictions found in the available dialogue about ownership or scope.",
+              "quotes": []
+            },
+            "relation": {
+              "result": "uncertain",
+              "reason": "prior_context_not_checked",
+              "quotes": []
+            }
+          }
+        },
+        "evidence_bindings": {
+          "statement": [
+            "TS3006b.A.dialog-act.dharshi.305",
+            "TS3006b.A.dialog-act.dharshi.306"
+          ],
+          "owner": [
+            "TS3006b.A.dialog-act.dharshi.305"
+          ]
+        },
+        "raw_tool_input": {
+          "fields": {
+            "owner": [
+              "MTD023UID"
+            ],
+            "owner_basis": "explicit",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": [],
+            "evidence_da_ids": [
+              "TS3006b.A.dialog-act.dharshi.305",
+              "TS3006b.D.dialog-act.dharshi.357",
+              "TS3006b.A.dialog-act.dharshi.306"
+            ],
+            "used_participant_lookup": false
+          },
+          "checks": {
+            "statement": {
+              "result": "uncertain",
+              "reason": "Dialogue uses 'can design' rather than a definitive 'will design'; no explicit commitment to LCD screen function menu is stated in the observed dialogue.",
+              "quotes": [
+                "TS3006b.A.dialog-act.dharshi.305",
+                "TS3006b.A.dialog-act.dharshi.306"
+              ]
+            },
+            "owner": {
+              "result": "pass",
+              "reason": "Dialogue references 'The User Interface Designer' as the designer for a function menu;owner is explicitly assigned to UI in roster and supported by dialogue.",
+              "quotes": [
+                "TS3006b.A.dialog-act.dharshi.305"
+              ]
+            },
+            "deadline": {
+              "result": "uncertain",
+              "reason": "deadline_unresolved",
+              "quotes": []
+            },
+            "status": {
+              "result": "uncertain",
+              "reason": "No explicit status commitment in dialogue; action appears as a plan or ongoing discussion.",
+              "quotes": []
+            },
+            "conflict": {
+              "result": "pass",
+              "reason": "No contradictions found in the available dialogue about ownership or scope.",
+              "quotes": []
+            },
+            "relation": {
+              "result": "uncertain",
+              "reason": "prior_context_not_checked",
+              "quotes": []
+            }
+          }
+        },
+        "protocol_normalizations": []
+      },
+      {
+        "item": "TS3006b#0",
+        "step": 5,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "get_participants",
+        "outcome": "invalid_action",
+        "error": "Correct these argument fields: : 'meeting_id' is a required property"
+      },
+      {
+        "item": "TS3006b#0",
+        "step": 6,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "get_participants",
+        "outcome": "lookup",
+        "decision": "retrieve",
+        "args": {
+          "meeting_id": "TS3006b"
+        },
+        "tool_result": {
+          "results": [
+            {
+              "speaker": "A",
+              "participant_id": "MTD021PM",
+              "role": "PM"
+            },
+            {
+              "speaker": "B",
+              "participant_id": "MTD023UID",
+              "role": "UI"
+            },
+            {
+              "speaker": "C",
+              "participant_id": "MTD022ID",
+              "role": "ID"
+            },
+            {
+              "speaker": "D",
+              "participant_id": "MTD024ME",
+              "role": "ME"
+            }
+          ]
+        },
+        "new_info": false
+      },
+      {
+        "item": "TS3006b#0",
+        "step": 7,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "uncertain",
+            "reason": "Dialogue uses 'can design' rather than a definitive 'will design'; no explicit commitment to LCD screen function menu is stated in the observed dialogue.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              },
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.306",
+                "quote": "I put them on the <vocalsound> <disfmarker>"
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Dialogue references 'The User Interface Designer' as the designer for a function menu;owner is explicitly assigned to UI in roster and supported by dialogue.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              }
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "deadline_unresolved",
+            "fields": [
+              "deadline"
+            ],
+            "quotes": []
+          },
+          "status": {
+            "result": "uncertain",
+            "reason": "No explicit status commitment in dialogue; action appears as a plan or ongoing discussion.",
+            "fields": [
+              "status"
+            ],
+            "quotes": []
+          },
+          "conflict": {
+            "result": "uncertain",
+            "reason": "current_meeting_support_required",
+            "quotes": [],
+            "fields": []
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "prior_context_not_checked",
+            "fields": [
+              "related_items"
+            ],
+            "quotes": []
+          }
+        },
+        "decision": "request_clarification",
+        "reason": "no_progress",
+        "requested_action": null,
+        "proposed_fields": {
+          "owner": [
+            "MTD023UID"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "status": "open",
+          "prior_context_needed": false,
+          "related_items": [],
+          "evidence_da_ids": [
+            "TS3006b.A.dialog-act.dharshi.305",
+            "TS3006b.D.dialog-act.dharshi.357",
+            "TS3006b.A.dialog-act.dharshi.306"
+          ],
+          "used_participant_lookup": false
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "uncertain",
+            "reason": "Dialogue uses 'can design' rather than a definitive 'will design'; no explicit commitment to LCD screen function menu is stated in the observed dialogue.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              },
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.306",
+                "quote": "I put them on the <vocalsound> <disfmarker>"
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Dialogue references 'The User Interface Designer' as the designer for a function menu;owner is explicitly assigned to UI in roster and supported by dialogue.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              }
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "deadline_unresolved",
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "uncertain",
+            "reason": "No explicit status commitment in dialogue; action appears as a plan or ongoing discussion.",
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions found in the available dialogue about ownership or scope.",
+            "quotes": [],
+            "fields": []
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "prior_context_not_checked",
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "fields": {
+            "owner": [
+              "MTD023UID"
+            ],
+            "owner_basis": "explicit",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": [],
+            "evidence_da_ids": [
+              "TS3006b.A.dialog-act.dharshi.305",
+              "TS3006b.D.dialog-act.dharshi.357",
+              "TS3006b.A.dialog-act.dharshi.306"
+            ],
+            "used_participant_lookup": false
+          },
+          "checks": {
+            "statement": {
+              "result": "uncertain",
+              "reason": "Dialogue uses 'can design' rather than a definitive 'will design'; no explicit commitment to LCD screen function menu is stated in the observed dialogue.",
+              "quotes": [
+                {
+                  "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                  "quote": "The User Interface Designer can design a menu for all these function"
+                },
+                {
+                  "da_id": "TS3006b.A.dialog-act.dharshi.306",
+                  "quote": "I put them on the <vocalsound> <disfmarker>"
+                }
+              ],
+              "fields": [
+                "statement"
+              ]
+            },
+            "owner": {
+              "result": "pass",
+              "reason": "Dialogue references 'The User Interface Designer' as the designer for a function menu;owner is explicitly assigned to UI in roster and supported by dialogue.",
+              "quotes": [
+                {
+                  "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                  "quote": "The User Interface Designer can design a menu for all these function"
+                }
+              ],
+              "fields": [
+                "owner"
+              ]
+            },
+            "deadline": {
+              "result": "uncertain",
+              "reason": "deadline_unresolved",
+              "fields": [
+                "deadline"
+              ]
+            },
+            "status": {
+              "result": "uncertain",
+              "reason": "No explicit status commitment in dialogue; action appears as a plan or ongoing discussion.",
+              "fields": [
+                "status"
+              ]
+            },
+            "conflict": {
+              "result": "pass",
+              "reason": "No contradictions found in the available dialogue about ownership or scope.",
+              "quotes": [],
+              "fields": []
+            },
+            "relation": {
+              "result": "uncertain",
+              "reason": "prior_context_not_checked",
+              "fields": [
+                "related_items"
+              ]
+            }
+          }
+        },
+        "evidence_bindings": {},
+        "raw_tool_input": {
+          "fields": {
+            "owner": [
+              "MTD023UID"
+            ],
+            "owner_basis": "explicit",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": [],
+            "evidence_da_ids": [
+              "TS3006b.A.dialog-act.dharshi.305",
+              "TS3006b.D.dialog-act.dharshi.357",
+              "TS3006b.A.dialog-act.dharshi.306"
+            ],
+            "used_participant_lookup": false
+          },
+          "checks": {
+            "statement": {
+              "result": "uncertain",
+              "reason": "Dialogue uses 'can design' rather than a definitive 'will design'; no explicit commitment to LCD screen function menu is stated in the observed dialogue.",
+              "quotes": [
+                {
+                  "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                  "quote": "The User Interface Designer can design a menu for all these function"
+                },
+                {
+                  "da_id": "TS3006b.A.dialog-act.dharshi.306",
+                  "quote": "I put them on the <vocalsound> <disfmarker>"
+                }
+              ],
+              "fields": [
+                "statement"
+              ]
+            },
+            "owner": {
+              "result": "pass",
+              "reason": "Dialogue references 'The User Interface Designer' as the designer for a function menu;owner is explicitly assigned to UI in roster and supported by dialogue.",
+              "quotes": [
+                {
+                  "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                  "quote": "The User Interface Designer can design a menu for all these function"
+                }
+              ],
+              "fields": [
+                "owner"
+              ]
+            },
+            "deadline": {
+              "result": "uncertain",
+              "reason": "deadline_unresolved",
+              "fields": [
+                "deadline"
+              ]
+            },
+            "status": {
+              "result": "uncertain",
+              "reason": "No explicit status commitment in dialogue; action appears as a plan or ongoing discussion.",
+              "fields": [
+                "status"
+              ]
+            },
+            "conflict": {
+              "result": "pass",
+              "reason": "No contradictions found in the available dialogue about ownership or scope.",
+              "quotes": [],
+              "fields": []
+            },
+            "relation": {
+              "result": "uncertain",
+              "reason": "prior_context_not_checked",
+              "fields": [
+                "related_items"
+              ]
+            }
+          }
+        },
+        "protocol_normalizations": []
+      },
+      {
+        "item": "TS3006b#0",
+        "step": 7,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "stop",
+        "outcome": "pending",
+        "termination_reason": "no_progress",
+        "unresolved_fields": [
+          "statement",
+          "deadline",
+          "status",
+          "related_items"
+        ]
+      }
+    ],
+    "lookups": 2,
+    "termination_reason": "no_progress",
+    "clarifications": [
+      {
+        "request_id": "e402c14da5191559",
+        "item_key": "TS3006b#0",
+        "record_id": null,
+        "field": "statement",
+        "question": "Should this be recorded as a substantive, supported actions item?",
+        "item_text": "The User Interface Designer will design the LCD screen function menu.",
+        "reason": "Dialogue uses 'can design' rather than a definitive 'will design'; no explicit commitment to LCD screen function menu is stated in the observed dialogue.; current_meeting_support_required",
+        "evidence_da_ids": [
+          "TS3006b.A.dialog-act.dharshi.305",
+          "TS3006b.A.dialog-act.dharshi.306"
+        ],
+        "available_evidence_da_ids": [
+          "TS3006b.A.dialog-act.dharshi.305",
+          "TS3006b.D.dialog-act.dharshi.357",
+          "TS3006b.A.dialog-act.dharshi.306",
+          "TS3006b.A.dialog-act.dharshi.303",
+          "TS3006b.B.dialog-act.dharshi.147"
+        ],
+        "status": "open",
+        "termination_reason": "no_progress"
+      },
+      {
+        "request_id": "6ca539ee8e0c1167",
+        "item_key": "TS3006b#0",
+        "record_id": null,
+        "field": "deadline",
+        "question": "What is the agreed deadline, in its original wording?",
+        "item_text": "The User Interface Designer will design the LCD screen function menu.",
+        "reason": "deadline_unresolved",
+        "evidence_da_ids": [],
+        "available_evidence_da_ids": [
+          "TS3006b.A.dialog-act.dharshi.305",
+          "TS3006b.D.dialog-act.dharshi.357",
+          "TS3006b.A.dialog-act.dharshi.306",
+          "TS3006b.A.dialog-act.dharshi.303",
+          "TS3006b.B.dialog-act.dharshi.147"
+        ],
+        "status": "open",
+        "termination_reason": "no_progress"
+      },
+      {
+        "request_id": "ab60a755d4d7de6d",
+        "item_key": "TS3006b#0",
+        "record_id": null,
+        "field": "status",
+        "question": "What is this item's status at the end of the current meeting?",
+        "item_text": "The User Interface Designer will design the LCD screen function menu.",
+        "reason": "No explicit status commitment in dialogue; action appears as a plan or ongoing discussion.",
+        "evidence_da_ids": [],
+        "available_evidence_da_ids": [
+          "TS3006b.A.dialog-act.dharshi.305",
+          "TS3006b.D.dialog-act.dharshi.357",
+          "TS3006b.A.dialog-act.dharshi.306",
+          "TS3006b.A.dialog-act.dharshi.303",
+          "TS3006b.B.dialog-act.dharshi.147"
+        ],
+        "status": "open",
+        "termination_reason": "no_progress"
+      },
+      {
+        "request_id": "37f37a1b585ab02b",
+        "item_key": "TS3006b#0",
+        "record_id": null,
+        "field": "related_items",
+        "question": "Which earlier record does this item continue or change, and how?",
+        "item_text": "The User Interface Designer will design the LCD screen function menu.",
+        "reason": "prior_context_not_checked",
+        "evidence_da_ids": [],
+        "available_evidence_da_ids": [
+          "TS3006b.A.dialog-act.dharshi.305",
+          "TS3006b.D.dialog-act.dharshi.357",
+          "TS3006b.A.dialog-act.dharshi.306",
+          "TS3006b.A.dialog-act.dharshi.303",
+          "TS3006b.B.dialog-act.dharshi.147"
+        ],
+        "status": "open",
+        "termination_reason": "no_progress"
+      }
+    ]
+  }
+}

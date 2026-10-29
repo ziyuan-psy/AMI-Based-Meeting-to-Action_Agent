@@ -1,0 +1,450 @@
+{
+  "item": 2,
+  "fields": {
+    "item_key": "TS3006b#2",
+    "record_id": null,
+    "item_type": "problems",
+    "item_text": "Elderly users may not understand the remote well; a simpler remote is needed.",
+    "state": "pending",
+    "recordable": true,
+    "fields": {
+      "status": "unknown",
+      "prior_context_needed": false,
+      "related_items": [],
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3006b.json",
+          "locator": "TS3006b.C.dialog-act.dharshi.104"
+        }
+      ]
+    },
+    "draft_fields": {
+      "owner": null,
+      "owner_basis": "missing",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "status": "open",
+      "prior_context_needed": false,
+      "related_items": [],
+      "evidence_da_ids": [
+        "TS3006b.C.dialog-act.dharshi.104",
+        "TS3006b.A.dialog-act.dharshi.151"
+      ]
+    },
+    "checks": {
+      "statement": {
+        "result": "pass",
+        "reason": "Dialogue explicitly states the need for a simpler remote for elderly users, matching the item claim.",
+        "quotes": [
+          {
+            "da_id": "TS3006b.C.dialog-act.dharshi.104",
+            "quote": "But maybe elderly people don't understand it so well , so they need a simpler remote ."
+          }
+        ],
+        "fields": [
+          "statement"
+        ]
+      },
+      "owner": {
+        "result": "not_applicable",
+        "reason": "field_not_applicable",
+        "quotes": [],
+        "fields": [
+          "owner"
+        ]
+      },
+      "deadline": {
+        "result": "not_applicable",
+        "reason": "field_not_applicable",
+        "quotes": [],
+        "fields": [
+          "deadline"
+        ]
+      },
+      "status": {
+        "result": "uncertain",
+        "reason": "The problem is raised/open but no evidence of resolution or progress in current dialogue.",
+        "quotes": [],
+        "fields": [
+          "status"
+        ]
+      },
+      "conflict": {
+        "result": "pass",
+        "reason": "No conflicting information found in the available dialogue.",
+        "quotes": [
+          {
+            "da_id": "TS3006b.C.dialog-act.dharshi.104",
+            "quote": "But maybe elderly people don't understand it so well , so they need a simpler remote ."
+          }
+        ],
+        "fields": []
+      },
+      "relation": {
+        "result": "not_applicable",
+        "reason": "No earlier item relation needed for this standalone problem.",
+        "quotes": [],
+        "fields": [
+          "related_items"
+        ]
+      }
+    },
+    "unresolved_fields": [
+      "status"
+    ],
+    "observed_evidence_da_ids": [
+      "TS3006b.C.dialog-act.dharshi.104",
+      "TS3006b.A.dialog-act.dharshi.151",
+      "TS3006b.A.dialog-act.dharshi.150",
+      "TS3006b.C.dialog-act.dharshi.105"
+    ],
+    "initial_context": {
+      "item": {
+        "type": "problems",
+        "text": "Elderly users may not understand the remote well; a simpler remote is needed.",
+        "flags": []
+      },
+      "fields": {
+        "owner": null,
+        "owner_basis": "missing",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "open",
+        "prior_context_needed": false,
+        "related_items": [],
+        "evidence_da_ids": [
+          "TS3006b.C.dialog-act.dharshi.104",
+          "TS3006b.A.dialog-act.dharshi.151"
+        ],
+        "used_participant_lookup": false
+      },
+      "current_meeting": "TS3006b",
+      "earlier_meetings": [
+        "TS3006a"
+      ],
+      "roster": [
+        {
+          "speaker": "A",
+          "participant_id": "MTD021PM",
+          "role": "PM"
+        },
+        {
+          "speaker": "B",
+          "participant_id": "MTD023UID",
+          "role": "UI"
+        },
+        {
+          "speaker": "C",
+          "participant_id": "MTD022ID",
+          "role": "ID"
+        },
+        {
+          "speaker": "D",
+          "participant_id": "MTD024ME",
+          "role": "ME"
+        }
+      ],
+      "observed_dialogue": [
+        {
+          "da_id": "TS3006b.C.dialog-act.dharshi.104",
+          "meeting_id": "TS3006b",
+          "text": "But maybe elderly people don't understand it so well , so they need a simpler remote .",
+          "participant": "MTD022ID",
+          "role": "ID"
+        },
+        {
+          "da_id": "TS3006b.A.dialog-act.dharshi.151",
+          "meeting_id": "TS3006b",
+          "text": "Design . Mm .",
+          "participant": "MTD021PM",
+          "role": "PM"
+        },
+        {
+          "da_id": "TS3006b.A.dialog-act.dharshi.150",
+          "participant": "MTD021PM",
+          "role": "PM",
+          "text": "Mm-hmm ."
+        },
+        {
+          "da_id": "TS3006b.C.dialog-act.dharshi.105",
+          "participant": "MTD022ID",
+          "role": "ID",
+          "text": "And yeah that you can choose what the design displays , or wha whatever ."
+        }
+      ],
+      "peer_items": [
+        {
+          "item_key": "TS3006b#0",
+          "type": "actions",
+          "text": "The User Interface Designer will design the LCD screen function menu."
+        },
+        {
+          "item_key": "TS3006b#1",
+          "type": "problems",
+          "text": "Unclear what functions we had to include yet."
+        }
+      ]
+    },
+    "observed_documents": [],
+    "document_evidence": [],
+    "relation_evidence": [],
+    "history": [
+      {
+        "item": "TS3006b#2",
+        "step": 1,
+        "flags": [],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue explicitly states the need for a simpler remote for elderly users, matching the item claim.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.C.dialog-act.dharshi.104",
+                "quote": "But maybe elderly people don't understand it so well , so they need a simpler remote ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "uncertain",
+            "reason": "The problem is raised/open but no evidence of resolution or progress in current dialogue.",
+            "quotes": [],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting information found in the available dialogue.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.C.dialog-act.dharshi.104",
+                "quote": "But maybe elderly people don't understand it so well , so they need a simpler remote ."
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No earlier item relation needed for this standalone problem.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "decision": "retrieve",
+        "reason": "unresolved_checks",
+        "requested_action": null,
+        "proposed_fields": {
+          "owner": null,
+          "owner_basis": "missing",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "status": "open",
+          "prior_context_needed": false,
+          "related_items": [],
+          "evidence_da_ids": [
+            "TS3006b.C.dialog-act.dharshi.104",
+            "TS3006b.A.dialog-act.dharshi.151"
+          ]
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue explicitly states the need for a simpler remote for elderly users, matching the item claim.",
+            "quotes": [
+              "TS3006b.C.dialog-act.dharshi.104"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "This item is not an action requiring assignment in this meeting."
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "No deadline applies to this problem statement as presented."
+          },
+          "status": {
+            "result": "uncertain",
+            "reason": "The problem is raised/open but no evidence of resolution or progress in current dialogue."
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting information found in the available dialogue."
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No earlier item relation needed for this standalone problem."
+          }
+        },
+        "submitted_assessment": {
+          "fields": {
+            "owner": null,
+            "owner_basis": "missing",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": [],
+            "evidence_da_ids": [
+              "TS3006b.C.dialog-act.dharshi.104",
+              "TS3006b.A.dialog-act.dharshi.151"
+            ]
+          },
+          "checks": {
+            "statement": {
+              "result": "pass",
+              "reason": "Dialogue explicitly states the need for a simpler remote for elderly users, matching the item claim.",
+              "quotes": [
+                "TS3006b.C.dialog-act.dharshi.104"
+              ]
+            },
+            "owner": {
+              "result": "not_applicable",
+              "reason": "This item is not an action requiring assignment in this meeting."
+            },
+            "deadline": {
+              "result": "not_applicable",
+              "reason": "No deadline applies to this problem statement as presented."
+            },
+            "status": {
+              "result": "uncertain",
+              "reason": "The problem is raised/open but no evidence of resolution or progress in current dialogue."
+            },
+            "conflict": {
+              "result": "pass",
+              "reason": "No conflicting information found in the available dialogue."
+            },
+            "relation": {
+              "result": "not_applicable",
+              "reason": "No earlier item relation needed for this standalone problem."
+            }
+          }
+        },
+        "evidence_bindings": {
+          "statement": [
+            "TS3006b.C.dialog-act.dharshi.104"
+          ],
+          "conflict_scope": [
+            "TS3006b.C.dialog-act.dharshi.104"
+          ]
+        },
+        "raw_tool_input": {
+          "fields": {
+            "owner": null,
+            "owner_basis": "missing",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": [],
+            "evidence_da_ids": [
+              "TS3006b.C.dialog-act.dharshi.104",
+              "TS3006b.A.dialog-act.dharshi.151"
+            ]
+          },
+          "checks": {
+            "statement": {
+              "result": "pass",
+              "reason": "Dialogue explicitly states the need for a simpler remote for elderly users, matching the item claim.",
+              "quotes": [
+                "TS3006b.C.dialog-act.dharshi.104"
+              ]
+            },
+            "owner": {
+              "result": "not_applicable",
+              "reason": "This item is not an action requiring assignment in this meeting."
+            },
+            "deadline": {
+              "result": "not_applicable",
+              "reason": "No deadline applies to this problem statement as presented."
+            },
+            "status": {
+              "result": "uncertain",
+              "reason": "The problem is raised/open but no evidence of resolution or progress in current dialogue."
+            },
+            "conflict": {
+              "result": "pass",
+              "reason": "No conflicting information found in the available dialogue."
+            },
+            "relation": {
+              "result": "not_applicable",
+              "reason": "No earlier item relation needed for this standalone problem."
+            }
+          },
+          "evidence_da_ids": [
+            "TS3006b.C.dialog-act.dharshi.104",
+            "TS3006b.A.dialog-act.dharshi.151"
+          ]
+        },
+        "protocol_normalizations": [
+          "removed_identical_root_duplicate:evidence_da_ids"
+        ]
+      },
+      {
+        "item": "TS3006b#2",
+        "step": 2,
+        "flags": [],
+        "action": "stop",
+        "outcome": "pending",
+        "reason": "Final answer prepared based on current assessment.",
+        "decision": "stop"
+      },
+      {
+        "item": "TS3006b#2",
+        "step": 2,
+        "flags": [],
+        "action": "stop",
+        "outcome": "pending",
+        "termination_reason": "stop",
+        "unresolved_fields": [
+          "status"
+        ]
+      }
+    ],
+    "lookups": 0,
+    "termination_reason": "stop",
+    "clarifications": [
+      {
+        "request_id": "4c31ea37a1cfc97b",
+        "item_key": "TS3006b#2",
+        "record_id": null,
+        "field": "status",
+        "question": "What is this item's status at the end of the current meeting?",
+        "item_text": "Elderly users may not understand the remote well; a simpler remote is needed.",
+        "reason": "The problem is raised/open but no evidence of resolution or progress in current dialogue.",
+        "evidence_da_ids": [],
+        "available_evidence_da_ids": [
+          "TS3006b.C.dialog-act.dharshi.104",
+          "TS3006b.A.dialog-act.dharshi.151",
+          "TS3006b.A.dialog-act.dharshi.150",
+          "TS3006b.C.dialog-act.dharshi.105"
+        ],
+        "status": "open",
+        "termination_reason": "stop"
+      }
+    ]
+  }
+}

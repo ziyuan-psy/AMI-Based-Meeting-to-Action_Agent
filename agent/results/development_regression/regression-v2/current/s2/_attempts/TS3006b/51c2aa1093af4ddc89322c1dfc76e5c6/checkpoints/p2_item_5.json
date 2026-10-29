@@ -1,0 +1,1002 @@
+{
+  "item_key": "TS3006b#5",
+  "record_id": null,
+  "item_type": "actions",
+  "item_text": "The Project Manager will reorganize the project materials after this meeting.",
+  "state": "running",
+  "recordable": true,
+  "fields": {
+    "status": "open",
+    "prior_context_needed": false,
+    "related_items": [],
+    "owner": [
+      "MTD021PM"
+    ],
+    "owner_basis": "explicit",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "reference": [
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3006b.json",
+        "locator": "TS3006b.A.dialog-act.dharshi.309"
+      }
+    ]
+  },
+  "draft_fields": {
+    "owner": [
+      "MTD021PM"
+    ],
+    "owner_basis": "explicit",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "status": "open",
+    "prior_context_needed": false,
+    "related_items": [],
+    "evidence_da_ids": [
+      "TS3006b.A.dialog-act.dharshi.309"
+    ],
+    "used_participant_lookup": false
+  },
+  "checks": {
+    "statement": {
+      "result": "pass",
+      "reason": "PM's statement explicitly indicates reorganization of materials after this meeting.",
+      "quotes": [
+        {
+          "da_id": "TS3006b.A.dialog-act.dharshi.309",
+          "quote": "I'll just try to reorganise uh things ."
+        }
+      ],
+      "fields": [
+        "statement"
+      ]
+    },
+    "owner": {
+      "result": "pass",
+      "reason": "PM is rostered as the project manager; the owner field aligns with the assignment.",
+      "quotes": [
+        {
+          "da_id": "TS3006b.A.dialog-act.dharshi.309",
+          "quote": "I'll just try to reorganise uh things ."
+        }
+      ],
+      "fields": [
+        "owner"
+      ]
+    },
+    "deadline": {
+      "result": "uncertain",
+      "reason": "deadline_unresolved",
+      "quotes": [],
+      "fields": [
+        "deadline"
+      ]
+    },
+    "status": {
+      "result": "pass",
+      "reason": "Status is open and consistent with the current dialogue; not completed.",
+      "quotes": [
+        {
+          "da_id": "TS3006b.A.dialog-act.dharshi.309",
+          "quote": "I'll just try to reorganise uh things ."
+        }
+      ],
+      "fields": [
+        "status"
+      ]
+    },
+    "conflict": {
+      "result": "pass",
+      "reason": "No conflicting evidence detected among available dialogue.",
+      "quotes": [
+        {
+          "da_id": "TS3006b.A.dialog-act.dharshi.309",
+          "quote": "I'll just try to reorganise uh things ."
+        }
+      ],
+      "fields": []
+    },
+    "relation": {
+      "result": "pass",
+      "reason": "No related_items to compare; no relationship to establish.",
+      "quotes": [
+        {
+          "da_id": "TS3006b.A.dialog-act.dharshi.309",
+          "quote": "I'll just try to reorganise uh things ."
+        }
+      ],
+      "fields": [
+        "related_items"
+      ]
+    }
+  },
+  "unresolved_fields": [
+    "deadline"
+  ],
+  "observed_evidence_da_ids": [
+    "TS3006b.A.dialog-act.dharshi.309",
+    "TS3006b.B.dialog-act.dharshi.150",
+    "TS3006b.D.dialog-act.dharshi.358"
+  ],
+  "initial_context": {
+    "item": {
+      "type": "actions",
+      "text": "The Project Manager will reorganize the project materials after this meeting.",
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ]
+    },
+    "fields": {
+      "owner": [
+        "MTD021PM"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "status": "open",
+      "prior_context_needed": false,
+      "related_items": [],
+      "evidence_da_ids": [
+        "TS3006b.A.dialog-act.dharshi.309"
+      ],
+      "used_participant_lookup": false
+    },
+    "current_meeting": "TS3006b",
+    "earlier_meetings": [
+      "TS3006a"
+    ],
+    "roster": [
+      {
+        "speaker": "A",
+        "participant_id": "MTD021PM",
+        "role": "PM"
+      },
+      {
+        "speaker": "B",
+        "participant_id": "MTD023UID",
+        "role": "UI"
+      },
+      {
+        "speaker": "C",
+        "participant_id": "MTD022ID",
+        "role": "ID"
+      },
+      {
+        "speaker": "D",
+        "participant_id": "MTD024ME",
+        "role": "ME"
+      }
+    ],
+    "observed_dialogue": [
+      {
+        "da_id": "TS3006b.A.dialog-act.dharshi.309",
+        "meeting_id": "TS3006b",
+        "text": "I'll just try to reorganise uh things .",
+        "participant": "MTD021PM",
+        "role": "PM"
+      },
+      {
+        "da_id": "TS3006b.B.dialog-act.dharshi.150",
+        "participant": "MTD023UID",
+        "role": "UI",
+        "text": "and <disfmarker>"
+      },
+      {
+        "da_id": "TS3006b.D.dialog-act.dharshi.358",
+        "participant": "MTD024ME",
+        "role": "ME",
+        "text": "So <disfmarker>"
+      }
+    ],
+    "peer_items": [
+      {
+        "item_key": "TS3006b#0",
+        "type": "actions",
+        "text": "The User Interface Designer will design the LCD screen function menu."
+      },
+      {
+        "item_key": "TS3006b#1",
+        "type": "problems",
+        "text": "Unclear what functions we had to include yet."
+      },
+      {
+        "item_key": "TS3006b#2",
+        "type": "problems",
+        "text": "Elderly users may not understand the remote well; a simpler remote is needed."
+      },
+      {
+        "item_key": "TS3006b#3",
+        "type": "actions",
+        "text": "The User Interface Designer will prepare a list of the functions to be shown on the screen/menu."
+      },
+      {
+        "item_key": "TS3006b#4",
+        "type": "actions",
+        "text": "The User Interface Designer will group the menu into a display group and a basic functions group."
+      }
+    ]
+  },
+  "observed_documents": [],
+  "document_evidence": [],
+  "relation_evidence": [],
+  "history": [
+    {
+      "item": "TS3006b#5",
+      "step": 1,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "assess_item",
+      "outcome": "invalid_action",
+      "error": "Correct these argument fields: : Additional properties are not allowed ('owner' was unexpected)"
+    },
+    {
+      "item": "TS3006b#5",
+      "step": 2,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "assess_item",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "PM's dialogue supports intention to reorganise project materials after this meeting.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.A.dialog-act.dharshi.309",
+              "quote": "I'll just try to reorganise uh things ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Roster confirms PM (MTD021PM) as project manager; PM's dialogue indicates action alignment.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.A.dialog-act.dharshi.309",
+              "quote": "I'll just try to reorganise uh things ."
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "deadline_unresolved",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "uncertain",
+          "reason": "current_meeting_support_required",
+          "quotes": [],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions detected among available evidence.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.A.dialog-act.dharshi.309",
+              "quote": "I'll just try to reorganise uh things ."
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "prior_context_not_checked",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "decision": "reassess",
+      "reason": "missing_current_evidence_selection",
+      "requested_action": null,
+      "proposed_fields": {
+        "owner": [
+          "MTD021PM"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "open",
+        "prior_context_needed": false,
+        "related_items": [],
+        "evidence_da_ids": [
+          "TS3006b.A.dialog-act.dharshi.309"
+        ],
+        "used_participant_lookup": false
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "PM's dialogue supports intention to reorganise project materials after this meeting.",
+          "quotes": [
+            "TS3006b.A.dialog-act.dharshi.309"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Roster confirms PM (MTD021PM) as project manager; PM's dialogue indicates action alignment.",
+          "quotes": [
+            "TS3006b.A.dialog-act.dharshi.309"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "No explicit deadline stated in current dialogue; deadline_basis is missing."
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Action is in open state and not yet completed; aligns with current dialogue context."
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions detected among available evidence."
+        },
+        "relation": {
+          "result": "pass",
+          "reason": "No related_items present; relation check trivially satisfied."
+        }
+      },
+      "submitted_assessment": {
+        "fields": {
+          "owner": [
+            "MTD021PM"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "status": "open",
+          "prior_context_needed": false,
+          "related_items": [],
+          "evidence_da_ids": [
+            "TS3006b.A.dialog-act.dharshi.309"
+          ],
+          "used_participant_lookup": false
+        },
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "PM's dialogue supports intention to reorganise project materials after this meeting.",
+            "quotes": [
+              "TS3006b.A.dialog-act.dharshi.309"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Roster confirms PM (MTD021PM) as project manager; PM's dialogue indicates action alignment.",
+            "quotes": [
+              "TS3006b.A.dialog-act.dharshi.309"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "No explicit deadline stated in current dialogue; deadline_basis is missing."
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Action is in open state and not yet completed; aligns with current dialogue context."
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions detected among available evidence."
+          },
+          "relation": {
+            "result": "pass",
+            "reason": "No related_items present; relation check trivially satisfied."
+          }
+        }
+      },
+      "evidence_bindings": {
+        "statement": [
+          "TS3006b.A.dialog-act.dharshi.309"
+        ],
+        "owner": [
+          "TS3006b.A.dialog-act.dharshi.309"
+        ],
+        "conflict_scope": [
+          "TS3006b.A.dialog-act.dharshi.309"
+        ]
+      },
+      "raw_tool_input": {
+        "fields": {
+          "owner": [
+            "MTD021PM"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "status": "open",
+          "prior_context_needed": false,
+          "related_items": [],
+          "evidence_da_ids": [
+            "TS3006b.A.dialog-act.dharshi.309"
+          ],
+          "used_participant_lookup": false
+        },
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "PM's dialogue supports intention to reorganise project materials after this meeting.",
+            "quotes": [
+              "TS3006b.A.dialog-act.dharshi.309"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Roster confirms PM (MTD021PM) as project manager; PM's dialogue indicates action alignment.",
+            "quotes": [
+              "TS3006b.A.dialog-act.dharshi.309"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "No explicit deadline stated in current dialogue; deadline_basis is missing."
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Action is in open state and not yet completed; aligns with current dialogue context."
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions detected among available evidence."
+          },
+          "relation": {
+            "result": "pass",
+            "reason": "No related_items present; relation check trivially satisfied."
+          }
+        }
+      },
+      "protocol_normalizations": []
+    },
+    {
+      "item": "TS3006b#5",
+      "step": 3,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "assess_item",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "PM's dialogue supports intention to reorganise project materials after this meeting.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.A.dialog-act.dharshi.309",
+              "quote": "I'll just try to reorganise uh things ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Roster confirms PM (MTD021PM) as project manager; PM's dialogue indicates action alignment.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.A.dialog-act.dharshi.309",
+              "quote": "I'll just try to reorganise uh things ."
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "deadline_unresolved",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "uncertain",
+          "reason": "current_meeting_support_required",
+          "quotes": [],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions detected among available evidence.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.A.dialog-act.dharshi.309",
+              "quote": "I'll just try to reorganise uh things ."
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "prior_context_not_checked",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "decision": "retrieve",
+      "reason": "unresolved_checks",
+      "requested_action": null,
+      "proposed_fields": {
+        "owner": [
+          "MTD021PM"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "open",
+        "prior_context_needed": false,
+        "related_items": [],
+        "evidence_da_ids": [
+          "TS3006b.A.dialog-act.dharshi.309"
+        ],
+        "used_participant_lookup": false
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "PM's dialogue supports intention to reorganise project materials after this meeting.",
+          "quotes": [
+            "TS3006b.A.dialog-act.dharshi.309"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Roster confirms PM (MTD021PM) as project manager; PM's dialogue indicates action alignment.",
+          "quotes": [
+            "TS3006b.A.dialog-act.dharshi.309"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "No explicit deadline stated in current dialogue; deadline_basis is missing."
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Action is in open state and not yet completed; aligns with current dialogue context."
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions detected among available evidence."
+        },
+        "relation": {
+          "result": "pass",
+          "reason": "No related_items present; relation check trivially satisfied."
+        }
+      },
+      "submitted_assessment": {
+        "fields": {
+          "owner": [
+            "MTD021PM"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "status": "open",
+          "prior_context_needed": false,
+          "related_items": [],
+          "evidence_da_ids": [
+            "TS3006b.A.dialog-act.dharshi.309"
+          ],
+          "used_participant_lookup": false
+        },
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "PM's dialogue supports intention to reorganise project materials after this meeting.",
+            "quotes": [
+              "TS3006b.A.dialog-act.dharshi.309"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Roster confirms PM (MTD021PM) as project manager; PM's dialogue indicates action alignment.",
+            "quotes": [
+              "TS3006b.A.dialog-act.dharshi.309"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "No explicit deadline stated in current dialogue; deadline_basis is missing."
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Action is in open state and not yet completed; aligns with current dialogue context."
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions detected among available evidence."
+          },
+          "relation": {
+            "result": "pass",
+            "reason": "No related_items present; relation check trivially satisfied."
+          }
+        }
+      },
+      "evidence_bindings": {
+        "statement": [
+          "TS3006b.A.dialog-act.dharshi.309"
+        ],
+        "owner": [
+          "TS3006b.A.dialog-act.dharshi.309"
+        ],
+        "conflict_scope": [
+          "TS3006b.A.dialog-act.dharshi.309"
+        ]
+      },
+      "raw_tool_input": {
+        "fields": {
+          "owner": [
+            "MTD021PM"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "status": "open",
+          "prior_context_needed": false,
+          "related_items": [],
+          "evidence_da_ids": [
+            "TS3006b.A.dialog-act.dharshi.309"
+          ],
+          "used_participant_lookup": false
+        },
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "PM's dialogue supports intention to reorganise project materials after this meeting.",
+            "quotes": [
+              "TS3006b.A.dialog-act.dharshi.309"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Roster confirms PM (MTD021PM) as project manager; PM's dialogue indicates action alignment.",
+            "quotes": [
+              "TS3006b.A.dialog-act.dharshi.309"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "No explicit deadline stated in current dialogue; deadline_basis is missing."
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Action is in open state and not yet completed; aligns with current dialogue context."
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions detected among available evidence."
+          },
+          "relation": {
+            "result": "pass",
+            "reason": "No related_items present; relation check trivially satisfied."
+          }
+        }
+      },
+      "protocol_normalizations": []
+    },
+    {
+      "item": "TS3006b#5",
+      "step": 4,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "get_prior_items",
+      "outcome": "lookup",
+      "decision": "retrieve",
+      "args": {
+        "query": "TS3006b",
+        "item_type": "actions"
+      },
+      "tool_result": {
+        "results": []
+      },
+      "new_info": false
+    },
+    {
+      "item": "TS3006b#5",
+      "step": 5,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "assess_item",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "PM's statement explicitly indicates reorganization of materials after this meeting.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.A.dialog-act.dharshi.309",
+              "quote": "I'll just try to reorganise uh things ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "PM is rostered as the project manager; the owner field aligns with the assignment.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.A.dialog-act.dharshi.309",
+              "quote": "I'll just try to reorganise uh things ."
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "deadline_unresolved",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Status is open and consistent with the current dialogue; not completed.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.A.dialog-act.dharshi.309",
+              "quote": "I'll just try to reorganise uh things ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No conflicting evidence detected among available dialogue.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.A.dialog-act.dharshi.309",
+              "quote": "I'll just try to reorganise uh things ."
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "pass",
+          "reason": "No related_items to compare; no relationship to establish.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.A.dialog-act.dharshi.309",
+              "quote": "I'll just try to reorganise uh things ."
+            }
+          ],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "decision": "retrieve",
+      "reason": "unresolved_checks",
+      "requested_action": "retrieve",
+      "proposed_fields": {
+        "owner": [
+          "MTD021PM"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "open",
+        "prior_context_needed": false,
+        "related_items": [],
+        "evidence_da_ids": [
+          "TS3006b.A.dialog-act.dharshi.309"
+        ],
+        "used_participant_lookup": false
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "PM's statement explicitly indicates reorganization of materials after this meeting.",
+          "quotes": [
+            "TS3006b.A.dialog-act.dharshi.309"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "PM is rostered as the project manager; the owner field aligns with the assignment.",
+          "quotes": [
+            "TS3006b.A.dialog-act.dharshi.309"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "No deadline was stated; basis marked as missing.",
+          "quotes": []
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Status is open and consistent with the current dialogue; not completed.",
+          "quotes": [
+            "TS3006b.A.dialog-act.dharshi.309"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No conflicting evidence detected among available dialogue.",
+          "quotes": [
+            "TS3006b.A.dialog-act.dharshi.309"
+          ]
+        },
+        "relation": {
+          "result": "pass",
+          "reason": "No related_items to compare; no relationship to establish.",
+          "quotes": [
+            "TS3006b.A.dialog-act.dharshi.309"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "fields": {
+          "owner": [
+            "MTD021PM"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "status": "open",
+          "prior_context_needed": false,
+          "related_items": [],
+          "evidence_da_ids": [
+            "TS3006b.A.dialog-act.dharshi.309"
+          ],
+          "used_participant_lookup": false
+        },
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "PM's statement explicitly indicates reorganization of materials after this meeting.",
+            "quotes": [
+              "TS3006b.A.dialog-act.dharshi.309"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "PM is rostered as the project manager; the owner field aligns with the assignment.",
+            "quotes": [
+              "TS3006b.A.dialog-act.dharshi.309"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "No deadline was stated; basis marked as missing.",
+            "quotes": []
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Status is open and consistent with the current dialogue; not completed.",
+            "quotes": [
+              "TS3006b.A.dialog-act.dharshi.309"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting evidence detected among available dialogue.",
+            "quotes": [
+              "TS3006b.A.dialog-act.dharshi.309"
+            ]
+          },
+          "relation": {
+            "result": "pass",
+            "reason": "No related_items to compare; no relationship to establish.",
+            "quotes": [
+              "TS3006b.A.dialog-act.dharshi.309"
+            ]
+          }
+        },
+        "next_action": "retrieve",
+        "reason": "Explicit deadline or broader confirmation needed to finalize assessment."
+      },
+      "evidence_bindings": {
+        "statement": [
+          "TS3006b.A.dialog-act.dharshi.309"
+        ],
+        "owner": [
+          "TS3006b.A.dialog-act.dharshi.309"
+        ],
+        "status": [
+          "TS3006b.A.dialog-act.dharshi.309"
+        ],
+        "conflict": [
+          "TS3006b.A.dialog-act.dharshi.309"
+        ],
+        "relation": [
+          "TS3006b.A.dialog-act.dharshi.309"
+        ]
+      },
+      "raw_tool_input": {
+        "fields": {
+          "owner": [
+            "MTD021PM"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "status": "open",
+          "prior_context_needed": false,
+          "related_items": [],
+          "evidence_da_ids": [
+            "TS3006b.A.dialog-act.dharshi.309"
+          ],
+          "used_participant_lookup": false
+        },
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "PM's statement explicitly indicates reorganization of materials after this meeting.",
+            "quotes": [
+              "TS3006b.A.dialog-act.dharshi.309"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "PM is rostered as the project manager; the owner field aligns with the assignment.",
+            "quotes": [
+              "TS3006b.A.dialog-act.dharshi.309"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "No deadline was stated; basis marked as missing.",
+            "quotes": []
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Status is open and consistent with the current dialogue; not completed.",
+            "quotes": [
+              "TS3006b.A.dialog-act.dharshi.309"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting evidence detected among available dialogue.",
+            "quotes": [
+              "TS3006b.A.dialog-act.dharshi.309"
+            ]
+          },
+          "relation": {
+            "result": "pass",
+            "reason": "No related_items to compare; no relationship to establish.",
+            "quotes": [
+              "TS3006b.A.dialog-act.dharshi.309"
+            ]
+          }
+        },
+        "next_action": "retrieve",
+        "reason": "Explicit deadline or broader confirmation needed to finalize assessment."
+      },
+      "protocol_normalizations": []
+    }
+  ],
+  "lookups": 1,
+  "termination_reason": "in_progress",
+  "clarifications": []
+}

@@ -54,6 +54,7 @@ def test_stage_trace_freezes_snapshots_and_serializes_parallel_events(tmp_path):
 
 
 def test_consolidation_exposes_merges_caps_and_votes_without_changing_outputs(tmp_path, monkeypatch):
+    monkeypatch.setattr(config, "ITEM_SELECTION_ENABLED", False)  # Frozen pre-selection cap ablation.
     monkeypatch.setattr(config, "WORKERS", 1)
     monkeypatch.setattr(config, "MAX_ITEMS", {"actions": 5, "decisions": 2, "problems": 4})
     cands, trace = [candidate(i) for i in range(4)], StageTrace()
@@ -106,6 +107,7 @@ def test_extraction_records_rejections_and_cache_hits(tmp_path):
 
 
 class FixtureClient:
+    p2_legacy_input = True  # Saved v1 protocol fixture; production clients default to flat v2.
     """One explicit action in the first development meeting, with no follow-up needed."""
 
     def __init__(self):
@@ -121,6 +123,10 @@ class FixtureClient:
             payload = {"items": items}
         elif name == "submit_abstracts":
             payload = {"abstracts": [{"text": "Menu work was assigned.", "items": [0]}]}
+        elif name == "select_record_items":
+            data = json.loads(kwargs["messages"][0]["content"])
+            payload = {key:{"keep":True,"claims":[{"text":c['text'],"priority":3}],"reason":"Substantive fixture assignment"}
+                       for key,c in data['candidates'].items()}
         elif name == "assess_item":
             initial = json.loads(kwargs["messages"][0]["content"])
             quote = initial["observed_dialogue"][0]

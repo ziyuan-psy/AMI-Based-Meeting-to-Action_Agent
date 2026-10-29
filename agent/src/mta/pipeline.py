@@ -10,6 +10,7 @@ from . import config
 from .agent import MeetingBudget, build_reference, run_agent
 from .control import Limits, RunControl, RunStopped, launch, stage_pool
 from .extract import _strip_indexes, consolidate, extract_candidates, normalize
+from .item_selection import select_items
 from .llm import LLM
 from .observation import RunObservation, sha256, write_json
 from .prompts import ABSTRACT_SYSTEM
@@ -148,7 +149,9 @@ def run_meeting(txt_path: Path, mode: str, llm: LLM, out_root: Path, cache_dir: 
         result = {"mode": mode, "meeting_id": observation.data["meeting_id"], "status": failure["status"],
                   "reason": failure["code"], "failed_stage": failure["stage"], "failure": failure}
     except Exception as error:
-        failure = (control.stop("stage_failed", "FAILED", error_type=type(error).__name__).failure if control else
+        failure = (control.stop("stage_failed", "FAILED", error_type=type(error).__name__,
+                   os_error=getattr(error,'errno',None),windows_error=getattr(error,'winerror',None),
+                   io_operation=getattr(error,'mta_io_operation',None)).failure if control else
                    {"code": "invalid_limits", "status": "FAILED", "stage": "configuration", "error_type": type(error).__name__})
         result = {"mode": mode, "meeting_id": observation.data["meeting_id"], "status": failure["status"],
                   "reason": failure["code"], "failed_stage": failure["stage"], "failure": failure}
@@ -186,6 +189,9 @@ def saved_run_complete(record_path: Path) -> bool:
                 and result.get("report_sha256") == sha256(report) and result.get("p2_enabled", False) == enabled
                 and (not enabled or metadata["mode"] != "s2" or metadata["config"].get("LINK_POLICY_VERSION", 0) == config.LINK_POLICY_VERSION)
                 and (not enabled or metadata["config"].get("DOCUMENT_POLICY_VERSION", 0) == config.DOCUMENT_POLICY_VERSION)
+                and (not enabled or metadata['config'].get('P2_PROTOCOL_VERSION',0) == config.P2_PROTOCOL_VERSION)
+                and (metadata['mode'] == 'b0' or all(metadata['config'].get(k) == getattr(config,k)
+                     for k in ('ITEM_SELECTION_ENABLED','ITEM_POLICY_VERSION')))
                 and (not enabled or metadata.get("context_sha256", {}).get(config.SCENARIO.name) == sha256(config.SCENARIO))
                 and (not enabled or all(metadata["config"].get(k) == getattr(config, k)
                                         for k in ("SCENARIO_PASSAGE_CHARS", "SCENARIO_PASSAGE_OVERLAP")))
@@ -259,6 +265,12 @@ def _run_meeting(txt_path: Path, mode: str, llm: LLM, out_root: Path, cache_dir:
             return {**result, "status": "BLOCKED", "reason": "consolidation_failed", "failed_stage": "consolidate"}
         seconds["consolidate"] = round(time.time() - t, 1)
         observation.checkpoint("consolidated", cands)
+        if config.ITEM_SELECTION_ENABLED:
+            observation.enter("select")
+            t = time.time()
+            cands = select_items(llm, cands, cur.acts, cache=cache_dir / f"select_{meeting_id}.json", trace=stages)
+            seconds["select"] = round(time.time() - t, 1)
+            observation.checkpoint("selected", cands)
     observation.enter("normalize")
     items = normalize(cands, store.participant_ids())
     stages.log(stage="normalize", event="completed", items=items)
@@ -287,10 +299,18 @@ def _run_meeting(txt_path: Path, mode: str, llm: LLM, out_root: Path, cache_dir:
     _warm_store(store)
     observation.enter("agent+abstract")
     t = time.time()
+    from .p2_admission import P2Admission
+    admission = P2Admission(control,selected,config.P2_RESERVED_COMPLETION_CALLS) if p2_enabled else None
 
     def agent_item(n):
         progress = (lambda state: observation.checkpoint(f"p2_item_{n}", state)) if p2_enabled else None
-        fields = _safe_agent(llm, store, items[n], budget, trace, f"{meeting_id}#{n}", progress)
+        # Attempts, including transport retries, still pass through the original controller.
+        item_llm = llm.parent.scoped(admission.view(n)) if admission else llm
+        try:
+            fields = _safe_agent(item_llm, store, items[n], budget, trace, f"{meeting_id}#{n}", progress)
+        finally:
+            if admission:
+                admission.done(n)
         observation.checkpoint(f"agent_item_{n}", {"item": n, "fields": fields})
         return fields
 
@@ -298,6 +318,8 @@ def _run_meeting(txt_path: Path, mode: str, llm: LLM, out_root: Path, cache_dir:
         jobs = {n: pool.submit(agent_item, n) for n in selected}
         agent_fields = {n: control.wait(j) for n, j in jobs.items()}
     agent_runs, fallbacks = len(selected), sum(1 for f in agent_fields.values() if f is None)
+    if admission:
+        observation.update(p2_admission=admission.snapshot())
     original_items = items
     retained, p2_items = [], []
     for n, it in enumerate(items):
@@ -305,7 +327,9 @@ def _run_meeting(txt_path: Path, mode: str, llm: LLM, out_root: Path, cache_dir:
         if p2_enabled:
             if fields is None:
                 raise ValueError("P2 requires an explicit checked or pending outcome")
-            fields.update(record_id=None, item_type=it["type"], item_text=it["text"])
+            fields.update(record_id=None, item_type=it["type"])
+            # A bounded P2 deletion is published only after a new assessment of that text.
+            it = {**it, "text": fields["item_text"]}
             p2_items.append(fields)
             it["fields"] = fields["fields"]
             if not fields["recordable"]:

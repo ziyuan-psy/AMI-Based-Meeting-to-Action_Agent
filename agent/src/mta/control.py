@@ -269,7 +269,8 @@ class DaemonPool:
                     try:
                         self.control.stop("cancelled" if isinstance(error, KeyboardInterrupt) else "stage_failed",
                                           "CANCELLED" if isinstance(error, KeyboardInterrupt) else "FAILED",
-                                          error_type=type(error).__name__)
+                                          error_type=type(error).__name__, os_error=getattr(error,'errno',None),
+                                          windows_error=getattr(error,'winerror',None), io_operation=getattr(error,'mta_io_operation',None))
                     finally:
                         future.set_exception(error)
                 else:

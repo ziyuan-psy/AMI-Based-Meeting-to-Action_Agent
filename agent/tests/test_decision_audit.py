@@ -87,6 +87,7 @@ def test_new_pass_shares_meeting_call_budget_instead_of_receiving_extra_allowanc
 
 def test_pipeline_publishes_valid_schema_with_new_decision_stage(tmp_path,monkeypatch):
     monkeypatch.setattr(config,'P2_ENABLED',False)  # isolate the step-four consolidation regression
+    monkeypatch.setattr(config,'ITEM_SELECTION_ENABLED',False)  # Frozen step-four ablation, before project selection.
     cache_dir=tmp_path/'cache';cache_dir.mkdir()
     seed(cache_dir,'TS3006a')
     frozen=config.ROOT/'results/dev_baselines/trace-v1-ts3006ab/_cache/extract_False_TS3006a.json'

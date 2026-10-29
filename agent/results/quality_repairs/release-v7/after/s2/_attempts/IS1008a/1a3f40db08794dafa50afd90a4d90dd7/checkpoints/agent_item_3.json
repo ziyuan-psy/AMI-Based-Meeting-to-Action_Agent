@@ -1,0 +1,640 @@
+{
+  "item": 3,
+  "fields": {
+    "item_key": "IS1008a#3",
+    "record_id": null,
+    "item_type": "problems",
+    "item_text": "There is no written project plan or budget yet, and documentation is missing to present to management.",
+    "state": "accepted",
+    "recordable": true,
+    "fields": {
+      "status": "open",
+      "prior_context_needed": false,
+      "related_items": [],
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/IS1008a.json",
+          "locator": "IS1008a.A.dialog-act.s9553330.59"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/IS1008a.json",
+          "locator": "IS1008a.A.dialog-act.s9553330.60"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/IS1008a.json",
+          "locator": "IS1008a.A.dialog-act.s9553330.63"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/IS1008a.json",
+          "locator": "IS1008a.A.dialog-act.s9553330.65"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/IS1008a.json",
+          "locator": "IS1008a.A.dialog-act.s9553330.67"
+        }
+      ]
+    },
+    "draft_fields": {
+      "status": "open",
+      "related_items": [],
+      "prior_context_needed": false,
+      "used_participant_lookup": false,
+      "evidence_da_ids": [
+        "IS1008a.A.dialog-act.s9553330.59",
+        "IS1008a.A.dialog-act.s9553330.60",
+        "IS1008a.A.dialog-act.s9553330.63",
+        "IS1008a.A.dialog-act.s9553330.65",
+        "IS1008a.A.dialog-act.s9553330.67"
+      ],
+      "owner": null,
+      "owner_basis": "missing",
+      "deadline": null,
+      "deadline_basis": "missing"
+    },
+    "checks": {
+      "statement": {
+        "result": "pass",
+        "reason": "Dialogue shows explicit expectation of a written plan by FIE073 and PM's request for a plan in writing; such a plan would cover functional/technical design, staffing, timeframe, budget, market plan, and two-week deadline as stated in peer item.",
+        "quotes": [
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.59",
+            "quote": "Yeah , but uh I need something in the writing ,"
+          },
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.60",
+            "quote": "so like uh what's your functional design , what's your technical design , and uh how many people you need for this project , and what's the time frame you're looking , okay , and what is the budget , maybe uh initial budget you're looking , okay , and uh how is going to the market , okay ,"
+          },
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.63",
+            "quote": "okay , so I need some kind of uh uh the plan in the writing from you ."
+          },
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.65",
+            "quote": "B as soon as possible ."
+          },
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.67",
+            "quote": "because I need to go to the management and uh tell them what we are going to do , and uh what cost is , okay , and what's the time frame and what's the project plan ,"
+          }
+        ],
+        "fields": [
+          "statement"
+        ]
+      },
+      "status": {
+        "result": "pass",
+        "reason": "Same evidence as above supports the status that action to deliver a written plan by two weeks is anticipated; PM indicates need for plan in writing and timing aligns with two-week horizon, given the peer item.",
+        "quotes": [
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.59",
+            "quote": "Yeah , but uh I need something in the writing ,"
+          },
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.60",
+            "quote": "so like uh what's your functional design , what's your technical design , and uh how many people you need for this project , and what's the time frame you're looking , okay , and what is the budget , maybe uh initial budget you're looking , okay , and uh how is going to the market , okay ,"
+          },
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.63",
+            "quote": "okay , so I need some kind of uh uh the plan in the writing from you ."
+          },
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.65",
+            "quote": "B as soon as possible ."
+          },
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.67",
+            "quote": "because I need to go to the management and uh tell them what we are going to do , and uh what cost is , okay , and what's the time frame and what's the project plan ,"
+          }
+        ],
+        "fields": [
+          "status"
+        ]
+      },
+      "conflict": {
+        "result": "pass",
+        "reason": "No conflicting statements found in the current dialogue about scope; misalignment noted in peer item IS1008a#2 but that is separate item and not in current check, and there is no direct contradiction to the action proposed.",
+        "quotes": [
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.63",
+            "quote": "okay , so I need some kind of uh uh the plan in the writing from you ."
+          },
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.67",
+            "quote": "because I need to go to the management and uh tell them what we are going to do , and uh what cost is , okay , and what's the time frame and what's the project plan ,"
+          }
+        ],
+        "fields": []
+      },
+      "relation": {
+        "result": "not_applicable",
+        "reason": "No prior item in this run to relate to; this is first meeting; no related_items to evaluate.",
+        "quotes": [],
+        "fields": [
+          "related_items"
+        ]
+      },
+      "owner": {
+        "result": "not_applicable",
+        "reason": "field_not_applicable",
+        "quotes": [],
+        "fields": [
+          "owner"
+        ]
+      },
+      "deadline": {
+        "result": "not_applicable",
+        "reason": "field_not_applicable",
+        "quotes": [],
+        "fields": [
+          "deadline"
+        ]
+      }
+    },
+    "unresolved_fields": [],
+    "observed_evidence_da_ids": [
+      "IS1008a.A.dialog-act.s9553330.59",
+      "IS1008a.A.dialog-act.s9553330.60",
+      "IS1008a.C.dialog-act.s9553330.34",
+      "IS1008a.C.dialog-act.s9553330.35",
+      "IS1008a.A.dialog-act.s9553330.61",
+      "IS1008a.A.dialog-act.s9553330.62",
+      "IS1008a.A.dialog-act.s9553330.63",
+      "IS1008a.C.dialog-act.s9553330.36",
+      "IS1008a.A.dialog-act.s9553330.64",
+      "IS1008a.A.dialog-act.s9553330.65",
+      "IS1008a.C.dialog-act.s9553330.37",
+      "IS1008a.A.dialog-act.s9553330.66",
+      "IS1008a.C.dialog-act.s9553330.33",
+      "IS1008a.A.dialog-act.s9553330.67"
+    ],
+    "initial_context": {
+      "item": {
+        "type": "problems",
+        "text": "There is no written project plan or budget yet, and documentation is missing to present to management.",
+        "flags": []
+      },
+      "current_meeting": "IS1008a",
+      "earlier_meetings": [],
+      "roster": [
+        {
+          "speaker": "A",
+          "participant_id": "MIO086",
+          "role": "PM"
+        },
+        {
+          "speaker": "B",
+          "participant_id": "FIE038",
+          "role": "UI"
+        },
+        {
+          "speaker": "C",
+          "participant_id": "FIE073",
+          "role": "ID"
+        },
+        {
+          "speaker": "D",
+          "participant_id": "MIE085",
+          "role": "ME"
+        }
+      ],
+      "observed_dialogue": [
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.59",
+          "meeting_id": "IS1008a",
+          "text": "Yeah , but uh I need something in the writing ,",
+          "participant": "MIO086",
+          "role": "PM"
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.60",
+          "meeting_id": "IS1008a",
+          "text": "so like uh what's your functional design , what's your technical design , and uh how many people you need for this project , and what's the time frame you're looking , okay , and what is the budget , maybe uh initial budget you're looking , okay , and uh how is going to the market , okay ,",
+          "participant": "MIO086",
+          "role": "PM"
+        },
+        {
+          "da_id": "IS1008a.C.dialog-act.s9553330.34",
+          "meeting_id": "IS1008a",
+          "text": "Mm-hmm .",
+          "participant": "FIE073",
+          "role": "ID"
+        },
+        {
+          "da_id": "IS1008a.C.dialog-act.s9553330.35",
+          "meeting_id": "IS1008a",
+          "text": "Mm-hmm .",
+          "participant": "FIE073",
+          "role": "ID"
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.61",
+          "meeting_id": "IS1008a",
+          "text": "so you've you've had to meet with the marketing team and how they're going to market and what are the marketing strategic plan , okay ,",
+          "participant": "MIO086",
+          "role": "PM"
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.62",
+          "meeting_id": "IS1008a",
+          "text": "when are you going to introduce , okay , and by the time you introduce the product and uh you know there there would be a competition ,",
+          "participant": "MIO086",
+          "role": "PM"
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.63",
+          "meeting_id": "IS1008a",
+          "text": "okay , so I need some kind of uh uh the plan in the writing from you .",
+          "participant": "MIO086",
+          "role": "PM"
+        },
+        {
+          "da_id": "IS1008a.C.dialog-act.s9553330.36",
+          "meeting_id": "IS1008a",
+          "text": "<vocalsound> And when would you like that ?",
+          "participant": "FIE073",
+          "role": "ID"
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.64",
+          "meeting_id": "IS1008a",
+          "text": "Okay , and it's po",
+          "participant": "MIO086",
+          "role": "PM"
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.65",
+          "meeting_id": "IS1008a",
+          "text": "B as soon as possible .",
+          "participant": "MIO086",
+          "role": "PM"
+        },
+        {
+          "da_id": "IS1008a.C.dialog-act.s9553330.37",
+          "meeting_id": "IS1008a",
+          "text": "<vocalsound> Uh well if uh if we have enough time uh then d do you think um two weeks is a <disfmarker> is close enough ?",
+          "participant": "FIE073",
+          "role": "ID"
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.66",
+          "meeting_id": "IS1008a",
+          "text": "Yes I think uh that would be good ,",
+          "participant": "MIO086",
+          "role": "PM"
+        },
+        {
+          "da_id": "IS1008a.C.dialog-act.s9553330.33",
+          "participant": "FIE073",
+          "role": "ID",
+          "text": "If um if I run into any problems in my other projects it might be six months ."
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.67",
+          "participant": "MIO086",
+          "role": "PM",
+          "text": "because I need to go to the management and uh tell them what we are going to do , and uh what cost is , okay , and what's the time frame and what's the project plan ,"
+        }
+      ],
+      "peer_items": [
+        {
+          "item_key": "IS1008a#0",
+          "type": "actions",
+          "text": "ID(FIE073) will deliver a written plan covering functional and technical design, staffing, timeframe, budget, and market plan by two weeks."
+        },
+        {
+          "item_key": "IS1008a#1",
+          "type": "actions",
+          "text": "Ed will coordinate with Christine to discuss cost and the sales plan as part of preparing the overall plan."
+        },
+        {
+          "item_key": "IS1008a#2",
+          "type": "problems",
+          "text": "ID(FIE073) did not understand the project goal and believed the project was a different product, indicating a scope/goal misalignment."
+        }
+      ],
+      "provisional_values": {
+        "owner": null,
+        "owner_basis": "missing",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "open",
+        "related_items": []
+      },
+      "candidate_evidence_da_ids": [
+        "IS1008a.A.dialog-act.s9553330.59",
+        "IS1008a.A.dialog-act.s9553330.60",
+        "IS1008a.C.dialog-act.s9553330.34",
+        "IS1008a.C.dialog-act.s9553330.35",
+        "IS1008a.A.dialog-act.s9553330.61",
+        "IS1008a.A.dialog-act.s9553330.62",
+        "IS1008a.A.dialog-act.s9553330.63",
+        "IS1008a.C.dialog-act.s9553330.36",
+        "IS1008a.A.dialog-act.s9553330.64",
+        "IS1008a.A.dialog-act.s9553330.65",
+        "IS1008a.C.dialog-act.s9553330.37",
+        "IS1008a.A.dialog-act.s9553330.66",
+        "IS1008a.A.dialog-act.s9553330.67"
+      ]
+    },
+    "observed_documents": [],
+    "document_evidence": [],
+    "relation_evidence": [],
+    "history": [
+      {
+        "item": "IS1008a#3",
+        "step": 1,
+        "flags": [],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue shows explicit expectation of a written plan by FIE073 and PM's request for a plan in writing; such a plan would cover functional/technical design, staffing, timeframe, budget, market plan, and two-week deadline as stated in peer item.",
+            "quotes": [
+              {
+                "da_id": "IS1008a.A.dialog-act.s9553330.59",
+                "quote": "Yeah , but uh I need something in the writing ,"
+              },
+              {
+                "da_id": "IS1008a.A.dialog-act.s9553330.60",
+                "quote": "so like uh what's your functional design , what's your technical design , and uh how many people you need for this project , and what's the time frame you're looking , okay , and what is the budget , maybe uh initial budget you're looking , okay , and uh how is going to the market , okay ,"
+              },
+              {
+                "da_id": "IS1008a.A.dialog-act.s9553330.63",
+                "quote": "okay , so I need some kind of uh uh the plan in the writing from you ."
+              },
+              {
+                "da_id": "IS1008a.A.dialog-act.s9553330.65",
+                "quote": "B as soon as possible ."
+              },
+              {
+                "da_id": "IS1008a.A.dialog-act.s9553330.67",
+                "quote": "because I need to go to the management and uh tell them what we are going to do , and uh what cost is , okay , and what's the time frame and what's the project plan ,"
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Same evidence as above supports the status that action to deliver a written plan by two weeks is anticipated; PM indicates need for plan in writing and timing aligns with two-week horizon, given the peer item.",
+            "quotes": [
+              {
+                "da_id": "IS1008a.A.dialog-act.s9553330.59",
+                "quote": "Yeah , but uh I need something in the writing ,"
+              },
+              {
+                "da_id": "IS1008a.A.dialog-act.s9553330.60",
+                "quote": "so like uh what's your functional design , what's your technical design , and uh how many people you need for this project , and what's the time frame you're looking , okay , and what is the budget , maybe uh initial budget you're looking , okay , and uh how is going to the market , okay ,"
+              },
+              {
+                "da_id": "IS1008a.A.dialog-act.s9553330.63",
+                "quote": "okay , so I need some kind of uh uh the plan in the writing from you ."
+              },
+              {
+                "da_id": "IS1008a.A.dialog-act.s9553330.65",
+                "quote": "B as soon as possible ."
+              },
+              {
+                "da_id": "IS1008a.A.dialog-act.s9553330.67",
+                "quote": "because I need to go to the management and uh tell them what we are going to do , and uh what cost is , okay , and what's the time frame and what's the project plan ,"
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting statements found in the current dialogue about scope; misalignment noted in peer item IS1008a#2 but that is separate item and not in current check, and there is no direct contradiction to the action proposed.",
+            "quotes": [
+              {
+                "da_id": "IS1008a.A.dialog-act.s9553330.63",
+                "quote": "okay , so I need some kind of uh uh the plan in the writing from you ."
+              },
+              {
+                "da_id": "IS1008a.A.dialog-act.s9553330.67",
+                "quote": "because I need to go to the management and uh tell them what we are going to do , and uh what cost is , okay , and what's the time frame and what's the project plan ,"
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior item in this run to relate to; this is first meeting; no related_items to evaluate.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          }
+        },
+        "decision": "accept",
+        "reason": "all_required_checks_passed",
+        "assessed_text": "There is no written project plan or budget yet, and documentation is missing to present to management.",
+        "requested_action": "accept",
+        "proposed_fields": {
+          "status": "open",
+          "related_items": [],
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.59",
+            "IS1008a.A.dialog-act.s9553330.60",
+            "IS1008a.A.dialog-act.s9553330.63",
+            "IS1008a.A.dialog-act.s9553330.65",
+            "IS1008a.A.dialog-act.s9553330.67"
+          ],
+          "owner": null,
+          "owner_basis": "missing",
+          "deadline": null,
+          "deadline_basis": "missing"
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue shows explicit expectation of a written plan by FIE073 and PM's request for a plan in writing; such a plan would cover functional/technical design, staffing, timeframe, budget, market plan, and two-week deadline as stated in peer item.",
+            "quotes": [
+              "IS1008a.A.dialog-act.s9553330.59",
+              "IS1008a.A.dialog-act.s9553330.60",
+              "IS1008a.A.dialog-act.s9553330.63",
+              "IS1008a.A.dialog-act.s9553330.65",
+              "IS1008a.A.dialog-act.s9553330.67"
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Same evidence as above supports the status that action to deliver a written plan by two weeks is anticipated; PM indicates need for plan in writing and timing aligns with two-week horizon, given the peer item.",
+            "quotes": [
+              "IS1008a.A.dialog-act.s9553330.59",
+              "IS1008a.A.dialog-act.s9553330.60",
+              "IS1008a.A.dialog-act.s9553330.63",
+              "IS1008a.A.dialog-act.s9553330.65",
+              "IS1008a.A.dialog-act.s9553330.67"
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting statements found in the current dialogue about scope; misalignment noted in peer item IS1008a#2 but that is separate item and not in current check, and there is no direct contradiction to the action proposed.",
+            "quotes": [
+              "IS1008a.A.dialog-act.s9553330.63",
+              "IS1008a.A.dialog-act.s9553330.67"
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior item in this run to relate to; this is first meeting; no related_items to evaluate.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "status": "open",
+          "related_items": [],
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue shows explicit expectation of a written plan by FIE073 and PM's request for a plan in writing; such a plan would cover functional/technical design, staffing, timeframe, budget, market plan, and two-week deadline as stated in peer item.",
+            "evidence_da_ids": [
+              "IS1008a.A.dialog-act.s9553330.59",
+              "IS1008a.A.dialog-act.s9553330.60",
+              "IS1008a.A.dialog-act.s9553330.63",
+              "IS1008a.A.dialog-act.s9553330.65",
+              "IS1008a.A.dialog-act.s9553330.67"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Same evidence as above supports the status that action to deliver a written plan by two weeks is anticipated; PM indicates need for plan in writing and timing aligns with two-week horizon, given the peer item.",
+            "evidence_da_ids": [
+              "IS1008a.A.dialog-act.s9553330.59",
+              "IS1008a.A.dialog-act.s9553330.60",
+              "IS1008a.A.dialog-act.s9553330.63",
+              "IS1008a.A.dialog-act.s9553330.65",
+              "IS1008a.A.dialog-act.s9553330.67"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No conflicting statements found in the current dialogue about scope; misalignment noted in peer item IS1008a#2 but that is separate item and not in current check, and there is no direct contradiction to the action proposed.",
+            "evidence_da_ids": [
+              "IS1008a.A.dialog-act.s9553330.63",
+              "IS1008a.A.dialog-act.s9553330.67"
+            ],
+            "affected_fields": []
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior item in this run to relate to; this is first meeting; no related_items to evaluate.",
+            "evidence_da_ids": []
+          },
+          "next_action": "accept"
+        },
+        "evidence_bindings": {
+          "statement": [
+            "IS1008a.A.dialog-act.s9553330.59",
+            "IS1008a.A.dialog-act.s9553330.60",
+            "IS1008a.A.dialog-act.s9553330.63",
+            "IS1008a.A.dialog-act.s9553330.65",
+            "IS1008a.A.dialog-act.s9553330.67"
+          ],
+          "status": [
+            "IS1008a.A.dialog-act.s9553330.59",
+            "IS1008a.A.dialog-act.s9553330.60",
+            "IS1008a.A.dialog-act.s9553330.63",
+            "IS1008a.A.dialog-act.s9553330.65",
+            "IS1008a.A.dialog-act.s9553330.67"
+          ],
+          "conflict": [
+            "IS1008a.A.dialog-act.s9553330.63",
+            "IS1008a.A.dialog-act.s9553330.67"
+          ]
+        },
+        "raw_tool_input": {
+          "status": "open",
+          "related_items": [],
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue shows explicit expectation of a written plan by FIE073 and PM's request for a plan in writing; such a plan would cover functional/technical design, staffing, timeframe, budget, market plan, and two-week deadline as stated in peer item.",
+            "evidence_da_ids": [
+              "IS1008a.A.dialog-act.s9553330.59",
+              "IS1008a.A.dialog-act.s9553330.60",
+              "IS1008a.A.dialog-act.s9553330.63",
+              "IS1008a.A.dialog-act.s9553330.65",
+              "IS1008a.A.dialog-act.s9553330.67"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Same evidence as above supports the status that action to deliver a written plan by two weeks is anticipated; PM indicates need for plan in writing and timing aligns with two-week horizon, given the peer item.",
+            "evidence_da_ids": [
+              "IS1008a.A.dialog-act.s9553330.59",
+              "IS1008a.A.dialog-act.s9553330.60",
+              "IS1008a.A.dialog-act.s9553330.63",
+              "IS1008a.A.dialog-act.s9553330.65",
+              "IS1008a.A.dialog-act.s9553330.67"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No conflicting statements found in the current dialogue about scope; misalignment noted in peer item IS1008a#2 but that is separate item and not in current check, and there is no direct contradiction to the action proposed.",
+            "evidence_da_ids": [
+              "IS1008a.A.dialog-act.s9553330.63",
+              "IS1008a.A.dialog-act.s9553330.67"
+            ]
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior item in this run to relate to; this is first meeting; no related_items to evaluate.",
+            "evidence_da_ids": []
+          },
+          "next_action": "accept"
+        },
+        "protocol_normalizations": [
+          "empty_affected_fields_for_no_conflict"
+        ]
+      },
+      {
+        "item": "IS1008a#3",
+        "step": 1,
+        "flags": [],
+        "action": "accept",
+        "outcome": "accepted",
+        "termination_reason": "all_required_checks_passed",
+        "unresolved_fields": []
+      }
+    ],
+    "lookups": 0,
+    "termination_reason": "all_required_checks_passed",
+    "clarifications": []
+  }
+}

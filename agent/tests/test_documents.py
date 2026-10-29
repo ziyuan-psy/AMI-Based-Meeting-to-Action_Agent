@@ -314,6 +314,7 @@ def test_document_check_and_lookups_share_model_budget_and_keep_received_passage
     it = decision(); it["verify_project_context"] = True
     first = assessment(docstore, it, "retrieve")
     class Transport:
+        p2_legacy_input = True
         def __init__(self):
             self.calls = 0
             self.messages = NS(create=self.create)
@@ -391,3 +392,17 @@ def test_real_development_responses_replay_with_citations_or_pending_preserved(c
     else:
         assert result["state"] == "pending" and not record
         assert not any(w["retained"] for w in result["document_evidence"])
+
+
+def test_live_flat_protocol_can_retrieve_and_publish_explicit_document_context(docstore):
+    from test_p2_protocol import compact
+    it=decision();it['verify_project_context']=True
+    hit=docstore.search_project_doc('LCD advanced chip')[0]
+    first=compact(docstore,it,'retrieve')
+    final={'result':'pass','reason':'The meeting supports the choice; the selected passage explains its project context',
+           'quotes':[D1],'documents':[selection(hit)],'next_action':'accept'}
+    client=Script([('assess_item',first),('search_project_doc',{'query':'LCD advanced chip'}),('assess_document_context',final)])
+    client.p2_legacy_input=False
+    outcome=run_p2_agent(client,docstore,it,MeetingBudget(),Trace(),CUR+'#0')
+    assert outcome['state']=='accepted' and outcome['document_evidence'][0]['retained']
+    assert any(r['source_type']=='project_document' for r in outcome['fields']['reference'])

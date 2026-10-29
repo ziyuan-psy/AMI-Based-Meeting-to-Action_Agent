@@ -283,7 +283,7 @@ def _strip_indexes(text: str) -> str:
     return re.sub(r"\s{2,}", " ", _INDEX_LIST.sub("", text)).strip()
 
 
-def _merge_groups(groups: list[dict], cands: list[dict], trace=None) -> list[dict]:
+def _merge_groups(groups: list[dict], cands: list[dict], trace=None, apply_cap=True) -> list[dict]:
     out, lineage, rejected = [], [], []
     for group_index, g in enumerate(groups):
         member_indexes = [i for i in dict.fromkeys(g.get("members", [])) if isinstance(i, int) and 0 <= i < len(cands)]
@@ -314,7 +314,7 @@ def _merge_groups(groups: list[dict], cands: list[dict], trace=None) -> list[dic
                         "requested_type": g["type"], "actual_type": typ})
         out.append(merged)
     _audit(trace, "consolidate", "merged", groups=groups, items=out, lineage=lineage, rejected=rejected)
-    return _cap(out, trace, phase="sample")
+    return _cap(out, trace, phase="sample") if apply_cap else out
 
 
 def _cap(items: list[dict], trace=None, phase: str = "final") -> list[dict]:
@@ -331,25 +331,29 @@ def _cap(items: list[dict], trace=None, phase: str = "final") -> list[dict]:
     return kept
 
 
-def restore_actions(items: list[dict], cands: list[dict], trace=None) -> list[dict]:
+def restore_actions(items: list[dict], cands: list[dict], trace=None, apply_cap=True) -> list[dict]:
     """Put back action candidates that consolidation dropped, then cap again.
 
     The action pass reads the whole meeting and already lists few candidates, but consolidation sometimes drops all
     of a meeting's actions. A candidate counts as absorbed when all of its evidence lines are inside one kept item
     (a merged item's evidence is the union of its members' evidence); the others are appended in candidate order.
     """
-    kept_evidence = [set(it["evidence_da_ids"]) for it in items]
+    # A Decision on the same lines does not discharge a person's task. In particular,
+    # the Decision pass can replace that Decision after the first restoration.
+    actions = [it for it in items if it["type"] == "actions"]
     restored = []
     for c in cands:
         if c["type"] != "actions":
             continue
         ev = set(c["evidence_da_ids"])
-        if any(ev <= k for k in kept_evidence):
+        if any(ev <= set(k["evidence_da_ids"]) and
+               (not c.get("owner_ids") or not k.get("owner_ids") or
+                set(c["owner_ids"]).intersection(k["owner_ids"])) for k in actions):
             continue
         restored.append({**c, "text": _strip_indexes(c["text"]), "restored": True})
-        kept_evidence.append(ev)  # a later candidate on the same lines is a duplicate of this one
+        actions.append(c)
     _audit(trace, "consolidate", "restored_actions", before=items, restored=restored)
-    return _cap(items + restored, trace, phase="after_restore")
+    return _cap(items + restored, trace, phase="after_restore") if apply_cap else items + restored
 
 
 def consolidate(llm: LLM, cands: list[dict], cache: Path | None = None, trace=None,
@@ -376,6 +380,14 @@ def consolidate(llm: LLM, cands: list[dict], cache: Path | None = None, trace=No
             runs = saved.get("runs") or ([saved["items"]] if saved.get("items") else [])
             run_traces = saved.get("run_traces", [])
     run_traces += [None] * (len(runs) - len(run_traces))
+    # Raw groups are authoritative. Old cache entries already had sample caps applied;
+    # rebuild from the captured group response when available before final selection.
+    if config.ITEM_SELECTION_ENABLED:
+        for index, details in enumerate(run_traces[:len(runs)]):
+            groups = [e["groups"] for attempt in (details or []) for e in attempt.get("events", [])
+                      if e.get("event") == "raw_groups"]
+            if groups:
+                runs[index] = _merge_groups(groups[-1], cands, apply_cap=False)
     for index, items in enumerate(runs[:config.CONSOLIDATE_SAMPLES]):
         _audit(trace, "consolidate", "sample", sample=index, source="cache", cache_key=key, items=items,
                recorded_attempts=run_traces[index],
@@ -391,7 +403,8 @@ def consolidate(llm: LLM, cands: list[dict], cache: Path | None = None, trace=No
                                       CONSOLIDATE_SCHEMA, effort=config.EFFORT_CONSOLIDATE, stage="decision_consolidate" if decision_pass else "consolidate")
                 detail = StageTrace()
                 detail.log(stage="consolidate", event="raw_groups", groups=res.get("items", []))
-                out = _merge_groups([g for g in res.get("items", []) if g.get("type") in VALID_STATUS], cands, detail)
+                out = _merge_groups([g for g in res.get("items", []) if g.get("type") in VALID_STATUS], cands, detail,
+                                    apply_cap=not config.ITEM_SELECTION_ENABLED)
                 attempts.append({"attempt": _attempt, "events": detail.events})
                 _audit(trace, "consolidate", "attempt", sample=index, attempt=_attempt, cache_key=key,
                        source="model", events=detail.events, items=out)
@@ -414,7 +427,7 @@ def consolidate(llm: LLM, cands: list[dict], cache: Path | None = None, trace=No
     else:
         voted = runs[0]
         _audit(trace, "consolidate", "vote_skipped", reason="one_usable_sample", kept=voted)
-    out = restore_actions(voted, cands, trace)
+    out = restore_actions(voted, cands, trace, apply_cap=not config.ITEM_SELECTION_ENABLED)
     if enable_decision_pass and not decision_pass and any(c["type"] == "decisions" for c in cands):
         before = [i for i in out if i["type"] == "decisions"]
         decision_cache = cache.with_name(cache.stem + ".decisions.json") if cache else None
@@ -423,6 +436,7 @@ def consolidate(llm: LLM, cands: list[dict], cache: Path | None = None, trace=No
         decisions = [i for i in selected if i["type"] == "decisions"]
         out = [i for i in out if i["type"] != "decisions"] + decisions
         _audit(trace, "decision_consolidate", "replaced", before=before, items=decisions)
+        out = restore_actions(out, cands, trace, apply_cap=not config.ITEM_SELECTION_ENABLED)
     _audit(trace, "consolidate", "completed", items=out)
     return out
 

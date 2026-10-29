@@ -224,7 +224,7 @@ def test_meeting_budget_failure_saves_checkpoints_without_publishing(tmp_path, m
 
 
 @pytest.mark.parametrize("function,stage", [("parse_transcript_file", "parse"), ("Store", "participants"),
-    ("extract_candidates", "extract"), ("consolidate", "consolidate"), ("normalize", "normalize"),
+    ("extract_candidates", "extract"), ("consolidate", "consolidate"), ("select_items", "select"), ("normalize", "normalize"),
     ("flag_items", "triage"), ("_warm_store", "context"), ("make_record", "assemble"),
     ("check", "validate"), ("render_report", "render")])
 def test_each_stage_exits_with_a_named_failure_and_preserved_artifacts(tmp_path, monkeypatch, function, stage):

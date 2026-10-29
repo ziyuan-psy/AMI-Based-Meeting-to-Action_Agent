@@ -13,10 +13,13 @@ from .prompts import P2_SYSTEM
 from .linking import LINK_SCHEMA, link_error, witnesses
 from .documents import SELECTION, evidence_error, selected_evidence, selected_references, validate_outcome
 from .store import tokenize
+from .assessment_protocol import compact_tool, canonical_assessment
+from .p2_admission import ItemAllowanceExhausted
+from .statement_revision import revision_tool, deletion, unanchored_time_literals
 
 CHECKS = ("statement", "owner", "deadline", "status", "conflict", "relation")
 RESULTS = ("pass", "fail", "uncertain", "not_applicable")
-ACTIONS = ("accept", "retrieve", "search_again", "request_clarification", "stop")
+ACTIONS = ("accept", "retrieve", "search_again", "revise_statement", "request_clarification", "stop")
 FIELDS = ("statement", "owner", "deadline", "status", "related_items")
 FINDING = {"type": "object", "properties": {
     "result": {"enum": list(RESULTS)}, "reason": {"type": "string", "minLength": 1},
@@ -93,6 +96,13 @@ def document_context_tool(item_type):
                 "status": copy.deepcopy(tool_defs(False)[-1]["input_schema"]["properties"]["status"]),
                 "next_action": {"enum": list(ACTIONS)}},
                 "required": ["result", "reason", "quotes", "documents"], "additionalProperties": False}}
+
+
+def core_tool(allow_prior,item_type):
+    base=compact_tool(allow_prior,item_type)['input_schema']['properties']
+    return {'name':'assess_core','description':'Recheck the exact core task/choice/problem and actual contradictions, separately from auxiliary missing fields. Do not require a deadline or ceremonial promise for an assignment.',
+        'input_schema':{'type':'object','properties':{k:copy.deepcopy(base[k]) for k in ('statement','conflict_check','next_action')},
+                        'required':['statement','conflict_check','next_action'],'additionalProperties':False}}
 
 
 def quote_line(store, da_id):
@@ -193,6 +203,10 @@ def evaluate(store, item, payload, observed, prior_seen, pages_seen, prior_attem
     unread = set(proposed["evidence_da_ids"]) - set(observed)
     if unread:
         checks["statement"].update(result="uncertain", reason="finish_cites_unobserved_evidence")
+    for name,text in [('statement',item['text'])]+([('deadline',proposed.get('deadline'))] if item['type']=='actions' else []):
+        if checks[name]['result']=='pass':
+            missing=unanchored_time_literals(text,checks[name]['quotes'],store.current)
+            if missing:checks[name].update(result='uncertain',reason='unanchored_time_literal: '+', '.join(missing))
     if item["type"] == "actions":
         for field in ("owner", "deadline"):
             if proposed.get(field + "_basis") in ("missing", "ambiguous") or not proposed.get(field):
@@ -214,7 +228,20 @@ def evaluate(store, item, payload, observed, prior_seen, pages_seen, prior_attem
     error = link_error(store, related, checks["relation"], observed, prior_seen)
     if error:
         checks["relation"].update(result="uncertain", reason=error)
-    fields, error = check_finish(store, item, proposed, pages_seen)
+    # A model-declared auxiliary uncertainty must clear that field, not erase an independently
+    # supported current statement. Keep the original proposed fields in trace for diagnosis.
+    checked_proposal = copy.deepcopy(proposed)
+    blocked = unresolved(checks)
+    if 'status' in blocked:
+        checked_proposal['status'] = 'unknown'
+    if 'related_items' in blocked:
+        checked_proposal['related_items'] = []
+    if item['type'] == 'actions':
+        for field in ('owner','deadline'):
+            if field in blocked:
+                basis = 'ambiguous' if proposed.get(field) or proposed.get(field+'_basis') == 'ambiguous' else 'missing'
+                checked_proposal.update({field:None,field+'_basis':basis})
+    fields, error = check_finish(store, item, checked_proposal, pages_seen)
     if error:
         checks["statement"].update(result="uncertain", reason="invalid_proposed_fields: " + error)
     if item.get("verify_project_context") and checks["statement"]["result"] == "pass":
@@ -237,10 +264,16 @@ def unresolved(checks):
     return list(dict.fromkeys(out))
 
 
-def decide(checks, suggested, can_lookup, attempted, no_progress):
+def decide(checks, suggested, can_lookup, attempted, no_progress, partial_accept=False):
     blocked = unresolved(checks)
     if not blocked:
         return "accept", "all_required_checks_passed"
+    if partial_accept and suggested == 'accept' and 'statement' not in blocked:
+        return 'request_clarification', 'supported_statement_with_unresolved_fields'
+    if checks['statement']['reason'].startswith('unanchored_time_literal:') and suggested not in ('stop','request_clarification'):
+        return 'revise_statement','named_time_requires_source_anchor_or_bounded_revision'
+    if suggested == 'revise_statement' and 'statement' in blocked:
+        return 'revise_statement', 'unsupported_qualifier_proposed_for_revision'
     if not can_lookup or no_progress >= config.MAX_NO_PROGRESS:
         return "request_clarification", "lookup_limit" if not can_lookup else "no_progress"
     if suggested in ("request_clarification", "stop"):
@@ -296,6 +329,7 @@ def safe_fields(store, item, proposed, checks, fields, documents_seen=None):
 
 
 def run_p2_agent(llm, store, item, budget, trace, item_key, progress=None):
+    item = copy.deepcopy(item)
     seeds = [row for d in item["evidence_da_ids"][:12] if (row := quote_line(store, d)) is not None]
     context = {row["da_id"]: row for row in seeds}
     for row in seeds:
@@ -316,12 +350,20 @@ def run_p2_agent(llm, store, item, budget, trace, item_key, progress=None):
     history, calls, no_progress, invalid, semantic_stalls = [], 0, 0, 0, 0
     applicability_reassessed = False
     evidence_reassessed = False
+    revision_attempted = False
+    core_reassessed = False
+    core_focus = False
     allow_prior = store.allow_prior and store.order > 1
     effort = config.EFFORT_LINK if (item.get("verify_project_context") or
         allow_prior and {"POSSIBLE_PRIOR", "STATUS_CHECK"}.intersection(item["flags"])) else config.EFFORT_AGENT
     assessor = assessment_tool(allow_prior, item["type"],
                                bool(allow_prior and {"POSSIBLE_PRIOR", "STATUS_CHECK"}.intersection(item["flags"])),
                                require_evidence=bool(item.get("verify_project_context")))
+    compact_assessor = compact_tool(allow_prior,item['type'],
+        bool(allow_prior and {'POSSIBLE_PRIOR','STATUS_CHECK'}.intersection(item['flags'])))
+    compact_flow = False
+    legacy_input = bool(getattr(llm,'p2_legacy_input',False)
+                        or getattr(getattr(llm,'client',None),'p2_legacy_input',False))
     lookup_tools = [t for t in tool_defs(allow_prior) if t["name"] != "finish"]
     terminal = [{"name": name, "description": "Leave unresolved checks pending for human review.",
                  "input_schema": {"type": "object", "properties": {"reason": {"type": "string"}}, "required": ["reason"]}}
@@ -330,6 +372,10 @@ def run_p2_agent(llm, store, item, budget, trace, item_key, progress=None):
                "current_meeting": store.current, "earlier_meetings": store.visible_ids("prior"),
                "roster": store.roster(store.current), "observed_dialogue": list(observed.values())}
     initial["peer_items"] = item.get("peer_items", [])
+    if not legacy_input:
+        initial['provisional_values'] = {k:v for k,v in initial.pop('fields').items()
+                                         if k not in ('evidence_da_ids','prior_context_needed','used_participant_lookup')}
+        initial['candidate_evidence_da_ids'] = [d for d in item['evidence_da_ids'] if d in observed]
     if item.get("verification_request"):
         initial["verification_request"] = item["verification_request"]
     if item.get("verify_project_context"):
@@ -377,18 +423,24 @@ def run_p2_agent(llm, store, item, budget, trace, item_key, progress=None):
         relation_focus = (allow_prior and "related_items" in unresolved(checks)
                           and checks["statement"]["result"] == checks["conflict"]["result"] == "pass")
         document_focus = checks["statement"]["reason"] in ("requested_document_context_not_checked", "document_passage_not_delivered")
-        if phase == "check":
+        if phase == "revision":
+            tools, choice = [revision_tool()] + terminal, {"type": "any"}
+        elif phase == "check":
             read_history = any(set(r["evidence"]).intersection(observed) for r in prior_seen.values())
             focused = relation_focus and read_history
-            tools = [relation_tool(), assessor] if focused else [assessor]
+            tools = [relation_tool(), compact_assessor] if focused else [compact_assessor]
             choice = {"type": "tool", "name": "assess_relation" if focused else "assess_item"}
             if documents_seen and item.get("verify_project_context") and checks["statement"]["result"] != "pass":
-                tools = [document_context_tool(item["type"]), assessor]
+                tools = [document_context_tool(item["type"]), compact_assessor]
                 choice = {"type": "tool", "name": "assess_document_context"}
+            if core_focus:
+                tools,choice=[core_tool(allow_prior,item['type'])]+terminal,{'type':'any'}
         else:
             allowed = lookup_tools if next_action == "retrieve" else [t for t in lookup_tools if t["name"] in (
                 "search_dialogue", "get_prior_items", "search_project_doc")]
-            if relation_focus:
+            # An unresolved owner/status may still need current dialogue even while a historical
+            # relationship is pending. Restrict lookups to prior evidence only for a relation-only gap.
+            if relation_focus and not (set(unresolved(checks)) - {'related_items'}):
                 allowed = [copy.deepcopy(t) for t in allowed if t["name"] in (
                     "get_prior_items", "read_prior_item", "search_dialogue", "read_dialogue", "search_project_doc", "read_project_doc")]
                 for definition in allowed:
@@ -400,12 +452,17 @@ def run_p2_agent(llm, store, item, budget, trace, item_key, progress=None):
                 allowed = [t for t in allowed if t["name"] in ("search_project_doc", "read_project_doc")]
                 if documents_seen and next_action == "retrieve":
                     allowed = [t for t in allowed if t["name"] != "search_project_doc"]
+            if not revision_attempted and not document_focus and checks["statement"]["result"] in ("uncertain", "fail"):
+                allowed = allowed + [revision_tool()]
             # A retrieve action verifies already-returned records. A new item search remains available
             # through search_again; the Agent still chooses the record, evidence, query or a pending stop.
             if next_action == "retrieve" and prior_seen and checks["relation"]["result"] == "uncertain":
                 allowed = [t for t in allowed if t["name"] != "get_prior_items"]
             tools, choice = allowed + terminal, {"type": "any"}
-        response = llm.create(P2_SYSTEM, messages, tools, choice, effort=effort, stage="p2_check" if phase == "check" else "agent")
+        try:
+            response = llm.create(P2_SYSTEM, messages, tools, choice, effort='medium' if core_focus else effort, stage="p2_check" if phase == "check" else "agent")
+        except ItemAllowanceExhausted:
+            return finish('pending','p2_call_allowance_exhausted')
         blocks = _blocks(response)
         messages.append({"role": "assistant", "content": blocks or [{"type": "text", "text": "(no tool call)"}]})
         uses = [b for b in blocks if b["type"] == "tool_use"]
@@ -420,7 +477,22 @@ def run_p2_agent(llm, store, item, budget, trace, item_key, progress=None):
             raw_args = copy.deepcopy(args)
             normalizations = []
             definition = next((t for t in tools if t["name"] == name), None)
-            if name == "assess_item" and isinstance(args, dict) and isinstance(args.get("fields"), dict):
+            if isinstance(args,dict):
+                args=copy.deepcopy(args)
+                if name in ('assess_item','assess_core') and 'confidence' in args:
+                    args.pop('confidence')
+                    normalizations.append('ignored_advisory_confidence')
+                if name in ('assess_item','assess_core') and isinstance(args.get('conflict_check'),dict):
+                    conflict=args['conflict_check']
+                    if conflict.get('result')=='pass' and 'affected_fields' not in conflict:
+                        conflict['affected_fields']=[]
+                        normalizations.append('empty_affected_fields_for_no_conflict')
+                if name=='read_dialogue' and 'meeting_id' not in args and isinstance(args.get('da_id'),str):
+                    args['meeting_id']=meeting_of(args['da_id'])
+                    normalizations.append('meeting_from_explicit_dialogue_id')
+            if legacy_input and name == "assess_item" and isinstance(args, dict) and isinstance(args.get("fields"), dict):
+                # Decode saved v1 responses for offline replay; live tools advertise only the flat format.
+                definition = assessor if definition else None
                 args = copy.deepcopy(args)
                 for key in tool_defs(allow_prior)[-1]["input_schema"]["properties"]:
                     if key in args and key in args["fields"] and args[key] == args["fields"][key]:
@@ -439,10 +511,48 @@ def run_p2_agent(llm, store, item, budget, trace, item_key, progress=None):
                 invalid = 0
                 record(step, name, "pending", reason=args["reason"], decision=name)
                 return finish("pending", name)
+            elif name == "revise_statement":
+                if revision_attempted or checks["statement"]["result"] not in ("uncertain", "fail"):
+                    return finish("pending", "statement_revision_not_permitted")
+                revision_attempted = True
+                try:
+                    revised = deletion(item["text"], args["remove_suffix"], args["evidence_da_ids"], observed, store.current)
+                except ValueError as exc:
+                    record(step, name, "rejected_revision", reason=str(exc), raw_tool_input=raw_args)
+                    return finish("pending", "statement_revision_rejected")
+                old_text = item["text"]
+                item["text"] = revised
+                # Revoke every previous verdict, field and link; source access remains unchanged.
+                proposed, fields = provisional(item), None
+                checks = {k: {"result": "uncertain", "reason": "statement_revised_requires_recheck", "quotes": [], "fields": []}
+                          for k in CHECKS}
+                for k in ("owner", "deadline"):
+                    if item["type"] != "actions":
+                        checks[k].update(result="not_applicable", reason="field_not_applicable")
+                if not allow_prior or not {"POSSIBLE_PRIOR", "STATUS_CHECK"}.intersection(item["flags"]):
+                    checks["relation"].update(result="not_applicable", reason="no_prior_check_required")
+                record(step, name, "revised_requires_recheck", before_text=old_text, after_text=revised,
+                       reason=args["reason"], evidence_da_ids=args["evidence_da_ids"], raw_tool_input=raw_args)
+                feedback = {"current_item_text": revised, "mandatory_action": "assess_item",
+                            "instruction": "The old verdicts and links were revoked. Reassess ALL applicable checks for this exact text using delivered evidence. No second revision is allowed."}
+                phase, no_progress, semantic_stalls = "check", 0, 0
             elif phase == "check":
                 invalid = 0
                 submitted = copy.deepcopy(args)
-                if name == "assess_relation":
+                if name == 'assess_item' and 'statement' in args:
+                    args = canonical_assessment(args,item['type'])
+                    compact_flow = True
+                if name == 'assess_core':
+                    converted={}
+                    for root,key in [('statement','statement'),('conflict_check','conflict')]:
+                        finding=copy.deepcopy(args[root]);finding['quotes']=finding.pop('evidence_da_ids')
+                        finding['fields']=finding.pop('affected_fields',[]) if key=='conflict' else ['statement']
+                        converted[key]=finding
+                    args={'fields':{**proposed,'evidence_da_ids':list(args['statement']['evidence_da_ids'])},
+                          'checks':{**checks,**converted},'next_action':args['next_action']}
+                    compact_flow=True
+                    core_focus=False
+                elif name == "assess_relation":
                     relation = {k: args[k] for k in ("result", "reason", "quotes", "links", "documents") if k in args}
                     relation["fields"] = ["related_items"]
                     args = {"fields": {**proposed, "related_items": args["related_items"],
@@ -470,7 +580,7 @@ def run_p2_agent(llm, store, item, budget, trace, item_key, progress=None):
                                     if v["result"] not in ("pass", "not_applicable")}, sort_keys=True)
                 semantic_stalls = semantic_stalls + 1 if calls and before == after else 0
                 next_action, reason = decide(checks, args.get("next_action", "retrieve"), calls < config.MAX_CALLS_PER_ITEM and budget.left() > 0,
-                                             calls > 0, max(no_progress, semantic_stalls))
+                                             calls > 0, max(no_progress, semantic_stalls), partial_accept=compact_flow)
                 reassess = (not applicability_reassessed and item["type"] != "actions" and unresolved(checks)
                             and args.get("next_action") in ("request_clarification", "stop")
                             and any(submitted_checks.get(k, {}).get("result") in ("fail", "uncertain") for k in ("owner", "deadline")))
@@ -487,12 +597,38 @@ def run_p2_agent(llm, store, item, budget, trace, item_key, progress=None):
                     reassess = True
                     next_action, reason = "reassess", "missing_current_evidence_selection"
                 record(step, name, "checked", checks=checks, decision=next_action, reason=reason,
+                       assessed_text=item["text"],
                        requested_action=args.get("next_action"), proposed_fields=proposed,
                        submitted_checks=submitted_checks, submitted_assessment=submitted, evidence_bindings=bindings,
                        raw_tool_input=raw_args, protocol_normalizations=normalizations)
                 if next_action == "accept":
                     return finish("accepted", reason)
+                if next_action == "revise_statement":
+                    if revision_attempted or document_focus:
+                        return finish("pending", "statement_revision_limit" if revision_attempted else "document_context_required")
+                    feedback = {"decision": next_action, "current_item_text": item["text"], "checks": checks,
+                                "instruction": "Choose one deletion-only revision of an unsupported trailing qualifier, or stop pending. Do not remove the actor, task, negation, modality or a condition."}
+                    phase = "revision"
+                    results.append({"type": "tool_result", "tool_use_id": use["id"], "is_error": False,
+                                    "content": json.dumps(feedback, ensure_ascii=False)})
+                    messages.append({"role": "user", "content": results})
+                    continue
                 if next_action in ("request_clarification", "stop"):
+                    provenance_errors=('unobserved_','finish_cites_','current_meeting_support_required','invalid_proposed_fields:',
+                                       'document_','requested_document_','unanchored_time_literal:')
+                    quoted=checks['statement']['quotes']
+                    if (not legacy_input and not core_reassessed and 'statement' in unresolved(checks)
+                        and not checks['statement']['reason'].startswith(provenance_errors)
+                        and any(q['da_id'] in observed and meeting_of(q['da_id'])==store.current for q in quoted)
+                        and not item.get('verify_project_context')):
+                        core_reassessed,core_focus=True,True
+                        feedback={'current_item_text':item['text'],'checks':checks,
+                            'core_recheck_instruction':'One focused recheck is available before leaving pending. Assess the exact core claim and actual contradictory evidence. A manager naming a role and task, especially with that role acknowledging, can establish an assignment without a deadline or a ceremonial I promise. Missing auxiliary fields are not themselves contradictions. A suggestion/capability alone is not a commitment. Select only delivered evidence, or stop/clarify pending. No new source access is granted.'}
+                        phase='check'
+                        results.append({'type':'tool_result','tool_use_id':use['id'],'is_error':False,'content':json.dumps(feedback,ensure_ascii=False)})
+                        messages.append({'role':'user','content':results})
+                        record(step,'core_recheck_offered','focused_review',reason='semantic_core_uncertainty_with_read_evidence')
+                        continue
                     return finish("pending", reason)
                 feedback = {"decision": next_action, "unresolved_fields": unresolved(checks), "checks": checks}
                 if documents_seen:
@@ -560,7 +696,8 @@ def run_p2_agent(llm, store, item, budget, trace, item_key, progress=None):
                             "content": json.dumps(feedback, ensure_ascii=False) if not error else error})
         if error:
             invalid += 1
-            record(step, uses[0]["name"] if uses else None, "invalid_action", error=error)
+            record(step, uses[0]["name"] if uses else None, "invalid_action", error=error,
+                   raw_tool_input=raw_args if uses else None)
             if not uses:
                 messages.append({"role": "user", "content": error})
             if invalid >= config.MAX_INVALID_ACTIONS:
@@ -591,6 +728,10 @@ def validate_outputs(p2, clarifications, record, store):
             errors.append("p2: accepted item still has unresolved checks")
         if item["recordable"] and (item["checks"]["statement"]["result"] != "pass" or "statement" in item["unresolved_fields"]):
             errors.append("p2: an unsupported statement was marked recordable")
+        if item['recordable'] and unanchored_time_literals(item['item_text'],item['checks']['statement']['quotes'],store.current):
+            errors.append('p2: published statement contains an unanchored weekday/date')
+        if item['recordable'] and item['item_type']=='actions' and unanchored_time_literals(item['fields'].get('deadline'),item['checks']['deadline']['quotes'],store.current):
+            errors.append('p2: published deadline contains an unanchored weekday/date')
         if item["state"] == "pending" and {r["field"] for r in item["clarifications"]} != set(item["unresolved_fields"]):
             errors.append("p2: a pending field has no clarification request")
         if item["state"] == "accepted" and item["clarifications"]:
@@ -607,8 +748,18 @@ def validate_outputs(p2, clarifications, record, store):
             errors.append("p2: record mapping is invalid")
         if item["record_id"] in records:
             row = records[item["record_id"]]
+            if row["text"] != item["item_text"]:
+                errors.append("p2: published text differs from the checked statement")
             if any(row.get(k) != v for k, v in item["fields"].items()):
                 errors.append("p2: published fields differ from the checked fields")
+        revisions = [e for e in item["history"] if e.get("outcome") == "revised_requires_recheck"]
+        if revisions:
+            revision = revisions[-1]
+            rechecks = [e for e in item["history"] if e.get("outcome") == "checked" and e["step"] > revision["step"]]
+            if len(revisions) != 1 or revision["after_text"] != item["item_text"]:
+                errors.append("p2: revision chain is invalid")
+            if item["recordable"] and (not rechecks or rechecks[-1].get("assessed_text") != item["item_text"]):
+                errors.append("p2: a revised statement was published without reassessment")
         published_links = {(r["id"], r["relation"]) for r in item["fields"].get("related_items", [])}
         evidence_witnesses = item.get("relation_evidence", [])
         supported = {(w["prior_item_id"], w["relation"]) for w in evidence_witnesses if w["state"] == "supported"}

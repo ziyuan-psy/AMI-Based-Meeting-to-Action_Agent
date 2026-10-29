@@ -1,0 +1,698 @@
+{
+  "item_key": "IS1008a#5",
+  "record_id": null,
+  "item_type": "actions",
+  "item_text": "The project manager will send a copy of the slides to all attendees at the conclusion of the meeting.",
+  "state": "pending",
+  "recordable": true,
+  "fields": {
+    "status": "unknown",
+    "prior_context_needed": false,
+    "related_items": [],
+    "owner": [
+      "MIO086"
+    ],
+    "owner_basis": "explicit",
+    "deadline": "at the conclusion of the meeting",
+    "deadline_basis": "explicit",
+    "reference": [
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/IS1008a.json",
+        "locator": "IS1008a.A.dialog-act.s9553330.130"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/IS1008a.json",
+        "locator": "IS1008a.A.dialog-act.s9553330.131"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/IS1008a.json",
+        "locator": "IS1008a.A.dialog-act.s9553330.129"
+      }
+    ]
+  },
+  "draft_fields": {
+    "status": "open",
+    "related_items": [],
+    "owner": [
+      "MIO086"
+    ],
+    "owner_basis": "explicit",
+    "deadline": "at the conclusion of the meeting",
+    "deadline_basis": "explicit",
+    "prior_context_needed": false,
+    "used_participant_lookup": false,
+    "evidence_da_ids": [
+      "IS1008a.A.dialog-act.s9553330.130",
+      "IS1008a.A.dialog-act.s9553330.131",
+      "IS1008a.A.dialog-act.s9553330.129"
+    ]
+  },
+  "checks": {
+    "statement": {
+      "result": "pass",
+      "reason": "Dialogue shows PM commits to sending slides at conclusion; aligns with item scope (copy of slides to attendees).",
+      "quotes": [
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.130",
+          "quote": "Yes , I will . Yes ."
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.131",
+          "quote": "I'll copy , uh"
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.129",
+          "quote": "Thanks for coming ."
+        }
+      ],
+      "fields": [
+        "statement"
+      ]
+    },
+    "owner": {
+      "result": "pass",
+      "reason": "Speaker MIO086 (PM) announced ownership by explicit statement; evidence supports.",
+      "quotes": [
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.130",
+          "quote": "Yes , I will . Yes ."
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.131",
+          "quote": "I'll copy , uh"
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.129",
+          "quote": "Thanks for coming ."
+        }
+      ],
+      "fields": [
+        "owner"
+      ]
+    },
+    "deadline": {
+      "result": "pass",
+      "reason": "Deadline text matches explicit deadline wording 'at the conclusion of the meeting' and is supported by dialogue indicating action.",
+      "quotes": [
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.130",
+          "quote": "Yes , I will . Yes ."
+        }
+      ],
+      "fields": [
+        "deadline"
+      ]
+    },
+    "status": {
+      "result": "uncertain",
+      "reason": "Current dialogue marks item as open; no final adoption or completion yet.",
+      "quotes": [
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.130",
+          "quote": "Yes , I will . Yes ."
+        }
+      ],
+      "fields": [
+        "status"
+      ]
+    },
+    "conflict": {
+      "result": "pass",
+      "reason": "No conflict with other items; related_items empty.",
+      "quotes": [
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.130",
+          "quote": "Yes , I will . Yes ."
+        }
+      ],
+      "fields": []
+    },
+    "relation": {
+      "result": "not_applicable",
+      "reason": "No prior item to relate to in this single-meeting context.",
+      "quotes": [],
+      "fields": [
+        "related_items"
+      ]
+    }
+  },
+  "unresolved_fields": [
+    "status"
+  ],
+  "observed_evidence_da_ids": [
+    "IS1008a.C.dialog-act.s9553330.42",
+    "IS1008a.A.dialog-act.s9553330.130",
+    "IS1008a.B.dialog-act.s9553330.30",
+    "IS1008a.B.dialog-act.s9553330.31",
+    "IS1008a.A.dialog-act.s9553330.131",
+    "IS1008a.A.dialog-act.s9553330.129",
+    "IS1008a.A.dialog-act.s9553330.132"
+  ],
+  "initial_context": {
+    "item": {
+      "type": "actions",
+      "text": "The project manager will send a copy of the slides to all attendees at the conclusion of the meeting.",
+      "flags": []
+    },
+    "current_meeting": "IS1008a",
+    "earlier_meetings": [],
+    "roster": [
+      {
+        "speaker": "A",
+        "participant_id": "MIO086",
+        "role": "PM"
+      },
+      {
+        "speaker": "B",
+        "participant_id": "FIE038",
+        "role": "UI"
+      },
+      {
+        "speaker": "C",
+        "participant_id": "FIE073",
+        "role": "ID"
+      },
+      {
+        "speaker": "D",
+        "participant_id": "MIE085",
+        "role": "ME"
+      }
+    ],
+    "observed_dialogue": [
+      {
+        "da_id": "IS1008a.C.dialog-act.s9553330.42",
+        "meeting_id": "IS1008a",
+        "text": "Would you mind um at the conclusion of our meeting could could you send us a copy of your slides ?",
+        "participant": "FIE073",
+        "role": "ID"
+      },
+      {
+        "da_id": "IS1008a.A.dialog-act.s9553330.130",
+        "meeting_id": "IS1008a",
+        "text": "Yes , I will . Yes .",
+        "participant": "MIO086",
+        "role": "PM"
+      },
+      {
+        "da_id": "IS1008a.B.dialog-act.s9553330.30",
+        "meeting_id": "IS1008a",
+        "text": "Mm-hmm ,",
+        "participant": "FIE038",
+        "role": "UI"
+      },
+      {
+        "da_id": "IS1008a.B.dialog-act.s9553330.31",
+        "meeting_id": "IS1008a",
+        "text": "yeah , that would be useful .",
+        "participant": "FIE038",
+        "role": "UI"
+      },
+      {
+        "da_id": "IS1008a.A.dialog-act.s9553330.131",
+        "meeting_id": "IS1008a",
+        "text": "I'll copy , uh",
+        "participant": "MIO086",
+        "role": "PM"
+      },
+      {
+        "da_id": "IS1008a.A.dialog-act.s9553330.129",
+        "participant": "MIO086",
+        "role": "PM",
+        "text": "Thanks for coming ."
+      },
+      {
+        "da_id": "IS1008a.A.dialog-act.s9553330.132",
+        "participant": "MIO086",
+        "role": "PM",
+        "text": "le let us keep all the emails and all the copies , okay , share each other , okay , so you know everybody what's happening , okay ?"
+      }
+    ],
+    "peer_items": [
+      {
+        "item_key": "IS1008a#0",
+        "type": "actions",
+        "text": "ID(FIE073) will deliver a written plan covering functional and technical design, staffing, timeframe, budget, and market plan by two weeks."
+      },
+      {
+        "item_key": "IS1008a#1",
+        "type": "actions",
+        "text": "Ed will coordinate with Christine to discuss cost and the sales plan as part of preparing the overall plan."
+      },
+      {
+        "item_key": "IS1008a#2",
+        "type": "problems",
+        "text": "ID(FIE073) did not understand the project goal and believed the project was a different product, indicating a scope/goal misalignment."
+      },
+      {
+        "item_key": "IS1008a#3",
+        "type": "problems",
+        "text": "There is no written project plan or budget yet, and documentation is missing to present to management."
+      },
+      {
+        "item_key": "IS1008a#4",
+        "type": "decisions",
+        "text": "The group decided that the project will focus on designing a remote control for television and will start with that remote control as the first product."
+      }
+    ],
+    "provisional_values": {
+      "owner": [
+        "MIO086"
+      ],
+      "owner_basis": "explicit",
+      "deadline": "at the conclusion of the meeting",
+      "deadline_basis": "explicit",
+      "status": "open",
+      "related_items": []
+    },
+    "candidate_evidence_da_ids": [
+      "IS1008a.C.dialog-act.s9553330.42",
+      "IS1008a.A.dialog-act.s9553330.130",
+      "IS1008a.B.dialog-act.s9553330.30",
+      "IS1008a.B.dialog-act.s9553330.31",
+      "IS1008a.A.dialog-act.s9553330.131"
+    ]
+  },
+  "observed_documents": [],
+  "document_evidence": [],
+  "relation_evidence": [],
+  "history": [
+    {
+      "item": "IS1008a#5",
+      "step": 1,
+      "flags": [],
+      "action": "assess_item",
+      "outcome": "invalid_action",
+      "error": "Correct these argument fields: status_check/result: 'open' is not one of ['pass', 'fail', 'uncertain']",
+      "raw_tool_input": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MIO086"
+        ],
+        "owner_basis": "explicit",
+        "deadline": "at the conclusion of the meeting",
+        "deadline_basis": "explicit",
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue shows PM commits to sending slides at conclusion; aligns with item scope (copy of slides to attendees).",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.130",
+            "IS1008a.A.dialog-act.s9553330.131",
+            "IS1008a.A.dialog-act.s9553330.129"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "Speaker MIO086 (PM) announced ownership by explicit statement; evidence supports.",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.130",
+            "IS1008a.A.dialog-act.s9553330.131",
+            "IS1008a.A.dialog-act.s9553330.129"
+          ]
+        },
+        "deadline_check": {
+          "result": "pass",
+          "reason": "Deadline text matches explicit deadline wording 'at the conclusion of the meeting' and is supported by dialogue indicating action.",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.130"
+          ]
+        },
+        "status_check": {
+          "result": "open",
+          "reason": "Current dialogue marks item as open; no final adoption or completion yet.",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.130"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No conflict with other items; related_items empty.",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.130"
+          ]
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No prior item to relate to in this single-meeting context.",
+          "evidence_da_ids": []
+        },
+        "next_action": "accept"
+      }
+    },
+    {
+      "item": "IS1008a#5",
+      "step": 2,
+      "flags": [],
+      "action": "assess_item",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue shows PM commits to sending slides at conclusion; aligns with item scope (copy of slides to attendees).",
+          "quotes": [
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.130",
+              "quote": "Yes , I will . Yes ."
+            },
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.131",
+              "quote": "I'll copy , uh"
+            },
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.129",
+              "quote": "Thanks for coming ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Speaker MIO086 (PM) announced ownership by explicit statement; evidence supports.",
+          "quotes": [
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.130",
+              "quote": "Yes , I will . Yes ."
+            },
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.131",
+              "quote": "I'll copy , uh"
+            },
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.129",
+              "quote": "Thanks for coming ."
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "pass",
+          "reason": "Deadline text matches explicit deadline wording 'at the conclusion of the meeting' and is supported by dialogue indicating action.",
+          "quotes": [
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.130",
+              "quote": "Yes , I will . Yes ."
+            }
+          ],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "uncertain",
+          "reason": "Current dialogue marks item as open; no final adoption or completion yet.",
+          "quotes": [
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.130",
+              "quote": "Yes , I will . Yes ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No conflict with other items; related_items empty.",
+          "quotes": [
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.130",
+              "quote": "Yes , I will . Yes ."
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No prior item to relate to in this single-meeting context.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "decision": "request_clarification",
+      "reason": "supported_statement_with_unresolved_fields",
+      "assessed_text": "The project manager will send a copy of the slides to all attendees at the conclusion of the meeting.",
+      "requested_action": "accept",
+      "proposed_fields": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MIO086"
+        ],
+        "owner_basis": "explicit",
+        "deadline": "at the conclusion of the meeting",
+        "deadline_basis": "explicit",
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "IS1008a.A.dialog-act.s9553330.130",
+          "IS1008a.A.dialog-act.s9553330.131",
+          "IS1008a.A.dialog-act.s9553330.129"
+        ]
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue shows PM commits to sending slides at conclusion; aligns with item scope (copy of slides to attendees).",
+          "quotes": [
+            "IS1008a.A.dialog-act.s9553330.130",
+            "IS1008a.A.dialog-act.s9553330.131",
+            "IS1008a.A.dialog-act.s9553330.129"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Speaker MIO086 (PM) announced ownership by explicit statement; evidence supports.",
+          "quotes": [
+            "IS1008a.A.dialog-act.s9553330.130",
+            "IS1008a.A.dialog-act.s9553330.131",
+            "IS1008a.A.dialog-act.s9553330.129"
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "pass",
+          "reason": "Deadline text matches explicit deadline wording 'at the conclusion of the meeting' and is supported by dialogue indicating action.",
+          "quotes": [
+            "IS1008a.A.dialog-act.s9553330.130"
+          ],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "uncertain",
+          "reason": "Current dialogue marks item as open; no final adoption or completion yet.",
+          "quotes": [
+            "IS1008a.A.dialog-act.s9553330.130"
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No conflict with other items; related_items empty.",
+          "quotes": [
+            "IS1008a.A.dialog-act.s9553330.130"
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No prior item to relate to in this single-meeting context.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MIO086"
+        ],
+        "owner_basis": "explicit",
+        "deadline": "at the conclusion of the meeting",
+        "deadline_basis": "explicit",
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue shows PM commits to sending slides at conclusion; aligns with item scope (copy of slides to attendees).",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.130",
+            "IS1008a.A.dialog-act.s9553330.131",
+            "IS1008a.A.dialog-act.s9553330.129"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "Speaker MIO086 (PM) announced ownership by explicit statement; evidence supports.",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.130",
+            "IS1008a.A.dialog-act.s9553330.131",
+            "IS1008a.A.dialog-act.s9553330.129"
+          ]
+        },
+        "deadline_check": {
+          "result": "pass",
+          "reason": "Deadline text matches explicit deadline wording 'at the conclusion of the meeting' and is supported by dialogue indicating action.",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.130"
+          ]
+        },
+        "status_check": {
+          "result": "uncertain",
+          "reason": "Current dialogue marks item as open; no final adoption or completion yet.",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.130"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No conflict with other items; related_items empty.",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.130"
+          ],
+          "affected_fields": []
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No prior item to relate to in this single-meeting context.",
+          "evidence_da_ids": []
+        },
+        "next_action": "accept"
+      },
+      "evidence_bindings": {
+        "statement": [
+          "IS1008a.A.dialog-act.s9553330.130",
+          "IS1008a.A.dialog-act.s9553330.131",
+          "IS1008a.A.dialog-act.s9553330.129"
+        ],
+        "owner": [
+          "IS1008a.A.dialog-act.s9553330.130",
+          "IS1008a.A.dialog-act.s9553330.131",
+          "IS1008a.A.dialog-act.s9553330.129"
+        ],
+        "deadline": [
+          "IS1008a.A.dialog-act.s9553330.130"
+        ],
+        "status": [
+          "IS1008a.A.dialog-act.s9553330.130"
+        ],
+        "conflict": [
+          "IS1008a.A.dialog-act.s9553330.130"
+        ]
+      },
+      "raw_tool_input": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MIO086"
+        ],
+        "owner_basis": "explicit",
+        "deadline": "at the conclusion of the meeting",
+        "deadline_basis": "explicit",
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue shows PM commits to sending slides at conclusion; aligns with item scope (copy of slides to attendees).",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.130",
+            "IS1008a.A.dialog-act.s9553330.131",
+            "IS1008a.A.dialog-act.s9553330.129"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "Speaker MIO086 (PM) announced ownership by explicit statement; evidence supports.",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.130",
+            "IS1008a.A.dialog-act.s9553330.131",
+            "IS1008a.A.dialog-act.s9553330.129"
+          ]
+        },
+        "deadline_check": {
+          "result": "pass",
+          "reason": "Deadline text matches explicit deadline wording 'at the conclusion of the meeting' and is supported by dialogue indicating action.",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.130"
+          ]
+        },
+        "status_check": {
+          "result": "uncertain",
+          "reason": "Current dialogue marks item as open; no final adoption or completion yet.",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.130"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No conflict with other items; related_items empty.",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.130"
+          ]
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No prior item to relate to in this single-meeting context.",
+          "evidence_da_ids": []
+        },
+        "next_action": "accept"
+      },
+      "protocol_normalizations": [
+        "empty_affected_fields_for_no_conflict"
+      ]
+    },
+    {
+      "item": "IS1008a#5",
+      "step": 2,
+      "flags": [],
+      "action": "stop",
+      "outcome": "pending",
+      "termination_reason": "supported_statement_with_unresolved_fields",
+      "unresolved_fields": [
+        "status"
+      ]
+    }
+  ],
+  "lookups": 0,
+  "termination_reason": "supported_statement_with_unresolved_fields",
+  "clarifications": [
+    {
+      "request_id": "2dcfd282c483743c",
+      "item_key": "IS1008a#5",
+      "record_id": null,
+      "field": "status",
+      "question": "What is this item's status at the end of the current meeting?",
+      "item_text": "The project manager will send a copy of the slides to all attendees at the conclusion of the meeting.",
+      "reason": "Current dialogue marks item as open; no final adoption or completion yet.",
+      "evidence_da_ids": [
+        "IS1008a.A.dialog-act.s9553330.130"
+      ],
+      "available_evidence_da_ids": [
+        "IS1008a.C.dialog-act.s9553330.42",
+        "IS1008a.A.dialog-act.s9553330.130",
+        "IS1008a.B.dialog-act.s9553330.30",
+        "IS1008a.B.dialog-act.s9553330.31",
+        "IS1008a.A.dialog-act.s9553330.131",
+        "IS1008a.A.dialog-act.s9553330.129",
+        "IS1008a.A.dialog-act.s9553330.132"
+      ],
+      "status": "open",
+      "termination_reason": "supported_statement_with_unresolved_fields"
+    }
+  ]
+}

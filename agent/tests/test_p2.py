@@ -85,6 +85,7 @@ def assessment(store, it, next_action="accept", quote_id=D1):
 
 
 class Script:
+    p2_legacy_input = True  # Explicit adapter for saved v1 responses; live clients use the flat protocol.
     def __init__(self, steps):
         self.steps, self.calls = list(steps), []
     def create(self, *args, **kwargs):
@@ -329,6 +330,7 @@ def test_check_and_lookup_model_turns_share_the_same_global_budget():
     first = assessment(store, it, "retrieve")
     first["checks"]["owner"].update(result="uncertain", quotes=[])
     class Transport:
+        p2_legacy_input = True
         def __init__(self):
             self.calls = 0
             self.messages = NS(create=self.create)

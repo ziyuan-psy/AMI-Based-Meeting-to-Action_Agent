@@ -1,0 +1,591 @@
+{
+  "item_key": "TS3006a#4",
+  "record_id": null,
+  "item_type": "decisions",
+  "item_text": "Sales target is 50 million Euros in sales.",
+  "state": "accepted",
+  "recordable": true,
+  "fields": {
+    "status": "adopted",
+    "prior_context_needed": false,
+    "related_items": [],
+    "reference": [
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3006a.json",
+        "locator": "TS3006a.A.dialog-act.vkaraisk.131"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3006a.json",
+        "locator": "TS3006a.A.dialog-act.vkaraisk.130"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3006a.json",
+        "locator": "TS3006a.A.dialog-act.vkaraisk.133"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3006a.json",
+        "locator": "TS3006a.C.dialog-act.vkaraisk.73"
+      }
+    ]
+  },
+  "draft_fields": {
+    "status": "adopted",
+    "related_items": [],
+    "prior_context_needed": false,
+    "used_participant_lookup": false,
+    "evidence_da_ids": [
+      "TS3006a.A.dialog-act.vkaraisk.131",
+      "TS3006a.A.dialog-act.vkaraisk.130",
+      "TS3006a.A.dialog-act.vkaraisk.133",
+      "TS3006a.C.dialog-act.vkaraisk.73"
+    ],
+    "owner": null,
+    "owner_basis": "missing",
+    "deadline": null,
+    "deadline_basis": "missing"
+  },
+  "checks": {
+    "statement": {
+      "result": "pass",
+      "reason": "The current dialogue sets an explicit sales target of 50 million Euros.",
+      "quotes": [
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.131",
+          "quote": "the aim is to reach <disfmarker> uh uh to sell as much as fifty million Euros ."
+        },
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.130",
+          "quote": "Um we can sell them at twenty five Euros . Uh"
+        },
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.133",
+          "quote": "And the production cost should be the half of the selling price ."
+        },
+        {
+          "da_id": "TS3006a.C.dialog-act.vkaraisk.73",
+          "quote": "So we have to s"
+        }
+      ],
+      "fields": [
+        "statement"
+      ]
+    },
+    "status": {
+      "result": "pass",
+      "reason": "No discrepancies between the statement and the surrounding dialogue; the target is clearly stated.",
+      "quotes": [
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.131",
+          "quote": "the aim is to reach <disfmarker> uh uh to sell as much as fifty million Euros ."
+        },
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.130",
+          "quote": "Um we can sell them at twenty five Euros . Uh"
+        },
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.133",
+          "quote": "And the production cost should be the half of the selling price ."
+        },
+        {
+          "da_id": "TS3006a.C.dialog-act.vkaraisk.73",
+          "quote": "So we have to s"
+        }
+      ],
+      "fields": [
+        "status"
+      ]
+    },
+    "conflict": {
+      "result": "pass",
+      "reason": "No conflicting evidence found in available dialogue regarding the stated target.",
+      "quotes": [
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.131",
+          "quote": "the aim is to reach <disfmarker> uh uh to sell as much as fifty million Euros ."
+        },
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.130",
+          "quote": "Um we can sell them at twenty five Euros . Uh"
+        },
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.133",
+          "quote": "And the production cost should be the half of the selling price ."
+        },
+        {
+          "da_id": "TS3006a.C.dialog-act.vkaraisk.73",
+          "quote": "So we have to s"
+        }
+      ],
+      "fields": []
+    },
+    "relation": {
+      "result": "not_applicable",
+      "reason": "This item does not modify or relate to a prior item in this snippet; no prior item context is required.",
+      "quotes": [],
+      "fields": [
+        "related_items"
+      ]
+    },
+    "owner": {
+      "result": "not_applicable",
+      "reason": "field_not_applicable",
+      "quotes": [],
+      "fields": [
+        "owner"
+      ]
+    },
+    "deadline": {
+      "result": "not_applicable",
+      "reason": "field_not_applicable",
+      "quotes": [],
+      "fields": [
+        "deadline"
+      ]
+    }
+  },
+  "unresolved_fields": [],
+  "observed_evidence_da_ids": [
+    "TS3006a.A.dialog-act.vkaraisk.130",
+    "TS3006a.A.dialog-act.vkaraisk.131",
+    "TS3006a.A.dialog-act.vkaraisk.133",
+    "TS3006a.C.dialog-act.vkaraisk.73",
+    "TS3006a.A.dialog-act.vkaraisk.129",
+    "TS3006a.A.dialog-act.vkaraisk.132",
+    "TS3006a.A.dialog-act.vkaraisk.134"
+  ],
+  "initial_context": {
+    "item": {
+      "type": "decisions",
+      "text": "Sales target is 50 million Euros in sales.",
+      "flags": []
+    },
+    "current_meeting": "TS3006a",
+    "earlier_meetings": [],
+    "roster": [
+      {
+        "speaker": "A",
+        "participant_id": "MTD021PM",
+        "role": "PM"
+      },
+      {
+        "speaker": "B",
+        "participant_id": "MTD023UID",
+        "role": "UI"
+      },
+      {
+        "speaker": "C",
+        "participant_id": "MTD022ID",
+        "role": "ID"
+      },
+      {
+        "speaker": "D",
+        "participant_id": "MTD024ME",
+        "role": "ME"
+      }
+    ],
+    "observed_dialogue": [
+      {
+        "da_id": "TS3006a.A.dialog-act.vkaraisk.130",
+        "meeting_id": "TS3006a",
+        "text": "Um we can sell them at twenty five Euros . Uh",
+        "participant": "MTD021PM",
+        "role": "PM"
+      },
+      {
+        "da_id": "TS3006a.A.dialog-act.vkaraisk.131",
+        "meeting_id": "TS3006a",
+        "text": "the aim is to reach <disfmarker> uh uh to sell as much as fifty million Euros .",
+        "participant": "MTD021PM",
+        "role": "PM"
+      },
+      {
+        "da_id": "TS3006a.A.dialog-act.vkaraisk.133",
+        "meeting_id": "TS3006a",
+        "text": "And the production cost should be the half of the selling price .",
+        "participant": "MTD021PM",
+        "role": "PM"
+      },
+      {
+        "da_id": "TS3006a.C.dialog-act.vkaraisk.73",
+        "meeting_id": "TS3006a",
+        "text": "So we have to s",
+        "participant": "MTD022ID",
+        "role": "ID"
+      },
+      {
+        "da_id": "TS3006a.A.dialog-act.vkaraisk.129",
+        "participant": "MTD021PM",
+        "role": "PM",
+        "text": "we have a financial aspect to this project . <vocalsound>"
+      },
+      {
+        "da_id": "TS3006a.A.dialog-act.vkaraisk.132",
+        "participant": "MTD021PM",
+        "role": "PM",
+        "text": "Uh that's quite a big amount of money ."
+      },
+      {
+        "da_id": "TS3006a.A.dialog-act.vkaraisk.134",
+        "participant": "MTD021PM",
+        "role": "PM",
+        "text": "Okay"
+      }
+    ],
+    "peer_items": [
+      {
+        "item_key": "TS3006a#0",
+        "type": "problems",
+        "text": "Screen/display hardware problem: presenter reports the screen is missing ('where has my screen gone?' / 'My screen is gone')"
+      },
+      {
+        "item_key": "TS3006a#1",
+        "type": "problems",
+        "text": "Kickoff participation shows participants slow and under-prepared, indicating preparation/coordination gaps."
+      },
+      {
+        "item_key": "TS3006a#2",
+        "type": "problems",
+        "text": "Unclear scope: unclear which animal to draw and lack of agreement on subject and components to include."
+      },
+      {
+        "item_key": "TS3006a#3",
+        "type": "decisions",
+        "text": "Pricing will be set at 25 Euros."
+      }
+    ],
+    "provisional_values": {
+      "owner": null,
+      "owner_basis": "missing",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "status": "adopted",
+      "related_items": []
+    },
+    "candidate_evidence_da_ids": [
+      "TS3006a.A.dialog-act.vkaraisk.130",
+      "TS3006a.A.dialog-act.vkaraisk.131",
+      "TS3006a.A.dialog-act.vkaraisk.133",
+      "TS3006a.C.dialog-act.vkaraisk.73"
+    ]
+  },
+  "observed_documents": [],
+  "document_evidence": [],
+  "relation_evidence": [],
+  "history": [
+    {
+      "item": "TS3006a#4",
+      "step": 1,
+      "flags": [],
+      "action": "assess_item",
+      "outcome": "invalid_action",
+      "error": "Correct these argument fields: statement: 'evidence_da_ids' is a required property; : 'next_action' is a required property; : 'status_check' is a required property; : 'conflict_check' is a required property; : 'relation_check' is a required property",
+      "raw_tool_input": {
+        "status": "adopted",
+        "related_items": [],
+        "statement": {
+          "result": "pass",
+          "reason": "The current dialogue sets an explicit sales target of 50 million Euros ("
+        },
+        "evidence_da_ids": [
+          "TS3006a.A.dialog-act.vkaraisk.131",
+          "TS3006a.A.dialog-act.vkaraisk.130",
+          "TS3006a.A.dialog-act.vkaraisk.133",
+          "TS3006a.C.dialog-act.vkaraisk.73"
+        ],
+        "documents": []
+      }
+    },
+    {
+      "item": "TS3006a#4",
+      "step": 2,
+      "flags": [],
+      "action": "assess_item",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "The current dialogue sets an explicit sales target of 50 million Euros.",
+          "quotes": [
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.131",
+              "quote": "the aim is to reach <disfmarker> uh uh to sell as much as fifty million Euros ."
+            },
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.130",
+              "quote": "Um we can sell them at twenty five Euros . Uh"
+            },
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.133",
+              "quote": "And the production cost should be the half of the selling price ."
+            },
+            {
+              "da_id": "TS3006a.C.dialog-act.vkaraisk.73",
+              "quote": "So we have to s"
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "No discrepancies between the statement and the surrounding dialogue; the target is clearly stated.",
+          "quotes": [
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.131",
+              "quote": "the aim is to reach <disfmarker> uh uh to sell as much as fifty million Euros ."
+            },
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.130",
+              "quote": "Um we can sell them at twenty five Euros . Uh"
+            },
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.133",
+              "quote": "And the production cost should be the half of the selling price ."
+            },
+            {
+              "da_id": "TS3006a.C.dialog-act.vkaraisk.73",
+              "quote": "So we have to s"
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No conflicting evidence found in available dialogue regarding the stated target.",
+          "quotes": [
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.131",
+              "quote": "the aim is to reach <disfmarker> uh uh to sell as much as fifty million Euros ."
+            },
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.130",
+              "quote": "Um we can sell them at twenty five Euros . Uh"
+            },
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.133",
+              "quote": "And the production cost should be the half of the selling price ."
+            },
+            {
+              "da_id": "TS3006a.C.dialog-act.vkaraisk.73",
+              "quote": "So we have to s"
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "This item does not modify or relate to a prior item in this snippet; no prior item context is required.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        },
+        "owner": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        }
+      },
+      "decision": "accept",
+      "reason": "all_required_checks_passed",
+      "assessed_text": "Sales target is 50 million Euros in sales.",
+      "requested_action": "accept",
+      "proposed_fields": {
+        "status": "adopted",
+        "related_items": [],
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "TS3006a.A.dialog-act.vkaraisk.131",
+          "TS3006a.A.dialog-act.vkaraisk.130",
+          "TS3006a.A.dialog-act.vkaraisk.133",
+          "TS3006a.C.dialog-act.vkaraisk.73"
+        ],
+        "owner": null,
+        "owner_basis": "missing",
+        "deadline": null,
+        "deadline_basis": "missing"
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "The current dialogue sets an explicit sales target of 50 million Euros.",
+          "quotes": [
+            "TS3006a.A.dialog-act.vkaraisk.131",
+            "TS3006a.A.dialog-act.vkaraisk.130",
+            "TS3006a.A.dialog-act.vkaraisk.133",
+            "TS3006a.C.dialog-act.vkaraisk.73"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "No discrepancies between the statement and the surrounding dialogue; the target is clearly stated.",
+          "quotes": [
+            "TS3006a.A.dialog-act.vkaraisk.131",
+            "TS3006a.A.dialog-act.vkaraisk.130",
+            "TS3006a.A.dialog-act.vkaraisk.133",
+            "TS3006a.C.dialog-act.vkaraisk.73"
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No conflicting evidence found in available dialogue regarding the stated target.",
+          "quotes": [
+            "TS3006a.A.dialog-act.vkaraisk.131",
+            "TS3006a.A.dialog-act.vkaraisk.130",
+            "TS3006a.A.dialog-act.vkaraisk.133",
+            "TS3006a.C.dialog-act.vkaraisk.73"
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "This item does not modify or relate to a prior item in this snippet; no prior item context is required.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "status": "adopted",
+        "related_items": [],
+        "statement": {
+          "result": "pass",
+          "reason": "The current dialogue sets an explicit sales target of 50 million Euros.",
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.131",
+            "TS3006a.A.dialog-act.vkaraisk.130",
+            "TS3006a.A.dialog-act.vkaraisk.133",
+            "TS3006a.C.dialog-act.vkaraisk.73"
+          ]
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "No discrepancies between the statement and the surrounding dialogue; the target is clearly stated.",
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.131",
+            "TS3006a.A.dialog-act.vkaraisk.130",
+            "TS3006a.A.dialog-act.vkaraisk.133",
+            "TS3006a.C.dialog-act.vkaraisk.73"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No conflicting evidence found in available dialogue regarding the stated target.",
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.131",
+            "TS3006a.A.dialog-act.vkaraisk.130",
+            "TS3006a.A.dialog-act.vkaraisk.133",
+            "TS3006a.C.dialog-act.vkaraisk.73"
+          ],
+          "affected_fields": []
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "This item does not modify or relate to a prior item in this snippet; no prior item context is required.",
+          "evidence_da_ids": []
+        },
+        "next_action": "accept"
+      },
+      "evidence_bindings": {
+        "statement": [
+          "TS3006a.A.dialog-act.vkaraisk.131",
+          "TS3006a.A.dialog-act.vkaraisk.130",
+          "TS3006a.A.dialog-act.vkaraisk.133",
+          "TS3006a.C.dialog-act.vkaraisk.73"
+        ],
+        "status": [
+          "TS3006a.A.dialog-act.vkaraisk.131",
+          "TS3006a.A.dialog-act.vkaraisk.130",
+          "TS3006a.A.dialog-act.vkaraisk.133",
+          "TS3006a.C.dialog-act.vkaraisk.73"
+        ],
+        "conflict": [
+          "TS3006a.A.dialog-act.vkaraisk.131",
+          "TS3006a.A.dialog-act.vkaraisk.130",
+          "TS3006a.A.dialog-act.vkaraisk.133",
+          "TS3006a.C.dialog-act.vkaraisk.73"
+        ]
+      },
+      "raw_tool_input": {
+        "status": "adopted",
+        "related_items": [],
+        "statement": {
+          "result": "pass",
+          "reason": "The current dialogue sets an explicit sales target of 50 million Euros.",
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.131",
+            "TS3006a.A.dialog-act.vkaraisk.130",
+            "TS3006a.A.dialog-act.vkaraisk.133",
+            "TS3006a.C.dialog-act.vkaraisk.73"
+          ]
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "No discrepancies between the statement and the surrounding dialogue; the target is clearly stated.",
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.131",
+            "TS3006a.A.dialog-act.vkaraisk.130",
+            "TS3006a.A.dialog-act.vkaraisk.133",
+            "TS3006a.C.dialog-act.vkaraisk.73"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No conflicting evidence found in available dialogue regarding the stated target.",
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.131",
+            "TS3006a.A.dialog-act.vkaraisk.130",
+            "TS3006a.A.dialog-act.vkaraisk.133",
+            "TS3006a.C.dialog-act.vkaraisk.73"
+          ],
+          "affected_fields": []
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "This item does not modify or relate to a prior item in this snippet; no prior item context is required.",
+          "evidence_da_ids": []
+        },
+        "next_action": "accept"
+      },
+      "protocol_normalizations": []
+    },
+    {
+      "item": "TS3006a#4",
+      "step": 2,
+      "flags": [],
+      "action": "accept",
+      "outcome": "accepted",
+      "termination_reason": "all_required_checks_passed",
+      "unresolved_fields": []
+    }
+  ],
+  "lookups": 0,
+  "termination_reason": "all_required_checks_passed",
+  "clarifications": []
+}

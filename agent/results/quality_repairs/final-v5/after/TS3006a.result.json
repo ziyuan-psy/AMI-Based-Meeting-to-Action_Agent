@@ -1,0 +1,367 @@
+{
+  "mode": "s2",
+  "status": "COMPLETED",
+  "meeting_id": "TS3006a",
+  "items": 14,
+  "flagged": 0,
+  "agent runs": 15,
+  "agent fallbacks": 0,
+  "lookups used": 0,
+  "repairs": 0,
+  "input tokens": 95826,
+  "output tokens": 17057,
+  "llm calls": 20,
+  "seconds": 60.2,
+  "p2 accepted": 7,
+  "p2 pending": 8,
+  "quarantined": 1,
+  "clarification requests": 9,
+  "stages": {
+    "select": {
+      "calls": 1,
+      "in": 5553,
+      "out": 5563
+    },
+    "p2_check": {
+      "calls": 18,
+      "in": 89499,
+      "out": 10664
+    },
+    "abstract": {
+      "calls": 1,
+      "in": 774,
+      "out": 830
+    }
+  },
+  "stage_seconds": {
+    "extract": 0.0,
+    "consolidate": 0.0,
+    "select": 32.9,
+    "agent+abstract": 27.0,
+    "total": 60.2
+  },
+  "p2_enabled": true,
+  "output": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\quality_repairs\\final-v5\\after\\s2\\TS3006a.json",
+  "output_sha256": "cd61980d2f17bd6f9721152a97a2f743428d95cc8299bdff0f19036b8e3d4b45",
+  "report_sha256": "9e6bc8f1ef6385632033c3bbc9c62069d9653171b46deac2eab3b09e70975be1",
+  "p2_artifact": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\quality_repairs\\final-v5\\after\\s2\\TS3006a.p2.json",
+  "p2_sha256": "46465d4db7a849fc37ddd7002f1e075a688d2063c9e958c9b90393b173c2d5f0",
+  "clarifications_artifact": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\quality_repairs\\final-v5\\after\\s2\\TS3006a.clarifications.json",
+  "clarifications_sha256": "1a03d373a80b549b5dcc101166ad24975714e69204164e4f58492015457e1cc3",
+  "runtime_control": {
+    "limits": {
+      "calls": 65,
+      "tokens": 819727,
+      "request_seconds": 300.0,
+      "meeting_seconds": 977.076,
+      "inflight": 4,
+      "retries": 2,
+      "backoff": 0.5
+    },
+    "attempted_calls": 20,
+    "charged_tokens": 112883,
+    "unknown_usage_tokens": 0,
+    "reserved_tokens": 0,
+    "max_inflight_seen": 4,
+    "failure": null,
+    "attempts": [
+      {
+        "attempt": 0,
+        "stage": "select",
+        "reserved_tokens": 54451,
+        "input_bound": 22451,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 11116,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 5553,
+        "output_tokens": 5563
+      },
+      {
+        "attempt": 1,
+        "stage": "p2_check",
+        "reserved_tokens": 54666,
+        "input_bound": 22666,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 4892,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 4354,
+        "output_tokens": 538
+      },
+      {
+        "attempt": 2,
+        "stage": "p2_check",
+        "reserved_tokens": 56740,
+        "input_bound": 24740,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 5795,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 5018,
+        "output_tokens": 777
+      },
+      {
+        "attempt": 3,
+        "stage": "p2_check",
+        "reserved_tokens": 57154,
+        "input_bound": 25154,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 5851,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 5156,
+        "output_tokens": 695
+      },
+      {
+        "attempt": 4,
+        "stage": "p2_check",
+        "reserved_tokens": 55747,
+        "input_bound": 23747,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 5215,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 4675,
+        "output_tokens": 540
+      },
+      {
+        "attempt": 5,
+        "stage": "p2_check",
+        "reserved_tokens": 55746,
+        "input_bound": 23746,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 5397,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 4652,
+        "output_tokens": 745
+      },
+      {
+        "attempt": 6,
+        "stage": "p2_check",
+        "reserved_tokens": 55860,
+        "input_bound": 23860,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 5090,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 4686,
+        "output_tokens": 404
+      },
+      {
+        "attempt": 7,
+        "stage": "p2_check",
+        "reserved_tokens": 55984,
+        "input_bound": 23984,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 5305,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 4720,
+        "output_tokens": 585
+      },
+      {
+        "attempt": 8,
+        "stage": "p2_check",
+        "reserved_tokens": 55419,
+        "input_bound": 23419,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 4836,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 4540,
+        "output_tokens": 296
+      },
+      {
+        "attempt": 9,
+        "stage": "p2_check",
+        "reserved_tokens": 55988,
+        "input_bound": 23988,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 5347,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 4714,
+        "output_tokens": 633
+      },
+      {
+        "attempt": 10,
+        "stage": "p2_check",
+        "reserved_tokens": 56758,
+        "input_bound": 24758,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 5250,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 4806,
+        "output_tokens": 444
+      },
+      {
+        "attempt": 11,
+        "stage": "p2_check",
+        "reserved_tokens": 55470,
+        "input_bound": 23470,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 5071,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 4545,
+        "output_tokens": 526
+      },
+      {
+        "attempt": 12,
+        "stage": "p2_check",
+        "reserved_tokens": 58093,
+        "input_bound": 26093,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 5692,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 5035,
+        "output_tokens": 657
+      },
+      {
+        "attempt": 13,
+        "stage": "p2_check",
+        "reserved_tokens": 59386,
+        "input_bound": 27386,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 5956,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 5443,
+        "output_tokens": 513
+      },
+      {
+        "attempt": 14,
+        "stage": "p2_check",
+        "reserved_tokens": 59466,
+        "input_bound": 27466,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 6256,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 5475,
+        "output_tokens": 781
+      },
+      {
+        "attempt": 15,
+        "stage": "p2_check",
+        "reserved_tokens": 58984,
+        "input_bound": 26984,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 6131,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 5257,
+        "output_tokens": 874
+      },
+      {
+        "attempt": 16,
+        "stage": "p2_check",
+        "reserved_tokens": 58410,
+        "input_bound": 26410,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 5576,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 5095,
+        "output_tokens": 481
+      },
+      {
+        "attempt": 17,
+        "stage": "p2_check",
+        "reserved_tokens": 61601,
+        "input_bound": 29601,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 6734,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 5918,
+        "output_tokens": 816
+      },
+      {
+        "attempt": 18,
+        "stage": "p2_check",
+        "reserved_tokens": 60025,
+        "input_bound": 28025,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 5769,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 5410,
+        "output_tokens": 359
+      },
+      {
+        "attempt": 19,
+        "stage": "abstract",
+        "reserved_tokens": 37050,
+        "input_bound": 5050,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 1604,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 774,
+        "output_tokens": 830
+      }
+    ],
+    "input_bound_method": "utf8_request_bytes_plus_padding",
+    "unknown_usage_policy": "charge_full_reservation"
+  },
+  "run_metadata": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\quality_repairs\\final-v5\\after\\s2\\TS3006a.run.json",
+  "stage_trace": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\quality_repairs\\final-v5\\after\\s2\\TS3006a.stages.jsonl",
+  "actual_new_usage": {
+    "calls": 20,
+    "in": 95826,
+    "out": 17057,
+    "stages": {
+      "select": {
+        "calls": 1,
+        "in": 5553,
+        "out": 5563
+      },
+      "p2_check": {
+        "calls": 18,
+        "in": 89499,
+        "out": 10664
+      },
+      "abstract": {
+        "calls": 1,
+        "in": 774,
+        "out": 830
+      }
+    }
+  },
+  "whole_meeting_budget": {
+    "captured_upstream": {
+      "attempts": 15,
+      "charged_tokens": 180273,
+      "elapsed_seconds": 222.924,
+      "source_metadata_sha256": "97f2407fc582158fc0b10b74abf57f2c1a3370e12bb6bf62afd8492912483b76",
+      "normalized_sha256": "e2a36b603e5a25c8b3c481a4e97dcd8f9f6bfde0b7539ec8e7a1f61a2b43282e"
+    },
+    "combined_attempts": 35,
+    "combined_charged_tokens": 293156
+  }
+}

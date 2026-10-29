@@ -1,0 +1,225 @@
+{
+  "kind": "FRESH_LIVE_ALL_STAGES_SAME_INPUTS",
+  "base_commit": "3b886f6c0c1520a1c5bc8628da7198a871c25495",
+  "configuration_changes": {
+    "P2_PROTOCOL_VERSION": {
+      "before": 6,
+      "after": 7
+    },
+    "ITEM_POLICY_VERSION": {
+      "before": 5,
+      "after": 7
+    }
+  },
+  "checks": {
+    "all_pipeline_and_artifact_checks": true,
+    "slides_present": true,
+    "id_working_design_present": true,
+    "no_empty_revision_calls": true,
+    "published_cross_meeting_link": false,
+    "same_controlled_revision_passed": true
+  },
+  "result": "GAPS_REMAIN",
+  "errors": [],
+  "meetings": [
+    {
+      "meeting_id": "IS1008a",
+      "status": "COMPLETED",
+      "seconds": 418.7,
+      "calls": 36,
+      "known_tokens": 298476,
+      "charged_tokens": 298476,
+      "unknown_usage_tokens": 0,
+      "stages": {
+        "abstract": 1,
+        "agent": 4,
+        "consolidate": 4,
+        "decision_consolidate": 3,
+        "extract": 4,
+        "p2_check": 19,
+        "select": 1
+      },
+      "historical_response_cache_hits": 0,
+      "validation_errors": [],
+      "record_counts": {
+        "actions": 5,
+        "decisions": 3,
+        "problems": 2
+      },
+      "p2_items": 13,
+      "recordable": 10,
+      "accepted": 4,
+      "verified_omitted": 2,
+      "clarification_requests": 10,
+      "core_rechecks": 1
+    },
+    {
+      "meeting_id": "TS3006a",
+      "status": "COMPLETED",
+      "seconds": 521.5,
+      "calls": 34,
+      "known_tokens": 305101,
+      "charged_tokens": 305101,
+      "unknown_usage_tokens": 0,
+      "stages": {
+        "abstract": 1,
+        "consolidate": 3,
+        "decision_consolidate": 3,
+        "extract": 9,
+        "p2_check": 17,
+        "select": 1
+      },
+      "historical_response_cache_hits": 0,
+      "validation_errors": [],
+      "record_counts": {
+        "actions": 4,
+        "decisions": 6,
+        "problems": 3
+      },
+      "p2_items": 14,
+      "recordable": 13,
+      "accepted": 8,
+      "verified_omitted": 0,
+      "clarification_requests": 10,
+      "core_rechecks": 0
+    },
+    {
+      "meeting_id": "TS3006b",
+      "status": "COMPLETED",
+      "seconds": 778.1,
+      "calls": 75,
+      "known_tokens": 701448,
+      "charged_tokens": 701448,
+      "unknown_usage_tokens": 0,
+      "stages": {
+        "abstract": 1,
+        "agent": 18,
+        "consolidate": 3,
+        "decision_consolidate": 5,
+        "extract": 12,
+        "p2_check": 35,
+        "select": 1
+      },
+      "historical_response_cache_hits": 0,
+      "validation_errors": [],
+      "record_counts": {
+        "actions": 4,
+        "decisions": 5,
+        "problems": 3
+      },
+      "p2_items": 16,
+      "recordable": 12,
+      "accepted": 5,
+      "verified_omitted": 0,
+      "clarification_requests": 25,
+      "core_rechecks": 3
+    }
+  ],
+  "totals": {
+    "calls": 145,
+    "tokens": 1305025,
+    "seconds": 1718.3
+  },
+  "functional_comparison": {
+    "slides": {
+      "before": [],
+      "after": [
+        {
+          "id": "IS1008a.sys.s.9",
+          "text": "PM will send copies of the slides to all attendees at the conclusion of the meeting.",
+          "type": "actions",
+          "reference": [
+            {
+              "source_type": "dialogue",
+              "source": "ami-corpus/dialogueActs/IS1008a.json",
+              "locator": "IS1008a.A.dialog-act.s9553330.130"
+            }
+          ],
+          "owner": [
+            "MIO086"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "status": "open",
+          "prior_context_needed": false,
+          "related_items": []
+        }
+      ]
+    },
+    "id_working_design": {
+      "before": [],
+      "after": [
+        {
+          "id": "TS3006a.sys.s.1",
+          "text": "Industrial Designer to produce a working design.",
+          "type": "actions",
+          "reference": [
+            {
+              "source_type": "dialogue",
+              "source": "ami-corpus/dialogueActs/TS3006a.json",
+              "locator": "TS3006a.A.dialog-act.vkaraisk.146"
+            },
+            {
+              "source_type": "dialogue",
+              "source": "ami-corpus/dialogueActs/TS3006a.json",
+              "locator": "TS3006a.A.dialog-act.vkaraisk.147"
+            },
+            {
+              "source_type": "dialogue",
+              "source": "ami-corpus/dialogueActs/TS3006a.json",
+              "locator": "TS3006a.C.dialog-act.vkaraisk.77"
+            }
+          ],
+          "owner": [
+            "MTD022ID"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "status": "unknown",
+          "prior_context_needed": false,
+          "related_items": []
+        }
+      ]
+    },
+    "empty_revision_calls": {
+      "before": 1,
+      "after": 0
+    },
+    "cross_meeting_links": {
+      "before": 0,
+      "after": 0
+    }
+  },
+  "controlled_probe": {
+    "status": "PASSED",
+    "state": "pending",
+    "recordable": true,
+    "text": "The project manager will send copies of the slides to attendees.",
+    "valid_revisions": 1,
+    "fresh_rechecks": 2,
+    "deadline": null,
+    "actual_usage": {
+      "calls": 6,
+      "in": 34220,
+      "out": 2830,
+      "stages": {
+        "p2_check": {
+          "calls": 3,
+          "in": 17604,
+          "out": 2293
+        },
+        "agent": {
+          "calls": 3,
+          "in": 16616,
+          "out": 537
+        }
+      }
+    },
+    "is_natural_case": false
+  },
+  "gold_scored": false,
+  "previous_smoke_unchanged": true,
+  "protected_files_unchanged": 28
+}

@@ -1,0 +1,145 @@
+{
+  "kind": "FRESH_LIVE_ALL_STAGES_SAME_INPUTS",
+  "base_commit": "3b886f6c0c1520a1c5bc8628da7198a871c25495",
+  "configuration_changes": {
+    "P2_PROTOCOL_VERSION": {
+      "before": 6,
+      "after": 8
+    },
+    "ITEM_POLICY_VERSION": {
+      "before": 5,
+      "after": 7
+    }
+  },
+  "checks": {
+    "all_pipeline_and_artifact_checks": false,
+    "slides_present": true,
+    "id_working_design_present": false,
+    "no_empty_revision_calls": true,
+    "published_cross_meeting_link": false,
+    "same_controlled_revision_passed": false
+  },
+  "result": "GAPS_REMAIN",
+  "errors": [
+    "TS3006a: FAILED",
+    "TS3006b: missing result"
+  ],
+  "meetings": [
+    {
+      "meeting_id": "IS1008a",
+      "status": "COMPLETED",
+      "seconds": 412.6,
+      "calls": 39,
+      "known_tokens": 317187,
+      "charged_tokens": 317187,
+      "unknown_usage_tokens": 0,
+      "stages": {
+        "abstract": 1,
+        "agent": 4,
+        "consolidate": 3,
+        "decision_consolidate": 3,
+        "extract": 4,
+        "p2_check": 23,
+        "select": 1
+      },
+      "historical_response_cache_hits": 0,
+      "validation_errors": [],
+      "record_counts": {
+        "actions": 5,
+        "decisions": 5,
+        "problems": 3
+      },
+      "p2_items": 17,
+      "recordable": 13,
+      "accepted": 9,
+      "verified_omitted": 1,
+      "clarification_requests": 12,
+      "core_rechecks": 1
+    },
+    {
+      "meeting_id": "TS3006a",
+      "status": "FAILED",
+      "seconds": null,
+      "calls": 17,
+      "known_tokens": 192142,
+      "charged_tokens": 192142,
+      "unknown_usage_tokens": 0,
+      "stages": {
+        "consolidate": 3,
+        "decision_consolidate": 4,
+        "extract": 8,
+        "select": 2
+      },
+      "historical_response_cache_hits": 0,
+      "failure": {
+        "code": "stage_failed",
+        "status": "FAILED",
+        "stage": "select",
+        "error_type": "ValueError",
+        "os_error": null,
+        "windows_error": null,
+        "io_operation": null
+      }
+    },
+    {
+      "meeting_id": "TS3006b",
+      "status": "NOT_RUN"
+    }
+  ],
+  "totals": {
+    "calls": 56,
+    "tokens": 509329,
+    "seconds": 412.6
+  },
+  "functional_comparison": {
+    "slides": {
+      "before": [],
+      "after": [
+        {
+          "id": "IS1008a.sys.s.2",
+          "text": "PM will send a copy of the slides to attendees after the meeting.",
+          "type": "actions",
+          "reference": [
+            {
+              "source_type": "dialogue",
+              "source": "ami-corpus/dialogueActs/IS1008a.json",
+              "locator": "IS1008a.A.dialog-act.s9553330.130"
+            },
+            {
+              "source_type": "dialogue",
+              "source": "ami-corpus/dialogueActs/IS1008a.json",
+              "locator": "IS1008a.C.dialog-act.s9553330.42"
+            }
+          ],
+          "owner": [
+            "MIO086"
+          ],
+          "owner_basis": "explicit",
+          "deadline": "at conclusion of the meeting",
+          "deadline_basis": "explicit",
+          "status": "open",
+          "prior_context_needed": false,
+          "related_items": []
+        }
+      ]
+    },
+    "id_working_design": {
+      "before": [],
+      "after": []
+    },
+    "empty_revision_calls": {
+      "before": 1,
+      "after": 0
+    },
+    "cross_meeting_links": {
+      "before": 0,
+      "after": 0
+    }
+  },
+  "controlled_probe": {
+    "status": "NOT_RUN"
+  },
+  "gold_scored": false,
+  "previous_smoke_unchanged": true,
+  "protected_files_unchanged": 28
+}

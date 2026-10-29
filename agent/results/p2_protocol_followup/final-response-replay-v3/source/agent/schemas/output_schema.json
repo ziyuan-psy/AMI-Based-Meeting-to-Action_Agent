@@ -1,0 +1,391 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Lean revised AMI abstractive schema 0.5.0",
+  "description": "Flat AMI array with original id/text/type fields and source_type/source/locator references for dialogue, participant metadata, and project documents. No additional top-level context flag. Draft placeholders are allowed; human release checks remain necessary.",
+  "type": "array",
+  "items": {
+    "$ref": "#/$defs/item"
+  },
+  "$defs": {
+    "itemId": {
+      "type": "string",
+      "pattern": "^(?:ES2011|IS1008|TS3004|TS3006|ES2004|TS3007)[a-d]\\.[^.\\s]+\\.s\\.[0-9]+(?:\\.[0-9]+)?$"
+    },
+    "relatedItem": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/itemId"
+        },
+        "relation": {
+          "enum": [
+            "continues",
+            "updates",
+            "replaces",
+            "cancels",
+            "completes",
+            "resolves",
+            "reopens"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "relation"
+      ],
+      "additionalProperties": false
+    },
+    "item": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/itemId"
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "type": {
+          "enum": [
+            "abstract",
+            "actions",
+            "decisions",
+            "problems"
+          ]
+        },
+        "reference": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/reference"
+          },
+          "uniqueItems": true,
+          "description": "Checked supporting sources actually used for this item, classified as dialogue, participant_metadata, or project_document. This is not a retrieval log. Identify current/prior meetings from source paths and locators."
+        },
+        "owner": {
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "minItems": 1,
+              "uniqueItems": true
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "owner_basis": {
+          "enum": [
+            "explicit",
+            "inferred",
+            "ambiguous",
+            "missing",
+            "unreviewed"
+          ]
+        },
+        "deadline": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "deadline_basis": {
+          "enum": [
+            "explicit",
+            "inferred",
+            "ambiguous",
+            "missing",
+            "unreviewed"
+          ]
+        },
+        "status": {
+          "type": "string"
+        },
+        "prior_context_needed": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "description": "Whether earlier meetings are needed to interpret or verify this item. Scenario lookup and current-meeting participant lookup alone do not make this true."
+        },
+        "related_items": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/relatedItem"
+          },
+          "uniqueItems": true,
+          "description": "Links to earlier action/decision/problem records and how this item relates to them. These represent project-item relationships rather than source citations."
+        }
+      },
+      "required": [
+        "id",
+        "text",
+        "type",
+        "reference"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "actions"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "required": [
+              "owner",
+              "owner_basis",
+              "deadline",
+              "deadline_basis",
+              "status",
+              "prior_context_needed",
+              "related_items"
+            ],
+            "properties": {
+              "status": {
+                "enum": [
+                  "open",
+                  "in_progress",
+                  "completed",
+                  "cancelled",
+                  "deferred",
+                  "unknown"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "decisions"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "required": [
+              "status",
+              "prior_context_needed",
+              "related_items"
+            ],
+            "properties": {
+              "status": {
+                "enum": [
+                  "proposed",
+                  "adopted",
+                  "conditional",
+                  "rejected",
+                  "deferred",
+                  "unknown"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "problems"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "required": [
+              "status",
+              "prior_context_needed",
+              "related_items"
+            ],
+            "properties": {
+              "status": {
+                "enum": [
+                  "open",
+                  "resolved",
+                  "deferred",
+                  "unknown"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "enum": [
+                  "abstract",
+                  "decisions",
+                  "problems"
+                ]
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "owner": false,
+              "owner_basis": false,
+              "deadline": false,
+              "deadline_basis": false
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "abstract"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "status": false,
+              "prior_context_needed": false,
+              "related_items": false
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "owner_basis": {
+                "enum": [
+                  "explicit",
+                  "inferred"
+                ]
+              }
+            },
+            "required": [
+              "owner_basis"
+            ]
+          },
+          "then": {
+            "properties": {
+              "owner": {
+                "type": "array"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "owner_basis": {
+                "enum": [
+                  "ambiguous",
+                  "missing",
+                  "unreviewed"
+                ]
+              }
+            },
+            "required": [
+              "owner_basis"
+            ]
+          },
+          "then": {
+            "properties": {
+              "owner": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "deadline_basis": {
+                "enum": [
+                  "explicit",
+                  "inferred"
+                ]
+              }
+            },
+            "required": [
+              "deadline_basis"
+            ]
+          },
+          "then": {
+            "properties": {
+              "deadline": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "deadline_basis": {
+                "enum": [
+                  "missing",
+                  "unreviewed"
+                ]
+              }
+            },
+            "required": [
+              "deadline_basis"
+            ]
+          },
+          "then": {
+            "properties": {
+              "deadline": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "reference": {
+      "type": "object",
+      "properties": {
+        "source_type": {
+          "enum": [
+            "dialogue",
+            "participant_metadata",
+            "project_document"
+          ],
+          "description": "The kind of support used. Dialogue may come from the current or an earlier meeting; project_document includes the AMI scenario and other relevant project documents."
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Workspace-relative source file path, such as ami-corpus/dialogueActs/IS1008c.json or amiScenario.pdf."
+        },
+        "locator": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Specific checked location: dialogue-act ID, participant metadata record, XML entry, or PDF page and section. May identify attributes within a record."
+        }
+      },
+      "required": [
+        "source_type",
+        "source",
+        "locator"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

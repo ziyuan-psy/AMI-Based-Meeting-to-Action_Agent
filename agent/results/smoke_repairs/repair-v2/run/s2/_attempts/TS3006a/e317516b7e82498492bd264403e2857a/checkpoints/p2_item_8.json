@@ -1,0 +1,453 @@
+{
+  "item_key": "TS3006a#8",
+  "record_id": null,
+  "item_type": "decisions",
+  "item_text": "Pricing set at 25 Euros.",
+  "state": "accepted",
+  "recordable": true,
+  "fields": {
+    "status": "adopted",
+    "prior_context_needed": false,
+    "related_items": [],
+    "reference": [
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3006a.json",
+        "locator": "TS3006a.A.dialog-act.vkaraisk.130"
+      }
+    ]
+  },
+  "draft_fields": {
+    "status": "adopted",
+    "related_items": [],
+    "prior_context_needed": false,
+    "used_participant_lookup": false,
+    "evidence_da_ids": [
+      "TS3006a.A.dialog-act.vkaraisk.130"
+    ],
+    "owner": null,
+    "owner_basis": "missing",
+    "deadline": null,
+    "deadline_basis": "missing"
+  },
+  "checks": {
+    "statement": {
+      "result": "pass",
+      "reason": "Pricing explicitly stated in dialogue: 'we can sell them at twenty five Euros'",
+      "quotes": [
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.130",
+          "quote": "Um we can sell them at twenty five Euros . Uh"
+        }
+      ],
+      "fields": [
+        "statement"
+      ]
+    },
+    "status": {
+      "result": "pass",
+      "reason": "Pricing claim supported by the same dialogue line",
+      "quotes": [
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.130",
+          "quote": "Um we can sell them at twenty five Euros . Uh"
+        }
+      ],
+      "fields": [
+        "status"
+      ]
+    },
+    "conflict": {
+      "result": "pass",
+      "reason": "No conflicting statements about price found in available dialogue",
+      "quotes": [
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.130",
+          "quote": "Um we can sell them at twenty five Euros . Uh"
+        }
+      ],
+      "fields": [
+        "statement"
+      ]
+    },
+    "relation": {
+      "result": "not_applicable",
+      "reason": "No related items to relate to in this assessment",
+      "quotes": [],
+      "fields": [
+        "related_items"
+      ]
+    },
+    "owner": {
+      "result": "not_applicable",
+      "reason": "field_not_applicable",
+      "quotes": [],
+      "fields": [
+        "owner"
+      ]
+    },
+    "deadline": {
+      "result": "not_applicable",
+      "reason": "field_not_applicable",
+      "quotes": [],
+      "fields": [
+        "deadline"
+      ]
+    }
+  },
+  "unresolved_fields": [],
+  "observed_evidence_da_ids": [
+    "TS3006a.A.dialog-act.vkaraisk.130",
+    "TS3006a.A.dialog-act.vkaraisk.131",
+    "TS3006a.A.dialog-act.vkaraisk.132",
+    "TS3006a.A.dialog-act.vkaraisk.129",
+    "TS3006a.A.dialog-act.vkaraisk.133"
+  ],
+  "initial_context": {
+    "item": {
+      "type": "decisions",
+      "text": "Pricing set at 25 Euros.",
+      "flags": []
+    },
+    "current_meeting": "TS3006a",
+    "earlier_meetings": [],
+    "roster": [
+      {
+        "speaker": "A",
+        "participant_id": "MTD021PM",
+        "role": "PM"
+      },
+      {
+        "speaker": "B",
+        "participant_id": "MTD023UID",
+        "role": "UI"
+      },
+      {
+        "speaker": "C",
+        "participant_id": "MTD022ID",
+        "role": "ID"
+      },
+      {
+        "speaker": "D",
+        "participant_id": "MTD024ME",
+        "role": "ME"
+      }
+    ],
+    "observed_dialogue": [
+      {
+        "da_id": "TS3006a.A.dialog-act.vkaraisk.130",
+        "meeting_id": "TS3006a",
+        "text": "Um we can sell them at twenty five Euros . Uh",
+        "participant": "MTD021PM",
+        "role": "PM"
+      },
+      {
+        "da_id": "TS3006a.A.dialog-act.vkaraisk.131",
+        "meeting_id": "TS3006a",
+        "text": "the aim is to reach <disfmarker> uh uh to sell as much as fifty million Euros .",
+        "participant": "MTD021PM",
+        "role": "PM"
+      },
+      {
+        "da_id": "TS3006a.A.dialog-act.vkaraisk.132",
+        "meeting_id": "TS3006a",
+        "text": "Uh that's quite a big amount of money .",
+        "participant": "MTD021PM",
+        "role": "PM"
+      },
+      {
+        "da_id": "TS3006a.A.dialog-act.vkaraisk.129",
+        "participant": "MTD021PM",
+        "role": "PM",
+        "text": "we have a financial aspect to this project . <vocalsound>"
+      },
+      {
+        "da_id": "TS3006a.A.dialog-act.vkaraisk.133",
+        "participant": "MTD021PM",
+        "role": "PM",
+        "text": "And the production cost should be the half of the selling price ."
+      }
+    ],
+    "peer_items": [
+      {
+        "item_key": "TS3006a#0",
+        "type": "actions",
+        "text": "Industrial Designer to produce a working design."
+      },
+      {
+        "item_key": "TS3006a#1",
+        "type": "actions",
+        "text": "UI Designer to specify the technical functions."
+      },
+      {
+        "item_key": "TS3006a#2",
+        "type": "actions",
+        "text": "Marketing Expert to define user requirements."
+      },
+      {
+        "item_key": "TS3006a#3",
+        "type": "actions",
+        "text": "Industrial Designer to work on the conceptual design."
+      },
+      {
+        "item_key": "TS3006a#4",
+        "type": "problems",
+        "text": "Screen missing reported by ME; requires repair or replacement."
+      },
+      {
+        "item_key": "TS3006a#5",
+        "type": "problems",
+        "text": "ID participant slow; preparation incomplete; English communication required."
+      },
+      {
+        "item_key": "TS3006a#6",
+        "type": "problems",
+        "text": "Equipment/tool reliability issues noted by PM."
+      },
+      {
+        "item_key": "TS3006a#7",
+        "type": "decisions",
+        "text": "Develop a new remote control that is original, trendy and user-friendly."
+      }
+    ],
+    "provisional_values": {
+      "owner": null,
+      "owner_basis": "missing",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "status": "adopted",
+      "related_items": []
+    },
+    "candidate_evidence_da_ids": [
+      "TS3006a.A.dialog-act.vkaraisk.130",
+      "TS3006a.A.dialog-act.vkaraisk.131",
+      "TS3006a.A.dialog-act.vkaraisk.132"
+    ]
+  },
+  "observed_documents": [],
+  "document_evidence": [],
+  "relation_evidence": [],
+  "history": [
+    {
+      "item": "TS3006a#8",
+      "step": 1,
+      "flags": [],
+      "action": "assess_item",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Pricing explicitly stated in dialogue: 'we can sell them at twenty five Euros'",
+          "quotes": [
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.130",
+              "quote": "Um we can sell them at twenty five Euros . Uh"
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Pricing claim supported by the same dialogue line",
+          "quotes": [
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.130",
+              "quote": "Um we can sell them at twenty five Euros . Uh"
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No conflicting statements about price found in available dialogue",
+          "quotes": [
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.130",
+              "quote": "Um we can sell them at twenty five Euros . Uh"
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No related items to relate to in this assessment",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        },
+        "owner": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        }
+      },
+      "decision": "accept",
+      "reason": "all_required_checks_passed",
+      "assessed_text": "Pricing set at 25 Euros.",
+      "requested_action": "accept",
+      "proposed_fields": {
+        "status": "adopted",
+        "related_items": [],
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "TS3006a.A.dialog-act.vkaraisk.130"
+        ],
+        "owner": null,
+        "owner_basis": "missing",
+        "deadline": null,
+        "deadline_basis": "missing"
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Pricing explicitly stated in dialogue: 'we can sell them at twenty five Euros'",
+          "quotes": [
+            "TS3006a.A.dialog-act.vkaraisk.130"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Pricing claim supported by the same dialogue line",
+          "quotes": [
+            "TS3006a.A.dialog-act.vkaraisk.130"
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No conflicting statements about price found in available dialogue",
+          "quotes": [
+            "TS3006a.A.dialog-act.vkaraisk.130"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No related items to relate to in this assessment",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "status": "adopted",
+        "related_items": [],
+        "statement": {
+          "result": "pass",
+          "reason": "Pricing explicitly stated in dialogue: 'we can sell them at twenty five Euros'",
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.130"
+          ]
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "Pricing claim supported by the same dialogue line",
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.130"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No conflicting statements about price found in available dialogue",
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.130"
+          ],
+          "affected_fields": [
+            "statement"
+          ]
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No related items to relate to in this assessment",
+          "evidence_da_ids": []
+        },
+        "next_action": "accept"
+      },
+      "evidence_bindings": {
+        "statement": [
+          "TS3006a.A.dialog-act.vkaraisk.130"
+        ],
+        "status": [
+          "TS3006a.A.dialog-act.vkaraisk.130"
+        ],
+        "conflict": [
+          "TS3006a.A.dialog-act.vkaraisk.130"
+        ]
+      },
+      "raw_tool_input": {
+        "status": "adopted",
+        "related_items": [],
+        "statement": {
+          "result": "pass",
+          "reason": "Pricing explicitly stated in dialogue: 'we can sell them at twenty five Euros'",
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.130"
+          ]
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "Pricing claim supported by the same dialogue line",
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.130"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No conflicting statements about price found in available dialogue",
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.130"
+          ],
+          "affected_fields": [
+            "statement"
+          ]
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No related items to relate to in this assessment",
+          "evidence_da_ids": []
+        },
+        "next_action": "accept"
+      },
+      "protocol_normalizations": []
+    },
+    {
+      "item": "TS3006a#8",
+      "step": 1,
+      "flags": [],
+      "action": "accept",
+      "outcome": "accepted",
+      "termination_reason": "all_required_checks_passed",
+      "unresolved_fields": []
+    }
+  ],
+  "lookups": 0,
+  "termination_reason": "all_required_checks_passed",
+  "clarifications": []
+}

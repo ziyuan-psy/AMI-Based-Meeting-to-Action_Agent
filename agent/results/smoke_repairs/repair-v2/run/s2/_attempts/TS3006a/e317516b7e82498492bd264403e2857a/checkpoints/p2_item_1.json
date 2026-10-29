@@ -1,0 +1,632 @@
+{
+  "item_key": "TS3006a#1",
+  "record_id": null,
+  "item_type": "actions",
+  "item_text": "UI Designer to specify the technical functions.",
+  "state": "pending",
+  "recordable": true,
+  "fields": {
+    "status": "open",
+    "prior_context_needed": false,
+    "related_items": [],
+    "owner": [
+      "MTD023UID"
+    ],
+    "owner_basis": "explicit",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "reference": [
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3006a.json",
+        "locator": "TS3006a.A.dialog-act.vkaraisk.149"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3006a.json",
+        "locator": "TS3006a.A.dialog-act.vkaraisk.150"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3006a.json",
+        "locator": "TS3006a.B.dialog-act.vkaraisk.59"
+      }
+    ]
+  },
+  "draft_fields": {
+    "status": "open",
+    "related_items": [],
+    "owner": [
+      "MTD023UID"
+    ],
+    "owner_basis": "explicit",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "prior_context_needed": false,
+    "used_participant_lookup": false,
+    "evidence_da_ids": [
+      "TS3006a.A.dialog-act.vkaraisk.149",
+      "TS3006a.A.dialog-act.vkaraisk.150",
+      "TS3006a.B.dialog-act.vkaraisk.59"
+    ]
+  },
+  "checks": {
+    "statement": {
+      "result": "pass",
+      "reason": "The dialogue assigns a task to UI designer to specify the technical functions. It matches the observed dialogue: PM states requirement and UI responds with agreement. The action scope is to specify technical functions by UI Designer.",
+      "quotes": [
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.149",
+          "quote": "Uh the User Interface Designer should specify the technical functions ."
+        },
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.150",
+          "quote": "Right ? Yeah ?"
+        },
+        {
+          "da_id": "TS3006a.B.dialog-act.vkaraisk.59",
+          "quote": "Yep ."
+        }
+      ],
+      "fields": [
+        "statement"
+      ]
+    },
+    "owner": {
+      "result": "pass",
+      "reason": "The stated owner MTD023UID exists in the observed dialogue as the UI designer (participant with UI role) engaged in the action context.",
+      "quotes": [
+        {
+          "da_id": "TS3006a.B.dialog-act.vkaraisk.59",
+          "quote": "Yep ."
+        }
+      ],
+      "fields": [
+        "owner"
+      ]
+    },
+    "deadline": {
+      "result": "uncertain",
+      "reason": "deadline_unresolved",
+      "quotes": [
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.149",
+          "quote": "Uh the User Interface Designer should specify the technical functions ."
+        },
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.150",
+          "quote": "Right ? Yeah ?"
+        }
+      ],
+      "fields": [
+        "deadline"
+      ]
+    },
+    "status": {
+      "result": "pass",
+      "reason": "The item is described as open in provisional_values; current dialogue does not indicate closure; status remains open.",
+      "quotes": [
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.149",
+          "quote": "Uh the User Interface Designer should specify the technical functions ."
+        }
+      ],
+      "fields": [
+        "status"
+      ]
+    },
+    "conflict": {
+      "result": "pass",
+      "reason": "No conflicting statements detected within the provided dialogue about ownership, deadline, or scope.",
+      "quotes": [
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.149",
+          "quote": "Uh the User Interface Designer should specify the technical functions ."
+        },
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.150",
+          "quote": "Right ? Yeah ?"
+        },
+        {
+          "da_id": "TS3006a.B.dialog-act.vkaraisk.59",
+          "quote": "Yep ."
+        }
+      ],
+      "fields": [
+        "statement",
+        "owner",
+        "deadline",
+        "status"
+      ]
+    },
+    "relation": {
+      "result": "not_applicable",
+      "reason": "No prior related item to relate to; this is a standalone current item without identified earlier item in provided data.",
+      "quotes": [],
+      "fields": [
+        "related_items"
+      ]
+    }
+  },
+  "unresolved_fields": [
+    "deadline"
+  ],
+  "observed_evidence_da_ids": [
+    "TS3006a.A.dialog-act.vkaraisk.149",
+    "TS3006a.A.dialog-act.vkaraisk.150",
+    "TS3006a.B.dialog-act.vkaraisk.59",
+    "TS3006a.A.dialog-act.vkaraisk.148",
+    "TS3006a.A.dialog-act.vkaraisk.151"
+  ],
+  "initial_context": {
+    "item": {
+      "type": "actions",
+      "text": "UI Designer to specify the technical functions.",
+      "flags": []
+    },
+    "current_meeting": "TS3006a",
+    "earlier_meetings": [],
+    "roster": [
+      {
+        "speaker": "A",
+        "participant_id": "MTD021PM",
+        "role": "PM"
+      },
+      {
+        "speaker": "B",
+        "participant_id": "MTD023UID",
+        "role": "UI"
+      },
+      {
+        "speaker": "C",
+        "participant_id": "MTD022ID",
+        "role": "ID"
+      },
+      {
+        "speaker": "D",
+        "participant_id": "MTD024ME",
+        "role": "ME"
+      }
+    ],
+    "observed_dialogue": [
+      {
+        "da_id": "TS3006a.A.dialog-act.vkaraisk.149",
+        "meeting_id": "TS3006a",
+        "text": "Uh the User Interface Designer should specify the technical functions .",
+        "participant": "MTD021PM",
+        "role": "PM"
+      },
+      {
+        "da_id": "TS3006a.A.dialog-act.vkaraisk.150",
+        "meeting_id": "TS3006a",
+        "text": "Right ? Yeah ?",
+        "participant": "MTD021PM",
+        "role": "PM"
+      },
+      {
+        "da_id": "TS3006a.B.dialog-act.vkaraisk.59",
+        "meeting_id": "TS3006a",
+        "text": "Yep .",
+        "participant": "MTD023UID",
+        "role": "UI"
+      },
+      {
+        "da_id": "TS3006a.A.dialog-act.vkaraisk.148",
+        "participant": "MTD021PM",
+        "role": "PM",
+        "text": "Okay ."
+      },
+      {
+        "da_id": "TS3006a.A.dialog-act.vkaraisk.151",
+        "participant": "MTD021PM",
+        "role": "PM",
+        "text": "<vocalsound> And the Marketing uh Expert should come up with user requirements ."
+      }
+    ],
+    "peer_items": [
+      {
+        "item_key": "TS3006a#0",
+        "type": "actions",
+        "text": "Industrial Designer to produce a working design."
+      }
+    ],
+    "provisional_values": {
+      "owner": [
+        "MTD023UID"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "status": "open",
+      "related_items": []
+    },
+    "candidate_evidence_da_ids": [
+      "TS3006a.A.dialog-act.vkaraisk.149",
+      "TS3006a.A.dialog-act.vkaraisk.150",
+      "TS3006a.B.dialog-act.vkaraisk.59"
+    ]
+  },
+  "observed_documents": [],
+  "document_evidence": [],
+  "relation_evidence": [],
+  "history": [
+    {
+      "item": "TS3006a#1",
+      "step": 1,
+      "flags": [],
+      "action": "assess_item",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue assigns a task to UI designer to specify the technical functions. It matches the observed dialogue: PM states requirement and UI responds with agreement. The action scope is to specify technical functions by UI Designer.",
+          "quotes": [
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.149",
+              "quote": "Uh the User Interface Designer should specify the technical functions ."
+            },
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.150",
+              "quote": "Right ? Yeah ?"
+            },
+            {
+              "da_id": "TS3006a.B.dialog-act.vkaraisk.59",
+              "quote": "Yep ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "The stated owner MTD023UID exists in the observed dialogue as the UI designer (participant with UI role) engaged in the action context.",
+          "quotes": [
+            {
+              "da_id": "TS3006a.B.dialog-act.vkaraisk.59",
+              "quote": "Yep ."
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "deadline_unresolved",
+          "quotes": [
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.149",
+              "quote": "Uh the User Interface Designer should specify the technical functions ."
+            },
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.150",
+              "quote": "Right ? Yeah ?"
+            }
+          ],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "The item is described as open in provisional_values; current dialogue does not indicate closure; status remains open.",
+          "quotes": [
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.149",
+              "quote": "Uh the User Interface Designer should specify the technical functions ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No conflicting statements detected within the provided dialogue about ownership, deadline, or scope.",
+          "quotes": [
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.149",
+              "quote": "Uh the User Interface Designer should specify the technical functions ."
+            },
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.150",
+              "quote": "Right ? Yeah ?"
+            },
+            {
+              "da_id": "TS3006a.B.dialog-act.vkaraisk.59",
+              "quote": "Yep ."
+            }
+          ],
+          "fields": [
+            "statement",
+            "owner",
+            "deadline",
+            "status"
+          ]
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No prior related item to relate to; this is a standalone current item without identified earlier item in provided data.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "decision": "request_clarification",
+      "reason": "supported_statement_with_unresolved_fields",
+      "assessed_text": "UI Designer to specify the technical functions.",
+      "requested_action": "accept",
+      "proposed_fields": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD023UID"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "TS3006a.A.dialog-act.vkaraisk.149",
+          "TS3006a.A.dialog-act.vkaraisk.150",
+          "TS3006a.B.dialog-act.vkaraisk.59"
+        ]
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue assigns a task to UI designer to specify the technical functions. It matches the observed dialogue: PM states requirement and UI responds with agreement. The action scope is to specify technical functions by UI Designer.",
+          "quotes": [
+            "TS3006a.A.dialog-act.vkaraisk.149",
+            "TS3006a.A.dialog-act.vkaraisk.150",
+            "TS3006a.B.dialog-act.vkaraisk.59"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "The stated owner MTD023UID exists in the observed dialogue as the UI designer (participant with UI role) engaged in the action context.",
+          "quotes": [
+            "TS3006a.B.dialog-act.vkaraisk.59"
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "No explicit deadline is mentioned in the current dialogue; baseline expects deadline to be null or explicit wording. The text lacks a deadline constraint.",
+          "quotes": [
+            "TS3006a.A.dialog-act.vkaraisk.149",
+            "TS3006a.A.dialog-act.vkaraisk.150"
+          ],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "The item is described as open in provisional_values; current dialogue does not indicate closure; status remains open.",
+          "quotes": [
+            "TS3006a.A.dialog-act.vkaraisk.149"
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No conflicting statements detected within the provided dialogue about ownership, deadline, or scope.",
+          "quotes": [
+            "TS3006a.A.dialog-act.vkaraisk.149",
+            "TS3006a.A.dialog-act.vkaraisk.150",
+            "TS3006a.B.dialog-act.vkaraisk.59"
+          ],
+          "fields": [
+            "statement",
+            "owner",
+            "deadline",
+            "status"
+          ]
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No prior related item to relate to; this is a standalone current item without identified earlier item in provided data.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD023UID"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue assigns a task to UI designer to specify the technical functions. It matches the observed dialogue: PM states requirement and UI responds with agreement. The action scope is to specify technical functions by UI Designer.",
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.149",
+            "TS3006a.A.dialog-act.vkaraisk.150",
+            "TS3006a.B.dialog-act.vkaraisk.59"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "The stated owner MTD023UID exists in the observed dialogue as the UI designer (participant with UI role) engaged in the action context.",
+          "evidence_da_ids": [
+            "TS3006a.B.dialog-act.vkaraisk.59"
+          ]
+        },
+        "deadline_check": {
+          "result": "uncertain",
+          "reason": "No explicit deadline is mentioned in the current dialogue; baseline expects deadline to be null or explicit wording. The text lacks a deadline constraint.",
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.149",
+            "TS3006a.A.dialog-act.vkaraisk.150"
+          ]
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "The item is described as open in provisional_values; current dialogue does not indicate closure; status remains open.",
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.149"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No conflicting statements detected within the provided dialogue about ownership, deadline, or scope.",
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.149",
+            "TS3006a.A.dialog-act.vkaraisk.150",
+            "TS3006a.B.dialog-act.vkaraisk.59"
+          ],
+          "affected_fields": [
+            "statement",
+            "owner",
+            "deadline",
+            "status"
+          ]
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No prior related item to relate to; this is a standalone current item without identified earlier item in provided data.",
+          "evidence_da_ids": []
+        },
+        "next_action": "accept"
+      },
+      "evidence_bindings": {
+        "statement": [
+          "TS3006a.A.dialog-act.vkaraisk.149",
+          "TS3006a.A.dialog-act.vkaraisk.150",
+          "TS3006a.B.dialog-act.vkaraisk.59"
+        ],
+        "owner": [
+          "TS3006a.B.dialog-act.vkaraisk.59"
+        ],
+        "deadline": [
+          "TS3006a.A.dialog-act.vkaraisk.149",
+          "TS3006a.A.dialog-act.vkaraisk.150"
+        ],
+        "status": [
+          "TS3006a.A.dialog-act.vkaraisk.149"
+        ],
+        "conflict": [
+          "TS3006a.A.dialog-act.vkaraisk.149",
+          "TS3006a.A.dialog-act.vkaraisk.150",
+          "TS3006a.B.dialog-act.vkaraisk.59"
+        ]
+      },
+      "raw_tool_input": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD023UID"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue assigns a task to UI designer to specify the technical functions. It matches the observed dialogue: PM states requirement and UI responds with agreement. The action scope is to specify technical functions by UI Designer.",
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.149",
+            "TS3006a.A.dialog-act.vkaraisk.150",
+            "TS3006a.B.dialog-act.vkaraisk.59"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "The stated owner MTD023UID exists in the observed dialogue as the UI designer (participant with UI role) engaged in the action context.",
+          "evidence_da_ids": [
+            "TS3006a.B.dialog-act.vkaraisk.59"
+          ]
+        },
+        "deadline_check": {
+          "result": "uncertain",
+          "reason": "No explicit deadline is mentioned in the current dialogue; baseline expects deadline to be null or explicit wording. The text lacks a deadline constraint.",
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.149",
+            "TS3006a.A.dialog-act.vkaraisk.150"
+          ]
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "The item is described as open in provisional_values; current dialogue does not indicate closure; status remains open.",
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.149"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No conflicting statements detected within the provided dialogue about ownership, deadline, or scope.",
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.149",
+            "TS3006a.A.dialog-act.vkaraisk.150",
+            "TS3006a.B.dialog-act.vkaraisk.59"
+          ],
+          "affected_fields": [
+            "statement",
+            "owner",
+            "deadline",
+            "status"
+          ]
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No prior related item to relate to; this is a standalone current item without identified earlier item in provided data.",
+          "evidence_da_ids": []
+        },
+        "next_action": "accept"
+      },
+      "protocol_normalizations": []
+    },
+    {
+      "item": "TS3006a#1",
+      "step": 1,
+      "flags": [],
+      "action": "stop",
+      "outcome": "pending",
+      "termination_reason": "supported_statement_with_unresolved_fields",
+      "unresolved_fields": [
+        "deadline"
+      ]
+    }
+  ],
+  "lookups": 0,
+  "termination_reason": "supported_statement_with_unresolved_fields",
+  "clarifications": [
+    {
+      "request_id": "79bf431f1c7f74e9",
+      "item_key": "TS3006a#1",
+      "record_id": null,
+      "field": "deadline",
+      "question": "What is the agreed deadline, in its original wording?",
+      "item_text": "UI Designer to specify the technical functions.",
+      "reason": "deadline_unresolved",
+      "evidence_da_ids": [
+        "TS3006a.A.dialog-act.vkaraisk.149",
+        "TS3006a.A.dialog-act.vkaraisk.150"
+      ],
+      "available_evidence_da_ids": [
+        "TS3006a.A.dialog-act.vkaraisk.149",
+        "TS3006a.A.dialog-act.vkaraisk.150",
+        "TS3006a.B.dialog-act.vkaraisk.59",
+        "TS3006a.A.dialog-act.vkaraisk.148",
+        "TS3006a.A.dialog-act.vkaraisk.151"
+      ],
+      "status": "open",
+      "termination_reason": "supported_statement_with_unresolved_fields"
+    }
+  ]
+}

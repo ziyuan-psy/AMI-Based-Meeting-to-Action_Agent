@@ -1,0 +1,637 @@
+{
+  "item_key": "IS1008a#3",
+  "record_id": null,
+  "item_type": "actions",
+  "item_text": "Jointly develop plan including cost and market strategy to compete.",
+  "state": "pending",
+  "recordable": true,
+  "fields": {
+    "status": "open",
+    "prior_context_needed": false,
+    "related_items": [],
+    "owner": [
+      "MIE085",
+      "FIE073"
+    ],
+    "owner_basis": "explicit",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "reference": [
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/IS1008a.json",
+        "locator": "IS1008a.A.dialog-act.s9553330.96"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/IS1008a.json",
+        "locator": "IS1008a.A.dialog-act.s9553330.97"
+      }
+    ]
+  },
+  "draft_fields": {
+    "status": "open",
+    "related_items": [],
+    "owner": [
+      "MIE085",
+      "FIE073"
+    ],
+    "owner_basis": "explicit",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "prior_context_needed": false,
+    "used_participant_lookup": false,
+    "evidence_da_ids": [
+      "IS1008a.A.dialog-act.s9553330.96",
+      "IS1008a.A.dialog-act.s9553330.97"
+    ]
+  },
+  "checks": {
+    "statement": {
+      "result": "pass",
+      "reason": "The dialogue discusses jointly developing a plan including cost and market strategy; the task scope matches the item text and the dialogue supports proceeding to plan creation.",
+      "quotes": [
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.96",
+          "quote": "so the best thing is you <disfmarker> uh both of uh the Christine and you discuss with yourself , okay , and come up with the cost ,"
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.97",
+          "quote": "and how we are going to compete in the market , okay , in the the technically , or in the sales wise , okay , the commercial wise , okay ."
+        }
+      ],
+      "fields": [
+        "statement"
+      ]
+    },
+    "owner": {
+      "result": "pass",
+      "reason": "Owner is explicitly stated in provisional values (MIE085 and FIE073) and consistent with dialogue focusing on plan creation.",
+      "quotes": [
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.96",
+          "quote": "so the best thing is you <disfmarker> uh both of uh the Christine and you discuss with yourself , okay , and come up with the cost ,"
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.97",
+          "quote": "and how we are going to compete in the market , okay , in the the technically , or in the sales wise , okay , the commercial wise , okay ."
+        }
+      ],
+      "fields": [
+        "owner"
+      ]
+    },
+    "deadline": {
+      "result": "uncertain",
+      "reason": "deadline_unresolved",
+      "quotes": [
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.96",
+          "quote": "so the best thing is you <disfmarker> uh both of uh the Christine and you discuss with yourself , okay , and come up with the cost ,"
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.97",
+          "quote": "and how we are going to compete in the market , okay , in the the technically , or in the sales wise , okay , the commercial wise , okay ."
+        }
+      ],
+      "fields": [
+        "deadline"
+      ]
+    },
+    "status": {
+      "result": "pass",
+      "reason": "The item is currently open per provisional values; the dialogue indicates ongoing discussion and next steps; status is consistent with 'open'.",
+      "quotes": [
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.96",
+          "quote": "so the best thing is you <disfmarker> uh both of uh the Christine and you discuss with yourself , okay , and come up with the cost ,"
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.97",
+          "quote": "and how we are going to compete in the market , okay , in the the technically , or in the sales wise , okay , the commercial wise , okay ."
+        }
+      ],
+      "fields": [
+        "status"
+      ]
+    },
+    "conflict": {
+      "result": "pass",
+      "reason": "No contradictions detected in the delivered evidence relevant to the item text.",
+      "quotes": [
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.96",
+          "quote": "so the best thing is you <disfmarker> uh both of uh the Christine and you discuss with yourself , okay , and come up with the cost ,"
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.97",
+          "quote": "and how we are going to compete in the market , okay , in the the technically , or in the sales wise , okay , the commercial wise , okay ."
+        }
+      ],
+      "fields": [
+        "statement",
+        "owner",
+        "deadline",
+        "status"
+      ]
+    },
+    "relation": {
+      "result": "not_applicable",
+      "reason": "No prior related_items exist to assess relation; this is an initial item in the current context.",
+      "quotes": [],
+      "fields": [
+        "related_items"
+      ]
+    }
+  },
+  "unresolved_fields": [
+    "deadline"
+  ],
+  "observed_evidence_da_ids": [
+    "IS1008a.A.dialog-act.s9553330.96",
+    "IS1008a.A.dialog-act.s9553330.97",
+    "IS1008a.A.dialog-act.s9553330.95",
+    "IS1008a.A.dialog-act.s9553330.98"
+  ],
+  "initial_context": {
+    "item": {
+      "type": "actions",
+      "text": "Jointly develop plan including cost and market strategy to compete.",
+      "flags": [
+        "JOINT_OWNER_CHECK"
+      ]
+    },
+    "current_meeting": "IS1008a",
+    "earlier_meetings": [],
+    "roster": [
+      {
+        "speaker": "A",
+        "participant_id": "MIO086",
+        "role": "PM"
+      },
+      {
+        "speaker": "B",
+        "participant_id": "FIE038",
+        "role": "UI"
+      },
+      {
+        "speaker": "C",
+        "participant_id": "FIE073",
+        "role": "ID"
+      },
+      {
+        "speaker": "D",
+        "participant_id": "MIE085",
+        "role": "ME"
+      }
+    ],
+    "observed_dialogue": [
+      {
+        "da_id": "IS1008a.A.dialog-act.s9553330.96",
+        "meeting_id": "IS1008a",
+        "text": "so the best thing is you <disfmarker> uh both of uh the Christine and you discuss with yourself , okay , and come up with the cost ,",
+        "participant": "MIO086",
+        "role": "PM"
+      },
+      {
+        "da_id": "IS1008a.A.dialog-act.s9553330.97",
+        "meeting_id": "IS1008a",
+        "text": "and how we are going to compete in the market , okay , in the the technically , or in the sales wise , okay , the commercial wise , okay .",
+        "participant": "MIO086",
+        "role": "PM"
+      },
+      {
+        "da_id": "IS1008a.A.dialog-act.s9553330.95",
+        "participant": "MIO086",
+        "role": "PM",
+        "text": "Yes , that's <disfmarker> you have to decide , okay ,"
+      },
+      {
+        "da_id": "IS1008a.A.dialog-act.s9553330.98",
+        "participant": "MIO086",
+        "role": "PM",
+        "text": "Then uh we have to design , okay , how long it will take the whole project , okay , how much is going to cost us , and how much we are going to benefit for the company ."
+      }
+    ],
+    "peer_items": [
+      {
+        "item_key": "IS1008a#0",
+        "type": "actions",
+        "text": "Deliver written project plan by next meeting."
+      },
+      {
+        "item_key": "IS1008a#1",
+        "type": "actions",
+        "text": "The industrial designer (FIE073) will deliver a written project plan including functional and technical design, required team, timeline and initial budget within two weeks, and identify contributors from marketing, technical and administration who will contribute to the plan."
+      },
+      {
+        "item_key": "IS1008a#2",
+        "type": "actions",
+        "text": "The user interface designer (FIE038) will determine the functional design, discuss with Ed to ensure usability and user acceptance, and coordinate usability testing with Christine's team."
+      }
+    ],
+    "provisional_values": {
+      "owner": [
+        "MIE085",
+        "FIE073"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "status": "open",
+      "related_items": []
+    },
+    "candidate_evidence_da_ids": [
+      "IS1008a.A.dialog-act.s9553330.96",
+      "IS1008a.A.dialog-act.s9553330.97"
+    ]
+  },
+  "observed_documents": [],
+  "document_evidence": [],
+  "relation_evidence": [],
+  "history": [
+    {
+      "item": "IS1008a#3",
+      "step": 1,
+      "flags": [
+        "JOINT_OWNER_CHECK"
+      ],
+      "action": "assess_item",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue discusses jointly developing a plan including cost and market strategy; the task scope matches the item text and the dialogue supports proceeding to plan creation.",
+          "quotes": [
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.96",
+              "quote": "so the best thing is you <disfmarker> uh both of uh the Christine and you discuss with yourself , okay , and come up with the cost ,"
+            },
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.97",
+              "quote": "and how we are going to compete in the market , okay , in the the technically , or in the sales wise , okay , the commercial wise , okay ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Owner is explicitly stated in provisional values (MIE085 and FIE073) and consistent with dialogue focusing on plan creation.",
+          "quotes": [
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.96",
+              "quote": "so the best thing is you <disfmarker> uh both of uh the Christine and you discuss with yourself , okay , and come up with the cost ,"
+            },
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.97",
+              "quote": "and how we are going to compete in the market , okay , in the the technically , or in the sales wise , okay , the commercial wise , okay ."
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "deadline_unresolved",
+          "quotes": [
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.96",
+              "quote": "so the best thing is you <disfmarker> uh both of uh the Christine and you discuss with yourself , okay , and come up with the cost ,"
+            },
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.97",
+              "quote": "and how we are going to compete in the market , okay , in the the technically , or in the sales wise , okay , the commercial wise , okay ."
+            }
+          ],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "The item is currently open per provisional values; the dialogue indicates ongoing discussion and next steps; status is consistent with 'open'.",
+          "quotes": [
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.96",
+              "quote": "so the best thing is you <disfmarker> uh both of uh the Christine and you discuss with yourself , okay , and come up with the cost ,"
+            },
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.97",
+              "quote": "and how we are going to compete in the market , okay , in the the technically , or in the sales wise , okay , the commercial wise , okay ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions detected in the delivered evidence relevant to the item text.",
+          "quotes": [
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.96",
+              "quote": "so the best thing is you <disfmarker> uh both of uh the Christine and you discuss with yourself , okay , and come up with the cost ,"
+            },
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.97",
+              "quote": "and how we are going to compete in the market , okay , in the the technically , or in the sales wise , okay , the commercial wise , okay ."
+            }
+          ],
+          "fields": [
+            "statement",
+            "owner",
+            "deadline",
+            "status"
+          ]
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No prior related_items exist to assess relation; this is an initial item in the current context.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "decision": "request_clarification",
+      "reason": "supported_statement_with_unresolved_fields",
+      "assessed_text": "Jointly develop plan including cost and market strategy to compete.",
+      "requested_action": "accept",
+      "proposed_fields": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MIE085",
+          "FIE073"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "IS1008a.A.dialog-act.s9553330.96",
+          "IS1008a.A.dialog-act.s9553330.97"
+        ]
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue discusses jointly developing a plan including cost and market strategy; the task scope matches the item text and the dialogue supports proceeding to plan creation.",
+          "quotes": [
+            "IS1008a.A.dialog-act.s9553330.96",
+            "IS1008a.A.dialog-act.s9553330.97"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Owner is explicitly stated in provisional values (MIE085 and FIE073) and consistent with dialogue focusing on plan creation.",
+          "quotes": [
+            "IS1008a.A.dialog-act.s9553330.96",
+            "IS1008a.A.dialog-act.s9553330.97"
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "No deadline is stated in current dialogue for this item; deadline is missing in provisional values.",
+          "quotes": [
+            "IS1008a.A.dialog-act.s9553330.96",
+            "IS1008a.A.dialog-act.s9553330.97"
+          ],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "The item is currently open per provisional values; the dialogue indicates ongoing discussion and next steps; status is consistent with 'open'.",
+          "quotes": [
+            "IS1008a.A.dialog-act.s9553330.96",
+            "IS1008a.A.dialog-act.s9553330.97"
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions detected in the delivered evidence relevant to the item text.",
+          "quotes": [
+            "IS1008a.A.dialog-act.s9553330.96",
+            "IS1008a.A.dialog-act.s9553330.97"
+          ],
+          "fields": [
+            "statement",
+            "owner",
+            "deadline",
+            "status"
+          ]
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No prior related_items exist to assess relation; this is an initial item in the current context.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MIE085",
+          "FIE073"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue discusses jointly developing a plan including cost and market strategy; the task scope matches the item text and the dialogue supports proceeding to plan creation.",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.96",
+            "IS1008a.A.dialog-act.s9553330.97"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "Owner is explicitly stated in provisional values (MIE085 and FIE073) and consistent with dialogue focusing on plan creation.",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.96",
+            "IS1008a.A.dialog-act.s9553330.97"
+          ]
+        },
+        "deadline_check": {
+          "result": "uncertain",
+          "reason": "No deadline is stated in current dialogue for this item; deadline is missing in provisional values.",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.96",
+            "IS1008a.A.dialog-act.s9553330.97"
+          ]
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "The item is currently open per provisional values; the dialogue indicates ongoing discussion and next steps; status is consistent with 'open'.",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.96",
+            "IS1008a.A.dialog-act.s9553330.97"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No contradictions detected in the delivered evidence relevant to the item text.",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.96",
+            "IS1008a.A.dialog-act.s9553330.97"
+          ],
+          "affected_fields": [
+            "statement",
+            "owner",
+            "deadline",
+            "status"
+          ]
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No prior related_items exist to assess relation; this is an initial item in the current context.",
+          "evidence_da_ids": []
+        },
+        "next_action": "accept"
+      },
+      "evidence_bindings": {
+        "statement": [
+          "IS1008a.A.dialog-act.s9553330.96",
+          "IS1008a.A.dialog-act.s9553330.97"
+        ],
+        "owner": [
+          "IS1008a.A.dialog-act.s9553330.96",
+          "IS1008a.A.dialog-act.s9553330.97"
+        ],
+        "deadline": [
+          "IS1008a.A.dialog-act.s9553330.96",
+          "IS1008a.A.dialog-act.s9553330.97"
+        ],
+        "status": [
+          "IS1008a.A.dialog-act.s9553330.96",
+          "IS1008a.A.dialog-act.s9553330.97"
+        ],
+        "conflict": [
+          "IS1008a.A.dialog-act.s9553330.96",
+          "IS1008a.A.dialog-act.s9553330.97"
+        ]
+      },
+      "raw_tool_input": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MIE085",
+          "FIE073"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue discusses jointly developing a plan including cost and market strategy; the task scope matches the item text and the dialogue supports proceeding to plan creation.",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.96",
+            "IS1008a.A.dialog-act.s9553330.97"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "Owner is explicitly stated in provisional values (MIE085 and FIE073) and consistent with dialogue focusing on plan creation.",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.96",
+            "IS1008a.A.dialog-act.s9553330.97"
+          ]
+        },
+        "deadline_check": {
+          "result": "uncertain",
+          "reason": "No deadline is stated in current dialogue for this item; deadline is missing in provisional values.",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.96",
+            "IS1008a.A.dialog-act.s9553330.97"
+          ]
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "The item is currently open per provisional values; the dialogue indicates ongoing discussion and next steps; status is consistent with 'open'.",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.96",
+            "IS1008a.A.dialog-act.s9553330.97"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No contradictions detected in the delivered evidence relevant to the item text.",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.96",
+            "IS1008a.A.dialog-act.s9553330.97"
+          ],
+          "affected_fields": [
+            "statement",
+            "owner",
+            "deadline",
+            "status"
+          ]
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No prior related_items exist to assess relation; this is an initial item in the current context.",
+          "evidence_da_ids": []
+        },
+        "next_action": "accept"
+      },
+      "protocol_normalizations": []
+    },
+    {
+      "item": "IS1008a#3",
+      "step": 1,
+      "flags": [
+        "JOINT_OWNER_CHECK"
+      ],
+      "action": "stop",
+      "outcome": "pending",
+      "termination_reason": "supported_statement_with_unresolved_fields",
+      "unresolved_fields": [
+        "deadline"
+      ]
+    }
+  ],
+  "lookups": 0,
+  "termination_reason": "supported_statement_with_unresolved_fields",
+  "clarifications": [
+    {
+      "request_id": "3ed44de76587c051",
+      "item_key": "IS1008a#3",
+      "record_id": null,
+      "field": "deadline",
+      "question": "What is the agreed deadline, in its original wording?",
+      "item_text": "Jointly develop plan including cost and market strategy to compete.",
+      "reason": "deadline_unresolved",
+      "evidence_da_ids": [
+        "IS1008a.A.dialog-act.s9553330.96",
+        "IS1008a.A.dialog-act.s9553330.97"
+      ],
+      "available_evidence_da_ids": [
+        "IS1008a.A.dialog-act.s9553330.96",
+        "IS1008a.A.dialog-act.s9553330.97",
+        "IS1008a.A.dialog-act.s9553330.95",
+        "IS1008a.A.dialog-act.s9553330.98"
+      ],
+      "status": "open",
+      "termination_reason": "supported_statement_with_unresolved_fields"
+    }
+  ]
+}

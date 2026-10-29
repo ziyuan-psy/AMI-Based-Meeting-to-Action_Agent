@@ -3,6 +3,7 @@ import json
 from pathlib import Path
 import shutil
 import sys
+import runpy
 import pytest
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'src'))
 from mta import config, pipeline
@@ -15,6 +16,15 @@ from test_consolidate import cand
 from test_observation import FixtureClient
 
 BUNDLE=config.ROOT/'results/decision_studies/decision-v3'
+
+
+@pytest.fixture(autouse=True)
+def captured_prompt_contract(monkeypatch):
+    """These are historical-response ablations, not responses to today's extraction prompt."""
+    from mta import extract
+    prompts=runpy.run_path(str(config.ROOT/'results/quality_repairs/release-v9/source/agent/src/mta/prompts.py'))
+    for name in ('EXTRACT_SYSTEM','CONSOLIDATE_SYSTEM','DECISION_CONSOLIDATE_SYSTEM'):
+        monkeypatch.setattr(extract,name,prompts[name])
 
 def decision(text,members,evidence='same-line'):
     return {**cand('decisions',text,evidence),'candidate_indexes':members}

@@ -1,0 +1,563 @@
+{
+  "item_key": "TS3006a#1",
+  "record_id": null,
+  "item_type": "actions",
+  "item_text": "Start on the conceptual design.",
+  "state": "pending",
+  "recordable": true,
+  "fields": {
+    "status": "open",
+    "prior_context_needed": false,
+    "related_items": [],
+    "owner": [
+      "MTD022ID"
+    ],
+    "owner_basis": "explicit",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "reference": [
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3006a.json",
+        "locator": "TS3006a.C.dialog-act.vkaraisk.117"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3006a.json",
+        "locator": "TS3006a.C.dialog-act.vkaraisk.118"
+      }
+    ]
+  },
+  "draft_fields": {
+    "status": "open",
+    "related_items": [],
+    "owner": [
+      "MTD022ID"
+    ],
+    "owner_basis": "explicit",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "prior_context_needed": false,
+    "used_participant_lookup": false,
+    "evidence_da_ids": [
+      "TS3006a.C.dialog-act.vkaraisk.117",
+      "TS3006a.C.dialog-act.vkaraisk.118"
+    ]
+  },
+  "checks": {
+    "statement": {
+      "result": "pass",
+      "reason": "Dialogue confirms assignment to start conceptual design; explicit owner present in roster and conversation shows ID taking on conceptual design work. Evidence: TS3006a.C.dialog-act.vkaraisk.117, TS3006a.C.dialog-act.vkaraisk.118",
+      "quotes": [
+        {
+          "da_id": "TS3006a.C.dialog-act.vkaraisk.117",
+          "quote": "I am gonna work on the conceptual design already"
+        },
+        {
+          "da_id": "TS3006a.C.dialog-act.vkaraisk.118",
+          "quote": "'cause yeah it's fairly important to know what kind of components we want to put in ."
+        }
+      ],
+      "fields": [
+        "statement"
+      ]
+    },
+    "owner": {
+      "result": "pass",
+      "reason": "Owner is explicitly specified (MTD022ID) in the current data and referenced in dialogue as taking on conceptual design task.",
+      "quotes": [
+        {
+          "da_id": "TS3006a.C.dialog-act.vkaraisk.117",
+          "quote": "I am gonna work on the conceptual design already"
+        },
+        {
+          "da_id": "TS3006a.C.dialog-act.vkaraisk.118",
+          "quote": "'cause yeah it's fairly important to know what kind of components we want to put in ."
+        }
+      ],
+      "fields": [
+        "owner"
+      ]
+    },
+    "deadline": {
+      "result": "uncertain",
+      "reason": "deadline_unresolved",
+      "quotes": [],
+      "fields": [
+        "deadline"
+      ]
+    },
+    "status": {
+      "result": "pass",
+      "reason": "Status open aligns with a newly initiated action; current dialogue demonstrates engagement but no closure.",
+      "quotes": [
+        {
+          "da_id": "TS3006a.C.dialog-act.vkaraisk.117",
+          "quote": "I am gonna work on the conceptual design already"
+        },
+        {
+          "da_id": "TS3006a.C.dialog-act.vkaraisk.118",
+          "quote": "'cause yeah it's fairly important to know what kind of components we want to put in ."
+        }
+      ],
+      "fields": [
+        "status"
+      ]
+    },
+    "conflict": {
+      "result": "pass",
+      "reason": "No conflicting statements found in the provided dialogue; the action aligns with current discussion.",
+      "quotes": [
+        {
+          "da_id": "TS3006a.C.dialog-act.vkaraisk.117",
+          "quote": "I am gonna work on the conceptual design already"
+        },
+        {
+          "da_id": "TS3006a.C.dialog-act.vkaraisk.118",
+          "quote": "'cause yeah it's fairly important to know what kind of components we want to put in ."
+        }
+      ],
+      "fields": [
+        "statement"
+      ]
+    },
+    "relation": {
+      "result": "not_applicable",
+      "reason": "no_readable_prior_meetings",
+      "quotes": [],
+      "fields": [
+        "related_items"
+      ]
+    }
+  },
+  "unresolved_fields": [
+    "deadline"
+  ],
+  "observed_evidence_da_ids": [
+    "TS3006a.C.dialog-act.vkaraisk.117",
+    "TS3006a.C.dialog-act.vkaraisk.118",
+    "TS3006a.D.dialog-act.vkaraisk.149",
+    "TS3006a.A.dialog-act.vkaraisk.219"
+  ],
+  "initial_context": {
+    "item": {
+      "type": "actions",
+      "text": "Start on the conceptual design.",
+      "flags": []
+    },
+    "current_meeting": "TS3006a",
+    "earlier_meetings": [],
+    "roster": [
+      {
+        "speaker": "A",
+        "participant_id": "MTD021PM",
+        "role": "PM"
+      },
+      {
+        "speaker": "B",
+        "participant_id": "MTD023UID",
+        "role": "UI"
+      },
+      {
+        "speaker": "C",
+        "participant_id": "MTD022ID",
+        "role": "ID"
+      },
+      {
+        "speaker": "D",
+        "participant_id": "MTD024ME",
+        "role": "ME"
+      }
+    ],
+    "observed_dialogue": [
+      {
+        "da_id": "TS3006a.C.dialog-act.vkaraisk.117",
+        "meeting_id": "TS3006a",
+        "text": "I am gonna work on the conceptual design already",
+        "participant": "MTD022ID",
+        "role": "ID"
+      },
+      {
+        "da_id": "TS3006a.C.dialog-act.vkaraisk.118",
+        "meeting_id": "TS3006a",
+        "text": "'cause yeah it's fairly important to know what kind of components we want to put in .",
+        "participant": "MTD022ID",
+        "role": "ID"
+      },
+      {
+        "da_id": "TS3006a.D.dialog-act.vkaraisk.149",
+        "participant": "MTD024ME",
+        "role": "ME",
+        "text": "<vocalsound> Better make it <disfmarker> <vocalsound>"
+      },
+      {
+        "da_id": "TS3006a.A.dialog-act.vkaraisk.219",
+        "participant": "MTD021PM",
+        "role": "PM",
+        "text": "Yeah ? If you can mix it it's okay ."
+      }
+    ],
+    "peer_items": [
+      {
+        "item_key": "TS3006a#0",
+        "type": "actions",
+        "text": "Summarise the discussed items and place in the project folder."
+      }
+    ],
+    "provisional_values": {
+      "owner": [
+        "MTD022ID"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "status": "open",
+      "related_items": []
+    },
+    "candidate_evidence_da_ids": [
+      "TS3006a.C.dialog-act.vkaraisk.117",
+      "TS3006a.C.dialog-act.vkaraisk.118"
+    ]
+  },
+  "observed_documents": [],
+  "document_evidence": [],
+  "relation_evidence": [],
+  "history": [
+    {
+      "item": "TS3006a#1",
+      "step": 1,
+      "flags": [],
+      "action": "assess_item",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue confirms assignment to start conceptual design; explicit owner present in roster and conversation shows ID taking on conceptual design work. Evidence: TS3006a.C.dialog-act.vkaraisk.117, TS3006a.C.dialog-act.vkaraisk.118",
+          "quotes": [
+            {
+              "da_id": "TS3006a.C.dialog-act.vkaraisk.117",
+              "quote": "I am gonna work on the conceptual design already"
+            },
+            {
+              "da_id": "TS3006a.C.dialog-act.vkaraisk.118",
+              "quote": "'cause yeah it's fairly important to know what kind of components we want to put in ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Owner is explicitly specified (MTD022ID) in the current data and referenced in dialogue as taking on conceptual design task.",
+          "quotes": [
+            {
+              "da_id": "TS3006a.C.dialog-act.vkaraisk.117",
+              "quote": "I am gonna work on the conceptual design already"
+            },
+            {
+              "da_id": "TS3006a.C.dialog-act.vkaraisk.118",
+              "quote": "'cause yeah it's fairly important to know what kind of components we want to put in ."
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "deadline_unresolved",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Status open aligns with a newly initiated action; current dialogue demonstrates engagement but no closure.",
+          "quotes": [
+            {
+              "da_id": "TS3006a.C.dialog-act.vkaraisk.117",
+              "quote": "I am gonna work on the conceptual design already"
+            },
+            {
+              "da_id": "TS3006a.C.dialog-act.vkaraisk.118",
+              "quote": "'cause yeah it's fairly important to know what kind of components we want to put in ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No conflicting statements found in the provided dialogue; the action aligns with current discussion.",
+          "quotes": [
+            {
+              "da_id": "TS3006a.C.dialog-act.vkaraisk.117",
+              "quote": "I am gonna work on the conceptual design already"
+            },
+            {
+              "da_id": "TS3006a.C.dialog-act.vkaraisk.118",
+              "quote": "'cause yeah it's fairly important to know what kind of components we want to put in ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "no_readable_prior_meetings",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "decision": "request_clarification",
+      "reason": "supported_statement_with_unresolved_fields",
+      "assessed_text": "Start on the conceptual design.",
+      "requested_action": "accept",
+      "proposed_fields": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD022ID"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "TS3006a.C.dialog-act.vkaraisk.117",
+          "TS3006a.C.dialog-act.vkaraisk.118"
+        ]
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue confirms assignment to start conceptual design; explicit owner present in roster and conversation shows ID taking on conceptual design work. Evidence: TS3006a.C.dialog-act.vkaraisk.117, TS3006a.C.dialog-act.vkaraisk.118",
+          "quotes": [
+            "TS3006a.C.dialog-act.vkaraisk.117",
+            "TS3006a.C.dialog-act.vkaraisk.118"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Owner is explicitly specified (MTD022ID) in the current data and referenced in dialogue as taking on conceptual design task.",
+          "quotes": [
+            "TS3006a.C.dialog-act.vkaraisk.117",
+            "TS3006a.C.dialog-act.vkaraisk.118"
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "Deadline not specified in current dialogue; missing information.",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Status open aligns with a newly initiated action; current dialogue demonstrates engagement but no closure.",
+          "quotes": [
+            "TS3006a.C.dialog-act.vkaraisk.117",
+            "TS3006a.C.dialog-act.vkaraisk.118"
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No conflicting statements found in the provided dialogue; the action aligns with current discussion.",
+          "quotes": [
+            "TS3006a.C.dialog-act.vkaraisk.117",
+            "TS3006a.C.dialog-act.vkaraisk.118"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "no_readable_prior_meetings",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD022ID"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue confirms assignment to start conceptual design; explicit owner present in roster and conversation shows ID taking on conceptual design work. Evidence: TS3006a.C.dialog-act.vkaraisk.117, TS3006a.C.dialog-act.vkaraisk.118",
+          "evidence_da_ids": [
+            "TS3006a.C.dialog-act.vkaraisk.117",
+            "TS3006a.C.dialog-act.vkaraisk.118"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "Owner is explicitly specified (MTD022ID) in the current data and referenced in dialogue as taking on conceptual design task.",
+          "evidence_da_ids": [
+            "TS3006a.C.dialog-act.vkaraisk.117",
+            "TS3006a.C.dialog-act.vkaraisk.118"
+          ]
+        },
+        "deadline_check": {
+          "result": "uncertain",
+          "reason": "Deadline not specified in current dialogue; missing information.",
+          "evidence_da_ids": []
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "Status open aligns with a newly initiated action; current dialogue demonstrates engagement but no closure.",
+          "evidence_da_ids": [
+            "TS3006a.C.dialog-act.vkaraisk.117",
+            "TS3006a.C.dialog-act.vkaraisk.118"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No conflicting statements found in the provided dialogue; the action aligns with current discussion.",
+          "evidence_da_ids": [
+            "TS3006a.C.dialog-act.vkaraisk.117",
+            "TS3006a.C.dialog-act.vkaraisk.118"
+          ],
+          "affected_fields": [
+            "statement"
+          ]
+        },
+        "next_action": "accept",
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "no_readable_prior_meetings",
+          "evidence_da_ids": []
+        }
+      },
+      "evidence_bindings": {
+        "statement": [
+          "TS3006a.C.dialog-act.vkaraisk.117",
+          "TS3006a.C.dialog-act.vkaraisk.118"
+        ],
+        "owner": [
+          "TS3006a.C.dialog-act.vkaraisk.117",
+          "TS3006a.C.dialog-act.vkaraisk.118"
+        ],
+        "status": [
+          "TS3006a.C.dialog-act.vkaraisk.117",
+          "TS3006a.C.dialog-act.vkaraisk.118"
+        ],
+        "conflict": [
+          "TS3006a.C.dialog-act.vkaraisk.117",
+          "TS3006a.C.dialog-act.vkaraisk.118"
+        ]
+      },
+      "raw_tool_input": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD022ID"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue confirms assignment to start conceptual design; explicit owner present in roster and conversation shows ID taking on conceptual design work. Evidence: TS3006a.C.dialog-act.vkaraisk.117, TS3006a.C.dialog-act.vkaraisk.118",
+          "evidence_da_ids": [
+            "TS3006a.C.dialog-act.vkaraisk.117",
+            "TS3006a.C.dialog-act.vkaraisk.118"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "Owner is explicitly specified (MTD022ID) in the current data and referenced in dialogue as taking on conceptual design task.",
+          "evidence_da_ids": [
+            "TS3006a.C.dialog-act.vkaraisk.117",
+            "TS3006a.C.dialog-act.vkaraisk.118"
+          ]
+        },
+        "deadline_check": {
+          "result": "uncertain",
+          "reason": "Deadline not specified in current dialogue; missing information.",
+          "evidence_da_ids": []
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "Status open aligns with a newly initiated action; current dialogue demonstrates engagement but no closure.",
+          "evidence_da_ids": [
+            "TS3006a.C.dialog-act.vkaraisk.117",
+            "TS3006a.C.dialog-act.vkaraisk.118"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No conflicting statements found in the provided dialogue; the action aligns with current discussion.",
+          "evidence_da_ids": [
+            "TS3006a.C.dialog-act.vkaraisk.117",
+            "TS3006a.C.dialog-act.vkaraisk.118"
+          ],
+          "affected_fields": [
+            "statement"
+          ]
+        },
+        "next_action": "accept"
+      },
+      "protocol_normalizations": [
+        "inactive_relation_from_run_scope"
+      ]
+    },
+    {
+      "item": "TS3006a#1",
+      "step": 1,
+      "flags": [],
+      "action": "stop",
+      "outcome": "pending",
+      "termination_reason": "supported_statement_with_unresolved_fields",
+      "unresolved_fields": [
+        "deadline"
+      ]
+    }
+  ],
+  "lookups": 0,
+  "termination_reason": "supported_statement_with_unresolved_fields",
+  "clarifications": [
+    {
+      "request_id": "72bb274157416ffa",
+      "item_key": "TS3006a#1",
+      "record_id": null,
+      "field": "deadline",
+      "question": "What is the agreed deadline, in its original wording?",
+      "item_text": "Start on the conceptual design.",
+      "reason": "deadline_unresolved",
+      "evidence_da_ids": [],
+      "available_evidence_da_ids": [
+        "TS3006a.C.dialog-act.vkaraisk.117",
+        "TS3006a.C.dialog-act.vkaraisk.118",
+        "TS3006a.D.dialog-act.vkaraisk.149",
+        "TS3006a.A.dialog-act.vkaraisk.219"
+      ],
+      "status": "open",
+      "termination_reason": "supported_statement_with_unresolved_fields"
+    }
+  ]
+}

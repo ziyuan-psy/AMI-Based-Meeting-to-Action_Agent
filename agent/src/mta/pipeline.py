@@ -10,7 +10,7 @@ from . import config
 from .agent import MeetingBudget, build_reference, run_agent
 from .control import Limits, RunControl, RunStopped, launch, stage_pool
 from .extract import _strip_indexes, consolidate, extract_candidates, normalize
-from .item_selection import select_items
+from .item_selection import select_items,ranked_cap
 from .llm import LLM
 from .observation import RunObservation, sha256, write_json
 from .prompts import ABSTRACT_SYSTEM
@@ -268,7 +268,8 @@ def _run_meeting(txt_path: Path, mode: str, llm: LLM, out_root: Path, cache_dir:
         if config.ITEM_SELECTION_ENABLED:
             observation.enter("select")
             t = time.time()
-            cands = select_items(llm, cands, cur.acts, cache=cache_dir / f"select_{meeting_id}.json", trace=stages)
+            cands = select_items(llm, cands, cur.acts, cache=cache_dir / f"select_{meeting_id}.json", trace=stages,
+                                 defer_action_limit=config.P2_ENABLED)
             seconds["select"] = round(time.time() - t, 1)
             observation.checkpoint("selected", cands)
     observation.enter("normalize")
@@ -341,6 +342,17 @@ def _run_meeting(txt_path: Path, mode: str, llm: LLM, out_root: Path, cache_dir:
         it["item_key"] = f"{meeting_id}#{n}"
         retained.append(it)
     items = retained
+    omitted=[]
+    if p2_enabled and config.ITEM_SELECTION_ENABLED:
+        # A bounded 2x Action review pool lets owner/core checks happen before the final 5-item cap.
+        # Preserve valid omitted outcomes separately; never relabel them as failed evidence checks.
+        observation.checkpoint('verified_before_cap',items)
+        items=ranked_cap(items,stages,stage='publication_select')
+        keys={it['item_key'] for it in items}
+        omitted=[o for o in p2_items if o['recordable'] and o['item_key'] not in keys]
+        observation.checkpoint('verified_omitted',{'reason':'final_type_limit','outcomes':omitted})
+        observation.checkpoint('publication_selected',items)
+        p2_items=[o for o in p2_items if not o['recordable'] or o['item_key'] in keys]
     p2_payload = {"format_version": 1, "run_id": observation.data["run_id"], "meeting_id": meeting_id,
                   "enabled": p2_enabled, "items": p2_items}
     # Summaries are generated only after quarantining unsupported statements.
@@ -391,7 +403,8 @@ def _run_meeting(txt_path: Path, mode: str, llm: LLM, out_root: Path, cache_dir:
              "llm calls": usage["calls"], "seconds": seconds["total"]}
     notes.update({"p2 accepted": sum(o["state"] == "accepted" for o in p2_items),
                   "p2 pending": sum(o["state"] == "pending" for o in p2_items),
-                  "quarantined": len(original_items) - len(items), "clarification requests": len(requests)})
+                  "quarantined": sum(not o['recordable'] for o in p2_items) if p2_enabled else len(original_items)-len(items),
+                  "verified omitted by limit":len(omitted),"clarification requests": len(requests)})
     report = render_report(record, store, mode, notes, p2_payload)
     observation.checkpoint("report", {"markdown": report})
     # Per-stage cost (calls / tokens) and wall time; cache hits cost nothing and do not appear in `stages`.

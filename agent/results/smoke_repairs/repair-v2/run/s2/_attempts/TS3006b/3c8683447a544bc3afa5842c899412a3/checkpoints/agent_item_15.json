@@ -1,0 +1,1181 @@
+{
+  "item": 15,
+  "fields": {
+    "item_key": "TS3006b#15",
+    "record_id": null,
+    "item_type": "actions",
+    "item_text": "Write the meeting minutes",
+    "state": "pending",
+    "recordable": false,
+    "fields": {
+      "status": "unknown",
+      "prior_context_needed": false,
+      "related_items": [],
+      "owner": null,
+      "owner_basis": "ambiguous",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3006b.json",
+          "locator": "TS3006b.A.dialog-act.dharshi.378"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3006b.json",
+          "locator": "TS3006b.A.dialog-act.dharshi.379"
+        }
+      ]
+    },
+    "draft_fields": {
+      "status": "open",
+      "related_items": [],
+      "owner": [
+        "MTD021PM"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "prior_context_needed": false,
+      "used_participant_lookup": false,
+      "evidence_da_ids": [
+        "TS3006b.A.dialog-act.dharshi.378",
+        "TS3006b.A.dialog-act.dharshi.379"
+      ]
+    },
+    "checks": {
+      "statement": {
+        "result": "uncertain",
+        "reason": "The dialogue references writing minutes but does not explicitly assign the task or confirm the action in this meeting text.",
+        "quotes": [
+          {
+            "da_id": "TS3006b.A.dialog-act.dharshi.378",
+            "quote": "and I have to write very fast to make the minich min minutes ."
+          },
+          {
+            "da_id": "TS3006b.A.dialog-act.dharshi.379",
+            "quote": "And then uh we'll see <disfmarker>"
+          }
+        ],
+        "fields": [
+          "statement"
+        ]
+      },
+      "owner": {
+        "result": "uncertain",
+        "reason": "No explicit confirmation in dialogue that MTD021PM is assigned to write minutes; only that PM talks about writing minutes.",
+        "quotes": [
+          {
+            "da_id": "TS3006b.A.dialog-act.dharshi.378",
+            "quote": "and I have to write very fast to make the minich min minutes ."
+          },
+          {
+            "da_id": "TS3006b.A.dialog-act.dharshi.379",
+            "quote": "And then uh we'll see <disfmarker>"
+          }
+        ],
+        "fields": [
+          "owner"
+        ]
+      },
+      "deadline": {
+        "result": "uncertain",
+        "reason": "deadline_unresolved",
+        "quotes": [
+          {
+            "da_id": "TS3006b.A.dialog-act.dharshi.378",
+            "quote": "and I have to write very fast to make the minich min minutes ."
+          },
+          {
+            "da_id": "TS3006b.A.dialog-act.dharshi.379",
+            "quote": "And then uh we'll see <disfmarker>"
+          }
+        ],
+        "fields": [
+          "deadline"
+        ]
+      },
+      "status": {
+        "result": "uncertain",
+        "reason": "Status open; no explicit commitment that minutes will be completed in this meeting.",
+        "quotes": [
+          {
+            "da_id": "TS3006b.A.dialog-act.dharshi.378",
+            "quote": "and I have to write very fast to make the minich min minutes ."
+          },
+          {
+            "da_id": "TS3006b.A.dialog-act.dharshi.379",
+            "quote": "And then uh we'll see <disfmarker>"
+          }
+        ],
+        "fields": [
+          "status"
+        ]
+      },
+      "conflict": {
+        "result": "pass",
+        "reason": "No conflicting statements found in provided dialogue for this action.",
+        "quotes": [
+          {
+            "da_id": "TS3006b.A.dialog-act.dharshi.378",
+            "quote": "and I have to write very fast to make the minich min minutes ."
+          },
+          {
+            "da_id": "TS3006b.A.dialog-act.dharshi.379",
+            "quote": "And then uh we'll see <disfmarker>"
+          }
+        ],
+        "fields": [
+          "statement",
+          "owner",
+          "deadline",
+          "status"
+        ]
+      },
+      "relation": {
+        "result": "not_applicable",
+        "reason": "No prior related item to relate to in this assessment scope.",
+        "quotes": [],
+        "fields": [
+          "related_items"
+        ]
+      }
+    },
+    "unresolved_fields": [
+      "statement",
+      "owner",
+      "deadline",
+      "status"
+    ],
+    "observed_evidence_da_ids": [
+      "TS3006b.A.dialog-act.dharshi.378",
+      "TS3006b.A.dialog-act.dharshi.379",
+      "TS3006b.A.dialog-act.dharshi.377",
+      "TS3006b.D.dialog-act.dharshi.426",
+      "TS3006b.C.dialog-act.dharshi.203"
+    ],
+    "initial_context": {
+      "item": {
+        "type": "actions",
+        "text": "Write the meeting minutes",
+        "flags": []
+      },
+      "current_meeting": "TS3006b",
+      "earlier_meetings": [
+        "TS3006a"
+      ],
+      "roster": [
+        {
+          "speaker": "A",
+          "participant_id": "MTD021PM",
+          "role": "PM"
+        },
+        {
+          "speaker": "B",
+          "participant_id": "MTD023UID",
+          "role": "UI"
+        },
+        {
+          "speaker": "C",
+          "participant_id": "MTD022ID",
+          "role": "ID"
+        },
+        {
+          "speaker": "D",
+          "participant_id": "MTD024ME",
+          "role": "ME"
+        }
+      ],
+      "observed_dialogue": [
+        {
+          "da_id": "TS3006b.A.dialog-act.dharshi.378",
+          "meeting_id": "TS3006b",
+          "text": "and I have to write very fast to make the minich min minutes .",
+          "participant": "MTD021PM",
+          "role": "PM"
+        },
+        {
+          "da_id": "TS3006b.A.dialog-act.dharshi.379",
+          "meeting_id": "TS3006b",
+          "text": "And then uh we'll see <disfmarker>",
+          "participant": "MTD021PM",
+          "role": "PM"
+        },
+        {
+          "da_id": "TS3006b.A.dialog-act.dharshi.377",
+          "participant": "MTD021PM",
+          "role": "PM",
+          "text": "and then we can work for thirty minutes ,"
+        },
+        {
+          "da_id": "TS3006b.D.dialog-act.dharshi.426",
+          "participant": "MTD024ME",
+          "role": "ME",
+          "text": "Yeah ."
+        },
+        {
+          "da_id": "TS3006b.C.dialog-act.dharshi.203",
+          "participant": "MTD022ID",
+          "role": "ID",
+          "text": "Alright ."
+        }
+      ],
+      "peer_items": [
+        {
+          "item_key": "TS3006b#0",
+          "type": "actions",
+          "text": "PM asked UI designer to design a menu for all these function"
+        },
+        {
+          "item_key": "TS3006b#1",
+          "type": "actions",
+          "text": "PM will design the basic function menu for the LCD screen"
+        },
+        {
+          "item_key": "TS3006b#2",
+          "type": "actions",
+          "text": "Design a multi-page LCD screen menu"
+        },
+        {
+          "item_key": "TS3006b#3",
+          "type": "decisions",
+          "text": "Target users under forty and balance functionality with ease"
+        },
+        {
+          "item_key": "TS3006b#4",
+          "type": "decisions",
+          "text": "Include LCD screen and speech recognition to appeal to users under forty while keeping classic functions"
+        },
+        {
+          "item_key": "TS3006b#5",
+          "type": "decisions",
+          "text": "We will have two groups of functions: simple for the general public and advanced for younger users"
+        },
+        {
+          "item_key": "TS3006b#6",
+          "type": "decisions",
+          "text": "Provide a screen-based option to configure advanced features via a clear menu while keeping basic functions on the device"
+        },
+        {
+          "item_key": "TS3006b#7",
+          "type": "decisions",
+          "text": "Place the screen on top in the layout and create a visual separation (line) between the two groups"
+        },
+        {
+          "item_key": "TS3006b#8",
+          "type": "actions",
+          "text": "Create maps with all the data we gathered"
+        },
+        {
+          "item_key": "TS3006b#9",
+          "type": "actions",
+          "text": "Organize the data into three categories"
+        },
+        {
+          "item_key": "TS3006b#10",
+          "type": "actions",
+          "text": "Group functions into two groups: display and basic functions"
+        },
+        {
+          "item_key": "TS3006b#11",
+          "type": "actions",
+          "text": "The ID will design the layout of the remote"
+        },
+        {
+          "item_key": "TS3006b#12",
+          "type": "problems",
+          "text": "User feedback indicates dislike of look-and-feel of current remotes"
+        },
+        {
+          "item_key": "TS3006b#13",
+          "type": "problems",
+          "text": "Current remotes do not match operating behaviour expected by users"
+        },
+        {
+          "item_key": "TS3006b#14",
+          "type": "problems",
+          "text": "Remotes are often lost in the room"
+        }
+      ],
+      "provisional_values": {
+        "owner": [
+          "MTD021PM"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "open",
+        "related_items": []
+      },
+      "candidate_evidence_da_ids": [
+        "TS3006b.A.dialog-act.dharshi.378",
+        "TS3006b.A.dialog-act.dharshi.379"
+      ]
+    },
+    "observed_documents": [],
+    "document_evidence": [],
+    "relation_evidence": [],
+    "history": [
+      {
+        "item": "TS3006b#15",
+        "step": 1,
+        "flags": [],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "uncertain",
+            "reason": "The dialogue references writing minutes but does not explicitly assign the task or confirm the action in this meeting text.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.378",
+                "quote": "and I have to write very fast to make the minich min minutes ."
+              },
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.379",
+                "quote": "And then uh we'll see <disfmarker>"
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "uncertain",
+            "reason": "No explicit confirmation in dialogue that MTD021PM is assigned to write minutes; only that PM talks about writing minutes.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.378",
+                "quote": "and I have to write very fast to make the minich min minutes ."
+              },
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.379",
+                "quote": "And then uh we'll see <disfmarker>"
+              }
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "deadline_unresolved",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.378",
+                "quote": "and I have to write very fast to make the minich min minutes ."
+              },
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.379",
+                "quote": "And then uh we'll see <disfmarker>"
+              }
+            ],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "uncertain",
+            "reason": "Status open; no explicit commitment that minutes will be completed in this meeting.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.378",
+                "quote": "and I have to write very fast to make the minich min minutes ."
+              },
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.379",
+                "quote": "And then uh we'll see <disfmarker>"
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting statements found in provided dialogue for this action.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.378",
+                "quote": "and I have to write very fast to make the minich min minutes ."
+              },
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.379",
+                "quote": "And then uh we'll see <disfmarker>"
+              }
+            ],
+            "fields": [
+              "statement",
+              "owner",
+              "deadline",
+              "status"
+            ]
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related item to relate to in this assessment scope.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "decision": "retrieve",
+        "reason": "unresolved_checks",
+        "assessed_text": "Write the meeting minutes",
+        "requested_action": "accept",
+        "proposed_fields": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "MTD021PM"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "TS3006b.A.dialog-act.dharshi.378",
+            "TS3006b.A.dialog-act.dharshi.379"
+          ]
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "uncertain",
+            "reason": "The dialogue references writing minutes but does not explicitly assign the task or confirm the action in this meeting text.",
+            "quotes": [
+              "TS3006b.A.dialog-act.dharshi.378",
+              "TS3006b.A.dialog-act.dharshi.379"
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "uncertain",
+            "reason": "No explicit confirmation in dialogue that MTD021PM is assigned to write minutes; only that PM talks about writing minutes.",
+            "quotes": [
+              "TS3006b.A.dialog-act.dharshi.378",
+              "TS3006b.A.dialog-act.dharshi.379"
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "No deadline stated for writing minutes.",
+            "quotes": [
+              "TS3006b.A.dialog-act.dharshi.378",
+              "TS3006b.A.dialog-act.dharshi.379"
+            ],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "uncertain",
+            "reason": "Status open; no explicit commitment that minutes will be completed in this meeting.",
+            "quotes": [
+              "TS3006b.A.dialog-act.dharshi.378",
+              "TS3006b.A.dialog-act.dharshi.379"
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting statements found in provided dialogue for this action.",
+            "quotes": [
+              "TS3006b.A.dialog-act.dharshi.378",
+              "TS3006b.A.dialog-act.dharshi.379"
+            ],
+            "fields": [
+              "statement",
+              "owner",
+              "deadline",
+              "status"
+            ]
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related item to relate to in this assessment scope.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "MTD021PM"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "statement": {
+            "result": "uncertain",
+            "reason": "The dialogue references writing minutes but does not explicitly assign the task or confirm the action in this meeting text.",
+            "evidence_da_ids": [
+              "TS3006b.A.dialog-act.dharshi.378",
+              "TS3006b.A.dialog-act.dharshi.379"
+            ]
+          },
+          "owner_check": {
+            "result": "uncertain",
+            "reason": "No explicit confirmation in dialogue that MTD021PM is assigned to write minutes; only that PM talks about writing minutes.",
+            "evidence_da_ids": [
+              "TS3006b.A.dialog-act.dharshi.378",
+              "TS3006b.A.dialog-act.dharshi.379"
+            ]
+          },
+          "deadline_check": {
+            "result": "uncertain",
+            "reason": "No deadline stated for writing minutes.",
+            "evidence_da_ids": [
+              "TS3006b.A.dialog-act.dharshi.378",
+              "TS3006b.A.dialog-act.dharshi.379"
+            ]
+          },
+          "status_check": {
+            "result": "uncertain",
+            "reason": "Status open; no explicit commitment that minutes will be completed in this meeting.",
+            "evidence_da_ids": [
+              "TS3006b.A.dialog-act.dharshi.378",
+              "TS3006b.A.dialog-act.dharshi.379"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No conflicting statements found in provided dialogue for this action.",
+            "evidence_da_ids": [
+              "TS3006b.A.dialog-act.dharshi.378",
+              "TS3006b.A.dialog-act.dharshi.379"
+            ],
+            "affected_fields": [
+              "statement",
+              "owner",
+              "deadline",
+              "status"
+            ]
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior related item to relate to in this assessment scope.",
+            "evidence_da_ids": []
+          },
+          "next_action": "accept"
+        },
+        "evidence_bindings": {
+          "statement": [
+            "TS3006b.A.dialog-act.dharshi.378",
+            "TS3006b.A.dialog-act.dharshi.379"
+          ],
+          "owner": [
+            "TS3006b.A.dialog-act.dharshi.378",
+            "TS3006b.A.dialog-act.dharshi.379"
+          ],
+          "deadline": [
+            "TS3006b.A.dialog-act.dharshi.378",
+            "TS3006b.A.dialog-act.dharshi.379"
+          ],
+          "status": [
+            "TS3006b.A.dialog-act.dharshi.378",
+            "TS3006b.A.dialog-act.dharshi.379"
+          ],
+          "conflict": [
+            "TS3006b.A.dialog-act.dharshi.378",
+            "TS3006b.A.dialog-act.dharshi.379"
+          ]
+        },
+        "raw_tool_input": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "MTD021PM"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "statement": {
+            "result": "uncertain",
+            "reason": "The dialogue references writing minutes but does not explicitly assign the task or confirm the action in this meeting text.",
+            "evidence_da_ids": [
+              "TS3006b.A.dialog-act.dharshi.378",
+              "TS3006b.A.dialog-act.dharshi.379"
+            ]
+          },
+          "owner_check": {
+            "result": "uncertain",
+            "reason": "No explicit confirmation in dialogue that MTD021PM is assigned to write minutes; only that PM talks about writing minutes.",
+            "evidence_da_ids": [
+              "TS3006b.A.dialog-act.dharshi.378",
+              "TS3006b.A.dialog-act.dharshi.379"
+            ]
+          },
+          "deadline_check": {
+            "result": "uncertain",
+            "reason": "No deadline stated for writing minutes.",
+            "evidence_da_ids": [
+              "TS3006b.A.dialog-act.dharshi.378",
+              "TS3006b.A.dialog-act.dharshi.379"
+            ]
+          },
+          "status_check": {
+            "result": "uncertain",
+            "reason": "Status open; no explicit commitment that minutes will be completed in this meeting.",
+            "evidence_da_ids": [
+              "TS3006b.A.dialog-act.dharshi.378",
+              "TS3006b.A.dialog-act.dharshi.379"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No conflicting statements found in provided dialogue for this action.",
+            "evidence_da_ids": [
+              "TS3006b.A.dialog-act.dharshi.378",
+              "TS3006b.A.dialog-act.dharshi.379"
+            ],
+            "affected_fields": [
+              "statement",
+              "owner",
+              "deadline",
+              "status"
+            ]
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior related item to relate to in this assessment scope.",
+            "evidence_da_ids": []
+          },
+          "next_action": "accept"
+        },
+        "protocol_normalizations": []
+      },
+      {
+        "item": "TS3006b#15",
+        "step": 2,
+        "flags": [],
+        "action": "get_participants",
+        "outcome": "lookup",
+        "decision": "retrieve",
+        "args": {
+          "meeting_id": "TS3006b"
+        },
+        "tool_result": {
+          "results": [
+            {
+              "speaker": "A",
+              "participant_id": "MTD021PM",
+              "role": "PM"
+            },
+            {
+              "speaker": "B",
+              "participant_id": "MTD023UID",
+              "role": "UI"
+            },
+            {
+              "speaker": "C",
+              "participant_id": "MTD022ID",
+              "role": "ID"
+            },
+            {
+              "speaker": "D",
+              "participant_id": "MTD024ME",
+              "role": "ME"
+            }
+          ]
+        },
+        "new_info": false
+      },
+      {
+        "item": "TS3006b#15",
+        "step": 3,
+        "flags": [],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "uncertain",
+            "reason": "The dialogue references writing minutes but does not explicitly assign the task or confirm the action in this meeting text.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.378",
+                "quote": "and I have to write very fast to make the minich min minutes ."
+              },
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.379",
+                "quote": "And then uh we'll see <disfmarker>"
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "uncertain",
+            "reason": "No explicit confirmation in dialogue that MTD021PM is assigned to write minutes; only that PM talks about writing minutes.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.378",
+                "quote": "and I have to write very fast to make the minich min minutes ."
+              },
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.379",
+                "quote": "And then uh we'll see <disfmarker>"
+              }
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "deadline_unresolved",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.378",
+                "quote": "and I have to write very fast to make the minich min minutes ."
+              },
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.379",
+                "quote": "And then uh we'll see <disfmarker>"
+              }
+            ],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "uncertain",
+            "reason": "Status open; no explicit commitment that minutes will be completed in this meeting.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.378",
+                "quote": "and I have to write very fast to make the minich min minutes ."
+              },
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.379",
+                "quote": "And then uh we'll see <disfmarker>"
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting statements found in provided dialogue for this action.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.378",
+                "quote": "and I have to write very fast to make the minich min minutes ."
+              },
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.379",
+                "quote": "And then uh we'll see <disfmarker>"
+              }
+            ],
+            "fields": [
+              "statement",
+              "owner",
+              "deadline",
+              "status"
+            ]
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related item to relate to in this assessment scope.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "decision": "retrieve",
+        "reason": "unresolved_checks",
+        "assessed_text": "Write the meeting minutes",
+        "requested_action": "retrieve",
+        "proposed_fields": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "MTD021PM"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "TS3006b.A.dialog-act.dharshi.378",
+            "TS3006b.A.dialog-act.dharshi.379"
+          ]
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "uncertain",
+            "reason": "The dialogue references writing minutes but does not explicitly assign the task or confirm the action in this meeting text.",
+            "quotes": [
+              "TS3006b.A.dialog-act.dharshi.378",
+              "TS3006b.A.dialog-act.dharshi.379"
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "uncertain",
+            "reason": "No explicit confirmation in dialogue that MTD021PM is assigned to write minutes; only that PM talks about writing minutes.",
+            "quotes": [
+              "TS3006b.A.dialog-act.dharshi.378",
+              "TS3006b.A.dialog-act.dharshi.379"
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "No deadline stated for writing minutes.",
+            "quotes": [
+              "TS3006b.A.dialog-act.dharshi.378",
+              "TS3006b.A.dialog-act.dharshi.379"
+            ],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "uncertain",
+            "reason": "Status open; no explicit commitment that minutes will be completed in this meeting.",
+            "quotes": [
+              "TS3006b.A.dialog-act.dharshi.378",
+              "TS3006b.A.dialog-act.dharshi.379"
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting statements found in provided dialogue for this action.",
+            "quotes": [
+              "TS3006b.A.dialog-act.dharshi.378",
+              "TS3006b.A.dialog-act.dharshi.379"
+            ],
+            "fields": [
+              "statement",
+              "owner",
+              "deadline",
+              "status"
+            ]
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related item to relate to in this assessment scope.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "MTD021PM"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "statement": {
+            "result": "uncertain",
+            "reason": "The dialogue references writing minutes but does not explicitly assign the task or confirm the action in this meeting text.",
+            "evidence_da_ids": [
+              "TS3006b.A.dialog-act.dharshi.378",
+              "TS3006b.A.dialog-act.dharshi.379"
+            ]
+          },
+          "owner_check": {
+            "result": "uncertain",
+            "reason": "No explicit confirmation in dialogue that MTD021PM is assigned to write minutes; only that PM talks about writing minutes.",
+            "evidence_da_ids": [
+              "TS3006b.A.dialog-act.dharshi.378",
+              "TS3006b.A.dialog-act.dharshi.379"
+            ]
+          },
+          "deadline_check": {
+            "result": "uncertain",
+            "reason": "No deadline stated for writing minutes.",
+            "evidence_da_ids": [
+              "TS3006b.A.dialog-act.dharshi.378",
+              "TS3006b.A.dialog-act.dharshi.379"
+            ]
+          },
+          "status_check": {
+            "result": "uncertain",
+            "reason": "Status open; no explicit commitment that minutes will be completed in this meeting.",
+            "evidence_da_ids": [
+              "TS3006b.A.dialog-act.dharshi.378",
+              "TS3006b.A.dialog-act.dharshi.379"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No conflicting statements found in provided dialogue for this action.",
+            "evidence_da_ids": [
+              "TS3006b.A.dialog-act.dharshi.378",
+              "TS3006b.A.dialog-act.dharshi.379"
+            ],
+            "affected_fields": [
+              "statement",
+              "owner",
+              "deadline",
+              "status"
+            ]
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior related item to relate to in this assessment scope.",
+            "evidence_da_ids": []
+          },
+          "next_action": "retrieve"
+        },
+        "evidence_bindings": {
+          "statement": [
+            "TS3006b.A.dialog-act.dharshi.378",
+            "TS3006b.A.dialog-act.dharshi.379"
+          ],
+          "owner": [
+            "TS3006b.A.dialog-act.dharshi.378",
+            "TS3006b.A.dialog-act.dharshi.379"
+          ],
+          "deadline": [
+            "TS3006b.A.dialog-act.dharshi.378",
+            "TS3006b.A.dialog-act.dharshi.379"
+          ],
+          "status": [
+            "TS3006b.A.dialog-act.dharshi.378",
+            "TS3006b.A.dialog-act.dharshi.379"
+          ],
+          "conflict": [
+            "TS3006b.A.dialog-act.dharshi.378",
+            "TS3006b.A.dialog-act.dharshi.379"
+          ]
+        },
+        "raw_tool_input": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "MTD021PM"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "statement": {
+            "result": "uncertain",
+            "reason": "The dialogue references writing minutes but does not explicitly assign the task or confirm the action in this meeting text.",
+            "evidence_da_ids": [
+              "TS3006b.A.dialog-act.dharshi.378",
+              "TS3006b.A.dialog-act.dharshi.379"
+            ]
+          },
+          "owner_check": {
+            "result": "uncertain",
+            "reason": "No explicit confirmation in dialogue that MTD021PM is assigned to write minutes; only that PM talks about writing minutes.",
+            "evidence_da_ids": [
+              "TS3006b.A.dialog-act.dharshi.378",
+              "TS3006b.A.dialog-act.dharshi.379"
+            ]
+          },
+          "deadline_check": {
+            "result": "uncertain",
+            "reason": "No deadline stated for writing minutes.",
+            "evidence_da_ids": [
+              "TS3006b.A.dialog-act.dharshi.378",
+              "TS3006b.A.dialog-act.dharshi.379"
+            ]
+          },
+          "status_check": {
+            "result": "uncertain",
+            "reason": "Status open; no explicit commitment that minutes will be completed in this meeting.",
+            "evidence_da_ids": [
+              "TS3006b.A.dialog-act.dharshi.378",
+              "TS3006b.A.dialog-act.dharshi.379"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No conflicting statements found in provided dialogue for this action.",
+            "evidence_da_ids": [
+              "TS3006b.A.dialog-act.dharshi.378",
+              "TS3006b.A.dialog-act.dharshi.379"
+            ],
+            "affected_fields": [
+              "statement",
+              "owner",
+              "deadline",
+              "status"
+            ]
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior related item to relate to in this assessment scope.",
+            "evidence_da_ids": []
+          },
+          "next_action": "retrieve"
+        },
+        "protocol_normalizations": []
+      },
+      {
+        "item": "TS3006b#15",
+        "step": 4,
+        "flags": [],
+        "action": "get_participants",
+        "outcome": "lookup",
+        "decision": "retrieve",
+        "args": {
+          "meeting_id": "TS3006b"
+        },
+        "tool_result": {
+          "results": [
+            {
+              "speaker": "A",
+              "participant_id": "MTD021PM",
+              "role": "PM"
+            },
+            {
+              "speaker": "B",
+              "participant_id": "MTD023UID",
+              "role": "UI"
+            },
+            {
+              "speaker": "C",
+              "participant_id": "MTD022ID",
+              "role": "ID"
+            },
+            {
+              "speaker": "D",
+              "participant_id": "MTD024ME",
+              "role": "ME"
+            }
+          ],
+          "duplicate": true
+        },
+        "new_info": false
+      },
+      {
+        "item": "TS3006b#15",
+        "step": 4,
+        "flags": [],
+        "action": "stop",
+        "outcome": "pending",
+        "termination_reason": "no_progress",
+        "unresolved_fields": [
+          "statement",
+          "owner",
+          "deadline",
+          "status"
+        ]
+      }
+    ],
+    "lookups": 2,
+    "termination_reason": "no_progress",
+    "clarifications": [
+      {
+        "request_id": "f858fe15d2ef8760",
+        "item_key": "TS3006b#15",
+        "record_id": null,
+        "field": "statement",
+        "question": "Should this be recorded as a substantive, supported actions item?",
+        "item_text": "Write the meeting minutes",
+        "reason": "The dialogue references writing minutes but does not explicitly assign the task or confirm the action in this meeting text.",
+        "evidence_da_ids": [
+          "TS3006b.A.dialog-act.dharshi.378",
+          "TS3006b.A.dialog-act.dharshi.379"
+        ],
+        "available_evidence_da_ids": [
+          "TS3006b.A.dialog-act.dharshi.378",
+          "TS3006b.A.dialog-act.dharshi.379",
+          "TS3006b.A.dialog-act.dharshi.377",
+          "TS3006b.D.dialog-act.dharshi.426",
+          "TS3006b.C.dialog-act.dharshi.203"
+        ],
+        "status": "open",
+        "termination_reason": "no_progress"
+      },
+      {
+        "request_id": "5e08d260c90f87d6",
+        "item_key": "TS3006b#15",
+        "record_id": null,
+        "field": "owner",
+        "question": "Who is responsible for this task?",
+        "item_text": "Write the meeting minutes",
+        "reason": "No explicit confirmation in dialogue that MTD021PM is assigned to write minutes; only that PM talks about writing minutes.",
+        "evidence_da_ids": [
+          "TS3006b.A.dialog-act.dharshi.378",
+          "TS3006b.A.dialog-act.dharshi.379"
+        ],
+        "available_evidence_da_ids": [
+          "TS3006b.A.dialog-act.dharshi.378",
+          "TS3006b.A.dialog-act.dharshi.379",
+          "TS3006b.A.dialog-act.dharshi.377",
+          "TS3006b.D.dialog-act.dharshi.426",
+          "TS3006b.C.dialog-act.dharshi.203"
+        ],
+        "status": "open",
+        "termination_reason": "no_progress"
+      },
+      {
+        "request_id": "815aeec28ba65f82",
+        "item_key": "TS3006b#15",
+        "record_id": null,
+        "field": "deadline",
+        "question": "What is the agreed deadline, in its original wording?",
+        "item_text": "Write the meeting minutes",
+        "reason": "deadline_unresolved",
+        "evidence_da_ids": [
+          "TS3006b.A.dialog-act.dharshi.378",
+          "TS3006b.A.dialog-act.dharshi.379"
+        ],
+        "available_evidence_da_ids": [
+          "TS3006b.A.dialog-act.dharshi.378",
+          "TS3006b.A.dialog-act.dharshi.379",
+          "TS3006b.A.dialog-act.dharshi.377",
+          "TS3006b.D.dialog-act.dharshi.426",
+          "TS3006b.C.dialog-act.dharshi.203"
+        ],
+        "status": "open",
+        "termination_reason": "no_progress"
+      },
+      {
+        "request_id": "890de9316db6142f",
+        "item_key": "TS3006b#15",
+        "record_id": null,
+        "field": "status",
+        "question": "What is this item's status at the end of the current meeting?",
+        "item_text": "Write the meeting minutes",
+        "reason": "Status open; no explicit commitment that minutes will be completed in this meeting.",
+        "evidence_da_ids": [
+          "TS3006b.A.dialog-act.dharshi.378",
+          "TS3006b.A.dialog-act.dharshi.379"
+        ],
+        "available_evidence_da_ids": [
+          "TS3006b.A.dialog-act.dharshi.378",
+          "TS3006b.A.dialog-act.dharshi.379",
+          "TS3006b.A.dialog-act.dharshi.377",
+          "TS3006b.D.dialog-act.dharshi.426",
+          "TS3006b.C.dialog-act.dharshi.203"
+        ],
+        "status": "open",
+        "termination_reason": "no_progress"
+      }
+    ]
+  }
+}

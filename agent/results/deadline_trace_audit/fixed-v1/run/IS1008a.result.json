@@ -1,0 +1,157 @@
+{
+  "mode": "s2",
+  "meeting_id": "IS1008a",
+  "status": "FAILED",
+  "reason": "model_request_failed",
+  "failed_stage": "p2_check",
+  "failure": {
+    "code": "model_request_failed",
+    "status": "FAILED",
+    "stage": "p2_check",
+    "error_type": "APIConnectionError",
+    "retries_exhausted": true,
+    "http_status": null
+  },
+  "runtime_control": {
+    "limits": {
+      "calls": 67,
+      "tokens": 854695,
+      "request_seconds": 300.0,
+      "meeting_seconds": 873.289,
+      "inflight": 4,
+      "retries": 2,
+      "backoff": 0.5
+    },
+    "attempted_calls": 10,
+    "charged_tokens": 593673,
+    "unknown_usage_tokens": 593673,
+    "reserved_tokens": 0,
+    "max_inflight_seen": 4,
+    "failure": {
+      "code": "model_request_failed",
+      "status": "FAILED",
+      "stage": "p2_check",
+      "error_type": "APIConnectionError",
+      "retries_exhausted": true,
+      "http_status": null
+    },
+    "attempts": [
+      {
+        "attempt": 0,
+        "stage": "p2_check",
+        "reserved_tokens": 59612,
+        "input_bound": 27612,
+        "output_cap": 32000,
+        "outcome": "error",
+        "charged_tokens": 59612,
+        "usage_known": false,
+        "error_type": "APIConnectionError"
+      },
+      {
+        "attempt": 1,
+        "stage": "p2_check",
+        "reserved_tokens": 59182,
+        "input_bound": 27182,
+        "output_cap": 32000,
+        "outcome": "error",
+        "charged_tokens": 59182,
+        "usage_known": false,
+        "error_type": "APIConnectionError"
+      },
+      {
+        "attempt": 2,
+        "stage": "p2_check",
+        "reserved_tokens": 60559,
+        "input_bound": 28559,
+        "output_cap": 32000,
+        "outcome": "error",
+        "charged_tokens": 60559,
+        "usage_known": false,
+        "error_type": "APIConnectionError"
+      },
+      {
+        "attempt": 3,
+        "stage": "p2_check",
+        "reserved_tokens": 58136,
+        "input_bound": 26136,
+        "output_cap": 32000,
+        "outcome": "error",
+        "charged_tokens": 58136,
+        "usage_known": false,
+        "error_type": "APIConnectionError"
+      },
+      {
+        "attempt": 4,
+        "stage": "p2_check",
+        "reserved_tokens": 58136,
+        "input_bound": 26136,
+        "output_cap": 32000,
+        "outcome": "error",
+        "charged_tokens": 58136,
+        "usage_known": false,
+        "error_type": "APIConnectionError"
+      },
+      {
+        "attempt": 5,
+        "stage": "p2_check",
+        "reserved_tokens": 60559,
+        "input_bound": 28559,
+        "output_cap": 32000,
+        "outcome": "error",
+        "charged_tokens": 60559,
+        "usage_known": false,
+        "error_type": "APIConnectionError"
+      },
+      {
+        "attempt": 6,
+        "stage": "p2_check",
+        "reserved_tokens": 59182,
+        "input_bound": 27182,
+        "output_cap": 32000,
+        "outcome": "error",
+        "charged_tokens": 59182,
+        "usage_known": false,
+        "error_type": "APIConnectionError"
+      },
+      {
+        "attempt": 7,
+        "stage": "p2_check",
+        "reserved_tokens": 59612,
+        "input_bound": 27612,
+        "output_cap": 32000,
+        "outcome": "error",
+        "charged_tokens": 59612,
+        "usage_known": false,
+        "error_type": "APIConnectionError"
+      },
+      {
+        "attempt": 8,
+        "stage": "p2_check",
+        "reserved_tokens": 60559,
+        "input_bound": 28559,
+        "output_cap": 32000,
+        "outcome": "error",
+        "charged_tokens": 60559,
+        "usage_known": false,
+        "error_type": "APIConnectionError"
+      },
+      {
+        "attempt": 9,
+        "stage": "p2_check",
+        "reserved_tokens": 58136,
+        "input_bound": 26136,
+        "output_cap": 32000,
+        "outcome": "abandoned",
+        "charged_tokens": 58136,
+        "usage_known": false
+      }
+    ],
+    "input_bound_method": "utf8_request_bytes_plus_padding",
+    "unknown_usage_policy": "charge_full_reservation"
+  },
+  "run_metadata": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\deadline_trace_audit\\fixed-v1\\run\\s2\\IS1008a.run.json",
+  "stage_trace": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\deadline_trace_audit\\fixed-v1\\run\\s2\\IS1008a.stages.jsonl",
+  "p2_partial_artifact": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\deadline_trace_audit\\fixed-v1\\run\\s2\\_attempts\\IS1008a\\f68ca3a975104e5ea49a06781d5e7249\\p2.partial.json",
+  "clarifications_partial_artifact": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\deadline_trace_audit\\fixed-v1\\run\\s2\\_attempts\\IS1008a\\f68ca3a975104e5ea49a06781d5e7249\\clarifications.partial.json",
+  "partial_artifact": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\deadline_trace_audit\\fixed-v1\\run\\s2\\_attempts\\IS1008a\\f68ca3a975104e5ea49a06781d5e7249\\partial.json"
+}

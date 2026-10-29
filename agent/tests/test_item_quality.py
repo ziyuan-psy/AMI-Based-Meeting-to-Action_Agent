@@ -91,8 +91,13 @@ def test_different_actor_on_same_lines_is_not_absorbed():
     assert len(restore_actions([b], [a], apply_cap=False)) == 2
 
 
-def test_real_captured_ui_assignment_survives_decision_replacement(tmp_path):
+def test_real_captured_ui_assignment_survives_decision_replacement(tmp_path,monkeypatch):
     import shutil
+    import runpy
+    from mta import extract
+    historical=runpy.run_path(str(config.ROOT/'results/quality_repairs/release-v9/source/agent/src/mta/prompts.py'))
+    monkeypatch.setattr(extract,'CONSOLIDATE_SYSTEM',historical['CONSOLIDATE_SYSTEM'])
+    monkeypatch.setattr(extract,'DECISION_CONSOLIDATE_SYSTEM',historical['DECISION_CONSOLIDATE_SYSTEM'])
     root = config.ROOT / 'results/p2_repairs/repair-v3'
     captured = list((root/'after/s2/_attempts/TS3006a').glob('*/checkpoints/extracted.json'))
     assert len(captured)==1

@@ -1,0 +1,647 @@
+{
+  "item": 15,
+  "fields": {
+    "item_key": "TS3006b#15",
+    "record_id": null,
+    "item_type": "actions",
+    "item_text": "The UI Designer will add LED indicator lights under the buttons to show which buttons are active.",
+    "state": "pending",
+    "recordable": true,
+    "fields": {
+      "status": "open",
+      "prior_context_needed": false,
+      "related_items": [],
+      "owner": [
+        "MTD023UID"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3006b.json",
+          "locator": "TS3006b.C.dialog-act.dharshi.192"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3006b.json",
+          "locator": "TS3006b.A.dialog-act.dharshi.360"
+        }
+      ]
+    },
+    "draft_fields": {
+      "status": "open",
+      "related_items": [],
+      "owner": [
+        "MTD023UID"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "prior_context_needed": false,
+      "used_participant_lookup": false,
+      "evidence_da_ids": [
+        "TS3006b.C.dialog-act.dharshi.192",
+        "TS3006b.A.dialog-act.dharshi.360"
+      ]
+    },
+    "checks": {
+      "statement": {
+        "result": "pass",
+        "reason": "Dialogue references LED indicators concept: ID discussed LED lighting under menu-related buttons and only showing lit buttons for active menu items, which matches the proposed action scope.",
+        "quotes": [
+          {
+            "da_id": "TS3006b.C.dialog-act.dharshi.192",
+            "quote": "Hey is it interesting for users if we put LED lights under the buttons ? So that if you uh press on the menu function that only the buttons that are used for the menu are ligh li light up ."
+          },
+          {
+            "da_id": "TS3006b.A.dialog-act.dharshi.360",
+            "quote": "Oh five minutes ."
+          }
+        ],
+        "fields": [
+          "statement"
+        ]
+      },
+      "owner": {
+        "result": "pass",
+        "reason": "Owner is explicitly named in the provisional values as MTD023UID and aligns with UI role in dialogue.",
+        "quotes": [
+          {
+            "da_id": "TS3006b.C.dialog-act.dharshi.192",
+            "quote": "Hey is it interesting for users if we put LED lights under the buttons ? So that if you uh press on the menu function that only the buttons that are used for the menu are ligh li light up ."
+          },
+          {
+            "da_id": "TS3006b.A.dialog-act.dharshi.360",
+            "quote": "Oh five minutes ."
+          }
+        ],
+        "fields": [
+          "owner"
+        ]
+      },
+      "deadline": {
+        "result": "uncertain",
+        "reason": "deadline_unresolved",
+        "quotes": [],
+        "fields": [
+          "deadline"
+        ]
+      },
+      "status": {
+        "result": "pass",
+        "reason": "Status 'open' is consistent with the current discussion stage and no completion/deadline has been declared.",
+        "quotes": [
+          {
+            "da_id": "TS3006b.A.dialog-act.dharshi.360",
+            "quote": "Oh five minutes ."
+          },
+          {
+            "da_id": "TS3006b.C.dialog-act.dharshi.192",
+            "quote": "Hey is it interesting for users if we put LED lights under the buttons ? So that if you uh press on the menu function that only the buttons that are used for the menu are ligh li light up ."
+          }
+        ],
+        "fields": [
+          "status"
+        ]
+      },
+      "conflict": {
+        "result": "pass",
+        "reason": "No conflicting statements found in the delivered dialogue; no contradictions to the action present.",
+        "quotes": [
+          {
+            "da_id": "TS3006b.C.dialog-act.dharshi.192",
+            "quote": "Hey is it interesting for users if we put LED lights under the buttons ? So that if you uh press on the menu function that only the buttons that are used for the menu are ligh li light up ."
+          },
+          {
+            "da_id": "TS3006b.A.dialog-act.dharshi.360",
+            "quote": "Oh five minutes ."
+          }
+        ],
+        "fields": []
+      },
+      "relation": {
+        "result": "not_applicable",
+        "reason": "No prior related item changes identified; this is a standalone action proposal within the current meeting context.",
+        "quotes": [],
+        "fields": [
+          "related_items"
+        ]
+      }
+    },
+    "unresolved_fields": [
+      "deadline"
+    ],
+    "observed_evidence_da_ids": [
+      "TS3006b.C.dialog-act.dharshi.192",
+      "TS3006b.A.dialog-act.dharshi.360",
+      "TS3006b.B.dialog-act.dharshi.195",
+      "TS3006b.A.dialog-act.dharshi.359",
+      "TS3006b.D.dialog-act.dharshi.408",
+      "TS3006b.C.dialog-act.dharshi.193"
+    ],
+    "initial_context": {
+      "item": {
+        "type": "actions",
+        "text": "The UI Designer will add LED indicator lights under the buttons to show which buttons are active.",
+        "flags": []
+      },
+      "current_meeting": "TS3006b",
+      "earlier_meetings": [
+        "TS3006a"
+      ],
+      "roster": [
+        {
+          "speaker": "A",
+          "participant_id": "MTD021PM",
+          "role": "PM"
+        },
+        {
+          "speaker": "B",
+          "participant_id": "MTD023UID",
+          "role": "UI"
+        },
+        {
+          "speaker": "C",
+          "participant_id": "MTD022ID",
+          "role": "ID"
+        },
+        {
+          "speaker": "D",
+          "participant_id": "MTD024ME",
+          "role": "ME"
+        }
+      ],
+      "observed_dialogue": [
+        {
+          "da_id": "TS3006b.C.dialog-act.dharshi.192",
+          "meeting_id": "TS3006b",
+          "text": "Hey is it interesting for users if we put LED lights under the buttons ? So that if you uh press on the menu function that only the buttons that are used for the menu are ligh li light up .",
+          "participant": "MTD022ID",
+          "role": "ID"
+        },
+        {
+          "da_id": "TS3006b.A.dialog-act.dharshi.360",
+          "meeting_id": "TS3006b",
+          "text": "Oh five minutes .",
+          "participant": "MTD021PM",
+          "role": "PM"
+        },
+        {
+          "da_id": "TS3006b.B.dialog-act.dharshi.195",
+          "participant": "MTD023UID",
+          "role": "UI",
+          "text": "multifunctional ."
+        },
+        {
+          "da_id": "TS3006b.A.dialog-act.dharshi.359",
+          "participant": "MTD021PM",
+          "role": "PM",
+          "text": "yeah ."
+        },
+        {
+          "da_id": "TS3006b.D.dialog-act.dharshi.408",
+          "participant": "MTD024ME",
+          "role": "ME",
+          "text": "That's very good idea ."
+        },
+        {
+          "da_id": "TS3006b.C.dialog-act.dharshi.193",
+          "participant": "MTD022ID",
+          "role": "ID",
+          "text": "N"
+        }
+      ],
+      "peer_items": [
+        {
+          "item_key": "TS3006b#0",
+          "type": "actions",
+          "text": "The User Interface Designer can design a menu for all these functions."
+        },
+        {
+          "item_key": "TS3006b#1",
+          "type": "problems",
+          "text": "The current look-and-feel and usability of remote controls are disliked by users and are hard to learn, with remotes often getting lost in rooms."
+        },
+        {
+          "item_key": "TS3006b#2",
+          "type": "problems",
+          "text": "Open problem: it is unclear what the screen should do or what is required from it."
+        },
+        {
+          "item_key": "TS3006b#3",
+          "type": "problems",
+          "text": "Uncertainty about saving the project file (whether it saves automatically and where)."
+        },
+        {
+          "item_key": "TS3006b#4",
+          "type": "decisions",
+          "text": "The target group will be sixteen to forty."
+        },
+        {
+          "item_key": "TS3006b#5",
+          "type": "decisions",
+          "text": "The basic new requirements of the management were no teletext, only for T_V_."
+        },
+        {
+          "item_key": "TS3006b#6",
+          "type": "decisions",
+          "text": "Teletext and the newsflash feature will not be used in the future."
+        },
+        {
+          "item_key": "TS3006b#7",
+          "type": "decisions",
+          "text": "Keep all classic remote functions and improve button usability and the physical design."
+        },
+        {
+          "item_key": "TS3006b#8",
+          "type": "decisions",
+          "text": "The product must include corporate identity with the logo present and colours consistent."
+        },
+        {
+          "item_key": "TS3006b#9",
+          "type": "actions",
+          "text": "The PM will write the meeting minutes."
+        },
+        {
+          "item_key": "TS3006b#10",
+          "type": "actions",
+          "text": "The UI Designer will group the functions into two groups: display functions and basic functions."
+        },
+        {
+          "item_key": "TS3006b#11",
+          "type": "actions",
+          "text": "The UI Designer will compile a list of the functions to be on the LCD screen menu."
+        },
+        {
+          "item_key": "TS3006b#12",
+          "type": "actions",
+          "text": "The UI Designer will implement a paged LCD menu."
+        },
+        {
+          "item_key": "TS3006b#13",
+          "type": "actions",
+          "text": "The ID will integrate the channel-changing functionality into the design."
+        },
+        {
+          "item_key": "TS3006b#14",
+          "type": "actions",
+          "text": "The UI Designer will position the LCD screen on top and separate advanced functions from basic functions."
+        }
+      ],
+      "provisional_values": {
+        "owner": [
+          "MTD023UID"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "open",
+        "related_items": []
+      },
+      "candidate_evidence_da_ids": [
+        "TS3006b.C.dialog-act.dharshi.192",
+        "TS3006b.A.dialog-act.dharshi.360"
+      ]
+    },
+    "observed_documents": [],
+    "document_evidence": [],
+    "relation_evidence": [],
+    "history": [
+      {
+        "item": "TS3006b#15",
+        "step": 1,
+        "flags": [],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue references LED indicators concept: ID discussed LED lighting under menu-related buttons and only showing lit buttons for active menu items, which matches the proposed action scope.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.C.dialog-act.dharshi.192",
+                "quote": "Hey is it interesting for users if we put LED lights under the buttons ? So that if you uh press on the menu function that only the buttons that are used for the menu are ligh li light up ."
+              },
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.360",
+                "quote": "Oh five minutes ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Owner is explicitly named in the provisional values as MTD023UID and aligns with UI role in dialogue.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.C.dialog-act.dharshi.192",
+                "quote": "Hey is it interesting for users if we put LED lights under the buttons ? So that if you uh press on the menu function that only the buttons that are used for the menu are ligh li light up ."
+              },
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.360",
+                "quote": "Oh five minutes ."
+              }
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "deadline_unresolved",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Status 'open' is consistent with the current discussion stage and no completion/deadline has been declared.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.360",
+                "quote": "Oh five minutes ."
+              },
+              {
+                "da_id": "TS3006b.C.dialog-act.dharshi.192",
+                "quote": "Hey is it interesting for users if we put LED lights under the buttons ? So that if you uh press on the menu function that only the buttons that are used for the menu are ligh li light up ."
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting statements found in the delivered dialogue; no contradictions to the action present.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.C.dialog-act.dharshi.192",
+                "quote": "Hey is it interesting for users if we put LED lights under the buttons ? So that if you uh press on the menu function that only the buttons that are used for the menu are ligh li light up ."
+              },
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.360",
+                "quote": "Oh five minutes ."
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related item changes identified; this is a standalone action proposal within the current meeting context.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "decision": "request_clarification",
+        "reason": "supported_statement_with_unresolved_fields",
+        "assessed_text": "The UI Designer will add LED indicator lights under the buttons to show which buttons are active.",
+        "requested_action": "accept",
+        "proposed_fields": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "MTD023UID"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "TS3006b.C.dialog-act.dharshi.192",
+            "TS3006b.A.dialog-act.dharshi.360"
+          ]
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue references LED indicators concept: ID discussed LED lighting under menu-related buttons and only showing lit buttons for active menu items, which matches the proposed action scope.",
+            "quotes": [
+              "TS3006b.C.dialog-act.dharshi.192",
+              "TS3006b.A.dialog-act.dharshi.360"
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Owner is explicitly named in the provisional values as MTD023UID and aligns with UI role in dialogue.",
+            "quotes": [
+              "TS3006b.C.dialog-act.dharshi.192",
+              "TS3006b.A.dialog-act.dharshi.360"
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "No deadline wording present in dialogue or provisional data; cannot confirm timing.",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Status 'open' is consistent with the current discussion stage and no completion/deadline has been declared.",
+            "quotes": [
+              "TS3006b.A.dialog-act.dharshi.360",
+              "TS3006b.C.dialog-act.dharshi.192"
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting statements found in the delivered dialogue; no contradictions to the action present.",
+            "quotes": [
+              "TS3006b.C.dialog-act.dharshi.192",
+              "TS3006b.A.dialog-act.dharshi.360"
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related item changes identified; this is a standalone action proposal within the current meeting context.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "MTD023UID"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue references LED indicators concept: ID discussed LED lighting under menu-related buttons and only showing lit buttons for active menu items, which matches the proposed action scope.",
+            "evidence_da_ids": [
+              "TS3006b.C.dialog-act.dharshi.192",
+              "TS3006b.A.dialog-act.dharshi.360"
+            ]
+          },
+          "owner_check": {
+            "result": "pass",
+            "reason": "Owner is explicitly named in the provisional values as MTD023UID and aligns with UI role in dialogue.",
+            "evidence_da_ids": [
+              "TS3006b.C.dialog-act.dharshi.192",
+              "TS3006b.A.dialog-act.dharshi.360"
+            ]
+          },
+          "deadline_check": {
+            "result": "uncertain",
+            "reason": "No deadline wording present in dialogue or provisional data; cannot confirm timing.",
+            "evidence_da_ids": []
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Status 'open' is consistent with the current discussion stage and no completion/deadline has been declared.",
+            "evidence_da_ids": [
+              "TS3006b.A.dialog-act.dharshi.360",
+              "TS3006b.C.dialog-act.dharshi.192"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No conflicting statements found in the delivered dialogue; no contradictions to the action present.",
+            "evidence_da_ids": [
+              "TS3006b.C.dialog-act.dharshi.192",
+              "TS3006b.A.dialog-act.dharshi.360"
+            ],
+            "affected_fields": []
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior related item changes identified; this is a standalone action proposal within the current meeting context.",
+            "evidence_da_ids": []
+          },
+          "next_action": "accept"
+        },
+        "evidence_bindings": {
+          "statement": [
+            "TS3006b.C.dialog-act.dharshi.192",
+            "TS3006b.A.dialog-act.dharshi.360"
+          ],
+          "owner": [
+            "TS3006b.C.dialog-act.dharshi.192",
+            "TS3006b.A.dialog-act.dharshi.360"
+          ],
+          "status": [
+            "TS3006b.A.dialog-act.dharshi.360",
+            "TS3006b.C.dialog-act.dharshi.192"
+          ],
+          "conflict": [
+            "TS3006b.C.dialog-act.dharshi.192",
+            "TS3006b.A.dialog-act.dharshi.360"
+          ]
+        },
+        "raw_tool_input": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "MTD023UID"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue references LED indicators concept: ID discussed LED lighting under menu-related buttons and only showing lit buttons for active menu items, which matches the proposed action scope.",
+            "evidence_da_ids": [
+              "TS3006b.C.dialog-act.dharshi.192",
+              "TS3006b.A.dialog-act.dharshi.360"
+            ]
+          },
+          "owner_check": {
+            "result": "pass",
+            "reason": "Owner is explicitly named in the provisional values as MTD023UID and aligns with UI role in dialogue.",
+            "evidence_da_ids": [
+              "TS3006b.C.dialog-act.dharshi.192",
+              "TS3006b.A.dialog-act.dharshi.360"
+            ]
+          },
+          "deadline_check": {
+            "result": "uncertain",
+            "reason": "No deadline wording present in dialogue or provisional data; cannot confirm timing.",
+            "evidence_da_ids": []
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Status 'open' is consistent with the current discussion stage and no completion/deadline has been declared.",
+            "evidence_da_ids": [
+              "TS3006b.A.dialog-act.dharshi.360",
+              "TS3006b.C.dialog-act.dharshi.192"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No conflicting statements found in the delivered dialogue; no contradictions to the action present.",
+            "evidence_da_ids": [
+              "TS3006b.C.dialog-act.dharshi.192",
+              "TS3006b.A.dialog-act.dharshi.360"
+            ],
+            "affected_fields": []
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior related item changes identified; this is a standalone action proposal within the current meeting context.",
+            "evidence_da_ids": []
+          },
+          "next_action": "accept"
+        },
+        "protocol_normalizations": []
+      },
+      {
+        "item": "TS3006b#15",
+        "step": 1,
+        "flags": [],
+        "action": "stop",
+        "outcome": "pending",
+        "termination_reason": "supported_statement_with_unresolved_fields",
+        "unresolved_fields": [
+          "deadline"
+        ]
+      }
+    ],
+    "lookups": 0,
+    "termination_reason": "supported_statement_with_unresolved_fields",
+    "clarifications": [
+      {
+        "request_id": "ac8edf9e51228c4f",
+        "item_key": "TS3006b#15",
+        "record_id": null,
+        "field": "deadline",
+        "question": "What is the agreed deadline, in its original wording?",
+        "item_text": "The UI Designer will add LED indicator lights under the buttons to show which buttons are active.",
+        "reason": "deadline_unresolved",
+        "evidence_da_ids": [],
+        "available_evidence_da_ids": [
+          "TS3006b.C.dialog-act.dharshi.192",
+          "TS3006b.A.dialog-act.dharshi.360",
+          "TS3006b.B.dialog-act.dharshi.195",
+          "TS3006b.A.dialog-act.dharshi.359",
+          "TS3006b.D.dialog-act.dharshi.408",
+          "TS3006b.C.dialog-act.dharshi.193"
+        ],
+        "status": "open",
+        "termination_reason": "supported_statement_with_unresolved_fields"
+      }
+    ]
+  }
+}

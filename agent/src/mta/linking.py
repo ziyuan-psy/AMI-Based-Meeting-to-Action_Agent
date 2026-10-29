@@ -6,9 +6,10 @@ import copy
 from .agent import RELATIONS
 
 LINK_SCHEMA = {"type": "object", "properties": {
-    "id": {"type": "string"}, "relation": {"enum": RELATIONS},
+    "id": {"type": "string", "description": "The exact existing PRIOR RECORD id returned by a history tool. Do not create a new link id or prefix the record id."}, "relation": {"enum": RELATIONS},
     "changed_fields": {"type": "array", "uniqueItems": True,
-                       "items": {"enum": ["text", "scope", "owner", "deadline", "status"]}},
+                       "items": {"enum": ["text", "scope", "owner", "deadline", "status"]},
+                       "description": "Must be [] for continues; updates/replaces must identify at least one changed field. Choose the relationship from evidence; code never changes it for you."},
     "reason": {"type": "string", "minLength": 1},
     "prior_evidence_da_ids": {"type": "array", "minItems": 1, "uniqueItems": True, "items": {"type": "string"}},
     "current_evidence_da_ids": {"type": "array", "minItems": 1, "uniqueItems": True, "items": {"type": "string"}}},

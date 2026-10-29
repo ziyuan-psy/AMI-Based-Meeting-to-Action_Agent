@@ -1,0 +1,74 @@
+{
+  "control": {
+    "limits": {
+      "calls": 58,
+      "tokens": 699711,
+      "request_seconds": 300.0,
+      "meeting_seconds": 564.317,
+      "inflight": 4,
+      "retries": 2,
+      "backoff": 0.5
+    },
+    "attempted_calls": 2,
+    "charged_tokens": 17061,
+    "unknown_usage_tokens": 0,
+    "reserved_tokens": 0,
+    "max_inflight_seen": 1,
+    "failure": null,
+    "attempts": [
+      {
+        "attempt": 0,
+        "stage": "p2_check",
+        "reserved_tokens": 59708,
+        "input_bound": 27708,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 8338,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 5337,
+        "output_tokens": 3001
+      },
+      {
+        "attempt": 1,
+        "stage": "agent",
+        "reserved_tokens": 57924,
+        "input_bound": 25924,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 8723,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 5206,
+        "output_tokens": 3517
+      }
+    ],
+    "input_bound_method": "utf8_request_bytes_plus_padding",
+    "unknown_usage_policy": "charge_full_reservation"
+  },
+  "usage": {
+    "calls": 2,
+    "in": 10543,
+    "out": 6518,
+    "stages": {
+      "p2_check": {
+        "calls": 1,
+        "in": 5337,
+        "out": 3001
+      },
+      "agent": {
+        "calls": 1,
+        "in": 5206,
+        "out": 3517
+      }
+    }
+  },
+  "admission": {
+    "capacity": 55,
+    "tail_calls_reserved": 3,
+    "attempts_by_item": {
+      "TS3006b#10": 2
+    },
+    "issued": 2
+  }
+}

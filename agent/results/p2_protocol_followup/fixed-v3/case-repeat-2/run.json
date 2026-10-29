@@ -1,0 +1,100 @@
+{
+  "control": {
+    "limits": {
+      "calls": 58,
+      "tokens": 699711,
+      "request_seconds": 300.0,
+      "meeting_seconds": 564.317,
+      "inflight": 4,
+      "retries": 2,
+      "backoff": 0.5
+    },
+    "attempted_calls": 4,
+    "charged_tokens": 29873,
+    "unknown_usage_tokens": 0,
+    "reserved_tokens": 0,
+    "max_inflight_seen": 1,
+    "failure": null,
+    "attempts": [
+      {
+        "attempt": 0,
+        "stage": "p2_check",
+        "reserved_tokens": 60015,
+        "input_bound": 28015,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 9237,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 5392,
+        "output_tokens": 3845
+      },
+      {
+        "attempt": 1,
+        "stage": "agent",
+        "reserved_tokens": 52745,
+        "input_bound": 20745,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 4621,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 3946,
+        "output_tokens": 675
+      },
+      {
+        "attempt": 2,
+        "stage": "agent",
+        "reserved_tokens": 54274,
+        "input_bound": 22274,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 5351,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 4295,
+        "output_tokens": 1056
+      },
+      {
+        "attempt": 3,
+        "stage": "p2_check",
+        "reserved_tokens": 67121,
+        "input_bound": 35121,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 10664,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 7147,
+        "output_tokens": 3517
+      }
+    ],
+    "input_bound_method": "utf8_request_bytes_plus_padding",
+    "unknown_usage_policy": "charge_full_reservation"
+  },
+  "usage": {
+    "calls": 4,
+    "in": 20780,
+    "out": 9093,
+    "stages": {
+      "p2_check": {
+        "calls": 2,
+        "in": 12539,
+        "out": 7362
+      },
+      "agent": {
+        "calls": 2,
+        "in": 8241,
+        "out": 1731
+      }
+    }
+  },
+  "admission": {
+    "capacity": 55,
+    "tail_calls_reserved": 3,
+    "attempts_by_item": {
+      "TS3006b#10": 4
+    },
+    "issued": 4
+  }
+}

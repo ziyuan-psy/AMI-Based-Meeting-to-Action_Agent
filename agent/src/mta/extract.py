@@ -69,7 +69,7 @@ def _clean(it: dict, ev: list[str]) -> dict | None:
         return None
     return {
         "type": it["type"], "text": str(it["text"]).strip(), "evidence_da_ids": ev,
-        "owner_ids": [str(x) for x in (it.get("owner_ids") or [])],
+        "owner_ids": list(dict.fromkeys(str(x).strip() for x in (it.get("owner_ids") or []) if x is not None and str(x).strip())),
         "owner_cue": it.get("owner_cue"), "deadline_cue": it.get("deadline_cue"),
         "owner_basis": it.get("owner_basis") if it.get("owner_basis") in BASIS else "missing",
         "deadline": it.get("deadline") if isinstance(it.get("deadline"), str) else None,

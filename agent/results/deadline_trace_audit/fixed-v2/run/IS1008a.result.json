@@ -1,0 +1,145 @@
+{
+  "mode": "s2",
+  "meeting_id": "IS1008a",
+  "status": "FAILED",
+  "reason": "stage_failed",
+  "failed_stage": "agent+abstract",
+  "failure": {
+    "code": "stage_failed",
+    "status": "FAILED",
+    "stage": "agent+abstract",
+    "error_type": "KeyError",
+    "os_error": null,
+    "windows_error": null,
+    "io_operation": null
+  },
+  "runtime_control": {
+    "limits": {
+      "calls": 67,
+      "tokens": 854695,
+      "request_seconds": 300.0,
+      "meeting_seconds": 873.289,
+      "inflight": 4,
+      "retries": 2,
+      "backoff": 0.5
+    },
+    "attempted_calls": 8,
+    "charged_tokens": 211022,
+    "unknown_usage_tokens": 179162,
+    "reserved_tokens": 0,
+    "max_inflight_seen": 4,
+    "failure": {
+      "code": "stage_failed",
+      "status": "FAILED",
+      "stage": "agent+abstract",
+      "error_type": "KeyError",
+      "os_error": null,
+      "windows_error": null,
+      "io_operation": null
+    },
+    "attempts": [
+      {
+        "attempt": 0,
+        "stage": "p2_check",
+        "reserved_tokens": 60559,
+        "input_bound": 28559,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 6589,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 5702,
+        "output_tokens": 887
+      },
+      {
+        "attempt": 1,
+        "stage": "p2_check",
+        "reserved_tokens": 59182,
+        "input_bound": 27182,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 6351,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 5306,
+        "output_tokens": 1045
+      },
+      {
+        "attempt": 2,
+        "stage": "p2_check",
+        "reserved_tokens": 59612,
+        "input_bound": 27612,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 6564,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 5734,
+        "output_tokens": 830
+      },
+      {
+        "attempt": 3,
+        "stage": "p2_check",
+        "reserved_tokens": 58136,
+        "input_bound": 26136,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 5647,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 4943,
+        "output_tokens": 704
+      },
+      {
+        "attempt": 4,
+        "stage": "p2_check",
+        "reserved_tokens": 59255,
+        "input_bound": 27255,
+        "output_cap": 32000,
+        "outcome": "abandoned",
+        "charged_tokens": 59255,
+        "usage_known": false
+      },
+      {
+        "attempt": 5,
+        "stage": "p2_check",
+        "reserved_tokens": 61455,
+        "input_bound": 29455,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 6709,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 6204,
+        "output_tokens": 505
+      },
+      {
+        "attempt": 6,
+        "stage": "p2_check",
+        "reserved_tokens": 60685,
+        "input_bound": 28685,
+        "output_cap": 32000,
+        "outcome": "abandoned",
+        "charged_tokens": 60685,
+        "usage_known": false
+      },
+      {
+        "attempt": 7,
+        "stage": "p2_check",
+        "reserved_tokens": 59222,
+        "input_bound": 27222,
+        "output_cap": 32000,
+        "outcome": "abandoned",
+        "charged_tokens": 59222,
+        "usage_known": false
+      }
+    ],
+    "input_bound_method": "utf8_request_bytes_plus_padding",
+    "unknown_usage_policy": "charge_full_reservation"
+  },
+  "run_metadata": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\deadline_trace_audit\\fixed-v2\\run\\s2\\IS1008a.run.json",
+  "stage_trace": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\deadline_trace_audit\\fixed-v2\\run\\s2\\IS1008a.stages.jsonl",
+  "p2_partial_artifact": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\deadline_trace_audit\\fixed-v2\\run\\s2\\_attempts\\IS1008a\\2ee8d2c427b54fe0bed86f1c91e2c144\\p2.partial.json",
+  "clarifications_partial_artifact": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\deadline_trace_audit\\fixed-v2\\run\\s2\\_attempts\\IS1008a\\2ee8d2c427b54fe0bed86f1c91e2c144\\clarifications.partial.json",
+  "partial_artifact": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\deadline_trace_audit\\fixed-v2\\run\\s2\\_attempts\\IS1008a\\2ee8d2c427b54fe0bed86f1c91e2c144\\partial.json"
+}

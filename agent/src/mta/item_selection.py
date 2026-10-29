@@ -21,9 +21,12 @@ First exclude procedure/non-project material, then merge duplicate tasks and spl
 Use actual dialogue, not the candidate's label, as the evidence. Return only the advertised tool fields.
 The input candidates are keyed C0, C1, etc. Return ONE review under EACH identical key.
 Each review has keep (boolean), claims (array of {text,priority}), and reason. Excluded reviews have
-keep=false and claims=[]. A duplicate can name duplicate_of (another input key kept in this response).
+keep=false and claims=[] (claims may be omitted only when keep=false). A duplicate can name duplicate_of (another input key kept in this response).
 Keep source keys stable even when ranking; they identify source claims, not output positions or dialogue lines.
 Preserve named follow-up assignments, including minutes, sharing promised slides and coordination work.
+For Actions write a task verb phrase, with the assignee kept separately in the source owner_ids.
+Do not repeat an unverified candidate assignee as the subject of the task text. Preserve recipients,
+targets, conditions and timing. The separate owner check must be able to correct attribution.
 An Action and a product Decision may cite the same lines without being duplicates. Do not turn
 capability, role descriptions or suggestions into commitments. Merge the SAME actor's SAME task only.
 Decisions are independently testable product/project choices. Split separate price, sales target,
@@ -78,7 +81,9 @@ def review_schema(pool):
         "keep":{"type":"boolean"},"claims":{"type":"array","maxItems":8,"items":claim},
         "reason":{"type":"string","minLength":1},
         "duplicate_of":{"enum":[f"C{j}" for j in range(len(pool))]}},
-        "required":["keep","claims","reason"],"additionalProperties":False} for i in range(len(pool))},
+        "required":["keep","reason"],
+        "allOf":[{"if":{"properties":{"keep":{"const":True}}},"then":{"required":["claims"]}}],
+        "additionalProperties":False} for i in range(len(pool))},
         "required":[f"C{i}" for i in range(len(pool))],"additionalProperties":False}
 
 
@@ -89,11 +94,14 @@ def procedure_only(text):
 
 def canonical_reviews(raw, pool, normalizations=None):
     errors=list(Draft202012Validator(review_schema(pool)).iter_errors(raw))
-    if errors:raise ValueError(errors[0].message)
+    if errors:raise ValueError(('/'.join(map(str,errors[0].absolute_path)) or 'reviews')+': '+errors[0].message)
     result={"items":[],"excluded":[]}
     raw=copy.deepcopy(raw)
     for i, source in enumerate(pool):
         row=raw[f"C{i}"]
+        if not row['keep'] and 'claims' not in row:
+            row['claims']=[]
+            if normalizations is not None:normalizations.append({'source':f'C{i}','action':'empty_claims_for_explicit_exclusion'})
         if row['keep'] != bool(row['claims']):
             row.update(keep=True,claims=[{'text':source['text'],'priority':2}])
             row.pop('duplicate_of',None)
@@ -160,32 +168,40 @@ def selection_error(result, pool, delivered):
     return None
 
 
-def ranked_cap(items, trace=None):
+def ranked_cap(items, trace=None, action_limit=None, stage='select'):
     """Rank the whole pool, including recovered tasks, before applying unchanged limits."""
+    limits={**config.MAX_ITEMS,'actions':config.MAX_ITEMS['actions'] if action_limit is None else action_limit}
+    def attribution(item):
+        fields=item.get('fields',{})
+        ids=fields.get('owner',[]) if fields else item.get('owner_ids',[])
+        basis=fields.get('owner_basis') if fields else item.get('owner_basis')
+        return {s for s in ids or [] if isinstance(s,str) and s.strip()},basis=='explicit'
+    def timed(item):
+        return (item.get('fields') or item).get('deadline_basis')=='explicit'
     ranked = sorted(enumerate(items), key=lambda pair: (
         -pair[1].get("selection_priority", 2),
-        -(pair[1]["type"] == "actions" and pair[1].get("owner_basis") == "explicit"),
-        -(pair[1]["type"] == "actions" and pair[1].get("deadline_basis") == "explicit"), pair[0]))
+        -(pair[1]["type"] == "actions" and attribution(pair[1])[1]),
+        -(pair[1]["type"] == "actions" and timed(pair[1])), pair[0]))
     chosen, owners = set(), set()
     remaining=[pair for pair in ranked if pair[1]['type']=='actions']
-    for _ in range(config.MAX_ITEMS['actions']):
+    for _ in range(limits['actions']):
         if not remaining:break
         pair=max(remaining,key=lambda p:(
-            bool(p[1].get('selection_priority',2)>=2 and p[1].get('owner_basis')=='explicit' and set(p[1].get('owner_ids',[]))-owners),
-            p[1].get('selection_priority',2),p[1].get('deadline_basis')=='explicit',-p[0]))
-        remaining.remove(pair);chosen.add(pair[0]);owners.update(pair[1].get('owner_ids',[]))
+            bool(attribution(p[1])[1] and attribution(p[1])[0]-owners),
+            p[1].get('selection_priority',2),timed(p[1]),-p[0]))
+        remaining.remove(pair);chosen.add(pair[0]);owners.update(attribution(pair[1])[0])
     counts, kept, dropped = {}, [], []
     for index,item in ranked:
         typ=item['type'];counts[typ]=counts.get(typ,0)+1
-        if (index in chosen if typ=='actions' else counts[typ]<=config.MAX_ITEMS[typ]):kept.append(item)
-        else:dropped.append({'item':item,'reason':'type_limit_after_selection','rank':counts[typ],'limit':config.MAX_ITEMS[typ]})
+        if (index in chosen if typ=='actions' else counts[typ]<=limits[typ]):kept.append(item)
+        else:dropped.append({'item':item,'reason':'type_limit_after_selection','rank':counts[typ],'limit':limits[typ]})
     if trace:
-        trace.log(stage="select", event="cap", before=items, kept=kept, dropped=dropped,
-                  limits=config.MAX_ITEMS, policy="explicit_owner_coverage_then_project_priority_assignment_specificity_stable")
+        trace.log(stage=stage, event="cap", before=items, kept=kept, dropped=dropped,
+                  limits=limits, policy="checked_attribution_when_available_owner_coverage_then_priority_deadline_stable")
     return kept
 
 
-def select_items(llm, pool, acts, cache=None, trace=None):
+def select_items(llm, pool, acts, cache=None, trace=None, defer_action_limit=False):
     if not pool:
         return []
     by_id = {a["id"]: a for a in acts}
@@ -220,7 +236,7 @@ def select_items(llm, pool, acts, cache=None, trace=None):
                       cache_origin=saved.get('origin') if source=='cache' else None, error=error)
         if not error:
             break
-        user["correction"] = error
+        user["correction"] = error+' Return a corrected review for EVERY original C-key. Kept reviews need claims with text/priority. Explicit exclusions may omit empty claims. Do not change or omit source keys.'
         user["previous_submission"] = raw
         raw, source = None, "model"
     else:
@@ -240,4 +256,4 @@ def select_items(llm, pool, acts, cache=None, trace=None):
         out.append(item)
     if trace:
         trace.log(stage="select", event="completed", before=pool, items=out, excluded=result["excluded"])
-    return ranked_cap(out, trace)
+    return ranked_cap(out, trace, action_limit=2*config.MAX_ITEMS['actions'] if defer_action_limit else None)

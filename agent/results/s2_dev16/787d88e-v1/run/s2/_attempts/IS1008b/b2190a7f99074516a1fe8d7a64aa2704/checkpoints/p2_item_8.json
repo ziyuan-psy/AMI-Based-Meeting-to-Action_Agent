@@ -1,0 +1,808 @@
+{
+  "item_key": "IS1008b#8",
+  "record_id": null,
+  "item_type": "problems",
+  "item_text": "There is uncertainty whether the project plan and the budget are settled, as one speaker notes they can close this, but it’s not clear.",
+  "state": "pending",
+  "recordable": false,
+  "fields": {
+    "status": "unknown",
+    "prior_context_needed": false,
+    "related_items": [],
+    "reference": [
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/IS1008b.json",
+        "locator": "IS1008b.A.dialog-act.vkaraisk.82"
+      }
+    ]
+  },
+  "draft_fields": {
+    "status": "open",
+    "related_items": [],
+    "prior_context_needed": false,
+    "used_participant_lookup": false,
+    "evidence_da_ids": [
+      "IS1008b.A.dialog-act.vkaraisk.81",
+      "IS1008b.A.dialog-act.vkaraisk.82"
+    ],
+    "owner": null,
+    "owner_basis": "missing",
+    "deadline": null,
+    "deadline_basis": "missing"
+  },
+  "checks": {
+    "statement": {
+      "result": "uncertain",
+      "reason": "Dialogue shows PM asserts knowledge of the project plan and budget, but a later fragment indicates uncertainty about closing, and there is no explicit confirmation from others that the plan and budget are settled.",
+      "quotes": [
+        {
+          "da_id": "IS1008b.A.dialog-act.vkaraisk.81",
+          "quote": "I know the project plan and the budget ."
+        },
+        {
+          "da_id": "IS1008b.A.dialog-act.vkaraisk.82",
+          "quote": "So I can close this , <gap> not sure ."
+        }
+      ],
+      "fields": [
+        "statement"
+      ]
+    },
+    "status": {
+      "result": "uncertain",
+      "reason": "Current dialogue hints at uncertainty about whether project plan and budget are settled; no decisive commitment observed.",
+      "quotes": [
+        {
+          "da_id": "IS1008b.A.dialog-act.vkaraisk.82",
+          "quote": "So I can close this , <gap> not sure ."
+        }
+      ],
+      "fields": [
+        "status"
+      ]
+    },
+    "conflict": {
+      "result": "pass",
+      "reason": "No explicit conflicting statements found within observed_dialogue; the only possibly conflicting is 'not sure' but not a direct contradiction.",
+      "quotes": [
+        {
+          "da_id": "IS1008b.A.dialog-act.vkaraisk.82",
+          "quote": "So I can close this , <gap> not sure ."
+        }
+      ],
+      "fields": [
+        "status"
+      ]
+    },
+    "relation": {
+      "result": "not_applicable",
+      "reason": "No prior related item identified to link to; this is a standalone problem statement.",
+      "quotes": [],
+      "fields": [
+        "related_items"
+      ]
+    },
+    "owner": {
+      "result": "not_applicable",
+      "reason": "field_not_applicable",
+      "quotes": [],
+      "fields": [
+        "owner"
+      ]
+    },
+    "deadline": {
+      "result": "not_applicable",
+      "reason": "field_not_applicable",
+      "quotes": [],
+      "fields": [
+        "deadline"
+      ]
+    }
+  },
+  "unresolved_fields": [
+    "statement",
+    "status"
+  ],
+  "observed_evidence_da_ids": [
+    "IS1008b.A.dialog-act.vkaraisk.79",
+    "IS1008b.A.dialog-act.vkaraisk.80",
+    "IS1008b.A.dialog-act.vkaraisk.81",
+    "IS1008b.A.dialog-act.vkaraisk.82",
+    "IS1008b.D.dialog-act.vkaraisk.6",
+    "IS1008b.A.dialog-act.vkaraisk.83"
+  ],
+  "initial_context": {
+    "item": {
+      "type": "problems",
+      "text": "There is uncertainty whether the project plan and the budget are settled, as one speaker notes they can close this, but it’s not clear.",
+      "flags": []
+    },
+    "current_meeting": "IS1008b",
+    "earlier_meetings": [
+      "IS1008a"
+    ],
+    "roster": [
+      {
+        "speaker": "A",
+        "participant_id": "MIO086",
+        "role": "PM"
+      },
+      {
+        "speaker": "B",
+        "participant_id": "FIE073",
+        "role": "ID"
+      },
+      {
+        "speaker": "C",
+        "participant_id": "FIE038",
+        "role": "UI"
+      },
+      {
+        "speaker": "D",
+        "participant_id": "MIE085",
+        "role": "ME"
+      }
+    ],
+    "observed_dialogue": [
+      {
+        "da_id": "IS1008b.A.dialog-act.vkaraisk.79",
+        "meeting_id": "IS1008b",
+        "text": "because uh the last meeting we supposed to discuss about the financial thing .",
+        "participant": "MIO086",
+        "role": "PM"
+      },
+      {
+        "da_id": "IS1008b.A.dialog-act.vkaraisk.80",
+        "meeting_id": "IS1008b",
+        "text": "Uh let me go quickly , maybe if I can go back <vocalsound> .",
+        "participant": "MIO086",
+        "role": "PM"
+      },
+      {
+        "da_id": "IS1008b.A.dialog-act.vkaraisk.81",
+        "meeting_id": "IS1008b",
+        "text": "I know the project plan and the budget .",
+        "participant": "MIO086",
+        "role": "PM"
+      },
+      {
+        "da_id": "IS1008b.A.dialog-act.vkaraisk.82",
+        "meeting_id": "IS1008b",
+        "text": "So I can close this , <gap> not sure .",
+        "participant": "MIO086",
+        "role": "PM"
+      },
+      {
+        "da_id": "IS1008b.D.dialog-act.vkaraisk.6",
+        "participant": "MIE085",
+        "role": "ME",
+        "text": "<vocalsound>"
+      },
+      {
+        "da_id": "IS1008b.A.dialog-act.vkaraisk.83",
+        "participant": "MIO086",
+        "role": "PM",
+        "text": "Was in uh <disfmarker> S This ."
+      }
+    ],
+    "peer_items": [
+      {
+        "item_key": "IS1008b#0",
+        "type": "actions",
+        "text": "The PM will send the minutes of the meeting to the attendees."
+      },
+      {
+        "item_key": "IS1008b#1",
+        "type": "actions",
+        "text": "The PM will coordinate with Intel or IBM to obtain technical backup for the speech recognition feature."
+      },
+      {
+        "item_key": "IS1008b#2",
+        "type": "actions",
+        "text": "The team will start with all features now and prune later."
+      },
+      {
+        "item_key": "IS1008b#3",
+        "type": "actions",
+        "text": "PM will help Christine identify and contact technical companies to help slim the design."
+      },
+      {
+        "item_key": "IS1008b#4",
+        "type": "problems",
+        "text": "Nobody told me what our financial objective is, so the financial objective is unclear."
+      },
+      {
+        "item_key": "IS1008b#5",
+        "type": "actions",
+        "text": "The ME will go back to management to be more precise about what they want."
+      },
+      {
+        "item_key": "IS1008b#6",
+        "type": "actions",
+        "text": "ID(FIE073) will develop the components concept."
+      },
+      {
+        "item_key": "IS1008b#7",
+        "type": "problems",
+        "text": "There is confusion about why we were asked to prepare this slide; the assignment is unclear."
+      }
+    ],
+    "provisional_values": {
+      "owner": null,
+      "owner_basis": "missing",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "status": "open",
+      "related_items": []
+    },
+    "candidate_evidence_da_ids": [
+      "IS1008b.A.dialog-act.vkaraisk.79",
+      "IS1008b.A.dialog-act.vkaraisk.80",
+      "IS1008b.A.dialog-act.vkaraisk.81",
+      "IS1008b.A.dialog-act.vkaraisk.82"
+    ]
+  },
+  "observed_documents": [],
+  "document_evidence": [],
+  "relation_evidence": [],
+  "history": [
+    {
+      "item": "IS1008b#8",
+      "step": 1,
+      "flags": [],
+      "action": "assess_item",
+      "outcome": "invalid_action",
+      "error": "Correct these argument fields: : Additional properties are not allowed ('deadline', 'deadline_basis', 'owner', 'owner_basis' were unexpected) Tool assess_item accepts root keys: status, related_items, statement, status_check, conflict_check, relation_check, next_action. Resubmit the complete advertised object. Select only delivered supporting dialogue IDs; if support is unavailable use uncertain with an explanation, never invent an ID or mark pass with no evidence. Documents belong inside the check they inform.",
+      "raw_tool_input": {
+        "status": "open",
+        "related_items": [],
+        "statement": {
+          "result": "uncertain",
+          "reason": "Dialogue shows PM claiming knowledge of plan and budget but with blank later 'not sure' about closing, creating uncertainty about whether plan and budget are settled. No explicit confirmation from other speakers.",
+          "evidence_da_ids": [
+            "IS1008b.A.dialog-act.vkaraisk.81",
+            "IS1008b.A.dialog-act.vkaraisk.82"
+          ]
+        },
+        "status_check": {
+          "result": "uncertain",
+          "reason": "Current dialogue hints at uncertainty about whether project plan and budget are settled; no decisive commitment observed.",
+          "evidence_da_ids": [
+            "IS1008b.A.dialog-act.vkaraisk.82"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No explicit conflicting statements found within observed_dialogue; the only possibly conflicting is 'not sure' but not a direct contradiction.",
+          "evidence_da_ids": [
+            "IS1008b.A.dialog-act.vkaraisk.82"
+          ],
+          "affected_fields": [
+            "status"
+          ]
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No prior related item identified to link to; this is a standalone problem statement.",
+          "evidence_da_ids": []
+        },
+        "owner": null,
+        "owner_basis": "missing",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "next_action": "request_clarification"
+      }
+    },
+    {
+      "item": "IS1008b#8",
+      "step": 2,
+      "flags": [],
+      "action": "assess_item",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "uncertain",
+          "reason": "Dialogue shows PM claiming knowledge of plan and budget but with a later tentative 'not sure' about closing, creating uncertainty about whether plan and budget are settled. No explicit confirmation from other speakers.",
+          "quotes": [
+            {
+              "da_id": "IS1008b.A.dialog-act.vkaraisk.81",
+              "quote": "I know the project plan and the budget ."
+            },
+            {
+              "da_id": "IS1008b.A.dialog-act.vkaraisk.82",
+              "quote": "So I can close this , <gap> not sure ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "status": {
+          "result": "uncertain",
+          "reason": "Current dialogue hints at uncertainty about whether project plan and budget are settled; no decisive commitment observed.",
+          "quotes": [
+            {
+              "da_id": "IS1008b.A.dialog-act.vkaraisk.82",
+              "quote": "So I can close this , <gap> not sure ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No explicit conflicting statements found within observed_dialogue; the only possibly conflicting is 'not sure' but not a direct contradiction.",
+          "quotes": [
+            {
+              "da_id": "IS1008b.A.dialog-act.vkaraisk.82",
+              "quote": "So I can close this , <gap> not sure ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No prior related item identified to link to; this is a standalone problem statement.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        },
+        "owner": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        }
+      },
+      "decision": "request_clarification",
+      "reason": "unresolved_checks",
+      "assessed_text": "There is uncertainty whether the project plan and the budget are settled, as one speaker notes they can close this, but it’s not clear.",
+      "requested_action": "request_clarification",
+      "proposed_fields": {
+        "status": "open",
+        "related_items": [],
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "IS1008b.A.dialog-act.vkaraisk.81",
+          "IS1008b.A.dialog-act.vkaraisk.82"
+        ],
+        "owner": null,
+        "owner_basis": "missing",
+        "deadline": null,
+        "deadline_basis": "missing"
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "uncertain",
+          "reason": "Dialogue shows PM claiming knowledge of plan and budget but with a later tentative 'not sure' about closing, creating uncertainty about whether plan and budget are settled. No explicit confirmation from other speakers.",
+          "quotes": [
+            "IS1008b.A.dialog-act.vkaraisk.81",
+            "IS1008b.A.dialog-act.vkaraisk.82"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "status": {
+          "result": "uncertain",
+          "reason": "Current dialogue hints at uncertainty about whether project plan and budget are settled; no decisive commitment observed.",
+          "quotes": [
+            "IS1008b.A.dialog-act.vkaraisk.82"
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No explicit conflicting statements found within observed_dialogue; the only possibly conflicting is 'not sure' but not a direct contradiction.",
+          "quotes": [
+            "IS1008b.A.dialog-act.vkaraisk.82"
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No prior related item identified to link to; this is a standalone problem statement.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "status": "open",
+        "related_items": [],
+        "statement": {
+          "result": "uncertain",
+          "reason": "Dialogue shows PM claiming knowledge of plan and budget but with a later tentative 'not sure' about closing, creating uncertainty about whether plan and budget are settled. No explicit confirmation from other speakers.",
+          "evidence_da_ids": [
+            "IS1008b.A.dialog-act.vkaraisk.81",
+            "IS1008b.A.dialog-act.vkaraisk.82"
+          ]
+        },
+        "status_check": {
+          "result": "uncertain",
+          "reason": "Current dialogue hints at uncertainty about whether project plan and budget are settled; no decisive commitment observed.",
+          "evidence_da_ids": [
+            "IS1008b.A.dialog-act.vkaraisk.82"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No explicit conflicting statements found within observed_dialogue; the only possibly conflicting is 'not sure' but not a direct contradiction.",
+          "evidence_da_ids": [
+            "IS1008b.A.dialog-act.vkaraisk.82"
+          ],
+          "affected_fields": [
+            "status"
+          ]
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No prior related item identified to link to; this is a standalone problem statement.",
+          "evidence_da_ids": []
+        },
+        "next_action": "request_clarification"
+      },
+      "evidence_bindings": {
+        "statement": [
+          "IS1008b.A.dialog-act.vkaraisk.81",
+          "IS1008b.A.dialog-act.vkaraisk.82"
+        ],
+        "status": [
+          "IS1008b.A.dialog-act.vkaraisk.82"
+        ],
+        "conflict": [
+          "IS1008b.A.dialog-act.vkaraisk.82"
+        ]
+      },
+      "raw_tool_input": {
+        "status": "open",
+        "related_items": [],
+        "statement": {
+          "result": "uncertain",
+          "reason": "Dialogue shows PM claiming knowledge of plan and budget but with a later tentative 'not sure' about closing, creating uncertainty about whether plan and budget are settled. No explicit confirmation from other speakers.",
+          "evidence_da_ids": [
+            "IS1008b.A.dialog-act.vkaraisk.81",
+            "IS1008b.A.dialog-act.vkaraisk.82"
+          ]
+        },
+        "status_check": {
+          "result": "uncertain",
+          "reason": "Current dialogue hints at uncertainty about whether project plan and budget are settled; no decisive commitment observed.",
+          "evidence_da_ids": [
+            "IS1008b.A.dialog-act.vkaraisk.82"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No explicit conflicting statements found within observed_dialogue; the only possibly conflicting is 'not sure' but not a direct contradiction.",
+          "evidence_da_ids": [
+            "IS1008b.A.dialog-act.vkaraisk.82"
+          ],
+          "affected_fields": [
+            "status"
+          ]
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No prior related item identified to link to; this is a standalone problem statement.",
+          "evidence_da_ids": []
+        },
+        "next_action": "request_clarification"
+      },
+      "protocol_normalizations": [],
+      "unresolved_before": [
+        "statement",
+        "status"
+      ],
+      "unresolved_after": [
+        "statement",
+        "status"
+      ],
+      "semantic_stalls": 0,
+      "validation_codes": {}
+    },
+    {
+      "item": "IS1008b#8",
+      "step": 2,
+      "flags": [],
+      "action": "core_recheck_offered",
+      "outcome": "focused_review",
+      "reason": "semantic_core_uncertainty_with_read_evidence"
+    },
+    {
+      "item": "IS1008b#8",
+      "step": 3,
+      "flags": [],
+      "action": "assess_core",
+      "outcome": "invalid_action",
+      "error": "Correct these argument fields: : 'statement' is a required property; : Additional properties are not allowed ('evidence_da_ids', 'reason' were unexpected) Tool assess_core accepts root keys: statement, conflict_check, next_action. Resubmit the complete advertised object. Select only delivered supporting dialogue IDs; if support is unavailable use uncertain with an explanation, never invent an ID or mark pass with no evidence. Documents belong inside the check they inform.",
+      "raw_tool_input": {
+        "status": "uncertain",
+        "reason": "We need to re-evaluate the exact core claim and existing evidence; current dialogue shows PM's confident claim about plan and budget, but closing remains uncertain.",
+        "evidence_da_ids": [
+          "IS1008b.A.dialog-act.vkaraisk.81",
+          "IS1008b.A.dialog-act.vkaraisk.82"
+        ]
+      }
+    },
+    {
+      "item": "IS1008b#8",
+      "step": 4,
+      "flags": [],
+      "action": "assess_core",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "uncertain",
+          "reason": "Dialogue shows PM asserts knowledge of the project plan and budget, but a later fragment indicates uncertainty about closing, and there is no explicit confirmation from others that the plan and budget are settled.",
+          "quotes": [
+            {
+              "da_id": "IS1008b.A.dialog-act.vkaraisk.81",
+              "quote": "I know the project plan and the budget ."
+            },
+            {
+              "da_id": "IS1008b.A.dialog-act.vkaraisk.82",
+              "quote": "So I can close this , <gap> not sure ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "status": {
+          "result": "uncertain",
+          "reason": "Current dialogue hints at uncertainty about whether project plan and budget are settled; no decisive commitment observed.",
+          "quotes": [
+            {
+              "da_id": "IS1008b.A.dialog-act.vkaraisk.82",
+              "quote": "So I can close this , <gap> not sure ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No explicit conflicting statements found within observed_dialogue; the only possibly conflicting is 'not sure' but not a direct contradiction.",
+          "quotes": [
+            {
+              "da_id": "IS1008b.A.dialog-act.vkaraisk.82",
+              "quote": "So I can close this , <gap> not sure ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No prior related item identified to link to; this is a standalone problem statement.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        },
+        "owner": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        }
+      },
+      "decision": "request_clarification",
+      "reason": "unresolved_checks",
+      "assessed_text": "There is uncertainty whether the project plan and the budget are settled, as one speaker notes they can close this, but it’s not clear.",
+      "requested_action": null,
+      "proposed_fields": {
+        "status": "open",
+        "related_items": [],
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "IS1008b.A.dialog-act.vkaraisk.81",
+          "IS1008b.A.dialog-act.vkaraisk.82"
+        ],
+        "owner": null,
+        "owner_basis": "missing",
+        "deadline": null,
+        "deadline_basis": "missing"
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "uncertain",
+          "reason": "Dialogue shows PM asserts knowledge of the project plan and budget, but a later fragment indicates uncertainty about closing, and there is no explicit confirmation from others that the plan and budget are settled.",
+          "quotes": [
+            "IS1008b.A.dialog-act.vkaraisk.81",
+            "IS1008b.A.dialog-act.vkaraisk.82"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "status": {
+          "result": "uncertain",
+          "reason": "Current dialogue hints at uncertainty about whether project plan and budget are settled; no decisive commitment observed.",
+          "quotes": [
+            {
+              "da_id": "IS1008b.A.dialog-act.vkaraisk.82",
+              "quote": "So I can close this , <gap> not sure ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No explicit conflicting statements found within observed_dialogue; the only possibly conflicting is 'not sure' but not a direct contradiction.",
+          "quotes": [
+            {
+              "da_id": "IS1008b.A.dialog-act.vkaraisk.82",
+              "quote": "So I can close this , <gap> not sure ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No prior related item identified to link to; this is a standalone problem statement.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        },
+        "owner": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "statement": {
+          "result": "uncertain",
+          "reason": "Dialogue shows PM asserts knowledge of the project plan and budget, but a later fragment indicates uncertainty about closing, and there is no explicit confirmation from others that the plan and budget are settled.",
+          "evidence_da_ids": [
+            "IS1008b.A.dialog-act.vkaraisk.81",
+            "IS1008b.A.dialog-act.vkaraisk.82"
+          ]
+        }
+      },
+      "evidence_bindings": {
+        "statement": [
+          "IS1008b.A.dialog-act.vkaraisk.81",
+          "IS1008b.A.dialog-act.vkaraisk.82"
+        ]
+      },
+      "raw_tool_input": {
+        "statement": {
+          "result": "uncertain",
+          "reason": "Dialogue shows PM asserts knowledge of the project plan and budget, but a later fragment indicates uncertainty about closing, and there is no explicit confirmation from others that the plan and budget are settled.",
+          "evidence_da_ids": [
+            "IS1008b.A.dialog-act.vkaraisk.81",
+            "IS1008b.A.dialog-act.vkaraisk.82"
+          ]
+        }
+      },
+      "protocol_normalizations": [
+        "retained_checked_conflict",
+        "controller_action_for_missing_hint:request_clarification"
+      ],
+      "unresolved_before": [
+        "statement",
+        "status"
+      ],
+      "unresolved_after": [
+        "statement",
+        "status"
+      ],
+      "semantic_stalls": 0,
+      "validation_codes": {}
+    },
+    {
+      "item": "IS1008b#8",
+      "step": 4,
+      "flags": [],
+      "action": "stop",
+      "outcome": "pending",
+      "termination_reason": "unresolved_checks",
+      "unresolved_fields": [
+        "statement",
+        "status"
+      ]
+    }
+  ],
+  "lookups": 0,
+  "termination_reason": "unresolved_checks",
+  "clarifications": [
+    {
+      "request_id": "a50a8485bb15602d",
+      "item_key": "IS1008b#8",
+      "record_id": null,
+      "field": "statement",
+      "question": "Should this be recorded as a substantive, supported problems item?",
+      "item_text": "There is uncertainty whether the project plan and the budget are settled, as one speaker notes they can close this, but it’s not clear.",
+      "reason": "Dialogue shows PM asserts knowledge of the project plan and budget, but a later fragment indicates uncertainty about closing, and there is no explicit confirmation from others that the plan and budget are settled.",
+      "evidence_da_ids": [
+        "IS1008b.A.dialog-act.vkaraisk.81",
+        "IS1008b.A.dialog-act.vkaraisk.82"
+      ],
+      "available_evidence_da_ids": [
+        "IS1008b.A.dialog-act.vkaraisk.79",
+        "IS1008b.A.dialog-act.vkaraisk.80",
+        "IS1008b.A.dialog-act.vkaraisk.81",
+        "IS1008b.A.dialog-act.vkaraisk.82",
+        "IS1008b.D.dialog-act.vkaraisk.6",
+        "IS1008b.A.dialog-act.vkaraisk.83"
+      ],
+      "status": "open",
+      "termination_reason": "unresolved_checks"
+    },
+    {
+      "request_id": "24a0533cde9e6778",
+      "item_key": "IS1008b#8",
+      "record_id": null,
+      "field": "status",
+      "question": "What is this item's status at the end of the current meeting?",
+      "item_text": "There is uncertainty whether the project plan and the budget are settled, as one speaker notes they can close this, but it’s not clear.",
+      "reason": "Current dialogue hints at uncertainty about whether project plan and budget are settled; no decisive commitment observed.",
+      "evidence_da_ids": [
+        "IS1008b.A.dialog-act.vkaraisk.82"
+      ],
+      "available_evidence_da_ids": [
+        "IS1008b.A.dialog-act.vkaraisk.79",
+        "IS1008b.A.dialog-act.vkaraisk.80",
+        "IS1008b.A.dialog-act.vkaraisk.81",
+        "IS1008b.A.dialog-act.vkaraisk.82",
+        "IS1008b.D.dialog-act.vkaraisk.6",
+        "IS1008b.A.dialog-act.vkaraisk.83"
+      ],
+      "status": "open",
+      "termination_reason": "unresolved_checks"
+    }
+  ]
+}

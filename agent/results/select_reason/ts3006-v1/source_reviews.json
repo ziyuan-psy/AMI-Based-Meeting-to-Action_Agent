@@ -1,0 +1,30 @@
+{
+  "reviewer": "Codex source-based development spot check; not independent human evaluation",
+  "gold_used": false,
+  "runtime_outputs_changed": false,
+  "cases": [
+    {
+      "case_id": "TS3006c_creative_page_vs_UI_menu",
+      "status": "NEEDS_SEMANTIC_REVIEW",
+      "old_record_id": "TS3006b.sys.s.2",
+      "new_record_id": "TS3006c.sys.s.2",
+      "relation": "continues",
+      "old_text": "The UI Designer will compile a list of functions to be displayed on the LCD screen and design a multi-page LCD menu with layers.",
+      "new_text": "ID and ME will create a new page and be creative during this session.",
+      "finding": "Record wording suggests different actors and potentially different tasks: a UI LCD-menu deliverable versus an ID/ME creative-page activity. Same-topic design work does not by itself establish that the same commitment continues. Review task identity and whether this is an in-meeting procedural activity. The fixed metadata adapter did not choose this relationship.",
+      "context_kind": "Development record-to-record wording check; inspect actual quotes and lookup history in CROSS_MEETING.md / cross_meeting_links.json before judging correctness.",
+      "human_confirmed": false
+    },
+    {
+      "case_id": "TS3006b_replaces_minimal_functions",
+      "status": "NEEDS_SEMANTIC_REVIEW",
+      "old_record_id": "TS3006a.sys.s.13",
+      "new_record_id": "TS3006b.sys.s.4",
+      "relation": "replaces",
+      "old_text": "PM(MTD021PM): <vocalsound> Th the least amount of functions possible",
+      "new_text": "Two groups of functions: simple for public and advanced for experienced users.",
+      "finding": "The model labels a simple/advanced grouping as replacing the prior minimal-function principle. Grouping and minimizing the number of functions may coexist, so the relation may be stronger than the source establishes. Preserve the actual output and independently review whether replacement is warranted. This is separate from the repaired selection metadata contract.",
+      "human_confirmed": false
+    }
+  ]
+}

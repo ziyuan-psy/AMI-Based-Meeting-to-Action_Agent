@@ -1,0 +1,326 @@
+[
+  {
+    "type": "problems",
+    "text": "Power light isn't working, leaving the device's on/off state unclear.",
+    "evidence_da_ids": [
+      "TS3004c.D.dialog-act.vkaraisk.5",
+      "TS3004c.D.dialog-act.vkaraisk.6"
+    ],
+    "owner_ids": [],
+    "owner_cue": null,
+    "deadline_cue": null,
+    "owner_basis": "missing",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "status": "open",
+    "candidate_indexes": [
+      1
+    ],
+    "source_item_indexes": [
+      0
+    ],
+    "selection_priority": 3,
+    "selection_reason": "Critical hardware indicator issue documented in dialogue."
+  },
+  {
+    "type": "problems",
+    "text": "Feasibility/cost risk of offering multiple LED colours; customer choice at purchase not supported.",
+    "evidence_da_ids": [
+      "TS3004c.C.dialog-act.vkaraisk.173",
+      "TS3004c.C.dialog-act.vkaraisk.174",
+      "TS3004c.A.dialog-act.vkaraisk.134",
+      "TS3004c.A.dialog-act.vkaraisk.135"
+    ],
+    "owner_ids": [],
+    "owner_cue": null,
+    "deadline_cue": null,
+    "owner_basis": "missing",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "status": "open",
+    "candidate_indexes": [
+      12,
+      13
+    ],
+    "source_item_indexes": [
+      2
+    ],
+    "selection_priority": 3,
+    "selection_reason": "Problem about feature scope and purchase flow."
+  },
+  {
+    "type": "decisions",
+    "text": "Decision: five fronts on the market.",
+    "evidence_da_ids": [
+      "TS3004c.A.dialog-act.vkaraisk.286",
+      "TS3004c.D.dialog-act.vkaraisk.157"
+    ],
+    "owner_ids": [],
+    "owner_cue": null,
+    "deadline_cue": null,
+    "owner_basis": "ambiguous",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "status": "proposed",
+    "candidate_indexes": [
+      27
+    ],
+    "source_item_indexes": [
+      9
+    ],
+    "selection_priority": 3,
+    "selection_reason": "Product strategy decision."
+  },
+  {
+    "type": "decisions",
+    "text": "Decision 1: main controls should be placed on the top of the remote.",
+    "evidence_da_ids": [
+      "TS3004c.C.dialog-act.vkaraisk.60",
+      "TS3004c.A.dialog-act.vkaraisk.83",
+      "TS3004c.B.dialog-act.vkaraisk.125",
+      "TS3004c.A.dialog-act.vkaraisk.85",
+      "TS3004c.C.dialog-act.vkaraisk.61",
+      "TS3004c.B.dialog-act.vkaraisk.126",
+      "TS3004c.A.dialog-act.vkaraisk.86",
+      "TS3004c.A.dialog-act.vkaraisk.87"
+    ],
+    "owner_ids": [],
+    "owner_cue": null,
+    "deadline_cue": null,
+    "owner_basis": "missing",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "status": "proposed",
+    "candidate_indexes": [
+      4
+    ],
+    "source_item_indexes": [
+      10
+    ],
+    "selection_priority": 3,
+    "selection_reason": "Split compound decision into two actionable items."
+  },
+  {
+    "type": "decisions",
+    "text": "Decision 2: nonessential buttons moved to the bottom.",
+    "evidence_da_ids": [
+      "TS3004c.C.dialog-act.vkaraisk.60",
+      "TS3004c.A.dialog-act.vkaraisk.83",
+      "TS3004c.B.dialog-act.vkaraisk.125",
+      "TS3004c.A.dialog-act.vkaraisk.85",
+      "TS3004c.C.dialog-act.vkaraisk.61",
+      "TS3004c.B.dialog-act.vkaraisk.126",
+      "TS3004c.A.dialog-act.vkaraisk.86",
+      "TS3004c.A.dialog-act.vkaraisk.87"
+    ],
+    "owner_ids": [],
+    "owner_cue": null,
+    "deadline_cue": null,
+    "owner_basis": "missing",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "status": "proposed",
+    "candidate_indexes": [
+      4
+    ],
+    "source_item_indexes": [
+      10
+    ],
+    "selection_priority": 3,
+    "selection_reason": "Split compound decision into two actionable items."
+  },
+  {
+    "type": "decisions",
+    "text": "Case must be transparent so the backlight can work.",
+    "evidence_da_ids": [
+      "TS3004c.C.dialog-act.vkaraisk.150"
+    ],
+    "owner_ids": [],
+    "owner_cue": null,
+    "deadline_cue": null,
+    "owner_basis": "missing",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "status": "adopted",
+    "candidate_indexes": [
+      9
+    ],
+    "source_item_indexes": [
+      11
+    ],
+    "selection_priority": 3,
+    "selection_reason": "Design requirement."
+  },
+  {
+    "type": "actions",
+    "text": "Assign to MTD015UID to diagnose and restore UI power indicator state.",
+    "evidence_da_ids": [
+      "TS3004c.B.dialog-act.vkaraisk.27"
+    ],
+    "owner_ids": [
+      "MTD015UID"
+    ],
+    "owner_cue": "UI(MTD015UID): I'll I'll get back on it.",
+    "deadline_cue": null,
+    "owner_basis": "explicit",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "status": "open",
+    "candidate_indexes": [
+      42
+    ],
+    "source_item_indexes": [
+      1
+    ],
+    "selection_priority": 2,
+    "selection_reason": "Action item following power indicator problem."
+  },
+  {
+    "type": "actions",
+    "text": "Deliver UI design to the team; owner MTD015UID.",
+    "evidence_da_ids": [
+      "TS3004c.B.dialog-act.vkaraisk.67"
+    ],
+    "owner_ids": [
+      "MTD015UID"
+    ],
+    "owner_cue": "UI(MTD015UID): I'll I'll give you my design.",
+    "deadline_cue": null,
+    "owner_basis": "explicit",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "status": "open",
+    "candidate_indexes": [
+      43
+    ],
+    "source_item_indexes": [
+      3
+    ],
+    "selection_priority": 2,
+    "selection_reason": "UI design handoff action."
+  },
+  {
+    "type": "actions",
+    "text": "Open image assets and prototype paint; owner MTD015UID.",
+    "evidence_da_ids": [
+      "TS3004c.B.dialog-act.vkaraisk.406",
+      "TS3004c.B.dialog-act.vkaraisk.407",
+      "TS3004c.A.dialog-act.vkaraisk.339",
+      "TS3004c.B.dialog-act.vkaraisk.408",
+      "TS3004c.A.dialog-act.vkaraisk.340"
+    ],
+    "owner_ids": [
+      "MTD015UID"
+    ],
+    "owner_cue": "UI: 'I'll open images there, and I'll paint'.",
+    "deadline_cue": null,
+    "owner_basis": "explicit",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "status": "open",
+    "candidate_indexes": [
+      45
+    ],
+    "source_item_indexes": [
+      5
+    ],
+    "selection_priority": 2,
+    "selection_reason": "Prototype visualization task."
+  },
+  {
+    "type": "actions",
+    "text": "UI will clarify ambiguous meanings in design notes.",
+    "evidence_da_ids": [
+      "TS3004c.B.dialog-act.vkaraisk.47",
+      "TS3004c.B.dialog-act.vkaraisk.48"
+    ],
+    "owner_ids": [
+      "MTD015UID"
+    ],
+    "owner_cue": "UI: 'I'll check what they exact mean.'",
+    "deadline_cue": null,
+    "owner_basis": "explicit",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "status": "open",
+    "candidate_indexes": [
+      47
+    ],
+    "source_item_indexes": [
+      6
+    ],
+    "selection_priority": 2,
+    "selection_reason": "Clarification needed by UI."
+  },
+  {
+    "type": "actions",
+    "text": "ID and UI to collaborate on prototype drawing on smart board; owners MTD014ID, MTD015UID.",
+    "evidence_da_ids": [
+      "TS3004c.B.dialog-act.vkaraisk.279"
+    ],
+    "owner_ids": [
+      "MTD014ID",
+      "MTD015UID"
+    ],
+    "owner_cue": "ID and UI will work together on prototype drawing on smart board.",
+    "deadline_cue": null,
+    "owner_basis": "explicit",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "status": "open",
+    "restored": true,
+    "source_item_indexes": [
+      7
+    ],
+    "candidate_indexes": [],
+    "selection_priority": 2,
+    "selection_reason": "Collaborative prototyping task."
+  },
+  {
+    "type": "actions",
+    "text": "ID to discuss material possibilities with PM.",
+    "evidence_da_ids": [
+      "TS3004c.C.dialog-act.vkaraisk.2",
+      "TS3004c.C.dialog-act.vkaraisk.3"
+    ],
+    "owner_ids": [
+      "MTD014ID"
+    ],
+    "owner_cue": "ID: 'I received an email with a few possibilities on the materials. So I'll discuss them with you.'",
+    "deadline_cue": null,
+    "owner_basis": "explicit",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "status": "open",
+    "restored": true,
+    "source_item_indexes": [
+      8
+    ],
+    "candidate_indexes": [],
+    "selection_priority": 2,
+    "selection_reason": "Material options discussion."
+  },
+  {
+    "type": "problems",
+    "text": "UX issue: volume and channel controls at bottom; hard to reach with thumb.",
+    "evidence_da_ids": [
+      "TS3004c.A.dialog-act.vkaraisk.71",
+      "TS3004c.A.dialog-act.vkaraisk.72"
+    ],
+    "owner_ids": [],
+    "owner_cue": null,
+    "deadline_cue": null,
+    "owner_basis": "missing",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "status": "open",
+    "candidate_indexes": [
+      6
+    ],
+    "source_item_indexes": [
+      4
+    ],
+    "selection_priority": 2,
+    "selection_reason": "Problem statement about layout."
+  }
+]

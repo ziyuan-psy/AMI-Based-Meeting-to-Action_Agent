@@ -1,0 +1,1680 @@
+{
+  "item_key": "TS3006d#0",
+  "record_id": null,
+  "item_type": "actions",
+  "item_text": "PM will write the report of decisions made so far.",
+  "state": "pending",
+  "recordable": true,
+  "fields": {
+    "status": "open",
+    "prior_context_needed": false,
+    "related_items": [],
+    "owner": [
+      "MTD021PM"
+    ],
+    "owner_basis": "explicit",
+    "deadline": "in ten minutes",
+    "deadline_basis": "inferred",
+    "reference": [
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3006d.json",
+        "locator": "TS3006d.A.dialog-act.dharshi.353"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3006d.json",
+        "locator": "TS3006d.A.dialog-act.dharshi.427"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3006d.json",
+        "locator": "TS3006d.D.dialog-act.dharshi.456"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3006d.json",
+        "locator": "TS3006d.D.dialog-act.dharshi.457"
+      }
+    ]
+  },
+  "draft_fields": {
+    "status": "open",
+    "related_items": [],
+    "owner": [
+      "MTD021PM"
+    ],
+    "owner_basis": "explicit",
+    "deadline": "in ten minutes",
+    "deadline_basis": "inferred",
+    "prior_context_needed": false,
+    "used_participant_lookup": false,
+    "evidence_da_ids": [
+      "TS3006d.A.dialog-act.dharshi.353",
+      "TS3006d.A.dialog-act.dharshi.427"
+    ]
+  },
+  "checks": {
+    "statement": {
+      "result": "pass",
+      "reason": "Dialogue shows PM intends to write a report of all decisions made so far; PM is the announcer/performer and matches the stated task.",
+      "quotes": [
+        {
+          "da_id": "TS3006d.A.dialog-act.dharshi.353",
+          "quote": "Well I have to um um make an uh report of every decision we made so far ."
+        },
+        {
+          "da_id": "TS3006d.A.dialog-act.dharshi.427",
+          "quote": "<vocalsound> Yeah , I have still ten minutes to finish the report ."
+        }
+      ],
+      "fields": [
+        "statement"
+      ]
+    },
+    "owner": {
+      "result": "pass",
+      "reason": "PM (MTD021PM) is the explicit owner evidenced by the PM's own dialogue lines indicating responsibility for the report.",
+      "quotes": [
+        {
+          "da_id": "TS3006d.A.dialog-act.dharshi.353",
+          "quote": "Well I have to um um make an uh report of every decision we made so far ."
+        },
+        {
+          "da_id": "TS3006d.A.dialog-act.dharshi.427",
+          "quote": "<vocalsound> Yeah , I have still ten minutes to finish the report ."
+        }
+      ],
+      "fields": [
+        "owner"
+      ]
+    },
+    "deadline": {
+      "result": "pass",
+      "reason": "There is an implied deadline in the dialogue: the PM mentions having ten minutes to finish the report.",
+      "quotes": [
+        {
+          "da_id": "TS3006d.A.dialog-act.dharshi.427",
+          "quote": "<vocalsound> Yeah , I have still ten minutes to finish the report ."
+        }
+      ],
+      "fields": [
+        "deadline"
+      ]
+    },
+    "status": {
+      "result": "pass",
+      "reason": "The item status is indicated as open in provisional values and the dialogue shows ongoing action; no completion yet.",
+      "quotes": [
+        {
+          "da_id": "TS3006d.A.dialog-act.dharshi.353",
+          "quote": "Well I have to um um make an uh report of every decision we made so far ."
+        },
+        {
+          "da_id": "TS3006d.A.dialog-act.dharshi.427",
+          "quote": "<vocalsound> Yeah , I have still ten minutes to finish the report ."
+        }
+      ],
+      "fields": [
+        "status"
+      ]
+    },
+    "conflict": {
+      "result": "pass",
+      "reason": "No contradictions found in observed dialogue related to this action; other lines refer to questions about scope but do not oppose the task.",
+      "quotes": [
+        {
+          "da_id": "TS3006d.D.dialog-act.dharshi.456",
+          "quote": "<vocalsound> Do we have to do other things ?"
+        },
+        {
+          "da_id": "TS3006d.D.dialog-act.dharshi.457",
+          "quote": "Or just redesign ?"
+        }
+      ],
+      "fields": []
+    },
+    "relation": {
+      "result": "uncertain",
+      "reason": "unobserved_or_inexact_quote",
+      "quotes": [],
+      "links": [],
+      "documents": [],
+      "fields": [
+        "related_items"
+      ]
+    }
+  },
+  "unresolved_fields": [
+    "related_items"
+  ],
+  "observed_evidence_da_ids": [
+    "TS3006d.A.dialog-act.dharshi.353",
+    "TS3006d.A.dialog-act.dharshi.427",
+    "TS3006d.D.dialog-act.dharshi.456",
+    "TS3006d.D.dialog-act.dharshi.457",
+    "TS3006d.A.dialog-act.dharshi.426",
+    "TS3006d.C.dialog-act.dharshi.364",
+    "TS3006b.D.dialog-act.dharshi.439",
+    "TS3006b.B.dialog-act.dharshi.215",
+    "TS3006b.A.dialog-act.dharshi.397",
+    "TS3006b.B.dialog-act.dharshi.147",
+    "TS3006b.B.dialog-act.dharshi.148",
+    "TS3006b.B.dialog-act.dharshi.149",
+    "TS3006b.A.dialog-act.dharshi.307"
+  ],
+  "initial_context": {
+    "item": {
+      "type": "actions",
+      "text": "PM will write the report of decisions made so far.",
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ]
+    },
+    "current_meeting": "TS3006d",
+    "earlier_meetings": [
+      "TS3006a",
+      "TS3006b",
+      "TS3006c"
+    ],
+    "roster": [
+      {
+        "speaker": "A",
+        "participant_id": "MTD021PM",
+        "role": "PM"
+      },
+      {
+        "speaker": "B",
+        "participant_id": "MTD023UID",
+        "role": "UI"
+      },
+      {
+        "speaker": "C",
+        "participant_id": "MTD022ID",
+        "role": "ID"
+      },
+      {
+        "speaker": "D",
+        "participant_id": "MTD024ME",
+        "role": "ME"
+      }
+    ],
+    "observed_dialogue": [
+      {
+        "da_id": "TS3006d.A.dialog-act.dharshi.353",
+        "meeting_id": "TS3006d",
+        "text": "Well I have to um um make an uh report of every decision we made so far .",
+        "participant": "MTD021PM",
+        "role": "PM"
+      },
+      {
+        "da_id": "TS3006d.A.dialog-act.dharshi.427",
+        "meeting_id": "TS3006d",
+        "text": "<vocalsound> Yeah , I have still ten minutes to finish the report .",
+        "participant": "MTD021PM",
+        "role": "PM"
+      },
+      {
+        "da_id": "TS3006d.D.dialog-act.dharshi.456",
+        "participant": "MTD024ME",
+        "role": "ME",
+        "text": "<vocalsound> Do we have to do other things ?"
+      },
+      {
+        "da_id": "TS3006d.D.dialog-act.dharshi.457",
+        "participant": "MTD024ME",
+        "role": "ME",
+        "text": "Or just redesign ?"
+      },
+      {
+        "da_id": "TS3006d.A.dialog-act.dharshi.426",
+        "participant": "MTD021PM",
+        "role": "PM",
+        "text": "Yeah ."
+      },
+      {
+        "da_id": "TS3006d.C.dialog-act.dharshi.364",
+        "participant": "MTD022ID",
+        "role": "ID",
+        "text": "What's this anyway ?"
+      }
+    ],
+    "peer_items": [],
+    "provisional_values": {
+      "owner": [
+        "MTD021PM"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "status": "open",
+      "related_items": []
+    },
+    "candidate_evidence_da_ids": [
+      "TS3006d.A.dialog-act.dharshi.353",
+      "TS3006d.A.dialog-act.dharshi.427"
+    ]
+  },
+  "observed_documents": [],
+  "document_evidence": [],
+  "relation_evidence": [],
+  "history": [
+    {
+      "item": "TS3006d#0",
+      "step": 1,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "assess_item",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue shows PM intends to write a report of all decisions made so far; PM is the announcer/performer and matches the stated task.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.353",
+              "quote": "Well I have to um um make an uh report of every decision we made so far ."
+            },
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.427",
+              "quote": "<vocalsound> Yeah , I have still ten minutes to finish the report ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "PM (MTD021PM) is the explicit owner evidenced by the PM's own dialogue lines indicating responsibility for the report.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.353",
+              "quote": "Well I have to um um make an uh report of every decision we made so far ."
+            },
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.427",
+              "quote": "<vocalsound> Yeah , I have still ten minutes to finish the report ."
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "pass",
+          "reason": "There is an implied deadline in the dialogue: the PM mentions having ten minutes to finish the report.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.427",
+              "quote": "<vocalsound> Yeah , I have still ten minutes to finish the report ."
+            }
+          ],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "The item status is indicated as open in provisional values and the dialogue shows ongoing action; no completion yet.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.353",
+              "quote": "Well I have to um um make an uh report of every decision we made so far ."
+            },
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.427",
+              "quote": "<vocalsound> Yeah , I have still ten minutes to finish the report ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions found in observed dialogue related to this action; other lines refer to questions about scope but do not oppose the task.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.D.dialog-act.dharshi.456",
+              "quote": "<vocalsound> Do we have to do other things ?"
+            },
+            {
+              "da_id": "TS3006d.D.dialog-act.dharshi.457",
+              "quote": "Or just redesign ?"
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "prior_context_not_checked",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "decision": "retrieve",
+      "reason": "unresolved_checks",
+      "assessed_text": "PM will write the report of decisions made so far.",
+      "requested_action": null,
+      "proposed_fields": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD021PM"
+        ],
+        "owner_basis": "explicit",
+        "deadline": "in ten minutes",
+        "deadline_basis": "inferred",
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "TS3006d.A.dialog-act.dharshi.353",
+          "TS3006d.A.dialog-act.dharshi.427"
+        ]
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue shows PM intends to write a report of all decisions made so far; PM is the announcer/performer and matches the stated task.",
+          "quotes": [
+            "TS3006d.A.dialog-act.dharshi.353",
+            "TS3006d.A.dialog-act.dharshi.427"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "PM (MTD021PM) is the explicit owner evidenced by the PM's own dialogue lines indicating responsibility for the report.",
+          "quotes": [
+            "TS3006d.A.dialog-act.dharshi.353",
+            "TS3006d.A.dialog-act.dharshi.427"
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "pass",
+          "reason": "There is an implied deadline in the dialogue: the PM mentions having ten minutes to finish the report.",
+          "quotes": [
+            "TS3006d.A.dialog-act.dharshi.427"
+          ],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "The item status is indicated as open in provisional values and the dialogue shows ongoing action; no completion yet.",
+          "quotes": [
+            "TS3006d.A.dialog-act.dharshi.353",
+            "TS3006d.A.dialog-act.dharshi.427"
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions found in observed dialogue related to this action; other lines refer to questions about scope but do not oppose the task.",
+          "quotes": [
+            "TS3006d.D.dialog-act.dharshi.456",
+            "TS3006d.D.dialog-act.dharshi.457"
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "Prior items TS3006a-c exist in context but are not present in observed_dialogue; unable to verify relation from current data.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD021PM"
+        ],
+        "owner_basis": "explicit",
+        "deadline": "in ten minutes",
+        "deadline_basis": "inferred",
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue shows PM intends to write a report of all decisions made so far; PM is the announcer/performer and matches the stated task.",
+          "evidence_da_ids": [
+            "TS3006d.A.dialog-act.dharshi.353",
+            "TS3006d.A.dialog-act.dharshi.427"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "PM (MTD021PM) is the explicit owner evidenced by the PM's own dialogue lines indicating responsibility for the report.",
+          "evidence_da_ids": [
+            "TS3006d.A.dialog-act.dharshi.353",
+            "TS3006d.A.dialog-act.dharshi.427"
+          ]
+        },
+        "deadline_check": {
+          "result": "pass",
+          "reason": "There is an implied deadline in the dialogue: the PM mentions having ten minutes to finish the report.",
+          "evidence_da_ids": [
+            "TS3006d.A.dialog-act.dharshi.427"
+          ]
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "The item status is indicated as open in provisional values and the dialogue shows ongoing action; no completion yet.",
+          "evidence_da_ids": [
+            "TS3006d.A.dialog-act.dharshi.353",
+            "TS3006d.A.dialog-act.dharshi.427"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No contradictions found in observed dialogue related to this action; other lines refer to questions about scope but do not oppose the task.",
+          "evidence_da_ids": [
+            "TS3006d.D.dialog-act.dharshi.456",
+            "TS3006d.D.dialog-act.dharshi.457"
+          ],
+          "affected_fields": []
+        },
+        "relation_check": {
+          "result": "uncertain",
+          "reason": "Prior items TS3006a-c exist in context but are not present in observed_dialogue; unable to verify relation from current data.",
+          "evidence_da_ids": []
+        }
+      },
+      "evidence_bindings": {
+        "statement": [
+          "TS3006d.A.dialog-act.dharshi.353",
+          "TS3006d.A.dialog-act.dharshi.427"
+        ],
+        "owner": [
+          "TS3006d.A.dialog-act.dharshi.353",
+          "TS3006d.A.dialog-act.dharshi.427"
+        ],
+        "deadline": [
+          "TS3006d.A.dialog-act.dharshi.427"
+        ],
+        "status": [
+          "TS3006d.A.dialog-act.dharshi.353",
+          "TS3006d.A.dialog-act.dharshi.427"
+        ],
+        "conflict": [
+          "TS3006d.D.dialog-act.dharshi.456",
+          "TS3006d.D.dialog-act.dharshi.457"
+        ]
+      },
+      "raw_tool_input": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD021PM"
+        ],
+        "owner_basis": "explicit",
+        "deadline": "in ten minutes",
+        "deadline_basis": "inferred",
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue shows PM intends to write a report of all decisions made so far; PM is the announcer/performer and matches the stated task.",
+          "evidence_da_ids": [
+            "TS3006d.A.dialog-act.dharshi.353",
+            "TS3006d.A.dialog-act.dharshi.427"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "PM (MTD021PM) is the explicit owner evidenced by the PM's own dialogue lines indicating responsibility for the report.",
+          "evidence_da_ids": [
+            "TS3006d.A.dialog-act.dharshi.353",
+            "TS3006d.A.dialog-act.dharshi.427"
+          ]
+        },
+        "deadline_check": {
+          "result": "pass",
+          "reason": "There is an implied deadline in the dialogue: the PM mentions having ten minutes to finish the report.",
+          "evidence_da_ids": [
+            "TS3006d.A.dialog-act.dharshi.427"
+          ]
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "The item status is indicated as open in provisional values and the dialogue shows ongoing action; no completion yet.",
+          "evidence_da_ids": [
+            "TS3006d.A.dialog-act.dharshi.353",
+            "TS3006d.A.dialog-act.dharshi.427"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No contradictions found in observed dialogue related to this action; other lines refer to questions about scope but do not oppose the task.",
+          "evidence_da_ids": [
+            "TS3006d.D.dialog-act.dharshi.456",
+            "TS3006d.D.dialog-act.dharshi.457"
+          ]
+        },
+        "relation_check": {
+          "result": "uncertain",
+          "reason": "Prior items TS3006a-c exist in context but are not present in observed_dialogue; unable to verify relation from current data.",
+          "evidence_da_ids": []
+        }
+      },
+      "protocol_normalizations": [
+        "empty_affected_fields_for_no_conflict",
+        "controller_action_for_missing_hint:retrieve"
+      ],
+      "unresolved_before": [
+        "deadline",
+        "owner",
+        "related_items",
+        "statement",
+        "status"
+      ],
+      "unresolved_after": [
+        "related_items"
+      ],
+      "semantic_stalls": 0,
+      "validation_codes": {
+        "relation": [
+          "prior_context_not_checked"
+        ]
+      }
+    },
+    {
+      "item": "TS3006d#0",
+      "step": 2,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "history_context_focused",
+      "outcome": "delivered",
+      "evidence_da_ids": [
+        "TS3006d.A.dialog-act.dharshi.353",
+        "TS3006d.A.dialog-act.dharshi.427",
+        "TS3006d.D.dialog-act.dharshi.456",
+        "TS3006d.D.dialog-act.dharshi.457",
+        "TS3006d.A.dialog-act.dharshi.426",
+        "TS3006d.C.dialog-act.dharshi.364"
+      ]
+    },
+    {
+      "item": "TS3006d#0",
+      "step": 2,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "get_prior_items",
+      "outcome": "lookup",
+      "decision": "retrieve",
+      "args": {
+        "query": "report decisions",
+        "item_type": "actions"
+      },
+      "tool_result": {
+        "results": []
+      },
+      "new_info": false
+    },
+    {
+      "item": "TS3006d#0",
+      "step": 3,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "get_prior_items",
+      "outcome": "lookup",
+      "decision": "search_again",
+      "args": {
+        "query": "report of decisions",
+        "item_type": "actions"
+      },
+      "tool_result": {
+        "results": [
+          {
+            "id": "TS3006b.sys.s.5",
+            "meeting_id": "TS3006b",
+            "type": "actions",
+            "text": "Prepare maps of all gathered data for planning.",
+            "owner": [
+              "MTD023UID"
+            ],
+            "owner_basis": "explicit",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "open",
+            "evidence": [
+              "TS3006b.B.dialog-act.dharshi.215",
+              "TS3006b.B.dialog-act.dharshi.148",
+              "TS3006b.B.dialog-act.dharshi.149"
+            ],
+            "source_file": "TS3006b.json",
+            "source_sha256": "dbd003d29e7a417be0d2554768ecf2395d0858c3d7a2625e9e97044fe3fa7a06",
+            "review_state": "pending",
+            "unresolved_fields": [
+              "deadline"
+            ],
+            "unreadable_reference_ids": [],
+            "score": 1.64
+          },
+          {
+            "id": "TS3006b.sys.s.6",
+            "meeting_id": "TS3006b",
+            "type": "actions",
+            "text": "Prepare a list of functions to be on the screen/menu.",
+            "owner": [
+              "MTD023UID"
+            ],
+            "owner_basis": "explicit",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "open",
+            "evidence": [
+              "TS3006b.B.dialog-act.dharshi.163",
+              "TS3006b.A.dialog-act.dharshi.327"
+            ],
+            "source_file": "TS3006b.json",
+            "source_sha256": "dbd003d29e7a417be0d2554768ecf2395d0858c3d7a2625e9e97044fe3fa7a06",
+            "review_state": "pending",
+            "unresolved_fields": [
+              "deadline"
+            ],
+            "unreadable_reference_ids": [],
+            "score": 1.42
+          }
+        ]
+      },
+      "new_info": true
+    },
+    {
+      "item": "TS3006d#0",
+      "step": 4,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "read_prior_item",
+      "outcome": "lookup",
+      "decision": "retrieve",
+      "args": {
+        "item_id": "TS3006b.sys.s.5"
+      },
+      "tool_result": {
+        "results": [
+          {
+            "kind": "prior_item",
+            "id": "TS3006b.sys.s.5",
+            "meeting_id": "TS3006b",
+            "type": "actions",
+            "text": "Prepare maps of all gathered data for planning.",
+            "owner": [
+              "MTD023UID"
+            ],
+            "owner_basis": "explicit",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "open",
+            "evidence": [
+              "TS3006b.B.dialog-act.dharshi.215",
+              "TS3006b.B.dialog-act.dharshi.148",
+              "TS3006b.B.dialog-act.dharshi.149"
+            ],
+            "source_file": "TS3006b.json",
+            "source_sha256": "dbd003d29e7a417be0d2554768ecf2395d0858c3d7a2625e9e97044fe3fa7a06",
+            "review_state": "pending",
+            "unresolved_fields": [
+              "deadline"
+            ],
+            "unreadable_reference_ids": [],
+            "selected_reference_ids": [
+              "TS3006b.B.dialog-act.dharshi.215",
+              "TS3006b.B.dialog-act.dharshi.148",
+              "TS3006b.B.dialog-act.dharshi.149"
+            ],
+            "next_offset": null
+          },
+          {
+            "kind": "dialogue",
+            "da_id": "TS3006b.D.dialog-act.dharshi.439",
+            "meeting_id": "TS3006b",
+            "text": "Yeah you can open it with the picture preview or stuff like that .",
+            "participant": "MTD024ME",
+            "role": "ME",
+            "supports_item_id": "TS3006b.sys.s.5",
+            "is_reference": false
+          },
+          {
+            "kind": "dialogue",
+            "da_id": "TS3006b.B.dialog-act.dharshi.215",
+            "meeting_id": "TS3006b",
+            "text": "And uh we have to make uh some maps with uh with the all the the data we uh gathered .",
+            "participant": "MTD023UID",
+            "role": "UI",
+            "supports_item_id": "TS3006b.sys.s.5",
+            "is_reference": true
+          },
+          {
+            "kind": "dialogue",
+            "da_id": "TS3006b.A.dialog-act.dharshi.397",
+            "meeting_id": "TS3006b",
+            "text": "Yeah .",
+            "participant": "MTD021PM",
+            "role": "PM",
+            "supports_item_id": "TS3006b.sys.s.5",
+            "is_reference": false
+          },
+          {
+            "kind": "dialogue",
+            "da_id": "TS3006b.B.dialog-act.dharshi.147",
+            "meeting_id": "TS3006b",
+            "text": "On the uh",
+            "participant": "MTD023UID",
+            "role": "UI",
+            "supports_item_id": "TS3006b.sys.s.5",
+            "is_reference": false
+          },
+          {
+            "kind": "dialogue",
+            "da_id": "TS3006b.B.dialog-act.dharshi.148",
+            "meeting_id": "TS3006b",
+            "text": "yeah can you i make a a map with with all the <disfmarker>",
+            "participant": "MTD023UID",
+            "role": "UI",
+            "supports_item_id": "TS3006b.sys.s.5",
+            "is_reference": true
+          },
+          {
+            "kind": "dialogue",
+            "da_id": "TS3006b.B.dialog-act.dharshi.149",
+            "meeting_id": "TS3006b",
+            "text": "yeah 'cause it's now <disfmarker> there are lots and lots of documents",
+            "participant": "MTD023UID",
+            "role": "UI",
+            "supports_item_id": "TS3006b.sys.s.5",
+            "is_reference": true
+          },
+          {
+            "kind": "dialogue",
+            "da_id": "TS3006b.A.dialog-act.dharshi.307",
+            "meeting_id": "TS3006b",
+            "text": "<gap> .",
+            "participant": "MTD021PM",
+            "role": "PM",
+            "supports_item_id": "TS3006b.sys.s.5",
+            "is_reference": false
+          }
+        ]
+      },
+      "new_info": true
+    },
+    {
+      "item": "TS3006d#0",
+      "step": 5,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "assess_relation",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue shows PM intends to write a report of all decisions made so far; PM is the announcer/performer and matches the stated task.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.353",
+              "quote": "Well I have to um um make an uh report of every decision we made so far ."
+            },
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.427",
+              "quote": "<vocalsound> Yeah , I have still ten minutes to finish the report ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "PM (MTD021PM) is the explicit owner evidenced by the PM's own dialogue lines indicating responsibility for the report.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.353",
+              "quote": "Well I have to um um make an uh report of every decision we made so far ."
+            },
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.427",
+              "quote": "<vocalsound> Yeah , I have still ten minutes to finish the report ."
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "pass",
+          "reason": "There is an implied deadline in the dialogue: the PM mentions having ten minutes to finish the report.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.427",
+              "quote": "<vocalsound> Yeah , I have still ten minutes to finish the report ."
+            }
+          ],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "The item status is indicated as open in provisional values and the dialogue shows ongoing action; no completion yet.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.353",
+              "quote": "Well I have to um um make an uh report of every decision we made so far ."
+            },
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.427",
+              "quote": "<vocalsound> Yeah , I have still ten minutes to finish the report ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions found in observed dialogue related to this action; other lines refer to questions about scope but do not oppose the task.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.D.dialog-act.dharshi.456",
+              "quote": "<vocalsound> Do we have to do other things ?"
+            },
+            {
+              "da_id": "TS3006d.D.dialog-act.dharshi.457",
+              "quote": "Or just redesign ?"
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "unobserved_or_inexact_quote",
+          "quotes": [],
+          "links": [],
+          "documents": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "decision": "retrieve",
+      "reason": "unresolved_checks",
+      "assessed_text": "PM will write the report of decisions made so far.",
+      "requested_action": null,
+      "proposed_fields": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD021PM"
+        ],
+        "owner_basis": "explicit",
+        "deadline": "in ten minutes",
+        "deadline_basis": "inferred",
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "TS3006d.A.dialog-act.dharshi.353",
+          "TS3006d.A.dialog-act.dharshi.427"
+        ]
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue shows PM intends to write a report of all decisions made so far; PM is the announcer/performer and matches the stated task.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.353",
+              "quote": "Well I have to um um make an uh report of every decision we made so far ."
+            },
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.427",
+              "quote": "<vocalsound> Yeah , I have still ten minutes to finish the report ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "PM (MTD021PM) is the explicit owner evidenced by the PM's own dialogue lines indicating responsibility for the report.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.353",
+              "quote": "Well I have to um um make an uh report of every decision we made so far ."
+            },
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.427",
+              "quote": "<vocalsound> Yeah , I have still ten minutes to finish the report ."
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "pass",
+          "reason": "There is an implied deadline in the dialogue: the PM mentions having ten minutes to finish the report.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.427",
+              "quote": "<vocalsound> Yeah , I have still ten minutes to finish the report ."
+            }
+          ],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "The item status is indicated as open in provisional values and the dialogue shows ongoing action; no completion yet.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.353",
+              "quote": "Well I have to um um make an uh report of every decision we made so far ."
+            },
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.427",
+              "quote": "<vocalsound> Yeah , I have still ten minutes to finish the report ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions found in observed dialogue related to this action; other lines refer to questions about scope but do not oppose the task.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.D.dialog-act.dharshi.456",
+              "quote": "<vocalsound> Do we have to do other things ?"
+            },
+            {
+              "da_id": "TS3006d.D.dialog-act.dharshi.457",
+              "quote": "Or just redesign ?"
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "There is no clearly identifiable earlier item in the provided history that this current line continues or changes. The current dialogue repeats the idea of preparing a report on decisions, but an explicit previous item to which it relates cannot be confirmed from the available records. Evidence available shows the PM discussing the report in the current meeting but not a distinct prior commitment within the same meeting to be continued or amended.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.353",
+              "quote": "Well I have to um um make an uh report of every decision we made so far."
+            },
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.427",
+              "quote": "Yeah , I have still ten minutes to finish the report."
+            }
+          ],
+          "links": [],
+          "documents": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "result": "uncertain",
+        "reason": "There is no clearly identifiable earlier item in the provided history that this current line continues or changes. The current dialogue repeats the idea of preparing a report on decisions, but an explicit previous item to which it relates cannot be confirmed from the available records. Evidence available shows the PM discussing the report in the current meeting but not a distinct prior commitment within the same meeting to be continued or amended.",
+        "quotes": [
+          {
+            "da_id": "TS3006d.A.dialog-act.dharshi.353",
+            "quote": "Well I have to um um make an uh report of every decision we made so far."
+          },
+          {
+            "da_id": "TS3006d.A.dialog-act.dharshi.427",
+            "quote": "Yeah , I have still ten minutes to finish the report."
+          }
+        ],
+        "documents": [],
+        "links": []
+      },
+      "evidence_bindings": {},
+      "raw_tool_input": {
+        "result": "uncertain",
+        "reason": "There is no clearly identifiable earlier item in the provided history that this current line continues or changes. The current dialogue repeats the idea of preparing a report on decisions, but an explicit previous item to which it relates cannot be confirmed from the available records. Evidence available shows the PM discussing the report in the current meeting but not a distinct prior commitment within the same meeting to be continued or amended.",
+        "quotes": [
+          {
+            "da_id": "TS3006d.A.dialog-act.dharshi.353",
+            "quote": "Well I have to um um make an uh report of every decision we made so far."
+          },
+          {
+            "da_id": "TS3006d.A.dialog-act.dharshi.427",
+            "quote": "Yeah , I have still ten minutes to finish the report."
+          }
+        ],
+        "documents": []
+      },
+      "protocol_normalizations": [
+        "empty_links_for_unestablished_relation",
+        "controller_action_for_missing_hint:retrieve"
+      ],
+      "unresolved_before": [
+        "related_items"
+      ],
+      "unresolved_after": [
+        "related_items"
+      ],
+      "semantic_stalls": 0,
+      "validation_codes": {
+        "relation": [
+          "unobserved_or_inexact_quote"
+        ]
+      }
+    },
+    {
+      "item": "TS3006d#0",
+      "step": 6,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "assess_relation",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue shows PM intends to write a report of all decisions made so far; PM is the announcer/performer and matches the stated task.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.353",
+              "quote": "Well I have to um um make an uh report of every decision we made so far ."
+            },
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.427",
+              "quote": "<vocalsound> Yeah , I have still ten minutes to finish the report ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "PM (MTD021PM) is the explicit owner evidenced by the PM's own dialogue lines indicating responsibility for the report.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.353",
+              "quote": "Well I have to um um make an uh report of every decision we made so far ."
+            },
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.427",
+              "quote": "<vocalsound> Yeah , I have still ten minutes to finish the report ."
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "pass",
+          "reason": "There is an implied deadline in the dialogue: the PM mentions having ten minutes to finish the report.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.427",
+              "quote": "<vocalsound> Yeah , I have still ten minutes to finish the report ."
+            }
+          ],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "The item status is indicated as open in provisional values and the dialogue shows ongoing action; no completion yet.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.353",
+              "quote": "Well I have to um um make an uh report of every decision we made so far ."
+            },
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.427",
+              "quote": "<vocalsound> Yeah , I have still ten minutes to finish the report ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions found in observed dialogue related to this action; other lines refer to questions about scope but do not oppose the task.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.D.dialog-act.dharshi.456",
+              "quote": "<vocalsound> Do we have to do other things ?"
+            },
+            {
+              "da_id": "TS3006d.D.dialog-act.dharshi.457",
+              "quote": "Or just redesign ?"
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "unobserved_or_inexact_quote",
+          "quotes": [],
+          "links": [],
+          "documents": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "decision": "retrieve",
+      "reason": "unresolved_checks",
+      "assessed_text": "PM will write the report of decisions made so far.",
+      "requested_action": null,
+      "proposed_fields": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD021PM"
+        ],
+        "owner_basis": "explicit",
+        "deadline": "in ten minutes",
+        "deadline_basis": "inferred",
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "TS3006d.A.dialog-act.dharshi.353",
+          "TS3006d.A.dialog-act.dharshi.427"
+        ]
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue shows PM intends to write a report of all decisions made so far; PM is the announcer/performer and matches the stated task.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.353",
+              "quote": "Well I have to um um make an uh report of every decision we made so far ."
+            },
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.427",
+              "quote": "<vocalsound> Yeah , I have still ten minutes to finish the report ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "PM (MTD021PM) is the explicit owner evidenced by the PM's own dialogue lines indicating responsibility for the report.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.353",
+              "quote": "Well I have to um um make an uh report of every decision we made so far ."
+            },
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.427",
+              "quote": "<vocalsound> Yeah , I have still ten minutes to finish the report ."
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "pass",
+          "reason": "There is an implied deadline in the dialogue: the PM mentions having ten minutes to finish the report.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.427",
+              "quote": "<vocalsound> Yeah , I have still ten minutes to finish the report ."
+            }
+          ],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "The item status is indicated as open in provisional values and the dialogue shows ongoing action; no completion yet.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.353",
+              "quote": "Well I have to um um make an uh report of every decision we made so far ."
+            },
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.427",
+              "quote": "<vocalsound> Yeah , I have still ten minutes to finish the report ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions found in observed dialogue related to this action; other lines refer to questions about scope but do not oppose the task.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.D.dialog-act.dharshi.456",
+              "quote": "<vocalsound> Do we have to do other things ?"
+            },
+            {
+              "da_id": "TS3006d.D.dialog-act.dharshi.457",
+              "quote": "Or just redesign ?"
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "There is no clearly identifiable earlier item in the provided history that this current line continues or changes. The current dialogue repeats the idea of preparing a report on decisions, but an explicit previous item to which it relates cannot be confirmed from the available records. Evidence available shows the PM discussing the report in the current meeting but not a distinct prior commitment within the same meeting to be continued or amended.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.353",
+              "quote": "Well I have to um um make an uh report of every decision we made so far."
+            },
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.427",
+              "quote": "<vocalsound> Yeah , I have still ten minutes to finish the report ."
+            }
+          ],
+          "links": [],
+          "documents": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "result": "uncertain",
+        "reason": "There is no clearly identifiable earlier item in the provided history that this current line continues or changes. The current dialogue repeats the idea of preparing a report on decisions, but an explicit previous item to which it relates cannot be confirmed from the available records. Evidence available shows the PM discussing the report in the current meeting but not a distinct prior commitment within the same meeting to be continued or amended.",
+        "quotes": [
+          {
+            "da_id": "TS3006d.A.dialog-act.dharshi.353",
+            "quote": "Well I have to um um make an uh report of every decision we made so far."
+          },
+          {
+            "da_id": "TS3006d.A.dialog-act.dharshi.427",
+            "quote": "<vocalsound> Yeah , I have still ten minutes to finish the report ."
+          }
+        ],
+        "documents": [],
+        "links": []
+      },
+      "evidence_bindings": {},
+      "raw_tool_input": {
+        "result": "uncertain",
+        "reason": "There is no clearly identifiable earlier item in the provided history that this current line continues or changes. The current dialogue repeats the idea of preparing a report on decisions, but an explicit previous item to which it relates cannot be confirmed from the available records. Evidence available shows the PM discussing the report in the current meeting but not a distinct prior commitment within the same meeting to be continued or amended.",
+        "quotes": [
+          {
+            "da_id": "TS3006d.A.dialog-act.dharshi.353",
+            "quote": "Well I have to um um make an uh report of every decision we made so far."
+          },
+          {
+            "da_id": "TS3006d.A.dialog-act.dharshi.427",
+            "quote": "<vocalsound> Yeah , I have still ten minutes to finish the report ."
+          }
+        ],
+        "documents": []
+      },
+      "protocol_normalizations": [
+        "empty_links_for_unestablished_relation",
+        "controller_action_for_missing_hint:retrieve"
+      ],
+      "unresolved_before": [
+        "related_items"
+      ],
+      "unresolved_after": [
+        "related_items"
+      ],
+      "semantic_stalls": 1,
+      "validation_codes": {
+        "relation": [
+          "unobserved_or_inexact_quote"
+        ]
+      }
+    },
+    {
+      "item": "TS3006d#0",
+      "step": 7,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "get_prior_items",
+      "outcome": "invalid_action",
+      "error": "This lookup was already executed on this item and cannot add evidence. Read a returned prior record/locator, change the query or window, assess delivered history when offered, or stop pending. Do not repeat it.",
+      "raw_tool_input": {
+        "query": "report decisions",
+        "item_type": "actions"
+      }
+    },
+    {
+      "item": "TS3006d#0",
+      "step": 8,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "assess_relation",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue shows PM intends to write a report of all decisions made so far; PM is the announcer/performer and matches the stated task.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.353",
+              "quote": "Well I have to um um make an uh report of every decision we made so far ."
+            },
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.427",
+              "quote": "<vocalsound> Yeah , I have still ten minutes to finish the report ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "PM (MTD021PM) is the explicit owner evidenced by the PM's own dialogue lines indicating responsibility for the report.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.353",
+              "quote": "Well I have to um um make an uh report of every decision we made so far ."
+            },
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.427",
+              "quote": "<vocalsound> Yeah , I have still ten minutes to finish the report ."
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "pass",
+          "reason": "There is an implied deadline in the dialogue: the PM mentions having ten minutes to finish the report.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.427",
+              "quote": "<vocalsound> Yeah , I have still ten minutes to finish the report ."
+            }
+          ],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "The item status is indicated as open in provisional values and the dialogue shows ongoing action; no completion yet.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.353",
+              "quote": "Well I have to um um make an uh report of every decision we made so far ."
+            },
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.427",
+              "quote": "<vocalsound> Yeah , I have still ten minutes to finish the report ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions found in observed dialogue related to this action; other lines refer to questions about scope but do not oppose the task.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.D.dialog-act.dharshi.456",
+              "quote": "<vocalsound> Do we have to do other things ?"
+            },
+            {
+              "da_id": "TS3006d.D.dialog-act.dharshi.457",
+              "quote": "Or just redesign ?"
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "unobserved_or_inexact_quote",
+          "quotes": [],
+          "links": [],
+          "documents": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "decision": "request_clarification",
+      "reason": "no_progress",
+      "assessed_text": "PM will write the report of decisions made so far.",
+      "requested_action": null,
+      "proposed_fields": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD021PM"
+        ],
+        "owner_basis": "explicit",
+        "deadline": "in ten minutes",
+        "deadline_basis": "inferred",
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "TS3006d.A.dialog-act.dharshi.353",
+          "TS3006d.A.dialog-act.dharshi.427"
+        ]
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue shows PM intends to write a report of all decisions made so far; PM is the announcer/performer and matches the stated task.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.353",
+              "quote": "Well I have to um um make an uh report of every decision we made so far ."
+            },
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.427",
+              "quote": "<vocalsound> Yeah , I have still ten minutes to finish the report ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "PM (MTD021PM) is the explicit owner evidenced by the PM's own dialogue lines indicating responsibility for the report.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.353",
+              "quote": "Well I have to um um make an uh report of every decision we made so far ."
+            },
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.427",
+              "quote": "<vocalsound> Yeah , I have still ten minutes to finish the report ."
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "pass",
+          "reason": "There is an implied deadline in the dialogue: the PM mentions having ten minutes to finish the report.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.427",
+              "quote": "<vocalsound> Yeah , I have still ten minutes to finish the report ."
+            }
+          ],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "The item status is indicated as open in provisional values and the dialogue shows ongoing action; no completion yet.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.353",
+              "quote": "Well I have to um um make an uh report of every decision we made so far ."
+            },
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.427",
+              "quote": "<vocalsound> Yeah , I have still ten minutes to finish the report ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions found in observed dialogue related to this action; other lines refer to questions about scope but do not oppose the task.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.D.dialog-act.dharshi.456",
+              "quote": "<vocalsound> Do we have to do other things ?"
+            },
+            {
+              "da_id": "TS3006d.D.dialog-act.dharshi.457",
+              "quote": "Or just redesign ?"
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "There is no clearly identifiable earlier item in the provided history that this current line continues or changes. The current dialogue repeats the idea of preparing a report on decisions, but an explicit previous commitment to be continued or amended cannot be confirmed from the available records. Evidence available shows the PM discussing the report in the current meeting but not a distinct prior commitment within the same meeting to be continued or amended.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.353",
+              "quote": "Well I have to um um make an uh report of every decision we made so far."
+            },
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.427",
+              "quote": "<vocalsound> Yeah , I have still ten minutes to finish the report."
+            }
+          ],
+          "links": [],
+          "documents": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "result": "uncertain",
+        "reason": "There is no clearly identifiable earlier item in the provided history that this current line continues or changes. The current dialogue repeats the idea of preparing a report on decisions, but an explicit previous commitment to be continued or amended cannot be confirmed from the available records. Evidence available shows the PM discussing the report in the current meeting but not a distinct prior commitment within the same meeting to be continued or amended.",
+        "quotes": [
+          {
+            "da_id": "TS3006d.A.dialog-act.dharshi.353",
+            "quote": "Well I have to um um make an uh report of every decision we made so far."
+          },
+          {
+            "da_id": "TS3006d.A.dialog-act.dharshi.427",
+            "quote": "<vocalsound> Yeah , I have still ten minutes to finish the report."
+          }
+        ],
+        "documents": [],
+        "links": []
+      },
+      "evidence_bindings": {},
+      "raw_tool_input": {
+        "result": "uncertain",
+        "reason": "There is no clearly identifiable earlier item in the provided history that this current line continues or changes. The current dialogue repeats the idea of preparing a report on decisions, but an explicit previous commitment to be continued or amended cannot be confirmed from the available records. Evidence available shows the PM discussing the report in the current meeting but not a distinct prior commitment within the same meeting to be continued or amended.",
+        "quotes": [
+          {
+            "da_id": "TS3006d.A.dialog-act.dharshi.353",
+            "quote": "Well I have to um um make an uh report of every decision we made so far."
+          },
+          {
+            "da_id": "TS3006d.A.dialog-act.dharshi.427",
+            "quote": "<vocalsound> Yeah , I have still ten minutes to finish the report."
+          }
+        ],
+        "documents": []
+      },
+      "protocol_normalizations": [
+        "empty_links_for_unestablished_relation",
+        "controller_action_for_missing_hint:retrieve"
+      ],
+      "unresolved_before": [
+        "related_items"
+      ],
+      "unresolved_after": [
+        "related_items"
+      ],
+      "semantic_stalls": 2,
+      "validation_codes": {
+        "relation": [
+          "unobserved_or_inexact_quote"
+        ]
+      }
+    },
+    {
+      "item": "TS3006d#0",
+      "step": 8,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "stop",
+      "outcome": "pending",
+      "termination_reason": "no_progress",
+      "unresolved_fields": [
+        "related_items"
+      ]
+    }
+  ],
+  "lookups": 3,
+  "termination_reason": "no_progress",
+  "clarifications": [
+    {
+      "request_id": "508a7665bba33f17",
+      "item_key": "TS3006d#0",
+      "record_id": null,
+      "field": "related_items",
+      "question": "Which earlier record does this item continue or change, and how?",
+      "item_text": "PM will write the report of decisions made so far.",
+      "reason": "unobserved_or_inexact_quote",
+      "evidence_da_ids": [],
+      "available_evidence_da_ids": [
+        "TS3006d.A.dialog-act.dharshi.353",
+        "TS3006d.A.dialog-act.dharshi.427",
+        "TS3006d.D.dialog-act.dharshi.456",
+        "TS3006d.D.dialog-act.dharshi.457",
+        "TS3006d.A.dialog-act.dharshi.426",
+        "TS3006d.C.dialog-act.dharshi.364",
+        "TS3006b.D.dialog-act.dharshi.439",
+        "TS3006b.B.dialog-act.dharshi.215",
+        "TS3006b.A.dialog-act.dharshi.397",
+        "TS3006b.B.dialog-act.dharshi.147",
+        "TS3006b.B.dialog-act.dharshi.148",
+        "TS3006b.B.dialog-act.dharshi.149",
+        "TS3006b.A.dialog-act.dharshi.307"
+      ],
+      "status": "open",
+      "termination_reason": "no_progress"
+    }
+  ]
+}

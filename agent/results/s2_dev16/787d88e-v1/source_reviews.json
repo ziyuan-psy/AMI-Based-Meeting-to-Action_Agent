@@ -1,0 +1,56 @@
+{
+  "reviewer": "Codex source-based development spot check; not independent human evaluation",
+  "gold_used": false,
+  "runtime_outputs_changed": false,
+  "cases": [
+    {
+      "case_id": "TS3006a_independent_economic_decisions",
+      "status": "POSITIVE_SOURCE_CHECK",
+      "new_record_ids": ["TS3006a.sys.s.4", "TS3006a.sys.s.5", "TS3006a.sys.s.6"],
+      "finding": "The cold pipeline separately published 'Pricing set at 25 Euros.', 'Sales target: 50 million Euros in total.', and 'Production cost: half of the selling price.'. These were not collapsed into one output Decision. This records preservation of the known independent facts, not a new F1 score or independent human sign-off.",
+      "human_confirmed": false
+    },
+    {
+      "case_id": "IS1008d_market_tests_vs_marketing",
+      "status": "NEEDS_SEMANTIC_REVIEW",
+      "old_record_id": "IS1008c.sys.s.10",
+      "new_record_id": "IS1008d.sys.s.4",
+      "relation": "updates",
+      "old_text": "Market the product after the price is determined.",
+      "new_text": "Coordinate market tests after prototypes and conduct test-marketing.",
+      "finding": "The model treats adding prototype market tests as a scope update to an earlier marketing task. The quotations support both activities, but they may be distinct tasks in the same marketing plan. They do not explicitly establish that the earlier commitment is being updated. Keep the model output unchanged and independently review relationship identity and changed scope.",
+      "review_context": [
+        {"da_id": "IS1008c.D.dialog-act.s9553330.121", "text": "Once we get a price on it then we can market it ."},
+        {"da_id": "IS1008d.B.dialog-act.s9553330.74", "text": "We probably should do some market tests uh once we have the prototypes and do some orders and things like that and test-market it ."}
+      ],
+      "human_confirmed": false
+    },
+    {
+      "case_id": "IS1008a_slides_retained_in_cold_run",
+      "status": "POSITIVE_SOURCE_CHECK",
+      "new_record_id": "IS1008a.sys.s.8",
+      "new_text": "Send a copy of the slides to all attendees after the meeting.",
+      "deadline": "at the conclusion of the meeting",
+      "deadline_basis": "explicit",
+      "finding": "The cold pipeline retained the slides Action and an explicit meeting-end deadline. P2 item IS1008a#10 finished with all_required_checks_passed. Evidence references include the request in IS1008a.C.dialog-act.s9553330.42 and PM's agreement in IS1008a.A.dialog-act.s9553330.130/131. This is a natural full-run source check, not an injected case or a replay of old selection results.",
+      "human_confirmed": false
+    },
+    {
+      "case_id": "ES2011d_fruit_scope_link",
+      "status": "NEEDS_SEMANTIC_REVIEW",
+      "old_record_id": "ES2011a.sys.s.7",
+      "new_record_id": "ES2011d.sys.s.5",
+      "relation": "updates",
+      "old_text": "Adopted project scope: couches and remote controls.",
+      "new_text": "We will develop a variety of trendy fruit designs for the remote control.",
+      "finding": "The older source follows a 'Maybe we should design couches' suggestion and vocal reactions. Treating it as an adopted project scope may overstate the discussion. The newer source supports fruit variants for the remote but does not clearly establish that it updates the prior couch/remote scope. Actual source citations pass structural checks, while the old decision and relationship semantics need independent review.",
+      "review_context": [
+        {"da_id": "ES2011a.A.dialog-act.dharshi.94", "text": "Maybe we should design couches that have the remote control in the side arm . <vocalsound>"},
+        {"da_id": "ES2011a.C.dialog-act.dharshi.66", "text": "Yeah so we <disfmarker> <vocalsound> the project is now couches and remote controls ."},
+        {"da_id": "ES2011d.B.dialog-act.dharshi.21", "text": "So we'll come up with a variety of trendy and exciting fruit designs for the remote control ."}
+      ],
+      "context_kind": "Source context read offline by the auditor; model-selected evidence remains unchanged in the P2 sidecar.",
+      "human_confirmed": false
+    }
+  ]
+}

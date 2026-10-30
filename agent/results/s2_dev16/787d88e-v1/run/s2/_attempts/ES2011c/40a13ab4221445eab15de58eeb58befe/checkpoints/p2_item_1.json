@@ -1,0 +1,912 @@
+{
+  "item_key": "ES2011c#1",
+  "record_id": null,
+  "item_type": "actions",
+  "item_text": "The UI and ME will receive further instructions from their personal coach.",
+  "state": "pending",
+  "recordable": false,
+  "fields": {
+    "status": "open",
+    "prior_context_needed": false,
+    "related_items": [],
+    "owner": [
+      "FEE043",
+      "FEE044"
+    ],
+    "owner_basis": "explicit",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "reference": [
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/ES2011c.json",
+        "locator": "ES2011c.A.dialog-act.dharshi.221"
+      }
+    ]
+  },
+  "draft_fields": {
+    "status": "open",
+    "related_items": [],
+    "owner": [
+      "FEE043",
+      "FEE044"
+    ],
+    "owner_basis": "explicit",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "prior_context_needed": false,
+    "used_participant_lookup": false,
+    "evidence_da_ids": [
+      "ES2011c.A.dialog-act.dharshi.221"
+    ]
+  },
+  "checks": {
+    "statement": {
+      "result": "pass",
+      "reason": "The dialogue explicitly assigns that UI (FEE043) and ME (FEE044) will receive further instructions from their personal coach, matching the item description.",
+      "quotes": [
+        {
+          "da_id": "ES2011c.A.dialog-act.dharshi.221",
+          "quote": "So you'll get mm m more instructions from your personal coach ."
+        }
+      ],
+      "fields": [
+        "statement"
+      ]
+    },
+    "owner": {
+      "result": "pass",
+      "reason": "The item lists explicit ownership by FEE043 and FEE044 as per provisional values and the dialogue references responsibility for UI/ME tasks.",
+      "quotes": [
+        {
+          "da_id": "ES2011c.A.dialog-act.dharshi.221",
+          "quote": "So you'll get mm m more instructions from your personal coach ."
+        }
+      ],
+      "fields": [
+        "owner"
+      ]
+    },
+    "deadline": {
+      "result": "uncertain",
+      "reason": "deadline_unresolved",
+      "quotes": [
+        {
+          "da_id": "ES2011c.A.dialog-act.dharshi.221",
+          "quote": "So you'll get mm m more instructions from your personal coach ."
+        }
+      ],
+      "fields": [
+        "deadline"
+      ]
+    },
+    "status": {
+      "result": "pass",
+      "reason": "Current status is 'open' in provisional values; dialogue confirms ongoing assignment.",
+      "quotes": [
+        {
+          "da_id": "ES2011c.A.dialog-act.dharshi.221",
+          "quote": "So you'll get mm m more instructions from your personal coach ."
+        }
+      ],
+      "fields": [
+        "status"
+      ]
+    },
+    "conflict": {
+      "result": "uncertain",
+      "reason": "No conflicting evidence found yet; only one datum supports the action.",
+      "quotes": [
+        {
+          "da_id": "ES2011c.A.dialog-act.dharshi.221",
+          "quote": "So you'll get mm m more instructions from your personal coach ."
+        }
+      ],
+      "fields": []
+    },
+    "relation": {
+      "result": "not_applicable",
+      "reason": "No prior item relation to update; this is a standalone action in this meeting.",
+      "quotes": [],
+      "fields": [
+        "related_items"
+      ]
+    }
+  },
+  "unresolved_fields": [
+    "deadline",
+    "statement"
+  ],
+  "observed_evidence_da_ids": [
+    "ES2011c.A.dialog-act.dharshi.221",
+    "ES2011c.A.dialog-act.dharshi.220",
+    "ES2011c.D.dialog-act.dharshi.165"
+  ],
+  "initial_context": {
+    "item": {
+      "type": "actions",
+      "text": "The UI and ME will receive further instructions from their personal coach.",
+      "flags": [
+        "JOINT_OWNER_CHECK"
+      ]
+    },
+    "current_meeting": "ES2011c",
+    "earlier_meetings": [
+      "ES2011a",
+      "ES2011b"
+    ],
+    "roster": [
+      {
+        "speaker": "A",
+        "participant_id": "FEE041",
+        "role": "PM"
+      },
+      {
+        "speaker": "B",
+        "participant_id": "FEE042",
+        "role": "ID"
+      },
+      {
+        "speaker": "C",
+        "participant_id": "FEE043",
+        "role": "UI"
+      },
+      {
+        "speaker": "D",
+        "participant_id": "FEE044",
+        "role": "ME"
+      }
+    ],
+    "observed_dialogue": [
+      {
+        "da_id": "ES2011c.A.dialog-act.dharshi.221",
+        "meeting_id": "ES2011c",
+        "text": "So you'll get mm m more instructions from your personal coach .",
+        "participant": "FEE041",
+        "role": "PM"
+      },
+      {
+        "da_id": "ES2011c.A.dialog-act.dharshi.220",
+        "participant": "FEE041",
+        "role": "PM",
+        "text": "And you're gonna be doing protu product evaluation ."
+      },
+      {
+        "da_id": "ES2011c.D.dialog-act.dharshi.165",
+        "participant": "FEE044",
+        "role": "ME",
+        "text": "Oh , thank you . <vocalsound>"
+      }
+    ],
+    "peer_items": [
+      {
+        "item_key": "ES2011c#0",
+        "type": "actions",
+        "text": "Play with play-dough to develop the look and feel of the design and the user interface."
+      }
+    ],
+    "provisional_values": {
+      "owner": [
+        "FEE043",
+        "FEE044"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "status": "open",
+      "related_items": []
+    },
+    "candidate_evidence_da_ids": [
+      "ES2011c.A.dialog-act.dharshi.221"
+    ]
+  },
+  "observed_documents": [],
+  "document_evidence": [],
+  "relation_evidence": [],
+  "history": [
+    {
+      "item": "ES2011c#1",
+      "step": 1,
+      "flags": [
+        "JOINT_OWNER_CHECK"
+      ],
+      "action": "assess_item",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue explicitly assigns that UI (FEE043) and ME (FEE044) will receive further instructions from their personal coach, matching the item description.",
+          "quotes": [
+            {
+              "da_id": "ES2011c.A.dialog-act.dharshi.221",
+              "quote": "So you'll get mm m more instructions from your personal coach ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "The item lists explicit ownership by FEE043 and FEE044 as per provisional values and the dialogue references responsibility for UI/ME tasks.",
+          "quotes": [
+            {
+              "da_id": "ES2011c.A.dialog-act.dharshi.221",
+              "quote": "So you'll get mm m more instructions from your personal coach ."
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "deadline_unresolved",
+          "quotes": [
+            {
+              "da_id": "ES2011c.A.dialog-act.dharshi.221",
+              "quote": "So you'll get mm m more instructions from your personal coach ."
+            }
+          ],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Current status is 'open' in provisional values; dialogue confirms ongoing assignment.",
+          "quotes": [
+            {
+              "da_id": "ES2011c.A.dialog-act.dharshi.221",
+              "quote": "So you'll get mm m more instructions from your personal coach ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "uncertain",
+          "reason": "No conflicting evidence found yet; only one datum supports the action.",
+          "quotes": [
+            {
+              "da_id": "ES2011c.A.dialog-act.dharshi.221",
+              "quote": "So you'll get mm m more instructions from your personal coach ."
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No prior item relation to update; this is a standalone action in this meeting.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "decision": "retrieve",
+      "reason": "unresolved_checks",
+      "assessed_text": "The UI and ME will receive further instructions from their personal coach.",
+      "requested_action": "accept",
+      "proposed_fields": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "FEE043",
+          "FEE044"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "ES2011c.A.dialog-act.dharshi.221"
+        ]
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue explicitly assigns that UI (FEE043) and ME (FEE044) will receive further instructions from their personal coach, matching the item description.",
+          "quotes": [
+            "ES2011c.A.dialog-act.dharshi.221"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "The item lists explicit ownership by FEE043 and FEE044 as per provisional values and the dialogue references responsibility for UI/ME tasks.",
+          "quotes": [
+            "ES2011c.A.dialog-act.dharshi.221"
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "No deadline stated in dialogue or provisional values; framework requires explicit deadline wording or null. Consider null deadline with basis 'missing'.",
+          "quotes": [
+            "ES2011c.A.dialog-act.dharshi.221"
+          ],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Current status is 'open' in provisional values; dialogue confirms ongoing assignment.",
+          "quotes": [
+            "ES2011c.A.dialog-act.dharshi.221"
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "uncertain",
+          "reason": "No conflicting evidence found yet; only one datum supports the action.",
+          "quotes": [
+            "ES2011c.A.dialog-act.dharshi.221"
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No prior item relation to update; this is a standalone action in this meeting.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "FEE043",
+          "FEE044"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue explicitly assigns that UI (FEE043) and ME (FEE044) will receive further instructions from their personal coach, matching the item description.",
+          "evidence_da_ids": [
+            "ES2011c.A.dialog-act.dharshi.221"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "The item lists explicit ownership by FEE043 and FEE044 as per provisional values and the dialogue references responsibility for UI/ME tasks.",
+          "evidence_da_ids": [
+            "ES2011c.A.dialog-act.dharshi.221"
+          ]
+        },
+        "deadline_check": {
+          "result": "uncertain",
+          "reason": "No deadline stated in dialogue or provisional values; framework requires explicit deadline wording or null. Consider null deadline with basis 'missing'.",
+          "evidence_da_ids": [
+            "ES2011c.A.dialog-act.dharshi.221"
+          ]
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "Current status is 'open' in provisional values; dialogue confirms ongoing assignment.",
+          "evidence_da_ids": [
+            "ES2011c.A.dialog-act.dharshi.221"
+          ]
+        },
+        "conflict_check": {
+          "result": "uncertain",
+          "reason": "No conflicting evidence found yet; only one datum supports the action.",
+          "evidence_da_ids": [
+            "ES2011c.A.dialog-act.dharshi.221"
+          ],
+          "affected_fields": []
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No prior item relation to update; this is a standalone action in this meeting.",
+          "evidence_da_ids": []
+        },
+        "next_action": "accept"
+      },
+      "evidence_bindings": {
+        "statement": [
+          "ES2011c.A.dialog-act.dharshi.221"
+        ],
+        "owner": [
+          "ES2011c.A.dialog-act.dharshi.221"
+        ],
+        "deadline": [
+          "ES2011c.A.dialog-act.dharshi.221"
+        ],
+        "status": [
+          "ES2011c.A.dialog-act.dharshi.221"
+        ],
+        "conflict": [
+          "ES2011c.A.dialog-act.dharshi.221"
+        ]
+      },
+      "raw_tool_input": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "FEE043",
+          "FEE044"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue explicitly assigns that UI (FEE043) and ME (FEE044) will receive further instructions from their personal coach, matching the item description.",
+          "evidence_da_ids": [
+            "ES2011c.A.dialog-act.dharshi.221"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "The item lists explicit ownership by FEE043 and FEE044 as per provisional values and the dialogue references responsibility for UI/ME tasks.",
+          "evidence_da_ids": [
+            "ES2011c.A.dialog-act.dharshi.221"
+          ]
+        },
+        "deadline_check": {
+          "result": "uncertain",
+          "reason": "No deadline stated in dialogue or provisional values; framework requires explicit deadline wording or null. Consider null deadline with basis 'missing'.",
+          "evidence_da_ids": [
+            "ES2011c.A.dialog-act.dharshi.221"
+          ]
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "Current status is 'open' in provisional values; dialogue confirms ongoing assignment.",
+          "evidence_da_ids": [
+            "ES2011c.A.dialog-act.dharshi.221"
+          ]
+        },
+        "conflict_check": {
+          "result": "uncertain",
+          "reason": "No conflicting evidence found yet; only one datum supports the action.",
+          "evidence_da_ids": [
+            "ES2011c.A.dialog-act.dharshi.221"
+          ],
+          "affected_fields": []
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No prior item relation to update; this is a standalone action in this meeting.",
+          "evidence_da_ids": []
+        },
+        "next_action": "accept"
+      },
+      "protocol_normalizations": [],
+      "unresolved_before": [
+        "deadline",
+        "owner",
+        "statement",
+        "status"
+      ],
+      "unresolved_after": [
+        "deadline",
+        "statement"
+      ],
+      "semantic_stalls": 0,
+      "validation_codes": {
+        "deadline": [
+          "deadline_unresolved"
+        ]
+      }
+    },
+    {
+      "item": "ES2011c#1",
+      "step": 2,
+      "flags": [
+        "JOINT_OWNER_CHECK"
+      ],
+      "action": "get_prior_items",
+      "outcome": "invalid_action",
+      "error": "Search earlier record TEXT using subject/property keywords, not a meeting ID. Choose a content query, search again or stop pending.",
+      "raw_tool_input": {
+        "query": "ES2011c#0",
+        "item_type": "actions"
+      }
+    },
+    {
+      "item": "ES2011c#1",
+      "step": 3,
+      "flags": [
+        "JOINT_OWNER_CHECK"
+      ],
+      "action": "get_prior_items",
+      "outcome": "lookup",
+      "decision": "retrieve",
+      "args": {
+        "query": "play-dough",
+        "item_type": "actions"
+      },
+      "tool_result": {
+        "results": []
+      },
+      "new_info": false
+    },
+    {
+      "item": "ES2011c#1",
+      "step": 4,
+      "flags": [
+        "JOINT_OWNER_CHECK"
+      ],
+      "action": "assess_item",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue explicitly assigns that UI (FEE043) and ME (FEE044) will receive further instructions from their personal coach, matching the item description.",
+          "quotes": [
+            {
+              "da_id": "ES2011c.A.dialog-act.dharshi.221",
+              "quote": "So you'll get mm m more instructions from your personal coach ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "The item lists explicit ownership by FEE043 and FEE044 as per provisional values and the dialogue references responsibility for UI/ME tasks.",
+          "quotes": [
+            {
+              "da_id": "ES2011c.A.dialog-act.dharshi.221",
+              "quote": "So you'll get mm m more instructions from your personal coach ."
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "deadline_unresolved",
+          "quotes": [
+            {
+              "da_id": "ES2011c.A.dialog-act.dharshi.221",
+              "quote": "So you'll get mm m more instructions from your personal coach ."
+            }
+          ],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Current status is 'open' in provisional values; dialogue confirms ongoing assignment.",
+          "quotes": [
+            {
+              "da_id": "ES2011c.A.dialog-act.dharshi.221",
+              "quote": "So you'll get mm m more instructions from your personal coach ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "uncertain",
+          "reason": "No conflicting evidence found yet; only one datum supports the action.",
+          "quotes": [
+            {
+              "da_id": "ES2011c.A.dialog-act.dharshi.221",
+              "quote": "So you'll get mm m more instructions from your personal coach ."
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No prior item relation to update; this is a standalone action in this meeting.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "decision": "retrieve",
+      "reason": "unresolved_checks",
+      "assessed_text": "The UI and ME will receive further instructions from their personal coach.",
+      "requested_action": "retrieve",
+      "proposed_fields": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "FEE043",
+          "FEE044"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "ES2011c.A.dialog-act.dharshi.221"
+        ]
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue explicitly assigns that UI (FEE043) and ME (FEE044) will receive further instructions from their personal coach, matching the item description.",
+          "quotes": [
+            "ES2011c.A.dialog-act.dharshi.221"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "The item lists explicit ownership by FEE043 and FEE044 as per provisional values and the dialogue references responsibility for UI/ME tasks.",
+          "quotes": [
+            "ES2011c.A.dialog-act.dharshi.221"
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "No deadline stated in dialogue or provisional values; framework requires explicit deadline wording or null. Consider null deadline with basis 'missing'.",
+          "quotes": [
+            "ES2011c.A.dialog-act.dharshi.221"
+          ],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Current status is 'open' in provisional values; dialogue confirms ongoing assignment.",
+          "quotes": [
+            "ES2011c.A.dialog-act.dharshi.221"
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "uncertain",
+          "reason": "No conflicting evidence found yet; only one datum supports the action.",
+          "quotes": [
+            "ES2011c.A.dialog-act.dharshi.221"
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No prior item relation to update; this is a standalone action in this meeting.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "FEE043",
+          "FEE044"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue explicitly assigns that UI (FEE043) and ME (FEE044) will receive further instructions from their personal coach, matching the item description.",
+          "evidence_da_ids": [
+            "ES2011c.A.dialog-act.dharshi.221"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "The item lists explicit ownership by FEE043 and FEE044 as per provisional values and the dialogue references responsibility for UI/ME tasks.",
+          "evidence_da_ids": [
+            "ES2011c.A.dialog-act.dharshi.221"
+          ]
+        },
+        "deadline_check": {
+          "result": "uncertain",
+          "reason": "No deadline stated in dialogue or provisional values; framework requires explicit deadline wording or null. Consider null deadline with basis 'missing'.",
+          "evidence_da_ids": [
+            "ES2011c.A.dialog-act.dharshi.221"
+          ]
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "Current status is 'open' in provisional values; dialogue confirms ongoing assignment.",
+          "evidence_da_ids": [
+            "ES2011c.A.dialog-act.dharshi.221"
+          ]
+        },
+        "conflict_check": {
+          "result": "uncertain",
+          "reason": "No conflicting evidence found yet; only one datum supports the action.",
+          "evidence_da_ids": [
+            "ES2011c.A.dialog-act.dharshi.221"
+          ],
+          "affected_fields": []
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No prior item relation to update; this is a standalone action in this meeting.",
+          "evidence_da_ids": []
+        },
+        "next_action": "retrieve"
+      },
+      "evidence_bindings": {
+        "statement": [
+          "ES2011c.A.dialog-act.dharshi.221"
+        ],
+        "owner": [
+          "ES2011c.A.dialog-act.dharshi.221"
+        ],
+        "deadline": [
+          "ES2011c.A.dialog-act.dharshi.221"
+        ],
+        "status": [
+          "ES2011c.A.dialog-act.dharshi.221"
+        ],
+        "conflict": [
+          "ES2011c.A.dialog-act.dharshi.221"
+        ]
+      },
+      "raw_tool_input": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "FEE043",
+          "FEE044"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue explicitly assigns that UI (FEE043) and ME (FEE044) will receive further instructions from their personal coach, matching the item description.",
+          "evidence_da_ids": [
+            "ES2011c.A.dialog-act.dharshi.221"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "The item lists explicit ownership by FEE043 and FEE044 as per provisional values and the dialogue references responsibility for UI/ME tasks.",
+          "evidence_da_ids": [
+            "ES2011c.A.dialog-act.dharshi.221"
+          ]
+        },
+        "deadline_check": {
+          "result": "uncertain",
+          "reason": "No deadline stated in dialogue or provisional values; framework requires explicit deadline wording or null. Consider null deadline with basis 'missing'.",
+          "evidence_da_ids": [
+            "ES2011c.A.dialog-act.dharshi.221"
+          ]
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "Current status is 'open' in provisional values; dialogue confirms ongoing assignment.",
+          "evidence_da_ids": [
+            "ES2011c.A.dialog-act.dharshi.221"
+          ]
+        },
+        "conflict_check": {
+          "result": "uncertain",
+          "reason": "No conflicting evidence found yet; only one datum supports the action.",
+          "evidence_da_ids": [
+            "ES2011c.A.dialog-act.dharshi.221"
+          ],
+          "affected_fields": []
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No prior item relation to update; this is a standalone action in this meeting.",
+          "evidence_da_ids": []
+        },
+        "next_action": "retrieve"
+      },
+      "protocol_normalizations": [],
+      "unresolved_before": [
+        "deadline",
+        "statement"
+      ],
+      "unresolved_after": [
+        "deadline",
+        "statement"
+      ],
+      "semantic_stalls": 1,
+      "validation_codes": {
+        "deadline": [
+          "deadline_unresolved"
+        ]
+      }
+    },
+    {
+      "item": "ES2011c#1",
+      "step": 5,
+      "flags": [
+        "JOINT_OWNER_CHECK"
+      ],
+      "action": "get_prior_items",
+      "outcome": "lookup",
+      "decision": "retrieve",
+      "args": {
+        "query": "ES2011c A dialog act dharshi 221",
+        "item_type": "actions"
+      },
+      "tool_result": {
+        "results": []
+      },
+      "new_info": false
+    },
+    {
+      "item": "ES2011c#1",
+      "step": 5,
+      "flags": [
+        "JOINT_OWNER_CHECK"
+      ],
+      "action": "stop",
+      "outcome": "pending",
+      "termination_reason": "no_progress",
+      "unresolved_fields": [
+        "deadline",
+        "statement"
+      ]
+    }
+  ],
+  "lookups": 2,
+  "termination_reason": "no_progress",
+  "clarifications": [
+    {
+      "request_id": "32031621a8f53e05",
+      "item_key": "ES2011c#1",
+      "record_id": null,
+      "field": "deadline",
+      "question": "What is the agreed deadline, in its original wording?",
+      "item_text": "The UI and ME will receive further instructions from their personal coach.",
+      "reason": "deadline_unresolved",
+      "evidence_da_ids": [
+        "ES2011c.A.dialog-act.dharshi.221"
+      ],
+      "available_evidence_da_ids": [
+        "ES2011c.A.dialog-act.dharshi.221",
+        "ES2011c.A.dialog-act.dharshi.220",
+        "ES2011c.D.dialog-act.dharshi.165"
+      ],
+      "status": "open",
+      "termination_reason": "no_progress"
+    },
+    {
+      "request_id": "7900ac298fd094cd",
+      "item_key": "ES2011c#1",
+      "record_id": null,
+      "field": "statement",
+      "question": "Should this be recorded as a substantive, supported actions item?",
+      "item_text": "The UI and ME will receive further instructions from their personal coach.",
+      "reason": "No conflicting evidence found yet; only one datum supports the action.",
+      "evidence_da_ids": [
+        "ES2011c.A.dialog-act.dharshi.221"
+      ],
+      "available_evidence_da_ids": [
+        "ES2011c.A.dialog-act.dharshi.221",
+        "ES2011c.A.dialog-act.dharshi.220",
+        "ES2011c.D.dialog-act.dharshi.165"
+      ],
+      "status": "open",
+      "termination_reason": "no_progress"
+    }
+  ]
+}

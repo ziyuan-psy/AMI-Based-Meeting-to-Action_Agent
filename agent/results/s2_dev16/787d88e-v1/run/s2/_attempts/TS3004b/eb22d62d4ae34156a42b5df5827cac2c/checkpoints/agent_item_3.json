@@ -1,0 +1,1630 @@
+{
+  "item": 3,
+  "fields": {
+    "item_key": "TS3004b#3",
+    "record_id": null,
+    "item_type": "decisions",
+    "item_text": "The remote control should be a TV remote control only.",
+    "state": "pending",
+    "recordable": true,
+    "fields": {
+      "status": "adopted",
+      "prior_context_needed": false,
+      "related_items": [],
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3004b.json",
+          "locator": "TS3004b.A.dialog-act.vkaraisk.61"
+        }
+      ]
+    },
+    "draft_fields": {
+      "status": "adopted",
+      "related_items": [
+        {
+          "id": "TS3004a.sys.s.3",
+          "relation": "replaces"
+        }
+      ],
+      "prior_context_needed": false,
+      "used_participant_lookup": false,
+      "evidence_da_ids": [
+        "TS3004b.A.dialog-act.vkaraisk.61",
+        "TS3004a.C.dialog-act.vkaraisk.36"
+      ],
+      "owner": null,
+      "owner_basis": "missing",
+      "deadline": null,
+      "deadline_basis": "missing"
+    },
+    "checks": {
+      "statement": {
+        "result": "pass",
+        "reason": "Current dialogue TS3004b.A.dialog-act.vkaraisk.61 explicitly states 'it should be a TV remote control only', aligning with the decision.",
+        "quotes": [
+          {
+            "da_id": "TS3004b.A.dialog-act.vkaraisk.61",
+            "quote": "and it should be a T_V_ remote control only ."
+          }
+        ],
+        "fields": [
+          "statement"
+        ]
+      },
+      "status": {
+        "result": "pass",
+        "reason": "Dialogue supports the adopted status of the decision; the line 61 confirms the constraint.",
+        "quotes": [
+          {
+            "da_id": "TS3004b.A.dialog-act.vkaraisk.61",
+            "quote": "and it should be a T_V_ remote control only ."
+          }
+        ],
+        "fields": [
+          "status"
+        ]
+      },
+      "conflict": {
+        "result": "pass",
+        "reason": "No contradictions in the available evidence regarding the remote control type.",
+        "quotes": [
+          {
+            "da_id": "TS3004b.A.dialog-act.vkaraisk.61",
+            "quote": "and it should be a T_V_ remote control only ."
+          }
+        ],
+        "fields": []
+      },
+      "relation": {
+        "result": "uncertain",
+        "reason": "read_and_quote_each_links_prior_and_current_evidence",
+        "quotes": [],
+        "links": [
+          {
+            "id": "TS3004a.sys.s.3",
+            "relation": "replaces",
+            "changed_fields": [
+              "scope"
+            ],
+            "reason": "Current statement narrows the remote control from universal to TV-only, changing the established scope.",
+            "prior_evidence_da_ids": [
+              "TS3004a.B.dialog-act.vkaraisk.60",
+              "TS3004a.C.dialog-act.vkaraisk.36",
+              "TS3004a.D.dialog-act.vkaraisk.73"
+            ],
+            "current_evidence_da_ids": [
+              "TS3004b.A.dialog-act.vkaraisk.61"
+            ]
+          }
+        ],
+        "fields": [
+          "related_items"
+        ]
+      },
+      "owner": {
+        "result": "not_applicable",
+        "reason": "field_not_applicable",
+        "quotes": [],
+        "fields": [
+          "owner"
+        ]
+      },
+      "deadline": {
+        "result": "not_applicable",
+        "reason": "field_not_applicable",
+        "quotes": [],
+        "fields": [
+          "deadline"
+        ]
+      }
+    },
+    "unresolved_fields": [
+      "related_items"
+    ],
+    "observed_evidence_da_ids": [
+      "TS3004b.A.dialog-act.vkaraisk.61",
+      "TS3004b.A.dialog-act.vkaraisk.62",
+      "TS3004b.A.dialog-act.vkaraisk.60",
+      "TS3004b.D.dialog-act.vkaraisk.10",
+      "TS3004a.C.dialog-act.vkaraisk.36",
+      "TS3004a.B.dialog-act.vkaraisk.60",
+      "TS3004a.D.dialog-act.vkaraisk.78",
+      "TS3004a.A.dialog-act.vkaraisk.205",
+      "TS3004a.A.dialog-act.vkaraisk.200",
+      "TS3004a.D.dialog-act.vkaraisk.73",
+      "TS3004a.D.dialog-act.vkaraisk.74"
+    ],
+    "initial_context": {
+      "item": {
+        "type": "decisions",
+        "text": "The remote control should be a TV remote control only.",
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ]
+      },
+      "current_meeting": "TS3004b",
+      "earlier_meetings": [
+        "TS3004a"
+      ],
+      "roster": [
+        {
+          "speaker": "A",
+          "participant_id": "MTD013PM",
+          "role": "PM"
+        },
+        {
+          "speaker": "B",
+          "participant_id": "MTD015UID",
+          "role": "UI"
+        },
+        {
+          "speaker": "C",
+          "participant_id": "MTD014ID",
+          "role": "ID"
+        },
+        {
+          "speaker": "D",
+          "participant_id": "MTD016ME",
+          "role": "ME"
+        }
+      ],
+      "observed_dialogue": [
+        {
+          "da_id": "TS3004b.A.dialog-act.vkaraisk.61",
+          "meeting_id": "TS3004b",
+          "text": "and it should be a T_V_ remote control only .",
+          "participant": "MTD013PM",
+          "role": "PM"
+        },
+        {
+          "da_id": "TS3004b.A.dialog-act.vkaraisk.62",
+          "meeting_id": "TS3004b",
+          "text": "So",
+          "participant": "MTD013PM",
+          "role": "PM"
+        },
+        {
+          "da_id": "TS3004b.A.dialog-act.vkaraisk.60",
+          "participant": "MTD013PM",
+          "role": "PM",
+          "text": "I just got a email from the from the personal coach"
+        },
+        {
+          "da_id": "TS3004b.D.dialog-act.vkaraisk.10",
+          "participant": "MTD016ME",
+          "role": "ME",
+          "text": "<vocalsound>"
+        }
+      ],
+      "peer_items": [
+        {
+          "item_key": "TS3004b#0",
+          "type": "problems",
+          "text": "The primary user group is forty plus; older users may require larger buttons."
+        },
+        {
+          "item_key": "TS3004b#1",
+          "type": "problems",
+          "text": "LCD hardware may not be feasible within a 12.5 euro budget."
+        },
+        {
+          "item_key": "TS3004b#2",
+          "type": "problems",
+          "text": "Feasibility of implementing speech recognition at around €25 price point is questionable."
+        }
+      ],
+      "provisional_values": {
+        "owner": null,
+        "owner_basis": "missing",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "adopted",
+        "related_items": []
+      },
+      "candidate_evidence_da_ids": [
+        "TS3004b.A.dialog-act.vkaraisk.61",
+        "TS3004b.A.dialog-act.vkaraisk.62"
+      ]
+    },
+    "observed_documents": [],
+    "document_evidence": [],
+    "relation_evidence": [
+      {
+        "prior_item_id": "TS3004a.sys.s.3",
+        "relation": "replaces",
+        "state": "pending",
+        "changed_fields": [
+          "scope"
+        ],
+        "reason": "Current statement narrows the remote control from universal to TV-only, changing the established scope.",
+        "before": {
+          "kind": "prior_item",
+          "id": "TS3004a.sys.s.3",
+          "meeting_id": "TS3004a",
+          "type": "decisions",
+          "text": "The remote control will be a universal remote control compatible with TV, VCR, and DVD devices.",
+          "owner": null,
+          "owner_basis": null,
+          "deadline": null,
+          "deadline_basis": null,
+          "status": "adopted",
+          "evidence": [
+            "TS3004a.B.dialog-act.vkaraisk.60",
+            "TS3004a.C.dialog-act.vkaraisk.36",
+            "TS3004a.D.dialog-act.vkaraisk.73"
+          ],
+          "source_file": "TS3004a.json",
+          "source_sha256": "6052f01f5d807494e3a7c59d3b03cb99800d64485cf3700ddadbdfbf41b905e8",
+          "review_state": "accepted",
+          "unresolved_fields": [],
+          "unreadable_reference_ids": [],
+          "selected_reference_ids": [
+            "TS3004a.B.dialog-act.vkaraisk.60",
+            "TS3004a.C.dialog-act.vkaraisk.36",
+            "TS3004a.D.dialog-act.vkaraisk.73"
+          ],
+          "next_offset": null
+        },
+        "after": {
+          "item_key": "TS3004b#3",
+          "text": "The remote control should be a TV remote control only.",
+          "type": "decisions",
+          "status": "adopted",
+          "owner": null,
+          "deadline": null
+        },
+        "prior_quotes": [],
+        "current_quotes": []
+      }
+    ],
+    "history": [
+      {
+        "item": "TS3004b#3",
+        "step": 1,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Current dialogue TS3004b.A.dialog-act.vkaraisk.61 explicitly states 'it should be a TV remote control only', aligning with the decision.",
+            "quotes": [
+              {
+                "da_id": "TS3004b.A.dialog-act.vkaraisk.61",
+                "quote": "and it should be a T_V_ remote control only ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Dialogue supports the adopted status of the decision; the line 61 confirms the constraint.",
+            "quotes": [
+              {
+                "da_id": "TS3004b.A.dialog-act.vkaraisk.61",
+                "quote": "and it should be a T_V_ remote control only ."
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions in the available evidence regarding the remote control type.",
+            "quotes": [
+              {
+                "da_id": "TS3004b.A.dialog-act.vkaraisk.61",
+                "quote": "and it should be a T_V_ remote control only ."
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "prior_context_not_checked",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          }
+        },
+        "decision": "retrieve",
+        "reason": "unresolved_checks",
+        "assessed_text": "The remote control should be a TV remote control only.",
+        "requested_action": "retrieve",
+        "proposed_fields": {
+          "status": "adopted",
+          "related_items": [],
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "TS3004b.A.dialog-act.vkaraisk.61"
+          ],
+          "owner": null,
+          "owner_basis": "missing",
+          "deadline": null,
+          "deadline_basis": "missing"
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Current dialogue TS3004b.A.dialog-act.vkaraisk.61 explicitly states 'it should be a TV remote control only', aligning with the decision.",
+            "quotes": [
+              "TS3004b.A.dialog-act.vkaraisk.61"
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Dialogue supports the adopted status of the decision; the line 61 confirms the constraint.",
+            "quotes": [
+              "TS3004b.A.dialog-act.vkaraisk.61"
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions in the available evidence regarding the remote control type.",
+            "quotes": [
+              "TS3004b.A.dialog-act.vkaraisk.61"
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "There is a possible relation to prior item TS3004a as indicated by the flag, but no explicit linkage evidenced in current dialogue.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "status": "adopted",
+          "related_items": [],
+          "statement": {
+            "result": "pass",
+            "reason": "Current dialogue TS3004b.A.dialog-act.vkaraisk.61 explicitly states 'it should be a TV remote control only', aligning with the decision.",
+            "evidence_da_ids": [
+              "TS3004b.A.dialog-act.vkaraisk.61"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Dialogue supports the adopted status of the decision; the line 61 confirms the constraint.",
+            "evidence_da_ids": [
+              "TS3004b.A.dialog-act.vkaraisk.61"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No contradictions in the available evidence regarding the remote control type.",
+            "evidence_da_ids": [
+              "TS3004b.A.dialog-act.vkaraisk.61"
+            ],
+            "affected_fields": []
+          },
+          "relation_check": {
+            "result": "uncertain",
+            "reason": "There is a possible relation to prior item TS3004a as indicated by the flag, but no explicit linkage evidenced in current dialogue.",
+            "evidence_da_ids": []
+          },
+          "next_action": "retrieve"
+        },
+        "evidence_bindings": {
+          "statement": [
+            "TS3004b.A.dialog-act.vkaraisk.61"
+          ],
+          "status": [
+            "TS3004b.A.dialog-act.vkaraisk.61"
+          ],
+          "conflict": [
+            "TS3004b.A.dialog-act.vkaraisk.61"
+          ]
+        },
+        "raw_tool_input": {
+          "status": "adopted",
+          "related_items": [],
+          "statement": {
+            "result": "pass",
+            "reason": "Current dialogue TS3004b.A.dialog-act.vkaraisk.61 explicitly states 'it should be a TV remote control only', aligning with the decision.",
+            "evidence_da_ids": [
+              "TS3004b.A.dialog-act.vkaraisk.61"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Dialogue supports the adopted status of the decision; the line 61 confirms the constraint.",
+            "evidence_da_ids": [
+              "TS3004b.A.dialog-act.vkaraisk.61"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No contradictions in the available evidence regarding the remote control type.",
+            "evidence_da_ids": [
+              "TS3004b.A.dialog-act.vkaraisk.61"
+            ],
+            "affected_fields": []
+          },
+          "relation_check": {
+            "result": "uncertain",
+            "reason": "There is a possible relation to prior item TS3004a as indicated by the flag, but no explicit linkage evidenced in current dialogue.",
+            "evidence_da_ids": []
+          },
+          "next_action": "retrieve"
+        },
+        "protocol_normalizations": [],
+        "unresolved_before": [
+          "related_items",
+          "statement",
+          "status"
+        ],
+        "unresolved_after": [
+          "related_items"
+        ],
+        "semantic_stalls": 0,
+        "validation_codes": {
+          "relation": [
+            "prior_context_not_checked"
+          ]
+        }
+      },
+      {
+        "item": "TS3004b#3",
+        "step": 2,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "history_context_focused",
+        "outcome": "delivered",
+        "evidence_da_ids": [
+          "TS3004b.A.dialog-act.vkaraisk.61",
+          "TS3004b.A.dialog-act.vkaraisk.62",
+          "TS3004b.A.dialog-act.vkaraisk.60",
+          "TS3004b.D.dialog-act.vkaraisk.10"
+        ]
+      },
+      {
+        "item": "TS3004b#3",
+        "step": 2,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "get_prior_items",
+        "outcome": "lookup",
+        "decision": "retrieve",
+        "args": {
+          "query": "remote control TV remote control",
+          "item_type": "decisions"
+        },
+        "tool_result": {
+          "results": [
+            {
+              "id": "TS3004a.sys.s.3",
+              "meeting_id": "TS3004a",
+              "type": "decisions",
+              "text": "The remote control will be a universal remote control compatible with TV, VCR, and DVD devices.",
+              "owner": null,
+              "owner_basis": null,
+              "deadline": null,
+              "deadline_basis": null,
+              "status": "adopted",
+              "evidence": [
+                "TS3004a.B.dialog-act.vkaraisk.60",
+                "TS3004a.C.dialog-act.vkaraisk.36",
+                "TS3004a.D.dialog-act.vkaraisk.73"
+              ],
+              "source_file": "TS3004a.json",
+              "source_sha256": "6052f01f5d807494e3a7c59d3b03cb99800d64485cf3700ddadbdfbf41b905e8",
+              "review_state": "accepted",
+              "unresolved_fields": [],
+              "unreadable_reference_ids": [],
+              "score": 3.35
+            },
+            {
+              "id": "TS3004a.sys.s.6",
+              "meeting_id": "TS3004a",
+              "type": "decisions",
+              "text": "The team proposed to develop a remote control.",
+              "owner": null,
+              "owner_basis": null,
+              "deadline": null,
+              "deadline_basis": null,
+              "status": "adopted",
+              "evidence": [
+                "TS3004a.D.dialog-act.vkaraisk.15",
+                "TS3004a.A.dialog-act.vkaraisk.20",
+                "TS3004a.B.dialog-act.vkaraisk.9"
+              ],
+              "source_file": "TS3004a.json",
+              "source_sha256": "6052f01f5d807494e3a7c59d3b03cb99800d64485cf3700ddadbdfbf41b905e8",
+              "review_state": "accepted",
+              "unresolved_fields": [],
+              "unreadable_reference_ids": [],
+              "score": 1.24
+            },
+            {
+              "id": "TS3004a.sys.s.4",
+              "meeting_id": "TS3004a",
+              "type": "decisions",
+              "text": "The group will price the remote at about twenty-five euros.",
+              "owner": null,
+              "owner_basis": null,
+              "deadline": null,
+              "deadline_basis": null,
+              "status": "adopted",
+              "evidence": [
+                "TS3004a.A.dialog-act.vkaraisk.188"
+              ],
+              "source_file": "TS3004a.json",
+              "source_sha256": "6052f01f5d807494e3a7c59d3b03cb99800d64485cf3700ddadbdfbf41b905e8",
+              "review_state": "accepted",
+              "unresolved_fields": [],
+              "unreadable_reference_ids": [],
+              "score": 0.37
+            }
+          ]
+        },
+        "new_info": true
+      },
+      {
+        "item": "TS3004b#3",
+        "step": 3,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "read_prior_item",
+        "outcome": "lookup",
+        "decision": "retrieve",
+        "args": {
+          "item_id": "TS3004a.sys.s.3"
+        },
+        "tool_result": {
+          "results": [
+            {
+              "kind": "prior_item",
+              "id": "TS3004a.sys.s.3",
+              "meeting_id": "TS3004a",
+              "type": "decisions",
+              "text": "The remote control will be a universal remote control compatible with TV, VCR, and DVD devices.",
+              "owner": null,
+              "owner_basis": null,
+              "deadline": null,
+              "deadline_basis": null,
+              "status": "adopted",
+              "evidence": [
+                "TS3004a.B.dialog-act.vkaraisk.60",
+                "TS3004a.C.dialog-act.vkaraisk.36",
+                "TS3004a.D.dialog-act.vkaraisk.73"
+              ],
+              "source_file": "TS3004a.json",
+              "source_sha256": "6052f01f5d807494e3a7c59d3b03cb99800d64485cf3700ddadbdfbf41b905e8",
+              "review_state": "accepted",
+              "unresolved_fields": [],
+              "unreadable_reference_ids": [],
+              "selected_reference_ids": [
+                "TS3004a.B.dialog-act.vkaraisk.60",
+                "TS3004a.C.dialog-act.vkaraisk.36",
+                "TS3004a.D.dialog-act.vkaraisk.73"
+              ],
+              "next_offset": null
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "TS3004a.C.dialog-act.vkaraisk.36",
+              "meeting_id": "TS3004a",
+              "text": "Yeah , it probably would be universal .",
+              "participant": "MTD014ID",
+              "role": "ID",
+              "supports_item_id": "TS3004a.sys.s.3",
+              "is_reference": true
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "TS3004a.B.dialog-act.vkaraisk.60",
+              "meeting_id": "TS3004a",
+              "text": "Universal .",
+              "participant": "MTD015UID",
+              "role": "UI",
+              "supports_item_id": "TS3004a.sys.s.3",
+              "is_reference": true
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "TS3004a.D.dialog-act.vkaraisk.78",
+              "meeting_id": "TS3004a",
+              "text": "Because <disfmarker> <gap>",
+              "participant": "MTD016ME",
+              "role": "ME",
+              "supports_item_id": "TS3004a.sys.s.3",
+              "is_reference": false
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "TS3004a.A.dialog-act.vkaraisk.205",
+              "meeting_id": "TS3004a",
+              "text": "it's not mm <disfmarker> I think <disfmarker>",
+              "participant": "MTD013PM",
+              "role": "PM",
+              "supports_item_id": "TS3004a.sys.s.3",
+              "is_reference": false
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "TS3004a.A.dialog-act.vkaraisk.200",
+              "meeting_id": "TS3004a",
+              "text": "so just have a look how it <disfmarker> we think about remote controls .",
+              "participant": "MTD013PM",
+              "role": "PM",
+              "supports_item_id": "TS3004a.sys.s.3",
+              "is_reference": false
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "TS3004a.D.dialog-act.vkaraisk.73",
+              "meeting_id": "TS3004a",
+              "text": "Yeah ,",
+              "participant": "MTD016ME",
+              "role": "ME",
+              "supports_item_id": "TS3004a.sys.s.3",
+              "is_reference": true
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "TS3004a.D.dialog-act.vkaraisk.74",
+              "meeting_id": "TS3004a",
+              "text": "my first question was does it have to be a <vocalsound> a universal remote control ?",
+              "participant": "MTD016ME",
+              "role": "ME",
+              "supports_item_id": "TS3004a.sys.s.3",
+              "is_reference": false
+            }
+          ]
+        },
+        "new_info": true
+      },
+      {
+        "item": "TS3004b#3",
+        "step": 4,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "assess_relation",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Current dialogue TS3004b.A.dialog-act.vkaraisk.61 explicitly states 'it should be a TV remote control only', aligning with the decision.",
+            "quotes": [
+              {
+                "da_id": "TS3004b.A.dialog-act.vkaraisk.61",
+                "quote": "and it should be a T_V_ remote control only ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Dialogue supports the adopted status of the decision; the line 61 confirms the constraint.",
+            "quotes": [
+              {
+                "da_id": "TS3004b.A.dialog-act.vkaraisk.61",
+                "quote": "and it should be a T_V_ remote control only ."
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions in the available evidence regarding the remote control type.",
+            "quotes": [
+              {
+                "da_id": "TS3004b.A.dialog-act.vkaraisk.61",
+                "quote": "and it should be a T_V_ remote control only ."
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "read_and_quote_each_links_prior_and_current_evidence",
+            "quotes": [],
+            "links": [
+              {
+                "id": "TS3004a.sys.s.3",
+                "relation": "replaces",
+                "changed_fields": [
+                  "scope"
+                ],
+                "reason": "Current statement narrows the remote control from universal to TV-only, changing the established scope.",
+                "prior_evidence_da_ids": [
+                  "TS3004a.B.dialog-act.vkaraisk.60",
+                  "TS3004a.C.dialog-act.vkaraisk.36",
+                  "TS3004a.D.dialog-act.vkaraisk.73"
+                ],
+                "current_evidence_da_ids": [
+                  "TS3004b.A.dialog-act.vkaraisk.61"
+                ]
+              }
+            ],
+            "fields": [
+              "related_items"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          }
+        },
+        "decision": "reassess",
+        "reason": "incomplete_link_evidence_submission",
+        "assessed_text": "The remote control should be a TV remote control only.",
+        "requested_action": null,
+        "proposed_fields": {
+          "status": "adopted",
+          "related_items": [
+            {
+              "id": "TS3004a.sys.s.3",
+              "relation": "replaces"
+            }
+          ],
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "TS3004b.A.dialog-act.vkaraisk.61",
+            "TS3004a.C.dialog-act.vkaraisk.36"
+          ],
+          "owner": null,
+          "owner_basis": "missing",
+          "deadline": null,
+          "deadline_basis": "missing"
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Current dialogue TS3004b.A.dialog-act.vkaraisk.61 explicitly states 'it should be a TV remote control only', aligning with the decision.",
+            "quotes": [
+              {
+                "da_id": "TS3004b.A.dialog-act.vkaraisk.61",
+                "quote": "and it should be a T_V_ remote control only ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Dialogue supports the adopted status of the decision; the line 61 confirms the constraint.",
+            "quotes": [
+              {
+                "da_id": "TS3004b.A.dialog-act.vkaraisk.61",
+                "quote": "and it should be a T_V_ remote control only ."
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions in the available evidence regarding the remote control type.",
+            "quotes": [
+              {
+                "da_id": "TS3004b.A.dialog-act.vkaraisk.61",
+                "quote": "and it should be a T_V_ remote control only ."
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "pass",
+            "reason": "Current item TS3004b.A.dialog-act.vkaraisk.61 narrows the scope from a universal remote (TS3004a.sys.s.3) to a TV-only remote, thus updating/replacing the prior decision.",
+            "quotes": [
+              {
+                "da_id": "TS3004b.A.dialog-act.vkaraisk.61",
+                "quote": "and it should be a T_V_ remote control only."
+              },
+              {
+                "da_id": "TS3004a.C.dialog-act.vkaraisk.36",
+                "quote": "Yeah , it probably would be universal."
+              }
+            ],
+            "links": [
+              {
+                "id": "TS3004a.sys.s.3",
+                "relation": "replaces",
+                "changed_fields": [
+                  "scope"
+                ],
+                "reason": "Current statement narrows the remote control from universal to TV-only, changing the established scope.",
+                "prior_evidence_da_ids": [
+                  "TS3004a.B.dialog-act.vkaraisk.60",
+                  "TS3004a.C.dialog-act.vkaraisk.36",
+                  "TS3004a.D.dialog-act.vkaraisk.73"
+                ],
+                "current_evidence_da_ids": [
+                  "TS3004b.A.dialog-act.vkaraisk.61"
+                ]
+              }
+            ],
+            "fields": [
+              "related_items"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "result": "pass",
+          "reason": "Current item TS3004b.A.dialog-act.vkaraisk.61 narrows the scope from a universal remote (TS3004a.sys.s.3) to a TV-only remote, thus updating/replacing the prior decision.",
+          "quotes": [
+            {
+              "da_id": "TS3004b.A.dialog-act.vkaraisk.61",
+              "quote": "and it should be a T_V_ remote control only."
+            },
+            {
+              "da_id": "TS3004a.C.dialog-act.vkaraisk.36",
+              "quote": "Yeah , it probably would be universal."
+            }
+          ],
+          "links": [
+            {
+              "id": "TS3004a.sys.s.3",
+              "relation": "replaces",
+              "changed_fields": [
+                "scope"
+              ],
+              "reason": "Current statement narrows the remote control from universal to TV-only, changing the established scope.",
+              "prior_evidence_da_ids": [
+                "TS3004a.B.dialog-act.vkaraisk.60",
+                "TS3004a.C.dialog-act.vkaraisk.36",
+                "TS3004a.D.dialog-act.vkaraisk.73"
+              ],
+              "current_evidence_da_ids": [
+                "TS3004b.A.dialog-act.vkaraisk.61"
+              ]
+            }
+          ]
+        },
+        "evidence_bindings": {
+          "relation": [
+            "TS3004a.B.dialog-act.vkaraisk.60",
+            "TS3004a.D.dialog-act.vkaraisk.73"
+          ]
+        },
+        "raw_tool_input": {
+          "result": "pass",
+          "reason": "Current item TS3004b.A.dialog-act.vkaraisk.61 narrows the scope from a universal remote (TS3004a.sys.s.3) to a TV-only remote, thus updating/replacing the prior decision.",
+          "quotes": [
+            {
+              "da_id": "TS3004b.A.dialog-act.vkaraisk.61",
+              "quote": "and it should be a T_V_ remote control only."
+            },
+            {
+              "da_id": "TS3004a.C.dialog-act.vkaraisk.36",
+              "quote": "Yeah , it probably would be universal."
+            }
+          ],
+          "links": [
+            {
+              "id": "TS3004a.sys.s.3",
+              "relation": "replaces",
+              "changed_fields": [
+                "scope"
+              ],
+              "reason": "Current statement narrows the remote control from universal to TV-only, changing the established scope.",
+              "prior_evidence_da_ids": [
+                "TS3004a.B.dialog-act.vkaraisk.60",
+                "TS3004a.C.dialog-act.vkaraisk.36",
+                "TS3004a.D.dialog-act.vkaraisk.73"
+              ],
+              "current_evidence_da_ids": [
+                "TS3004b.A.dialog-act.vkaraisk.61"
+              ]
+            }
+          ]
+        },
+        "protocol_normalizations": [
+          "controller_action_for_missing_hint:retrieve"
+        ],
+        "unresolved_before": [
+          "related_items"
+        ],
+        "unresolved_after": [
+          "related_items"
+        ],
+        "semantic_stalls": 0,
+        "validation_codes": {
+          "relation": [
+            "unobserved_or_inexact_quote",
+            "retrieve_prior_record_and_read_its_evidence",
+            "selected_prior_item_evidence_not_read",
+            "read_and_quote_each_links_prior_and_current_evidence"
+          ]
+        }
+      },
+      {
+        "item": "TS3004b#3",
+        "step": 5,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "assess_relation",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Current dialogue TS3004b.A.dialog-act.vkaraisk.61 explicitly states 'it should be a TV remote control only', aligning with the decision.",
+            "quotes": [
+              {
+                "da_id": "TS3004b.A.dialog-act.vkaraisk.61",
+                "quote": "and it should be a T_V_ remote control only ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Dialogue supports the adopted status of the decision; the line 61 confirms the constraint.",
+            "quotes": [
+              {
+                "da_id": "TS3004b.A.dialog-act.vkaraisk.61",
+                "quote": "and it should be a T_V_ remote control only ."
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions in the available evidence regarding the remote control type.",
+            "quotes": [
+              {
+                "da_id": "TS3004b.A.dialog-act.vkaraisk.61",
+                "quote": "and it should be a T_V_ remote control only ."
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "read_and_quote_each_links_prior_and_current_evidence",
+            "quotes": [],
+            "links": [
+              {
+                "id": "TS3004a.sys.s.3",
+                "relation": "replaces",
+                "changed_fields": [
+                  "scope"
+                ],
+                "reason": "Current statement narrows the remote control from universal to TV-only, changing the established scope.",
+                "prior_evidence_da_ids": [
+                  "TS3004a.B.dialog-act.vkaraisk.60",
+                  "TS3004a.C.dialog-act.vkaraisk.36",
+                  "TS3004a.D.dialog-act.vkaraisk.73"
+                ],
+                "current_evidence_da_ids": [
+                  "TS3004b.A.dialog-act.vkaraisk.61"
+                ]
+              }
+            ],
+            "fields": [
+              "related_items"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          }
+        },
+        "decision": "retrieve",
+        "reason": "unresolved_checks",
+        "assessed_text": "The remote control should be a TV remote control only.",
+        "requested_action": null,
+        "proposed_fields": {
+          "status": "adopted",
+          "related_items": [
+            {
+              "id": "TS3004a.sys.s.3",
+              "relation": "replaces"
+            }
+          ],
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "TS3004b.A.dialog-act.vkaraisk.61",
+            "TS3004a.C.dialog-act.vkaraisk.36"
+          ],
+          "owner": null,
+          "owner_basis": "missing",
+          "deadline": null,
+          "deadline_basis": "missing"
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Current dialogue TS3004b.A.dialog-act.vkaraisk.61 explicitly states 'it should be a TV remote control only', aligning with the decision.",
+            "quotes": [
+              {
+                "da_id": "TS3004b.A.dialog-act.vkaraisk.61",
+                "quote": "and it should be a T_V_ remote control only ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Dialogue supports the adopted status of the decision; the line 61 confirms the constraint.",
+            "quotes": [
+              {
+                "da_id": "TS3004b.A.dialog-act.vkaraisk.61",
+                "quote": "and it should be a T_V_ remote control only ."
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions in the available evidence regarding the remote control type.",
+            "quotes": [
+              {
+                "da_id": "TS3004b.A.dialog-act.vkaraisk.61",
+                "quote": "and it should be a T_V_ remote control only ."
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "pass",
+            "reason": "Current item TS3004b.A.dialog-act.vkaraisk.61 narrows the scope from a universal remote (TS3004a.sys.s.3) to a TV-only remote, thus updating/replacing the prior decision.",
+            "quotes": [
+              {
+                "da_id": "TS3004b.A.dialog-act.vkaraisk.61",
+                "quote": "and it should be a T_V_ remote control only."
+              },
+              {
+                "da_id": "TS3004a.C.dialog-act.vkaraisk.36",
+                "quote": "Yeah , it probably would be universal."
+              }
+            ],
+            "links": [
+              {
+                "id": "TS3004a.sys.s.3",
+                "relation": "replaces",
+                "changed_fields": [
+                  "scope"
+                ],
+                "reason": "Current statement narrows the remote control from universal to TV-only, changing the established scope.",
+                "prior_evidence_da_ids": [
+                  "TS3004a.B.dialog-act.vkaraisk.60",
+                  "TS3004a.C.dialog-act.vkaraisk.36",
+                  "TS3004a.D.dialog-act.vkaraisk.73"
+                ],
+                "current_evidence_da_ids": [
+                  "TS3004b.A.dialog-act.vkaraisk.61"
+                ]
+              }
+            ],
+            "fields": [
+              "related_items"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "result": "pass",
+          "reason": "Current item TS3004b.A.dialog-act.vkaraisk.61 narrows the scope from a universal remote (TS3004a.sys.s.3) to a TV-only remote, thus updating/replacing the prior decision.",
+          "quotes": [
+            {
+              "da_id": "TS3004b.A.dialog-act.vkaraisk.61",
+              "quote": "and it should be a T_V_ remote control only."
+            },
+            {
+              "da_id": "TS3004a.C.dialog-act.vkaraisk.36",
+              "quote": "Yeah , it probably would be universal."
+            }
+          ],
+          "links": [
+            {
+              "id": "TS3004a.sys.s.3",
+              "relation": "replaces",
+              "changed_fields": [
+                "scope"
+              ],
+              "reason": "Current statement narrows the remote control from universal to TV-only, changing the established scope.",
+              "prior_evidence_da_ids": [
+                "TS3004a.B.dialog-act.vkaraisk.60",
+                "TS3004a.C.dialog-act.vkaraisk.36",
+                "TS3004a.D.dialog-act.vkaraisk.73"
+              ],
+              "current_evidence_da_ids": [
+                "TS3004b.A.dialog-act.vkaraisk.61"
+              ]
+            }
+          ]
+        },
+        "evidence_bindings": {
+          "relation": [
+            "TS3004a.B.dialog-act.vkaraisk.60",
+            "TS3004a.D.dialog-act.vkaraisk.73"
+          ]
+        },
+        "raw_tool_input": {
+          "result": "pass",
+          "reason": "Current item TS3004b.A.dialog-act.vkaraisk.61 narrows the scope from a universal remote (TS3004a.sys.s.3) to a TV-only remote, thus updating/replacing the prior decision.",
+          "quotes": [
+            {
+              "da_id": "TS3004b.A.dialog-act.vkaraisk.61",
+              "quote": "and it should be a T_V_ remote control only."
+            },
+            {
+              "da_id": "TS3004a.C.dialog-act.vkaraisk.36",
+              "quote": "Yeah , it probably would be universal."
+            }
+          ],
+          "links": [
+            {
+              "id": "TS3004a.sys.s.3",
+              "relation": "replaces",
+              "changed_fields": [
+                "scope"
+              ],
+              "reason": "Current statement narrows the remote control from universal to TV-only, changing the established scope.",
+              "prior_evidence_da_ids": [
+                "TS3004a.B.dialog-act.vkaraisk.60",
+                "TS3004a.C.dialog-act.vkaraisk.36",
+                "TS3004a.D.dialog-act.vkaraisk.73"
+              ],
+              "current_evidence_da_ids": [
+                "TS3004b.A.dialog-act.vkaraisk.61"
+              ]
+            }
+          ]
+        },
+        "protocol_normalizations": [
+          "controller_action_for_missing_hint:retrieve"
+        ],
+        "unresolved_before": [
+          "related_items"
+        ],
+        "unresolved_after": [
+          "related_items"
+        ],
+        "semantic_stalls": 1,
+        "validation_codes": {
+          "relation": [
+            "unobserved_or_inexact_quote",
+            "retrieve_prior_record_and_read_its_evidence",
+            "selected_prior_item_evidence_not_read",
+            "read_and_quote_each_links_prior_and_current_evidence"
+          ]
+        }
+      },
+      {
+        "item": "TS3004b#3",
+        "step": 6,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "assess_relation",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Current dialogue TS3004b.A.dialog-act.vkaraisk.61 explicitly states 'it should be a TV remote control only', aligning with the decision.",
+            "quotes": [
+              {
+                "da_id": "TS3004b.A.dialog-act.vkaraisk.61",
+                "quote": "and it should be a T_V_ remote control only ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Dialogue supports the adopted status of the decision; the line 61 confirms the constraint.",
+            "quotes": [
+              {
+                "da_id": "TS3004b.A.dialog-act.vkaraisk.61",
+                "quote": "and it should be a T_V_ remote control only ."
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions in the available evidence regarding the remote control type.",
+            "quotes": [
+              {
+                "da_id": "TS3004b.A.dialog-act.vkaraisk.61",
+                "quote": "and it should be a T_V_ remote control only ."
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "read_and_quote_each_links_prior_and_current_evidence",
+            "quotes": [],
+            "links": [
+              {
+                "id": "TS3004a.sys.s.3",
+                "relation": "replaces",
+                "changed_fields": [
+                  "scope"
+                ],
+                "reason": "Current statement narrows the remote control from universal to TV-only, changing the established scope.",
+                "prior_evidence_da_ids": [
+                  "TS3004a.B.dialog-act.vkaraisk.60",
+                  "TS3004a.C.dialog-act.vkaraisk.36",
+                  "TS3004a.D.dialog-act.vkaraisk.73"
+                ],
+                "current_evidence_da_ids": [
+                  "TS3004b.A.dialog-act.vkaraisk.61"
+                ]
+              }
+            ],
+            "fields": [
+              "related_items"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          }
+        },
+        "decision": "request_clarification",
+        "reason": "no_progress",
+        "assessed_text": "The remote control should be a TV remote control only.",
+        "requested_action": null,
+        "proposed_fields": {
+          "status": "adopted",
+          "related_items": [
+            {
+              "id": "TS3004a.sys.s.3",
+              "relation": "replaces"
+            }
+          ],
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "TS3004b.A.dialog-act.vkaraisk.61",
+            "TS3004a.C.dialog-act.vkaraisk.36"
+          ],
+          "owner": null,
+          "owner_basis": "missing",
+          "deadline": null,
+          "deadline_basis": "missing"
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Current dialogue TS3004b.A.dialog-act.vkaraisk.61 explicitly states 'it should be a TV remote control only', aligning with the decision.",
+            "quotes": [
+              {
+                "da_id": "TS3004b.A.dialog-act.vkaraisk.61",
+                "quote": "and it should be a T_V_ remote control only ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Dialogue supports the adopted status of the decision; the line 61 confirms the constraint.",
+            "quotes": [
+              {
+                "da_id": "TS3004b.A.dialog-act.vkaraisk.61",
+                "quote": "and it should be a T_V_ remote control only ."
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions in the available evidence regarding the remote control type.",
+            "quotes": [
+              {
+                "da_id": "TS3004b.A.dialog-act.vkaraisk.61",
+                "quote": "and it should be a T_V_ remote control only ."
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "pass",
+            "reason": "Current item TS3004b.A.dialog-act.vkaraisk.61 narrows the scope from a universal remote (TS3004a.sys.s.3) to a TV-only remote, thus updating/replacing the prior decision.",
+            "quotes": [
+              {
+                "da_id": "TS3004b.A.dialog-act.vkaraisk.61",
+                "quote": "and it should be a T_V_ remote control only."
+              },
+              {
+                "da_id": "TS3004a.C.dialog-act.vkaraisk.36",
+                "quote": "Yeah , it probably would be universal."
+              }
+            ],
+            "links": [
+              {
+                "id": "TS3004a.sys.s.3",
+                "relation": "replaces",
+                "changed_fields": [
+                  "scope"
+                ],
+                "reason": "Current statement narrows the remote control from universal to TV-only, changing the established scope.",
+                "prior_evidence_da_ids": [
+                  "TS3004a.B.dialog-act.vkaraisk.60",
+                  "TS3004a.C.dialog-act.vkaraisk.36",
+                  "TS3004a.D.dialog-act.vkaraisk.73"
+                ],
+                "current_evidence_da_ids": [
+                  "TS3004b.A.dialog-act.vkaraisk.61"
+                ]
+              }
+            ],
+            "fields": [
+              "related_items"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "result": "pass",
+          "reason": "Current item TS3004b.A.dialog-act.vkaraisk.61 narrows the scope from a universal remote (TS3004a.sys.s.3) to a TV-only remote, thus updating/replacing the prior decision.",
+          "quotes": [
+            {
+              "da_id": "TS3004b.A.dialog-act.vkaraisk.61",
+              "quote": "and it should be a T_V_ remote control only."
+            },
+            {
+              "da_id": "TS3004a.C.dialog-act.vkaraisk.36",
+              "quote": "Yeah , it probably would be universal."
+            }
+          ],
+          "links": [
+            {
+              "id": "TS3004a.sys.s.3",
+              "relation": "replaces",
+              "changed_fields": [
+                "scope"
+              ],
+              "reason": "Current statement narrows the remote control from universal to TV-only, changing the established scope.",
+              "prior_evidence_da_ids": [
+                "TS3004a.B.dialog-act.vkaraisk.60",
+                "TS3004a.C.dialog-act.vkaraisk.36",
+                "TS3004a.D.dialog-act.vkaraisk.73"
+              ],
+              "current_evidence_da_ids": [
+                "TS3004b.A.dialog-act.vkaraisk.61"
+              ]
+            }
+          ]
+        },
+        "evidence_bindings": {
+          "relation": [
+            "TS3004a.B.dialog-act.vkaraisk.60",
+            "TS3004a.D.dialog-act.vkaraisk.73"
+          ]
+        },
+        "raw_tool_input": {
+          "result": "pass",
+          "reason": "Current item TS3004b.A.dialog-act.vkaraisk.61 narrows the scope from a universal remote (TS3004a.sys.s.3) to a TV-only remote, thus updating/replacing the prior decision.",
+          "quotes": [
+            {
+              "da_id": "TS3004b.A.dialog-act.vkaraisk.61",
+              "quote": "and it should be a T_V_ remote control only."
+            },
+            {
+              "da_id": "TS3004a.C.dialog-act.vkaraisk.36",
+              "quote": "Yeah , it probably would be universal."
+            }
+          ],
+          "links": [
+            {
+              "id": "TS3004a.sys.s.3",
+              "relation": "replaces",
+              "changed_fields": [
+                "scope"
+              ],
+              "reason": "Current statement narrows the remote control from universal to TV-only, changing the established scope.",
+              "prior_evidence_da_ids": [
+                "TS3004a.B.dialog-act.vkaraisk.60",
+                "TS3004a.C.dialog-act.vkaraisk.36",
+                "TS3004a.D.dialog-act.vkaraisk.73"
+              ],
+              "current_evidence_da_ids": [
+                "TS3004b.A.dialog-act.vkaraisk.61"
+              ]
+            }
+          ]
+        },
+        "protocol_normalizations": [
+          "controller_action_for_missing_hint:retrieve"
+        ],
+        "unresolved_before": [
+          "related_items"
+        ],
+        "unresolved_after": [
+          "related_items"
+        ],
+        "semantic_stalls": 2,
+        "validation_codes": {
+          "relation": [
+            "unobserved_or_inexact_quote",
+            "retrieve_prior_record_and_read_its_evidence",
+            "selected_prior_item_evidence_not_read",
+            "read_and_quote_each_links_prior_and_current_evidence"
+          ]
+        }
+      },
+      {
+        "item": "TS3004b#3",
+        "step": 6,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "stop",
+        "outcome": "pending",
+        "termination_reason": "no_progress",
+        "unresolved_fields": [
+          "related_items"
+        ]
+      }
+    ],
+    "lookups": 2,
+    "termination_reason": "no_progress",
+    "clarifications": [
+      {
+        "request_id": "6110ea64a93e815d",
+        "item_key": "TS3004b#3",
+        "record_id": null,
+        "field": "related_items",
+        "question": "Which earlier record does this item continue or change, and how?",
+        "item_text": "The remote control should be a TV remote control only.",
+        "reason": "read_and_quote_each_links_prior_and_current_evidence",
+        "evidence_da_ids": [],
+        "available_evidence_da_ids": [
+          "TS3004b.A.dialog-act.vkaraisk.61",
+          "TS3004b.A.dialog-act.vkaraisk.62",
+          "TS3004b.A.dialog-act.vkaraisk.60",
+          "TS3004b.D.dialog-act.vkaraisk.10",
+          "TS3004a.C.dialog-act.vkaraisk.36",
+          "TS3004a.B.dialog-act.vkaraisk.60",
+          "TS3004a.D.dialog-act.vkaraisk.78",
+          "TS3004a.A.dialog-act.vkaraisk.205",
+          "TS3004a.A.dialog-act.vkaraisk.200",
+          "TS3004a.D.dialog-act.vkaraisk.73",
+          "TS3004a.D.dialog-act.vkaraisk.74"
+        ],
+        "status": "open",
+        "termination_reason": "no_progress"
+      }
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "meeting_id": "TS3006d",
+  "status": "NEW_CONSOLIDATION_FAILURE_REPRODUCED",
+  "actual_new_api_calls": 0,
+  "error_type": "TypeError",
+  "failure": {
+    "native_attempt": 17,
+    "stage_trace_seq": 68,
+    "malformed_member_groups": [
+      {
+        "group": 9,
+        "members": [
+          {
+            "id": "MTD021PM"
+          }
+        ]
+      },
+      {
+        "group": 11,
+        "members": [
+          {
+            "id": "MTD021PM"
+          }
+        ]
+      }
+    ],
+    "offline_error": "unhashable type: 'dict'",
+    "merged_items": null
+  },
+  "cause": "Model supplied dict-valued candidate members. dict.fromkeys hashes them before the integer filter, aborting the meeting.",
+  "extract_code_unchanged_from_787d88e": true,
+  "not_caused_by_selection_reason_repair": true,
+  "native_consolidation_responses": [
+    {
+      "native_attempt": 19,
+      "stage_trace_seq": 63,
+      "malformed_member_groups": [],
+      "offline_error": null,
+      "merged_items": 0
+    },
+    {
+      "native_attempt": 18,
+      "stage_trace_seq": 66,
+      "malformed_member_groups": [],
+      "offline_error": null,
+      "merged_items": 11
+    },
+    {
+      "native_attempt": 17,
+      "stage_trace_seq": 68,
+      "malformed_member_groups": [
+        {
+          "group": 9,
+          "members": [
+            {
+              "id": "MTD021PM"
+            }
+          ]
+        },
+        {
+          "group": 11,
+          "members": [
+            {
+              "id": "MTD021PM"
+            }
+          ]
+        }
+      ],
+      "offline_error": "unhashable type: 'dict'",
+      "merged_items": null
+    }
+  ],
+  "calls_before_failure": 21,
+  "charged_tokens": 366880,
+  "unknown_usage_tokens": 45922,
+  "budget_exhausted": false,
+  "selection_entered": false,
+  "p2_entered": false,
+  "saved_checkpoints": [
+    "parsed",
+    "extracted"
+  ],
+  "scope": "New, independent consolidation defect discovered by cold coverage. No malformed member was mapped to a candidate or accepted; no source fix or online rerun performed."
+}

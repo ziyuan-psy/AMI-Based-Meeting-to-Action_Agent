@@ -1,0 +1,87 @@
+{
+  "meeting_id": "TS3006b",
+  "status": "OFFLINE_FAILURE_REPRODUCED",
+  "actual_new_api_calls": 0,
+  "failed_stage": "select",
+  "error_type": "ValueError",
+  "cause": "Required exclusion reason omitted in both native model submissions.",
+  "selection_attempts": [
+    {
+      "native_attempt": 0,
+      "stage_trace_seq": 77,
+      "recorded_error": "C10: 'reason' is a required property",
+      "offline_reproduced_error": "C10: 'reason' is a required property",
+      "missing_reason": [
+        {
+          "source": "C10",
+          "keep": false,
+          "duplicate_of": "C0"
+        },
+        {
+          "source": "C12",
+          "keep": false,
+          "duplicate_of": "C11"
+        },
+        {
+          "source": "C14",
+          "keep": false,
+          "duplicate_of": "C13"
+        }
+      ]
+    },
+    {
+      "native_attempt": 1,
+      "stage_trace_seq": 80,
+      "recorded_error": "C10: 'reason' is a required property",
+      "offline_reproduced_error": "C10: 'reason' is a required property",
+      "missing_reason": [
+        {
+          "source": "C10",
+          "keep": false,
+          "duplicate_of": "C0"
+        },
+        {
+          "source": "C12",
+          "keep": false,
+          "duplicate_of": "C11"
+        },
+        {
+          "source": "C14",
+          "keep": false,
+          "duplicate_of": "C13"
+        },
+        {
+          "source": "C18",
+          "keep": false,
+          "duplicate_of": "C4"
+        },
+        {
+          "source": "C19",
+          "keep": false,
+          "duplicate_of": "C4"
+        },
+        {
+          "source": "C20",
+          "keep": false,
+          "duplicate_of": "C4"
+        }
+      ]
+    }
+  ],
+  "calls_before_failure": 20,
+  "charged_tokens_before_failure": 309656,
+  "p2_entered": false,
+  "budget_exhausted": false,
+  "new_sampling_or_source_modification": false,
+  "saved_checkpoints": [
+    "parsed",
+    "extracted",
+    "consolidated"
+  ],
+  "partial_artifact": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\s2_dev16\\787d88e-v1\\run\\s2\\_attempts\\TS3006b\\1ac9589122ed4efb9e692727e9a03090\\partial.json",
+  "blocked_downstream": [
+    "TS3006c",
+    "TS3006d"
+  ],
+  "interpretation": "Same captured model output deterministically fails the frozen selection contract. One cohort cannot estimate omission frequency. No normalization or source fix applied."
+}

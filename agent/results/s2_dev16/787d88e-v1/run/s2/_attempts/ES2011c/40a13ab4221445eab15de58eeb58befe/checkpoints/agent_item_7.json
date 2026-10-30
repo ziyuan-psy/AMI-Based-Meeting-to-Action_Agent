@@ -1,0 +1,1906 @@
+{
+  "item": 7,
+  "fields": {
+    "item_key": "ES2011c#7",
+    "record_id": null,
+    "item_type": "decisions",
+    "item_text": "Decision: Constrain the menu to be inside the TV (T_V_), not inside the remote.",
+    "state": "pending",
+    "recordable": true,
+    "fields": {
+      "status": "adopted",
+      "prior_context_needed": false,
+      "related_items": [],
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/ES2011c.json",
+          "locator": "ES2011c.B.dialog-act.dharshi.70"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/ES2011c.json",
+          "locator": "ES2011c.C.dialog-act.dharshi.149"
+        }
+      ]
+    },
+    "draft_fields": {
+      "status": "adopted",
+      "related_items": [],
+      "prior_context_needed": false,
+      "used_participant_lookup": false,
+      "evidence_da_ids": [
+        "ES2011c.B.dialog-act.dharshi.70",
+        "ES2011c.C.dialog-act.dharshi.149",
+        "ES2011c.C.dialog-act.dharshi.148",
+        "ES2011c.C.dialog-act.dharshi.150"
+      ],
+      "owner": null,
+      "owner_basis": "missing",
+      "deadline": null,
+      "deadline_basis": "missing"
+    },
+    "checks": {
+      "statement": {
+        "result": "pass",
+        "reason": "Dialogue explicitly supports placing the menu on TV (T_V_) and not in the remote; B asserts TV-based location.",
+        "quotes": [
+          {
+            "da_id": "ES2011c.B.dialog-act.dharshi.70",
+            "quote": "I believe it's ins it's gotta be inside the T_V_ , not inside the remote ."
+          },
+          {
+            "da_id": "ES2011c.C.dialog-act.dharshi.149",
+            "quote": "it doesn't seem that hard ."
+          }
+        ],
+        "fields": [
+          "statement"
+        ]
+      },
+      "status": {
+        "result": "pass",
+        "reason": "Current dialogue confirms the decision; at least one speaker states TV-based menu.",
+        "quotes": [
+          {
+            "da_id": "ES2011c.B.dialog-act.dharshi.70",
+            "quote": "I believe it's ins it's gotta be inside the T_V_ , not inside the remote ."
+          },
+          {
+            "da_id": "ES2011c.C.dialog-act.dharshi.149",
+            "quote": "it doesn't seem that hard ."
+          }
+        ],
+        "fields": [
+          "status"
+        ]
+      },
+      "conflict": {
+        "result": "pass",
+        "reason": "No contradictions found in the provided exchanges about menu location.",
+        "quotes": [
+          {
+            "da_id": "ES2011c.B.dialog-act.dharshi.70",
+            "quote": "I believe it's ins it's gotta be inside the T_V_ , not inside the remote ."
+          },
+          {
+            "da_id": "ES2011c.C.dialog-act.dharshi.149",
+            "quote": "it doesn't seem that hard ."
+          }
+        ],
+        "fields": []
+      },
+      "relation": {
+        "result": "uncertain",
+        "reason": "Current item introduces a new constraint about menu containment inside the TV (T_V_) versus the remote; prior ES2011b.sys.s.6 and ES2011b.sys.s.8 discuss remote usage with TV and location beep signals but do not explicitly reference a TV-contained menu. The link between the current decision and earlier items cannot be established from the available quotes.",
+        "quotes": [
+          {
+            "da_id": "ES2011c.B.dialog-act.dharshi.70",
+            "quote": "I believe it's ins it's gotta be inside the T_V_ , not inside the remote ."
+          },
+          {
+            "da_id": "ES2011c.C.dialog-act.dharshi.149",
+            "quote": "it doesn't seem that hard ."
+          },
+          {
+            "da_id": "ES2011c.C.dialog-act.dharshi.148",
+            "quote": "you <disfmarker> it's <disfmarker>"
+          },
+          {
+            "da_id": "ES2011c.C.dialog-act.dharshi.150",
+            "quote": "I mean I've never bought a remote ."
+          }
+        ],
+        "links": [],
+        "documents": [],
+        "fields": [
+          "related_items"
+        ]
+      },
+      "owner": {
+        "result": "not_applicable",
+        "reason": "field_not_applicable",
+        "quotes": [],
+        "fields": [
+          "owner"
+        ]
+      },
+      "deadline": {
+        "result": "not_applicable",
+        "reason": "field_not_applicable",
+        "quotes": [],
+        "fields": [
+          "deadline"
+        ]
+      }
+    },
+    "unresolved_fields": [
+      "related_items"
+    ],
+    "observed_evidence_da_ids": [
+      "ES2011c.B.dialog-act.dharshi.70",
+      "ES2011c.C.dialog-act.dharshi.149",
+      "ES2011c.C.dialog-act.dharshi.148",
+      "ES2011c.C.dialog-act.dharshi.150",
+      "ES2011b.B.dialog-act.dharshi.47",
+      "ES2011b.A.dialog-act.dharshi.44",
+      "ES2011b.A.dialog-act.dharshi.45",
+      "ES2011b.A.dialog-act.dharshi.46",
+      "ES2011b.B.dialog-act.dharshi.14",
+      "ES2011b.B.dialog-act.dharshi.15",
+      "ES2011b.B.dialog-act.dharshi.16",
+      "ES2011b.B.dialog-act.dharshi.31",
+      "ES2011b.B.dialog-act.dharshi.32",
+      "ES2011b.B.dialog-act.dharshi.33",
+      "ES2011b.B.dialog-act.dharshi.34",
+      "ES2011b.B.dialog-act.dharshi.35",
+      "ES2011b.B.dialog-act.dharshi.36",
+      "ES2011b.B.dialog-act.dharshi.38",
+      "ES2011b.B.dialog-act.dharshi.39",
+      "ES2011b.B.dialog-act.dharshi.40",
+      "ES2011b.B.dialog-act.dharshi.41",
+      "ES2011b.B.dialog-act.dharshi.42"
+    ],
+    "initial_context": {
+      "item": {
+        "type": "decisions",
+        "text": "Decision: Constrain the menu to be inside the TV (T_V_), not inside the remote.",
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ]
+      },
+      "current_meeting": "ES2011c",
+      "earlier_meetings": [
+        "ES2011a",
+        "ES2011b"
+      ],
+      "roster": [
+        {
+          "speaker": "A",
+          "participant_id": "FEE041",
+          "role": "PM"
+        },
+        {
+          "speaker": "B",
+          "participant_id": "FEE042",
+          "role": "ID"
+        },
+        {
+          "speaker": "C",
+          "participant_id": "FEE043",
+          "role": "UI"
+        },
+        {
+          "speaker": "D",
+          "participant_id": "FEE044",
+          "role": "ME"
+        }
+      ],
+      "observed_dialogue": [
+        {
+          "da_id": "ES2011c.B.dialog-act.dharshi.70",
+          "meeting_id": "ES2011c",
+          "text": "I believe it's ins it's gotta be inside the T_V_ , not inside the remote .",
+          "participant": "FEE042",
+          "role": "ID"
+        },
+        {
+          "da_id": "ES2011c.C.dialog-act.dharshi.149",
+          "meeting_id": "ES2011c",
+          "text": "it doesn't seem that hard .",
+          "participant": "FEE043",
+          "role": "UI"
+        },
+        {
+          "da_id": "ES2011c.C.dialog-act.dharshi.148",
+          "participant": "FEE043",
+          "role": "UI",
+          "text": "you <disfmarker> it's <disfmarker>"
+        },
+        {
+          "da_id": "ES2011c.C.dialog-act.dharshi.150",
+          "participant": "FEE043",
+          "role": "UI",
+          "text": "I mean I've never bought a remote ."
+        }
+      ],
+      "peer_items": [
+        {
+          "item_key": "ES2011c#0",
+          "type": "actions",
+          "text": "Play with play-dough to develop the look and feel of the design and the user interface."
+        },
+        {
+          "item_key": "ES2011c#1",
+          "type": "actions",
+          "text": "The UI and ME will receive further instructions from their personal coach."
+        },
+        {
+          "item_key": "ES2011c#2",
+          "type": "problems",
+          "text": "Unclear UI direction: ongoing debate on whether the conceptual UI should include a screen, indicating we have not decided how users will interact with the wheel-based interface."
+        },
+        {
+          "item_key": "ES2011c#3",
+          "type": "decisions",
+          "text": "Decision: Do not include the D_V_D_ feature."
+        },
+        {
+          "item_key": "ES2011c#4",
+          "type": "decisions",
+          "text": "Decision: Adopt a minimal wheel-based remote with limited buttons."
+        },
+        {
+          "item_key": "ES2011c#5",
+          "type": "decisions",
+          "text": "Decision: The remote should be smaller than previously shown remotes."
+        },
+        {
+          "item_key": "ES2011c#6",
+          "type": "decisions",
+          "text": "Decision: Menu accessible on the TV screen (T_V_) rather than on the remote."
+        }
+      ],
+      "provisional_values": {
+        "owner": null,
+        "owner_basis": "missing",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "adopted",
+        "related_items": []
+      },
+      "candidate_evidence_da_ids": [
+        "ES2011c.B.dialog-act.dharshi.70",
+        "ES2011c.C.dialog-act.dharshi.149"
+      ]
+    },
+    "observed_documents": [],
+    "document_evidence": [],
+    "relation_evidence": [],
+    "history": [
+      {
+        "item": "ES2011c#7",
+        "step": 1,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "assess_item",
+        "outcome": "invalid_action",
+        "error": "Correct these argument fields: relation_check/evidence_da_ids: [] should be non-empty Tool assess_item accepts root keys: status, related_items, statement, status_check, conflict_check, relation_check, next_action. Check keys: relation_check={result, reason, evidence_da_ids, documents, links}. Resubmit the complete advertised object. Select only delivered supporting dialogue IDs; if support is unavailable use uncertain with an explanation, never invent an ID or mark pass with no evidence. Documents belong inside the check they inform.",
+        "raw_tool_input": {
+          "status": "adopted",
+          "related_items": [],
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue explicitly supports placing the menu on TV (T_V_) and not in the remote; B asserts TV-based location.",
+            "evidence_da_ids": [
+              "ES2011c.B.dialog-act.dharshi.70",
+              "ES2011c.C.dialog-act.dharshi.149"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Current dialogue confirms the decision; at least one speaker states TV-based menu.",
+            "evidence_da_ids": [
+              "ES2011c.B.dialog-act.dharshi.70"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No contradictions found in the provided exchanges about menu location.",
+            "evidence_da_ids": [
+              "ES2011c.B.dialog-act.dharshi.70"
+            ],
+            "affected_fields": []
+          },
+          "relation_check": {
+            "result": "pass",
+            "reason": "No related_items to relate to; no prior item required for this decision.",
+            "evidence_da_ids": [],
+            "links": []
+          },
+          "next_action": "accept"
+        }
+      },
+      {
+        "item": "ES2011c#7",
+        "step": 2,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue explicitly supports placing the menu on TV (T_V_) and not in the remote; B asserts TV-based location.",
+            "quotes": [
+              {
+                "da_id": "ES2011c.B.dialog-act.dharshi.70",
+                "quote": "I believe it's ins it's gotta be inside the T_V_ , not inside the remote ."
+              },
+              {
+                "da_id": "ES2011c.C.dialog-act.dharshi.149",
+                "quote": "it doesn't seem that hard ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Current dialogue confirms the decision; at least one speaker states TV-based menu.",
+            "quotes": [
+              {
+                "da_id": "ES2011c.B.dialog-act.dharshi.70",
+                "quote": "I believe it's ins it's gotta be inside the T_V_ , not inside the remote ."
+              },
+              {
+                "da_id": "ES2011c.C.dialog-act.dharshi.149",
+                "quote": "it doesn't seem that hard ."
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions found in the provided exchanges about menu location.",
+            "quotes": [
+              {
+                "da_id": "ES2011c.B.dialog-act.dharshi.70",
+                "quote": "I believe it's ins it's gotta be inside the T_V_ , not inside the remote ."
+              },
+              {
+                "da_id": "ES2011c.C.dialog-act.dharshi.149",
+                "quote": "it doesn't seem that hard ."
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "prior_context_not_checked",
+            "quotes": [
+              {
+                "da_id": "ES2011c.B.dialog-act.dharshi.70",
+                "quote": "I believe it's ins it's gotta be inside the T_V_ , not inside the remote ."
+              }
+            ],
+            "fields": [
+              "related_items"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          }
+        },
+        "decision": "retrieve",
+        "reason": "required_history_check_before_partial_accept",
+        "assessed_text": "Decision: Constrain the menu to be inside the TV (T_V_), not inside the remote.",
+        "requested_action": "accept",
+        "proposed_fields": {
+          "status": "adopted",
+          "related_items": [],
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "ES2011c.B.dialog-act.dharshi.70",
+            "ES2011c.C.dialog-act.dharshi.149"
+          ],
+          "owner": null,
+          "owner_basis": "missing",
+          "deadline": null,
+          "deadline_basis": "missing"
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue explicitly supports placing the menu on TV (T_V_) and not in the remote; B asserts TV-based location.",
+            "quotes": [
+              "ES2011c.B.dialog-act.dharshi.70",
+              "ES2011c.C.dialog-act.dharshi.149"
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Current dialogue confirms the decision; at least one speaker states TV-based menu.",
+            "quotes": [
+              "ES2011c.B.dialog-act.dharshi.70",
+              "ES2011c.C.dialog-act.dharshi.149"
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions found in the provided exchanges about menu location.",
+            "quotes": [
+              "ES2011c.B.dialog-act.dharshi.70",
+              "ES2011c.C.dialog-act.dharshi.149"
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "pass",
+            "reason": "No related_items to relate to; no prior item required for this decision.",
+            "quotes": [
+              "ES2011c.B.dialog-act.dharshi.70"
+            ],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "status": "adopted",
+          "related_items": [],
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue explicitly supports placing the menu on TV (T_V_) and not in the remote; B asserts TV-based location.",
+            "evidence_da_ids": [
+              "ES2011c.B.dialog-act.dharshi.70",
+              "ES2011c.C.dialog-act.dharshi.149"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Current dialogue confirms the decision; at least one speaker states TV-based menu.",
+            "evidence_da_ids": [
+              "ES2011c.B.dialog-act.dharshi.70",
+              "ES2011c.C.dialog-act.dharshi.149"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No contradictions found in the provided exchanges about menu location.",
+            "evidence_da_ids": [
+              "ES2011c.B.dialog-act.dharshi.70",
+              "ES2011c.C.dialog-act.dharshi.149"
+            ],
+            "affected_fields": []
+          },
+          "relation_check": {
+            "result": "pass",
+            "reason": "No related_items to relate to; no prior item required for this decision.",
+            "evidence_da_ids": [
+              "ES2011c.B.dialog-act.dharshi.70"
+            ]
+          },
+          "next_action": "accept"
+        },
+        "evidence_bindings": {
+          "statement": [
+            "ES2011c.B.dialog-act.dharshi.70",
+            "ES2011c.C.dialog-act.dharshi.149"
+          ],
+          "status": [
+            "ES2011c.B.dialog-act.dharshi.70",
+            "ES2011c.C.dialog-act.dharshi.149"
+          ],
+          "conflict": [
+            "ES2011c.B.dialog-act.dharshi.70",
+            "ES2011c.C.dialog-act.dharshi.149"
+          ],
+          "relation": [
+            "ES2011c.B.dialog-act.dharshi.70"
+          ]
+        },
+        "raw_tool_input": {
+          "status": "adopted",
+          "related_items": [],
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue explicitly supports placing the menu on TV (T_V_) and not in the remote; B asserts TV-based location.",
+            "evidence_da_ids": [
+              "ES2011c.B.dialog-act.dharshi.70",
+              "ES2011c.C.dialog-act.dharshi.149"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Current dialogue confirms the decision; at least one speaker states TV-based menu.",
+            "evidence_da_ids": [
+              "ES2011c.B.dialog-act.dharshi.70",
+              "ES2011c.C.dialog-act.dharshi.149"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No contradictions found in the provided exchanges about menu location.",
+            "evidence_da_ids": [
+              "ES2011c.B.dialog-act.dharshi.70",
+              "ES2011c.C.dialog-act.dharshi.149"
+            ],
+            "affected_fields": []
+          },
+          "relation_check": {
+            "result": "pass",
+            "reason": "No related_items to relate to; no prior item required for this decision.",
+            "evidence_da_ids": [
+              "ES2011c.B.dialog-act.dharshi.70"
+            ]
+          },
+          "next_action": "accept"
+        },
+        "protocol_normalizations": [],
+        "unresolved_before": [
+          "related_items",
+          "statement",
+          "status"
+        ],
+        "unresolved_after": [
+          "related_items"
+        ],
+        "semantic_stalls": 0,
+        "validation_codes": {
+          "relation": [
+            "prior_context_not_checked"
+          ]
+        }
+      },
+      {
+        "item": "ES2011c#7",
+        "step": 3,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "history_context_focused",
+        "outcome": "delivered",
+        "evidence_da_ids": [
+          "ES2011c.B.dialog-act.dharshi.70",
+          "ES2011c.C.dialog-act.dharshi.149",
+          "ES2011c.C.dialog-act.dharshi.148",
+          "ES2011c.C.dialog-act.dharshi.150"
+        ]
+      },
+      {
+        "item": "ES2011c#7",
+        "step": 3,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "get_prior_items",
+        "outcome": "lookup",
+        "decision": "retrieve",
+        "args": {
+          "query": "menu inside TV remote",
+          "item_type": "decisions"
+        },
+        "tool_result": {
+          "results": [
+            {
+              "id": "ES2011b.sys.s.6",
+              "meeting_id": "ES2011b",
+              "type": "decisions",
+              "text": "PM(FEE041): so our remote should be used only for television , um ,",
+              "owner": null,
+              "owner_basis": null,
+              "deadline": null,
+              "deadline_basis": null,
+              "status": "adopted",
+              "evidence": [
+                "ES2011b.A.dialog-act.dharshi.44",
+                "ES2011b.A.dialog-act.dharshi.45"
+              ],
+              "source_file": "ES2011b.json",
+              "source_sha256": "68fe284d574324bc56cdd7c81c793f06cb0a6c93679d6defd59fb512dba0eeef",
+              "review_state": "accepted",
+              "unresolved_fields": [],
+              "unreadable_reference_ids": [],
+              "score": 2.92
+            },
+            {
+              "id": "ES2011b.sys.s.8",
+              "meeting_id": "ES2011b",
+              "type": "decisions",
+              "text": "ID(FEE042): And also we talked about um a location function where maybe you could press a button on the T_V_ and it would send sort of signal to the remote where it would beep or flash or whatever to tell you where the remote is .",
+              "owner": null,
+              "owner_basis": null,
+              "deadline": null,
+              "deadline_basis": null,
+              "status": "adopted",
+              "evidence": [
+                "ES2011b.B.dialog-act.dharshi.15",
+                "ES2011b.B.dialog-act.dharshi.32",
+                "ES2011b.B.dialog-act.dharshi.33",
+                "ES2011b.B.dialog-act.dharshi.34",
+                "ES2011b.B.dialog-act.dharshi.35",
+                "ES2011b.B.dialog-act.dharshi.39",
+                "ES2011b.B.dialog-act.dharshi.40",
+                "ES2011b.B.dialog-act.dharshi.41",
+                "ES2011b.B.dialog-act.dharshi.42"
+              ],
+              "source_file": "ES2011b.json",
+              "source_sha256": "68fe284d574324bc56cdd7c81c793f06cb0a6c93679d6defd59fb512dba0eeef",
+              "review_state": "accepted",
+              "unresolved_fields": [],
+              "unreadable_reference_ids": [],
+              "score": 2.68
+            },
+            {
+              "id": "ES2011a.sys.s.6",
+              "meeting_id": "ES2011a",
+              "type": "decisions",
+              "text": "Design remote control to be water resistant.",
+              "owner": null,
+              "owner_basis": null,
+              "deadline": null,
+              "deadline_basis": null,
+              "status": "adopted",
+              "evidence": [
+                "ES2011a.A.dialog-act.dharshi.60",
+                "ES2011a.A.dialog-act.dharshi.61",
+                "ES2011a.A.dialog-act.dharshi.62",
+                "ES2011a.C.dialog-act.dharshi.39"
+              ],
+              "source_file": "ES2011a.json",
+              "source_sha256": "a22f2d18a7c00aabf21a74ce9bb0469c7299ba5b6b11f2623cee4fcaaf8243ff",
+              "review_state": "accepted",
+              "unresolved_fields": [],
+              "unreadable_reference_ids": [],
+              "score": 1.38
+            }
+          ]
+        },
+        "new_info": true
+      },
+      {
+        "item": "ES2011c#7",
+        "step": 4,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "read_prior_item",
+        "outcome": "lookup",
+        "decision": "retrieve",
+        "args": {
+          "item_id": "ES2011b.sys.s.6"
+        },
+        "tool_result": {
+          "results": [
+            {
+              "kind": "prior_item",
+              "id": "ES2011b.sys.s.6",
+              "meeting_id": "ES2011b",
+              "type": "decisions",
+              "text": "PM(FEE041): so our remote should be used only for television , um ,",
+              "owner": null,
+              "owner_basis": null,
+              "deadline": null,
+              "deadline_basis": null,
+              "status": "adopted",
+              "evidence": [
+                "ES2011b.A.dialog-act.dharshi.44",
+                "ES2011b.A.dialog-act.dharshi.45"
+              ],
+              "source_file": "ES2011b.json",
+              "source_sha256": "68fe284d574324bc56cdd7c81c793f06cb0a6c93679d6defd59fb512dba0eeef",
+              "review_state": "accepted",
+              "unresolved_fields": [],
+              "unreadable_reference_ids": [],
+              "selected_reference_ids": [
+                "ES2011b.A.dialog-act.dharshi.44",
+                "ES2011b.A.dialog-act.dharshi.45"
+              ],
+              "next_offset": null
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "ES2011b.B.dialog-act.dharshi.47",
+              "meeting_id": "ES2011b",
+              "text": "<vocalsound>",
+              "participant": "FEE042",
+              "role": "ID",
+              "supports_item_id": "ES2011b.sys.s.6",
+              "is_reference": false
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "ES2011b.A.dialog-act.dharshi.44",
+              "meeting_id": "ES2011b",
+              "text": "also our remote should be used only for television , um ,",
+              "participant": "FEE041",
+              "role": "PM",
+              "supports_item_id": "ES2011b.sys.s.6",
+              "is_reference": true
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "ES2011b.A.dialog-act.dharshi.45",
+              "meeting_id": "ES2011b",
+              "text": "no extra internet kinda fancy things , just the remote and the television .",
+              "participant": "FEE041",
+              "role": "PM",
+              "supports_item_id": "ES2011b.sys.s.6",
+              "is_reference": true
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "ES2011b.A.dialog-act.dharshi.46",
+              "meeting_id": "ES2011b",
+              "text": "Um and also we need to incorporate our corporate image onto this ,",
+              "participant": "FEE041",
+              "role": "PM",
+              "supports_item_id": "ES2011b.sys.s.6",
+              "is_reference": false
+            }
+          ]
+        },
+        "new_info": true
+      },
+      {
+        "item": "ES2011c#7",
+        "step": 5,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "assess_relation",
+        "outcome": "invalid_action",
+        "error": "Correct these argument fields: quotes/0: {'da_id': 'ES2011c.B.dialog-act.dharshi.70', 'quote': ''} is not valid under any of the given schemas; quotes/1: {'da_id': 'ES2011c.C.dialog-act.dharshi.149', 'quote': ''} is not valid under any of the given schemas; quotes/2: {'da_id': 'ES2011c.C.dialog-act.dharshi.148', 'quote': ''} is not valid under any of the given schemas; quotes/3: {'da_id': 'ES2011c.C.dialog-act.dharshi.150', 'quote': ''} is not valid under any of the given schemas Tool assess_relation accepts root keys: result, reason, quotes, documents, links, related_items, next_action. Resubmit the complete advertised object. Select only delivered supporting dialogue IDs; if support is unavailable use uncertain with an explanation, never invent an ID or mark pass with no evidence. Documents belong inside the check they inform.",
+        "raw_tool_input": {
+          "result": "uncertain",
+          "reason": "Current item introduces a new constraint (menu containment) not clearly present in prior decisions about remote usage (TV vs remote). The older decisions discuss remote being used with TV and locating beeper; no explicit reference to a TV-contained menu. Without explicit evidence of continuity or replacement, relation remains uncertain.",
+          "quotes": [
+            {
+              "da_id": "ES2011c.B.dialog-act.dharshi.70",
+              "quote": ""
+            },
+            {
+              "da_id": "ES2011c.C.dialog-act.dharshi.149",
+              "quote": ""
+            },
+            {
+              "da_id": "ES2011c.C.dialog-act.dharshi.148",
+              "quote": ""
+            },
+            {
+              "da_id": "ES2011c.C.dialog-act.dharshi.150",
+              "quote": ""
+            }
+          ],
+          "documents": [],
+          "links": []
+        }
+      },
+      {
+        "item": "ES2011c#7",
+        "step": 6,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "assess_relation",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue explicitly supports placing the menu on TV (T_V_) and not in the remote; B asserts TV-based location.",
+            "quotes": [
+              {
+                "da_id": "ES2011c.B.dialog-act.dharshi.70",
+                "quote": "I believe it's ins it's gotta be inside the T_V_ , not inside the remote ."
+              },
+              {
+                "da_id": "ES2011c.C.dialog-act.dharshi.149",
+                "quote": "it doesn't seem that hard ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Current dialogue confirms the decision; at least one speaker states TV-based menu.",
+            "quotes": [
+              {
+                "da_id": "ES2011c.B.dialog-act.dharshi.70",
+                "quote": "I believe it's ins it's gotta be inside the T_V_ , not inside the remote ."
+              },
+              {
+                "da_id": "ES2011c.C.dialog-act.dharshi.149",
+                "quote": "it doesn't seem that hard ."
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions found in the provided exchanges about menu location.",
+            "quotes": [
+              {
+                "da_id": "ES2011c.B.dialog-act.dharshi.70",
+                "quote": "I believe it's ins it's gotta be inside the T_V_ , not inside the remote ."
+              },
+              {
+                "da_id": "ES2011c.C.dialog-act.dharshi.149",
+                "quote": "it doesn't seem that hard ."
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "Current item introduces a new constraint about menu containment inside T_V_ versus the remote; prior ES2011b ES2011a decisions discuss remote usage and location/beep signaling but do not explicitly reference a TV-contained menu. The link between the current decision and earlier items cannot be established from the available quotes.",
+            "quotes": [
+              {
+                "da_id": "ES2011c.B.dialog-act.dharshi.70",
+                "quote": "I believe it's ins it's gotta be inside the T_V_ , not inside the remote ."
+              },
+              {
+                "da_id": "ES2011c.C.dialog-act.dharshi.149",
+                "quote": "it doesn't seem that hard ."
+              },
+              {
+                "da_id": "ES2011c.C.dialog-act.dharshi.148",
+                "quote": "you <disfmarker> it's <disfmarker>"
+              },
+              {
+                "da_id": "ES2011c.C.dialog-act.dharshi.150",
+                "quote": "I mean I've never bought a remote ."
+              }
+            ],
+            "links": [],
+            "documents": [],
+            "fields": [
+              "related_items"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          }
+        },
+        "decision": "retrieve",
+        "reason": "unresolved_checks",
+        "assessed_text": "Decision: Constrain the menu to be inside the TV (T_V_), not inside the remote.",
+        "requested_action": null,
+        "proposed_fields": {
+          "status": "adopted",
+          "related_items": [],
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "ES2011c.B.dialog-act.dharshi.70",
+            "ES2011c.C.dialog-act.dharshi.149",
+            "ES2011c.C.dialog-act.dharshi.148",
+            "ES2011c.C.dialog-act.dharshi.150"
+          ],
+          "owner": null,
+          "owner_basis": "missing",
+          "deadline": null,
+          "deadline_basis": "missing"
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue explicitly supports placing the menu on TV (T_V_) and not in the remote; B asserts TV-based location.",
+            "quotes": [
+              {
+                "da_id": "ES2011c.B.dialog-act.dharshi.70",
+                "quote": "I believe it's ins it's gotta be inside the T_V_ , not inside the remote ."
+              },
+              {
+                "da_id": "ES2011c.C.dialog-act.dharshi.149",
+                "quote": "it doesn't seem that hard ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Current dialogue confirms the decision; at least one speaker states TV-based menu.",
+            "quotes": [
+              {
+                "da_id": "ES2011c.B.dialog-act.dharshi.70",
+                "quote": "I believe it's ins it's gotta be inside the T_V_ , not inside the remote ."
+              },
+              {
+                "da_id": "ES2011c.C.dialog-act.dharshi.149",
+                "quote": "it doesn't seem that hard ."
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions found in the provided exchanges about menu location.",
+            "quotes": [
+              {
+                "da_id": "ES2011c.B.dialog-act.dharshi.70",
+                "quote": "I believe it's ins it's gotta be inside the T_V_ , not inside the remote ."
+              },
+              {
+                "da_id": "ES2011c.C.dialog-act.dharshi.149",
+                "quote": "it doesn't seem that hard ."
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "Current item introduces a new constraint about menu containment inside T_V_ versus the remote; prior ES2011b ES2011a decisions discuss remote usage and location/beep signaling but do not explicitly reference a TV-contained menu. The link between the current decision and earlier items cannot be established from the available quotes.",
+            "quotes": [
+              {
+                "da_id": "ES2011c.B.dialog-act.dharshi.70",
+                "quote": "I believe it's ins it's gotta be inside the T_V_ , not inside the remote ."
+              },
+              {
+                "da_id": "ES2011c.C.dialog-act.dharshi.149",
+                "quote": "it doesn't seem that hard ."
+              },
+              {
+                "da_id": "ES2011c.C.dialog-act.dharshi.148",
+                "quote": "you <disfmarker> it's <disfmarker>"
+              },
+              {
+                "da_id": "ES2011c.C.dialog-act.dharshi.150",
+                "quote": "I mean I've never bought a remote ."
+              }
+            ],
+            "links": [],
+            "documents": [],
+            "fields": [
+              "related_items"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "result": "uncertain",
+          "reason": "Current item introduces a new constraint about menu containment inside T_V_ versus the remote; prior ES2011b ES2011a decisions discuss remote usage and location/beep signaling but do not explicitly reference a TV-contained menu. The link between the current decision and earlier items cannot be established from the available quotes.",
+          "quotes": [
+            {
+              "da_id": "ES2011c.B.dialog-act.dharshi.70",
+              "quote": "I believe it's ins it's gotta be inside the T_V_ , not inside the remote ."
+            },
+            {
+              "da_id": "ES2011c.C.dialog-act.dharshi.149",
+              "quote": "it doesn't seem that hard ."
+            },
+            {
+              "da_id": "ES2011c.C.dialog-act.dharshi.148",
+              "quote": "you <disfmarker> it's <disfmarker>"
+            },
+            {
+              "da_id": "ES2011c.C.dialog-act.dharshi.150",
+              "quote": "I mean I've never bought a remote ."
+            }
+          ],
+          "documents": [],
+          "links": []
+        },
+        "evidence_bindings": {},
+        "raw_tool_input": {
+          "result": "uncertain",
+          "reason": "Current item introduces a new constraint about menu containment inside T_V_ versus the remote; prior ES2011b ES2011a decisions discuss remote usage and location/beep signaling but do not explicitly reference a TV-contained menu. The link between the current decision and earlier items cannot be established from the available quotes.",
+          "quotes": [
+            {
+              "da_id": "ES2011c.B.dialog-act.dharshi.70",
+              "quote": "I believe it's ins it's gotta be inside the T_V_ , not inside the remote ."
+            },
+            {
+              "da_id": "ES2011c.C.dialog-act.dharshi.149",
+              "quote": "it doesn't seem that hard ."
+            },
+            {
+              "da_id": "ES2011c.C.dialog-act.dharshi.148",
+              "quote": "you <disfmarker> it's <disfmarker>"
+            },
+            {
+              "da_id": "ES2011c.C.dialog-act.dharshi.150",
+              "quote": "I mean I've never bought a remote ."
+            }
+          ],
+          "documents": [],
+          "links": []
+        },
+        "protocol_normalizations": [
+          "controller_action_for_missing_hint:retrieve"
+        ],
+        "unresolved_before": [
+          "related_items"
+        ],
+        "unresolved_after": [
+          "related_items"
+        ],
+        "semantic_stalls": 0,
+        "validation_codes": {}
+      },
+      {
+        "item": "ES2011c#7",
+        "step": 7,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "read_prior_item",
+        "outcome": "invalid_action",
+        "error": "This lookup was already executed on this item and cannot add evidence. Read a returned prior record/locator, change the query or window, assess delivered history when offered, or stop pending. Do not repeat it.",
+        "raw_tool_input": {
+          "item_id": "ES2011b.sys.s.6"
+        }
+      },
+      {
+        "item": "ES2011c#7",
+        "step": 8,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "read_prior_item",
+        "outcome": "lookup",
+        "decision": "retrieve",
+        "args": {
+          "item_id": "ES2011b.sys.s.8"
+        },
+        "tool_result": {
+          "results": [
+            {
+              "kind": "prior_item",
+              "id": "ES2011b.sys.s.8",
+              "meeting_id": "ES2011b",
+              "type": "decisions",
+              "text": "ID(FEE042): And also we talked about um a location function where maybe you could press a button on the T_V_ and it would send sort of signal to the remote where it would beep or flash or whatever to tell you where the remote is .",
+              "owner": null,
+              "owner_basis": null,
+              "deadline": null,
+              "deadline_basis": null,
+              "status": "adopted",
+              "evidence": [
+                "ES2011b.B.dialog-act.dharshi.15",
+                "ES2011b.B.dialog-act.dharshi.32",
+                "ES2011b.B.dialog-act.dharshi.33",
+                "ES2011b.B.dialog-act.dharshi.34",
+                "ES2011b.B.dialog-act.dharshi.35",
+                "ES2011b.B.dialog-act.dharshi.39",
+                "ES2011b.B.dialog-act.dharshi.40",
+                "ES2011b.B.dialog-act.dharshi.41",
+                "ES2011b.B.dialog-act.dharshi.42"
+              ],
+              "source_file": "ES2011b.json",
+              "source_sha256": "68fe284d574324bc56cdd7c81c793f06cb0a6c93679d6defd59fb512dba0eeef",
+              "review_state": "accepted",
+              "unresolved_fields": [],
+              "unreadable_reference_ids": [],
+              "selected_reference_ids": [
+                "ES2011b.B.dialog-act.dharshi.15",
+                "ES2011b.B.dialog-act.dharshi.32",
+                "ES2011b.B.dialog-act.dharshi.33",
+                "ES2011b.B.dialog-act.dharshi.34",
+                "ES2011b.B.dialog-act.dharshi.35",
+                "ES2011b.B.dialog-act.dharshi.39",
+                "ES2011b.B.dialog-act.dharshi.40",
+                "ES2011b.B.dialog-act.dharshi.41"
+              ],
+              "next_offset": 8
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "ES2011b.B.dialog-act.dharshi.14",
+              "meeting_id": "ES2011b",
+              "text": "the user can input a channel or volume setting and it will be output to the T_V_ .",
+              "participant": "FEE042",
+              "role": "ID",
+              "supports_item_id": "ES2011b.sys.s.8",
+              "is_reference": false
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "ES2011b.B.dialog-act.dharshi.15",
+              "meeting_id": "ES2011b",
+              "text": "And also we talked about um a location function where maybe you could press a button on the T_V_ and it would send sort of signal to the remote where it would beep or flash or vibrate or whatever to tell you where the remote is .",
+              "participant": "FEE042",
+              "role": "ID",
+              "supports_item_id": "ES2011b.sys.s.8",
+              "is_reference": true
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "ES2011b.B.dialog-act.dharshi.16",
+              "meeting_id": "ES2011b",
+              "text": "So the components we need are an energy source to power the remote ,",
+              "participant": "FEE042",
+              "role": "ID",
+              "supports_item_id": "ES2011b.sys.s.8",
+              "is_reference": false
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "ES2011b.B.dialog-act.dharshi.31",
+              "meeting_id": "ES2011b",
+              "text": "And then for the location function , you would have a sender on the T_V_ which would output some sort of signal ,",
+              "participant": "FEE042",
+              "role": "ID",
+              "supports_item_id": "ES2011b.sys.s.8",
+              "is_reference": false
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "ES2011b.B.dialog-act.dharshi.32",
+              "meeting_id": "ES2011b",
+              "text": "um we could use I_R_ but we'd probably wanna use radio instead .",
+              "participant": "FEE042",
+              "role": "ID",
+              "supports_item_id": "ES2011b.sys.s.8",
+              "is_reference": true
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "ES2011b.B.dialog-act.dharshi.33",
+              "meeting_id": "ES2011b",
+              "text": "That signal would go to a receiver which it would process it ,",
+              "participant": "FEE042",
+              "role": "ID",
+              "supports_item_id": "ES2011b.sys.s.8",
+              "is_reference": true
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "ES2011b.B.dialog-act.dharshi.34",
+              "meeting_id": "ES2011b",
+              "text": "and it would be output in the form of a buzzer or a light lighting up .",
+              "participant": "FEE042",
+              "role": "ID",
+              "supports_item_id": "ES2011b.sys.s.8",
+              "is_reference": true
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "ES2011b.B.dialog-act.dharshi.35",
+              "meeting_id": "ES2011b",
+              "text": "Um so my personal preferences for how to build the remote would probably be uh , battery for the energy source ,",
+              "participant": "FEE042",
+              "role": "ID",
+              "supports_item_id": "ES2011b.sys.s.8",
+              "is_reference": true
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "ES2011b.B.dialog-act.dharshi.36",
+              "meeting_id": "ES2011b",
+              "text": "that way you wouldn't have to plug it in ,",
+              "participant": "FEE042",
+              "role": "ID",
+              "supports_item_id": "ES2011b.sys.s.8",
+              "is_reference": false
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "ES2011b.B.dialog-act.dharshi.38",
+              "meeting_id": "ES2011b",
+              "text": "um we can purchase a pre-made chip which will handle all the processing stuff ,",
+              "participant": "FEE042",
+              "role": "ID",
+              "supports_item_id": "ES2011b.sys.s.8",
+              "is_reference": false
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "ES2011b.B.dialog-act.dharshi.39",
+              "meeting_id": "ES2011b",
+              "text": "I_R_ transmitter to communicate to the T_V_ ,",
+              "participant": "FEE042",
+              "role": "ID",
+              "supports_item_id": "ES2011b.sys.s.8",
+              "is_reference": true
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "ES2011b.B.dialog-act.dharshi.40",
+              "meeting_id": "ES2011b",
+              "text": "that's just sort of standard , um so most T_V_s have an I_R_ receiver .",
+              "participant": "FEE042",
+              "role": "ID",
+              "supports_item_id": "ES2011b.sys.s.8",
+              "is_reference": true
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "ES2011b.B.dialog-act.dharshi.41",
+              "meeting_id": "ES2011b",
+              "text": "Probably a radio receiver to send out location function and to receive it",
+              "participant": "FEE042",
+              "role": "ID",
+              "supports_item_id": "ES2011b.sys.s.8",
+              "is_reference": true
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "ES2011b.B.dialog-act.dharshi.42",
+              "meeting_id": "ES2011b",
+              "text": "and I'd probably say a buzzer for the location function on the remote itself .",
+              "participant": "FEE042",
+              "role": "ID",
+              "supports_item_id": "ES2011b.sys.s.8",
+              "is_reference": true
+            }
+          ]
+        },
+        "new_info": true
+      },
+      {
+        "item": "ES2011c#7",
+        "step": 9,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "assess_relation",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue explicitly supports placing the menu on TV (T_V_) and not in the remote; B asserts TV-based location.",
+            "quotes": [
+              {
+                "da_id": "ES2011c.B.dialog-act.dharshi.70",
+                "quote": "I believe it's ins it's gotta be inside the T_V_ , not inside the remote ."
+              },
+              {
+                "da_id": "ES2011c.C.dialog-act.dharshi.149",
+                "quote": "it doesn't seem that hard ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Current dialogue confirms the decision; at least one speaker states TV-based menu.",
+            "quotes": [
+              {
+                "da_id": "ES2011c.B.dialog-act.dharshi.70",
+                "quote": "I believe it's ins it's gotta be inside the T_V_ , not inside the remote ."
+              },
+              {
+                "da_id": "ES2011c.C.dialog-act.dharshi.149",
+                "quote": "it doesn't seem that hard ."
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions found in the provided exchanges about menu location.",
+            "quotes": [
+              {
+                "da_id": "ES2011c.B.dialog-act.dharshi.70",
+                "quote": "I believe it's ins it's gotta be inside the T_V_ , not inside the remote ."
+              },
+              {
+                "da_id": "ES2011c.C.dialog-act.dharshi.149",
+                "quote": "it doesn't seem that hard ."
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "Current item introduces a new constraint about menu containment inside T_V_ versus the remote; prior ES2011b/ES2011a decisions discuss remote usage and location beeper signals but do not explicitly reference a TV-contained menu. The link between the current decision and earlier items cannot be established from the available quotes.",
+            "quotes": [
+              {
+                "da_id": "ES2011c.B.dialog-act.dharshi.70",
+                "quote": "I believe it's ins it's gotta be inside the T_V_ , not inside the remote ."
+              },
+              {
+                "da_id": "ES2011c.C.dialog-act.dharshi.149",
+                "quote": "it doesn't seem that hard ."
+              },
+              {
+                "da_id": "ES2011c.C.dialog-act.dharshi.148",
+                "quote": "you <disfmarker> it's <disfmarker>"
+              },
+              {
+                "da_id": "ES2011c.C.dialog-act.dharshi.150",
+                "quote": "I mean I've never bought a remote ."
+              }
+            ],
+            "links": [],
+            "documents": [],
+            "fields": [
+              "related_items"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          }
+        },
+        "decision": "retrieve",
+        "reason": "unresolved_checks",
+        "assessed_text": "Decision: Constrain the menu to be inside the TV (T_V_), not inside the remote.",
+        "requested_action": null,
+        "proposed_fields": {
+          "status": "adopted",
+          "related_items": [],
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "ES2011c.B.dialog-act.dharshi.70",
+            "ES2011c.C.dialog-act.dharshi.149",
+            "ES2011c.C.dialog-act.dharshi.148",
+            "ES2011c.C.dialog-act.dharshi.150"
+          ],
+          "owner": null,
+          "owner_basis": "missing",
+          "deadline": null,
+          "deadline_basis": "missing"
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue explicitly supports placing the menu on TV (T_V_) and not in the remote; B asserts TV-based location.",
+            "quotes": [
+              {
+                "da_id": "ES2011c.B.dialog-act.dharshi.70",
+                "quote": "I believe it's ins it's gotta be inside the T_V_ , not inside the remote ."
+              },
+              {
+                "da_id": "ES2011c.C.dialog-act.dharshi.149",
+                "quote": "it doesn't seem that hard ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Current dialogue confirms the decision; at least one speaker states TV-based menu.",
+            "quotes": [
+              {
+                "da_id": "ES2011c.B.dialog-act.dharshi.70",
+                "quote": "I believe it's ins it's gotta be inside the T_V_ , not inside the remote ."
+              },
+              {
+                "da_id": "ES2011c.C.dialog-act.dharshi.149",
+                "quote": "it doesn't seem that hard ."
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions found in the provided exchanges about menu location.",
+            "quotes": [
+              {
+                "da_id": "ES2011c.B.dialog-act.dharshi.70",
+                "quote": "I believe it's ins it's gotta be inside the T_V_ , not inside the remote ."
+              },
+              {
+                "da_id": "ES2011c.C.dialog-act.dharshi.149",
+                "quote": "it doesn't seem that hard ."
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "Current item introduces a new constraint about menu containment inside T_V_ versus the remote; prior ES2011b/ES2011a decisions discuss remote usage and location beeper signals but do not explicitly reference a TV-contained menu. The link between the current decision and earlier items cannot be established from the available quotes.",
+            "quotes": [
+              {
+                "da_id": "ES2011c.B.dialog-act.dharshi.70",
+                "quote": "I believe it's ins it's gotta be inside the T_V_ , not inside the remote ."
+              },
+              {
+                "da_id": "ES2011c.C.dialog-act.dharshi.149",
+                "quote": "it doesn't seem that hard ."
+              },
+              {
+                "da_id": "ES2011c.C.dialog-act.dharshi.148",
+                "quote": "you <disfmarker> it's <disfmarker>"
+              },
+              {
+                "da_id": "ES2011c.C.dialog-act.dharshi.150",
+                "quote": "I mean I've never bought a remote ."
+              }
+            ],
+            "links": [],
+            "documents": [],
+            "fields": [
+              "related_items"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "result": "uncertain",
+          "reason": "Current item introduces a new constraint about menu containment inside T_V_ versus the remote; prior ES2011b/ES2011a decisions discuss remote usage and location beeper signals but do not explicitly reference a TV-contained menu. The link between the current decision and earlier items cannot be established from the available quotes.",
+          "quotes": [
+            {
+              "da_id": "ES2011c.B.dialog-act.dharshi.70",
+              "quote": "I believe it's ins it's gotta be inside the T_V_ , not inside the remote ."
+            },
+            {
+              "da_id": "ES2011c.C.dialog-act.dharshi.149",
+              "quote": "it doesn't seem that hard ."
+            },
+            {
+              "da_id": "ES2011c.C.dialog-act.dharshi.148",
+              "quote": "you <disfmarker> it's <disfmarker>"
+            },
+            {
+              "da_id": "ES2011c.C.dialog-act.dharshi.150",
+              "quote": "I mean I've never bought a remote ."
+            }
+          ],
+          "documents": [],
+          "links": []
+        },
+        "evidence_bindings": {},
+        "raw_tool_input": {
+          "result": "uncertain",
+          "reason": "Current item introduces a new constraint about menu containment inside T_V_ versus the remote; prior ES2011b/ES2011a decisions discuss remote usage and location beeper signals but do not explicitly reference a TV-contained menu. The link between the current decision and earlier items cannot be established from the available quotes.",
+          "quotes": [
+            {
+              "da_id": "ES2011c.B.dialog-act.dharshi.70",
+              "quote": "I believe it's ins it's gotta be inside the T_V_ , not inside the remote ."
+            },
+            {
+              "da_id": "ES2011c.C.dialog-act.dharshi.149",
+              "quote": "it doesn't seem that hard ."
+            },
+            {
+              "da_id": "ES2011c.C.dialog-act.dharshi.148",
+              "quote": "you <disfmarker> it's <disfmarker>"
+            },
+            {
+              "da_id": "ES2011c.C.dialog-act.dharshi.150",
+              "quote": "I mean I've never bought a remote ."
+            }
+          ],
+          "documents": [],
+          "links": []
+        },
+        "protocol_normalizations": [
+          "controller_action_for_missing_hint:retrieve"
+        ],
+        "unresolved_before": [
+          "related_items"
+        ],
+        "unresolved_after": [
+          "related_items"
+        ],
+        "semantic_stalls": 1,
+        "validation_codes": {}
+      },
+      {
+        "item": "ES2011c#7",
+        "step": 10,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "assess_relation",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue explicitly supports placing the menu on TV (T_V_) and not in the remote; B asserts TV-based location.",
+            "quotes": [
+              {
+                "da_id": "ES2011c.B.dialog-act.dharshi.70",
+                "quote": "I believe it's ins it's gotta be inside the T_V_ , not inside the remote ."
+              },
+              {
+                "da_id": "ES2011c.C.dialog-act.dharshi.149",
+                "quote": "it doesn't seem that hard ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Current dialogue confirms the decision; at least one speaker states TV-based menu.",
+            "quotes": [
+              {
+                "da_id": "ES2011c.B.dialog-act.dharshi.70",
+                "quote": "I believe it's ins it's gotta be inside the T_V_ , not inside the remote ."
+              },
+              {
+                "da_id": "ES2011c.C.dialog-act.dharshi.149",
+                "quote": "it doesn't seem that hard ."
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions found in the provided exchanges about menu location.",
+            "quotes": [
+              {
+                "da_id": "ES2011c.B.dialog-act.dharshi.70",
+                "quote": "I believe it's ins it's gotta be inside the T_V_ , not inside the remote ."
+              },
+              {
+                "da_id": "ES2011c.C.dialog-act.dharshi.149",
+                "quote": "it doesn't seem that hard ."
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "Current item introduces a new constraint about menu containment inside the TV (T_V_) versus the remote; prior ES2011b.sys.s.6 and ES2011b.sys.s.8 discuss remote usage with TV and location beep signals but do not explicitly reference a TV-contained menu. The link between the current decision and earlier items cannot be established from the available quotes.",
+            "quotes": [
+              {
+                "da_id": "ES2011c.B.dialog-act.dharshi.70",
+                "quote": "I believe it's ins it's gotta be inside the T_V_ , not inside the remote ."
+              },
+              {
+                "da_id": "ES2011c.C.dialog-act.dharshi.149",
+                "quote": "it doesn't seem that hard ."
+              },
+              {
+                "da_id": "ES2011c.C.dialog-act.dharshi.148",
+                "quote": "you <disfmarker> it's <disfmarker>"
+              },
+              {
+                "da_id": "ES2011c.C.dialog-act.dharshi.150",
+                "quote": "I mean I've never bought a remote ."
+              }
+            ],
+            "links": [],
+            "documents": [],
+            "fields": [
+              "related_items"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          }
+        },
+        "decision": "request_clarification",
+        "reason": "no_progress",
+        "assessed_text": "Decision: Constrain the menu to be inside the TV (T_V_), not inside the remote.",
+        "requested_action": null,
+        "proposed_fields": {
+          "status": "adopted",
+          "related_items": [],
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "ES2011c.B.dialog-act.dharshi.70",
+            "ES2011c.C.dialog-act.dharshi.149",
+            "ES2011c.C.dialog-act.dharshi.148",
+            "ES2011c.C.dialog-act.dharshi.150"
+          ],
+          "owner": null,
+          "owner_basis": "missing",
+          "deadline": null,
+          "deadline_basis": "missing"
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue explicitly supports placing the menu on TV (T_V_) and not in the remote; B asserts TV-based location.",
+            "quotes": [
+              {
+                "da_id": "ES2011c.B.dialog-act.dharshi.70",
+                "quote": "I believe it's ins it's gotta be inside the T_V_ , not inside the remote ."
+              },
+              {
+                "da_id": "ES2011c.C.dialog-act.dharshi.149",
+                "quote": "it doesn't seem that hard ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Current dialogue confirms the decision; at least one speaker states TV-based menu.",
+            "quotes": [
+              {
+                "da_id": "ES2011c.B.dialog-act.dharshi.70",
+                "quote": "I believe it's ins it's gotta be inside the T_V_ , not inside the remote ."
+              },
+              {
+                "da_id": "ES2011c.C.dialog-act.dharshi.149",
+                "quote": "it doesn't seem that hard ."
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions found in the provided exchanges about menu location.",
+            "quotes": [
+              {
+                "da_id": "ES2011c.B.dialog-act.dharshi.70",
+                "quote": "I believe it's ins it's gotta be inside the T_V_ , not inside the remote ."
+              },
+              {
+                "da_id": "ES2011c.C.dialog-act.dharshi.149",
+                "quote": "it doesn't seem that hard ."
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "Current item introduces a new constraint about menu containment inside the TV (T_V_) versus the remote; prior ES2011b.sys.s.6 and ES2011b.sys.s.8 discuss remote usage with TV and location beep signals but do not explicitly reference a TV-contained menu. The link between the current decision and earlier items cannot be established from the available quotes.",
+            "quotes": [
+              {
+                "da_id": "ES2011c.B.dialog-act.dharshi.70",
+                "quote": "I believe it's ins it's gotta be inside the T_V_ , not inside the remote ."
+              },
+              {
+                "da_id": "ES2011c.C.dialog-act.dharshi.149",
+                "quote": "it doesn't seem that hard ."
+              },
+              {
+                "da_id": "ES2011c.C.dialog-act.dharshi.148",
+                "quote": "you <disfmarker> it's <disfmarker>"
+              },
+              {
+                "da_id": "ES2011c.C.dialog-act.dharshi.150",
+                "quote": "I mean I've never bought a remote ."
+              }
+            ],
+            "links": [],
+            "documents": [],
+            "fields": [
+              "related_items"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "result": "uncertain",
+          "reason": "Current item introduces a new constraint about menu containment inside the TV (T_V_) versus the remote; prior ES2011b.sys.s.6 and ES2011b.sys.s.8 discuss remote usage with TV and location beep signals but do not explicitly reference a TV-contained menu. The link between the current decision and earlier items cannot be established from the available quotes.",
+          "quotes": [
+            {
+              "da_id": "ES2011c.B.dialog-act.dharshi.70",
+              "quote": "I believe it's ins it's gotta be inside the T_V_ , not inside the remote ."
+            },
+            {
+              "da_id": "ES2011c.C.dialog-act.dharshi.149",
+              "quote": "it doesn't seem that hard ."
+            },
+            {
+              "da_id": "ES2011c.C.dialog-act.dharshi.148",
+              "quote": "you <disfmarker> it's <disfmarker>"
+            },
+            {
+              "da_id": "ES2011c.C.dialog-act.dharshi.150",
+              "quote": "I mean I've never bought a remote ."
+            }
+          ],
+          "documents": [],
+          "links": []
+        },
+        "evidence_bindings": {},
+        "raw_tool_input": {
+          "result": "uncertain",
+          "reason": "Current item introduces a new constraint about menu containment inside the TV (T_V_) versus the remote; prior ES2011b.sys.s.6 and ES2011b.sys.s.8 discuss remote usage with TV and location beep signals but do not explicitly reference a TV-contained menu. The link between the current decision and earlier items cannot be established from the available quotes.",
+          "quotes": [
+            {
+              "da_id": "ES2011c.B.dialog-act.dharshi.70",
+              "quote": "I believe it's ins it's gotta be inside the T_V_ , not inside the remote ."
+            },
+            {
+              "da_id": "ES2011c.C.dialog-act.dharshi.149",
+              "quote": "it doesn't seem that hard ."
+            },
+            {
+              "da_id": "ES2011c.C.dialog-act.dharshi.148",
+              "quote": "you <disfmarker> it's <disfmarker>"
+            },
+            {
+              "da_id": "ES2011c.C.dialog-act.dharshi.150",
+              "quote": "I mean I've never bought a remote ."
+            }
+          ],
+          "documents": [],
+          "links": []
+        },
+        "protocol_normalizations": [
+          "controller_action_for_missing_hint:retrieve"
+        ],
+        "unresolved_before": [
+          "related_items"
+        ],
+        "unresolved_after": [
+          "related_items"
+        ],
+        "semantic_stalls": 2,
+        "validation_codes": {}
+      },
+      {
+        "item": "ES2011c#7",
+        "step": 10,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "stop",
+        "outcome": "pending",
+        "termination_reason": "no_progress",
+        "unresolved_fields": [
+          "related_items"
+        ]
+      }
+    ],
+    "lookups": 3,
+    "termination_reason": "no_progress",
+    "clarifications": [
+      {
+        "request_id": "89d615279013099d",
+        "item_key": "ES2011c#7",
+        "record_id": null,
+        "field": "related_items",
+        "question": "Which earlier record does this item continue or change, and how?",
+        "item_text": "Decision: Constrain the menu to be inside the TV (T_V_), not inside the remote.",
+        "reason": "Current item introduces a new constraint about menu containment inside the TV (T_V_) versus the remote; prior ES2011b.sys.s.6 and ES2011b.sys.s.8 discuss remote usage with TV and location beep signals but do not explicitly reference a TV-contained menu. The link between the current decision and earlier items cannot be established from the available quotes.",
+        "evidence_da_ids": [
+          "ES2011c.B.dialog-act.dharshi.70",
+          "ES2011c.C.dialog-act.dharshi.149",
+          "ES2011c.C.dialog-act.dharshi.148",
+          "ES2011c.C.dialog-act.dharshi.150"
+        ],
+        "available_evidence_da_ids": [
+          "ES2011c.B.dialog-act.dharshi.70",
+          "ES2011c.C.dialog-act.dharshi.149",
+          "ES2011c.C.dialog-act.dharshi.148",
+          "ES2011c.C.dialog-act.dharshi.150",
+          "ES2011b.B.dialog-act.dharshi.47",
+          "ES2011b.A.dialog-act.dharshi.44",
+          "ES2011b.A.dialog-act.dharshi.45",
+          "ES2011b.A.dialog-act.dharshi.46",
+          "ES2011b.B.dialog-act.dharshi.14",
+          "ES2011b.B.dialog-act.dharshi.15",
+          "ES2011b.B.dialog-act.dharshi.16",
+          "ES2011b.B.dialog-act.dharshi.31",
+          "ES2011b.B.dialog-act.dharshi.32",
+          "ES2011b.B.dialog-act.dharshi.33",
+          "ES2011b.B.dialog-act.dharshi.34",
+          "ES2011b.B.dialog-act.dharshi.35",
+          "ES2011b.B.dialog-act.dharshi.36",
+          "ES2011b.B.dialog-act.dharshi.38",
+          "ES2011b.B.dialog-act.dharshi.39",
+          "ES2011b.B.dialog-act.dharshi.40",
+          "ES2011b.B.dialog-act.dharshi.41",
+          "ES2011b.B.dialog-act.dharshi.42"
+        ],
+        "status": "open",
+        "termination_reason": "no_progress"
+      }
+    ]
+  }
+}

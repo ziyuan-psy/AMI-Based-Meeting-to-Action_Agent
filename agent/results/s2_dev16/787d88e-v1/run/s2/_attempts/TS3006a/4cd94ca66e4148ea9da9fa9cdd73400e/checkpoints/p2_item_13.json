@@ -1,0 +1,757 @@
+{
+  "item_key": "TS3006a#13",
+  "record_id": null,
+  "item_type": "actions",
+  "item_text": "Project Manager will summarize the discussion and file it in the project folder.",
+  "state": "pending",
+  "recordable": true,
+  "fields": {
+    "status": "unknown",
+    "prior_context_needed": false,
+    "related_items": [],
+    "owner": [
+      "MTD021PM"
+    ],
+    "owner_basis": "explicit",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "reference": [
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3006a.json",
+        "locator": "TS3006a.A.dialog-act.vkaraisk.197"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3006a.json",
+        "locator": "TS3006a.A.dialog-act.vkaraisk.198"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3006a.json",
+        "locator": "TS3006a.A.dialog-act.vkaraisk.199"
+      }
+    ]
+  },
+  "draft_fields": {
+    "status": "open",
+    "related_items": [],
+    "owner": [
+      "MTD021PM"
+    ],
+    "owner_basis": "explicit",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "prior_context_needed": false,
+    "used_participant_lookup": false,
+    "evidence_da_ids": [
+      "TS3006a.A.dialog-act.vkaraisk.197",
+      "TS3006a.A.dialog-act.vkaraisk.198",
+      "TS3006a.A.dialog-act.vkaraisk.199"
+    ]
+  },
+  "checks": {
+    "statement": {
+      "result": "pass",
+      "reason": "Dialogue supports the exact substantive action: PM stated they will summarize the discussion and file it in the project folder, both parts clearly tied to the action.",
+      "quotes": [
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.197",
+          "quote": "I will summarise the things we discussed"
+        },
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.198",
+          "quote": "and put it in the project folder ."
+        },
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.199",
+          "quote": "Uh the use of the Industrial Designer can work on the working design , etcetera etcetera ."
+        }
+      ],
+      "fields": [
+        "statement"
+      ]
+    },
+    "owner": {
+      "result": "pass",
+      "reason": "Owner is explicitly stated as MTD021PM in provisional values and the dialogue shows PM initiating the action.",
+      "quotes": [
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.197",
+          "quote": "I will summarise the things we discussed"
+        }
+      ],
+      "fields": [
+        "owner"
+      ]
+    },
+    "deadline": {
+      "result": "uncertain",
+      "reason": "deadline_unresolved",
+      "quotes": [
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.198",
+          "quote": "and put it in the project folder ."
+        }
+      ],
+      "fields": [
+        "deadline"
+      ]
+    },
+    "status": {
+      "result": "uncertain",
+      "reason": "Action is currently open; no explicit evidence of completion or formal closure in this meeting.",
+      "quotes": [
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.197",
+          "quote": "I will summarise the things we discussed"
+        },
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.198",
+          "quote": "and put it in the project folder ."
+        }
+      ],
+      "fields": [
+        "status"
+      ]
+    },
+    "conflict": {
+      "result": "pass",
+      "reason": "No contradictions found within the provided dialogue; fields unaffected.",
+      "quotes": [
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.197",
+          "quote": "I will summarise the things we discussed"
+        },
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.198",
+          "quote": "and put it in the project folder ."
+        }
+      ],
+      "fields": []
+    },
+    "relation": {
+      "result": "not_applicable",
+      "reason": "No prior related items to relate to in this item; none recorded.",
+      "quotes": [],
+      "fields": [
+        "related_items"
+      ]
+    }
+  },
+  "unresolved_fields": [
+    "deadline",
+    "status"
+  ],
+  "observed_evidence_da_ids": [
+    "TS3006a.A.dialog-act.vkaraisk.197",
+    "TS3006a.A.dialog-act.vkaraisk.198",
+    "TS3006a.A.dialog-act.vkaraisk.199",
+    "TS3006a.A.dialog-act.vkaraisk.196",
+    "TS3006a.A.dialog-act.vkaraisk.200"
+  ],
+  "initial_context": {
+    "item": {
+      "type": "actions",
+      "text": "Project Manager will summarize the discussion and file it in the project folder.",
+      "flags": []
+    },
+    "current_meeting": "TS3006a",
+    "earlier_meetings": [],
+    "roster": [
+      {
+        "speaker": "A",
+        "participant_id": "MTD021PM",
+        "role": "PM"
+      },
+      {
+        "speaker": "B",
+        "participant_id": "MTD023UID",
+        "role": "UI"
+      },
+      {
+        "speaker": "C",
+        "participant_id": "MTD022ID",
+        "role": "ID"
+      },
+      {
+        "speaker": "D",
+        "participant_id": "MTD024ME",
+        "role": "ME"
+      }
+    ],
+    "observed_dialogue": [
+      {
+        "da_id": "TS3006a.A.dialog-act.vkaraisk.197",
+        "meeting_id": "TS3006a",
+        "text": "I will summarise the things we discussed",
+        "participant": "MTD021PM",
+        "role": "PM"
+      },
+      {
+        "da_id": "TS3006a.A.dialog-act.vkaraisk.198",
+        "meeting_id": "TS3006a",
+        "text": "and put it in the project folder .",
+        "participant": "MTD021PM",
+        "role": "PM"
+      },
+      {
+        "da_id": "TS3006a.A.dialog-act.vkaraisk.199",
+        "meeting_id": "TS3006a",
+        "text": "Uh the use of the Industrial Designer can work on the working design , etcetera etcetera .",
+        "participant": "MTD021PM",
+        "role": "PM"
+      },
+      {
+        "da_id": "TS3006a.A.dialog-act.vkaraisk.196",
+        "participant": "MTD021PM",
+        "role": "PM",
+        "text": "I think we can go ahead with what we have ."
+      },
+      {
+        "da_id": "TS3006a.A.dialog-act.vkaraisk.200",
+        "participant": "MTD021PM",
+        "role": "PM",
+        "text": "And it seems you get more information by email ."
+      }
+    ],
+    "peer_items": [
+      {
+        "item_key": "TS3006a#0",
+        "type": "actions",
+        "text": "Industrial Designer will produce a working design."
+      },
+      {
+        "item_key": "TS3006a#1",
+        "type": "actions",
+        "text": "The User Interface Designer will specify the technical functions."
+      },
+      {
+        "item_key": "TS3006a#2",
+        "type": "actions",
+        "text": "The Marketing Expert will conduct market research and user interviews to determine user requirements."
+      },
+      {
+        "item_key": "TS3006a#3",
+        "type": "actions",
+        "text": "The Marketing Expert will come up with user requirements."
+      },
+      {
+        "item_key": "TS3006a#4",
+        "type": "problems",
+        "text": "Kick-off meeting preparation was insufficient."
+      },
+      {
+        "item_key": "TS3006a#5",
+        "type": "problems",
+        "text": "Time management concerns include unclear time for drawing and fear of taking too long."
+      },
+      {
+        "item_key": "TS3006a#6",
+        "type": "decisions",
+        "text": "Pricing set at 25 Euros."
+      },
+      {
+        "item_key": "TS3006a#7",
+        "type": "decisions",
+        "text": "Sales target: 50 million Euros in total."
+      },
+      {
+        "item_key": "TS3006a#8",
+        "type": "decisions",
+        "text": "Production cost: half of the selling price."
+      },
+      {
+        "item_key": "TS3006a#9",
+        "type": "decisions",
+        "text": "Scope the work to phase one functional design only."
+      },
+      {
+        "item_key": "TS3006a#10",
+        "type": "decisions",
+        "text": "Design should be extendible."
+      },
+      {
+        "item_key": "TS3006a#11",
+        "type": "decisions",
+        "text": "Work in three phases overall."
+      },
+      {
+        "item_key": "TS3006a#12",
+        "type": "decisions",
+        "text": "Design must be user-friendly."
+      }
+    ],
+    "provisional_values": {
+      "owner": [
+        "MTD021PM"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "status": "open",
+      "related_items": []
+    },
+    "candidate_evidence_da_ids": [
+      "TS3006a.A.dialog-act.vkaraisk.197",
+      "TS3006a.A.dialog-act.vkaraisk.198",
+      "TS3006a.A.dialog-act.vkaraisk.199"
+    ]
+  },
+  "observed_documents": [],
+  "document_evidence": [],
+  "relation_evidence": [],
+  "history": [
+    {
+      "item": "TS3006a#13",
+      "step": 1,
+      "flags": [],
+      "action": "assess_item",
+      "outcome": "invalid_action",
+      "error": "Correct these argument fields: status_check/result: 'open' is not one of ['pass', 'fail', 'uncertain'] Tool assess_item accepts root keys: status, related_items, owner, owner_basis, deadline, deadline_basis, statement, owner_check, deadline_check, status_check, conflict_check, relation_check, next_action. Check keys: status_check={result, reason, evidence_da_ids, documents}. Resubmit the complete advertised object. Select only delivered supporting dialogue IDs; if support is unavailable use uncertain with an explanation, never invent an ID or mark pass with no evidence. Documents belong inside the check they inform.",
+      "raw_tool_input": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD021PM"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue supports the exact substantive action: PM stated they will summarize the discussion and file it in the project folder, both parts clearly tied to the action.",
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.197",
+            "TS3006a.A.dialog-act.vkaraisk.198",
+            "TS3006a.A.dialog-act.vkaraisk.199"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "Owner is explicitly stated as MTD021PM in provisional values and the dialogue shows PM initiating the action.",
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.197"
+          ]
+        },
+        "deadline_check": {
+          "result": "pass",
+          "reason": "Deadline is not specified; null is acceptable for non-deadline actions. Basis is missing per rules.",
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.198"
+          ]
+        },
+        "status_check": {
+          "result": "open",
+          "reason": "Action is currently open; no completion or cancellation evidenced in the current dialogue.",
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.197",
+            "TS3006a.A.dialog-act.vkaraisk.198"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No contradictions found within the provided dialogue; fields unaffected.",
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.197",
+            "TS3006a.A.dialog-act.vkaraisk.198"
+          ]
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No prior related items to relate to in this item; none recorded.",
+          "evidence_da_ids": []
+        }
+      }
+    },
+    {
+      "item": "TS3006a#13",
+      "step": 2,
+      "flags": [],
+      "action": "assess_item",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue supports the exact substantive action: PM stated they will summarize the discussion and file it in the project folder, both parts clearly tied to the action.",
+          "quotes": [
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.197",
+              "quote": "I will summarise the things we discussed"
+            },
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.198",
+              "quote": "and put it in the project folder ."
+            },
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.199",
+              "quote": "Uh the use of the Industrial Designer can work on the working design , etcetera etcetera ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Owner is explicitly stated as MTD021PM in provisional values and the dialogue shows PM initiating the action.",
+          "quotes": [
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.197",
+              "quote": "I will summarise the things we discussed"
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "deadline_unresolved",
+          "quotes": [
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.198",
+              "quote": "and put it in the project folder ."
+            }
+          ],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "uncertain",
+          "reason": "Action is currently open; no explicit evidence of completion or formal closure in this meeting.",
+          "quotes": [
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.197",
+              "quote": "I will summarise the things we discussed"
+            },
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.198",
+              "quote": "and put it in the project folder ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions found within the provided dialogue; fields unaffected.",
+          "quotes": [
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.197",
+              "quote": "I will summarise the things we discussed"
+            },
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.198",
+              "quote": "and put it in the project folder ."
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No prior related items to relate to in this item; none recorded.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "decision": "request_clarification",
+      "reason": "supported_statement_with_unresolved_fields",
+      "assessed_text": "Project Manager will summarize the discussion and file it in the project folder.",
+      "requested_action": "accept",
+      "proposed_fields": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD021PM"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "TS3006a.A.dialog-act.vkaraisk.197",
+          "TS3006a.A.dialog-act.vkaraisk.198",
+          "TS3006a.A.dialog-act.vkaraisk.199"
+        ]
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue supports the exact substantive action: PM stated they will summarize the discussion and file it in the project folder, both parts clearly tied to the action.",
+          "quotes": [
+            "TS3006a.A.dialog-act.vkaraisk.197",
+            "TS3006a.A.dialog-act.vkaraisk.198",
+            "TS3006a.A.dialog-act.vkaraisk.199"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Owner is explicitly stated as MTD021PM in provisional values and the dialogue shows PM initiating the action.",
+          "quotes": [
+            "TS3006a.A.dialog-act.vkaraisk.197"
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "pass",
+          "reason": "Deadline is not specified; null is acceptable for non-deadline actions. Basis is missing per rules.",
+          "quotes": [
+            "TS3006a.A.dialog-act.vkaraisk.198"
+          ],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "uncertain",
+          "reason": "Action is currently open; no explicit evidence of completion or formal closure in this meeting.",
+          "quotes": [
+            "TS3006a.A.dialog-act.vkaraisk.197",
+            "TS3006a.A.dialog-act.vkaraisk.198"
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions found within the provided dialogue; fields unaffected.",
+          "quotes": [
+            "TS3006a.A.dialog-act.vkaraisk.197",
+            "TS3006a.A.dialog-act.vkaraisk.198"
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No prior related items to relate to in this item; none recorded.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD021PM"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue supports the exact substantive action: PM stated they will summarize the discussion and file it in the project folder, both parts clearly tied to the action.",
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.197",
+            "TS3006a.A.dialog-act.vkaraisk.198",
+            "TS3006a.A.dialog-act.vkaraisk.199"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "Owner is explicitly stated as MTD021PM in provisional values and the dialogue shows PM initiating the action.",
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.197"
+          ]
+        },
+        "deadline_check": {
+          "result": "pass",
+          "reason": "Deadline is not specified; null is acceptable for non-deadline actions. Basis is missing per rules.",
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.198"
+          ]
+        },
+        "status_check": {
+          "result": "uncertain",
+          "reason": "Action is currently open; no explicit evidence of completion or formal closure in this meeting.",
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.197",
+            "TS3006a.A.dialog-act.vkaraisk.198"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No contradictions found within the provided dialogue; fields unaffected.",
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.197",
+            "TS3006a.A.dialog-act.vkaraisk.198"
+          ],
+          "affected_fields": []
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No prior related items to relate to in this item; none recorded.",
+          "evidence_da_ids": []
+        },
+        "next_action": "accept"
+      },
+      "evidence_bindings": {
+        "statement": [
+          "TS3006a.A.dialog-act.vkaraisk.197",
+          "TS3006a.A.dialog-act.vkaraisk.198",
+          "TS3006a.A.dialog-act.vkaraisk.199"
+        ],
+        "owner": [
+          "TS3006a.A.dialog-act.vkaraisk.197"
+        ],
+        "deadline": [
+          "TS3006a.A.dialog-act.vkaraisk.198"
+        ],
+        "status": [
+          "TS3006a.A.dialog-act.vkaraisk.197",
+          "TS3006a.A.dialog-act.vkaraisk.198"
+        ],
+        "conflict": [
+          "TS3006a.A.dialog-act.vkaraisk.197",
+          "TS3006a.A.dialog-act.vkaraisk.198"
+        ]
+      },
+      "raw_tool_input": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD021PM"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue supports the exact substantive action: PM stated they will summarize the discussion and file it in the project folder, both parts clearly tied to the action.",
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.197",
+            "TS3006a.A.dialog-act.vkaraisk.198",
+            "TS3006a.A.dialog-act.vkaraisk.199"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "Owner is explicitly stated as MTD021PM in provisional values and the dialogue shows PM initiating the action.",
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.197"
+          ]
+        },
+        "deadline_check": {
+          "result": "pass",
+          "reason": "Deadline is not specified; null is acceptable for non-deadline actions. Basis is missing per rules.",
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.198"
+          ]
+        },
+        "status_check": {
+          "result": "uncertain",
+          "reason": "Action is currently open; no explicit evidence of completion or formal closure in this meeting.",
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.197",
+            "TS3006a.A.dialog-act.vkaraisk.198"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No contradictions found within the provided dialogue; fields unaffected.",
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.197",
+            "TS3006a.A.dialog-act.vkaraisk.198"
+          ]
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No prior related items to relate to in this item; none recorded.",
+          "evidence_da_ids": []
+        },
+        "next_action": "accept"
+      },
+      "protocol_normalizations": [
+        "empty_affected_fields_for_no_conflict"
+      ],
+      "unresolved_before": [
+        "deadline",
+        "owner",
+        "statement",
+        "status"
+      ],
+      "unresolved_after": [
+        "deadline",
+        "status"
+      ],
+      "semantic_stalls": 0,
+      "validation_codes": {
+        "deadline": [
+          "deadline_unresolved"
+        ]
+      }
+    },
+    {
+      "item": "TS3006a#13",
+      "step": 2,
+      "flags": [],
+      "action": "stop",
+      "outcome": "pending",
+      "termination_reason": "supported_statement_with_unresolved_fields",
+      "unresolved_fields": [
+        "deadline",
+        "status"
+      ]
+    }
+  ],
+  "lookups": 0,
+  "termination_reason": "supported_statement_with_unresolved_fields",
+  "clarifications": [
+    {
+      "request_id": "cbb434215ff644d6",
+      "item_key": "TS3006a#13",
+      "record_id": null,
+      "field": "deadline",
+      "question": "What is the agreed deadline, in its original wording?",
+      "item_text": "Project Manager will summarize the discussion and file it in the project folder.",
+      "reason": "deadline_unresolved",
+      "evidence_da_ids": [
+        "TS3006a.A.dialog-act.vkaraisk.198"
+      ],
+      "available_evidence_da_ids": [
+        "TS3006a.A.dialog-act.vkaraisk.197",
+        "TS3006a.A.dialog-act.vkaraisk.198",
+        "TS3006a.A.dialog-act.vkaraisk.199",
+        "TS3006a.A.dialog-act.vkaraisk.196",
+        "TS3006a.A.dialog-act.vkaraisk.200"
+      ],
+      "status": "open",
+      "termination_reason": "supported_statement_with_unresolved_fields"
+    },
+    {
+      "request_id": "3848ae51d7e1e8d1",
+      "item_key": "TS3006a#13",
+      "record_id": null,
+      "field": "status",
+      "question": "What is this item's status at the end of the current meeting?",
+      "item_text": "Project Manager will summarize the discussion and file it in the project folder.",
+      "reason": "Action is currently open; no explicit evidence of completion or formal closure in this meeting.",
+      "evidence_da_ids": [
+        "TS3006a.A.dialog-act.vkaraisk.197",
+        "TS3006a.A.dialog-act.vkaraisk.198"
+      ],
+      "available_evidence_da_ids": [
+        "TS3006a.A.dialog-act.vkaraisk.197",
+        "TS3006a.A.dialog-act.vkaraisk.198",
+        "TS3006a.A.dialog-act.vkaraisk.199",
+        "TS3006a.A.dialog-act.vkaraisk.196",
+        "TS3006a.A.dialog-act.vkaraisk.200"
+      ],
+      "status": "open",
+      "termination_reason": "supported_statement_with_unresolved_fields"
+    }
+  ]
+}

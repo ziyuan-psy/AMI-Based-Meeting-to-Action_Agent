@@ -92,7 +92,34 @@ def procedure_only(text):
             not re.search(r'\b(product|launch|client|customer|design|scope|requirements?|budget|price|cost|prototype)\b',text,re.I))
 
 
+REVIEW_METADATA_VERSION = 1
+
+
+def duplicate_metadata(raw, pool, normalizations=None):
+    """Describe an explicit duplicate pointer; never choose a disposition or validate its meaning."""
+    raw=copy.deepcopy(raw)
+    if not isinstance(raw,dict):return raw
+    keys=[f'C{i}' for i in range(len(pool))]
+    for key in keys:
+        row=raw.get(key)
+        if not isinstance(row,dict) or 'reason' in row or row.get('keep') is not False:
+            continue
+        target=row.get('duplicate_of')
+        if not isinstance(target,str) or target not in keys or target==key or row.get('claims',[])!=[]:
+            continue
+        retained=raw.get(target)
+        if (not isinstance(retained,dict) or retained.get('keep') is not True
+                or not isinstance(retained.get('claims'),list) or not retained['claims']):
+            continue
+        row['reason']=f'Model marked duplicate_of {target}; compatibility checks still apply.'
+        if normalizations is not None:
+            normalizations.append({'source':key,'duplicate_of':target,
+                'action':'duplicate_reason_from_explicit_target','reason_origin':'code_metadata'})
+    return raw
+
+
 def canonical_reviews(raw, pool, normalizations=None):
+    raw=duplicate_metadata(raw,pool,normalizations)
     errors=list(Draft202012Validator(review_schema(pool)).iter_errors(raw))
     if errors:raise ValueError(('/'.join(map(str,errors[0].absolute_path)) or 'reviews')+': '+errors[0].message)
     result={"items":[],"excluded":[]}
@@ -215,7 +242,7 @@ def select_items(llm, pool, acts, cache=None, trace=None, defer_action_limit=Fal
         for i, item in enumerate(pool)}
     user = {"candidates": candidates, "observed_dialogue": dialogue,
             "output_format":"ONE review under EACH C-key: {keep:true|false, claims:[{text,priority}], reason, optional duplicate_of}. No output item IDs, owner or evidence fields."}
-    key = hashlib.sha256(json.dumps([SYSTEM, config.ITEM_POLICY_VERSION, llm.model, user], sort_keys=True).encode()).hexdigest()
+    key = hashlib.sha256(json.dumps([SYSTEM, config.ITEM_POLICY_VERSION, REVIEW_METADATA_VERSION, llm.model, user], sort_keys=True).encode()).hexdigest()
     saved = json.loads(cache.read_text(encoding="utf-8")) if cache and cache.exists() else {}
     raw = saved.get("response") if saved.get("key") == key else None
     source = "cache" if raw is not None else "model"

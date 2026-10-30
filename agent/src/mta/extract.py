@@ -285,14 +285,31 @@ def _strip_indexes(text: str) -> str:
 
 def _merge_groups(groups: list[dict], cands: list[dict], trace=None, apply_cap=True) -> list[dict]:
     out, lineage, rejected = [], [], []
+    if not isinstance(groups, list):
+        _audit(trace, "consolidate", "merged", groups=groups, items=[], lineage=[],
+               rejected=[{"group_index": None, "reason": "groups_must_be_array"}])
+        return []
     for group_index, g in enumerate(groups):
-        member_indexes = [i for i in dict.fromkeys(g.get("members", [])) if isinstance(i, int) and 0 <= i < len(cands)]
+        if not isinstance(g, dict):
+            rejected.append({"group_index": group_index, "reason": "group_must_be_object"})
+            continue
+        indexes = g.get("members")
+        if not isinstance(indexes, list):
+            rejected.append({"group_index": group_index, "reason": "members_must_be_array"})
+            continue
+        invalid = [i for i, value in enumerate(indexes) if type(value) is not int]
+        if invalid:
+            # Do not hash objects, coerce participant IDs, or keep only part of an ambiguous group.
+            rejected.append({"group_index": group_index, "reason": "members_must_be_candidate_indexes",
+                             "invalid_positions": invalid})
+            continue
+        member_indexes = list(dict.fromkeys(i for i in indexes if 0 <= i < len(cands)))
         members = [cands[i] for i in member_indexes]
-        text = _strip_indexes(str(g.get("text", "")))
-        if g.get("type") not in VALID_STATUS or not members or not text:
+        typ = g.get("type")
+        text = _strip_indexes(g["text"]) if isinstance(g.get("text"), str) else ""
+        if not isinstance(typ, str) or typ not in VALID_STATUS or not members or not text:
             rejected.append({"group_index": group_index, "reason": "invalid_type_members_or_text"})
             continue
-        typ = g["type"]
         member_types = Counter(m["type"] for m in members)
         if typ == "actions" and "actions" not in member_types:
             # Actions only come from the action pass. A group without any action candidate was relabelled by the
@@ -383,11 +400,18 @@ def consolidate(llm: LLM, cands: list[dict], cache: Path | None = None, trace=No
     # Raw groups are authoritative. Old cache entries already had sample caps applied;
     # rebuild from the captured group response when available before final selection.
     if config.ITEM_SELECTION_ENABLED:
+        usable_runs, usable_traces = [], []
         for index, details in enumerate(run_traces[:len(runs)]):
             groups = [e["groups"] for attempt in (details or []) for e in attempt.get("events", [])
                       if e.get("event") == "raw_groups"]
             if groups:
-                runs[index] = _merge_groups(groups[-1], cands, apply_cap=False)
+                runs[index] = _merge_groups(groups[-1], cands, trace, apply_cap=False)
+            if runs[index]:
+                usable_runs.append(runs[index]); usable_traces.append(details)
+            else:
+                _audit(trace, "consolidate", "sample_rejected", sample=index, source="cache",
+                       reason="no_usable_cached_groups", recorded_attempts=details)
+        runs, run_traces = usable_runs, usable_traces
     for index, items in enumerate(runs[:config.CONSOLIDATE_SAMPLES]):
         _audit(trace, "consolidate", "sample", sample=index, source="cache", cache_key=key, items=items,
                recorded_attempts=run_traces[index],
@@ -398,18 +422,25 @@ def consolidate(llm: LLM, cands: list[dict], cache: Path | None = None, trace=No
 
         def one_run(index):
             attempts = []
+            user = "Candidates:" + chr(10) + listing
             for _attempt in range(3):  # the model sometimes returns an empty or unusable list
-                res = llm.forced_tool(prompt, "Candidates:" + chr(10) + listing, "submit_final_items",
+                res = llm.forced_tool(prompt, user, "submit_final_items",
                                       CONSOLIDATE_SCHEMA, effort=config.EFFORT_CONSOLIDATE, stage="decision_consolidate" if decision_pass else "consolidate")
                 detail = StageTrace()
-                detail.log(stage="consolidate", event="raw_groups", groups=res.get("items", []))
-                out = _merge_groups([g for g in res.get("items", []) if g.get("type") in VALID_STATUS], cands, detail,
+                groups = res.get("items") if isinstance(res, dict) else None
+                detail.log(stage="consolidate", event="raw_groups", groups=groups, raw_response=res)
+                out = _merge_groups(groups, cands, detail,
                                     apply_cap=not config.ITEM_SELECTION_ENABLED)
                 attempts.append({"attempt": _attempt, "events": detail.events})
                 _audit(trace, "consolidate", "attempt", sample=index, attempt=_attempt, cache_key=key,
                        source="model", events=detail.events, items=out)
                 if out:
                     return out, attempts
+                reasons = sorted({r["reason"] for r in detail.events[-1].get("rejected", [])}) or ["no_usable_groups"]
+                user = ("Candidates:" + chr(10) + listing + "\nCorrection: previous response had no usable groups ("
+                        + ", ".join(reasons) + "). Return the advertised items array. Each group needs a valid type, "
+                        "supported text, and members as candidate integer indexes from 0 to " + str(len(cands)-1)
+                        + ". Do not use participant IDs, objects, strings or booleans as members. Do not guess an index.")
             return None, attempts
         with stage_pool(max(1, min(missing, config.WORKERS)), getattr(llm, "control", None)) as pool:
             for items, details in pool.map(one_run, range(first_sample, first_sample + missing)):

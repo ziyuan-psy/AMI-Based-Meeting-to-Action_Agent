@@ -1,0 +1,2692 @@
+{
+  "gold_used": false,
+  "human_signoff": false,
+  "cases": [
+    {
+      "meeting_id": "ES2011d",
+      "item_key": "ES2011d#5",
+      "new_record": {
+        "id": "ES2011d.sys.s.5",
+        "text": "We will develop a variety of trendy fruit designs for the remote control.",
+        "type": "decisions",
+        "reference": [
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/ES2011d.json",
+            "locator": "ES2011d.B.dialog-act.dharshi.21"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/ES2011d.json",
+            "locator": "ES2011d.A.dialog-act.dharshi.20"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/ES2011d.json",
+            "locator": "ES2011d.C.dialog-act.dharshi.1"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/ES2011a.json",
+            "locator": "ES2011a.C.dialog-act.dharshi.66"
+          }
+        ],
+        "status": "adopted",
+        "prior_context_needed": true,
+        "related_items": [
+          {
+            "id": "ES2011a.sys.s.7",
+            "relation": "updates"
+          }
+        ]
+      },
+      "old_record": {
+        "id": "ES2011a.sys.s.7",
+        "text": "Adopted project scope: couches and remote controls.",
+        "type": "decisions",
+        "reference": [
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/ES2011a.json",
+            "locator": "ES2011a.C.dialog-act.dharshi.66"
+          }
+        ],
+        "status": "adopted",
+        "prior_context_needed": false,
+        "related_items": []
+      },
+      "witness": {
+        "prior_item_id": "ES2011a.sys.s.7",
+        "relation": "updates",
+        "state": "supported",
+        "changed_fields": [
+          "scope"
+        ],
+        "reason": "Current item broadens the project scope to include fruit-design variants for remote controls, thus updating prior scope.",
+        "before": {
+          "kind": "prior_item",
+          "id": "ES2011a.sys.s.7",
+          "meeting_id": "ES2011a",
+          "type": "decisions",
+          "text": "Adopted project scope: couches and remote controls.",
+          "owner": null,
+          "owner_basis": null,
+          "deadline": null,
+          "deadline_basis": null,
+          "status": "adopted",
+          "evidence": [
+            "ES2011a.C.dialog-act.dharshi.66"
+          ],
+          "source_file": "ES2011a.json",
+          "source_sha256": "a22f2d18a7c00aabf21a74ce9bb0469c7299ba5b6b11f2623cee4fcaaf8243ff",
+          "review_state": "pending",
+          "unresolved_fields": [
+            "related_items"
+          ],
+          "unreadable_reference_ids": [],
+          "selected_reference_ids": [
+            "ES2011a.C.dialog-act.dharshi.66"
+          ],
+          "next_offset": null
+        },
+        "after": {
+          "item_key": "ES2011d#5",
+          "text": "We will develop a variety of trendy fruit designs for the remote control.",
+          "type": "decisions",
+          "status": "adopted",
+          "owner": null,
+          "deadline": null
+        },
+        "prior_quotes": [
+          {
+            "da_id": "ES2011a.C.dialog-act.dharshi.66",
+            "quote": "Yeah so we <disfmarker> <vocalsound> the project is now couches and remote controls ."
+          }
+        ],
+        "current_quotes": [
+          {
+            "da_id": "ES2011d.B.dialog-act.dharshi.21",
+            "quote": "So we'll come up with a variety of trendy and exciting fruit designs for the remote control ."
+          },
+          {
+            "da_id": "ES2011d.A.dialog-act.dharshi.20",
+            "quote": "'S a very bright strawberry . <vocalsound>"
+          },
+          {
+            "da_id": "ES2011d.C.dialog-act.dharshi.1",
+            "quote": "It's been a l"
+          }
+        ]
+      },
+      "relation_check": {
+        "result": "pass",
+        "reason": "Current item expands project scope to include fruit-design variants for the remote control, updating the prior scope which mentioned couches and remotes.",
+        "quotes": [
+          {
+            "da_id": "ES2011d.B.dialog-act.dharshi.21",
+            "quote": "So we'll come up with a variety of trendy and exciting fruit designs for the remote control ."
+          },
+          {
+            "da_id": "ES2011d.A.dialog-act.dharshi.20",
+            "quote": "'S a very bright strawberry . <vocalsound>"
+          },
+          {
+            "da_id": "ES2011d.C.dialog-act.dharshi.1",
+            "quote": "It's been a l"
+          },
+          {
+            "da_id": "ES2011a.C.dialog-act.dharshi.66",
+            "quote": "Yeah so we <disfmarker> <vocalsound> the project is now couches and remote controls ."
+          }
+        ],
+        "links": [
+          {
+            "id": "ES2011a.sys.s.7",
+            "relation": "updates",
+            "changed_fields": [
+              "scope"
+            ],
+            "reason": "Current item broadens the project scope to include fruit-design variants for remote controls, thus updating prior scope.",
+            "prior_evidence_da_ids": [
+              "ES2011a.C.dialog-act.dharshi.66"
+            ],
+            "current_evidence_da_ids": [
+              "ES2011d.B.dialog-act.dharshi.21",
+              "ES2011d.A.dialog-act.dharshi.20",
+              "ES2011d.C.dialog-act.dharshi.1"
+            ]
+          }
+        ],
+        "documents": [],
+        "fields": [
+          "related_items"
+        ]
+      },
+      "actual_lookup_history": [
+        {
+          "item": "ES2011d#5",
+          "step": 3,
+          "flags": [
+            "POSSIBLE_PRIOR"
+          ],
+          "action": "get_prior_items",
+          "outcome": "lookup",
+          "decision": "retrieve",
+          "args": {
+            "query": "fruit designs remote control",
+            "item_type": "decisions"
+          },
+          "tool_result": {
+            "results": [
+              {
+                "id": "ES2011a.sys.s.6",
+                "meeting_id": "ES2011a",
+                "type": "decisions",
+                "text": "Design remote control to be water resistant.",
+                "owner": null,
+                "owner_basis": null,
+                "deadline": null,
+                "deadline_basis": null,
+                "status": "adopted",
+                "evidence": [
+                  "ES2011a.A.dialog-act.dharshi.60",
+                  "ES2011a.A.dialog-act.dharshi.61",
+                  "ES2011a.A.dialog-act.dharshi.62",
+                  "ES2011a.C.dialog-act.dharshi.39"
+                ],
+                "source_file": "ES2011a.json",
+                "source_sha256": "a22f2d18a7c00aabf21a74ce9bb0469c7299ba5b6b11f2623cee4fcaaf8243ff",
+                "review_state": "accepted",
+                "unresolved_fields": [],
+                "unreadable_reference_ids": [],
+                "score": 4.36
+              },
+              {
+                "id": "ES2011a.sys.s.7",
+                "meeting_id": "ES2011a",
+                "type": "decisions",
+                "text": "Adopted project scope: couches and remote controls.",
+                "owner": null,
+                "owner_basis": null,
+                "deadline": null,
+                "deadline_basis": null,
+                "status": "adopted",
+                "evidence": [
+                  "ES2011a.C.dialog-act.dharshi.66"
+                ],
+                "source_file": "ES2011a.json",
+                "source_sha256": "a22f2d18a7c00aabf21a74ce9bb0469c7299ba5b6b11f2623cee4fcaaf8243ff",
+                "review_state": "pending",
+                "unresolved_fields": [
+                  "related_items"
+                ],
+                "unreadable_reference_ids": [],
+                "score": 1.08
+              },
+              {
+                "id": "ES2011c.sys.s.3",
+                "meeting_id": "ES2011c",
+                "type": "decisions",
+                "text": "Decision: Adopt a minimal wheel-based remote with limited buttons.",
+                "owner": null,
+                "owner_basis": null,
+                "deadline": null,
+                "deadline_basis": null,
+                "status": "adopted",
+                "evidence": [
+                  "ES2011c.C.dialog-act.dharshi.110",
+                  "ES2011c.B.dialog-act.dharshi.56",
+                  "ES2011c.C.dialog-act.dharshi.111",
+                  "ES2011c.A.dialog-act.dharshi.65",
+                  "ES2011c.A.dialog-act.dharshi.66",
+                  "ES2011c.A.dialog-act.dharshi.67",
+                  "ES2011c.C.dialog-act.dharshi.112",
+                  "ES2011c.B.dialog-act.dharshi.58",
+                  "ES2011c.A.dialog-act.dharshi.68",
+                  "ES2011c.A.dialog-act.dharshi.69",
+                  "ES2011c.A.dialog-act.dharshi.70",
+                  "ES2011c.A.dialog-act.dharshi.71",
+                  "ES2011c.C.dialog-act.dharshi.113"
+                ],
+                "source_file": "ES2011c.json",
+                "source_sha256": "385e3fe0e60f7d721aa49ac4b87c645d892f4f1c8123e245a06101146da79822",
+                "review_state": "accepted",
+                "unresolved_fields": [],
+                "unreadable_reference_ids": [],
+                "score": 0.96
+              }
+            ]
+          },
+          "new_info": true
+        },
+        {
+          "item": "ES2011d#5",
+          "step": 4,
+          "flags": [
+            "POSSIBLE_PRIOR"
+          ],
+          "action": "read_prior_item",
+          "outcome": "lookup",
+          "decision": "retrieve",
+          "args": {
+            "item_id": "ES2011a.sys.s.7",
+            "offset": 0,
+            "limit": 5,
+            "window": 0
+          },
+          "tool_result": {
+            "results": [
+              {
+                "kind": "prior_item",
+                "id": "ES2011a.sys.s.7",
+                "meeting_id": "ES2011a",
+                "type": "decisions",
+                "text": "Adopted project scope: couches and remote controls.",
+                "owner": null,
+                "owner_basis": null,
+                "deadline": null,
+                "deadline_basis": null,
+                "status": "adopted",
+                "evidence": [
+                  "ES2011a.C.dialog-act.dharshi.66"
+                ],
+                "source_file": "ES2011a.json",
+                "source_sha256": "a22f2d18a7c00aabf21a74ce9bb0469c7299ba5b6b11f2623cee4fcaaf8243ff",
+                "review_state": "pending",
+                "unresolved_fields": [
+                  "related_items"
+                ],
+                "unreadable_reference_ids": [],
+                "selected_reference_ids": [
+                  "ES2011a.C.dialog-act.dharshi.66"
+                ],
+                "next_offset": null
+              },
+              {
+                "kind": "dialogue",
+                "da_id": "ES2011a.C.dialog-act.dharshi.66",
+                "meeting_id": "ES2011a",
+                "text": "Yeah so we <disfmarker> <vocalsound> the project is now couches and remote controls .",
+                "participant": "FEE043",
+                "role": "UI",
+                "supports_item_id": "ES2011a.sys.s.7",
+                "is_reference": true
+              }
+            ]
+          },
+          "new_info": true
+        }
+      ],
+      "semantic_review": "Not independently human-confirmed; source checks passed, relation label is model judgment."
+    },
+    {
+      "meeting_id": "IS1008c",
+      "item_key": "IS1008c#8",
+      "new_record": {
+        "id": "IS1008c.sys.s.6",
+        "text": "Decide on the functional design.",
+        "type": "decisions",
+        "reference": [
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/IS1008c.json",
+            "locator": "IS1008c.A.dialog-act.s9553330.10"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/IS1008c.json",
+            "locator": "IS1008c.A.dialog-act.s9553330.11"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/IS1008c.json",
+            "locator": "IS1008c.A.dialog-act.s9553330.7"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/IS1008c.json",
+            "locator": "IS1008c.D.dialog-act.s9553330.1"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/IS1008c.json",
+            "locator": "IS1008c.A.dialog-act.s9553330.13"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/IS1008a.json",
+            "locator": "IS1008a.B.dialog-act.s9553330.25"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/IS1008a.json",
+            "locator": "IS1008a.A.dialog-act.s9553330.122"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/IS1008a.json",
+            "locator": "IS1008a.A.dialog-act.s9553330.124"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/IS1008a.json",
+            "locator": "IS1008a.A.dialog-act.s9553330.125"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/IS1008a.json",
+            "locator": "IS1008a.B.dialog-act.s9553330.27"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/IS1008a.json",
+            "locator": "IS1008a.A.dialog-act.s9553330.126"
+          }
+        ],
+        "status": "adopted",
+        "prior_context_needed": true,
+        "related_items": [
+          {
+            "id": "IS1008a.sys.s.6",
+            "relation": "continues"
+          }
+        ]
+      },
+      "old_record": {
+        "id": "IS1008a.sys.s.6",
+        "text": "The functional design work is assigned to FIE038 and MIE085.",
+        "type": "decisions",
+        "reference": [
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/IS1008a.json",
+            "locator": "IS1008a.B.dialog-act.s9553330.25"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/IS1008a.json",
+            "locator": "IS1008a.A.dialog-act.s9553330.122"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/IS1008a.json",
+            "locator": "IS1008a.A.dialog-act.s9553330.124"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/IS1008a.json",
+            "locator": "IS1008a.A.dialog-act.s9553330.125"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/IS1008a.json",
+            "locator": "IS1008a.B.dialog-act.s9553330.27"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/IS1008a.json",
+            "locator": "IS1008a.A.dialog-act.s9553330.126"
+          }
+        ],
+        "status": "adopted",
+        "prior_context_needed": false,
+        "related_items": []
+      },
+      "witness": {
+        "prior_item_id": "IS1008a.sys.s.6",
+        "relation": "continues",
+        "state": "supported",
+        "changed_fields": [],
+        "reason": "Current item action extends the prior decision that functional design work is assigned to FIE038 and MIE085, and that the next step is to determine the functional design.",
+        "before": {
+          "kind": "prior_item",
+          "id": "IS1008a.sys.s.6",
+          "meeting_id": "IS1008a",
+          "type": "decisions",
+          "text": "The functional design work is assigned to FIE038 and MIE085.",
+          "owner": null,
+          "owner_basis": null,
+          "deadline": null,
+          "deadline_basis": null,
+          "status": "adopted",
+          "evidence": [
+            "IS1008a.B.dialog-act.s9553330.25",
+            "IS1008a.A.dialog-act.s9553330.122",
+            "IS1008a.A.dialog-act.s9553330.124",
+            "IS1008a.A.dialog-act.s9553330.125",
+            "IS1008a.B.dialog-act.s9553330.27",
+            "IS1008a.A.dialog-act.s9553330.126"
+          ],
+          "source_file": "IS1008a.json",
+          "source_sha256": "1932f034085616b38adf859662727ae5f2d33b6fbe9ef0f56406fd12d39c1ab3",
+          "review_state": "accepted",
+          "unresolved_fields": [],
+          "unreadable_reference_ids": [],
+          "selected_reference_ids": [
+            "IS1008a.B.dialog-act.s9553330.25",
+            "IS1008a.A.dialog-act.s9553330.122",
+            "IS1008a.A.dialog-act.s9553330.124",
+            "IS1008a.A.dialog-act.s9553330.125",
+            "IS1008a.B.dialog-act.s9553330.27",
+            "IS1008a.A.dialog-act.s9553330.126"
+          ],
+          "next_offset": null
+        },
+        "after": {
+          "item_key": "IS1008c#8",
+          "text": "Decide on the functional design.",
+          "type": "decisions",
+          "status": "adopted",
+          "owner": null,
+          "deadline": null
+        },
+        "prior_quotes": [
+          {
+            "da_id": "IS1008a.B.dialog-act.s9553330.25",
+            "quote": "So , the immediate next step is to start determining the functional design , or"
+          },
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.122",
+            "quote": "Yes ."
+          },
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.124",
+            "quote": "To come up with the functional design and uh to discuss with Ed , okay , and how it's going to be work ,"
+          },
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.125",
+            "quote": "and uh first of all with your user acceptance , okay , how it looks like and how it's going to be work in the market , okay ,"
+          },
+          {
+            "da_id": "IS1008a.B.dialog-act.s9553330.27",
+            "quote": "Mm-hmm ."
+          },
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.126",
+            "quote": "so then we can discuss about uh further things ."
+          }
+        ],
+        "current_quotes": [
+          {
+            "da_id": "IS1008c.A.dialog-act.s9553330.10",
+            "quote": "And finally in this meeting we have to decide"
+          },
+          {
+            "da_id": "IS1008c.A.dialog-act.s9553330.11",
+            "quote": "and we are to take a decision on the remote control concept and uh the functional design"
+          },
+          {
+            "da_id": "IS1008c.A.dialog-act.s9553330.7",
+            "quote": "and uh the presentations from the Christine and uh Agnes and from Mister Ed ."
+          },
+          {
+            "da_id": "IS1008c.D.dialog-act.s9553330.1",
+            "quote": "<vocalsound>"
+          },
+          {
+            "da_id": "IS1008c.A.dialog-act.s9553330.13",
+            "quote": "So we have forty minutes ,"
+          }
+        ]
+      },
+      "relation_check": {
+        "result": "pass",
+        "reason": "The current decision to 'Decide on the functional design' continues the earlier adoption that 'The functional design work is assigned to FIE038 and MIE085' and 'the immediate next step is to start determining the functional design', indicating continuity of the same task across IS1008a to IS1008c.",
+        "quotes": [
+          {
+            "da_id": "IS1008c.A.dialog-act.s9553330.10",
+            "quote": "And finally in this meeting we have to decide"
+          },
+          {
+            "da_id": "IS1008c.A.dialog-act.s9553330.11",
+            "quote": "and we are to take a decision on the remote control concept and uh the functional design"
+          },
+          {
+            "da_id": "IS1008c.A.dialog-act.s9553330.7",
+            "quote": "and uh the presentations from the Christine and uh Agnes and from Mister Ed ."
+          },
+          {
+            "da_id": "IS1008c.D.dialog-act.s9553330.1",
+            "quote": "<vocalsound>"
+          },
+          {
+            "da_id": "IS1008c.A.dialog-act.s9553330.13",
+            "quote": "So we have forty minutes ,"
+          },
+          {
+            "da_id": "IS1008a.B.dialog-act.s9553330.25",
+            "quote": "So , the immediate next step is to start determining the functional design , or"
+          },
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.122",
+            "quote": "Yes ."
+          },
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.124",
+            "quote": "To come up with the functional design and uh to discuss with Ed , okay , and how it's going to be work ,"
+          },
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.125",
+            "quote": "and uh first of all with your user acceptance , okay , how it looks like and how it's going to be work in the market , okay ,"
+          },
+          {
+            "da_id": "IS1008a.B.dialog-act.s9553330.27",
+            "quote": "Mm-hmm ."
+          },
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.126",
+            "quote": "so then we can discuss about uh further things ."
+          }
+        ],
+        "links": [
+          {
+            "id": "IS1008a.sys.s.6",
+            "relation": "continues",
+            "changed_fields": [],
+            "reason": "Current item action extends the prior decision that functional design work is assigned to FIE038 and MIE085, and that the next step is to determine the functional design.",
+            "prior_evidence_da_ids": [
+              "IS1008a.B.dialog-act.s9553330.25",
+              "IS1008a.A.dialog-act.s9553330.122",
+              "IS1008a.A.dialog-act.s9553330.124",
+              "IS1008a.A.dialog-act.s9553330.125",
+              "IS1008a.B.dialog-act.s9553330.27",
+              "IS1008a.A.dialog-act.s9553330.126"
+            ],
+            "current_evidence_da_ids": [
+              "IS1008c.A.dialog-act.s9553330.10",
+              "IS1008c.A.dialog-act.s9553330.11",
+              "IS1008c.A.dialog-act.s9553330.7",
+              "IS1008c.D.dialog-act.s9553330.1",
+              "IS1008c.A.dialog-act.s9553330.13"
+            ]
+          }
+        ],
+        "documents": [],
+        "fields": [
+          "related_items"
+        ]
+      },
+      "actual_lookup_history": [
+        {
+          "item": "IS1008c#8",
+          "step": 3,
+          "flags": [
+            "POSSIBLE_PRIOR"
+          ],
+          "action": "get_prior_items",
+          "outcome": "lookup",
+          "decision": "retrieve",
+          "args": {
+            "query": "functional design",
+            "item_type": "decisions"
+          },
+          "tool_result": {
+            "results": [
+              {
+                "id": "IS1008a.sys.s.6",
+                "meeting_id": "IS1008a",
+                "type": "decisions",
+                "text": "The functional design work is assigned to FIE038 and MIE085.",
+                "owner": null,
+                "owner_basis": null,
+                "deadline": null,
+                "deadline_basis": null,
+                "status": "adopted",
+                "evidence": [
+                  "IS1008a.B.dialog-act.s9553330.25",
+                  "IS1008a.A.dialog-act.s9553330.122",
+                  "IS1008a.A.dialog-act.s9553330.124",
+                  "IS1008a.A.dialog-act.s9553330.125",
+                  "IS1008a.B.dialog-act.s9553330.27",
+                  "IS1008a.A.dialog-act.s9553330.126"
+                ],
+                "source_file": "IS1008a.json",
+                "source_sha256": "1932f034085616b38adf859662727ae5f2d33b6fbe9ef0f56406fd12d39c1ab3",
+                "review_state": "accepted",
+                "unresolved_fields": [],
+                "unreadable_reference_ids": [],
+                "score": 0.97
+              },
+              {
+                "id": "IS1008a.sys.s.5",
+                "meeting_id": "IS1008a",
+                "type": "decisions",
+                "text": "The immediate next step is to start determining the functional design.",
+                "owner": null,
+                "owner_basis": null,
+                "deadline": null,
+                "deadline_basis": null,
+                "status": "adopted",
+                "evidence": [
+                  "IS1008a.B.dialog-act.s9553330.25",
+                  "IS1008a.A.dialog-act.s9553330.122",
+                  "IS1008a.A.dialog-act.s9553330.124",
+                  "IS1008a.A.dialog-act.s9553330.125",
+                  "IS1008a.B.dialog-act.s9553330.27",
+                  "IS1008a.A.dialog-act.s9553330.126"
+                ],
+                "source_file": "IS1008a.json",
+                "source_sha256": "1932f034085616b38adf859662727ae5f2d33b6fbe9ef0f56406fd12d39c1ab3",
+                "review_state": "accepted",
+                "unresolved_fields": [],
+                "unreadable_reference_ids": [],
+                "score": 0.93
+              }
+            ]
+          },
+          "new_info": true
+        },
+        {
+          "item": "IS1008c#8",
+          "step": 4,
+          "flags": [
+            "POSSIBLE_PRIOR"
+          ],
+          "action": "read_prior_item",
+          "outcome": "lookup",
+          "decision": "retrieve",
+          "args": {
+            "item_id": "IS1008a.sys.s.6"
+          },
+          "tool_result": {
+            "results": [
+              {
+                "kind": "prior_item",
+                "id": "IS1008a.sys.s.6",
+                "meeting_id": "IS1008a",
+                "type": "decisions",
+                "text": "The functional design work is assigned to FIE038 and MIE085.",
+                "owner": null,
+                "owner_basis": null,
+                "deadline": null,
+                "deadline_basis": null,
+                "status": "adopted",
+                "evidence": [
+                  "IS1008a.B.dialog-act.s9553330.25",
+                  "IS1008a.A.dialog-act.s9553330.122",
+                  "IS1008a.A.dialog-act.s9553330.124",
+                  "IS1008a.A.dialog-act.s9553330.125",
+                  "IS1008a.B.dialog-act.s9553330.27",
+                  "IS1008a.A.dialog-act.s9553330.126"
+                ],
+                "source_file": "IS1008a.json",
+                "source_sha256": "1932f034085616b38adf859662727ae5f2d33b6fbe9ef0f56406fd12d39c1ab3",
+                "review_state": "accepted",
+                "unresolved_fields": [],
+                "unreadable_reference_ids": [],
+                "selected_reference_ids": [
+                  "IS1008a.B.dialog-act.s9553330.25",
+                  "IS1008a.A.dialog-act.s9553330.122",
+                  "IS1008a.A.dialog-act.s9553330.124",
+                  "IS1008a.A.dialog-act.s9553330.125",
+                  "IS1008a.B.dialog-act.s9553330.27",
+                  "IS1008a.A.dialog-act.s9553330.126"
+                ],
+                "next_offset": null
+              },
+              {
+                "kind": "dialogue",
+                "da_id": "IS1008a.D.dialog-act.s9553330.51",
+                "meeting_id": "IS1008a",
+                "text": "No .",
+                "participant": "MIE085",
+                "role": "ME",
+                "supports_item_id": "IS1008a.sys.s.6",
+                "is_reference": false
+              },
+              {
+                "kind": "dialogue",
+                "da_id": "IS1008a.B.dialog-act.s9553330.25",
+                "meeting_id": "IS1008a",
+                "text": "So , the immediate next step is to start determining the functional design , or",
+                "participant": "FIE038",
+                "role": "UI",
+                "supports_item_id": "IS1008a.sys.s.6",
+                "is_reference": true
+              },
+              {
+                "kind": "dialogue",
+                "da_id": "IS1008a.A.dialog-act.s9553330.122",
+                "meeting_id": "IS1008a",
+                "text": "Yes .",
+                "participant": "MIO086",
+                "role": "PM",
+                "supports_item_id": "IS1008a.sys.s.6",
+                "is_reference": true
+              },
+              {
+                "kind": "dialogue",
+                "da_id": "IS1008a.B.dialog-act.s9553330.26",
+                "meeting_id": "IS1008a",
+                "text": "<disfmarker> okay .",
+                "participant": "FIE038",
+                "role": "UI",
+                "supports_item_id": "IS1008a.sys.s.6",
+                "is_reference": false
+              },
+              {
+                "kind": "dialogue",
+                "da_id": "IS1008a.A.dialog-act.s9553330.123",
+                "meeting_id": "IS1008a",
+                "text": "Okay .",
+                "participant": "MIO086",
+                "role": "PM",
+                "supports_item_id": "IS1008a.sys.s.6",
+                "is_reference": false
+              },
+              {
+                "kind": "dialogue",
+                "da_id": "IS1008a.A.dialog-act.s9553330.124",
+                "meeting_id": "IS1008a",
+                "text": "To come up with the functional design and uh to discuss with Ed , okay , and how it's going to be work ,",
+                "participant": "MIO086",
+                "role": "PM",
+                "supports_item_id": "IS1008a.sys.s.6",
+                "is_reference": true
+              },
+              {
+                "kind": "dialogue",
+                "da_id": "IS1008a.A.dialog-act.s9553330.125",
+                "meeting_id": "IS1008a",
+                "text": "and uh first of all with your user acceptance , okay , how it looks like and how it's going to be work in the market , okay ,",
+                "participant": "MIO086",
+                "role": "PM",
+                "supports_item_id": "IS1008a.sys.s.6",
+                "is_reference": true
+              },
+              {
+                "kind": "dialogue",
+                "da_id": "IS1008a.B.dialog-act.s9553330.27",
+                "meeting_id": "IS1008a",
+                "text": "Mm-hmm .",
+                "participant": "FIE038",
+                "role": "UI",
+                "supports_item_id": "IS1008a.sys.s.6",
+                "is_reference": true
+              },
+              {
+                "kind": "dialogue",
+                "da_id": "IS1008a.A.dialog-act.s9553330.126",
+                "meeting_id": "IS1008a",
+                "text": "so then we can discuss about uh further things .",
+                "participant": "MIO086",
+                "role": "PM",
+                "supports_item_id": "IS1008a.sys.s.6",
+                "is_reference": true
+              },
+              {
+                "kind": "dialogue",
+                "da_id": "IS1008a.B.dialog-act.s9553330.28",
+                "meeting_id": "IS1008a",
+                "text": "Okay .",
+                "participant": "FIE038",
+                "role": "UI",
+                "supports_item_id": "IS1008a.sys.s.6",
+                "is_reference": false
+              }
+            ]
+          },
+          "new_info": true
+        }
+      ],
+      "semantic_review": "Not independently human-confirmed; source checks passed, relation label is model judgment."
+    },
+    {
+      "meeting_id": "IS1008d",
+      "item_key": "IS1008d#3",
+      "new_record": {
+        "id": "IS1008d.sys.s.4",
+        "text": "Coordinate market tests after prototypes and conduct test-marketing.",
+        "type": "actions",
+        "reference": [
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/IS1008d.json",
+            "locator": "IS1008d.B.dialog-act.s9553330.74"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/IS1008d.json",
+            "locator": "IS1008d.A.dialog-act.s9553330.128"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/IS1008c.json",
+            "locator": "IS1008c.D.dialog-act.s9553330.120"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/IS1008c.json",
+            "locator": "IS1008c.D.dialog-act.s9553330.121"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/IS1008c.json",
+            "locator": "IS1008c.A.dialog-act.s9553330.92"
+          }
+        ],
+        "owner": [
+          "FIE073"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "open",
+        "prior_context_needed": true,
+        "related_items": [
+          {
+            "id": "IS1008c.sys.s.10",
+            "relation": "updates"
+          }
+        ]
+      },
+      "old_record": {
+        "id": "IS1008c.sys.s.10",
+        "text": "Market the product after the price is determined.",
+        "type": "actions",
+        "reference": [
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/IS1008c.json",
+            "locator": "IS1008c.D.dialog-act.s9553330.120"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/IS1008c.json",
+            "locator": "IS1008c.D.dialog-act.s9553330.121"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/IS1008c.json",
+            "locator": "IS1008c.A.dialog-act.s9553330.92"
+          }
+        ],
+        "owner": [
+          "MIE085"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "open",
+        "prior_context_needed": false,
+        "related_items": []
+      },
+      "witness": {
+        "prior_item_id": "IS1008c.sys.s.10",
+        "relation": "updates",
+        "state": "supported",
+        "changed_fields": [
+          "scope"
+        ],
+        "reason": "Expanded scope from 'Market the product after the price is determined' to include coordinating market tests after prototypes and test-marketing.",
+        "before": {
+          "kind": "prior_item",
+          "id": "IS1008c.sys.s.10",
+          "meeting_id": "IS1008c",
+          "type": "actions",
+          "text": "Market the product after the price is determined.",
+          "owner": [
+            "MIE085"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "status": "open",
+          "evidence": [
+            "IS1008c.D.dialog-act.s9553330.120",
+            "IS1008c.D.dialog-act.s9553330.121",
+            "IS1008c.A.dialog-act.s9553330.92"
+          ],
+          "source_file": "IS1008c.json",
+          "source_sha256": "0345e4334281c7e1f5458eab270cb1fadb75a8920a89994a044bdbd4d20cc2fc",
+          "review_state": "pending",
+          "unresolved_fields": [
+            "deadline",
+            "related_items"
+          ],
+          "unreadable_reference_ids": [],
+          "selected_reference_ids": [
+            "IS1008c.D.dialog-act.s9553330.120",
+            "IS1008c.D.dialog-act.s9553330.121",
+            "IS1008c.A.dialog-act.s9553330.92"
+          ],
+          "next_offset": null
+        },
+        "after": {
+          "item_key": "IS1008d#3",
+          "text": "Coordinate market tests after prototypes and conduct test-marketing.",
+          "type": "actions",
+          "status": "open",
+          "owner": [
+            "FIE073"
+          ],
+          "deadline": null
+        },
+        "prior_quotes": [
+          {
+            "da_id": "IS1008c.D.dialog-act.s9553330.120",
+            "quote": "I will market it . <vocalsound>"
+          },
+          {
+            "da_id": "IS1008c.D.dialog-act.s9553330.121",
+            "quote": "Once we get a price on it then we can market it ."
+          },
+          {
+            "da_id": "IS1008c.A.dialog-act.s9553330.92",
+            "quote": "Yes ."
+          }
+        ],
+        "current_quotes": [
+          {
+            "da_id": "IS1008d.B.dialog-act.s9553330.74",
+            "quote": "We probably should do some market tests uh once we have the prototypes and do some orders and things like that and test-market it ."
+          }
+        ]
+      },
+      "relation_check": {
+        "result": "pass",
+        "reason": "Current item expands the marketing plan by adding market tests after prototypes and test-marketing, updating the relationship with the prior item which had marketing after the price is determined; this is an updates with a broader scope.",
+        "quotes": [
+          {
+            "da_id": "IS1008d.B.dialog-act.s9553330.74",
+            "quote": "We probably should do some market tests uh once we have the prototypes and do some orders and things like that and test-market it ."
+          },
+          {
+            "da_id": "IS1008c.D.dialog-act.s9553330.120",
+            "quote": "I will market it . <vocalsound>"
+          },
+          {
+            "da_id": "IS1008c.D.dialog-act.s9553330.121",
+            "quote": "Once we get a price on it then we can market it ."
+          },
+          {
+            "da_id": "IS1008c.A.dialog-act.s9553330.92",
+            "quote": "Yes ."
+          }
+        ],
+        "links": [
+          {
+            "id": "IS1008c.sys.s.10",
+            "relation": "updates",
+            "changed_fields": [
+              "scope"
+            ],
+            "reason": "Expanded scope from 'Market the product after the price is determined' to include coordinating market tests after prototypes and test-marketing.",
+            "prior_evidence_da_ids": [
+              "IS1008c.D.dialog-act.s9553330.120",
+              "IS1008c.D.dialog-act.s9553330.121",
+              "IS1008c.A.dialog-act.s9553330.92"
+            ],
+            "current_evidence_da_ids": [
+              "IS1008d.B.dialog-act.s9553330.74"
+            ]
+          }
+        ],
+        "documents": [],
+        "fields": [
+          "related_items"
+        ]
+      },
+      "actual_lookup_history": [
+        {
+          "item": "IS1008d#3",
+          "step": 2,
+          "flags": [
+            "POSSIBLE_PRIOR"
+          ],
+          "action": "get_prior_items",
+          "outcome": "lookup",
+          "decision": "retrieve",
+          "args": {
+            "query": "market tests",
+            "item_type": "actions"
+          },
+          "tool_result": {
+            "results": [
+              {
+                "id": "IS1008c.sys.s.10",
+                "meeting_id": "IS1008c",
+                "type": "actions",
+                "text": "Market the product after the price is determined.",
+                "owner": [
+                  "MIE085"
+                ],
+                "owner_basis": "explicit",
+                "deadline": null,
+                "deadline_basis": "missing",
+                "status": "open",
+                "evidence": [
+                  "IS1008c.D.dialog-act.s9553330.120",
+                  "IS1008c.D.dialog-act.s9553330.121",
+                  "IS1008c.A.dialog-act.s9553330.92"
+                ],
+                "source_file": "IS1008c.json",
+                "source_sha256": "0345e4334281c7e1f5458eab270cb1fadb75a8920a89994a044bdbd4d20cc2fc",
+                "review_state": "pending",
+                "unresolved_fields": [
+                  "deadline",
+                  "related_items"
+                ],
+                "unreadable_reference_ids": [],
+                "score": 2.76
+              }
+            ]
+          },
+          "new_info": true
+        },
+        {
+          "item": "IS1008d#3",
+          "step": 3,
+          "flags": [
+            "POSSIBLE_PRIOR"
+          ],
+          "action": "read_prior_item",
+          "outcome": "lookup",
+          "decision": "retrieve",
+          "args": {
+            "item_id": "IS1008c.sys.s.10"
+          },
+          "tool_result": {
+            "results": [
+              {
+                "kind": "prior_item",
+                "id": "IS1008c.sys.s.10",
+                "meeting_id": "IS1008c",
+                "type": "actions",
+                "text": "Market the product after the price is determined.",
+                "owner": [
+                  "MIE085"
+                ],
+                "owner_basis": "explicit",
+                "deadline": null,
+                "deadline_basis": "missing",
+                "status": "open",
+                "evidence": [
+                  "IS1008c.D.dialog-act.s9553330.120",
+                  "IS1008c.D.dialog-act.s9553330.121",
+                  "IS1008c.A.dialog-act.s9553330.92"
+                ],
+                "source_file": "IS1008c.json",
+                "source_sha256": "0345e4334281c7e1f5458eab270cb1fadb75a8920a89994a044bdbd4d20cc2fc",
+                "review_state": "pending",
+                "unresolved_fields": [
+                  "deadline",
+                  "related_items"
+                ],
+                "unreadable_reference_ids": [],
+                "selected_reference_ids": [
+                  "IS1008c.D.dialog-act.s9553330.120",
+                  "IS1008c.D.dialog-act.s9553330.121",
+                  "IS1008c.A.dialog-act.s9553330.92"
+                ],
+                "next_offset": null
+              },
+              {
+                "kind": "dialogue",
+                "da_id": "IS1008c.A.dialog-act.s9553330.92",
+                "meeting_id": "IS1008c",
+                "text": "Yes .",
+                "participant": "MIO086",
+                "role": "PM",
+                "supports_item_id": "IS1008c.sys.s.10",
+                "is_reference": true
+              },
+              {
+                "kind": "dialogue",
+                "da_id": "IS1008c.D.dialog-act.s9553330.120",
+                "meeting_id": "IS1008c",
+                "text": "I will market it . <vocalsound>",
+                "participant": "MIE085",
+                "role": "ME",
+                "supports_item_id": "IS1008c.sys.s.10",
+                "is_reference": true
+              },
+              {
+                "kind": "dialogue",
+                "da_id": "IS1008c.C.dialog-act.s9553330.177",
+                "meeting_id": "IS1008c",
+                "text": "<vocalsound>",
+                "participant": "FIE073",
+                "role": "ID",
+                "supports_item_id": "IS1008c.sys.s.10",
+                "is_reference": false
+              },
+              {
+                "kind": "dialogue",
+                "da_id": "IS1008c.D.dialog-act.s9553330.121",
+                "meeting_id": "IS1008c",
+                "text": "Once we get a price on it then we can market it .",
+                "participant": "MIE085",
+                "role": "ME",
+                "supports_item_id": "IS1008c.sys.s.10",
+                "is_reference": true
+              },
+              {
+                "kind": "dialogue",
+                "da_id": "IS1008c.C.dialog-act.s9553330.178",
+                "meeting_id": "IS1008c",
+                "text": "<vocalsound>",
+                "participant": "FIE073",
+                "role": "ID",
+                "supports_item_id": "IS1008c.sys.s.10",
+                "is_reference": false
+              },
+              {
+                "kind": "dialogue",
+                "da_id": "IS1008c.D.dialog-act.s9553330.119",
+                "meeting_id": "IS1008c",
+                "text": "I'm here for the <vocalsound> pushing it after it's made . <vocalsound>",
+                "participant": "MIE085",
+                "role": "ME",
+                "supports_item_id": "IS1008c.sys.s.10",
+                "is_reference": false
+              }
+            ]
+          },
+          "new_info": true
+        }
+      ],
+      "semantic_review": "Not independently human-confirmed; source checks passed, relation label is model judgment."
+    },
+    {
+      "meeting_id": "IS1008d",
+      "item_key": "IS1008d#10",
+      "new_record": {
+        "id": "IS1008d.sys.s.8",
+        "text": "The material chosen for the remote is wood.",
+        "type": "decisions",
+        "reference": [
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/IS1008d.json",
+            "locator": "IS1008d.C.dialog-act.s9553330.21"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/IS1008d.json",
+            "locator": "IS1008d.C.dialog-act.s9553330.23"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/IS1008d.json",
+            "locator": "IS1008d.C.dialog-act.s9553330.22"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/IS1008c.json",
+            "locator": "IS1008c.C.dialog-act.s9553330.73"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/IS1008c.json",
+            "locator": "IS1008c.C.dialog-act.s9553330.51"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/IS1008c.json",
+            "locator": "IS1008c.D.dialog-act.s9553330.12"
+          }
+        ],
+        "status": "adopted",
+        "prior_context_needed": true,
+        "related_items": [
+          {
+            "id": "IS1008c.sys.s.7",
+            "relation": "continues"
+          }
+        ]
+      },
+      "old_record": {
+        "id": "IS1008c.sys.s.7",
+        "text": "Decide to use wood as the material for the remote control case.",
+        "type": "decisions",
+        "reference": [
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/IS1008c.json",
+            "locator": "IS1008c.C.dialog-act.s9553330.73"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/IS1008c.json",
+            "locator": "IS1008c.C.dialog-act.s9553330.51"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/IS1008c.json",
+            "locator": "IS1008c.D.dialog-act.s9553330.12"
+          }
+        ],
+        "status": "adopted",
+        "prior_context_needed": false,
+        "related_items": []
+      },
+      "witness": {
+        "prior_item_id": "IS1008c.sys.s.7",
+        "relation": "continues",
+        "state": "supported",
+        "changed_fields": [],
+        "reason": "Current material selection repeats and extends the earlier wood decision.",
+        "before": {
+          "kind": "prior_item",
+          "id": "IS1008c.sys.s.7",
+          "meeting_id": "IS1008c",
+          "type": "decisions",
+          "text": "Decide to use wood as the material for the remote control case.",
+          "owner": null,
+          "owner_basis": null,
+          "deadline": null,
+          "deadline_basis": null,
+          "status": "adopted",
+          "evidence": [
+            "IS1008c.C.dialog-act.s9553330.73",
+            "IS1008c.C.dialog-act.s9553330.51",
+            "IS1008c.D.dialog-act.s9553330.12"
+          ],
+          "source_file": "IS1008c.json",
+          "source_sha256": "0345e4334281c7e1f5458eab270cb1fadb75a8920a89994a044bdbd4d20cc2fc",
+          "review_state": "accepted",
+          "unresolved_fields": [],
+          "unreadable_reference_ids": [],
+          "selected_reference_ids": [
+            "IS1008c.C.dialog-act.s9553330.73",
+            "IS1008c.C.dialog-act.s9553330.51",
+            "IS1008c.D.dialog-act.s9553330.12"
+          ],
+          "next_offset": null
+        },
+        "after": {
+          "item_key": "IS1008d#10",
+          "text": "The material chosen for the remote is wood.",
+          "type": "decisions",
+          "status": "adopted",
+          "owner": null,
+          "deadline": null
+        },
+        "prior_quotes": [
+          {
+            "da_id": "IS1008c.D.dialog-act.s9553330.12",
+            "quote": "<vocalsound>"
+          },
+          {
+            "da_id": "IS1008c.C.dialog-act.s9553330.73",
+            "quote": "and my recommendations um for the new remote control w um would be to have um have it be made out of wood ."
+          },
+          {
+            "da_id": "IS1008c.C.dialog-act.s9553330.51",
+            "quote": "we're <disfmarker> we're <vocalsound> currently uh proposing ,"
+          }
+        ],
+        "current_quotes": [
+          {
+            "da_id": "IS1008d.C.dialog-act.s9553330.21",
+            "quote": "the material that we chose was wood ,"
+          },
+          {
+            "da_id": "IS1008d.C.dialog-act.s9553330.22",
+            "quote": "and uh the colour would be customisable ,"
+          },
+          {
+            "da_id": "IS1008d.C.dialog-act.s9553330.23",
+            "quote": "'cause you can stain the wood whatever colour ."
+          }
+        ]
+      },
+      "relation_check": {
+        "result": "pass",
+        "reason": "The current decision to use wood as the material for the remote control case directly continues the earlier IS1008c.sys.s.7 decision to use wood; the current dialogue restates and reinforces the same material choice without introducing a contradictory constraint.",
+        "quotes": [
+          {
+            "da_id": "IS1008d.C.dialog-act.s9553330.21",
+            "quote": "the material that we chose was wood ,"
+          },
+          {
+            "da_id": "IS1008d.C.dialog-act.s9553330.22",
+            "quote": "and uh the colour would be customisable ,"
+          },
+          {
+            "da_id": "IS1008d.C.dialog-act.s9553330.23",
+            "quote": "'cause you can stain the wood whatever colour ."
+          },
+          {
+            "da_id": "IS1008c.C.dialog-act.s9553330.73",
+            "quote": "and my recommendations um for the new remote control w um would be to have um have it be made out of wood ."
+          },
+          {
+            "da_id": "IS1008c.C.dialog-act.s9553330.51",
+            "quote": "we're <disfmarker> we're <vocalsound> currently uh proposing ,"
+          },
+          {
+            "da_id": "IS1008c.D.dialog-act.s9553330.12",
+            "quote": "<vocalsound>"
+          }
+        ],
+        "links": [
+          {
+            "id": "IS1008c.sys.s.7",
+            "relation": "continues",
+            "changed_fields": [],
+            "reason": "Current material selection repeats and extends the earlier wood decision.",
+            "prior_evidence_da_ids": [
+              "IS1008c.D.dialog-act.s9553330.12",
+              "IS1008c.C.dialog-act.s9553330.73",
+              "IS1008c.C.dialog-act.s9553330.51"
+            ],
+            "current_evidence_da_ids": [
+              "IS1008d.C.dialog-act.s9553330.21",
+              "IS1008d.C.dialog-act.s9553330.22",
+              "IS1008d.C.dialog-act.s9553330.23"
+            ]
+          }
+        ],
+        "fields": [
+          "related_items"
+        ]
+      },
+      "actual_lookup_history": [
+        {
+          "item": "IS1008d#10",
+          "step": 2,
+          "flags": [
+            "POSSIBLE_PRIOR"
+          ],
+          "action": "get_prior_items",
+          "outcome": "lookup",
+          "decision": "retrieve",
+          "args": {
+            "query": "material remote wood",
+            "item_type": "decisions"
+          },
+          "tool_result": {
+            "results": [
+              {
+                "id": "IS1008c.sys.s.7",
+                "meeting_id": "IS1008c",
+                "type": "decisions",
+                "text": "Decide to use wood as the material for the remote control case.",
+                "owner": null,
+                "owner_basis": null,
+                "deadline": null,
+                "deadline_basis": null,
+                "status": "adopted",
+                "evidence": [
+                  "IS1008c.C.dialog-act.s9553330.73",
+                  "IS1008c.C.dialog-act.s9553330.51",
+                  "IS1008c.D.dialog-act.s9553330.12"
+                ],
+                "source_file": "IS1008c.json",
+                "source_sha256": "0345e4334281c7e1f5458eab270cb1fadb75a8920a89994a044bdbd4d20cc2fc",
+                "review_state": "accepted",
+                "unresolved_fields": [],
+                "unreadable_reference_ids": [],
+                "score": 4.54
+              },
+              {
+                "id": "IS1008c.sys.s.5",
+                "meeting_id": "IS1008c",
+                "type": "decisions",
+                "text": "Decide on the remote control concept.",
+                "owner": null,
+                "owner_basis": null,
+                "deadline": null,
+                "deadline_basis": null,
+                "status": "adopted",
+                "evidence": [
+                  "IS1008c.A.dialog-act.s9553330.10",
+                  "IS1008c.A.dialog-act.s9553330.11"
+                ],
+                "source_file": "IS1008c.json",
+                "source_sha256": "0345e4334281c7e1f5458eab270cb1fadb75a8920a89994a044bdbd4d20cc2fc",
+                "review_state": "pending",
+                "unresolved_fields": [
+                  "related_items"
+                ],
+                "unreadable_reference_ids": [],
+                "score": 1.3
+              },
+              {
+                "id": "IS1008a.sys.s.4",
+                "meeting_id": "IS1008a",
+                "type": "decisions",
+                "text": "The product for this project will be a television remote control.",
+                "owner": null,
+                "owner_basis": null,
+                "deadline": null,
+                "deadline_basis": null,
+                "status": "adopted",
+                "evidence": [
+                  "IS1008a.A.dialog-act.s9553330.38",
+                  "IS1008a.D.dialog-act.s9553330.26",
+                  "IS1008a.D.dialog-act.s9553330.27"
+                ],
+                "source_file": "IS1008a.json",
+                "source_sha256": "1932f034085616b38adf859662727ae5f2d33b6fbe9ef0f56406fd12d39c1ab3",
+                "review_state": "accepted",
+                "unresolved_fields": [],
+                "unreadable_reference_ids": [],
+                "score": 1.03
+              }
+            ]
+          },
+          "new_info": true
+        },
+        {
+          "item": "IS1008d#10",
+          "step": 3,
+          "flags": [
+            "POSSIBLE_PRIOR"
+          ],
+          "action": "read_prior_item",
+          "outcome": "lookup",
+          "decision": "retrieve",
+          "args": {
+            "item_id": "IS1008c.sys.s.7"
+          },
+          "tool_result": {
+            "results": [
+              {
+                "kind": "prior_item",
+                "id": "IS1008c.sys.s.7",
+                "meeting_id": "IS1008c",
+                "type": "decisions",
+                "text": "Decide to use wood as the material for the remote control case.",
+                "owner": null,
+                "owner_basis": null,
+                "deadline": null,
+                "deadline_basis": null,
+                "status": "adopted",
+                "evidence": [
+                  "IS1008c.C.dialog-act.s9553330.73",
+                  "IS1008c.C.dialog-act.s9553330.51",
+                  "IS1008c.D.dialog-act.s9553330.12"
+                ],
+                "source_file": "IS1008c.json",
+                "source_sha256": "0345e4334281c7e1f5458eab270cb1fadb75a8920a89994a044bdbd4d20cc2fc",
+                "review_state": "accepted",
+                "unresolved_fields": [],
+                "unreadable_reference_ids": [],
+                "selected_reference_ids": [
+                  "IS1008c.C.dialog-act.s9553330.73",
+                  "IS1008c.C.dialog-act.s9553330.51",
+                  "IS1008c.D.dialog-act.s9553330.12"
+                ],
+                "next_offset": null
+              },
+              {
+                "kind": "dialogue",
+                "da_id": "IS1008c.D.dialog-act.s9553330.16",
+                "meeting_id": "IS1008c",
+                "text": "<vocalsound>",
+                "participant": "MIE085",
+                "role": "ME",
+                "supports_item_id": "IS1008c.sys.s.7",
+                "is_reference": false
+              },
+              {
+                "kind": "dialogue",
+                "da_id": "IS1008c.C.dialog-act.s9553330.73",
+                "meeting_id": "IS1008c",
+                "text": "and my recommendations um for the new remote control w um would be to have um have it be made out of wood .",
+                "participant": "FIE073",
+                "role": "ID",
+                "supports_item_id": "IS1008c.sys.s.7",
+                "is_reference": true
+              },
+              {
+                "kind": "dialogue",
+                "da_id": "IS1008c.C.dialog-act.s9553330.74",
+                "meeting_id": "IS1008c",
+                "text": "Do you have any problems with that ?",
+                "participant": "FIE073",
+                "role": "ID",
+                "supports_item_id": "IS1008c.sys.s.7",
+                "is_reference": false
+              },
+              {
+                "kind": "dialogue",
+                "da_id": "IS1008c.C.dialog-act.s9553330.50",
+                "meeting_id": "IS1008c",
+                "text": "And a as she said , it's an environmentally friendly uh material ,",
+                "participant": "FIE073",
+                "role": "ID",
+                "supports_item_id": "IS1008c.sys.s.7",
+                "is_reference": false
+              },
+              {
+                "kind": "dialogue",
+                "da_id": "IS1008c.C.dialog-act.s9553330.51",
+                "meeting_id": "IS1008c",
+                "text": "so we're <disfmarker> we're <vocalsound> currently uh proposing ,",
+                "participant": "FIE073",
+                "role": "ID",
+                "supports_item_id": "IS1008c.sys.s.7",
+                "is_reference": true
+              },
+              {
+                "kind": "dialogue",
+                "da_id": "IS1008c.D.dialog-act.s9553330.12",
+                "meeting_id": "IS1008c",
+                "text": "<vocalsound>",
+                "participant": "MIE085",
+                "role": "ME",
+                "supports_item_id": "IS1008c.sys.s.7",
+                "is_reference": true
+              },
+              {
+                "kind": "dialogue",
+                "da_id": "IS1008c.C.dialog-act.s9553330.52",
+                "meeting_id": "IS1008c",
+                "text": "uh we'll get to all my personal preferences in just a second .",
+                "participant": "FIE073",
+                "role": "ID",
+                "supports_item_id": "IS1008c.sys.s.7",
+                "is_reference": false
+              }
+            ]
+          },
+          "new_info": true
+        }
+      ],
+      "semantic_review": "Not independently human-confirmed; source checks passed, relation label is model judgment."
+    },
+    {
+      "meeting_id": "TS3004d",
+      "item_key": "TS3004d#3",
+      "new_record": {
+        "id": "TS3004d.sys.s.4",
+        "text": "Unclear number and layout of buttons; need specification.",
+        "type": "problems",
+        "reference": [
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3004d.json",
+            "locator": "TS3004d.B.dialog-act.dharshi.26"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3004d.json",
+            "locator": "TS3004d.B.dialog-act.dharshi.27"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3004d.json",
+            "locator": "TS3004d.B.dialog-act.dharshi.31"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3004d.json",
+            "locator": "TS3004d.B.dialog-act.dharshi.32"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3004d.json",
+            "locator": "TS3004d.C.dialog-act.dharshi.43"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3004b.json",
+            "locator": "TS3004b.A.dialog-act.vkaraisk.70"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3004b.json",
+            "locator": "TS3004b.A.dialog-act.vkaraisk.71"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3004b.json",
+            "locator": "TS3004b.A.dialog-act.vkaraisk.72"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3004b.json",
+            "locator": "TS3004b.A.dialog-act.vkaraisk.73"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3004d.json",
+            "locator": "TS3004d.C.dialog-act.dharshi.42"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3004d.json",
+            "locator": "TS3004d.B.dialog-act.dharshi.28"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3004d.json",
+            "locator": "TS3004d.B.dialog-act.dharshi.30"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3004d.json",
+            "locator": "TS3004d.C.dialog-act.dharshi.44"
+          }
+        ],
+        "status": "open",
+        "prior_context_needed": true,
+        "related_items": [
+          {
+            "id": "TS3004b.sys.s.1",
+            "relation": "continues"
+          }
+        ]
+      },
+      "old_record": {
+        "id": "TS3004b.sys.s.1",
+        "text": "The primary user group is forty plus; older users may require larger buttons.",
+        "type": "problems",
+        "reference": [
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3004b.json",
+            "locator": "TS3004b.A.dialog-act.vkaraisk.70"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3004b.json",
+            "locator": "TS3004b.A.dialog-act.vkaraisk.71"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3004b.json",
+            "locator": "TS3004b.A.dialog-act.vkaraisk.72"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3004b.json",
+            "locator": "TS3004b.A.dialog-act.vkaraisk.73"
+          }
+        ],
+        "status": "open",
+        "prior_context_needed": false,
+        "related_items": []
+      },
+      "witness": {
+        "prior_item_id": "TS3004b.sys.s.1",
+        "relation": "continues",
+        "state": "supported",
+        "changed_fields": [],
+        "reason": "Current item expands and specifies button count/size within the same design topic previously discussed",
+        "before": {
+          "kind": "prior_item",
+          "id": "TS3004b.sys.s.1",
+          "meeting_id": "TS3004b",
+          "type": "problems",
+          "text": "The primary user group is forty plus; older users may require larger buttons.",
+          "owner": null,
+          "owner_basis": null,
+          "deadline": null,
+          "deadline_basis": null,
+          "status": "open",
+          "evidence": [
+            "TS3004b.A.dialog-act.vkaraisk.70",
+            "TS3004b.A.dialog-act.vkaraisk.71",
+            "TS3004b.A.dialog-act.vkaraisk.72",
+            "TS3004b.A.dialog-act.vkaraisk.73"
+          ],
+          "source_file": "TS3004b.json",
+          "source_sha256": "87ca9dc860192d5ee07f3e1cadc59632c979b1d409e647144e7b712256736c00",
+          "review_state": "accepted",
+          "unresolved_fields": [],
+          "unreadable_reference_ids": [],
+          "selected_reference_ids": [
+            "TS3004b.A.dialog-act.vkaraisk.70",
+            "TS3004b.A.dialog-act.vkaraisk.71",
+            "TS3004b.A.dialog-act.vkaraisk.72",
+            "TS3004b.A.dialog-act.vkaraisk.73"
+          ],
+          "next_offset": null
+        },
+        "after": {
+          "item_key": "TS3004d#3",
+          "text": "Unclear number and layout of buttons; need specification.",
+          "type": "problems",
+          "status": "open",
+          "owner": null,
+          "deadline": null
+        },
+        "prior_quotes": [
+          {
+            "da_id": "TS3004b.A.dialog-act.vkaraisk.70",
+            "quote": "The um uh the main uh people of interest of this company are forty plus people ."
+          },
+          {
+            "da_id": "TS3004b.A.dialog-act.vkaraisk.71",
+            "quote": "So they're old and not younger people ."
+          },
+          {
+            "da_id": "TS3004b.A.dialog-act.vkaraisk.72",
+            "quote": "So we have to look at that as well ."
+          },
+          {
+            "da_id": "TS3004b.A.dialog-act.vkaraisk.73",
+            "quote": "'Specially old people , maybe bi bigger buttons or something ,"
+          }
+        ],
+        "current_quotes": [
+          {
+            "da_id": "TS3004d.B.dialog-act.dharshi.26",
+            "quote": "We also don't know how many buttons are required , or what kind of buttons ."
+          },
+          {
+            "da_id": "TS3004d.B.dialog-act.dharshi.31",
+            "quote": "I can imagine you need at least four buttons or something . So <disfmarker>"
+          },
+          {
+            "da_id": "TS3004d.B.dialog-act.dharshi.32",
+            "quote": "But it's enough room ."
+          },
+          {
+            "da_id": "TS3004d.C.dialog-act.dharshi.43",
+            "quote": "Yeah ."
+          },
+          {
+            "da_id": "TS3004d.C.dialog-act.dharshi.42",
+            "quote": "Well we haven't had time to design that , the slide pad ."
+          },
+          {
+            "da_id": "TS3004d.B.dialog-act.dharshi.28",
+            "quote": "You have a lot of room if you can slide it open ."
+          },
+          {
+            "da_id": "TS3004d.B.dialog-act.dharshi.30",
+            "quote": "Yeah I know ."
+          },
+          {
+            "da_id": "TS3004d.C.dialog-act.dharshi.44",
+            "quote": "Um the position ?"
+          }
+        ]
+      },
+      "relation_check": {
+        "result": "pass",
+        "reason": "Current item continues the prior discussion on button design by extending the scope from button size (older users) to specification of button count/type; same topic, no contradiction.",
+        "quotes": [
+          {
+            "da_id": "TS3004d.B.dialog-act.dharshi.26",
+            "quote": "We also don't know how many buttons are required , or what kind of buttons ."
+          },
+          {
+            "da_id": "TS3004d.B.dialog-act.dharshi.31",
+            "quote": "I can imagine you need at least four buttons or something . So <disfmarker>"
+          },
+          {
+            "da_id": "TS3004d.B.dialog-act.dharshi.32",
+            "quote": "But it's enough room ."
+          },
+          {
+            "da_id": "TS3004b.A.dialog-act.vkaraisk.70",
+            "quote": "The um uh the main uh people of interest of this company are forty plus people ."
+          },
+          {
+            "da_id": "TS3004b.A.dialog-act.vkaraisk.71",
+            "quote": "So they're old and not younger people ."
+          },
+          {
+            "da_id": "TS3004b.A.dialog-act.vkaraisk.72",
+            "quote": "So we have to look at that as well ."
+          },
+          {
+            "da_id": "TS3004b.A.dialog-act.vkaraisk.73",
+            "quote": "'Specially old people , maybe bi bigger buttons or something ,"
+          },
+          {
+            "da_id": "TS3004d.C.dialog-act.dharshi.43",
+            "quote": "Yeah ."
+          },
+          {
+            "da_id": "TS3004d.C.dialog-act.dharshi.42",
+            "quote": "Well we haven't had time to design that , the slide pad ."
+          },
+          {
+            "da_id": "TS3004d.B.dialog-act.dharshi.28",
+            "quote": "You have a lot of room if you can slide it open ."
+          },
+          {
+            "da_id": "TS3004d.B.dialog-act.dharshi.30",
+            "quote": "Yeah I know ."
+          },
+          {
+            "da_id": "TS3004d.C.dialog-act.dharshi.44",
+            "quote": "Um the position ?"
+          }
+        ],
+        "links": [
+          {
+            "id": "TS3004b.sys.s.1",
+            "relation": "continues",
+            "changed_fields": [],
+            "reason": "Current item expands and specifies button count/size within the same design topic previously discussed",
+            "prior_evidence_da_ids": [
+              "TS3004b.A.dialog-act.vkaraisk.70",
+              "TS3004b.A.dialog-act.vkaraisk.71",
+              "TS3004b.A.dialog-act.vkaraisk.72",
+              "TS3004b.A.dialog-act.vkaraisk.73"
+            ],
+            "current_evidence_da_ids": [
+              "TS3004d.B.dialog-act.dharshi.26",
+              "TS3004d.B.dialog-act.dharshi.31",
+              "TS3004d.B.dialog-act.dharshi.32",
+              "TS3004d.C.dialog-act.dharshi.43",
+              "TS3004d.C.dialog-act.dharshi.42",
+              "TS3004d.B.dialog-act.dharshi.28",
+              "TS3004d.B.dialog-act.dharshi.30",
+              "TS3004d.C.dialog-act.dharshi.44"
+            ]
+          }
+        ],
+        "fields": [
+          "related_items"
+        ]
+      },
+      "actual_lookup_history": [
+        {
+          "item": "TS3004d#3",
+          "step": 2,
+          "flags": [
+            "POSSIBLE_PRIOR"
+          ],
+          "action": "get_prior_items",
+          "outcome": "lookup",
+          "decision": "retrieve",
+          "args": {
+            "query": "buttons specification",
+            "item_type": "problems"
+          },
+          "tool_result": {
+            "results": [
+              {
+                "id": "TS3004b.sys.s.1",
+                "meeting_id": "TS3004b",
+                "type": "problems",
+                "text": "The primary user group is forty plus; older users may require larger buttons.",
+                "owner": null,
+                "owner_basis": null,
+                "deadline": null,
+                "deadline_basis": null,
+                "status": "open",
+                "evidence": [
+                  "TS3004b.A.dialog-act.vkaraisk.70",
+                  "TS3004b.A.dialog-act.vkaraisk.71",
+                  "TS3004b.A.dialog-act.vkaraisk.72",
+                  "TS3004b.A.dialog-act.vkaraisk.73"
+                ],
+                "source_file": "TS3004b.json",
+                "source_sha256": "87ca9dc860192d5ee07f3e1cadc59632c979b1d409e647144e7b712256736c00",
+                "review_state": "accepted",
+                "unresolved_fields": [],
+                "unreadable_reference_ids": [],
+                "score": 1.73
+              }
+            ]
+          },
+          "new_info": true
+        },
+        {
+          "item": "TS3004d#3",
+          "step": 3,
+          "flags": [
+            "POSSIBLE_PRIOR"
+          ],
+          "action": "read_prior_item",
+          "outcome": "lookup",
+          "decision": "retrieve",
+          "args": {
+            "item_id": "TS3004b.sys.s.1"
+          },
+          "tool_result": {
+            "results": [
+              {
+                "kind": "prior_item",
+                "id": "TS3004b.sys.s.1",
+                "meeting_id": "TS3004b",
+                "type": "problems",
+                "text": "The primary user group is forty plus; older users may require larger buttons.",
+                "owner": null,
+                "owner_basis": null,
+                "deadline": null,
+                "deadline_basis": null,
+                "status": "open",
+                "evidence": [
+                  "TS3004b.A.dialog-act.vkaraisk.70",
+                  "TS3004b.A.dialog-act.vkaraisk.71",
+                  "TS3004b.A.dialog-act.vkaraisk.72",
+                  "TS3004b.A.dialog-act.vkaraisk.73"
+                ],
+                "source_file": "TS3004b.json",
+                "source_sha256": "87ca9dc860192d5ee07f3e1cadc59632c979b1d409e647144e7b712256736c00",
+                "review_state": "accepted",
+                "unresolved_fields": [],
+                "unreadable_reference_ids": [],
+                "selected_reference_ids": [
+                  "TS3004b.A.dialog-act.vkaraisk.70",
+                  "TS3004b.A.dialog-act.vkaraisk.71",
+                  "TS3004b.A.dialog-act.vkaraisk.72",
+                  "TS3004b.A.dialog-act.vkaraisk.73"
+                ],
+                "next_offset": null
+              },
+              {
+                "kind": "dialogue",
+                "da_id": "TS3004b.A.dialog-act.vkaraisk.69",
+                "meeting_id": "TS3004b",
+                "text": "But uh there's another point .",
+                "participant": "MTD013PM",
+                "role": "PM",
+                "supports_item_id": "TS3004b.sys.s.1",
+                "is_reference": false
+              },
+              {
+                "kind": "dialogue",
+                "da_id": "TS3004b.A.dialog-act.vkaraisk.70",
+                "meeting_id": "TS3004b",
+                "text": "The um uh the main uh people of interest of this company are forty plus people .",
+                "participant": "MTD013PM",
+                "role": "PM",
+                "supports_item_id": "TS3004b.sys.s.1",
+                "is_reference": true
+              },
+              {
+                "kind": "dialogue",
+                "da_id": "TS3004b.A.dialog-act.vkaraisk.71",
+                "meeting_id": "TS3004b",
+                "text": "So they're old and not younger people .",
+                "participant": "MTD013PM",
+                "role": "PM",
+                "supports_item_id": "TS3004b.sys.s.1",
+                "is_reference": true
+              },
+              {
+                "kind": "dialogue",
+                "da_id": "TS3004b.A.dialog-act.vkaraisk.72",
+                "meeting_id": "TS3004b",
+                "text": "So we have to look at that as well .",
+                "participant": "MTD013PM",
+                "role": "PM",
+                "supports_item_id": "TS3004b.sys.s.1",
+                "is_reference": true
+              },
+              {
+                "kind": "dialogue",
+                "da_id": "TS3004b.A.dialog-act.vkaraisk.73",
+                "meeting_id": "TS3004b",
+                "text": "'Specially old people , maybe bi bigger buttons or something ,",
+                "participant": "MTD013PM",
+                "role": "PM",
+                "supports_item_id": "TS3004b.sys.s.1",
+                "is_reference": true
+              },
+              {
+                "kind": "dialogue",
+                "da_id": "TS3004b.A.dialog-act.vkaraisk.74",
+                "meeting_id": "TS3004b",
+                "text": "I dunno .",
+                "participant": "MTD013PM",
+                "role": "PM",
+                "supports_item_id": "TS3004b.sys.s.1",
+                "is_reference": false
+              }
+            ]
+          },
+          "new_info": true
+        }
+      ],
+      "semantic_review": "Not independently human-confirmed; source checks passed, relation label is model judgment."
+    },
+    {
+      "meeting_id": "TS3004d",
+      "item_key": "TS3004d#8",
+      "new_record": {
+        "id": "TS3004d.sys.s.9",
+        "text": "The second level should slide open.",
+        "type": "decisions",
+        "reference": [
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3004d.json",
+            "locator": "TS3004d.A.dialog-act.dharshi.59"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3004d.json",
+            "locator": "TS3004d.B.dialog-act.dharshi.78"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3004d.json",
+            "locator": "TS3004d.B.dialog-act.dharshi.79"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3004b.json",
+            "locator": "TS3004b.A.dialog-act.vkaraisk.152"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3004b.json",
+            "locator": "TS3004b.A.dialog-act.vkaraisk.153"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3004b.json",
+            "locator": "TS3004b.D.dialog-act.vkaraisk.129"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3004b.json",
+            "locator": "TS3004b.B.dialog-act.vkaraisk.136"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3004b.json",
+            "locator": "TS3004b.A.dialog-act.vkaraisk.154"
+          }
+        ],
+        "status": "adopted",
+        "prior_context_needed": true,
+        "related_items": [
+          {
+            "id": "TS3004b.sys.s.5",
+            "relation": "replaces"
+          }
+        ]
+      },
+      "old_record": {
+        "id": "TS3004b.sys.s.5",
+        "text": "The group does not need a two-level remote control.",
+        "type": "decisions",
+        "reference": [
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3004b.json",
+            "locator": "TS3004b.A.dialog-act.vkaraisk.152"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3004b.json",
+            "locator": "TS3004b.A.dialog-act.vkaraisk.153"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3004b.json",
+            "locator": "TS3004b.D.dialog-act.vkaraisk.129"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3004b.json",
+            "locator": "TS3004b.B.dialog-act.vkaraisk.136"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3004b.json",
+            "locator": "TS3004b.A.dialog-act.vkaraisk.154"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3004b.json",
+            "locator": "TS3004b.D.dialog-act.vkaraisk.130"
+          }
+        ],
+        "status": "adopted",
+        "prior_context_needed": false,
+        "related_items": []
+      },
+      "witness": {
+        "prior_item_id": "TS3004b.sys.s.5",
+        "relation": "replaces",
+        "state": "supported",
+        "changed_fields": [
+          "text",
+          "scope"
+        ],
+        "reason": "Current item states that the second level should slide open, effectively replacing the previous stance of no two-level remote control.",
+        "before": {
+          "kind": "prior_item",
+          "id": "TS3004b.sys.s.5",
+          "meeting_id": "TS3004b",
+          "type": "decisions",
+          "text": "The group does not need a two-level remote control.",
+          "owner": null,
+          "owner_basis": null,
+          "deadline": null,
+          "deadline_basis": null,
+          "status": "adopted",
+          "evidence": [
+            "TS3004b.A.dialog-act.vkaraisk.152",
+            "TS3004b.A.dialog-act.vkaraisk.153",
+            "TS3004b.D.dialog-act.vkaraisk.129",
+            "TS3004b.B.dialog-act.vkaraisk.136",
+            "TS3004b.A.dialog-act.vkaraisk.154",
+            "TS3004b.D.dialog-act.vkaraisk.130"
+          ],
+          "source_file": "TS3004b.json",
+          "source_sha256": "87ca9dc860192d5ee07f3e1cadc59632c979b1d409e647144e7b712256736c00",
+          "review_state": "pending",
+          "unresolved_fields": [
+            "related_items"
+          ],
+          "unreadable_reference_ids": [],
+          "selected_reference_ids": [
+            "TS3004b.A.dialog-act.vkaraisk.152",
+            "TS3004b.A.dialog-act.vkaraisk.153",
+            "TS3004b.D.dialog-act.vkaraisk.129",
+            "TS3004b.B.dialog-act.vkaraisk.136",
+            "TS3004b.A.dialog-act.vkaraisk.154"
+          ],
+          "next_offset": 5
+        },
+        "after": {
+          "item_key": "TS3004d#8",
+          "text": "The second level should slide open.",
+          "type": "decisions",
+          "status": "adopted",
+          "owner": null,
+          "deadline": null
+        },
+        "prior_quotes": [
+          {
+            "da_id": "TS3004b.A.dialog-act.vkaraisk.152",
+            "quote": "But do we still need a two level remote control ?"
+          },
+          {
+            "da_id": "TS3004b.A.dialog-act.vkaraisk.153",
+            "quote": "Because if we only have that l only f"
+          },
+          {
+            "da_id": "TS3004b.D.dialog-act.vkaraisk.129",
+            "quote": "It's only for television now ."
+          },
+          {
+            "da_id": "TS3004b.B.dialog-act.vkaraisk.136",
+            "quote": "So I I don't think so ."
+          },
+          {
+            "da_id": "TS3004b.A.dialog-act.vkaraisk.154",
+            "quote": "No ."
+          }
+        ],
+        "current_quotes": [
+          {
+            "da_id": "TS3004d.A.dialog-act.dharshi.59",
+            "quote": "No , you gotta slide it ."
+          },
+          {
+            "da_id": "TS3004d.B.dialog-act.dharshi.78",
+            "quote": "but I think that's not solid enough ."
+          },
+          {
+            "da_id": "TS3004d.B.dialog-act.dharshi.79",
+            "quote": "If that breaks then you're screwed ."
+          }
+        ]
+      },
+      "relation_check": {
+        "result": "pass",
+        "reason": "Current item clearly changes the earlier decision by advocating a second-level sliding capability, conflicting with the prior decision that a two-level remote control was not needed. The current dialogue supports the new direction (PM insists on sliding/second level), indicating a replacement/update to the previous record TS3004b.sys.s.5.",
+        "quotes": [
+          {
+            "da_id": "TS3004d.A.dialog-act.dharshi.59",
+            "quote": "No , you gotta slide it ."
+          },
+          {
+            "da_id": "TS3004d.B.dialog-act.dharshi.78",
+            "quote": "but I think that's not solid enough ."
+          },
+          {
+            "da_id": "TS3004d.B.dialog-act.dharshi.79",
+            "quote": "If that breaks then you're screwed ."
+          },
+          {
+            "da_id": "TS3004b.A.dialog-act.vkaraisk.152",
+            "quote": "But do we still need a two level remote control ?"
+          },
+          {
+            "da_id": "TS3004b.A.dialog-act.vkaraisk.153",
+            "quote": "Because if we only have that l only f"
+          },
+          {
+            "da_id": "TS3004b.D.dialog-act.vkaraisk.129",
+            "quote": "It's only for television now ."
+          },
+          {
+            "da_id": "TS3004b.B.dialog-act.vkaraisk.136",
+            "quote": "So I I don't think so ."
+          },
+          {
+            "da_id": "TS3004b.A.dialog-act.vkaraisk.154",
+            "quote": "No ."
+          }
+        ],
+        "links": [
+          {
+            "id": "TS3004b.sys.s.5",
+            "relation": "replaces",
+            "changed_fields": [
+              "text",
+              "scope"
+            ],
+            "reason": "Current item states that the second level should slide open, effectively replacing the previous stance of no two-level remote control.",
+            "prior_evidence_da_ids": [
+              "TS3004b.A.dialog-act.vkaraisk.152",
+              "TS3004b.A.dialog-act.vkaraisk.153",
+              "TS3004b.D.dialog-act.vkaraisk.129",
+              "TS3004b.B.dialog-act.vkaraisk.136",
+              "TS3004b.A.dialog-act.vkaraisk.154"
+            ],
+            "current_evidence_da_ids": [
+              "TS3004d.A.dialog-act.dharshi.59",
+              "TS3004d.B.dialog-act.dharshi.78",
+              "TS3004d.B.dialog-act.dharshi.79"
+            ]
+          }
+        ],
+        "fields": [
+          "related_items"
+        ]
+      },
+      "actual_lookup_history": [
+        {
+          "item": "TS3004d#8",
+          "step": 2,
+          "flags": [
+            "POSSIBLE_PRIOR"
+          ],
+          "action": "get_prior_items",
+          "outcome": "lookup",
+          "decision": "retrieve",
+          "args": {
+            "query": "second level slide",
+            "item_type": "decisions"
+          },
+          "tool_result": {
+            "results": [
+              {
+                "id": "TS3004b.sys.s.5",
+                "meeting_id": "TS3004b",
+                "type": "decisions",
+                "text": "The group does not need a two-level remote control.",
+                "owner": null,
+                "owner_basis": null,
+                "deadline": null,
+                "deadline_basis": null,
+                "status": "adopted",
+                "evidence": [
+                  "TS3004b.A.dialog-act.vkaraisk.152",
+                  "TS3004b.A.dialog-act.vkaraisk.153",
+                  "TS3004b.D.dialog-act.vkaraisk.129",
+                  "TS3004b.B.dialog-act.vkaraisk.136",
+                  "TS3004b.A.dialog-act.vkaraisk.154",
+                  "TS3004b.D.dialog-act.vkaraisk.130"
+                ],
+                "source_file": "TS3004b.json",
+                "source_sha256": "87ca9dc860192d5ee07f3e1cadc59632c979b1d409e647144e7b712256736c00",
+                "review_state": "pending",
+                "unresolved_fields": [
+                  "related_items"
+                ],
+                "unreadable_reference_ids": [],
+                "score": 1.82
+              }
+            ]
+          },
+          "new_info": true
+        },
+        {
+          "item": "TS3004d#8",
+          "step": 3,
+          "flags": [
+            "POSSIBLE_PRIOR"
+          ],
+          "action": "read_prior_item",
+          "outcome": "lookup",
+          "decision": "retrieve",
+          "args": {
+            "item_id": "TS3004b.sys.s.5",
+            "offset": 0,
+            "limit": 5,
+            "window": 0
+          },
+          "tool_result": {
+            "results": [
+              {
+                "kind": "prior_item",
+                "id": "TS3004b.sys.s.5",
+                "meeting_id": "TS3004b",
+                "type": "decisions",
+                "text": "The group does not need a two-level remote control.",
+                "owner": null,
+                "owner_basis": null,
+                "deadline": null,
+                "deadline_basis": null,
+                "status": "adopted",
+                "evidence": [
+                  "TS3004b.A.dialog-act.vkaraisk.152",
+                  "TS3004b.A.dialog-act.vkaraisk.153",
+                  "TS3004b.D.dialog-act.vkaraisk.129",
+                  "TS3004b.B.dialog-act.vkaraisk.136",
+                  "TS3004b.A.dialog-act.vkaraisk.154",
+                  "TS3004b.D.dialog-act.vkaraisk.130"
+                ],
+                "source_file": "TS3004b.json",
+                "source_sha256": "87ca9dc860192d5ee07f3e1cadc59632c979b1d409e647144e7b712256736c00",
+                "review_state": "pending",
+                "unresolved_fields": [
+                  "related_items"
+                ],
+                "unreadable_reference_ids": [],
+                "selected_reference_ids": [
+                  "TS3004b.A.dialog-act.vkaraisk.152",
+                  "TS3004b.A.dialog-act.vkaraisk.153",
+                  "TS3004b.D.dialog-act.vkaraisk.129",
+                  "TS3004b.B.dialog-act.vkaraisk.136",
+                  "TS3004b.A.dialog-act.vkaraisk.154"
+                ],
+                "next_offset": 5
+              },
+              {
+                "kind": "dialogue",
+                "da_id": "TS3004b.A.dialog-act.vkaraisk.152",
+                "meeting_id": "TS3004b",
+                "text": "But do we still need a two level remote control ?",
+                "participant": "MTD013PM",
+                "role": "PM",
+                "supports_item_id": "TS3004b.sys.s.5",
+                "is_reference": true
+              },
+              {
+                "kind": "dialogue",
+                "da_id": "TS3004b.A.dialog-act.vkaraisk.153",
+                "meeting_id": "TS3004b",
+                "text": "Because if we only have that l only f",
+                "participant": "MTD013PM",
+                "role": "PM",
+                "supports_item_id": "TS3004b.sys.s.5",
+                "is_reference": true
+              },
+              {
+                "kind": "dialogue",
+                "da_id": "TS3004b.D.dialog-act.vkaraisk.129",
+                "meeting_id": "TS3004b",
+                "text": "It's only for television now .",
+                "participant": "MTD016ME",
+                "role": "ME",
+                "supports_item_id": "TS3004b.sys.s.5",
+                "is_reference": true
+              },
+              {
+                "kind": "dialogue",
+                "da_id": "TS3004b.B.dialog-act.vkaraisk.136",
+                "meeting_id": "TS3004b",
+                "text": "So I I don't think so .",
+                "participant": "MTD015UID",
+                "role": "UI",
+                "supports_item_id": "TS3004b.sys.s.5",
+                "is_reference": true
+              },
+              {
+                "kind": "dialogue",
+                "da_id": "TS3004b.A.dialog-act.vkaraisk.154",
+                "meeting_id": "TS3004b",
+                "text": "No .",
+                "participant": "MTD013PM",
+                "role": "PM",
+                "supports_item_id": "TS3004b.sys.s.5",
+                "is_reference": true
+              }
+            ]
+          },
+          "new_info": true
+        }
+      ],
+      "semantic_review": "Not independently human-confirmed; source checks passed, relation label is model judgment."
+    },
+    {
+      "meeting_id": "TS3004d",
+      "item_key": "TS3004d#10",
+      "new_record": {
+        "id": "TS3004d.sys.s.11",
+        "text": "Include a recharger in the unit.",
+        "type": "decisions",
+        "reference": [
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3004d.json",
+            "locator": "TS3004d.A.dialog-act.dharshi.250"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3004a.json",
+            "locator": "TS3004a.B.dialog-act.vkaraisk.105"
+          }
+        ],
+        "status": "adopted",
+        "prior_context_needed": true,
+        "related_items": [
+          {
+            "id": "TS3004a.sys.s.7",
+            "relation": "updates"
+          }
+        ]
+      },
+      "old_record": {
+        "id": "TS3004a.sys.s.7",
+        "text": "Use the rechargeable unit as a separate option and sell it separately.",
+        "type": "decisions",
+        "reference": [
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3004a.json",
+            "locator": "TS3004a.B.dialog-act.vkaraisk.105"
+          }
+        ],
+        "status": "adopted",
+        "prior_context_needed": false,
+        "related_items": []
+      },
+      "witness": {
+        "prior_item_id": "TS3004a.sys.s.7",
+        "relation": "updates",
+        "state": "supported",
+        "changed_fields": [
+          "text",
+          "scope"
+        ],
+        "reason": "Current item broadens/shifts from a standalone rechargeable option to in-unit recharging, altering the feature's scope.",
+        "before": {
+          "kind": "prior_item",
+          "id": "TS3004a.sys.s.7",
+          "meeting_id": "TS3004a",
+          "type": "decisions",
+          "text": "Use the rechargeable unit as a separate option and sell it separately.",
+          "owner": null,
+          "owner_basis": null,
+          "deadline": null,
+          "deadline_basis": null,
+          "status": "adopted",
+          "evidence": [
+            "TS3004a.B.dialog-act.vkaraisk.105"
+          ],
+          "source_file": "TS3004a.json",
+          "source_sha256": "6052f01f5d807494e3a7c59d3b03cb99800d64485cf3700ddadbdfbf41b905e8",
+          "review_state": "accepted",
+          "unresolved_fields": [],
+          "unreadable_reference_ids": [],
+          "selected_reference_ids": [
+            "TS3004a.B.dialog-act.vkaraisk.105"
+          ],
+          "next_offset": null
+        },
+        "after": {
+          "item_key": "TS3004d#10",
+          "text": "Include a recharger in the unit.",
+          "type": "decisions",
+          "status": "adopted",
+          "owner": null,
+          "deadline": null
+        },
+        "prior_quotes": [
+          {
+            "da_id": "TS3004a.B.dialog-act.vkaraisk.105",
+            "quote": "Maybe uh use it as a separate option . Sell it uh separately ."
+          }
+        ],
+        "current_quotes": [
+          {
+            "da_id": "TS3004d.A.dialog-act.dharshi.250",
+            "quote": "So you can put a recharger in it as well ."
+          }
+        ]
+      },
+      "relation_check": {
+        "result": "pass",
+        "reason": "Current item asserts including a recharger in the unit, which changes the earlier decision to offer a rechargeable unit as a separate option; the new statement updates the scope/approach of the rechargeable feature.",
+        "quotes": [
+          {
+            "da_id": "TS3004d.A.dialog-act.dharshi.250",
+            "quote": "So you can put a recharger in it as well ."
+          },
+          {
+            "da_id": "TS3004a.B.dialog-act.vkaraisk.105",
+            "quote": "Maybe uh use it as a separate option . Sell it uh separately ."
+          }
+        ],
+        "links": [
+          {
+            "id": "TS3004a.sys.s.7",
+            "relation": "updates",
+            "changed_fields": [
+              "text",
+              "scope"
+            ],
+            "reason": "Current item broadens/shifts from a standalone rechargeable option to in-unit recharging, altering the feature's scope.",
+            "prior_evidence_da_ids": [
+              "TS3004a.B.dialog-act.vkaraisk.105"
+            ],
+            "current_evidence_da_ids": [
+              "TS3004d.A.dialog-act.dharshi.250"
+            ]
+          }
+        ],
+        "documents": [],
+        "fields": [
+          "related_items"
+        ]
+      },
+      "actual_lookup_history": [
+        {
+          "item": "TS3004d#10",
+          "step": 2,
+          "flags": [
+            "POSSIBLE_PRIOR"
+          ],
+          "action": "get_prior_items",
+          "outcome": "lookup",
+          "decision": "retrieve",
+          "args": {
+            "query": "recharger in unit",
+            "item_type": "decisions"
+          },
+          "tool_result": {
+            "results": [
+              {
+                "id": "TS3004a.sys.s.7",
+                "meeting_id": "TS3004a",
+                "type": "decisions",
+                "text": "Use the rechargeable unit as a separate option and sell it separately.",
+                "owner": null,
+                "owner_basis": null,
+                "deadline": null,
+                "deadline_basis": null,
+                "status": "adopted",
+                "evidence": [
+                  "TS3004a.B.dialog-act.vkaraisk.105"
+                ],
+                "source_file": "TS3004a.json",
+                "source_sha256": "6052f01f5d807494e3a7c59d3b03cb99800d64485cf3700ddadbdfbf41b905e8",
+                "review_state": "accepted",
+                "unresolved_fields": [],
+                "unreadable_reference_ids": [],
+                "score": 1.67
+              }
+            ]
+          },
+          "new_info": true
+        },
+        {
+          "item": "TS3004d#10",
+          "step": 3,
+          "flags": [
+            "POSSIBLE_PRIOR"
+          ],
+          "action": "read_prior_item",
+          "outcome": "lookup",
+          "decision": "retrieve",
+          "args": {
+            "item_id": "TS3004a.sys.s.7"
+          },
+          "tool_result": {
+            "results": [
+              {
+                "kind": "prior_item",
+                "id": "TS3004a.sys.s.7",
+                "meeting_id": "TS3004a",
+                "type": "decisions",
+                "text": "Use the rechargeable unit as a separate option and sell it separately.",
+                "owner": null,
+                "owner_basis": null,
+                "deadline": null,
+                "deadline_basis": null,
+                "status": "adopted",
+                "evidence": [
+                  "TS3004a.B.dialog-act.vkaraisk.105"
+                ],
+                "source_file": "TS3004a.json",
+                "source_sha256": "6052f01f5d807494e3a7c59d3b03cb99800d64485cf3700ddadbdfbf41b905e8",
+                "review_state": "accepted",
+                "unresolved_fields": [],
+                "unreadable_reference_ids": [],
+                "selected_reference_ids": [
+                  "TS3004a.B.dialog-act.vkaraisk.105"
+                ],
+                "next_offset": null
+              },
+              {
+                "kind": "dialogue",
+                "da_id": "TS3004a.D.dialog-act.vkaraisk.126",
+                "meeting_id": "TS3004a",
+                "text": "but maybe it's expensive .",
+                "participant": "MTD016ME",
+                "role": "ME",
+                "supports_item_id": "TS3004a.sys.s.7",
+                "is_reference": false
+              },
+              {
+                "kind": "dialogue",
+                "da_id": "TS3004a.B.dialog-act.vkaraisk.105",
+                "meeting_id": "TS3004a",
+                "text": "Maybe uh use it as a separate option . Sell it uh separately .",
+                "participant": "MTD015UID",
+                "role": "UI",
+                "supports_item_id": "TS3004a.sys.s.7",
+                "is_reference": true
+              },
+              {
+                "kind": "dialogue",
+                "da_id": "TS3004a.D.dialog-act.vkaraisk.127",
+                "meeting_id": "TS3004a",
+                "text": "Yeah .",
+                "participant": "MTD016ME",
+                "role": "ME",
+                "supports_item_id": "TS3004a.sys.s.7",
+                "is_reference": false
+              }
+            ]
+          },
+          "new_info": true
+        }
+      ],
+      "semantic_review": "Not independently human-confirmed; source checks passed, relation label is model judgment."
+    }
+  ]
+}

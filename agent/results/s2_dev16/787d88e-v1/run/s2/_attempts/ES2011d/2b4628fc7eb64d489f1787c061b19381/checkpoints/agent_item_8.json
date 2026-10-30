@@ -1,0 +1,776 @@
+{
+  "item": 8,
+  "fields": {
+    "item_key": "ES2011d#8",
+    "record_id": null,
+    "item_type": "decisions",
+    "item_text": "Yeah I'd agree with changing the shape .",
+    "state": "pending",
+    "recordable": true,
+    "fields": {
+      "status": "adopted",
+      "prior_context_needed": false,
+      "related_items": [],
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/ES2011d.json",
+          "locator": "ES2011d.B.dialog-act.dharshi.119"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/ES2011d.json",
+          "locator": "ES2011d.B.dialog-act.dharshi.107"
+        }
+      ]
+    },
+    "draft_fields": {
+      "status": "adopted",
+      "related_items": [],
+      "prior_context_needed": false,
+      "used_participant_lookup": false,
+      "evidence_da_ids": [
+        "ES2011d.B.dialog-act.dharshi.119",
+        "ES2011d.B.dialog-act.dharshi.107"
+      ],
+      "owner": null,
+      "owner_basis": "missing",
+      "deadline": null,
+      "deadline_basis": "missing"
+    },
+    "checks": {
+      "statement": {
+        "result": "pass",
+        "reason": "The observed dialogue contains explicit support for the shape change: the line 'Yeah I'd agree with changing the shape.' confirms the decision, aligning with the provisional 'adopted' status.",
+        "quotes": [
+          {
+            "da_id": "ES2011d.B.dialog-act.dharshi.119",
+            "quote": "<vocalsound> Yeah I'd agree with changing the shape ."
+          },
+          {
+            "da_id": "ES2011d.B.dialog-act.dharshi.107",
+            "quote": "We went with shape because we were having fun with the play-dough ."
+          }
+        ],
+        "fields": [
+          "statement"
+        ]
+      },
+      "status": {
+        "result": "pass",
+        "reason": "Status adopted is consistent with the dialogue evidence; no conflicting status changes are observed in the current meeting.",
+        "quotes": [
+          {
+            "da_id": "ES2011d.B.dialog-act.dharshi.119",
+            "quote": "<vocalsound> Yeah I'd agree with changing the shape ."
+          }
+        ],
+        "fields": [
+          "status"
+        ]
+      },
+      "conflict": {
+        "result": "pass",
+        "reason": "No contradictions found in the available evidence regarding the shape decision; the supporting lines are aligned.",
+        "quotes": [
+          {
+            "da_id": "ES2011d.B.dialog-act.dharshi.119",
+            "quote": "<vocalsound> Yeah I'd agree with changing the shape ."
+          }
+        ],
+        "fields": []
+      },
+      "relation": {
+        "result": "uncertain",
+        "reason": "per_link_assessment_required_for_each_related_item",
+        "links": [
+          {
+            "id": "ES2011d#6",
+            "relation": "continues",
+            "changed_fields": [],
+            "reason": "Continuation of the earlier shape decision.",
+            "prior_evidence_da_ids": [
+              "ES2011d.B.dialog-act.dharshi.107"
+            ],
+            "current_evidence_da_ids": [
+              "ES2011d.B.dialog-act.dharshi.119"
+            ]
+          }
+        ],
+        "quotes": [
+          {
+            "da_id": "ES2011d.B.dialog-act.dharshi.119",
+            "quote": "<vocalsound> Yeah I'd agree with changing the shape ."
+          },
+          {
+            "da_id": "ES2011d.B.dialog-act.dharshi.107",
+            "quote": "We went with shape because we were having fun with the play-dough ."
+          }
+        ],
+        "fields": [
+          "related_items"
+        ]
+      },
+      "owner": {
+        "result": "not_applicable",
+        "reason": "field_not_applicable",
+        "quotes": [],
+        "fields": [
+          "owner"
+        ]
+      },
+      "deadline": {
+        "result": "not_applicable",
+        "reason": "field_not_applicable",
+        "quotes": [],
+        "fields": [
+          "deadline"
+        ]
+      }
+    },
+    "unresolved_fields": [
+      "related_items"
+    ],
+    "observed_evidence_da_ids": [
+      "ES2011d.B.dialog-act.dharshi.107",
+      "ES2011d.C.dialog-act.dharshi.109",
+      "ES2011d.B.dialog-act.dharshi.119",
+      "ES2011d.D.dialog-act.dharshi.168",
+      "ES2011d.C.dialog-act.dharshi.95",
+      "ES2011d.A.dialog-act.dharshi.169",
+      "ES2011d.C.dialog-act.dharshi.108",
+      "ES2011d.D.dialog-act.dharshi.167",
+      "ES2011d.A.dialog-act.dharshi.186",
+      "ES2011d.B.dialog-act.dharshi.120"
+    ],
+    "initial_context": {
+      "item": {
+        "type": "decisions",
+        "text": "Yeah I'd agree with changing the shape .",
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ]
+      },
+      "current_meeting": "ES2011d",
+      "earlier_meetings": [
+        "ES2011a",
+        "ES2011b",
+        "ES2011c"
+      ],
+      "roster": [
+        {
+          "speaker": "A",
+          "participant_id": "FEE041",
+          "role": "PM"
+        },
+        {
+          "speaker": "B",
+          "participant_id": "FEE042",
+          "role": "ID"
+        },
+        {
+          "speaker": "C",
+          "participant_id": "FEE043",
+          "role": "UI"
+        },
+        {
+          "speaker": "D",
+          "participant_id": "FEE044",
+          "role": "ME"
+        }
+      ],
+      "observed_dialogue": [
+        {
+          "da_id": "ES2011d.B.dialog-act.dharshi.107",
+          "meeting_id": "ES2011d",
+          "text": "We went with shape because we were having fun with the play-dough .",
+          "participant": "FEE042",
+          "role": "ID"
+        },
+        {
+          "da_id": "ES2011d.C.dialog-act.dharshi.109",
+          "meeting_id": "ES2011d",
+          "text": "Yeah the broccoli I guess wins .",
+          "participant": "FEE043",
+          "role": "UI"
+        },
+        {
+          "da_id": "ES2011d.B.dialog-act.dharshi.119",
+          "meeting_id": "ES2011d",
+          "text": "<vocalsound> Yeah I'd agree with changing the shape .",
+          "participant": "FEE042",
+          "role": "ID"
+        },
+        {
+          "da_id": "ES2011d.D.dialog-act.dharshi.168",
+          "meeting_id": "ES2011d",
+          "text": "Yeah .",
+          "participant": "FEE044",
+          "role": "ME"
+        },
+        {
+          "da_id": "ES2011d.C.dialog-act.dharshi.95",
+          "participant": "FEE043",
+          "role": "UI",
+          "text": "Dif"
+        },
+        {
+          "da_id": "ES2011d.A.dialog-act.dharshi.169",
+          "participant": "FEE041",
+          "role": "PM",
+          "text": "Or even like <disfmarker> Yeah like you said , like a joystick like that ."
+        },
+        {
+          "da_id": "ES2011d.C.dialog-act.dharshi.108",
+          "participant": "FEE043",
+          "role": "UI",
+          "text": "Well <disfmarker>"
+        },
+        {
+          "da_id": "ES2011d.D.dialog-act.dharshi.167",
+          "participant": "FEE044",
+          "role": "ME",
+          "text": "<vocalsound>"
+        },
+        {
+          "da_id": "ES2011d.A.dialog-act.dharshi.186",
+          "participant": "FEE041",
+          "role": "PM",
+          "text": "<vocalsound>"
+        },
+        {
+          "da_id": "ES2011d.B.dialog-act.dharshi.120",
+          "participant": "FEE042",
+          "role": "ID",
+          "text": "Um , I was just having fun making strawberries and stuff . <vocalsound>"
+        }
+      ],
+      "peer_items": [
+        {
+          "item_key": "ES2011d#0",
+          "type": "problems",
+          "text": "Locator button integration is not yet designed; how the button attaches to the locator remains undefined, and coordination between the locator and the beeper is not yet designed and requires integration work."
+        },
+        {
+          "item_key": "ES2011d#1",
+          "type": "problems",
+          "text": "There is ambiguity about the scoring method for the evaluation, specifically whether to sum the scores and divide by four."
+        },
+        {
+          "item_key": "ES2011d#2",
+          "type": "problems",
+          "text": "Compatibility issues with WordPerfect and reliance on old disks may hamper access to documents."
+        },
+        {
+          "item_key": "ES2011d#3",
+          "type": "decisions",
+          "text": "We decided on batteries as the power source for the remote."
+        },
+        {
+          "item_key": "ES2011d#4",
+          "type": "decisions",
+          "text": "We decided that a regular chip would be necessary for the more advanced iPod-like button."
+        },
+        {
+          "item_key": "ES2011d#5",
+          "type": "decisions",
+          "text": "We will develop a variety of trendy fruit designs for the remote control."
+        },
+        {
+          "item_key": "ES2011d#6",
+          "type": "decisions",
+          "text": "We went with shape because we were having fun with the play-dough."
+        },
+        {
+          "item_key": "ES2011d#7",
+          "type": "decisions",
+          "text": "Yeah the broccoli I guess wins."
+        }
+      ],
+      "provisional_values": {
+        "owner": null,
+        "owner_basis": "missing",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "adopted",
+        "related_items": []
+      },
+      "candidate_evidence_da_ids": [
+        "ES2011d.B.dialog-act.dharshi.107",
+        "ES2011d.C.dialog-act.dharshi.109",
+        "ES2011d.B.dialog-act.dharshi.119",
+        "ES2011d.D.dialog-act.dharshi.168"
+      ]
+    },
+    "observed_documents": [],
+    "document_evidence": [],
+    "relation_evidence": [],
+    "history": [
+      {
+        "item": "ES2011d#8",
+        "step": 1,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "The observed dialogue contains explicit support for the shape change: the line 'Yeah I'd agree with changing the shape.' confirms the decision, aligning with the provisional 'adopted' status.",
+            "quotes": [
+              {
+                "da_id": "ES2011d.B.dialog-act.dharshi.119",
+                "quote": "<vocalsound> Yeah I'd agree with changing the shape ."
+              },
+              {
+                "da_id": "ES2011d.B.dialog-act.dharshi.107",
+                "quote": "We went with shape because we were having fun with the play-dough ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Status adopted is consistent with the dialogue evidence; no conflicting status changes are observed in the current meeting.",
+            "quotes": [
+              {
+                "da_id": "ES2011d.B.dialog-act.dharshi.119",
+                "quote": "<vocalsound> Yeah I'd agree with changing the shape ."
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions found in the available evidence regarding the shape decision; the supporting lines are aligned.",
+            "quotes": [
+              {
+                "da_id": "ES2011d.B.dialog-act.dharshi.119",
+                "quote": "<vocalsound> Yeah I'd agree with changing the shape ."
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "per_link_assessment_required_for_each_related_item",
+            "links": [
+              {
+                "id": "ES2011d#6",
+                "relation": "continues",
+                "changed_fields": [],
+                "reason": "Continuation of the earlier shape decision.",
+                "prior_evidence_da_ids": [
+                  "ES2011d.B.dialog-act.dharshi.107"
+                ],
+                "current_evidence_da_ids": [
+                  "ES2011d.B.dialog-act.dharshi.119"
+                ]
+              }
+            ],
+            "quotes": [
+              {
+                "da_id": "ES2011d.B.dialog-act.dharshi.119",
+                "quote": "<vocalsound> Yeah I'd agree with changing the shape ."
+              },
+              {
+                "da_id": "ES2011d.B.dialog-act.dharshi.107",
+                "quote": "We went with shape because we were having fun with the play-dough ."
+              }
+            ],
+            "fields": [
+              "related_items"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          }
+        },
+        "decision": "retrieve",
+        "reason": "unresolved_checks",
+        "assessed_text": "Yeah I'd agree with changing the shape .",
+        "requested_action": null,
+        "proposed_fields": {
+          "status": "adopted",
+          "related_items": [],
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "ES2011d.B.dialog-act.dharshi.119",
+            "ES2011d.B.dialog-act.dharshi.107"
+          ],
+          "owner": null,
+          "owner_basis": "missing",
+          "deadline": null,
+          "deadline_basis": "missing"
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "The observed dialogue contains explicit support for the shape change: the line 'Yeah I'd agree with changing the shape.' confirms the decision, aligning with the provisional 'adopted' status.",
+            "quotes": [
+              "ES2011d.B.dialog-act.dharshi.119",
+              "ES2011d.B.dialog-act.dharshi.107"
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Status adopted is consistent with the dialogue evidence; no conflicting status changes are observed in the current meeting.",
+            "quotes": [
+              "ES2011d.B.dialog-act.dharshi.119"
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions found in the available evidence regarding the shape decision; the supporting lines are aligned.",
+            "quotes": [
+              "ES2011d.B.dialog-act.dharshi.119"
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "pass",
+            "reason": "The current item continues the earlier 'shape' decision ES2011d#6; the new statement reaffirms the same design direction.",
+            "links": [
+              {
+                "id": "ES2011d#6",
+                "relation": "continues",
+                "changed_fields": [],
+                "reason": "Continuation of the earlier shape decision.",
+                "prior_evidence_da_ids": [
+                  "ES2011d.B.dialog-act.dharshi.107"
+                ],
+                "current_evidence_da_ids": [
+                  "ES2011d.B.dialog-act.dharshi.119"
+                ]
+              }
+            ],
+            "quotes": [
+              "ES2011d.B.dialog-act.dharshi.119",
+              "ES2011d.B.dialog-act.dharshi.107"
+            ],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "status": "adopted",
+          "related_items": [],
+          "statement": {
+            "result": "pass",
+            "reason": "The observed dialogue contains explicit support for the shape change: the line 'Yeah I'd agree with changing the shape.' confirms the decision, aligning with the provisional 'adopted' status.",
+            "evidence_da_ids": [
+              "ES2011d.B.dialog-act.dharshi.119",
+              "ES2011d.B.dialog-act.dharshi.107"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Status adopted is consistent with the dialogue evidence; no conflicting status changes are observed in the current meeting.",
+            "evidence_da_ids": [
+              "ES2011d.B.dialog-act.dharshi.119"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No contradictions found in the available evidence regarding the shape decision; the supporting lines are aligned.",
+            "evidence_da_ids": [
+              "ES2011d.B.dialog-act.dharshi.119"
+            ],
+            "affected_fields": []
+          },
+          "relation_check": {
+            "result": "pass",
+            "reason": "The current item continues the earlier 'shape' decision ES2011d#6; the new statement reaffirms the same design direction.",
+            "evidence_da_ids": [
+              "ES2011d.B.dialog-act.dharshi.119",
+              "ES2011d.B.dialog-act.dharshi.107"
+            ],
+            "links": [
+              {
+                "id": "ES2011d#6",
+                "relation": "continues",
+                "changed_fields": [],
+                "reason": "Continuation of the earlier shape decision.",
+                "prior_evidence_da_ids": [
+                  "ES2011d.B.dialog-act.dharshi.107"
+                ],
+                "current_evidence_da_ids": [
+                  "ES2011d.B.dialog-act.dharshi.119"
+                ]
+              }
+            ]
+          }
+        },
+        "evidence_bindings": {
+          "statement": [
+            "ES2011d.B.dialog-act.dharshi.119",
+            "ES2011d.B.dialog-act.dharshi.107"
+          ],
+          "status": [
+            "ES2011d.B.dialog-act.dharshi.119"
+          ],
+          "conflict": [
+            "ES2011d.B.dialog-act.dharshi.119"
+          ],
+          "relation": [
+            "ES2011d.B.dialog-act.dharshi.119",
+            "ES2011d.B.dialog-act.dharshi.107"
+          ]
+        },
+        "raw_tool_input": {
+          "status": "adopted",
+          "related_items": [],
+          "statement": {
+            "result": "pass",
+            "reason": "The observed dialogue contains explicit support for the shape change: the line 'Yeah I'd agree with changing the shape.' confirms the decision, aligning with the provisional 'adopted' status.",
+            "evidence_da_ids": [
+              "ES2011d.B.dialog-act.dharshi.119",
+              "ES2011d.B.dialog-act.dharshi.107"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Status adopted is consistent with the dialogue evidence; no conflicting status changes are observed in the current meeting.",
+            "evidence_da_ids": [
+              "ES2011d.B.dialog-act.dharshi.119"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No contradictions found in the available evidence regarding the shape decision; the supporting lines are aligned.",
+            "evidence_da_ids": [
+              "ES2011d.B.dialog-act.dharshi.119"
+            ],
+            "affected_fields": []
+          },
+          "relation_check": {
+            "result": "pass",
+            "reason": "The current item continues the earlier 'shape' decision ES2011d#6; the new statement reaffirms the same design direction.",
+            "evidence_da_ids": [
+              "ES2011d.B.dialog-act.dharshi.119",
+              "ES2011d.B.dialog-act.dharshi.107"
+            ],
+            "links": [
+              {
+                "id": "ES2011d#6",
+                "relation": "continues",
+                "changed_fields": [],
+                "reason": "Continuation of the earlier shape decision.",
+                "prior_evidence_da_ids": [
+                  "ES2011d.B.dialog-act.dharshi.107"
+                ],
+                "current_evidence_da_ids": [
+                  "ES2011d.B.dialog-act.dharshi.119"
+                ]
+              }
+            ]
+          }
+        },
+        "protocol_normalizations": [
+          "controller_action_for_missing_hint:retrieve"
+        ],
+        "unresolved_before": [
+          "related_items",
+          "statement",
+          "status"
+        ],
+        "unresolved_after": [
+          "related_items"
+        ],
+        "semantic_stalls": 0,
+        "validation_codes": {
+          "relation": [
+            "prior_context_not_checked",
+            "per_link_assessment_required_for_each_related_item"
+          ]
+        }
+      },
+      {
+        "item": "ES2011d#8",
+        "step": 2,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "history_context_focused",
+        "outcome": "delivered",
+        "evidence_da_ids": [
+          "ES2011d.B.dialog-act.dharshi.107",
+          "ES2011d.C.dialog-act.dharshi.109",
+          "ES2011d.B.dialog-act.dharshi.119",
+          "ES2011d.D.dialog-act.dharshi.168",
+          "ES2011d.C.dialog-act.dharshi.95",
+          "ES2011d.A.dialog-act.dharshi.169",
+          "ES2011d.C.dialog-act.dharshi.108",
+          "ES2011d.D.dialog-act.dharshi.167",
+          "ES2011d.A.dialog-act.dharshi.186",
+          "ES2011d.B.dialog-act.dharshi.120"
+        ]
+      },
+      {
+        "item": "ES2011d#8",
+        "step": 2,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "get_prior_items",
+        "outcome": "lookup",
+        "decision": "retrieve",
+        "args": {
+          "query": "shape",
+          "item_type": "decisions"
+        },
+        "tool_result": {
+          "results": []
+        },
+        "new_info": false
+      },
+      {
+        "item": "ES2011d#8",
+        "step": 3,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "assess_relation",
+        "outcome": "invalid_action",
+        "error": "Correct these argument fields: links: [{'id': 'PRIOR_RECORD_DOES_NOT_APPLY', 'relation': 'continues', 'changed_fields': [], 'reason': 'No change in task scope; this item echoes and completes the earlier stance.', 'prior_evidence_da_ids': ['ES2011d.B.dialog-act.dharshi.107'], 'current_evidence_da_ids': ['ES2011d.B.dialog-act.dharshi.119']}] is expected to be empty Tool assess_relation accepts root keys: result, reason, quotes, documents, links, related_items, next_action. Resubmit the complete advertised object. Select only delivered supporting dialogue IDs; if support is unavailable use uncertain with an explanation, never invent an ID or mark pass with no evidence. Documents belong inside the check they inform.",
+        "raw_tool_input": {
+          "result": "pass",
+          "reason": "The current decision line explicitly references and agrees with the earlier shape decision, indicating a continuation of the same task with no change in scope.",
+          "quotes": [
+            "ES2011d.B.dialog-act.dharshi.107",
+            "ES2011d.B.dialog-act.dharshi.119"
+          ],
+          "current_evidence_da_ids": [
+            "ES2011d.B.dialog-act.dharshi.119"
+          ],
+          "prior_evidence_da_ids": [
+            "ES2011d.B.dialog-act.dharshi.107"
+          ],
+          "links": [
+            {
+              "id": "PRIOR_RECORD_DOES_NOT_APPLY",
+              "relation": "continues",
+              "changed_fields": [],
+              "reason": "No change in task scope; this item echoes and completes the earlier stance.",
+              "prior_evidence_da_ids": [
+                "ES2011d.B.dialog-act.dharshi.107"
+              ],
+              "current_evidence_da_ids": [
+                "ES2011d.B.dialog-act.dharshi.119"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "item": "ES2011d#8",
+        "step": 4,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "assess_relation",
+        "outcome": "invalid_action",
+        "error": "Correct these argument fields: links: [{'id': 'ES2011d.B.dialog-act.dharshi.107', 'relation': 'continues', 'changed_fields': [], 'reason': 'No change in task scope; this item echoes and completes the earlier stance.', 'prior_evidence_da_ids': ['ES2011d.B.dialog-act.dharshi.107'], 'current_evidence_da_ids': ['ES2011d.B.dialog-act.dharshi.119']}] is expected to be empty Tool assess_relation accepts root keys: result, reason, quotes, documents, links, related_items, next_action. Resubmit the complete advertised object. Select only delivered supporting dialogue IDs; if support is unavailable use uncertain with an explanation, never invent an ID or mark pass with no evidence. Documents belong inside the check they inform.",
+        "raw_tool_input": {
+          "result": "pass",
+          "reason": "The current decision quotes echo and extend the earlier shape decision; this is a continuation of the same task with no change in scope.",
+          "quotes": [
+            {
+              "da_id": "ES2011d.B.dialog-act.dharshi.107",
+              "quote": "We went with shape because we were having fun with the play-dough ."
+            },
+            {
+              "da_id": "ES2011d.B.dialog-act.dharshi.119",
+              "quote": "<vocalsound> Yeah I'd agree with changing the shape ."
+            }
+          ],
+          "documents": [],
+          "links": [
+            {
+              "id": "ES2011d.B.dialog-act.dharshi.107",
+              "relation": "continues",
+              "changed_fields": [],
+              "reason": "No change in task scope; this item echoes and completes the earlier stance.",
+              "prior_evidence_da_ids": [
+                "ES2011d.B.dialog-act.dharshi.107"
+              ],
+              "current_evidence_da_ids": [
+                "ES2011d.B.dialog-act.dharshi.119"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "item": "ES2011d#8",
+        "step": 4,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "stop",
+        "outcome": "pending",
+        "termination_reason": "invalid_action_limit",
+        "unresolved_fields": [
+          "related_items"
+        ]
+      }
+    ],
+    "lookups": 1,
+    "termination_reason": "invalid_action_limit",
+    "clarifications": [
+      {
+        "request_id": "0cf3faf4018dc0da",
+        "item_key": "ES2011d#8",
+        "record_id": null,
+        "field": "related_items",
+        "question": "Which earlier record does this item continue or change, and how?",
+        "item_text": "Yeah I'd agree with changing the shape .",
+        "reason": "per_link_assessment_required_for_each_related_item",
+        "evidence_da_ids": [
+          "ES2011d.B.dialog-act.dharshi.119",
+          "ES2011d.B.dialog-act.dharshi.107"
+        ],
+        "available_evidence_da_ids": [
+          "ES2011d.B.dialog-act.dharshi.107",
+          "ES2011d.C.dialog-act.dharshi.109",
+          "ES2011d.B.dialog-act.dharshi.119",
+          "ES2011d.D.dialog-act.dharshi.168",
+          "ES2011d.C.dialog-act.dharshi.95",
+          "ES2011d.A.dialog-act.dharshi.169",
+          "ES2011d.C.dialog-act.dharshi.108",
+          "ES2011d.D.dialog-act.dharshi.167",
+          "ES2011d.A.dialog-act.dharshi.186",
+          "ES2011d.B.dialog-act.dharshi.120"
+        ],
+        "status": "open",
+        "termination_reason": "invalid_action_limit"
+      }
+    ]
+  }
+}

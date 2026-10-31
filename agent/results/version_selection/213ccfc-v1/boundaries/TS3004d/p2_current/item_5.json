@@ -1,0 +1,645 @@
+{
+  "item_key": "TS3004d#5",
+  "record_id": null,
+  "item_type": "actions",
+  "item_text": "The Project Manager will write a final report.",
+  "state": "pending",
+  "recordable": true,
+  "fields": {
+    "status": "open",
+    "prior_context_needed": false,
+    "related_items": [],
+    "owner": [
+      "MTD013PM"
+    ],
+    "owner_basis": "explicit",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "reference": [
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004d.json",
+        "locator": "TS3004d.A.dialog-act.dharshi.311"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004d.json",
+        "locator": "TS3004d.A.dialog-act.dharshi.310"
+      }
+    ]
+  },
+  "draft_fields": {
+    "status": "open",
+    "related_items": [],
+    "owner": [
+      "MTD013PM"
+    ],
+    "owner_basis": "explicit",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "prior_context_needed": false,
+    "used_participant_lookup": false,
+    "evidence_da_ids": [
+      "TS3004d.A.dialog-act.dharshi.311",
+      "TS3004d.A.dialog-act.dharshi.310"
+    ]
+  },
+  "checks": {
+    "statement": {
+      "result": "pass",
+      "reason": "Dialogue explicitly assigns PM (MTD013PM) as the owner and PM states final report writing; scope matches 'write a final report' for PM.",
+      "quotes": [
+        {
+          "da_id": "TS3004d.A.dialog-act.dharshi.311",
+          "quote": "I think just <disfmarker> I just write a final report ."
+        },
+        {
+          "da_id": "TS3004d.A.dialog-act.dharshi.310",
+          "quote": "Yes ,"
+        }
+      ],
+      "fields": [
+        "statement"
+      ]
+    },
+    "owner": {
+      "result": "pass",
+      "reason": "Owner is explicitly stated by PM in dialogue as the actor.",
+      "quotes": [
+        {
+          "da_id": "TS3004d.A.dialog-act.dharshi.311",
+          "quote": "I think just <disfmarker> I just write a final report ."
+        }
+      ],
+      "fields": [
+        "owner"
+      ]
+    },
+    "deadline": {
+      "result": "uncertain",
+      "reason": "deadline_unresolved",
+      "quotes": [
+        {
+          "da_id": "TS3004d.A.dialog-act.dharshi.311",
+          "quote": "I think just <disfmarker> I just write a final report ."
+        }
+      ],
+      "fields": [
+        "deadline"
+      ]
+    },
+    "status": {
+      "result": "pass",
+      "reason": "Open task; no contradictory statements observed in the dialogue.",
+      "quotes": [
+        {
+          "da_id": "TS3004d.A.dialog-act.dharshi.311",
+          "quote": "I think just <disfmarker> I just write a final report ."
+        }
+      ],
+      "fields": [
+        "status"
+      ]
+    },
+    "conflict": {
+      "result": "pass",
+      "reason": "No conflict found within the provided evidence; fields untouched.",
+      "quotes": [
+        {
+          "da_id": "TS3004d.A.dialog-act.dharshi.311",
+          "quote": "I think just <disfmarker> I just write a final report ."
+        }
+      ],
+      "fields": []
+    },
+    "relation": {
+      "result": "not_applicable",
+      "reason": "No prior related item relationship asserted or required in current data.",
+      "quotes": [],
+      "fields": [
+        "related_items"
+      ]
+    }
+  },
+  "unresolved_fields": [
+    "deadline"
+  ],
+  "observed_evidence_da_ids": [
+    "TS3004d.A.dialog-act.dharshi.310",
+    "TS3004d.A.dialog-act.dharshi.311",
+    "TS3004d.C.dialog-act.dharshi.226",
+    "TS3004d.D.dialog-act.dharshi.254",
+    "TS3004d.B.dialog-act.dharshi.275"
+  ],
+  "initial_context": {
+    "item": {
+      "type": "actions",
+      "text": "The Project Manager will write a final report.",
+      "flags": []
+    },
+    "current_meeting": "TS3004d",
+    "earlier_meetings": [
+      "TS3004a",
+      "TS3004b",
+      "TS3004c"
+    ],
+    "roster": [
+      {
+        "speaker": "A",
+        "participant_id": "MTD013PM",
+        "role": "PM"
+      },
+      {
+        "speaker": "B",
+        "participant_id": "MTD015UID",
+        "role": "UI"
+      },
+      {
+        "speaker": "C",
+        "participant_id": "MTD014ID",
+        "role": "ID"
+      },
+      {
+        "speaker": "D",
+        "participant_id": "MTD016ME",
+        "role": "ME"
+      }
+    ],
+    "observed_dialogue": [
+      {
+        "da_id": "TS3004d.A.dialog-act.dharshi.310",
+        "meeting_id": "TS3004d",
+        "text": "Yes ,",
+        "participant": "MTD013PM",
+        "role": "PM"
+      },
+      {
+        "da_id": "TS3004d.A.dialog-act.dharshi.311",
+        "meeting_id": "TS3004d",
+        "text": "I think just <disfmarker> I just write a final report .",
+        "participant": "MTD013PM",
+        "role": "PM"
+      },
+      {
+        "da_id": "TS3004d.C.dialog-act.dharshi.226",
+        "meeting_id": "TS3004d",
+        "text": "Okay .",
+        "participant": "MTD014ID",
+        "role": "ID"
+      },
+      {
+        "da_id": "TS3004d.D.dialog-act.dharshi.254",
+        "participant": "MTD016ME",
+        "role": "ME",
+        "text": "Hmm ."
+      },
+      {
+        "da_id": "TS3004d.B.dialog-act.dharshi.275",
+        "participant": "MTD015UID",
+        "role": "UI",
+        "text": "Quite early ."
+      }
+    ],
+    "peer_items": [
+      {
+        "item_key": "TS3004d#0",
+        "type": "decisions",
+        "text": "UI will present their prototype presentation after PM."
+      },
+      {
+        "item_key": "TS3004d#1",
+        "type": "problems",
+        "text": "ME will take some pictures after the meeting."
+      },
+      {
+        "item_key": "TS3004d#2",
+        "type": "decisions",
+        "text": "The Project Manager will write a final report."
+      },
+      {
+        "item_key": "TS3004d#3",
+        "type": "actions",
+        "text": "ID will fill in the questionnaire."
+      },
+      {
+        "item_key": "TS3004d#4",
+        "type": "actions",
+        "text": "UI will present their prototype presentation after PM."
+      }
+    ],
+    "provisional_values": {
+      "owner": [
+        "MTD013PM"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "status": "open",
+      "related_items": []
+    },
+    "candidate_evidence_da_ids": [
+      "TS3004d.A.dialog-act.dharshi.310",
+      "TS3004d.A.dialog-act.dharshi.311",
+      "TS3004d.C.dialog-act.dharshi.226"
+    ]
+  },
+  "observed_documents": [],
+  "document_evidence": [],
+  "relation_evidence": [],
+  "history": [
+    {
+      "item": "TS3004d#5",
+      "step": 1,
+      "flags": [],
+      "action": "assess_item",
+      "outcome": "invalid_action",
+      "error": "Correct these argument fields: : 'relation_check' is a required property; : Additional properties are not allowed ('statement_documents' was unexpected) Tool assess_item accepts root keys: status, related_items, owner, owner_basis, deadline, deadline_basis, statement, owner_check, deadline_check, status_check, conflict_check, relation_check, next_action. Resubmit the complete advertised object. Select only delivered supporting dialogue IDs; if support is unavailable use uncertain with an explanation, never invent an ID or mark pass with no evidence. Documents belong inside the check they inform.",
+      "raw_tool_input": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD013PM"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue explicitly assigns PM (MTD013PM) as the owner and PM states final report writing; scope matches 'write a final report' for PM.",
+          "evidence_da_ids": [
+            "TS3004d.A.dialog-act.dharshi.311",
+            "TS3004d.A.dialog-act.dharshi.310"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "Owner is explicitly stated by PM in dialogue as the actor.",
+          "evidence_da_ids": [
+            "TS3004d.A.dialog-act.dharshi.311"
+          ]
+        },
+        "deadline_check": {
+          "result": "uncertain",
+          "reason": "No explicit deadline wording in dialogue; none inferred.",
+          "evidence_da_ids": [
+            "TS3004d.A.dialog-act.dharshi.311"
+          ]
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "Open task; no contradictory statements observed in the dialogue.",
+          "evidence_da_ids": [
+            "TS3004d.A.dialog-act.dharshi.311"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No conflict found within the provided evidence; fields unaffected.",
+          "evidence_da_ids": [
+            "TS3004d.A.dialog-act.dharshi.311"
+          ]
+        },
+        "statement_documents": []
+      }
+    },
+    {
+      "item": "TS3004d#5",
+      "step": 2,
+      "flags": [],
+      "action": "assess_item",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue explicitly assigns PM (MTD013PM) as the owner and PM states final report writing; scope matches 'write a final report' for PM.",
+          "quotes": [
+            {
+              "da_id": "TS3004d.A.dialog-act.dharshi.311",
+              "quote": "I think just <disfmarker> I just write a final report ."
+            },
+            {
+              "da_id": "TS3004d.A.dialog-act.dharshi.310",
+              "quote": "Yes ,"
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Owner is explicitly stated by PM in dialogue as the actor.",
+          "quotes": [
+            {
+              "da_id": "TS3004d.A.dialog-act.dharshi.311",
+              "quote": "I think just <disfmarker> I just write a final report ."
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "deadline_unresolved",
+          "quotes": [
+            {
+              "da_id": "TS3004d.A.dialog-act.dharshi.311",
+              "quote": "I think just <disfmarker> I just write a final report ."
+            }
+          ],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Open task; no contradictory statements observed in the dialogue.",
+          "quotes": [
+            {
+              "da_id": "TS3004d.A.dialog-act.dharshi.311",
+              "quote": "I think just <disfmarker> I just write a final report ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No conflict found within the provided evidence; fields untouched.",
+          "quotes": [
+            {
+              "da_id": "TS3004d.A.dialog-act.dharshi.311",
+              "quote": "I think just <disfmarker> I just write a final report ."
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No prior related item relationship asserted or required in current data.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "decision": "request_clarification",
+      "reason": "supported_statement_with_unresolved_fields",
+      "assessed_text": "The Project Manager will write a final report.",
+      "requested_action": "accept",
+      "proposed_fields": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD013PM"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "TS3004d.A.dialog-act.dharshi.311",
+          "TS3004d.A.dialog-act.dharshi.310"
+        ]
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue explicitly assigns PM (MTD013PM) as the owner and PM states final report writing; scope matches 'write a final report' for PM.",
+          "quotes": [
+            "TS3004d.A.dialog-act.dharshi.311",
+            "TS3004d.A.dialog-act.dharshi.310"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Owner is explicitly stated by PM in dialogue as the actor.",
+          "quotes": [
+            "TS3004d.A.dialog-act.dharshi.311"
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "No explicit deadline wording in dialogue; none inferred.",
+          "quotes": [
+            "TS3004d.A.dialog-act.dharshi.311"
+          ],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Open task; no contradictory statements observed in the dialogue.",
+          "quotes": [
+            "TS3004d.A.dialog-act.dharshi.311"
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No conflict found within the provided evidence; fields untouched.",
+          "quotes": [
+            "TS3004d.A.dialog-act.dharshi.311"
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No prior related item relationship asserted or required in current data.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD013PM"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue explicitly assigns PM (MTD013PM) as the owner and PM states final report writing; scope matches 'write a final report' for PM.",
+          "evidence_da_ids": [
+            "TS3004d.A.dialog-act.dharshi.311",
+            "TS3004d.A.dialog-act.dharshi.310"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "Owner is explicitly stated by PM in dialogue as the actor.",
+          "evidence_da_ids": [
+            "TS3004d.A.dialog-act.dharshi.311"
+          ]
+        },
+        "deadline_check": {
+          "result": "uncertain",
+          "reason": "No explicit deadline wording in dialogue; none inferred.",
+          "evidence_da_ids": [
+            "TS3004d.A.dialog-act.dharshi.311"
+          ]
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "Open task; no contradictory statements observed in the dialogue.",
+          "evidence_da_ids": [
+            "TS3004d.A.dialog-act.dharshi.311"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No conflict found within the provided evidence; fields untouched.",
+          "evidence_da_ids": [
+            "TS3004d.A.dialog-act.dharshi.311"
+          ],
+          "affected_fields": []
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No prior related item relationship asserted or required in current data.",
+          "evidence_da_ids": []
+        },
+        "next_action": "accept"
+      },
+      "evidence_bindings": {
+        "statement": [
+          "TS3004d.A.dialog-act.dharshi.311",
+          "TS3004d.A.dialog-act.dharshi.310"
+        ],
+        "owner": [
+          "TS3004d.A.dialog-act.dharshi.311"
+        ],
+        "deadline": [
+          "TS3004d.A.dialog-act.dharshi.311"
+        ],
+        "status": [
+          "TS3004d.A.dialog-act.dharshi.311"
+        ],
+        "conflict": [
+          "TS3004d.A.dialog-act.dharshi.311"
+        ]
+      },
+      "raw_tool_input": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD013PM"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue explicitly assigns PM (MTD013PM) as the owner and PM states final report writing; scope matches 'write a final report' for PM.",
+          "evidence_da_ids": [
+            "TS3004d.A.dialog-act.dharshi.311",
+            "TS3004d.A.dialog-act.dharshi.310"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "Owner is explicitly stated by PM in dialogue as the actor.",
+          "evidence_da_ids": [
+            "TS3004d.A.dialog-act.dharshi.311"
+          ]
+        },
+        "deadline_check": {
+          "result": "uncertain",
+          "reason": "No explicit deadline wording in dialogue; none inferred.",
+          "evidence_da_ids": [
+            "TS3004d.A.dialog-act.dharshi.311"
+          ]
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "Open task; no contradictory statements observed in the dialogue.",
+          "evidence_da_ids": [
+            "TS3004d.A.dialog-act.dharshi.311"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No conflict found within the provided evidence; fields untouched.",
+          "evidence_da_ids": [
+            "TS3004d.A.dialog-act.dharshi.311"
+          ],
+          "affected_fields": []
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No prior related item relationship asserted or required in current data.",
+          "evidence_da_ids": []
+        },
+        "next_action": "accept"
+      },
+      "protocol_normalizations": [],
+      "unresolved_before": [
+        "deadline",
+        "owner",
+        "statement",
+        "status"
+      ],
+      "unresolved_after": [
+        "deadline"
+      ],
+      "semantic_stalls": 0,
+      "validation_codes": {
+        "deadline": [
+          "deadline_unresolved"
+        ]
+      }
+    },
+    {
+      "item": "TS3004d#5",
+      "step": 2,
+      "flags": [],
+      "action": "stop",
+      "outcome": "pending",
+      "termination_reason": "supported_statement_with_unresolved_fields",
+      "unresolved_fields": [
+        "deadline"
+      ]
+    }
+  ],
+  "lookups": 0,
+  "termination_reason": "supported_statement_with_unresolved_fields",
+  "clarifications": [
+    {
+      "request_id": "7eaa1db8ea5c04bd",
+      "item_key": "TS3004d#5",
+      "record_id": null,
+      "field": "deadline",
+      "question": "What is the agreed deadline, in its original wording?",
+      "item_text": "The Project Manager will write a final report.",
+      "reason": "deadline_unresolved",
+      "evidence_da_ids": [
+        "TS3004d.A.dialog-act.dharshi.311"
+      ],
+      "available_evidence_da_ids": [
+        "TS3004d.A.dialog-act.dharshi.310",
+        "TS3004d.A.dialog-act.dharshi.311",
+        "TS3004d.C.dialog-act.dharshi.226",
+        "TS3004d.D.dialog-act.dharshi.254",
+        "TS3004d.B.dialog-act.dharshi.275"
+      ],
+      "status": "open",
+      "termination_reason": "supported_statement_with_unresolved_fields"
+    }
+  ]
+}

@@ -1,0 +1,4412 @@
+{
+  "meeting_id": "TS3004c",
+  "status": "COMPLETED",
+  "arms": {
+    "baseline": {
+      "metrics": {
+        "actions": {
+          "tp": 1,
+          "sys": 5,
+          "gold": 2,
+          "precision": 0.2,
+          "recall": 0.5,
+          "f1": 0.286
+        },
+        "decisions": {
+          "tp": 3,
+          "sys": 6,
+          "gold": 7,
+          "precision": 0.5,
+          "recall": 0.429,
+          "f1": 0.462
+        },
+        "problems": {
+          "tp": 1,
+          "sys": 3,
+          "gold": 1,
+          "precision": 0.333,
+          "recall": 1.0,
+          "f1": 0.5
+        }
+      },
+      "matches": {
+        "TS3004c.sys.s.10": "TS3004c.JacquelinePalmer.s.14",
+        "TS3004c.sys.s.12": "TS3004c.JacquelinePalmer.s.21",
+        "TS3004c.sys.s.13": "TS3004c.JacquelinePalmer.s.20",
+        "TS3004c.sys.s.4": "TS3004c.JacquelinePalmer.s.22",
+        "TS3004c.sys.s.7": "TS3004c.JacquelinePalmer.s.24"
+      },
+      "unmatched": {
+        "actions": {
+          "system": [
+            {
+              "id": "TS3004c.sys.s.1",
+              "text": "The PM will supply five different front designs in a box.",
+              "type": "actions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.112"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.111"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.197"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.155"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.156"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.286"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.157"
+                }
+              ],
+              "owner": [
+                "MTD013PM"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "TS3004c.sys.s.6",
+              "text": "UI will provide UI's design to the group.",
+              "type": "actions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.67"
+                }
+              ],
+              "owner": [
+                "MTD015UID"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "TS3004c.sys.s.8",
+              "text": "ID will discuss the material options with PM.",
+              "type": "actions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.3"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.112"
+                }
+              ],
+              "owner": [
+                "MTD014ID",
+                "MTD013PM"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "TS3004c.sys.s.14",
+              "text": "The UI will follow up on the item discussed after this meeting.",
+              "type": "actions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.27"
+                }
+              ],
+              "owner": [
+                "MTD015UID"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ],
+          "gold": [
+            {
+              "id": "TS3004c.JacquelinePalmer.s.15",
+              "text": "The User Interface Designer will look again at where the channel buttons go.",
+              "type": "actions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.275"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.317"
+                }
+              ],
+              "owner": [
+                "MTD015UID"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ]
+        },
+        "decisions": {
+          "system": [
+            {
+              "id": "TS3004c.sys.s.2",
+              "text": "The remote case should be hard plastic and transparent to enable backlighting.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.141"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.151"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.152"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.153"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.128"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.218"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "TS3004c.sys.s.9",
+              "text": "The Real Reaction logo will be placed on the remote, and the fronts on the remote should be replaceable.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.94"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.96"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.285"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.284"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.193"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.196"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "TS3004c.sys.s.11",
+              "text": "LED colors will be blue, red, and green; color cannot be chosen at purchase; color can be changed after purchase; there are multiple LEDs.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.134"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.132"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.225"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.126"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.230"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.143"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ],
+          "gold": [
+            {
+              "id": "TS3004c.JacquelinePalmer.s.16",
+              "text": "The group decided to use a scroll button for volume control.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.77"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.114"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.169"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.170"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "TS3004c.JacquelinePalmer.s.18",
+              "text": "The remote will include rechargeable batteries and will be used with a recharging stand.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.152"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.245"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.196"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.214"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.194"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.196"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": true,
+              "related_items": [
+                {
+                  "id": "TS3004a.JacquelinePalmer.s.14",
+                  "relation": "resolves"
+                }
+              ]
+            },
+            {
+              "id": "TS3004c.JacquelinePalmer.s.23",
+              "text": "They eventually decided to incorporate speech recognition and an advanced chip.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.355"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.361"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.455"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": true,
+              "related_items": [
+                {
+                  "id": "TS3004b.JacquelinePalmer.s.14",
+                  "relation": "updates"
+                }
+              ]
+            },
+            {
+              "id": "TS3004c.revised.s.25",
+              "text": "The remote will open up to hold the speech recognition functions.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.425"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.426"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.357"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.358"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.359"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ]
+        },
+        "problems": {
+          "system": [
+            {
+              "id": "TS3004c.sys.s.3",
+              "text": "The remote will not wake up; the power light doesn't work and it appears it may have been turned off.",
+              "type": "problems",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.2"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.11"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.5"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.6"
+                }
+              ],
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "TS3004c.sys.s.5",
+              "text": "The cost is unclear; although a figure of twelve and a half euros per remote is mentioned, the total production cost remains undefined.",
+              "type": "problems",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.54"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.88"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.89"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.41"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.23"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.24"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.25"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.49"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.50"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.51"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.52"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.53"
+                }
+              ],
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ],
+          "gold": []
+        }
+      }
+    },
+    "retention_actions": {
+      "metrics": {
+        "actions": {
+          "tp": 1,
+          "sys": 5,
+          "gold": 2,
+          "precision": 0.2,
+          "recall": 0.5,
+          "f1": 0.286
+        },
+        "decisions": {
+          "tp": 3,
+          "sys": 6,
+          "gold": 7,
+          "precision": 0.5,
+          "recall": 0.429,
+          "f1": 0.462
+        },
+        "problems": {
+          "tp": 1,
+          "sys": 3,
+          "gold": 1,
+          "precision": 0.333,
+          "recall": 1.0,
+          "f1": 0.5
+        }
+      },
+      "matches": {
+        "TS3004c.sys.s.4": "TS3004c.JacquelinePalmer.s.14",
+        "TS3004c.sys.s.13": "TS3004c.JacquelinePalmer.s.21",
+        "TS3004c.sys.s.14": "TS3004c.JacquelinePalmer.s.20",
+        "TS3004c.sys.s.8": "TS3004c.JacquelinePalmer.s.22",
+        "TS3004c.sys.s.10": "TS3004c.JacquelinePalmer.s.24"
+      },
+      "unmatched": {
+        "actions": {
+          "system": [
+            {
+              "id": "TS3004c.sys.s.1",
+              "text": "The PM will supply five different front designs in a box.",
+              "type": "actions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.112"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.111"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.197"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.155"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.156"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.286"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.157"
+                }
+              ],
+              "owner": [
+                "MTD013PM"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "TS3004c.sys.s.2",
+              "text": "UI will provide UI's design to the group.",
+              "type": "actions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.67"
+                }
+              ],
+              "owner": [
+                "MTD015UID"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "TS3004c.sys.s.3",
+              "text": "ID will discuss the material options with PM.",
+              "type": "actions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.3"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.112"
+                }
+              ],
+              "owner": [
+                "MTD014ID",
+                "MTD013PM"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "TS3004c.sys.s.5",
+              "text": "The UI will follow up on the item discussed after this meeting.",
+              "type": "actions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.27"
+                }
+              ],
+              "owner": [
+                "MTD015UID"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ],
+          "gold": [
+            {
+              "id": "TS3004c.JacquelinePalmer.s.15",
+              "text": "The User Interface Designer will look again at where the channel buttons go.",
+              "type": "actions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.275"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.317"
+                }
+              ],
+              "owner": [
+                "MTD015UID"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ]
+        },
+        "decisions": {
+          "system": [
+            {
+              "id": "TS3004c.sys.s.6",
+              "text": "The remote case should be hard plastic and transparent to enable backlighting.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.141"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.151"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.152"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.153"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.128"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.218"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "TS3004c.sys.s.11",
+              "text": "The Real Reaction logo will be placed on the remote, and the fronts on the remote should be replaceable.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.94"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.96"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.285"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.284"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.193"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.196"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "TS3004c.sys.s.12",
+              "text": "LED colors will be blue, red, and green; color cannot be chosen at purchase; color can be changed after purchase; there are multiple LEDs.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.132"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.225"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.143"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.171"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.134"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.124"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.135"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.228"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.126"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.168"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.230"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.127"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.167"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ],
+          "gold": [
+            {
+              "id": "TS3004c.JacquelinePalmer.s.16",
+              "text": "The group decided to use a scroll button for volume control.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.77"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.114"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.169"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.170"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "TS3004c.JacquelinePalmer.s.18",
+              "text": "The remote will include rechargeable batteries and will be used with a recharging stand.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.152"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.245"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.196"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.214"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.194"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.196"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": true,
+              "related_items": [
+                {
+                  "id": "TS3004a.JacquelinePalmer.s.14",
+                  "relation": "resolves"
+                }
+              ]
+            },
+            {
+              "id": "TS3004c.JacquelinePalmer.s.23",
+              "text": "They eventually decided to incorporate speech recognition and an advanced chip.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.355"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.361"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.455"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": true,
+              "related_items": [
+                {
+                  "id": "TS3004b.JacquelinePalmer.s.14",
+                  "relation": "updates"
+                }
+              ]
+            },
+            {
+              "id": "TS3004c.revised.s.25",
+              "text": "The remote will open up to hold the speech recognition functions.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.425"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.426"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.357"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.358"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.359"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ]
+        },
+        "problems": {
+          "system": [
+            {
+              "id": "TS3004c.sys.s.7",
+              "text": "The remote will not wake up; the power light doesn't work and it appears it may have been turned off.",
+              "type": "problems",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.2"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.11"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.5"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.6"
+                }
+              ],
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "TS3004c.sys.s.9",
+              "text": "The cost is unclear; although a figure of twelve and a half euros per remote is mentioned, the total production cost remains undefined.",
+              "type": "problems",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.54"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.88"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.89"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.41"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.23"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.24"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.25"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.49"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.50"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.51"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.52"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.53"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.56"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.57"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.56"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.57"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.61"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.58"
+                }
+              ],
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ],
+          "gold": []
+        }
+      }
+    },
+    "retention_actions_issues": {
+      "metrics": {
+        "actions": {
+          "tp": 1,
+          "sys": 5,
+          "gold": 2,
+          "precision": 0.2,
+          "recall": 0.5,
+          "f1": 0.286
+        },
+        "decisions": {
+          "tp": 3,
+          "sys": 6,
+          "gold": 7,
+          "precision": 0.5,
+          "recall": 0.429,
+          "f1": 0.462
+        },
+        "problems": {
+          "tp": 1,
+          "sys": 4,
+          "gold": 1,
+          "precision": 0.25,
+          "recall": 1.0,
+          "f1": 0.4
+        }
+      },
+      "matches": {
+        "TS3004c.sys.s.4": "TS3004c.JacquelinePalmer.s.14",
+        "TS3004c.sys.s.13": "TS3004c.JacquelinePalmer.s.21",
+        "TS3004c.sys.s.14": "TS3004c.JacquelinePalmer.s.20",
+        "TS3004c.sys.s.8": "TS3004c.JacquelinePalmer.s.22",
+        "TS3004c.sys.s.10": "TS3004c.JacquelinePalmer.s.24"
+      },
+      "unmatched": {
+        "actions": {
+          "system": [
+            {
+              "id": "TS3004c.sys.s.1",
+              "text": "The PM will supply five different front designs in a box.",
+              "type": "actions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.112"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.111"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.197"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.155"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.156"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.286"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.157"
+                }
+              ],
+              "owner": [
+                "MTD013PM"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "TS3004c.sys.s.2",
+              "text": "UI will provide UI's design to the group.",
+              "type": "actions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.67"
+                }
+              ],
+              "owner": [
+                "MTD015UID"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "TS3004c.sys.s.3",
+              "text": "ID will discuss the material options with PM.",
+              "type": "actions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.3"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.112"
+                }
+              ],
+              "owner": [
+                "MTD014ID",
+                "MTD013PM"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "TS3004c.sys.s.5",
+              "text": "The UI will follow up on the item discussed after this meeting.",
+              "type": "actions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.27"
+                }
+              ],
+              "owner": [
+                "MTD015UID"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ],
+          "gold": [
+            {
+              "id": "TS3004c.JacquelinePalmer.s.15",
+              "text": "The User Interface Designer will look again at where the channel buttons go.",
+              "type": "actions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.275"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.317"
+                }
+              ],
+              "owner": [
+                "MTD015UID"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ]
+        },
+        "decisions": {
+          "system": [
+            {
+              "id": "TS3004c.sys.s.6",
+              "text": "The remote case should be hard plastic and transparent to enable backlighting.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.141"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.151"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.152"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.153"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.128"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.218"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "TS3004c.sys.s.11",
+              "text": "The Real Reaction logo will be placed on the remote, and the fronts on the remote should be replaceable.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.94"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.96"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.285"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.284"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.193"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.196"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "TS3004c.sys.s.12",
+              "text": "LED colors will be blue, red, and green; color cannot be chosen at purchase; color can be changed after purchase; there are multiple LEDs.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.132"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.225"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.143"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.171"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.134"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.124"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.135"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.228"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.126"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.168"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.230"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.127"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.167"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ],
+          "gold": [
+            {
+              "id": "TS3004c.JacquelinePalmer.s.16",
+              "text": "The group decided to use a scroll button for volume control.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.77"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.114"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.169"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.170"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "TS3004c.JacquelinePalmer.s.18",
+              "text": "The remote will include rechargeable batteries and will be used with a recharging stand.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.152"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.245"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.196"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.214"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.194"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.196"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": true,
+              "related_items": [
+                {
+                  "id": "TS3004a.JacquelinePalmer.s.14",
+                  "relation": "resolves"
+                }
+              ]
+            },
+            {
+              "id": "TS3004c.JacquelinePalmer.s.23",
+              "text": "They eventually decided to incorporate speech recognition and an advanced chip.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.355"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.361"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.455"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": true,
+              "related_items": [
+                {
+                  "id": "TS3004b.JacquelinePalmer.s.14",
+                  "relation": "updates"
+                }
+              ]
+            },
+            {
+              "id": "TS3004c.revised.s.25",
+              "text": "The remote will open up to hold the speech recognition functions.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.425"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.426"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.357"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.358"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.359"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ]
+        },
+        "problems": {
+          "system": [
+            {
+              "id": "TS3004c.sys.s.7",
+              "text": "The remote will not wake up; the power light doesn't work and it appears it may have been turned off.",
+              "type": "problems",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.2"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.11"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.5"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.6"
+                }
+              ],
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "TS3004c.sys.s.9",
+              "text": "The cost is unclear; although a figure of twelve and a half euros per remote is mentioned, the total production cost remains undefined.",
+              "type": "problems",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.54"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.88"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.89"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.41"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.23"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.24"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.25"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.49"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.50"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.51"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.52"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.53"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.56"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.57"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.56"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.57"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.61"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.58"
+                }
+              ],
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "TS3004c.sys.s.15",
+              "text": "The display requires an advanced chip, making it the most expensive option.",
+              "type": "problems",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.30"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.31"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.33"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.32"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.63"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.34"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.35"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.36"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.64"
+                }
+              ],
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ],
+          "gold": []
+        }
+      }
+    },
+    "selection213": {
+      "metrics": {
+        "actions": {
+          "tp": 2,
+          "sys": 5,
+          "gold": 2,
+          "precision": 0.4,
+          "recall": 1.0,
+          "f1": 0.571
+        },
+        "decisions": {
+          "tp": 2,
+          "sys": 6,
+          "gold": 7,
+          "precision": 0.333,
+          "recall": 0.286,
+          "f1": 0.308
+        },
+        "problems": {
+          "tp": 1,
+          "sys": 3,
+          "gold": 1,
+          "precision": 0.333,
+          "recall": 1.0,
+          "f1": 0.5
+        }
+      },
+      "matches": {
+        "TS3004c.sys.s.14": "TS3004c.JacquelinePalmer.s.14",
+        "TS3004c.sys.s.15": "TS3004c.JacquelinePalmer.s.15",
+        "TS3004c.sys.s.10": "TS3004c.JacquelinePalmer.s.21",
+        "TS3004c.sys.s.6": "TS3004c.JacquelinePalmer.s.22",
+        "TS3004c.sys.s.5": "TS3004c.JacquelinePalmer.s.24"
+      },
+      "unmatched": {
+        "actions": {
+          "system": [
+            {
+              "id": "TS3004c.sys.s.1",
+              "text": "Provide five different front designs in a box.",
+              "type": "actions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.112"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.111"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.197"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.155"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.156"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.286"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.157"
+                }
+              ],
+              "owner": [
+                "MTD013PM"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "TS3004c.sys.s.12",
+              "text": "Provide UI design to the group.",
+              "type": "actions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.67"
+                }
+              ],
+              "owner": [
+                "MTD015UID"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "TS3004c.sys.s.13",
+              "text": "Discuss material options with PM.",
+              "type": "actions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.3"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.112"
+                }
+              ],
+              "owner": [
+                "MTD014ID",
+                "MTD013PM"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ],
+          "gold": []
+        },
+        "decisions": {
+          "system": [
+            {
+              "id": "TS3004c.sys.s.2",
+              "text": "Remote case should be hard plastic and transparent to enable backlighting.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.141"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.151"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.152"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.153"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.128"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.218"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "TS3004c.sys.s.7",
+              "text": "LED colors will be blue, red, and green.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.132"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.225"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.143"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.171"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.134"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.124"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.135"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.228"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.126"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.168"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.230"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.127"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.167"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "TS3004c.sys.s.8",
+              "text": "Color cannot be chosen at purchase but can be changed after purchase.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.132"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.225"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.143"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.171"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.134"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.124"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.135"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.228"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.126"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.168"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.230"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.127"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.167"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "TS3004c.sys.s.9",
+              "text": "Rubber buttons for three-dimensional curved remotes.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.221"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.222"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.252"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.223"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.293"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.294"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.249"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.276"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.299"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.300"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ],
+          "gold": [
+            {
+              "id": "TS3004c.JacquelinePalmer.s.16",
+              "text": "The group decided to use a scroll button for volume control.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.77"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.114"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.169"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.170"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "TS3004c.JacquelinePalmer.s.18",
+              "text": "The remote will include rechargeable batteries and will be used with a recharging stand.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.152"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.245"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.196"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.214"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.194"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.196"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": true,
+              "related_items": [
+                {
+                  "id": "TS3004a.JacquelinePalmer.s.14",
+                  "relation": "resolves"
+                }
+              ]
+            },
+            {
+              "id": "TS3004c.JacquelinePalmer.s.20",
+              "text": "The remote will not feature an LCD screen.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.173"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": [
+                {
+                  "id": "TS3004b.JacquelinePalmer.s.14",
+                  "relation": "continues"
+                }
+              ]
+            },
+            {
+              "id": "TS3004c.JacquelinePalmer.s.23",
+              "text": "They eventually decided to incorporate speech recognition and an advanced chip.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.355"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.361"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.455"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": true,
+              "related_items": [
+                {
+                  "id": "TS3004b.JacquelinePalmer.s.14",
+                  "relation": "updates"
+                }
+              ]
+            },
+            {
+              "id": "TS3004c.revised.s.25",
+              "text": "The remote will open up to hold the speech recognition functions.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.425"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.426"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.357"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.358"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.359"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ]
+        },
+        "problems": {
+          "system": [
+            {
+              "id": "TS3004c.sys.s.3",
+              "text": "The remote will not wake up; the power light doesn't work and it appears it may have been turned off.",
+              "type": "problems",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.2"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.11"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.5"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.6"
+                }
+              ],
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "TS3004c.sys.s.4",
+              "text": "The cost is unclear; twelve and a half euros per remote is mentioned, total production cost remains undefined.",
+              "type": "problems",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.54"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.88"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.89"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.41"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.23"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.24"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.25"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.49"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.50"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.51"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.52"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.53"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.56"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.57"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.56"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.57"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.61"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.58"
+                }
+              ],
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ],
+          "gold": []
+        }
+      }
+    },
+    "selection_issue": {
+      "metrics": {
+        "actions": {
+          "tp": 1,
+          "sys": 5,
+          "gold": 2,
+          "precision": 0.2,
+          "recall": 0.5,
+          "f1": 0.286
+        },
+        "decisions": {
+          "tp": 1,
+          "sys": 7,
+          "gold": 7,
+          "precision": 0.143,
+          "recall": 0.143,
+          "f1": 0.143
+        },
+        "problems": {
+          "tp": 1,
+          "sys": 3,
+          "gold": 1,
+          "precision": 0.333,
+          "recall": 1.0,
+          "f1": 0.5
+        }
+      },
+      "matches": {
+        "TS3004c.sys.s.9": "TS3004c.JacquelinePalmer.s.14",
+        "TS3004c.sys.s.3": "TS3004c.JacquelinePalmer.s.22",
+        "TS3004c.sys.s.4": "TS3004c.JacquelinePalmer.s.24"
+      },
+      "unmatched": {
+        "actions": {
+          "system": [
+            {
+              "id": "TS3004c.sys.s.1",
+              "text": "The PM will supply five different front designs in a box.",
+              "type": "actions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.112"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.111"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.197"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.155"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.156"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.286"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.157"
+                }
+              ],
+              "owner": [
+                "MTD013PM"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "TS3004c.sys.s.7",
+              "text": "UI will provide UI's design to the group.",
+              "type": "actions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.67"
+                }
+              ],
+              "owner": [
+                "MTD015UID"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "TS3004c.sys.s.8",
+              "text": "ID will discuss the material options with PM.",
+              "type": "actions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.3"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.112"
+                }
+              ],
+              "owner": [
+                "MTD014ID",
+                "MTD013PM"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "TS3004c.sys.s.15",
+              "text": "The UI will follow up on the item discussed after this meeting.",
+              "type": "actions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.27"
+                }
+              ],
+              "owner": [
+                "MTD015UID"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ],
+          "gold": [
+            {
+              "id": "TS3004c.JacquelinePalmer.s.15",
+              "text": "The User Interface Designer will look again at where the channel buttons go.",
+              "type": "actions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.275"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.317"
+                }
+              ],
+              "owner": [
+                "MTD015UID"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ]
+        },
+        "decisions": {
+          "system": [
+            {
+              "id": "TS3004c.sys.s.5",
+              "text": "Real Reaction logo to be placed on remote; fronts should be replaceable.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.94"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.96"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.285"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.284"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.193"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.196"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "TS3004c.sys.s.6",
+              "text": "LED colors will be blue, red, and green.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.132"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.225"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.143"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.171"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.134"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.124"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.135"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.228"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.126"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.168"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.230"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.127"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.167"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "TS3004c.sys.s.10",
+              "text": "Front-panel variant approach is approved and aligned with C0.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.111"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.112"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.197"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.155"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.156"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.286"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.157"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "TS3004c.sys.s.12",
+              "text": "Color cannot be chosen at purchase.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.132"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.225"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.143"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.171"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.134"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.124"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.135"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.228"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.126"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.168"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.230"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.127"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.167"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "TS3004c.sys.s.13",
+              "text": "Color can be changed after purchase.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.132"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.225"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.143"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.171"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.134"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.124"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.135"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.228"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.126"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.168"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.230"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.127"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.167"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "TS3004c.sys.s.14",
+              "text": "Remote will use rubber buttons for three-dimensional curved remotes.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.221"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.222"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.252"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.223"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.293"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.294"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.249"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.276"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.299"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.300"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ],
+          "gold": [
+            {
+              "id": "TS3004c.JacquelinePalmer.s.16",
+              "text": "The group decided to use a scroll button for volume control.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.77"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.114"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.169"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.170"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "TS3004c.JacquelinePalmer.s.18",
+              "text": "The remote will include rechargeable batteries and will be used with a recharging stand.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.152"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.245"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.196"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.214"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.194"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.196"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": true,
+              "related_items": [
+                {
+                  "id": "TS3004a.JacquelinePalmer.s.14",
+                  "relation": "resolves"
+                }
+              ]
+            },
+            {
+              "id": "TS3004c.JacquelinePalmer.s.20",
+              "text": "The remote will not feature an LCD screen.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.173"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": [
+                {
+                  "id": "TS3004b.JacquelinePalmer.s.14",
+                  "relation": "continues"
+                }
+              ]
+            },
+            {
+              "id": "TS3004c.JacquelinePalmer.s.21",
+              "text": "The remote will have rounded corners and be curved in two dimensions only, not in depth.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.252"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.188"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.294"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.322"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.294"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.321"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.221"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.222"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.252"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.166"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": [
+                {
+                  "id": "TS3004a.JacquelinePalmer.s.15",
+                  "relation": "resolves"
+                }
+              ]
+            },
+            {
+              "id": "TS3004c.JacquelinePalmer.s.23",
+              "text": "They eventually decided to incorporate speech recognition and an advanced chip.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.355"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.361"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.455"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": true,
+              "related_items": [
+                {
+                  "id": "TS3004b.JacquelinePalmer.s.14",
+                  "relation": "updates"
+                }
+              ]
+            },
+            {
+              "id": "TS3004c.revised.s.25",
+              "text": "The remote will open up to hold the speech recognition functions.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.425"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.426"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.357"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.358"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.359"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ]
+        },
+        "problems": {
+          "system": [
+            {
+              "id": "TS3004c.sys.s.2",
+              "text": "Remote will not wake up; power indicator issue suggests hardware power-off state.",
+              "type": "problems",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.2"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.11"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.5"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.6"
+                }
+              ],
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "TS3004c.sys.s.11",
+              "text": "Total production cost undefined; cost per remote noted but not total figure.",
+              "type": "problems",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.54"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.88"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.89"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.41"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.23"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.24"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.25"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.49"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.50"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.51"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.52"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.53"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.56"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.57"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.56"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.57"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.61"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.58"
+                }
+              ],
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ],
+          "gold": []
+        }
+      }
+    },
+    "p2_current": {
+      "metrics": {
+        "actions": {
+          "tp": 1,
+          "sys": 5,
+          "gold": 2,
+          "precision": 0.2,
+          "recall": 0.5,
+          "f1": 0.286
+        },
+        "decisions": {
+          "tp": 2,
+          "sys": 5,
+          "gold": 7,
+          "precision": 0.4,
+          "recall": 0.286,
+          "f1": 0.333
+        },
+        "problems": {
+          "tp": 1,
+          "sys": 3,
+          "gold": 1,
+          "precision": 0.333,
+          "recall": 1.0,
+          "f1": 0.5
+        }
+      },
+      "matches": {
+        "TS3004c.sys.s.10": "TS3004c.JacquelinePalmer.s.14",
+        "TS3004c.sys.s.4": "TS3004c.JacquelinePalmer.s.22",
+        "TS3004c.sys.s.12": "TS3004c.JacquelinePalmer.s.20",
+        "TS3004c.sys.s.7": "TS3004c.JacquelinePalmer.s.24"
+      },
+      "unmatched": {
+        "actions": {
+          "system": [
+            {
+              "id": "TS3004c.sys.s.1",
+              "text": "The PM will supply five different front designs in a box.",
+              "type": "actions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.112"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.111"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.286"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.156"
+                }
+              ],
+              "owner": [
+                "MTD013PM"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "TS3004c.sys.s.6",
+              "text": "UI will provide UI's design to the group.",
+              "type": "actions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.67"
+                }
+              ],
+              "owner": [
+                "MTD015UID"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "TS3004c.sys.s.8",
+              "text": "ID will discuss the material options with PM.",
+              "type": "actions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.3"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.112"
+                }
+              ],
+              "owner": [
+                "MTD014ID",
+                "MTD013PM"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "unknown",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "TS3004c.sys.s.13",
+              "text": "The UI will follow up on the item discussed after this meeting.",
+              "type": "actions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.27"
+                }
+              ],
+              "owner": [
+                "MTD015UID"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ],
+          "gold": [
+            {
+              "id": "TS3004c.JacquelinePalmer.s.15",
+              "text": "The User Interface Designer will look again at where the channel buttons go.",
+              "type": "actions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.275"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.317"
+                }
+              ],
+              "owner": [
+                "MTD015UID"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ]
+        },
+        "decisions": {
+          "system": [
+            {
+              "id": "TS3004c.sys.s.2",
+              "text": "The remote case should be hard plastic and transparent to enable backlighting.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.141"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.151"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.152"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.153"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.128"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.218"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "TS3004c.sys.s.9",
+              "text": "The Real Reaction logo will be placed on the remote, and the fronts on the remote should be replaceable.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.94"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.96"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.285"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.284"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.193"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.196"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "TS3004c.sys.s.11",
+              "text": "LED colors will be blue, red, and green; color cannot be chosen at purchase; color can be changed after purchase; there are multiple LEDs.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.132"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.225"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.143"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.134"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.135"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.126"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.230"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004b.json",
+                  "locator": "TS3004b.A.dialog-act.vkaraisk.197"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004b.json",
+                  "locator": "TS3004b.C.dialog-act.vkaraisk.96"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004b.json",
+                  "locator": "TS3004b.A.dialog-act.vkaraisk.325"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004b.json",
+                  "locator": "TS3004b.A.dialog-act.vkaraisk.327"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004b.json",
+                  "locator": "TS3004b.B.dialog-act.vkaraisk.294"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004b.json",
+                  "locator": "TS3004b.A.dialog-act.vkaraisk.328"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004b.json",
+                  "locator": "TS3004b.C.dialog-act.vkaraisk.261"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004b.json",
+                  "locator": "TS3004b.B.dialog-act.vkaraisk.295"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": true,
+              "related_items": [
+                {
+                  "id": "TS3004b.sys.s.8",
+                  "relation": "updates"
+                }
+              ]
+            }
+          ],
+          "gold": [
+            {
+              "id": "TS3004c.JacquelinePalmer.s.16",
+              "text": "The group decided to use a scroll button for volume control.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.77"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.114"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.169"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.170"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "TS3004c.JacquelinePalmer.s.18",
+              "text": "The remote will include rechargeable batteries and will be used with a recharging stand.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.152"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.245"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.196"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.214"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.194"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.196"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": true,
+              "related_items": [
+                {
+                  "id": "TS3004a.JacquelinePalmer.s.14",
+                  "relation": "resolves"
+                }
+              ]
+            },
+            {
+              "id": "TS3004c.JacquelinePalmer.s.21",
+              "text": "The remote will have rounded corners and be curved in two dimensions only, not in depth.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.252"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.188"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.294"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.322"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.294"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.321"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.221"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.222"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.252"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.166"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": [
+                {
+                  "id": "TS3004a.JacquelinePalmer.s.15",
+                  "relation": "resolves"
+                }
+              ]
+            },
+            {
+              "id": "TS3004c.JacquelinePalmer.s.23",
+              "text": "They eventually decided to incorporate speech recognition and an advanced chip.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.355"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.361"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.455"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": true,
+              "related_items": [
+                {
+                  "id": "TS3004b.JacquelinePalmer.s.14",
+                  "relation": "updates"
+                }
+              ]
+            },
+            {
+              "id": "TS3004c.revised.s.25",
+              "text": "The remote will open up to hold the speech recognition functions.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.425"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.426"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.357"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.358"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.359"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ]
+        },
+        "problems": {
+          "system": [
+            {
+              "id": "TS3004c.sys.s.3",
+              "text": "The remote will not wake up; the power light doesn't work and it appears it may have been turned off.",
+              "type": "problems",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.2"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.11"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.5"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.6"
+                }
+              ],
+              "status": "unknown",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "TS3004c.sys.s.5",
+              "text": "The cost is unclear; although a figure of twelve and a half euros per remote is mentioned, the total production cost remains undefined.",
+              "type": "problems",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.A.dialog-act.vkaraisk.54"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.D.dialog-act.vkaraisk.89"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.23"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.B.dialog-act.vkaraisk.52"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.24"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3004c.json",
+                  "locator": "TS3004c.C.dialog-act.vkaraisk.25"
+                }
+              ],
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ],
+          "gold": []
+        }
+      }
+    }
+  },
+  "unavailable_generations": {},
+  "prior_actual_scoring_attempts": 0,
+  "prior_elapsed_seconds_debit": 0,
+  "runtime_control": {
+    "limits": {
+      "calls": 80,
+      "tokens": 1000000,
+      "request_seconds": 300.0,
+      "meeting_seconds": 1200.0,
+      "inflight": 4,
+      "retries": 2,
+      "backoff": 0.5
+    },
+    "attempted_calls": 21,
+    "charged_tokens": 47581,
+    "unknown_usage_tokens": 0,
+    "reserved_tokens": 0,
+    "max_inflight_seen": 4,
+    "failure": null,
+    "attempts": [
+      {
+        "attempt": 0,
+        "stage": "other",
+        "reserved_tokens": 34496,
+        "input_bound": 2496,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 1278,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 351,
+        "output_tokens": 927
+      },
+      {
+        "attempt": 1,
+        "stage": "other",
+        "reserved_tokens": 34352,
+        "input_bound": 2352,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 1958,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 327,
+        "output_tokens": 1631
+      },
+      {
+        "attempt": 2,
+        "stage": "other",
+        "reserved_tokens": 35020,
+        "input_bound": 3020,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 2493,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 476,
+        "output_tokens": 2017
+      },
+      {
+        "attempt": 3,
+        "stage": "other",
+        "reserved_tokens": 35124,
+        "input_bound": 3124,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 3286,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 495,
+        "output_tokens": 2791
+      },
+      {
+        "attempt": 4,
+        "stage": "other",
+        "reserved_tokens": 34496,
+        "input_bound": 2496,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 1342,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 351,
+        "output_tokens": 991
+      },
+      {
+        "attempt": 5,
+        "stage": "other",
+        "reserved_tokens": 34352,
+        "input_bound": 2352,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 1582,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 327,
+        "output_tokens": 1255
+      },
+      {
+        "attempt": 6,
+        "stage": "other",
+        "reserved_tokens": 34496,
+        "input_bound": 2496,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 1534,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 351,
+        "output_tokens": 1183
+      },
+      {
+        "attempt": 7,
+        "stage": "other",
+        "reserved_tokens": 35124,
+        "input_bound": 3124,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 3808,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 495,
+        "output_tokens": 3313
+      },
+      {
+        "attempt": 8,
+        "stage": "other",
+        "reserved_tokens": 35020,
+        "input_bound": 3020,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 2683,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 476,
+        "output_tokens": 2207
+      },
+      {
+        "attempt": 9,
+        "stage": "other",
+        "reserved_tokens": 34352,
+        "input_bound": 2352,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 1454,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 327,
+        "output_tokens": 1127
+      },
+      {
+        "attempt": 10,
+        "stage": "other",
+        "reserved_tokens": 34958,
+        "input_bound": 2958,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 4167,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 463,
+        "output_tokens": 3704
+      },
+      {
+        "attempt": 11,
+        "stage": "other",
+        "reserved_tokens": 35020,
+        "input_bound": 3020,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 3259,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 476,
+        "output_tokens": 2783
+      },
+      {
+        "attempt": 12,
+        "stage": "other",
+        "reserved_tokens": 35124,
+        "input_bound": 3124,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 4182,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 495,
+        "output_tokens": 3687
+      },
+      {
+        "attempt": 13,
+        "stage": "other",
+        "reserved_tokens": 34958,
+        "input_bound": 2958,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 3582,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 463,
+        "output_tokens": 3119
+      },
+      {
+        "attempt": 14,
+        "stage": "other",
+        "reserved_tokens": 34305,
+        "input_bound": 2305,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 1685,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 310,
+        "output_tokens": 1375
+      },
+      {
+        "attempt": 15,
+        "stage": "other",
+        "reserved_tokens": 34305,
+        "input_bound": 2305,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 1365,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 310,
+        "output_tokens": 1055
+      },
+      {
+        "attempt": 16,
+        "stage": "other",
+        "reserved_tokens": 34958,
+        "input_bound": 2958,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 3198,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 463,
+        "output_tokens": 2735
+      },
+      {
+        "attempt": 17,
+        "stage": "other",
+        "reserved_tokens": 34305,
+        "input_bound": 2305,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 1109,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 310,
+        "output_tokens": 799
+      },
+      {
+        "attempt": 18,
+        "stage": "other",
+        "reserved_tokens": 34341,
+        "input_bound": 2341,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 1120,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 321,
+        "output_tokens": 799
+      },
+      {
+        "attempt": 19,
+        "stage": "other",
+        "reserved_tokens": 34341,
+        "input_bound": 2341,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 1312,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 321,
+        "output_tokens": 991
+      },
+      {
+        "attempt": 20,
+        "stage": "other",
+        "reserved_tokens": 34341,
+        "input_bound": 2341,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 1184,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 321,
+        "output_tokens": 863
+      }
+    ],
+    "input_bound_method": "utf8_request_bytes_plus_padding",
+    "unknown_usage_policy": "charge_full_reservation"
+  }
+}

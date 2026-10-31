@@ -1,0 +1,79 @@
+{
+  "status": "PASSED",
+  "finished_at": "2026-10-31T02:11:57.295170+00:00",
+  "commit": "213ccfcc4db898714f8be66eace0a12861d92341",
+  "branch": "agent-development",
+  "source_files_unchanged": 48,
+  "existing_uncommitted_files_unchanged": 8,
+  "model_config_budget_unchanged": true,
+  "protected_files_unchanged": 28,
+  "prior_artifacts_unchanged": 3702,
+  "dev_gold_unchanged": 16,
+  "heldout_opened": false,
+  "generation_received_gold": false,
+  "json_parsed": 503,
+  "jsonl_parsed": 101,
+  "secret_occurrences": 0,
+  "offline_score_views_replayed": 107,
+  "offline_replay_api_calls": 0,
+  "fixed_meetings": 16,
+  "boundary_trials_attempted": 48,
+  "boundary_trials_completed": 46,
+  "generation_failures": [
+    {
+      "meeting_id": "IS1008d",
+      "arm": "p2_current",
+      "status": "FAILED",
+      "failure": {
+        "code": "model_request_failed",
+        "status": "FAILED",
+        "stage": "p2_check",
+        "error_type": "APIConnectionError",
+        "retries_exhausted": true,
+        "http_status": null
+      }
+    },
+    {
+      "meeting_id": "TS3004a",
+      "arm": "committed213",
+      "status": "FAILED",
+      "failure": {
+        "code": "model_request_failed",
+        "status": "FAILED",
+        "stage": "select",
+        "error_type": "APIConnectionError",
+        "retries_exhausted": true,
+        "http_status": null
+      }
+    }
+  ],
+  "scoring_partial": [
+    {
+      "meeting_id": "IS1008a",
+      "failure": {
+        "code": "meeting_timeout",
+        "status": "TIMED_OUT",
+        "stage": "parse"
+      },
+      "unscored_arms": [
+        "selection213",
+        "selection_issue",
+        "p2_current"
+      ]
+    }
+  ],
+  "score_coverage": {
+    "baseline": 16,
+    "retention_actions": 16,
+    "retention_actions_issues": 16,
+    "selection213": 14,
+    "selection_issue": 15,
+    "p2_current": 14
+  },
+  "source_restore_applied": false,
+  "actual_new_generation_calls": 493,
+  "actual_new_generation_tokens": 4709158,
+  "actual_new_scoring_calls": 338,
+  "actual_new_scoring_tokens": 1196617,
+  "replayed_upstream_not_counted_as_new_api": true
+}

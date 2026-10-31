@@ -1,0 +1,2324 @@
+{
+  "meeting_id": "IS1008c",
+  "status": "COMPLETED",
+  "arms": {
+    "baseline": {
+      "metrics": {
+        "actions": {
+          "tp": 3,
+          "sys": 5,
+          "gold": 4,
+          "precision": 0.6,
+          "recall": 0.75,
+          "f1": 0.667
+        },
+        "decisions": {
+          "tp": 3,
+          "sys": 6,
+          "gold": 4,
+          "precision": 0.5,
+          "recall": 0.75,
+          "f1": 0.6
+        },
+        "problems": {
+          "tp": 2,
+          "sys": 3,
+          "gold": 2,
+          "precision": 0.667,
+          "recall": 1.0,
+          "f1": 0.8
+        }
+      },
+      "matches": {
+        "IS1008c.sys.s.2": "IS1008c.JacquelinePalmer.s.8",
+        "IS1008c.sys.s.10": "IS1008c.manual.s.2",
+        "IS1008c.sys.s.4": "IS1008c.manual.s.1",
+        "IS1008c.sys.s.1": "IS1008c.JacquelinePalmer.s.13",
+        "IS1008c.sys.s.5": "IS1008c.JacquelinePalmer.s.11",
+        "IS1008c.sys.s.11": "IS1008c.JacquelinePalmer.s.10",
+        "IS1008c.sys.s.6": "IS1008c.JacquelinePalmer.s.15",
+        "IS1008c.sys.s.3": "IS1008c.JacquelinePalmer.s.14"
+      },
+      "unmatched": {
+        "actions": {
+          "system": [
+            {
+              "id": "IS1008c.sys.s.7",
+              "text": "The marketing manager will find out the cost of the display.",
+              "type": "actions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.C.dialog-act.s9553330.173"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.D.dialog-act.s9553330.116"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.D.dialog-act.s9553330.117"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.C.dialog-act.s9553330.174"
+                }
+              ],
+              "owner": [
+                "MIE085"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "IS1008c.sys.s.12",
+              "text": "MIE085 will develop the marketing strategy.",
+              "type": "actions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.A.dialog-act.s9553330.115"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.D.dialog-act.s9553330.126"
+                }
+              ],
+              "owner": [
+                "MIE085"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ],
+          "gold": [
+            {
+              "id": "IS1008c.JacquelinePalmer.s.9",
+              "text": "The marketing expert will find the additional cost of the display and develop a marketing strategy, including the extra sales it could support.",
+              "type": "actions",
+              "owner": [
+                "MIE085"
+              ],
+              "owner_basis": "explicit",
+              "deadline": "by the next meeting",
+              "deadline_basis": "inferred",
+              "status": "open",
+              "prior_context_needed": true,
+              "related_items": [
+                {
+                  "id": "IS1008b.JacquelinePalmer.s.12",
+                  "relation": "updates"
+                }
+              ],
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.C.dialog-act.s9553330.171"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.D.dialog-act.s9553330.115"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.C.dialog-act.s9553330.173"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.D.dialog-act.s9553330.117"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.D.dialog-act.s9553330.118"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.A.dialog-act.s9553330.101"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.A.dialog-act.s9553330.114"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.C.dialog-act.s9553330.193"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.A.dialog-act.s9553330.115"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.D.dialog-act.s9553330.126"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.A.dialog-act.s9553330.118"
+                },
+                {
+                  "source_type": "participant_metadata",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.D.dialog-act.s9553330.1 (attributes.participant and attributes.role)"
+                },
+                {
+                  "source_type": "participant_metadata",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.C.dialog-act.s9553330.173 (attributes.addressee)"
+                },
+                {
+                  "source_type": "participant_metadata",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.A.dialog-act.s9553330.114 (attributes.addressee)"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008b.json",
+                  "locator": "IS1008b.B.dialog-act.vkaraisk.163"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008b.json",
+                  "locator": "IS1008b.B.dialog-act.vkaraisk.164"
+                }
+              ]
+            }
+          ]
+        },
+        "decisions": {
+          "system": [
+            {
+              "id": "IS1008c.sys.s.9",
+              "text": "Include a battery-life indicator light that dims as the battery dies.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.62"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.61"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "IS1008c.sys.s.13",
+              "text": "Incorporate a flip-screen feature on the remote to avoid accidental presses or damage when sat on.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.58"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.60"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "IS1008c.sys.s.14",
+              "text": "Include audio and tactile feedback on button presses and provide a way to turn off voice control.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.63"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.C.dialog-act.s9553330.117"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.75"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ],
+          "gold": [
+            {
+              "id": "IS1008c.JacquelinePalmer.s.12",
+              "text": "Keep the simple design without committing to an LCD until the extra display cost is known.",
+              "type": "decisions",
+              "status": "conditional",
+              "prior_context_needed": true,
+              "related_items": [
+                {
+                  "id": "IS1008b.JacquelinePalmer.s.15",
+                  "relation": "updates"
+                }
+              ],
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.131"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.132"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.134"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.A.dialog-act.s9553330.100"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.A.dialog-act.s9553330.101"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.139"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008b.json",
+                  "locator": "IS1008b.A.dialog-act.vkaraisk.106"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008b.json",
+                  "locator": "IS1008b.A.dialog-act.vkaraisk.112"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008b.json",
+                  "locator": "IS1008b.C.dialog-act.vkaraisk.101"
+                }
+              ]
+            }
+          ]
+        },
+        "problems": {
+          "system": [
+            {
+              "id": "IS1008c.sys.s.8",
+              "text": "There is concern that competitors are copying or stealing the product concept.",
+              "type": "problems",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.D.dialog-act.s9553330.65"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.D.dialog-act.s9553330.66"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.D.dialog-act.s9553330.67"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.D.dialog-act.s9553330.69"
+                }
+              ],
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ],
+          "gold": []
+        }
+      }
+    },
+    "retention_actions": {
+      "metrics": {
+        "actions": {
+          "tp": 4,
+          "sys": 5,
+          "gold": 4,
+          "precision": 0.8,
+          "recall": 1.0,
+          "f1": 0.889
+        },
+        "decisions": {
+          "tp": 3,
+          "sys": 6,
+          "gold": 4,
+          "precision": 0.5,
+          "recall": 0.75,
+          "f1": 0.6
+        },
+        "problems": {
+          "tp": 2,
+          "sys": 3,
+          "gold": 2,
+          "precision": 0.667,
+          "recall": 1.0,
+          "f1": 0.8
+        }
+      },
+      "matches": {
+        "IS1008c.sys.s.1": "IS1008c.JacquelinePalmer.s.9",
+        "IS1008c.sys.s.2": "IS1008c.manual.s.2",
+        "IS1008c.sys.s.4": "IS1008c.JacquelinePalmer.s.8",
+        "IS1008c.sys.s.5": "IS1008c.manual.s.1",
+        "IS1008c.sys.s.6": "IS1008c.JacquelinePalmer.s.13",
+        "IS1008c.sys.s.8": "IS1008c.JacquelinePalmer.s.11",
+        "IS1008c.sys.s.12": "IS1008c.JacquelinePalmer.s.10",
+        "IS1008c.sys.s.9": "IS1008c.JacquelinePalmer.s.15",
+        "IS1008c.sys.s.7": "IS1008c.JacquelinePalmer.s.14"
+      },
+      "unmatched": {
+        "actions": {
+          "system": [
+            {
+              "id": "IS1008c.sys.s.3",
+              "text": "Christine and Agnes will determine the price for the display.",
+              "type": "actions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.A.dialog-act.s9553330.114"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.C.dialog-act.s9553330.188"
+                }
+              ],
+              "owner": [
+                "FIE073",
+                "FIE038"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ],
+          "gold": []
+        },
+        "decisions": {
+          "system": [
+            {
+              "id": "IS1008c.sys.s.11",
+              "text": "Include a battery-life indicator light that dims as the battery dies.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.62"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.61"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "IS1008c.sys.s.13",
+              "text": "Incorporate a flip-screen feature on the remote to avoid accidental presses or damage when sat on.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.58"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.60"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "IS1008c.sys.s.14",
+              "text": "Include audio and tactile feedback on button presses and provide a way to turn off voice control.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.63"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.C.dialog-act.s9553330.117"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.75"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ],
+          "gold": [
+            {
+              "id": "IS1008c.JacquelinePalmer.s.12",
+              "text": "Keep the simple design without committing to an LCD until the extra display cost is known.",
+              "type": "decisions",
+              "status": "conditional",
+              "prior_context_needed": true,
+              "related_items": [
+                {
+                  "id": "IS1008b.JacquelinePalmer.s.15",
+                  "relation": "updates"
+                }
+              ],
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.131"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.132"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.134"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.A.dialog-act.s9553330.100"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.A.dialog-act.s9553330.101"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.139"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008b.json",
+                  "locator": "IS1008b.A.dialog-act.vkaraisk.106"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008b.json",
+                  "locator": "IS1008b.A.dialog-act.vkaraisk.112"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008b.json",
+                  "locator": "IS1008b.C.dialog-act.vkaraisk.101"
+                }
+              ]
+            }
+          ]
+        },
+        "problems": {
+          "system": [
+            {
+              "id": "IS1008c.sys.s.10",
+              "text": "There is concern that competitors are copying or stealing the product concept.",
+              "type": "problems",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.D.dialog-act.s9553330.65"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.D.dialog-act.s9553330.66"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.D.dialog-act.s9553330.67"
+                }
+              ],
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ],
+          "gold": []
+        }
+      }
+    },
+    "retention_actions_issues": {
+      "metrics": {
+        "actions": {
+          "tp": 4,
+          "sys": 5,
+          "gold": 4,
+          "precision": 0.8,
+          "recall": 1.0,
+          "f1": 0.889
+        },
+        "decisions": {
+          "tp": 3,
+          "sys": 6,
+          "gold": 4,
+          "precision": 0.5,
+          "recall": 0.75,
+          "f1": 0.6
+        },
+        "problems": {
+          "tp": 2,
+          "sys": 4,
+          "gold": 2,
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.667
+        }
+      },
+      "matches": {
+        "IS1008c.sys.s.1": "IS1008c.JacquelinePalmer.s.9",
+        "IS1008c.sys.s.2": "IS1008c.manual.s.2",
+        "IS1008c.sys.s.4": "IS1008c.JacquelinePalmer.s.8",
+        "IS1008c.sys.s.5": "IS1008c.manual.s.1",
+        "IS1008c.sys.s.6": "IS1008c.JacquelinePalmer.s.13",
+        "IS1008c.sys.s.8": "IS1008c.JacquelinePalmer.s.11",
+        "IS1008c.sys.s.12": "IS1008c.JacquelinePalmer.s.10",
+        "IS1008c.sys.s.7": "IS1008c.JacquelinePalmer.s.14",
+        "IS1008c.sys.s.9": "IS1008c.JacquelinePalmer.s.15"
+      },
+      "unmatched": {
+        "actions": {
+          "system": [
+            {
+              "id": "IS1008c.sys.s.3",
+              "text": "Christine and Agnes will determine the price for the display.",
+              "type": "actions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.A.dialog-act.s9553330.114"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.C.dialog-act.s9553330.188"
+                }
+              ],
+              "owner": [
+                "FIE073",
+                "FIE038"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ],
+          "gold": []
+        },
+        "decisions": {
+          "system": [
+            {
+              "id": "IS1008c.sys.s.11",
+              "text": "Include a battery-life indicator light that dims as the battery dies.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.62"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.61"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "IS1008c.sys.s.13",
+              "text": "Incorporate a flip-screen feature on the remote to avoid accidental presses or damage when sat on.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.58"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.60"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "IS1008c.sys.s.14",
+              "text": "Include audio and tactile feedback on button presses and provide a way to turn off voice control.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.63"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.C.dialog-act.s9553330.117"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.75"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ],
+          "gold": [
+            {
+              "id": "IS1008c.JacquelinePalmer.s.12",
+              "text": "Keep the simple design without committing to an LCD until the extra display cost is known.",
+              "type": "decisions",
+              "status": "conditional",
+              "prior_context_needed": true,
+              "related_items": [
+                {
+                  "id": "IS1008b.JacquelinePalmer.s.15",
+                  "relation": "updates"
+                }
+              ],
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.131"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.132"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.134"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.A.dialog-act.s9553330.100"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.A.dialog-act.s9553330.101"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.139"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008b.json",
+                  "locator": "IS1008b.A.dialog-act.vkaraisk.106"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008b.json",
+                  "locator": "IS1008b.A.dialog-act.vkaraisk.112"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008b.json",
+                  "locator": "IS1008b.C.dialog-act.vkaraisk.101"
+                }
+              ]
+            }
+          ]
+        },
+        "problems": {
+          "system": [
+            {
+              "id": "IS1008c.sys.s.10",
+              "text": "There is concern that competitors are copying or stealing the product concept.",
+              "type": "problems",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.D.dialog-act.s9553330.65"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.D.dialog-act.s9553330.66"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.D.dialog-act.s9553330.67"
+                }
+              ],
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "IS1008c.sys.s.15",
+              "text": "Unclear meaning of 'advanced chip on print' (whether it is micro-processor based) and a plan to clarify by next meeting.",
+              "type": "problems",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.A.dialog-act.s9553330.29"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.A.dialog-act.s9553330.30"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.C.dialog-act.s9553330.78"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.C.dialog-act.s9553330.79"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.11"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.D.dialog-act.s9553330.17"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.A.dialog-act.s9553330.31"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.C.dialog-act.s9553330.80"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.A.dialog-act.s9553330.32"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.A.dialog-act.s9553330.33"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.A.dialog-act.s9553330.34"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.C.dialog-act.s9553330.81"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.C.dialog-act.s9553330.82"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.C.dialog-act.s9553330.83"
+                }
+              ],
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ],
+          "gold": []
+        }
+      }
+    },
+    "selection213": {
+      "metrics": {
+        "actions": {
+          "tp": 4,
+          "sys": 5,
+          "gold": 4,
+          "precision": 0.8,
+          "recall": 1.0,
+          "f1": 0.889
+        },
+        "decisions": {
+          "tp": 2,
+          "sys": 6,
+          "gold": 4,
+          "precision": 0.333,
+          "recall": 0.5,
+          "f1": 0.4
+        },
+        "problems": {
+          "tp": 2,
+          "sys": 3,
+          "gold": 2,
+          "precision": 0.667,
+          "recall": 1.0,
+          "f1": 0.8
+        }
+      },
+      "matches": {
+        "IS1008c.sys.s.9": "IS1008c.manual.s.2",
+        "IS1008c.sys.s.11": "IS1008c.JacquelinePalmer.s.8",
+        "IS1008c.sys.s.10": "IS1008c.JacquelinePalmer.s.9",
+        "IS1008c.sys.s.12": "IS1008c.manual.s.1",
+        "IS1008c.sys.s.2": "IS1008c.JacquelinePalmer.s.11",
+        "IS1008c.sys.s.5": "IS1008c.JacquelinePalmer.s.10",
+        "IS1008c.sys.s.3": "IS1008c.JacquelinePalmer.s.15",
+        "IS1008c.sys.s.13": "IS1008c.JacquelinePalmer.s.14"
+      },
+      "unmatched": {
+        "actions": {
+          "system": [
+            {
+              "id": "IS1008c.sys.s.8",
+              "text": "Marketing manager will determine the cost of the display.",
+              "type": "actions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.C.dialog-act.s9553330.173"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.D.dialog-act.s9553330.116"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.D.dialog-act.s9553330.117"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.C.dialog-act.s9553330.174"
+                }
+              ],
+              "owner": [
+                "MIE085"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ],
+          "gold": []
+        },
+        "decisions": {
+          "system": [
+            {
+              "id": "IS1008c.sys.s.1",
+              "text": "There is an agreement to pursue a wooden, customizable case for the device.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.C.dialog-act.s9553330.182"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.D.dialog-act.s9553330.123"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.138"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "IS1008c.sys.s.4",
+              "text": "Battery-life indicator light will dim as the battery dies.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.62"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.61"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "IS1008c.sys.s.6",
+              "text": "Incorporate a flip-screen feature on the remote to avoid accidental presses or damage when sat on.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.58"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.60"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "IS1008c.sys.s.7",
+              "text": "Include audio and tactile feedback on button presses and provide a way to turn off voice control.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.63"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.C.dialog-act.s9553330.117"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.75"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ],
+          "gold": [
+            {
+              "id": "IS1008c.JacquelinePalmer.s.12",
+              "text": "Keep the simple design without committing to an LCD until the extra display cost is known.",
+              "type": "decisions",
+              "status": "conditional",
+              "prior_context_needed": true,
+              "related_items": [
+                {
+                  "id": "IS1008b.JacquelinePalmer.s.15",
+                  "relation": "updates"
+                }
+              ],
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.131"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.132"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.134"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.A.dialog-act.s9553330.100"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.A.dialog-act.s9553330.101"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.139"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008b.json",
+                  "locator": "IS1008b.A.dialog-act.vkaraisk.106"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008b.json",
+                  "locator": "IS1008b.A.dialog-act.vkaraisk.112"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008b.json",
+                  "locator": "IS1008b.C.dialog-act.vkaraisk.101"
+                }
+              ]
+            },
+            {
+              "id": "IS1008c.JacquelinePalmer.s.13",
+              "text": "Explore outsourcing custom-case manufacture at low cost while paying a fair wage; no manufacturer, contact owner or supply agreement was selected.",
+              "type": "decisions",
+              "status": "proposed",
+              "prior_context_needed": false,
+              "related_items": [],
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.C.dialog-act.s9553330.152"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.C.dialog-act.s9553330.153"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.C.dialog-act.s9553330.154"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.C.dialog-act.s9553330.155"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.C.dialog-act.s9553330.156"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.A.dialog-act.s9553330.72"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.A.dialog-act.s9553330.74"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.C.dialog-act.s9553330.159"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.D.dialog-act.s9553330.112"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.A.dialog-act.s9553330.82"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.A.dialog-act.s9553330.84"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.A.dialog-act.s9553330.85"
+                }
+              ]
+            }
+          ]
+        },
+        "problems": {
+          "system": [
+            {
+              "id": "IS1008c.sys.s.14",
+              "text": "There is concern that competitors are copying or stealing the product concept.",
+              "type": "problems",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.D.dialog-act.s9553330.65"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.D.dialog-act.s9553330.66"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.D.dialog-act.s9553330.67"
+                }
+              ],
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ],
+          "gold": []
+        }
+      }
+    },
+    "selection_issue": {
+      "metrics": {
+        "actions": {
+          "tp": 4,
+          "sys": 5,
+          "gold": 4,
+          "precision": 0.8,
+          "recall": 1.0,
+          "f1": 0.889
+        },
+        "decisions": {
+          "tp": 2,
+          "sys": 6,
+          "gold": 4,
+          "precision": 0.333,
+          "recall": 0.5,
+          "f1": 0.4
+        },
+        "problems": {
+          "tp": 2,
+          "sys": 3,
+          "gold": 2,
+          "precision": 0.667,
+          "recall": 1.0,
+          "f1": 0.8
+        }
+      },
+      "matches": {
+        "IS1008c.sys.s.1": "IS1008c.JacquelinePalmer.s.9",
+        "IS1008c.sys.s.2": "IS1008c.manual.s.2",
+        "IS1008c.sys.s.3": "IS1008c.JacquelinePalmer.s.8",
+        "IS1008c.sys.s.4": "IS1008c.manual.s.1",
+        "IS1008c.sys.s.11": "IS1008c.JacquelinePalmer.s.12",
+        "IS1008c.sys.s.5": "IS1008c.JacquelinePalmer.s.11",
+        "IS1008c.sys.s.6": "IS1008c.JacquelinePalmer.s.14",
+        "IS1008c.sys.s.8": "IS1008c.JacquelinePalmer.s.15"
+      },
+      "unmatched": {
+        "actions": {
+          "system": [
+            {
+              "id": "IS1008c.sys.s.14",
+              "text": "Develop the marketing strategy.",
+              "type": "actions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.A.dialog-act.s9553330.115"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.D.dialog-act.s9553330.126"
+                }
+              ],
+              "owner": [
+                "MIE085"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ],
+          "gold": []
+        },
+        "decisions": {
+          "system": [
+            {
+              "id": "IS1008c.sys.s.7",
+              "text": "Maintain rubber-like buttons to preserve tactile experience; not wood.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.A.dialog-act.s9553330.95"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.C.dialog-act.s9553330.186"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "IS1008c.sys.s.10",
+              "text": "Include a battery-life indicator light that dims as the battery dies.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.62"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.61"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "IS1008c.sys.s.12",
+              "text": "Incorporate a flip-screen feature on the remote to avoid accidental presses or damage when sat on.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.58"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.60"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "IS1008c.sys.s.13",
+              "text": "Include audio and tactile feedback on button presses and provide a way to turn off voice control.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.63"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.C.dialog-act.s9553330.117"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.75"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ],
+          "gold": [
+            {
+              "id": "IS1008c.JacquelinePalmer.s.10",
+              "text": "Proceed to a prototype based on the simple control layout and the agreed component concept; the display remains a separate cost-dependent option.",
+              "type": "decisions",
+              "status": "adopted",
+              "prior_context_needed": true,
+              "related_items": [
+                {
+                  "id": "IS1008b.JacquelinePalmer.s.14",
+                  "relation": "updates"
+                }
+              ],
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.53"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.79"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.80"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.C.dialog-act.s9553330.180"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.C.dialog-act.s9553330.182"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.A.dialog-act.s9553330.100"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.A.dialog-act.s9553330.101"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.A.dialog-act.s9553330.103"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.140"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.A.dialog-act.s9553330.122"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008b.json",
+                  "locator": "IS1008b.B.dialog-act.vkaraisk.165"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008b.json",
+                  "locator": "IS1008b.B.dialog-act.vkaraisk.166"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008b.json",
+                  "locator": "IS1008b.A.dialog-act.vkaraisk.215"
+                }
+              ]
+            },
+            {
+              "id": "IS1008c.JacquelinePalmer.s.13",
+              "text": "Explore outsourcing custom-case manufacture at low cost while paying a fair wage; no manufacturer, contact owner or supply agreement was selected.",
+              "type": "decisions",
+              "status": "proposed",
+              "prior_context_needed": false,
+              "related_items": [],
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.C.dialog-act.s9553330.152"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.C.dialog-act.s9553330.153"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.C.dialog-act.s9553330.154"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.C.dialog-act.s9553330.155"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.C.dialog-act.s9553330.156"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.A.dialog-act.s9553330.72"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.A.dialog-act.s9553330.74"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.C.dialog-act.s9553330.159"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.D.dialog-act.s9553330.112"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.A.dialog-act.s9553330.82"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.A.dialog-act.s9553330.84"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.A.dialog-act.s9553330.85"
+                }
+              ]
+            }
+          ]
+        },
+        "problems": {
+          "system": [
+            {
+              "id": "IS1008c.sys.s.9",
+              "text": "Concern that competitors may copy or steal product concept.",
+              "type": "problems",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.D.dialog-act.s9553330.65"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.D.dialog-act.s9553330.66"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.D.dialog-act.s9553330.67"
+                }
+              ],
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ],
+          "gold": []
+        }
+      }
+    },
+    "p2_current": {
+      "metrics": {
+        "actions": {
+          "tp": 3,
+          "sys": 3,
+          "gold": 4,
+          "precision": 1.0,
+          "recall": 0.75,
+          "f1": 0.857
+        },
+        "decisions": {
+          "tp": 3,
+          "sys": 5,
+          "gold": 4,
+          "precision": 0.6,
+          "recall": 0.75,
+          "f1": 0.667
+        },
+        "problems": {
+          "tp": 2,
+          "sys": 3,
+          "gold": 2,
+          "precision": 0.667,
+          "recall": 1.0,
+          "f1": 0.8
+        }
+      },
+      "matches": {
+        "IS1008c.sys.s.3": "IS1008c.manual.s.1",
+        "IS1008c.sys.s.6": "IS1008c.JacquelinePalmer.s.9",
+        "IS1008c.sys.s.9": "IS1008c.manual.s.2",
+        "IS1008c.sys.s.1": "IS1008c.JacquelinePalmer.s.13",
+        "IS1008c.sys.s.4": "IS1008c.JacquelinePalmer.s.11",
+        "IS1008c.sys.s.10": "IS1008c.JacquelinePalmer.s.12",
+        "IS1008c.sys.s.5": "IS1008c.JacquelinePalmer.s.15",
+        "IS1008c.sys.s.2": "IS1008c.JacquelinePalmer.s.14"
+      },
+      "unmatched": {
+        "actions": {
+          "system": [],
+          "gold": [
+            {
+              "id": "IS1008c.JacquelinePalmer.s.8",
+              "text": "The industrial designer and user interface designer will jointly produce a prototype/model for the next meeting.",
+              "type": "actions",
+              "owner": [
+                "FIE073",
+                "FIE038"
+              ],
+              "owner_basis": "explicit",
+              "deadline": "by next meeting",
+              "deadline_basis": "explicit",
+              "status": "open",
+              "prior_context_needed": true,
+              "related_items": [
+                {
+                  "id": "IS1008b.JacquelinePalmer.s.10",
+                  "relation": "updates"
+                },
+                {
+                  "id": "IS1008b.JacquelinePalmer.s.11",
+                  "relation": "updates"
+                }
+              ],
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.A.dialog-act.s9553330.103"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.140"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.141"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.A.dialog-act.s9553330.109"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.A.dialog-act.s9553330.122"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.149"
+                },
+                {
+                  "source_type": "participant_metadata",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.C.dialog-act.s9553330.1 (attributes.participant and attributes.role)"
+                },
+                {
+                  "source_type": "participant_metadata",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.1 (attributes.participant and attributes.role)"
+                },
+                {
+                  "source_type": "participant_metadata",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.A.dialog-act.s9553330.103 (attributes.addressee)"
+                },
+                {
+                  "source_type": "participant_metadata",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.A.dialog-act.s9553330.122 (attributes.addressee)"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008b.json",
+                  "locator": "IS1008b.B.dialog-act.vkaraisk.161"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008b.json",
+                  "locator": "IS1008b.B.dialog-act.vkaraisk.164"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008b.json",
+                  "locator": "IS1008b.B.dialog-act.vkaraisk.162"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008b.json",
+                  "locator": "IS1008b.C.dialog-act.vkaraisk.124"
+                }
+              ]
+            }
+          ]
+        },
+        "decisions": {
+          "system": [
+            {
+              "id": "IS1008c.sys.s.8",
+              "text": "Include a battery-life indicator light that dims as the battery dies.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.62"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.61"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "IS1008c.sys.s.11",
+              "text": "Include audio and tactile feedback on button presses and provide a way to turn off voice control.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.63"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.75"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.C.dialog-act.s9553330.117"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ],
+          "gold": [
+            {
+              "id": "IS1008c.JacquelinePalmer.s.10",
+              "text": "Proceed to a prototype based on the simple control layout and the agreed component concept; the display remains a separate cost-dependent option.",
+              "type": "decisions",
+              "status": "adopted",
+              "prior_context_needed": true,
+              "related_items": [
+                {
+                  "id": "IS1008b.JacquelinePalmer.s.14",
+                  "relation": "updates"
+                }
+              ],
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.53"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.79"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.80"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.C.dialog-act.s9553330.180"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.C.dialog-act.s9553330.182"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.A.dialog-act.s9553330.100"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.A.dialog-act.s9553330.101"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.A.dialog-act.s9553330.103"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.B.dialog-act.s9553330.140"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.A.dialog-act.s9553330.122"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008b.json",
+                  "locator": "IS1008b.B.dialog-act.vkaraisk.165"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008b.json",
+                  "locator": "IS1008b.B.dialog-act.vkaraisk.166"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008b.json",
+                  "locator": "IS1008b.A.dialog-act.vkaraisk.215"
+                }
+              ]
+            }
+          ]
+        },
+        "problems": {
+          "system": [
+            {
+              "id": "IS1008c.sys.s.7",
+              "text": "There is concern that competitors are copying or stealing the product concept.",
+              "type": "problems",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.D.dialog-act.s9553330.65"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.D.dialog-act.s9553330.66"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008c.json",
+                  "locator": "IS1008c.D.dialog-act.s9553330.67"
+                }
+              ],
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ],
+          "gold": []
+        }
+      }
+    }
+  },
+  "unavailable_generations": {},
+  "prior_actual_scoring_attempts": 30,
+  "prior_elapsed_seconds_debit": 1162.2750396728516,
+  "runtime_control": {
+    "limits": {
+      "calls": 80,
+      "tokens": 1000000,
+      "request_seconds": 300.0,
+      "meeting_seconds": 1200.0,
+      "inflight": 4,
+      "retries": 2,
+      "backoff": 0.5
+    },
+    "attempted_calls": 30,
+    "charged_tokens": 76896,
+    "unknown_usage_tokens": 0,
+    "reserved_tokens": 0,
+    "max_inflight_seen": 1,
+    "failure": null,
+    "attempts": [
+      {
+        "attempt": 0,
+        "stage": "replayed_previous_scoring",
+        "reserved_tokens": 34823,
+        "input_bound": 2823,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 2777,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 418,
+        "output_tokens": 2359
+      },
+      {
+        "attempt": 1,
+        "stage": "replayed_previous_scoring",
+        "reserved_tokens": 34747,
+        "input_bound": 2747,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 2816,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 401,
+        "output_tokens": 2415
+      },
+      {
+        "attempt": 2,
+        "stage": "replayed_previous_scoring",
+        "reserved_tokens": 34752,
+        "input_bound": 2752,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 3786,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 403,
+        "output_tokens": 3383
+      },
+      {
+        "attempt": 3,
+        "stage": "replayed_previous_scoring",
+        "reserved_tokens": 34823,
+        "input_bound": 2823,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 2009,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 418,
+        "output_tokens": 1591
+      },
+      {
+        "attempt": 4,
+        "stage": "replayed_previous_scoring",
+        "reserved_tokens": 34747,
+        "input_bound": 2747,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 3465,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 401,
+        "output_tokens": 3064
+      },
+      {
+        "attempt": 5,
+        "stage": "replayed_previous_scoring",
+        "reserved_tokens": 34752,
+        "input_bound": 2752,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 2826,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 403,
+        "output_tokens": 2423
+      },
+      {
+        "attempt": 6,
+        "stage": "replayed_previous_scoring",
+        "reserved_tokens": 34823,
+        "input_bound": 2823,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 2713,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 418,
+        "output_tokens": 2295
+      },
+      {
+        "attempt": 7,
+        "stage": "replayed_previous_scoring",
+        "reserved_tokens": 34747,
+        "input_bound": 2747,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 3337,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 401,
+        "output_tokens": 2936
+      },
+      {
+        "attempt": 8,
+        "stage": "replayed_previous_scoring",
+        "reserved_tokens": 34752,
+        "input_bound": 2752,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 2826,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 403,
+        "output_tokens": 2423
+      },
+      {
+        "attempt": 9,
+        "stage": "replayed_previous_scoring",
+        "reserved_tokens": 34611,
+        "input_bound": 2611,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 2592,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 369,
+        "output_tokens": 2223
+      },
+      {
+        "attempt": 10,
+        "stage": "replayed_previous_scoring",
+        "reserved_tokens": 34632,
+        "input_bound": 2632,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 1375,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 376,
+        "output_tokens": 999
+      },
+      {
+        "attempt": 11,
+        "stage": "replayed_previous_scoring",
+        "reserved_tokens": 34632,
+        "input_bound": 2632,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 1503,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 376,
+        "output_tokens": 1127
+      },
+      {
+        "attempt": 12,
+        "stage": "replayed_previous_scoring",
+        "reserved_tokens": 34975,
+        "input_bound": 2975,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 3488,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 441,
+        "output_tokens": 3047
+      },
+      {
+        "attempt": 13,
+        "stage": "replayed_previous_scoring",
+        "reserved_tokens": 34994,
+        "input_bound": 2994,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 4138,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 449,
+        "output_tokens": 3689
+      },
+      {
+        "attempt": 14,
+        "stage": "replayed_previous_scoring",
+        "reserved_tokens": 34611,
+        "input_bound": 2611,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 2400,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 369,
+        "output_tokens": 2031
+      },
+      {
+        "attempt": 15,
+        "stage": "replayed_previous_scoring",
+        "reserved_tokens": 34632,
+        "input_bound": 2632,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 1375,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 376,
+        "output_tokens": 999
+      },
+      {
+        "attempt": 16,
+        "stage": "replayed_previous_scoring",
+        "reserved_tokens": 34611,
+        "input_bound": 2611,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 1696,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 369,
+        "output_tokens": 1327
+      },
+      {
+        "attempt": 17,
+        "stage": "replayed_previous_scoring",
+        "reserved_tokens": 34975,
+        "input_bound": 2975,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 2592,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 441,
+        "output_tokens": 2151
+      },
+      {
+        "attempt": 18,
+        "stage": "replayed_previous_scoring",
+        "reserved_tokens": 34935,
+        "input_bound": 2935,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 3043,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 436,
+        "output_tokens": 2607
+      },
+      {
+        "attempt": 19,
+        "stage": "replayed_previous_scoring",
+        "reserved_tokens": 34994,
+        "input_bound": 2994,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 3184,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 449,
+        "output_tokens": 2735
+      },
+      {
+        "attempt": 20,
+        "stage": "replayed_previous_scoring",
+        "reserved_tokens": 34975,
+        "input_bound": 2975,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 2600,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 441,
+        "output_tokens": 2159
+      },
+      {
+        "attempt": 21,
+        "stage": "replayed_previous_scoring",
+        "reserved_tokens": 34935,
+        "input_bound": 2935,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 4507,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 436,
+        "output_tokens": 4071
+      },
+      {
+        "attempt": 22,
+        "stage": "replayed_previous_scoring",
+        "reserved_tokens": 34994,
+        "input_bound": 2994,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 4009,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 449,
+        "output_tokens": 3560
+      },
+      {
+        "attempt": 23,
+        "stage": "replayed_previous_scoring",
+        "reserved_tokens": 34466,
+        "input_bound": 2466,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 1336,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 337,
+        "output_tokens": 999
+      },
+      {
+        "attempt": 24,
+        "stage": "replayed_previous_scoring",
+        "reserved_tokens": 34466,
+        "input_bound": 2466,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 1400,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 337,
+        "output_tokens": 1063
+      },
+      {
+        "attempt": 25,
+        "stage": "replayed_previous_scoring",
+        "reserved_tokens": 34466,
+        "input_bound": 2466,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 1080,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 337,
+        "output_tokens": 743
+      },
+      {
+        "attempt": 26,
+        "stage": "replayed_previous_scoring",
+        "reserved_tokens": 34935,
+        "input_bound": 2935,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 4259,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 436,
+        "output_tokens": 3823
+      },
+      {
+        "attempt": 27,
+        "stage": "replayed_previous_scoring",
+        "reserved_tokens": 34493,
+        "input_bound": 2493,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 1404,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 341,
+        "output_tokens": 1063
+      },
+      {
+        "attempt": 28,
+        "stage": "replayed_previous_scoring",
+        "reserved_tokens": 34493,
+        "input_bound": 2493,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 1084,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 341,
+        "output_tokens": 743
+      },
+      {
+        "attempt": 29,
+        "stage": "replayed_previous_scoring",
+        "reserved_tokens": 34493,
+        "input_bound": 2493,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 1276,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 341,
+        "output_tokens": 935
+      }
+    ],
+    "input_bound_method": "utf8_request_bytes_plus_padding",
+    "unknown_usage_policy": "charge_full_reservation"
+  }
+}

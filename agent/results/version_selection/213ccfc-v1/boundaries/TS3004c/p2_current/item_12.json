@@ -1,0 +1,2536 @@
+{
+  "item_key": "TS3004c#12",
+  "record_id": null,
+  "item_type": "decisions",
+  "item_text": "Skip the LCD option and use the second most expensive chip; use the regular chip; titanium will not be used.",
+  "state": "pending",
+  "recordable": true,
+  "fields": {
+    "status": "adopted",
+    "prior_context_needed": false,
+    "related_items": [],
+    "reference": [
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004c.json",
+        "locator": "TS3004c.C.dialog-act.vkaraisk.233"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004c.json",
+        "locator": "TS3004c.C.dialog-act.vkaraisk.235"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004c.json",
+        "locator": "TS3004c.C.dialog-act.vkaraisk.256"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004c.json",
+        "locator": "TS3004c.C.dialog-act.vkaraisk.254"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004c.json",
+        "locator": "TS3004c.C.dialog-act.vkaraisk.249"
+      }
+    ]
+  },
+  "draft_fields": {
+    "status": "adopted",
+    "related_items": [],
+    "prior_context_needed": false,
+    "used_participant_lookup": false,
+    "evidence_da_ids": [
+      "TS3004c.C.dialog-act.vkaraisk.233",
+      "TS3004c.C.dialog-act.vkaraisk.235",
+      "TS3004c.C.dialog-act.vkaraisk.256",
+      "TS3004c.C.dialog-act.vkaraisk.254",
+      "TS3004c.C.dialog-act.vkaraisk.249",
+      "TS3004c.A.dialog-act.vkaraisk.174",
+      "TS3004c.A.dialog-act.vkaraisk.201"
+    ],
+    "owner": null,
+    "owner_basis": "missing",
+    "deadline": null,
+    "deadline_basis": "missing"
+  },
+  "checks": {
+    "statement": {
+      "result": "pass",
+      "reason": "Dialogue supports skipping LCD and selecting the second-most expensive chip (regular); titanium is deemed too expensive. Evidence in the dialogue includes references to LCD consideration, the second-most expensive chip, and the regular chip, and explicit note that titanium is too expensive.",
+      "quotes": [
+        {
+          "da_id": "TS3004c.C.dialog-act.vkaraisk.233",
+          "quote": "we need uh the expensive , most expensive chip , if we use an L_C_D_ ."
+        },
+        {
+          "da_id": "TS3004c.C.dialog-act.vkaraisk.235",
+          "quote": "then we we use m must use the second most expensive chip . So th so the regular chip ."
+        },
+        {
+          "da_id": "TS3004c.C.dialog-act.vkaraisk.256",
+          "quote": "So it's b should be regular uh the second ."
+        },
+        {
+          "da_id": "TS3004c.C.dialog-act.vkaraisk.254",
+          "quote": "Yeah th yeah , the chip is the the regular one ."
+        },
+        {
+          "da_id": "TS3004c.C.dialog-act.vkaraisk.249",
+          "quote": "Titanium , uh I think it's too expensive ."
+        }
+      ],
+      "fields": [
+        "statement"
+      ]
+    },
+    "status": {
+      "result": "pass",
+      "reason": "Current dialogue confirms the decision to use the regular chip (second-most expensive) and not use LCD or titanium; no contradictions in observed dialogue.",
+      "quotes": [
+        {
+          "da_id": "TS3004c.C.dialog-act.vkaraisk.233",
+          "quote": "we need uh the expensive , most expensive chip , if we use an L_C_D_ ."
+        },
+        {
+          "da_id": "TS3004c.C.dialog-act.vkaraisk.235",
+          "quote": "then we we use m must use the second most expensive chip . So th so the regular chip ."
+        },
+        {
+          "da_id": "TS3004c.C.dialog-act.vkaraisk.256",
+          "quote": "So it's b should be regular uh the second ."
+        },
+        {
+          "da_id": "TS3004c.C.dialog-act.vkaraisk.254",
+          "quote": "Yeah th yeah , the chip is the the regular one ."
+        },
+        {
+          "da_id": "TS3004c.C.dialog-act.vkaraisk.249",
+          "quote": "Titanium , uh I think it's too expensive ."
+        }
+      ],
+      "fields": [
+        "status"
+      ]
+    },
+    "conflict": {
+      "result": "pass",
+      "reason": "No unresolved contradictions among the delivered statements about chip choice and materials.",
+      "quotes": [
+        {
+          "da_id": "TS3004c.C.dialog-act.vkaraisk.233",
+          "quote": "we need uh the expensive , most expensive chip , if we use an L_C_D_ ."
+        },
+        {
+          "da_id": "TS3004c.C.dialog-act.vkaraisk.235",
+          "quote": "then we we use m must use the second most expensive chip . So th so the regular chip ."
+        },
+        {
+          "da_id": "TS3004c.C.dialog-act.vkaraisk.254",
+          "quote": "Yeah th yeah , the chip is the the regular one ."
+        },
+        {
+          "da_id": "TS3004c.C.dialog-act.vkaraisk.249",
+          "quote": "Titanium , uh I think it's too expensive ."
+        }
+      ],
+      "fields": []
+    },
+    "relation": {
+      "result": "uncertain",
+      "reason": "per_link_assessment_required_for_each_related_item",
+      "quotes": [],
+      "links": [
+        {
+          "id": "TS3004b.sys.s.4",
+          "relation": "continues",
+          "changed_fields": [],
+          "reason": "Current item refines and expands the earlier decision by clarifying chip choice and confirming no LCD constraint; evidence shows alignment with no-LCD budget constraint.",
+          "prior_evidence_da_ids": [
+            "TS3004b.A.dialog-act.vkaraisk.102",
+            "TS3004b.D.dialog-act.vkaraisk.85",
+            "TS3004b.B.dialog-act.vkaraisk.21",
+            "TS3004b.A.dialog-act.vkaraisk.103",
+            "TS3004b.D.dialog-act.vkaraisk.86",
+            "TS3004b.A.dialog-act.vkaraisk.104",
+            "TS3004b.A.dialog-act.vkaraisk.105",
+            "TS3004b.A.dialog-act.vkaraisk.106"
+          ],
+          "current_evidence_da_ids": [
+            "TS3004c.A.dialog-act.vkaraisk.174",
+            "TS3004c.C.dialog-act.vkaraisk.254",
+            "TS3004c.A.dialog-act.vkaraisk.201",
+            "TS3004c.C.dialog-act.vkaraisk.235",
+            "TS3004c.C.dialog-act.vkaraisk.249"
+          ]
+        }
+      ],
+      "fields": [
+        "related_items"
+      ]
+    },
+    "owner": {
+      "result": "not_applicable",
+      "reason": "field_not_applicable",
+      "quotes": [],
+      "fields": [
+        "owner"
+      ]
+    },
+    "deadline": {
+      "result": "not_applicable",
+      "reason": "field_not_applicable",
+      "quotes": [],
+      "fields": [
+        "deadline"
+      ]
+    }
+  },
+  "unresolved_fields": [
+    "related_items"
+  ],
+  "observed_evidence_da_ids": [
+    "TS3004c.C.dialog-act.vkaraisk.233",
+    "TS3004c.C.dialog-act.vkaraisk.236",
+    "TS3004c.D.dialog-act.vkaraisk.139",
+    "TS3004c.A.dialog-act.vkaraisk.173",
+    "TS3004c.A.dialog-act.vkaraisk.174",
+    "TS3004c.C.dialog-act.vkaraisk.254",
+    "TS3004c.A.dialog-act.vkaraisk.201",
+    "TS3004c.C.dialog-act.vkaraisk.255",
+    "TS3004c.C.dialog-act.vkaraisk.256",
+    "TS3004c.B.dialog-act.vkaraisk.270",
+    "TS3004c.C.dialog-act.vkaraisk.249",
+    "TS3004c.A.dialog-act.vkaraisk.185",
+    "TS3004c.C.dialog-act.vkaraisk.232",
+    "TS3004c.C.dialog-act.vkaraisk.235",
+    "TS3004c.A.dialog-act.vkaraisk.176",
+    "TS3004c.A.dialog-act.vkaraisk.175",
+    "TS3004c.A.dialog-act.vkaraisk.200",
+    "TS3004c.A.dialog-act.vkaraisk.202",
+    "TS3004c.B.dialog-act.vkaraisk.269",
+    "TS3004c.A.dialog-act.vkaraisk.186",
+    "TS3004b.A.dialog-act.vkaraisk.101",
+    "TS3004b.A.dialog-act.vkaraisk.102",
+    "TS3004b.D.dialog-act.vkaraisk.85",
+    "TS3004b.B.dialog-act.vkaraisk.21",
+    "TS3004b.A.dialog-act.vkaraisk.103",
+    "TS3004b.D.dialog-act.vkaraisk.86",
+    "TS3004b.A.dialog-act.vkaraisk.104",
+    "TS3004b.A.dialog-act.vkaraisk.105",
+    "TS3004b.A.dialog-act.vkaraisk.106",
+    "TS3004b.C.dialog-act.vkaraisk.11"
+  ],
+  "initial_context": {
+    "item": {
+      "type": "decisions",
+      "text": "Skip the LCD option and use the second most expensive chip; use the regular chip; titanium will not be used.",
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ]
+    },
+    "current_meeting": "TS3004c",
+    "earlier_meetings": [
+      "TS3004a",
+      "TS3004b"
+    ],
+    "roster": [
+      {
+        "speaker": "A",
+        "participant_id": "MTD013PM",
+        "role": "PM"
+      },
+      {
+        "speaker": "B",
+        "participant_id": "MTD015UID",
+        "role": "UI"
+      },
+      {
+        "speaker": "C",
+        "participant_id": "MTD014ID",
+        "role": "ID"
+      },
+      {
+        "speaker": "D",
+        "participant_id": "MTD016ME",
+        "role": "ME"
+      }
+    ],
+    "observed_dialogue": [
+      {
+        "da_id": "TS3004c.C.dialog-act.vkaraisk.233",
+        "meeting_id": "TS3004c",
+        "text": "we need uh the expensive , most expensive chip , if we use an L_C_D_ .",
+        "participant": "MTD014ID",
+        "role": "ID"
+      },
+      {
+        "da_id": "TS3004c.C.dialog-act.vkaraisk.236",
+        "meeting_id": "TS3004c",
+        "text": "Because we use scroll wheels .",
+        "participant": "MTD014ID",
+        "role": "ID"
+      },
+      {
+        "da_id": "TS3004c.D.dialog-act.vkaraisk.139",
+        "meeting_id": "TS3004c",
+        "text": "Mm <disfmarker>",
+        "participant": "MTD016ME",
+        "role": "ME"
+      },
+      {
+        "da_id": "TS3004c.A.dialog-act.vkaraisk.173",
+        "meeting_id": "TS3004c",
+        "text": "I don't think that's an opportunity .",
+        "participant": "MTD013PM",
+        "role": "PM"
+      },
+      {
+        "da_id": "TS3004c.A.dialog-act.vkaraisk.174",
+        "meeting_id": "TS3004c",
+        "text": "Just skip it .",
+        "participant": "MTD013PM",
+        "role": "PM"
+      },
+      {
+        "da_id": "TS3004c.C.dialog-act.vkaraisk.254",
+        "meeting_id": "TS3004c",
+        "text": "Yeah th yeah , the chip is the the regular one .",
+        "participant": "MTD014ID",
+        "role": "ID"
+      },
+      {
+        "da_id": "TS3004c.A.dialog-act.vkaraisk.201",
+        "meeting_id": "TS3004c",
+        "text": "Yeah , re Yeah , regular . Yeah , okay . Yeah , regular .",
+        "participant": "MTD013PM",
+        "role": "PM"
+      },
+      {
+        "da_id": "TS3004c.C.dialog-act.vkaraisk.255",
+        "meeting_id": "TS3004c",
+        "text": "You have the simple one , regular and advanced .",
+        "participant": "MTD014ID",
+        "role": "ID"
+      },
+      {
+        "da_id": "TS3004c.C.dialog-act.vkaraisk.256",
+        "meeting_id": "TS3004c",
+        "text": "So it's b should be regular uh the second .",
+        "participant": "MTD014ID",
+        "role": "ID"
+      },
+      {
+        "da_id": "TS3004c.B.dialog-act.vkaraisk.270",
+        "meeting_id": "TS3004c",
+        "text": "It's mentioned here uh .",
+        "participant": "MTD015UID",
+        "role": "UI"
+      },
+      {
+        "da_id": "TS3004c.C.dialog-act.vkaraisk.249",
+        "meeting_id": "TS3004c",
+        "text": "Titanium , uh I think it's too expensive .",
+        "participant": "MTD014ID",
+        "role": "ID"
+      },
+      {
+        "da_id": "TS3004c.A.dialog-act.vkaraisk.185",
+        "meeting_id": "TS3004c",
+        "text": "But maybe the form has to be a bit different .",
+        "participant": "MTD013PM",
+        "role": "PM"
+      },
+      {
+        "da_id": "TS3004c.C.dialog-act.vkaraisk.232",
+        "participant": "MTD014ID",
+        "role": "ID",
+        "text": "So"
+      },
+      {
+        "da_id": "TS3004c.C.dialog-act.vkaraisk.235",
+        "participant": "MTD014ID",
+        "role": "ID",
+        "text": "then we we use m must use the second most expensive chip . So th so the regular chip ."
+      },
+      {
+        "da_id": "TS3004c.A.dialog-act.vkaraisk.176",
+        "participant": "MTD013PM",
+        "role": "PM",
+        "text": "Yeah , okay ."
+      },
+      {
+        "da_id": "TS3004c.A.dialog-act.vkaraisk.175",
+        "participant": "MTD013PM",
+        "role": "PM",
+        "text": "Because we don't have time for that to to put it in ."
+      },
+      {
+        "da_id": "TS3004c.A.dialog-act.vkaraisk.200",
+        "participant": "MTD013PM",
+        "role": "PM",
+        "text": "the case is just a plastic one ."
+      },
+      {
+        "da_id": "TS3004c.A.dialog-act.vkaraisk.202",
+        "participant": "MTD013PM",
+        "role": "PM",
+        "text": "Okay ."
+      },
+      {
+        "da_id": "TS3004c.B.dialog-act.vkaraisk.269",
+        "participant": "MTD015UID",
+        "role": "UI",
+        "text": "Titanium ."
+      },
+      {
+        "da_id": "TS3004c.A.dialog-act.vkaraisk.186",
+        "participant": "MTD013PM",
+        "role": "PM",
+        "text": "Not the sh the square form ."
+      }
+    ],
+    "peer_items": [
+      {
+        "item_key": "TS3004c#0",
+        "type": "actions",
+        "text": "The PM will supply five different front designs in a box."
+      },
+      {
+        "item_key": "TS3004c#1",
+        "type": "decisions",
+        "text": "The remote case should be hard plastic and transparent to enable backlighting."
+      },
+      {
+        "item_key": "TS3004c#2",
+        "type": "problems",
+        "text": "The remote will not wake up; the power light doesn't work and it appears it may have been turned off."
+      },
+      {
+        "item_key": "TS3004c#3",
+        "type": "decisions",
+        "text": "Five interchangeable front panels will be provided in a box and used on the remote."
+      },
+      {
+        "item_key": "TS3004c#4",
+        "type": "problems",
+        "text": "The cost is unclear; although a figure of twelve and a half euros per remote is mentioned, the total production cost remains undefined."
+      },
+      {
+        "item_key": "TS3004c#5",
+        "type": "actions",
+        "text": "UI will provide UI's design to the group."
+      },
+      {
+        "item_key": "TS3004c#6",
+        "type": "problems",
+        "text": "There is lack of information about the cost and viability of speech recognition, and discussions have been inconsistent."
+      },
+      {
+        "item_key": "TS3004c#7",
+        "type": "actions",
+        "text": "ID will discuss the material options with PM."
+      },
+      {
+        "item_key": "TS3004c#8",
+        "type": "decisions",
+        "text": "The Real Reaction logo will be placed on the remote, and the fronts on the remote should be replaceable."
+      },
+      {
+        "item_key": "TS3004c#9",
+        "type": "actions",
+        "text": "UI will paint prototype drawings on the smart board."
+      },
+      {
+        "item_key": "TS3004c#10",
+        "type": "decisions",
+        "text": "LED colors will be blue, red, and green; color cannot be chosen at purchase; color can be changed after purchase; there are multiple LEDs."
+      },
+      {
+        "item_key": "TS3004c#11",
+        "type": "decisions",
+        "text": "The remote will use rubber buttons for three-dimensional curved remotes; two-D curved design; wheel should be round; numbers at bottom; switch channel in the middle."
+      }
+    ],
+    "provisional_values": {
+      "owner": null,
+      "owner_basis": "missing",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "status": "adopted",
+      "related_items": []
+    },
+    "candidate_evidence_da_ids": [
+      "TS3004c.C.dialog-act.vkaraisk.233",
+      "TS3004c.C.dialog-act.vkaraisk.236",
+      "TS3004c.D.dialog-act.vkaraisk.139",
+      "TS3004c.A.dialog-act.vkaraisk.173",
+      "TS3004c.A.dialog-act.vkaraisk.174",
+      "TS3004c.C.dialog-act.vkaraisk.254",
+      "TS3004c.A.dialog-act.vkaraisk.201",
+      "TS3004c.C.dialog-act.vkaraisk.255",
+      "TS3004c.C.dialog-act.vkaraisk.256",
+      "TS3004c.B.dialog-act.vkaraisk.270",
+      "TS3004c.C.dialog-act.vkaraisk.249",
+      "TS3004c.A.dialog-act.vkaraisk.185"
+    ]
+  },
+  "observed_documents": [],
+  "document_evidence": [],
+  "relation_evidence": [
+    {
+      "prior_item_id": "TS3004b.sys.s.4",
+      "relation": "continues",
+      "state": "pending",
+      "changed_fields": [],
+      "reason": "Current item refines and expands the earlier decision by clarifying chip choice and confirming no LCD constraint; evidence shows alignment with no-LCD budget constraint.",
+      "before": {
+        "kind": "prior_item",
+        "id": "TS3004b.sys.s.4",
+        "meeting_id": "TS3004b",
+        "type": "decisions",
+        "text": "No LCD and no speech recognition due to budget constraints.",
+        "owner": null,
+        "owner_basis": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "status": "adopted",
+        "evidence": [
+          "TS3004b.A.dialog-act.vkaraisk.102",
+          "TS3004b.D.dialog-act.vkaraisk.85",
+          "TS3004b.B.dialog-act.vkaraisk.21",
+          "TS3004b.A.dialog-act.vkaraisk.103",
+          "TS3004b.D.dialog-act.vkaraisk.86",
+          "TS3004b.A.dialog-act.vkaraisk.104",
+          "TS3004b.A.dialog-act.vkaraisk.105",
+          "TS3004b.A.dialog-act.vkaraisk.106",
+          "TS3004b.A.dialog-act.vkaraisk.323"
+        ],
+        "source_file": "TS3004b.json",
+        "source_sha256": "f9e993ccb28ce20341aea1fc0577483476b227008e137ad318b461669cf75db5",
+        "review_state": "legacy_unchecked",
+        "unresolved_fields": [],
+        "unreadable_reference_ids": [],
+        "selected_reference_ids": [
+          "TS3004b.A.dialog-act.vkaraisk.102",
+          "TS3004b.D.dialog-act.vkaraisk.85",
+          "TS3004b.B.dialog-act.vkaraisk.21",
+          "TS3004b.A.dialog-act.vkaraisk.103",
+          "TS3004b.D.dialog-act.vkaraisk.86",
+          "TS3004b.A.dialog-act.vkaraisk.104",
+          "TS3004b.A.dialog-act.vkaraisk.105",
+          "TS3004b.A.dialog-act.vkaraisk.106"
+        ],
+        "next_offset": 8
+      },
+      "after": {
+        "item_key": "TS3004c#12",
+        "text": "Skip the LCD option and use the second most expensive chip; use the regular chip; titanium will not be used.",
+        "type": "decisions",
+        "status": "adopted",
+        "owner": null,
+        "deadline": null
+      },
+      "prior_quotes": [],
+      "current_quotes": []
+    }
+  ],
+  "history": [
+    {
+      "item": "TS3004c#12",
+      "step": 1,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "assess_item",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue supports skipping LCD and selecting the second-most expensive chip (regular); titanium is deemed too expensive. Evidence in the dialogue includes references to LCD consideration, the second-most expensive chip, and the regular chip, and explicit note that titanium is too expensive.",
+          "quotes": [
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.233",
+              "quote": "we need uh the expensive , most expensive chip , if we use an L_C_D_ ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.235",
+              "quote": "then we we use m must use the second most expensive chip . So th so the regular chip ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.256",
+              "quote": "So it's b should be regular uh the second ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.254",
+              "quote": "Yeah th yeah , the chip is the the regular one ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.249",
+              "quote": "Titanium , uh I think it's too expensive ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Current dialogue confirms the decision to use the regular chip (second-most expensive) and not use LCD or titanium; no contradictions in observed dialogue.",
+          "quotes": [
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.233",
+              "quote": "we need uh the expensive , most expensive chip , if we use an L_C_D_ ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.235",
+              "quote": "then we we use m must use the second most expensive chip . So th so the regular chip ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.256",
+              "quote": "So it's b should be regular uh the second ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.254",
+              "quote": "Yeah th yeah , the chip is the the regular one ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.249",
+              "quote": "Titanium , uh I think it's too expensive ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No unresolved contradictions among the delivered statements about chip choice and materials.",
+          "quotes": [
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.233",
+              "quote": "we need uh the expensive , most expensive chip , if we use an L_C_D_ ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.235",
+              "quote": "then we we use m must use the second most expensive chip . So th so the regular chip ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.254",
+              "quote": "Yeah th yeah , the chip is the the regular one ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.249",
+              "quote": "Titanium , uh I think it's too expensive ."
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "prior_context_not_checked",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        },
+        "owner": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        }
+      },
+      "decision": "retrieve",
+      "reason": "required_history_check_before_partial_accept",
+      "assessed_text": "Skip the LCD option and use the second most expensive chip; use the regular chip; titanium will not be used.",
+      "requested_action": "accept",
+      "proposed_fields": {
+        "status": "adopted",
+        "related_items": [],
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "TS3004c.C.dialog-act.vkaraisk.233",
+          "TS3004c.C.dialog-act.vkaraisk.235",
+          "TS3004c.C.dialog-act.vkaraisk.256",
+          "TS3004c.C.dialog-act.vkaraisk.254",
+          "TS3004c.C.dialog-act.vkaraisk.249"
+        ],
+        "owner": null,
+        "owner_basis": "missing",
+        "deadline": null,
+        "deadline_basis": "missing"
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue supports skipping LCD and selecting the second-most expensive chip (regular); titanium is deemed too expensive. Evidence in the dialogue includes references to LCD consideration, the second-most expensive chip, and the regular chip, and explicit note that titanium is too expensive.",
+          "quotes": [
+            "TS3004c.C.dialog-act.vkaraisk.233",
+            "TS3004c.C.dialog-act.vkaraisk.235",
+            "TS3004c.C.dialog-act.vkaraisk.256",
+            "TS3004c.C.dialog-act.vkaraisk.254",
+            "TS3004c.C.dialog-act.vkaraisk.249"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Current dialogue confirms the decision to use the regular chip (second-most expensive) and not use LCD or titanium; no contradictions in observed dialogue.",
+          "quotes": [
+            "TS3004c.C.dialog-act.vkaraisk.233",
+            "TS3004c.C.dialog-act.vkaraisk.235",
+            "TS3004c.C.dialog-act.vkaraisk.256",
+            "TS3004c.C.dialog-act.vkaraisk.254",
+            "TS3004c.C.dialog-act.vkaraisk.249"
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No unresolved contradictions among the delivered statements about chip choice and materials.",
+          "quotes": [
+            "TS3004c.C.dialog-act.vkaraisk.233",
+            "TS3004c.C.dialog-act.vkaraisk.235",
+            "TS3004c.C.dialog-act.vkaraisk.254",
+            "TS3004c.C.dialog-act.vkaraisk.249"
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "No explicit linkage to a prior TS3004a/TS3004b record in the current dialogue; prior relation cannot be verified from observed dialogue alone.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "status": "adopted",
+        "related_items": [],
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue supports skipping LCD and selecting the second-most expensive chip (regular); titanium is deemed too expensive. Evidence in the dialogue includes references to LCD consideration, the second-most expensive chip, and the regular chip, and explicit note that titanium is too expensive.",
+          "evidence_da_ids": [
+            "TS3004c.C.dialog-act.vkaraisk.233",
+            "TS3004c.C.dialog-act.vkaraisk.235",
+            "TS3004c.C.dialog-act.vkaraisk.256",
+            "TS3004c.C.dialog-act.vkaraisk.254",
+            "TS3004c.C.dialog-act.vkaraisk.249"
+          ]
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "Current dialogue confirms the decision to use the regular chip (second-most expensive) and not use LCD or titanium; no contradictions in observed dialogue.",
+          "evidence_da_ids": [
+            "TS3004c.C.dialog-act.vkaraisk.233",
+            "TS3004c.C.dialog-act.vkaraisk.235",
+            "TS3004c.C.dialog-act.vkaraisk.256",
+            "TS3004c.C.dialog-act.vkaraisk.254",
+            "TS3004c.C.dialog-act.vkaraisk.249"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No unresolved contradictions among the delivered statements about chip choice and materials.",
+          "evidence_da_ids": [
+            "TS3004c.C.dialog-act.vkaraisk.233",
+            "TS3004c.C.dialog-act.vkaraisk.235",
+            "TS3004c.C.dialog-act.vkaraisk.254",
+            "TS3004c.C.dialog-act.vkaraisk.249"
+          ],
+          "affected_fields": []
+        },
+        "relation_check": {
+          "result": "uncertain",
+          "reason": "No explicit linkage to a prior TS3004a/TS3004b record in the current dialogue; prior relation cannot be verified from observed dialogue alone.",
+          "evidence_da_ids": []
+        },
+        "next_action": "accept"
+      },
+      "evidence_bindings": {
+        "statement": [
+          "TS3004c.C.dialog-act.vkaraisk.233",
+          "TS3004c.C.dialog-act.vkaraisk.235",
+          "TS3004c.C.dialog-act.vkaraisk.256",
+          "TS3004c.C.dialog-act.vkaraisk.254",
+          "TS3004c.C.dialog-act.vkaraisk.249"
+        ],
+        "status": [
+          "TS3004c.C.dialog-act.vkaraisk.233",
+          "TS3004c.C.dialog-act.vkaraisk.235",
+          "TS3004c.C.dialog-act.vkaraisk.256",
+          "TS3004c.C.dialog-act.vkaraisk.254",
+          "TS3004c.C.dialog-act.vkaraisk.249"
+        ],
+        "conflict": [
+          "TS3004c.C.dialog-act.vkaraisk.233",
+          "TS3004c.C.dialog-act.vkaraisk.235",
+          "TS3004c.C.dialog-act.vkaraisk.254",
+          "TS3004c.C.dialog-act.vkaraisk.249"
+        ]
+      },
+      "raw_tool_input": {
+        "status": "adopted",
+        "related_items": [],
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue supports skipping LCD and selecting the second-most expensive chip (regular); titanium is deemed too expensive. Evidence in the dialogue includes references to LCD consideration, the second-most expensive chip, and the regular chip, and explicit note that titanium is too expensive.",
+          "evidence_da_ids": [
+            "TS3004c.C.dialog-act.vkaraisk.233",
+            "TS3004c.C.dialog-act.vkaraisk.235",
+            "TS3004c.C.dialog-act.vkaraisk.256",
+            "TS3004c.C.dialog-act.vkaraisk.254",
+            "TS3004c.C.dialog-act.vkaraisk.249"
+          ]
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "Current dialogue confirms the decision to use the regular chip (second-most expensive) and not use LCD or titanium; no contradictions in observed dialogue.",
+          "evidence_da_ids": [
+            "TS3004c.C.dialog-act.vkaraisk.233",
+            "TS3004c.C.dialog-act.vkaraisk.235",
+            "TS3004c.C.dialog-act.vkaraisk.256",
+            "TS3004c.C.dialog-act.vkaraisk.254",
+            "TS3004c.C.dialog-act.vkaraisk.249"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No unresolved contradictions among the delivered statements about chip choice and materials.",
+          "evidence_da_ids": [
+            "TS3004c.C.dialog-act.vkaraisk.233",
+            "TS3004c.C.dialog-act.vkaraisk.235",
+            "TS3004c.C.dialog-act.vkaraisk.254",
+            "TS3004c.C.dialog-act.vkaraisk.249"
+          ],
+          "affected_fields": []
+        },
+        "relation_check": {
+          "result": "uncertain",
+          "reason": "No explicit linkage to a prior TS3004a/TS3004b record in the current dialogue; prior relation cannot be verified from observed dialogue alone.",
+          "evidence_da_ids": []
+        },
+        "next_action": "accept"
+      },
+      "protocol_normalizations": [],
+      "unresolved_before": [
+        "related_items",
+        "statement",
+        "status"
+      ],
+      "unresolved_after": [
+        "related_items"
+      ],
+      "semantic_stalls": 0,
+      "validation_codes": {
+        "relation": [
+          "prior_context_not_checked"
+        ]
+      }
+    },
+    {
+      "item": "TS3004c#12",
+      "step": 2,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "history_context_focused",
+      "outcome": "delivered",
+      "evidence_da_ids": [
+        "TS3004c.C.dialog-act.vkaraisk.233",
+        "TS3004c.C.dialog-act.vkaraisk.236",
+        "TS3004c.D.dialog-act.vkaraisk.139",
+        "TS3004c.A.dialog-act.vkaraisk.173",
+        "TS3004c.A.dialog-act.vkaraisk.174",
+        "TS3004c.C.dialog-act.vkaraisk.254",
+        "TS3004c.A.dialog-act.vkaraisk.201",
+        "TS3004c.C.dialog-act.vkaraisk.255",
+        "TS3004c.C.dialog-act.vkaraisk.256",
+        "TS3004c.B.dialog-act.vkaraisk.270",
+        "TS3004c.C.dialog-act.vkaraisk.249",
+        "TS3004c.A.dialog-act.vkaraisk.185",
+        "TS3004c.C.dialog-act.vkaraisk.232",
+        "TS3004c.C.dialog-act.vkaraisk.235",
+        "TS3004c.A.dialog-act.vkaraisk.176",
+        "TS3004c.A.dialog-act.vkaraisk.175",
+        "TS3004c.A.dialog-act.vkaraisk.200",
+        "TS3004c.A.dialog-act.vkaraisk.202",
+        "TS3004c.B.dialog-act.vkaraisk.269",
+        "TS3004c.A.dialog-act.vkaraisk.186"
+      ]
+    },
+    {
+      "item": "TS3004c#12",
+      "step": 2,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "get_prior_items",
+      "outcome": "lookup",
+      "decision": "retrieve",
+      "args": {
+        "query": "LCD chip titanium regular",
+        "item_type": "decisions"
+      },
+      "tool_result": {
+        "results": [
+          {
+            "id": "TS3004b.sys.s.4",
+            "meeting_id": "TS3004b",
+            "type": "decisions",
+            "text": "No LCD and no speech recognition due to budget constraints.",
+            "owner": null,
+            "owner_basis": null,
+            "deadline": null,
+            "deadline_basis": null,
+            "status": "adopted",
+            "evidence": [
+              "TS3004b.A.dialog-act.vkaraisk.102",
+              "TS3004b.D.dialog-act.vkaraisk.85",
+              "TS3004b.B.dialog-act.vkaraisk.21",
+              "TS3004b.A.dialog-act.vkaraisk.103",
+              "TS3004b.D.dialog-act.vkaraisk.86",
+              "TS3004b.A.dialog-act.vkaraisk.104",
+              "TS3004b.A.dialog-act.vkaraisk.105",
+              "TS3004b.A.dialog-act.vkaraisk.106",
+              "TS3004b.A.dialog-act.vkaraisk.323"
+            ],
+            "source_file": "TS3004b.json",
+            "source_sha256": "f9e993ccb28ce20341aea1fc0577483476b227008e137ad318b461669cf75db5",
+            "review_state": "legacy_unchecked",
+            "unresolved_fields": [],
+            "unreadable_reference_ids": [],
+            "score": 7.27
+          }
+        ]
+      },
+      "new_info": true
+    },
+    {
+      "item": "TS3004c#12",
+      "step": 3,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "read_prior_item",
+      "outcome": "lookup",
+      "decision": "retrieve",
+      "args": {
+        "item_id": "TS3004b.sys.s.4"
+      },
+      "tool_result": {
+        "results": [
+          {
+            "kind": "prior_item",
+            "id": "TS3004b.sys.s.4",
+            "meeting_id": "TS3004b",
+            "type": "decisions",
+            "text": "No LCD and no speech recognition due to budget constraints.",
+            "owner": null,
+            "owner_basis": null,
+            "deadline": null,
+            "deadline_basis": null,
+            "status": "adopted",
+            "evidence": [
+              "TS3004b.A.dialog-act.vkaraisk.102",
+              "TS3004b.D.dialog-act.vkaraisk.85",
+              "TS3004b.B.dialog-act.vkaraisk.21",
+              "TS3004b.A.dialog-act.vkaraisk.103",
+              "TS3004b.D.dialog-act.vkaraisk.86",
+              "TS3004b.A.dialog-act.vkaraisk.104",
+              "TS3004b.A.dialog-act.vkaraisk.105",
+              "TS3004b.A.dialog-act.vkaraisk.106",
+              "TS3004b.A.dialog-act.vkaraisk.323"
+            ],
+            "source_file": "TS3004b.json",
+            "source_sha256": "f9e993ccb28ce20341aea1fc0577483476b227008e137ad318b461669cf75db5",
+            "review_state": "legacy_unchecked",
+            "unresolved_fields": [],
+            "unreadable_reference_ids": [],
+            "selected_reference_ids": [
+              "TS3004b.A.dialog-act.vkaraisk.102",
+              "TS3004b.D.dialog-act.vkaraisk.85",
+              "TS3004b.B.dialog-act.vkaraisk.21",
+              "TS3004b.A.dialog-act.vkaraisk.103",
+              "TS3004b.D.dialog-act.vkaraisk.86",
+              "TS3004b.A.dialog-act.vkaraisk.104",
+              "TS3004b.A.dialog-act.vkaraisk.105",
+              "TS3004b.A.dialog-act.vkaraisk.106"
+            ],
+            "next_offset": 8
+          },
+          {
+            "kind": "dialogue",
+            "da_id": "TS3004b.A.dialog-act.vkaraisk.101",
+            "meeting_id": "TS3004b",
+            "text": "yeah ,",
+            "participant": "MTD013PM",
+            "role": "PM",
+            "supports_item_id": "TS3004b.sys.s.4",
+            "is_reference": false
+          },
+          {
+            "kind": "dialogue",
+            "da_id": "TS3004b.A.dialog-act.vkaraisk.102",
+            "meeting_id": "TS3004b",
+            "text": "so we just can skip the L_C_D_ r on the remote control ,",
+            "participant": "MTD013PM",
+            "role": "PM",
+            "supports_item_id": "TS3004b.sys.s.4",
+            "is_reference": true
+          },
+          {
+            "kind": "dialogue",
+            "da_id": "TS3004b.D.dialog-act.vkaraisk.85",
+            "meeting_id": "TS3004b",
+            "text": "I I think we can speak , uh we can skip speech recognition uh directly ,",
+            "participant": "MTD016ME",
+            "role": "ME",
+            "supports_item_id": "TS3004b.sys.s.4",
+            "is_reference": true
+          },
+          {
+            "kind": "dialogue",
+            "da_id": "TS3004b.B.dialog-act.vkaraisk.21",
+            "meeting_id": "TS3004b",
+            "text": "Yeah .",
+            "participant": "MTD015UID",
+            "role": "UI",
+            "supports_item_id": "TS3004b.sys.s.4",
+            "is_reference": true
+          },
+          {
+            "kind": "dialogue",
+            "da_id": "TS3004b.A.dialog-act.vkaraisk.103",
+            "meeting_id": "TS3004b",
+            "text": "because <disfmarker>",
+            "participant": "MTD013PM",
+            "role": "PM",
+            "supports_item_id": "TS3004b.sys.s.4",
+            "is_reference": true
+          },
+          {
+            "kind": "dialogue",
+            "da_id": "TS3004b.D.dialog-act.vkaraisk.86",
+            "meeting_id": "TS3004b",
+            "text": "because it's not reachable for twenty five Euros .",
+            "participant": "MTD016ME",
+            "role": "ME",
+            "supports_item_id": "TS3004b.sys.s.4",
+            "is_reference": true
+          },
+          {
+            "kind": "dialogue",
+            "da_id": "TS3004b.A.dialog-act.vkaraisk.104",
+            "meeting_id": "TS3004b",
+            "text": "Yeah .",
+            "participant": "MTD013PM",
+            "role": "PM",
+            "supports_item_id": "TS3004b.sys.s.4",
+            "is_reference": true
+          },
+          {
+            "kind": "dialogue",
+            "da_id": "TS3004b.A.dialog-act.vkaraisk.105",
+            "meeting_id": "TS3004b",
+            "text": "It's too <disfmarker>",
+            "participant": "MTD013PM",
+            "role": "PM",
+            "supports_item_id": "TS3004b.sys.s.4",
+            "is_reference": true
+          },
+          {
+            "kind": "dialogue",
+            "da_id": "TS3004b.A.dialog-act.vkaraisk.106",
+            "meeting_id": "TS3004b",
+            "text": "Okay .",
+            "participant": "MTD013PM",
+            "role": "PM",
+            "supports_item_id": "TS3004b.sys.s.4",
+            "is_reference": true
+          },
+          {
+            "kind": "dialogue",
+            "da_id": "TS3004b.C.dialog-act.vkaraisk.11",
+            "meeting_id": "TS3004b",
+            "text": "Yeah .",
+            "participant": "MTD014ID",
+            "role": "ID",
+            "supports_item_id": "TS3004b.sys.s.4",
+            "is_reference": false
+          }
+        ]
+      },
+      "new_info": true
+    },
+    {
+      "item": "TS3004c#12",
+      "step": 4,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "assess_relation",
+      "outcome": "invalid_action",
+      "error": "Correct these argument fields: : 'links' is a required property Tool assess_relation accepts root keys: result, reason, quotes, documents, links, related_items, next_action. Resubmit the complete advertised object. Select only delivered supporting dialogue IDs; if support is unavailable use uncertain with an explanation, never invent an ID or mark pass with no evidence. Documents belong inside the check they inform.",
+      "raw_tool_input": {
+        "result": "pass",
+        "reason": "The current item repeats and refines the prior TS3004b.sys.s.4 decision by removing LCD, selecting the second-most-expensive chip (the regular chip), and explicitly rejecting titanium; the current dialogue confirms these choices, aligning with the earlier decision’s constraint (no LCD, budget considerations).",
+        "quotes": [
+          {
+            "da_id": "TS3004c.A.dialog-act.vkaraisk.174",
+            "quote": "Just skip it."
+          },
+          {
+            "da_id": "TS3004c.C.dialog-act.vkaraisk.254",
+            "quote": "Yeah th yeah , the chip is the the regular one."
+          },
+          {
+            "da_id": "TS3004c.A.dialog-act.vkaraisk.201",
+            "quote": "Yeah , re Yeah , regular . Yeah , okay . Yeah , regular ."
+          },
+          {
+            "da_id": "TS3004c.C.dialog-act.vkaraisk.249",
+            "quote": "Titanium , uh I think it's too expensive."
+          }
+        ]
+      }
+    },
+    {
+      "item": "TS3004c#12",
+      "step": 5,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "assess_relation",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue supports skipping LCD and selecting the second-most expensive chip (regular); titanium is deemed too expensive. Evidence in the dialogue includes references to LCD consideration, the second-most expensive chip, and the regular chip, and explicit note that titanium is too expensive.",
+          "quotes": [
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.233",
+              "quote": "we need uh the expensive , most expensive chip , if we use an L_C_D_ ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.235",
+              "quote": "then we we use m must use the second most expensive chip . So th so the regular chip ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.256",
+              "quote": "So it's b should be regular uh the second ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.254",
+              "quote": "Yeah th yeah , the chip is the the regular one ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.249",
+              "quote": "Titanium , uh I think it's too expensive ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Current dialogue confirms the decision to use the regular chip (second-most expensive) and not use LCD or titanium; no contradictions in observed dialogue.",
+          "quotes": [
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.233",
+              "quote": "we need uh the expensive , most expensive chip , if we use an L_C_D_ ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.235",
+              "quote": "then we we use m must use the second most expensive chip . So th so the regular chip ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.256",
+              "quote": "So it's b should be regular uh the second ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.254",
+              "quote": "Yeah th yeah , the chip is the the regular one ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.249",
+              "quote": "Titanium , uh I think it's too expensive ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No unresolved contradictions among the delivered statements about chip choice and materials.",
+          "quotes": [
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.233",
+              "quote": "we need uh the expensive , most expensive chip , if we use an L_C_D_ ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.235",
+              "quote": "then we we use m must use the second most expensive chip . So th so the regular chip ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.254",
+              "quote": "Yeah th yeah , the chip is the the regular one ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.249",
+              "quote": "Titanium , uh I think it's too expensive ."
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "read_and_quote_each_links_prior_and_current_evidence",
+          "quotes": [],
+          "links": [
+            {
+              "id": "TS3004b.sys.s.4",
+              "relation": "continues",
+              "changed_fields": [],
+              "reason": "Current item refines and expands the earlier decision by clarifying chip choice and confirming no LCD constraint; evidence shows alignment with no-LCD budget constraint.",
+              "prior_evidence_da_ids": [
+                "TS3004b.A.dialog-act.vkaraisk.102",
+                "TS3004b.D.dialog-act.vkaraisk.85",
+                "TS3004b.B.dialog-act.vkaraisk.21",
+                "TS3004b.A.dialog-act.vkaraisk.103",
+                "TS3004b.D.dialog-act.vkaraisk.86",
+                "TS3004b.A.dialog-act.vkaraisk.104",
+                "TS3004b.A.dialog-act.vkaraisk.105",
+                "TS3004b.A.dialog-act.vkaraisk.106"
+              ],
+              "current_evidence_da_ids": [
+                "TS3004c.A.dialog-act.vkaraisk.174",
+                "TS3004c.C.dialog-act.vkaraisk.254",
+                "TS3004c.A.dialog-act.vkaraisk.201",
+                "TS3004c.C.dialog-act.vkaraisk.235",
+                "TS3004c.C.dialog-act.vkaraisk.249"
+              ]
+            }
+          ],
+          "fields": [
+            "related_items"
+          ]
+        },
+        "owner": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        }
+      },
+      "decision": "reassess",
+      "reason": "incomplete_link_evidence_submission",
+      "assessed_text": "Skip the LCD option and use the second most expensive chip; use the regular chip; titanium will not be used.",
+      "requested_action": null,
+      "proposed_fields": {
+        "status": "adopted",
+        "related_items": [
+          {
+            "id": "TS3004b.sys.s.4",
+            "relation": "continues"
+          }
+        ],
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "TS3004c.C.dialog-act.vkaraisk.233",
+          "TS3004c.C.dialog-act.vkaraisk.235",
+          "TS3004c.C.dialog-act.vkaraisk.256",
+          "TS3004c.C.dialog-act.vkaraisk.254",
+          "TS3004c.C.dialog-act.vkaraisk.249",
+          "TS3004c.A.dialog-act.vkaraisk.174",
+          "TS3004c.A.dialog-act.vkaraisk.201"
+        ],
+        "owner": null,
+        "owner_basis": "missing",
+        "deadline": null,
+        "deadline_basis": "missing"
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue supports skipping LCD and selecting the second-most expensive chip (regular); titanium is deemed too expensive. Evidence in the dialogue includes references to LCD consideration, the second-most expensive chip, and the regular chip, and explicit note that titanium is too expensive.",
+          "quotes": [
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.233",
+              "quote": "we need uh the expensive , most expensive chip , if we use an L_C_D_ ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.235",
+              "quote": "then we we use m must use the second most expensive chip . So th so the regular chip ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.256",
+              "quote": "So it's b should be regular uh the second ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.254",
+              "quote": "Yeah th yeah , the chip is the the regular one ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.249",
+              "quote": "Titanium , uh I think it's too expensive ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Current dialogue confirms the decision to use the regular chip (second-most expensive) and not use LCD or titanium; no contradictions in observed dialogue.",
+          "quotes": [
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.233",
+              "quote": "we need uh the expensive , most expensive chip , if we use an L_C_D_ ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.235",
+              "quote": "then we we use m must use the second most expensive chip . So th so the regular chip ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.256",
+              "quote": "So it's b should be regular uh the second ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.254",
+              "quote": "Yeah th yeah , the chip is the the regular one ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.249",
+              "quote": "Titanium , uh I think it's too expensive ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No unresolved contradictions among the delivered statements about chip choice and materials.",
+          "quotes": [
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.233",
+              "quote": "we need uh the expensive , most expensive chip , if we use an L_C_D_ ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.235",
+              "quote": "then we we use m must use the second most expensive chip . So th so the regular chip ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.254",
+              "quote": "Yeah th yeah , the chip is the the regular one ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.249",
+              "quote": "Titanium , uh I think it's too expensive ."
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "pass",
+          "reason": "The current item repeats and refines the prior TS3004b.sys.s.4 decision by removing LCD, selecting the second-most-expensive chip (the regular chip), and explicitly rejecting titanium; the current dialogue confirms these choices, aligning with the earlier decision’s constraint (no LCD, budget considerations).",
+          "quotes": [
+            {
+              "da_id": "TS3004c.A.dialog-act.vkaraisk.174",
+              "quote": "Just skip it."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.254",
+              "quote": "Yeah th yeah , the chip is the the regular one."
+            },
+            {
+              "da_id": "TS3004c.A.dialog-act.vkaraisk.201",
+              "quote": "Yeah , re Yeah , regular . Yeah , okay . Yeah , regular ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.235",
+              "quote": "then we we use m must use the second most expensive chip . So th so the regular chip ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.249",
+              "quote": "Titanium , uh I think it's too expensive."
+            }
+          ],
+          "links": [
+            {
+              "id": "TS3004b.sys.s.4",
+              "relation": "continues",
+              "changed_fields": [],
+              "reason": "Current item refines and expands the earlier decision by clarifying chip choice and confirming no LCD constraint; evidence shows alignment with no-LCD budget constraint.",
+              "prior_evidence_da_ids": [
+                "TS3004b.A.dialog-act.vkaraisk.102",
+                "TS3004b.D.dialog-act.vkaraisk.85",
+                "TS3004b.B.dialog-act.vkaraisk.21",
+                "TS3004b.A.dialog-act.vkaraisk.103",
+                "TS3004b.D.dialog-act.vkaraisk.86",
+                "TS3004b.A.dialog-act.vkaraisk.104",
+                "TS3004b.A.dialog-act.vkaraisk.105",
+                "TS3004b.A.dialog-act.vkaraisk.106"
+              ],
+              "current_evidence_da_ids": [
+                "TS3004c.A.dialog-act.vkaraisk.174",
+                "TS3004c.C.dialog-act.vkaraisk.254",
+                "TS3004c.A.dialog-act.vkaraisk.201",
+                "TS3004c.C.dialog-act.vkaraisk.235",
+                "TS3004c.C.dialog-act.vkaraisk.249"
+              ]
+            }
+          ],
+          "fields": [
+            "related_items"
+          ]
+        },
+        "owner": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "result": "pass",
+        "reason": "The current item repeats and refines the prior TS3004b.sys.s.4 decision by removing LCD, selecting the second-most-expensive chip (the regular chip), and explicitly rejecting titanium; the current dialogue confirms these choices, aligning with the earlier decision’s constraint (no LCD, budget considerations).",
+        "quotes": [
+          {
+            "da_id": "TS3004c.A.dialog-act.vkaraisk.174",
+            "quote": "Just skip it."
+          },
+          {
+            "da_id": "TS3004c.C.dialog-act.vkaraisk.254",
+            "quote": "Yeah th yeah , the chip is the the regular one."
+          },
+          {
+            "da_id": "TS3004c.A.dialog-act.vkaraisk.201",
+            "quote": "Yeah , re Yeah , regular . Yeah , okay . Yeah , regular ."
+          },
+          {
+            "da_id": "TS3004c.C.dialog-act.vkaraisk.235",
+            "quote": "then we we use m must use the second most expensive chip . So th so the regular chip ."
+          },
+          {
+            "da_id": "TS3004c.C.dialog-act.vkaraisk.249",
+            "quote": "Titanium , uh I think it's too expensive."
+          }
+        ],
+        "links": [
+          {
+            "id": "TS3004b.sys.s.4",
+            "relation": "continues",
+            "changed_fields": [],
+            "reason": "Current item refines and expands the earlier decision by clarifying chip choice and confirming no LCD constraint; evidence shows alignment with no-LCD budget constraint.",
+            "prior_evidence_da_ids": [
+              "TS3004b.A.dialog-act.vkaraisk.102",
+              "TS3004b.D.dialog-act.vkaraisk.85",
+              "TS3004b.B.dialog-act.vkaraisk.21",
+              "TS3004b.A.dialog-act.vkaraisk.103",
+              "TS3004b.D.dialog-act.vkaraisk.86",
+              "TS3004b.A.dialog-act.vkaraisk.104",
+              "TS3004b.A.dialog-act.vkaraisk.105",
+              "TS3004b.A.dialog-act.vkaraisk.106"
+            ],
+            "current_evidence_da_ids": [
+              "TS3004c.A.dialog-act.vkaraisk.174",
+              "TS3004c.C.dialog-act.vkaraisk.254",
+              "TS3004c.A.dialog-act.vkaraisk.201",
+              "TS3004c.C.dialog-act.vkaraisk.235",
+              "TS3004c.C.dialog-act.vkaraisk.249"
+            ]
+          }
+        ]
+      },
+      "evidence_bindings": {
+        "relation": [
+          "TS3004b.A.dialog-act.vkaraisk.102",
+          "TS3004b.D.dialog-act.vkaraisk.85",
+          "TS3004b.B.dialog-act.vkaraisk.21",
+          "TS3004b.A.dialog-act.vkaraisk.103",
+          "TS3004b.D.dialog-act.vkaraisk.86",
+          "TS3004b.A.dialog-act.vkaraisk.104",
+          "TS3004b.A.dialog-act.vkaraisk.105",
+          "TS3004b.A.dialog-act.vkaraisk.106"
+        ]
+      },
+      "raw_tool_input": {
+        "result": "pass",
+        "reason": "The current item repeats and refines the prior TS3004b.sys.s.4 decision by removing LCD, selecting the second-most-expensive chip (the regular chip), and explicitly rejecting titanium; the current dialogue confirms these choices, aligning with the earlier decision’s constraint (no LCD, budget considerations).",
+        "quotes": [
+          {
+            "da_id": "TS3004c.A.dialog-act.vkaraisk.174",
+            "quote": "Just skip it."
+          },
+          {
+            "da_id": "TS3004c.C.dialog-act.vkaraisk.254",
+            "quote": "Yeah th yeah , the chip is the the regular one."
+          },
+          {
+            "da_id": "TS3004c.A.dialog-act.vkaraisk.201",
+            "quote": "Yeah , re Yeah , regular . Yeah , okay . Yeah , regular ."
+          },
+          {
+            "da_id": "TS3004c.C.dialog-act.vkaraisk.235",
+            "quote": "then we we use m must use the second most expensive chip . So th so the regular chip ."
+          },
+          {
+            "da_id": "TS3004c.C.dialog-act.vkaraisk.249",
+            "quote": "Titanium , uh I think it's too expensive."
+          }
+        ],
+        "links": [
+          {
+            "id": "TS3004b.sys.s.4",
+            "relation": "continues",
+            "changed_fields": [],
+            "reason": "Current item refines and expands the earlier decision by clarifying chip choice and confirming no LCD constraint; evidence shows alignment with no-LCD budget constraint.",
+            "prior_evidence_da_ids": [
+              "TS3004b.A.dialog-act.vkaraisk.102",
+              "TS3004b.D.dialog-act.vkaraisk.85",
+              "TS3004b.B.dialog-act.vkaraisk.21",
+              "TS3004b.A.dialog-act.vkaraisk.103",
+              "TS3004b.D.dialog-act.vkaraisk.86",
+              "TS3004b.A.dialog-act.vkaraisk.104",
+              "TS3004b.A.dialog-act.vkaraisk.105",
+              "TS3004b.A.dialog-act.vkaraisk.106"
+            ],
+            "current_evidence_da_ids": [
+              "TS3004c.A.dialog-act.vkaraisk.174",
+              "TS3004c.C.dialog-act.vkaraisk.254",
+              "TS3004c.A.dialog-act.vkaraisk.201",
+              "TS3004c.C.dialog-act.vkaraisk.235",
+              "TS3004c.C.dialog-act.vkaraisk.249"
+            ]
+          }
+        ]
+      },
+      "protocol_normalizations": [
+        "controller_action_for_missing_hint:retrieve"
+      ],
+      "unresolved_before": [
+        "related_items"
+      ],
+      "unresolved_after": [
+        "related_items"
+      ],
+      "semantic_stalls": 0,
+      "validation_codes": {
+        "relation": [
+          "unobserved_or_inexact_quote",
+          "retrieve_prior_record_and_read_its_evidence",
+          "selected_prior_item_evidence_not_read",
+          "read_and_quote_each_links_prior_and_current_evidence"
+        ]
+      }
+    },
+    {
+      "item": "TS3004c#12",
+      "step": 6,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "assess_relation",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue supports skipping LCD and selecting the second-most expensive chip (regular); titanium is deemed too expensive. Evidence in the dialogue includes references to LCD consideration, the second-most expensive chip, and the regular chip, and explicit note that titanium is too expensive.",
+          "quotes": [
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.233",
+              "quote": "we need uh the expensive , most expensive chip , if we use an L_C_D_ ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.235",
+              "quote": "then we we use m must use the second most expensive chip . So th so the regular chip ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.256",
+              "quote": "So it's b should be regular uh the second ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.254",
+              "quote": "Yeah th yeah , the chip is the the regular one ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.249",
+              "quote": "Titanium , uh I think it's too expensive ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Current dialogue confirms the decision to use the regular chip (second-most expensive) and not use LCD or titanium; no contradictions in observed dialogue.",
+          "quotes": [
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.233",
+              "quote": "we need uh the expensive , most expensive chip , if we use an L_C_D_ ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.235",
+              "quote": "then we we use m must use the second most expensive chip . So th so the regular chip ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.256",
+              "quote": "So it's b should be regular uh the second ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.254",
+              "quote": "Yeah th yeah , the chip is the the regular one ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.249",
+              "quote": "Titanium , uh I think it's too expensive ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No unresolved contradictions among the delivered statements about chip choice and materials.",
+          "quotes": [
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.233",
+              "quote": "we need uh the expensive , most expensive chip , if we use an L_C_D_ ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.235",
+              "quote": "then we we use m must use the second most expensive chip . So th so the regular chip ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.254",
+              "quote": "Yeah th yeah , the chip is the the regular one ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.249",
+              "quote": "Titanium , uh I think it's too expensive ."
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "read_and_quote_each_links_prior_and_current_evidence",
+          "quotes": [],
+          "links": [
+            {
+              "id": "TS3004b.sys.s.4",
+              "relation": "continues",
+              "changed_fields": [],
+              "reason": "Current item refines and expands the earlier decision by clarifying chip choice and confirming no LCD constraint; evidence shows alignment with no-LCD budget constraint.",
+              "prior_evidence_da_ids": [
+                "TS3004b.A.dialog-act.vkaraisk.102",
+                "TS3004b.D.dialog-act.vkaraisk.85",
+                "TS3004b.B.dialog-act.vkaraisk.21",
+                "TS3004b.A.dialog-act.vkaraisk.103",
+                "TS3004b.D.dialog-act.vkaraisk.86",
+                "TS3004b.A.dialog-act.vkaraisk.104",
+                "TS3004b.A.dialog-act.vkaraisk.105",
+                "TS3004b.A.dialog-act.vkaraisk.106"
+              ],
+              "current_evidence_da_ids": [
+                "TS3004c.A.dialog-act.vkaraisk.174",
+                "TS3004c.C.dialog-act.vkaraisk.254",
+                "TS3004c.A.dialog-act.vkaraisk.201",
+                "TS3004c.C.dialog-act.vkaraisk.235",
+                "TS3004c.C.dialog-act.vkaraisk.249"
+              ]
+            }
+          ],
+          "fields": [
+            "related_items"
+          ]
+        },
+        "owner": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        }
+      },
+      "decision": "retrieve",
+      "reason": "unresolved_checks",
+      "assessed_text": "Skip the LCD option and use the second most expensive chip; use the regular chip; titanium will not be used.",
+      "requested_action": null,
+      "proposed_fields": {
+        "status": "adopted",
+        "related_items": [
+          {
+            "id": "TS3004b.sys.s.4",
+            "relation": "continues"
+          }
+        ],
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "TS3004c.C.dialog-act.vkaraisk.233",
+          "TS3004c.C.dialog-act.vkaraisk.235",
+          "TS3004c.C.dialog-act.vkaraisk.256",
+          "TS3004c.C.dialog-act.vkaraisk.254",
+          "TS3004c.C.dialog-act.vkaraisk.249",
+          "TS3004c.A.dialog-act.vkaraisk.174",
+          "TS3004c.A.dialog-act.vkaraisk.201"
+        ],
+        "owner": null,
+        "owner_basis": "missing",
+        "deadline": null,
+        "deadline_basis": "missing"
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue supports skipping LCD and selecting the second-most expensive chip (regular); titanium is deemed too expensive. Evidence in the dialogue includes references to LCD consideration, the second-most expensive chip, and the regular chip, and explicit note that titanium is too expensive.",
+          "quotes": [
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.233",
+              "quote": "we need uh the expensive , most expensive chip , if we use an L_C_D_ ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.235",
+              "quote": "then we we use m must use the second most expensive chip . So th so the regular chip ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.256",
+              "quote": "So it's b should be regular uh the second ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.254",
+              "quote": "Yeah th yeah , the chip is the the regular one ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.249",
+              "quote": "Titanium , uh I think it's too expensive ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Current dialogue confirms the decision to use the regular chip (second-most expensive) and not use LCD or titanium; no contradictions in observed dialogue.",
+          "quotes": [
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.233",
+              "quote": "we need uh the expensive , most expensive chip , if we use an L_C_D_ ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.235",
+              "quote": "then we we use m must use the second most expensive chip . So th so the regular chip ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.256",
+              "quote": "So it's b should be regular uh the second ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.254",
+              "quote": "Yeah th yeah , the chip is the the regular one ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.249",
+              "quote": "Titanium , uh I think it's too expensive ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No unresolved contradictions among the delivered statements about chip choice and materials.",
+          "quotes": [
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.233",
+              "quote": "we need uh the expensive , most expensive chip , if we use an L_C_D_ ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.235",
+              "quote": "then we we use m must use the second most expensive chip . So th so the regular chip ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.254",
+              "quote": "Yeah th yeah , the chip is the the regular one ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.249",
+              "quote": "Titanium , uh I think it's too expensive ."
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "pass",
+          "reason": "The current item repeats and refines the prior TS3004b.sys.s.4 decision by removing LCD, selecting the second-most-expensive chip (the regular chip), and explicitly rejecting titanium; the current dialogue confirms these choices, aligning with the earlier decision’s constraint (no LCD, budget considerations).",
+          "quotes": [
+            {
+              "da_id": "TS3004c.A.dialog-act.vkaraisk.174",
+              "quote": "Just skip it."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.254",
+              "quote": "Yeah th yeah , the chip is the the regular one."
+            },
+            {
+              "da_id": "TS3004c.A.dialog-act.vkaraisk.201",
+              "quote": "Yeah , re Yeah , regular . Yeah , okay . Yeah , regular ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.235",
+              "quote": "then we we use m must use the second most expensive chip . So th so the regular chip ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.249",
+              "quote": "Titanium , uh I think it's too expensive."
+            }
+          ],
+          "links": [
+            {
+              "id": "TS3004b.sys.s.4",
+              "relation": "continues",
+              "changed_fields": [],
+              "reason": "Current item refines and expands the earlier decision by clarifying chip choice and confirming no LCD constraint; evidence shows alignment with no-LCD budget constraint.",
+              "prior_evidence_da_ids": [
+                "TS3004b.A.dialog-act.vkaraisk.102",
+                "TS3004b.D.dialog-act.vkaraisk.85",
+                "TS3004b.B.dialog-act.vkaraisk.21",
+                "TS3004b.A.dialog-act.vkaraisk.103",
+                "TS3004b.D.dialog-act.vkaraisk.86",
+                "TS3004b.A.dialog-act.vkaraisk.104",
+                "TS3004b.A.dialog-act.vkaraisk.105",
+                "TS3004b.A.dialog-act.vkaraisk.106"
+              ],
+              "current_evidence_da_ids": [
+                "TS3004c.A.dialog-act.vkaraisk.174",
+                "TS3004c.C.dialog-act.vkaraisk.254",
+                "TS3004c.A.dialog-act.vkaraisk.201",
+                "TS3004c.C.dialog-act.vkaraisk.235",
+                "TS3004c.C.dialog-act.vkaraisk.249"
+              ]
+            }
+          ],
+          "fields": [
+            "related_items"
+          ]
+        },
+        "owner": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "result": "pass",
+        "reason": "The current item repeats and refines the prior TS3004b.sys.s.4 decision by removing LCD, selecting the second-most-expensive chip (the regular chip), and explicitly rejecting titanium; the current dialogue confirms these choices, aligning with the earlier decision’s constraint (no LCD, budget considerations).",
+        "quotes": [
+          {
+            "da_id": "TS3004c.A.dialog-act.vkaraisk.174",
+            "quote": "Just skip it."
+          },
+          {
+            "da_id": "TS3004c.C.dialog-act.vkaraisk.254",
+            "quote": "Yeah th yeah , the chip is the the regular one."
+          },
+          {
+            "da_id": "TS3004c.A.dialog-act.vkaraisk.201",
+            "quote": "Yeah , re Yeah , regular . Yeah , okay . Yeah , regular ."
+          },
+          {
+            "da_id": "TS3004c.C.dialog-act.vkaraisk.235",
+            "quote": "then we we use m must use the second most expensive chip . So th so the regular chip ."
+          },
+          {
+            "da_id": "TS3004c.C.dialog-act.vkaraisk.249",
+            "quote": "Titanium , uh I think it's too expensive."
+          }
+        ],
+        "links": [
+          {
+            "id": "TS3004b.sys.s.4",
+            "relation": "continues",
+            "changed_fields": [],
+            "reason": "Current item refines and expands the earlier decision by clarifying chip choice and confirming no LCD constraint; evidence shows alignment with no-LCD budget constraint.",
+            "prior_evidence_da_ids": [
+              "TS3004b.A.dialog-act.vkaraisk.102",
+              "TS3004b.D.dialog-act.vkaraisk.85",
+              "TS3004b.B.dialog-act.vkaraisk.21",
+              "TS3004b.A.dialog-act.vkaraisk.103",
+              "TS3004b.D.dialog-act.vkaraisk.86",
+              "TS3004b.A.dialog-act.vkaraisk.104",
+              "TS3004b.A.dialog-act.vkaraisk.105",
+              "TS3004b.A.dialog-act.vkaraisk.106"
+            ],
+            "current_evidence_da_ids": [
+              "TS3004c.A.dialog-act.vkaraisk.174",
+              "TS3004c.C.dialog-act.vkaraisk.254",
+              "TS3004c.A.dialog-act.vkaraisk.201",
+              "TS3004c.C.dialog-act.vkaraisk.235",
+              "TS3004c.C.dialog-act.vkaraisk.249"
+            ]
+          }
+        ]
+      },
+      "evidence_bindings": {
+        "relation": [
+          "TS3004b.A.dialog-act.vkaraisk.102",
+          "TS3004b.D.dialog-act.vkaraisk.85",
+          "TS3004b.B.dialog-act.vkaraisk.21",
+          "TS3004b.A.dialog-act.vkaraisk.103",
+          "TS3004b.D.dialog-act.vkaraisk.86",
+          "TS3004b.A.dialog-act.vkaraisk.104",
+          "TS3004b.A.dialog-act.vkaraisk.105",
+          "TS3004b.A.dialog-act.vkaraisk.106"
+        ]
+      },
+      "raw_tool_input": {
+        "result": "pass",
+        "reason": "The current item repeats and refines the prior TS3004b.sys.s.4 decision by removing LCD, selecting the second-most-expensive chip (the regular chip), and explicitly rejecting titanium; the current dialogue confirms these choices, aligning with the earlier decision’s constraint (no LCD, budget considerations).",
+        "quotes": [
+          {
+            "da_id": "TS3004c.A.dialog-act.vkaraisk.174",
+            "quote": "Just skip it."
+          },
+          {
+            "da_id": "TS3004c.C.dialog-act.vkaraisk.254",
+            "quote": "Yeah th yeah , the chip is the the regular one."
+          },
+          {
+            "da_id": "TS3004c.A.dialog-act.vkaraisk.201",
+            "quote": "Yeah , re Yeah , regular . Yeah , okay . Yeah , regular ."
+          },
+          {
+            "da_id": "TS3004c.C.dialog-act.vkaraisk.235",
+            "quote": "then we we use m must use the second most expensive chip . So th so the regular chip ."
+          },
+          {
+            "da_id": "TS3004c.C.dialog-act.vkaraisk.249",
+            "quote": "Titanium , uh I think it's too expensive."
+          }
+        ],
+        "links": [
+          {
+            "id": "TS3004b.sys.s.4",
+            "relation": "continues",
+            "changed_fields": [],
+            "reason": "Current item refines and expands the earlier decision by clarifying chip choice and confirming no LCD constraint; evidence shows alignment with no-LCD budget constraint.",
+            "prior_evidence_da_ids": [
+              "TS3004b.A.dialog-act.vkaraisk.102",
+              "TS3004b.D.dialog-act.vkaraisk.85",
+              "TS3004b.B.dialog-act.vkaraisk.21",
+              "TS3004b.A.dialog-act.vkaraisk.103",
+              "TS3004b.D.dialog-act.vkaraisk.86",
+              "TS3004b.A.dialog-act.vkaraisk.104",
+              "TS3004b.A.dialog-act.vkaraisk.105",
+              "TS3004b.A.dialog-act.vkaraisk.106"
+            ],
+            "current_evidence_da_ids": [
+              "TS3004c.A.dialog-act.vkaraisk.174",
+              "TS3004c.C.dialog-act.vkaraisk.254",
+              "TS3004c.A.dialog-act.vkaraisk.201",
+              "TS3004c.C.dialog-act.vkaraisk.235",
+              "TS3004c.C.dialog-act.vkaraisk.249"
+            ]
+          }
+        ]
+      },
+      "protocol_normalizations": [
+        "controller_action_for_missing_hint:retrieve"
+      ],
+      "unresolved_before": [
+        "related_items"
+      ],
+      "unresolved_after": [
+        "related_items"
+      ],
+      "semantic_stalls": 1,
+      "validation_codes": {
+        "relation": [
+          "unobserved_or_inexact_quote",
+          "retrieve_prior_record_and_read_its_evidence",
+          "selected_prior_item_evidence_not_read",
+          "read_and_quote_each_links_prior_and_current_evidence"
+        ]
+      }
+    },
+    {
+      "item": "TS3004c#12",
+      "step": 7,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "assess_relation",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue supports skipping LCD and selecting the second-most expensive chip (regular); titanium is deemed too expensive. Evidence in the dialogue includes references to LCD consideration, the second-most expensive chip, and the regular chip, and explicit note that titanium is too expensive.",
+          "quotes": [
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.233",
+              "quote": "we need uh the expensive , most expensive chip , if we use an L_C_D_ ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.235",
+              "quote": "then we we use m must use the second most expensive chip . So th so the regular chip ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.256",
+              "quote": "So it's b should be regular uh the second ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.254",
+              "quote": "Yeah th yeah , the chip is the the regular one ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.249",
+              "quote": "Titanium , uh I think it's too expensive ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Current dialogue confirms the decision to use the regular chip (second-most expensive) and not use LCD or titanium; no contradictions in observed dialogue.",
+          "quotes": [
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.233",
+              "quote": "we need uh the expensive , most expensive chip , if we use an L_C_D_ ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.235",
+              "quote": "then we we use m must use the second most expensive chip . So th so the regular chip ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.256",
+              "quote": "So it's b should be regular uh the second ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.254",
+              "quote": "Yeah th yeah , the chip is the the regular one ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.249",
+              "quote": "Titanium , uh I think it's too expensive ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No unresolved contradictions among the delivered statements about chip choice and materials.",
+          "quotes": [
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.233",
+              "quote": "we need uh the expensive , most expensive chip , if we use an L_C_D_ ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.235",
+              "quote": "then we we use m must use the second most expensive chip . So th so the regular chip ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.254",
+              "quote": "Yeah th yeah , the chip is the the regular one ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.249",
+              "quote": "Titanium , uh I think it's too expensive ."
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "per_link_assessment_required_for_each_related_item",
+          "quotes": [],
+          "links": [
+            {
+              "id": "TS3004b.sys.s.4",
+              "relation": "continues",
+              "changed_fields": [],
+              "reason": "Current item refines and expands the earlier decision by clarifying chip choice and confirming no LCD constraint; evidence shows alignment with no-LCD budget constraint.",
+              "prior_evidence_da_ids": [
+                "TS3004b.A.dialog-act.vkaraisk.102",
+                "TS3004b.D.dialog-act.vkaraisk.85",
+                "TS3004b.B.dialog-act.vkaraisk.21",
+                "TS3004b.A.dialog-act.vkaraisk.103",
+                "TS3004b.D.dialog-act.vkaraisk.86",
+                "TS3004b.A.dialog-act.vkaraisk.104",
+                "TS3004b.A.dialog-act.vkaraisk.105",
+                "TS3004b.A.dialog-act.vkaraisk.106"
+              ],
+              "current_evidence_da_ids": [
+                "TS3004c.A.dialog-act.vkaraisk.174",
+                "TS3004c.C.dialog-act.vkaraisk.254",
+                "TS3004c.A.dialog-act.vkaraisk.201",
+                "TS3004c.C.dialog-act.vkaraisk.235",
+                "TS3004c.C.dialog-act.vkaraisk.249"
+              ]
+            }
+          ],
+          "fields": [
+            "related_items"
+          ]
+        },
+        "owner": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        }
+      },
+      "decision": "request_clarification",
+      "reason": "supported_statement_with_unresolved_fields",
+      "assessed_text": "Skip the LCD option and use the second most expensive chip; use the regular chip; titanium will not be used.",
+      "requested_action": "accept",
+      "proposed_fields": {
+        "status": "adopted",
+        "related_items": [],
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "TS3004c.C.dialog-act.vkaraisk.233",
+          "TS3004c.C.dialog-act.vkaraisk.235",
+          "TS3004c.C.dialog-act.vkaraisk.256",
+          "TS3004c.C.dialog-act.vkaraisk.254",
+          "TS3004c.C.dialog-act.vkaraisk.249",
+          "TS3004c.A.dialog-act.vkaraisk.174",
+          "TS3004c.A.dialog-act.vkaraisk.201"
+        ],
+        "owner": null,
+        "owner_basis": "missing",
+        "deadline": null,
+        "deadline_basis": "missing"
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue supports skipping LCD and selecting the second-most expensive chip (regular); titanium is deemed too expensive. Evidence in the dialogue includes references to LCD consideration, the second-most expensive chip, and the regular chip, and explicit note that titanium is too expensive.",
+          "quotes": [
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.233",
+              "quote": "we need uh the expensive , most expensive chip , if we use an L_C_D_ ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.235",
+              "quote": "then we we use m must use the second most expensive chip . So th so the regular chip ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.256",
+              "quote": "So it's b should be regular uh the second ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.254",
+              "quote": "Yeah th yeah , the chip is the the regular one ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.249",
+              "quote": "Titanium , uh I think it's too expensive ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Current dialogue confirms the decision to use the regular chip (second-most expensive) and not use LCD or titanium; no contradictions in observed dialogue.",
+          "quotes": [
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.233",
+              "quote": "we need uh the expensive , most expensive chip , if we use an L_C_D_ ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.235",
+              "quote": "then we we use m must use the second most expensive chip . So th so the regular chip ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.256",
+              "quote": "So it's b should be regular uh the second ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.254",
+              "quote": "Yeah th yeah , the chip is the the regular one ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.249",
+              "quote": "Titanium , uh I think it's too expensive ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No unresolved contradictions among the delivered statements about chip choice and materials.",
+          "quotes": [
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.233",
+              "quote": "we need uh the expensive , most expensive chip , if we use an L_C_D_ ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.235",
+              "quote": "then we we use m must use the second most expensive chip . So th so the regular chip ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.254",
+              "quote": "Yeah th yeah , the chip is the the regular one ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.249",
+              "quote": "Titanium , uh I think it's too expensive ."
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "pass",
+          "reason": "The current item repeats and refines the prior TS3004b.sys.s.4 decision by removing LCD, selecting the second-most-expensive chip (the regular chip), and explicitly rejecting titanium; the current dialogue confirms these choices, aligning with the earlier decision’s constraint (no LCD, budget considerations).",
+          "quotes": [
+            {
+              "da_id": "TS3004c.A.dialog-act.vkaraisk.174",
+              "quote": "Just skip it."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.254",
+              "quote": "Yeah th yeah , the chip is the the regular one."
+            },
+            {
+              "da_id": "TS3004c.A.dialog-act.vkaraisk.201",
+              "quote": "Yeah , re Yeah , regular . Yeah , okay . Yeah , regular ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.235",
+              "quote": "then we we use m must use the second most expensive chip . So th so the regular chip ."
+            },
+            {
+              "da_id": "TS3004c.C.dialog-act.vkaraisk.249",
+              "quote": "Titanium , uh I think it's too expensive."
+            }
+          ],
+          "links": [
+            {
+              "id": "TS3004b.sys.s.4",
+              "relation": "continues",
+              "changed_fields": [],
+              "reason": "Current item refines and expands the earlier decision by clarifying chip choice and confirming no LCD constraint; evidence shows alignment with no-LCD budget constraint.",
+              "prior_evidence_da_ids": [
+                "TS3004b.A.dialog-act.vkaraisk.102",
+                "TS3004b.D.dialog-act.vkaraisk.85",
+                "TS3004b.B.dialog-act.vkaraisk.21",
+                "TS3004b.A.dialog-act.vkaraisk.103",
+                "TS3004b.D.dialog-act.vkaraisk.86",
+                "TS3004b.A.dialog-act.vkaraisk.104",
+                "TS3004b.A.dialog-act.vkaraisk.105",
+                "TS3004b.A.dialog-act.vkaraisk.106"
+              ],
+              "current_evidence_da_ids": [
+                "TS3004c.A.dialog-act.vkaraisk.174",
+                "TS3004c.C.dialog-act.vkaraisk.254",
+                "TS3004c.A.dialog-act.vkaraisk.201",
+                "TS3004c.C.dialog-act.vkaraisk.235",
+                "TS3004c.C.dialog-act.vkaraisk.249"
+              ]
+            }
+          ],
+          "fields": [
+            "related_items"
+          ]
+        },
+        "owner": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "result": "pass",
+        "reason": "The current item repeats and refines the prior TS3004b.sys.s.4 decision by removing LCD, selecting the second-most-expensive chip (the regular chip), and explicitly rejecting titanium; the current dialogue confirms these choices, aligning with the earlier decision’s constraint (no LCD, budget considerations).",
+        "quotes": [
+          {
+            "da_id": "TS3004c.A.dialog-act.vkaraisk.174",
+            "quote": "Just skip it."
+          },
+          {
+            "da_id": "TS3004c.C.dialog-act.vkaraisk.254",
+            "quote": "Yeah th yeah , the chip is the the regular one."
+          },
+          {
+            "da_id": "TS3004c.A.dialog-act.vkaraisk.201",
+            "quote": "Yeah , re Yeah , regular . Yeah , okay . Yeah , regular ."
+          },
+          {
+            "da_id": "TS3004c.C.dialog-act.vkaraisk.235",
+            "quote": "then we we use m must use the second most expensive chip . So th so the regular chip ."
+          },
+          {
+            "da_id": "TS3004c.C.dialog-act.vkaraisk.249",
+            "quote": "Titanium , uh I think it's too expensive."
+          }
+        ],
+        "links": [
+          {
+            "id": "TS3004b.sys.s.4",
+            "relation": "continues",
+            "changed_fields": [],
+            "reason": "Current item refines and expands the earlier decision by clarifying chip choice and confirming no LCD constraint; evidence shows alignment with no-LCD budget constraint.",
+            "prior_evidence_da_ids": [
+              "TS3004b.A.dialog-act.vkaraisk.102",
+              "TS3004b.D.dialog-act.vkaraisk.85",
+              "TS3004b.B.dialog-act.vkaraisk.21",
+              "TS3004b.A.dialog-act.vkaraisk.103",
+              "TS3004b.D.dialog-act.vkaraisk.86",
+              "TS3004b.A.dialog-act.vkaraisk.104",
+              "TS3004b.A.dialog-act.vkaraisk.105",
+              "TS3004b.A.dialog-act.vkaraisk.106"
+            ],
+            "current_evidence_da_ids": [
+              "TS3004c.A.dialog-act.vkaraisk.174",
+              "TS3004c.C.dialog-act.vkaraisk.254",
+              "TS3004c.A.dialog-act.vkaraisk.201",
+              "TS3004c.C.dialog-act.vkaraisk.235",
+              "TS3004c.C.dialog-act.vkaraisk.249"
+            ]
+          }
+        ],
+        "related_items": [],
+        "next_action": "accept"
+      },
+      "evidence_bindings": {
+        "relation": [
+          "TS3004b.A.dialog-act.vkaraisk.102",
+          "TS3004b.D.dialog-act.vkaraisk.85",
+          "TS3004b.B.dialog-act.vkaraisk.21",
+          "TS3004b.A.dialog-act.vkaraisk.103",
+          "TS3004b.D.dialog-act.vkaraisk.86",
+          "TS3004b.A.dialog-act.vkaraisk.104",
+          "TS3004b.A.dialog-act.vkaraisk.105",
+          "TS3004b.A.dialog-act.vkaraisk.106"
+        ]
+      },
+      "raw_tool_input": {
+        "result": "pass",
+        "reason": "The current item repeats and refines the prior TS3004b.sys.s.4 decision by removing LCD, selecting the second-most-expensive chip (the regular chip), and explicitly rejecting titanium; the current dialogue confirms these choices, aligning with the earlier decision’s constraint (no LCD, budget considerations).",
+        "quotes": [
+          {
+            "da_id": "TS3004c.A.dialog-act.vkaraisk.174",
+            "quote": "Just skip it."
+          },
+          {
+            "da_id": "TS3004c.C.dialog-act.vkaraisk.254",
+            "quote": "Yeah th yeah , the chip is the the regular one."
+          },
+          {
+            "da_id": "TS3004c.A.dialog-act.vkaraisk.201",
+            "quote": "Yeah , re Yeah , regular . Yeah , okay . Yeah , regular ."
+          },
+          {
+            "da_id": "TS3004c.C.dialog-act.vkaraisk.235",
+            "quote": "then we we use m must use the second most expensive chip . So th so the regular chip ."
+          },
+          {
+            "da_id": "TS3004c.C.dialog-act.vkaraisk.249",
+            "quote": "Titanium , uh I think it's too expensive."
+          }
+        ],
+        "links": [
+          {
+            "id": "TS3004b.sys.s.4",
+            "relation": "continues",
+            "changed_fields": [],
+            "reason": "Current item refines and expands the earlier decision by clarifying chip choice and confirming no LCD constraint; evidence shows alignment with no-LCD budget constraint.",
+            "prior_evidence_da_ids": [
+              "TS3004b.A.dialog-act.vkaraisk.102",
+              "TS3004b.D.dialog-act.vkaraisk.85",
+              "TS3004b.B.dialog-act.vkaraisk.21",
+              "TS3004b.A.dialog-act.vkaraisk.103",
+              "TS3004b.D.dialog-act.vkaraisk.86",
+              "TS3004b.A.dialog-act.vkaraisk.104",
+              "TS3004b.A.dialog-act.vkaraisk.105",
+              "TS3004b.A.dialog-act.vkaraisk.106"
+            ],
+            "current_evidence_da_ids": [
+              "TS3004c.A.dialog-act.vkaraisk.174",
+              "TS3004c.C.dialog-act.vkaraisk.254",
+              "TS3004c.A.dialog-act.vkaraisk.201",
+              "TS3004c.C.dialog-act.vkaraisk.235",
+              "TS3004c.C.dialog-act.vkaraisk.249"
+            ]
+          }
+        ],
+        "related_items": [],
+        "next_action": "accept"
+      },
+      "protocol_normalizations": [],
+      "unresolved_before": [
+        "related_items"
+      ],
+      "unresolved_after": [
+        "related_items"
+      ],
+      "semantic_stalls": 0,
+      "validation_codes": {
+        "relation": [
+          "unobserved_or_inexact_quote",
+          "per_link_assessment_required_for_each_related_item"
+        ]
+      }
+    },
+    {
+      "item": "TS3004c#12",
+      "step": 7,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "stop",
+      "outcome": "pending",
+      "termination_reason": "supported_statement_with_unresolved_fields",
+      "unresolved_fields": [
+        "related_items"
+      ]
+    }
+  ],
+  "lookups": 2,
+  "termination_reason": "supported_statement_with_unresolved_fields",
+  "clarifications": [
+    {
+      "request_id": "53b44a06e31fc89d",
+      "item_key": "TS3004c#12",
+      "record_id": null,
+      "field": "related_items",
+      "question": "Which earlier record does this item continue or change, and how?",
+      "item_text": "Skip the LCD option and use the second most expensive chip; use the regular chip; titanium will not be used.",
+      "reason": "per_link_assessment_required_for_each_related_item",
+      "evidence_da_ids": [],
+      "available_evidence_da_ids": [
+        "TS3004c.C.dialog-act.vkaraisk.233",
+        "TS3004c.C.dialog-act.vkaraisk.236",
+        "TS3004c.D.dialog-act.vkaraisk.139",
+        "TS3004c.A.dialog-act.vkaraisk.173",
+        "TS3004c.A.dialog-act.vkaraisk.174",
+        "TS3004c.C.dialog-act.vkaraisk.254",
+        "TS3004c.A.dialog-act.vkaraisk.201",
+        "TS3004c.C.dialog-act.vkaraisk.255",
+        "TS3004c.C.dialog-act.vkaraisk.256",
+        "TS3004c.B.dialog-act.vkaraisk.270",
+        "TS3004c.C.dialog-act.vkaraisk.249",
+        "TS3004c.A.dialog-act.vkaraisk.185",
+        "TS3004c.C.dialog-act.vkaraisk.232",
+        "TS3004c.C.dialog-act.vkaraisk.235",
+        "TS3004c.A.dialog-act.vkaraisk.176",
+        "TS3004c.A.dialog-act.vkaraisk.175",
+        "TS3004c.A.dialog-act.vkaraisk.200",
+        "TS3004c.A.dialog-act.vkaraisk.202",
+        "TS3004c.B.dialog-act.vkaraisk.269",
+        "TS3004c.A.dialog-act.vkaraisk.186",
+        "TS3004b.A.dialog-act.vkaraisk.101",
+        "TS3004b.A.dialog-act.vkaraisk.102",
+        "TS3004b.D.dialog-act.vkaraisk.85",
+        "TS3004b.B.dialog-act.vkaraisk.21",
+        "TS3004b.A.dialog-act.vkaraisk.103",
+        "TS3004b.D.dialog-act.vkaraisk.86",
+        "TS3004b.A.dialog-act.vkaraisk.104",
+        "TS3004b.A.dialog-act.vkaraisk.105",
+        "TS3004b.A.dialog-act.vkaraisk.106",
+        "TS3004b.C.dialog-act.vkaraisk.11"
+      ],
+      "status": "open",
+      "termination_reason": "supported_statement_with_unresolved_fields"
+    }
+  ]
+}

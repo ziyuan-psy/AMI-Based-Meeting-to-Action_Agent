@@ -1,0 +1,65 @@
+{
+  "created_at": "2026-10-31T02:11:57.372188+00:00",
+  "status": "COMPONENT_SELECTION_COMPLETED_NOT_APPLIED_TO_DEFAULT_PIPELINE",
+  "quality_anchor": "414a31fe1581b147851ec2bd61b340bf0be26843",
+  "working_branch": "agent-development",
+  "production_source_changed_this_task": false,
+  "existing_uncommitted_changes_preserved": true,
+  "selected_quality_candidate": "414 content policy plus type-aware Action restoration with 414 stable order, current parser/budget/trace infrastructure, legacy flagged follow-up",
+  "raw_metric_maximum_arm": "retention_actions_issues (pooled F1 0.469); retained as research option, not selected for direct publication due to Issue precision tradeoff and ranking source counterexample",
+  "decisions": [
+    {
+      "component": "parser_budget_trace",
+      "decision": "KEEP",
+      "details": [
+        "统一 TXT parser 与兼容入口",
+        "整场调用/token、请求与整场超时、重试/并发控制和失败产物保存",
+        "候选/合并样本/投票/截断/工具返回/source/model/config trace",
+        "members 类型和选择响应重复元数据等安全的格式校验修复",
+        "JSON schema、来源存在性及系列/时间读取限制"
+      ]
+    },
+    {
+      "component": "action_type_aware_recovery",
+      "decision": "KEEP_WITH_414_STABLE_ORDER",
+      "details": "保留现代 restore_actions 的同类型/owner 约束恢复；采用 414 原有顺序及原 5/7/4 上限。固定响应16场仅补回TS3006a两条真实任务，没有删除旧条目。"
+    },
+    {
+      "component": "new_ranking",
+      "decision": "RESTORE_414_STABLE_ORDER",
+      "details": "新排序的Action F1为0.520，高于稳定排序0.505；但新增匹配中的两条正是相同的TS3006a恢复，额外一个TP来自未改文本的alignment变化，并且IS1008d会中传递原型操作挤掉旧池条目。选择最小、已核对的内容变化；不宣称新排序整体无益。"
+    },
+    {
+      "component": "issue_automatic_restoration",
+      "decision": "RESTORE_414_DEFAULT",
+      "details": "Issue补回确实使F1 0.429→0.457、recall 0.405→0.568，但precision 0.455→0.382；净增22预测、6TP和16未匹配预测。建议作为复核候选池保留，暂不作为默认直接发布策略。这是保守精度取舍，不是没有收益的结论。"
+    },
+    {
+      "component": "content_prompts_and_decision_second_pass",
+      "decision": "PREFER_414_UNTIL_PROVEN",
+      "details": "内容默认回到414抽取/常规合并/投票口径。新抽取提示、Decision专项重合并和细粒度改写尚无逐项可归因的稳定整体收益证据。本轮没有把历史新采样差异说成提示词单独造成的效果。"
+    },
+    {
+      "component": "additional_model_selector",
+      "decision": "RESTORE_BASELINE_NO_ADDED_SELECTOR",
+      "details": "不把新增强制模型选择/改写设为质量候选默认。Action/Issue有收益，但两个选择臂的Decision F1分别从成对基线0.448/0.440降至0.374/0.397。输出重写也改变整组matcher。格式健壮性代码保留。"
+    },
+    {
+      "component": "p2_semantic_publication_gate",
+      "decision": "RESTORE_FLAG_ONLY_FOR_QUALITY_CANDIDATE",
+      "details": "质量候选恢复 flag-only Agent 跟进；完整 P2 硬门禁保留在现有开发/实验实现中。ES2011b两条已读到明确支持的任务/决策仍被隔离，不能设为质量默认。不得把未知检查改成pass，也不得放松strict P2来源验证。"
+    },
+    {
+      "component": "retrieval_document_checks_clarifications",
+      "decision": "PRESERVE_IMPLEMENTATION_AND_EVIDENCE",
+      "details": "保留自主检索、同系列更早会议限制、read_project_doc、文档证据校验/引用和结构化澄清实现及案例。恢复默认路径会降低全量P2检查覆盖面，不能宣称所选质量候选已同时验证全部P2功能。"
+    }
+  ],
+  "integration_full_pipeline_test_completed": false,
+  "requires_on_application": [
+    "按函数恢复策略，保留现代transport/controller/observation，不整文件checkout旧pipeline",
+    "显式记录所选有效策略及source/prompt哈希，不能让配置仍显示启用而隐式跳过",
+    "补全恢复任务的实际支持引用，尤其TS3006a的ME任务句151",
+    "组合版本需独立集成检查；不把单层回放F1称为最终在线分数"
+  ]
+}

@@ -1,0 +1,385 @@
+{
+  "meeting_id": "TS3004d",
+  "profile": "issue_current",
+  "status": "COMPLETED",
+  "input_sha256": "68c812b3005658b651a9005642f2bdd32410b2aac104a5a247acb00a9e08372e",
+  "record": [
+    {
+      "id": "TS3004d.sys.s.1",
+      "text": "PM: You're going to show your pr prototype presentation after me.",
+      "type": "decisions",
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3004d.json",
+          "locator": "TS3004d.B.dialog-act.dharshi.17"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3004d.json",
+          "locator": "TS3004d.C.dialog-act.dharshi.16"
+        }
+      ],
+      "status": "adopted",
+      "prior_context_needed": false,
+      "related_items": []
+    },
+    {
+      "id": "TS3004d.sys.s.2",
+      "text": "PM: I just write a final report.",
+      "type": "decisions",
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3004d.json",
+          "locator": "TS3004d.B.dialog-act.dharshi.13"
+        }
+      ],
+      "status": "adopted",
+      "prior_context_needed": false,
+      "related_items": []
+    },
+    {
+      "id": "TS3004d.sys.s.3",
+      "text": "ID: Fill in the questionnaire.",
+      "type": "actions",
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3004d.json",
+          "locator": "TS3004d.C.dialog-act.dharshi.258"
+        }
+      ],
+      "owner": [
+        "MTD014ID"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "status": "open",
+      "prior_context_needed": false,
+      "related_items": []
+    },
+    {
+      "id": "TS3004d.sys.s.4",
+      "text": "UI will present their prototype presentation after PM.",
+      "type": "actions",
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3004d.json",
+          "locator": "TS3004d.A.dialog-act.dharshi.6"
+        }
+      ],
+      "owner": [
+        "MTD015UID"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "status": "open",
+      "prior_context_needed": false,
+      "related_items": []
+    },
+    {
+      "id": "TS3004d.sys.s.5",
+      "text": "The Project Manager will write a final report.",
+      "type": "actions",
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3004d.json",
+          "locator": "TS3004d.A.dialog-act.dharshi.310"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3004d.json",
+          "locator": "TS3004d.A.dialog-act.dharshi.311"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3004d.json",
+          "locator": "TS3004d.C.dialog-act.dharshi.226"
+        }
+      ],
+      "owner": [
+        "MTD013PM"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "status": "open",
+      "prior_context_needed": false,
+      "related_items": []
+    },
+    {
+      "id": "TS3004d.sys.s.6",
+      "text": "ME will take some pictures after the meeting.",
+      "type": "actions",
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3004d.json",
+          "locator": "TS3004d.D.dialog-act.dharshi.255"
+        }
+      ],
+      "owner": [
+        "MTD016ME"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "status": "open",
+      "prior_context_needed": false,
+      "related_items": []
+    },
+    {
+      "id": "TS3004d.sys.s.7",
+      "text": "ME: I should take some pictures.",
+      "type": "problems",
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3004d.json",
+          "locator": "TS3004d.B.dialog-act.dharshi.1"
+        }
+      ],
+      "status": "open",
+      "prior_context_needed": false,
+      "related_items": []
+    }
+  ],
+  "seconds": 19.984,
+  "runtime_control": {
+    "limits": {
+      "calls": 80,
+      "tokens": 1000000,
+      "request_seconds": 300.0,
+      "meeting_seconds": 1200.0,
+      "inflight": 4,
+      "retries": 2,
+      "backoff": 0.5
+    },
+    "attempted_calls": 16,
+    "charged_tokens": 203213,
+    "unknown_usage_tokens": 0,
+    "reserved_tokens": 0,
+    "max_inflight_seen": 1,
+    "failure": null,
+    "attempts": [
+      {
+        "attempt": 0,
+        "stage": "replayed_upstream_extract",
+        "reserved_tokens": 49927,
+        "input_bound": 17927,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 10837,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 4355,
+        "output_tokens": 6482
+      },
+      {
+        "attempt": 1,
+        "stage": "replayed_upstream_extract",
+        "reserved_tokens": 49697,
+        "input_bound": 17697,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 11691,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 4326,
+        "output_tokens": 7365
+      },
+      {
+        "attempt": 2,
+        "stage": "replayed_upstream_extract",
+        "reserved_tokens": 49959,
+        "input_bound": 17959,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 14014,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 4374,
+        "output_tokens": 9640
+      },
+      {
+        "attempt": 3,
+        "stage": "replayed_upstream_extract",
+        "reserved_tokens": 50023,
+        "input_bound": 18023,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 11935,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 4384,
+        "output_tokens": 7551
+      },
+      {
+        "attempt": 4,
+        "stage": "replayed_upstream_extract",
+        "reserved_tokens": 50139,
+        "input_bound": 18139,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 7779,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 4428,
+        "output_tokens": 3351
+      },
+      {
+        "attempt": 5,
+        "stage": "replayed_upstream_extract",
+        "reserved_tokens": 49484,
+        "input_bound": 17484,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 6128,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 4313,
+        "output_tokens": 1815
+      },
+      {
+        "attempt": 6,
+        "stage": "replayed_upstream_extract",
+        "reserved_tokens": 49824,
+        "input_bound": 17824,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 14124,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 4383,
+        "output_tokens": 9741
+      },
+      {
+        "attempt": 7,
+        "stage": "replayed_upstream_extract",
+        "reserved_tokens": 49275,
+        "input_bound": 17275,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 12202,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 4266,
+        "output_tokens": 7936
+      },
+      {
+        "attempt": 8,
+        "stage": "replayed_upstream_extract",
+        "reserved_tokens": 48560,
+        "input_bound": 16560,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 9202,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 4204,
+        "output_tokens": 4998
+      },
+      {
+        "attempt": 9,
+        "stage": "replayed_upstream_extract",
+        "reserved_tokens": 45447,
+        "input_bound": 13447,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 7489,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 3052,
+        "output_tokens": 4437
+      },
+      {
+        "attempt": 10,
+        "stage": "replayed_upstream_extract",
+        "reserved_tokens": 107585,
+        "input_bound": 75585,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 28979,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 23421,
+        "output_tokens": 5558
+      },
+      {
+        "attempt": 11,
+        "stage": "replayed_upstream_extract",
+        "reserved_tokens": 107585,
+        "input_bound": 75585,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 28684,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 23421,
+        "output_tokens": 5263
+      },
+      {
+        "attempt": 12,
+        "stage": "replayed_upstream_consolidate",
+        "reserved_tokens": 44860,
+        "input_bound": 12860,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 9248,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 2562,
+        "output_tokens": 6686
+      },
+      {
+        "attempt": 13,
+        "stage": "replayed_upstream_consolidate",
+        "reserved_tokens": 44860,
+        "input_bound": 12860,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 14073,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 2562,
+        "output_tokens": 11511
+      },
+      {
+        "attempt": 14,
+        "stage": "replayed_upstream_consolidate",
+        "reserved_tokens": 44860,
+        "input_bound": 12860,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 9940,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 2562,
+        "output_tokens": 7378
+      },
+      {
+        "attempt": 15,
+        "stage": "select",
+        "reserved_tokens": 43052,
+        "input_bound": 11052,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 6888,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 2236,
+        "output_tokens": 4652
+      }
+    ],
+    "input_bound_method": "utf8_request_bytes_plus_padding",
+    "unknown_usage_policy": "charge_full_reservation"
+  },
+  "replayed_upstream_calls": 15,
+  "new_api_attempts": 1,
+  "new_api_charged_tokens": 6888
+}

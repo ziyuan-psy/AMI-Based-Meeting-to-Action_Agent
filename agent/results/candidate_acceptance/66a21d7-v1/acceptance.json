@@ -1,0 +1,66 @@
+{
+  "status": "PASSED_WITH_DOCUMENTED_LIMITATIONS",
+  "created_at": "2026-10-31T17:03:02.831319+00:00",
+  "runtime_reference_commit": "66a21d7c58651ef79c8d9e8f146ebd3880f35385",
+  "profile": "recall_candidate_v1",
+  "completed": 4,
+  "scheduled": 4,
+  "development_population": 16,
+  "real_api_calls": 154,
+  "charged_tokens": 1151001,
+  "total_meeting_seconds": 996.875,
+  "gold_read": false,
+  "heldout_opened": false,
+  "source_changed": false,
+  "p2_enabled": false,
+  "targeted_source_review": "TARGETED_SOURCE_REVIEW_PASSED",
+  "cross_meeting_links": 12,
+  "recoverable_agent_errors": [
+    {
+      "item": "TS3006b#4",
+      "step": 2,
+      "action": "finish",
+      "outcome": "invalid_finish",
+      "error": "Finish cites dialogue not delivered; retrieve/read the support first."
+    },
+    {
+      "item": "TS3006b#4",
+      "step": 3,
+      "action": "read_dialogue",
+      "outcome": "tool_error",
+      "error": "KeyError: 'TS3006a.sys.s.6 not found in TS3006a'"
+    },
+    {
+      "item": "TS3006b#4",
+      "step": 4,
+      "action": "finish",
+      "outcome": "invalid_finish",
+      "error": "Finish cites dialogue not delivered; retrieve/read the support first."
+    },
+    {
+      "item": "TS3006c#13",
+      "step": 2,
+      "action": "read_dialogue",
+      "outcome": "tool_error",
+      "error": "KeyError: 'C.dialog-act.dharshi.14 not found in TS3006c'"
+    }
+  ],
+  "empty_merge_response_attempts": [
+    {
+      "meeting_id": "TS3006c",
+      "sample": 0,
+      "attempt": 0
+    }
+  ],
+  "f1_measured": false,
+  "final_evaluation_owner": "teammate",
+  "heldout_evaluation_started": false,
+  "commit_created": false,
+  "pushed": false,
+  "limitations": [
+    "Four-meeting runtime acceptance, not fresh 16-meeting quality measurement.",
+    "Full P2 is intentionally disabled; targeted source checks do not certify all claims, conflicts, documents or links.",
+    "Empty P2 clarification sidecars do not prove absence of uncertainty.",
+    "Recoverable model/tool mistakes remain in original traces; no favorable regeneration was selected."
+  ]
+}

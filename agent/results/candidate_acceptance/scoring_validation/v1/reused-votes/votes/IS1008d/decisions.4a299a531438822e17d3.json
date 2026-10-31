@@ -1,0 +1,81 @@
+{
+  "identity": {
+    "protocol_digest": "b0de1ae95eec59aaf3bc5fb2cfea27cd70c891ec74424f35af4726ab0aa7c596",
+    "judge": {
+      "name": "@30875-fall26-openai/gpt-5-nano",
+      "client": "mta.llm.OpenAIAdapter",
+      "endpoint": "https://api.portkey.ai/v1",
+      "supports_reasoning_effort": true
+    },
+    "type": "decisions",
+    "input_sha256": "4a299a531438822e17d3371c8f3578509c18f4491a43404fba8604dba95adbd5",
+    "system_texts": [
+      "We will use TrendWatch for market research and proceed screen by screen; there is uncertainty about which market research source to use and whether TrendWatch is the same as before.",
+      "Proceed with this model for the marketing direction.",
+      "No further changes will be made to the basic design.",
+      "We will introduce this model to the market and take customer feedback to proceed to a second generation.",
+      "We should do market tests after prototypes, placing orders and test-marketing them.",
+      "Production will start after product evaluation is approved by the technical team and management, then we can launch in the market.",
+      "Work out a campaign with Sony Pictures to leverage motion-picture partnerships."
+    ],
+    "gold_texts": [
+      "Include the LCD in the prototype provisionally; it can be removed if the additional cost is unacceptable.",
+      "Pursue vendor negotiation and management discussion to reduce production costs.",
+      "Pursue a promotional/launch association with a major sports event or a DVD release, subject to management support; no specific event, partner or date was fixed.",
+      "The project manager directed that the basic design be frozen for the first release, with customer feedback reserved for a possible second generation; the user interface designer continued to object to the testing/redesign risk.",
+      "Defer product/user evaluation until real prototype units are available, and begin full production/launch only after evaluation and technical/management approval.",
+      "Place the microphone on the side so voice control remains accessible with the flip cover closed; detailed circuit-board placement was not specified.",
+      "Consider online ordering and direct shipping for the customizable product, with Amazon or eBay as possible channels."
+    ]
+  },
+  "votes": {
+    "4a299a531438822e17d3": [
+      [
+        {
+          "sys": 3,
+          "gold": 3
+        },
+        {
+          "sys": 5,
+          "gold": 4
+        },
+        {
+          "sys": 1,
+          "gold": 2
+        }
+      ],
+      [
+        {
+          "sys": 2,
+          "gold": 3
+        },
+        {
+          "sys": 5,
+          "gold": 4
+        },
+        {
+          "sys": 6,
+          "gold": 2
+        }
+      ],
+      [
+        {
+          "sys": 1,
+          "gold": 2
+        },
+        {
+          "sys": 2,
+          "gold": 3
+        },
+        {
+          "sys": 5,
+          "gold": 4
+        }
+      ]
+    ]
+  },
+  "imported_from": {
+    "path": "agent\\results\\candidate_acceptance\\scoring_validation\\v1\\replay-v2\\votes\\IS1008d\\decisions.4a299a531438822e17d3.json",
+    "sha256": "6a105a90156cc7767b8e5451dca354d668a135bc9cc086e769299c2f756b8a85"
+  }
+}

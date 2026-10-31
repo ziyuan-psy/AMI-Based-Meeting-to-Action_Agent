@@ -1,0 +1,67 @@
+{
+  "identity": {
+    "protocol_digest": "b0de1ae95eec59aaf3bc5fb2cfea27cd70c891ec74424f35af4726ab0aa7c596",
+    "judge": {
+      "name": "@30875-fall26-openai/gpt-5-nano",
+      "client": "mta.llm.OpenAIAdapter",
+      "endpoint": "https://api.portkey.ai/v1",
+      "supports_reasoning_effort": true
+    },
+    "type": "actions",
+    "input_sha256": "cdfa90b898c5106b8b73b15ea2762cf3ea8a7e0bc92c7ad470d95aa569fd106c",
+    "system_texts": [
+      "The UI Designer will design the LCD screen menu for all functions.",
+      "The UI designer will make a list of the functions to be included on the screen.",
+      "The UI designer will create maps with all the data we have gathered.",
+      "The Project Manager will write the minutes."
+    ],
+    "gold_texts": [
+      "The project manager will write and place the meeting minutes in the project folder.",
+      "The user interface designer will develop the remote layout and a user-friendly LCD menu, including navigation and button usage.",
+      "The industrial designer will define the functional aspects and the list of functions to include in the LCD menu, coordinating with the user interface designer.",
+      "The project manager will reorganize the shared project information into clearer folders."
+    ]
+  },
+  "votes": {
+    "cdfa90b898c5106b8b73": [
+      [
+        {
+          "sys": 0,
+          "gold": 1
+        },
+        {
+          "sys": 1,
+          "gold": 2
+        },
+        {
+          "sys": 3,
+          "gold": 0
+        }
+      ],
+      [
+        {
+          "sys": 0,
+          "gold": 1
+        },
+        {
+          "sys": 3,
+          "gold": 0
+        }
+      ],
+      [
+        {
+          "sys": 0,
+          "gold": 1
+        },
+        {
+          "sys": 3,
+          "gold": 0
+        }
+      ]
+    ]
+  },
+  "imported_from": {
+    "path": "agent\\results\\candidate_acceptance\\scoring_validation\\v1\\replay-v2\\votes\\TS3006b\\actions.cdfa90b898c5106b8b73.json",
+    "sha256": "ac5480b5e35fc762c4295457a3da4886b3eb4047c0605d4a1673928b03f6446a"
+  }
+}

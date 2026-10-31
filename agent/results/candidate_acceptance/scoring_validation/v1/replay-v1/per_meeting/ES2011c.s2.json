@@ -1,0 +1,610 @@
+{
+  "meeting_id": "ES2011c",
+  "mode": "s2",
+  "status": "COMPLETED",
+  "execution_kind": "FIXED_RESPONSE_REPLAY_NOT_FRESH_PIPELINE",
+  "score": {
+    "metrics": {
+      "actions": {
+        "tp": 1,
+        "sys": 1,
+        "gold": 2,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.667
+      },
+      "decisions": {
+        "tp": 3,
+        "sys": 7,
+        "gold": 5,
+        "precision": 0.429,
+        "recall": 0.6,
+        "f1": 0.5
+      },
+      "problems": {
+        "tp": 0,
+        "sys": 4,
+        "gold": 2,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "matches": {
+      "ES2011c.sys.s.1": "ES2011c.JacquelinePalmer.s.15",
+      "ES2011c.sys.s.2": "ES2011c.revised.s.24",
+      "ES2011c.sys.s.4": "ES2011c.JacquelinePalmer.s.19",
+      "ES2011c.sys.s.5": "ES2011c.revised.s.23"
+    },
+    "unmatched": {
+      "actions": {
+        "system": [],
+        "gold": [
+          {
+            "id": "ES2011c.JacquelinePalmer.s.17",
+            "text": "The Marketing Expert will prepare a prototype evaluation.",
+            "type": "actions",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.A.dialog-act.dharshi.220"
+              }
+            ],
+            "owner": [
+              "FEE044"
+            ],
+            "owner_basis": "inferred",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": []
+          }
+        ]
+      },
+      "decisions": {
+        "system": [
+          {
+            "id": "ES2011c.sys.s.6",
+            "text": "For now we will do two prototypes of the product.",
+            "type": "decisions",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.D.dialog-act.dharshi.126"
+              }
+            ],
+            "status": "adopted",
+            "prior_context_needed": false,
+            "related_items": []
+          },
+          {
+            "id": "ES2011c.sys.s.7",
+            "text": "The group proposed to use batteries as the energy source for the product, with the batteries placed right under the plastic case.",
+            "type": "decisions",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.A.dialog-act.dharshi.194"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.A.dialog-act.dharshi.198"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.B.dialog-act.dharshi.133"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.A.dialog-act.dharshi.201"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.B.dialog-act.dharshi.123"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.A.dialog-act.dharshi.184"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.C.dialog-act.dharshi.240"
+              }
+            ],
+            "status": "proposed",
+            "prior_context_needed": false,
+            "related_items": []
+          },
+          {
+            "id": "ES2011c.sys.s.8",
+            "text": "The group proposed promoting the banana variant.",
+            "type": "decisions",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.C.dialog-act.dharshi.235"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.D.dialog-act.dharshi.142"
+              }
+            ],
+            "status": "proposed",
+            "prior_context_needed": false,
+            "related_items": []
+          },
+          {
+            "id": "ES2011c.sys.s.9",
+            "text": "The company colours will be silver and yellow, and the logo should be placed somewhere on the product.",
+            "type": "decisions",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.A.dialog-act.dharshi.174"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.A.dialog-act.dharshi.175"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.A.dialog-act.dharshi.180"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.C.dialog-act.dharshi.237"
+              }
+            ],
+            "status": "adopted",
+            "prior_context_needed": false,
+            "related_items": []
+          }
+        ],
+        "gold": [
+          {
+            "id": "ES2011c.JacquelinePalmer.s.18",
+            "text": "The remote will feature a spongy material.",
+            "type": "decisions",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.C.dialog-act.dharshi.187"
+              }
+            ],
+            "status": "adopted",
+            "prior_context_needed": false,
+            "related_items": []
+          },
+          {
+            "id": "ES2011c.JacquelinePalmer.s.20",
+            "text": "The remote will feature a changeable outer casing.",
+            "type": "decisions",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.C.dialog-act.dharshi.216"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.A.dialog-act.dharshi.136"
+              }
+            ],
+            "status": "adopted",
+            "prior_context_needed": false,
+            "related_items": []
+          }
+        ]
+      },
+      "problems": {
+        "system": [
+          {
+            "id": "ES2011c.sys.s.3",
+            "text": "There is uncertainty about whether to include a screen, given ambiguous use and the potential cost, with debate on its necessity versus a wheel-based control.",
+            "type": "problems",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.C.dialog-act.dharshi.24"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.C.dialog-act.dharshi.27"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.C.dialog-act.dharshi.30"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.C.dialog-act.dharshi.37"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.C.dialog-act.dharshi.42"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.C.dialog-act.dharshi.44"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.C.dialog-act.dharshi.48"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.C.dialog-act.dharshi.50"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.C.dialog-act.dharshi.88"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.B.dialog-act.dharshi.52"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.B.dialog-act.dharshi.53"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.B.dialog-act.dharshi.54"
+              }
+            ],
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": []
+          },
+          {
+            "id": "ES2011c.sys.s.10",
+            "text": "The iPod-like button system design option has not been concluded yet.",
+            "type": "problems",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.A.dialog-act.dharshi.10"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.A.dialog-act.dharshi.11"
+              }
+            ],
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": []
+          },
+          {
+            "id": "ES2011c.sys.s.11",
+            "text": "Navigating a large channel lineup with a wheel is challenging and may require fast scrolling or a clear on-device menu.",
+            "type": "problems",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.A.dialog-act.dharshi.40"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.C.dialog-act.dharshi.59"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.C.dialog-act.dharshi.62"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.A.dialog-act.dharshi.44"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.A.dialog-act.dharshi.45"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.B.dialog-act.dharshi.49"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.A.dialog-act.dharshi.46"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.C.dialog-act.dharshi.77"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.C.dialog-act.dharshi.79"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.C.dialog-act.dharshi.83"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.A.dialog-act.dharshi.51"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.C.dialog-act.dharshi.84"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.C.dialog-act.dharshi.85"
+              }
+            ],
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": []
+          },
+          {
+            "id": "ES2011c.sys.s.12",
+            "text": "Access to the on-device menu for brightness, timers and modes is unclear and would rely on a central button that brings up a TV menu.",
+            "type": "problems",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.C.dialog-act.dharshi.80"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.C.dialog-act.dharshi.83"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.A.dialog-act.dharshi.51"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.C.dialog-act.dharshi.95"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.C.dialog-act.dharshi.98"
+              }
+            ],
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": []
+          }
+        ],
+        "gold": [
+          {
+            "id": "ES2011c.JacquelinePalmer.s.21",
+            "text": "The group wanted to include a changeable outer casing but could not decide whether the spongy or the hard plastic component should be the removable casing.",
+            "type": "problems",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.A.dialog-act.dharshi.133"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.A.dialog-act.dharshi.135"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.A.dialog-act.dharshi.136"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.D.dialog-act.dharshi.105"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.D.dialog-act.dharshi.110"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.C.dialog-act.dharshi.216"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.C.dialog-act.dharshi.218"
+              }
+            ],
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": []
+          },
+          {
+            "id": "ES2011c.JacquelinePalmer.s.22",
+            "text": "There was a lack of information on the cost of several components.",
+            "type": "problems",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.D.dialog-act.dharshi.160"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.D.dialog-act.dharshi.162"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.B.dialog-act.dharshi.143"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011c.json",
+                "locator": "ES2011c.B.dialog-act.dharshi.144"
+              }
+            ],
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": []
+          }
+        ]
+      }
+    }
+  },
+  "fields": {
+    "status": {
+      "correct": 3,
+      "total": 4,
+      "rate": 0.75
+    },
+    "prior_context_needed": {
+      "correct": 3,
+      "total": 4,
+      "rate": 0.75
+    },
+    "owner_exact": {
+      "correct": 0,
+      "total": 1,
+      "rate": 0.0
+    },
+    "owner_basis": {
+      "correct": 0,
+      "total": 1,
+      "rate": 0.0
+    },
+    "deadline_match": {
+      "correct": 1,
+      "total": 1,
+      "rate": 1.0
+    },
+    "deadline_basis": {
+      "correct": 1,
+      "total": 1,
+      "rate": 1.0
+    }
+  },
+  "raw_alignment": {
+    "actions": {
+      "ES2011c.sys.s.1": "ES2011c.JacquelinePalmer.s.15"
+    },
+    "decisions": {
+      "ES2011c.sys.s.2": "ES2011c.revised.s.24",
+      "ES2011c.sys.s.4": "ES2011c.JacquelinePalmer.s.19",
+      "ES2011c.sys.s.5": "ES2011c.revised.s.23"
+    },
+    "problems": {}
+  },
+  "category_accounting": {
+    "actions": {
+      "raw_system": 1,
+      "raw_gold": 2,
+      "unscored": false,
+      "excluded_gold_ids": [],
+      "excluded_system_ids": []
+    },
+    "decisions": {
+      "raw_system": 7,
+      "raw_gold": 5,
+      "unscored": false,
+      "excluded_gold_ids": [],
+      "excluded_system_ids": []
+    },
+    "problems": {
+      "raw_system": 4,
+      "raw_gold": 2,
+      "unscored": false,
+      "excluded_gold_ids": [],
+      "excluded_system_ids": []
+    }
+  },
+  "vote_caches": {
+    "actions": {
+      "path": "votes\\ES2011c.s2\\actions.json",
+      "votes": 3,
+      "input_sha256": "ff53d10f097342a1beea882c03cae4c8010294435632e912c7d04f1b499869b1"
+    },
+    "decisions": {
+      "path": "votes\\ES2011c.s2\\decisions.json",
+      "votes": 3,
+      "input_sha256": "0138bb6c01687ebdeeaf1a82c125e2513e933759a1a45593665deb60da121496"
+    },
+    "problems": {
+      "path": "votes\\ES2011c.s2\\problems.json",
+      "votes": 3,
+      "input_sha256": "ae86193219646963bf816f84d3edcafcab24ef516aa0ffc30e3c2daa81880b89"
+    }
+  },
+  "runtime_control": {
+    "limits": {
+      "calls": 80,
+      "tokens": 1000000,
+      "request_seconds": 300.0,
+      "meeting_seconds": 1200.0,
+      "inflight": 4,
+      "retries": 2,
+      "backoff": 0.5
+    },
+    "attempted_calls": 0,
+    "charged_tokens": 0,
+    "unknown_usage_tokens": 0,
+    "reserved_tokens": 0,
+    "max_inflight_seen": 0,
+    "failure": null,
+    "attempts": [],
+    "input_bound_method": "utf8_request_bytes_plus_padding",
+    "unknown_usage_policy": "charge_full_reservation"
+  },
+  "judge_usage": {
+    "calls": 0,
+    "in": 0,
+    "out": 0,
+    "stages": {}
+  },
+  "elapsed_seconds": 0.015
+}

@@ -1,0 +1,412 @@
+{
+  "meeting_id": "ES2011d",
+  "mode": "s2",
+  "status": "COMPLETED",
+  "execution_kind": "FIXED_RESPONSE_REPLAY_NOT_FRESH_PIPELINE",
+  "score": {
+    "metrics": {
+      "actions": {
+        "tp": 0,
+        "sys": 1,
+        "gold": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "decisions": {
+        "tp": 1,
+        "sys": 4,
+        "gold": 2,
+        "precision": 0.25,
+        "recall": 0.5,
+        "f1": 0.333
+      },
+      "problems": {
+        "tp": 3,
+        "sys": 4,
+        "gold": 4,
+        "precision": 0.75,
+        "recall": 0.75,
+        "f1": 0.75
+      }
+    },
+    "matches": {
+      "ES2011d.sys.s.7": "ES2011d.JacquelinePalmer.s.17",
+      "ES2011d.sys.s.2": "ES2011d.JacquelinePalmer.s.18",
+      "ES2011d.sys.s.4": "ES2011d.JacquelinePalmer.s.19",
+      "ES2011d.sys.s.9": "ES2011d.JacquelinePalmer.s.20"
+    },
+    "unmatched": {
+      "actions": {
+        "system": [
+          {
+            "id": "ES2011d.sys.s.8",
+            "text": "All participants will write final reports after this meeting.",
+            "type": "actions",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011d.json",
+                "locator": "ES2011d.A.dialog-act.dharshi.288"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011d.json",
+                "locator": "ES2011d.A.dialog-act.dharshi.289"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011d.json",
+                "locator": "ES2011d.B.dialog-act.dharshi.195"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011d.json",
+                "locator": "ES2011d.A.dialog-act.dharshi.290"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011d.json",
+                "locator": "ES2011d.D.dialog-act.dharshi.218"
+              }
+            ],
+            "owner": null,
+            "owner_basis": "ambiguous",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": []
+          }
+        ],
+        "gold": [
+          {
+            "id": "ES2011d.JacquelinePalmer.s.14",
+            "text": "Final reports may need to be written, but it was unclear whether all participants or only the Project Manager would write one.",
+            "type": "actions",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011d.json",
+                "locator": "ES2011d.D.dialog-act.dharshi.215"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011d.json",
+                "locator": "ES2011d.A.dialog-act.dharshi.288"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011d.json",
+                "locator": "ES2011d.B.dialog-act.dharshi.195"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011d.json",
+                "locator": "ES2011d.A.dialog-act.dharshi.290"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011d.json",
+                "locator": "ES2011d.A.dialog-act.dharshi.291"
+              }
+            ],
+            "owner": null,
+            "owner_basis": "ambiguous",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": []
+          }
+        ]
+      },
+      "decisions": {
+        "system": [
+          {
+            "id": "ES2011d.sys.s.1",
+            "text": "We decided on batteries, and the regular chip would be necessary for the more advanced iPod-like button.",
+            "type": "decisions",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011d.json",
+                "locator": "ES2011d.A.dialog-act.dharshi.31"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011d.json",
+                "locator": "ES2011d.A.dialog-act.dharshi.32"
+              }
+            ],
+            "status": "adopted",
+            "prior_context_needed": false,
+            "related_items": []
+          },
+          {
+            "id": "ES2011d.sys.s.3",
+            "text": "We can do the evaluation separately and then discuss it.",
+            "type": "decisions",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011d.json",
+                "locator": "ES2011d.A.dialog-act.dharshi.66"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011d.json",
+                "locator": "ES2011d.D.dialog-act.dharshi.41"
+              }
+            ],
+            "status": "adopted",
+            "prior_context_needed": false,
+            "related_items": []
+          },
+          {
+            "id": "ES2011d.sys.s.5",
+            "text": "The broccoli-shaped design is the preferred option.",
+            "type": "decisions",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011d.json",
+                "locator": "ES2011d.C.dialog-act.dharshi.109"
+              }
+            ],
+            "status": "adopted",
+            "prior_context_needed": false,
+            "related_items": []
+          }
+        ],
+        "gold": [
+          {
+            "id": "ES2011d.JacquelinePalmer.s.16",
+            "text": "They decided to produce the device in one uniform shape, with changeable covers in fruit colors and designs.",
+            "type": "decisions",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011d.json",
+                "locator": "ES2011d.A.dialog-act.dharshi.147"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011d.json",
+                "locator": "ES2011d.D.dialog-act.dharshi.153"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011d.json",
+                "locator": "ES2011d.B.dialog-act.dharshi.106"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011d.json",
+                "locator": "ES2011d.A.dialog-act.dharshi.174"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011d.json",
+                "locator": "ES2011d.B.dialog-act.dharshi.123"
+              }
+            ],
+            "status": "adopted",
+            "prior_context_needed": true,
+            "related_items": [
+              {
+                "id": "ES2011c.JacquelinePalmer.s.20",
+                "relation": "updates"
+              },
+              {
+                "id": "ES2011c.JacquelinePalmer.s.19",
+                "relation": "updates"
+              }
+            ]
+          }
+        ]
+      },
+      "problems": {
+        "system": [
+          {
+            "id": "ES2011d.sys.s.6",
+            "text": "There is confusion about how to compute the average score—whether to sum the four scores and divide by four, and results vary.",
+            "type": "problems",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011d.json",
+                "locator": "ES2011d.D.dialog-act.dharshi.71"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011d.json",
+                "locator": "ES2011d.D.dialog-act.dharshi.72"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011d.json",
+                "locator": "ES2011d.B.dialog-act.dharshi.51"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011d.json",
+                "locator": "ES2011d.A.dialog-act.dharshi.85"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011d.json",
+                "locator": "ES2011d.B.dialog-act.dharshi.55"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011d.json",
+                "locator": "ES2011d.D.dialog-act.dharshi.74"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011d.json",
+                "locator": "ES2011d.B.dialog-act.dharshi.57"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011d.json",
+                "locator": "ES2011d.C.dialog-act.dharshi.33"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011d.json",
+                "locator": "ES2011d.D.dialog-act.dharshi.75"
+              }
+            ],
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": []
+          }
+        ],
+        "gold": [
+          {
+            "id": "ES2011d.revised.s.21",
+            "text": "The locator's sender button had not been designed yet.",
+            "type": "problems",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011d.json",
+                "locator": "ES2011d.C.dialog-act.dharshi.13"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011d.json",
+                "locator": "ES2011d.B.dialog-act.dharshi.27"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011d.json",
+                "locator": "ES2011d.B.dialog-act.dharshi.28"
+              }
+            ],
+            "status": "open",
+            "prior_context_needed": true,
+            "related_items": [
+              {
+                "id": "ES2011b.JacquelinePalmer.s.12",
+                "relation": "continues"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "fields": {
+    "status": {
+      "correct": 3,
+      "total": 4,
+      "rate": 0.75
+    },
+    "prior_context_needed": {
+      "correct": 4,
+      "total": 4,
+      "rate": 1.0
+    }
+  },
+  "raw_alignment": {
+    "actions": {},
+    "decisions": {
+      "ES2011d.sys.s.7": "ES2011d.JacquelinePalmer.s.17"
+    },
+    "problems": {
+      "ES2011d.sys.s.2": "ES2011d.JacquelinePalmer.s.18",
+      "ES2011d.sys.s.4": "ES2011d.JacquelinePalmer.s.19",
+      "ES2011d.sys.s.9": "ES2011d.JacquelinePalmer.s.20"
+    }
+  },
+  "category_accounting": {
+    "actions": {
+      "raw_system": 1,
+      "raw_gold": 1,
+      "unscored": false,
+      "excluded_gold_ids": [],
+      "excluded_system_ids": []
+    },
+    "decisions": {
+      "raw_system": 4,
+      "raw_gold": 2,
+      "unscored": false,
+      "excluded_gold_ids": [],
+      "excluded_system_ids": []
+    },
+    "problems": {
+      "raw_system": 4,
+      "raw_gold": 4,
+      "unscored": false,
+      "excluded_gold_ids": [],
+      "excluded_system_ids": []
+    }
+  },
+  "vote_caches": {
+    "actions": {
+      "path": "votes\\ES2011d.s2\\actions.json",
+      "votes": 3,
+      "input_sha256": "c02ec1d101c18976f908957ccef3f53b602ef0f0626dcc8fd02355bf5747fc7e"
+    },
+    "decisions": {
+      "path": "votes\\ES2011d.s2\\decisions.json",
+      "votes": 3,
+      "input_sha256": "a5e6683ad02304c80b0a93316fe0d355d9dbcbc25c36614c64bb673fd16713d6"
+    },
+    "problems": {
+      "path": "votes\\ES2011d.s2\\problems.json",
+      "votes": 3,
+      "input_sha256": "552e44391850c54101360e96a31a8c348f34f1ba38bcb6ca48511209efd71053"
+    }
+  },
+  "runtime_control": {
+    "limits": {
+      "calls": 80,
+      "tokens": 1000000,
+      "request_seconds": 300.0,
+      "meeting_seconds": 1200.0,
+      "inflight": 4,
+      "retries": 2,
+      "backoff": 0.5
+    },
+    "attempted_calls": 0,
+    "charged_tokens": 0,
+    "unknown_usage_tokens": 0,
+    "reserved_tokens": 0,
+    "max_inflight_seen": 0,
+    "failure": null,
+    "attempts": [],
+    "input_bound_method": "utf8_request_bytes_plus_padding",
+    "unknown_usage_policy": "charge_full_reservation"
+  },
+  "judge_usage": {
+    "calls": 0,
+    "in": 0,
+    "out": 0,
+    "stages": {}
+  },
+  "elapsed_seconds": 0.016
+}

@@ -1,0 +1,336 @@
+{
+  "meeting_id": "TS3006b",
+  "status": "COMPLETED",
+  "errors": [],
+  "warnings": [],
+  "elapsed_seconds": 268.641,
+  "usage": {
+    "calls": 34,
+    "in": 151084,
+    "out": 137629,
+    "stages": {
+      "extract": {
+        "calls": 12,
+        "in": 91212,
+        "out": 99930
+      },
+      "consolidate": {
+        "calls": 3,
+        "in": 9567,
+        "out": 29597
+      },
+      "agent": {
+        "calls": 18,
+        "in": 49483,
+        "out": 6950
+      },
+      "abstract": {
+        "calls": 1,
+        "in": 822,
+        "out": 1152
+      }
+    }
+  },
+  "runtime_control": {
+    "limits": {
+      "calls": 80,
+      "tokens": 1000000,
+      "request_seconds": 300.0,
+      "meeting_seconds": 1200.0,
+      "inflight": 4,
+      "retries": 2,
+      "backoff": 0.5
+    },
+    "attempted_calls": 34,
+    "charged_tokens": 288713,
+    "unknown_usage_tokens": 0,
+    "reserved_tokens": 0,
+    "max_inflight_seen": 4,
+    "failure": null,
+    "input_bound_method": "utf8_request_bytes_plus_padding",
+    "unknown_usage_policy": "charge_full_reservation"
+  },
+  "stage_events": 113,
+  "agent_events": 18,
+  "request_events": 35,
+  "item_counts": {
+    "decisions": 5,
+    "problems": 4,
+    "actions": 3,
+    "abstract": 5
+  },
+  "flagged_items": 6,
+  "restored_items": 2,
+  "agent_outcomes": {
+    "ok": 9,
+    "finished": 6,
+    "invalid_finish": 2,
+    "tool_error": 1
+  },
+  "tool_calls": {
+    "get_prior_items": 7,
+    "read_dialogue": 3
+  },
+  "cross_meeting_links": [
+    {
+      "item_key": "TS3006b#2",
+      "record_id": "TS3006b.sys.s.3",
+      "text": "The UI will design the LCD screen function menu and create a multi-page menu layout to organize all functions.",
+      "id": "TS3006a.sys.s.7",
+      "relation": "continues"
+    },
+    {
+      "item_key": "TS3006b#4",
+      "record_id": "TS3006b.sys.s.5",
+      "text": "The layout of the remote will be designed by ID (MTD022ID).",
+      "id": "TS3006a.sys.s.6",
+      "relation": "continues"
+    }
+  ],
+  "reference_count": 52,
+  "citation_checks": [
+    {
+      "item_key": "TS3006b#1",
+      "initial_delivered_da_ids": [
+        "TS3006b.B.dialog-act.dharshi.32",
+        "TS3006b.D.dialog-act.dharshi.88",
+        "TS3006b.D.dialog-act.dharshi.89",
+        "TS3006b.D.dialog-act.dharshi.90",
+        "TS3006b.D.dialog-act.dharshi.91"
+      ],
+      "finish_da_ids": [
+        "TS3006b.B.dialog-act.dharshi.32",
+        "TS3006b.D.dialog-act.dharshi.88",
+        "TS3006b.D.dialog-act.dharshi.89",
+        "TS3006b.D.dialog-act.dharshi.90",
+        "TS3006b.D.dialog-act.dharshi.91"
+      ],
+      "additional_observed_ids": [],
+      "all_cited_dialogue_delivered": true
+    },
+    {
+      "item_key": "TS3006b#2",
+      "initial_delivered_da_ids": [
+        "TS3006b.A.dialog-act.dharshi.305",
+        "TS3006b.A.dialog-act.dharshi.311",
+        "TS3006b.B.dialog-act.dharshi.157",
+        "TS3006b.B.dialog-act.dharshi.163",
+        "TS3006b.B.dialog-act.dharshi.164"
+      ],
+      "finish_da_ids": [
+        "TS3006b.A.dialog-act.dharshi.305",
+        "TS3006b.A.dialog-act.dharshi.311",
+        "TS3006b.B.dialog-act.dharshi.163",
+        "TS3006b.B.dialog-act.dharshi.164"
+      ],
+      "additional_observed_ids": [
+        "TS3006a.sys.s.6",
+        "TS3006a.sys.s.7",
+        "TS3006a.sys.s.9"
+      ],
+      "all_cited_dialogue_delivered": true
+    },
+    {
+      "item_key": "TS3006b#4",
+      "initial_delivered_da_ids": [
+        "TS3006b.A.dialog-act.dharshi.320",
+        "TS3006b.A.dialog-act.dharshi.321"
+      ],
+      "finish_da_ids": [
+        "TS3006b.A.dialog-act.dharshi.320",
+        "TS3006b.A.dialog-act.dharshi.321"
+      ],
+      "additional_observed_ids": [
+        "TS3006a.sys.s.6",
+        "TS3006a.sys.s.7",
+        "TS3006a.sys.s.9"
+      ],
+      "all_cited_dialogue_delivered": true
+    },
+    {
+      "item_key": "TS3006b#6",
+      "initial_delivered_da_ids": [
+        "TS3006b.B.dialog-act.dharshi.215"
+      ],
+      "finish_da_ids": [
+        "TS3006b.B.dialog-act.dharshi.215"
+      ],
+      "additional_observed_ids": [
+        "TS3006a.sys.s.3",
+        "TS3006a.sys.s.7",
+        "TS3006a.sys.s.9"
+      ],
+      "all_cited_dialogue_delivered": true
+    },
+    {
+      "item_key": "TS3006b#10",
+      "initial_delivered_da_ids": [
+        "TS3006b.C.dialog-act.dharshi.17"
+      ],
+      "finish_da_ids": [
+        "TS3006b.C.dialog-act.dharshi.17"
+      ],
+      "additional_observed_ids": [
+        "TS3006b.A.dialog-act.dharshi.15",
+        "TS3006b.A.dialog-act.dharshi.16",
+        "TS3006b.A.dialog-act.dharshi.17",
+        "TS3006b.A.dialog-act.dharshi.18",
+        "TS3006b.B.dialog-act.dharshi.14",
+        "TS3006b.C.dialog-act.dharshi.15",
+        "TS3006b.C.dialog-act.dharshi.16",
+        "TS3006b.C.dialog-act.dharshi.18",
+        "TS3006b.D.dialog-act.dharshi.17",
+        "TS3006b.D.dialog-act.dharshi.18"
+      ],
+      "all_cited_dialogue_delivered": true
+    },
+    {
+      "item_key": "TS3006b#11",
+      "initial_delivered_da_ids": [
+        "TS3006b.C.dialog-act.dharshi.18"
+      ],
+      "finish_da_ids": [
+        "TS3006b.C.dialog-act.dharshi.18"
+      ],
+      "additional_observed_ids": [
+        "TS3006a.sys.s.1",
+        "TS3006a.sys.s.10",
+        "TS3006a.sys.s.11",
+        "TS3006b.A.dialog-act.dharshi.17",
+        "TS3006b.A.dialog-act.dharshi.18",
+        "TS3006b.A.dialog-act.dharshi.19",
+        "TS3006b.A.dialog-act.dharshi.20",
+        "TS3006b.B.dialog-act.dharshi.14",
+        "TS3006b.B.dialog-act.dharshi.15",
+        "TS3006b.C.dialog-act.dharshi.17",
+        "TS3006b.C.dialog-act.dharshi.19",
+        "TS3006b.D.dialog-act.dharshi.18",
+        "TS3006b.D.dialog-act.dharshi.19"
+      ],
+      "all_cited_dialogue_delivered": true
+    }
+  ],
+  "restored_source_review": [
+    {
+      "item_key": "TS3006b#10",
+      "record": {
+        "id": "TS3006b.sys.s.11",
+        "text": "MTD022ID's computer is not functioning properly.",
+        "type": "problems",
+        "reference": [
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3006b.json",
+            "locator": "TS3006b.C.dialog-act.dharshi.17"
+          }
+        ],
+        "status": "open",
+        "prior_context_needed": false,
+        "related_items": []
+      },
+      "original_evidence": [
+        "TS3006b.C.dialog-act.dharshi.17"
+      ],
+      "successful_finish": true,
+      "tool_calls": [
+        {
+          "step": 1,
+          "action": "read_dialogue",
+          "outcome": "ok"
+        },
+        {
+          "step": 2,
+          "action": "finish",
+          "outcome": "finished"
+        }
+      ],
+      "dialogue": [
+        {
+          "da_id": "TS3006b.C.dialog-act.dharshi.17",
+          "participant": "MTD022ID",
+          "role": "ID",
+          "text": "Yeah my computer is not functioning properly ."
+        }
+      ]
+    },
+    {
+      "item_key": "TS3006b#11",
+      "record": {
+        "id": "TS3006b.sys.s.12",
+        "text": "MTD022ID reports that their screen is reduced in size.",
+        "type": "problems",
+        "reference": [
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3006b.json",
+            "locator": "TS3006b.C.dialog-act.dharshi.18"
+          }
+        ],
+        "status": "open",
+        "prior_context_needed": false,
+        "related_items": []
+      },
+      "original_evidence": [
+        "TS3006b.C.dialog-act.dharshi.18"
+      ],
+      "successful_finish": true,
+      "tool_calls": [
+        {
+          "step": 1,
+          "action": "get_prior_items",
+          "outcome": "ok"
+        },
+        {
+          "step": 2,
+          "action": "get_prior_items",
+          "outcome": "ok"
+        },
+        {
+          "step": 3,
+          "action": "read_dialogue",
+          "outcome": "ok"
+        },
+        {
+          "step": 4,
+          "action": "finish",
+          "outcome": "finished"
+        }
+      ],
+      "dialogue": [
+        {
+          "da_id": "TS3006b.C.dialog-act.dharshi.18",
+          "participant": "MTD022ID",
+          "role": "ID",
+          "text": "Yeah yeah . No but my screen is reduced in size . <vocalsound>"
+        }
+      ]
+    }
+  ],
+  "p2_enabled": false,
+  "clarification_requests": 0,
+  "stage_seconds": 268.3,
+  "agent_fallbacks": null,
+  "recoverable_errors": [
+    {
+      "item": "TS3006b#4",
+      "step": 2,
+      "action": "finish",
+      "outcome": "invalid_finish",
+      "error": "Finish cites dialogue not delivered; retrieve/read the support first."
+    },
+    {
+      "item": "TS3006b#4",
+      "step": 3,
+      "action": "read_dialogue",
+      "outcome": "tool_error",
+      "error": "KeyError: 'TS3006a.sys.s.6 not found in TS3006a'"
+    },
+    {
+      "item": "TS3006b#4",
+      "step": 4,
+      "action": "finish",
+      "outcome": "invalid_finish",
+      "error": "Finish cites dialogue not delivered; retrieve/read the support first."
+    }
+  ]
+}

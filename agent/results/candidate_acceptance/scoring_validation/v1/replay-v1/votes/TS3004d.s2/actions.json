@@ -1,0 +1,63 @@
+{
+  "identity": {
+    "protocol_digest": "3e12e777261bc6f000043ee97b251767817e36fd701be2468b2a974be3579a96",
+    "judge": {
+      "name": "@30875-fall26-openai/gpt-5-nano",
+      "client": "mta.llm.OpenAIAdapter",
+      "endpoint": "https://api.portkey.ai/v1",
+      "supports_reasoning_effort": true
+    },
+    "type": "actions",
+    "input_sha256": "f8d44c8a373a297e7710db2bb8e85b29ff96b2105da93319ff24d6f786fa86f4",
+    "system_texts": [
+      "ID will fill in the questionnaire.",
+      "UI will present their prototype presentation after PM.",
+      "The Project Manager will write a final report.",
+      "ME will take some pictures after the meeting."
+    ],
+    "gold_texts": [
+      "The group have to fill out a final questionnaire.",
+      "The Project Manager will write the final report.",
+      "The designers still need to draw the recharger (home station)."
+    ]
+  },
+  "votes": {
+    "f8d44c8a373a297e7710": [
+      [
+        {
+          "sys": 0,
+          "gold": 0
+        },
+        {
+          "sys": 2,
+          "gold": 1
+        }
+      ],
+      [
+        {
+          "sys": 0,
+          "gold": 0
+        },
+        {
+          "sys": 2,
+          "gold": 1
+        }
+      ],
+      [
+        {
+          "sys": 0,
+          "gold": 0
+        },
+        {
+          "sys": 2,
+          "gold": 1
+        }
+      ]
+    ]
+  },
+  "imported_from": {
+    "path": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\recall_candidate\\41654ab-v2\\replay\\TS3004d\\stable_votes.json",
+    "sha256": "b6429b3fde7ac5ccc13274036bc7e93f7c8be958cda2ab59a92504b7f0d4752b",
+    "kind": "verified_saved_development_study"
+  }
+}

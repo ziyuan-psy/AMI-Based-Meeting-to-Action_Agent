@@ -1,0 +1,146 @@
+{
+  "status": "TARGETED_SOURCE_REVIEW_PASSED",
+  "reviewer": "developer source inspection",
+  "new_user_manual_confirmation": false,
+  "scope": "Two specified recovered TS3006a Action tasks, owners and final citations; not every output claim.",
+  "cases": [
+    {
+      "item_key": "TS3006a#6",
+      "record": {
+        "id": "TS3006a.sys.s.7",
+        "text": "The User Interface Designer will specify the technical functions.",
+        "type": "actions",
+        "reference": [
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3006a.json",
+            "locator": "TS3006a.A.dialog-act.vkaraisk.149"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3006a.json",
+            "locator": "TS3006a.A.dialog-act.vkaraisk.150"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3006a.json",
+            "locator": "TS3006a.B.dialog-act.vkaraisk.59"
+          }
+        ],
+        "owner": [
+          "MTD023UID"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "open",
+        "prior_context_needed": false,
+        "related_items": []
+      },
+      "original_evidence": [
+        "TS3006a.A.dialog-act.vkaraisk.149",
+        "TS3006a.A.dialog-act.vkaraisk.150",
+        "TS3006a.B.dialog-act.vkaraisk.59"
+      ],
+      "successful_finish": true,
+      "tool_calls": [
+        {
+          "step": 1,
+          "action": "read_dialogue",
+          "outcome": "ok"
+        },
+        {
+          "step": 2,
+          "action": "finish",
+          "outcome": "finished"
+        }
+      ],
+      "dialogue": [
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.149",
+          "participant": "MTD021PM",
+          "role": "PM",
+          "text": "Uh the User Interface Designer should specify the technical functions ."
+        },
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.150",
+          "participant": "MTD021PM",
+          "role": "PM",
+          "text": "Right ? Yeah ?"
+        },
+        {
+          "da_id": "TS3006a.B.dialog-act.vkaraisk.59",
+          "participant": "MTD023UID",
+          "role": "UI",
+          "text": "Yep ."
+        }
+      ],
+      "verdict": "SUPPORTED_TASK_AND_OWNER",
+      "review_method": "Developer read actual final references and frozen transcript lines; no gold or model judge.",
+      "reason": "PM explicitly assigns the named role; the participant with that role acknowledges it. No supported deadline is asserted."
+    },
+    {
+      "item_key": "TS3006a#7",
+      "record": {
+        "id": "TS3006a.sys.s.8",
+        "text": "The Marketing Expert will come up with user requirements.",
+        "type": "actions",
+        "reference": [
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3006a.json",
+            "locator": "TS3006a.A.dialog-act.vkaraisk.151"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3006a.json",
+            "locator": "TS3006a.D.dialog-act.vkaraisk.100"
+          }
+        ],
+        "owner": [
+          "MTD024ME"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "open",
+        "prior_context_needed": false,
+        "related_items": []
+      },
+      "original_evidence": [
+        "TS3006a.A.dialog-act.vkaraisk.151",
+        "TS3006a.D.dialog-act.vkaraisk.100"
+      ],
+      "successful_finish": true,
+      "tool_calls": [
+        {
+          "step": 1,
+          "action": "read_dialogue",
+          "outcome": "ok"
+        },
+        {
+          "step": 2,
+          "action": "finish",
+          "outcome": "finished"
+        }
+      ],
+      "dialogue": [
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.151",
+          "participant": "MTD021PM",
+          "role": "PM",
+          "text": "<vocalsound> And the Marketing uh Expert should come up with user requirements ."
+        },
+        {
+          "da_id": "TS3006a.D.dialog-act.vkaraisk.100",
+          "participant": "MTD024ME",
+          "role": "ME",
+          "text": "Yeah ."
+        }
+      ],
+      "verdict": "SUPPORTED_TASK_AND_OWNER",
+      "review_method": "Developer read actual final references and frozen transcript lines; no gold or model judge.",
+      "reason": "PM explicitly assigns the named role; the participant with that role acknowledges it. No supported deadline is asserted."
+    }
+  ]
+}

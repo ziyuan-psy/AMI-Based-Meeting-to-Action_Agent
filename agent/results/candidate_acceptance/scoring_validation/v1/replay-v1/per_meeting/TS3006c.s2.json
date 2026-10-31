@@ -1,0 +1,965 @@
+{
+  "meeting_id": "TS3006c",
+  "mode": "s2",
+  "status": "COMPLETED",
+  "execution_kind": "FIXED_RESPONSE_REPLAY_NOT_FRESH_PIPELINE",
+  "score": {
+    "metrics": {
+      "actions": {
+        "tp": 1,
+        "sys": 3,
+        "gold": 2,
+        "precision": 0.333,
+        "recall": 0.5,
+        "f1": 0.4
+      },
+      "decisions": {
+        "tp": 1,
+        "sys": 5,
+        "gold": 5,
+        "precision": 0.2,
+        "recall": 0.2,
+        "f1": 0.2
+      },
+      "problems": {
+        "tp": 2,
+        "sys": 4,
+        "gold": 5,
+        "precision": 0.5,
+        "recall": 0.4,
+        "f1": 0.444
+      }
+    },
+    "matches": {
+      "TS3006c.sys.s.3": "TS3006c.dharshi.s.7",
+      "TS3006c.sys.s.6": "TS3006c.dharshi.s.10",
+      "TS3006c.sys.s.8": "TS3006c.dharshi.s.14",
+      "TS3006c.sys.s.12": "TS3006c.dharshi.s.12"
+    },
+    "unmatched": {
+      "actions": {
+        "system": [
+          {
+            "id": "TS3006c.sys.s.5",
+            "text": "ME and ID will perform the evaluation of the product after the design session.",
+            "type": "actions",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.A.dialog-act.dharshi.276"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.D.dialog-act.dharshi.296"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.A.dialog-act.dharshi.277"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.A.dialog-act.dharshi.278"
+              }
+            ],
+            "owner": [
+              "MTD024ME",
+              "MTD022ID"
+            ],
+            "owner_basis": "explicit",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": []
+          },
+          {
+            "id": "TS3006c.sys.s.7",
+            "text": "MTD021PM will save this board.",
+            "type": "actions",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.A.dialog-act.dharshi.300"
+              }
+            ],
+            "owner": [
+              "MTD021PM"
+            ],
+            "owner_basis": "explicit",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": []
+          }
+        ],
+        "gold": [
+          {
+            "id": "TS3006c.dharshi.s.8",
+            "text": "The marketing expert will prepare a product-evaluation procedure/presentation; the project manager clarified that the product need not be evaluated yet.",
+            "type": "actions",
+            "owner": [
+              "MTD024ME"
+            ],
+            "owner_basis": "explicit",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": [],
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.A.dialog-act.dharshi.276"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.D.dialog-act.dharshi.296"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.A.dialog-act.dharshi.277"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.D.dialog-act.dharshi.297"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.D.dialog-act.dharshi.298"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.A.dialog-act.dharshi.281"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.A.dialog-act.dharshi.282"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.D.dialog-act.dharshi.303"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.D.dialog-act.dharshi.304"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.A.dialog-act.dharshi.285"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.D.dialog-act.dharshi.306"
+              },
+              {
+                "source_type": "participant_metadata",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.D.dialog-act.dharshi.1 (attributes.participant and attributes.role)"
+              }
+            ]
+          }
+        ]
+      },
+      "decisions": {
+        "system": [
+          {
+            "id": "TS3006c.sys.s.1",
+            "text": "ME and ID will work on the smartboard to design something during the next thirty minutes.",
+            "type": "decisions",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.A.dialog-act.dharshi.44"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.C.dialog-act.dharshi.85"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.B.dialog-act.dharshi.25"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.C.dialog-act.dharshi.38"
+              }
+            ],
+            "status": "adopted",
+            "prior_context_needed": false,
+            "related_items": []
+          },
+          {
+            "id": "TS3006c.sys.s.9",
+            "text": "The target price is twenty-five euros per piece.",
+            "type": "decisions",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.C.dialog-act.dharshi.104"
+              }
+            ],
+            "status": "adopted",
+            "prior_context_needed": false,
+            "related_items": []
+          },
+          {
+            "id": "TS3006c.sys.s.10",
+            "text": "Production will be in China.",
+            "type": "decisions",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.B.dialog-act.dharshi.82"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.A.dialog-act.dharshi.93"
+              }
+            ],
+            "status": "adopted",
+            "prior_context_needed": false,
+            "related_items": []
+          },
+          {
+            "id": "TS3006c.sys.s.11",
+            "text": "The team will use 'Real Remote' as the product name.",
+            "type": "decisions",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.A.dialog-act.dharshi.344"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.A.dialog-act.dharshi.345"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.A.dialog-act.dharshi.346"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.B.dialog-act.dharshi.266"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.C.dialog-act.dharshi.379"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.C.dialog-act.dharshi.380"
+              }
+            ],
+            "status": "adopted",
+            "prior_context_needed": false,
+            "related_items": []
+          }
+        ],
+        "gold": [
+          {
+            "id": "TS3006c.dharshi.s.9",
+            "text": "Use kinetic energy as the remote's power source.",
+            "type": "decisions",
+            "status": "adopted",
+            "prior_context_needed": false,
+            "related_items": [],
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.C.dialog-act.dharshi.83"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.C.dialog-act.dharshi.84"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.A.dialog-act.dharshi.44"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.C.dialog-act.dharshi.86"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.C.dialog-act.dharshi.87"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.D.dialog-act.dharshi.86"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.D.dialog-act.dharshi.89"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.D.dialog-act.dharshi.90"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.A.dialog-act.dharshi.81"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.D.dialog-act.dharshi.110"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.D.dialog-act.dharshi.365"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.A.dialog-act.dharshi.336"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.C.dialog-act.dharshi.373"
+              }
+            ]
+          },
+          {
+            "id": "TS3006c.dharshi.s.11",
+            "text": "Use an advanced chip on print to support the LCD and audio functions.",
+            "type": "decisions",
+            "status": "adopted",
+            "prior_context_needed": false,
+            "related_items": [],
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.C.dialog-act.dharshi.100"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.D.dialog-act.dharshi.106"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.C.dialog-act.dharshi.101"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.A.dialog-act.dharshi.86"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.C.dialog-act.dharshi.102"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.D.dialog-act.dharshi.108"
+              }
+            ]
+          },
+          {
+            "id": "TS3006c.manual.s.1",
+            "text": "Abandon the flip-up screen in favor of a recessed exposed display protected by a surrounding rubber layer, to reduce breakage during dropping/shaking.",
+            "type": "decisions",
+            "status": "adopted",
+            "prior_context_needed": false,
+            "related_items": [],
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.D.dialog-act.dharshi.348"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.C.dialog-act.dharshi.361"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.B.dialog-act.dharshi.238"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.A.dialog-act.dharshi.332"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.A.dialog-act.dharshi.333"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.D.dialog-act.dharshi.360"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.D.dialog-act.dharshi.361"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.D.dialog-act.dharshi.362"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.D.dialog-act.dharshi.363"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.A.dialog-act.dharshi.335"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.D.dialog-act.dharshi.364"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.C.dialog-act.dharshi.369"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.B.dialog-act.dharshi.257"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.B.dialog-act.dharshi.258"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.D.dialog-act.dharshi.365"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.A.dialog-act.dharshi.336"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.C.dialog-act.dharshi.371"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.A.dialog-act.dharshi.338"
+              }
+            ]
+          },
+          {
+            "id": "TS3006c.manual.s.2",
+            "text": "Map speech commands to existing functions, covering both basic controls and advanced menu options.",
+            "type": "decisions",
+            "status": "adopted",
+            "prior_context_needed": true,
+            "related_items": [
+              {
+                "id": "TS3006b.dharshi.s.14",
+                "relation": "updates"
+              }
+            ],
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.B.dialog-act.dharshi.31"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.B.dialog-act.dharshi.32"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.A.dialog-act.dharshi.53"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.A.dialog-act.dharshi.58"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.B.dialog-act.dharshi.39"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.B.dialog-act.dharshi.41"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.A.dialog-act.dharshi.60"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.B.dialog-act.dharshi.43"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.A.dialog-act.dharshi.61"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006b.json",
+                "locator": "TS3006b.C.dialog-act.dharshi.56"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006b.json",
+                "locator": "TS3006b.D.dialog-act.dharshi.128"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006b.json",
+                "locator": "TS3006b.A.dialog-act.dharshi.79"
+              }
+            ]
+          }
+        ]
+      },
+      "problems": {
+        "system": [
+          {
+            "id": "TS3006c.sys.s.2",
+            "text": "MTD021PM will save this board.",
+            "type": "problems",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.B.dialog-act.dharshi.36"
+              }
+            ],
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": []
+          },
+          {
+            "id": "TS3006c.sys.s.4",
+            "text": "Interface options are incomplete; not all options are available yet.",
+            "type": "problems",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.B.dialog-act.dharshi.84"
+              }
+            ],
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": []
+          }
+        ],
+        "gold": [
+          {
+            "id": "TS3006c.dharshi.s.13",
+            "text": "Participants initially needed the distinction between single- and double-curved cases explained; the industrial designer illustrated curvature in one versus two dimensions.",
+            "type": "problems",
+            "status": "resolved",
+            "prior_context_needed": false,
+            "related_items": [],
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.D.dialog-act.dharshi.93"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.C.dialog-act.dharshi.94"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.C.dialog-act.dharshi.95"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.C.dialog-act.dharshi.96"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.D.dialog-act.dharshi.96"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.D.dialog-act.dharshi.97"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.C.dialog-act.dharshi.123"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.C.dialog-act.dharshi.124"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.A.dialog-act.dharshi.110"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.A.dialog-act.dharshi.111"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.C.dialog-act.dharshi.126"
+              }
+            ]
+          },
+          {
+            "id": "TS3006c.dharshi.s.15",
+            "text": "Single versus double curvature remained under discussion after the initial choice; the conversation returned to double curvature after considering a broader-market compromise.",
+            "type": "problems",
+            "status": "resolved",
+            "prior_context_needed": false,
+            "related_items": [],
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.A.dialog-act.dharshi.130"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.A.dialog-act.dharshi.132"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.D.dialog-act.dharshi.143"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.A.dialog-act.dharshi.136"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.A.dialog-act.dharshi.137"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.C.dialog-act.dharshi.155"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.C.dialog-act.dharshi.156"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.C.dialog-act.dharshi.157"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.A.dialog-act.dharshi.139"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.A.dialog-act.dharshi.140"
+              }
+            ]
+          },
+          {
+            "id": "TS3006c.dharshi.s.16",
+            "text": "The group struggled with the flip mechanism and colour/contrast choices. It eventually rejected the flip for durability and settled on working colour choices.",
+            "type": "problems",
+            "status": "resolved",
+            "prior_context_needed": false,
+            "related_items": [],
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.C.dialog-act.dharshi.175"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.B.dialog-act.dharshi.124"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.C.dialog-act.dharshi.197"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.C.dialog-act.dharshi.200"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.D.dialog-act.dharshi.241"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.C.dialog-act.dharshi.253"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.B.dialog-act.dharshi.186"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.A.dialog-act.dharshi.255"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.C.dialog-act.dharshi.275"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.D.dialog-act.dharshi.348"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.A.dialog-act.dharshi.332"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.D.dialog-act.dharshi.363"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.B.dialog-act.dharshi.254"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.A.dialog-act.dharshi.335"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.D.dialog-act.dharshi.364"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.C.dialog-act.dharshi.369"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.B.dialog-act.dharshi.257"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.D.dialog-act.dharshi.365"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.C.dialog-act.dharshi.371"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.A.dialog-act.dharshi.338"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "fields": {
+    "status": {
+      "correct": 3,
+      "total": 4,
+      "rate": 0.75
+    },
+    "prior_context_needed": {
+      "correct": 1,
+      "total": 4,
+      "rate": 0.25
+    },
+    "owner_exact": {
+      "correct": 0,
+      "total": 1,
+      "rate": 0.0
+    },
+    "owner_basis": {
+      "correct": 1,
+      "total": 1,
+      "rate": 1.0
+    },
+    "deadline_match": {
+      "correct": 0,
+      "total": 1,
+      "rate": 0.0
+    },
+    "deadline_basis": {
+      "correct": 0,
+      "total": 1,
+      "rate": 0.0
+    }
+  },
+  "raw_alignment": {
+    "actions": {
+      "TS3006c.sys.s.3": "TS3006c.dharshi.s.7"
+    },
+    "decisions": {
+      "TS3006c.sys.s.6": "TS3006c.dharshi.s.10"
+    },
+    "problems": {
+      "TS3006c.sys.s.8": "TS3006c.dharshi.s.14",
+      "TS3006c.sys.s.12": "TS3006c.dharshi.s.12"
+    }
+  },
+  "category_accounting": {
+    "actions": {
+      "raw_system": 3,
+      "raw_gold": 2,
+      "unscored": false,
+      "excluded_gold_ids": [],
+      "excluded_system_ids": []
+    },
+    "decisions": {
+      "raw_system": 5,
+      "raw_gold": 5,
+      "unscored": false,
+      "excluded_gold_ids": [],
+      "excluded_system_ids": []
+    },
+    "problems": {
+      "raw_system": 4,
+      "raw_gold": 5,
+      "unscored": false,
+      "excluded_gold_ids": [],
+      "excluded_system_ids": []
+    }
+  },
+  "vote_caches": {
+    "actions": {
+      "path": "votes\\TS3006c.s2\\actions.json",
+      "votes": 3,
+      "input_sha256": "c3b7ae787b68ab00c8eddc348bda97c6da3b6db07cb09b22247173915b378fa7"
+    },
+    "decisions": {
+      "path": "votes\\TS3006c.s2\\decisions.json",
+      "votes": 3,
+      "input_sha256": "3677308d5d48f47dfbf503ee012827680174ac92c893ba9ed360a9c7b6a10ecb"
+    },
+    "problems": {
+      "path": "votes\\TS3006c.s2\\problems.json",
+      "votes": 3,
+      "input_sha256": "f2c99699fda89f5815de8ef45955a2c8548eb93d9414faca757cc0f400e4e875"
+    }
+  },
+  "runtime_control": {
+    "limits": {
+      "calls": 80,
+      "tokens": 1000000,
+      "request_seconds": 300.0,
+      "meeting_seconds": 1200.0,
+      "inflight": 4,
+      "retries": 2,
+      "backoff": 0.5
+    },
+    "attempted_calls": 0,
+    "charged_tokens": 0,
+    "unknown_usage_tokens": 0,
+    "reserved_tokens": 0,
+    "max_inflight_seen": 0,
+    "failure": null,
+    "attempts": [],
+    "input_bound_method": "utf8_request_bytes_plus_padding",
+    "unknown_usage_policy": "charge_full_reservation"
+  },
+  "judge_usage": {
+    "calls": 0,
+    "in": 0,
+    "out": 0,
+    "stages": {}
+  },
+  "elapsed_seconds": 0.015
+}

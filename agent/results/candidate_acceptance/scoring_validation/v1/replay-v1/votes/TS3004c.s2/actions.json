@@ -1,0 +1,55 @@
+{
+  "identity": {
+    "protocol_digest": "3e12e777261bc6f000043ee97b251767817e36fd701be2468b2a974be3579a96",
+    "judge": {
+      "name": "@30875-fall26-openai/gpt-5-nano",
+      "client": "mta.llm.OpenAIAdapter",
+      "endpoint": "https://api.portkey.ai/v1",
+      "supports_reasoning_effort": true
+    },
+    "type": "actions",
+    "input_sha256": "610b4a9d814735dbcfd7ea465706a417f06fe840c9fe829010194cb38377cf82",
+    "system_texts": [
+      "The PM will supply five different front designs in a box.",
+      "UI will provide UI's design to the group.",
+      "ID will discuss the material options with PM.",
+      "UI will paint prototype drawings on the smart board.",
+      "The UI will follow up on the item discussed after this meeting."
+    ],
+    "gold_texts": [
+      "The User Interface Designer and the Industrial Designer will draw the prototype design on the smartboard at the next meeting.",
+      "The User Interface Designer will look again at where the channel buttons go."
+    ]
+  },
+  "votes": {
+    "610b4a9d814735dbcfd7": [
+      [
+        {
+          "sys": 3,
+          "gold": 0
+        }
+      ],
+      [
+        {
+          "sys": 3,
+          "gold": 0
+        },
+        {
+          "sys": 4,
+          "gold": 1
+        }
+      ],
+      [
+        {
+          "sys": 3,
+          "gold": 0
+        }
+      ]
+    ]
+  },
+  "imported_from": {
+    "path": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\recall_candidate\\41654ab-v2\\replay\\TS3004c\\stable_votes.json",
+    "sha256": "3e69fcf0f1106ddc16575a7e5a6f9f5b2d22b3a112bd10ed2f3cc7b9861cb8e3",
+    "kind": "verified_saved_development_study"
+  }
+}

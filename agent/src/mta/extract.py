@@ -97,13 +97,13 @@ def _lines(acts: list[dict], a: int, b: int) -> list[str]:
 
 
 def _call(llm: LLM, roster_txt: str, note: str, acts: list[dict], a: int, b: int, keep: set[str],
-          retry_empty: bool = False, trace=None, job: dict | None = None) -> list[dict]:
+          retry_empty: bool = False, trace=None, job: dict | None = None, system_prompt=None) -> list[dict]:
     """One extraction call. `retry_empty`: for whole-meeting passes, where zero usable items almost always means a
     bad response (e.g. an empty list or no valid evidence), ask again up to EMPTY_RETRIES times."""
     user = f"Roster:{NL}{roster_txt}{NL}{NL}{note}{NL}{NL}Transcript:{NL}" + NL.join(_lines(acts, a, b))
     out: list[dict] = []
     for attempt in range(1 + (config.EMPTY_RETRIES if retry_empty else 0)):
-        res = llm.forced_tool(EXTRACT_SYSTEM, user, "submit_candidates", CANDIDATE_SCHEMA, effort=config.EFFORT_EXTRACT,
+        res = llm.forced_tool(system_prompt or EXTRACT_SYSTEM, user, "submit_candidates", CANDIDATE_SCHEMA, effort=config.EFFORT_EXTRACT,
                               stage="extract")
         out, rejected, accepted = [], [], []
         for index, it in enumerate(res.get("items") or []):
@@ -150,7 +150,7 @@ def union_actions(samples: list[list[dict]]) -> list[dict]:
 
 
 def extract_candidates(llm: LLM, acts: list[dict], roster: list[dict], single_chunk: bool = False,
-                       cache: Path | None = None, trace=None) -> list[dict]:
+                       cache: Path | None = None, trace=None, system_prompt=None) -> list[dict]:
     """Decisions/problems come from overlapping chunks (they are local); actions from passes over the whole
     meeting (they are global: assignments refer back to the whole discussion), sampled config.ACTION_SAMPLES times
     and united to raise recall. `single_chunk` is the one-shot baseline: one call, all types.
@@ -164,9 +164,10 @@ def extract_candidates(llm: LLM, acts: list[dict], roster: list[dict], single_ch
         saved = json.loads(cache.read_text(encoding="utf-8"))
         if saved.get("version") != 2:  # the old single-key format cannot be split into parts
             saved = {}
-    keys = {"single": _key(EXTRACT_SYSTEM, B0_NOTE, llm.model, ids),
-            "chunk_pass": _key(EXTRACT_SYSTEM, CHUNK_NOTE, llm.model, config.CHUNK, config.OVERLAP, ids),
-            "action_pass": _key(EXTRACT_SYSTEM, ACTION_PASS_NOTE, llm.model, ids)}
+    prompt = system_prompt or EXTRACT_SYSTEM
+    keys = {"single": _key(prompt, B0_NOTE, llm.model, ids),
+            "chunk_pass": _key(prompt, CHUNK_NOTE, llm.model, config.CHUNK, config.OVERLAP, ids),
+            "action_pass": _key(prompt, ACTION_PASS_NOTE, llm.model, ids)}
 
     def cached(part: str):
         p = saved.get(part) or {}
@@ -187,7 +188,8 @@ def extract_candidates(llm: LLM, acts: list[dict], roster: list[dict], single_ch
     with stage_pool(max(1, config.WORKERS), getattr(llm, "control", None)) as pool:
         parts = list(pool.map(lambda ij: _call(
             llm, roster_txt, ij[1][1], acts, ij[1][2], ij[1][3], ij[1][4], retry_empty=ij[1][5], trace=trace,
-            job={"index": ij[0], "part": ij[1][0], "start": ij[1][2], "end": ij[1][3]}), enumerate(jobs)))
+            job={"index": ij[0], "part": ij[1][0], "start": ij[1][2], "end": ij[1][3]},
+            system_prompt=prompt), enumerate(jobs)))
     new = {"single": [], "chunk_pass": [], "action_pass": []}
     for (part, *_), res in zip(jobs, parts):
         if part == "action_pass":
@@ -373,14 +375,15 @@ def restore_actions(items: list[dict], cands: list[dict], trace=None, apply_cap=
     return _cap(items + restored, trace, phase="after_restore") if apply_cap else items + restored
 
 
-def restore_problems(items, cands, trace=None):
-    """Return uncovered source hypotheses to keyed selection, never directly to publication.
+def restore_problems(items, cands, trace=None, use_lineage=True):
+    """Restore original source hypotheses under an explicitly selected review policy.
 
-    Sampled merges can omit an obstacle or attach its wording to unrelated source indexes.
-    Keep its original text and evidence available to the independent selector/P2 instead
-    of manufacturing a new merged statement or treating a minority vote as proof.
+    Development uses source lineage before selector/P2 review. The recall candidate
+    opts out of lineage suppression to reproduce the tested 414 response replay;
+    those outputs remain draft hypotheses under targeted follow-up, not verified facts.
+    Never manufacture a statement or treat restoration/minority votes as proof.
     """
-    covered={n for item in items if item['type']=='problems' for n in item.get('candidate_indexes',[])}
+    covered={n for item in items if item['type']=='problems' for n in item.get('candidate_indexes',[])} if use_lineage else set()
     restored=[]
     for n,candidate in enumerate(cands):
         if candidate['type']!='problems' or n in covered:
@@ -391,7 +394,7 @@ def restore_problems(items, cands, trace=None):
         restored.append({**candidate,'text':_strip_indexes(candidate['text']),
                          'candidate_indexes':[n],'restored_problem':True})
     _audit(trace,'consolidate','restored_problems_for_selection',before=items,restored=restored,
-           policy='source_hypotheses_only_selection_and_p2_required')
+           policy='source_hypotheses_only_selection_and_p2_required' if use_lineage else 'original_hypotheses_exact_duplicate_check')
     return items+restored
 
 

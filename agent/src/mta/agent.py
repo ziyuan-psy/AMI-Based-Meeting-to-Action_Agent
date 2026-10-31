@@ -190,17 +190,32 @@ def run_agent(llm: LLM, store: Store, item: dict, budget: MeetingBudget, trace: 
     return _run_legacy_agent(llm, store, item, budget, trace, item_key)
 
 
-def _run_legacy_agent(llm: LLM, store: Store, item: dict, budget: MeetingBudget, trace: Trace, item_key: str) -> dict | None:
+def _run_legacy_agent(llm: LLM, store: Store, item: dict, budget: MeetingBudget, trace: Trace, item_key: str,
+                      observed_only=False) -> dict | None:
     """Returns the final fields, or None when the agent could not produce a valid finish (caller falls back)."""
     system = AGENT_SYSTEM.replace("{max_calls}", str(config.MAX_CALLS_PER_ITEM))
+    if observed_only:
+        system += ('\nCite only dialogue actually delivered in this conversation or the initial evidence. '
+                   'RESTORED_SOURCE_REVIEW means an original hypothesis was recovered: inspect supporting dialogue '
+                   'and its context before submitting fields/citations. Recovery is not validation. '
+                   'Keep unsupported owner/deadline null with ambiguous/missing basis; never invent a source.\n')
     if not store.allow_prior:
         system += "\nEarlier meetings are NOT available in this run; only the current meeting can be searched.\n"
     tools = tool_defs(store.allow_prior)
     messages = [{"role": "user", "content": item_prompt(store, item)}]
-    seen_ids = set(item["evidence_da_ids"])
+    seen_ids = set(item["evidence_da_ids"][:12] if observed_only else item["evidence_da_ids"])
     cache: dict[str, dict] = {}
     pages_seen: set[int] = set()
     calls = no_progress = invalid = finish_tries = step = 0
+
+    def deliver(data):
+        if observed_only:
+            # Keep complete JSON and account only for rows actually sent to the model.
+            # Import at runtime: p2 also imports the shared agent tool definitions.
+            from .p2 import bounded_result
+            data = bounded_result(data)
+            return data, json.dumps(data, ensure_ascii=False)
+        return data, json.dumps(data)[:6000]
 
     while True:
         force = (calls >= config.MAX_CALLS_PER_ITEM or budget.left() <= 0
@@ -237,7 +252,12 @@ def _run_legacy_agent(llm: LLM, store: Store, item: dict, budget: MeetingBudget,
                  "budget_left": {"item": config.MAX_CALLS_PER_ITEM - calls, "meeting": budget.left()}}
         if name == "finish":
             finish_tries += 1
-            fields, err = check_finish(store, item, args, pages_seen)
+            if observed_only and (not isinstance(args, dict)
+                                  or not isinstance(args.get('evidence_da_ids'), list)
+                                  or any(not isinstance(d, str) or d not in seen_ids for d in args['evidence_da_ids'])):
+                fields, err = None, 'Finish cites dialogue not delivered; retrieve/read the support first.'
+            else:
+                fields, err = check_finish(store, item, args, pages_seen)
             if fields:
                 trace.log(**entry, outcome="finished", related=fields["related_items"])
                 return fields
@@ -264,29 +284,36 @@ def _run_legacy_agent(llm: LLM, store: Store, item: dict, budget: MeetingBudget,
                 key = name + json.dumps(args, sort_keys=True)
                 calls += 1
                 error = None
+                raw_data = None
                 if key in cache:
-                    data, new_info = {"note": "duplicate call; same result as before", **cache[key]}, False
+                    raw_data = {"note": "duplicate call; same result as before", **cache[key]}
+                    data, delivered_text = deliver(raw_data)
+                    new_info = False
                 else:
                     try:
-                        data = _execute(store, name, args)
+                        raw_data = _execute(store, name, args)
+                        data, delivered_text = deliver(raw_data)
                         ids = _ids_in(name, data)
                         new_info = bool(ids - seen_ids)
                         seen_ids |= ids
                         if name in ("search_project_doc", "read_project_doc"):
                             pages_seen |= {r["page"] for r in data["results"]}
-                        cache[key] = data
+                        cache[key] = raw_data
                     except (PermissionError, KeyError, ValueError, TypeError) as e:
                         invalid += 1
                         error = f"{type(e).__name__}: {e}"
                         data, new_info = {"error": str(e)}, False
+                        data, delivered_text = deliver(data)
                 no_progress = 0 if new_info else no_progress + 1
                 if error:
-                    trace.log(**entry, outcome="tool_error", error=error)
+                    trace.log(**entry, outcome="tool_error", error=error,
+                              tool_result=raw_data if raw_data is not None else data, delivered_result=delivered_text)
                 else:
                     trace.log(**entry, outcome="ok", new_info=new_info, n_results=len(data.get("results", [])),
-                              observation_ids=sorted(_ids_in(name, data))[:12])
+                              observation_ids=sorted(_ids_in(name, data))[:12],
+                              tool_result=raw_data if raw_data is not None else data, delivered_result=delivered_text)
                 results.append({"type": "tool_result", "tool_use_id": tu["id"],
-                                "content": json.dumps(data)[:6000], "is_error": "error" in data})
+                                "content": delivered_text, "is_error": "error" in data})
         messages.append({"role": "user", "content": results})
 
 

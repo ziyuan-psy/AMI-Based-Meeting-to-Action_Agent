@@ -7,7 +7,7 @@ import time
 from pathlib import Path
 
 from . import config
-from .agent import MeetingBudget, build_reference, run_agent
+from .agent import MeetingBudget, build_reference, run_agent, _run_legacy_agent
 from .control import Limits, RunControl, RunStopped, launch, stage_pool
 from .extract import _strip_indexes, consolidate, extract_candidates, normalize
 from .item_selection import select_items,ranked_cap
@@ -20,6 +20,7 @@ from .transcript_parser import TranscriptParseError, parse_transcript_file
 from .trace import Trace
 from .triage import flag_items
 from .validate import check, repair
+from .quality import effective as quality_policy, DEVELOPMENT
 
 MODES = ("b0", "s1", "s2")
 ABSTRACT_SCHEMA = {"type": "object", "properties": {"abstracts": {"type": "array", "items": {
@@ -87,9 +88,12 @@ def attach_abstract_refs(drafts: list[dict], items: list[dict]) -> list[dict]:
     return out
 
 
-def _safe_agent(llm: LLM, store: Store, item: dict, budget: MeetingBudget, trace: Trace, key: str, progress=None) -> dict | None:
+def _safe_agent(llm: LLM, store: Store, item: dict, budget: MeetingBudget, trace: Trace, key: str, progress=None,
+                candidate=False) -> dict | None:
     """Keep model/control failures terminal; only explicit policy outcomes may remain pending."""
     try:
+        if candidate:
+            return _run_legacy_agent(llm, store, item, budget, trace, key, observed_only=True)
         return run_agent(llm, store, item, budget, trace, key, progress=progress)
     except RunStopped:
         raise
@@ -110,11 +114,18 @@ def run_meeting(txt_path: Path, mode: str, llm: LLM, out_root: Path, cache_dir: 
     """One supervised meeting: shared admission, bounded waits, durable checkpoints and publication."""
     assert mode in MODES
     try:
+        policy = quality_policy(mode)
+    except ValueError:
+        return {"mode": mode, "meeting_id": txt_path.stem, "status": "FAILED", "failed_stage": "configuration",
+                "reason": "invalid_quality_profile", "artifacts_saved": False}
+    try:
         limits = Limits.configured()
     except ValueError:
         return {"mode": mode, "meeting_id": txt_path.stem, "status": "FAILED", "failed_stage": "configuration",
                 "reason": "invalid_limits", "artifacts_saved": False}
     effective_cache = cache_dir or config.RUNS / "_cache"
+    if policy['name'] != DEVELOPMENT:
+        effective_cache = effective_cache / policy['name']
     try:
         observation = RunObservation(txt_path, mode, llm, out_root, effective_cache)
     except Exception as error:
@@ -183,14 +194,17 @@ def saved_run_complete(record_path: Path) -> bool:
     try:
         metadata = json.loads(record_path.with_suffix(".run.json").read_text(encoding="utf-8"))
         report = record_path.with_name(f"{record_path.stem}_report.md")
-        enabled = config.P2_ENABLED and metadata["mode"] != "b0"
+        policy = quality_policy(metadata['mode'])
+        if metadata.get('quality_policy') != policy:
+            return False
+        enabled = policy['p2_enabled']
         result = metadata["result"]
         return (metadata["status"] == "COMPLETED" and result.get("output_sha256") == sha256(record_path)
                 and result.get("report_sha256") == sha256(report) and result.get("p2_enabled", False) == enabled
                 and (not enabled or metadata["mode"] != "s2" or metadata["config"].get("LINK_POLICY_VERSION", 0) == config.LINK_POLICY_VERSION)
                 and (not enabled or metadata["config"].get("DOCUMENT_POLICY_VERSION", 0) == config.DOCUMENT_POLICY_VERSION)
                 and (not enabled or metadata['config'].get('P2_PROTOCOL_VERSION',0) == config.P2_PROTOCOL_VERSION)
-                and (metadata['mode'] == 'b0' or all(metadata['config'].get(k) == getattr(config,k)
+                and (policy['candidate'] or metadata['mode'] == 'b0' or all(metadata['config'].get(k) == getattr(config,k)
                      for k in ('ITEM_SELECTION_ENABLED','ITEM_POLICY_VERSION')))
                 and (not enabled or metadata.get("context_sha256", {}).get(config.SCENARIO.name) == sha256(config.SCENARIO))
                 and (not enabled or all(metadata["config"].get(k) == getattr(config, k)
@@ -224,6 +238,9 @@ def _run_meeting(txt_path: Path, mode: str, llm: LLM, out_root: Path, cache_dir:
     with control.guard():
         observation.trace.context["meeting_id"] = meeting_id
     stages = observation.trace
+    policy = observation.data['quality_policy']
+    result.update(quality_profile=policy['name'], quality_policy=policy)
+    stages.log(stage='run', event='quality_policy', policy=policy)
     stages.log(stage="parse", event="completed", dialogue_acts=len(acts))
     series, order = split_meeting_id(meeting_id)
     result["meeting_id"] = meeting_id
@@ -233,6 +250,18 @@ def _run_meeting(txt_path: Path, mode: str, llm: LLM, out_root: Path, cache_dir:
     # N1b: participants
     observation.enter("participants")
     store = Store(meeting_id, allow_prior=(mode == "s2"), run_dir=out_dir)
+    if mode == 's2':
+        for prior_id in store.visible_ids('prior'):
+            prior_path = out_dir / (prior_id + '.json')
+            if not prior_path.exists():
+                continue
+            meta_path = prior_path.with_suffix('.run.json')
+            prior_meta = json.loads(meta_path.read_text(encoding='utf-8')) if meta_path.exists() else {}
+            recorded_policy = prior_meta.get('quality_policy')
+            if ((policy['candidate'] or recorded_policy is not None)
+                    and (recorded_policy != policy or not saved_run_complete(prior_path))):
+                return {**result, 'status': 'BLOCKED', 'reason': 'prior_quality_profile_mismatch',
+                        'failed_stage': 'participants', 'prior_meeting': prior_id}
     prior_context = [
         {"meeting_id": mid,
          "transcript_sha256": sha256(config.TRANSCRIPTS / f"{mid}.txt")
@@ -251,7 +280,10 @@ def _run_meeting(txt_path: Path, mode: str, llm: LLM, out_root: Path, cache_dir:
     # N2/N3: extract and normalise
     observation.enter("extract")
     t = time.time()
-    cands = extract_candidates(llm, cur.acts, store.roster(meeting_id), single_chunk=(mode == "b0"),
+    if policy['candidate']:
+        from . import recall_candidate
+    extract_step = recall_candidate.extract_candidates if policy['candidate'] else extract_candidates
+    cands = extract_step(llm, cur.acts, store.roster(meeting_id), single_chunk=(mode == "b0"),
                                cache=cache_dir / f"extract_{mode == 'b0'}_{meeting_id}.json", trace=stages)
     seconds["extract"] = round(time.time() - t, 1)
     observation.checkpoint("extracted", cands)
@@ -259,19 +291,25 @@ def _run_meeting(txt_path: Path, mode: str, llm: LLM, out_root: Path, cache_dir:
         observation.enter("consolidate")
         t = time.time()
         try:
-            cands = consolidate(llm, cands, cache_dir / f"consolidate_{meeting_id}.json", trace=stages,
-                                enable_decision_pass=config.DECISION_RECONSOLIDATE)
+            if policy['candidate']:
+                cands = recall_candidate.consolidate(llm, cands, cache_dir / f"consolidate_{meeting_id}.json", trace=stages)
+            else:
+                cands = consolidate(llm, cands, cache_dir / f"consolidate_{meeting_id}.json", trace=stages,
+                                    enable_decision_pass=policy['decision_second_pass'])
         except RuntimeError as e:
             return {**result, "status": "BLOCKED", "reason": "consolidation_failed", "failed_stage": "consolidate"}
         seconds["consolidate"] = round(time.time() - t, 1)
         observation.checkpoint("consolidated", cands)
-        if config.ITEM_SELECTION_ENABLED:
+        if policy['selection_enabled']:
             observation.enter("select")
             t = time.time()
             cands = select_items(llm, cands, cur.acts, cache=cache_dir / f"select_{meeting_id}.json", trace=stages,
                                  defer_action_limit=config.P2_ENABLED)
             seconds["select"] = round(time.time() - t, 1)
             observation.checkpoint("selected", cands)
+        else:
+            stages.log(stage='select', event='skipped', reason='quality_profile',
+                       quality_profile=policy['name'], items=cands)
     observation.enter("normalize")
     items = normalize(cands, store.participant_ids())
     stages.log(stage="normalize", event="completed", items=items)
@@ -284,11 +322,15 @@ def _run_meeting(txt_path: Path, mode: str, llm: LLM, out_root: Path, cache_dir:
             it["flags"] = []
     else:
         flag_items(items, store)
+        if policy['candidate']:
+            for item in items:
+                if item.get('restored') or item.get('restored_problem'):
+                    item['flags'].append('RESTORED_SOURCE_REVIEW')
     stages.log(stage="triage", event="completed", items=items)
     observation.checkpoint("triaged", items)
 
     # N5: P2 checks every non-baseline item; the legacy ablation keeps flag-only follow-up.
-    p2_enabled = config.P2_ENABLED and mode != "b0"
+    p2_enabled = policy['p2_enabled']
     budget = MeetingBudget()
     flagged = [n for n, it in enumerate(items) if it["flags"]]
     selected = list(range(len(items))) if p2_enabled else flagged
@@ -308,7 +350,10 @@ def _run_meeting(txt_path: Path, mode: str, llm: LLM, out_root: Path, cache_dir:
         # Attempts, including transport retries, still pass through the original controller.
         item_llm = llm.parent.scoped(admission.view(n)) if admission else llm
         try:
-            fields = _safe_agent(item_llm, store, items[n], budget, trace, f"{meeting_id}#{n}", progress)
+            if policy['candidate']:
+                fields = _safe_agent(item_llm, store, items[n], budget, trace, f"{meeting_id}#{n}", progress, candidate=True)
+            else:
+                fields = _safe_agent(item_llm, store, items[n], budget, trace, f"{meeting_id}#{n}", progress)
         finally:
             if admission:
                 admission.done(n)
@@ -343,7 +388,7 @@ def _run_meeting(txt_path: Path, mode: str, llm: LLM, out_root: Path, cache_dir:
         retained.append(it)
     items = retained
     omitted=[]
-    if p2_enabled and config.ITEM_SELECTION_ENABLED:
+    if p2_enabled and policy['selection_enabled']:
         # A bounded 2x Action review pool lets owner/core checks happen before the final 5-item cap.
         # Preserve valid omitted outcomes separately; never relabel them as failed evidence checks.
         observation.checkpoint('verified_before_cap',items)
@@ -405,6 +450,8 @@ def _run_meeting(txt_path: Path, mode: str, llm: LLM, out_root: Path, cache_dir:
                   "p2 pending": sum(o["state"] == "pending" for o in p2_items),
                   "quarantined": sum(not o['recordable'] for o in p2_items) if p2_enabled else len(original_items)-len(items),
                   "verified omitted by limit":len(omitted),"clarification requests": len(requests)})
+    if policy['candidate']:
+        notes['review coverage'] = 'Targeted follow-up only; full evidence/conflict checks were not run.'
     report = render_report(record, store, mode, notes, p2_payload)
     observation.checkpoint("report", {"markdown": report})
     # Per-stage cost (calls / tokens) and wall time; cache hits cost nothing and do not appear in `stages`.

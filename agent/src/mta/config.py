@@ -26,6 +26,10 @@ def _load_dotenv() -> None:
 
 _load_dotenv()
 
+# Keep the research workflow available; select the nominated candidate explicitly
+# with --quality-profile recall_candidate_v1 or MTA_QUALITY_PROFILE.
+QUALITY_PROFILE = os.environ.get("MTA_QUALITY_PROFILE", "development")
+
 MODEL = os.environ.get("MTA_MODEL", "claude-sonnet-5-5")  # Anthropic path
 
 # OpenAI-compatible path (Portkey gateway); used when OPENAI_API_KEY is set.

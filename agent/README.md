@@ -7,6 +7,12 @@ Method (English): `docs/METHOD_EN.md`. Handoff, run commands and the tuning/test
 Earlier design notes (Chinese): `ARCHITECTURE_V4.md`, `ARCHITECTURE_GUIDE.md`.
 Item retention, atomic Decision selection and bounded P2 revision: [`docs/ITEM_QUALITY_REPAIR.md`](docs/ITEM_QUALITY_REPAIR.md).
 
+Next candidate: [`docs/RECALL_CANDIDATE.md`](docs/RECALL_CANDIDATE.md). Select
+`--quality-profile recall_candidate_v1` for 414 content prompts, stable order and
+Action/Issue recovery with targeted follow-up. The `development` profile retains
+the current selector and full P2 checks. The candidate's 0.464 is a fixed-response
+replay result; it has not yet been validated by a fresh full online run.
+
 ## Setup (once)
 ```
 py -V:Astral/CPython3.13.7 -m venv .venv

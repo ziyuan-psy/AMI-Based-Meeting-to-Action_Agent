@@ -20,6 +20,7 @@ from .trace import StageTrace, Trace
 
 REPOSITORY = Path(__file__).resolve().parents[3]
 SETTINGS = (
+    "QUALITY_PROFILE",
     "CHUNK", "OVERLAP", "WORKERS", "EMPTY_RETRIES", "ACTION_SAMPLES", "CONSOLIDATE_SAMPLES", "MAX_ITEMS", "DECISION_RECONSOLIDATE",
     "EFFORT_EXTRACT", "EFFORT_CONSOLIDATE", "EFFORT_AGENT", "EFFORT_LINK", "EFFORT_ABSTRACT", "PRIOR_JACCARD",
     "MAX_CALLS_PER_ITEM", "MAX_CALLS_PER_MEETING", "MAX_INVALID_ACTIONS", "MAX_NO_PROGRESS",
@@ -103,12 +104,18 @@ def code_identity() -> dict:
             "source_sha256": hashes, "source_digest": digest(hashes)}
 
 
-def runtime_identity(llm) -> dict:
+def runtime_identity(llm, mode=None) -> dict:
     from . import extract, prompts
+    from .quality import effective
+    policy = effective(mode)
     settings = {name: getattr(config, name) for name in SETTINGS}
     texts = {name: getattr(prompts, name) for name in
              ("EXTRACT_SYSTEM", "CONSOLIDATE_SYSTEM", "DECISION_CONSOLIDATE_SYSTEM", "AGENT_SYSTEM", "P2_SYSTEM", "ABSTRACT_SYSTEM")}
     texts.update({name: getattr(extract, name) for name in ("ACTION_PASS_NOTE", "CHUNK_NOTE", "B0_NOTE")})
+    if policy['candidate']:
+        from . import baseline_prompts
+        texts.update(EXTRACT_SYSTEM=baseline_prompts.EXTRACT_SYSTEM,
+                     CONSOLIDATE_SYSTEM=baseline_prompts.CONSOLIDATE_SYSTEM)
     packages = {}
     for name in ("openai", "anthropic", "jsonschema"):
         try:
@@ -124,7 +131,7 @@ def runtime_identity(llm) -> dict:
             host += f":{parsed.port}"
         endpoint = urlunsplit((parsed.scheme, host, parsed.path, "", ""))
     client = llm.client
-    return {"code": code_identity(),
+    return {"code": code_identity(), "quality_policy": policy,
             "model": {"name": llm.model, "client": f"{type(client).__module__}.{type(client).__name__}",
                       "endpoint": endpoint, "supports_reasoning_effort": llm.supports_effort},
             "config": settings, "config_digest": digest(settings),
@@ -154,7 +161,7 @@ class RunObservation:
         self.trace = StageTrace(self.stage_path, run_id=run_id)
         self.agent_trace = Trace(self.agent_path)
         self.data = {"format_version": 3, "run_id": run_id, "meeting_id": txt_path.stem, "mode": mode,
-                     "status": "RUNNING", "started_at": utc_now(), **runtime_identity(llm),
+                     "status": "RUNNING", "started_at": utc_now(), **runtime_identity(llm, mode),
                      "input": {"path": str(txt_path.resolve()),
                                "sha256": sha256(txt_path) if txt_path.is_file() else None},
                      "context_sha256": {p.name: sha256(p) for p in

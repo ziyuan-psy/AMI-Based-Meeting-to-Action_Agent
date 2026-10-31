@@ -36,6 +36,11 @@ Do not treat introductions, icebreakers, drawing exercises or presentation order
 Problems must be actual project/team obstacles, including technical failures that materially disrupted
 the meeting. A passing question, routine uncertainty or exercise difficulty alone is insufficient.
 Do not erase a genuine problem merely because it was later resolved. Do not invent facts or dates.
+For a Problem, describe the obstacle and its evidenced impact rather than inventing a task to fix it.
+An explicitly raised missing requirement/cost, feasibility constraint or coordination failure needs no
+assigned owner, deadline or agreed solution. Retain distinct causes; sharing a component or adjacent dialogue
+does not make two obstacles duplicates. Assess restored source hypotheses against their supplied dialogue;
+restoration is not a finding of truth or a reason to keep unsupported material.
 Code binds each keyed review to that source's supplied dialogue. A candidate is a hypothesis, not proof.
 Retain its core actor/task, conditions, polarity and epistemic status. Reword faithful facts, but
 never infer a new assignment, upgrade a proposal to adoption, or add an unsupported timing restriction.

@@ -122,7 +122,9 @@ def document_context_tool(item_type):
 
 def core_tool(allow_prior,item_type,require_conflict=True):
     base=compact_tool(allow_prior,item_type)['input_schema']['properties']
-    return {'name':'assess_core','description':'Recheck the exact core task/choice/problem and actual contradictions, separately from auxiliary missing fields. Do not require a deadline or ceremonial promise for an assignment.',
+    description=('Recheck whether delivered dialogue supports this exact obstacle/risk/information gap and its impact. A Problem needs no assignment, deadline, decision or remedy. Uncertainty can be the supported fact; do not pass invented impacts or ordinary questions.'
+                 if item_type=='problems' else 'Recheck the exact core task/choice/problem and actual contradictions, separately from auxiliary missing fields. Do not require a deadline or ceremonial promise for an assignment.')
+    return {'name':'assess_core','description':description,
         'input_schema':{'type':'object','properties':{k:copy.deepcopy(base[k]) for k in ('statement','conflict_check','next_action')},
                         'required':['statement']+(['conflict_check'] if require_conflict else []),'additionalProperties':False}}
 
@@ -400,6 +402,7 @@ def run_p2_agent(llm, store, item, budget, trace, item_key, progress=None):
     revision_attempted = False
     core_reassessed = False
     core_focus = False
+    core_review_context = None
     relation_reassessed = False
     deadline_reassessed = False
     deadline_focus = False
@@ -426,6 +429,8 @@ def run_p2_agent(llm, store, item, budget, trace, item_key, progress=None):
                "current_meeting": store.current, "earlier_meetings": store.visible_ids("prior"),
                "roster": store.roster(store.current), "observed_dialogue": list(observed.values())}
     initial["peer_items"] = item.get("peer_items", [])
+    if item['type']=='problems':
+        initial['item_type_contract']='This is a Problem, not a task or decision. Verify that the stated obstacle/concern and its impact were actually raised. It need not have an owner, deadline, accepted remedy or resolution. A supported information gap can remain open. Assess end status separately; uncertainty about a cause or remedy is not absence of evidence that the concern exists. Do not infer project-document content or cite a passage that was not delivered.'
     if not legacy_input:
         initial['provisional_values'] = {k:v for k,v in initial.pop('fields').items()
                                          if k not in ('evidence_da_ids','prior_context_needed','used_participant_lookup')}
@@ -474,7 +479,7 @@ def run_p2_agent(llm, store, item, budget, trace, item_key, progress=None):
 
     def offer_core_recheck(step):
         """One semantic review before either assessment or a terminal tool discards a read core."""
-        nonlocal core_reassessed,core_focus,phase
+        nonlocal core_reassessed,core_focus,phase,core_review_context
         provenance_errors=('unobserved_','finish_cites_','current_meeting_support_required','invalid_proposed_fields:',
                            'document_','requested_document_','unanchored_time_literal:')
         core_findings=[checks[k] for k in ('statement','conflict') if checks[k]['result'] not in ('pass','not_applicable')]
@@ -485,6 +490,11 @@ def run_p2_agent(llm, store, item, budget, trace, item_key, progress=None):
             return None
         core_reassessed,core_focus,phase=True,True,'check'
         record(step,'core_recheck_offered','focused_review',reason='semantic_core_uncertainty_with_read_evidence')
+        if item['type']=='problems':
+            instruction='Independently check whether the exact stated obstacle, risk, disagreement or information gap and its impact are supported by delivered dialogue. A Problem does not require a task, owner, deadline, commitment, agreed remedy or final decision. A concern can be supported while its cause, severity or resolution remains uncertain. Ordinary exploration, invented impacts, unresolved contradictions and unread sources still cannot pass. Select actual delivered current dialogue IDs, or leave pending. Only statement and advertised conflict_check can change; status and historical findings remain as checked.'
+            core_review_context={'current_meeting':store.current,'current_item':{'type':item['type'],'text':item['text']},
+                'roster':initial['roster'],'observed_dialogue':list(observed.values()),'instruction':instruction}
+            return {'current_item_text':item['text'],'checks':checks,'core_recheck_instruction':instruction}
         return {'current_item_text':item['text'],'checks':checks,
             'core_recheck_instruction':'One focused recheck is available before leaving pending. Assess the exact core claim and actual contradictory evidence. A manager naming a role and task, especially with that role acknowledging, can establish an assignment without a deadline or a ceremonial I promise. Missing auxiliary fields and limited global coverage are not themselves contradictions. Pass conflict only within delivered evidence when no contradiction is found. A suggestion/capability alone is not a commitment. Select only delivered evidence, or stop/clarify pending. No new source access is granted.'}
 
@@ -517,6 +527,11 @@ def run_p2_agent(llm, store, item, budget, trace, item_key, progress=None):
 
     save()
     for step in range(1, config.MAX_AGENT_STEPS + 1):
+        if core_focus and core_review_context is not None:
+            messages=[{'role':'user','content':json.dumps(core_review_context,ensure_ascii=False)}]
+            record(step,'problem_core_review_context','delivered',
+                   evidence_da_ids=[r['da_id'] for r in core_review_context['observed_dialogue']])
+            core_review_context=None
         if deadline_focus and deadline_review_context is not None:
             # An independent, bounded field review avoids anchoring on the previous missing-value
             # verdict. Every supplied line was already delivered; retain the full audit history.
@@ -610,7 +625,7 @@ def run_p2_agent(llm, store, item, budget, trace, item_key, progress=None):
                 if name.startswith('assess_') and 'next_action' in args and (args['next_action'] is None or isinstance(args['next_action'],str) and not args['next_action'].strip()):
                     args.pop('next_action');normalizations.append('empty_optional_action_hint')
                 if name=='assess_item' and 'statement' in args:
-                    args,metadata_changes=complete_inactive_metadata(args,no_prior_scope=not allow_prior)
+                    args,metadata_changes=complete_inactive_metadata(args,no_prior_scope=not allow_prior,item_type=item['type'])
                     normalizations.extend(metadata_changes)
                 if name in ('assess_item','assess_core') and 'confidence' in args:
                     args.pop('confidence')

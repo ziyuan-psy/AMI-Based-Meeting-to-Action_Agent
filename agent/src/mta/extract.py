@@ -373,6 +373,28 @@ def restore_actions(items: list[dict], cands: list[dict], trace=None, apply_cap=
     return _cap(items + restored, trace, phase="after_restore") if apply_cap else items + restored
 
 
+def restore_problems(items, cands, trace=None):
+    """Return uncovered source hypotheses to keyed selection, never directly to publication.
+
+    Sampled merges can omit an obstacle or attach its wording to unrelated source indexes.
+    Keep its original text and evidence available to the independent selector/P2 instead
+    of manufacturing a new merged statement or treating a minority vote as proof.
+    """
+    covered={n for item in items if item['type']=='problems' for n in item.get('candidate_indexes',[])}
+    restored=[]
+    for n,candidate in enumerate(cands):
+        if candidate['type']!='problems' or n in covered:
+            continue
+        if any(item['type']=='problems' and item['text']==candidate['text']
+               and set(item['evidence_da_ids'])==set(candidate['evidence_da_ids']) for item in items):
+            continue
+        restored.append({**candidate,'text':_strip_indexes(candidate['text']),
+                         'candidate_indexes':[n],'restored_problem':True})
+    _audit(trace,'consolidate','restored_problems_for_selection',before=items,restored=restored,
+           policy='source_hypotheses_only_selection_and_p2_required')
+    return items+restored
+
+
 def consolidate(llm: LLM, cands: list[dict], cache: Path | None = None, trace=None,
                 decision_pass=False, enable_decision_pass=False) -> list[dict]:
     """One pass over all chunk candidates: select substantive items and merge duplicates.
@@ -468,6 +490,8 @@ def consolidate(llm: LLM, cands: list[dict], cache: Path | None = None, trace=No
         out = [i for i in out if i["type"] != "decisions"] + decisions
         _audit(trace, "decision_consolidate", "replaced", before=before, items=decisions)
         out = restore_actions(out, cands, trace, apply_cap=not config.ITEM_SELECTION_ENABLED)
+    if not decision_pass and config.ITEM_SELECTION_ENABLED and config.P2_ENABLED:
+        out = restore_problems(out, cands, trace)
     _audit(trace, "consolidate", "completed", items=out)
     return out
 

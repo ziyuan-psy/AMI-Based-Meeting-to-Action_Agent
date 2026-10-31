@@ -99,6 +99,10 @@ WHAT TO LIST (be selective; precision matters as much as recall)
   missing information, instructions that came too late, disputes about who does what). NOT problems: remarks
   about the transcript itself (markers like <gap> or <vocalsound>, readability), the language of the session,
   or minor remarks about how the session runs. status: resolved if it was settled in the meeting, else open.
+  Include an explicitly raised design/cost constraint, feasibility risk or missing requirement that obstructs
+  design or evaluation. Describe the obstacle and its impact, not an invented instruction to fix it. A problem
+  needs no assigned owner, deadline, agreed remedy or final decision. Ordinary exploration without a raised
+  concern is insufficient; retain uncertainty and do not turn every unanswered question into an obstacle.
 A typical meeting record has about 1-5 actions, 2-9 decisions and 0-5 problems. If a chunk has nothing that fits,
 return an empty list. If a chunk repeats an item from the overlap region, listing it again is fine."""
 
@@ -128,6 +132,10 @@ TYPE: decide the type from what the item is, not from the candidate's label.
 - problems: an obstacle or concern the participants treated as a problem for the project or team work
   (including equipment trouble that held up the work). An open question that simply has not been decided yet is
   not a problem unless the participants raised it as a concern.
+  Keep distinct causes separate, even when they concern the same component. Describe what went wrong or remains
+  uncertain, preserving its impact and whether it was resolved; do not rewrite a problem as a task to address it.
+  Missing cost/requirement information and late instructions can be substantive obstacles without an owner,
+  deadline or remedy. Do not discard a real obstacle just because a later part of the meeting settled it.
 
 DROP (these are not in a project record):
 - in-meeting procedure: agenda, order of presentations, who speaks next, time keeping, saving or sending a file
@@ -219,6 +227,10 @@ CHECKS
 - statement: does the dialogue support this exact substantive action/decision/problem, including its scope?
   For Decisions, reject agenda, generic procedure and unaccepted brainstorming. peer_items lists earlier items
   in this run: flag a true duplicate of the same choice, preserving genuinely different scope or constraints.
+  For Problems, verify that the participants actually raised the stated obstacle, risk, disagreement or
+  information gap and its stated impact. The uncertainty can itself be the supported fact. Do NOT require
+  a task, commitment, owner, deadline, agreed remedy, final decision or proof that the concern was resolved.
+  Conversely, an ordinary question, speculative difficulty or invented impact is not a supported problem.
 - owner/deadline: does current dialogue support the claimed person and original deadline wording? An announcer
   is not necessarily the owner. Missing or ambiguous values are uncertain and should be left null. These checks
   are not_applicable only for non-actions.
@@ -236,6 +248,9 @@ CHECKS
 - status: is the proposed end-of-current-meeting status supported, preserving conditions and uncertainty?
 - Determine status from the dialogue and its conditions; a follow-up commitment can be open without a separate
   later announcement saying "open". Never invent completion/adoption when it is not supported.
+  A Problem is open when the evidence establishes the concern and does not settle it; resolved needs evidence
+  of a remedy or resolution. Keep the existence of the concern separate from uncertainty about its cause,
+  severity or final status. If status cannot be settled, leave status unknown, not the supported statement.
 - conflict: pass only when there is no unresolved contradiction in the available evidence; otherwise identify
   affected fields (statement, owner, deadline, status, related_items) and cite the conflicting lines.
   Missing information is uncertainty in the relevant field, not automatically a contradiction of the statement.

@@ -107,6 +107,10 @@ def compact_tool(allow_prior, item_type, require_relation=False):
         if check == 'relation':
             finding['properties']['links'] = {'type':'array','items':copy.deepcopy(LINK_SCHEMA)}
         properties[key] = finding
+        if item_type=='problems' and check=='statement':
+            finding['description']='Verify the stated obstacle/risk/information gap and its impact in delivered dialogue. Evidence that a concern exists is enough; do not require a task, owner, deadline, final decision or remedy. Ordinary unanswered questions and invented impacts remain unsupported.'
+        if item_type=='problems' and check=='status':
+            finding['description']='An evidenced unresolved concern can be open without a promise or assignment. Resolved requires resolution evidence. Uncertain end status must not invalidate an independently supported problem statement.'
         # Missing inactive history is completed from code-known scope before validation. A model
         # that selects related_items must still submit a finding; otherwise bind_evidence would
         # index a missing relation and abort the meeting rather than reject the invalid proposal.
@@ -132,12 +136,20 @@ def canonical_assessment(payload, item_type):
     return {'fields':values,'checks':checks,**({'next_action':payload['next_action']} if 'next_action' in payload else {})}
 
 
-def complete_inactive_metadata(payload,no_prior_scope=False):
+def complete_inactive_metadata(payload,no_prior_scope=False,item_type=None):
     """Repair only scope-known inactive checks and omitted evidence on non-affirmative findings.
 
     Never supply a positive result, a supporting ID, or a missing positive explanation.
     """
     payload=copy.deepcopy(payload);changes=[]
+    if item_type in ('decisions','problems'):
+        for field in ('owner','deadline'):
+            # Only neutral wire redundancy is inactive. Nonempty unsupported claims
+            # remain schema errors; no finding or evidence selection is invented.
+            if payload.get(field) is None and payload.get(field+'_basis') in (None,'missing'):
+                for key in (field,field+'_basis'):
+                    if key in payload:
+                        payload.pop(key);changes.append('neutral_nonaction_field:'+key)
     if no_prior_scope and not payload.get('related_items'):
         relation=payload.get('relation_check')
         if relation is None:

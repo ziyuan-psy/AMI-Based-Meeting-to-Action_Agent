@@ -10,8 +10,13 @@ git clone --branch meeting-demo-ui https://github.com/ziyuan-psy/AMI-Based-Meeti
 cd AMI-Based-Meeting-to-Action_Agent
 ```
 
-Already cloned? Run `git fetch origin`, then `git switch meeting-demo-ui`.
-If you have local edits, save them before switching branches.
+Already cloned? Save any local edits, then update the UI branch:
+
+```powershell
+git fetch origin
+git switch meeting-demo-ui
+git pull --ff-only origin meeting-demo-ui
+```
 
 ## 2. Launch
 

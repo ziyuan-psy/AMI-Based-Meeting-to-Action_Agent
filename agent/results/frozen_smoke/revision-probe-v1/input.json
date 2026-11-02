@@ -1,0 +1,49 @@
+{
+  "created_at": "2026-10-29T04:59:24.098153+00:00",
+  "commit": "3b886f6c0c1520a1c5bc8628da7198a871c25495",
+  "kind": "CONTROLLED_UNSUPPORTED_TIME_SUFFIX_ON_REAL_DIALOGUE",
+  "excluded_from_natural_run_and_evaluation": true,
+  "source_checkpoint": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\frozen_smoke\\fresh-v1\\run\\s2\\_attempts\\IS1008a\\f6923a504973455f8989919e1a366f28\\checkpoints\\consolidated.json",
+  "source_item": {
+    "type": "actions",
+    "text": "MIO086 PM will send copies of slides to attendees at the conclusion of the meeting.",
+    "evidence_da_ids": [
+      "IS1008a.C.dialog-act.s9553330.42",
+      "IS1008a.A.dialog-act.s9553330.130",
+      "IS1008a.B.dialog-act.s9553330.30"
+    ],
+    "owner_ids": [
+      "MIO086"
+    ],
+    "owner_cue": "Yes, I will.",
+    "deadline_cue": "conclusion of our meeting",
+    "owner_basis": "explicit",
+    "deadline": "the conclusion of the meeting",
+    "deadline_basis": "explicit",
+    "status": "open",
+    "restored": true
+  },
+  "injected_item": {
+    "type": "actions",
+    "text": "The project manager will send copies of the slides to attendees by Friday.",
+    "evidence_da_ids": [
+      "IS1008a.C.dialog-act.s9553330.42",
+      "IS1008a.A.dialog-act.s9553330.130",
+      "IS1008a.B.dialog-act.s9553330.30"
+    ],
+    "owner_ids": [
+      "MIO086"
+    ],
+    "owner_cue": "Yes, I will.",
+    "deadline_cue": "conclusion of our meeting",
+    "owner_basis": "explicit",
+    "deadline": "by Friday",
+    "deadline_basis": "explicit",
+    "status": "open",
+    "restored": true,
+    "flags": [],
+    "peer_items": [],
+    "verification_request": "Controlled diagnostic: the deadline is deliberately faulty. Verify all qualifiers against delivered dialogue. Use only the production repair/check protocol or remain pending; an unsupported time must not be accepted."
+  },
+  "scope": "One supplementary P2 run; unchanged production source/model/config/budgets. Agent chooses its tools. No final meeting output is published."
+}

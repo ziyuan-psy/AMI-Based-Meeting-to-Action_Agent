@@ -1,0 +1,665 @@
+{
+  "item_key": "TS3006b#14",
+  "record_id": null,
+  "item_type": "actions",
+  "item_text": "The UI Designer will position the LCD screen on top and separate advanced functions from basic functions.",
+  "state": "pending",
+  "recordable": true,
+  "fields": {
+    "status": "open",
+    "prior_context_needed": false,
+    "related_items": [],
+    "owner": [
+      "MTD023UID"
+    ],
+    "owner_basis": "explicit",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "reference": [
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3006b.json",
+        "locator": "TS3006b.A.dialog-act.dharshi.344"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3006b.json",
+        "locator": "TS3006b.D.dialog-act.dharshi.386"
+      }
+    ]
+  },
+  "draft_fields": {
+    "status": "open",
+    "related_items": [],
+    "owner": [
+      "MTD023UID"
+    ],
+    "owner_basis": "explicit",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "prior_context_needed": false,
+    "used_participant_lookup": false,
+    "evidence_da_ids": [
+      "TS3006b.A.dialog-act.dharshi.344",
+      "TS3006b.D.dialog-act.dharshi.386"
+    ]
+  },
+  "checks": {
+    "statement": {
+      "result": "pass",
+      "reason": "The current dialogue supports the main action: PM stated 'Put it on top' and ME/UI-related follow-ons coordinate to place the LCD screen on top as shown by earlier lines and the follow-up items list includes grouping and LCD menu implementation, which aligns with positioning the LCD screen on top and separating advanced functions from basic. The scope matches the described task and there is explicit tie to top placement in dialogue TS3006b.A.dialog-act.dharshi.344 and ME/PM interactions.",
+      "quotes": [
+        {
+          "da_id": "TS3006b.A.dialog-act.dharshi.344",
+          "quote": "But that's uh J Jurgen's department ."
+        },
+        {
+          "da_id": "TS3006b.D.dialog-act.dharshi.386",
+          "quote": "And <gap> and just put it under the screen , the screen <disfmarker>"
+        }
+      ],
+      "fields": [
+        "statement"
+      ]
+    },
+    "owner": {
+      "result": "pass",
+      "reason": "Owner is explicitly stated as MTD023UID in provisional values.",
+      "quotes": [
+        {
+          "da_id": "TS3006b.A.dialog-act.dharshi.344",
+          "quote": "But that's uh J Jurgen's department ."
+        },
+        {
+          "da_id": "TS3006b.D.dialog-act.dharshi.386",
+          "quote": "And <gap> and just put it under the screen , the screen <disfmarker>"
+        }
+      ],
+      "fields": [
+        "owner"
+      ]
+    },
+    "deadline": {
+      "result": "uncertain",
+      "reason": "deadline_unresolved",
+      "quotes": [
+        {
+          "da_id": "TS3006b.A.dialog-act.dharshi.344",
+          "quote": "But that's uh J Jurgen's department ."
+        }
+      ],
+      "fields": [
+        "deadline"
+      ]
+    },
+    "status": {
+      "result": "pass",
+      "reason": "Status is open as stated in provisional values and no later update in dialogue indicates completion.",
+      "quotes": [
+        {
+          "da_id": "TS3006b.A.dialog-act.dharshi.344",
+          "quote": "But that's uh J Jurgen's department ."
+        }
+      ],
+      "fields": [
+        "status"
+      ]
+    },
+    "conflict": {
+      "result": "pass",
+      "reason": "No contradictions found in observed_dialogue conflicting with the stated action; evidence aligns in lines about placement/top and subsequent grouping tasks.",
+      "quotes": [
+        {
+          "da_id": "TS3006b.A.dialog-act.dharshi.344",
+          "quote": "But that's uh J Jurgen's department ."
+        },
+        {
+          "da_id": "TS3006b.D.dialog-act.dharshi.386",
+          "quote": "And <gap> and just put it under the screen , the screen <disfmarker>"
+        }
+      ],
+      "fields": [
+        "statement",
+        "owner",
+        "deadline",
+        "status"
+      ]
+    },
+    "relation": {
+      "result": "not_applicable",
+      "reason": "No earlier related item in this run to relate to; provided provisional values show no related_items.",
+      "quotes": [],
+      "fields": [
+        "related_items"
+      ]
+    }
+  },
+  "unresolved_fields": [
+    "deadline"
+  ],
+  "observed_evidence_da_ids": [
+    "TS3006b.D.dialog-act.dharshi.386",
+    "TS3006b.A.dialog-act.dharshi.344",
+    "TS3006b.B.dialog-act.dharshi.175",
+    "TS3006b.A.dialog-act.dharshi.339",
+    "TS3006b.B.dialog-act.dharshi.180",
+    "TS3006b.D.dialog-act.dharshi.395"
+  ],
+  "initial_context": {
+    "item": {
+      "type": "actions",
+      "text": "The UI Designer will position the LCD screen on top and separate advanced functions from basic functions.",
+      "flags": []
+    },
+    "current_meeting": "TS3006b",
+    "earlier_meetings": [
+      "TS3006a"
+    ],
+    "roster": [
+      {
+        "speaker": "A",
+        "participant_id": "MTD021PM",
+        "role": "PM"
+      },
+      {
+        "speaker": "B",
+        "participant_id": "MTD023UID",
+        "role": "UI"
+      },
+      {
+        "speaker": "C",
+        "participant_id": "MTD022ID",
+        "role": "ID"
+      },
+      {
+        "speaker": "D",
+        "participant_id": "MTD024ME",
+        "role": "ME"
+      }
+    ],
+    "observed_dialogue": [
+      {
+        "da_id": "TS3006b.D.dialog-act.dharshi.386",
+        "meeting_id": "TS3006b",
+        "text": "And <gap> and just put it under the screen , the screen <disfmarker>",
+        "participant": "MTD024ME",
+        "role": "ME"
+      },
+      {
+        "da_id": "TS3006b.A.dialog-act.dharshi.344",
+        "meeting_id": "TS3006b",
+        "text": "But that's uh J Jurgen's department .",
+        "participant": "MTD021PM",
+        "role": "PM"
+      },
+      {
+        "da_id": "TS3006b.B.dialog-act.dharshi.175",
+        "participant": "MTD023UID",
+        "role": "UI",
+        "text": "Yeah ."
+      },
+      {
+        "da_id": "TS3006b.A.dialog-act.dharshi.339",
+        "participant": "MTD021PM",
+        "role": "PM",
+        "text": "Put it on top ."
+      },
+      {
+        "da_id": "TS3006b.B.dialog-act.dharshi.180",
+        "participant": "MTD023UID",
+        "role": "UI",
+        "text": "F oh yeah . Okay yeah we swap uh <disfmarker> <vocalsound> Okay ."
+      },
+      {
+        "da_id": "TS3006b.D.dialog-act.dharshi.395",
+        "participant": "MTD024ME",
+        "role": "ME",
+        "text": "Yeah ."
+      }
+    ],
+    "peer_items": [
+      {
+        "item_key": "TS3006b#0",
+        "type": "actions",
+        "text": "The User Interface Designer can design a menu for all these functions."
+      },
+      {
+        "item_key": "TS3006b#1",
+        "type": "problems",
+        "text": "The current look-and-feel and usability of remote controls are disliked by users and are hard to learn, with remotes often getting lost in rooms."
+      },
+      {
+        "item_key": "TS3006b#2",
+        "type": "problems",
+        "text": "Open problem: it is unclear what the screen should do or what is required from it."
+      },
+      {
+        "item_key": "TS3006b#3",
+        "type": "problems",
+        "text": "Uncertainty about saving the project file (whether it saves automatically and where)."
+      },
+      {
+        "item_key": "TS3006b#4",
+        "type": "decisions",
+        "text": "The target group will be sixteen to forty."
+      },
+      {
+        "item_key": "TS3006b#5",
+        "type": "decisions",
+        "text": "The basic new requirements of the management were no teletext, only for T_V_."
+      },
+      {
+        "item_key": "TS3006b#6",
+        "type": "decisions",
+        "text": "Teletext and the newsflash feature will not be used in the future."
+      },
+      {
+        "item_key": "TS3006b#7",
+        "type": "decisions",
+        "text": "Keep all classic remote functions and improve button usability and the physical design."
+      },
+      {
+        "item_key": "TS3006b#8",
+        "type": "decisions",
+        "text": "The product must include corporate identity with the logo present and colours consistent."
+      },
+      {
+        "item_key": "TS3006b#9",
+        "type": "actions",
+        "text": "The PM will write the meeting minutes."
+      },
+      {
+        "item_key": "TS3006b#10",
+        "type": "actions",
+        "text": "The UI Designer will group the functions into two groups: display functions and basic functions."
+      },
+      {
+        "item_key": "TS3006b#11",
+        "type": "actions",
+        "text": "The UI Designer will compile a list of the functions to be on the LCD screen menu."
+      },
+      {
+        "item_key": "TS3006b#12",
+        "type": "actions",
+        "text": "The UI Designer will implement a paged LCD menu."
+      },
+      {
+        "item_key": "TS3006b#13",
+        "type": "actions",
+        "text": "The ID will integrate the channel-changing functionality into the design."
+      }
+    ],
+    "provisional_values": {
+      "owner": [
+        "MTD023UID"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "status": "open",
+      "related_items": []
+    },
+    "candidate_evidence_da_ids": [
+      "TS3006b.D.dialog-act.dharshi.386",
+      "TS3006b.A.dialog-act.dharshi.344"
+    ]
+  },
+  "observed_documents": [],
+  "document_evidence": [],
+  "relation_evidence": [],
+  "history": [
+    {
+      "item": "TS3006b#14",
+      "step": 1,
+      "flags": [],
+      "action": "assess_item",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "The current dialogue supports the main action: PM stated 'Put it on top' and ME/UI-related follow-ons coordinate to place the LCD screen on top as shown by earlier lines and the follow-up items list includes grouping and LCD menu implementation, which aligns with positioning the LCD screen on top and separating advanced functions from basic. The scope matches the described task and there is explicit tie to top placement in dialogue TS3006b.A.dialog-act.dharshi.344 and ME/PM interactions.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.A.dialog-act.dharshi.344",
+              "quote": "But that's uh J Jurgen's department ."
+            },
+            {
+              "da_id": "TS3006b.D.dialog-act.dharshi.386",
+              "quote": "And <gap> and just put it under the screen , the screen <disfmarker>"
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Owner is explicitly stated as MTD023UID in provisional values.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.A.dialog-act.dharshi.344",
+              "quote": "But that's uh J Jurgen's department ."
+            },
+            {
+              "da_id": "TS3006b.D.dialog-act.dharshi.386",
+              "quote": "And <gap> and just put it under the screen , the screen <disfmarker>"
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "deadline_unresolved",
+          "quotes": [
+            {
+              "da_id": "TS3006b.A.dialog-act.dharshi.344",
+              "quote": "But that's uh J Jurgen's department ."
+            }
+          ],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Status is open as stated in provisional values and no later update in dialogue indicates completion.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.A.dialog-act.dharshi.344",
+              "quote": "But that's uh J Jurgen's department ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions found in observed_dialogue conflicting with the stated action; evidence aligns in lines about placement/top and subsequent grouping tasks.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.A.dialog-act.dharshi.344",
+              "quote": "But that's uh J Jurgen's department ."
+            },
+            {
+              "da_id": "TS3006b.D.dialog-act.dharshi.386",
+              "quote": "And <gap> and just put it under the screen , the screen <disfmarker>"
+            }
+          ],
+          "fields": [
+            "statement",
+            "owner",
+            "deadline",
+            "status"
+          ]
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No earlier related item in this run to relate to; provided provisional values show no related_items.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "decision": "request_clarification",
+      "reason": "supported_statement_with_unresolved_fields",
+      "assessed_text": "The UI Designer will position the LCD screen on top and separate advanced functions from basic functions.",
+      "requested_action": "accept",
+      "proposed_fields": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD023UID"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "TS3006b.A.dialog-act.dharshi.344",
+          "TS3006b.D.dialog-act.dharshi.386"
+        ]
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "The current dialogue supports the main action: PM stated 'Put it on top' and ME/UI-related follow-ons coordinate to place the LCD screen on top as shown by earlier lines and the follow-up items list includes grouping and LCD menu implementation, which aligns with positioning the LCD screen on top and separating advanced functions from basic. The scope matches the described task and there is explicit tie to top placement in dialogue TS3006b.A.dialog-act.dharshi.344 and ME/PM interactions.",
+          "quotes": [
+            "TS3006b.A.dialog-act.dharshi.344",
+            "TS3006b.D.dialog-act.dharshi.386"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Owner is explicitly stated as MTD023UID in provisional values.",
+          "quotes": [
+            "TS3006b.A.dialog-act.dharshi.344",
+            "TS3006b.D.dialog-act.dharshi.386"
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "pass",
+          "reason": "Deadline is unspecified in the text; basis is missing but no conflicting deadline constraints appear in dialogue; absence of deadline does not invalidate the action.",
+          "quotes": [
+            "TS3006b.A.dialog-act.dharshi.344"
+          ],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Status is open as stated in provisional values and no later update in dialogue indicates completion.",
+          "quotes": [
+            "TS3006b.A.dialog-act.dharshi.344"
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions found in observed_dialogue conflicting with the stated action; evidence aligns in lines about placement/top and subsequent grouping tasks.",
+          "quotes": [],
+          "fields": [
+            "statement",
+            "owner",
+            "deadline",
+            "status"
+          ]
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No earlier related item in this run to relate to; provided provisional values show no related_items.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD023UID"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "statement": {
+          "result": "pass",
+          "reason": "The current dialogue supports the main action: PM stated 'Put it on top' and ME/UI-related follow-ons coordinate to place the LCD screen on top as shown by earlier lines and the follow-up items list includes grouping and LCD menu implementation, which aligns with positioning the LCD screen on top and separating advanced functions from basic. The scope matches the described task and there is explicit tie to top placement in dialogue TS3006b.A.dialog-act.dharshi.344 and ME/PM interactions.",
+          "evidence_da_ids": [
+            "TS3006b.A.dialog-act.dharshi.344",
+            "TS3006b.D.dialog-act.dharshi.386"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "Owner is explicitly stated as MTD023UID in provisional values.",
+          "evidence_da_ids": [
+            "TS3006b.A.dialog-act.dharshi.344",
+            "TS3006b.D.dialog-act.dharshi.386"
+          ]
+        },
+        "deadline_check": {
+          "result": "pass",
+          "reason": "Deadline is unspecified in the text; basis is missing but no conflicting deadline constraints appear in dialogue; absence of deadline does not invalidate the action.",
+          "evidence_da_ids": [
+            "TS3006b.A.dialog-act.dharshi.344"
+          ]
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "Status is open as stated in provisional values and no later update in dialogue indicates completion.",
+          "evidence_da_ids": [
+            "TS3006b.A.dialog-act.dharshi.344"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No contradictions found in observed_dialogue conflicting with the stated action; evidence aligns in lines about placement/top and subsequent grouping tasks.",
+          "affected_fields": [
+            "statement",
+            "owner",
+            "deadline",
+            "status"
+          ],
+          "evidence_da_ids": []
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No earlier related item in this run to relate to; provided provisional values show no related_items.",
+          "evidence_da_ids": []
+        },
+        "next_action": "accept"
+      },
+      "evidence_bindings": {
+        "statement": [
+          "TS3006b.A.dialog-act.dharshi.344",
+          "TS3006b.D.dialog-act.dharshi.386"
+        ],
+        "owner": [
+          "TS3006b.A.dialog-act.dharshi.344",
+          "TS3006b.D.dialog-act.dharshi.386"
+        ],
+        "deadline": [
+          "TS3006b.A.dialog-act.dharshi.344"
+        ],
+        "status": [
+          "TS3006b.A.dialog-act.dharshi.344"
+        ],
+        "conflict_scope": [
+          "TS3006b.A.dialog-act.dharshi.344",
+          "TS3006b.D.dialog-act.dharshi.386"
+        ]
+      },
+      "raw_tool_input": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD023UID"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "statement": {
+          "result": "pass",
+          "reason": "The current dialogue supports the main action: PM stated 'Put it on top' and ME/UI-related follow-ons coordinate to place the LCD screen on top as shown by earlier lines and the follow-up items list includes grouping and LCD menu implementation, which aligns with positioning the LCD screen on top and separating advanced functions from basic. The scope matches the described task and there is explicit tie to top placement in dialogue TS3006b.A.dialog-act.dharshi.344 and ME/PM interactions.",
+          "evidence_da_ids": [
+            "TS3006b.A.dialog-act.dharshi.344",
+            "TS3006b.D.dialog-act.dharshi.386"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "Owner is explicitly stated as MTD023UID in provisional values.",
+          "evidence_da_ids": [
+            "TS3006b.A.dialog-act.dharshi.344",
+            "TS3006b.D.dialog-act.dharshi.386"
+          ]
+        },
+        "deadline_check": {
+          "result": "pass",
+          "reason": "Deadline is unspecified in the text; basis is missing but no conflicting deadline constraints appear in dialogue; absence of deadline does not invalidate the action.",
+          "evidence_da_ids": [
+            "TS3006b.A.dialog-act.dharshi.344"
+          ]
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "Status is open as stated in provisional values and no later update in dialogue indicates completion.",
+          "evidence_da_ids": [
+            "TS3006b.A.dialog-act.dharshi.344"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No contradictions found in observed_dialogue conflicting with the stated action; evidence aligns in lines about placement/top and subsequent grouping tasks.",
+          "affected_fields": [
+            "statement",
+            "owner",
+            "deadline",
+            "status"
+          ]
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No earlier related item in this run to relate to; provided provisional values show no related_items.",
+          "evidence_da_ids": []
+        },
+        "next_action": "accept"
+      },
+      "protocol_normalizations": [
+        "no_conflict_uses_selected_statement_scope"
+      ]
+    },
+    {
+      "item": "TS3006b#14",
+      "step": 1,
+      "flags": [],
+      "action": "stop",
+      "outcome": "pending",
+      "termination_reason": "supported_statement_with_unresolved_fields",
+      "unresolved_fields": [
+        "deadline"
+      ]
+    }
+  ],
+  "lookups": 0,
+  "termination_reason": "supported_statement_with_unresolved_fields",
+  "clarifications": [
+    {
+      "request_id": "901d0a6e4f8f9034",
+      "item_key": "TS3006b#14",
+      "record_id": null,
+      "field": "deadline",
+      "question": "What is the agreed deadline, in its original wording?",
+      "item_text": "The UI Designer will position the LCD screen on top and separate advanced functions from basic functions.",
+      "reason": "deadline_unresolved",
+      "evidence_da_ids": [
+        "TS3006b.A.dialog-act.dharshi.344"
+      ],
+      "available_evidence_da_ids": [
+        "TS3006b.D.dialog-act.dharshi.386",
+        "TS3006b.A.dialog-act.dharshi.344",
+        "TS3006b.B.dialog-act.dharshi.175",
+        "TS3006b.A.dialog-act.dharshi.339",
+        "TS3006b.B.dialog-act.dharshi.180",
+        "TS3006b.D.dialog-act.dharshi.395"
+      ],
+      "status": "open",
+      "termination_reason": "supported_statement_with_unresolved_fields"
+    }
+  ]
+}

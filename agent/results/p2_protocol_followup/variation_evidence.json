@@ -1,0 +1,219 @@
+{
+  "scope": "Independent online observations only. v19 response replay is separate, not a new sample.",
+  "initial_model_findings": [
+    {
+      "version": "v15",
+      "source": "primary_cohort",
+      "requested_action": "request_clarification",
+      "checks": {
+        "statement": "pass",
+        "owner": "pass",
+        "deadline": "uncertain",
+        "status": "uncertain",
+        "conflict": "pass",
+        "relation": "uncertain"
+      },
+      "terminal_reason": "supported_statement_with_unresolved_fields",
+      "links": []
+    },
+    {
+      "version": "v15",
+      "source": "case-repeat-1",
+      "requested_action": "retrieve",
+      "checks": {
+        "statement": "pass",
+        "owner": "pass",
+        "deadline": "uncertain",
+        "status": "pass",
+        "conflict": "pass",
+        "relation": "uncertain"
+      },
+      "terminal_reason": "stop",
+      "links": [
+        {
+          "id": "TS3006a.sys.s.4",
+          "relation": "continues"
+        }
+      ]
+    },
+    {
+      "version": "v15",
+      "source": "case-repeat-2",
+      "requested_action": "request_clarification",
+      "checks": {
+        "statement": "pass",
+        "owner": "uncertain",
+        "deadline": "uncertain",
+        "status": "uncertain",
+        "conflict": "pass",
+        "relation": "uncertain"
+      },
+      "terminal_reason": "request_clarification",
+      "links": []
+    },
+    {
+      "version": "v16",
+      "source": "primary_cohort",
+      "requested_action": "retrieve",
+      "checks": {
+        "statement": "pass",
+        "owner": "pass",
+        "deadline": "uncertain",
+        "status": "pass",
+        "conflict": "pass",
+        "relation": "uncertain"
+      },
+      "terminal_reason": "supported_statement_with_unresolved_fields",
+      "links": [
+        {
+          "id": "TS3006a.sys.s.4",
+          "relation": "updates"
+        }
+      ]
+    },
+    {
+      "version": "v16",
+      "source": "case-repeat-1",
+      "requested_action": "request_clarification",
+      "checks": {
+        "statement": "pass",
+        "owner": "pass",
+        "deadline": "uncertain",
+        "status": "pass",
+        "conflict": "pass",
+        "relation": "uncertain"
+      },
+      "terminal_reason": "invalid_action_limit",
+      "links": []
+    },
+    {
+      "version": "v16",
+      "source": "case-repeat-2",
+      "requested_action": "request_clarification",
+      "checks": {
+        "statement": "pass",
+        "owner": "pass",
+        "deadline": "uncertain",
+        "status": "pass",
+        "conflict": "pass",
+        "relation": "uncertain"
+      },
+      "terminal_reason": "supported_statement_with_unresolved_fields",
+      "links": []
+    },
+    {
+      "version": "v17",
+      "source": "primary_cohort",
+      "requested_action": "accept",
+      "checks": {
+        "statement": "pass",
+        "owner": "uncertain",
+        "deadline": "uncertain",
+        "status": "pass",
+        "conflict": "pass",
+        "relation": "uncertain"
+      },
+      "terminal_reason": "p2_call_allowance_exhausted",
+      "links": []
+    },
+    {
+      "version": "v17",
+      "source": "case-repeat-1",
+      "requested_action": "request_clarification",
+      "checks": {
+        "statement": "pass",
+        "owner": "pass",
+        "deadline": "uncertain",
+        "status": "pass",
+        "conflict": "pass",
+        "relation": "uncertain"
+      },
+      "terminal_reason": "supported_statement_with_unresolved_fields",
+      "links": []
+    },
+    {
+      "version": "v17",
+      "source": "case-repeat-2",
+      "requested_action": "retrieve",
+      "checks": {
+        "statement": "pass",
+        "owner": "pass",
+        "deadline": "uncertain",
+        "status": "uncertain",
+        "conflict": "pass",
+        "relation": "uncertain"
+      },
+      "terminal_reason": "supported_statement_with_unresolved_fields",
+      "links": [
+        {
+          "id": "TS3006a.sys.s.4",
+          "relation": "updates"
+        }
+      ]
+    },
+    {
+      "version": "v18",
+      "source": "primary_cohort",
+      "requested_action": "request_clarification",
+      "checks": {
+        "statement": "pass",
+        "owner": "pass",
+        "deadline": "uncertain",
+        "status": "uncertain",
+        "conflict": "pass",
+        "relation": "uncertain"
+      },
+      "terminal_reason": "invalid_action_limit",
+      "links": []
+    },
+    {
+      "version": "v18",
+      "source": "case-repeat-1",
+      "requested_action": "retrieve",
+      "checks": {
+        "statement": "pass",
+        "owner": "pass",
+        "deadline": "uncertain",
+        "status": "uncertain",
+        "conflict": "pass",
+        "relation": "uncertain"
+      },
+      "terminal_reason": "supported_statement_with_unresolved_fields",
+      "links": []
+    },
+    {
+      "version": "v18",
+      "source": "case-repeat-2",
+      "requested_action": null,
+      "checks": {
+        "statement": "pass",
+        "owner": "uncertain",
+        "deadline": "uncertain",
+        "status": "pass",
+        "conflict": "pass",
+        "relation": "uncertain"
+      },
+      "terminal_reason": "supported_statement_with_unresolved_fields",
+      "links": []
+    }
+  ],
+  "same_initial_request_by_version": {
+    "v15": {
+      "sha256": "101ee85df0737f7277117f308ea0184f3d398a2c1da99043c1bd474022b17b68",
+      "observations": 3
+    },
+    "v16": {
+      "sha256": "101ee85df0737f7277117f308ea0184f3d398a2c1da99043c1bd474022b17b68",
+      "observations": 3
+    },
+    "v17": {
+      "sha256": "f219f9977ebe207f9dcf594c497031b842a358243c63433abb1c920ddf7a5b60",
+      "observations": 3
+    },
+    "v18": {
+      "sha256": "f219f9977ebe207f9dcf594c497031b842a358243c63433abb1c920ddf7a5b60",
+      "observations": 3
+    }
+  },
+  "same_first_request_across_all_versions": false
+}

@@ -1,0 +1,1348 @@
+{
+  "item_key": "IS1008d#5",
+  "record_id": null,
+  "item_type": "actions",
+  "item_text": "Plan to launch around a major sports event to align with peak demand.",
+  "state": "pending",
+  "recordable": true,
+  "fields": {
+    "status": "unknown",
+    "prior_context_needed": true,
+    "related_items": [
+      {
+        "id": "IS1008a.sys.s.1",
+        "relation": "continues"
+      }
+    ],
+    "owner": [
+      "FIE073"
+    ],
+    "owner_basis": "explicit",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "reference": [
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/IS1008d.json",
+        "locator": "IS1008d.B.dialog-act.s9553330.102"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/IS1008d.json",
+        "locator": "IS1008d.B.dialog-act.s9553330.103"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/IS1008d.json",
+        "locator": "IS1008d.A.dialog-act.s9553330.169"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/IS1008d.json",
+        "locator": "IS1008d.C.dialog-act.s9553330.139"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/IS1008d.json",
+        "locator": "IS1008d.B.dialog-act.s9553330.104"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/IS1008a.json",
+        "locator": "IS1008a.D.dialog-act.s9553330.16"
+      }
+    ]
+  },
+  "draft_fields": {
+    "status": "open",
+    "related_items": [
+      {
+        "id": "IS1008a.sys.s.1",
+        "relation": "continues"
+      }
+    ],
+    "owner": [
+      "FIE073"
+    ],
+    "owner_basis": "explicit",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "prior_context_needed": false,
+    "used_participant_lookup": false,
+    "evidence_da_ids": [
+      "IS1008d.B.dialog-act.s9553330.102",
+      "IS1008d.B.dialog-act.s9553330.103",
+      "IS1008d.A.dialog-act.s9553330.169",
+      "IS1008d.C.dialog-act.s9553330.139",
+      "IS1008d.B.dialog-act.s9553330.104"
+    ]
+  },
+  "checks": {
+    "statement": {
+      "result": "pass",
+      "reason": "Dialogue explicitly references planning to launch around a major sports event, including a specific launch moment at a major event (dialogue 102). This supports the substantive action of planning a launch aligned with peak demand.",
+      "quotes": [
+        {
+          "da_id": "IS1008d.B.dialog-act.s9553330.102",
+          "quote": "pri and then to launch um at a a major sports event"
+        },
+        {
+          "da_id": "IS1008d.B.dialog-act.s9553330.103",
+          "quote": "or uh perhaps to uh also <disfmarker>"
+        },
+        {
+          "da_id": "IS1008d.A.dialog-act.s9553330.169",
+          "quote": "Yep ."
+        },
+        {
+          "da_id": "IS1008d.C.dialog-act.s9553330.139",
+          "quote": "<vocalsound> That's actually good place to advertise it too ."
+        },
+        {
+          "da_id": "IS1008d.B.dialog-act.s9553330.104",
+          "quote": "And to work with motion pictures ."
+        }
+      ],
+      "fields": [
+        "statement"
+      ]
+    },
+    "owner": {
+      "result": "pass",
+      "reason": "Owner FIE073 is the explicit initiator of the plan in the observed dialogue (dialogue IDs 102 or 104).",
+      "quotes": [
+        {
+          "da_id": "IS1008d.B.dialog-act.s9553330.102",
+          "quote": "pri and then to launch um at a a major sports event"
+        },
+        {
+          "da_id": "IS1008d.B.dialog-act.s9553330.104",
+          "quote": "And to work with motion pictures ."
+        }
+      ],
+      "fields": [
+        "owner"
+      ]
+    },
+    "deadline": {
+      "result": "uncertain",
+      "reason": "deadline_unresolved",
+      "quotes": [],
+      "fields": [
+        "deadline"
+      ]
+    },
+    "status": {
+      "result": "uncertain",
+      "reason": "No explicit status marker in the current dialogue; provisional status is open but not verifiable from dialogue alone.",
+      "quotes": [],
+      "fields": [
+        "status"
+      ]
+    },
+    "conflict": {
+      "result": "pass",
+      "reason": "No contradictions found within the provided dialogue evidence.",
+      "quotes": [
+        {
+          "da_id": "IS1008d.B.dialog-act.s9553330.102",
+          "quote": "pri and then to launch um at a a major sports event"
+        },
+        {
+          "da_id": "IS1008d.B.dialog-act.s9553330.103",
+          "quote": "or uh perhaps to uh also <disfmarker>"
+        },
+        {
+          "da_id": "IS1008d.A.dialog-act.s9553330.169",
+          "quote": "Yep ."
+        },
+        {
+          "da_id": "IS1008d.C.dialog-act.s9553330.139",
+          "quote": "<vocalsound> That's actually good place to advertise it too ."
+        },
+        {
+          "da_id": "IS1008d.B.dialog-act.s9553330.104",
+          "quote": "And to work with motion pictures ."
+        }
+      ],
+      "fields": []
+    },
+    "relation": {
+      "result": "pass",
+      "reason": "Current item appears to extend the earlier planning item by specifying a launch plan tied to a major sports event, continuing the initiative to plan around peak demand.",
+      "quotes": [
+        {
+          "da_id": "IS1008d.B.dialog-act.s9553330.102",
+          "quote": "pri and then to launch um at a a major sports event"
+        },
+        {
+          "da_id": "IS1008d.B.dialog-act.s9553330.103",
+          "quote": "or uh perhaps to uh also <disfmarker>"
+        },
+        {
+          "da_id": "IS1008a.D.dialog-act.s9553330.16",
+          "quote": "Certainly by the next meeting ."
+        }
+      ],
+      "links": [
+        {
+          "id": "IS1008a.sys.s.1",
+          "relation": "continues",
+          "changed_fields": [],
+          "reason": "The current item narrows the scope of IS1008a's plan to launching around a major sports event, continuing the same project objective.",
+          "prior_evidence_da_ids": [
+            "IS1008a.D.dialog-act.s9553330.16"
+          ],
+          "current_evidence_da_ids": [
+            "IS1008d.B.dialog-act.s9553330.102",
+            "IS1008d.B.dialog-act.s9553330.103"
+          ]
+        }
+      ],
+      "fields": [
+        "related_items"
+      ]
+    }
+  },
+  "unresolved_fields": [
+    "deadline",
+    "status"
+  ],
+  "observed_evidence_da_ids": [
+    "IS1008d.B.dialog-act.s9553330.102",
+    "IS1008d.B.dialog-act.s9553330.103",
+    "IS1008d.A.dialog-act.s9553330.169",
+    "IS1008d.C.dialog-act.s9553330.139",
+    "IS1008d.B.dialog-act.s9553330.104",
+    "IS1008d.C.dialog-act.s9553330.138",
+    "IS1008d.C.dialog-act.s9553330.140",
+    "IS1008a.A.dialog-act.s9553330.30",
+    "IS1008a.D.dialog-act.s9553330.16",
+    "IS1008a.A.dialog-act.s9553330.31"
+  ],
+  "initial_context": {
+    "item": {
+      "type": "actions",
+      "text": "Plan to launch around a major sports event to align with peak demand.",
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ]
+    },
+    "current_meeting": "IS1008d",
+    "earlier_meetings": [
+      "IS1008a",
+      "IS1008b",
+      "IS1008c"
+    ],
+    "roster": [
+      {
+        "speaker": "A",
+        "participant_id": "MIO086",
+        "role": "PM"
+      },
+      {
+        "speaker": "B",
+        "participant_id": "FIE073",
+        "role": "ID"
+      },
+      {
+        "speaker": "C",
+        "participant_id": "FIE038",
+        "role": "UI"
+      },
+      {
+        "speaker": "D",
+        "participant_id": "MIE085",
+        "role": "ME"
+      }
+    ],
+    "observed_dialogue": [
+      {
+        "da_id": "IS1008d.B.dialog-act.s9553330.102",
+        "meeting_id": "IS1008d",
+        "text": "pri and then to launch um at a a major sports event",
+        "participant": "FIE073",
+        "role": "ID"
+      },
+      {
+        "da_id": "IS1008d.B.dialog-act.s9553330.103",
+        "meeting_id": "IS1008d",
+        "text": "or uh perhaps to uh also <disfmarker>",
+        "participant": "FIE073",
+        "role": "ID"
+      },
+      {
+        "da_id": "IS1008d.A.dialog-act.s9553330.169",
+        "meeting_id": "IS1008d",
+        "text": "Yep .",
+        "participant": "MIO086",
+        "role": "PM"
+      },
+      {
+        "da_id": "IS1008d.C.dialog-act.s9553330.139",
+        "meeting_id": "IS1008d",
+        "text": "<vocalsound> That's actually good place to advertise it too .",
+        "participant": "FIE038",
+        "role": "UI"
+      },
+      {
+        "da_id": "IS1008d.B.dialog-act.s9553330.104",
+        "meeting_id": "IS1008d",
+        "text": "And to work with motion pictures .",
+        "participant": "FIE073",
+        "role": "ID"
+      },
+      {
+        "da_id": "IS1008d.C.dialog-act.s9553330.138",
+        "participant": "FIE038",
+        "role": "UI",
+        "text": "Mm-hmm ."
+      },
+      {
+        "da_id": "IS1008d.C.dialog-act.s9553330.140",
+        "participant": "FIE038",
+        "role": "UI",
+        "text": "Yeah ."
+      }
+    ],
+    "peer_items": [
+      {
+        "item_key": "IS1008d#0",
+        "type": "actions",
+        "text": "Negotiate production costs with vendors to lower unit cost."
+      },
+      {
+        "item_key": "IS1008d#1",
+        "type": "actions",
+        "text": "Come back with evaluation criteria and budget calculations."
+      },
+      {
+        "item_key": "IS1008d#2",
+        "type": "actions",
+        "text": "Explore online delivery and sales channels, including internet promotion and ordering, and arrange drop-ship to customers."
+      },
+      {
+        "item_key": "IS1008d#3",
+        "type": "actions",
+        "text": "Coordinate market tests after prototypes and conduct test-marketing."
+      },
+      {
+        "item_key": "IS1008d#4",
+        "type": "actions",
+        "text": "Prepare and present the market display to the team."
+      }
+    ],
+    "provisional_values": {
+      "owner": [
+        "FIE073"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "status": "open",
+      "related_items": []
+    },
+    "candidate_evidence_da_ids": [
+      "IS1008d.B.dialog-act.s9553330.102",
+      "IS1008d.B.dialog-act.s9553330.103",
+      "IS1008d.A.dialog-act.s9553330.169",
+      "IS1008d.C.dialog-act.s9553330.139",
+      "IS1008d.B.dialog-act.s9553330.104"
+    ]
+  },
+  "observed_documents": [],
+  "document_evidence": [],
+  "relation_evidence": [
+    {
+      "prior_item_id": "IS1008a.sys.s.1",
+      "relation": "continues",
+      "state": "supported",
+      "changed_fields": [],
+      "reason": "The current item narrows the scope of IS1008a's plan to launching around a major sports event, continuing the same project objective.",
+      "before": {
+        "kind": "prior_item",
+        "id": "IS1008a.sys.s.1",
+        "meeting_id": "IS1008a",
+        "type": "actions",
+        "text": "Provide a written project plan by the next meeting.",
+        "owner": [
+          "MIE085"
+        ],
+        "owner_basis": "explicit",
+        "deadline": "by the next meeting",
+        "deadline_basis": "explicit",
+        "status": "open",
+        "evidence": [
+          "IS1008a.D.dialog-act.s9553330.16"
+        ],
+        "source_file": "IS1008a.json",
+        "source_sha256": "1932f034085616b38adf859662727ae5f2d33b6fbe9ef0f56406fd12d39c1ab3",
+        "review_state": "accepted",
+        "unresolved_fields": [],
+        "unreadable_reference_ids": [],
+        "selected_reference_ids": [
+          "IS1008a.D.dialog-act.s9553330.16"
+        ],
+        "next_offset": null
+      },
+      "after": {
+        "item_key": "IS1008d#5",
+        "text": "Plan to launch around a major sports event to align with peak demand.",
+        "type": "actions",
+        "status": "unknown",
+        "owner": [
+          "FIE073"
+        ],
+        "deadline": null
+      },
+      "prior_quotes": [
+        {
+          "da_id": "IS1008a.D.dialog-act.s9553330.16",
+          "quote": "Certainly by the next meeting ."
+        }
+      ],
+      "current_quotes": [
+        {
+          "da_id": "IS1008d.B.dialog-act.s9553330.102",
+          "quote": "pri and then to launch um at a a major sports event"
+        },
+        {
+          "da_id": "IS1008d.B.dialog-act.s9553330.103",
+          "quote": "or uh perhaps to uh also <disfmarker>"
+        }
+      ]
+    }
+  ],
+  "history": [
+    {
+      "item": "IS1008d#5",
+      "step": 1,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "assess_item",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue explicitly references planning to launch around a major sports event, including a specific launch moment at a major event (dialogue 102). This supports the substantive action of planning a launch aligned with peak demand.",
+          "quotes": [
+            {
+              "da_id": "IS1008d.B.dialog-act.s9553330.102",
+              "quote": "pri and then to launch um at a a major sports event"
+            },
+            {
+              "da_id": "IS1008d.B.dialog-act.s9553330.103",
+              "quote": "or uh perhaps to uh also <disfmarker>"
+            },
+            {
+              "da_id": "IS1008d.A.dialog-act.s9553330.169",
+              "quote": "Yep ."
+            },
+            {
+              "da_id": "IS1008d.C.dialog-act.s9553330.139",
+              "quote": "<vocalsound> That's actually good place to advertise it too ."
+            },
+            {
+              "da_id": "IS1008d.B.dialog-act.s9553330.104",
+              "quote": "And to work with motion pictures ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Owner FIE073 is the explicit initiator of the plan in the observed dialogue (dialogue IDs 102 or 104).",
+          "quotes": [
+            {
+              "da_id": "IS1008d.B.dialog-act.s9553330.102",
+              "quote": "pri and then to launch um at a a major sports event"
+            },
+            {
+              "da_id": "IS1008d.B.dialog-act.s9553330.104",
+              "quote": "And to work with motion pictures ."
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "deadline_unresolved",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "uncertain",
+          "reason": "No explicit status marker in the current dialogue; provisional status is open but not verifiable from dialogue alone.",
+          "quotes": [],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions found within the provided dialogue evidence.",
+          "quotes": [
+            {
+              "da_id": "IS1008d.B.dialog-act.s9553330.102",
+              "quote": "pri and then to launch um at a a major sports event"
+            },
+            {
+              "da_id": "IS1008d.B.dialog-act.s9553330.103",
+              "quote": "or uh perhaps to uh also <disfmarker>"
+            },
+            {
+              "da_id": "IS1008d.A.dialog-act.s9553330.169",
+              "quote": "Yep ."
+            },
+            {
+              "da_id": "IS1008d.C.dialog-act.s9553330.139",
+              "quote": "<vocalsound> That's actually good place to advertise it too ."
+            },
+            {
+              "da_id": "IS1008d.B.dialog-act.s9553330.104",
+              "quote": "And to work with motion pictures ."
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "prior_context_not_checked",
+          "links": [],
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "decision": "retrieve",
+      "reason": "required_history_check_before_partial_accept",
+      "assessed_text": "Plan to launch around a major sports event to align with peak demand.",
+      "requested_action": "request_clarification",
+      "proposed_fields": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "FIE073"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "IS1008d.B.dialog-act.s9553330.102",
+          "IS1008d.B.dialog-act.s9553330.103",
+          "IS1008d.A.dialog-act.s9553330.169",
+          "IS1008d.C.dialog-act.s9553330.139",
+          "IS1008d.B.dialog-act.s9553330.104"
+        ]
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue explicitly references planning to launch around a major sports event, including a specific launch moment at a major event (dialogue 102). This supports the substantive action of planning a launch aligned with peak demand.",
+          "quotes": [
+            "IS1008d.B.dialog-act.s9553330.102",
+            "IS1008d.B.dialog-act.s9553330.103",
+            "IS1008d.A.dialog-act.s9553330.169",
+            "IS1008d.C.dialog-act.s9553330.139",
+            "IS1008d.B.dialog-act.s9553330.104"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Owner FIE073 is the explicit initiator of the plan in the observed dialogue (dialogue IDs 102 or 104).",
+          "quotes": [
+            "IS1008d.B.dialog-act.s9553330.102",
+            "IS1008d.B.dialog-act.s9553330.104"
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "No explicit deadline stated in the observed dialogue; deadline is missing in provisional values.",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "uncertain",
+          "reason": "No explicit status marker in the current dialogue; provisional status is open but not verifiable from dialogue alone.",
+          "quotes": [],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions found within the provided dialogue evidence.",
+          "quotes": [],
+          "fields": []
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "No prior-item relationship evidenced in the current dialogue; no prior_record IDs provided.",
+          "links": [],
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "FIE073"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue explicitly references planning to launch around a major sports event, including a specific launch moment at a major event (dialogue 102). This supports the substantive action of planning a launch aligned with peak demand.",
+          "evidence_da_ids": [
+            "IS1008d.B.dialog-act.s9553330.102",
+            "IS1008d.B.dialog-act.s9553330.103",
+            "IS1008d.A.dialog-act.s9553330.169",
+            "IS1008d.C.dialog-act.s9553330.139",
+            "IS1008d.B.dialog-act.s9553330.104"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "Owner FIE073 is the explicit initiator of the plan in the observed dialogue (dialogue IDs 102 or 104).",
+          "evidence_da_ids": [
+            "IS1008d.B.dialog-act.s9553330.102",
+            "IS1008d.B.dialog-act.s9553330.104"
+          ]
+        },
+        "deadline_check": {
+          "result": "uncertain",
+          "reason": "No explicit deadline stated in the observed dialogue; deadline is missing in provisional values.",
+          "evidence_da_ids": []
+        },
+        "status_check": {
+          "result": "uncertain",
+          "reason": "No explicit status marker in the current dialogue; provisional status is open but not verifiable from dialogue alone.",
+          "evidence_da_ids": []
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No contradictions found within the provided dialogue evidence.",
+          "evidence_da_ids": [],
+          "affected_fields": []
+        },
+        "relation_check": {
+          "result": "uncertain",
+          "reason": "No prior-item relationship evidenced in the current dialogue; no prior_record IDs provided.",
+          "evidence_da_ids": [],
+          "links": []
+        },
+        "next_action": "request_clarification"
+      },
+      "evidence_bindings": {
+        "statement": [
+          "IS1008d.B.dialog-act.s9553330.102",
+          "IS1008d.B.dialog-act.s9553330.103",
+          "IS1008d.A.dialog-act.s9553330.169",
+          "IS1008d.C.dialog-act.s9553330.139",
+          "IS1008d.B.dialog-act.s9553330.104"
+        ],
+        "owner": [
+          "IS1008d.B.dialog-act.s9553330.102",
+          "IS1008d.B.dialog-act.s9553330.104"
+        ],
+        "conflict_scope": [
+          "IS1008d.B.dialog-act.s9553330.102",
+          "IS1008d.B.dialog-act.s9553330.103",
+          "IS1008d.A.dialog-act.s9553330.169",
+          "IS1008d.C.dialog-act.s9553330.139",
+          "IS1008d.B.dialog-act.s9553330.104"
+        ]
+      },
+      "raw_tool_input": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "FIE073"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue explicitly references planning to launch around a major sports event, including a specific launch moment at a major event (dialogue 102). This supports the substantive action of planning a launch aligned with peak demand.",
+          "evidence_da_ids": [
+            "IS1008d.B.dialog-act.s9553330.102",
+            "IS1008d.B.dialog-act.s9553330.103",
+            "IS1008d.A.dialog-act.s9553330.169",
+            "IS1008d.C.dialog-act.s9553330.139",
+            "IS1008d.B.dialog-act.s9553330.104"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "Owner FIE073 is the explicit initiator of the plan in the observed dialogue (dialogue IDs 102 or 104).",
+          "evidence_da_ids": [
+            "IS1008d.B.dialog-act.s9553330.102",
+            "IS1008d.B.dialog-act.s9553330.104"
+          ]
+        },
+        "deadline_check": {
+          "result": "uncertain",
+          "reason": "No explicit deadline stated in the observed dialogue; deadline is missing in provisional values.",
+          "evidence_da_ids": []
+        },
+        "status_check": {
+          "result": "uncertain",
+          "reason": "No explicit status marker in the current dialogue; provisional status is open but not verifiable from dialogue alone.",
+          "evidence_da_ids": []
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No contradictions found within the provided dialogue evidence.",
+          "evidence_da_ids": [],
+          "affected_fields": []
+        },
+        "relation_check": {
+          "result": "uncertain",
+          "reason": "No prior-item relationship evidenced in the current dialogue; no prior_record IDs provided.",
+          "evidence_da_ids": [],
+          "links": []
+        },
+        "next_action": "request_clarification"
+      },
+      "protocol_normalizations": [],
+      "unresolved_before": [
+        "deadline",
+        "owner",
+        "related_items",
+        "statement",
+        "status"
+      ],
+      "unresolved_after": [
+        "deadline",
+        "related_items",
+        "status"
+      ],
+      "semantic_stalls": 0,
+      "validation_codes": {
+        "deadline": [
+          "deadline_unresolved"
+        ],
+        "relation": [
+          "prior_context_not_checked"
+        ]
+      }
+    },
+    {
+      "item": "IS1008d#5",
+      "step": 2,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "history_context_focused",
+      "outcome": "delivered",
+      "evidence_da_ids": [
+        "IS1008d.B.dialog-act.s9553330.102",
+        "IS1008d.B.dialog-act.s9553330.103",
+        "IS1008d.A.dialog-act.s9553330.169",
+        "IS1008d.C.dialog-act.s9553330.139",
+        "IS1008d.B.dialog-act.s9553330.104",
+        "IS1008d.C.dialog-act.s9553330.138",
+        "IS1008d.C.dialog-act.s9553330.140"
+      ]
+    },
+    {
+      "item": "IS1008d#5",
+      "step": 2,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "get_prior_items",
+      "outcome": "lookup",
+      "decision": "retrieve",
+      "args": {
+        "query": "launch around a major sports event",
+        "item_type": "actions"
+      },
+      "tool_result": {
+        "results": [
+          {
+            "id": "IS1008a.sys.s.1",
+            "meeting_id": "IS1008a",
+            "type": "actions",
+            "text": "Provide a written project plan by the next meeting.",
+            "owner": [
+              "MIE085"
+            ],
+            "owner_basis": "explicit",
+            "deadline": "by the next meeting",
+            "deadline_basis": "explicit",
+            "status": "open",
+            "evidence": [
+              "IS1008a.D.dialog-act.s9553330.16"
+            ],
+            "source_file": "IS1008a.json",
+            "source_sha256": "1932f034085616b38adf859662727ae5f2d33b6fbe9ef0f56406fd12d39c1ab3",
+            "review_state": "accepted",
+            "unresolved_fields": [],
+            "unreadable_reference_ids": [],
+            "score": 2.07
+          },
+          {
+            "id": "IS1008a.sys.s.8",
+            "meeting_id": "IS1008a",
+            "type": "actions",
+            "text": "Send a copy of the slides to all attendees after the meeting.",
+            "owner": [
+              "MIO086"
+            ],
+            "owner_basis": "explicit",
+            "deadline": "at the conclusion of the meeting",
+            "deadline_basis": "explicit",
+            "status": "open",
+            "evidence": [
+              "IS1008a.C.dialog-act.s9553330.42",
+              "IS1008a.A.dialog-act.s9553330.130",
+              "IS1008a.A.dialog-act.s9553330.131"
+            ],
+            "source_file": "IS1008a.json",
+            "source_sha256": "1932f034085616b38adf859662727ae5f2d33b6fbe9ef0f56406fd12d39c1ab3",
+            "review_state": "accepted",
+            "unresolved_fields": [],
+            "unreadable_reference_ids": [],
+            "score": 1.83
+          }
+        ]
+      },
+      "new_info": true
+    },
+    {
+      "item": "IS1008d#5",
+      "step": 3,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "read_prior_item",
+      "outcome": "lookup",
+      "decision": "retrieve",
+      "args": {
+        "item_id": "IS1008a.sys.s.1"
+      },
+      "tool_result": {
+        "results": [
+          {
+            "kind": "prior_item",
+            "id": "IS1008a.sys.s.1",
+            "meeting_id": "IS1008a",
+            "type": "actions",
+            "text": "Provide a written project plan by the next meeting.",
+            "owner": [
+              "MIE085"
+            ],
+            "owner_basis": "explicit",
+            "deadline": "by the next meeting",
+            "deadline_basis": "explicit",
+            "status": "open",
+            "evidence": [
+              "IS1008a.D.dialog-act.s9553330.16"
+            ],
+            "source_file": "IS1008a.json",
+            "source_sha256": "1932f034085616b38adf859662727ae5f2d33b6fbe9ef0f56406fd12d39c1ab3",
+            "review_state": "accepted",
+            "unresolved_fields": [],
+            "unreadable_reference_ids": [],
+            "selected_reference_ids": [
+              "IS1008a.D.dialog-act.s9553330.16"
+            ],
+            "next_offset": null
+          },
+          {
+            "kind": "dialogue",
+            "da_id": "IS1008a.A.dialog-act.s9553330.30",
+            "meeting_id": "IS1008a",
+            "text": "a discussion with uh <disfmarker>",
+            "participant": "MIO086",
+            "role": "PM",
+            "supports_item_id": "IS1008a.sys.s.1",
+            "is_reference": false
+          },
+          {
+            "kind": "dialogue",
+            "da_id": "IS1008a.D.dialog-act.s9553330.16",
+            "meeting_id": "IS1008a",
+            "text": "Certainly by the next meeting .",
+            "participant": "MIE085",
+            "role": "ME",
+            "supports_item_id": "IS1008a.sys.s.1",
+            "is_reference": true
+          },
+          {
+            "kind": "dialogue",
+            "da_id": "IS1008a.A.dialog-act.s9553330.31",
+            "meeting_id": "IS1008a",
+            "text": "By next meeting , okay that will be great .",
+            "participant": "MIO086",
+            "role": "PM",
+            "supports_item_id": "IS1008a.sys.s.1",
+            "is_reference": false
+          }
+        ]
+      },
+      "new_info": true
+    },
+    {
+      "item": "IS1008d#5",
+      "step": 4,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "assess_relation",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue explicitly references planning to launch around a major sports event, including a specific launch moment at a major event (dialogue 102). This supports the substantive action of planning a launch aligned with peak demand.",
+          "quotes": [
+            {
+              "da_id": "IS1008d.B.dialog-act.s9553330.102",
+              "quote": "pri and then to launch um at a a major sports event"
+            },
+            {
+              "da_id": "IS1008d.B.dialog-act.s9553330.103",
+              "quote": "or uh perhaps to uh also <disfmarker>"
+            },
+            {
+              "da_id": "IS1008d.A.dialog-act.s9553330.169",
+              "quote": "Yep ."
+            },
+            {
+              "da_id": "IS1008d.C.dialog-act.s9553330.139",
+              "quote": "<vocalsound> That's actually good place to advertise it too ."
+            },
+            {
+              "da_id": "IS1008d.B.dialog-act.s9553330.104",
+              "quote": "And to work with motion pictures ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Owner FIE073 is the explicit initiator of the plan in the observed dialogue (dialogue IDs 102 or 104).",
+          "quotes": [
+            {
+              "da_id": "IS1008d.B.dialog-act.s9553330.102",
+              "quote": "pri and then to launch um at a a major sports event"
+            },
+            {
+              "da_id": "IS1008d.B.dialog-act.s9553330.104",
+              "quote": "And to work with motion pictures ."
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "deadline_unresolved",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "uncertain",
+          "reason": "No explicit status marker in the current dialogue; provisional status is open but not verifiable from dialogue alone.",
+          "quotes": [],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions found within the provided dialogue evidence.",
+          "quotes": [
+            {
+              "da_id": "IS1008d.B.dialog-act.s9553330.102",
+              "quote": "pri and then to launch um at a a major sports event"
+            },
+            {
+              "da_id": "IS1008d.B.dialog-act.s9553330.103",
+              "quote": "or uh perhaps to uh also <disfmarker>"
+            },
+            {
+              "da_id": "IS1008d.A.dialog-act.s9553330.169",
+              "quote": "Yep ."
+            },
+            {
+              "da_id": "IS1008d.C.dialog-act.s9553330.139",
+              "quote": "<vocalsound> That's actually good place to advertise it too ."
+            },
+            {
+              "da_id": "IS1008d.B.dialog-act.s9553330.104",
+              "quote": "And to work with motion pictures ."
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "pass",
+          "reason": "Current item appears to extend the earlier planning item by specifying a launch plan tied to a major sports event, continuing the initiative to plan around peak demand.",
+          "quotes": [
+            {
+              "da_id": "IS1008d.B.dialog-act.s9553330.102",
+              "quote": "pri and then to launch um at a a major sports event"
+            },
+            {
+              "da_id": "IS1008d.B.dialog-act.s9553330.103",
+              "quote": "or uh perhaps to uh also <disfmarker>"
+            },
+            {
+              "da_id": "IS1008a.D.dialog-act.s9553330.16",
+              "quote": "Certainly by the next meeting ."
+            }
+          ],
+          "links": [
+            {
+              "id": "IS1008a.sys.s.1",
+              "relation": "continues",
+              "changed_fields": [],
+              "reason": "The current item narrows the scope of IS1008a's plan to launching around a major sports event, continuing the same project objective.",
+              "prior_evidence_da_ids": [
+                "IS1008a.D.dialog-act.s9553330.16"
+              ],
+              "current_evidence_da_ids": [
+                "IS1008d.B.dialog-act.s9553330.102",
+                "IS1008d.B.dialog-act.s9553330.103"
+              ]
+            }
+          ],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "decision": "request_clarification",
+      "reason": "supported_statement_with_unresolved_fields",
+      "assessed_text": "Plan to launch around a major sports event to align with peak demand.",
+      "requested_action": "accept",
+      "proposed_fields": {
+        "status": "open",
+        "related_items": [
+          {
+            "id": "IS1008a.sys.s.1",
+            "relation": "continues"
+          }
+        ],
+        "owner": [
+          "FIE073"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "IS1008d.B.dialog-act.s9553330.102",
+          "IS1008d.B.dialog-act.s9553330.103",
+          "IS1008d.A.dialog-act.s9553330.169",
+          "IS1008d.C.dialog-act.s9553330.139",
+          "IS1008d.B.dialog-act.s9553330.104"
+        ]
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue explicitly references planning to launch around a major sports event, including a specific launch moment at a major event (dialogue 102). This supports the substantive action of planning a launch aligned with peak demand.",
+          "quotes": [
+            {
+              "da_id": "IS1008d.B.dialog-act.s9553330.102",
+              "quote": "pri and then to launch um at a a major sports event"
+            },
+            {
+              "da_id": "IS1008d.B.dialog-act.s9553330.103",
+              "quote": "or uh perhaps to uh also <disfmarker>"
+            },
+            {
+              "da_id": "IS1008d.A.dialog-act.s9553330.169",
+              "quote": "Yep ."
+            },
+            {
+              "da_id": "IS1008d.C.dialog-act.s9553330.139",
+              "quote": "<vocalsound> That's actually good place to advertise it too ."
+            },
+            {
+              "da_id": "IS1008d.B.dialog-act.s9553330.104",
+              "quote": "And to work with motion pictures ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Owner FIE073 is the explicit initiator of the plan in the observed dialogue (dialogue IDs 102 or 104).",
+          "quotes": [
+            {
+              "da_id": "IS1008d.B.dialog-act.s9553330.102",
+              "quote": "pri and then to launch um at a a major sports event"
+            },
+            {
+              "da_id": "IS1008d.B.dialog-act.s9553330.104",
+              "quote": "And to work with motion pictures ."
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "deadline_unresolved",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "uncertain",
+          "reason": "No explicit status marker in the current dialogue; provisional status is open but not verifiable from dialogue alone.",
+          "quotes": [],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions found within the provided dialogue evidence.",
+          "quotes": [
+            {
+              "da_id": "IS1008d.B.dialog-act.s9553330.102",
+              "quote": "pri and then to launch um at a a major sports event"
+            },
+            {
+              "da_id": "IS1008d.B.dialog-act.s9553330.103",
+              "quote": "or uh perhaps to uh also <disfmarker>"
+            },
+            {
+              "da_id": "IS1008d.A.dialog-act.s9553330.169",
+              "quote": "Yep ."
+            },
+            {
+              "da_id": "IS1008d.C.dialog-act.s9553330.139",
+              "quote": "<vocalsound> That's actually good place to advertise it too ."
+            },
+            {
+              "da_id": "IS1008d.B.dialog-act.s9553330.104",
+              "quote": "And to work with motion pictures ."
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "pass",
+          "reason": "Current item appears to extend the earlier planning item by specifying a launch plan tied to a major sports event, continuing the initiative to plan around peak demand.",
+          "quotes": [
+            {
+              "da_id": "IS1008d.B.dialog-act.s9553330.102",
+              "quote": "pri and then to launch um at a a major sports event"
+            },
+            {
+              "da_id": "IS1008d.B.dialog-act.s9553330.103",
+              "quote": "or uh perhaps to uh also <disfmarker>"
+            }
+          ],
+          "links": [
+            {
+              "id": "IS1008a.sys.s.1",
+              "relation": "continues",
+              "changed_fields": [],
+              "reason": "The current item narrows the scope of IS1008a's plan to launching around a major sports event, continuing the same project objective.",
+              "prior_evidence_da_ids": [
+                "IS1008a.D.dialog-act.s9553330.16"
+              ],
+              "current_evidence_da_ids": [
+                "IS1008d.B.dialog-act.s9553330.102",
+                "IS1008d.B.dialog-act.s9553330.103"
+              ]
+            }
+          ],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "result": "pass",
+        "reason": "Current item appears to extend the earlier planning item by specifying a launch plan tied to a major sports event, continuing the initiative to plan around peak demand.",
+        "quotes": [
+          {
+            "da_id": "IS1008d.B.dialog-act.s9553330.102",
+            "quote": "pri and then to launch um at a a major sports event"
+          },
+          {
+            "da_id": "IS1008d.B.dialog-act.s9553330.103",
+            "quote": "or uh perhaps to uh also <disfmarker>"
+          }
+        ],
+        "links": [
+          {
+            "id": "IS1008a.sys.s.1",
+            "relation": "continues",
+            "changed_fields": [],
+            "reason": "The current item narrows the scope of IS1008a's plan to launching around a major sports event, continuing the same project objective.",
+            "prior_evidence_da_ids": [
+              "IS1008a.D.dialog-act.s9553330.16"
+            ],
+            "current_evidence_da_ids": [
+              "IS1008d.B.dialog-act.s9553330.102",
+              "IS1008d.B.dialog-act.s9553330.103"
+            ]
+          }
+        ],
+        "next_action": "accept"
+      },
+      "evidence_bindings": {
+        "relation": [
+          "IS1008a.D.dialog-act.s9553330.16"
+        ]
+      },
+      "raw_tool_input": {
+        "result": "pass",
+        "reason": "Current item appears to extend the earlier planning item by specifying a launch plan tied to a major sports event, continuing the initiative to plan around peak demand.",
+        "quotes": [
+          {
+            "da_id": "IS1008d.B.dialog-act.s9553330.102",
+            "quote": "pri and then to launch um at a a major sports event"
+          },
+          {
+            "da_id": "IS1008d.B.dialog-act.s9553330.103",
+            "quote": "or uh perhaps to uh also <disfmarker>"
+          }
+        ],
+        "documents": null,
+        "links": [
+          {
+            "id": "IS1008a.sys.s.1",
+            "relation": "continues",
+            "changed_fields": [],
+            "reason": "The current item narrows the scope of IS1008a's plan to launching around a major sports event, continuing the same project objective.",
+            "prior_evidence_da_ids": [
+              "IS1008a.D.dialog-act.s9553330.16"
+            ],
+            "current_evidence_da_ids": [
+              "IS1008d.B.dialog-act.s9553330.102",
+              "IS1008d.B.dialog-act.s9553330.103"
+            ]
+          }
+        ],
+        "next_action": "accept"
+      },
+      "protocol_normalizations": [
+        "no_document_selection:"
+      ],
+      "unresolved_before": [
+        "deadline",
+        "related_items",
+        "status"
+      ],
+      "unresolved_after": [
+        "deadline",
+        "status"
+      ],
+      "semantic_stalls": 0,
+      "validation_codes": {
+        "deadline": [
+          "deadline_unresolved"
+        ]
+      }
+    },
+    {
+      "item": "IS1008d#5",
+      "step": 4,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "stop",
+      "outcome": "pending",
+      "termination_reason": "supported_statement_with_unresolved_fields",
+      "unresolved_fields": [
+        "deadline",
+        "status"
+      ]
+    }
+  ],
+  "lookups": 2,
+  "termination_reason": "supported_statement_with_unresolved_fields",
+  "clarifications": [
+    {
+      "request_id": "ecf8de3fe05f307c",
+      "item_key": "IS1008d#5",
+      "record_id": null,
+      "field": "deadline",
+      "question": "What is the agreed deadline, in its original wording?",
+      "item_text": "Plan to launch around a major sports event to align with peak demand.",
+      "reason": "deadline_unresolved",
+      "evidence_da_ids": [],
+      "available_evidence_da_ids": [
+        "IS1008d.B.dialog-act.s9553330.102",
+        "IS1008d.B.dialog-act.s9553330.103",
+        "IS1008d.A.dialog-act.s9553330.169",
+        "IS1008d.C.dialog-act.s9553330.139",
+        "IS1008d.B.dialog-act.s9553330.104",
+        "IS1008d.C.dialog-act.s9553330.138",
+        "IS1008d.C.dialog-act.s9553330.140",
+        "IS1008a.A.dialog-act.s9553330.30",
+        "IS1008a.D.dialog-act.s9553330.16",
+        "IS1008a.A.dialog-act.s9553330.31"
+      ],
+      "status": "open",
+      "termination_reason": "supported_statement_with_unresolved_fields"
+    },
+    {
+      "request_id": "ec686657a283c245",
+      "item_key": "IS1008d#5",
+      "record_id": null,
+      "field": "status",
+      "question": "What is this item's status at the end of the current meeting?",
+      "item_text": "Plan to launch around a major sports event to align with peak demand.",
+      "reason": "No explicit status marker in the current dialogue; provisional status is open but not verifiable from dialogue alone.",
+      "evidence_da_ids": [],
+      "available_evidence_da_ids": [
+        "IS1008d.B.dialog-act.s9553330.102",
+        "IS1008d.B.dialog-act.s9553330.103",
+        "IS1008d.A.dialog-act.s9553330.169",
+        "IS1008d.C.dialog-act.s9553330.139",
+        "IS1008d.B.dialog-act.s9553330.104",
+        "IS1008d.C.dialog-act.s9553330.138",
+        "IS1008d.C.dialog-act.s9553330.140",
+        "IS1008a.A.dialog-act.s9553330.30",
+        "IS1008a.D.dialog-act.s9553330.16",
+        "IS1008a.A.dialog-act.s9553330.31"
+      ],
+      "status": "open",
+      "termination_reason": "supported_statement_with_unresolved_fields"
+    }
+  ]
+}

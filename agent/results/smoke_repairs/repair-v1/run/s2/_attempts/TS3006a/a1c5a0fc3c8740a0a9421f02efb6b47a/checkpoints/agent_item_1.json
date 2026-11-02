@@ -1,0 +1,582 @@
+{
+  "item": 1,
+  "fields": {
+    "item_key": "TS3006a#1",
+    "record_id": null,
+    "item_type": "actions",
+    "item_text": "The User Interface Designer will specify the technical functions.",
+    "state": "pending",
+    "recordable": true,
+    "fields": {
+      "status": "open",
+      "prior_context_needed": false,
+      "related_items": [],
+      "owner": [
+        "MTD023UID"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3006a.json",
+          "locator": "TS3006a.A.dialog-act.vkaraisk.149"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3006a.json",
+          "locator": "TS3006a.B.dialog-act.vkaraisk.59"
+        }
+      ]
+    },
+    "draft_fields": {
+      "status": "open",
+      "related_items": [],
+      "owner": [
+        "MTD023UID"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "prior_context_needed": false,
+      "used_participant_lookup": false,
+      "evidence_da_ids": [
+        "TS3006a.A.dialog-act.vkaraisk.149",
+        "TS3006a.B.dialog-act.vkaraisk.59"
+      ]
+    },
+    "checks": {
+      "statement": {
+        "result": "pass",
+        "reason": "Dialogue supports that the UI designer is responsible for specifying technical functions as part of a role-defined task articulated by PM and UI participant affirmations.",
+        "quotes": [
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.149",
+            "quote": "Uh the User Interface Designer should specify the technical functions ."
+          },
+          {
+            "da_id": "TS3006a.B.dialog-act.vkaraisk.59",
+            "quote": "Yep ."
+          }
+        ],
+        "fields": [
+          "statement"
+        ]
+      },
+      "owner": {
+        "result": "pass",
+        "reason": "Explicit owner provided by the dialogue (PM states ownership assignment to UI designer confirmed by UI response).",
+        "quotes": [
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.149",
+            "quote": "Uh the User Interface Designer should specify the technical functions ."
+          },
+          {
+            "da_id": "TS3006a.B.dialog-act.vkaraisk.59",
+            "quote": "Yep ."
+          }
+        ],
+        "fields": [
+          "owner"
+        ]
+      },
+      "deadline": {
+        "result": "uncertain",
+        "reason": "deadline_unresolved",
+        "quotes": [],
+        "fields": [
+          "deadline"
+        ]
+      },
+      "status": {
+        "result": "pass",
+        "reason": "Open status is consistent with the current dialogue; no indication of completion.",
+        "quotes": [
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.149",
+            "quote": "Uh the User Interface Designer should specify the technical functions ."
+          },
+          {
+            "da_id": "TS3006a.B.dialog-act.vkaraisk.59",
+            "quote": "Yep ."
+          }
+        ],
+        "fields": [
+          "status"
+        ]
+      },
+      "conflict": {
+        "result": "pass",
+        "reason": "No conflicting statements found within the provided dialogue; assignment aligns with stated roles.",
+        "quotes": [
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.149",
+            "quote": "Uh the User Interface Designer should specify the technical functions ."
+          },
+          {
+            "da_id": "TS3006a.B.dialog-act.vkaraisk.59",
+            "quote": "Yep ."
+          }
+        ],
+        "fields": [
+          "statement",
+          "owner"
+        ]
+      },
+      "relation": {
+        "result": "not_applicable",
+        "reason": "No prior related_items to assess; this is the first item in the thread.",
+        "quotes": [],
+        "fields": [
+          "related_items"
+        ]
+      }
+    },
+    "unresolved_fields": [
+      "deadline"
+    ],
+    "observed_evidence_da_ids": [
+      "TS3006a.A.dialog-act.vkaraisk.149",
+      "TS3006a.B.dialog-act.vkaraisk.59",
+      "TS3006a.A.dialog-act.vkaraisk.148",
+      "TS3006a.A.dialog-act.vkaraisk.150",
+      "TS3006a.A.dialog-act.vkaraisk.151"
+    ],
+    "initial_context": {
+      "item": {
+        "type": "actions",
+        "text": "The User Interface Designer will specify the technical functions.",
+        "flags": []
+      },
+      "current_meeting": "TS3006a",
+      "earlier_meetings": [],
+      "roster": [
+        {
+          "speaker": "A",
+          "participant_id": "MTD021PM",
+          "role": "PM"
+        },
+        {
+          "speaker": "B",
+          "participant_id": "MTD023UID",
+          "role": "UI"
+        },
+        {
+          "speaker": "C",
+          "participant_id": "MTD022ID",
+          "role": "ID"
+        },
+        {
+          "speaker": "D",
+          "participant_id": "MTD024ME",
+          "role": "ME"
+        }
+      ],
+      "observed_dialogue": [
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.149",
+          "meeting_id": "TS3006a",
+          "text": "Uh the User Interface Designer should specify the technical functions .",
+          "participant": "MTD021PM",
+          "role": "PM"
+        },
+        {
+          "da_id": "TS3006a.B.dialog-act.vkaraisk.59",
+          "meeting_id": "TS3006a",
+          "text": "Yep .",
+          "participant": "MTD023UID",
+          "role": "UI"
+        },
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.148",
+          "participant": "MTD021PM",
+          "role": "PM",
+          "text": "Okay ."
+        },
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.150",
+          "participant": "MTD021PM",
+          "role": "PM",
+          "text": "Right ? Yeah ?"
+        },
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.151",
+          "participant": "MTD021PM",
+          "role": "PM",
+          "text": "<vocalsound> And the Marketing uh Expert should come up with user requirements ."
+        }
+      ],
+      "peer_items": [
+        {
+          "item_key": "TS3006a#0",
+          "type": "actions",
+          "text": "The Industrial Designer will produce a working design and work on the conceptual design."
+        }
+      ],
+      "provisional_values": {
+        "owner": [
+          "MTD023UID"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "open",
+        "related_items": []
+      },
+      "candidate_evidence_da_ids": [
+        "TS3006a.A.dialog-act.vkaraisk.149",
+        "TS3006a.B.dialog-act.vkaraisk.59"
+      ]
+    },
+    "observed_documents": [],
+    "document_evidence": [],
+    "relation_evidence": [],
+    "history": [
+      {
+        "item": "TS3006a#1",
+        "step": 1,
+        "flags": [],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue supports that the UI designer is responsible for specifying technical functions as part of a role-defined task articulated by PM and UI participant affirmations.",
+            "quotes": [
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.149",
+                "quote": "Uh the User Interface Designer should specify the technical functions ."
+              },
+              {
+                "da_id": "TS3006a.B.dialog-act.vkaraisk.59",
+                "quote": "Yep ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Explicit owner provided by the dialogue (PM states ownership assignment to UI designer confirmed by UI response).",
+            "quotes": [
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.149",
+                "quote": "Uh the User Interface Designer should specify the technical functions ."
+              },
+              {
+                "da_id": "TS3006a.B.dialog-act.vkaraisk.59",
+                "quote": "Yep ."
+              }
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "deadline_unresolved",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Open status is consistent with the current dialogue; no indication of completion.",
+            "quotes": [
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.149",
+                "quote": "Uh the User Interface Designer should specify the technical functions ."
+              },
+              {
+                "da_id": "TS3006a.B.dialog-act.vkaraisk.59",
+                "quote": "Yep ."
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting statements found within the provided dialogue; assignment aligns with stated roles.",
+            "quotes": [
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.149",
+                "quote": "Uh the User Interface Designer should specify the technical functions ."
+              },
+              {
+                "da_id": "TS3006a.B.dialog-act.vkaraisk.59",
+                "quote": "Yep ."
+              }
+            ],
+            "fields": [
+              "statement",
+              "owner"
+            ]
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related_items to assess; this is the first item in the thread.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "decision": "request_clarification",
+        "reason": "supported_statement_with_unresolved_fields",
+        "assessed_text": "The User Interface Designer will specify the technical functions.",
+        "requested_action": "accept",
+        "proposed_fields": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "MTD023UID"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.149",
+            "TS3006a.B.dialog-act.vkaraisk.59"
+          ]
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue supports that the UI designer is responsible for specifying technical functions as part of a role-defined task articulated by PM and UI participant affirmations.",
+            "quotes": [
+              "TS3006a.A.dialog-act.vkaraisk.149",
+              "TS3006a.B.dialog-act.vkaraisk.59"
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Explicit owner provided by the dialogue (PM states ownership assignment to UI designer confirmed by UI response).",
+            "quotes": [
+              "TS3006a.A.dialog-act.vkaraisk.149",
+              "TS3006a.B.dialog-act.vkaraisk.59"
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "No explicit deadline mentioned in current dialogue; deadline is missing in provisional values.",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Open status is consistent with the current dialogue; no indication of completion.",
+            "quotes": [
+              "TS3006a.A.dialog-act.vkaraisk.149",
+              "TS3006a.B.dialog-act.vkaraisk.59"
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting statements found within the provided dialogue; assignment aligns with stated roles.",
+            "quotes": [
+              "TS3006a.A.dialog-act.vkaraisk.149",
+              "TS3006a.B.dialog-act.vkaraisk.59"
+            ],
+            "fields": [
+              "statement",
+              "owner"
+            ]
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related_items to assess; this is the first item in the thread.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "MTD023UID"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue supports that the UI designer is responsible for specifying technical functions as part of a role-defined task articulated by PM and UI participant affirmations.",
+            "evidence_da_ids": [
+              "TS3006a.A.dialog-act.vkaraisk.149",
+              "TS3006a.B.dialog-act.vkaraisk.59"
+            ]
+          },
+          "owner_check": {
+            "result": "pass",
+            "reason": "Explicit owner provided by the dialogue (PM states ownership assignment to UI designer confirmed by UI response).",
+            "evidence_da_ids": [
+              "TS3006a.A.dialog-act.vkaraisk.149",
+              "TS3006a.B.dialog-act.vkaraisk.59"
+            ]
+          },
+          "deadline_check": {
+            "result": "uncertain",
+            "reason": "No explicit deadline mentioned in current dialogue; deadline is missing in provisional values.",
+            "evidence_da_ids": []
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Open status is consistent with the current dialogue; no indication of completion.",
+            "evidence_da_ids": [
+              "TS3006a.A.dialog-act.vkaraisk.149",
+              "TS3006a.B.dialog-act.vkaraisk.59"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No conflicting statements found within the provided dialogue; assignment aligns with stated roles.",
+            "evidence_da_ids": [
+              "TS3006a.A.dialog-act.vkaraisk.149",
+              "TS3006a.B.dialog-act.vkaraisk.59"
+            ],
+            "affected_fields": [
+              "statement",
+              "owner"
+            ]
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior related_items to assess; this is the first item in the thread.",
+            "evidence_da_ids": []
+          },
+          "next_action": "accept"
+        },
+        "evidence_bindings": {
+          "statement": [
+            "TS3006a.A.dialog-act.vkaraisk.149",
+            "TS3006a.B.dialog-act.vkaraisk.59"
+          ],
+          "owner": [
+            "TS3006a.A.dialog-act.vkaraisk.149",
+            "TS3006a.B.dialog-act.vkaraisk.59"
+          ],
+          "status": [
+            "TS3006a.A.dialog-act.vkaraisk.149",
+            "TS3006a.B.dialog-act.vkaraisk.59"
+          ],
+          "conflict": [
+            "TS3006a.A.dialog-act.vkaraisk.149",
+            "TS3006a.B.dialog-act.vkaraisk.59"
+          ]
+        },
+        "raw_tool_input": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "MTD023UID"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue supports that the UI designer is responsible for specifying technical functions as part of a role-defined task articulated by PM and UI participant affirmations.",
+            "evidence_da_ids": [
+              "TS3006a.A.dialog-act.vkaraisk.149",
+              "TS3006a.B.dialog-act.vkaraisk.59"
+            ]
+          },
+          "owner_check": {
+            "result": "pass",
+            "reason": "Explicit owner provided by the dialogue (PM states ownership assignment to UI designer confirmed by UI response).",
+            "evidence_da_ids": [
+              "TS3006a.A.dialog-act.vkaraisk.149",
+              "TS3006a.B.dialog-act.vkaraisk.59"
+            ]
+          },
+          "deadline_check": {
+            "result": "uncertain",
+            "reason": "No explicit deadline mentioned in current dialogue; deadline is missing in provisional values.",
+            "evidence_da_ids": []
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Open status is consistent with the current dialogue; no indication of completion.",
+            "evidence_da_ids": [
+              "TS3006a.A.dialog-act.vkaraisk.149",
+              "TS3006a.B.dialog-act.vkaraisk.59"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No conflicting statements found within the provided dialogue; assignment aligns with stated roles.",
+            "evidence_da_ids": [
+              "TS3006a.A.dialog-act.vkaraisk.149",
+              "TS3006a.B.dialog-act.vkaraisk.59"
+            ],
+            "affected_fields": [
+              "statement",
+              "owner"
+            ]
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior related_items to assess; this is the first item in the thread.",
+            "evidence_da_ids": []
+          },
+          "next_action": "accept"
+        },
+        "protocol_normalizations": []
+      },
+      {
+        "item": "TS3006a#1",
+        "step": 1,
+        "flags": [],
+        "action": "stop",
+        "outcome": "pending",
+        "termination_reason": "supported_statement_with_unresolved_fields",
+        "unresolved_fields": [
+          "deadline"
+        ]
+      }
+    ],
+    "lookups": 0,
+    "termination_reason": "supported_statement_with_unresolved_fields",
+    "clarifications": [
+      {
+        "request_id": "79b21a1891bea82c",
+        "item_key": "TS3006a#1",
+        "record_id": null,
+        "field": "deadline",
+        "question": "What is the agreed deadline, in its original wording?",
+        "item_text": "The User Interface Designer will specify the technical functions.",
+        "reason": "deadline_unresolved",
+        "evidence_da_ids": [],
+        "available_evidence_da_ids": [
+          "TS3006a.A.dialog-act.vkaraisk.149",
+          "TS3006a.B.dialog-act.vkaraisk.59",
+          "TS3006a.A.dialog-act.vkaraisk.148",
+          "TS3006a.A.dialog-act.vkaraisk.150",
+          "TS3006a.A.dialog-act.vkaraisk.151"
+        ],
+        "status": "open",
+        "termination_reason": "supported_statement_with_unresolved_fields"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1454 @@
+{
+  "item_key": "TS3006d#11",
+  "record_id": null,
+  "item_type": "actions",
+  "item_text": "PM will save a copy of the document.",
+  "state": "pending",
+  "recordable": true,
+  "fields": {
+    "status": "open",
+    "prior_context_needed": false,
+    "related_items": [],
+    "owner": [
+      "MTD021PM"
+    ],
+    "owner_basis": "explicit",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "reference": [
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3006d.json",
+        "locator": "TS3006d.A.dialog-act.dharshi.411"
+      }
+    ]
+  },
+  "draft_fields": {
+    "status": "open",
+    "related_items": [],
+    "owner": [
+      "MTD021PM"
+    ],
+    "owner_basis": "explicit",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "prior_context_needed": false,
+    "used_participant_lookup": false,
+    "evidence_da_ids": [
+      "TS3006d.A.dialog-act.dharshi.411",
+      "TS3006c.A.dialog-act.dharshi.300"
+    ]
+  },
+  "checks": {
+    "statement": {
+      "result": "pass",
+      "reason": "Dialogue evidence shows PM's 'Save copy' aligns with the stated action.",
+      "quotes": [
+        {
+          "da_id": "TS3006d.A.dialog-act.dharshi.411",
+          "quote": "Save copy ."
+        }
+      ],
+      "fields": [
+        "statement"
+      ]
+    },
+    "owner": {
+      "result": "pass",
+      "reason": "PM is the owner from the roster; dialogue shows PM stated the action.",
+      "quotes": [
+        {
+          "da_id": "TS3006d.A.dialog-act.dharshi.411",
+          "quote": "Save copy ."
+        }
+      ],
+      "fields": [
+        "owner"
+      ]
+    },
+    "deadline": {
+      "result": "uncertain",
+      "reason": "deadline_unresolved",
+      "quotes": [],
+      "fields": [
+        "deadline"
+      ]
+    },
+    "status": {
+      "result": "pass",
+      "reason": "Status is open in provisional_values and consistent with ongoing item.",
+      "quotes": [
+        {
+          "da_id": "TS3006d.A.dialog-act.dharshi.411",
+          "quote": "Save copy ."
+        }
+      ],
+      "fields": [
+        "status"
+      ]
+    },
+    "conflict": {
+      "result": "pass",
+      "reason": "No conflict detected in available dialogue regarding this action.",
+      "quotes": [
+        {
+          "da_id": "TS3006d.A.dialog-act.dharshi.411",
+          "quote": "Save copy ."
+        }
+      ],
+      "fields": []
+    },
+    "relation": {
+      "result": "uncertain",
+      "reason": "Current item describes saving a copy of a document; prior item describes saving the board. Although both are PM save actions by the same actor, the objects differ (document vs board) and there is no explicit textual link indicating continuation of the same save task. Therefore relation is uncertain; could be a new artifact save rather than a direct continuation.",
+      "quotes": [
+        {
+          "da_id": "TS3006d.A.dialog-act.dharshi.411",
+          "quote": "Save copy ."
+        },
+        {
+          "da_id": "TS3006c.A.dialog-act.dharshi.300",
+          "quote": "Oh and save this uh board ."
+        }
+      ],
+      "links": [],
+      "documents": [],
+      "fields": [
+        "related_items"
+      ]
+    }
+  },
+  "unresolved_fields": [
+    "deadline",
+    "related_items"
+  ],
+  "observed_evidence_da_ids": [
+    "TS3006d.A.dialog-act.dharshi.411",
+    "TS3006d.B.dialog-act.dharshi.259",
+    "TS3006d.D.dialog-act.dharshi.523",
+    "TS3006c.C.dialog-act.dharshi.290",
+    "TS3006c.A.dialog-act.dharshi.300",
+    "TS3006c.C.dialog-act.dharshi.291"
+  ],
+  "initial_context": {
+    "item": {
+      "type": "actions",
+      "text": "PM will save a copy of the document.",
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ]
+    },
+    "current_meeting": "TS3006d",
+    "earlier_meetings": [
+      "TS3006a",
+      "TS3006b",
+      "TS3006c"
+    ],
+    "roster": [
+      {
+        "speaker": "A",
+        "participant_id": "MTD021PM",
+        "role": "PM"
+      },
+      {
+        "speaker": "B",
+        "participant_id": "MTD023UID",
+        "role": "UI"
+      },
+      {
+        "speaker": "C",
+        "participant_id": "MTD022ID",
+        "role": "ID"
+      },
+      {
+        "speaker": "D",
+        "participant_id": "MTD024ME",
+        "role": "ME"
+      }
+    ],
+    "observed_dialogue": [
+      {
+        "da_id": "TS3006d.A.dialog-act.dharshi.411",
+        "meeting_id": "TS3006d",
+        "text": "Save copy .",
+        "participant": "MTD021PM",
+        "role": "PM"
+      },
+      {
+        "da_id": "TS3006d.B.dialog-act.dharshi.259",
+        "participant": "MTD023UID",
+        "role": "UI",
+        "text": "So you have to uh <disfmarker>"
+      },
+      {
+        "da_id": "TS3006d.D.dialog-act.dharshi.523",
+        "participant": "MTD024ME",
+        "role": "ME",
+        "text": "Yeah . Strange ."
+      }
+    ],
+    "peer_items": [
+      {
+        "item_key": "TS3006d#0",
+        "type": "decisions",
+        "text": "The group decided to use a hand dynamo as the power source."
+      },
+      {
+        "item_key": "TS3006d#1",
+        "type": "problems",
+        "text": "Budget constraints require price reductions and feature compromises to stay within budget."
+      },
+      {
+        "item_key": "TS3006d#2",
+        "type": "problems",
+        "text": "There is a problem with a two-euro cost increase."
+      },
+      {
+        "item_key": "TS3006d#3",
+        "type": "decisions",
+        "text": "The device will use five push-buttons plus one integrated scroll-wheel push-button."
+      },
+      {
+        "item_key": "TS3006d#4",
+        "type": "decisions",
+        "text": "The case should be plastic."
+      },
+      {
+        "item_key": "TS3006d#5",
+        "type": "decisions",
+        "text": "The menu button will also perform the OK function."
+      },
+      {
+        "item_key": "TS3006d#6",
+        "type": "decisions",
+        "text": "We will make one big LCD screen."
+      },
+      {
+        "item_key": "TS3006d#7",
+        "type": "decisions",
+        "text": "The device must be curved."
+      },
+      {
+        "item_key": "TS3006d#8",
+        "type": "actions",
+        "text": "The PM will try to obtain the chip before receiving the Excel sheet."
+      },
+      {
+        "item_key": "TS3006d#9",
+        "type": "actions",
+        "text": "ME will help PM to make one big LCD screen with casing around it."
+      },
+      {
+        "item_key": "TS3006d#10",
+        "type": "actions",
+        "text": "All participants will enter their questionnaire responses before the next meeting."
+      }
+    ],
+    "provisional_values": {
+      "owner": [
+        "MTD021PM"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "status": "open",
+      "related_items": []
+    },
+    "candidate_evidence_da_ids": [
+      "TS3006d.A.dialog-act.dharshi.411"
+    ]
+  },
+  "observed_documents": [],
+  "document_evidence": [],
+  "relation_evidence": [],
+  "history": [
+    {
+      "item": "TS3006d#11",
+      "step": 1,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "assess_item",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue evidence shows PM's 'Save copy' aligns with the stated action.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.411",
+              "quote": "Save copy ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "PM is the owner from the roster; dialogue shows PM stated the action.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.411",
+              "quote": "Save copy ."
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "deadline_unresolved",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Status is open in provisional_values and consistent with ongoing item.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.411",
+              "quote": "Save copy ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No conflict detected in available dialogue regarding this action.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.411",
+              "quote": "Save copy ."
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "prior_context_not_checked",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "decision": "retrieve",
+      "reason": "required_history_check_before_partial_accept",
+      "assessed_text": "PM will save a copy of the document.",
+      "requested_action": "accept",
+      "proposed_fields": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD021PM"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "TS3006d.A.dialog-act.dharshi.411"
+        ]
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue evidence shows PM's 'Save copy' aligns with the stated action.",
+          "quotes": [
+            "TS3006d.A.dialog-act.dharshi.411"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "PM is the owner from the roster; dialogue shows PM stated the action.",
+          "quotes": [
+            "TS3006d.A.dialog-act.dharshi.411"
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "No deadline is expressed in the meeting dialogue for this action.",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Status is open in provisional_values and consistent with ongoing item.",
+          "quotes": [
+            "TS3006d.A.dialog-act.dharshi.411"
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No conflict detected in available dialogue regarding this action.",
+          "quotes": [
+            "TS3006d.A.dialog-act.dharshi.411"
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "No clear relation to earlier items identified in current dialogue; future linking needed.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD021PM"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue evidence shows PM's 'Save copy' aligns with the stated action.",
+          "evidence_da_ids": [
+            "TS3006d.A.dialog-act.dharshi.411"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "PM is the owner from the roster; dialogue shows PM stated the action.",
+          "evidence_da_ids": [
+            "TS3006d.A.dialog-act.dharshi.411"
+          ]
+        },
+        "deadline_check": {
+          "result": "uncertain",
+          "reason": "No deadline is expressed in the meeting dialogue for this action.",
+          "evidence_da_ids": []
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "Status is open in provisional_values and consistent with ongoing item.",
+          "evidence_da_ids": [
+            "TS3006d.A.dialog-act.dharshi.411"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No conflict detected in available dialogue regarding this action.",
+          "evidence_da_ids": [
+            "TS3006d.A.dialog-act.dharshi.411"
+          ],
+          "affected_fields": []
+        },
+        "relation_check": {
+          "result": "uncertain",
+          "reason": "No clear relation to earlier items identified in current dialogue; future linking needed.",
+          "evidence_da_ids": []
+        },
+        "next_action": "accept"
+      },
+      "evidence_bindings": {
+        "statement": [
+          "TS3006d.A.dialog-act.dharshi.411"
+        ],
+        "owner": [
+          "TS3006d.A.dialog-act.dharshi.411"
+        ],
+        "status": [
+          "TS3006d.A.dialog-act.dharshi.411"
+        ],
+        "conflict": [
+          "TS3006d.A.dialog-act.dharshi.411"
+        ]
+      },
+      "raw_tool_input": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD021PM"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue evidence shows PM's 'Save copy' aligns with the stated action.",
+          "evidence_da_ids": [
+            "TS3006d.A.dialog-act.dharshi.411"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "PM is the owner from the roster; dialogue shows PM stated the action.",
+          "evidence_da_ids": [
+            "TS3006d.A.dialog-act.dharshi.411"
+          ]
+        },
+        "deadline_check": {
+          "result": "uncertain",
+          "reason": "No deadline is expressed in the meeting dialogue for this action.",
+          "evidence_da_ids": []
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "Status is open in provisional_values and consistent with ongoing item.",
+          "evidence_da_ids": [
+            "TS3006d.A.dialog-act.dharshi.411"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No conflict detected in available dialogue regarding this action.",
+          "evidence_da_ids": [
+            "TS3006d.A.dialog-act.dharshi.411"
+          ],
+          "affected_fields": []
+        },
+        "relation_check": {
+          "result": "uncertain",
+          "reason": "No clear relation to earlier items identified in current dialogue; future linking needed.",
+          "evidence_da_ids": []
+        },
+        "next_action": "accept"
+      },
+      "protocol_normalizations": [],
+      "unresolved_before": [
+        "deadline",
+        "owner",
+        "related_items",
+        "statement",
+        "status"
+      ],
+      "unresolved_after": [
+        "deadline",
+        "related_items"
+      ],
+      "semantic_stalls": 0,
+      "validation_codes": {
+        "deadline": [
+          "deadline_unresolved"
+        ],
+        "relation": [
+          "prior_context_not_checked"
+        ]
+      }
+    },
+    {
+      "item": "TS3006d#11",
+      "step": 2,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "history_context_focused",
+      "outcome": "delivered",
+      "evidence_da_ids": [
+        "TS3006d.A.dialog-act.dharshi.411",
+        "TS3006d.B.dialog-act.dharshi.259",
+        "TS3006d.D.dialog-act.dharshi.523"
+      ]
+    },
+    {
+      "item": "TS3006d#11",
+      "step": 2,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "get_prior_items",
+      "outcome": "lookup",
+      "decision": "retrieve",
+      "args": {
+        "query": "save copy",
+        "item_type": "actions"
+      },
+      "tool_result": {
+        "results": [
+          {
+            "id": "TS3006c.sys.s.7",
+            "meeting_id": "TS3006c",
+            "type": "actions",
+            "text": "MTD021PM will save this board.",
+            "owner": [
+              "MTD021PM"
+            ],
+            "owner_basis": "explicit",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "open",
+            "evidence": [
+              "TS3006c.A.dialog-act.dharshi.300"
+            ],
+            "source_file": "TS3006c.json",
+            "source_sha256": "5d073385d37d2d580aee9988092d00376384d38c90a113065fb8e5a61bac9a45",
+            "review_state": "legacy_unchecked",
+            "unresolved_fields": [],
+            "unreadable_reference_ids": [],
+            "score": 2.78
+          }
+        ]
+      },
+      "new_info": true
+    },
+    {
+      "item": "TS3006d#11",
+      "step": 3,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "read_prior_item",
+      "outcome": "lookup",
+      "decision": "retrieve",
+      "args": {
+        "item_id": "TS3006c.sys.s.7"
+      },
+      "tool_result": {
+        "results": [
+          {
+            "kind": "prior_item",
+            "id": "TS3006c.sys.s.7",
+            "meeting_id": "TS3006c",
+            "type": "actions",
+            "text": "MTD021PM will save this board.",
+            "owner": [
+              "MTD021PM"
+            ],
+            "owner_basis": "explicit",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "open",
+            "evidence": [
+              "TS3006c.A.dialog-act.dharshi.300"
+            ],
+            "source_file": "TS3006c.json",
+            "source_sha256": "5d073385d37d2d580aee9988092d00376384d38c90a113065fb8e5a61bac9a45",
+            "review_state": "legacy_unchecked",
+            "unresolved_fields": [],
+            "unreadable_reference_ids": [],
+            "selected_reference_ids": [
+              "TS3006c.A.dialog-act.dharshi.300"
+            ],
+            "next_offset": null
+          },
+          {
+            "kind": "dialogue",
+            "da_id": "TS3006c.C.dialog-act.dharshi.290",
+            "meeting_id": "TS3006c",
+            "text": "Alright .",
+            "participant": "MTD022ID",
+            "role": "ID",
+            "supports_item_id": "TS3006c.sys.s.7",
+            "is_reference": false
+          },
+          {
+            "kind": "dialogue",
+            "da_id": "TS3006c.A.dialog-act.dharshi.300",
+            "meeting_id": "TS3006c",
+            "text": "Oh and save this uh board .",
+            "participant": "MTD021PM",
+            "role": "PM",
+            "supports_item_id": "TS3006c.sys.s.7",
+            "is_reference": true
+          },
+          {
+            "kind": "dialogue",
+            "da_id": "TS3006c.C.dialog-act.dharshi.291",
+            "meeting_id": "TS3006c",
+            "text": "Huh ?",
+            "participant": "MTD022ID",
+            "role": "ID",
+            "supports_item_id": "TS3006c.sys.s.7",
+            "is_reference": false
+          }
+        ]
+      },
+      "new_info": true
+    },
+    {
+      "item": "TS3006d#11",
+      "step": 4,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "assess_relation",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue evidence shows PM's 'Save copy' aligns with the stated action.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.411",
+              "quote": "Save copy ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "PM is the owner from the roster; dialogue shows PM stated the action.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.411",
+              "quote": "Save copy ."
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "deadline_unresolved",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Status is open in provisional_values and consistent with ongoing item.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.411",
+              "quote": "Save copy ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No conflict detected in available dialogue regarding this action.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.411",
+              "quote": "Save copy ."
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "Current item describes saving a copy of a document; prior item described saving the board. Although both are PM save actions by the same actor, the objects differ (document vs board) and there is no explicit textual link indicating continuation of the same save task. Therefore relation is uncertain; could be a new artifact save rather than a direct continuation.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.411",
+              "quote": "Save copy ."
+            },
+            {
+              "da_id": "TS3006c.A.dialog-act.dharshi.300",
+              "quote": "Oh and save this uh board ."
+            }
+          ],
+          "links": [],
+          "documents": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "decision": "retrieve",
+      "reason": "unresolved_checks",
+      "assessed_text": "PM will save a copy of the document.",
+      "requested_action": null,
+      "proposed_fields": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD021PM"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "TS3006d.A.dialog-act.dharshi.411",
+          "TS3006c.A.dialog-act.dharshi.300"
+        ]
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue evidence shows PM's 'Save copy' aligns with the stated action.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.411",
+              "quote": "Save copy ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "PM is the owner from the roster; dialogue shows PM stated the action.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.411",
+              "quote": "Save copy ."
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "deadline_unresolved",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Status is open in provisional_values and consistent with ongoing item.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.411",
+              "quote": "Save copy ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No conflict detected in available dialogue regarding this action.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.411",
+              "quote": "Save copy ."
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "Current item describes saving a copy of a document; prior item described saving the board. Although both are PM save actions by the same actor, the objects differ (document vs board) and there is no explicit textual link indicating continuation of the same save task. Therefore relation is uncertain; could be a new artifact save rather than a direct continuation.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.411",
+              "quote": "Save copy ."
+            },
+            {
+              "da_id": "TS3006c.A.dialog-act.dharshi.300",
+              "quote": "Oh and save this uh board ."
+            }
+          ],
+          "links": [],
+          "documents": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "result": "uncertain",
+        "reason": "Current item describes saving a copy of a document; prior item described saving the board. Although both are PM save actions by the same actor, the objects differ (document vs board) and there is no explicit textual link indicating continuation of the same save task. Therefore relation is uncertain; could be a new artifact save rather than a direct continuation.",
+        "quotes": [
+          {
+            "da_id": "TS3006d.A.dialog-act.dharshi.411",
+            "quote": "Save copy ."
+          },
+          {
+            "da_id": "TS3006c.A.dialog-act.dharshi.300",
+            "quote": "Oh and save this uh board ."
+          }
+        ],
+        "documents": [],
+        "links": []
+      },
+      "evidence_bindings": {},
+      "raw_tool_input": {
+        "result": "uncertain",
+        "reason": "Current item describes saving a copy of a document; prior item described saving the board. Although both are PM save actions by the same actor, the objects differ (document vs board) and there is no explicit textual link indicating continuation of the same save task. Therefore relation is uncertain; could be a new artifact save rather than a direct continuation.",
+        "quotes": [
+          {
+            "da_id": "TS3006d.A.dialog-act.dharshi.411",
+            "quote": "Save copy ."
+          },
+          {
+            "da_id": "TS3006c.A.dialog-act.dharshi.300",
+            "quote": "Oh and save this uh board ."
+          }
+        ],
+        "documents": []
+      },
+      "protocol_normalizations": [
+        "empty_links_for_unestablished_relation",
+        "controller_action_for_missing_hint:retrieve"
+      ],
+      "unresolved_before": [
+        "deadline",
+        "related_items"
+      ],
+      "unresolved_after": [
+        "deadline",
+        "related_items"
+      ],
+      "semantic_stalls": 0,
+      "validation_codes": {
+        "deadline": [
+          "deadline_unresolved"
+        ]
+      }
+    },
+    {
+      "item": "TS3006d#11",
+      "step": 5,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "assess_relation",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue evidence shows PM's 'Save copy' aligns with the stated action.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.411",
+              "quote": "Save copy ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "PM is the owner from the roster; dialogue shows PM stated the action.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.411",
+              "quote": "Save copy ."
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "deadline_unresolved",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Status is open in provisional_values and consistent with ongoing item.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.411",
+              "quote": "Save copy ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No conflict detected in available dialogue regarding this action.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.411",
+              "quote": "Save copy ."
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "Current item describes saving a copy of a document; prior item describes saving the board. Different target artifacts; no explicit linkage in dialogue; relationship is uncertain.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.411",
+              "quote": "Save copy ."
+            },
+            {
+              "da_id": "TS3006c.A.dialog-act.dharshi.300",
+              "quote": "Oh and save this uh board ."
+            }
+          ],
+          "links": [],
+          "documents": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "decision": "retrieve",
+      "reason": "unresolved_checks",
+      "assessed_text": "PM will save a copy of the document.",
+      "requested_action": "retrieve",
+      "proposed_fields": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD021PM"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "TS3006d.A.dialog-act.dharshi.411",
+          "TS3006c.A.dialog-act.dharshi.300"
+        ]
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue evidence shows PM's 'Save copy' aligns with the stated action.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.411",
+              "quote": "Save copy ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "PM is the owner from the roster; dialogue shows PM stated the action.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.411",
+              "quote": "Save copy ."
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "deadline_unresolved",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Status is open in provisional_values and consistent with ongoing item.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.411",
+              "quote": "Save copy ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No conflict detected in available dialogue regarding this action.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.411",
+              "quote": "Save copy ."
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "Current item describes saving a copy of a document; prior item describes saving the board. Different target artifacts; no explicit linkage in dialogue; relationship is uncertain.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.411",
+              "quote": "Save copy ."
+            },
+            {
+              "da_id": "TS3006c.A.dialog-act.dharshi.300",
+              "quote": "Oh and save this uh board ."
+            }
+          ],
+          "links": [],
+          "documents": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "result": "uncertain",
+        "reason": "Current item describes saving a copy of a document; prior item describes saving the board. Different target artifacts; no explicit linkage in dialogue; relationship is uncertain.",
+        "quotes": [
+          {
+            "da_id": "TS3006d.A.dialog-act.dharshi.411",
+            "quote": "Save copy ."
+          },
+          {
+            "da_id": "TS3006c.A.dialog-act.dharshi.300",
+            "quote": "Oh and save this uh board ."
+          }
+        ],
+        "documents": [],
+        "links": [],
+        "next_action": "retrieve"
+      },
+      "evidence_bindings": {},
+      "raw_tool_input": {
+        "result": "uncertain",
+        "reason": "Current item describes saving a copy of a document; prior item describes saving the board. Different target artifacts; no explicit linkage in dialogue; relationship is uncertain.",
+        "quotes": [
+          {
+            "da_id": "TS3006d.A.dialog-act.dharshi.411",
+            "quote": "Save copy ."
+          },
+          {
+            "da_id": "TS3006c.A.dialog-act.dharshi.300",
+            "quote": "Oh and save this uh board ."
+          }
+        ],
+        "documents": [],
+        "links": [],
+        "next_action": "retrieve"
+      },
+      "protocol_normalizations": [],
+      "unresolved_before": [
+        "deadline",
+        "related_items"
+      ],
+      "unresolved_after": [
+        "deadline",
+        "related_items"
+      ],
+      "semantic_stalls": 1,
+      "validation_codes": {
+        "deadline": [
+          "deadline_unresolved"
+        ]
+      }
+    },
+    {
+      "item": "TS3006d#11",
+      "step": 6,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "assess_relation",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue evidence shows PM's 'Save copy' aligns with the stated action.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.411",
+              "quote": "Save copy ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "PM is the owner from the roster; dialogue shows PM stated the action.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.411",
+              "quote": "Save copy ."
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "deadline_unresolved",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Status is open in provisional_values and consistent with ongoing item.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.411",
+              "quote": "Save copy ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No conflict detected in available dialogue regarding this action.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.411",
+              "quote": "Save copy ."
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "Current item describes saving a copy of a document; prior item describes saving the board. Although both are PM save actions by the same actor, the objects differ (document vs board) and there is no explicit textual link indicating continuation of the same save task. Therefore relation is uncertain; could be a new artifact save rather than a direct continuation.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.411",
+              "quote": "Save copy ."
+            },
+            {
+              "da_id": "TS3006c.A.dialog-act.dharshi.300",
+              "quote": "Oh and save this uh board ."
+            }
+          ],
+          "links": [],
+          "documents": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "decision": "request_clarification",
+      "reason": "no_progress",
+      "assessed_text": "PM will save a copy of the document.",
+      "requested_action": "retrieve",
+      "proposed_fields": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD021PM"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "TS3006d.A.dialog-act.dharshi.411",
+          "TS3006c.A.dialog-act.dharshi.300"
+        ]
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue evidence shows PM's 'Save copy' aligns with the stated action.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.411",
+              "quote": "Save copy ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "PM is the owner from the roster; dialogue shows PM stated the action.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.411",
+              "quote": "Save copy ."
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "deadline_unresolved",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Status is open in provisional_values and consistent with ongoing item.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.411",
+              "quote": "Save copy ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No conflict detected in available dialogue regarding this action.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.411",
+              "quote": "Save copy ."
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "Current item describes saving a copy of a document; prior item describes saving the board. Although both are PM save actions by the same actor, the objects differ (document vs board) and there is no explicit textual link indicating continuation of the same save task. Therefore relation is uncertain; could be a new artifact save rather than a direct continuation.",
+          "quotes": [
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.411",
+              "quote": "Save copy ."
+            },
+            {
+              "da_id": "TS3006c.A.dialog-act.dharshi.300",
+              "quote": "Oh and save this uh board ."
+            }
+          ],
+          "links": [],
+          "documents": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "result": "uncertain",
+        "reason": "Current item describes saving a copy of a document; prior item describes saving the board. Although both are PM save actions by the same actor, the objects differ (document vs board) and there is no explicit textual link indicating continuation of the same save task. Therefore relation is uncertain; could be a new artifact save rather than a direct continuation.",
+        "quotes": [
+          {
+            "da_id": "TS3006d.A.dialog-act.dharshi.411",
+            "quote": "Save copy ."
+          },
+          {
+            "da_id": "TS3006c.A.dialog-act.dharshi.300",
+            "quote": "Oh and save this uh board ."
+          }
+        ],
+        "documents": [],
+        "links": [],
+        "next_action": "retrieve"
+      },
+      "evidence_bindings": {},
+      "raw_tool_input": {
+        "result": "uncertain",
+        "reason": "Current item describes saving a copy of a document; prior item describes saving the board. Although both are PM save actions by the same actor, the objects differ (document vs board) and there is no explicit textual link indicating continuation of the same save task. Therefore relation is uncertain; could be a new artifact save rather than a direct continuation.",
+        "quotes": [
+          {
+            "da_id": "TS3006d.A.dialog-act.dharshi.411",
+            "quote": "Save copy ."
+          },
+          {
+            "da_id": "TS3006c.A.dialog-act.dharshi.300",
+            "quote": "Oh and save this uh board ."
+          }
+        ],
+        "documents": [],
+        "links": [],
+        "next_action": "retrieve"
+      },
+      "protocol_normalizations": [],
+      "unresolved_before": [
+        "deadline",
+        "related_items"
+      ],
+      "unresolved_after": [
+        "deadline",
+        "related_items"
+      ],
+      "semantic_stalls": 2,
+      "validation_codes": {
+        "deadline": [
+          "deadline_unresolved"
+        ]
+      }
+    },
+    {
+      "item": "TS3006d#11",
+      "step": 6,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "stop",
+      "outcome": "pending",
+      "termination_reason": "no_progress",
+      "unresolved_fields": [
+        "deadline",
+        "related_items"
+      ]
+    }
+  ],
+  "lookups": 2,
+  "termination_reason": "no_progress",
+  "clarifications": [
+    {
+      "request_id": "75779ce9d26ea4a6",
+      "item_key": "TS3006d#11",
+      "record_id": null,
+      "field": "deadline",
+      "question": "What is the agreed deadline, in its original wording?",
+      "item_text": "PM will save a copy of the document.",
+      "reason": "deadline_unresolved",
+      "evidence_da_ids": [],
+      "available_evidence_da_ids": [
+        "TS3006d.A.dialog-act.dharshi.411",
+        "TS3006d.B.dialog-act.dharshi.259",
+        "TS3006d.D.dialog-act.dharshi.523",
+        "TS3006c.C.dialog-act.dharshi.290",
+        "TS3006c.A.dialog-act.dharshi.300",
+        "TS3006c.C.dialog-act.dharshi.291"
+      ],
+      "status": "open",
+      "termination_reason": "no_progress"
+    },
+    {
+      "request_id": "44e7f73b87876f86",
+      "item_key": "TS3006d#11",
+      "record_id": null,
+      "field": "related_items",
+      "question": "Which earlier record does this item continue or change, and how?",
+      "item_text": "PM will save a copy of the document.",
+      "reason": "Current item describes saving a copy of a document; prior item describes saving the board. Although both are PM save actions by the same actor, the objects differ (document vs board) and there is no explicit textual link indicating continuation of the same save task. Therefore relation is uncertain; could be a new artifact save rather than a direct continuation.",
+      "evidence_da_ids": [
+        "TS3006d.A.dialog-act.dharshi.411",
+        "TS3006c.A.dialog-act.dharshi.300"
+      ],
+      "available_evidence_da_ids": [
+        "TS3006d.A.dialog-act.dharshi.411",
+        "TS3006d.B.dialog-act.dharshi.259",
+        "TS3006d.D.dialog-act.dharshi.523",
+        "TS3006c.C.dialog-act.dharshi.290",
+        "TS3006c.A.dialog-act.dharshi.300",
+        "TS3006c.C.dialog-act.dharshi.291"
+      ],
+      "status": "open",
+      "termination_reason": "no_progress"
+    }
+  ]
+}

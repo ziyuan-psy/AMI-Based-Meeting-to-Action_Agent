@@ -1,0 +1,48 @@
+{
+  "control": {
+    "limits": {
+      "calls": 80,
+      "tokens": 1000000,
+      "request_seconds": 300.0,
+      "meeting_seconds": 1200.0,
+      "inflight": 4,
+      "retries": 2,
+      "backoff": 0.5
+    },
+    "attempted_calls": 1,
+    "charged_tokens": 5067,
+    "unknown_usage_tokens": 0,
+    "reserved_tokens": 0,
+    "max_inflight_seen": 1,
+    "failure": null,
+    "attempts": [
+      {
+        "attempt": 0,
+        "stage": "p2_check",
+        "reserved_tokens": 56520,
+        "input_bound": 24520,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 5067,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 4946,
+        "output_tokens": 121
+      }
+    ],
+    "input_bound_method": "utf8_request_bytes_plus_padding",
+    "unknown_usage_policy": "charge_full_reservation"
+  },
+  "actual_usage": {
+    "calls": 1,
+    "in": 4946,
+    "out": 121,
+    "stages": {
+      "p2_check": {
+        "calls": 1,
+        "in": 4946,
+        "out": 121
+      }
+    }
+  }
+}

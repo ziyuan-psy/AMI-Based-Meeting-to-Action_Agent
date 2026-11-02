@@ -1,0 +1,171 @@
+{
+  "meeting_id": "ES2011a",
+  "mode": "s2",
+  "status": "COMPLETED",
+  "execution_kind": "FIXED_RESPONSE_REPLAY_NOT_FRESH_PIPELINE",
+  "score": {
+    "metrics": {
+      "actions": {
+        "tp": 2,
+        "sys": 2,
+        "gold": 3,
+        "precision": 1.0,
+        "recall": 0.667,
+        "f1": 0.8
+      },
+      "decisions": {
+        "unscored": "NA placeholder category"
+      },
+      "problems": {
+        "unscored": "NA placeholder category"
+      }
+    },
+    "matches": {
+      "ES2011a.sys.s.3": "ES2011a.JacquelinePalmer.s.10",
+      "ES2011a.sys.s.6": "ES2011a.JacquelinePalmer.s.12"
+    },
+    "unmatched": {
+      "actions": {
+        "system": [],
+        "gold": [
+          {
+            "id": "ES2011a.JacquelinePalmer.s.11",
+            "text": "The User Interface Designer will research the technical functions.",
+            "type": "actions",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011a.json",
+                "locator": "ES2011a.A.dialog-act.dharshi.154"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011a.json",
+                "locator": "ES2011a.C.dialog-act.dharshi.110"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011a.json",
+                "locator": "ES2011a.A.dialog-act.dharshi.141"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011a.json",
+                "locator": "ES2011a.A.dialog-act.dharshi.155"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011a.json",
+                "locator": "ES2011a.A.dialog-act.dharshi.156"
+              }
+            ],
+            "owner": [
+              "FEE043"
+            ],
+            "owner_basis": "explicit",
+            "deadline": "for the next meeting",
+            "deadline_basis": "inferred",
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": []
+          }
+        ]
+      }
+    }
+  },
+  "fields": {
+    "status": {
+      "correct": 2,
+      "total": 2,
+      "rate": 1.0
+    },
+    "prior_context_needed": {
+      "correct": 2,
+      "total": 2,
+      "rate": 1.0
+    },
+    "owner_exact": {
+      "correct": 0,
+      "total": 2,
+      "rate": 0.0
+    },
+    "owner_basis": {
+      "correct": 1,
+      "total": 2,
+      "rate": 0.5
+    },
+    "deadline_match": {
+      "correct": 0,
+      "total": 2,
+      "rate": 0.0
+    },
+    "deadline_basis": {
+      "correct": 0,
+      "total": 2,
+      "rate": 0.0
+    }
+  },
+  "raw_alignment": {
+    "actions": {
+      "ES2011a.sys.s.3": "ES2011a.JacquelinePalmer.s.10",
+      "ES2011a.sys.s.6": "ES2011a.JacquelinePalmer.s.12"
+    }
+  },
+  "category_accounting": {
+    "actions": {
+      "raw_system": 2,
+      "raw_gold": 3,
+      "unscored": false,
+      "excluded_gold_ids": [],
+      "excluded_system_ids": []
+    },
+    "decisions": {
+      "raw_system": 2,
+      "raw_gold": 1,
+      "unscored": true,
+      "excluded_gold_ids": [],
+      "excluded_system_ids": []
+    },
+    "problems": {
+      "raw_system": 4,
+      "raw_gold": 1,
+      "unscored": true,
+      "excluded_gold_ids": [],
+      "excluded_system_ids": []
+    }
+  },
+  "vote_caches": {
+    "actions": {
+      "path": "votes\\ES2011a\\actions.e1525d902ae345cf0d34.json",
+      "votes": 3,
+      "input_sha256": "e1525d902ae345cf0d34d82199344ac0ea170d007abaad3caac6ab0d20d24cbb"
+    }
+  },
+  "runtime_control": {
+    "limits": {
+      "calls": 80,
+      "tokens": 1000000,
+      "request_seconds": 300.0,
+      "meeting_seconds": 1200.0,
+      "inflight": 4,
+      "retries": 2,
+      "backoff": 0.5
+    },
+    "attempted_calls": 0,
+    "charged_tokens": 0,
+    "unknown_usage_tokens": 0,
+    "reserved_tokens": 0,
+    "max_inflight_seen": 0,
+    "failure": null,
+    "attempts": [],
+    "input_bound_method": "utf8_request_bytes_plus_padding",
+    "unknown_usage_policy": "charge_full_reservation"
+  },
+  "judge_usage": {
+    "calls": 0,
+    "in": 0,
+    "out": 0,
+    "stages": {}
+  },
+  "elapsed_seconds": 0.015
+}

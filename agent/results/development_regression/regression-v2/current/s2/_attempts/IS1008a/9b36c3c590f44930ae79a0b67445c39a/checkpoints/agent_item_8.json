@@ -1,0 +1,485 @@
+{
+  "item": 8,
+  "fields": {
+    "item_key": "IS1008a#8",
+    "record_id": null,
+    "item_type": "decisions",
+    "item_text": "The team will deliver the project plan in two weeks.",
+    "state": "pending",
+    "recordable": false,
+    "fields": {
+      "status": "unknown",
+      "prior_context_needed": false,
+      "related_items": [],
+      "reference": []
+    },
+    "draft_fields": {
+      "owner": null,
+      "owner_basis": "missing",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "status": "adopted",
+      "prior_context_needed": false,
+      "related_items": [],
+      "evidence_da_ids": [
+        "IS1008a.C.dialog-act.s9553330.37",
+        "IS1008a.A.dialog-act.s9553330.66"
+      ],
+      "used_participant_lookup": false
+    },
+    "checks": {
+      "statement": {
+        "result": "uncertain",
+        "reason": "Dialogue shows agreement to the idea of delivering a project plan in two weeks, but no explicit confirmation of the two-week deadline in current statements; prior dialogue questions feasibility.",
+        "quotes": [
+          {
+            "da_id": "IS1008a.C.dialog-act.s9553330.37",
+            "quote": "<vocalsound> Uh well if uh if we have enough time uh then d do you think um two weeks is a <disfmarker> is close enough ?"
+          },
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.66",
+            "quote": "Yes I think uh that would be good ,"
+          }
+        ],
+        "fields": [
+          "statement"
+        ]
+      },
+      "owner": {
+        "result": "not_applicable",
+        "reason": "field_not_applicable",
+        "quotes": [],
+        "fields": [
+          "owner"
+        ]
+      },
+      "deadline": {
+        "result": "not_applicable",
+        "reason": "field_not_applicable",
+        "quotes": [],
+        "fields": [
+          "deadline"
+        ]
+      },
+      "status": {
+        "result": "uncertain",
+        "reason": "current_meeting_support_required",
+        "quotes": [],
+        "fields": [
+          "status"
+        ]
+      },
+      "conflict": {
+        "result": "uncertain",
+        "reason": "There is a potential misalignment with earlier concern about two-week feasibility seen in C's comment; not enough to declare conflict.",
+        "quotes": [],
+        "fields": []
+      },
+      "relation": {
+        "result": "not_applicable",
+        "reason": "No related items to assess relation.",
+        "quotes": [],
+        "fields": [
+          "related_items"
+        ]
+      }
+    },
+    "unresolved_fields": [
+      "statement",
+      "status"
+    ],
+    "observed_evidence_da_ids": [
+      "IS1008a.C.dialog-act.s9553330.37",
+      "IS1008a.A.dialog-act.s9553330.66",
+      "IS1008a.A.dialog-act.s9553330.65",
+      "IS1008a.A.dialog-act.s9553330.67"
+    ],
+    "initial_context": {
+      "item": {
+        "type": "decisions",
+        "text": "The team will deliver the project plan in two weeks.",
+        "flags": []
+      },
+      "fields": {
+        "owner": null,
+        "owner_basis": "missing",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "adopted",
+        "prior_context_needed": false,
+        "related_items": [],
+        "evidence_da_ids": [
+          "IS1008a.C.dialog-act.s9553330.37",
+          "IS1008a.A.dialog-act.s9553330.66"
+        ],
+        "used_participant_lookup": false
+      },
+      "current_meeting": "IS1008a",
+      "earlier_meetings": [],
+      "roster": [
+        {
+          "speaker": "A",
+          "participant_id": "MIO086",
+          "role": "PM"
+        },
+        {
+          "speaker": "B",
+          "participant_id": "FIE038",
+          "role": "UI"
+        },
+        {
+          "speaker": "C",
+          "participant_id": "FIE073",
+          "role": "ID"
+        },
+        {
+          "speaker": "D",
+          "participant_id": "MIE085",
+          "role": "ME"
+        }
+      ],
+      "observed_dialogue": [
+        {
+          "da_id": "IS1008a.C.dialog-act.s9553330.37",
+          "meeting_id": "IS1008a",
+          "text": "<vocalsound> Uh well if uh if we have enough time uh then d do you think um two weeks is a <disfmarker> is close enough ?",
+          "participant": "FIE073",
+          "role": "ID"
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.66",
+          "meeting_id": "IS1008a",
+          "text": "Yes I think uh that would be good ,",
+          "participant": "MIO086",
+          "role": "PM"
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.65",
+          "participant": "MIO086",
+          "role": "PM",
+          "text": "B as soon as possible ."
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.67",
+          "participant": "MIO086",
+          "role": "PM",
+          "text": "because I need to go to the management and uh tell them what we are going to do , and uh what cost is , okay , and what's the time frame and what's the project plan ,"
+        }
+      ],
+      "peer_items": [
+        {
+          "item_key": "IS1008a#0",
+          "type": "problems",
+          "text": "ID(FIE073) did not understand the project goal and believed the project was a different product, indicating a scope/goal misalignment."
+        },
+        {
+          "item_key": "IS1008a#1",
+          "type": "actions",
+          "text": "ID will deliver a written plan covering functional and technical design, staffing, timeframe, budget, and market plan by two weeks."
+        },
+        {
+          "item_key": "IS1008a#2",
+          "type": "problems",
+          "text": "There is no written project plan or budget yet, and documentation is missing to present to management."
+        },
+        {
+          "item_key": "IS1008a#3",
+          "type": "actions",
+          "text": "ID will identify additional contributors from marketing, technical, and administration for the plan and inform PM."
+        },
+        {
+          "item_key": "IS1008a#4",
+          "type": "actions",
+          "text": "UI will determine the functional design as the immediate next step."
+        },
+        {
+          "item_key": "IS1008a#5",
+          "type": "actions",
+          "text": "UI will build the overall plan incorporating inputs from usability, marketing, and design groups."
+        },
+        {
+          "item_key": "IS1008a#6",
+          "type": "actions",
+          "text": "Ed will provide a written project plan by the next meeting."
+        },
+        {
+          "item_key": "IS1008a#7",
+          "type": "decisions",
+          "text": "The group decided that the project will focus on designing a remote control for television and will start with that remote control as the first product."
+        }
+      ]
+    },
+    "observed_documents": [],
+    "document_evidence": [],
+    "relation_evidence": [],
+    "history": [
+      {
+        "item": "IS1008a#8",
+        "step": 1,
+        "flags": [],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "uncertain",
+            "reason": "Dialogue shows agreement to the idea of delivering a project plan in two weeks, but no explicit confirmation of the two-week deadline in current statements; prior dialogue questions feasibility.",
+            "quotes": [
+              {
+                "da_id": "IS1008a.C.dialog-act.s9553330.37",
+                "quote": "<vocalsound> Uh well if uh if we have enough time uh then d do you think um two weeks is a <disfmarker> is close enough ?"
+              },
+              {
+                "da_id": "IS1008a.A.dialog-act.s9553330.66",
+                "quote": "Yes I think uh that would be good ,"
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "uncertain",
+            "reason": "current_meeting_support_required",
+            "quotes": [],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "uncertain",
+            "reason": "There is a potential misalignment with earlier concern about two-week feasibility seen in C's comment; not enough to declare conflict.",
+            "quotes": [],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No related items to assess relation.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "decision": "stop",
+        "reason": "unresolved_checks",
+        "requested_action": "stop",
+        "proposed_fields": {
+          "owner": null,
+          "owner_basis": "missing",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "status": "adopted",
+          "prior_context_needed": false,
+          "related_items": [],
+          "evidence_da_ids": [
+            "IS1008a.C.dialog-act.s9553330.37",
+            "IS1008a.A.dialog-act.s9553330.66"
+          ],
+          "used_participant_lookup": false
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "uncertain",
+            "reason": "Dialogue shows agreement to the idea of delivering a project plan in two weeks, but no explicit confirmation of the two-week deadline in current statements; prior dialogue questions feasibility.",
+            "quotes": [
+              "IS1008a.C.dialog-act.s9553330.37",
+              "IS1008a.A.dialog-act.s9553330.66"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "Non-action item; assignment not determined in dialogue."
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "No explicit deadline stated in current dialogue."
+          },
+          "status": {
+            "result": "pass",
+            "reason": "The adopted decision expresses intent to deliver the plan; no contrary evidence in present dialogue."
+          },
+          "conflict": {
+            "result": "uncertain",
+            "reason": "There is a potential misalignment with earlier concern about two-week feasibility seen in C's comment; not enough to declare conflict."
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No related items to assess relation."
+          }
+        },
+        "submitted_assessment": {
+          "fields": {
+            "owner": null,
+            "owner_basis": "missing",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "adopted",
+            "prior_context_needed": false,
+            "related_items": [],
+            "evidence_da_ids": [
+              "IS1008a.C.dialog-act.s9553330.37",
+              "IS1008a.A.dialog-act.s9553330.66"
+            ],
+            "used_participant_lookup": false
+          },
+          "checks": {
+            "statement": {
+              "result": "uncertain",
+              "reason": "Dialogue shows agreement to the idea of delivering a project plan in two weeks, but no explicit confirmation of the two-week deadline in current statements; prior dialogue questions feasibility.",
+              "quotes": [
+                "IS1008a.C.dialog-act.s9553330.37",
+                "IS1008a.A.dialog-act.s9553330.66"
+              ]
+            },
+            "owner": {
+              "result": "not_applicable",
+              "reason": "Non-action item; assignment not determined in dialogue."
+            },
+            "deadline": {
+              "result": "not_applicable",
+              "reason": "No explicit deadline stated in current dialogue."
+            },
+            "status": {
+              "result": "pass",
+              "reason": "The adopted decision expresses intent to deliver the plan; no contrary evidence in present dialogue."
+            },
+            "conflict": {
+              "result": "uncertain",
+              "reason": "There is a potential misalignment with earlier concern about two-week feasibility seen in C's comment; not enough to declare conflict."
+            },
+            "relation": {
+              "result": "not_applicable",
+              "reason": "No related items to assess relation."
+            }
+          },
+          "next_action": "stop"
+        },
+        "evidence_bindings": {
+          "statement": [
+            "IS1008a.C.dialog-act.s9553330.37",
+            "IS1008a.A.dialog-act.s9553330.66"
+          ]
+        },
+        "raw_tool_input": {
+          "fields": {
+            "owner": null,
+            "owner_basis": "missing",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "adopted",
+            "prior_context_needed": false,
+            "related_items": [],
+            "evidence_da_ids": [
+              "IS1008a.C.dialog-act.s9553330.37",
+              "IS1008a.A.dialog-act.s9553330.66"
+            ],
+            "used_participant_lookup": false
+          },
+          "checks": {
+            "statement": {
+              "result": "uncertain",
+              "reason": "Dialogue shows agreement to the idea of delivering a project plan in two weeks, but no explicit confirmation of the two-week deadline in current statements; prior dialogue questions feasibility.",
+              "quotes": [
+                "IS1008a.C.dialog-act.s9553330.37",
+                "IS1008a.A.dialog-act.s9553330.66"
+              ]
+            },
+            "owner": {
+              "result": "not_applicable",
+              "reason": "Non-action item; assignment not determined in dialogue."
+            },
+            "deadline": {
+              "result": "not_applicable",
+              "reason": "No explicit deadline stated in current dialogue."
+            },
+            "status": {
+              "result": "pass",
+              "reason": "The adopted decision expresses intent to deliver the plan; no contrary evidence in present dialogue."
+            },
+            "conflict": {
+              "result": "uncertain",
+              "reason": "There is a potential misalignment with earlier concern about two-week feasibility seen in C's comment; not enough to declare conflict."
+            },
+            "relation": {
+              "result": "not_applicable",
+              "reason": "No related items to assess relation."
+            }
+          },
+          "next_action": "stop"
+        },
+        "protocol_normalizations": []
+      },
+      {
+        "item": "IS1008a#8",
+        "step": 1,
+        "flags": [],
+        "action": "stop",
+        "outcome": "pending",
+        "termination_reason": "unresolved_checks",
+        "unresolved_fields": [
+          "statement",
+          "status"
+        ]
+      }
+    ],
+    "lookups": 0,
+    "termination_reason": "unresolved_checks",
+    "clarifications": [
+      {
+        "request_id": "ededc02415e8887c",
+        "item_key": "IS1008a#8",
+        "record_id": null,
+        "field": "statement",
+        "question": "Should this be recorded as a substantive, supported decisions item?",
+        "item_text": "The team will deliver the project plan in two weeks.",
+        "reason": "Dialogue shows agreement to the idea of delivering a project plan in two weeks, but no explicit confirmation of the two-week deadline in current statements; prior dialogue questions feasibility.; There is a potential misalignment with earlier concern about two-week feasibility seen in C's comment; not enough to declare conflict.",
+        "evidence_da_ids": [
+          "IS1008a.C.dialog-act.s9553330.37",
+          "IS1008a.A.dialog-act.s9553330.66"
+        ],
+        "available_evidence_da_ids": [
+          "IS1008a.C.dialog-act.s9553330.37",
+          "IS1008a.A.dialog-act.s9553330.66",
+          "IS1008a.A.dialog-act.s9553330.65",
+          "IS1008a.A.dialog-act.s9553330.67"
+        ],
+        "status": "open",
+        "termination_reason": "unresolved_checks"
+      },
+      {
+        "request_id": "d7e2fe4e260c75b4",
+        "item_key": "IS1008a#8",
+        "record_id": null,
+        "field": "status",
+        "question": "What is this item's status at the end of the current meeting?",
+        "item_text": "The team will deliver the project plan in two weeks.",
+        "reason": "current_meeting_support_required",
+        "evidence_da_ids": [],
+        "available_evidence_da_ids": [
+          "IS1008a.C.dialog-act.s9553330.37",
+          "IS1008a.A.dialog-act.s9553330.66",
+          "IS1008a.A.dialog-act.s9553330.65",
+          "IS1008a.A.dialog-act.s9553330.67"
+        ],
+        "status": "open",
+        "termination_reason": "unresolved_checks"
+      }
+    ]
+  }
+}

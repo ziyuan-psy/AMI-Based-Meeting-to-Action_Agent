@@ -1,0 +1,179 @@
+{
+  "format_version": 1,
+  "run_id": "964d843fe12b46b2ba790db7194a6551",
+  "meeting_id": "TS3006a",
+  "mode": "s2",
+  "status": "COMPLETED",
+  "started_at": "2026-10-26T21:56:05.997752+00:00",
+  "code": {
+    "git_commit": "03e69aa43d022a61bf6db3068e69dfb10c329778",
+    "git_branch": "agent-development",
+    "dirty_source_files": [
+      "M agent/src/mta/extract.py",
+      " M agent/src/mta/pipeline.py",
+      " M agent/src/mta/trace.py",
+      "?? agent/src/mta/baseline.py",
+      "?? agent/src/mta/observation.py"
+    ],
+    "git_status_available": true,
+    "source_sha256": {
+      "agent/scripts/demo.py": "04c9203630e52f4441bbd9d6beb4da9679e8e2d7a5c2cd69b15c410764cc39ab",
+      "agent/scripts/full_eval.py": "10b97880a16415fb817d3acc04ca138b229fa1eb9c75864fabb69ca388264a88",
+      "agent/scripts/prepare_data.py": "4d4349ae5a91dd62aa1e1b340ba685038629ca37e89e05e93f7b51b584d7ec97",
+      "agent/scripts/repeat_run.py": "01ecd17df48cf64fa917da8174b11b161dbe06b5605fe575cbbb47180ba6b25f",
+      "agent/scripts/run_series.py": "36f29692f878c395e60b7909577d5a1dab5c50ade71697861bb50f18d8fff3be",
+      "agent/scripts/smoke.py": "80d2ce932a11bacc17f2d72d0d092cd6f903f8778318bffd9d666aed20ba46e0",
+      "agent/src/mta/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "agent/src/mta/agent.py": "e3562dd73a02668a1b7b5502884f4edfee2decb7ada58cefcd43549b146a16f3",
+      "agent/src/mta/baseline.py": "fcfd933fba015a297c865b49d7dede4ddb750f86d39dc49ac0b73dddcabe2cd7",
+      "agent/src/mta/config.py": "3a0cee426c6db61aa046bbf6134cdb0ba6180631d80b6019f45e5bb5cc68e513",
+      "agent/src/mta/evaluate.py": "abdbe3dbbee04baef7284e5141578ecfab3b3d8aa5f535b0fa3c3794319b6985",
+      "agent/src/mta/extract.py": "00f4a15c3b0d4225c2667cbdb2f8dddd1e0a942a13e423953bf943290bd55015",
+      "agent/src/mta/judge.py": "10185b386349a33cc42912c0b7444a908241c82f9781baf64e4008719cd5fdef",
+      "agent/src/mta/llm.py": "401a5d9e8e6e5e72dc63f606646040a3766a74c7c3a04ee3b2a3474b96490052",
+      "agent/src/mta/observation.py": "d65f9e8b68323b941cc082c834bd3f05a3a93b89d1dfac9873ee1be161ed450a",
+      "agent/src/mta/pipeline.py": "5a858153c0f9da39ed6dcdd9df9a4bb04862a83f635af3835549c5d53b55a35a",
+      "agent/src/mta/prompts.py": "49b24f36f7cf403aca6a46dee0b6b1d23513744b203e14c92926a3deef4f11d9",
+      "agent/src/mta/render.py": "d5a173d79221501e422ee76701b5bcac0c9e80514c080a2cc97d7631ceba99b1",
+      "agent/src/mta/run.py": "71206cbc81404c91b4c67434b8ccbb1c40ed961f89db15e5e5cba0609aff0c9e",
+      "agent/src/mta/store.py": "ec01adf31826ad9708db62bcd9408167a86115697777e52339bca95664f82274",
+      "agent/src/mta/support.py": "51587e85394c60a9c6faa53ea3ba2c42d724f5ba7b766071c054d66e16eae284",
+      "agent/src/mta/trace.py": "ee6b065d9fd679a129b4e1cc3679ab9a16a12ef37df793d07e8d06d867ee071c",
+      "agent/src/mta/transcript_parser.py": "c7d7f3e535196eafb05da6413381679befbbc12250a47139b3e5628f1c311dc1",
+      "agent/src/mta/triage.py": "dfdabcd7e390cc354be6bef7cdb6b051492596f3399740b3df15e063adf13f04",
+      "agent/src/mta/validate.py": "11e56a82329f66bc64021ba54a8b4c858891ae6d58ff7582fdb6d7f0b2749039",
+      "transcript_parser.py": "1d2fc13cff098b459f232fb78e625c1b01124e9ab4b939cb400e01e98236ebfb"
+    },
+    "source_digest": "adbfdc92df2cf28303df072aeedad80540687c8e5d4179ed654a768b7c2cee1e"
+  },
+  "model": {
+    "name": "@30875-fall26-openai/gpt-5-nano",
+    "client": "mta.llm.OpenAIAdapter",
+    "endpoint": "https://api.portkey.ai/v1",
+    "supports_reasoning_effort": true
+  },
+  "config": {
+    "CHUNK": 150,
+    "OVERLAP": 20,
+    "WORKERS": 4,
+    "EMPTY_RETRIES": 2,
+    "ACTION_SAMPLES": 2,
+    "CONSOLIDATE_SAMPLES": 3,
+    "MAX_ITEMS": {
+      "actions": 5,
+      "decisions": 7,
+      "problems": 4
+    },
+    "EFFORT_EXTRACT": null,
+    "EFFORT_CONSOLIDATE": null,
+    "EFFORT_AGENT": "low",
+    "EFFORT_ABSTRACT": "low",
+    "PRIOR_JACCARD": 0.08,
+    "MAX_CALLS_PER_ITEM": 4,
+    "MAX_CALLS_PER_MEETING": 30,
+    "MAX_INVALID_ACTIONS": 2,
+    "MAX_NO_PROGRESS": 2,
+    "MAX_FINISH_TRIES": 3,
+    "MAX_AGENT_STEPS": 12,
+    "OPENAI_MIN_COMPLETION_TOKENS": 32000
+  },
+  "config_digest": "a35f3b09bf8f0111f2b315675eeba51c6674a9647214bfcc3823e7f98435845c",
+  "prompts": {
+    "EXTRACT_SYSTEM": {
+      "text": "You read part of a meeting transcript and list candidate decisions, action items and problems.\n\nOUTPUT FIELD TEMPLATE (schema 0.5.0). Every item you produce must follow it. Do not add, drop or rename fields.\n\ntype: one of  abstract | actions | decisions | problems\n\nfield                 applies to                 meaning\nid                    all                        stable item id, assigned by the system\ntext                  all                        the statement; keep conditions, scope and uncertainty\ntype                  all                        abstract | actions | decisions | problems\nreference             all                        sources that actually support the item: {source_type, source, locator};\n                                                 source_type is dialogue | participant_metadata | project_document.\n                                                 It is NOT a retrieval log.\nowner                 actions                    stable participant IDs of the assigned person(s), e.g. [\"MTD021PM\"];\n                                                 several IDs = joint ownership; null if not determinable\nowner_basis           actions                    explicit | inferred | ambiguous | missing\ndeadline              actions                    the deadline in the ORIGINAL wording, or null\ndeadline_basis        actions                    explicit | inferred | ambiguous | missing\nstatus                actions/decisions/problems state supported at the END of this meeting:\n                                                 actions: open | in_progress | completed | cancelled | deferred | unknown\n                                                 decisions: proposed | adopted | conditional | rejected | deferred | unknown\n                                                 problems: open | resolved | deferred | unknown\nprior_context_needed  actions/decisions/problems is an EARLIER meeting necessary to interpret or verify this item?\nrelated_items         actions/decisions/problems earlier items this one affects: [{id, relation}];\n                                                 relation: continues | updates | replaces | cancels | completes | resolves | reopens\n\nRULES\n- Owner: the person who announces an assignment is not automatically the owner. Do not expand \"we\", \"someone\" or\n  \"everyone\" to all participants. explicit/inferred => give participant IDs; ambiguous/missing => owner null.\n  Joint assignments (\"A and B will ...\") list all assigned IDs.\n- Deadline: keep the original wording (\"by next meeting\" is explicit even though it is relative). Never invent a\n  calendar date. Do not treat a work duration, test duration, expected email or start condition as a deadline.\n  explicit/inferred => non-null; missing => null.\n- Status: distinguish suggestions and conditional offers from accepted commitments. Do not infer completion only\n  because something was presented later. A later cancellation or completion is recorded in the LATER item through\n  related_items; never rewrite an earlier meeting's historical state.\n- reference vs prior_context_needed vs related_items:\n    reference = which sources support the annotation;\n    prior_context_needed = could the item be interpreted/verified WITHOUT an earlier meeting? (participant or\n      scenario lookup alone does not make it true);\n    related_items = which earlier action/decision/problem this one continues or changes, and how.\n- Use only information available by the end of the current meeting. Speaker letters (A/B/C/D) are not stable across\n  meetings: use the participant IDs and roles you are given.\n- Scenario/project documents help interpretation but never override who was actually assigned in the meeting.\n- If the evidence does not settle owner or deadline, say so (ambiguous / missing). Nobody can be asked: do not guess.\n\nTranscript lines look like:  [n] ROLE(PARTICIPANT_ID): text\nReturn candidates through the tool. For each candidate:\n- type: actions | decisions | problems (abstract is produced later).\n- text: one self-contained sentence in your own words, faithful to the dialogue.\n- evidence: the line numbers [n] that support it (all lines needed, including those that settle the owner/deadline).\n- owner_ids: participant IDs from the roster you are given (actions only), [] if none can be determined.\n- owner_cue / deadline_cue: the wording in the dialogue that points to the owner / deadline, or null.\n- owner_basis / deadline_basis / deadline / status: as in the template (provisional; they may be checked later).\nEXAMPLES of well-formed items (taken from other meetings, only to show the right size and wording):\nactions:\n- The industrial designer will develop the components concept for the next design phase.\n- The marketing expert will continue trendwatching to inform the marketing concept.\n- The Project Manager will put the meeting minutes in the shared documents folder.\ndecisions:\n- (adopted) Speech recognition will not be used.\n- (adopted) The group decided that their target marketing group would be mostly teenagers and young professionals.\n- (adopted) The remote will feature plastic buttons and casing, rather than rubber.\n- (deferred) The group put off building a stand or wall holder for the remote, because the locator function means the remote can be kept anywhere.\n- (proposed) The scroll wheel could be small and yellow, to match the corporate colours.\nproblems:\n- (resolved) Some of the group members had difficulties with their computers in opening their presentations.\n- (open) The desired price/feature tradeoff and management's willingness to fund a more innovative product remained unclear.\n\nWHAT TO LIST (be selective; precision matters as much as recall)\n- actions: follow-up work that a named role takes on for the period AFTER this meeting (before the next one),\n  e.g. \"the designer will work out ...\", \"the expert will research ...\", \"the manager will write up the minutes\".\n  They are usually stated when the work is assigned, often near the end. NOT actions: things done during the\n  meeting itself (presenting slides, fixing the computer, drawing now, moving the agenda along, saving a file),\n  questions, vague wishes, restating the task, or things already done. status: open (just assigned),\n  in_progress (already started), completed (finished in the meeting).\n- decisions: choices the group settles about the product or project (target price, features, scope, design\n  direction, target group, what to include or exclude, how responsibilities are split). Something the group\n  agreed on is status adopted; use proposed only if it was floated but not agreed, conditional if it depends on\n  something. One decision per distinct choice.\n- problems: genuine obstacles in the project work or team coordination (technical failures that disrupt the work,\n  missing information, instructions that came too late, disputes about who does what). NOT problems: remarks\n  about the transcript itself (markers like <gap> or <vocalsound>, readability), the language of the session,\n  or minor remarks about how the session runs. status: resolved if it was settled in the meeting, else open.\nA typical meeting record has about 1-5 actions, 2-9 decisions and 0-5 problems. If a chunk has nothing that fits,\nreturn an empty list. If a chunk repeats an item from the overlap region, listing it again is fine.",
+      "sha256": "1951e91682342a5c31536a3a0a5dec3a8619a8ede1ea0eecd9ac371a916826ff"
+    },
+    "CONSOLIDATE_SYSTEM": {
+      "text": "You receive candidate items extracted from consecutive chunks of ONE meeting. Produce the final\nlist for the meeting record: keep the substantive project-level items, merge duplicates and near-duplicates, and\ndrop items that only describe in-meeting procedure, small talk, or things too minor for a project record.\n\nOUTPUT FIELD TEMPLATE (schema 0.5.0). Every item you produce must follow it. Do not add, drop or rename fields.\n\ntype: one of  abstract | actions | decisions | problems\n\nfield                 applies to                 meaning\nid                    all                        stable item id, assigned by the system\ntext                  all                        the statement; keep conditions, scope and uncertainty\ntype                  all                        abstract | actions | decisions | problems\nreference             all                        sources that actually support the item: {source_type, source, locator};\n                                                 source_type is dialogue | participant_metadata | project_document.\n                                                 It is NOT a retrieval log.\nowner                 actions                    stable participant IDs of the assigned person(s), e.g. [\"MTD021PM\"];\n                                                 several IDs = joint ownership; null if not determinable\nowner_basis           actions                    explicit | inferred | ambiguous | missing\ndeadline              actions                    the deadline in the ORIGINAL wording, or null\ndeadline_basis        actions                    explicit | inferred | ambiguous | missing\nstatus                actions/decisions/problems state supported at the END of this meeting:\n                                                 actions: open | in_progress | completed | cancelled | deferred | unknown\n                                                 decisions: proposed | adopted | conditional | rejected | deferred | unknown\n                                                 problems: open | resolved | deferred | unknown\nprior_context_needed  actions/decisions/problems is an EARLIER meeting necessary to interpret or verify this item?\nrelated_items         actions/decisions/problems earlier items this one affects: [{id, relation}];\n                                                 relation: continues | updates | replaces | cancels | completes | resolves | reopens\n\nEXAMPLES of well-formed items (taken from other meetings, only to show the right size and wording):\nactions:\n- The industrial designer will develop the components concept for the next design phase.\n- The marketing expert will continue trendwatching to inform the marketing concept.\n- The Project Manager will put the meeting minutes in the shared documents folder.\ndecisions:\n- (adopted) Speech recognition will not be used.\n- (adopted) The group decided that their target marketing group would be mostly teenagers and young professionals.\n- (adopted) The remote will feature plastic buttons and casing, rather than rubber.\n- (deferred) The group put off building a stand or wall holder for the remote, because the locator function means the remote can be kept anywhere.\n- (proposed) The scroll wheel could be small and yellow, to match the corporate colours.\nproblems:\n- (resolved) Some of the group members had difficulties with their computers in opening their presentations.\n- (open) The desired price/feature tradeoff and management's willingness to fund a more innovative product remained unclear.\n\nFor every kept item return the indexes of the candidates it merges (members) and one clear, self-contained text that\npreserves conditions and scope. Do not invent content that is not in the candidates. The text is a plain sentence:\nnever put candidate indexes or brackets like [12, 15] into it.\n\nHOW MANY: a meeting record is short. Typically 2-4 actions, 3-6 decisions and 1-3 problems; never more than 5\nactions, 7 decisions or 4 problems. Fewer is fine if the meeting had fewer. Within each type, list the most\nimportant items first (the ones a project manager would put in the minutes).\n\nTYPE: decide the type from what the item is, not from the candidate's label.\n- actions: a named role or person takes on work to be done AFTER this meeting (\"the designer will work out ...\").\n  A statement about what the product will be or have (\"the remote will have a hatch door\", \"we will use\n  batteries\") is a decision, not an action. One action per role and task; merge small steps of the same task.\n- decisions: a choice the group agreed on (or explicitly left as proposed / conditional) about the product or the\n  project. Several details of the same component or choice form ONE decision.\n- problems: an obstacle or concern the participants treated as a problem for the project or team work\n  (including equipment trouble that held up the work). An open question that simply has not been decided yet is\n  not a problem unless the participants raised it as a concern.\n\nDROP (these are not in a project record):\n- in-meeting procedure: agenda, order of presentations, who speaks next, time keeping, saving or sending a file\n  during the meeting, using the pen or whiteboard, \"we will work from top to bottom\";\n- passing suggestions nobody took up, jokes, and restatements of something already listed;\n- generic follow-ups with no specific task (\"assign owners and next steps\", \"the team will finalise things\");\n- small details already covered by a broader item you keep.",
+      "sha256": "e9bf6902cf04f1d3dec5c458da13edbf0faf0ae04175c2ec6ffa667e64cb3577"
+    },
+    "AGENT_SYSTEM": {
+      "text": "You verify ONE item from a meeting before it goes into the meeting record. The item was flagged\nbecause something about it is unclear. Decide what to look up, then call finish.\n\nOUTPUT FIELD TEMPLATE (schema 0.5.0). Every item you produce must follow it. Do not add, drop or rename fields.\n\ntype: one of  abstract | actions | decisions | problems\n\nfield                 applies to                 meaning\nid                    all                        stable item id, assigned by the system\ntext                  all                        the statement; keep conditions, scope and uncertainty\ntype                  all                        abstract | actions | decisions | problems\nreference             all                        sources that actually support the item: {source_type, source, locator};\n                                                 source_type is dialogue | participant_metadata | project_document.\n                                                 It is NOT a retrieval log.\nowner                 actions                    stable participant IDs of the assigned person(s), e.g. [\"MTD021PM\"];\n                                                 several IDs = joint ownership; null if not determinable\nowner_basis           actions                    explicit | inferred | ambiguous | missing\ndeadline              actions                    the deadline in the ORIGINAL wording, or null\ndeadline_basis        actions                    explicit | inferred | ambiguous | missing\nstatus                actions/decisions/problems state supported at the END of this meeting:\n                                                 actions: open | in_progress | completed | cancelled | deferred | unknown\n                                                 decisions: proposed | adopted | conditional | rejected | deferred | unknown\n                                                 problems: open | resolved | deferred | unknown\nprior_context_needed  actions/decisions/problems is an EARLIER meeting necessary to interpret or verify this item?\nrelated_items         actions/decisions/problems earlier items this one affects: [{id, relation}];\n                                                 relation: continues | updates | replaces | cancels | completes | resolves | reopens\n\nRULES\n- Owner: the person who announces an assignment is not automatically the owner. Do not expand \"we\", \"someone\" or\n  \"everyone\" to all participants. explicit/inferred => give participant IDs; ambiguous/missing => owner null.\n  Joint assignments (\"A and B will ...\") list all assigned IDs.\n- Deadline: keep the original wording (\"by next meeting\" is explicit even though it is relative). Never invent a\n  calendar date. Do not treat a work duration, test duration, expected email or start condition as a deadline.\n  explicit/inferred => non-null; missing => null.\n- Status: distinguish suggestions and conditional offers from accepted commitments. Do not infer completion only\n  because something was presented later. A later cancellation or completion is recorded in the LATER item through\n  related_items; never rewrite an earlier meeting's historical state.\n- reference vs prior_context_needed vs related_items:\n    reference = which sources support the annotation;\n    prior_context_needed = could the item be interpreted/verified WITHOUT an earlier meeting? (participant or\n      scenario lookup alone does not make it true);\n    related_items = which earlier action/decision/problem this one continues or changes, and how.\n- Use only information available by the end of the current meeting. Speaker letters (A/B/C/D) are not stable across\n  meetings: use the participant IDs and roles you are given.\n- Scenario/project documents help interpretation but never override who was actually assigned in the meeting.\n- If the evidence does not settle owner or deadline, say so (ambiguous / missing). Nobody can be asked: do not guess.\n\nTOOLS (read-only; you may use at most {max_calls} lookups for this item, then you must call finish):\n- search_dialogue(query, scope): keyword search in the current meeting (\"current\") or earlier meetings of this series (\"prior\").\n- read_dialogue(meeting_id, da_id, window): read the dialogue around one line.\n- get_participants(meeting_id): speaker letters, participant IDs and roles.\n- get_prior_items(query, item_type): items the system recorded for earlier meetings of this series (with their IDs).\n- search_project_doc(query): AMI scenario / project documents.\n- finish(...): submit the final fields for this item.\n\nHOW TO WORK\n- Pick the lookup that answers the flag. Flags: OWNER_UNRESOLVED, JOINT_OWNER_CHECK, DEADLINE_CHECK, POSSIBLE_PRIOR,\n  STATUS_CHECK, WEAK_EVIDENCE. One lookup at a time; stop as soon as you can decide.\n- If get_prior_items shows nothing similar, do not keep searching: finish.\n- Relations: updates = a revised or refined version of an earlier item; replaces/cancels = the earlier one no\n  longer holds; continues = the same item carried on unchanged; completes/resolves = it is finished/settled now.\n- If this item continues or changes an earlier item, set related_items with that item's ID (from get_prior_items)\n  and the right relation, and set prior_context_needed accordingly. Otherwise related_items = [].\n- In finish, evidence_da_ids must list the dialogue lines (full IDs) you actually relied on, from this or earlier\n  meetings. Set used_participant_lookup=true only if you relied on participant metadata.\n- Nobody can answer questions. If owner or deadline stays unclear after looking, use ambiguous/missing with null.\n",
+      "sha256": "3ada3ed619ad7ac3a241b047b97fa682d83b90d2bf1d560c70b7d28fa493d3f9"
+    },
+    "ABSTRACT_SYSTEM": {
+      "text": "You write the abstract part of a meeting record: 3 to 6 short sentences summarising what the\nmeeting covered, based ONLY on the items provided. Cite the items each sentence rests on by index.\n\nOUTPUT FIELD TEMPLATE (schema 0.5.0). Every item you produce must follow it. Do not add, drop or rename fields.\n\ntype: one of  abstract | actions | decisions | problems\n\nfield                 applies to                 meaning\nid                    all                        stable item id, assigned by the system\ntext                  all                        the statement; keep conditions, scope and uncertainty\ntype                  all                        abstract | actions | decisions | problems\nreference             all                        sources that actually support the item: {source_type, source, locator};\n                                                 source_type is dialogue | participant_metadata | project_document.\n                                                 It is NOT a retrieval log.\nowner                 actions                    stable participant IDs of the assigned person(s), e.g. [\"MTD021PM\"];\n                                                 several IDs = joint ownership; null if not determinable\nowner_basis           actions                    explicit | inferred | ambiguous | missing\ndeadline              actions                    the deadline in the ORIGINAL wording, or null\ndeadline_basis        actions                    explicit | inferred | ambiguous | missing\nstatus                actions/decisions/problems state supported at the END of this meeting:\n                                                 actions: open | in_progress | completed | cancelled | deferred | unknown\n                                                 decisions: proposed | adopted | conditional | rejected | deferred | unknown\n                                                 problems: open | resolved | deferred | unknown\nprior_context_needed  actions/decisions/problems is an EARLIER meeting necessary to interpret or verify this item?\nrelated_items         actions/decisions/problems earlier items this one affects: [{id, relation}];\n                                                 relation: continues | updates | replaces | cancels | completes | resolves | reopens\n\n",
+      "sha256": "369c5bd89a7def1fec884c53498e502ecaff7c0eb596c3e4bf86fb85513c29d6"
+    },
+    "ACTION_PASS_NOTE": {
+      "text": "List ONLY actions: follow-up work that a person takes on for the period AFTER this meeting. You see the whole meeting. Go through the roster one role at a time and ask: what did this person agree, or get asked, to do before the next meeting (prepare, research, design, draw, write, send, report, finish)? Assignments are usually settled late, when the manager wraps up and says what each person does next: read the last part of the meeting line by line, but also catch tasks taken on earlier. A task given to everyone (e.g. filling in a questionnaire) is still an action. Joint tasks list every assigned person. Use the roster IDs. Do not list decisions, problems, or work done during the meeting itself.",
+      "sha256": "5bf0fe88bf44ba498282aa38b04124a72aeec30d476f78c703fc20dece90b127"
+    },
+    "CHUNK_NOTE": {
+      "text": "List only decisions and problems for this chunk (actions are collected in a separate pass).",
+      "sha256": "1c229ab1d35a4781719d00c3e7c4fdc52641e816747f96cb1dcd02a7a804bb32"
+    },
+    "B0_NOTE": {
+      "text": "List actions, decisions and problems.",
+      "sha256": "721988daea1f80af8eaafa7961b5ad3643620a5f4b2c0ced0629509544b1979d"
+    }
+  },
+  "environment": {
+    "python": "3.12.14",
+    "packages": {
+      "openai": "3.39.0",
+      "anthropic": null,
+      "jsonschema": "4.26.0"
+    }
+  },
+  "input": {
+    "path": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\data\\transcripts\\TS3006a.txt",
+    "sha256": "989aaffb32827a926df149f62f651310067368cef0e6638de23df1f4acc24efe"
+  },
+  "context_sha256": {
+    "participants.json": "7d7fca8e66a973c8323c0d990cb619dfb1927a13c8cfeed8034c0a72e33be710",
+    "scenario_text.txt": "c7be6c420266f1151f5d3ff395467c49e099f689b6ef188067ba04363a325e8c",
+    "output_schema.json": "f20949ef81a617ea103b666e0b852ad1de8cff80306581efe064f423e3bce740"
+  },
+  "cache_directory": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\dev_baselines\\trace-v1-ts3006ab\\_cache",
+  "artifacts": {
+    "metadata": "results\\dev_baselines\\trace-v1-ts3006ab\\s2\\TS3006a.run.json",
+    "stages": "results\\dev_baselines\\trace-v1-ts3006ab\\s2\\TS3006a.stages.jsonl"
+  },
+  "prior_context": [],
+  "finished_at": "2026-10-26T21:56:13.851364+00:00",
+  "elapsed_seconds": 7.859,
+  "usage": {
+    "calls": 1,
+    "in": 739,
+    "out": 1233,
+    "stages": {
+      "abstract": {
+        "calls": 1,
+        "in": 739,
+        "out": 1233
+      }
+    }
+  },
+  "result": {
+    "mode": "s2",
+    "status": "COMPLETED",
+    "meeting_id": "TS3006a",
+    "items": 9,
+    "flagged": 0,
+    "agent runs": 0,
+    "agent fallbacks": 0,
+    "lookups used": 0,
+    "repairs": 0,
+    "input tokens": 739,
+    "output tokens": 1233,
+    "llm calls": 1,
+    "seconds": 7.6,
+    "stages": {
+      "abstract": {
+        "calls": 1,
+        "in": 739,
+        "out": 1233
+      }
+    },
+    "stage_seconds": {
+      "extract": 0.0,
+      "consolidate": 0.0,
+      "agent+abstract": 7.6,
+      "total": 7.6
+    },
+    "output": "results\\dev_baselines\\trace-v1-ts3006ab\\s2\\TS3006a.json",
+    "run_metadata": "results\\dev_baselines\\trace-v1-ts3006ab\\s2\\TS3006a.run.json",
+    "stage_trace": "results\\dev_baselines\\trace-v1-ts3006ab\\s2\\TS3006a.stages.jsonl"
+  }
+}

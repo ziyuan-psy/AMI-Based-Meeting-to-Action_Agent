@@ -1,0 +1,1313 @@
+{
+  "item": 10,
+  "fields": {
+    "item_key": "IS1008d#10",
+    "record_id": null,
+    "item_type": "decisions",
+    "item_text": "The material chosen for the remote is wood.",
+    "state": "accepted",
+    "recordable": true,
+    "fields": {
+      "status": "adopted",
+      "prior_context_needed": true,
+      "related_items": [
+        {
+          "id": "IS1008c.sys.s.7",
+          "relation": "continues"
+        }
+      ],
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/IS1008d.json",
+          "locator": "IS1008d.C.dialog-act.s9553330.21"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/IS1008d.json",
+          "locator": "IS1008d.C.dialog-act.s9553330.23"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/IS1008d.json",
+          "locator": "IS1008d.C.dialog-act.s9553330.22"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/IS1008c.json",
+          "locator": "IS1008c.C.dialog-act.s9553330.73"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/IS1008c.json",
+          "locator": "IS1008c.C.dialog-act.s9553330.51"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/IS1008c.json",
+          "locator": "IS1008c.D.dialog-act.s9553330.12"
+        }
+      ]
+    },
+    "draft_fields": {
+      "status": "adopted",
+      "related_items": [
+        {
+          "id": "IS1008c.sys.s.7",
+          "relation": "continues"
+        }
+      ],
+      "prior_context_needed": false,
+      "used_participant_lookup": false,
+      "evidence_da_ids": [
+        "IS1008d.C.dialog-act.s9553330.21",
+        "IS1008d.C.dialog-act.s9553330.23",
+        "IS1008d.C.dialog-act.s9553330.22",
+        "IS1008c.C.dialog-act.s9553330.73",
+        "IS1008c.C.dialog-act.s9553330.51",
+        "IS1008c.D.dialog-act.s9553330.12"
+      ],
+      "owner": null,
+      "owner_basis": "missing",
+      "deadline": null,
+      "deadline_basis": "missing"
+    },
+    "checks": {
+      "statement": {
+        "result": "pass",
+        "reason": "Current dialogue confirms the material chosen is wood (IS1008d.C.dialog-act.s9553330.21); supporting context about staining/color confirms usage of wood (IS1008d.C.dialog-act.s9553330.23).",
+        "quotes": [
+          {
+            "da_id": "IS1008d.C.dialog-act.s9553330.21",
+            "quote": "the material that we chose was wood ,"
+          },
+          {
+            "da_id": "IS1008d.C.dialog-act.s9553330.23",
+            "quote": "'cause you can stain the wood whatever colour ."
+          }
+        ],
+        "fields": [
+          "statement"
+        ]
+      },
+      "status": {
+        "result": "pass",
+        "reason": "Evidence confirms material choice; no conflicting statements in the delivered dialogue.",
+        "quotes": [
+          {
+            "da_id": "IS1008d.C.dialog-act.s9553330.21",
+            "quote": "the material that we chose was wood ,"
+          },
+          {
+            "da_id": "IS1008d.C.dialog-act.s9553330.23",
+            "quote": "'cause you can stain the wood whatever colour ."
+          }
+        ],
+        "fields": [
+          "status"
+        ]
+      },
+      "conflict": {
+        "result": "pass",
+        "reason": "No contradictions found regarding material choice in the delivered evidence.",
+        "quotes": [
+          {
+            "da_id": "IS1008d.C.dialog-act.s9553330.21",
+            "quote": "the material that we chose was wood ,"
+          },
+          {
+            "da_id": "IS1008d.C.dialog-act.s9553330.23",
+            "quote": "'cause you can stain the wood whatever colour ."
+          }
+        ],
+        "fields": [
+          "statement",
+          "owner",
+          "deadline",
+          "status",
+          "related_items"
+        ]
+      },
+      "relation": {
+        "result": "pass",
+        "reason": "The current decision to use wood as the material for the remote control case directly continues the earlier IS1008c.sys.s.7 decision to use wood; the current dialogue restates and reinforces the same material choice without introducing a contradictory constraint.",
+        "quotes": [
+          {
+            "da_id": "IS1008d.C.dialog-act.s9553330.21",
+            "quote": "the material that we chose was wood ,"
+          },
+          {
+            "da_id": "IS1008d.C.dialog-act.s9553330.22",
+            "quote": "and uh the colour would be customisable ,"
+          },
+          {
+            "da_id": "IS1008d.C.dialog-act.s9553330.23",
+            "quote": "'cause you can stain the wood whatever colour ."
+          },
+          {
+            "da_id": "IS1008c.C.dialog-act.s9553330.73",
+            "quote": "and my recommendations um for the new remote control w um would be to have um have it be made out of wood ."
+          },
+          {
+            "da_id": "IS1008c.C.dialog-act.s9553330.51",
+            "quote": "we're <disfmarker> we're <vocalsound> currently uh proposing ,"
+          },
+          {
+            "da_id": "IS1008c.D.dialog-act.s9553330.12",
+            "quote": "<vocalsound>"
+          }
+        ],
+        "links": [
+          {
+            "id": "IS1008c.sys.s.7",
+            "relation": "continues",
+            "changed_fields": [],
+            "reason": "Current material selection repeats and extends the earlier wood decision.",
+            "prior_evidence_da_ids": [
+              "IS1008c.D.dialog-act.s9553330.12",
+              "IS1008c.C.dialog-act.s9553330.73",
+              "IS1008c.C.dialog-act.s9553330.51"
+            ],
+            "current_evidence_da_ids": [
+              "IS1008d.C.dialog-act.s9553330.21",
+              "IS1008d.C.dialog-act.s9553330.22",
+              "IS1008d.C.dialog-act.s9553330.23"
+            ]
+          }
+        ],
+        "fields": [
+          "related_items"
+        ]
+      },
+      "owner": {
+        "result": "not_applicable",
+        "reason": "field_not_applicable",
+        "quotes": [],
+        "fields": [
+          "owner"
+        ]
+      },
+      "deadline": {
+        "result": "not_applicable",
+        "reason": "field_not_applicable",
+        "quotes": [],
+        "fields": [
+          "deadline"
+        ]
+      }
+    },
+    "unresolved_fields": [],
+    "observed_evidence_da_ids": [
+      "IS1008d.C.dialog-act.s9553330.21",
+      "IS1008d.C.dialog-act.s9553330.22",
+      "IS1008d.C.dialog-act.s9553330.20",
+      "IS1008d.C.dialog-act.s9553330.23",
+      "IS1008c.D.dialog-act.s9553330.16",
+      "IS1008c.C.dialog-act.s9553330.73",
+      "IS1008c.C.dialog-act.s9553330.74",
+      "IS1008c.C.dialog-act.s9553330.50",
+      "IS1008c.C.dialog-act.s9553330.51",
+      "IS1008c.D.dialog-act.s9553330.12",
+      "IS1008c.C.dialog-act.s9553330.52"
+    ],
+    "initial_context": {
+      "item": {
+        "type": "decisions",
+        "text": "The material chosen for the remote is wood.",
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ]
+      },
+      "current_meeting": "IS1008d",
+      "earlier_meetings": [
+        "IS1008a",
+        "IS1008b",
+        "IS1008c"
+      ],
+      "roster": [
+        {
+          "speaker": "A",
+          "participant_id": "MIO086",
+          "role": "PM"
+        },
+        {
+          "speaker": "B",
+          "participant_id": "FIE073",
+          "role": "ID"
+        },
+        {
+          "speaker": "C",
+          "participant_id": "FIE038",
+          "role": "UI"
+        },
+        {
+          "speaker": "D",
+          "participant_id": "MIE085",
+          "role": "ME"
+        }
+      ],
+      "observed_dialogue": [
+        {
+          "da_id": "IS1008d.C.dialog-act.s9553330.21",
+          "meeting_id": "IS1008d",
+          "text": "the material that we chose was wood ,",
+          "participant": "FIE038",
+          "role": "UI"
+        },
+        {
+          "da_id": "IS1008d.C.dialog-act.s9553330.22",
+          "meeting_id": "IS1008d",
+          "text": "and uh the colour would be customisable ,",
+          "participant": "FIE038",
+          "role": "UI"
+        },
+        {
+          "da_id": "IS1008d.C.dialog-act.s9553330.20",
+          "participant": "FIE038",
+          "role": "UI",
+          "text": "from <disfmarker> when we were discussing specifying the case in the last meeting , we decided that we wanted an ergonomic shape ,"
+        },
+        {
+          "da_id": "IS1008d.C.dialog-act.s9553330.23",
+          "participant": "FIE038",
+          "role": "UI",
+          "text": "'cause you can stain the wood whatever colour ."
+        }
+      ],
+      "peer_items": [
+        {
+          "item_key": "IS1008d#0",
+          "type": "actions",
+          "text": "Negotiate production costs with vendors to lower unit cost."
+        },
+        {
+          "item_key": "IS1008d#1",
+          "type": "actions",
+          "text": "Come back with evaluation criteria and budget calculations."
+        },
+        {
+          "item_key": "IS1008d#2",
+          "type": "actions",
+          "text": "Explore online delivery and sales channels, including internet promotion and ordering, and arrange drop-ship to customers."
+        },
+        {
+          "item_key": "IS1008d#3",
+          "type": "actions",
+          "text": "Coordinate market tests after prototypes and conduct test-marketing."
+        },
+        {
+          "item_key": "IS1008d#4",
+          "type": "actions",
+          "text": "Prepare and present the market display to the team."
+        },
+        {
+          "item_key": "IS1008d#5",
+          "type": "actions",
+          "text": "Plan to launch around a major sports event to align with peak demand."
+        },
+        {
+          "item_key": "IS1008d#6",
+          "type": "problems",
+          "text": "Unresolved microphone/speaker placement decision (top/middle under flip vs side) with ongoing debate."
+        },
+        {
+          "item_key": "IS1008d#7",
+          "type": "problems",
+          "text": "Market could lose interest within 18 months, undermining production justification."
+        },
+        {
+          "item_key": "IS1008d#8",
+          "type": "problems",
+          "text": "Redesign turnaround time is too short; no redesign time; need additional user testing to meet user needs."
+        },
+        {
+          "item_key": "IS1008d#9",
+          "type": "decisions",
+          "text": "An ergonomic shape for the remote was decided."
+        }
+      ],
+      "provisional_values": {
+        "owner": null,
+        "owner_basis": "missing",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "adopted",
+        "related_items": []
+      },
+      "candidate_evidence_da_ids": [
+        "IS1008d.C.dialog-act.s9553330.21",
+        "IS1008d.C.dialog-act.s9553330.22"
+      ]
+    },
+    "observed_documents": [],
+    "document_evidence": [],
+    "relation_evidence": [
+      {
+        "prior_item_id": "IS1008c.sys.s.7",
+        "relation": "continues",
+        "state": "supported",
+        "changed_fields": [],
+        "reason": "Current material selection repeats and extends the earlier wood decision.",
+        "before": {
+          "kind": "prior_item",
+          "id": "IS1008c.sys.s.7",
+          "meeting_id": "IS1008c",
+          "type": "decisions",
+          "text": "Decide to use wood as the material for the remote control case.",
+          "owner": null,
+          "owner_basis": null,
+          "deadline": null,
+          "deadline_basis": null,
+          "status": "adopted",
+          "evidence": [
+            "IS1008c.C.dialog-act.s9553330.73",
+            "IS1008c.C.dialog-act.s9553330.51",
+            "IS1008c.D.dialog-act.s9553330.12"
+          ],
+          "source_file": "IS1008c.json",
+          "source_sha256": "0345e4334281c7e1f5458eab270cb1fadb75a8920a89994a044bdbd4d20cc2fc",
+          "review_state": "accepted",
+          "unresolved_fields": [],
+          "unreadable_reference_ids": [],
+          "selected_reference_ids": [
+            "IS1008c.C.dialog-act.s9553330.73",
+            "IS1008c.C.dialog-act.s9553330.51",
+            "IS1008c.D.dialog-act.s9553330.12"
+          ],
+          "next_offset": null
+        },
+        "after": {
+          "item_key": "IS1008d#10",
+          "text": "The material chosen for the remote is wood.",
+          "type": "decisions",
+          "status": "adopted",
+          "owner": null,
+          "deadline": null
+        },
+        "prior_quotes": [
+          {
+            "da_id": "IS1008c.D.dialog-act.s9553330.12",
+            "quote": "<vocalsound>"
+          },
+          {
+            "da_id": "IS1008c.C.dialog-act.s9553330.73",
+            "quote": "and my recommendations um for the new remote control w um would be to have um have it be made out of wood ."
+          },
+          {
+            "da_id": "IS1008c.C.dialog-act.s9553330.51",
+            "quote": "we're <disfmarker> we're <vocalsound> currently uh proposing ,"
+          }
+        ],
+        "current_quotes": [
+          {
+            "da_id": "IS1008d.C.dialog-act.s9553330.21",
+            "quote": "the material that we chose was wood ,"
+          },
+          {
+            "da_id": "IS1008d.C.dialog-act.s9553330.22",
+            "quote": "and uh the colour would be customisable ,"
+          },
+          {
+            "da_id": "IS1008d.C.dialog-act.s9553330.23",
+            "quote": "'cause you can stain the wood whatever colour ."
+          }
+        ]
+      }
+    ],
+    "history": [
+      {
+        "item": "IS1008d#10",
+        "step": 1,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Current dialogue confirms the material chosen is wood (IS1008d.C.dialog-act.s9553330.21); supporting context about staining/color confirms usage of wood (IS1008d.C.dialog-act.s9553330.23).",
+            "quotes": [
+              {
+                "da_id": "IS1008d.C.dialog-act.s9553330.21",
+                "quote": "the material that we chose was wood ,"
+              },
+              {
+                "da_id": "IS1008d.C.dialog-act.s9553330.23",
+                "quote": "'cause you can stain the wood whatever colour ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Evidence confirms material choice; no conflicting statements in the delivered dialogue.",
+            "quotes": [
+              {
+                "da_id": "IS1008d.C.dialog-act.s9553330.21",
+                "quote": "the material that we chose was wood ,"
+              },
+              {
+                "da_id": "IS1008d.C.dialog-act.s9553330.23",
+                "quote": "'cause you can stain the wood whatever colour ."
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions found regarding material choice in the delivered evidence.",
+            "quotes": [
+              {
+                "da_id": "IS1008d.C.dialog-act.s9553330.21",
+                "quote": "the material that we chose was wood ,"
+              },
+              {
+                "da_id": "IS1008d.C.dialog-act.s9553330.23",
+                "quote": "'cause you can stain the wood whatever colour ."
+              }
+            ],
+            "fields": [
+              "statement",
+              "owner",
+              "deadline",
+              "status",
+              "related_items"
+            ]
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "prior_context_not_checked",
+            "documents": [],
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          }
+        },
+        "decision": "retrieve",
+        "reason": "unresolved_checks",
+        "assessed_text": "The material chosen for the remote is wood.",
+        "requested_action": null,
+        "proposed_fields": {
+          "status": "adopted",
+          "related_items": [],
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "IS1008d.C.dialog-act.s9553330.21",
+            "IS1008d.C.dialog-act.s9553330.23"
+          ],
+          "owner": null,
+          "owner_basis": "missing",
+          "deadline": null,
+          "deadline_basis": "missing"
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Current dialogue confirms the material chosen is wood (IS1008d.C.dialog-act.s9553330.21); supporting context about staining/color confirms usage of wood (IS1008d.C.dialog-act.s9553330.23).",
+            "quotes": [
+              "IS1008d.C.dialog-act.s9553330.21",
+              "IS1008d.C.dialog-act.s9553330.23"
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Evidence confirms material choice; no conflicting statements in the delivered dialogue.",
+            "quotes": [
+              "IS1008d.C.dialog-act.s9553330.21",
+              "IS1008d.C.dialog-act.s9553330.23"
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions found regarding material choice in the delivered evidence.",
+            "quotes": [
+              "IS1008d.C.dialog-act.s9553330.21",
+              "IS1008d.C.dialog-act.s9553330.23"
+            ],
+            "fields": [
+              "statement",
+              "owner",
+              "deadline",
+              "status",
+              "related_items"
+            ]
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "No explicit prior-item linkage found in the current data; prior records IS1008a-c would need to be consulted to confirm relation.",
+            "documents": [],
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "status": "adopted",
+          "related_items": [],
+          "statement": {
+            "result": "pass",
+            "reason": "Current dialogue confirms the material chosen is wood (IS1008d.C.dialog-act.s9553330.21); supporting context about staining/color confirms usage of wood (IS1008d.C.dialog-act.s9553330.23).",
+            "evidence_da_ids": [
+              "IS1008d.C.dialog-act.s9553330.21",
+              "IS1008d.C.dialog-act.s9553330.23"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Evidence confirms material choice; no conflicting statements in the delivered dialogue.",
+            "evidence_da_ids": [
+              "IS1008d.C.dialog-act.s9553330.21",
+              "IS1008d.C.dialog-act.s9553330.23"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No contradictions found regarding material choice in the delivered evidence.",
+            "evidence_da_ids": [
+              "IS1008d.C.dialog-act.s9553330.21",
+              "IS1008d.C.dialog-act.s9553330.23"
+            ],
+            "affected_fields": [
+              "statement",
+              "owner",
+              "deadline",
+              "status",
+              "related_items"
+            ]
+          },
+          "relation_check": {
+            "result": "uncertain",
+            "reason": "No explicit prior-item linkage found in the current data; prior records IS1008a-c would need to be consulted to confirm relation.",
+            "evidence_da_ids": [],
+            "documents": []
+          }
+        },
+        "evidence_bindings": {
+          "statement": [
+            "IS1008d.C.dialog-act.s9553330.21",
+            "IS1008d.C.dialog-act.s9553330.23"
+          ],
+          "status": [
+            "IS1008d.C.dialog-act.s9553330.21",
+            "IS1008d.C.dialog-act.s9553330.23"
+          ],
+          "conflict": [
+            "IS1008d.C.dialog-act.s9553330.21",
+            "IS1008d.C.dialog-act.s9553330.23"
+          ]
+        },
+        "raw_tool_input": {
+          "status": "adopted",
+          "related_items": [],
+          "statement": {
+            "result": "pass",
+            "reason": "Current dialogue confirms the material chosen is wood (IS1008d.C.dialog-act.s9553330.21); supporting context about staining/color confirms usage of wood (IS1008d.C.dialog-act.s9553330.23).",
+            "evidence_da_ids": [
+              "IS1008d.C.dialog-act.s9553330.21",
+              "IS1008d.C.dialog-act.s9553330.23"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Evidence confirms material choice; no conflicting statements in the delivered dialogue.",
+            "evidence_da_ids": [
+              "IS1008d.C.dialog-act.s9553330.21",
+              "IS1008d.C.dialog-act.s9553330.23"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No contradictions found regarding material choice in the delivered evidence.",
+            "evidence_da_ids": [
+              "IS1008d.C.dialog-act.s9553330.21",
+              "IS1008d.C.dialog-act.s9553330.23"
+            ],
+            "affected_fields": [
+              "statement",
+              "owner",
+              "deadline",
+              "status",
+              "related_items"
+            ]
+          },
+          "relation_check": {
+            "result": "uncertain",
+            "reason": "No explicit prior-item linkage found in the current data; prior records IS1008a-c would need to be consulted to confirm relation.",
+            "evidence_da_ids": [],
+            "documents": []
+          }
+        },
+        "protocol_normalizations": [
+          "controller_action_for_missing_hint:retrieve"
+        ],
+        "unresolved_before": [
+          "related_items",
+          "statement",
+          "status"
+        ],
+        "unresolved_after": [
+          "related_items"
+        ],
+        "semantic_stalls": 0,
+        "validation_codes": {
+          "relation": [
+            "prior_context_not_checked"
+          ]
+        }
+      },
+      {
+        "item": "IS1008d#10",
+        "step": 2,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "history_context_focused",
+        "outcome": "delivered",
+        "evidence_da_ids": [
+          "IS1008d.C.dialog-act.s9553330.21",
+          "IS1008d.C.dialog-act.s9553330.22",
+          "IS1008d.C.dialog-act.s9553330.20",
+          "IS1008d.C.dialog-act.s9553330.23"
+        ]
+      },
+      {
+        "item": "IS1008d#10",
+        "step": 2,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "get_prior_items",
+        "outcome": "lookup",
+        "decision": "retrieve",
+        "args": {
+          "query": "material remote wood",
+          "item_type": "decisions"
+        },
+        "tool_result": {
+          "results": [
+            {
+              "id": "IS1008c.sys.s.7",
+              "meeting_id": "IS1008c",
+              "type": "decisions",
+              "text": "Decide to use wood as the material for the remote control case.",
+              "owner": null,
+              "owner_basis": null,
+              "deadline": null,
+              "deadline_basis": null,
+              "status": "adopted",
+              "evidence": [
+                "IS1008c.C.dialog-act.s9553330.73",
+                "IS1008c.C.dialog-act.s9553330.51",
+                "IS1008c.D.dialog-act.s9553330.12"
+              ],
+              "source_file": "IS1008c.json",
+              "source_sha256": "0345e4334281c7e1f5458eab270cb1fadb75a8920a89994a044bdbd4d20cc2fc",
+              "review_state": "accepted",
+              "unresolved_fields": [],
+              "unreadable_reference_ids": [],
+              "score": 4.54
+            },
+            {
+              "id": "IS1008c.sys.s.5",
+              "meeting_id": "IS1008c",
+              "type": "decisions",
+              "text": "Decide on the remote control concept.",
+              "owner": null,
+              "owner_basis": null,
+              "deadline": null,
+              "deadline_basis": null,
+              "status": "adopted",
+              "evidence": [
+                "IS1008c.A.dialog-act.s9553330.10",
+                "IS1008c.A.dialog-act.s9553330.11"
+              ],
+              "source_file": "IS1008c.json",
+              "source_sha256": "0345e4334281c7e1f5458eab270cb1fadb75a8920a89994a044bdbd4d20cc2fc",
+              "review_state": "pending",
+              "unresolved_fields": [
+                "related_items"
+              ],
+              "unreadable_reference_ids": [],
+              "score": 1.3
+            },
+            {
+              "id": "IS1008a.sys.s.4",
+              "meeting_id": "IS1008a",
+              "type": "decisions",
+              "text": "The product for this project will be a television remote control.",
+              "owner": null,
+              "owner_basis": null,
+              "deadline": null,
+              "deadline_basis": null,
+              "status": "adopted",
+              "evidence": [
+                "IS1008a.A.dialog-act.s9553330.38",
+                "IS1008a.D.dialog-act.s9553330.26",
+                "IS1008a.D.dialog-act.s9553330.27"
+              ],
+              "source_file": "IS1008a.json",
+              "source_sha256": "1932f034085616b38adf859662727ae5f2d33b6fbe9ef0f56406fd12d39c1ab3",
+              "review_state": "accepted",
+              "unresolved_fields": [],
+              "unreadable_reference_ids": [],
+              "score": 1.03
+            }
+          ]
+        },
+        "new_info": true
+      },
+      {
+        "item": "IS1008d#10",
+        "step": 3,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "read_prior_item",
+        "outcome": "lookup",
+        "decision": "retrieve",
+        "args": {
+          "item_id": "IS1008c.sys.s.7"
+        },
+        "tool_result": {
+          "results": [
+            {
+              "kind": "prior_item",
+              "id": "IS1008c.sys.s.7",
+              "meeting_id": "IS1008c",
+              "type": "decisions",
+              "text": "Decide to use wood as the material for the remote control case.",
+              "owner": null,
+              "owner_basis": null,
+              "deadline": null,
+              "deadline_basis": null,
+              "status": "adopted",
+              "evidence": [
+                "IS1008c.C.dialog-act.s9553330.73",
+                "IS1008c.C.dialog-act.s9553330.51",
+                "IS1008c.D.dialog-act.s9553330.12"
+              ],
+              "source_file": "IS1008c.json",
+              "source_sha256": "0345e4334281c7e1f5458eab270cb1fadb75a8920a89994a044bdbd4d20cc2fc",
+              "review_state": "accepted",
+              "unresolved_fields": [],
+              "unreadable_reference_ids": [],
+              "selected_reference_ids": [
+                "IS1008c.C.dialog-act.s9553330.73",
+                "IS1008c.C.dialog-act.s9553330.51",
+                "IS1008c.D.dialog-act.s9553330.12"
+              ],
+              "next_offset": null
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "IS1008c.D.dialog-act.s9553330.16",
+              "meeting_id": "IS1008c",
+              "text": "<vocalsound>",
+              "participant": "MIE085",
+              "role": "ME",
+              "supports_item_id": "IS1008c.sys.s.7",
+              "is_reference": false
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "IS1008c.C.dialog-act.s9553330.73",
+              "meeting_id": "IS1008c",
+              "text": "and my recommendations um for the new remote control w um would be to have um have it be made out of wood .",
+              "participant": "FIE073",
+              "role": "ID",
+              "supports_item_id": "IS1008c.sys.s.7",
+              "is_reference": true
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "IS1008c.C.dialog-act.s9553330.74",
+              "meeting_id": "IS1008c",
+              "text": "Do you have any problems with that ?",
+              "participant": "FIE073",
+              "role": "ID",
+              "supports_item_id": "IS1008c.sys.s.7",
+              "is_reference": false
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "IS1008c.C.dialog-act.s9553330.50",
+              "meeting_id": "IS1008c",
+              "text": "And a as she said , it's an environmentally friendly uh material ,",
+              "participant": "FIE073",
+              "role": "ID",
+              "supports_item_id": "IS1008c.sys.s.7",
+              "is_reference": false
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "IS1008c.C.dialog-act.s9553330.51",
+              "meeting_id": "IS1008c",
+              "text": "so we're <disfmarker> we're <vocalsound> currently uh proposing ,",
+              "participant": "FIE073",
+              "role": "ID",
+              "supports_item_id": "IS1008c.sys.s.7",
+              "is_reference": true
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "IS1008c.D.dialog-act.s9553330.12",
+              "meeting_id": "IS1008c",
+              "text": "<vocalsound>",
+              "participant": "MIE085",
+              "role": "ME",
+              "supports_item_id": "IS1008c.sys.s.7",
+              "is_reference": true
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "IS1008c.C.dialog-act.s9553330.52",
+              "meeting_id": "IS1008c",
+              "text": "uh we'll get to all my personal preferences in just a second .",
+              "participant": "FIE073",
+              "role": "ID",
+              "supports_item_id": "IS1008c.sys.s.7",
+              "is_reference": false
+            }
+          ]
+        },
+        "new_info": true
+      },
+      {
+        "item": "IS1008d#10",
+        "step": 4,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "assess_relation",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Current dialogue confirms the material chosen is wood (IS1008d.C.dialog-act.s9553330.21); supporting context about staining/color confirms usage of wood (IS1008d.C.dialog-act.s9553330.23).",
+            "quotes": [
+              {
+                "da_id": "IS1008d.C.dialog-act.s9553330.21",
+                "quote": "the material that we chose was wood ,"
+              },
+              {
+                "da_id": "IS1008d.C.dialog-act.s9553330.23",
+                "quote": "'cause you can stain the wood whatever colour ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Evidence confirms material choice; no conflicting statements in the delivered dialogue.",
+            "quotes": [
+              {
+                "da_id": "IS1008d.C.dialog-act.s9553330.21",
+                "quote": "the material that we chose was wood ,"
+              },
+              {
+                "da_id": "IS1008d.C.dialog-act.s9553330.23",
+                "quote": "'cause you can stain the wood whatever colour ."
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions found regarding material choice in the delivered evidence.",
+            "quotes": [
+              {
+                "da_id": "IS1008d.C.dialog-act.s9553330.21",
+                "quote": "the material that we chose was wood ,"
+              },
+              {
+                "da_id": "IS1008d.C.dialog-act.s9553330.23",
+                "quote": "'cause you can stain the wood whatever colour ."
+              }
+            ],
+            "fields": [
+              "statement",
+              "owner",
+              "deadline",
+              "status",
+              "related_items"
+            ]
+          },
+          "relation": {
+            "result": "pass",
+            "reason": "The current decision to use wood as the material for the remote control case directly continues the earlier IS1008c.sys.s.7 decision to use wood; the current dialogue restates and reinforces the same material choice without introducing a contradictory constraint.",
+            "quotes": [
+              {
+                "da_id": "IS1008d.C.dialog-act.s9553330.21",
+                "quote": "the material that we chose was wood ,"
+              },
+              {
+                "da_id": "IS1008d.C.dialog-act.s9553330.22",
+                "quote": "and uh the colour would be customisable ,"
+              },
+              {
+                "da_id": "IS1008d.C.dialog-act.s9553330.23",
+                "quote": "'cause you can stain the wood whatever colour ."
+              },
+              {
+                "da_id": "IS1008c.C.dialog-act.s9553330.73",
+                "quote": "and my recommendations um for the new remote control w um would be to have um have it be made out of wood ."
+              },
+              {
+                "da_id": "IS1008c.C.dialog-act.s9553330.51",
+                "quote": "we're <disfmarker> we're <vocalsound> currently uh proposing ,"
+              },
+              {
+                "da_id": "IS1008c.D.dialog-act.s9553330.12",
+                "quote": "<vocalsound>"
+              }
+            ],
+            "links": [
+              {
+                "id": "IS1008c.sys.s.7",
+                "relation": "continues",
+                "changed_fields": [],
+                "reason": "Current material selection repeats and extends the earlier wood decision.",
+                "prior_evidence_da_ids": [
+                  "IS1008c.D.dialog-act.s9553330.12",
+                  "IS1008c.C.dialog-act.s9553330.73",
+                  "IS1008c.C.dialog-act.s9553330.51"
+                ],
+                "current_evidence_da_ids": [
+                  "IS1008d.C.dialog-act.s9553330.21",
+                  "IS1008d.C.dialog-act.s9553330.22",
+                  "IS1008d.C.dialog-act.s9553330.23"
+                ]
+              }
+            ],
+            "fields": [
+              "related_items"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          }
+        },
+        "decision": "accept",
+        "reason": "all_required_checks_passed",
+        "assessed_text": "The material chosen for the remote is wood.",
+        "requested_action": null,
+        "proposed_fields": {
+          "status": "adopted",
+          "related_items": [
+            {
+              "id": "IS1008c.sys.s.7",
+              "relation": "continues"
+            }
+          ],
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "IS1008d.C.dialog-act.s9553330.21",
+            "IS1008d.C.dialog-act.s9553330.23",
+            "IS1008d.C.dialog-act.s9553330.22",
+            "IS1008c.C.dialog-act.s9553330.73",
+            "IS1008c.C.dialog-act.s9553330.51",
+            "IS1008c.D.dialog-act.s9553330.12"
+          ],
+          "owner": null,
+          "owner_basis": "missing",
+          "deadline": null,
+          "deadline_basis": "missing"
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Current dialogue confirms the material chosen is wood (IS1008d.C.dialog-act.s9553330.21); supporting context about staining/color confirms usage of wood (IS1008d.C.dialog-act.s9553330.23).",
+            "quotes": [
+              {
+                "da_id": "IS1008d.C.dialog-act.s9553330.21",
+                "quote": "the material that we chose was wood ,"
+              },
+              {
+                "da_id": "IS1008d.C.dialog-act.s9553330.23",
+                "quote": "'cause you can stain the wood whatever colour ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Evidence confirms material choice; no conflicting statements in the delivered dialogue.",
+            "quotes": [
+              {
+                "da_id": "IS1008d.C.dialog-act.s9553330.21",
+                "quote": "the material that we chose was wood ,"
+              },
+              {
+                "da_id": "IS1008d.C.dialog-act.s9553330.23",
+                "quote": "'cause you can stain the wood whatever colour ."
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions found regarding material choice in the delivered evidence.",
+            "quotes": [
+              {
+                "da_id": "IS1008d.C.dialog-act.s9553330.21",
+                "quote": "the material that we chose was wood ,"
+              },
+              {
+                "da_id": "IS1008d.C.dialog-act.s9553330.23",
+                "quote": "'cause you can stain the wood whatever colour ."
+              }
+            ],
+            "fields": [
+              "statement",
+              "owner",
+              "deadline",
+              "status",
+              "related_items"
+            ]
+          },
+          "relation": {
+            "result": "pass",
+            "reason": "The current decision to use wood as the material for the remote control case directly continues the earlier IS1008c.sys.s.7 decision to use wood; the current dialogue restates and reinforces the same material choice without introducing a contradictory constraint.",
+            "quotes": [
+              {
+                "da_id": "IS1008d.C.dialog-act.s9553330.21",
+                "quote": "the material that we chose was wood ,"
+              },
+              {
+                "da_id": "IS1008d.C.dialog-act.s9553330.22",
+                "quote": "and uh the colour would be customisable ,"
+              },
+              {
+                "da_id": "IS1008d.C.dialog-act.s9553330.23",
+                "quote": "'cause you can stain the wood whatever colour ."
+              },
+              {
+                "da_id": "IS1008c.C.dialog-act.s9553330.73",
+                "quote": "and my recommendations um for the new remote control w um would be to have um have it be made out of wood ."
+              },
+              {
+                "da_id": "IS1008c.C.dialog-act.s9553330.51",
+                "quote": "we're <disfmarker> we're <vocalsound> currently uh proposing ,"
+              },
+              {
+                "da_id": "IS1008c.D.dialog-act.s9553330.12",
+                "quote": "<vocalsound>"
+              }
+            ],
+            "links": [
+              {
+                "id": "IS1008c.sys.s.7",
+                "relation": "continues",
+                "changed_fields": [],
+                "reason": "Current material selection repeats and extends the earlier wood decision.",
+                "prior_evidence_da_ids": [
+                  "IS1008c.D.dialog-act.s9553330.12",
+                  "IS1008c.C.dialog-act.s9553330.73",
+                  "IS1008c.C.dialog-act.s9553330.51"
+                ],
+                "current_evidence_da_ids": [
+                  "IS1008d.C.dialog-act.s9553330.21",
+                  "IS1008d.C.dialog-act.s9553330.22",
+                  "IS1008d.C.dialog-act.s9553330.23"
+                ]
+              }
+            ],
+            "fields": [
+              "related_items"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "result": "pass",
+          "reason": "The current decision to use wood as the material for the remote control case directly continues the earlier IS1008c.sys.s.7 decision to use wood; the current dialogue restates and reinforces the same material choice without introducing a contradictory constraint.",
+          "quotes": [
+            {
+              "da_id": "IS1008d.C.dialog-act.s9553330.21",
+              "quote": "the material that we chose was wood ,"
+            },
+            {
+              "da_id": "IS1008d.C.dialog-act.s9553330.22",
+              "quote": "and uh the colour would be customisable ,"
+            },
+            {
+              "da_id": "IS1008d.C.dialog-act.s9553330.23",
+              "quote": "'cause you can stain the wood whatever colour ."
+            },
+            {
+              "da_id": "IS1008c.C.dialog-act.s9553330.73",
+              "quote": "and my recommendations um for the new remote control w um would be to have um have it be made out of wood ."
+            },
+            {
+              "da_id": "IS1008c.C.dialog-act.s9553330.51",
+              "quote": "we're <disfmarker> we're <vocalsound> currently uh proposing ,"
+            },
+            {
+              "da_id": "IS1008c.D.dialog-act.s9553330.12",
+              "quote": "<vocalsound>"
+            }
+          ],
+          "links": [
+            {
+              "id": "IS1008c.sys.s.7",
+              "relation": "continues",
+              "changed_fields": [],
+              "reason": "Current material selection repeats and extends the earlier wood decision.",
+              "prior_evidence_da_ids": [
+                "IS1008c.D.dialog-act.s9553330.12",
+                "IS1008c.C.dialog-act.s9553330.73",
+                "IS1008c.C.dialog-act.s9553330.51"
+              ],
+              "current_evidence_da_ids": [
+                "IS1008d.C.dialog-act.s9553330.21",
+                "IS1008d.C.dialog-act.s9553330.22",
+                "IS1008d.C.dialog-act.s9553330.23"
+              ]
+            }
+          ]
+        },
+        "evidence_bindings": {},
+        "raw_tool_input": {
+          "result": "pass",
+          "reason": "The current decision to use wood as the material for the remote control case directly continues the earlier IS1008c.sys.s.7 decision to use wood; the current dialogue restates and reinforces the same material choice without introducing a contradictory constraint.",
+          "quotes": [
+            {
+              "da_id": "IS1008d.C.dialog-act.s9553330.21",
+              "quote": "the material that we chose was wood ,"
+            },
+            {
+              "da_id": "IS1008d.C.dialog-act.s9553330.22",
+              "quote": "and uh the colour would be customisable ,"
+            },
+            {
+              "da_id": "IS1008d.C.dialog-act.s9553330.23",
+              "quote": "'cause you can stain the wood whatever colour ."
+            },
+            {
+              "da_id": "IS1008c.C.dialog-act.s9553330.73",
+              "quote": "and my recommendations um for the new remote control w um would be to have um have it be made out of wood ."
+            },
+            {
+              "da_id": "IS1008c.C.dialog-act.s9553330.51",
+              "quote": "we're <disfmarker> we're <vocalsound> currently uh proposing ,"
+            },
+            {
+              "da_id": "IS1008c.D.dialog-act.s9553330.12",
+              "quote": "<vocalsound>"
+            }
+          ],
+          "links": [
+            {
+              "id": "IS1008c.sys.s.7",
+              "relation": "continues",
+              "changed_fields": [],
+              "reason": "Current material selection repeats and extends the earlier wood decision.",
+              "prior_evidence_da_ids": [
+                "IS1008c.D.dialog-act.s9553330.12",
+                "IS1008c.C.dialog-act.s9553330.73",
+                "IS1008c.C.dialog-act.s9553330.51"
+              ],
+              "current_evidence_da_ids": [
+                "IS1008d.C.dialog-act.s9553330.21",
+                "IS1008d.C.dialog-act.s9553330.22",
+                "IS1008d.C.dialog-act.s9553330.23"
+              ]
+            }
+          ],
+          "next_action": null
+        },
+        "protocol_normalizations": [
+          "empty_optional_action_hint",
+          "controller_action_for_missing_hint:request_clarification"
+        ],
+        "unresolved_before": [
+          "related_items"
+        ],
+        "unresolved_after": [],
+        "semantic_stalls": 0,
+        "validation_codes": {}
+      },
+      {
+        "item": "IS1008d#10",
+        "step": 4,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "accept",
+        "outcome": "accepted",
+        "termination_reason": "all_required_checks_passed",
+        "unresolved_fields": []
+      }
+    ],
+    "lookups": 2,
+    "termination_reason": "all_required_checks_passed",
+    "clarifications": []
+  }
+}

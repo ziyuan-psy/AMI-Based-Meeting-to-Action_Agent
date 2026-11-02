@@ -1,0 +1,1775 @@
+{
+  "item": 0,
+  "fields": {
+    "item_key": "TS3006b#0",
+    "record_id": null,
+    "item_type": "actions",
+    "item_text": "The User Interface Designer can design a menu for all these functions.",
+    "state": "pending",
+    "recordable": true,
+    "fields": {
+      "status": "open",
+      "prior_context_needed": false,
+      "related_items": [],
+      "owner": [
+        "MTD023UID"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3006b.json",
+          "locator": "TS3006b.A.dialog-act.dharshi.305"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3006b.json",
+          "locator": "TS3006b.D.dialog-act.dharshi.357"
+        }
+      ]
+    },
+    "draft_fields": {
+      "status": "open",
+      "related_items": [],
+      "owner": [
+        "MTD023UID"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "prior_context_needed": false,
+      "used_participant_lookup": false,
+      "evidence_da_ids": [
+        "TS3006b.A.dialog-act.dharshi.305",
+        "TS3006b.D.dialog-act.dharshi.357",
+        "TS3006b.A.dialog-act.dharshi.303",
+        "TS3006b.A.dialog-act.dharshi.306",
+        "TS3006a.A.dialog-act.vkaraisk.146",
+        "TS3006a.A.dialog-act.vkaraisk.147",
+        "TS3006a.C.dialog-act.vkaraisk.77"
+      ]
+    },
+    "checks": {
+      "statement": {
+        "result": "pass",
+        "reason": "Dialogue TS3006b.A.dialog-act.dharshi.305 explicitly states the UI Designer can design a menu for all these functions.",
+        "quotes": [
+          {
+            "da_id": "TS3006b.A.dialog-act.dharshi.305",
+            "quote": "The User Interface Designer can design a menu for all these function"
+          },
+          {
+            "da_id": "TS3006b.D.dialog-act.dharshi.357",
+            "quote": "Yeah k kind of structure into layers ."
+          }
+        ],
+        "fields": [
+          "statement"
+        ]
+      },
+      "owner": {
+        "result": "pass",
+        "reason": "Owner explicitly provided in provisional_values as MTD023UID.",
+        "quotes": [
+          {
+            "da_id": "TS3006b.A.dialog-act.dharshi.305",
+            "quote": "The User Interface Designer can design a menu for all these function"
+          }
+        ],
+        "fields": [
+          "owner"
+        ]
+      },
+      "deadline": {
+        "result": "uncertain",
+        "reason": "deadline_unresolved",
+        "quotes": [],
+        "fields": [
+          "deadline"
+        ]
+      },
+      "status": {
+        "result": "pass",
+        "reason": "Status 'open' is reflected in provisional_values.",
+        "quotes": [
+          {
+            "da_id": "TS3006b.A.dialog-act.dharshi.305",
+            "quote": "The User Interface Designer can design a menu for all these function"
+          }
+        ],
+        "fields": [
+          "status"
+        ]
+      },
+      "conflict": {
+        "result": "pass",
+        "reason": "No conflicting evidence found in the available dialogue.",
+        "quotes": [
+          {
+            "da_id": "TS3006b.A.dialog-act.dharshi.305",
+            "quote": "The User Interface Designer can design a menu for all these function"
+          },
+          {
+            "da_id": "TS3006b.D.dialog-act.dharshi.357",
+            "quote": "Yeah k kind of structure into layers ."
+          }
+        ],
+        "fields": []
+      },
+      "relation": {
+        "result": "uncertain",
+        "reason": "Current item mentions a UI design task for the UI designer, while the earlier TS3006a items refer to an Industrial Designer producing or starting a design; there is no explicit continuation or update of the earlier action. Relationship is uncertain.",
+        "quotes": [
+          {
+            "da_id": "TS3006b.A.dialog-act.dharshi.305",
+            "quote": "The User Interface Designer can design a menu for all these function"
+          },
+          {
+            "da_id": "TS3006b.D.dialog-act.dharshi.357",
+            "quote": "Yeah k kind of structure into layers ."
+          },
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.146",
+            "quote": "this industrati Industrial Designer should produce a working design ."
+          },
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.147",
+            "quote": "Am I correct ?"
+          },
+          {
+            "da_id": "TS3006a.C.dialog-act.vkaraisk.77",
+            "quote": "True ."
+          }
+        ],
+        "links": [],
+        "documents": [],
+        "fields": [
+          "related_items"
+        ]
+      }
+    },
+    "unresolved_fields": [
+      "deadline",
+      "related_items"
+    ],
+    "observed_evidence_da_ids": [
+      "TS3006b.A.dialog-act.dharshi.305",
+      "TS3006b.D.dialog-act.dharshi.357",
+      "TS3006b.A.dialog-act.dharshi.303",
+      "TS3006b.A.dialog-act.dharshi.306",
+      "TS3006a.A.dialog-act.vkaraisk.146",
+      "TS3006a.A.dialog-act.vkaraisk.147",
+      "TS3006a.C.dialog-act.vkaraisk.77"
+    ],
+    "initial_context": {
+      "item": {
+        "type": "actions",
+        "text": "The User Interface Designer can design a menu for all these functions.",
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ]
+      },
+      "current_meeting": "TS3006b",
+      "earlier_meetings": [
+        "TS3006a"
+      ],
+      "roster": [
+        {
+          "speaker": "A",
+          "participant_id": "MTD021PM",
+          "role": "PM"
+        },
+        {
+          "speaker": "B",
+          "participant_id": "MTD023UID",
+          "role": "UI"
+        },
+        {
+          "speaker": "C",
+          "participant_id": "MTD022ID",
+          "role": "ID"
+        },
+        {
+          "speaker": "D",
+          "participant_id": "MTD024ME",
+          "role": "ME"
+        }
+      ],
+      "observed_dialogue": [
+        {
+          "da_id": "TS3006b.A.dialog-act.dharshi.305",
+          "meeting_id": "TS3006b",
+          "text": "The User Interface Designer can design a menu for all these function",
+          "participant": "MTD021PM",
+          "role": "PM"
+        },
+        {
+          "da_id": "TS3006b.D.dialog-act.dharshi.357",
+          "meeting_id": "TS3006b",
+          "text": "Yeah k kind of structure into layers .",
+          "participant": "MTD024ME",
+          "role": "ME"
+        },
+        {
+          "da_id": "TS3006b.A.dialog-act.dharshi.303",
+          "participant": "MTD021PM",
+          "role": "PM",
+          "text": "Um <disfmarker>"
+        },
+        {
+          "da_id": "TS3006b.A.dialog-act.dharshi.306",
+          "participant": "MTD021PM",
+          "role": "PM",
+          "text": "I put them on the <vocalsound> <disfmarker>"
+        }
+      ],
+      "peer_items": [],
+      "provisional_values": {
+        "owner": [
+          "MTD023UID"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "open",
+        "related_items": []
+      },
+      "candidate_evidence_da_ids": [
+        "TS3006b.A.dialog-act.dharshi.305",
+        "TS3006b.D.dialog-act.dharshi.357"
+      ]
+    },
+    "observed_documents": [],
+    "document_evidence": [],
+    "relation_evidence": [],
+    "history": [
+      {
+        "item": "TS3006b#0",
+        "step": 1,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue TS3006b.A.dialog-act.dharshi.305 explicitly states the UI Designer can design a menu for all these functions.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              },
+              {
+                "da_id": "TS3006b.D.dialog-act.dharshi.357",
+                "quote": "Yeah k kind of structure into layers ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Owner explicitly provided in provisional_values as MTD023UID.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              }
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "deadline_unresolved",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Status 'open' is reflected in provisional_values.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting evidence found in the available dialogue.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              },
+              {
+                "da_id": "TS3006b.D.dialog-act.dharshi.357",
+                "quote": "Yeah k kind of structure into layers ."
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "prior_context_not_checked",
+            "links": [],
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              },
+              {
+                "da_id": "TS3006b.D.dialog-act.dharshi.357",
+                "quote": "Yeah k kind of structure into layers ."
+              }
+            ],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "decision": "retrieve",
+        "reason": "unresolved_checks",
+        "assessed_text": "The User Interface Designer can design a menu for all these functions.",
+        "requested_action": "retrieve",
+        "proposed_fields": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "MTD023UID"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "TS3006b.A.dialog-act.dharshi.305",
+            "TS3006b.D.dialog-act.dharshi.357"
+          ]
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue TS3006b.A.dialog-act.dharshi.305 explicitly states the UI Designer can design a menu for all these functions.",
+            "quotes": [
+              "TS3006b.A.dialog-act.dharshi.305",
+              "TS3006b.D.dialog-act.dharshi.357"
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Owner explicitly provided in provisional_values as MTD023UID.",
+            "quotes": [
+              "TS3006b.A.dialog-act.dharshi.305"
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "No deadline provided in current dialogue or provisional values.",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Status 'open' is reflected in provisional_values.",
+            "quotes": [
+              "TS3006b.A.dialog-act.dharshi.305"
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting evidence found in the available dialogue.",
+            "quotes": [
+              "TS3006b.A.dialog-act.dharshi.305",
+              "TS3006b.D.dialog-act.dharshi.357"
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "pass",
+            "reason": "No related_items to establish relation; no contradictory evidence.",
+            "links": [],
+            "quotes": [
+              "TS3006b.A.dialog-act.dharshi.305",
+              "TS3006b.D.dialog-act.dharshi.357"
+            ],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "MTD023UID"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue TS3006b.A.dialog-act.dharshi.305 explicitly states the UI Designer can design a menu for all these functions.",
+            "evidence_da_ids": [
+              "TS3006b.A.dialog-act.dharshi.305",
+              "TS3006b.D.dialog-act.dharshi.357"
+            ]
+          },
+          "owner_check": {
+            "result": "pass",
+            "reason": "Owner explicitly provided in provisional_values as MTD023UID.",
+            "evidence_da_ids": [
+              "TS3006b.A.dialog-act.dharshi.305"
+            ]
+          },
+          "deadline_check": {
+            "result": "uncertain",
+            "reason": "No deadline provided in current dialogue or provisional values.",
+            "evidence_da_ids": []
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Status 'open' is reflected in provisional_values.",
+            "evidence_da_ids": [
+              "TS3006b.A.dialog-act.dharshi.305"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No conflicting evidence found in the available dialogue.",
+            "evidence_da_ids": [
+              "TS3006b.A.dialog-act.dharshi.305",
+              "TS3006b.D.dialog-act.dharshi.357"
+            ],
+            "affected_fields": []
+          },
+          "relation_check": {
+            "result": "pass",
+            "reason": "No related_items to establish relation; no contradictory evidence.",
+            "evidence_da_ids": [
+              "TS3006b.A.dialog-act.dharshi.305",
+              "TS3006b.D.dialog-act.dharshi.357"
+            ],
+            "links": []
+          },
+          "next_action": "retrieve"
+        },
+        "evidence_bindings": {
+          "statement": [
+            "TS3006b.A.dialog-act.dharshi.305",
+            "TS3006b.D.dialog-act.dharshi.357"
+          ],
+          "owner": [
+            "TS3006b.A.dialog-act.dharshi.305"
+          ],
+          "status": [
+            "TS3006b.A.dialog-act.dharshi.305"
+          ],
+          "conflict": [
+            "TS3006b.A.dialog-act.dharshi.305",
+            "TS3006b.D.dialog-act.dharshi.357"
+          ],
+          "relation": [
+            "TS3006b.A.dialog-act.dharshi.305",
+            "TS3006b.D.dialog-act.dharshi.357"
+          ]
+        },
+        "raw_tool_input": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "MTD023UID"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue TS3006b.A.dialog-act.dharshi.305 explicitly states the UI Designer can design a menu for all these functions.",
+            "evidence_da_ids": [
+              "TS3006b.A.dialog-act.dharshi.305",
+              "TS3006b.D.dialog-act.dharshi.357"
+            ]
+          },
+          "owner_check": {
+            "result": "pass",
+            "reason": "Owner explicitly provided in provisional_values as MTD023UID.",
+            "evidence_da_ids": [
+              "TS3006b.A.dialog-act.dharshi.305"
+            ]
+          },
+          "deadline_check": {
+            "result": "uncertain",
+            "reason": "No deadline provided in current dialogue or provisional values.",
+            "evidence_da_ids": []
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Status 'open' is reflected in provisional_values.",
+            "evidence_da_ids": [
+              "TS3006b.A.dialog-act.dharshi.305"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No conflicting evidence found in the available dialogue.",
+            "evidence_da_ids": [
+              "TS3006b.A.dialog-act.dharshi.305",
+              "TS3006b.D.dialog-act.dharshi.357"
+            ],
+            "affected_fields": []
+          },
+          "relation_check": {
+            "result": "pass",
+            "reason": "No related_items to establish relation; no contradictory evidence.",
+            "evidence_da_ids": [
+              "TS3006b.A.dialog-act.dharshi.305",
+              "TS3006b.D.dialog-act.dharshi.357"
+            ],
+            "links": []
+          },
+          "next_action": "retrieve"
+        },
+        "protocol_normalizations": []
+      },
+      {
+        "item": "TS3006b#0",
+        "step": 2,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "history_context_focused",
+        "outcome": "delivered",
+        "evidence_da_ids": [
+          "TS3006b.A.dialog-act.dharshi.305",
+          "TS3006b.D.dialog-act.dharshi.357",
+          "TS3006b.A.dialog-act.dharshi.303",
+          "TS3006b.A.dialog-act.dharshi.306"
+        ]
+      },
+      {
+        "item": "TS3006b#0",
+        "step": 2,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "get_prior_items",
+        "outcome": "lookup",
+        "decision": "retrieve",
+        "args": {
+          "query": "menu design",
+          "item_type": "actions"
+        },
+        "tool_result": {
+          "results": [
+            {
+              "id": "TS3006a.sys.s.3",
+              "meeting_id": "TS3006a",
+              "type": "actions",
+              "text": "Produce a working design.",
+              "owner": [
+                "MTD022ID"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "open",
+              "evidence": [
+                "TS3006a.A.dialog-act.vkaraisk.146",
+                "TS3006a.A.dialog-act.vkaraisk.147",
+                "TS3006a.C.dialog-act.vkaraisk.77"
+              ],
+              "source_file": "TS3006a.json",
+              "source_sha256": "eb352dfc8d7158fe0e58de4c136e4a04aa01b20634413804bd3aed84999cd7d4",
+              "review_state": "legacy_unchecked",
+              "unresolved_fields": [],
+              "unreadable_reference_ids": [],
+              "score": 0.8
+            },
+            {
+              "id": "TS3006a.sys.s.2",
+              "meeting_id": "TS3006a",
+              "type": "actions",
+              "text": "Start on the conceptual design.",
+              "owner": [
+                "MTD022ID"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "open",
+              "evidence": [
+                "TS3006a.C.dialog-act.vkaraisk.117",
+                "TS3006a.C.dialog-act.vkaraisk.118"
+              ],
+              "source_file": "TS3006a.json",
+              "source_sha256": "eb352dfc8d7158fe0e58de4c136e4a04aa01b20634413804bd3aed84999cd7d4",
+              "review_state": "legacy_unchecked",
+              "unresolved_fields": [],
+              "unreadable_reference_ids": [],
+              "score": 0.74
+            }
+          ]
+        },
+        "new_info": true
+      },
+      {
+        "item": "TS3006b#0",
+        "step": 3,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "read_prior_item",
+        "outcome": "lookup",
+        "decision": "retrieve",
+        "args": {
+          "item_id": "TS3006a.sys.s.3",
+          "query": "",
+          "offset": 0,
+          "limit": 12,
+          "window": 0
+        },
+        "tool_result": {
+          "results": [
+            {
+              "kind": "prior_item",
+              "id": "TS3006a.sys.s.3",
+              "meeting_id": "TS3006a",
+              "type": "actions",
+              "text": "Produce a working design.",
+              "owner": [
+                "MTD022ID"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "open",
+              "evidence": [
+                "TS3006a.A.dialog-act.vkaraisk.146",
+                "TS3006a.A.dialog-act.vkaraisk.147",
+                "TS3006a.C.dialog-act.vkaraisk.77"
+              ],
+              "source_file": "TS3006a.json",
+              "source_sha256": "eb352dfc8d7158fe0e58de4c136e4a04aa01b20634413804bd3aed84999cd7d4",
+              "review_state": "legacy_unchecked",
+              "unresolved_fields": [],
+              "unreadable_reference_ids": [],
+              "selected_reference_ids": [
+                "TS3006a.A.dialog-act.vkaraisk.146",
+                "TS3006a.A.dialog-act.vkaraisk.147",
+                "TS3006a.C.dialog-act.vkaraisk.77"
+              ],
+              "next_offset": null
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.146",
+              "meeting_id": "TS3006a",
+              "text": "this industrati Industrial Designer should produce a working design .",
+              "participant": "MTD021PM",
+              "role": "PM",
+              "supports_item_id": "TS3006a.sys.s.3",
+              "is_reference": true
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.147",
+              "meeting_id": "TS3006a",
+              "text": "Am I correct ?",
+              "participant": "MTD021PM",
+              "role": "PM",
+              "supports_item_id": "TS3006a.sys.s.3",
+              "is_reference": true
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "TS3006a.C.dialog-act.vkaraisk.77",
+              "meeting_id": "TS3006a",
+              "text": "True .",
+              "participant": "MTD022ID",
+              "role": "ID",
+              "supports_item_id": "TS3006a.sys.s.3",
+              "is_reference": true
+            }
+          ]
+        },
+        "new_info": true
+      },
+      {
+        "item": "TS3006b#0",
+        "step": 4,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "assess_relation",
+        "outcome": "invalid_action",
+        "error": "Correct these argument fields: related_items: None is not of type 'array' Tool assess_relation accepts root keys: result, reason, quotes, documents, links, related_items, next_action. Resubmit the complete advertised object. Select only delivered supporting dialogue IDs; if support is unavailable use uncertain with an explanation, never invent an ID or mark pass with no evidence. Documents belong inside the check they inform.",
+        "raw_tool_input": {
+          "result": "uncertain",
+          "reason": "Current item introduces a UI design task assigned to the User Interface Designer; prior items TS3006a.sys.s.3 and TS3006a.sys.s.2 describe an Industrial Designer producing a working or conceptual design; there is no explicit continuation or update of the earlier action. The relationship is uncertain.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.A.dialog-act.dharshi.305",
+              "quote": "The User Interface Designer can design a menu for all these function"
+            },
+            {
+              "da_id": "TS3006b.D.dialog-act.dharshi.357",
+              "quote": "Yeah k kind of structure into layers ."
+            },
+            {
+              "da_id": "TS3006b.A.dialog-act.dharshi.306",
+              "quote": "I put them on the <vocalsound> <disfmarker>"
+            },
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.146",
+              "quote": "this industrati Industrial Designer should produce a working design ."
+            },
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.147",
+              "quote": "Am I correct ?"
+            },
+            {
+              "da_id": "TS3006a.C.dialog-act.vkaraisk.77",
+              "quote": "True ."
+            }
+          ],
+          "links": [],
+          "related_items": null
+        }
+      },
+      {
+        "item": "TS3006b#0",
+        "step": 5,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "assess_relation",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue TS3006b.A.dialog-act.dharshi.305 explicitly states the UI Designer can design a menu for all these functions.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              },
+              {
+                "da_id": "TS3006b.D.dialog-act.dharshi.357",
+                "quote": "Yeah k kind of structure into layers ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Owner explicitly provided in provisional_values as MTD023UID.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              }
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "deadline_unresolved",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Status 'open' is reflected in provisional_values.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting evidence found in the available dialogue.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              },
+              {
+                "da_id": "TS3006b.D.dialog-act.dharshi.357",
+                "quote": "Yeah k kind of structure into layers ."
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "Current item mentions a UI design task for the UI designer, while the earlier TS3006a items refer to an Industrial Designer producing or starting a design; there is no explicit continuation or update of the earlier action. Relationship is uncertain.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              },
+              {
+                "da_id": "TS3006b.D.dialog-act.dharshi.357",
+                "quote": "Yeah k kind of structure into layers ."
+              },
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.303",
+                "quote": "Um <disfmarker>"
+              },
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.306",
+                "quote": "I put them on the <vocalsound> <disfmarker>"
+              },
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.146",
+                "quote": "this industrati Industrial Designer should produce a working design ."
+              },
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.147",
+                "quote": "Am I correct ?"
+              },
+              {
+                "da_id": "TS3006a.C.dialog-act.vkaraisk.77",
+                "quote": "True ."
+              }
+            ],
+            "links": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "decision": "retrieve",
+        "reason": "unresolved_checks",
+        "assessed_text": "The User Interface Designer can design a menu for all these functions.",
+        "requested_action": null,
+        "proposed_fields": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "MTD023UID"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "TS3006b.A.dialog-act.dharshi.305",
+            "TS3006b.D.dialog-act.dharshi.357",
+            "TS3006b.A.dialog-act.dharshi.303",
+            "TS3006b.A.dialog-act.dharshi.306",
+            "TS3006a.A.dialog-act.vkaraisk.146",
+            "TS3006a.A.dialog-act.vkaraisk.147",
+            "TS3006a.C.dialog-act.vkaraisk.77"
+          ]
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue TS3006b.A.dialog-act.dharshi.305 explicitly states the UI Designer can design a menu for all these functions.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              },
+              {
+                "da_id": "TS3006b.D.dialog-act.dharshi.357",
+                "quote": "Yeah k kind of structure into layers ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Owner explicitly provided in provisional_values as MTD023UID.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              }
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "deadline_unresolved",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Status 'open' is reflected in provisional_values.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting evidence found in the available dialogue.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              },
+              {
+                "da_id": "TS3006b.D.dialog-act.dharshi.357",
+                "quote": "Yeah k kind of structure into layers ."
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "Current item mentions a UI design task for the UI designer, while the earlier TS3006a items refer to an Industrial Designer producing or starting a design; there is no explicit continuation or update of the earlier action. Relationship is uncertain.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              },
+              {
+                "da_id": "TS3006b.D.dialog-act.dharshi.357",
+                "quote": "Yeah k kind of structure into layers ."
+              },
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.303",
+                "quote": "Um <disfmarker>"
+              },
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.306",
+                "quote": "I put them on the <vocalsound> <disfmarker>"
+              },
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.146",
+                "quote": "this industrati Industrial Designer should produce a working design ."
+              },
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.147",
+                "quote": "Am I correct ?"
+              },
+              {
+                "da_id": "TS3006a.C.dialog-act.vkaraisk.77",
+                "quote": "True ."
+              }
+            ],
+            "links": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "result": "uncertain",
+          "reason": "Current item mentions a UI design task for the UI designer, while the earlier TS3006a items refer to an Industrial Designer producing or starting a design; there is no explicit continuation or update of the earlier action. Relationship is uncertain.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.A.dialog-act.dharshi.305",
+              "quote": "The User Interface Designer can design a menu for all these function"
+            },
+            {
+              "da_id": "TS3006b.D.dialog-act.dharshi.357",
+              "quote": "Yeah k kind of structure into layers ."
+            },
+            {
+              "da_id": "TS3006b.A.dialog-act.dharshi.303",
+              "quote": "Um <disfmarker>"
+            },
+            {
+              "da_id": "TS3006b.A.dialog-act.dharshi.306",
+              "quote": "I put them on the <vocalsound> <disfmarker>"
+            },
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.146",
+              "quote": "this industrati Industrial Designer should produce a working design ."
+            },
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.147",
+              "quote": "Am I correct ?"
+            },
+            {
+              "da_id": "TS3006a.C.dialog-act.vkaraisk.77",
+              "quote": "True ."
+            }
+          ],
+          "links": [],
+          "related_items": []
+        },
+        "evidence_bindings": {},
+        "raw_tool_input": {
+          "result": "uncertain",
+          "reason": "Current item mentions a UI design task for the UI designer, while the earlier TS3006a items refer to an Industrial Designer producing or starting a design; there is no explicit continuation or update of the earlier action. Relationship is uncertain.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.A.dialog-act.dharshi.305",
+              "quote": "The User Interface Designer can design a menu for all these function"
+            },
+            {
+              "da_id": "TS3006b.D.dialog-act.dharshi.357",
+              "quote": "Yeah k kind of structure into layers ."
+            },
+            {
+              "da_id": "TS3006b.A.dialog-act.dharshi.303",
+              "quote": "Um <disfmarker>"
+            },
+            {
+              "da_id": "TS3006b.A.dialog-act.dharshi.306",
+              "quote": "I put them on the <vocalsound> <disfmarker>"
+            },
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.146",
+              "quote": "this industrati Industrial Designer should produce a working design ."
+            },
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.147",
+              "quote": "Am I correct ?"
+            },
+            {
+              "da_id": "TS3006a.C.dialog-act.vkaraisk.77",
+              "quote": "True ."
+            }
+          ],
+          "links": [],
+          "related_items": [],
+          "next_action": null
+        },
+        "protocol_normalizations": [
+          "empty_optional_action_hint",
+          "controller_action_for_missing_hint:retrieve"
+        ]
+      },
+      {
+        "item": "TS3006b#0",
+        "step": 6,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "assess_relation",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue TS3006b.A.dialog-act.dharshi.305 explicitly states the UI Designer can design a menu for all these functions.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              },
+              {
+                "da_id": "TS3006b.D.dialog-act.dharshi.357",
+                "quote": "Yeah k kind of structure into layers ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Owner explicitly provided in provisional_values as MTD023UID.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              }
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "deadline_unresolved",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Status 'open' is reflected in provisional_values.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting evidence found in the available dialogue.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              },
+              {
+                "da_id": "TS3006b.D.dialog-act.dharshi.357",
+                "quote": "Yeah k kind of structure into layers ."
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "Current item mentions a UI design task for the UI designer, while the earlier TS3006a items refer to an Industrial Designer producing or starting a design; there is no explicit continuation or update of the earlier action. Relationship is uncertain.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              },
+              {
+                "da_id": "TS3006b.D.dialog-act.dharshi.357",
+                "quote": "Yeah k kind of structure into layers ."
+              },
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.303",
+                "quote": "Um <disfmarker>"
+              },
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.306",
+                "quote": "I put them on the <vocalsound> <disfmarker>"
+              },
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.146",
+                "quote": "this industrati Industrial Designer should produce a working design ."
+              },
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.147",
+                "quote": "Am I correct ?"
+              },
+              {
+                "da_id": "TS3006a.C.dialog-act.vkaraisk.77",
+                "quote": "True ."
+              }
+            ],
+            "links": [],
+            "documents": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "decision": "retrieve",
+        "reason": "unresolved_checks",
+        "assessed_text": "The User Interface Designer can design a menu for all these functions.",
+        "requested_action": "retrieve",
+        "proposed_fields": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "MTD023UID"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "TS3006b.A.dialog-act.dharshi.305",
+            "TS3006b.D.dialog-act.dharshi.357",
+            "TS3006b.A.dialog-act.dharshi.303",
+            "TS3006b.A.dialog-act.dharshi.306",
+            "TS3006a.A.dialog-act.vkaraisk.146",
+            "TS3006a.A.dialog-act.vkaraisk.147",
+            "TS3006a.C.dialog-act.vkaraisk.77"
+          ]
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue TS3006b.A.dialog-act.dharshi.305 explicitly states the UI Designer can design a menu for all these functions.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              },
+              {
+                "da_id": "TS3006b.D.dialog-act.dharshi.357",
+                "quote": "Yeah k kind of structure into layers ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Owner explicitly provided in provisional_values as MTD023UID.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              }
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "deadline_unresolved",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Status 'open' is reflected in provisional_values.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting evidence found in the available dialogue.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              },
+              {
+                "da_id": "TS3006b.D.dialog-act.dharshi.357",
+                "quote": "Yeah k kind of structure into layers ."
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "Current item mentions a UI design task for the UI designer, while the earlier TS3006a items refer to an Industrial Designer producing or starting a design; there is no explicit continuation or update of the earlier action. Relationship is uncertain.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              },
+              {
+                "da_id": "TS3006b.D.dialog-act.dharshi.357",
+                "quote": "Yeah k kind of structure into layers ."
+              },
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.303",
+                "quote": "Um <disfmarker>"
+              },
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.306",
+                "quote": "I put them on the <vocalsound> <disfmarker>"
+              },
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.146",
+                "quote": "this industrati Industrial Designer should produce a working design ."
+              },
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.147",
+                "quote": "Am I correct ?"
+              },
+              {
+                "da_id": "TS3006a.C.dialog-act.vkaraisk.77",
+                "quote": "True ."
+              }
+            ],
+            "links": [],
+            "documents": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "result": "uncertain",
+          "reason": "Current item mentions a UI design task for the UI designer, while the earlier TS3006a items refer to an Industrial Designer producing or starting a design; there is no explicit continuation or update of the earlier action. Relationship is uncertain.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.A.dialog-act.dharshi.305",
+              "quote": "The User Interface Designer can design a menu for all these function"
+            },
+            {
+              "da_id": "TS3006b.D.dialog-act.dharshi.357",
+              "quote": "Yeah k kind of structure into layers ."
+            },
+            {
+              "da_id": "TS3006b.A.dialog-act.dharshi.303",
+              "quote": "Um <disfmarker>"
+            },
+            {
+              "da_id": "TS3006b.A.dialog-act.dharshi.306",
+              "quote": "I put them on the <vocalsound> <disfmarker>"
+            },
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.146",
+              "quote": "this industrati Industrial Designer should produce a working design ."
+            },
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.147",
+              "quote": "Am I correct ?"
+            },
+            {
+              "da_id": "TS3006a.C.dialog-act.vkaraisk.77",
+              "quote": "True ."
+            }
+          ],
+          "documents": [],
+          "links": [],
+          "related_items": [],
+          "next_action": "retrieve"
+        },
+        "evidence_bindings": {},
+        "raw_tool_input": {
+          "result": "uncertain",
+          "reason": "Current item mentions a UI design task for the UI designer, while the earlier TS3006a items refer to an Industrial Designer producing or starting a design; there is no explicit continuation or update of the earlier action. Relationship is uncertain.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.A.dialog-act.dharshi.305",
+              "quote": "The User Interface Designer can design a menu for all these function"
+            },
+            {
+              "da_id": "TS3006b.D.dialog-act.dharshi.357",
+              "quote": "Yeah k kind of structure into layers ."
+            },
+            {
+              "da_id": "TS3006b.A.dialog-act.dharshi.303",
+              "quote": "Um <disfmarker>"
+            },
+            {
+              "da_id": "TS3006b.A.dialog-act.dharshi.306",
+              "quote": "I put them on the <vocalsound> <disfmarker>"
+            },
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.146",
+              "quote": "this industrati Industrial Designer should produce a working design ."
+            },
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.147",
+              "quote": "Am I correct ?"
+            },
+            {
+              "da_id": "TS3006a.C.dialog-act.vkaraisk.77",
+              "quote": "True ."
+            }
+          ],
+          "documents": [],
+          "links": [],
+          "related_items": [],
+          "next_action": "retrieve"
+        },
+        "protocol_normalizations": []
+      },
+      {
+        "item": "TS3006b#0",
+        "step": 7,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "assess_relation",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue TS3006b.A.dialog-act.dharshi.305 explicitly states the UI Designer can design a menu for all these functions.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              },
+              {
+                "da_id": "TS3006b.D.dialog-act.dharshi.357",
+                "quote": "Yeah k kind of structure into layers ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Owner explicitly provided in provisional_values as MTD023UID.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              }
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "deadline_unresolved",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Status 'open' is reflected in provisional_values.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting evidence found in the available dialogue.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              },
+              {
+                "da_id": "TS3006b.D.dialog-act.dharshi.357",
+                "quote": "Yeah k kind of structure into layers ."
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "Current item mentions a UI design task for the UI designer, while the earlier TS3006a items refer to an Industrial Designer producing or starting a design; there is no explicit continuation or update of the earlier action. Relationship is uncertain.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              },
+              {
+                "da_id": "TS3006b.D.dialog-act.dharshi.357",
+                "quote": "Yeah k kind of structure into layers ."
+              },
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.146",
+                "quote": "this industrati Industrial Designer should produce a working design ."
+              },
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.147",
+                "quote": "Am I correct ?"
+              },
+              {
+                "da_id": "TS3006a.C.dialog-act.vkaraisk.77",
+                "quote": "True ."
+              }
+            ],
+            "links": [],
+            "documents": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "decision": "request_clarification",
+        "reason": "no_progress",
+        "assessed_text": "The User Interface Designer can design a menu for all these functions.",
+        "requested_action": "retrieve",
+        "proposed_fields": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "MTD023UID"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "TS3006b.A.dialog-act.dharshi.305",
+            "TS3006b.D.dialog-act.dharshi.357",
+            "TS3006b.A.dialog-act.dharshi.303",
+            "TS3006b.A.dialog-act.dharshi.306",
+            "TS3006a.A.dialog-act.vkaraisk.146",
+            "TS3006a.A.dialog-act.vkaraisk.147",
+            "TS3006a.C.dialog-act.vkaraisk.77"
+          ]
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue TS3006b.A.dialog-act.dharshi.305 explicitly states the UI Designer can design a menu for all these functions.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              },
+              {
+                "da_id": "TS3006b.D.dialog-act.dharshi.357",
+                "quote": "Yeah k kind of structure into layers ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Owner explicitly provided in provisional_values as MTD023UID.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              }
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "deadline_unresolved",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Status 'open' is reflected in provisional_values.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting evidence found in the available dialogue.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              },
+              {
+                "da_id": "TS3006b.D.dialog-act.dharshi.357",
+                "quote": "Yeah k kind of structure into layers ."
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "Current item mentions a UI design task for the UI designer, while the earlier TS3006a items refer to an Industrial Designer producing or starting a design; there is no explicit continuation or update of the earlier action. Relationship is uncertain.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              },
+              {
+                "da_id": "TS3006b.D.dialog-act.dharshi.357",
+                "quote": "Yeah k kind of structure into layers ."
+              },
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.146",
+                "quote": "this industrati Industrial Designer should produce a working design ."
+              },
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.147",
+                "quote": "Am I correct ?"
+              },
+              {
+                "da_id": "TS3006a.C.dialog-act.vkaraisk.77",
+                "quote": "True ."
+              }
+            ],
+            "links": [],
+            "documents": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "result": "uncertain",
+          "reason": "Current item mentions a UI design task for the UI designer, while the earlier TS3006a items refer to an Industrial Designer producing or starting a design; there is no explicit continuation or update of the earlier action. Relationship is uncertain.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.A.dialog-act.dharshi.305",
+              "quote": "The User Interface Designer can design a menu for all these function"
+            },
+            {
+              "da_id": "TS3006b.D.dialog-act.dharshi.357",
+              "quote": "Yeah k kind of structure into layers ."
+            },
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.146",
+              "quote": "this industrati Industrial Designer should produce a working design ."
+            },
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.147",
+              "quote": "Am I correct ?"
+            },
+            {
+              "da_id": "TS3006a.C.dialog-act.vkaraisk.77",
+              "quote": "True ."
+            }
+          ],
+          "documents": [],
+          "links": [],
+          "related_items": [],
+          "next_action": "retrieve"
+        },
+        "evidence_bindings": {},
+        "raw_tool_input": {
+          "result": "uncertain",
+          "reason": "Current item mentions a UI design task for the UI designer, while the earlier TS3006a items refer to an Industrial Designer producing or starting a design; there is no explicit continuation or update of the earlier action. Relationship is uncertain.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.A.dialog-act.dharshi.305",
+              "quote": "The User Interface Designer can design a menu for all these function"
+            },
+            {
+              "da_id": "TS3006b.D.dialog-act.dharshi.357",
+              "quote": "Yeah k kind of structure into layers ."
+            },
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.146",
+              "quote": "this industrati Industrial Designer should produce a working design ."
+            },
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.147",
+              "quote": "Am I correct ?"
+            },
+            {
+              "da_id": "TS3006a.C.dialog-act.vkaraisk.77",
+              "quote": "True ."
+            }
+          ],
+          "documents": [],
+          "links": [],
+          "related_items": [],
+          "next_action": "retrieve"
+        },
+        "protocol_normalizations": []
+      },
+      {
+        "item": "TS3006b#0",
+        "step": 7,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "stop",
+        "outcome": "pending",
+        "termination_reason": "no_progress",
+        "unresolved_fields": [
+          "deadline",
+          "related_items"
+        ]
+      }
+    ],
+    "lookups": 2,
+    "termination_reason": "no_progress",
+    "clarifications": [
+      {
+        "request_id": "cff18e5391078191",
+        "item_key": "TS3006b#0",
+        "record_id": null,
+        "field": "deadline",
+        "question": "What is the agreed deadline, in its original wording?",
+        "item_text": "The User Interface Designer can design a menu for all these functions.",
+        "reason": "deadline_unresolved",
+        "evidence_da_ids": [],
+        "available_evidence_da_ids": [
+          "TS3006b.A.dialog-act.dharshi.305",
+          "TS3006b.D.dialog-act.dharshi.357",
+          "TS3006b.A.dialog-act.dharshi.303",
+          "TS3006b.A.dialog-act.dharshi.306",
+          "TS3006a.A.dialog-act.vkaraisk.146",
+          "TS3006a.A.dialog-act.vkaraisk.147",
+          "TS3006a.C.dialog-act.vkaraisk.77"
+        ],
+        "status": "open",
+        "termination_reason": "no_progress"
+      },
+      {
+        "request_id": "899818c7859ee097",
+        "item_key": "TS3006b#0",
+        "record_id": null,
+        "field": "related_items",
+        "question": "Which earlier record does this item continue or change, and how?",
+        "item_text": "The User Interface Designer can design a menu for all these functions.",
+        "reason": "Current item mentions a UI design task for the UI designer, while the earlier TS3006a items refer to an Industrial Designer producing or starting a design; there is no explicit continuation or update of the earlier action. Relationship is uncertain.",
+        "evidence_da_ids": [
+          "TS3006b.A.dialog-act.dharshi.305",
+          "TS3006b.D.dialog-act.dharshi.357",
+          "TS3006a.A.dialog-act.vkaraisk.146",
+          "TS3006a.A.dialog-act.vkaraisk.147",
+          "TS3006a.C.dialog-act.vkaraisk.77"
+        ],
+        "available_evidence_da_ids": [
+          "TS3006b.A.dialog-act.dharshi.305",
+          "TS3006b.D.dialog-act.dharshi.357",
+          "TS3006b.A.dialog-act.dharshi.303",
+          "TS3006b.A.dialog-act.dharshi.306",
+          "TS3006a.A.dialog-act.vkaraisk.146",
+          "TS3006a.A.dialog-act.vkaraisk.147",
+          "TS3006a.C.dialog-act.vkaraisk.77"
+        ],
+        "status": "open",
+        "termination_reason": "no_progress"
+      }
+    ]
+  }
+}

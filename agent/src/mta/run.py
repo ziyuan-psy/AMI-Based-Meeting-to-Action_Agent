@@ -13,6 +13,7 @@ from pathlib import Path
 from . import config
 from .llm import LLM
 from .pipeline import MODES, run_meeting
+from .quality import PROFILES
 
 
 def main(argv=None) -> int:
@@ -20,8 +21,11 @@ def main(argv=None) -> int:
     ap.add_argument("target", help="path to a transcript .txt, or a series ID such as TS3006")
     ap.add_argument("--mode", choices=MODES, default="s2")
     ap.add_argument("--out", type=Path, default=config.RUNS)
+    ap.add_argument('--quality-profile', choices=PROFILES, default=config.QUALITY_PROFILE,
+                    help='recall_candidate_v1: 414 content, stable order, Action/Issue recovery, targeted follow-up')
     ap.add_argument("--allow-sc", action="store_true", help="permit held-out series (ES2004, TS3007)")
     args = ap.parse_args(argv)
+    config.QUALITY_PROFILE = args.quality_profile
 
     if Path(args.target).suffix == ".txt":
         paths = [Path(args.target)]

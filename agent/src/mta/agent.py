@@ -2,7 +2,8 @@
 from __future__ import annotations
 
 import json
-from dataclasses import dataclass
+import threading
+from dataclasses import dataclass, field
 
 from . import config
 from .extract import VALID_STATUS
@@ -30,15 +31,25 @@ def tool_defs(allow_prior: bool) -> list[dict]:
         {"name": "get_participants", "description": "Speaker letters, participant IDs and roles of a meeting.",
          "input_schema": {"type": "object", "properties": {"meeting_id": {"type": "string"}},
                           "required": ["meeting_id"]}},
-        {"name": "search_project_doc", "description": "Search the AMI scenario / project documents.",
+        {"name": "search_project_doc", "description": "BM25 search of scenario passages. Returns exact text, page, range and passage ID; use read_project_doc for surrounding context.",
          "input_schema": {"type": "object", "properties": {"query": {"type": "string"}}, "required": ["query"]}},
+        {"name": "read_project_doc", "description": "Read an AMI scenario page in bounded portions. Use next_offset to continue; page numbers are physical PDF pages, one-based.",
+         "input_schema": {"type": "object", "properties": {
+             "page": {"type": "integer", "minimum": 1}, "offset": {"type": "integer", "minimum": 0},
+             "limit": {"type": "integer", "minimum": 1, "maximum": 2000}}, "required": ["page"]}},
     ]
     if allow_prior:
         tools.append({"name": "get_prior_items",
-                      "description": "Items recorded for earlier meetings of this series, with IDs.",
+                      "description": "Keyword search of earlier record TEXT in this series. Choose subject/property keywords, not a meeting ID. Returns candidate records and evidence locators, not the dialogue text.",
                       "input_schema": {"type": "object", "properties": {
-                          "query": {"type": "string"}, "item_type": {"enum": ["actions", "decisions", "problems"]}},
+                          "query": {"type": "string", "description": "Short content keywords from the item; meeting IDs are not indexed."},
+                          "item_type": {"enum": ["actions", "decisions", "problems"]}},
                           "required": ["query"]}})
+        tools.append({"name": "read_prior_item", "description": "Read a returned prior record and its actual supporting dialogue; use query to focus evidence or offset for more.",
+                      "input_schema": {"type": "object", "properties": {
+                          "item_id": {"type": "string"}, "query": {"type": "string"},
+                          "offset": {"type": "integer", "minimum": 0}, "limit": {"type": "integer", "minimum": 1, "maximum": 12},
+                          "window": {"type": "integer", "minimum": 0, "maximum": 2}}, "required": ["item_id"]}})
     tools.append({"name": "finish", "description": "Submit the final fields for this item.",
                   "input_schema": {"type": "object", "properties": {
                       "owner": {"type": ["array", "null"], "items": {"type": "string"}},
@@ -58,10 +69,19 @@ def tool_defs(allow_prior: bool) -> list[dict]:
 
 @dataclass
 class MeetingBudget:
+    """Lookups shared by all items of one meeting. Items run in parallel threads, so a lookup is reserved under a lock."""
     used: int = 0
+    _lock: threading.Lock = field(default_factory=threading.Lock, repr=False)
 
     def left(self) -> int:
         return config.MAX_CALLS_PER_MEETING - self.used
+
+    def take(self) -> bool:
+        with self._lock:
+            if self.used >= config.MAX_CALLS_PER_MEETING:
+                return False
+            self.used += 1
+            return True
 
 
 def meeting_of(da_id: str) -> str:
@@ -162,32 +182,64 @@ def item_prompt(store: Store, item: dict) -> str:
             + "\n\nEvidence lines found so far:\n" + "\n".join(ev))
 
 
-def run_agent(llm: LLM, store: Store, item: dict, budget: MeetingBudget, trace: Trace, item_key: str) -> dict | None:
+def run_agent(llm: LLM, store: Store, item: dict, budget: MeetingBudget, trace: Trace, item_key: str,
+              progress=None) -> dict | None:
+    if config.P2_ENABLED:
+        from .p2 import run_p2_agent
+        return run_p2_agent(llm, store, item, budget, trace, item_key, progress)
+    return _run_legacy_agent(llm, store, item, budget, trace, item_key)
+
+
+def _run_legacy_agent(llm: LLM, store: Store, item: dict, budget: MeetingBudget, trace: Trace, item_key: str,
+                      observed_only=False) -> dict | None:
     """Returns the final fields, or None when the agent could not produce a valid finish (caller falls back)."""
     system = AGENT_SYSTEM.replace("{max_calls}", str(config.MAX_CALLS_PER_ITEM))
+    if observed_only:
+        system += ('\nCite only dialogue actually delivered in this conversation or the initial evidence. '
+                   'RESTORED_SOURCE_REVIEW means an original hypothesis was recovered: inspect supporting dialogue '
+                   'and its context before submitting fields/citations. Recovery is not validation. '
+                   'Keep unsupported owner/deadline null with ambiguous/missing basis; never invent a source.\n')
     if not store.allow_prior:
         system += "\nEarlier meetings are NOT available in this run; only the current meeting can be searched.\n"
     tools = tool_defs(store.allow_prior)
     messages = [{"role": "user", "content": item_prompt(store, item)}]
-    seen_ids = set(item["evidence_da_ids"])
+    seen_ids = set(item["evidence_da_ids"][:12] if observed_only else item["evidence_da_ids"])
     cache: dict[str, dict] = {}
     pages_seen: set[int] = set()
     calls = no_progress = invalid = finish_tries = step = 0
 
+    def deliver(data):
+        if observed_only:
+            # Keep complete JSON and account only for rows actually sent to the model.
+            # Import at runtime: p2 also imports the shared agent tool definitions.
+            from .p2 import bounded_result
+            data = bounded_result(data)
+            return data, json.dumps(data, ensure_ascii=False)
+        return data, json.dumps(data)[:6000]
+
     while True:
         force = (calls >= config.MAX_CALLS_PER_ITEM or budget.left() <= 0
                  or no_progress >= config.MAX_NO_PROGRESS or invalid >= config.MAX_INVALID_ACTIONS)
-        if force and finish_tries >= 3:
-            trace.log(item=item_key, step=step, outcome="gave_up", reason="no valid finish")
+        if force and finish_tries >= config.MAX_FINISH_TRIES:
+            trace.log(item=item_key, step=step, flags=item["flags"], action=None, outcome="gave_up",
+                      reason="no valid finish")
+            return None
+        if step >= config.MAX_AGENT_STEPS:
+            trace.log(item=item_key, step=step, flags=item["flags"], action=None, outcome="gave_up",
+                      reason="step limit")
             return None
         choice = {"type": "tool", "name": "finish"} if force else {"type": "any"}
-        resp = llm.create(system, messages, tools, choice)
+        resp = llm.create(system, messages, tools, choice, effort=config.EFFORT_AGENT, stage="agent")
         blocks = _blocks(resp)
-        messages.append({"role": "assistant", "content": blocks})
+        # An empty reply would become an assistant message with null content, which the API rejects on the next call.
+        messages.append({"role": "assistant", "content": blocks or [{"type": "text", "text": "(no tool call)"}]})
         uses = [b for b in blocks if b["type"] == "tool_use"]
         step += 1
         if not uses:
             invalid += 1
+            if force:
+                finish_tries += 1  # a forced finish that returns no tool call still uses up a try
+            trace.log(item=item_key, step=step, flags=item["flags"], action=None, outcome="no_tool_call", forced=force)
             messages.append({"role": "user", "content": "Call exactly one tool."})
             continue
         results = []
@@ -200,7 +252,12 @@ def run_agent(llm: LLM, store: Store, item: dict, budget: MeetingBudget, trace: 
                  "budget_left": {"item": config.MAX_CALLS_PER_ITEM - calls, "meeting": budget.left()}}
         if name == "finish":
             finish_tries += 1
-            fields, err = check_finish(store, item, args, pages_seen)
+            if observed_only and (not isinstance(args, dict)
+                                  or not isinstance(args.get('evidence_da_ids'), list)
+                                  or any(not isinstance(d, str) or d not in seen_ids for d in args['evidence_da_ids'])):
+                fields, err = None, 'Finish cites dialogue not delivered; retrieve/read the support first.'
+            else:
+                fields, err = check_finish(store, item, args, pages_seen)
             if fields:
                 trace.log(**entry, outcome="finished", related=fields["related_items"])
                 return fields
@@ -214,29 +271,49 @@ def run_agent(llm: LLM, store: Store, item: dict, budget: MeetingBudget, trace: 
                 trace.log(**entry, outcome="invalid_action")
                 results.append({"type": "tool_result", "tool_use_id": tu["id"], "is_error": True,
                                 "content": f"Unknown or unavailable tool {name}."})
+            elif calls >= config.MAX_CALLS_PER_ITEM:
+                trace.log(**entry, outcome="item_budget_exhausted")
+                results.append({"type": "tool_result", "tool_use_id": tu["id"], "is_error": True,
+                                "content": "This item's lookup budget is used up. Call finish now."})
+            elif not budget.take():
+                # other items used up the meeting's lookups while this step was in flight: finish next
+                trace.log(**entry, outcome="budget_exhausted")
+                results.append({"type": "tool_result", "tool_use_id": tu["id"], "is_error": True,
+                                "content": "The meeting's lookup budget is used up. Call finish now."})
             else:
                 key = name + json.dumps(args, sort_keys=True)
                 calls += 1
-                budget.used += 1
+                error = None
+                raw_data = None
                 if key in cache:
-                    data, new_info = {"note": "duplicate call; same result as before", **cache[key]}, False
+                    raw_data = {"note": "duplicate call; same result as before", **cache[key]}
+                    data, delivered_text = deliver(raw_data)
+                    new_info = False
                 else:
                     try:
-                        data = _execute(store, name, args)
+                        raw_data = _execute(store, name, args)
+                        data, delivered_text = deliver(raw_data)
                         ids = _ids_in(name, data)
                         new_info = bool(ids - seen_ids)
                         seen_ids |= ids
-                        if name == "search_project_doc":
+                        if name in ("search_project_doc", "read_project_doc"):
                             pages_seen |= {r["page"] for r in data["results"]}
-                        cache[key] = data
-                    except (PermissionError, KeyError, ValueError) as e:
+                        cache[key] = raw_data
+                    except (PermissionError, KeyError, ValueError, TypeError) as e:
                         invalid += 1
+                        error = f"{type(e).__name__}: {e}"
                         data, new_info = {"error": str(e)}, False
+                        data, delivered_text = deliver(data)
                 no_progress = 0 if new_info else no_progress + 1
-                trace.log(**entry, outcome="ok", new_info=new_info, n_results=len(data.get("results", [])),
-                          observation_ids=sorted(_ids_in(name, data))[:12])
+                if error:
+                    trace.log(**entry, outcome="tool_error", error=error,
+                              tool_result=raw_data if raw_data is not None else data, delivered_result=delivered_text)
+                else:
+                    trace.log(**entry, outcome="ok", new_info=new_info, n_results=len(data.get("results", [])),
+                              observation_ids=sorted(_ids_in(name, data))[:12],
+                              tool_result=raw_data if raw_data is not None else data, delivered_result=delivered_text)
                 results.append({"type": "tool_result", "tool_use_id": tu["id"],
-                                "content": json.dumps(data)[:6000], "is_error": "error" in data})
+                                "content": delivered_text, "is_error": "error" in data})
         messages.append({"role": "user", "content": results})
 
 
@@ -249,8 +326,12 @@ def _execute(store: Store, name: str, a: dict) -> dict:
         return {"results": store.roster(a["meeting_id"])}
     if name == "get_prior_items":
         return {"results": store.get_prior_items(a["query"], a.get("item_type"), 3)}
+    if name == "read_prior_item":
+        return {"results": store.read_prior_item(a["item_id"], a.get("query", ""), a.get("offset", 0), a.get("limit", 8), a.get("window", 1))}
     if name == "search_project_doc":
         return {"results": store.search_project_doc(a["query"], 3)}
+    if name == "read_project_doc":
+        return {"results": store.read_project_doc(a["page"], a.get("offset", 0), a.get("limit", 1800))}
     raise ValueError(f"unknown tool {name}")
 
 
@@ -260,8 +341,10 @@ def _ids_in(name: str, data: dict) -> set:
         return {r["da_id"] for r in res}
     if name == "get_prior_items":
         return {r["id"] for r in res}
-    if name == "search_project_doc":
-        return {f"p{r['page']}" for r in res}
+    if name == "read_prior_item":
+        return {r.get("id", r.get("da_id")) for r in res}
+    if name in ("search_project_doc", "read_project_doc"):
+        return {r["passage_id"] for r in res}
     if name == "get_participants":
         return {r["participant_id"] for r in res}
     return set()

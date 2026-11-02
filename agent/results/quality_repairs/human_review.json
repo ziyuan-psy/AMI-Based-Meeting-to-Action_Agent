@@ -1,0 +1,53 @@
+{
+  "format_version": 1,
+  "status": "PARTIALLY_REVIEWED",
+  "authority": "Direct human replies in this chat; separate from model scores and runtime inputs.",
+  "cases": [
+    {
+      "case_id": "is1008a_slides",
+      "source_capture": "final-v5/after/s2/IS1008a.p2.json",
+      "source_item_key": "IS1008a#6",
+      "claim": "PM sends attendees slides at the conclusion of the meeting.",
+      "human_answer": "确认，任务及时间正确",
+      "result": "CONFIRMED_TASK_AND_TIMING",
+      "question_item_id": "[\"request_user_input_async\",\"call_f1f8600ec1624d17abe749a84e2fcd77\",0]"
+    },
+    {
+      "case_id": "is1008a_marketing_coordination",
+      "claim": "A task exists to coordinate with Christine on sales planning and cost; Ed identity is not confirmed by this review.",
+      "result": "PENDING_HUMAN_REPLY",
+      "question_item_id": "[\"request_user_input_async\",\"call_f1f8600ec1624d17abe749a84e2fcd77\",1]"
+    },
+    {
+      "case_id": "ts3006a_ui_functions",
+      "source_capture": "release-v6/after/s2/TS3006a.p2.json",
+      "source_item_key": "TS3006a#14",
+      "claim": "UI designer will specify technical functions.",
+      "result": "CONFIRMED_TASK",
+      "human_answer": "两组都确认正确",
+      "question_item_id": "[\"request_user_input_async\",\"call_dd2e8a705b134fc99f44b201e2cb1525\",0]"
+    },
+    {
+      "case_id": "ts3006a_atomic_financial_decisions",
+      "source_capture": "release-v6/after/s2/TS3006a.p2.json",
+      "source_item_keys": [
+        "TS3006a#3",
+        "TS3006a#4",
+        "TS3006a#5"
+      ],
+      "claim": "Price, sales target and production cost constraint are three separate choices.",
+      "result": "CONFIRMED_ATOMIC_SPLIT",
+      "human_answer": "两组都确认正确",
+      "question_item_id": "[\"request_user_input_async\",\"call_dd2e8a705b134fc99f44b201e2cb1525\",0]"
+    }
+  ],
+  "gold_changed": false,
+  "runtime_outputs_overwritten": false,
+  "freeze_status": "DEVELOPMENT_SOURCE_FROZEN_WITH_KNOWN_PENDING_ITEMS",
+  "required_cases": [
+    "is1008a_slides",
+    "ts3006a_ui_functions",
+    "ts3006a_atomic_financial_decisions"
+  ],
+  "freeze_explanation": "Required key differences were directly confirmed by the user. The supplemental marketing question is left pending; no answer or identity is inferred."
+}

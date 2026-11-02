@@ -1,0 +1,243 @@
+{
+  "meeting_id": "TS3006a",
+  "arm": "baseline",
+  "started_at": "2026-10-28T04:33:02.127550+00:00",
+  "status": "COMPLETED",
+  "mode": "s2",
+  "items": 12,
+  "flagged": 0,
+  "agent runs": 0,
+  "agent fallbacks": 0,
+  "lookups used": 0,
+  "repairs": 0,
+  "input tokens": 55372,
+  "output tokens": 77529,
+  "llm calls": 12,
+  "seconds": 155.7,
+  "stages": {
+    "extract": {
+      "calls": 8,
+      "in": 48578,
+      "out": 43565
+    },
+    "consolidate": {
+      "calls": 3,
+      "in": 5985,
+      "out": 32479
+    },
+    "abstract": {
+      "calls": 1,
+      "in": 809,
+      "out": 1485
+    }
+  },
+  "stage_seconds": {
+    "extract": 79.6,
+    "consolidate": 67.5,
+    "agent+abstract": 8.6,
+    "total": 155.7
+  },
+  "output": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\development_regression\\regression-v1\\baseline\\s2\\TS3006a.json",
+  "usage": {
+    "calls": 12,
+    "in": 55372,
+    "out": 77529,
+    "stages": {
+      "extract": {
+        "calls": 8,
+        "in": 48578,
+        "out": 43565
+      },
+      "consolidate": {
+        "calls": 3,
+        "in": 5985,
+        "out": 32479
+      },
+      "abstract": {
+        "calls": 1,
+        "in": 809,
+        "out": 1485
+      }
+    }
+  },
+  "runtime_control": {
+    "limits": {
+      "calls": 80,
+      "tokens": 1000000,
+      "request_seconds": 300.0,
+      "meeting_seconds": 1200.0,
+      "inflight": 4,
+      "retries": 2,
+      "backoff": 0.5
+    },
+    "attempted_calls": 12,
+    "charged_tokens": 132901,
+    "unknown_usage_tokens": 0,
+    "reserved_tokens": 0,
+    "max_inflight_seen": 4,
+    "failure": null,
+    "attempts": [
+      {
+        "attempt": 0,
+        "stage": "extract",
+        "reserved_tokens": 48589,
+        "input_bound": 16589,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 11132,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 4116,
+        "output_tokens": 7016
+      },
+      {
+        "attempt": 1,
+        "stage": "extract",
+        "reserved_tokens": 47999,
+        "input_bound": 15999,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 5691,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 4004,
+        "output_tokens": 1687
+      },
+      {
+        "attempt": 2,
+        "stage": "extract",
+        "reserved_tokens": 48458,
+        "input_bound": 16458,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 11680,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 4049,
+        "output_tokens": 7631
+      },
+      {
+        "attempt": 3,
+        "stage": "extract",
+        "reserved_tokens": 49621,
+        "input_bound": 17621,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 10385,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 4260,
+        "output_tokens": 6125
+      },
+      {
+        "attempt": 4,
+        "stage": "extract",
+        "reserved_tokens": 49119,
+        "input_bound": 17119,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 8348,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 4140,
+        "output_tokens": 4208
+      },
+      {
+        "attempt": 5,
+        "stage": "extract",
+        "reserved_tokens": 43568,
+        "input_bound": 11568,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 3564,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 2389,
+        "output_tokens": 1175
+      },
+      {
+        "attempt": 6,
+        "stage": "extract",
+        "reserved_tokens": 74526,
+        "input_bound": 42526,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 19827,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 12810,
+        "output_tokens": 7017
+      },
+      {
+        "attempt": 7,
+        "stage": "extract",
+        "reserved_tokens": 74526,
+        "input_bound": 42526,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 21516,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 12810,
+        "output_tokens": 8706
+      },
+      {
+        "attempt": 8,
+        "stage": "consolidate",
+        "reserved_tokens": 42724,
+        "input_bound": 10724,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 8890,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 1995,
+        "output_tokens": 6895
+      },
+      {
+        "attempt": 9,
+        "stage": "consolidate",
+        "reserved_tokens": 42724,
+        "input_bound": 10724,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 13935,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 1995,
+        "output_tokens": 11940
+      },
+      {
+        "attempt": 10,
+        "stage": "consolidate",
+        "reserved_tokens": 42724,
+        "input_bound": 10724,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 15639,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 1995,
+        "output_tokens": 13644
+      },
+      {
+        "attempt": 11,
+        "stage": "abstract",
+        "reserved_tokens": 37259,
+        "input_bound": 5259,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 2294,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 809,
+        "output_tokens": 1485
+      }
+    ],
+    "input_bound_method": "utf8_request_bytes_plus_padding",
+    "unknown_usage_policy": "charge_full_reservation"
+  },
+  "finished_at": "2026-10-28T04:35:37.845783+00:00",
+  "elapsed_seconds": 155.718,
+  "record_sha256": "1033dcde1f9cf10f930a02b693d588cdedc21e43a36d255167a398a17c80923d"
+}

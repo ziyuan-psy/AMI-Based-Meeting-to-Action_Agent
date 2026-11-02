@@ -1,0 +1,91 @@
+{
+  "identity": {
+    "protocol_digest": "3e12e777261bc6f000043ee97b251767817e36fd701be2468b2a974be3579a96",
+    "judge": {
+      "name": "@30875-fall26-openai/gpt-5-nano",
+      "client": "mta.llm.OpenAIAdapter",
+      "endpoint": "https://api.portkey.ai/v1",
+      "supports_reasoning_effort": true
+    },
+    "type": "decisions",
+    "input_sha256": "baf4333a9e54888fc8d9819ea6177ee7844e56f77eddfc7a7c9c36b11cbfa986",
+    "system_texts": [
+      "The group decided to use a hand dynamo as the power source.",
+      "The device will use five push-buttons plus one integrated scroll-wheel push-button.",
+      "The case should be plastic.",
+      "The menu button will also perform the OK function.",
+      "We will make one big LCD screen.",
+      "The device must be curved."
+    ],
+    "gold_texts": [
+      "Use a single-curved case, replacing the double-curved concept.",
+      "Drop speech recognition while retaining the LCD and its menu-based concept.",
+      "Replace the rubber casing with plastic, while retaining special colour for the design.",
+      "Use one integrated scroll-wheel/pushbutton and no separate buttons, with functions accessed through the LCD; detailed click/hold/menu behavior was not fully settled.",
+      "Replace kinetic power with a hand dynamo after considering a battery and other cost reductions."
+    ]
+  },
+  "votes": {
+    "baf4333a9e54888fc8d9": [
+      [
+        {
+          "sys": 0,
+          "gold": 4
+        },
+        {
+          "sys": 2,
+          "gold": 2
+        },
+        {
+          "sys": 4,
+          "gold": 1
+        },
+        {
+          "sys": 5,
+          "gold": 0
+        }
+      ],
+      [
+        {
+          "sys": 0,
+          "gold": 4
+        },
+        {
+          "sys": 2,
+          "gold": 2
+        },
+        {
+          "sys": 3,
+          "gold": 3
+        },
+        {
+          "sys": 4,
+          "gold": 1
+        },
+        {
+          "sys": 5,
+          "gold": 0
+        }
+      ],
+      [
+        {
+          "sys": 0,
+          "gold": 4
+        },
+        {
+          "sys": 2,
+          "gold": 2
+        },
+        {
+          "sys": 5,
+          "gold": 0
+        }
+      ]
+    ]
+  },
+  "imported_from": {
+    "path": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\recall_candidate\\41654ab-v2\\replay\\TS3006d\\stable_votes.json",
+    "sha256": "2561105840e8eb43f3986a43738d779296b5260e2a546482c65a59c4cfa7f215",
+    "kind": "verified_saved_development_study"
+  }
+}

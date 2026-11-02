@@ -1,0 +1,1649 @@
+{
+  "meeting_id": "TS3006b",
+  "status": "COMPLETED",
+  "arms": {
+    "teammate": {
+      "metrics": {
+        "actions": {
+          "tp": 2,
+          "sys": 5,
+          "gold": 4,
+          "precision": 0.4,
+          "recall": 0.5,
+          "f1": 0.444
+        },
+        "decisions": {
+          "tp": 4,
+          "sys": 4,
+          "gold": 8,
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.667
+        },
+        "problems": {
+          "tp": 1,
+          "sys": 2,
+          "gold": 3,
+          "precision": 0.5,
+          "recall": 0.333,
+          "f1": 0.4
+        }
+      },
+      "matches": {
+        "TS3006b.sys.s.6": "TS3006b.dharshi.s.13",
+        "TS3006b.sys.s.2": "TS3006b.dharshi.s.12",
+        "TS3006b.sys.s.1": "TS3006b.dharshi.s.17",
+        "TS3006b.sys.s.5": "TS3006b.dharshi.s.16",
+        "TS3006b.sys.s.8": "TS3006b.dharshi.s.20",
+        "TS3006b.sys.s.9": "TS3006b.dharshi.s.15",
+        "TS3006b.sys.s.3": "TS3006b.dharshi.s.22"
+      },
+      "unmatched": {
+        "actions": {
+          "system": [
+            {
+              "id": "TS3006b.sys.s.7",
+              "text": "The User Interface Designer will reorganise things.",
+              "type": "actions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.A.dialog-act.dharshi.309"
+                }
+              ],
+              "owner": [
+                "MTD023UID"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "open",
+              "prior_context_needed": true,
+              "related_items": [
+                {
+                  "id": "TS3006a.sys.s.6",
+                  "relation": "continues"
+                }
+              ]
+            },
+            {
+              "id": "TS3006b.sys.s.10",
+              "text": "The User Interface Designer will design a nice LCD-screen menu with pages.",
+              "type": "actions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.B.dialog-act.dharshi.159"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.B.dialog-act.dharshi.164"
+                }
+              ],
+              "owner": [
+                "MTD023UID"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "TS3006b.sys.s.11",
+              "text": "The User Interface Designer will create maps with all the data gathered.",
+              "type": "actions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.B.dialog-act.dharshi.215"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.B.dialog-act.dharshi.216"
+                }
+              ],
+              "owner": [
+                "MTD023UID"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "open",
+              "prior_context_needed": true,
+              "related_items": [
+                {
+                  "id": "TS3006a.sys.s.6",
+                  "relation": "updates"
+                }
+              ]
+            }
+          ],
+          "gold": [
+            {
+              "id": "TS3006b.dharshi.s.11",
+              "text": "The project manager will write and place the meeting minutes in the project folder.",
+              "type": "actions",
+              "owner": [
+                "MTD021PM"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "in_progress",
+              "prior_context_needed": false,
+              "related_items": [],
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.A.dialog-act.dharshi.378"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.A.dialog-act.dharshi.401"
+                },
+                {
+                  "source_type": "participant_metadata",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.A.dialog-act.dharshi.1 (attributes.participant and attributes.role)"
+                }
+              ]
+            },
+            {
+              "id": "TS3006b.manual.s.1",
+              "text": "The project manager will reorganize the shared project information into clearer folders.",
+              "type": "actions",
+              "owner": [
+                "MTD021PM"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": [],
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.B.dialog-act.dharshi.148"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.B.dialog-act.dharshi.149"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.A.dialog-act.dharshi.308"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.A.dialog-act.dharshi.309"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.B.dialog-act.dharshi.215"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.A.dialog-act.dharshi.397"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.A.dialog-act.dharshi.398"
+                },
+                {
+                  "source_type": "participant_metadata",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.A.dialog-act.dharshi.1 (attributes.participant and attributes.role)"
+                }
+              ]
+            }
+          ]
+        },
+        "decisions": {
+          "system": [],
+          "gold": [
+            {
+              "id": "TS3006b.dharshi.s.14",
+              "text": "Include an LCD screen and speech recognition.",
+              "type": "decisions",
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": [],
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.C.dialog-act.dharshi.56"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.D.dialog-act.dharshi.128"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.A.dialog-act.dharshi.79"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.B.dialog-act.dharshi.61"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.A.dialog-act.dharshi.201"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.A.dialog-act.dharshi.203"
+                }
+              ]
+            },
+            {
+              "id": "TS3006b.dharshi.s.18",
+              "text": "Restrict the remote to television control, superseding the provisional television-and-video scope.",
+              "type": "decisions",
+              "status": "adopted",
+              "prior_context_needed": true,
+              "related_items": [
+                {
+                  "id": "TS3006a.elana.s.16",
+                  "relation": "replaces"
+                }
+              ],
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.D.dialog-act.dharshi.132"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.B.dialog-act.dharshi.68"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.A.dialog-act.dharshi.81"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.A.dialog-act.dharshi.133"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006a.json",
+                  "locator": "TS3006a.A.dialog-act.vkaraisk.243"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006a.json",
+                  "locator": "TS3006a.A.dialog-act.vkaraisk.244"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006a.json",
+                  "locator": "TS3006a.C.dialog-act.vkaraisk.137"
+                }
+              ]
+            },
+            {
+              "id": "TS3006b.dharshi.s.19",
+              "text": "Include the corporate logo and corporate colours in the remote's design.",
+              "type": "decisions",
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": [],
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.A.dialog-act.dharshi.54"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.D.dialog-act.dharshi.105"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.D.dialog-act.dharshi.109"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.A.dialog-act.dharshi.55"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.A.dialog-act.dharshi.137"
+                }
+              ]
+            },
+            {
+              "id": "TS3006b.dharshi.s.21",
+              "text": "Use LEDs under the buttons to show which controls are active in the current mode.",
+              "type": "decisions",
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": [],
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.C.dialog-act.dharshi.192"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.D.dialog-act.dharshi.406"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.B.dialog-act.dharshi.196"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.D.dialog-act.dharshi.408"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.D.dialog-act.dharshi.410"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.C.dialog-act.dharshi.194"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.A.dialog-act.dharshi.362"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.B.dialog-act.dharshi.197"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.A.dialog-act.dharshi.363"
+                }
+              ]
+            }
+          ]
+        },
+        "problems": {
+          "system": [
+            {
+              "id": "TS3006b.sys.s.4",
+              "text": "Findings from usability studies show that users dislike the look-and-feel of current remote controls, feel they do not match the operating behavior, are often difficult to locate in the room, and may contribute to RSI.",
+              "type": "problems",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.D.dialog-act.dharshi.42"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.D.dialog-act.dharshi.43"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.D.dialog-act.dharshi.45"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.D.dialog-act.dharshi.47"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.D.dialog-act.dharshi.49"
+                }
+              ],
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ],
+          "gold": [
+            {
+              "id": "TS3006b.dharshi.s.23",
+              "text": "The industrial designer received key instructions too late to incorporate them fully, leaving the presentation and design incomplete.",
+              "type": "problems",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": [],
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.C.dialog-act.dharshi.31"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.C.dialog-act.dharshi.32"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.C.dialog-act.dharshi.36"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.C.dialog-act.dharshi.80"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.C.dialog-act.dharshi.82"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.C.dialog-act.dharshi.87"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.C.dialog-act.dharshi.90"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.C.dialog-act.dharshi.99"
+                }
+              ]
+            },
+            {
+              "id": "TS3006b.dharshi.s.24",
+              "text": "The industrial and user interface designers initially disputed their responsibilities. They settled on industrial design defining functions and user interface design arranging the layout and menu, with coordination between them.",
+              "type": "problems",
+              "status": "resolved",
+              "prior_context_needed": false,
+              "related_items": [],
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.B.dialog-act.dharshi.152"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.C.dialog-act.dharshi.172"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.C.dialog-act.dharshi.173"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.C.dialog-act.dharshi.174"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.A.dialog-act.dharshi.320"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.C.dialog-act.dharshi.175"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.C.dialog-act.dharshi.176"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.B.dialog-act.dharshi.154"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.A.dialog-act.dharshi.322"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.A.dialog-act.dharshi.323"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.C.dialog-act.dharshi.178"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.C.dialog-act.dharshi.179"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.C.dialog-act.dharshi.180"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.B.dialog-act.dharshi.163"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.B.dialog-act.dharshi.164"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "after": {
+      "metrics": {
+        "actions": {
+          "tp": 2,
+          "sys": 2,
+          "gold": 4,
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.667
+        },
+        "decisions": {
+          "tp": 4,
+          "sys": 5,
+          "gold": 8,
+          "precision": 0.8,
+          "recall": 0.5,
+          "f1": 0.615
+        },
+        "problems": {
+          "tp": 1,
+          "sys": 2,
+          "gold": 3,
+          "precision": 0.5,
+          "recall": 0.333,
+          "f1": 0.4
+        }
+      },
+      "matches": {
+        "TS3006b.sys.s.3": "TS3006b.dharshi.s.12",
+        "TS3006b.sys.s.4": "TS3006b.dharshi.s.13",
+        "TS3006b.sys.s.5": "TS3006b.dharshi.s.17",
+        "TS3006b.sys.s.6": "TS3006b.dharshi.s.16",
+        "TS3006b.sys.s.7": "TS3006b.dharshi.s.15",
+        "TS3006b.sys.s.9": "TS3006b.dharshi.s.20",
+        "TS3006b.sys.s.1": "TS3006b.dharshi.s.24"
+      },
+      "unmatched": {
+        "actions": {
+          "system": [],
+          "gold": [
+            {
+              "id": "TS3006b.dharshi.s.11",
+              "text": "The project manager will write and place the meeting minutes in the project folder.",
+              "type": "actions",
+              "owner": [
+                "MTD021PM"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "in_progress",
+              "prior_context_needed": false,
+              "related_items": [],
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.A.dialog-act.dharshi.378"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.A.dialog-act.dharshi.401"
+                },
+                {
+                  "source_type": "participant_metadata",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.A.dialog-act.dharshi.1 (attributes.participant and attributes.role)"
+                }
+              ]
+            },
+            {
+              "id": "TS3006b.manual.s.1",
+              "text": "The project manager will reorganize the shared project information into clearer folders.",
+              "type": "actions",
+              "owner": [
+                "MTD021PM"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": [],
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.B.dialog-act.dharshi.148"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.B.dialog-act.dharshi.149"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.A.dialog-act.dharshi.308"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.A.dialog-act.dharshi.309"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.B.dialog-act.dharshi.215"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.A.dialog-act.dharshi.397"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.A.dialog-act.dharshi.398"
+                },
+                {
+                  "source_type": "participant_metadata",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.A.dialog-act.dharshi.1 (attributes.participant and attributes.role)"
+                }
+              ]
+            }
+          ]
+        },
+        "decisions": {
+          "system": [
+            {
+              "id": "TS3006b.sys.s.8",
+              "text": "The extra advanced options should be on the onscreen display.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.B.dialog-act.dharshi.103"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.D.dialog-act.dharshi.179"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.A.dialog-act.dharshi.155"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ],
+          "gold": [
+            {
+              "id": "TS3006b.dharshi.s.14",
+              "text": "Include an LCD screen and speech recognition.",
+              "type": "decisions",
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": [],
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.C.dialog-act.dharshi.56"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.D.dialog-act.dharshi.128"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.A.dialog-act.dharshi.79"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.B.dialog-act.dharshi.61"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.A.dialog-act.dharshi.201"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.A.dialog-act.dharshi.203"
+                }
+              ]
+            },
+            {
+              "id": "TS3006b.dharshi.s.18",
+              "text": "Restrict the remote to television control, superseding the provisional television-and-video scope.",
+              "type": "decisions",
+              "status": "adopted",
+              "prior_context_needed": true,
+              "related_items": [
+                {
+                  "id": "TS3006a.elana.s.16",
+                  "relation": "replaces"
+                }
+              ],
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.D.dialog-act.dharshi.132"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.B.dialog-act.dharshi.68"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.A.dialog-act.dharshi.81"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.A.dialog-act.dharshi.133"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006a.json",
+                  "locator": "TS3006a.A.dialog-act.vkaraisk.243"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006a.json",
+                  "locator": "TS3006a.A.dialog-act.vkaraisk.244"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006a.json",
+                  "locator": "TS3006a.C.dialog-act.vkaraisk.137"
+                }
+              ]
+            },
+            {
+              "id": "TS3006b.dharshi.s.19",
+              "text": "Include the corporate logo and corporate colours in the remote's design.",
+              "type": "decisions",
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": [],
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.A.dialog-act.dharshi.54"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.D.dialog-act.dharshi.105"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.D.dialog-act.dharshi.109"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.A.dialog-act.dharshi.55"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.A.dialog-act.dharshi.137"
+                }
+              ]
+            },
+            {
+              "id": "TS3006b.dharshi.s.21",
+              "text": "Use LEDs under the buttons to show which controls are active in the current mode.",
+              "type": "decisions",
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": [],
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.C.dialog-act.dharshi.192"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.D.dialog-act.dharshi.406"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.B.dialog-act.dharshi.196"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.D.dialog-act.dharshi.408"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.D.dialog-act.dharshi.410"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.C.dialog-act.dharshi.194"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.A.dialog-act.dharshi.362"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.B.dialog-act.dharshi.197"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.A.dialog-act.dharshi.363"
+                }
+              ]
+            }
+          ]
+        },
+        "problems": {
+          "system": [
+            {
+              "id": "TS3006b.sys.s.2",
+              "text": "Elderly users may not understand the remote well; a simpler remote is needed.",
+              "type": "problems",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.C.dialog-act.dharshi.104"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.A.dialog-act.dharshi.151"
+                }
+              ],
+              "status": "unknown",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ],
+          "gold": [
+            {
+              "id": "TS3006b.dharshi.s.22",
+              "text": "Computer/display problems disrupted preparation and presentation; the screen-size problem was adjusted and the presentation was brought back online during the meeting.",
+              "type": "problems",
+              "status": "resolved",
+              "prior_context_needed": false,
+              "related_items": [],
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.C.dialog-act.dharshi.17"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.C.dialog-act.dharshi.18"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.C.dialog-act.dharshi.27"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.C.dialog-act.dharshi.28"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.C.dialog-act.dharshi.29"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.B.dialog-act.dharshi.40"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.B.dialog-act.dharshi.41"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.B.dialog-act.dharshi.43"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.A.dialog-act.dharshi.69"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.A.dialog-act.dharshi.101"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.B.dialog-act.dharshi.82"
+                }
+              ]
+            },
+            {
+              "id": "TS3006b.dharshi.s.23",
+              "text": "The industrial designer received key instructions too late to incorporate them fully, leaving the presentation and design incomplete.",
+              "type": "problems",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": [],
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.C.dialog-act.dharshi.31"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.C.dialog-act.dharshi.32"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.C.dialog-act.dharshi.36"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.C.dialog-act.dharshi.80"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.C.dialog-act.dharshi.82"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.C.dialog-act.dharshi.87"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.C.dialog-act.dharshi.90"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/TS3006b.json",
+                  "locator": "TS3006b.C.dialog-act.dharshi.99"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "judge": "same pipeline model, same-type one-to-one majority of three votes",
+  "p2": {
+    "items": 13,
+    "accepted": 5,
+    "pending": 8,
+    "quarantined": 4,
+    "recordable_pending": 4,
+    "clarification_requests": 18,
+    "by_termination": {
+      "all_required_checks_passed": 5,
+      "no_progress": 2,
+      "request_clarification": 1,
+      "stop": 1,
+      "supported_statement_with_unresolved_fields": 2,
+      "unresolved_checks": 2
+    },
+    "documents_observed": 0,
+    "documents_retained": 0,
+    "relations_supported": 0,
+    "quarantined_items": [
+      {
+        "item_key": "TS3006b#0",
+        "text": "The User Interface Designer will design the LCD screen function menu.",
+        "reason": "request_clarification",
+        "checks": {
+          "statement": {
+            "result": "uncertain",
+            "reason": "The dialogue mentions the UI designer can design a menu for all functions, which indicates capability but does not constitute a firm assignment to implement the LCD screen function menu in this meeting.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "The owner is explicitly identified as MTD023UID and the dialogue references the UI designer in relation to designing the menu.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              }
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "deadline_unresolved",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              }
+            ],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "The current dialogue does not indicate completion or adoption; status remains open as recorded.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions found in the cited dialogue; the statement aligns with open status.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "Relation to earlier TS3006a is not established from the provided evidence; requires prior item lookup.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        }
+      },
+      {
+        "item_key": "TS3006b#3",
+        "text": "The User Interface Designer will prepare a list of the functions to be shown on the screen/menu.",
+        "reason": "unresolved_checks",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue confirms UI will prepare a list of screen functions; PM and others acknowledge. The explicit plan is consistent with the proposed action.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.B.dialog-act.dharshi.163",
+                "quote": "Y you you are going to make a list of what functions are uh are going to to be on the the screen , the menu screen ."
+              },
+              {
+                "da_id": "TS3006b.B.dialog-act.dharshi.161",
+                "quote": "Yeah ."
+              },
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.327",
+                "quote": "Yeah ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "UI owner is explicitly identified and supported by observed dialogue where UI is tasked with listing screen functions.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.B.dialog-act.dharshi.163",
+                "quote": "Y you you are going to make a list of what functions are uh are going to to be on the the screen , the menu screen ."
+              },
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.327",
+                "quote": "Yeah ."
+              },
+              {
+                "da_id": "TS3006b.B.dialog-act.dharshi.161",
+                "quote": "Yeah ."
+              }
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "deadline_unresolved",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Status open is consistent with the current planning dialogue; no completion or adoption announced.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.B.dialog-act.dharshi.163",
+                "quote": "Y you you are going to make a list of what functions are uh are going to to be on the the screen , the menu screen ."
+              },
+              {
+                "da_id": "TS3006b.B.dialog-act.dharshi.161",
+                "quote": "Yeah ."
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "uncertain",
+            "reason": "Peer item indicates uncertainty about required functions; no explicit contradiction found in observed dialogue.",
+            "quotes": [],
+            "fields": []
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "prior_context_not_checked",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        }
+      },
+      {
+        "item_key": "TS3006b#5",
+        "text": "The Project Manager will reorganize the project materials after this meeting.",
+        "reason": "stop",
+        "checks": {
+          "statement": {
+            "result": "uncertain",
+            "reason": "Dialogue shows PM expressing intent to reorganise; however, there is no explicit statement that this reorganization occurs after the meeting, only a present-tense attempt.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.309",
+                "quote": "I'll just try to reorganise uh things ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Owner is explicitly stated as MTD021PM in provisional values and the PM is the speaker who referenced reorganizing, supporting ownership alignment.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.309",
+                "quote": "I'll just try to reorganise uh things ."
+              }
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "deadline_unresolved",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.309",
+                "quote": "I'll just try to reorganise uh things ."
+              }
+            ],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Current dialogue indicates ongoing action with PM intention; status is consistent with an open item.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.309",
+                "quote": "I'll just try to reorganise uh things ."
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No unresolved contradictions found between this item and the current dialogue; no conflicting commitments observed.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.309",
+                "quote": "I'll just try to reorganise uh things ."
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "prior_context_not_checked",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        }
+      },
+      {
+        "item_key": "TS3006b#10",
+        "text": "The team proposed implementing two menus: a button-based menu for direct access and an LCD/TV options menu activated by software options.",
+        "reason": "unresolved_checks",
+        "checks": {
+          "statement": {
+            "result": "uncertain",
+            "reason": "The dialogue shows a proposal for two menus (button-based and LCD/TV options) but there is no explicit decision or owner or deadline attached in this short excerpt. The scope of the required functions and user groups is not fully defined.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.C.dialog-act.dharshi.158",
+                "quote": "So we need two menus kind of thing ."
+              },
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.256",
+                "quote": "And the L_C_D_ options are activated by some some software options , thats communicates with the infrared uh decoder yeah ."
+              },
+              {
+                "da_id": "TS3006b.D.dialog-act.dharshi.310",
+                "quote": "Yeah with the chip and then <gap> I mean <disfmarker>"
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "uncertain",
+            "reason": "No final acceptance or adoption of the proposed two-menu approach is evident in the given dialogue; only partial discussion and related peer items.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.C.dialog-act.dharshi.158",
+                "quote": "So we need two menus kind of thing ."
+              },
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.256",
+                "quote": "And the L_C_D_ options are activated by some some software options , thats communicates with the infrared uh decoder yeah ."
+              },
+              {
+                "da_id": "TS3006b.D.dialog-act.dharshi.310",
+                "quote": "Yeah with the chip and then <gap> I mean <disfmarker>"
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradiction found in the provided dialogue regarding this proposal.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.C.dialog-act.dharshi.158",
+                "quote": "So we need two menus kind of thing ."
+              },
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.256",
+                "quote": "And the L_C_D_ options are activated by some some software options , thats communicates with the infrared uh decoder yeah ."
+              },
+              {
+                "da_id": "TS3006b.D.dialog-act.dharshi.310",
+                "quote": "Yeah with the chip and then <gap> I mean <disfmarker>"
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related item relationship established in this data for the current decision; prior context not yet linked.",
+            "links": [],
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "support": [
+    {
+      "id": "TS3006b.sys.s.1",
+      "text": "Unclear what functions we had to include yet.",
+      "verdict": {
+        "item": 0,
+        "statement": "supported",
+        "owner": "na",
+        "deadline": "na",
+        "note": "Cited line expresses uncertainty about which functions to include."
+      }
+    },
+    {
+      "id": "TS3006b.sys.s.2",
+      "text": "Elderly users may not understand the remote well; a simpler remote is needed.",
+      "verdict": {
+        "item": 1,
+        "statement": "supported",
+        "owner": "na",
+        "deadline": "na",
+        "note": "Cited line states elderly users may not understand the remote; need simpler remote."
+      }
+    },
+    {
+      "id": "TS3006b.sys.s.3",
+      "text": "The User Interface Designer will group the menu into a display group and a basic functions group.",
+      "verdict": {
+        "item": 2,
+        "statement": "supported",
+        "owner": "supported",
+        "deadline": "na",
+        "note": "UI designer grouping menu into two display groups is described."
+      }
+    },
+    {
+      "id": "TS3006b.sys.s.4",
+      "text": "The User Interface Designer will create maps of the data gathered for the project.",
+      "verdict": {
+        "item": 3,
+        "statement": "supported",
+        "owner": "supported",
+        "deadline": "na",
+        "note": "UI designer to create maps of data gathered; evidence from UI lines."
+      }
+    },
+    {
+      "id": "TS3006b.sys.s.5",
+      "text": "Teletext functionality will be skipped and not used in the project.",
+      "verdict": {
+        "item": 4,
+        "statement": "supported",
+        "owner": "supported",
+        "deadline": "na",
+        "note": "Decision to skip teletext is stated by ME and supported by PM."
+      }
+    },
+    {
+      "id": "TS3006b.sys.s.6",
+      "text": "The target age range is sixteen to forty.",
+      "verdict": {
+        "item": 5,
+        "statement": "supported",
+        "owner": "supported",
+        "deadline": "na",
+        "note": "Target age range sixteen to forty stated by ME."
+      }
+    },
+    {
+      "id": "TS3006b.sys.s.7",
+      "text": "We should have two different groups of functions: simple for the general public and advanced for younger users.",
+      "verdict": {
+        "item": 6,
+        "statement": "supported",
+        "owner": "supported",
+        "deadline": "na",
+        "note": "Two groups of functions: simple for public, advanced for younger users."
+      }
+    },
+    {
+      "id": "TS3006b.sys.s.8",
+      "text": "The extra advanced options should be on the onscreen display.",
+      "verdict": {
+        "item": 7,
+        "statement": "supported",
+        "owner": "supported",
+        "deadline": "na",
+        "note": "Extra advanced options to be on onscreen display."
+      }
+    },
+    {
+      "id": "TS3006b.sys.s.9",
+      "text": "The screen should be placed on the top.",
+      "verdict": {
+        "item": 8,
+        "statement": "supported",
+        "owner": "supported",
+        "deadline": "na",
+        "note": "Screen to be placed on top; lines show ME and UI."
+      }
+    }
+  ],
+  "runtime_control": {
+    "limits": {
+      "calls": 80,
+      "tokens": 1000000,
+      "request_seconds": 300.0,
+      "meeting_seconds": 1200.0,
+      "inflight": 4,
+      "retries": 2,
+      "backoff": 0.5
+    },
+    "attempted_calls": 7,
+    "charged_tokens": 21955,
+    "unknown_usage_tokens": 0,
+    "reserved_tokens": 0,
+    "max_inflight_seen": 1,
+    "failure": null,
+    "attempts": [
+      {
+        "attempt": 0,
+        "stage": "other",
+        "reserved_tokens": 34564,
+        "input_bound": 2564,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 1931,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 356,
+        "output_tokens": 1575
+      },
+      {
+        "attempt": 1,
+        "stage": "other",
+        "reserved_tokens": 34564,
+        "input_bound": 2564,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 1347,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 356,
+        "output_tokens": 991
+      },
+      {
+        "attempt": 2,
+        "stage": "other",
+        "reserved_tokens": 34564,
+        "input_bound": 2564,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 1995,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 356,
+        "output_tokens": 1639
+      },
+      {
+        "attempt": 3,
+        "stage": "other",
+        "reserved_tokens": 35031,
+        "input_bound": 3031,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 4560,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 465,
+        "output_tokens": 4095
+      },
+      {
+        "attempt": 4,
+        "stage": "other",
+        "reserved_tokens": 35031,
+        "input_bound": 3031,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 3528,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 465,
+        "output_tokens": 3063
+      },
+      {
+        "attempt": 5,
+        "stage": "other",
+        "reserved_tokens": 35031,
+        "input_bound": 3031,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 4040,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 465,
+        "output_tokens": 3575
+      },
+      {
+        "attempt": 6,
+        "stage": "other",
+        "reserved_tokens": 38549,
+        "input_bound": 6549,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 4554,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 1491,
+        "output_tokens": 3063
+      }
+    ],
+    "input_bound_method": "utf8_request_bytes_plus_padding",
+    "unknown_usage_policy": "charge_full_reservation"
+  },
+  "actual_new_usage": {
+    "calls": 7,
+    "in": 3954,
+    "out": 18001,
+    "stages": {
+      "other": {
+        "calls": 7,
+        "in": 3954,
+        "out": 18001
+      }
+    }
+  }
+}

@@ -1,0 +1,615 @@
+{
+  "item": 1,
+  "fields": {
+    "item_key": "IS1008a#1",
+    "record_id": null,
+    "item_type": "actions",
+    "item_text": "Prepare and deliver the functional and technical designs, staffing needs, budget, and schedule in writing.",
+    "state": "accepted",
+    "recordable": true,
+    "fields": {
+      "status": "open",
+      "prior_context_needed": false,
+      "related_items": [],
+      "owner": [
+        "FIE073"
+      ],
+      "owner_basis": "explicit",
+      "deadline": "two weeks",
+      "deadline_basis": "explicit",
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/IS1008a.json",
+          "locator": "IS1008a.A.dialog-act.s9553330.58"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/IS1008a.json",
+          "locator": "IS1008a.A.dialog-act.s9553330.66"
+        }
+      ]
+    },
+    "draft_fields": {
+      "status": "open",
+      "related_items": [],
+      "owner": [
+        "FIE073"
+      ],
+      "owner_basis": "explicit",
+      "deadline": "two weeks",
+      "deadline_basis": "explicit",
+      "prior_context_needed": false,
+      "used_participant_lookup": false,
+      "evidence_da_ids": [
+        "IS1008a.A.dialog-act.s9553330.58",
+        "IS1008a.A.dialog-act.s9553330.66"
+      ]
+    },
+    "checks": {
+      "statement": {
+        "result": "pass",
+        "reason": "The action text requests preparing and delivering a written plan including functional/technical designs, staffing, budget, and schedule. The observed dialogue shows PM indicating need for design inputs and management cost/timeframe, reinforcing scope. The candidate evidence includes two dialogue turns where design discussion occurs and the PM commits to providing a plan; thus the task is supported.",
+        "quotes": [
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.58",
+            "quote": "but uh uh when you think you can give me like a kind of design on the functional design or the technical design ?"
+          },
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.66",
+            "quote": "Yes I think uh that would be good ,"
+          }
+        ],
+        "fields": [
+          "statement"
+        ]
+      },
+      "owner": {
+        "result": "pass",
+        "reason": "Owner is explicitly specified as FIE073 in provisional values and the dialogue implies ID/user involvement, consistent with assignment.",
+        "quotes": [
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.58",
+            "quote": "but uh uh when you think you can give me like a kind of design on the functional design or the technical design ?"
+          },
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.66",
+            "quote": "Yes I think uh that would be good ,"
+          }
+        ],
+        "fields": [
+          "owner"
+        ]
+      },
+      "deadline": {
+        "result": "pass",
+        "reason": "Deadline wording is explicit in provisional values as 'two weeks', corresponding to a concrete timeframe from current date; observed dialogue references urgency and needing management approval.",
+        "quotes": [
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.58",
+            "quote": "but uh uh when you think you can give me like a kind of design on the functional design or the technical design ?"
+          },
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.66",
+            "quote": "Yes I think uh that would be good ,"
+          }
+        ],
+        "fields": [
+          "deadline"
+        ]
+      },
+      "status": {
+        "result": "pass",
+        "reason": "Status is open and aligns with the current status in provisional values; no acceptance or completion statements observed in dialogue yet.",
+        "quotes": [
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.58",
+            "quote": "but uh uh when you think you can give me like a kind of design on the functional design or the technical design ?"
+          },
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.66",
+            "quote": "Yes I think uh that would be good ,"
+          }
+        ],
+        "fields": [
+          "status"
+        ]
+      },
+      "conflict": {
+        "result": "pass",
+        "reason": "No contradictions found within the provided dialogue about owner/deadline/status; items align with provisional values.",
+        "quotes": [
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.58",
+            "quote": "but uh uh when you think you can give me like a kind of design on the functional design or the technical design ?"
+          },
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.66",
+            "quote": "Yes I think uh that would be good ,"
+          }
+        ],
+        "fields": [
+          "statement",
+          "owner",
+          "deadline",
+          "status"
+        ]
+      },
+      "relation": {
+        "result": "not_applicable",
+        "reason": "No prior related_items exist for this first meeting item; no continuation or modification of earlier item can be established from current data.",
+        "quotes": [],
+        "fields": [
+          "related_items"
+        ]
+      }
+    },
+    "unresolved_fields": [],
+    "observed_evidence_da_ids": [
+      "IS1008a.A.dialog-act.s9553330.58",
+      "IS1008a.A.dialog-act.s9553330.66",
+      "IS1008a.A.dialog-act.s9553330.57",
+      "IS1008a.C.dialog-act.s9553330.30",
+      "IS1008a.C.dialog-act.s9553330.37",
+      "IS1008a.A.dialog-act.s9553330.67"
+    ],
+    "initial_context": {
+      "item": {
+        "type": "actions",
+        "text": "Prepare and deliver the functional and technical designs, staffing needs, budget, and schedule in writing.",
+        "flags": []
+      },
+      "current_meeting": "IS1008a",
+      "earlier_meetings": [],
+      "roster": [
+        {
+          "speaker": "A",
+          "participant_id": "MIO086",
+          "role": "PM"
+        },
+        {
+          "speaker": "B",
+          "participant_id": "FIE038",
+          "role": "UI"
+        },
+        {
+          "speaker": "C",
+          "participant_id": "FIE073",
+          "role": "ID"
+        },
+        {
+          "speaker": "D",
+          "participant_id": "MIE085",
+          "role": "ME"
+        }
+      ],
+      "observed_dialogue": [
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.58",
+          "meeting_id": "IS1008a",
+          "text": "but uh uh when you think you can give me like a kind of design on the functional design or the technical design ?",
+          "participant": "MIO086",
+          "role": "PM"
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.66",
+          "meeting_id": "IS1008a",
+          "text": "Yes I think uh that would be good ,",
+          "participant": "MIO086",
+          "role": "PM"
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.57",
+          "participant": "MIO086",
+          "role": "PM",
+          "text": "Okay ,"
+        },
+        {
+          "da_id": "IS1008a.C.dialog-act.s9553330.30",
+          "participant": "FIE073",
+          "role": "ID",
+          "text": "<vocalsound> Well , uh I've got a lot of other projects I'm doing right now um"
+        },
+        {
+          "da_id": "IS1008a.C.dialog-act.s9553330.37",
+          "participant": "FIE073",
+          "role": "ID",
+          "text": "<vocalsound> Uh well if uh if we have enough time uh then d do you think um two weeks is a <disfmarker> is close enough ?"
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.67",
+          "participant": "MIO086",
+          "role": "PM",
+          "text": "because I need to go to the management and uh tell them what we are going to do , and uh what cost is , okay , and what's the time frame and what's the project plan ,"
+        }
+      ],
+      "peer_items": [
+        {
+          "item_key": "IS1008a#0",
+          "type": "actions",
+          "text": "Provide a written project plan by the next meeting."
+        }
+      ],
+      "provisional_values": {
+        "owner": [
+          "FIE073"
+        ],
+        "owner_basis": "explicit",
+        "deadline": "two weeks",
+        "deadline_basis": "explicit",
+        "status": "open",
+        "related_items": []
+      },
+      "candidate_evidence_da_ids": [
+        "IS1008a.A.dialog-act.s9553330.58",
+        "IS1008a.A.dialog-act.s9553330.66"
+      ]
+    },
+    "observed_documents": [],
+    "document_evidence": [],
+    "relation_evidence": [],
+    "history": [
+      {
+        "item": "IS1008a#1",
+        "step": 1,
+        "flags": [],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "The action text requests preparing and delivering a written plan including functional/technical designs, staffing, budget, and schedule. The observed dialogue shows PM indicating need for design inputs and management cost/timeframe, reinforcing scope. The candidate evidence includes two dialogue turns where design discussion occurs and the PM commits to providing a plan; thus the task is supported.",
+            "quotes": [
+              {
+                "da_id": "IS1008a.A.dialog-act.s9553330.58",
+                "quote": "but uh uh when you think you can give me like a kind of design on the functional design or the technical design ?"
+              },
+              {
+                "da_id": "IS1008a.A.dialog-act.s9553330.66",
+                "quote": "Yes I think uh that would be good ,"
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Owner is explicitly specified as FIE073 in provisional values and the dialogue implies ID/user involvement, consistent with assignment.",
+            "quotes": [
+              {
+                "da_id": "IS1008a.A.dialog-act.s9553330.58",
+                "quote": "but uh uh when you think you can give me like a kind of design on the functional design or the technical design ?"
+              },
+              {
+                "da_id": "IS1008a.A.dialog-act.s9553330.66",
+                "quote": "Yes I think uh that would be good ,"
+              }
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "pass",
+            "reason": "Deadline wording is explicit in provisional values as 'two weeks', corresponding to a concrete timeframe from current date; observed dialogue references urgency and needing management approval.",
+            "quotes": [
+              {
+                "da_id": "IS1008a.A.dialog-act.s9553330.58",
+                "quote": "but uh uh when you think you can give me like a kind of design on the functional design or the technical design ?"
+              },
+              {
+                "da_id": "IS1008a.A.dialog-act.s9553330.66",
+                "quote": "Yes I think uh that would be good ,"
+              }
+            ],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Status is open and aligns with the current status in provisional values; no acceptance or completion statements observed in dialogue yet.",
+            "quotes": [
+              {
+                "da_id": "IS1008a.A.dialog-act.s9553330.58",
+                "quote": "but uh uh when you think you can give me like a kind of design on the functional design or the technical design ?"
+              },
+              {
+                "da_id": "IS1008a.A.dialog-act.s9553330.66",
+                "quote": "Yes I think uh that would be good ,"
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions found within the provided dialogue about owner/deadline/status; items align with provisional values.",
+            "quotes": [
+              {
+                "da_id": "IS1008a.A.dialog-act.s9553330.58",
+                "quote": "but uh uh when you think you can give me like a kind of design on the functional design or the technical design ?"
+              },
+              {
+                "da_id": "IS1008a.A.dialog-act.s9553330.66",
+                "quote": "Yes I think uh that would be good ,"
+              }
+            ],
+            "fields": [
+              "statement",
+              "owner",
+              "deadline",
+              "status"
+            ]
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related_items exist for this first meeting item; no continuation or modification of earlier item can be established from current data.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "decision": "accept",
+        "reason": "all_required_checks_passed",
+        "assessed_text": "Prepare and deliver the functional and technical designs, staffing needs, budget, and schedule in writing.",
+        "requested_action": "accept",
+        "proposed_fields": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "FIE073"
+          ],
+          "owner_basis": "explicit",
+          "deadline": "two weeks",
+          "deadline_basis": "explicit",
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.58",
+            "IS1008a.A.dialog-act.s9553330.66"
+          ]
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "The action text requests preparing and delivering a written plan including functional/technical designs, staffing, budget, and schedule. The observed dialogue shows PM indicating need for design inputs and management cost/timeframe, reinforcing scope. The candidate evidence includes two dialogue turns where design discussion occurs and the PM commits to providing a plan; thus the task is supported.",
+            "quotes": [
+              "IS1008a.A.dialog-act.s9553330.58",
+              "IS1008a.A.dialog-act.s9553330.66"
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Owner is explicitly specified as FIE073 in provisional values and the dialogue implies ID/user involvement, consistent with assignment.",
+            "quotes": [
+              "IS1008a.A.dialog-act.s9553330.58",
+              "IS1008a.A.dialog-act.s9553330.66"
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "pass",
+            "reason": "Deadline wording is explicit in provisional values as 'two weeks', corresponding to a concrete timeframe from current date; observed dialogue references urgency and needing management approval.",
+            "quotes": [
+              "IS1008a.A.dialog-act.s9553330.58",
+              "IS1008a.A.dialog-act.s9553330.66"
+            ],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Status is open and aligns with the current status in provisional values; no acceptance or completion statements observed in dialogue yet.",
+            "quotes": [
+              "IS1008a.A.dialog-act.s9553330.58",
+              "IS1008a.A.dialog-act.s9553330.66"
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions found within the provided dialogue about owner/deadline/status; items align with provisional values.",
+            "quotes": [
+              "IS1008a.A.dialog-act.s9553330.58",
+              "IS1008a.A.dialog-act.s9553330.66"
+            ],
+            "fields": [
+              "statement",
+              "owner",
+              "deadline",
+              "status"
+            ]
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related_items exist for this first meeting item; no continuation or modification of earlier item can be established from current data.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "FIE073"
+          ],
+          "owner_basis": "explicit",
+          "deadline": "two weeks",
+          "deadline_basis": "explicit",
+          "statement": {
+            "result": "pass",
+            "reason": "The action text requests preparing and delivering a written plan including functional/technical designs, staffing, budget, and schedule. The observed dialogue shows PM indicating need for design inputs and management cost/timeframe, reinforcing scope. The candidate evidence includes two dialogue turns where design discussion occurs and the PM commits to providing a plan; thus the task is supported.",
+            "evidence_da_ids": [
+              "IS1008a.A.dialog-act.s9553330.58",
+              "IS1008a.A.dialog-act.s9553330.66"
+            ]
+          },
+          "owner_check": {
+            "result": "pass",
+            "reason": "Owner is explicitly specified as FIE073 in provisional values and the dialogue implies ID/user involvement, consistent with assignment.",
+            "evidence_da_ids": [
+              "IS1008a.A.dialog-act.s9553330.58",
+              "IS1008a.A.dialog-act.s9553330.66"
+            ]
+          },
+          "deadline_check": {
+            "result": "pass",
+            "reason": "Deadline wording is explicit in provisional values as 'two weeks', corresponding to a concrete timeframe from current date; observed dialogue references urgency and needing management approval.",
+            "evidence_da_ids": [
+              "IS1008a.A.dialog-act.s9553330.58",
+              "IS1008a.A.dialog-act.s9553330.66"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Status is open and aligns with the current status in provisional values; no acceptance or completion statements observed in dialogue yet.",
+            "evidence_da_ids": [
+              "IS1008a.A.dialog-act.s9553330.58",
+              "IS1008a.A.dialog-act.s9553330.66"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No contradictions found within the provided dialogue about owner/deadline/status; items align with provisional values.",
+            "evidence_da_ids": [
+              "IS1008a.A.dialog-act.s9553330.58",
+              "IS1008a.A.dialog-act.s9553330.66"
+            ],
+            "affected_fields": [
+              "statement",
+              "owner",
+              "deadline",
+              "status"
+            ]
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior related_items exist for this first meeting item; no continuation or modification of earlier item can be established from current data.",
+            "evidence_da_ids": []
+          },
+          "next_action": "accept"
+        },
+        "evidence_bindings": {
+          "statement": [
+            "IS1008a.A.dialog-act.s9553330.58",
+            "IS1008a.A.dialog-act.s9553330.66"
+          ],
+          "owner": [
+            "IS1008a.A.dialog-act.s9553330.58",
+            "IS1008a.A.dialog-act.s9553330.66"
+          ],
+          "deadline": [
+            "IS1008a.A.dialog-act.s9553330.58",
+            "IS1008a.A.dialog-act.s9553330.66"
+          ],
+          "status": [
+            "IS1008a.A.dialog-act.s9553330.58",
+            "IS1008a.A.dialog-act.s9553330.66"
+          ],
+          "conflict": [
+            "IS1008a.A.dialog-act.s9553330.58",
+            "IS1008a.A.dialog-act.s9553330.66"
+          ]
+        },
+        "raw_tool_input": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "FIE073"
+          ],
+          "owner_basis": "explicit",
+          "deadline": "two weeks",
+          "deadline_basis": "explicit",
+          "statement": {
+            "result": "pass",
+            "reason": "The action text requests preparing and delivering a written plan including functional/technical designs, staffing, budget, and schedule. The observed dialogue shows PM indicating need for design inputs and management cost/timeframe, reinforcing scope. The candidate evidence includes two dialogue turns where design discussion occurs and the PM commits to providing a plan; thus the task is supported.",
+            "evidence_da_ids": [
+              "IS1008a.A.dialog-act.s9553330.58",
+              "IS1008a.A.dialog-act.s9553330.66"
+            ]
+          },
+          "owner_check": {
+            "result": "pass",
+            "reason": "Owner is explicitly specified as FIE073 in provisional values and the dialogue implies ID/user involvement, consistent with assignment.",
+            "evidence_da_ids": [
+              "IS1008a.A.dialog-act.s9553330.58",
+              "IS1008a.A.dialog-act.s9553330.66"
+            ]
+          },
+          "deadline_check": {
+            "result": "pass",
+            "reason": "Deadline wording is explicit in provisional values as 'two weeks', corresponding to a concrete timeframe from current date; observed dialogue references urgency and needing management approval.",
+            "evidence_da_ids": [
+              "IS1008a.A.dialog-act.s9553330.58",
+              "IS1008a.A.dialog-act.s9553330.66"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Status is open and aligns with the current status in provisional values; no acceptance or completion statements observed in dialogue yet.",
+            "evidence_da_ids": [
+              "IS1008a.A.dialog-act.s9553330.58",
+              "IS1008a.A.dialog-act.s9553330.66"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No contradictions found within the provided dialogue about owner/deadline/status; items align with provisional values.",
+            "evidence_da_ids": [
+              "IS1008a.A.dialog-act.s9553330.58",
+              "IS1008a.A.dialog-act.s9553330.66"
+            ],
+            "affected_fields": [
+              "statement",
+              "owner",
+              "deadline",
+              "status"
+            ]
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior related_items exist for this first meeting item; no continuation or modification of earlier item can be established from current data.",
+            "evidence_da_ids": []
+          },
+          "next_action": "accept"
+        },
+        "protocol_normalizations": [],
+        "unresolved_before": [
+          "deadline",
+          "owner",
+          "statement",
+          "status"
+        ],
+        "unresolved_after": [],
+        "semantic_stalls": 0,
+        "validation_codes": {}
+      },
+      {
+        "item": "IS1008a#1",
+        "step": 1,
+        "flags": [],
+        "action": "accept",
+        "outcome": "accepted",
+        "termination_reason": "all_required_checks_passed",
+        "unresolved_fields": []
+      }
+    ],
+    "lookups": 0,
+    "termination_reason": "all_required_checks_passed",
+    "clarifications": []
+  }
+}

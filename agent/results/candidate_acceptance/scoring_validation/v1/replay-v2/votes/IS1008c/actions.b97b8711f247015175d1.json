@@ -1,0 +1,81 @@
+{
+  "identity": {
+    "protocol_digest": "b0de1ae95eec59aaf3bc5fb2cfea27cd70c891ec74424f35af4726ab0aa7c596",
+    "judge": {
+      "name": "@30875-fall26-openai/gpt-5-nano",
+      "client": "mta.llm.OpenAIAdapter",
+      "endpoint": "https://api.portkey.ai/v1",
+      "supports_reasoning_effort": true
+    },
+    "type": "actions",
+    "input_sha256": "b97b8711f247015175d18150a971b373937cf9025b2d55047e7777963eababbd",
+    "system_texts": [
+      "The presenters (FIE038 and FIE073) will come up with the prototype design for the remote control and show how it looks by the next meeting.",
+      "FIE073 will find out more about what 'advanced chip on print' means before the next meeting.",
+      "The marketing manager will find out the cost of the display.",
+      "The project manager will submit to management.",
+      "MIE085 will develop the marketing strategy."
+    ],
+    "gold_texts": [
+      "The industrial designer and user interface designer will jointly produce a prototype/model for the next meeting.",
+      "The marketing expert will find the additional cost of the display and develop a marketing strategy, including the extra sales it could support.",
+      "The industrial designer will clarify the technology behind the advanced chip on print before the next meeting.",
+      "The project manager will submit the prototype/design to management after the designers have produced and shown it."
+    ]
+  },
+  "votes": {
+    "b97b8711f247015175d1": [
+      [
+        {
+          "sys": 0,
+          "gold": 0
+        },
+        {
+          "sys": 1,
+          "gold": 2
+        },
+        {
+          "sys": 3,
+          "gold": 3
+        },
+        {
+          "sys": 4,
+          "gold": 1
+        }
+      ],
+      [
+        {
+          "sys": 0,
+          "gold": 0
+        },
+        {
+          "sys": 1,
+          "gold": 2
+        },
+        {
+          "sys": 2,
+          "gold": 1
+        },
+        {
+          "sys": 3,
+          "gold": 3
+        }
+      ],
+      [
+        {
+          "sys": 0,
+          "gold": 0
+        },
+        {
+          "sys": 3,
+          "gold": 3
+        }
+      ]
+    ]
+  },
+  "imported_from": {
+    "path": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\recall_candidate\\41654ab-v2\\replay\\IS1008c\\stable_votes.json",
+    "sha256": "4b25e63a160890b7bd2e68ace7fe63e92db04c888b1d63d562db2e01a8fc7b78",
+    "kind": "verified_saved_development_study"
+  }
+}

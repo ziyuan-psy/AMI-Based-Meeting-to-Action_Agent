@@ -1,0 +1,755 @@
+{
+  "meeting_id": "TS3006a",
+  "status": "COMPLETED",
+  "errors": [],
+  "warnings": [],
+  "elapsed_seconds": 181.734,
+  "usage": {
+    "calls": 32,
+    "in": 112599,
+    "out": 77520,
+    "stages": {
+      "extract": {
+        "calls": 8,
+        "in": 48578,
+        "out": 40396
+      },
+      "consolidate": {
+        "calls": 3,
+        "in": 5568,
+        "out": 28825
+      },
+      "agent": {
+        "calls": 20,
+        "in": 57702,
+        "out": 7261
+      },
+      "abstract": {
+        "calls": 1,
+        "in": 751,
+        "out": 1038
+      }
+    }
+  },
+  "runtime_control": {
+    "limits": {
+      "calls": 80,
+      "tokens": 1000000,
+      "request_seconds": 300.0,
+      "meeting_seconds": 1200.0,
+      "inflight": 4,
+      "retries": 2,
+      "backoff": 0.5
+    },
+    "attempted_calls": 32,
+    "charged_tokens": 190119,
+    "unknown_usage_tokens": 0,
+    "reserved_tokens": 0,
+    "max_inflight_seen": 4,
+    "failure": null,
+    "input_bound_method": "utf8_request_bytes_plus_padding",
+    "unknown_usage_policy": "charge_full_reservation"
+  },
+  "stage_events": 105,
+  "agent_events": 20,
+  "request_events": 33,
+  "item_counts": {
+    "problems": 4,
+    "decisions": 3,
+    "actions": 5,
+    "abstract": 4
+  },
+  "flagged_items": 7,
+  "restored_items": 7,
+  "agent_outcomes": {
+    "finished": 7,
+    "ok": 13
+  },
+  "tool_calls": {
+    "read_dialogue": 6,
+    "get_prior_items": 3,
+    "search_dialogue": 3,
+    "get_participants": 1
+  },
+  "cross_meeting_links": [],
+  "reference_count": 33,
+  "citation_checks": [
+    {
+      "item_key": "TS3006a#5",
+      "initial_delivered_da_ids": [
+        "TS3006a.A.dialog-act.vkaraisk.145",
+        "TS3006a.A.dialog-act.vkaraisk.146",
+        "TS3006a.A.dialog-act.vkaraisk.147",
+        "TS3006a.C.dialog-act.vkaraisk.77"
+      ],
+      "finish_da_ids": [
+        "TS3006a.A.dialog-act.vkaraisk.146",
+        "TS3006a.C.dialog-act.vkaraisk.77"
+      ],
+      "additional_observed_ids": [],
+      "all_cited_dialogue_delivered": true
+    },
+    {
+      "item_key": "TS3006a#6",
+      "initial_delivered_da_ids": [
+        "TS3006a.A.dialog-act.vkaraisk.149",
+        "TS3006a.A.dialog-act.vkaraisk.150",
+        "TS3006a.B.dialog-act.vkaraisk.59"
+      ],
+      "finish_da_ids": [
+        "TS3006a.A.dialog-act.vkaraisk.149",
+        "TS3006a.A.dialog-act.vkaraisk.150",
+        "TS3006a.B.dialog-act.vkaraisk.59"
+      ],
+      "additional_observed_ids": [
+        "TS3006a.A.dialog-act.vkaraisk.145",
+        "TS3006a.A.dialog-act.vkaraisk.146",
+        "TS3006a.A.dialog-act.vkaraisk.147",
+        "TS3006a.A.dialog-act.vkaraisk.148",
+        "TS3006a.A.dialog-act.vkaraisk.151",
+        "TS3006a.A.dialog-act.vkaraisk.152",
+        "TS3006a.C.dialog-act.vkaraisk.77",
+        "TS3006a.D.dialog-act.vkaraisk.100"
+      ],
+      "all_cited_dialogue_delivered": true
+    },
+    {
+      "item_key": "TS3006a#7",
+      "initial_delivered_da_ids": [
+        "TS3006a.A.dialog-act.vkaraisk.151",
+        "TS3006a.D.dialog-act.vkaraisk.100"
+      ],
+      "finish_da_ids": [
+        "TS3006a.A.dialog-act.vkaraisk.151",
+        "TS3006a.D.dialog-act.vkaraisk.100"
+      ],
+      "additional_observed_ids": [
+        "TS3006a.A.dialog-act.vkaraisk.148",
+        "TS3006a.A.dialog-act.vkaraisk.149",
+        "TS3006a.A.dialog-act.vkaraisk.150",
+        "TS3006a.A.dialog-act.vkaraisk.152",
+        "TS3006a.A.dialog-act.vkaraisk.153",
+        "TS3006a.B.dialog-act.vkaraisk.59",
+        "TS3006a.C.dialog-act.vkaraisk.77",
+        "TS3006a.C.dialog-act.vkaraisk.78",
+        "TS3006a.C.dialog-act.vkaraisk.79"
+      ],
+      "all_cited_dialogue_delivered": true
+    },
+    {
+      "item_key": "TS3006a#8",
+      "initial_delivered_da_ids": [
+        "TS3006a.A.dialog-act.vkaraisk.219",
+        "TS3006a.C.dialog-act.vkaraisk.117",
+        "TS3006a.C.dialog-act.vkaraisk.118"
+      ],
+      "finish_da_ids": [
+        "TS3006a.C.dialog-act.vkaraisk.117",
+        "TS3006a.C.dialog-act.vkaraisk.118"
+      ],
+      "additional_observed_ids": [
+        "TS3006a.A.dialog-act.vkaraisk.218",
+        "TS3006a.A.dialog-act.vkaraisk.220",
+        "TS3006a.B.dialog-act.vkaraisk.93",
+        "TS3006a.C.dialog-act.vkaraisk.116",
+        "TS3006a.C.dialog-act.vkaraisk.119",
+        "TS3006a.C.dialog-act.vkaraisk.120",
+        "TS3006a.D.dialog-act.vkaraisk.148",
+        "TS3006a.D.dialog-act.vkaraisk.149"
+      ],
+      "all_cited_dialogue_delivered": true
+    },
+    {
+      "item_key": "TS3006a#9",
+      "initial_delivered_da_ids": [
+        "TS3006a.A.dialog-act.vkaraisk.219",
+        "TS3006a.A.dialog-act.vkaraisk.220",
+        "TS3006a.A.dialog-act.vkaraisk.227",
+        "TS3006a.C.dialog-act.vkaraisk.118",
+        "TS3006a.C.dialog-act.vkaraisk.119",
+        "TS3006a.C.dialog-act.vkaraisk.120",
+        "TS3006a.C.dialog-act.vkaraisk.121",
+        "TS3006a.C.dialog-act.vkaraisk.125",
+        "TS3006a.D.dialog-act.vkaraisk.156",
+        "TS3006a.D.dialog-act.vkaraisk.157"
+      ],
+      "finish_da_ids": [
+        "TS3006a.C.dialog-act.vkaraisk.119",
+        "TS3006a.C.dialog-act.vkaraisk.124",
+        "TS3006a.C.dialog-act.vkaraisk.125"
+      ],
+      "additional_observed_ids": [
+        "TS3006a.A.dialog-act.vkaraisk.146",
+        "TS3006a.C.dialog-act.vkaraisk.117",
+        "TS3006a.C.dialog-act.vkaraisk.124",
+        "TS3006a.C.dialog-act.vkaraisk.80"
+      ],
+      "all_cited_dialogue_delivered": true
+    },
+    {
+      "item_key": "TS3006a#10",
+      "initial_delivered_da_ids": [
+        "TS3006a.C.dialog-act.vkaraisk.123",
+        "TS3006a.D.dialog-act.vkaraisk.154"
+      ],
+      "finish_da_ids": [
+        "TS3006a.C.dialog-act.vkaraisk.123"
+      ],
+      "additional_observed_ids": [
+        "MTD021PM",
+        "MTD022ID",
+        "MTD023UID",
+        "MTD024ME",
+        "TS3006a.A.dialog-act.vkaraisk.219",
+        "TS3006a.A.dialog-act.vkaraisk.220",
+        "TS3006a.A.dialog-act.vkaraisk.221",
+        "TS3006a.A.dialog-act.vkaraisk.222",
+        "TS3006a.A.dialog-act.vkaraisk.223",
+        "TS3006a.A.dialog-act.vkaraisk.224",
+        "TS3006a.A.dialog-act.vkaraisk.225",
+        "TS3006a.A.dialog-act.vkaraisk.226",
+        "TS3006a.A.dialog-act.vkaraisk.227",
+        "TS3006a.B.dialog-act.vkaraisk.94",
+        "TS3006a.B.dialog-act.vkaraisk.95",
+        "TS3006a.B.dialog-act.vkaraisk.96",
+        "TS3006a.B.dialog-act.vkaraisk.97",
+        "TS3006a.C.dialog-act.vkaraisk.102",
+        "TS3006a.C.dialog-act.vkaraisk.118",
+        "TS3006a.C.dialog-act.vkaraisk.119",
+        "TS3006a.C.dialog-act.vkaraisk.120",
+        "TS3006a.C.dialog-act.vkaraisk.121",
+        "TS3006a.C.dialog-act.vkaraisk.122",
+        "TS3006a.C.dialog-act.vkaraisk.124",
+        "TS3006a.C.dialog-act.vkaraisk.125",
+        "TS3006a.C.dialog-act.vkaraisk.31",
+        "TS3006a.C.dialog-act.vkaraisk.5",
+        "TS3006a.D.dialog-act.vkaraisk.150",
+        "TS3006a.D.dialog-act.vkaraisk.151",
+        "TS3006a.D.dialog-act.vkaraisk.152",
+        "TS3006a.D.dialog-act.vkaraisk.153",
+        "TS3006a.D.dialog-act.vkaraisk.155",
+        "TS3006a.D.dialog-act.vkaraisk.156",
+        "TS3006a.D.dialog-act.vkaraisk.157",
+        "TS3006a.D.dialog-act.vkaraisk.158",
+        "TS3006a.D.dialog-act.vkaraisk.159",
+        "TS3006a.D.dialog-act.vkaraisk.168"
+      ],
+      "all_cited_dialogue_delivered": true
+    },
+    {
+      "item_key": "TS3006a#11",
+      "initial_delivered_da_ids": [
+        "TS3006a.A.dialog-act.vkaraisk.221",
+        "TS3006a.C.dialog-act.vkaraisk.120",
+        "TS3006a.C.dialog-act.vkaraisk.121",
+        "TS3006a.D.dialog-act.vkaraisk.150",
+        "TS3006a.D.dialog-act.vkaraisk.151"
+      ],
+      "finish_da_ids": [
+        "TS3006a.C.dialog-act.vkaraisk.120",
+        "TS3006a.C.dialog-act.vkaraisk.121",
+        "TS3006a.D.dialog-act.vkaraisk.150",
+        "TS3006a.D.dialog-act.vkaraisk.151"
+      ],
+      "additional_observed_ids": [
+        "TS3006a.A.dialog-act.vkaraisk.219",
+        "TS3006a.A.dialog-act.vkaraisk.220",
+        "TS3006a.A.dialog-act.vkaraisk.222",
+        "TS3006a.C.dialog-act.vkaraisk.117",
+        "TS3006a.C.dialog-act.vkaraisk.118",
+        "TS3006a.C.dialog-act.vkaraisk.119",
+        "TS3006a.D.dialog-act.vkaraisk.161",
+        "TS3006a.D.dialog-act.vkaraisk.162",
+        "TS3006a.D.dialog-act.vkaraisk.163"
+      ],
+      "all_cited_dialogue_delivered": true
+    }
+  ],
+  "restored_source_review": [
+    {
+      "item_key": "TS3006a#5",
+      "record": {
+        "id": "TS3006a.sys.s.6",
+        "text": "The Industrial Designer will produce a working design.",
+        "type": "actions",
+        "reference": [
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3006a.json",
+            "locator": "TS3006a.A.dialog-act.vkaraisk.146"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3006a.json",
+            "locator": "TS3006a.C.dialog-act.vkaraisk.77"
+          }
+        ],
+        "owner": [
+          "MTD022ID"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "open",
+        "prior_context_needed": false,
+        "related_items": []
+      },
+      "original_evidence": [
+        "TS3006a.A.dialog-act.vkaraisk.145",
+        "TS3006a.A.dialog-act.vkaraisk.146",
+        "TS3006a.A.dialog-act.vkaraisk.147",
+        "TS3006a.C.dialog-act.vkaraisk.77"
+      ],
+      "successful_finish": true,
+      "tool_calls": [
+        {
+          "step": 1,
+          "action": "finish",
+          "outcome": "finished"
+        }
+      ],
+      "dialogue": [
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.146",
+          "participant": "MTD021PM",
+          "role": "PM",
+          "text": "this industrati Industrial Designer should produce a working design ."
+        },
+        {
+          "da_id": "TS3006a.C.dialog-act.vkaraisk.77",
+          "participant": "MTD022ID",
+          "role": "ID",
+          "text": "True ."
+        }
+      ]
+    },
+    {
+      "item_key": "TS3006a#6",
+      "record": {
+        "id": "TS3006a.sys.s.7",
+        "text": "The User Interface Designer will specify the technical functions.",
+        "type": "actions",
+        "reference": [
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3006a.json",
+            "locator": "TS3006a.A.dialog-act.vkaraisk.149"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3006a.json",
+            "locator": "TS3006a.A.dialog-act.vkaraisk.150"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3006a.json",
+            "locator": "TS3006a.B.dialog-act.vkaraisk.59"
+          }
+        ],
+        "owner": [
+          "MTD023UID"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "open",
+        "prior_context_needed": false,
+        "related_items": []
+      },
+      "original_evidence": [
+        "TS3006a.A.dialog-act.vkaraisk.149",
+        "TS3006a.A.dialog-act.vkaraisk.150",
+        "TS3006a.B.dialog-act.vkaraisk.59"
+      ],
+      "successful_finish": true,
+      "tool_calls": [
+        {
+          "step": 1,
+          "action": "read_dialogue",
+          "outcome": "ok"
+        },
+        {
+          "step": 2,
+          "action": "finish",
+          "outcome": "finished"
+        }
+      ],
+      "dialogue": [
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.149",
+          "participant": "MTD021PM",
+          "role": "PM",
+          "text": "Uh the User Interface Designer should specify the technical functions ."
+        },
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.150",
+          "participant": "MTD021PM",
+          "role": "PM",
+          "text": "Right ? Yeah ?"
+        },
+        {
+          "da_id": "TS3006a.B.dialog-act.vkaraisk.59",
+          "participant": "MTD023UID",
+          "role": "UI",
+          "text": "Yep ."
+        }
+      ]
+    },
+    {
+      "item_key": "TS3006a#7",
+      "record": {
+        "id": "TS3006a.sys.s.8",
+        "text": "The Marketing Expert will come up with user requirements.",
+        "type": "actions",
+        "reference": [
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3006a.json",
+            "locator": "TS3006a.A.dialog-act.vkaraisk.151"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3006a.json",
+            "locator": "TS3006a.D.dialog-act.vkaraisk.100"
+          }
+        ],
+        "owner": [
+          "MTD024ME"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "open",
+        "prior_context_needed": false,
+        "related_items": []
+      },
+      "original_evidence": [
+        "TS3006a.A.dialog-act.vkaraisk.151",
+        "TS3006a.D.dialog-act.vkaraisk.100"
+      ],
+      "successful_finish": true,
+      "tool_calls": [
+        {
+          "step": 1,
+          "action": "read_dialogue",
+          "outcome": "ok"
+        },
+        {
+          "step": 2,
+          "action": "finish",
+          "outcome": "finished"
+        }
+      ],
+      "dialogue": [
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.151",
+          "participant": "MTD021PM",
+          "role": "PM",
+          "text": "<vocalsound> And the Marketing uh Expert should come up with user requirements ."
+        },
+        {
+          "da_id": "TS3006a.D.dialog-act.vkaraisk.100",
+          "participant": "MTD024ME",
+          "role": "ME",
+          "text": "Yeah ."
+        }
+      ]
+    },
+    {
+      "item_key": "TS3006a#8",
+      "record": {
+        "id": "TS3006a.sys.s.9",
+        "text": "The Industrial Designer will work on the conceptual design.",
+        "type": "actions",
+        "reference": [
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3006a.json",
+            "locator": "TS3006a.C.dialog-act.vkaraisk.117"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3006a.json",
+            "locator": "TS3006a.C.dialog-act.vkaraisk.118"
+          }
+        ],
+        "owner": [
+          "MTD022ID"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "open",
+        "prior_context_needed": false,
+        "related_items": []
+      },
+      "original_evidence": [
+        "TS3006a.C.dialog-act.vkaraisk.117",
+        "TS3006a.C.dialog-act.vkaraisk.118",
+        "TS3006a.A.dialog-act.vkaraisk.219"
+      ],
+      "successful_finish": true,
+      "tool_calls": [
+        {
+          "step": 1,
+          "action": "read_dialogue",
+          "outcome": "ok"
+        },
+        {
+          "step": 2,
+          "action": "read_dialogue",
+          "outcome": "ok"
+        },
+        {
+          "step": 3,
+          "action": "get_prior_items",
+          "outcome": "ok"
+        },
+        {
+          "step": 4,
+          "action": "finish",
+          "outcome": "finished"
+        }
+      ],
+      "dialogue": [
+        {
+          "da_id": "TS3006a.C.dialog-act.vkaraisk.117",
+          "participant": "MTD022ID",
+          "role": "ID",
+          "text": "I am gonna work on the conceptual design already"
+        },
+        {
+          "da_id": "TS3006a.C.dialog-act.vkaraisk.118",
+          "participant": "MTD022ID",
+          "role": "ID",
+          "text": "'cause yeah it's fairly important to know what kind of components we want to put in ."
+        }
+      ]
+    },
+    {
+      "item_key": "TS3006a#9",
+      "record": {
+        "id": "TS3006a.sys.s.10",
+        "text": "Unclear which components should be included in the design; further clarification is needed.",
+        "type": "problems",
+        "reference": [
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3006a.json",
+            "locator": "TS3006a.C.dialog-act.vkaraisk.125"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3006a.json",
+            "locator": "TS3006a.C.dialog-act.vkaraisk.124"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3006a.json",
+            "locator": "TS3006a.C.dialog-act.vkaraisk.119"
+          }
+        ],
+        "status": "open",
+        "prior_context_needed": false,
+        "related_items": []
+      },
+      "original_evidence": [
+        "TS3006a.C.dialog-act.vkaraisk.118",
+        "TS3006a.A.dialog-act.vkaraisk.219",
+        "TS3006a.A.dialog-act.vkaraisk.220",
+        "TS3006a.C.dialog-act.vkaraisk.119",
+        "TS3006a.C.dialog-act.vkaraisk.120",
+        "TS3006a.C.dialog-act.vkaraisk.121",
+        "TS3006a.C.dialog-act.vkaraisk.125",
+        "TS3006a.D.dialog-act.vkaraisk.156",
+        "TS3006a.D.dialog-act.vkaraisk.157",
+        "TS3006a.A.dialog-act.vkaraisk.227"
+      ],
+      "successful_finish": true,
+      "tool_calls": [
+        {
+          "step": 1,
+          "action": "search_dialogue",
+          "outcome": "ok"
+        },
+        {
+          "step": 2,
+          "action": "get_prior_items",
+          "outcome": "ok"
+        },
+        {
+          "step": 3,
+          "action": "finish",
+          "outcome": "finished"
+        }
+      ],
+      "dialogue": [
+        {
+          "da_id": "TS3006a.C.dialog-act.vkaraisk.125",
+          "participant": "MTD022ID",
+          "role": "ID",
+          "text": "So if I don't know what components to put in , it's kind of hard ."
+        },
+        {
+          "da_id": "TS3006a.C.dialog-act.vkaraisk.124",
+          "participant": "MTD022ID",
+          "role": "ID",
+          "text": "'cause I have to f put the components into the design ."
+        },
+        {
+          "da_id": "TS3006a.C.dialog-act.vkaraisk.119",
+          "participant": "MTD022ID",
+          "role": "ID",
+          "text": "Do we <disfmarker>"
+        }
+      ]
+    },
+    {
+      "item_key": "TS3006a#10",
+      "record": {
+        "id": "TS3006a.sys.s.11",
+        "text": "There is a need for better communication about this stuff.",
+        "type": "problems",
+        "reference": [
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3006a.json",
+            "locator": "TS3006a.C.dialog-act.vkaraisk.123"
+          }
+        ],
+        "status": "open",
+        "prior_context_needed": false,
+        "related_items": []
+      },
+      "original_evidence": [
+        "TS3006a.C.dialog-act.vkaraisk.123",
+        "TS3006a.D.dialog-act.vkaraisk.154"
+      ],
+      "successful_finish": true,
+      "tool_calls": [
+        {
+          "step": 1,
+          "action": "read_dialogue",
+          "outcome": "ok"
+        },
+        {
+          "step": 2,
+          "action": "search_dialogue",
+          "outcome": "ok"
+        },
+        {
+          "step": 3,
+          "action": "get_prior_items",
+          "outcome": "ok"
+        },
+        {
+          "step": 4,
+          "action": "get_participants",
+          "outcome": "ok"
+        },
+        {
+          "step": 5,
+          "action": "finish",
+          "outcome": "finished"
+        }
+      ],
+      "dialogue": [
+        {
+          "da_id": "TS3006a.C.dialog-act.vkaraisk.123",
+          "participant": "MTD022ID",
+          "role": "ID",
+          "text": "But but we need good communication about this stuff ,"
+        }
+      ]
+    },
+    {
+      "item_key": "TS3006a#11",
+      "record": {
+        "id": "TS3006a.sys.s.12",
+        "text": "Unclear whether the design should be a multimedia control centre with video recorder compatibility.",
+        "type": "problems",
+        "reference": [
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3006a.json",
+            "locator": "TS3006a.C.dialog-act.vkaraisk.120"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3006a.json",
+            "locator": "TS3006a.C.dialog-act.vkaraisk.121"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3006a.json",
+            "locator": "TS3006a.D.dialog-act.vkaraisk.150"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3006a.json",
+            "locator": "TS3006a.D.dialog-act.vkaraisk.151"
+          }
+        ],
+        "status": "open",
+        "prior_context_needed": false,
+        "related_items": []
+      },
+      "original_evidence": [
+        "TS3006a.C.dialog-act.vkaraisk.120",
+        "TS3006a.C.dialog-act.vkaraisk.121",
+        "TS3006a.D.dialog-act.vkaraisk.150",
+        "TS3006a.A.dialog-act.vkaraisk.221",
+        "TS3006a.D.dialog-act.vkaraisk.151"
+      ],
+      "successful_finish": true,
+      "tool_calls": [
+        {
+          "step": 1,
+          "action": "read_dialogue",
+          "outcome": "ok"
+        },
+        {
+          "step": 2,
+          "action": "search_dialogue",
+          "outcome": "ok"
+        },
+        {
+          "step": 3,
+          "action": "finish",
+          "outcome": "finished"
+        }
+      ],
+      "dialogue": [
+        {
+          "da_id": "TS3006a.C.dialog-act.vkaraisk.120",
+          "participant": "MTD022ID",
+          "role": "ID",
+          "text": "I mean , is it gonna be a multimedia control centre ?"
+        },
+        {
+          "da_id": "TS3006a.C.dialog-act.vkaraisk.121",
+          "participant": "MTD022ID",
+          "role": "ID",
+          "text": "Do we want to be able to use the video recorder with it ? <vocalsound>"
+        },
+        {
+          "da_id": "TS3006a.D.dialog-act.vkaraisk.150",
+          "participant": "MTD024ME",
+          "role": "ME",
+          "text": "Yeah . <vocalsound> That is my question also"
+        },
+        {
+          "da_id": "TS3006a.D.dialog-act.vkaraisk.151",
+          "participant": "MTD024ME",
+          "role": "ME",
+          "text": "because like new new functions <disfmarker>"
+        }
+      ]
+    }
+  ],
+  "p2_enabled": false,
+  "clarification_requests": 0,
+  "stage_seconds": 181.4,
+  "agent_fallbacks": null,
+  "recoverable_errors": []
+}

@@ -1,0 +1,569 @@
+{
+  "item": 1,
+  "fields": {
+    "item_key": "IS1008a#1",
+    "record_id": null,
+    "item_type": "actions",
+    "item_text": "Ed will provide a written project plan by the next meeting.",
+    "state": "accepted",
+    "recordable": true,
+    "fields": {
+      "status": "open",
+      "prior_context_needed": false,
+      "related_items": [],
+      "owner": [
+        "MIE085"
+      ],
+      "owner_basis": "explicit",
+      "deadline": "by the next meeting",
+      "deadline_basis": "explicit",
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/IS1008a.json",
+          "locator": "IS1008a.D.dialog-act.s9553330.16"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/IS1008a.json",
+          "locator": "IS1008a.A.dialog-act.s9553330.29"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/IS1008a.json",
+          "locator": "IS1008a.A.dialog-act.s9553330.31"
+        }
+      ]
+    },
+    "draft_fields": {
+      "status": "open",
+      "related_items": [],
+      "owner": [
+        "MIE085"
+      ],
+      "owner_basis": "explicit",
+      "deadline": "by the next meeting",
+      "deadline_basis": "explicit",
+      "prior_context_needed": false,
+      "used_participant_lookup": false,
+      "evidence_da_ids": [
+        "IS1008a.D.dialog-act.s9553330.16",
+        "IS1008a.A.dialog-act.s9553330.29",
+        "IS1008a.A.dialog-act.s9553330.31"
+      ]
+    },
+    "checks": {
+      "statement": {
+        "result": "pass",
+        "reason": "Dialogue shows ME stated commitment to deliver a written project plan by the next meeting; PM also affirmed.",
+        "quotes": [
+          {
+            "da_id": "IS1008a.D.dialog-act.s9553330.16",
+            "quote": "Certainly by the next meeting ."
+          },
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.29",
+            "quote": "so uh by when you think you can uh give me some kind of uh project plan , okay ,"
+          },
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.31",
+            "quote": "By next meeting , okay that will be great ."
+          }
+        ],
+        "fields": [
+          "statement"
+        ]
+      },
+      "owner": {
+        "result": "pass",
+        "reason": "Owner is explicitly the ME with ID MIE085 who stated commitment in dialogue.",
+        "quotes": [
+          {
+            "da_id": "IS1008a.D.dialog-act.s9553330.16",
+            "quote": "Certainly by the next meeting ."
+          }
+        ],
+        "fields": [
+          "owner"
+        ]
+      },
+      "deadline": {
+        "result": "pass",
+        "reason": "Deadline phrase 'by the next meeting' appears in dialogue and in provisional_values; explicit wording matches.",
+        "quotes": [
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.31",
+            "quote": "By next meeting , okay that will be great ."
+          },
+          {
+            "da_id": "IS1008a.D.dialog-act.s9553330.16",
+            "quote": "Certainly by the next meeting ."
+          }
+        ],
+        "fields": [
+          "deadline"
+        ]
+      },
+      "status": {
+        "result": "pass",
+        "reason": "Status is stated as open in provisional values and no completion evidence in dialogue.",
+        "quotes": [
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.31",
+            "quote": "By next meeting , okay that will be great ."
+          }
+        ],
+        "fields": [
+          "status"
+        ]
+      },
+      "conflict": {
+        "result": "pass",
+        "reason": "No contradictions found between statement and dialogue.",
+        "quotes": [
+          {
+            "da_id": "IS1008a.D.dialog-act.s9553330.16",
+            "quote": "Certainly by the next meeting ."
+          }
+        ],
+        "fields": []
+      },
+      "relation": {
+        "result": "not_applicable",
+        "reason": "No prior related item to link in this scope.",
+        "quotes": [],
+        "fields": [
+          "related_items"
+        ]
+      }
+    },
+    "unresolved_fields": [],
+    "observed_evidence_da_ids": [
+      "IS1008a.A.dialog-act.s9553330.29",
+      "IS1008a.A.dialog-act.s9553330.30",
+      "IS1008a.D.dialog-act.s9553330.16",
+      "IS1008a.A.dialog-act.s9553330.31",
+      "IS1008a.A.dialog-act.s9553330.28",
+      "IS1008a.A.dialog-act.s9553330.32"
+    ],
+    "initial_context": {
+      "item": {
+        "type": "actions",
+        "text": "Ed will provide a written project plan by the next meeting.",
+        "flags": []
+      },
+      "current_meeting": "IS1008a",
+      "earlier_meetings": [],
+      "roster": [
+        {
+          "speaker": "A",
+          "participant_id": "MIO086",
+          "role": "PM"
+        },
+        {
+          "speaker": "B",
+          "participant_id": "FIE038",
+          "role": "UI"
+        },
+        {
+          "speaker": "C",
+          "participant_id": "FIE073",
+          "role": "ID"
+        },
+        {
+          "speaker": "D",
+          "participant_id": "MIE085",
+          "role": "ME"
+        }
+      ],
+      "observed_dialogue": [
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.29",
+          "meeting_id": "IS1008a",
+          "text": "so uh by when you think you can uh give me some kind of uh project plan , okay ,",
+          "participant": "MIO086",
+          "role": "PM"
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.30",
+          "meeting_id": "IS1008a",
+          "text": "a discussion with uh <disfmarker>",
+          "participant": "MIO086",
+          "role": "PM"
+        },
+        {
+          "da_id": "IS1008a.D.dialog-act.s9553330.16",
+          "meeting_id": "IS1008a",
+          "text": "Certainly by the next meeting .",
+          "participant": "MIE085",
+          "role": "ME"
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.31",
+          "meeting_id": "IS1008a",
+          "text": "By next meeting , okay that will be great .",
+          "participant": "MIO086",
+          "role": "PM"
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.28",
+          "participant": "MIO086",
+          "role": "PM",
+          "text": "Okay ,"
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.32",
+          "participant": "MIO086",
+          "role": "PM",
+          "text": "Uh Okay ,"
+        }
+      ],
+      "peer_items": [
+        {
+          "item_key": "IS1008a#0",
+          "type": "actions",
+          "text": "ID will deliver a written plan covering functional and technical design, staffing, timeframe, budget, and market plan by two weeks."
+        }
+      ],
+      "provisional_values": {
+        "owner": [
+          "MIE085"
+        ],
+        "owner_basis": "explicit",
+        "deadline": "by the next meeting",
+        "deadline_basis": "explicit",
+        "status": "open",
+        "related_items": []
+      },
+      "candidate_evidence_da_ids": [
+        "IS1008a.A.dialog-act.s9553330.29",
+        "IS1008a.A.dialog-act.s9553330.30",
+        "IS1008a.D.dialog-act.s9553330.16",
+        "IS1008a.A.dialog-act.s9553330.31"
+      ]
+    },
+    "observed_documents": [],
+    "document_evidence": [],
+    "relation_evidence": [],
+    "history": [
+      {
+        "item": "IS1008a#1",
+        "step": 1,
+        "flags": [],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue shows ME stated commitment to deliver a written project plan by the next meeting; PM also affirmed.",
+            "quotes": [
+              {
+                "da_id": "IS1008a.D.dialog-act.s9553330.16",
+                "quote": "Certainly by the next meeting ."
+              },
+              {
+                "da_id": "IS1008a.A.dialog-act.s9553330.29",
+                "quote": "so uh by when you think you can uh give me some kind of uh project plan , okay ,"
+              },
+              {
+                "da_id": "IS1008a.A.dialog-act.s9553330.31",
+                "quote": "By next meeting , okay that will be great ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Owner is explicitly the ME with ID MIE085 who stated commitment in dialogue.",
+            "quotes": [
+              {
+                "da_id": "IS1008a.D.dialog-act.s9553330.16",
+                "quote": "Certainly by the next meeting ."
+              }
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "pass",
+            "reason": "Deadline phrase 'by the next meeting' appears in dialogue and in provisional_values; explicit wording matches.",
+            "quotes": [
+              {
+                "da_id": "IS1008a.A.dialog-act.s9553330.31",
+                "quote": "By next meeting , okay that will be great ."
+              },
+              {
+                "da_id": "IS1008a.D.dialog-act.s9553330.16",
+                "quote": "Certainly by the next meeting ."
+              }
+            ],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Status is stated as open in provisional values and no completion evidence in dialogue.",
+            "quotes": [
+              {
+                "da_id": "IS1008a.A.dialog-act.s9553330.31",
+                "quote": "By next meeting , okay that will be great ."
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions found between statement and dialogue.",
+            "quotes": [
+              {
+                "da_id": "IS1008a.D.dialog-act.s9553330.16",
+                "quote": "Certainly by the next meeting ."
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related item to link in this scope.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "decision": "accept",
+        "reason": "all_required_checks_passed",
+        "assessed_text": "Ed will provide a written project plan by the next meeting.",
+        "requested_action": "accept",
+        "proposed_fields": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "MIE085"
+          ],
+          "owner_basis": "explicit",
+          "deadline": "by the next meeting",
+          "deadline_basis": "explicit",
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "IS1008a.D.dialog-act.s9553330.16",
+            "IS1008a.A.dialog-act.s9553330.29",
+            "IS1008a.A.dialog-act.s9553330.31"
+          ]
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue shows ME stated commitment to deliver a written project plan by the next meeting; PM also affirmed.",
+            "quotes": [
+              "IS1008a.D.dialog-act.s9553330.16",
+              "IS1008a.A.dialog-act.s9553330.29",
+              "IS1008a.A.dialog-act.s9553330.31"
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Owner is explicitly the ME with ID MIE085 who stated commitment in dialogue.",
+            "quotes": [
+              "IS1008a.D.dialog-act.s9553330.16"
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "pass",
+            "reason": "Deadline phrase 'by the next meeting' appears in dialogue and in provisional_values; explicit wording matches.",
+            "quotes": [
+              "IS1008a.A.dialog-act.s9553330.31",
+              "IS1008a.D.dialog-act.s9553330.16"
+            ],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Status is stated as open in provisional values and no completion evidence in dialogue.",
+            "quotes": [
+              "IS1008a.A.dialog-act.s9553330.31"
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions found between statement and dialogue.",
+            "quotes": [
+              "IS1008a.D.dialog-act.s9553330.16"
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related item to link in this scope.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "MIE085"
+          ],
+          "owner_basis": "explicit",
+          "deadline": "by the next meeting",
+          "deadline_basis": "explicit",
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue shows ME stated commitment to deliver a written project plan by the next meeting; PM also affirmed.",
+            "evidence_da_ids": [
+              "IS1008a.D.dialog-act.s9553330.16",
+              "IS1008a.A.dialog-act.s9553330.29",
+              "IS1008a.A.dialog-act.s9553330.31"
+            ]
+          },
+          "owner_check": {
+            "result": "pass",
+            "reason": "Owner is explicitly the ME with ID MIE085 who stated commitment in dialogue.",
+            "evidence_da_ids": [
+              "IS1008a.D.dialog-act.s9553330.16"
+            ]
+          },
+          "deadline_check": {
+            "result": "pass",
+            "reason": "Deadline phrase 'by the next meeting' appears in dialogue and in provisional_values; explicit wording matches.",
+            "evidence_da_ids": [
+              "IS1008a.A.dialog-act.s9553330.31",
+              "IS1008a.D.dialog-act.s9553330.16"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Status is stated as open in provisional values and no completion evidence in dialogue.",
+            "evidence_da_ids": [
+              "IS1008a.A.dialog-act.s9553330.31"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No contradictions found between statement and dialogue.",
+            "evidence_da_ids": [
+              "IS1008a.D.dialog-act.s9553330.16"
+            ],
+            "affected_fields": []
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior related item to link in this scope.",
+            "evidence_da_ids": []
+          },
+          "next_action": "accept"
+        },
+        "evidence_bindings": {
+          "statement": [
+            "IS1008a.D.dialog-act.s9553330.16",
+            "IS1008a.A.dialog-act.s9553330.29",
+            "IS1008a.A.dialog-act.s9553330.31"
+          ],
+          "owner": [
+            "IS1008a.D.dialog-act.s9553330.16"
+          ],
+          "deadline": [
+            "IS1008a.A.dialog-act.s9553330.31",
+            "IS1008a.D.dialog-act.s9553330.16"
+          ],
+          "status": [
+            "IS1008a.A.dialog-act.s9553330.31"
+          ],
+          "conflict": [
+            "IS1008a.D.dialog-act.s9553330.16"
+          ]
+        },
+        "raw_tool_input": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "MIE085"
+          ],
+          "owner_basis": "explicit",
+          "deadline": "by the next meeting",
+          "deadline_basis": "explicit",
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue shows ME stated commitment to deliver a written project plan by the next meeting; PM also affirmed.",
+            "evidence_da_ids": [
+              "IS1008a.D.dialog-act.s9553330.16",
+              "IS1008a.A.dialog-act.s9553330.29",
+              "IS1008a.A.dialog-act.s9553330.31"
+            ]
+          },
+          "owner_check": {
+            "result": "pass",
+            "reason": "Owner is explicitly the ME with ID MIE085 who stated commitment in dialogue.",
+            "evidence_da_ids": [
+              "IS1008a.D.dialog-act.s9553330.16"
+            ]
+          },
+          "deadline_check": {
+            "result": "pass",
+            "reason": "Deadline phrase 'by the next meeting' appears in dialogue and in provisional_values; explicit wording matches.",
+            "evidence_da_ids": [
+              "IS1008a.A.dialog-act.s9553330.31",
+              "IS1008a.D.dialog-act.s9553330.16"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Status is stated as open in provisional values and no completion evidence in dialogue.",
+            "evidence_da_ids": [
+              "IS1008a.A.dialog-act.s9553330.31"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No contradictions found between statement and dialogue.",
+            "evidence_da_ids": [
+              "IS1008a.D.dialog-act.s9553330.16"
+            ]
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior related item to link in this scope.",
+            "evidence_da_ids": []
+          },
+          "next_action": "accept"
+        },
+        "protocol_normalizations": [
+          "empty_affected_fields_for_no_conflict"
+        ]
+      },
+      {
+        "item": "IS1008a#1",
+        "step": 1,
+        "flags": [],
+        "action": "accept",
+        "outcome": "accepted",
+        "termination_reason": "all_required_checks_passed",
+        "unresolved_fields": []
+      }
+    ],
+    "lookups": 0,
+    "termination_reason": "all_required_checks_passed",
+    "clarifications": []
+  }
+}

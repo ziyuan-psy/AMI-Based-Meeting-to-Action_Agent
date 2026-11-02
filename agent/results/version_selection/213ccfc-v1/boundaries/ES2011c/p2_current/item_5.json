@@ -1,0 +1,925 @@
+{
+  "item_key": "ES2011c#5",
+  "record_id": null,
+  "item_type": "decisions",
+  "item_text": "For now we will do two prototypes of the product.",
+  "state": "accepted",
+  "recordable": true,
+  "fields": {
+    "status": "adopted",
+    "prior_context_needed": false,
+    "related_items": [],
+    "reference": [
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/ES2011c.json",
+        "locator": "ES2011c.D.dialog-act.dharshi.126"
+      }
+    ]
+  },
+  "draft_fields": {
+    "status": "adopted",
+    "related_items": [],
+    "prior_context_needed": false,
+    "used_participant_lookup": false,
+    "evidence_da_ids": [
+      "ES2011c.D.dialog-act.dharshi.126",
+      "ES2011c.A.dialog-act.dharshi.163",
+      "ES2011c.D.dialog-act.dharshi.127"
+    ],
+    "owner": null,
+    "owner_basis": "missing",
+    "deadline": null,
+    "deadline_basis": "missing"
+  },
+  "checks": {
+    "statement": {
+      "result": "pass",
+      "reason": "Dialogue ES2011c.D.dialog-act.dharshi.126 indicates 'and for now we can do two prototypes maybe', which aligns with the proposed decision to pursue two prototypes.",
+      "quotes": [
+        {
+          "da_id": "ES2011c.D.dialog-act.dharshi.126",
+          "quote": "and for now we can do two prototypes maybe"
+        }
+      ],
+      "fields": [
+        "statement"
+      ]
+    },
+    "status": {
+      "result": "pass",
+      "reason": "Evidence supports the stated adopt status; no conflicting evidence found in observed_dialogue.",
+      "quotes": [
+        {
+          "da_id": "ES2011c.D.dialog-act.dharshi.126",
+          "quote": "and for now we can do two prototypes maybe"
+        }
+      ],
+      "fields": [
+        "status"
+      ]
+    },
+    "conflict": {
+      "result": "pass",
+      "reason": "No contradictions found among the available dialogue about the two-prototype plan.",
+      "quotes": [
+        {
+          "da_id": "ES2011c.D.dialog-act.dharshi.126",
+          "quote": "and for now we can do two prototypes maybe"
+        }
+      ],
+      "fields": []
+    },
+    "relation": {
+      "result": "pass",
+      "reason": "The current dialogue indicates adoption of the two-prototype plan and no conflict with earlier statements. A link to a prior item is not established.",
+      "quotes": [
+        {
+          "da_id": "ES2011c.D.dialog-act.dharshi.126",
+          "quote": "and for now we can do two prototypes maybe"
+        }
+      ],
+      "links": [],
+      "documents": [],
+      "fields": [
+        "related_items"
+      ]
+    },
+    "owner": {
+      "result": "not_applicable",
+      "reason": "field_not_applicable",
+      "quotes": [],
+      "fields": [
+        "owner"
+      ]
+    },
+    "deadline": {
+      "result": "not_applicable",
+      "reason": "field_not_applicable",
+      "quotes": [],
+      "fields": [
+        "deadline"
+      ]
+    }
+  },
+  "unresolved_fields": [],
+  "observed_evidence_da_ids": [
+    "ES2011c.D.dialog-act.dharshi.126",
+    "ES2011c.A.dialog-act.dharshi.163",
+    "ES2011c.D.dialog-act.dharshi.127"
+  ],
+  "initial_context": {
+    "item": {
+      "type": "decisions",
+      "text": "For now we will do two prototypes of the product.",
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ]
+    },
+    "current_meeting": "ES2011c",
+    "earlier_meetings": [
+      "ES2011a",
+      "ES2011b"
+    ],
+    "roster": [
+      {
+        "speaker": "A",
+        "participant_id": "FEE041",
+        "role": "PM"
+      },
+      {
+        "speaker": "B",
+        "participant_id": "FEE042",
+        "role": "ID"
+      },
+      {
+        "speaker": "C",
+        "participant_id": "FEE043",
+        "role": "UI"
+      },
+      {
+        "speaker": "D",
+        "participant_id": "FEE044",
+        "role": "ME"
+      }
+    ],
+    "observed_dialogue": [
+      {
+        "da_id": "ES2011c.D.dialog-act.dharshi.126",
+        "meeting_id": "ES2011c",
+        "text": "and for now we can do two prototypes maybe",
+        "participant": "FEE044",
+        "role": "ME"
+      },
+      {
+        "da_id": "ES2011c.A.dialog-act.dharshi.163",
+        "participant": "FEE041",
+        "role": "PM",
+        "text": "Mm ."
+      },
+      {
+        "da_id": "ES2011c.D.dialog-act.dharshi.127",
+        "participant": "FEE044",
+        "role": "ME",
+        "text": "and then hi try and ask users what the best is ,"
+      }
+    ],
+    "peer_items": [
+      {
+        "item_key": "ES2011c#0",
+        "type": "actions",
+        "text": "UI and ME will play with play-dough to prototype the look and feel of the design and the user interface."
+      },
+      {
+        "item_key": "ES2011c#1",
+        "type": "decisions",
+        "text": "We will not include D_V_D_ (DVD) features in the remote design."
+      },
+      {
+        "item_key": "ES2011c#2",
+        "type": "problems",
+        "text": "There is uncertainty about whether to include a screen, given ambiguous use and the potential cost, with debate on its necessity versus a wheel-based control."
+      },
+      {
+        "item_key": "ES2011c#3",
+        "type": "decisions",
+        "text": "We will pursue a fashion electronics approach with a fruit-and-vegetable motif, including the decision on whether the motif is printed or the remote resembles a fruit."
+      },
+      {
+        "item_key": "ES2011c#4",
+        "type": "decisions",
+        "text": "The menu system should reside inside the TV, not inside the remote."
+      }
+    ],
+    "provisional_values": {
+      "owner": null,
+      "owner_basis": "missing",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "status": "adopted",
+      "related_items": []
+    },
+    "candidate_evidence_da_ids": [
+      "ES2011c.D.dialog-act.dharshi.126"
+    ]
+  },
+  "observed_documents": [],
+  "document_evidence": [],
+  "relation_evidence": [],
+  "history": [
+    {
+      "item": "ES2011c#5",
+      "step": 1,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "assess_item",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue ES2011c.D.dialog-act.dharshi.126 indicates 'and for now we can do two prototypes maybe', which aligns with the proposed decision to pursue two prototypes.",
+          "quotes": [
+            {
+              "da_id": "ES2011c.D.dialog-act.dharshi.126",
+              "quote": "and for now we can do two prototypes maybe"
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Evidence supports the stated adopt status; no conflicting evidence found in observed_dialogue.",
+          "quotes": [
+            {
+              "da_id": "ES2011c.D.dialog-act.dharshi.126",
+              "quote": "and for now we can do two prototypes maybe"
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions found among the available dialogue about the two-prototype plan.",
+          "quotes": [
+            {
+              "da_id": "ES2011c.D.dialog-act.dharshi.126",
+              "quote": "and for now we can do two prototypes maybe"
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "prior_context_not_checked",
+          "quotes": [
+            {
+              "da_id": "ES2011c.D.dialog-act.dharshi.126",
+              "quote": "and for now we can do two prototypes maybe"
+            }
+          ],
+          "fields": [
+            "related_items"
+          ]
+        },
+        "owner": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        }
+      },
+      "decision": "retrieve",
+      "reason": "unresolved_checks",
+      "assessed_text": "For now we will do two prototypes of the product.",
+      "requested_action": "retrieve",
+      "proposed_fields": {
+        "status": "adopted",
+        "related_items": [],
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "ES2011c.D.dialog-act.dharshi.126"
+        ],
+        "owner": null,
+        "owner_basis": "missing",
+        "deadline": null,
+        "deadline_basis": "missing"
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue ES2011c.D.dialog-act.dharshi.126 indicates 'and for now we can do two prototypes maybe', which aligns with the proposed decision to pursue two prototypes.",
+          "quotes": [
+            "ES2011c.D.dialog-act.dharshi.126"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Evidence supports the stated adopt status; no conflicting evidence found in observed_dialogue.",
+          "quotes": [
+            "ES2011c.D.dialog-act.dharshi.126"
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions found among the available dialogue about the two-prototype plan.",
+          "quotes": [
+            "ES2011c.D.dialog-act.dharshi.126"
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "No explicit linkage to prior items established in current dialogue; need prior records to confirm relation.",
+          "quotes": [
+            "ES2011c.D.dialog-act.dharshi.126"
+          ],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "status": "adopted",
+        "related_items": [],
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue ES2011c.D.dialog-act.dharshi.126 indicates 'and for now we can do two prototypes maybe', which aligns with the proposed decision to pursue two prototypes.",
+          "evidence_da_ids": [
+            "ES2011c.D.dialog-act.dharshi.126"
+          ]
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "Evidence supports the stated adopt status; no conflicting evidence found in observed_dialogue.",
+          "evidence_da_ids": [
+            "ES2011c.D.dialog-act.dharshi.126"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No contradictions found among the available dialogue about the two-prototype plan.",
+          "evidence_da_ids": [
+            "ES2011c.D.dialog-act.dharshi.126"
+          ],
+          "affected_fields": []
+        },
+        "relation_check": {
+          "result": "uncertain",
+          "reason": "No explicit linkage to prior items established in current dialogue; need prior records to confirm relation.",
+          "evidence_da_ids": [
+            "ES2011c.D.dialog-act.dharshi.126"
+          ]
+        },
+        "next_action": "retrieve"
+      },
+      "evidence_bindings": {
+        "statement": [
+          "ES2011c.D.dialog-act.dharshi.126"
+        ],
+        "status": [
+          "ES2011c.D.dialog-act.dharshi.126"
+        ],
+        "conflict": [
+          "ES2011c.D.dialog-act.dharshi.126"
+        ],
+        "relation": [
+          "ES2011c.D.dialog-act.dharshi.126"
+        ]
+      },
+      "raw_tool_input": {
+        "status": "adopted",
+        "related_items": [],
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue ES2011c.D.dialog-act.dharshi.126 indicates 'and for now we can do two prototypes maybe', which aligns with the proposed decision to pursue two prototypes.",
+          "evidence_da_ids": [
+            "ES2011c.D.dialog-act.dharshi.126"
+          ]
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "Evidence supports the stated adopt status; no conflicting evidence found in observed_dialogue.",
+          "evidence_da_ids": [
+            "ES2011c.D.dialog-act.dharshi.126"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No contradictions found among the available dialogue about the two-prototype plan.",
+          "evidence_da_ids": [
+            "ES2011c.D.dialog-act.dharshi.126"
+          ],
+          "affected_fields": []
+        },
+        "relation_check": {
+          "result": "uncertain",
+          "reason": "No explicit linkage to prior items established in current dialogue; need prior records to confirm relation.",
+          "evidence_da_ids": [
+            "ES2011c.D.dialog-act.dharshi.126"
+          ]
+        },
+        "next_action": "retrieve"
+      },
+      "protocol_normalizations": [],
+      "unresolved_before": [
+        "related_items",
+        "statement",
+        "status"
+      ],
+      "unresolved_after": [
+        "related_items"
+      ],
+      "semantic_stalls": 0,
+      "validation_codes": {
+        "relation": [
+          "prior_context_not_checked"
+        ]
+      }
+    },
+    {
+      "item": "ES2011c#5",
+      "step": 2,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "history_context_focused",
+      "outcome": "delivered",
+      "evidence_da_ids": [
+        "ES2011c.D.dialog-act.dharshi.126",
+        "ES2011c.A.dialog-act.dharshi.163",
+        "ES2011c.D.dialog-act.dharshi.127"
+      ]
+    },
+    {
+      "item": "ES2011c#5",
+      "step": 2,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "get_prior_items",
+      "outcome": "lookup",
+      "decision": "retrieve",
+      "args": {
+        "query": "prototype",
+        "item_type": "decisions"
+      },
+      "tool_result": {
+        "results": []
+      },
+      "new_info": false
+    },
+    {
+      "item": "ES2011c#5",
+      "step": 3,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "assess_relation",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue ES2011c.D.dialog-act.dharshi.126 indicates 'and for now we can do two prototypes maybe', which aligns with the proposed decision to pursue two prototypes.",
+          "quotes": [
+            {
+              "da_id": "ES2011c.D.dialog-act.dharshi.126",
+              "quote": "and for now we can do two prototypes maybe"
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Evidence supports the stated adopt status; no conflicting evidence found in observed_dialogue.",
+          "quotes": [
+            {
+              "da_id": "ES2011c.D.dialog-act.dharshi.126",
+              "quote": "and for now we can do two prototypes maybe"
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions found among the available dialogue about the two-prototype plan.",
+          "quotes": [
+            {
+              "da_id": "ES2011c.D.dialog-act.dharshi.126",
+              "quote": "and for now we can do two prototypes maybe"
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "No prior decision in ES2011a/b clearly matching the current item’s subject (two prototypes). The current dialogue indicates a plan to create two prototypes, but there is no earlier recorded 'prototype' decision to continue or modify, so relationship cannot be confirmed.",
+          "quotes": [
+            {
+              "da_id": "ES2011c.D.dialog-act.dharshi.126",
+              "quote": "and for now we can do two prototypes maybe"
+            },
+            {
+              "da_id": "ES2011c.A.dialog-act.dharshi.163",
+              "quote": "Mm ."
+            },
+            {
+              "da_id": "ES2011c.D.dialog-act.dharshi.127",
+              "quote": "and then hi try and ask users what the best is ,"
+            }
+          ],
+          "links": [],
+          "documents": [],
+          "fields": [
+            "related_items"
+          ]
+        },
+        "owner": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        }
+      },
+      "decision": "retrieve",
+      "reason": "unresolved_checks",
+      "assessed_text": "For now we will do two prototypes of the product.",
+      "requested_action": null,
+      "proposed_fields": {
+        "status": "adopted",
+        "related_items": [],
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "ES2011c.D.dialog-act.dharshi.126",
+          "ES2011c.A.dialog-act.dharshi.163",
+          "ES2011c.D.dialog-act.dharshi.127"
+        ],
+        "owner": null,
+        "owner_basis": "missing",
+        "deadline": null,
+        "deadline_basis": "missing"
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue ES2011c.D.dialog-act.dharshi.126 indicates 'and for now we can do two prototypes maybe', which aligns with the proposed decision to pursue two prototypes.",
+          "quotes": [
+            {
+              "da_id": "ES2011c.D.dialog-act.dharshi.126",
+              "quote": "and for now we can do two prototypes maybe"
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Evidence supports the stated adopt status; no conflicting evidence found in observed_dialogue.",
+          "quotes": [
+            {
+              "da_id": "ES2011c.D.dialog-act.dharshi.126",
+              "quote": "and for now we can do two prototypes maybe"
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions found among the available dialogue about the two-prototype plan.",
+          "quotes": [
+            {
+              "da_id": "ES2011c.D.dialog-act.dharshi.126",
+              "quote": "and for now we can do two prototypes maybe"
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "No prior decision in ES2011a/b clearly matching the current item’s subject (two prototypes). The current dialogue indicates a plan to create two prototypes, but there is no earlier recorded 'prototype' decision to continue or modify, so relationship cannot be confirmed.",
+          "quotes": [
+            {
+              "da_id": "ES2011c.D.dialog-act.dharshi.126"
+            },
+            {
+              "da_id": "ES2011c.A.dialog-act.dharshi.163"
+            },
+            {
+              "da_id": "ES2011c.D.dialog-act.dharshi.127"
+            }
+          ],
+          "links": [],
+          "documents": [],
+          "fields": [
+            "related_items"
+          ]
+        },
+        "owner": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "result": "uncertain",
+        "reason": "No prior decision in ES2011a/b clearly matching the current item’s subject (two prototypes). The current dialogue indicates a plan to create two prototypes, but there is no earlier recorded 'prototype' decision to continue or modify, so relationship cannot be confirmed.",
+        "quotes": [
+          {
+            "da_id": "ES2011c.D.dialog-act.dharshi.126"
+          },
+          {
+            "da_id": "ES2011c.A.dialog-act.dharshi.163"
+          },
+          {
+            "da_id": "ES2011c.D.dialog-act.dharshi.127"
+          }
+        ],
+        "documents": [],
+        "links": []
+      },
+      "evidence_bindings": {
+        "relation": [
+          "ES2011c.D.dialog-act.dharshi.126",
+          "ES2011c.A.dialog-act.dharshi.163",
+          "ES2011c.D.dialog-act.dharshi.127"
+        ]
+      },
+      "raw_tool_input": {
+        "result": "uncertain",
+        "reason": "No prior decision in ES2011a/b clearly matching the current item’s subject (two prototypes). The current dialogue indicates a plan to create two prototypes, but there is no earlier recorded 'prototype' decision to continue or modify, so relationship cannot be confirmed.",
+        "quotes": [
+          {
+            "da_id": "ES2011c.D.dialog-act.dharshi.126"
+          },
+          {
+            "da_id": "ES2011c.A.dialog-act.dharshi.163"
+          },
+          {
+            "da_id": "ES2011c.D.dialog-act.dharshi.127"
+          }
+        ],
+        "documents": []
+      },
+      "protocol_normalizations": [
+        "empty_links_for_unestablished_relation",
+        "controller_action_for_missing_hint:retrieve"
+      ],
+      "unresolved_before": [
+        "related_items"
+      ],
+      "unresolved_after": [
+        "related_items"
+      ],
+      "semantic_stalls": 0,
+      "validation_codes": {}
+    },
+    {
+      "item": "ES2011c#5",
+      "step": 4,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "assess_relation",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue ES2011c.D.dialog-act.dharshi.126 indicates 'and for now we can do two prototypes maybe', which aligns with the proposed decision to pursue two prototypes.",
+          "quotes": [
+            {
+              "da_id": "ES2011c.D.dialog-act.dharshi.126",
+              "quote": "and for now we can do two prototypes maybe"
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Evidence supports the stated adopt status; no conflicting evidence found in observed_dialogue.",
+          "quotes": [
+            {
+              "da_id": "ES2011c.D.dialog-act.dharshi.126",
+              "quote": "and for now we can do two prototypes maybe"
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions found among the available dialogue about the two-prototype plan.",
+          "quotes": [
+            {
+              "da_id": "ES2011c.D.dialog-act.dharshi.126",
+              "quote": "and for now we can do two prototypes maybe"
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "pass",
+          "reason": "The current dialogue indicates adoption of the two-prototype plan and no conflict with earlier statements. A link to a prior item is not established.",
+          "quotes": [
+            {
+              "da_id": "ES2011c.D.dialog-act.dharshi.126",
+              "quote": "and for now we can do two prototypes maybe"
+            }
+          ],
+          "links": [],
+          "documents": [],
+          "fields": [
+            "related_items"
+          ]
+        },
+        "owner": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        }
+      },
+      "decision": "accept",
+      "reason": "all_required_checks_passed",
+      "assessed_text": "For now we will do two prototypes of the product.",
+      "requested_action": null,
+      "proposed_fields": {
+        "status": "adopted",
+        "related_items": [],
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "ES2011c.D.dialog-act.dharshi.126",
+          "ES2011c.A.dialog-act.dharshi.163",
+          "ES2011c.D.dialog-act.dharshi.127"
+        ],
+        "owner": null,
+        "owner_basis": "missing",
+        "deadline": null,
+        "deadline_basis": "missing"
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue ES2011c.D.dialog-act.dharshi.126 indicates 'and for now we can do two prototypes maybe', which aligns with the proposed decision to pursue two prototypes.",
+          "quotes": [
+            {
+              "da_id": "ES2011c.D.dialog-act.dharshi.126",
+              "quote": "and for now we can do two prototypes maybe"
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Evidence supports the stated adopt status; no conflicting evidence found in observed_dialogue.",
+          "quotes": [
+            {
+              "da_id": "ES2011c.D.dialog-act.dharshi.126",
+              "quote": "and for now we can do two prototypes maybe"
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions found among the available dialogue about the two-prototype plan.",
+          "quotes": [
+            {
+              "da_id": "ES2011c.D.dialog-act.dharshi.126",
+              "quote": "and for now we can do two prototypes maybe"
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "pass",
+          "reason": "The current dialogue indicates adoption of the two-prototype plan and no conflict with earlier statements. A link to a prior item is not established.",
+          "quotes": [
+            {
+              "da_id": "ES2011c.D.dialog-act.dharshi.126",
+              "quote": "and for now we can do two prototypes maybe"
+            }
+          ],
+          "links": [],
+          "documents": [],
+          "fields": [
+            "related_items"
+          ]
+        },
+        "owner": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "result": "pass",
+        "reason": "The current dialogue indicates adoption of the two-prototype plan and no conflict with earlier statements. A link to a prior item is not established.",
+        "quotes": [
+          {
+            "da_id": "ES2011c.D.dialog-act.dharshi.126",
+            "quote": "and for now we can do two prototypes maybe"
+          }
+        ],
+        "documents": [],
+        "links": [],
+        "related_items": []
+      },
+      "evidence_bindings": {},
+      "raw_tool_input": {
+        "result": "pass",
+        "reason": "The current dialogue indicates adoption of the two-prototype plan and no conflict with earlier statements. A link to a prior item is not established.",
+        "quotes": [
+          {
+            "da_id": "ES2011c.D.dialog-act.dharshi.126",
+            "quote": "and for now we can do two prototypes maybe"
+          }
+        ],
+        "documents": [],
+        "links": [],
+        "related_items": []
+      },
+      "protocol_normalizations": [
+        "controller_action_for_missing_hint:request_clarification"
+      ],
+      "unresolved_before": [
+        "related_items"
+      ],
+      "unresolved_after": [],
+      "semantic_stalls": 0,
+      "validation_codes": {}
+    },
+    {
+      "item": "ES2011c#5",
+      "step": 4,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "accept",
+      "outcome": "accepted",
+      "termination_reason": "all_required_checks_passed",
+      "unresolved_fields": []
+    }
+  ],
+  "lookups": 1,
+  "termination_reason": "all_required_checks_passed",
+  "clarifications": []
+}

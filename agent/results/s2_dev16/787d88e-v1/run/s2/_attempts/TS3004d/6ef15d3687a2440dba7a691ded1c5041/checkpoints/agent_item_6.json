@@ -1,0 +1,753 @@
+{
+  "item": 6,
+  "fields": {
+    "item_key": "TS3004d#6",
+    "record_id": null,
+    "item_type": "decisions",
+    "item_text": "Prototype presentation order: PM first, then UI.",
+    "state": "pending",
+    "recordable": true,
+    "fields": {
+      "status": "adopted",
+      "prior_context_needed": false,
+      "related_items": [],
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3004d.json",
+          "locator": "TS3004d.A.dialog-act.dharshi.6"
+        }
+      ]
+    },
+    "draft_fields": {
+      "status": "adopted",
+      "related_items": [],
+      "prior_context_needed": false,
+      "used_participant_lookup": false,
+      "evidence_da_ids": [
+        "TS3004d.A.dialog-act.dharshi.6",
+        "TS3004d.D.dialog-act.dharshi.1"
+      ],
+      "owner": null,
+      "owner_basis": "missing",
+      "deadline": null,
+      "deadline_basis": "missing"
+    },
+    "checks": {
+      "statement": {
+        "result": "pass",
+        "reason": "The observed dialogue indicates PM stating that the prototype presentation should occur after PM, i.e., PM first then UI, which supports the proposed order.",
+        "quotes": [
+          {
+            "da_id": "TS3004d.A.dialog-act.dharshi.6",
+            "quote": "F You're going to show your pr prototype presentation after me ."
+          }
+        ],
+        "fields": [
+          "statement"
+        ]
+      },
+      "status": {
+        "result": "pass",
+        "reason": "Current dialogue evidence aligns with the adopted decision about presentation order.",
+        "quotes": [
+          {
+            "da_id": "TS3004d.A.dialog-act.dharshi.6",
+            "quote": "F You're going to show your pr prototype presentation after me ."
+          }
+        ],
+        "fields": [
+          "status"
+        ]
+      },
+      "conflict": {
+        "result": "pass",
+        "reason": "No contradictions found in the observed dialogue about this item.",
+        "quotes": [
+          {
+            "da_id": "TS3004d.A.dialog-act.dharshi.6",
+            "quote": "F You're going to show your pr prototype presentation after me ."
+          }
+        ],
+        "fields": []
+      },
+      "relation": {
+        "result": "uncertain",
+        "reason": "No prior decision record found in the TS3004a-c history that directly matches 'Prototype presentation order' to compare against; current dialogue asserts a sequence but there is no established link to an earlier item.",
+        "quotes": [
+          {
+            "da_id": "TS3004d.A.dialog-act.dharshi.6",
+            "quote": "F You're going to show your pr prototype presentation after me ."
+          },
+          {
+            "da_id": "TS3004d.D.dialog-act.dharshi.1",
+            "quote": "Oops ."
+          }
+        ],
+        "links": [],
+        "documents": [],
+        "fields": [
+          "related_items"
+        ]
+      },
+      "owner": {
+        "result": "not_applicable",
+        "reason": "field_not_applicable",
+        "quotes": [],
+        "fields": [
+          "owner"
+        ]
+      },
+      "deadline": {
+        "result": "not_applicable",
+        "reason": "field_not_applicable",
+        "quotes": [],
+        "fields": [
+          "deadline"
+        ]
+      }
+    },
+    "unresolved_fields": [
+      "related_items"
+    ],
+    "observed_evidence_da_ids": [
+      "TS3004d.A.dialog-act.dharshi.6",
+      "TS3004d.A.dialog-act.dharshi.5",
+      "TS3004d.D.dialog-act.dharshi.1"
+    ],
+    "initial_context": {
+      "item": {
+        "type": "decisions",
+        "text": "Prototype presentation order: PM first, then UI.",
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ]
+      },
+      "current_meeting": "TS3004d",
+      "earlier_meetings": [
+        "TS3004a",
+        "TS3004b",
+        "TS3004c"
+      ],
+      "roster": [
+        {
+          "speaker": "A",
+          "participant_id": "MTD013PM",
+          "role": "PM"
+        },
+        {
+          "speaker": "B",
+          "participant_id": "MTD015UID",
+          "role": "UI"
+        },
+        {
+          "speaker": "C",
+          "participant_id": "MTD014ID",
+          "role": "ID"
+        },
+        {
+          "speaker": "D",
+          "participant_id": "MTD016ME",
+          "role": "ME"
+        }
+      ],
+      "observed_dialogue": [
+        {
+          "da_id": "TS3004d.A.dialog-act.dharshi.6",
+          "meeting_id": "TS3004d",
+          "text": "F You're going to show your pr prototype presentation after me .",
+          "participant": "MTD013PM",
+          "role": "PM"
+        },
+        {
+          "da_id": "TS3004d.A.dialog-act.dharshi.5",
+          "participant": "MTD013PM",
+          "role": "PM",
+          "text": "You're <disfmarker>"
+        },
+        {
+          "da_id": "TS3004d.D.dialog-act.dharshi.1",
+          "participant": "MTD016ME",
+          "role": "ME",
+          "text": "Oops ."
+        }
+      ],
+      "peer_items": [
+        {
+          "item_key": "TS3004d#0",
+          "type": "actions",
+          "text": "Write the final project report."
+        },
+        {
+          "item_key": "TS3004d#1",
+          "type": "problems",
+          "text": "Speech recognition feature specification is missing/unclear."
+        },
+        {
+          "item_key": "TS3004d#2",
+          "type": "problems",
+          "text": "Not enough time to design the interior."
+        },
+        {
+          "item_key": "TS3004d#3",
+          "type": "problems",
+          "text": "Unclear number and layout of buttons; need specification."
+        },
+        {
+          "item_key": "TS3004d#4",
+          "type": "decisions",
+          "text": "Use advanced chip."
+        },
+        {
+          "item_key": "TS3004d#5",
+          "type": "decisions",
+          "text": "Include speech recognition in the product."
+        }
+      ],
+      "provisional_values": {
+        "owner": null,
+        "owner_basis": "missing",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "adopted",
+        "related_items": []
+      },
+      "candidate_evidence_da_ids": [
+        "TS3004d.A.dialog-act.dharshi.6"
+      ]
+    },
+    "observed_documents": [],
+    "document_evidence": [],
+    "relation_evidence": [],
+    "history": [
+      {
+        "item": "TS3004d#6",
+        "step": 1,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "The observed dialogue indicates PM stating that the prototype presentation should occur after PM, i.e., PM first then UI, which supports the proposed order.",
+            "quotes": [
+              {
+                "da_id": "TS3004d.A.dialog-act.dharshi.6",
+                "quote": "F You're going to show your pr prototype presentation after me ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Current dialogue evidence aligns with the adopted decision about presentation order.",
+            "quotes": [
+              {
+                "da_id": "TS3004d.A.dialog-act.dharshi.6",
+                "quote": "F You're going to show your pr prototype presentation after me ."
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions found in the observed dialogue about this item.",
+            "quotes": [
+              {
+                "da_id": "TS3004d.A.dialog-act.dharshi.6",
+                "quote": "F You're going to show your pr prototype presentation after me ."
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "prior_context_not_checked",
+            "links": [],
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          }
+        },
+        "decision": "retrieve",
+        "reason": "unresolved_checks",
+        "assessed_text": "Prototype presentation order: PM first, then UI.",
+        "requested_action": "retrieve",
+        "proposed_fields": {
+          "status": "adopted",
+          "related_items": [],
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "TS3004d.A.dialog-act.dharshi.6"
+          ],
+          "owner": null,
+          "owner_basis": "missing",
+          "deadline": null,
+          "deadline_basis": "missing"
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "The observed dialogue indicates PM stating that the prototype presentation should occur after PM, i.e., PM first then UI, which supports the proposed order.",
+            "quotes": [
+              "TS3004d.A.dialog-act.dharshi.6"
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Current dialogue evidence aligns with the adopted decision about presentation order.",
+            "quotes": [
+              "TS3004d.A.dialog-act.dharshi.6"
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions found in the observed dialogue about this item.",
+            "quotes": [
+              "TS3004d.A.dialog-act.dharshi.6"
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "No prior-item relationship identified in the current dialogue; a prior-context lookup (to TS3004a/b/c) is needed to confirm linkage or updates.",
+            "links": [],
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "status": "adopted",
+          "related_items": [],
+          "statement": {
+            "result": "pass",
+            "reason": "The observed dialogue indicates PM stating that the prototype presentation should occur after PM, i.e., PM first then UI, which supports the proposed order.",
+            "evidence_da_ids": [
+              "TS3004d.A.dialog-act.dharshi.6"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Current dialogue evidence aligns with the adopted decision about presentation order.",
+            "evidence_da_ids": [
+              "TS3004d.A.dialog-act.dharshi.6"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No contradictions found in the observed dialogue about this item.",
+            "evidence_da_ids": [
+              "TS3004d.A.dialog-act.dharshi.6"
+            ],
+            "affected_fields": []
+          },
+          "relation_check": {
+            "result": "uncertain",
+            "reason": "No prior-item relationship identified in the current dialogue; a prior-context lookup (to TS3004a/b/c) is needed to confirm linkage or updates.",
+            "evidence_da_ids": [],
+            "links": []
+          },
+          "next_action": "retrieve"
+        },
+        "evidence_bindings": {
+          "statement": [
+            "TS3004d.A.dialog-act.dharshi.6"
+          ],
+          "status": [
+            "TS3004d.A.dialog-act.dharshi.6"
+          ],
+          "conflict": [
+            "TS3004d.A.dialog-act.dharshi.6"
+          ]
+        },
+        "raw_tool_input": {
+          "status": "adopted",
+          "related_items": [],
+          "statement": {
+            "result": "pass",
+            "reason": "The observed dialogue indicates PM stating that the prototype presentation should occur after PM, i.e., PM first then UI, which supports the proposed order.",
+            "evidence_da_ids": [
+              "TS3004d.A.dialog-act.dharshi.6"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Current dialogue evidence aligns with the adopted decision about presentation order.",
+            "evidence_da_ids": [
+              "TS3004d.A.dialog-act.dharshi.6"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No contradictions found in the observed dialogue about this item.",
+            "evidence_da_ids": [
+              "TS3004d.A.dialog-act.dharshi.6"
+            ],
+            "affected_fields": []
+          },
+          "relation_check": {
+            "result": "uncertain",
+            "reason": "No prior-item relationship identified in the current dialogue; a prior-context lookup (to TS3004a/b/c) is needed to confirm linkage or updates.",
+            "evidence_da_ids": [],
+            "links": []
+          },
+          "next_action": "retrieve"
+        },
+        "protocol_normalizations": [],
+        "unresolved_before": [
+          "related_items",
+          "statement",
+          "status"
+        ],
+        "unresolved_after": [
+          "related_items"
+        ],
+        "semantic_stalls": 0,
+        "validation_codes": {
+          "relation": [
+            "prior_context_not_checked"
+          ]
+        }
+      },
+      {
+        "item": "TS3004d#6",
+        "step": 2,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "history_context_focused",
+        "outcome": "delivered",
+        "evidence_da_ids": [
+          "TS3004d.A.dialog-act.dharshi.6",
+          "TS3004d.A.dialog-act.dharshi.5",
+          "TS3004d.D.dialog-act.dharshi.1"
+        ]
+      },
+      {
+        "item": "TS3004d#6",
+        "step": 2,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "get_prior_items",
+        "outcome": "lookup",
+        "decision": "retrieve",
+        "args": {
+          "query": "prototype presentation order",
+          "item_type": "decisions"
+        },
+        "tool_result": {
+          "results": []
+        },
+        "new_info": false
+      },
+      {
+        "item": "TS3004d#6",
+        "step": 3,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "assess_relation",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "The observed dialogue indicates PM stating that the prototype presentation should occur after PM, i.e., PM first then UI, which supports the proposed order.",
+            "quotes": [
+              {
+                "da_id": "TS3004d.A.dialog-act.dharshi.6",
+                "quote": "F You're going to show your pr prototype presentation after me ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Current dialogue evidence aligns with the adopted decision about presentation order.",
+            "quotes": [
+              {
+                "da_id": "TS3004d.A.dialog-act.dharshi.6",
+                "quote": "F You're going to show your pr prototype presentation after me ."
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions found in the observed dialogue about this item.",
+            "quotes": [
+              {
+                "da_id": "TS3004d.A.dialog-act.dharshi.6",
+                "quote": "F You're going to show your pr prototype presentation after me ."
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "No prior decision record found in the TS3004a-c history that directly matches 'Prototype presentation order' to compare against; current dialogue asserts a sequence but there is no established link to an earlier item.",
+            "quotes": [
+              {
+                "da_id": "TS3004d.A.dialog-act.dharshi.6",
+                "quote": "F You're going to show your pr prototype presentation after me ."
+              },
+              {
+                "da_id": "TS3004d.D.dialog-act.dharshi.1",
+                "quote": "Oops ."
+              }
+            ],
+            "links": [],
+            "documents": [],
+            "fields": [
+              "related_items"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          }
+        },
+        "decision": "retrieve",
+        "reason": "unresolved_checks",
+        "assessed_text": "Prototype presentation order: PM first, then UI.",
+        "requested_action": null,
+        "proposed_fields": {
+          "status": "adopted",
+          "related_items": [],
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "TS3004d.A.dialog-act.dharshi.6",
+            "TS3004d.D.dialog-act.dharshi.1"
+          ],
+          "owner": null,
+          "owner_basis": "missing",
+          "deadline": null,
+          "deadline_basis": "missing"
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "The observed dialogue indicates PM stating that the prototype presentation should occur after PM, i.e., PM first then UI, which supports the proposed order.",
+            "quotes": [
+              {
+                "da_id": "TS3004d.A.dialog-act.dharshi.6",
+                "quote": "F You're going to show your pr prototype presentation after me ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Current dialogue evidence aligns with the adopted decision about presentation order.",
+            "quotes": [
+              {
+                "da_id": "TS3004d.A.dialog-act.dharshi.6",
+                "quote": "F You're going to show your pr prototype presentation after me ."
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions found in the observed dialogue about this item.",
+            "quotes": [
+              {
+                "da_id": "TS3004d.A.dialog-act.dharshi.6",
+                "quote": "F You're going to show your pr prototype presentation after me ."
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "No prior decision record found in the TS3004a-c history that directly matches 'Prototype presentation order' to compare against; current dialogue asserts a sequence but there is no established link to an earlier item.",
+            "quotes": [
+              {
+                "da_id": "TS3004d.A.dialog-act.dharshi.6"
+              },
+              {
+                "da_id": "TS3004d.D.dialog-act.dharshi.1"
+              }
+            ],
+            "links": [],
+            "documents": [],
+            "fields": [
+              "related_items"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "result": "uncertain",
+          "reason": "No prior decision record found in the TS3004a-c history that directly matches 'Prototype presentation order' to compare against; current dialogue asserts a sequence but there is no established link to an earlier item.",
+          "quotes": [
+            {
+              "da_id": "TS3004d.A.dialog-act.dharshi.6"
+            },
+            {
+              "da_id": "TS3004d.D.dialog-act.dharshi.1"
+            }
+          ],
+          "documents": [],
+          "links": [],
+          "related_items": []
+        },
+        "evidence_bindings": {
+          "relation": [
+            "TS3004d.A.dialog-act.dharshi.6",
+            "TS3004d.D.dialog-act.dharshi.1"
+          ]
+        },
+        "raw_tool_input": {
+          "result": "uncertain",
+          "reason": "No prior decision record found in the TS3004a-c history that directly matches 'Prototype presentation order' to compare against; current dialogue asserts a sequence but there is no established link to an earlier item.",
+          "quotes": [
+            {
+              "da_id": "TS3004d.A.dialog-act.dharshi.6"
+            },
+            {
+              "da_id": "TS3004d.D.dialog-act.dharshi.1"
+            }
+          ],
+          "documents": [],
+          "links": [],
+          "related_items": []
+        },
+        "protocol_normalizations": [
+          "controller_action_for_missing_hint:retrieve"
+        ],
+        "unresolved_before": [
+          "related_items"
+        ],
+        "unresolved_after": [
+          "related_items"
+        ],
+        "semantic_stalls": 0,
+        "validation_codes": {}
+      },
+      {
+        "item": "TS3004d#6",
+        "step": 4,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "get_prior_items",
+        "outcome": "lookup",
+        "decision": "retrieve",
+        "args": {
+          "query": "PM first UI presentation order",
+          "item_type": "decisions"
+        },
+        "tool_result": {
+          "results": []
+        },
+        "new_info": false
+      },
+      {
+        "item": "TS3004d#6",
+        "step": 4,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "stop",
+        "outcome": "pending",
+        "termination_reason": "no_progress",
+        "unresolved_fields": [
+          "related_items"
+        ]
+      }
+    ],
+    "lookups": 2,
+    "termination_reason": "no_progress",
+    "clarifications": [
+      {
+        "request_id": "e22230e56b5b97a9",
+        "item_key": "TS3004d#6",
+        "record_id": null,
+        "field": "related_items",
+        "question": "Which earlier record does this item continue or change, and how?",
+        "item_text": "Prototype presentation order: PM first, then UI.",
+        "reason": "No prior decision record found in the TS3004a-c history that directly matches 'Prototype presentation order' to compare against; current dialogue asserts a sequence but there is no established link to an earlier item.",
+        "evidence_da_ids": [
+          "TS3004d.A.dialog-act.dharshi.6",
+          "TS3004d.D.dialog-act.dharshi.1"
+        ],
+        "available_evidence_da_ids": [
+          "TS3004d.A.dialog-act.dharshi.6",
+          "TS3004d.A.dialog-act.dharshi.5",
+          "TS3004d.D.dialog-act.dharshi.1"
+        ],
+        "status": "open",
+        "termination_reason": "no_progress"
+      }
+    ]
+  }
+}

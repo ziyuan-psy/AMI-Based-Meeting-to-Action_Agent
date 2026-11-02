@@ -1,0 +1,705 @@
+[
+  {
+    "type": "actions",
+    "text": "PM will write the report of decisions made so far.",
+    "evidence_da_ids": [
+      "TS3006d.A.dialog-act.dharshi.353",
+      "TS3006d.A.dialog-act.dharshi.427"
+    ],
+    "owner_ids": [
+      "MTD021PM"
+    ],
+    "owner_cue": "So I have to um uh write this,",
+    "deadline_cue": null,
+    "owner_basis": "explicit",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "status": "open",
+    "candidate_indexes": [
+      65,
+      69
+    ],
+    "source_item_indexes": [
+      0,
+      3
+    ],
+    "selection_priority": 3,
+    "selection_reason": "Core action to produce minutes of decisions.",
+    "flags": [
+      "POSSIBLE_PRIOR"
+    ],
+    "run_id": "e77f9c7f8bc9414caca6bd672c676cdb",
+    "peer_items": [],
+    "fields": {
+      "status": "open",
+      "prior_context_needed": false,
+      "related_items": [],
+      "owner": [
+        "MTD021PM"
+      ],
+      "owner_basis": "explicit",
+      "deadline": "in ten minutes",
+      "deadline_basis": "inferred",
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3006d.json",
+          "locator": "TS3006d.A.dialog-act.dharshi.353"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3006d.json",
+          "locator": "TS3006d.A.dialog-act.dharshi.427"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3006d.json",
+          "locator": "TS3006d.D.dialog-act.dharshi.456"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3006d.json",
+          "locator": "TS3006d.D.dialog-act.dharshi.457"
+        }
+      ]
+    },
+    "item_key": "TS3006d#0"
+  },
+  {
+    "type": "decisions",
+    "text": "There will be one scroll button.",
+    "evidence_da_ids": [
+      "TS3006d.C.dialog-act.dharshi.258"
+    ],
+    "owner_ids": [],
+    "owner_cue": null,
+    "deadline_cue": null,
+    "owner_basis": "ambiguous",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "status": "adopted",
+    "candidate_indexes": [
+      50
+    ],
+    "source_item_indexes": [
+      7
+    ],
+    "selection_priority": 3,
+    "selection_reason": "Decision on UI navigation control.",
+    "flags": [
+      "POSSIBLE_PRIOR"
+    ],
+    "run_id": "e77f9c7f8bc9414caca6bd672c676cdb",
+    "peer_items": [
+      {
+        "item_key": "TS3006d#0",
+        "type": "actions",
+        "text": "PM will write the report of decisions made so far."
+      },
+      {
+        "item_key": "TS3006d#1",
+        "type": "problems",
+        "text": "There is confusion on how to switch from the volume control to the channel control; the control scheme is inconsistent (four arrows vs push-in vs scroll-wheel)."
+      }
+    ],
+    "fields": {
+      "status": "unknown",
+      "prior_context_needed": false,
+      "related_items": [],
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3006d.json",
+          "locator": "TS3006d.C.dialog-act.dharshi.258"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3006d.json",
+          "locator": "TS3006d.B.dialog-act.dharshi.179"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3006d.json",
+          "locator": "TS3006d.A.dialog-act.dharshi.349"
+        }
+      ]
+    },
+    "item_key": "TS3006d#2"
+  },
+  {
+    "type": "decisions",
+    "text": "The group will adopt a two-button remote design.",
+    "evidence_da_ids": [
+      "TS3006d.D.dialog-act.dharshi.363",
+      "TS3006d.D.dialog-act.dharshi.366"
+    ],
+    "owner_ids": [],
+    "owner_cue": null,
+    "deadline_cue": null,
+    "owner_basis": "missing",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "status": "adopted",
+    "candidate_indexes": [
+      32
+    ],
+    "source_item_indexes": [
+      8
+    ],
+    "selection_priority": 3,
+    "selection_reason": "Design decision.",
+    "flags": [
+      "POSSIBLE_PRIOR"
+    ],
+    "run_id": "e77f9c7f8bc9414caca6bd672c676cdb",
+    "peer_items": [
+      {
+        "item_key": "TS3006d#0",
+        "type": "actions",
+        "text": "PM will write the report of decisions made so far."
+      },
+      {
+        "item_key": "TS3006d#1",
+        "type": "problems",
+        "text": "There is confusion on how to switch from the volume control to the channel control; the control scheme is inconsistent (four arrows vs push-in vs scroll-wheel)."
+      },
+      {
+        "item_key": "TS3006d#2",
+        "type": "decisions",
+        "text": "There will be one scroll button."
+      }
+    ],
+    "fields": {
+      "status": "adopted",
+      "prior_context_needed": false,
+      "related_items": [],
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3006d.json",
+          "locator": "TS3006d.D.dialog-act.dharshi.363"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3006d.json",
+          "locator": "TS3006d.D.dialog-act.dharshi.366"
+        }
+      ]
+    },
+    "item_key": "TS3006d#3"
+  },
+  {
+    "type": "decisions",
+    "text": "Make one large LCD screen (LCD screen) with casing.",
+    "evidence_da_ids": [
+      "TS3006d.A.dialog-act.dharshi.346",
+      "TS3006d.D.dialog-act.dharshi.450"
+    ],
+    "owner_ids": [],
+    "owner_cue": null,
+    "deadline_cue": null,
+    "owner_basis": "ambiguous",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "status": "adopted",
+    "candidate_indexes": [
+      49
+    ],
+    "source_item_indexes": [
+      9
+    ],
+    "selection_priority": 3,
+    "selection_reason": "Product design decision.",
+    "flags": [
+      "POSSIBLE_PRIOR"
+    ],
+    "run_id": "e77f9c7f8bc9414caca6bd672c676cdb",
+    "peer_items": [
+      {
+        "item_key": "TS3006d#0",
+        "type": "actions",
+        "text": "PM will write the report of decisions made so far."
+      },
+      {
+        "item_key": "TS3006d#1",
+        "type": "problems",
+        "text": "There is confusion on how to switch from the volume control to the channel control; the control scheme is inconsistent (four arrows vs push-in vs scroll-wheel)."
+      },
+      {
+        "item_key": "TS3006d#2",
+        "type": "decisions",
+        "text": "There will be one scroll button."
+      },
+      {
+        "item_key": "TS3006d#3",
+        "type": "decisions",
+        "text": "The group will adopt a two-button remote design."
+      }
+    ],
+    "fields": {
+      "status": "adopted",
+      "prior_context_needed": true,
+      "related_items": [
+        {
+          "id": "TS3006b.sys.s.4",
+          "relation": "continues"
+        }
+      ],
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3006d.json",
+          "locator": "TS3006d.A.dialog-act.dharshi.346"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3006d.json",
+          "locator": "TS3006d.D.dialog-act.dharshi.450"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3006b.json",
+          "locator": "TS3006b.D.dialog-act.dharshi.75"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3006b.json",
+          "locator": "TS3006b.D.dialog-act.dharshi.76"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3006b.json",
+          "locator": "TS3006b.D.dialog-act.dharshi.77"
+        }
+      ]
+    },
+    "item_key": "TS3006d#4"
+  },
+  {
+    "type": "decisions",
+    "text": "Adopt hand dynamo as the power source.",
+    "evidence_da_ids": [
+      "TS3006d.D.dialog-act.dharshi.159",
+      "TS3006d.A.dialog-act.dharshi.179"
+    ],
+    "owner_ids": [],
+    "owner_cue": null,
+    "deadline_cue": null,
+    "owner_basis": "missing",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "status": "adopted",
+    "candidate_indexes": [
+      14
+    ],
+    "source_item_indexes": [
+      10
+    ],
+    "selection_priority": 3,
+    "selection_reason": "Power source decision.",
+    "flags": [
+      "POSSIBLE_PRIOR"
+    ],
+    "run_id": "e77f9c7f8bc9414caca6bd672c676cdb",
+    "peer_items": [
+      {
+        "item_key": "TS3006d#0",
+        "type": "actions",
+        "text": "PM will write the report of decisions made so far."
+      },
+      {
+        "item_key": "TS3006d#1",
+        "type": "problems",
+        "text": "There is confusion on how to switch from the volume control to the channel control; the control scheme is inconsistent (four arrows vs push-in vs scroll-wheel)."
+      },
+      {
+        "item_key": "TS3006d#2",
+        "type": "decisions",
+        "text": "There will be one scroll button."
+      },
+      {
+        "item_key": "TS3006d#3",
+        "type": "decisions",
+        "text": "The group will adopt a two-button remote design."
+      },
+      {
+        "item_key": "TS3006d#4",
+        "type": "decisions",
+        "text": "Make one large LCD screen (LCD screen) with casing."
+      }
+    ],
+    "fields": {
+      "status": "adopted",
+      "prior_context_needed": false,
+      "related_items": [],
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3006d.json",
+          "locator": "TS3006d.D.dialog-act.dharshi.159"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3006d.json",
+          "locator": "TS3006d.A.dialog-act.dharshi.179"
+        }
+      ]
+    },
+    "item_key": "TS3006d#5"
+  },
+  {
+    "type": "actions",
+    "text": "PM will save a copy.",
+    "evidence_da_ids": [
+      "TS3006d.A.dialog-act.dharshi.411"
+    ],
+    "owner_ids": [
+      "MTD021PM"
+    ],
+    "owner_cue": "Save copy.",
+    "deadline_cue": null,
+    "owner_basis": "explicit",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "status": "open",
+    "candidate_indexes": [
+      68
+    ],
+    "source_item_indexes": [
+      1
+    ],
+    "selection_priority": 2,
+    "selection_reason": "Preserves minutes.",
+    "flags": [
+      "POSSIBLE_PRIOR"
+    ],
+    "run_id": "e77f9c7f8bc9414caca6bd672c676cdb",
+    "peer_items": [
+      {
+        "item_key": "TS3006d#0",
+        "type": "actions",
+        "text": "PM will write the report of decisions made so far."
+      },
+      {
+        "item_key": "TS3006d#1",
+        "type": "problems",
+        "text": "There is confusion on how to switch from the volume control to the channel control; the control scheme is inconsistent (four arrows vs push-in vs scroll-wheel)."
+      },
+      {
+        "item_key": "TS3006d#2",
+        "type": "decisions",
+        "text": "There will be one scroll button."
+      },
+      {
+        "item_key": "TS3006d#3",
+        "type": "decisions",
+        "text": "The group will adopt a two-button remote design."
+      },
+      {
+        "item_key": "TS3006d#4",
+        "type": "decisions",
+        "text": "Make one large LCD screen (LCD screen) with casing."
+      },
+      {
+        "item_key": "TS3006d#5",
+        "type": "decisions",
+        "text": "Adopt hand dynamo as the power source."
+      }
+    ],
+    "fields": {
+      "status": "open",
+      "prior_context_needed": false,
+      "related_items": [],
+      "owner": [
+        "MTD021PM"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3006d.json",
+          "locator": "TS3006d.A.dialog-act.dharshi.411"
+        }
+      ]
+    },
+    "item_key": "TS3006d#6"
+  },
+  {
+    "type": "actions",
+    "text": "PM will obtain the chip before receiving the Excel sheet.",
+    "evidence_da_ids": [
+      "TS3006d.A.dialog-act.dharshi.354",
+      "TS3006d.D.dialog-act.dharshi.460",
+      "TS3006d.A.dialog-act.dharshi.355"
+    ],
+    "owner_ids": [
+      "MTD021PM"
+    ],
+    "owner_cue": "So I <disfmarker>",
+    "deadline_cue": null,
+    "owner_basis": "explicit",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "status": "open",
+    "restored": true,
+    "source_item_indexes": [
+      4
+    ],
+    "candidate_indexes": [],
+    "selection_priority": 2,
+    "selection_reason": "Sequencing of deliverables.",
+    "flags": [
+      "POSSIBLE_PRIOR"
+    ],
+    "run_id": "e77f9c7f8bc9414caca6bd672c676cdb",
+    "peer_items": [
+      {
+        "item_key": "TS3006d#0",
+        "type": "actions",
+        "text": "PM will write the report of decisions made so far."
+      },
+      {
+        "item_key": "TS3006d#1",
+        "type": "problems",
+        "text": "There is confusion on how to switch from the volume control to the channel control; the control scheme is inconsistent (four arrows vs push-in vs scroll-wheel)."
+      },
+      {
+        "item_key": "TS3006d#2",
+        "type": "decisions",
+        "text": "There will be one scroll button."
+      },
+      {
+        "item_key": "TS3006d#3",
+        "type": "decisions",
+        "text": "The group will adopt a two-button remote design."
+      },
+      {
+        "item_key": "TS3006d#4",
+        "type": "decisions",
+        "text": "Make one large LCD screen (LCD screen) with casing."
+      },
+      {
+        "item_key": "TS3006d#5",
+        "type": "decisions",
+        "text": "Adopt hand dynamo as the power source."
+      },
+      {
+        "item_key": "TS3006d#6",
+        "type": "actions",
+        "text": "PM will save a copy."
+      }
+    ],
+    "fields": {
+      "status": "open",
+      "prior_context_needed": false,
+      "related_items": [],
+      "owner": [
+        "MTD021PM"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3006d.json",
+          "locator": "TS3006d.A.dialog-act.dharshi.354"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3006d.json",
+          "locator": "TS3006d.D.dialog-act.dharshi.460"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3006d.json",
+          "locator": "TS3006d.D.dialog-act.dharshi.461"
+        }
+      ]
+    },
+    "item_key": "TS3006d#7"
+  },
+  {
+    "type": "actions",
+    "text": "ID(MTD022ID) will remove the messy item.",
+    "evidence_da_ids": [
+      "TS3006d.C.dialog-act.dharshi.362"
+    ],
+    "owner_ids": [
+      "MTD022ID"
+    ],
+    "owner_cue": "I will take this away 'cause it looks messy.",
+    "deadline_cue": null,
+    "owner_basis": "explicit",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "status": "open",
+    "restored": true,
+    "source_item_indexes": [
+      5
+    ],
+    "candidate_indexes": [],
+    "selection_priority": 2,
+    "selection_reason": "Action to tidy the UI.",
+    "flags": [
+      "POSSIBLE_PRIOR"
+    ],
+    "run_id": "e77f9c7f8bc9414caca6bd672c676cdb",
+    "peer_items": [
+      {
+        "item_key": "TS3006d#0",
+        "type": "actions",
+        "text": "PM will write the report of decisions made so far."
+      },
+      {
+        "item_key": "TS3006d#1",
+        "type": "problems",
+        "text": "There is confusion on how to switch from the volume control to the channel control; the control scheme is inconsistent (four arrows vs push-in vs scroll-wheel)."
+      },
+      {
+        "item_key": "TS3006d#2",
+        "type": "decisions",
+        "text": "There will be one scroll button."
+      },
+      {
+        "item_key": "TS3006d#3",
+        "type": "decisions",
+        "text": "The group will adopt a two-button remote design."
+      },
+      {
+        "item_key": "TS3006d#4",
+        "type": "decisions",
+        "text": "Make one large LCD screen (LCD screen) with casing."
+      },
+      {
+        "item_key": "TS3006d#5",
+        "type": "decisions",
+        "text": "Adopt hand dynamo as the power source."
+      },
+      {
+        "item_key": "TS3006d#6",
+        "type": "actions",
+        "text": "PM will save a copy."
+      },
+      {
+        "item_key": "TS3006d#7",
+        "type": "actions",
+        "text": "PM will obtain the chip before receiving the Excel sheet."
+      }
+    ],
+    "fields": {
+      "status": "open",
+      "prior_context_needed": false,
+      "related_items": [],
+      "owner": [
+        "MTD022ID"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3006d.json",
+          "locator": "TS3006d.C.dialog-act.dharshi.362"
+        }
+      ]
+    },
+    "item_key": "TS3006d#8"
+  },
+  {
+    "type": "actions",
+    "text": "Type in your report.",
+    "evidence_da_ids": [
+      "TS3006d.D.dialog-act.dharshi.511"
+    ],
+    "owner_ids": [
+      "MTD024ME"
+    ],
+    "owner_cue": "Type in your report.",
+    "deadline_cue": null,
+    "owner_basis": "explicit",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "status": "open",
+    "restored": true,
+    "source_item_indexes": [
+      6
+    ],
+    "candidate_indexes": [],
+    "selection_priority": 2,
+    "selection_reason": "Duplicate proposal not applied; preserve original for P2: Duplicate of C0: Type in your report.",
+    "flags": [
+      "POSSIBLE_PRIOR"
+    ],
+    "run_id": "e77f9c7f8bc9414caca6bd672c676cdb",
+    "peer_items": [
+      {
+        "item_key": "TS3006d#0",
+        "type": "actions",
+        "text": "PM will write the report of decisions made so far."
+      },
+      {
+        "item_key": "TS3006d#1",
+        "type": "problems",
+        "text": "There is confusion on how to switch from the volume control to the channel control; the control scheme is inconsistent (four arrows vs push-in vs scroll-wheel)."
+      },
+      {
+        "item_key": "TS3006d#2",
+        "type": "decisions",
+        "text": "There will be one scroll button."
+      },
+      {
+        "item_key": "TS3006d#3",
+        "type": "decisions",
+        "text": "The group will adopt a two-button remote design."
+      },
+      {
+        "item_key": "TS3006d#4",
+        "type": "decisions",
+        "text": "Make one large LCD screen (LCD screen) with casing."
+      },
+      {
+        "item_key": "TS3006d#5",
+        "type": "decisions",
+        "text": "Adopt hand dynamo as the power source."
+      },
+      {
+        "item_key": "TS3006d#6",
+        "type": "actions",
+        "text": "PM will save a copy."
+      },
+      {
+        "item_key": "TS3006d#7",
+        "type": "actions",
+        "text": "PM will obtain the chip before receiving the Excel sheet."
+      },
+      {
+        "item_key": "TS3006d#8",
+        "type": "actions",
+        "text": "ID(MTD022ID) will remove the messy item."
+      }
+    ],
+    "fields": {
+      "status": "open",
+      "prior_context_needed": false,
+      "related_items": [],
+      "owner": [
+        "MTD024ME"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3006d.json",
+          "locator": "TS3006d.D.dialog-act.dharshi.511"
+        }
+      ]
+    },
+    "item_key": "TS3006d#9"
+  }
+]

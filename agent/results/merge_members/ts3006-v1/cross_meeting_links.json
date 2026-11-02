@@ -1,0 +1,635 @@
+{
+  "gold_used": false,
+  "human_signoff": false,
+  "cases": [
+    {
+      "meeting_id": "TS3006c",
+      "item_key": "TS3006c#6",
+      "new_record": {
+        "id": "TS3006c.sys.s.6",
+        "text": "The target selling price is 25 Euro per piece.",
+        "type": "decisions",
+        "reference": [
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3006c.json",
+            "locator": "TS3006c.C.dialog-act.dharshi.104"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3006a.json",
+            "locator": "TS3006a.A.dialog-act.vkaraisk.130"
+          }
+        ],
+        "status": "adopted",
+        "prior_context_needed": true,
+        "related_items": [
+          {
+            "id": "TS3006a.sys.s.4",
+            "relation": "continues"
+          }
+        ]
+      },
+      "old_record": {
+        "id": "TS3006a.sys.s.4",
+        "text": "Selling price will be 25 Euros.",
+        "type": "decisions",
+        "reference": [
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3006a.json",
+            "locator": "TS3006a.A.dialog-act.vkaraisk.130"
+          }
+        ],
+        "status": "adopted",
+        "prior_context_needed": false,
+        "related_items": []
+      },
+      "witness": {
+        "prior_item_id": "TS3006a.sys.s.4",
+        "relation": "continues",
+        "state": "supported",
+        "changed_fields": [],
+        "reason": "Current dialogue confirms the same selling price as the prior decision.",
+        "before": {
+          "kind": "prior_item",
+          "id": "TS3006a.sys.s.4",
+          "meeting_id": "TS3006a",
+          "type": "decisions",
+          "text": "Selling price will be 25 Euros.",
+          "owner": null,
+          "owner_basis": null,
+          "deadline": null,
+          "deadline_basis": null,
+          "status": "adopted",
+          "evidence": [
+            "TS3006a.A.dialog-act.vkaraisk.130"
+          ],
+          "source_file": "TS3006a.json",
+          "source_sha256": "247e9402638914eea144ce25c8085e257c718d88d6ec283de8fd2f387aa990c9",
+          "review_state": "accepted",
+          "unresolved_fields": [],
+          "unreadable_reference_ids": [],
+          "selected_reference_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.130"
+          ],
+          "next_offset": null
+        },
+        "after": {
+          "item_key": "TS3006c#6",
+          "text": "The target selling price is 25 Euro per piece.",
+          "type": "decisions",
+          "status": "adopted",
+          "owner": null,
+          "deadline": null
+        },
+        "prior_quotes": [
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.130",
+            "quote": "Um we can sell them at twenty five Euros . Uh"
+          }
+        ],
+        "current_quotes": [
+          {
+            "da_id": "TS3006c.C.dialog-act.dharshi.104",
+            "quote": "So 'cause we need to sell it for twenty five Euro a piece ."
+          }
+        ]
+      },
+      "relation_check": {
+        "result": "pass",
+        "reason": "The current item repeats the same decision as the earlier TS3006a.sys.s.4: selling price 25 Euros. The current dialogue TS3006c.C.dialog-act.dharshi.104 confirms the same price, indicating continuation of the prior decision.",
+        "quotes": [
+          {
+            "da_id": "TS3006c.C.dialog-act.dharshi.104",
+            "quote": "So 'cause we need to sell it for twenty five Euro a piece ."
+          },
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.130",
+            "quote": "Um we can sell them at twenty five Euros . Uh"
+          }
+        ],
+        "links": [
+          {
+            "id": "TS3006a.sys.s.4",
+            "relation": "continues",
+            "changed_fields": [],
+            "reason": "Current dialogue confirms the same selling price as the prior decision.",
+            "prior_evidence_da_ids": [
+              "TS3006a.A.dialog-act.vkaraisk.130"
+            ],
+            "current_evidence_da_ids": [
+              "TS3006c.C.dialog-act.dharshi.104"
+            ]
+          }
+        ],
+        "documents": [],
+        "fields": [
+          "related_items"
+        ]
+      },
+      "actual_lookup_history": [
+        {
+          "item": "TS3006c#6",
+          "step": 2,
+          "flags": [
+            "POSSIBLE_PRIOR"
+          ],
+          "action": "get_prior_items",
+          "outcome": "lookup",
+          "decision": "retrieve",
+          "args": {
+            "query": "selling price",
+            "item_type": "decisions"
+          },
+          "tool_result": {
+            "results": [
+              {
+                "id": "TS3006a.sys.s.4",
+                "meeting_id": "TS3006a",
+                "type": "decisions",
+                "text": "Selling price will be 25 Euros.",
+                "owner": null,
+                "owner_basis": null,
+                "deadline": null,
+                "deadline_basis": null,
+                "status": "adopted",
+                "evidence": [
+                  "TS3006a.A.dialog-act.vkaraisk.130"
+                ],
+                "source_file": "TS3006a.json",
+                "source_sha256": "247e9402638914eea144ce25c8085e257c718d88d6ec283de8fd2f387aa990c9",
+                "review_state": "accepted",
+                "unresolved_fields": [],
+                "unreadable_reference_ids": [],
+                "score": 3.78
+              },
+              {
+                "id": "TS3006a.sys.s.6",
+                "meeting_id": "TS3006a",
+                "type": "decisions",
+                "text": "Production cost should be half of the selling price.",
+                "owner": null,
+                "owner_basis": null,
+                "deadline": null,
+                "deadline_basis": null,
+                "status": "adopted",
+                "evidence": [
+                  "TS3006a.A.dialog-act.vkaraisk.133"
+                ],
+                "source_file": "TS3006a.json",
+                "source_sha256": "247e9402638914eea144ce25c8085e257c718d88d6ec283de8fd2f387aa990c9",
+                "review_state": "accepted",
+                "unresolved_fields": [],
+                "unreadable_reference_ids": [],
+                "score": 3.28
+              }
+            ]
+          },
+          "new_info": true
+        },
+        {
+          "item": "TS3006c#6",
+          "step": 4,
+          "flags": [
+            "POSSIBLE_PRIOR"
+          ],
+          "action": "read_prior_item",
+          "outcome": "lookup",
+          "decision": "retrieve",
+          "args": {
+            "item_id": "TS3006a.sys.s.4"
+          },
+          "tool_result": {
+            "results": [
+              {
+                "kind": "prior_item",
+                "id": "TS3006a.sys.s.4",
+                "meeting_id": "TS3006a",
+                "type": "decisions",
+                "text": "Selling price will be 25 Euros.",
+                "owner": null,
+                "owner_basis": null,
+                "deadline": null,
+                "deadline_basis": null,
+                "status": "adopted",
+                "evidence": [
+                  "TS3006a.A.dialog-act.vkaraisk.130"
+                ],
+                "source_file": "TS3006a.json",
+                "source_sha256": "247e9402638914eea144ce25c8085e257c718d88d6ec283de8fd2f387aa990c9",
+                "review_state": "accepted",
+                "unresolved_fields": [],
+                "unreadable_reference_ids": [],
+                "selected_reference_ids": [
+                  "TS3006a.A.dialog-act.vkaraisk.130"
+                ],
+                "next_offset": null
+              },
+              {
+                "kind": "dialogue",
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.129",
+                "meeting_id": "TS3006a",
+                "text": "we have a financial aspect to this project . <vocalsound>",
+                "participant": "MTD021PM",
+                "role": "PM",
+                "supports_item_id": "TS3006a.sys.s.4",
+                "is_reference": false
+              },
+              {
+                "kind": "dialogue",
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.130",
+                "meeting_id": "TS3006a",
+                "text": "Um we can sell them at twenty five Euros . Uh",
+                "participant": "MTD021PM",
+                "role": "PM",
+                "supports_item_id": "TS3006a.sys.s.4",
+                "is_reference": true
+              },
+              {
+                "kind": "dialogue",
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.131",
+                "meeting_id": "TS3006a",
+                "text": "the aim is to reach <disfmarker> uh uh to sell as much as fifty million Euros .",
+                "participant": "MTD021PM",
+                "role": "PM",
+                "supports_item_id": "TS3006a.sys.s.4",
+                "is_reference": false
+              }
+            ]
+          },
+          "new_info": true
+        }
+      ],
+      "semantic_review": "Not independently human-confirmed; source checks passed, relation label is model judgment."
+    },
+    {
+      "meeting_id": "TS3006d",
+      "item_key": "TS3006d#4",
+      "new_record": {
+        "id": "TS3006d.sys.s.4",
+        "text": "Make one large LCD screen (LCD screen) with casing.",
+        "type": "decisions",
+        "reference": [
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3006d.json",
+            "locator": "TS3006d.A.dialog-act.dharshi.346"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3006d.json",
+            "locator": "TS3006d.D.dialog-act.dharshi.450"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3006b.json",
+            "locator": "TS3006b.D.dialog-act.dharshi.75"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3006b.json",
+            "locator": "TS3006b.D.dialog-act.dharshi.76"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3006b.json",
+            "locator": "TS3006b.D.dialog-act.dharshi.77"
+          }
+        ],
+        "status": "adopted",
+        "prior_context_needed": true,
+        "related_items": [
+          {
+            "id": "TS3006b.sys.s.4",
+            "relation": "continues"
+          }
+        ]
+      },
+      "old_record": {
+        "id": "TS3006b.sys.s.4",
+        "text": "The new product will include an LCD screen and speech recognition.",
+        "type": "decisions",
+        "reference": [
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3006b.json",
+            "locator": "TS3006b.D.dialog-act.dharshi.76"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3006b.json",
+            "locator": "TS3006b.D.dialog-act.dharshi.75"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3006b.json",
+            "locator": "TS3006b.D.dialog-act.dharshi.77"
+          }
+        ],
+        "status": "adopted",
+        "prior_context_needed": false,
+        "related_items": []
+      },
+      "witness": {
+        "prior_item_id": "TS3006b.sys.s.4",
+        "relation": "continues",
+        "state": "supported",
+        "changed_fields": [],
+        "reason": "Current item adds more detail (single large LCD screen with casing) to the LCD-screen feature already adopted in TS3006b.sys.s.4.",
+        "before": {
+          "kind": "prior_item",
+          "id": "TS3006b.sys.s.4",
+          "meeting_id": "TS3006b",
+          "type": "decisions",
+          "text": "The new product will include an LCD screen and speech recognition.",
+          "owner": null,
+          "owner_basis": null,
+          "deadline": null,
+          "deadline_basis": null,
+          "status": "adopted",
+          "evidence": [
+            "TS3006b.D.dialog-act.dharshi.76",
+            "TS3006b.D.dialog-act.dharshi.75",
+            "TS3006b.D.dialog-act.dharshi.77"
+          ],
+          "source_file": "TS3006b.json",
+          "source_sha256": "dbd003d29e7a417be0d2554768ecf2395d0858c3d7a2625e9e97044fe3fa7a06",
+          "review_state": "accepted",
+          "unresolved_fields": [],
+          "unreadable_reference_ids": [],
+          "selected_reference_ids": [
+            "TS3006b.D.dialog-act.dharshi.76",
+            "TS3006b.D.dialog-act.dharshi.75",
+            "TS3006b.D.dialog-act.dharshi.77"
+          ],
+          "next_offset": null
+        },
+        "after": {
+          "item_key": "TS3006d#4",
+          "text": "Make one large LCD screen (LCD screen) with casing.",
+          "type": "decisions",
+          "status": "adopted",
+          "owner": null,
+          "deadline": null
+        },
+        "prior_quotes": [
+          {
+            "da_id": "TS3006b.D.dialog-act.dharshi.75",
+            "quote": "Um there was some research on new features in a remote control ."
+          },
+          {
+            "da_id": "TS3006b.D.dialog-act.dharshi.76",
+            "quote": "Uh about an L_C_D_ screen uh and speech recognition ."
+          },
+          {
+            "da_id": "TS3006b.D.dialog-act.dharshi.77",
+            "quote": "Well we got an update for the for the audience . Or the the the targeted group ."
+          }
+        ],
+        "current_quotes": [
+          {
+            "da_id": "TS3006d.A.dialog-act.dharshi.346",
+            "quote": "<vocalsound> So you can just make one big L_C_D_ screen . <vocalsound>"
+          },
+          {
+            "da_id": "TS3006d.D.dialog-act.dharshi.450",
+            "quote": "<vocalsound> With some casing around it , yeah ."
+          }
+        ]
+      },
+      "relation_check": {
+        "result": "pass",
+        "reason": "The current item mentions 'one large LCD screen' with casing, which directly continues the LCD screen feature adopted in TS3006b.sys.s.4 decision that included an LCD screen (and speech recognition). The current item refines the existing LCD-screen requirement without retracting it.",
+        "quotes": [
+          {
+            "da_id": "TS3006d.A.dialog-act.dharshi.346",
+            "quote": "<vocalsound> So you can just make one big L_C_D_ screen . <vocalsound>"
+          },
+          {
+            "da_id": "TS3006d.D.dialog-act.dharshi.450",
+            "quote": "<vocalsound> With some casing around it , yeah ."
+          },
+          {
+            "da_id": "TS3006b.D.dialog-act.dharshi.75",
+            "quote": "Um there was some research on new features in a remote control ."
+          },
+          {
+            "da_id": "TS3006b.D.dialog-act.dharshi.76",
+            "quote": "Uh about an L_C_D_ screen uh and speech recognition ."
+          },
+          {
+            "da_id": "TS3006b.D.dialog-act.dharshi.77",
+            "quote": "Well we got an update for the for the audience . Or the the the targeted group ."
+          }
+        ],
+        "links": [
+          {
+            "id": "TS3006b.sys.s.4",
+            "relation": "continues",
+            "changed_fields": [],
+            "reason": "Current item adds more detail (single large LCD screen with casing) to the LCD-screen feature already adopted in TS3006b.sys.s.4.",
+            "prior_evidence_da_ids": [
+              "TS3006b.D.dialog-act.dharshi.75",
+              "TS3006b.D.dialog-act.dharshi.76",
+              "TS3006b.D.dialog-act.dharshi.77"
+            ],
+            "current_evidence_da_ids": [
+              "TS3006d.A.dialog-act.dharshi.346",
+              "TS3006d.D.dialog-act.dharshi.450"
+            ]
+          }
+        ],
+        "documents": [],
+        "fields": [
+          "related_items"
+        ]
+      },
+      "actual_lookup_history": [
+        {
+          "item": "TS3006d#4",
+          "step": 2,
+          "flags": [
+            "POSSIBLE_PRIOR"
+          ],
+          "action": "get_prior_items",
+          "outcome": "lookup",
+          "decision": "retrieve",
+          "args": {
+            "query": "LCD screen decision",
+            "item_type": "decisions"
+          },
+          "tool_result": {
+            "results": [
+              {
+                "id": "TS3006b.sys.s.4",
+                "meeting_id": "TS3006b",
+                "type": "decisions",
+                "text": "The new product will include an LCD screen and speech recognition.",
+                "owner": null,
+                "owner_basis": null,
+                "deadline": null,
+                "deadline_basis": null,
+                "status": "adopted",
+                "evidence": [
+                  "TS3006b.D.dialog-act.dharshi.76",
+                  "TS3006b.D.dialog-act.dharshi.75",
+                  "TS3006b.D.dialog-act.dharshi.77"
+                ],
+                "source_file": "TS3006b.json",
+                "source_sha256": "dbd003d29e7a417be0d2554768ecf2395d0858c3d7a2625e9e97044fe3fa7a06",
+                "review_state": "accepted",
+                "unresolved_fields": [],
+                "unreadable_reference_ids": [],
+                "score": 6.07
+              },
+              {
+                "id": "TS3006b.sys.s.12",
+                "meeting_id": "TS3006b",
+                "type": "decisions",
+                "text": "There must be a screen on the remote.",
+                "owner": null,
+                "owner_basis": null,
+                "deadline": null,
+                "deadline_basis": null,
+                "status": "adopted",
+                "evidence": [
+                  "TS3006b.D.dialog-act.dharshi.200",
+                  "TS3006b.A.dialog-act.dharshi.201",
+                  "TS3006b.D.dialog-act.dharshi.241"
+                ],
+                "source_file": "TS3006b.json",
+                "source_sha256": "dbd003d29e7a417be0d2554768ecf2395d0858c3d7a2625e9e97044fe3fa7a06",
+                "review_state": "pending",
+                "unresolved_fields": [
+                  "related_items"
+                ],
+                "unreadable_reference_ids": [],
+                "score": 2.11
+              },
+              {
+                "id": "TS3006b.sys.s.11",
+                "meeting_id": "TS3006b",
+                "type": "decisions",
+                "text": "The menu will be grouped into two groups: display and basic functions.",
+                "owner": null,
+                "owner_basis": null,
+                "deadline": null,
+                "deadline_basis": null,
+                "status": "adopted",
+                "evidence": [
+                  "TS3006b.B.dialog-act.dharshi.168",
+                  "TS3006b.B.dialog-act.dharshi.170"
+                ],
+                "source_file": "TS3006b.json",
+                "source_sha256": "dbd003d29e7a417be0d2554768ecf2395d0858c3d7a2625e9e97044fe3fa7a06",
+                "review_state": "accepted",
+                "unresolved_fields": [],
+                "unreadable_reference_ids": [],
+                "score": 1.45
+              }
+            ]
+          },
+          "new_info": true
+        },
+        {
+          "item": "TS3006d#4",
+          "step": 3,
+          "flags": [
+            "POSSIBLE_PRIOR"
+          ],
+          "action": "read_prior_item",
+          "outcome": "lookup",
+          "decision": "retrieve",
+          "args": {
+            "item_id": "TS3006b.sys.s.4"
+          },
+          "tool_result": {
+            "results": [
+              {
+                "kind": "prior_item",
+                "id": "TS3006b.sys.s.4",
+                "meeting_id": "TS3006b",
+                "type": "decisions",
+                "text": "The new product will include an LCD screen and speech recognition.",
+                "owner": null,
+                "owner_basis": null,
+                "deadline": null,
+                "deadline_basis": null,
+                "status": "adopted",
+                "evidence": [
+                  "TS3006b.D.dialog-act.dharshi.76",
+                  "TS3006b.D.dialog-act.dharshi.75",
+                  "TS3006b.D.dialog-act.dharshi.77"
+                ],
+                "source_file": "TS3006b.json",
+                "source_sha256": "dbd003d29e7a417be0d2554768ecf2395d0858c3d7a2625e9e97044fe3fa7a06",
+                "review_state": "accepted",
+                "unresolved_fields": [],
+                "unreadable_reference_ids": [],
+                "selected_reference_ids": [
+                  "TS3006b.D.dialog-act.dharshi.76",
+                  "TS3006b.D.dialog-act.dharshi.75",
+                  "TS3006b.D.dialog-act.dharshi.77"
+                ],
+                "next_offset": null
+              },
+              {
+                "kind": "dialogue",
+                "da_id": "TS3006b.D.dialog-act.dharshi.75",
+                "meeting_id": "TS3006b",
+                "text": "Um there was some research on new features in a remote control .",
+                "participant": "MTD024ME",
+                "role": "ME",
+                "supports_item_id": "TS3006b.sys.s.4",
+                "is_reference": true
+              },
+              {
+                "kind": "dialogue",
+                "da_id": "TS3006b.D.dialog-act.dharshi.76",
+                "meeting_id": "TS3006b",
+                "text": "Uh about an L_C_D_ screen uh and speech recognition .",
+                "participant": "MTD024ME",
+                "role": "ME",
+                "supports_item_id": "TS3006b.sys.s.4",
+                "is_reference": true
+              },
+              {
+                "kind": "dialogue",
+                "da_id": "TS3006b.D.dialog-act.dharshi.77",
+                "meeting_id": "TS3006b",
+                "text": "Well we got an update for the for the audience . Or the the the targeted group .",
+                "participant": "MTD024ME",
+                "role": "ME",
+                "supports_item_id": "TS3006b.sys.s.4",
+                "is_reference": true
+              },
+              {
+                "kind": "dialogue",
+                "da_id": "TS3006b.C.dialog-act.dharshi.47",
+                "meeting_id": "TS3006b",
+                "text": "Alright .",
+                "participant": "MTD022ID",
+                "role": "ID",
+                "supports_item_id": "TS3006b.sys.s.4",
+                "is_reference": false
+              },
+              {
+                "kind": "dialogue",
+                "da_id": "TS3006b.D.dialog-act.dharshi.78",
+                "meeting_id": "TS3006b",
+                "text": "So it's above forty I guess .",
+                "participant": "MTD024ME",
+                "role": "ME",
+                "supports_item_id": "TS3006b.sys.s.4",
+                "is_reference": false
+              }
+            ]
+          },
+          "new_info": true
+        }
+      ],
+      "semantic_review": "Not independently human-confirmed; source checks passed, relation label is model judgment."
+    }
+  ]
+}

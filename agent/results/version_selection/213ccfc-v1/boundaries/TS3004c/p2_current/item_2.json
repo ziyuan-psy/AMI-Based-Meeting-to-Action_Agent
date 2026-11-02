@@ -1,0 +1,1604 @@
+{
+  "item_key": "TS3004c#2",
+  "record_id": null,
+  "item_type": "problems",
+  "item_text": "The remote will not wake up; the power light doesn't work and it appears it may have been turned off.",
+  "state": "pending",
+  "recordable": true,
+  "fields": {
+    "status": "unknown",
+    "prior_context_needed": false,
+    "related_items": [],
+    "reference": [
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004c.json",
+        "locator": "TS3004c.B.dialog-act.vkaraisk.2"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004c.json",
+        "locator": "TS3004c.B.dialog-act.vkaraisk.11"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004c.json",
+        "locator": "TS3004c.D.dialog-act.vkaraisk.5"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004c.json",
+        "locator": "TS3004c.D.dialog-act.vkaraisk.6"
+      }
+    ]
+  },
+  "draft_fields": {
+    "status": "open",
+    "related_items": [],
+    "prior_context_needed": false,
+    "used_participant_lookup": false,
+    "evidence_da_ids": [
+      "TS3004c.B.dialog-act.vkaraisk.2",
+      "TS3004c.B.dialog-act.vkaraisk.11",
+      "TS3004c.D.dialog-act.vkaraisk.5",
+      "TS3004c.D.dialog-act.vkaraisk.6"
+    ],
+    "owner": null,
+    "owner_basis": "missing",
+    "deadline": null,
+    "deadline_basis": "missing"
+  },
+  "checks": {
+    "statement": {
+      "result": "pass",
+      "reason": "The dialogue establishes a problem: remote will not wake up; power light not working; ME suggests it may have been turned off, which could explain symptoms. Evidence supports existence of the problem.",
+      "quotes": [
+        {
+          "da_id": "TS3004c.B.dialog-act.vkaraisk.2",
+          "quote": "It won't wake up ."
+        },
+        {
+          "da_id": "TS3004c.B.dialog-act.vkaraisk.11",
+          "quote": "Why won't it wake up ?"
+        },
+        {
+          "da_id": "TS3004c.D.dialog-act.vkaraisk.5",
+          "quote": "The power light doesn't work ."
+        },
+        {
+          "da_id": "TS3004c.D.dialog-act.vkaraisk.6",
+          "quote": "You turned it off ."
+        }
+      ],
+      "fields": [
+        "statement"
+      ]
+    },
+    "status": {
+      "result": "uncertain",
+      "reason": "No explicit resolution; status remains open.",
+      "quotes": [
+        {
+          "da_id": "TS3004c.B.dialog-act.vkaraisk.2",
+          "quote": "It won't wake up ."
+        },
+        {
+          "da_id": "TS3004c.B.dialog-act.vkaraisk.11",
+          "quote": "Why won't it wake up ?"
+        },
+        {
+          "da_id": "TS3004c.D.dialog-act.vkaraisk.5",
+          "quote": "The power light doesn't work ."
+        },
+        {
+          "da_id": "TS3004c.D.dialog-act.vkaraisk.6",
+          "quote": "You turned it off ."
+        }
+      ],
+      "fields": [
+        "status"
+      ]
+    },
+    "conflict": {
+      "result": "pass",
+      "reason": "No contradiction between UI and ME statements; likely explanation that it was turned off.",
+      "quotes": [
+        {
+          "da_id": "TS3004c.B.dialog-act.vkaraisk.2",
+          "quote": "It won't wake up ."
+        },
+        {
+          "da_id": "TS3004c.D.dialog-act.vkaraisk.5",
+          "quote": "The power light doesn't work ."
+        },
+        {
+          "da_id": "TS3004c.D.dialog-act.vkaraisk.6",
+          "quote": "You turned it off ."
+        }
+      ],
+      "fields": [
+        "statement"
+      ]
+    },
+    "relation": {
+      "result": "not_applicable",
+      "reason": "No related_items to check against; standalone problem.",
+      "quotes": [],
+      "fields": [
+        "related_items"
+      ]
+    },
+    "owner": {
+      "result": "not_applicable",
+      "reason": "field_not_applicable",
+      "quotes": [],
+      "fields": [
+        "owner"
+      ]
+    },
+    "deadline": {
+      "result": "not_applicable",
+      "reason": "field_not_applicable",
+      "quotes": [],
+      "fields": [
+        "deadline"
+      ]
+    }
+  },
+  "unresolved_fields": [
+    "status"
+  ],
+  "observed_evidence_da_ids": [
+    "TS3004c.B.dialog-act.vkaraisk.2",
+    "TS3004c.B.dialog-act.vkaraisk.11",
+    "TS3004c.D.dialog-act.vkaraisk.5",
+    "TS3004c.D.dialog-act.vkaraisk.6",
+    "TS3004c.B.dialog-act.vkaraisk.1",
+    "TS3004c.B.dialog-act.vkaraisk.3",
+    "TS3004c.A.dialog-act.vkaraisk.1",
+    "TS3004c.A.dialog-act.vkaraisk.2",
+    "TS3004c.B.dialog-act.vkaraisk.12",
+    "TS3004c.B.dialog-act.vkaraisk.13",
+    "TS3004c.D.dialog-act.vkaraisk.1",
+    "TS3004c.B.dialog-act.vkaraisk.4",
+    "TS3004c.B.dialog-act.vkaraisk.5",
+    "TS3004c.D.dialog-act.vkaraisk.2",
+    "TS3004c.B.dialog-act.vkaraisk.6",
+    "TS3004c.B.dialog-act.vkaraisk.7",
+    "TS3004c.B.dialog-act.vkaraisk.8",
+    "TS3004c.B.dialog-act.vkaraisk.9",
+    "TS3004c.D.dialog-act.vkaraisk.3",
+    "TS3004c.B.dialog-act.vkaraisk.10",
+    "TS3004c.D.dialog-act.vkaraisk.4",
+    "TS3004c.B.dialog-act.vkaraisk.14",
+    "TS3004c.B.dialog-act.vkaraisk.15",
+    "TS3004c.C.dialog-act.vkaraisk.1",
+    "TS3004c.A.dialog-act.vkaraisk.3",
+    "TS3004c.B.dialog-act.vkaraisk.16",
+    "TS3004c.C.dialog-act.vkaraisk.2",
+    "TS3004c.C.dialog-act.vkaraisk.3",
+    "TS3004c.A.dialog-act.vkaraisk.4",
+    "TS3004c.A.dialog-act.vkaraisk.5",
+    "TS3004c.D.dialog-act.vkaraisk.7",
+    "TS3004c.C.dialog-act.vkaraisk.4",
+    "TS3004c.B.dialog-act.vkaraisk.17",
+    "TS3004c.B.dialog-act.vkaraisk.18"
+  ],
+  "initial_context": {
+    "item": {
+      "type": "problems",
+      "text": "The remote will not wake up; the power light doesn't work and it appears it may have been turned off.",
+      "flags": []
+    },
+    "current_meeting": "TS3004c",
+    "earlier_meetings": [
+      "TS3004a",
+      "TS3004b"
+    ],
+    "roster": [
+      {
+        "speaker": "A",
+        "participant_id": "MTD013PM",
+        "role": "PM"
+      },
+      {
+        "speaker": "B",
+        "participant_id": "MTD015UID",
+        "role": "UI"
+      },
+      {
+        "speaker": "C",
+        "participant_id": "MTD014ID",
+        "role": "ID"
+      },
+      {
+        "speaker": "D",
+        "participant_id": "MTD016ME",
+        "role": "ME"
+      }
+    ],
+    "observed_dialogue": [
+      {
+        "da_id": "TS3004c.B.dialog-act.vkaraisk.2",
+        "meeting_id": "TS3004c",
+        "text": "It won't wake up .",
+        "participant": "MTD015UID",
+        "role": "UI"
+      },
+      {
+        "da_id": "TS3004c.B.dialog-act.vkaraisk.11",
+        "meeting_id": "TS3004c",
+        "text": "Why won't it wake up ?",
+        "participant": "MTD015UID",
+        "role": "UI"
+      },
+      {
+        "da_id": "TS3004c.D.dialog-act.vkaraisk.5",
+        "meeting_id": "TS3004c",
+        "text": "The power light doesn't work .",
+        "participant": "MTD016ME",
+        "role": "ME"
+      },
+      {
+        "da_id": "TS3004c.D.dialog-act.vkaraisk.6",
+        "meeting_id": "TS3004c",
+        "text": "You turned it off .",
+        "participant": "MTD016ME",
+        "role": "ME"
+      },
+      {
+        "da_id": "TS3004c.B.dialog-act.vkaraisk.1",
+        "participant": "MTD015UID",
+        "role": "UI",
+        "text": "It's <disfmarker>"
+      },
+      {
+        "da_id": "TS3004c.B.dialog-act.vkaraisk.3",
+        "participant": "MTD015UID",
+        "role": "UI",
+        "text": "Yeah ."
+      },
+      {
+        "da_id": "TS3004c.A.dialog-act.vkaraisk.1",
+        "participant": "MTD013PM",
+        "role": "PM",
+        "text": "Hello ."
+      },
+      {
+        "da_id": "TS3004c.A.dialog-act.vkaraisk.2",
+        "participant": "MTD013PM",
+        "role": "PM",
+        "text": "Oop ."
+      },
+      {
+        "da_id": "TS3004c.B.dialog-act.vkaraisk.12",
+        "participant": "MTD015UID",
+        "role": "UI",
+        "text": "Is it on ?"
+      },
+      {
+        "da_id": "TS3004c.B.dialog-act.vkaraisk.13",
+        "participant": "MTD015UID",
+        "role": "UI",
+        "text": "But how ?"
+      }
+    ],
+    "peer_items": [
+      {
+        "item_key": "TS3004c#0",
+        "type": "actions",
+        "text": "The PM will supply five different front designs in a box."
+      },
+      {
+        "item_key": "TS3004c#1",
+        "type": "decisions",
+        "text": "The remote case should be hard plastic and transparent to enable backlighting."
+      }
+    ],
+    "item_type_contract": "This is a Problem, not a task or decision. Verify that the stated obstacle/concern and its impact were actually raised. It need not have an owner, deadline, accepted remedy or resolution. A supported information gap can remain open. Assess end status separately; uncertainty about a cause or remedy is not absence of evidence that the concern exists. Do not infer project-document content or cite a passage that was not delivered.",
+    "provisional_values": {
+      "owner": null,
+      "owner_basis": "missing",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "status": "open",
+      "related_items": []
+    },
+    "candidate_evidence_da_ids": [
+      "TS3004c.B.dialog-act.vkaraisk.2",
+      "TS3004c.B.dialog-act.vkaraisk.11",
+      "TS3004c.D.dialog-act.vkaraisk.5",
+      "TS3004c.D.dialog-act.vkaraisk.6"
+    ]
+  },
+  "observed_documents": [],
+  "document_evidence": [],
+  "relation_evidence": [],
+  "history": [
+    {
+      "item": "TS3004c#2",
+      "step": 1,
+      "flags": [],
+      "action": "assess_item",
+      "outcome": "invalid_action",
+      "error": "Correct these argument fields: status_check/result: 'unknown' is not one of ['pass', 'fail', 'uncertain']; : Additional properties are not allowed ('documentation_context' was unexpected) Tool assess_item accepts root keys: status, related_items, statement, status_check, conflict_check, relation_check, next_action. Check keys: status_check={result, reason, evidence_da_ids, documents}. Resubmit the complete advertised object. Select only delivered supporting dialogue IDs; if support is unavailable use uncertain with an explanation, never invent an ID or mark pass with no evidence. Documents belong inside the check they inform.",
+      "raw_tool_input": {
+        "status": "open",
+        "related_items": [],
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue establishes a problem: remote will not wake up; power light not working; one speaker claims you turned it off. This matches the described obstacle: remote not waking and unclear state of power. The evidence includes three da_ids supporting existence of the problem.",
+          "evidence_da_ids": [
+            "TS3004c.B.dialog-act.vkaraisk.2",
+            "TS3004c.D.dialog-act.vkaraisk.5",
+            "TS3004c.D.dialog-act.vkaraisk.6"
+          ]
+        },
+        "status_check": {
+          "result": "unknown",
+          "reason": "No separate status resolution in the current dialogue beyond open; no evidence of resolution.",
+          "evidence_da_ids": [
+            "TS3004c.B.dialog-act.vkaraisk.2",
+            "TS3004c.D.dialog-act.vkaraisk.5",
+            "TS3004c.D.dialog-act.vkaraisk.6"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "The statements align: UI report of wake issue and ME comment about power light; ME says turned off, which could explain lack of wake. No contradiction.",
+          "evidence_da_ids": [
+            "TS3004c.B.dialog-act.vkaraisk.2",
+            "TS3004c.D.dialog-act.vkaraisk.5",
+            "TS3004c.D.dialog-act.vkaraisk.6"
+          ],
+          "affected_fields": [
+            "statement"
+          ]
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No related_items to check against; this is a standalone problem without prior record relation.",
+          "evidence_da_ids": []
+        },
+        "documentation_context": {
+          "result": "not_applicable"
+        },
+        "next_action": "retrieve"
+      }
+    },
+    {
+      "item": "TS3004c#2",
+      "step": 2,
+      "flags": [],
+      "action": "assess_item",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue establishes a problem: remote will not wake up; power light not working; one speaker suggests the device was turned off, which could explain both symptoms. Evidence supports existence of the problem.",
+          "quotes": [
+            {
+              "da_id": "TS3004c.B.dialog-act.vkaraisk.2",
+              "quote": "It won't wake up ."
+            },
+            {
+              "da_id": "TS3004c.D.dialog-act.vkaraisk.5",
+              "quote": "The power light doesn't work ."
+            },
+            {
+              "da_id": "TS3004c.D.dialog-act.vkaraisk.6",
+              "quote": "You turned it off ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "status": {
+          "result": "uncertain",
+          "reason": "No explicit resolution in current dialogue beyond 'open'; the problem is acknowledged but not resolved.",
+          "quotes": [
+            {
+              "da_id": "TS3004c.B.dialog-act.vkaraisk.2",
+              "quote": "It won't wake up ."
+            },
+            {
+              "da_id": "TS3004c.D.dialog-act.vkaraisk.5",
+              "quote": "The power light doesn't work ."
+            },
+            {
+              "da_id": "TS3004c.D.dialog-act.vkaraisk.6",
+              "quote": "You turned it off ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "UI reports wake issue and ME notes power light issue; ME says device was turned off, which could explain the symptoms; no contradiction.",
+          "quotes": [
+            {
+              "da_id": "TS3004c.B.dialog-act.vkaraisk.2",
+              "quote": "It won't wake up ."
+            },
+            {
+              "da_id": "TS3004c.D.dialog-act.vkaraisk.5",
+              "quote": "The power light doesn't work ."
+            },
+            {
+              "da_id": "TS3004c.D.dialog-act.vkaraisk.6",
+              "quote": "You turned it off ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No related_items to check against; standalone problem without prior record relation.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        },
+        "owner": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        }
+      },
+      "decision": "retrieve",
+      "reason": "unresolved_checks",
+      "assessed_text": "The remote will not wake up; the power light doesn't work and it appears it may have been turned off.",
+      "requested_action": "retrieve",
+      "proposed_fields": {
+        "status": "open",
+        "related_items": [],
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "TS3004c.B.dialog-act.vkaraisk.2",
+          "TS3004c.D.dialog-act.vkaraisk.5",
+          "TS3004c.D.dialog-act.vkaraisk.6"
+        ],
+        "owner": null,
+        "owner_basis": "missing",
+        "deadline": null,
+        "deadline_basis": "missing"
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue establishes a problem: remote will not wake up; power light not working; one speaker suggests the device was turned off, which could explain both symptoms. Evidence supports existence of the problem.",
+          "quotes": [
+            "TS3004c.B.dialog-act.vkaraisk.2",
+            "TS3004c.D.dialog-act.vkaraisk.5",
+            "TS3004c.D.dialog-act.vkaraisk.6"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "status": {
+          "result": "uncertain",
+          "reason": "No explicit resolution in current dialogue beyond 'open'; the problem is acknowledged but not resolved.",
+          "quotes": [
+            "TS3004c.B.dialog-act.vkaraisk.2",
+            "TS3004c.D.dialog-act.vkaraisk.5",
+            "TS3004c.D.dialog-act.vkaraisk.6"
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "UI reports wake issue and ME notes power light issue; ME says device was turned off, which could explain the symptoms; no contradiction.",
+          "quotes": [
+            "TS3004c.B.dialog-act.vkaraisk.2",
+            "TS3004c.D.dialog-act.vkaraisk.5",
+            "TS3004c.D.dialog-act.vkaraisk.6"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No related_items to check against; standalone problem without prior record relation.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "status": "open",
+        "related_items": [],
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue establishes a problem: remote will not wake up; power light not working; one speaker suggests the device was turned off, which could explain both symptoms. Evidence supports existence of the problem.",
+          "evidence_da_ids": [
+            "TS3004c.B.dialog-act.vkaraisk.2",
+            "TS3004c.D.dialog-act.vkaraisk.5",
+            "TS3004c.D.dialog-act.vkaraisk.6"
+          ]
+        },
+        "status_check": {
+          "result": "uncertain",
+          "reason": "No explicit resolution in current dialogue beyond 'open'; the problem is acknowledged but not resolved.",
+          "evidence_da_ids": [
+            "TS3004c.B.dialog-act.vkaraisk.2",
+            "TS3004c.D.dialog-act.vkaraisk.5",
+            "TS3004c.D.dialog-act.vkaraisk.6"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "UI reports wake issue and ME notes power light issue; ME says device was turned off, which could explain the symptoms; no contradiction.",
+          "evidence_da_ids": [
+            "TS3004c.B.dialog-act.vkaraisk.2",
+            "TS3004c.D.dialog-act.vkaraisk.5",
+            "TS3004c.D.dialog-act.vkaraisk.6"
+          ],
+          "affected_fields": [
+            "statement"
+          ]
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No related_items to check against; standalone problem without prior record relation.",
+          "evidence_da_ids": []
+        },
+        "next_action": "retrieve"
+      },
+      "evidence_bindings": {
+        "statement": [
+          "TS3004c.B.dialog-act.vkaraisk.2",
+          "TS3004c.D.dialog-act.vkaraisk.5",
+          "TS3004c.D.dialog-act.vkaraisk.6"
+        ],
+        "status": [
+          "TS3004c.B.dialog-act.vkaraisk.2",
+          "TS3004c.D.dialog-act.vkaraisk.5",
+          "TS3004c.D.dialog-act.vkaraisk.6"
+        ],
+        "conflict": [
+          "TS3004c.B.dialog-act.vkaraisk.2",
+          "TS3004c.D.dialog-act.vkaraisk.5",
+          "TS3004c.D.dialog-act.vkaraisk.6"
+        ]
+      },
+      "raw_tool_input": {
+        "status": "open",
+        "related_items": [],
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue establishes a problem: remote will not wake up; power light not working; one speaker suggests the device was turned off, which could explain both symptoms. Evidence supports existence of the problem.",
+          "evidence_da_ids": [
+            "TS3004c.B.dialog-act.vkaraisk.2",
+            "TS3004c.D.dialog-act.vkaraisk.5",
+            "TS3004c.D.dialog-act.vkaraisk.6"
+          ]
+        },
+        "status_check": {
+          "result": "uncertain",
+          "reason": "No explicit resolution in current dialogue beyond 'open'; the problem is acknowledged but not resolved.",
+          "evidence_da_ids": [
+            "TS3004c.B.dialog-act.vkaraisk.2",
+            "TS3004c.D.dialog-act.vkaraisk.5",
+            "TS3004c.D.dialog-act.vkaraisk.6"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "UI reports wake issue and ME notes power light issue; ME says device was turned off, which could explain the symptoms; no contradiction.",
+          "evidence_da_ids": [
+            "TS3004c.B.dialog-act.vkaraisk.2",
+            "TS3004c.D.dialog-act.vkaraisk.5",
+            "TS3004c.D.dialog-act.vkaraisk.6"
+          ],
+          "affected_fields": [
+            "statement"
+          ]
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No related_items to check against; standalone problem without prior record relation.",
+          "evidence_da_ids": []
+        },
+        "next_action": "retrieve"
+      },
+      "protocol_normalizations": [],
+      "unresolved_before": [
+        "statement",
+        "status"
+      ],
+      "unresolved_after": [
+        "status"
+      ],
+      "semantic_stalls": 0,
+      "validation_codes": {}
+    },
+    {
+      "item": "TS3004c#2",
+      "step": 3,
+      "flags": [],
+      "action": "read_dialogue",
+      "outcome": "lookup",
+      "decision": "retrieve",
+      "args": {
+        "meeting_id": "TS3004c",
+        "da_id": "TS3004c.B.dialog-act.vkaraisk.2",
+        "window": 15
+      },
+      "tool_result": {
+        "results": [
+          {
+            "da_id": "TS3004c.D.dialog-act.vkaraisk.1",
+            "participant": "MTD016ME",
+            "role": "ME",
+            "text": "Bonjour ."
+          },
+          {
+            "da_id": "TS3004c.B.dialog-act.vkaraisk.1",
+            "participant": "MTD015UID",
+            "role": "UI",
+            "text": "It's <disfmarker>"
+          },
+          {
+            "da_id": "TS3004c.B.dialog-act.vkaraisk.2",
+            "participant": "MTD015UID",
+            "role": "UI",
+            "text": "It won't wake up ."
+          },
+          {
+            "da_id": "TS3004c.B.dialog-act.vkaraisk.3",
+            "participant": "MTD015UID",
+            "role": "UI",
+            "text": "Yeah ."
+          },
+          {
+            "da_id": "TS3004c.B.dialog-act.vkaraisk.4",
+            "participant": "MTD015UID",
+            "role": "UI",
+            "text": "I was a bit early ."
+          },
+          {
+            "da_id": "TS3004c.B.dialog-act.vkaraisk.5",
+            "participant": "MTD015UID",
+            "role": "UI",
+            "text": "Like <disfmarker>"
+          },
+          {
+            "da_id": "TS3004c.D.dialog-act.vkaraisk.2",
+            "participant": "MTD016ME",
+            "role": "ME",
+            "text": "Why ?"
+          },
+          {
+            "da_id": "TS3004c.B.dialog-act.vkaraisk.6",
+            "participant": "MTD015UID",
+            "role": "UI",
+            "text": "What ?"
+          },
+          {
+            "da_id": "TS3004c.B.dialog-act.vkaraisk.7",
+            "participant": "MTD015UID",
+            "role": "UI",
+            "text": "No ,"
+          },
+          {
+            "da_id": "TS3004c.B.dialog-act.vkaraisk.8",
+            "participant": "MTD015UID",
+            "role": "UI",
+            "text": "I just came in ."
+          },
+          {
+            "da_id": "TS3004c.B.dialog-act.vkaraisk.9",
+            "participant": "MTD015UID",
+            "role": "UI",
+            "text": "Uh normally I was one of them ."
+          },
+          {
+            "da_id": "TS3004c.D.dialog-act.vkaraisk.3",
+            "participant": "MTD016ME",
+            "role": "ME",
+            "text": "Okay ."
+          },
+          {
+            "da_id": "TS3004c.B.dialog-act.vkaraisk.10",
+            "participant": "MTD015UID",
+            "role": "UI",
+            "text": "Come on ."
+          },
+          {
+            "da_id": "TS3004c.D.dialog-act.vkaraisk.4",
+            "participant": "MTD016ME",
+            "role": "ME",
+            "text": "Check check check check ."
+          },
+          {
+            "da_id": "TS3004c.A.dialog-act.vkaraisk.1",
+            "participant": "MTD013PM",
+            "role": "PM",
+            "text": "Hello ."
+          },
+          {
+            "da_id": "TS3004c.B.dialog-act.vkaraisk.11",
+            "participant": "MTD015UID",
+            "role": "UI",
+            "text": "Why won't it wake up ?"
+          },
+          {
+            "da_id": "TS3004c.A.dialog-act.vkaraisk.2",
+            "participant": "MTD013PM",
+            "role": "PM",
+            "text": "Oop ."
+          },
+          {
+            "da_id": "TS3004c.B.dialog-act.vkaraisk.12",
+            "participant": "MTD015UID",
+            "role": "UI",
+            "text": "Is it on ?"
+          }
+        ]
+      },
+      "new_info": true
+    },
+    {
+      "item": "TS3004c#2",
+      "step": 4,
+      "flags": [],
+      "action": "assess_item",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue establishes a problem: remote will not wake up; power light not working; ME suggests it may have been turned off, which could explain symptoms. Evidence supports existence of the problem.",
+          "quotes": [
+            {
+              "da_id": "TS3004c.B.dialog-act.vkaraisk.2",
+              "quote": "It won't wake up ."
+            },
+            {
+              "da_id": "TS3004c.B.dialog-act.vkaraisk.11",
+              "quote": "Why won't it wake up ?"
+            },
+            {
+              "da_id": "TS3004c.D.dialog-act.vkaraisk.5",
+              "quote": "The power light doesn't work ."
+            },
+            {
+              "da_id": "TS3004c.D.dialog-act.vkaraisk.6",
+              "quote": "You turned it off ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "status": {
+          "result": "uncertain",
+          "reason": "No explicit resolution; status remains open.",
+          "quotes": [
+            {
+              "da_id": "TS3004c.B.dialog-act.vkaraisk.2",
+              "quote": "It won't wake up ."
+            },
+            {
+              "da_id": "TS3004c.B.dialog-act.vkaraisk.11",
+              "quote": "Why won't it wake up ?"
+            },
+            {
+              "da_id": "TS3004c.D.dialog-act.vkaraisk.5",
+              "quote": "The power light doesn't work ."
+            },
+            {
+              "da_id": "TS3004c.D.dialog-act.vkaraisk.6",
+              "quote": "You turned it off ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradiction between UI and ME statements; likely explanation that it was turned off.",
+          "quotes": [
+            {
+              "da_id": "TS3004c.B.dialog-act.vkaraisk.2",
+              "quote": "It won't wake up ."
+            },
+            {
+              "da_id": "TS3004c.D.dialog-act.vkaraisk.5",
+              "quote": "The power light doesn't work ."
+            },
+            {
+              "da_id": "TS3004c.D.dialog-act.vkaraisk.6",
+              "quote": "You turned it off ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No related_items to check against; standalone problem.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        },
+        "owner": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        }
+      },
+      "decision": "retrieve",
+      "reason": "unresolved_checks",
+      "assessed_text": "The remote will not wake up; the power light doesn't work and it appears it may have been turned off.",
+      "requested_action": "retrieve",
+      "proposed_fields": {
+        "status": "open",
+        "related_items": [],
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "TS3004c.B.dialog-act.vkaraisk.2",
+          "TS3004c.B.dialog-act.vkaraisk.11",
+          "TS3004c.D.dialog-act.vkaraisk.5",
+          "TS3004c.D.dialog-act.vkaraisk.6"
+        ],
+        "owner": null,
+        "owner_basis": "missing",
+        "deadline": null,
+        "deadline_basis": "missing"
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue establishes a problem: remote will not wake up; power light not working; ME suggests it may have been turned off, which could explain symptoms. Evidence supports existence of the problem.",
+          "quotes": [
+            "TS3004c.B.dialog-act.vkaraisk.2",
+            "TS3004c.B.dialog-act.vkaraisk.11",
+            "TS3004c.D.dialog-act.vkaraisk.5",
+            "TS3004c.D.dialog-act.vkaraisk.6"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "status": {
+          "result": "uncertain",
+          "reason": "No explicit resolution; status remains open.",
+          "quotes": [
+            "TS3004c.B.dialog-act.vkaraisk.2",
+            "TS3004c.B.dialog-act.vkaraisk.11",
+            "TS3004c.D.dialog-act.vkaraisk.5",
+            "TS3004c.D.dialog-act.vkaraisk.6"
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradiction between UI and ME statements; likely explanation that it was turned off.",
+          "quotes": [
+            "TS3004c.B.dialog-act.vkaraisk.2",
+            "TS3004c.D.dialog-act.vkaraisk.5",
+            "TS3004c.D.dialog-act.vkaraisk.6"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No related_items to check against; standalone problem.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "status": "open",
+        "related_items": [],
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue establishes a problem: remote will not wake up; power light not working; ME suggests it may have been turned off, which could explain symptoms. Evidence supports existence of the problem.",
+          "evidence_da_ids": [
+            "TS3004c.B.dialog-act.vkaraisk.2",
+            "TS3004c.B.dialog-act.vkaraisk.11",
+            "TS3004c.D.dialog-act.vkaraisk.5",
+            "TS3004c.D.dialog-act.vkaraisk.6"
+          ]
+        },
+        "status_check": {
+          "result": "uncertain",
+          "reason": "No explicit resolution; status remains open.",
+          "evidence_da_ids": [
+            "TS3004c.B.dialog-act.vkaraisk.2",
+            "TS3004c.B.dialog-act.vkaraisk.11",
+            "TS3004c.D.dialog-act.vkaraisk.5",
+            "TS3004c.D.dialog-act.vkaraisk.6"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No contradiction between UI and ME statements; likely explanation that it was turned off.",
+          "evidence_da_ids": [
+            "TS3004c.B.dialog-act.vkaraisk.2",
+            "TS3004c.D.dialog-act.vkaraisk.5",
+            "TS3004c.D.dialog-act.vkaraisk.6"
+          ],
+          "affected_fields": [
+            "statement"
+          ]
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No related_items to check against; standalone problem.",
+          "evidence_da_ids": []
+        },
+        "next_action": "retrieve"
+      },
+      "evidence_bindings": {
+        "statement": [
+          "TS3004c.B.dialog-act.vkaraisk.2",
+          "TS3004c.B.dialog-act.vkaraisk.11",
+          "TS3004c.D.dialog-act.vkaraisk.5",
+          "TS3004c.D.dialog-act.vkaraisk.6"
+        ],
+        "status": [
+          "TS3004c.B.dialog-act.vkaraisk.2",
+          "TS3004c.B.dialog-act.vkaraisk.11",
+          "TS3004c.D.dialog-act.vkaraisk.5",
+          "TS3004c.D.dialog-act.vkaraisk.6"
+        ],
+        "conflict": [
+          "TS3004c.B.dialog-act.vkaraisk.2",
+          "TS3004c.D.dialog-act.vkaraisk.5",
+          "TS3004c.D.dialog-act.vkaraisk.6"
+        ]
+      },
+      "raw_tool_input": {
+        "status": "open",
+        "related_items": [],
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue establishes a problem: remote will not wake up; power light not working; ME suggests it may have been turned off, which could explain symptoms. Evidence supports existence of the problem.",
+          "evidence_da_ids": [
+            "TS3004c.B.dialog-act.vkaraisk.2",
+            "TS3004c.B.dialog-act.vkaraisk.11",
+            "TS3004c.D.dialog-act.vkaraisk.5",
+            "TS3004c.D.dialog-act.vkaraisk.6"
+          ]
+        },
+        "status_check": {
+          "result": "uncertain",
+          "reason": "No explicit resolution; status remains open.",
+          "evidence_da_ids": [
+            "TS3004c.B.dialog-act.vkaraisk.2",
+            "TS3004c.B.dialog-act.vkaraisk.11",
+            "TS3004c.D.dialog-act.vkaraisk.5",
+            "TS3004c.D.dialog-act.vkaraisk.6"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No contradiction between UI and ME statements; likely explanation that it was turned off.",
+          "evidence_da_ids": [
+            "TS3004c.B.dialog-act.vkaraisk.2",
+            "TS3004c.D.dialog-act.vkaraisk.5",
+            "TS3004c.D.dialog-act.vkaraisk.6"
+          ],
+          "affected_fields": [
+            "statement"
+          ]
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No related_items to check against; standalone problem.",
+          "evidence_da_ids": []
+        },
+        "next_action": "retrieve"
+      },
+      "protocol_normalizations": [],
+      "unresolved_before": [
+        "status"
+      ],
+      "unresolved_after": [
+        "status"
+      ],
+      "semantic_stalls": 1,
+      "validation_codes": {}
+    },
+    {
+      "item": "TS3004c#2",
+      "step": 5,
+      "flags": [],
+      "action": "read_dialogue",
+      "outcome": "lookup",
+      "decision": "retrieve",
+      "args": {
+        "meeting_id": "TS3004c",
+        "da_id": "TS3004c.D.dialog-act.vkaraisk.5",
+        "window": 15
+      },
+      "tool_result": {
+        "results": [
+          {
+            "da_id": "TS3004c.B.dialog-act.vkaraisk.3",
+            "participant": "MTD015UID",
+            "role": "UI",
+            "text": "Yeah ."
+          },
+          {
+            "da_id": "TS3004c.B.dialog-act.vkaraisk.4",
+            "participant": "MTD015UID",
+            "role": "UI",
+            "text": "I was a bit early ."
+          },
+          {
+            "da_id": "TS3004c.B.dialog-act.vkaraisk.5",
+            "participant": "MTD015UID",
+            "role": "UI",
+            "text": "Like <disfmarker>"
+          },
+          {
+            "da_id": "TS3004c.D.dialog-act.vkaraisk.2",
+            "participant": "MTD016ME",
+            "role": "ME",
+            "text": "Why ?"
+          },
+          {
+            "da_id": "TS3004c.B.dialog-act.vkaraisk.6",
+            "participant": "MTD015UID",
+            "role": "UI",
+            "text": "What ?"
+          },
+          {
+            "da_id": "TS3004c.B.dialog-act.vkaraisk.7",
+            "participant": "MTD015UID",
+            "role": "UI",
+            "text": "No ,"
+          },
+          {
+            "da_id": "TS3004c.B.dialog-act.vkaraisk.8",
+            "participant": "MTD015UID",
+            "role": "UI",
+            "text": "I just came in ."
+          },
+          {
+            "da_id": "TS3004c.B.dialog-act.vkaraisk.9",
+            "participant": "MTD015UID",
+            "role": "UI",
+            "text": "Uh normally I was one of them ."
+          },
+          {
+            "da_id": "TS3004c.D.dialog-act.vkaraisk.3",
+            "participant": "MTD016ME",
+            "role": "ME",
+            "text": "Okay ."
+          },
+          {
+            "da_id": "TS3004c.B.dialog-act.vkaraisk.10",
+            "participant": "MTD015UID",
+            "role": "UI",
+            "text": "Come on ."
+          },
+          {
+            "da_id": "TS3004c.D.dialog-act.vkaraisk.4",
+            "participant": "MTD016ME",
+            "role": "ME",
+            "text": "Check check check check ."
+          },
+          {
+            "da_id": "TS3004c.A.dialog-act.vkaraisk.1",
+            "participant": "MTD013PM",
+            "role": "PM",
+            "text": "Hello ."
+          },
+          {
+            "da_id": "TS3004c.B.dialog-act.vkaraisk.11",
+            "participant": "MTD015UID",
+            "role": "UI",
+            "text": "Why won't it wake up ?"
+          },
+          {
+            "da_id": "TS3004c.A.dialog-act.vkaraisk.2",
+            "participant": "MTD013PM",
+            "role": "PM",
+            "text": "Oop ."
+          },
+          {
+            "da_id": "TS3004c.B.dialog-act.vkaraisk.12",
+            "participant": "MTD015UID",
+            "role": "UI",
+            "text": "Is it on ?"
+          },
+          {
+            "da_id": "TS3004c.D.dialog-act.vkaraisk.5",
+            "participant": "MTD016ME",
+            "role": "ME",
+            "text": "The power light doesn't work ."
+          },
+          {
+            "da_id": "TS3004c.D.dialog-act.vkaraisk.6",
+            "participant": "MTD016ME",
+            "role": "ME",
+            "text": "You turned it off ."
+          },
+          {
+            "da_id": "TS3004c.B.dialog-act.vkaraisk.13",
+            "participant": "MTD015UID",
+            "role": "UI",
+            "text": "But how ?"
+          },
+          {
+            "da_id": "TS3004c.B.dialog-act.vkaraisk.14",
+            "participant": "MTD015UID",
+            "role": "UI",
+            "text": "Ah ,"
+          },
+          {
+            "da_id": "TS3004c.B.dialog-act.vkaraisk.15",
+            "participant": "MTD015UID",
+            "role": "UI",
+            "text": "there it is ."
+          },
+          {
+            "da_id": "TS3004c.C.dialog-act.vkaraisk.1",
+            "participant": "MTD014ID",
+            "role": "ID",
+            "text": "Okay ."
+          },
+          {
+            "da_id": "TS3004c.A.dialog-act.vkaraisk.3",
+            "participant": "MTD013PM",
+            "role": "PM",
+            "text": "Okay ."
+          },
+          {
+            "da_id": "TS3004c.B.dialog-act.vkaraisk.16",
+            "participant": "MTD015UID",
+            "role": "UI",
+            "text": "Uh ."
+          },
+          {
+            "da_id": "TS3004c.C.dialog-act.vkaraisk.2",
+            "participant": "MTD014ID",
+            "role": "ID",
+            "text": "I received an email with uh a few possibilities on uh the materials ."
+          },
+          {
+            "da_id": "TS3004c.C.dialog-act.vkaraisk.3",
+            "participant": "MTD014ID",
+            "role": "ID",
+            "text": "So I'll discuss them with you ."
+          },
+          {
+            "da_id": "TS3004c.A.dialog-act.vkaraisk.4",
+            "participant": "MTD013PM",
+            "role": "PM",
+            "text": "Okay ,"
+          },
+          {
+            "da_id": "TS3004c.A.dialog-act.vkaraisk.5",
+            "participant": "MTD013PM",
+            "role": "PM",
+            "text": "we're just going to the <gap> later ."
+          },
+          {
+            "da_id": "TS3004c.D.dialog-act.vkaraisk.7",
+            "participant": "MTD016ME",
+            "role": "ME",
+            "text": "Okay ."
+          },
+          {
+            "da_id": "TS3004c.C.dialog-act.vkaraisk.4",
+            "participant": "MTD014ID",
+            "role": "ID",
+            "text": "Yeah ."
+          },
+          {
+            "da_id": "TS3004c.B.dialog-act.vkaraisk.17",
+            "participant": "MTD015UID",
+            "role": "UI",
+            "text": "Yeah ,"
+          },
+          {
+            "da_id": "TS3004c.B.dialog-act.vkaraisk.18",
+            "participant": "MTD015UID",
+            "role": "UI",
+            "text": "I received an email as well ."
+          }
+        ]
+      },
+      "new_info": true
+    },
+    {
+      "item": "TS3004c#2",
+      "step": 6,
+      "flags": [],
+      "action": "assess_item",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue establishes a problem: remote will not wake up; power light not working; ME suggests it may have been turned off, which could explain symptoms. Evidence supports existence of the problem.",
+          "quotes": [
+            {
+              "da_id": "TS3004c.B.dialog-act.vkaraisk.2",
+              "quote": "It won't wake up ."
+            },
+            {
+              "da_id": "TS3004c.B.dialog-act.vkaraisk.11",
+              "quote": "Why won't it wake up ?"
+            },
+            {
+              "da_id": "TS3004c.D.dialog-act.vkaraisk.5",
+              "quote": "The power light doesn't work ."
+            },
+            {
+              "da_id": "TS3004c.D.dialog-act.vkaraisk.6",
+              "quote": "You turned it off ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "status": {
+          "result": "uncertain",
+          "reason": "No explicit resolution; status remains open.",
+          "quotes": [
+            {
+              "da_id": "TS3004c.B.dialog-act.vkaraisk.2",
+              "quote": "It won't wake up ."
+            },
+            {
+              "da_id": "TS3004c.B.dialog-act.vkaraisk.11",
+              "quote": "Why won't it wake up ?"
+            },
+            {
+              "da_id": "TS3004c.D.dialog-act.vkaraisk.5",
+              "quote": "The power light doesn't work ."
+            },
+            {
+              "da_id": "TS3004c.D.dialog-act.vkaraisk.6",
+              "quote": "You turned it off ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradiction between UI and ME statements; likely explanation that it was turned off.",
+          "quotes": [
+            {
+              "da_id": "TS3004c.B.dialog-act.vkaraisk.2",
+              "quote": "It won't wake up ."
+            },
+            {
+              "da_id": "TS3004c.D.dialog-act.vkaraisk.5",
+              "quote": "The power light doesn't work ."
+            },
+            {
+              "da_id": "TS3004c.D.dialog-act.vkaraisk.6",
+              "quote": "You turned it off ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No related_items to check against; standalone problem.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        },
+        "owner": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        }
+      },
+      "decision": "request_clarification",
+      "reason": "no_progress",
+      "assessed_text": "The remote will not wake up; the power light doesn't work and it appears it may have been turned off.",
+      "requested_action": "retrieve",
+      "proposed_fields": {
+        "status": "open",
+        "related_items": [],
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "TS3004c.B.dialog-act.vkaraisk.2",
+          "TS3004c.B.dialog-act.vkaraisk.11",
+          "TS3004c.D.dialog-act.vkaraisk.5",
+          "TS3004c.D.dialog-act.vkaraisk.6"
+        ],
+        "owner": null,
+        "owner_basis": "missing",
+        "deadline": null,
+        "deadline_basis": "missing"
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue establishes a problem: remote will not wake up; power light not working; ME suggests it may have been turned off, which could explain symptoms. Evidence supports existence of the problem.",
+          "quotes": [
+            "TS3004c.B.dialog-act.vkaraisk.2",
+            "TS3004c.B.dialog-act.vkaraisk.11",
+            "TS3004c.D.dialog-act.vkaraisk.5",
+            "TS3004c.D.dialog-act.vkaraisk.6"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "status": {
+          "result": "uncertain",
+          "reason": "No explicit resolution; status remains open.",
+          "quotes": [
+            "TS3004c.B.dialog-act.vkaraisk.2",
+            "TS3004c.B.dialog-act.vkaraisk.11",
+            "TS3004c.D.dialog-act.vkaraisk.5",
+            "TS3004c.D.dialog-act.vkaraisk.6"
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradiction between UI and ME statements; likely explanation that it was turned off.",
+          "quotes": [
+            "TS3004c.B.dialog-act.vkaraisk.2",
+            "TS3004c.D.dialog-act.vkaraisk.5",
+            "TS3004c.D.dialog-act.vkaraisk.6"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No related_items to check against; standalone problem.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "status": "open",
+        "related_items": [],
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue establishes a problem: remote will not wake up; power light not working; ME suggests it may have been turned off, which could explain symptoms. Evidence supports existence of the problem.",
+          "evidence_da_ids": [
+            "TS3004c.B.dialog-act.vkaraisk.2",
+            "TS3004c.B.dialog-act.vkaraisk.11",
+            "TS3004c.D.dialog-act.vkaraisk.5",
+            "TS3004c.D.dialog-act.vkaraisk.6"
+          ]
+        },
+        "status_check": {
+          "result": "uncertain",
+          "reason": "No explicit resolution; status remains open.",
+          "evidence_da_ids": [
+            "TS3004c.B.dialog-act.vkaraisk.2",
+            "TS3004c.B.dialog-act.vkaraisk.11",
+            "TS3004c.D.dialog-act.vkaraisk.5",
+            "TS3004c.D.dialog-act.vkaraisk.6"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No contradiction between UI and ME statements; likely explanation that it was turned off.",
+          "evidence_da_ids": [
+            "TS3004c.B.dialog-act.vkaraisk.2",
+            "TS3004c.D.dialog-act.vkaraisk.5",
+            "TS3004c.D.dialog-act.vkaraisk.6"
+          ],
+          "affected_fields": [
+            "statement"
+          ]
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No related_items to check against; standalone problem.",
+          "evidence_da_ids": []
+        },
+        "next_action": "retrieve"
+      },
+      "evidence_bindings": {
+        "statement": [
+          "TS3004c.B.dialog-act.vkaraisk.2",
+          "TS3004c.B.dialog-act.vkaraisk.11",
+          "TS3004c.D.dialog-act.vkaraisk.5",
+          "TS3004c.D.dialog-act.vkaraisk.6"
+        ],
+        "status": [
+          "TS3004c.B.dialog-act.vkaraisk.2",
+          "TS3004c.B.dialog-act.vkaraisk.11",
+          "TS3004c.D.dialog-act.vkaraisk.5",
+          "TS3004c.D.dialog-act.vkaraisk.6"
+        ],
+        "conflict": [
+          "TS3004c.B.dialog-act.vkaraisk.2",
+          "TS3004c.D.dialog-act.vkaraisk.5",
+          "TS3004c.D.dialog-act.vkaraisk.6"
+        ]
+      },
+      "raw_tool_input": {
+        "status": "open",
+        "related_items": [],
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue establishes a problem: remote will not wake up; power light not working; ME suggests it may have been turned off, which could explain symptoms. Evidence supports existence of the problem.",
+          "evidence_da_ids": [
+            "TS3004c.B.dialog-act.vkaraisk.2",
+            "TS3004c.B.dialog-act.vkaraisk.11",
+            "TS3004c.D.dialog-act.vkaraisk.5",
+            "TS3004c.D.dialog-act.vkaraisk.6"
+          ]
+        },
+        "status_check": {
+          "result": "uncertain",
+          "reason": "No explicit resolution; status remains open.",
+          "evidence_da_ids": [
+            "TS3004c.B.dialog-act.vkaraisk.2",
+            "TS3004c.B.dialog-act.vkaraisk.11",
+            "TS3004c.D.dialog-act.vkaraisk.5",
+            "TS3004c.D.dialog-act.vkaraisk.6"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No contradiction between UI and ME statements; likely explanation that it was turned off.",
+          "evidence_da_ids": [
+            "TS3004c.B.dialog-act.vkaraisk.2",
+            "TS3004c.D.dialog-act.vkaraisk.5",
+            "TS3004c.D.dialog-act.vkaraisk.6"
+          ],
+          "affected_fields": [
+            "statement"
+          ]
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No related_items to check against; standalone problem.",
+          "evidence_da_ids": []
+        },
+        "next_action": "retrieve"
+      },
+      "protocol_normalizations": [],
+      "unresolved_before": [
+        "status"
+      ],
+      "unresolved_after": [
+        "status"
+      ],
+      "semantic_stalls": 2,
+      "validation_codes": {}
+    },
+    {
+      "item": "TS3004c#2",
+      "step": 6,
+      "flags": [],
+      "action": "stop",
+      "outcome": "pending",
+      "termination_reason": "no_progress",
+      "unresolved_fields": [
+        "status"
+      ]
+    }
+  ],
+  "lookups": 2,
+  "termination_reason": "no_progress",
+  "clarifications": [
+    {
+      "request_id": "80f523b107282bf4",
+      "item_key": "TS3004c#2",
+      "record_id": null,
+      "field": "status",
+      "question": "What is this item's status at the end of the current meeting?",
+      "item_text": "The remote will not wake up; the power light doesn't work and it appears it may have been turned off.",
+      "reason": "No explicit resolution; status remains open.",
+      "evidence_da_ids": [
+        "TS3004c.B.dialog-act.vkaraisk.2",
+        "TS3004c.B.dialog-act.vkaraisk.11",
+        "TS3004c.D.dialog-act.vkaraisk.5",
+        "TS3004c.D.dialog-act.vkaraisk.6"
+      ],
+      "available_evidence_da_ids": [
+        "TS3004c.B.dialog-act.vkaraisk.2",
+        "TS3004c.B.dialog-act.vkaraisk.11",
+        "TS3004c.D.dialog-act.vkaraisk.5",
+        "TS3004c.D.dialog-act.vkaraisk.6",
+        "TS3004c.B.dialog-act.vkaraisk.1",
+        "TS3004c.B.dialog-act.vkaraisk.3",
+        "TS3004c.A.dialog-act.vkaraisk.1",
+        "TS3004c.A.dialog-act.vkaraisk.2",
+        "TS3004c.B.dialog-act.vkaraisk.12",
+        "TS3004c.B.dialog-act.vkaraisk.13",
+        "TS3004c.D.dialog-act.vkaraisk.1",
+        "TS3004c.B.dialog-act.vkaraisk.4",
+        "TS3004c.B.dialog-act.vkaraisk.5",
+        "TS3004c.D.dialog-act.vkaraisk.2",
+        "TS3004c.B.dialog-act.vkaraisk.6",
+        "TS3004c.B.dialog-act.vkaraisk.7",
+        "TS3004c.B.dialog-act.vkaraisk.8",
+        "TS3004c.B.dialog-act.vkaraisk.9",
+        "TS3004c.D.dialog-act.vkaraisk.3",
+        "TS3004c.B.dialog-act.vkaraisk.10",
+        "TS3004c.D.dialog-act.vkaraisk.4",
+        "TS3004c.B.dialog-act.vkaraisk.14",
+        "TS3004c.B.dialog-act.vkaraisk.15",
+        "TS3004c.C.dialog-act.vkaraisk.1",
+        "TS3004c.A.dialog-act.vkaraisk.3",
+        "TS3004c.B.dialog-act.vkaraisk.16",
+        "TS3004c.C.dialog-act.vkaraisk.2",
+        "TS3004c.C.dialog-act.vkaraisk.3",
+        "TS3004c.A.dialog-act.vkaraisk.4",
+        "TS3004c.A.dialog-act.vkaraisk.5",
+        "TS3004c.D.dialog-act.vkaraisk.7",
+        "TS3004c.C.dialog-act.vkaraisk.4",
+        "TS3004c.B.dialog-act.vkaraisk.17",
+        "TS3004c.B.dialog-act.vkaraisk.18"
+      ],
+      "status": "open",
+      "termination_reason": "no_progress"
+    }
+  ]
+}

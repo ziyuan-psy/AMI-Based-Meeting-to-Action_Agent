@@ -65,15 +65,22 @@ def judge_meeting(llm: LLM, store: Store, items: list[dict], cache: dict) -> lis
         block.append(f"ITEM {i}: {claim_text(it)}{NL}CITED LINES:{NL}" + NL.join(lines))
     user = (NL + NL).join(block)
     key = hashlib.sha256(user.encode()).hexdigest()[:20]
-    if key not in cache:
-        cache[key] = llm.forced_tool(SYSTEM, user, "submit_verdicts", SCHEMA)["verdicts"]
-    by_item = {v["item"]: v for v in cache[key] if isinstance(v.get("item"), int)}
+    make = lambda: llm.forced_tool(SYSTEM, user, "submit_verdicts", SCHEMA)["verdicts"]
+    if hasattr(cache, "compute"):
+        verdicts = cache.compute(key, make)  # one judgement per key, even when modes are scored in parallel
+    else:
+        if key not in cache:
+            cache[key] = make()
+        verdicts = cache[key]
+    by_item = {v["item"]: v for v in verdicts if isinstance(v.get("item"), int)}
     return [by_item.get(i) for i in range(len(items))]
 
 
-def run(series: str, run_dir: Path, mode: str, llm: LLM, sample_n: int = 30, seed: int = 0) -> dict:
-    cache_file = run_dir / mode / "support_cache.json"
-    cache = json.loads(cache_file.read_text(encoding="utf-8")) if cache_file.exists() else {}
+def run(series: str, run_dir: Path, mode: str, llm, sample_n: int = 30, seed: int = 0) -> dict:
+    """`llm`: the evaluation judge (mta.judge.get_judge). Verdicts live in the shared judge cache, keyed by exactly
+    what the judge sees (claims + cited lines), so unchanged items are never judged twice."""
+    from .judge import shared_cache
+    cache = shared_cache("support_cache", llm)
     rates = defaultdict(Counter)
     rows = []
     for c in "abcd":
@@ -95,7 +102,6 @@ def run(series: str, run_dir: Path, mode: str, llm: LLM, sample_n: int = 30, see
                 rates["actions.deadline"][v["deadline"]] += 1
             rows.append({"item": it["id"], "claim": claim_text(it), "cited": cited_lines(store, it, 5),
                          "judge": {k: v[k] for k in ("statement", "owner", "deadline")}, "note": v.get("note", "")})
-        cache_file.write_text(json.dumps(cache), encoding="utf-8")
 
     def summarise(c: Counter) -> dict:
         n = sum(c.values())
@@ -125,7 +131,8 @@ def main(argv=None) -> int:
     a = ap.parse_args(argv)
     if a.series in config.SC_SERIES:
         raise SystemExit("held-out series: run only after the design is frozen")
-    r = run(a.series, a.run, a.mode, LLM(), a.sample)
+    from .judge import get_judge
+    r = run(a.series, a.run, a.mode, get_judge(), a.sample)
     print(f"{a.series} mode={a.mode}")
     for k, v in r["support"].items():
         print(f"  {k:22s} n={v['n']:3d} supported={v['supported']} partial={v['partial']} unsupported={v['unsupported']}"

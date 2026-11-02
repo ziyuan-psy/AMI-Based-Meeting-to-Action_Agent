@@ -1,0 +1,414 @@
+{
+  "meeting": "ES2011a",
+  "gold_sha256": "45ccd96875f012fefed4ca3775c110d1fa558e27c7abf2fc94c49a50731d290f",
+  "coverage": {
+    "votes": 3,
+    "raw_votes": [
+      [],
+      [],
+      []
+    ],
+    "matches": []
+  },
+  "matcher_prompt_sha256": "2bd9210274e61bcd837d7631746f3ffd95943f7a62ba1ca91a89c41e2fb74fb4",
+  "arms": {
+    "before": {
+      "metrics": {
+        "actions": {
+          "tp": 3,
+          "sys": 4,
+          "gold": 3,
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1": 0.857
+        },
+        "decisions": {
+          "tp": 0,
+          "sys": 3,
+          "gold": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "problems": {
+          "tp": 0,
+          "sys": 3,
+          "gold": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "pairs": {
+        "2": "ES2011a.JacquelinePalmer.s.10",
+        "6": "ES2011a.JacquelinePalmer.s.11",
+        "9": "ES2011a.JacquelinePalmer.s.12"
+      },
+      "diagnosis": [
+        {
+          "gold_id": "ES2011a.JacquelinePalmer.s.13",
+          "gold_text": "NA.",
+          "matched": false,
+          "attribution": "initial_extraction_or_type",
+          "candidate_witnesses": [],
+          "candidate_items": [],
+          "merged_samples": [
+            [],
+            [],
+            []
+          ],
+          "after_sample_caps": [
+            [],
+            [],
+            []
+          ],
+          "after_vote": [],
+          "after_final_cap_and_normalize": []
+        }
+      ]
+    },
+    "replay": {
+      "metrics": {
+        "actions": {
+          "tp": 3,
+          "sys": 4,
+          "gold": 3,
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1": 0.857
+        },
+        "decisions": {
+          "tp": 0,
+          "sys": 3,
+          "gold": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "problems": {
+          "tp": 0,
+          "sys": 3,
+          "gold": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "pairs": {
+        "2": "ES2011a.JacquelinePalmer.s.10",
+        "6": "ES2011a.JacquelinePalmer.s.11",
+        "9": "ES2011a.JacquelinePalmer.s.12"
+      },
+      "diagnosis": [
+        {
+          "gold_id": "ES2011a.JacquelinePalmer.s.13",
+          "gold_text": "NA.",
+          "matched": false,
+          "attribution": "initial_extraction_or_type",
+          "candidate_witnesses": [],
+          "candidate_items": [],
+          "merged_samples": [
+            [],
+            [],
+            []
+          ],
+          "after_sample_caps": [
+            [],
+            [],
+            []
+          ],
+          "after_vote": [],
+          "after_final_cap_and_normalize": []
+        }
+      ]
+    },
+    "after": {
+      "metrics": {
+        "actions": {
+          "tp": 3,
+          "sys": 4,
+          "gold": 3,
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1": 0.857
+        },
+        "decisions": {
+          "tp": 0,
+          "sys": 3,
+          "gold": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "problems": {
+          "tp": 0,
+          "sys": 4,
+          "gold": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "pairs": {
+        "2": "ES2011a.JacquelinePalmer.s.10",
+        "8": "ES2011a.JacquelinePalmer.s.11",
+        "10": "ES2011a.JacquelinePalmer.s.12"
+      },
+      "diagnosis": [
+        {
+          "gold_id": "ES2011a.JacquelinePalmer.s.13",
+          "gold_text": "NA.",
+          "matched": false,
+          "attribution": "initial_extraction_or_type",
+          "candidate_witnesses": [],
+          "candidate_items": [],
+          "merged_samples": [
+            [],
+            [],
+            []
+          ],
+          "after_sample_caps": [
+            [],
+            [],
+            []
+          ],
+          "after_vote": [],
+          "after_final_cap_and_normalize": []
+        }
+      ]
+    }
+  },
+  "runtime_control": {
+    "limits": {
+      "calls": 80,
+      "tokens": 1000000,
+      "request_seconds": 300.0,
+      "meeting_seconds": 1200.0,
+      "inflight": 4,
+      "retries": 2,
+      "backoff": 0.5
+    },
+    "attempted_calls": 15,
+    "charged_tokens": 17337,
+    "unknown_usage_tokens": 0,
+    "reserved_tokens": 0,
+    "max_inflight_seen": 1,
+    "failure": null,
+    "attempts": [
+      {
+        "attempt": 0,
+        "stage": "decision_diagnosis",
+        "reserved_tokens": 35080,
+        "input_bound": 3080,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 1240,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 513,
+        "output_tokens": 727
+      },
+      {
+        "attempt": 1,
+        "stage": "decision_diagnosis",
+        "reserved_tokens": 35080,
+        "input_bound": 3080,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 1176,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 513,
+        "output_tokens": 663
+      },
+      {
+        "attempt": 2,
+        "stage": "decision_diagnosis",
+        "reserved_tokens": 35080,
+        "input_bound": 3080,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 1560,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 513,
+        "output_tokens": 1047
+      },
+      {
+        "attempt": 3,
+        "stage": "other",
+        "reserved_tokens": 34458,
+        "input_bound": 2458,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 2056,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 345,
+        "output_tokens": 1711
+      },
+      {
+        "attempt": 4,
+        "stage": "other",
+        "reserved_tokens": 34458,
+        "input_bound": 2458,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 1352,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 345,
+        "output_tokens": 1007
+      },
+      {
+        "attempt": 5,
+        "stage": "other",
+        "reserved_tokens": 34458,
+        "input_bound": 2458,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 1672,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 345,
+        "output_tokens": 1327
+      },
+      {
+        "attempt": 6,
+        "stage": "other",
+        "reserved_tokens": 34100,
+        "input_bound": 2100,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 812,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 277,
+        "output_tokens": 535
+      },
+      {
+        "attempt": 7,
+        "stage": "other",
+        "reserved_tokens": 34100,
+        "input_bound": 2100,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 940,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 277,
+        "output_tokens": 663
+      },
+      {
+        "attempt": 8,
+        "stage": "other",
+        "reserved_tokens": 34100,
+        "input_bound": 2100,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 1068,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 277,
+        "output_tokens": 791
+      },
+      {
+        "attempt": 9,
+        "stage": "other",
+        "reserved_tokens": 34203,
+        "input_bound": 2203,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 966,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 302,
+        "output_tokens": 664
+      },
+      {
+        "attempt": 10,
+        "stage": "other",
+        "reserved_tokens": 34203,
+        "input_bound": 2203,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 965,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 302,
+        "output_tokens": 663
+      },
+      {
+        "attempt": 11,
+        "stage": "other",
+        "reserved_tokens": 34203,
+        "input_bound": 2203,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 709,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 302,
+        "output_tokens": 407
+      },
+      {
+        "attempt": 12,
+        "stage": "other",
+        "reserved_tokens": 34271,
+        "input_bound": 2271,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 1303,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 320,
+        "output_tokens": 983
+      },
+      {
+        "attempt": 13,
+        "stage": "other",
+        "reserved_tokens": 34271,
+        "input_bound": 2271,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 727,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 320,
+        "output_tokens": 407
+      },
+      {
+        "attempt": 14,
+        "stage": "other",
+        "reserved_tokens": 34271,
+        "input_bound": 2271,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 791,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 320,
+        "output_tokens": 471
+      }
+    ],
+    "input_bound_method": "utf8_request_bytes_plus_padding",
+    "unknown_usage_policy": "charge_full_reservation"
+  },
+  "usage": {
+    "calls": 15,
+    "in": 5271,
+    "out": 12066,
+    "stages": {
+      "decision_diagnosis": {
+        "calls": 3,
+        "in": 1539,
+        "out": 2437
+      },
+      "other": {
+        "calls": 12,
+        "in": 3732,
+        "out": 9629
+      }
+    }
+  }
+}

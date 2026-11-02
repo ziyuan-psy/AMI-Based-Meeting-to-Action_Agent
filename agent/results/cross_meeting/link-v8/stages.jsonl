@@ -1,0 +1,11 @@
+{"stage": "control", "event": "stage_started", "current_stage": "cross_meeting_agent", "seq": 0, "t": 1793132515.592}
+{"stage": "control", "event": "request_admitted", "attempt": 0, "reserved_tokens": 50580, "input_bound": 18580, "output_cap": 32000, "outcome": "in_flight", "request_stage": "p2_check", "seq": 1, "t": 1793132515.625}
+{"stage": "control", "event": "request_finished", "attempt": 0, "reserved_tokens": 50580, "input_bound": 18580, "output_cap": 32000, "outcome": "error", "charged_tokens": 50580, "usage_known": false, "error_type": "InternalServerError", "response_tools": [], "request_stage": "p2_check", "seq": 2, "t": 1793132530.423}
+{"stage": "control", "event": "retry_scheduled", "request_stage": "p2_check", "retry": 1, "seq": 3, "t": 1793132530.424}
+{"stage": "control", "event": "request_admitted", "attempt": 1, "reserved_tokens": 50580, "input_bound": 18580, "output_cap": 32000, "outcome": "in_flight", "request_stage": "p2_check", "seq": 4, "t": 1793132530.952}
+{"stage": "control", "event": "request_finished", "attempt": 1, "reserved_tokens": 50580, "input_bound": 18580, "output_cap": 32000, "outcome": "error", "charged_tokens": 50580, "usage_known": false, "error_type": "InternalServerError", "response_tools": [], "request_stage": "p2_check", "seq": 5, "t": 1793132541.951}
+{"stage": "control", "event": "retry_scheduled", "request_stage": "p2_check", "retry": 2, "seq": 6, "t": 1793132541.951}
+{"stage": "control", "event": "request_admitted", "attempt": 2, "reserved_tokens": 50580, "input_bound": 18580, "output_cap": 32000, "outcome": "in_flight", "request_stage": "p2_check", "seq": 7, "t": 1793132542.948}
+{"stage": "control", "event": "request_finished", "attempt": 2, "reserved_tokens": 50580, "input_bound": 18580, "output_cap": 32000, "outcome": "error", "charged_tokens": 50580, "usage_known": false, "error_type": "InternalServerError", "response_tools": [], "request_stage": "p2_check", "seq": 8, "t": 1793132577.047}
+{"stage": "control", "event": "stopped", "code": "model_request_failed", "status": "FAILED", "error_type": "InternalServerError", "retries_exhausted": true, "http_status": 500, "request_stage": "p2_check", "seq": 9, "t": 1793132577.048}
+{"stage": "cross_meeting_agent", "event": "finished", "status": "FAILED", "seq": 10, "t": 1793132577.049}

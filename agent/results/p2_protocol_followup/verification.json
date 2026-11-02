@@ -1,0 +1,42 @@
+{
+  "result": "PASSED",
+  "at": "2026-10-29T18:50:15.975186+00:00",
+  "base_commit": "3b886f6c0c1520a1c5bc8628da7198a871c25495",
+  "branch": "agent-development",
+  "committed": false,
+  "staged_files": [],
+  "unit_tests": 382,
+  "latest_online_protocol_version": 18,
+  "final_source_protocol_version": 19,
+  "final_change_regression": "ZERO_API_CAPTURED_TOOL_ARGUMENT_REPLAY",
+  "protected_files_unchanged": 28,
+  "previous_audit_unchanged": 682,
+  "preservation": {
+    "smoke_repairs": 896,
+    "frozen_smoke": 181,
+    "quality_repairs/release-v9": 242
+  },
+  "artifact_parse_checks": {
+    "json": 555,
+    "jsonl": 67,
+    "jsonl_rows": 2873,
+    "python": 383
+  },
+  "credential_matches": 0,
+  "tracked_changes": [
+    "agent/src/mta/assessment_protocol.py",
+    "agent/src/mta/config.py",
+    "agent/src/mta/extract.py",
+    "agent/src/mta/item_selection.py",
+    "agent/src/mta/linking.py",
+    "agent/src/mta/p2.py",
+    "agent/src/mta/pipeline.py",
+    "agent/src/mta/prompts.py",
+    "agent/src/mta/statement_revision.py",
+    "agent/tests/test_decision_audit.py",
+    "agent/tests/test_item_quality.py",
+    "revised_gold_output/README.md"
+  ],
+  "preexisting_annotation_change": "revised_gold_output/README.md",
+  "gold_scored": false
+}

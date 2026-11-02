@@ -1,0 +1,1212 @@
+{
+  "item_key": "IS1008a#controlled-friday",
+  "record_id": null,
+  "item_type": "actions",
+  "item_text": "The project manager will send copies of the slides to attendees.",
+  "state": "pending",
+  "recordable": true,
+  "fields": {
+    "status": "unknown",
+    "prior_context_needed": false,
+    "related_items": [],
+    "owner": [
+      "MIO086"
+    ],
+    "owner_basis": "explicit",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "reference": [
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/IS1008a.json",
+        "locator": "IS1008a.A.dialog-act.s9553330.130"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/IS1008a.json",
+        "locator": "IS1008a.C.dialog-act.s9553330.42"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/IS1008a.json",
+        "locator": "IS1008a.B.dialog-act.s9553330.30"
+      }
+    ]
+  },
+  "draft_fields": {
+    "status": "open",
+    "related_items": [],
+    "owner": [
+      "MIO086"
+    ],
+    "owner_basis": "explicit",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "prior_context_needed": false,
+    "used_participant_lookup": false,
+    "evidence_da_ids": [
+      "IS1008a.A.dialog-act.s9553330.130",
+      "IS1008a.C.dialog-act.s9553330.42",
+      "IS1008a.B.dialog-act.s9553330.30"
+    ]
+  },
+  "checks": {
+    "statement": {
+      "result": "pass",
+      "reason": "Dialogue implies PM will send copies of slides to attendees; aligns with request and consent in meeting.",
+      "quotes": [
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.130",
+          "quote": "Yes , I will . Yes ."
+        },
+        {
+          "da_id": "IS1008a.C.dialog-act.s9553330.42",
+          "quote": "Would you mind um at the conclusion of our meeting could could you send us a copy of your slides ?"
+        },
+        {
+          "da_id": "IS1008a.B.dialog-act.s9553330.30",
+          "quote": "Mm-hmm ,"
+        }
+      ],
+      "fields": [
+        "statement"
+      ]
+    },
+    "owner": {
+      "result": "pass",
+      "reason": "PM (MIO086) explicitly stated ownership in dialogue.",
+      "quotes": [
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.130",
+          "quote": "Yes , I will . Yes ."
+        },
+        {
+          "da_id": "IS1008a.C.dialog-act.s9553330.42",
+          "quote": "Would you mind um at the conclusion of our meeting could could you send us a copy of your slides ?"
+        }
+      ],
+      "fields": [
+        "owner"
+      ]
+    },
+    "deadline": {
+      "result": "uncertain",
+      "reason": "deadline_unresolved",
+      "quotes": [],
+      "fields": [
+        "deadline"
+      ]
+    },
+    "status": {
+      "result": "uncertain",
+      "reason": "Status not changed in dialogue; remains open.",
+      "quotes": [],
+      "fields": [
+        "status"
+      ]
+    },
+    "conflict": {
+      "result": "pass",
+      "reason": "No contradiction found in presented evidence.",
+      "quotes": [
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.130",
+          "quote": "Yes , I will . Yes ."
+        }
+      ],
+      "fields": []
+    },
+    "relation": {
+      "result": "not_applicable",
+      "reason": "No earlier item to relate to in data.",
+      "quotes": [],
+      "fields": [
+        "related_items"
+      ]
+    }
+  },
+  "unresolved_fields": [
+    "deadline",
+    "status"
+  ],
+  "observed_evidence_da_ids": [
+    "IS1008a.C.dialog-act.s9553330.42",
+    "IS1008a.A.dialog-act.s9553330.130",
+    "IS1008a.B.dialog-act.s9553330.30",
+    "IS1008a.A.dialog-act.s9553330.129",
+    "IS1008a.B.dialog-act.s9553330.31"
+  ],
+  "initial_context": {
+    "item": {
+      "type": "actions",
+      "text": "The project manager will send copies of the slides to attendees by Friday.",
+      "flags": []
+    },
+    "current_meeting": "IS1008a",
+    "earlier_meetings": [],
+    "roster": [
+      {
+        "speaker": "A",
+        "participant_id": "MIO086",
+        "role": "PM"
+      },
+      {
+        "speaker": "B",
+        "participant_id": "FIE038",
+        "role": "UI"
+      },
+      {
+        "speaker": "C",
+        "participant_id": "FIE073",
+        "role": "ID"
+      },
+      {
+        "speaker": "D",
+        "participant_id": "MIE085",
+        "role": "ME"
+      }
+    ],
+    "observed_dialogue": [
+      {
+        "da_id": "IS1008a.C.dialog-act.s9553330.42",
+        "meeting_id": "IS1008a",
+        "text": "Would you mind um at the conclusion of our meeting could could you send us a copy of your slides ?",
+        "participant": "FIE073",
+        "role": "ID"
+      },
+      {
+        "da_id": "IS1008a.A.dialog-act.s9553330.130",
+        "meeting_id": "IS1008a",
+        "text": "Yes , I will . Yes .",
+        "participant": "MIO086",
+        "role": "PM"
+      },
+      {
+        "da_id": "IS1008a.B.dialog-act.s9553330.30",
+        "meeting_id": "IS1008a",
+        "text": "Mm-hmm ,",
+        "participant": "FIE038",
+        "role": "UI"
+      },
+      {
+        "da_id": "IS1008a.A.dialog-act.s9553330.129",
+        "participant": "MIO086",
+        "role": "PM",
+        "text": "Thanks for coming ."
+      },
+      {
+        "da_id": "IS1008a.B.dialog-act.s9553330.31",
+        "participant": "FIE038",
+        "role": "UI",
+        "text": "yeah , that would be useful ."
+      }
+    ],
+    "peer_items": [],
+    "provisional_values": {
+      "owner": [
+        "MIO086"
+      ],
+      "owner_basis": "explicit",
+      "deadline": "by Friday",
+      "deadline_basis": "explicit",
+      "status": "open",
+      "related_items": []
+    },
+    "candidate_evidence_da_ids": [
+      "IS1008a.C.dialog-act.s9553330.42",
+      "IS1008a.A.dialog-act.s9553330.130",
+      "IS1008a.B.dialog-act.s9553330.30"
+    ],
+    "verification_request": "Controlled diagnostic: the deadline is deliberately faulty. Verify all qualifiers against delivered dialogue. Use only the production repair/check protocol or remain pending; an unsupported time must not be accepted."
+  },
+  "observed_documents": [],
+  "document_evidence": [],
+  "relation_evidence": [],
+  "history": [
+    {
+      "item": "IS1008a#controlled-friday",
+      "step": 1,
+      "flags": [],
+      "action": "assess_item",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "uncertain",
+          "reason": "unanchored_time_literal: friday",
+          "quotes": [
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.130",
+              "quote": "Yes , I will . Yes ."
+            },
+            {
+              "da_id": "IS1008a.B.dialog-act.s9553330.30",
+              "quote": "Mm-hmm ,"
+            },
+            {
+              "da_id": "IS1008a.C.dialog-act.s9553330.42",
+              "quote": "Would you mind um at the conclusion of our meeting could could you send us a copy of your slides ?"
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "PM (MIO086) explicitly announced ownership in the meeting dialogue; statements show commitment.",
+          "quotes": [
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.130",
+              "quote": "Yes , I will . Yes ."
+            },
+            {
+              "da_id": "IS1008a.C.dialog-act.s9553330.42",
+              "quote": "Would you mind um at the conclusion of our meeting could could you send us a copy of your slides ?"
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "No explicit statement in observed dialogue ties to the exact deadline phrase; deadline only present in provisional values.",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "uncertain",
+          "reason": "No explicit status change observed; status remains open per provisional values.",
+          "quotes": [],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions found in the provided dialogues; ownership and deadline constraints are coherent with the proposed text.",
+          "quotes": [
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.130",
+              "quote": "Yes , I will . Yes ."
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No prior item relationship identified in provided data.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "decision": "revise_statement",
+      "reason": "named_time_requires_source_anchor_or_bounded_revision",
+      "assessed_text": "The project manager will send copies of the slides to attendees by Friday.",
+      "requested_action": "retrieve",
+      "proposed_fields": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MIO086"
+        ],
+        "owner_basis": "explicit",
+        "deadline": "by Friday",
+        "deadline_basis": "explicit",
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "IS1008a.A.dialog-act.s9553330.130",
+          "IS1008a.B.dialog-act.s9553330.30",
+          "IS1008a.C.dialog-act.s9553330.42"
+        ]
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue shows PM accepts responsibility and commits to sending slides; deadline stated as by Friday in item text and matches typical workflow.",
+          "quotes": [
+            "IS1008a.A.dialog-act.s9553330.130",
+            "IS1008a.B.dialog-act.s9553330.30",
+            "IS1008a.C.dialog-act.s9553330.42"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "PM (MIO086) explicitly announced ownership in the meeting dialogue; statements show commitment.",
+          "quotes": [
+            "IS1008a.A.dialog-act.s9553330.130",
+            "IS1008a.C.dialog-act.s9553330.42"
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "No explicit statement in observed dialogue ties to the exact deadline phrase; deadline only present in provisional values.",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "uncertain",
+          "reason": "No explicit status change observed; status remains open per provisional values.",
+          "quotes": [],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions found in the provided dialogues; ownership and deadline constraints are coherent with the proposed text.",
+          "quotes": [
+            "IS1008a.A.dialog-act.s9553330.130"
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No prior item relationship identified in provided data.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MIO086"
+        ],
+        "owner_basis": "explicit",
+        "deadline": "by Friday",
+        "deadline_basis": "explicit",
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue shows PM accepts responsibility and commits to sending slides; deadline stated as by Friday in item text and matches typical workflow.",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.130",
+            "IS1008a.B.dialog-act.s9553330.30",
+            "IS1008a.C.dialog-act.s9553330.42"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "PM (MIO086) explicitly announced ownership in the meeting dialogue; statements show commitment.",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.130",
+            "IS1008a.C.dialog-act.s9553330.42"
+          ]
+        },
+        "deadline_check": {
+          "result": "uncertain",
+          "reason": "No explicit statement in observed dialogue ties to the exact deadline phrase; deadline only present in provisional values.",
+          "evidence_da_ids": []
+        },
+        "status_check": {
+          "result": "uncertain",
+          "reason": "No explicit status change observed; status remains open per provisional values.",
+          "evidence_da_ids": []
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No contradictions found in the provided dialogues; ownership and deadline constraints are coherent with the proposed text.",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.130"
+          ],
+          "affected_fields": []
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No prior item relationship identified in provided data.",
+          "evidence_da_ids": []
+        },
+        "next_action": "retrieve"
+      },
+      "evidence_bindings": {
+        "statement": [
+          "IS1008a.A.dialog-act.s9553330.130",
+          "IS1008a.B.dialog-act.s9553330.30",
+          "IS1008a.C.dialog-act.s9553330.42"
+        ],
+        "owner": [
+          "IS1008a.A.dialog-act.s9553330.130",
+          "IS1008a.C.dialog-act.s9553330.42"
+        ],
+        "conflict": [
+          "IS1008a.A.dialog-act.s9553330.130"
+        ]
+      },
+      "raw_tool_input": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MIO086"
+        ],
+        "owner_basis": "explicit",
+        "deadline": "by Friday",
+        "deadline_basis": "explicit",
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue shows PM accepts responsibility and commits to sending slides; deadline stated as by Friday in item text and matches typical workflow.",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.130",
+            "IS1008a.B.dialog-act.s9553330.30",
+            "IS1008a.C.dialog-act.s9553330.42"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "PM (MIO086) explicitly announced ownership in the meeting dialogue; statements show commitment.",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.130",
+            "IS1008a.C.dialog-act.s9553330.42"
+          ]
+        },
+        "deadline_check": {
+          "result": "uncertain",
+          "reason": "No explicit statement in observed dialogue ties to the exact deadline phrase; deadline only present in provisional values.",
+          "evidence_da_ids": []
+        },
+        "status_check": {
+          "result": "uncertain",
+          "reason": "No explicit status change observed; status remains open per provisional values.",
+          "evidence_da_ids": []
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No contradictions found in the provided dialogues; ownership and deadline constraints are coherent with the proposed text.",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.130"
+          ]
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No prior item relationship identified in provided data.",
+          "evidence_da_ids": []
+        },
+        "next_action": "retrieve"
+      },
+      "protocol_normalizations": [
+        "empty_affected_fields_for_no_conflict"
+      ]
+    },
+    {
+      "item": "IS1008a#controlled-friday",
+      "step": 2,
+      "flags": [],
+      "action": "revise_statement",
+      "outcome": "revised_requires_recheck",
+      "before_text": "The project manager will send copies of the slides to attendees by Friday.",
+      "after_text": "The project manager will send copies of the slides to attendees.",
+      "reason": "Trailing time qualifier is ambiguous in observed dialogue; remove the explicit deadline qualifier to allow a clarified deadline later.",
+      "evidence_da_ids": [
+        "IS1008a.A.dialog-act.s9553330.130",
+        "IS1008a.C.dialog-act.s9553330.42",
+        "IS1008a.B.dialog-act.s9553330.30"
+      ],
+      "raw_tool_input": {
+        "remove_suffix": "by Friday.",
+        "reason": "Trailing time qualifier is ambiguous in observed dialogue; remove the explicit deadline qualifier to allow a clarified deadline later.",
+        "evidence_da_ids": [
+          "IS1008a.A.dialog-act.s9553330.130",
+          "IS1008a.C.dialog-act.s9553330.42",
+          "IS1008a.B.dialog-act.s9553330.30"
+        ]
+      }
+    },
+    {
+      "item": "IS1008a#controlled-friday",
+      "step": 3,
+      "flags": [],
+      "action": "assess_item",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue implies PM will send copies of slides to attendees; aligns with request and consent in meeting.",
+          "quotes": [
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.130",
+              "quote": "Yes , I will . Yes ."
+            },
+            {
+              "da_id": "IS1008a.C.dialog-act.s9553330.42",
+              "quote": "Would you mind um at the conclusion of our meeting could could you send us a copy of your slides ?"
+            },
+            {
+              "da_id": "IS1008a.B.dialog-act.s9553330.30",
+              "quote": "Mm-hmm ,"
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "PM (MIO086) explicitly stated ownership in dialogue.",
+          "quotes": [
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.130",
+              "quote": "Yes , I will . Yes ."
+            },
+            {
+              "da_id": "IS1008a.C.dialog-act.s9553330.42",
+              "quote": "Would you mind um at the conclusion of our meeting could could you send us a copy of your slides ?"
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "deadline_unresolved",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "uncertain",
+          "reason": "Status not changed in dialogue; remains open.",
+          "quotes": [],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradiction found in presented evidence.",
+          "quotes": [
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.130",
+              "quote": "Yes , I will . Yes ."
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No earlier item to relate to in data.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "decision": "retrieve",
+      "reason": "unresolved_checks",
+      "assessed_text": "The project manager will send copies of the slides to attendees.",
+      "requested_action": "retrieve",
+      "proposed_fields": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MIO086"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "IS1008a.A.dialog-act.s9553330.130",
+          "IS1008a.C.dialog-act.s9553330.42",
+          "IS1008a.B.dialog-act.s9553330.30"
+        ]
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue implies PM will send copies of slides to attendees; aligns with request and consent in meeting.",
+          "quotes": [
+            "IS1008a.A.dialog-act.s9553330.130",
+            "IS1008a.C.dialog-act.s9553330.42",
+            "IS1008a.B.dialog-act.s9553330.30"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "PM (MIO086) explicitly stated ownership in dialogue.",
+          "quotes": [
+            "IS1008a.A.dialog-act.s9553330.130",
+            "IS1008a.C.dialog-act.s9553330.42"
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "No explicit deadline phrasing in observed dialogue after revision; deadline undefined.",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "uncertain",
+          "reason": "Status not changed in dialogue; remains open.",
+          "quotes": [],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradiction found in presented evidence.",
+          "quotes": [
+            "IS1008a.A.dialog-act.s9553330.130"
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No earlier item to relate to in data.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MIO086"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue implies PM will send copies of slides to attendees; aligns with request and consent in meeting.",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.130",
+            "IS1008a.C.dialog-act.s9553330.42",
+            "IS1008a.B.dialog-act.s9553330.30"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "PM (MIO086) explicitly stated ownership in dialogue.",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.130",
+            "IS1008a.C.dialog-act.s9553330.42"
+          ]
+        },
+        "deadline_check": {
+          "result": "uncertain",
+          "reason": "No explicit deadline phrasing in observed dialogue after revision; deadline undefined.",
+          "evidence_da_ids": []
+        },
+        "status_check": {
+          "result": "uncertain",
+          "reason": "Status not changed in dialogue; remains open.",
+          "evidence_da_ids": []
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No contradiction found in presented evidence.",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.130"
+          ],
+          "affected_fields": []
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No earlier item to relate to in data.",
+          "evidence_da_ids": []
+        },
+        "next_action": "retrieve"
+      },
+      "evidence_bindings": {
+        "statement": [
+          "IS1008a.A.dialog-act.s9553330.130",
+          "IS1008a.C.dialog-act.s9553330.42",
+          "IS1008a.B.dialog-act.s9553330.30"
+        ],
+        "owner": [
+          "IS1008a.A.dialog-act.s9553330.130",
+          "IS1008a.C.dialog-act.s9553330.42"
+        ],
+        "conflict": [
+          "IS1008a.A.dialog-act.s9553330.130"
+        ]
+      },
+      "raw_tool_input": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MIO086"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue implies PM will send copies of slides to attendees; aligns with request and consent in meeting.",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.130",
+            "IS1008a.C.dialog-act.s9553330.42",
+            "IS1008a.B.dialog-act.s9553330.30"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "PM (MIO086) explicitly stated ownership in dialogue.",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.130",
+            "IS1008a.C.dialog-act.s9553330.42"
+          ]
+        },
+        "deadline_check": {
+          "result": "uncertain",
+          "reason": "No explicit deadline phrasing in observed dialogue after revision; deadline undefined.",
+          "evidence_da_ids": []
+        },
+        "status_check": {
+          "result": "uncertain",
+          "reason": "Status not changed in dialogue; remains open.",
+          "evidence_da_ids": []
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No contradiction found in presented evidence.",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.130"
+          ]
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No earlier item to relate to in data.",
+          "evidence_da_ids": []
+        },
+        "next_action": "retrieve"
+      },
+      "protocol_normalizations": [
+        "empty_affected_fields_for_no_conflict"
+      ]
+    },
+    {
+      "item": "IS1008a#controlled-friday",
+      "step": 4,
+      "flags": [],
+      "action": "get_participants",
+      "outcome": "lookup",
+      "decision": "retrieve",
+      "args": {
+        "meeting_id": "IS1008a"
+      },
+      "tool_result": {
+        "results": [
+          {
+            "speaker": "A",
+            "participant_id": "MIO086",
+            "role": "PM"
+          },
+          {
+            "speaker": "B",
+            "participant_id": "FIE038",
+            "role": "UI"
+          },
+          {
+            "speaker": "C",
+            "participant_id": "FIE073",
+            "role": "ID"
+          },
+          {
+            "speaker": "D",
+            "participant_id": "MIE085",
+            "role": "ME"
+          }
+        ]
+      },
+      "new_info": false
+    },
+    {
+      "item": "IS1008a#controlled-friday",
+      "step": 5,
+      "flags": [],
+      "action": "assess_item",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue implies PM will send copies of slides to attendees; aligns with request and consent in meeting.",
+          "quotes": [
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.130",
+              "quote": "Yes , I will . Yes ."
+            },
+            {
+              "da_id": "IS1008a.C.dialog-act.s9553330.42",
+              "quote": "Would you mind um at the conclusion of our meeting could could you send us a copy of your slides ?"
+            },
+            {
+              "da_id": "IS1008a.B.dialog-act.s9553330.30",
+              "quote": "Mm-hmm ,"
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "PM (MIO086) explicitly stated ownership in dialogue.",
+          "quotes": [
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.130",
+              "quote": "Yes , I will . Yes ."
+            },
+            {
+              "da_id": "IS1008a.C.dialog-act.s9553330.42",
+              "quote": "Would you mind um at the conclusion of our meeting could could you send us a copy of your slides ?"
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "deadline_unresolved",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "uncertain",
+          "reason": "Status not changed in dialogue; remains open.",
+          "quotes": [],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradiction found in presented evidence.",
+          "quotes": [
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.130",
+              "quote": "Yes , I will . Yes ."
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No earlier item to relate to in data.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "decision": "retrieve",
+      "reason": "unresolved_checks",
+      "assessed_text": "The project manager will send copies of the slides to attendees.",
+      "requested_action": "retrieve",
+      "proposed_fields": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MIO086"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "IS1008a.A.dialog-act.s9553330.130",
+          "IS1008a.C.dialog-act.s9553330.42",
+          "IS1008a.B.dialog-act.s9553330.30"
+        ]
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue implies PM will send copies of slides to attendees; aligns with request and consent in meeting.",
+          "quotes": [
+            "IS1008a.A.dialog-act.s9553330.130",
+            "IS1008a.C.dialog-act.s9553330.42",
+            "IS1008a.B.dialog-act.s9553330.30"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "PM (MIO086) explicitly stated ownership in dialogue.",
+          "quotes": [
+            "IS1008a.A.dialog-act.s9553330.130",
+            "IS1008a.C.dialog-act.s9553330.42"
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "No explicit deadline phrasing in observed dialogue after revision; deadline undefined.",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "uncertain",
+          "reason": "Status not changed in dialogue; remains open.",
+          "quotes": [],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradiction found in presented evidence.",
+          "quotes": [
+            "IS1008a.A.dialog-act.s9553330.130"
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No earlier item to relate to in data.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MIO086"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue implies PM will send copies of slides to attendees; aligns with request and consent in meeting.",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.130",
+            "IS1008a.C.dialog-act.s9553330.42",
+            "IS1008a.B.dialog-act.s9553330.30"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "PM (MIO086) explicitly stated ownership in dialogue.",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.130",
+            "IS1008a.C.dialog-act.s9553330.42"
+          ]
+        },
+        "deadline_check": {
+          "result": "uncertain",
+          "reason": "No explicit deadline phrasing in observed dialogue after revision; deadline undefined.",
+          "evidence_da_ids": []
+        },
+        "status_check": {
+          "result": "uncertain",
+          "reason": "Status not changed in dialogue; remains open.",
+          "evidence_da_ids": []
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No contradiction found in presented evidence.",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.130"
+          ],
+          "affected_fields": []
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No earlier item to relate to in data.",
+          "evidence_da_ids": []
+        },
+        "next_action": "retrieve"
+      },
+      "evidence_bindings": {
+        "statement": [
+          "IS1008a.A.dialog-act.s9553330.130",
+          "IS1008a.C.dialog-act.s9553330.42",
+          "IS1008a.B.dialog-act.s9553330.30"
+        ],
+        "owner": [
+          "IS1008a.A.dialog-act.s9553330.130",
+          "IS1008a.C.dialog-act.s9553330.42"
+        ],
+        "conflict": [
+          "IS1008a.A.dialog-act.s9553330.130"
+        ]
+      },
+      "raw_tool_input": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MIO086"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue implies PM will send copies of slides to attendees; aligns with request and consent in meeting.",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.130",
+            "IS1008a.C.dialog-act.s9553330.42",
+            "IS1008a.B.dialog-act.s9553330.30"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "PM (MIO086) explicitly stated ownership in dialogue.",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.130",
+            "IS1008a.C.dialog-act.s9553330.42"
+          ]
+        },
+        "deadline_check": {
+          "result": "uncertain",
+          "reason": "No explicit deadline phrasing in observed dialogue after revision; deadline undefined.",
+          "evidence_da_ids": []
+        },
+        "status_check": {
+          "result": "uncertain",
+          "reason": "Status not changed in dialogue; remains open.",
+          "evidence_da_ids": []
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No contradiction found in presented evidence.",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.130"
+          ]
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No earlier item to relate to in data.",
+          "evidence_da_ids": []
+        },
+        "next_action": "retrieve"
+      },
+      "protocol_normalizations": [
+        "empty_affected_fields_for_no_conflict"
+      ]
+    },
+    {
+      "item": "IS1008a#controlled-friday",
+      "step": 6,
+      "flags": [],
+      "action": "get_participants",
+      "outcome": "lookup",
+      "decision": "retrieve",
+      "args": {
+        "meeting_id": "IS1008a"
+      },
+      "tool_result": {
+        "results": [
+          {
+            "speaker": "A",
+            "participant_id": "MIO086",
+            "role": "PM"
+          },
+          {
+            "speaker": "B",
+            "participant_id": "FIE038",
+            "role": "UI"
+          },
+          {
+            "speaker": "C",
+            "participant_id": "FIE073",
+            "role": "ID"
+          },
+          {
+            "speaker": "D",
+            "participant_id": "MIE085",
+            "role": "ME"
+          }
+        ],
+        "duplicate": true
+      },
+      "new_info": false
+    },
+    {
+      "item": "IS1008a#controlled-friday",
+      "step": 6,
+      "flags": [],
+      "action": "stop",
+      "outcome": "pending",
+      "termination_reason": "no_progress",
+      "unresolved_fields": [
+        "deadline",
+        "status"
+      ]
+    }
+  ],
+  "lookups": 2,
+  "termination_reason": "no_progress",
+  "clarifications": [
+    {
+      "request_id": "6b987909595e2e01",
+      "item_key": "IS1008a#controlled-friday",
+      "record_id": null,
+      "field": "deadline",
+      "question": "What is the agreed deadline, in its original wording?",
+      "item_text": "The project manager will send copies of the slides to attendees.",
+      "reason": "deadline_unresolved",
+      "evidence_da_ids": [],
+      "available_evidence_da_ids": [
+        "IS1008a.C.dialog-act.s9553330.42",
+        "IS1008a.A.dialog-act.s9553330.130",
+        "IS1008a.B.dialog-act.s9553330.30",
+        "IS1008a.A.dialog-act.s9553330.129",
+        "IS1008a.B.dialog-act.s9553330.31"
+      ],
+      "status": "open",
+      "termination_reason": "no_progress"
+    },
+    {
+      "request_id": "c4324a8e099d4385",
+      "item_key": "IS1008a#controlled-friday",
+      "record_id": null,
+      "field": "status",
+      "question": "What is this item's status at the end of the current meeting?",
+      "item_text": "The project manager will send copies of the slides to attendees.",
+      "reason": "Status not changed in dialogue; remains open.",
+      "evidence_da_ids": [],
+      "available_evidence_da_ids": [
+        "IS1008a.C.dialog-act.s9553330.42",
+        "IS1008a.A.dialog-act.s9553330.130",
+        "IS1008a.B.dialog-act.s9553330.30",
+        "IS1008a.A.dialog-act.s9553330.129",
+        "IS1008a.B.dialog-act.s9553330.31"
+      ],
+      "status": "open",
+      "termination_reason": "no_progress"
+    }
+  ]
+}

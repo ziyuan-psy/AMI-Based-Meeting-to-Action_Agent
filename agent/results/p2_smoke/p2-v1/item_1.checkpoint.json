@@ -1,0 +1,662 @@
+{
+  "item_key": "TS3006a#1",
+  "state": "pending",
+  "recordable": false,
+  "fields": {
+    "status": "unknown",
+    "prior_context_needed": false,
+    "related_items": [],
+    "reference": [
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3006a.json",
+        "locator": "TS3006a.A.dialog-act.vkaraisk.130"
+      }
+    ]
+  },
+  "draft_fields": {
+    "owner": null,
+    "owner_basis": "missing",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "status": "proposed",
+    "prior_context_needed": false,
+    "related_items": [],
+    "evidence_da_ids": [
+      "TS3006a.A.dialog-act.vkaraisk.130"
+    ],
+    "used_participant_lookup": false
+  },
+  "checks": {
+    "statement": {
+      "result": "pass",
+      "reason": "The dialogue contains the exact substantive proposal: 'Um we can sell them at twenty five Euros . Uh' and scope matches 'selling price'",
+      "quotes": [
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.130",
+          "quote": "Um we can sell them at twenty five Euros . Uh"
+        }
+      ],
+      "fields": [
+        "statement"
+      ]
+    },
+    "owner": {
+      "result": "not_applicable",
+      "reason": "field_not_applicable",
+      "quotes": [],
+      "fields": [
+        "owner"
+      ]
+    },
+    "deadline": {
+      "result": "not_applicable",
+      "reason": "field_not_applicable",
+      "quotes": [],
+      "fields": [
+        "deadline"
+      ]
+    },
+    "status": {
+      "result": "pass",
+      "reason": "Status matches 'proposed' as stated in fields and evidenced by dialogue",
+      "quotes": [
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.130",
+          "quote": "Um we can sell them at twenty five Euros . Uh"
+        }
+      ],
+      "fields": [
+        "status"
+      ]
+    },
+    "conflict": {
+      "result": "uncertain",
+      "reason": "required_check_cannot_be_skipped",
+      "quotes": [],
+      "fields": [
+        "statement",
+        "owner",
+        "deadline",
+        "status",
+        "related_items"
+      ]
+    },
+    "relation": {
+      "result": "not_applicable",
+      "reason": "No earlier item to relate; this is a new proposal",
+      "quotes": [],
+      "fields": [
+        "statement",
+        "owner",
+        "deadline",
+        "status",
+        "related_items"
+      ]
+    }
+  },
+  "unresolved_fields": [
+    "statement",
+    "owner",
+    "deadline",
+    "status",
+    "related_items"
+  ],
+  "history": [
+    {
+      "item": "TS3006a#1",
+      "step": 1,
+      "flags": [],
+      "action": "assess_item",
+      "outcome": "invalid_action",
+      "error": "Invalid tool or arguments for this controller state."
+    },
+    {
+      "item": "TS3006a#1",
+      "step": 2,
+      "flags": [],
+      "action": "assess_item",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue contains the exact substantive proposal: 'Um we can sell them at twenty five Euros . Uh' and scope matches 'selling price'",
+          "quotes": [
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.130",
+              "quote": "Um we can sell them at twenty five Euros . Uh"
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Status matches 'proposed' as stated in fields and evidenced by dialogue",
+          "quotes": [
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.130",
+              "quote": "Um we can sell them at twenty five Euros . Uh"
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "uncertain",
+          "reason": "required_check_cannot_be_skipped",
+          "quotes": [],
+          "fields": [
+            "statement",
+            "owner",
+            "deadline",
+            "status",
+            "related_items"
+          ]
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No earlier item to relate; this is a new proposal",
+          "quotes": [],
+          "fields": [
+            "statement",
+            "owner",
+            "deadline",
+            "status",
+            "related_items"
+          ]
+        }
+      },
+      "decision": "retrieve",
+      "reason": "unresolved_checks",
+      "requested_action": "accept",
+      "proposed_fields": {
+        "owner": null,
+        "owner_basis": "missing",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "proposed",
+        "prior_context_needed": false,
+        "related_items": [],
+        "evidence_da_ids": [
+          "TS3006a.A.dialog-act.vkaraisk.130"
+        ],
+        "used_participant_lookup": false
+      }
+    },
+    {
+      "item": "TS3006a#1",
+      "step": 3,
+      "flags": [],
+      "action": "read_dialogue",
+      "outcome": "lookup",
+      "decision": "retrieve",
+      "args": {
+        "meeting_id": "TS3006a",
+        "da_id": "TS3006a.A.dialog-act.vkaraisk.130",
+        "window": 15
+      },
+      "tool_result": {
+        "results": [
+          {
+            "da_id": "TS3006a.C.dialog-act.vkaraisk.65",
+            "participant": "MTD022ID",
+            "role": "ID",
+            "text": "'cause they're cute , they're independent and cuddly ,"
+          },
+          {
+            "da_id": "TS3006a.C.dialog-act.vkaraisk.66",
+            "participant": "MTD022ID",
+            "role": "ID",
+            "text": "I dunno . <vocalsound>"
+          },
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.123",
+            "participant": "MTD021PM",
+            "role": "PM",
+            "text": "Okay ."
+          },
+          {
+            "da_id": "TS3006a.C.dialog-act.vkaraisk.67",
+            "participant": "MTD022ID",
+            "role": "ID",
+            "text": "That's it ."
+          },
+          {
+            "da_id": "TS3006a.C.dialog-act.vkaraisk.68",
+            "participant": "MTD022ID",
+            "role": "ID",
+            "text": "Or do I need to use more colours"
+          },
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.124",
+            "participant": "MTD021PM",
+            "role": "PM",
+            "text": "Yeah ."
+          },
+          {
+            "da_id": "TS3006a.C.dialog-act.vkaraisk.69",
+            "participant": "MTD022ID",
+            "role": "ID",
+            "text": "and <disfmarker>"
+          },
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.125",
+            "participant": "MTD021PM",
+            "role": "PM",
+            "text": "<gap> I think it's okay ."
+          },
+          {
+            "da_id": "TS3006a.C.dialog-act.vkaraisk.70",
+            "participant": "MTD022ID",
+            "role": "ID",
+            "text": "Alright ."
+          },
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.126",
+            "participant": "MTD021PM",
+            "role": "PM",
+            "text": "You get idea"
+          },
+          {
+            "da_id": "TS3006a.C.dialog-act.vkaraisk.71",
+            "participant": "MTD022ID",
+            "role": "ID",
+            "text": "Yeah ."
+          },
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.127",
+            "participant": "MTD021PM",
+            "role": "PM",
+            "text": "right ?"
+          },
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.128",
+            "participant": "MTD021PM",
+            "role": "PM",
+            "text": "Okay um"
+          },
+          {
+            "da_id": "TS3006a.C.dialog-act.vkaraisk.72",
+            "participant": "MTD022ID",
+            "role": "ID",
+            "text": "<vocalsound>"
+          },
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.129",
+            "participant": "MTD021PM",
+            "role": "PM",
+            "text": "we have a financial aspect to this project . <vocalsound>"
+          },
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.130",
+            "participant": "MTD021PM",
+            "role": "PM",
+            "text": "Um we can sell them at twenty five Euros . Uh"
+          },
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.131",
+            "participant": "MTD021PM",
+            "role": "PM",
+            "text": "the aim is to reach <disfmarker> uh uh to sell as much as fifty million Euros ."
+          },
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.132",
+            "participant": "MTD021PM",
+            "role": "PM",
+            "text": "Uh that's quite a big amount of money ."
+          },
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.133",
+            "participant": "MTD021PM",
+            "role": "PM",
+            "text": "And the production cost should be the half of the selling price ."
+          },
+          {
+            "da_id": "TS3006a.C.dialog-act.vkaraisk.73",
+            "participant": "MTD022ID",
+            "role": "ID",
+            "text": "So we have to s"
+          },
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.134",
+            "participant": "MTD021PM",
+            "role": "PM",
+            "text": "Okay"
+          },
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.135",
+            "participant": "MTD021PM",
+            "role": "PM",
+            "text": "now it's time for some discussion ."
+          },
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.136",
+            "participant": "MTD021PM",
+            "role": "PM",
+            "text": "<vocalsound> <vocalsound> <gap>"
+          },
+          {
+            "da_id": "TS3006a.B.dialog-act.vkaraisk.56",
+            "participant": "MTD023UID",
+            "role": "UI",
+            "text": "Okay ."
+          },
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.137",
+            "participant": "MTD021PM",
+            "role": "PM",
+            "text": "Uh <disfmarker>"
+          },
+          {
+            "da_id": "TS3006a.B.dialog-act.vkaraisk.57",
+            "participant": "MTD023UID",
+            "role": "UI",
+            "text": "What uh what uh do you want to discuss ? <vocalsound>"
+          },
+          {
+            "da_id": "TS3006a.C.dialog-act.vkaraisk.74",
+            "participant": "MTD022ID",
+            "role": "ID",
+            "text": "Yeah . <vocalsound>"
+          },
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.138",
+            "participant": "MTD021PM",
+            "role": "PM",
+            "text": "<vocalsound> Yeah ."
+          },
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.139",
+            "participant": "MTD021PM",
+            "role": "PM",
+            "text": "We should get started ."
+          },
+          {
+            "da_id": "TS3006a.D.dialog-act.vkaraisk.95",
+            "participant": "MTD024ME",
+            "role": "ME",
+            "text": "Yeah ."
+          },
+          {
+            "da_id": "TS3006a.B.dialog-act.vkaraisk.58",
+            "participant": "MTD023UID",
+            "role": "UI",
+            "text": "Yep ."
+          }
+        ]
+      },
+      "new_info": true
+    },
+    {
+      "item": "TS3006a#1",
+      "step": 4,
+      "flags": [],
+      "action": "assess_item",
+      "outcome": "invalid_action",
+      "error": "Invalid tool or arguments for this controller state."
+    },
+    {
+      "item": "TS3006a#1",
+      "step": 4,
+      "flags": [],
+      "action": "stop",
+      "outcome": "pending",
+      "termination_reason": "invalid_action_limit",
+      "unresolved_fields": [
+        "statement",
+        "owner",
+        "deadline",
+        "status",
+        "related_items"
+      ]
+    }
+  ],
+  "lookups": 1,
+  "termination_reason": "invalid_action_limit",
+  "clarifications": [
+    {
+      "request_id": "98784dd5981c1635",
+      "item_key": "TS3006a#1",
+      "record_id": null,
+      "field": "statement",
+      "question": "Should this be recorded as a substantive, supported decisions item?",
+      "item_text": "The selling price is proposed to be twenty five Euros.",
+      "reason": "required_check_cannot_be_skipped",
+      "evidence_da_ids": [],
+      "available_evidence_da_ids": [
+        "TS3006a.A.dialog-act.vkaraisk.130",
+        "TS3006a.C.dialog-act.vkaraisk.65",
+        "TS3006a.C.dialog-act.vkaraisk.66",
+        "TS3006a.A.dialog-act.vkaraisk.123",
+        "TS3006a.C.dialog-act.vkaraisk.67",
+        "TS3006a.C.dialog-act.vkaraisk.68",
+        "TS3006a.A.dialog-act.vkaraisk.124",
+        "TS3006a.C.dialog-act.vkaraisk.69",
+        "TS3006a.A.dialog-act.vkaraisk.125",
+        "TS3006a.C.dialog-act.vkaraisk.70",
+        "TS3006a.A.dialog-act.vkaraisk.126",
+        "TS3006a.C.dialog-act.vkaraisk.71",
+        "TS3006a.A.dialog-act.vkaraisk.127",
+        "TS3006a.A.dialog-act.vkaraisk.128",
+        "TS3006a.C.dialog-act.vkaraisk.72",
+        "TS3006a.A.dialog-act.vkaraisk.129",
+        "TS3006a.A.dialog-act.vkaraisk.131",
+        "TS3006a.A.dialog-act.vkaraisk.132",
+        "TS3006a.A.dialog-act.vkaraisk.133",
+        "TS3006a.C.dialog-act.vkaraisk.73",
+        "TS3006a.A.dialog-act.vkaraisk.134",
+        "TS3006a.A.dialog-act.vkaraisk.135",
+        "TS3006a.A.dialog-act.vkaraisk.136",
+        "TS3006a.B.dialog-act.vkaraisk.56",
+        "TS3006a.A.dialog-act.vkaraisk.137",
+        "TS3006a.B.dialog-act.vkaraisk.57",
+        "TS3006a.C.dialog-act.vkaraisk.74",
+        "TS3006a.A.dialog-act.vkaraisk.138",
+        "TS3006a.A.dialog-act.vkaraisk.139",
+        "TS3006a.D.dialog-act.vkaraisk.95",
+        "TS3006a.B.dialog-act.vkaraisk.58"
+      ],
+      "status": "open",
+      "termination_reason": "invalid_action_limit"
+    },
+    {
+      "request_id": "82a2b8a38bb594d8",
+      "item_key": "TS3006a#1",
+      "record_id": null,
+      "field": "owner",
+      "question": "Who is responsible for this task?",
+      "item_text": "The selling price is proposed to be twenty five Euros.",
+      "reason": "required_check_cannot_be_skipped",
+      "evidence_da_ids": [],
+      "available_evidence_da_ids": [
+        "TS3006a.A.dialog-act.vkaraisk.130",
+        "TS3006a.C.dialog-act.vkaraisk.65",
+        "TS3006a.C.dialog-act.vkaraisk.66",
+        "TS3006a.A.dialog-act.vkaraisk.123",
+        "TS3006a.C.dialog-act.vkaraisk.67",
+        "TS3006a.C.dialog-act.vkaraisk.68",
+        "TS3006a.A.dialog-act.vkaraisk.124",
+        "TS3006a.C.dialog-act.vkaraisk.69",
+        "TS3006a.A.dialog-act.vkaraisk.125",
+        "TS3006a.C.dialog-act.vkaraisk.70",
+        "TS3006a.A.dialog-act.vkaraisk.126",
+        "TS3006a.C.dialog-act.vkaraisk.71",
+        "TS3006a.A.dialog-act.vkaraisk.127",
+        "TS3006a.A.dialog-act.vkaraisk.128",
+        "TS3006a.C.dialog-act.vkaraisk.72",
+        "TS3006a.A.dialog-act.vkaraisk.129",
+        "TS3006a.A.dialog-act.vkaraisk.131",
+        "TS3006a.A.dialog-act.vkaraisk.132",
+        "TS3006a.A.dialog-act.vkaraisk.133",
+        "TS3006a.C.dialog-act.vkaraisk.73",
+        "TS3006a.A.dialog-act.vkaraisk.134",
+        "TS3006a.A.dialog-act.vkaraisk.135",
+        "TS3006a.A.dialog-act.vkaraisk.136",
+        "TS3006a.B.dialog-act.vkaraisk.56",
+        "TS3006a.A.dialog-act.vkaraisk.137",
+        "TS3006a.B.dialog-act.vkaraisk.57",
+        "TS3006a.C.dialog-act.vkaraisk.74",
+        "TS3006a.A.dialog-act.vkaraisk.138",
+        "TS3006a.A.dialog-act.vkaraisk.139",
+        "TS3006a.D.dialog-act.vkaraisk.95",
+        "TS3006a.B.dialog-act.vkaraisk.58"
+      ],
+      "status": "open",
+      "termination_reason": "invalid_action_limit"
+    },
+    {
+      "request_id": "a55ffcfd2947fa0f",
+      "item_key": "TS3006a#1",
+      "record_id": null,
+      "field": "deadline",
+      "question": "What is the agreed deadline, in its original wording?",
+      "item_text": "The selling price is proposed to be twenty five Euros.",
+      "reason": "required_check_cannot_be_skipped",
+      "evidence_da_ids": [],
+      "available_evidence_da_ids": [
+        "TS3006a.A.dialog-act.vkaraisk.130",
+        "TS3006a.C.dialog-act.vkaraisk.65",
+        "TS3006a.C.dialog-act.vkaraisk.66",
+        "TS3006a.A.dialog-act.vkaraisk.123",
+        "TS3006a.C.dialog-act.vkaraisk.67",
+        "TS3006a.C.dialog-act.vkaraisk.68",
+        "TS3006a.A.dialog-act.vkaraisk.124",
+        "TS3006a.C.dialog-act.vkaraisk.69",
+        "TS3006a.A.dialog-act.vkaraisk.125",
+        "TS3006a.C.dialog-act.vkaraisk.70",
+        "TS3006a.A.dialog-act.vkaraisk.126",
+        "TS3006a.C.dialog-act.vkaraisk.71",
+        "TS3006a.A.dialog-act.vkaraisk.127",
+        "TS3006a.A.dialog-act.vkaraisk.128",
+        "TS3006a.C.dialog-act.vkaraisk.72",
+        "TS3006a.A.dialog-act.vkaraisk.129",
+        "TS3006a.A.dialog-act.vkaraisk.131",
+        "TS3006a.A.dialog-act.vkaraisk.132",
+        "TS3006a.A.dialog-act.vkaraisk.133",
+        "TS3006a.C.dialog-act.vkaraisk.73",
+        "TS3006a.A.dialog-act.vkaraisk.134",
+        "TS3006a.A.dialog-act.vkaraisk.135",
+        "TS3006a.A.dialog-act.vkaraisk.136",
+        "TS3006a.B.dialog-act.vkaraisk.56",
+        "TS3006a.A.dialog-act.vkaraisk.137",
+        "TS3006a.B.dialog-act.vkaraisk.57",
+        "TS3006a.C.dialog-act.vkaraisk.74",
+        "TS3006a.A.dialog-act.vkaraisk.138",
+        "TS3006a.A.dialog-act.vkaraisk.139",
+        "TS3006a.D.dialog-act.vkaraisk.95",
+        "TS3006a.B.dialog-act.vkaraisk.58"
+      ],
+      "status": "open",
+      "termination_reason": "invalid_action_limit"
+    },
+    {
+      "request_id": "8d846e7245fb6fe4",
+      "item_key": "TS3006a#1",
+      "record_id": null,
+      "field": "status",
+      "question": "What is this item's status at the end of the current meeting?",
+      "item_text": "The selling price is proposed to be twenty five Euros.",
+      "reason": "required_check_cannot_be_skipped",
+      "evidence_da_ids": [],
+      "available_evidence_da_ids": [
+        "TS3006a.A.dialog-act.vkaraisk.130",
+        "TS3006a.C.dialog-act.vkaraisk.65",
+        "TS3006a.C.dialog-act.vkaraisk.66",
+        "TS3006a.A.dialog-act.vkaraisk.123",
+        "TS3006a.C.dialog-act.vkaraisk.67",
+        "TS3006a.C.dialog-act.vkaraisk.68",
+        "TS3006a.A.dialog-act.vkaraisk.124",
+        "TS3006a.C.dialog-act.vkaraisk.69",
+        "TS3006a.A.dialog-act.vkaraisk.125",
+        "TS3006a.C.dialog-act.vkaraisk.70",
+        "TS3006a.A.dialog-act.vkaraisk.126",
+        "TS3006a.C.dialog-act.vkaraisk.71",
+        "TS3006a.A.dialog-act.vkaraisk.127",
+        "TS3006a.A.dialog-act.vkaraisk.128",
+        "TS3006a.C.dialog-act.vkaraisk.72",
+        "TS3006a.A.dialog-act.vkaraisk.129",
+        "TS3006a.A.dialog-act.vkaraisk.131",
+        "TS3006a.A.dialog-act.vkaraisk.132",
+        "TS3006a.A.dialog-act.vkaraisk.133",
+        "TS3006a.C.dialog-act.vkaraisk.73",
+        "TS3006a.A.dialog-act.vkaraisk.134",
+        "TS3006a.A.dialog-act.vkaraisk.135",
+        "TS3006a.A.dialog-act.vkaraisk.136",
+        "TS3006a.B.dialog-act.vkaraisk.56",
+        "TS3006a.A.dialog-act.vkaraisk.137",
+        "TS3006a.B.dialog-act.vkaraisk.57",
+        "TS3006a.C.dialog-act.vkaraisk.74",
+        "TS3006a.A.dialog-act.vkaraisk.138",
+        "TS3006a.A.dialog-act.vkaraisk.139",
+        "TS3006a.D.dialog-act.vkaraisk.95",
+        "TS3006a.B.dialog-act.vkaraisk.58"
+      ],
+      "status": "open",
+      "termination_reason": "invalid_action_limit"
+    },
+    {
+      "request_id": "60af043cbb9c001c",
+      "item_key": "TS3006a#1",
+      "record_id": null,
+      "field": "related_items",
+      "question": "Which earlier record does this item continue or change, and how?",
+      "item_text": "The selling price is proposed to be twenty five Euros.",
+      "reason": "required_check_cannot_be_skipped",
+      "evidence_da_ids": [],
+      "available_evidence_da_ids": [
+        "TS3006a.A.dialog-act.vkaraisk.130",
+        "TS3006a.C.dialog-act.vkaraisk.65",
+        "TS3006a.C.dialog-act.vkaraisk.66",
+        "TS3006a.A.dialog-act.vkaraisk.123",
+        "TS3006a.C.dialog-act.vkaraisk.67",
+        "TS3006a.C.dialog-act.vkaraisk.68",
+        "TS3006a.A.dialog-act.vkaraisk.124",
+        "TS3006a.C.dialog-act.vkaraisk.69",
+        "TS3006a.A.dialog-act.vkaraisk.125",
+        "TS3006a.C.dialog-act.vkaraisk.70",
+        "TS3006a.A.dialog-act.vkaraisk.126",
+        "TS3006a.C.dialog-act.vkaraisk.71",
+        "TS3006a.A.dialog-act.vkaraisk.127",
+        "TS3006a.A.dialog-act.vkaraisk.128",
+        "TS3006a.C.dialog-act.vkaraisk.72",
+        "TS3006a.A.dialog-act.vkaraisk.129",
+        "TS3006a.A.dialog-act.vkaraisk.131",
+        "TS3006a.A.dialog-act.vkaraisk.132",
+        "TS3006a.A.dialog-act.vkaraisk.133",
+        "TS3006a.C.dialog-act.vkaraisk.73",
+        "TS3006a.A.dialog-act.vkaraisk.134",
+        "TS3006a.A.dialog-act.vkaraisk.135",
+        "TS3006a.A.dialog-act.vkaraisk.136",
+        "TS3006a.B.dialog-act.vkaraisk.56",
+        "TS3006a.A.dialog-act.vkaraisk.137",
+        "TS3006a.B.dialog-act.vkaraisk.57",
+        "TS3006a.C.dialog-act.vkaraisk.74",
+        "TS3006a.A.dialog-act.vkaraisk.138",
+        "TS3006a.A.dialog-act.vkaraisk.139",
+        "TS3006a.D.dialog-act.vkaraisk.95",
+        "TS3006a.B.dialog-act.vkaraisk.58"
+      ],
+      "status": "open",
+      "termination_reason": "invalid_action_limit"
+    }
+  ]
+}

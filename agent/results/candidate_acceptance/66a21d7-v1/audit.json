@@ -1,0 +1,2173 @@
+{
+  "status": "AUTOMATED_CHECKS_PASSED_SOURCE_REVIEW_REQUIRED",
+  "commit": "66a21d7c58651ef79c8d9e8f146ebd3880f35385",
+  "profile": {
+    "name": "recall_candidate_v1",
+    "version": 1,
+    "candidate": true,
+    "mode": "s2",
+    "content_anchor": "414a31f",
+    "action_recovery": "type_aware",
+    "issue_recovery": "original_hypotheses_exact_duplicate_check",
+    "cap_order": "414_stable",
+    "decision_second_pass": false,
+    "selection_enabled": false,
+    "p2_enabled": false,
+    "follow_up": "flagged_delivered_sources_only",
+    "assurance": "targeted_follow_up_not_full_p2",
+    "prompt_sha256": {
+      "extract": "e6e2c83a9fb5893822d8edc4852bcc25b1fa6b264c80e7e7e25afc610f6e793e",
+      "consolidate": "f53317d480b1986ed2845d54a375cd7b38e237b5bc086c1a1a2fb8d732fe1d2b",
+      "follow_up": "ec6b7cbef0911bdc86734f4fe8518b42977709e9fc9a8b8436ca2cc10c98d6c9"
+    }
+  },
+  "execution_kind": "COLD_REAL_MODEL_NATIVE_S2_ACCEPTANCE",
+  "completed": 4,
+  "scheduled": 4,
+  "errors": [],
+  "source_frozen": true,
+  "protected_files_checked": 28,
+  "preserved_prior_artifacts": 1061,
+  "gold_read": false,
+  "heldout_opened": false,
+  "model_judge_calls": 0,
+  "meetings": [
+    {
+      "meeting_id": "TS3006a",
+      "status": "COMPLETED",
+      "errors": [],
+      "warnings": [],
+      "elapsed_seconds": 181.734,
+      "usage": {
+        "calls": 32,
+        "in": 112599,
+        "out": 77520,
+        "stages": {
+          "extract": {
+            "calls": 8,
+            "in": 48578,
+            "out": 40396
+          },
+          "consolidate": {
+            "calls": 3,
+            "in": 5568,
+            "out": 28825
+          },
+          "agent": {
+            "calls": 20,
+            "in": 57702,
+            "out": 7261
+          },
+          "abstract": {
+            "calls": 1,
+            "in": 751,
+            "out": 1038
+          }
+        }
+      },
+      "runtime_control": {
+        "limits": {
+          "calls": 80,
+          "tokens": 1000000,
+          "request_seconds": 300.0,
+          "meeting_seconds": 1200.0,
+          "inflight": 4,
+          "retries": 2,
+          "backoff": 0.5
+        },
+        "attempted_calls": 32,
+        "charged_tokens": 190119,
+        "unknown_usage_tokens": 0,
+        "reserved_tokens": 0,
+        "max_inflight_seen": 4,
+        "failure": null,
+        "input_bound_method": "utf8_request_bytes_plus_padding",
+        "unknown_usage_policy": "charge_full_reservation"
+      },
+      "stage_events": 105,
+      "agent_events": 20,
+      "request_events": 33,
+      "item_counts": {
+        "problems": 4,
+        "decisions": 3,
+        "actions": 5,
+        "abstract": 4
+      },
+      "flagged_items": 7,
+      "restored_items": 7,
+      "agent_outcomes": {
+        "finished": 7,
+        "ok": 13
+      },
+      "tool_calls": {
+        "read_dialogue": 6,
+        "get_prior_items": 3,
+        "search_dialogue": 3,
+        "get_participants": 1
+      },
+      "cross_meeting_links": [],
+      "reference_count": 33,
+      "citation_checks": [
+        {
+          "item_key": "TS3006a#5",
+          "initial_delivered_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.145",
+            "TS3006a.A.dialog-act.vkaraisk.146",
+            "TS3006a.A.dialog-act.vkaraisk.147",
+            "TS3006a.C.dialog-act.vkaraisk.77"
+          ],
+          "finish_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.146",
+            "TS3006a.C.dialog-act.vkaraisk.77"
+          ],
+          "additional_observed_ids": [],
+          "all_cited_dialogue_delivered": true
+        },
+        {
+          "item_key": "TS3006a#6",
+          "initial_delivered_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.149",
+            "TS3006a.A.dialog-act.vkaraisk.150",
+            "TS3006a.B.dialog-act.vkaraisk.59"
+          ],
+          "finish_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.149",
+            "TS3006a.A.dialog-act.vkaraisk.150",
+            "TS3006a.B.dialog-act.vkaraisk.59"
+          ],
+          "additional_observed_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.145",
+            "TS3006a.A.dialog-act.vkaraisk.146",
+            "TS3006a.A.dialog-act.vkaraisk.147",
+            "TS3006a.A.dialog-act.vkaraisk.148",
+            "TS3006a.A.dialog-act.vkaraisk.151",
+            "TS3006a.A.dialog-act.vkaraisk.152",
+            "TS3006a.C.dialog-act.vkaraisk.77",
+            "TS3006a.D.dialog-act.vkaraisk.100"
+          ],
+          "all_cited_dialogue_delivered": true
+        },
+        {
+          "item_key": "TS3006a#7",
+          "initial_delivered_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.151",
+            "TS3006a.D.dialog-act.vkaraisk.100"
+          ],
+          "finish_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.151",
+            "TS3006a.D.dialog-act.vkaraisk.100"
+          ],
+          "additional_observed_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.148",
+            "TS3006a.A.dialog-act.vkaraisk.149",
+            "TS3006a.A.dialog-act.vkaraisk.150",
+            "TS3006a.A.dialog-act.vkaraisk.152",
+            "TS3006a.A.dialog-act.vkaraisk.153",
+            "TS3006a.B.dialog-act.vkaraisk.59",
+            "TS3006a.C.dialog-act.vkaraisk.77",
+            "TS3006a.C.dialog-act.vkaraisk.78",
+            "TS3006a.C.dialog-act.vkaraisk.79"
+          ],
+          "all_cited_dialogue_delivered": true
+        },
+        {
+          "item_key": "TS3006a#8",
+          "initial_delivered_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.219",
+            "TS3006a.C.dialog-act.vkaraisk.117",
+            "TS3006a.C.dialog-act.vkaraisk.118"
+          ],
+          "finish_da_ids": [
+            "TS3006a.C.dialog-act.vkaraisk.117",
+            "TS3006a.C.dialog-act.vkaraisk.118"
+          ],
+          "additional_observed_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.218",
+            "TS3006a.A.dialog-act.vkaraisk.220",
+            "TS3006a.B.dialog-act.vkaraisk.93",
+            "TS3006a.C.dialog-act.vkaraisk.116",
+            "TS3006a.C.dialog-act.vkaraisk.119",
+            "TS3006a.C.dialog-act.vkaraisk.120",
+            "TS3006a.D.dialog-act.vkaraisk.148",
+            "TS3006a.D.dialog-act.vkaraisk.149"
+          ],
+          "all_cited_dialogue_delivered": true
+        },
+        {
+          "item_key": "TS3006a#9",
+          "initial_delivered_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.219",
+            "TS3006a.A.dialog-act.vkaraisk.220",
+            "TS3006a.A.dialog-act.vkaraisk.227",
+            "TS3006a.C.dialog-act.vkaraisk.118",
+            "TS3006a.C.dialog-act.vkaraisk.119",
+            "TS3006a.C.dialog-act.vkaraisk.120",
+            "TS3006a.C.dialog-act.vkaraisk.121",
+            "TS3006a.C.dialog-act.vkaraisk.125",
+            "TS3006a.D.dialog-act.vkaraisk.156",
+            "TS3006a.D.dialog-act.vkaraisk.157"
+          ],
+          "finish_da_ids": [
+            "TS3006a.C.dialog-act.vkaraisk.119",
+            "TS3006a.C.dialog-act.vkaraisk.124",
+            "TS3006a.C.dialog-act.vkaraisk.125"
+          ],
+          "additional_observed_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.146",
+            "TS3006a.C.dialog-act.vkaraisk.117",
+            "TS3006a.C.dialog-act.vkaraisk.124",
+            "TS3006a.C.dialog-act.vkaraisk.80"
+          ],
+          "all_cited_dialogue_delivered": true
+        },
+        {
+          "item_key": "TS3006a#10",
+          "initial_delivered_da_ids": [
+            "TS3006a.C.dialog-act.vkaraisk.123",
+            "TS3006a.D.dialog-act.vkaraisk.154"
+          ],
+          "finish_da_ids": [
+            "TS3006a.C.dialog-act.vkaraisk.123"
+          ],
+          "additional_observed_ids": [
+            "MTD021PM",
+            "MTD022ID",
+            "MTD023UID",
+            "MTD024ME",
+            "TS3006a.A.dialog-act.vkaraisk.219",
+            "TS3006a.A.dialog-act.vkaraisk.220",
+            "TS3006a.A.dialog-act.vkaraisk.221",
+            "TS3006a.A.dialog-act.vkaraisk.222",
+            "TS3006a.A.dialog-act.vkaraisk.223",
+            "TS3006a.A.dialog-act.vkaraisk.224",
+            "TS3006a.A.dialog-act.vkaraisk.225",
+            "TS3006a.A.dialog-act.vkaraisk.226",
+            "TS3006a.A.dialog-act.vkaraisk.227",
+            "TS3006a.B.dialog-act.vkaraisk.94",
+            "TS3006a.B.dialog-act.vkaraisk.95",
+            "TS3006a.B.dialog-act.vkaraisk.96",
+            "TS3006a.B.dialog-act.vkaraisk.97",
+            "TS3006a.C.dialog-act.vkaraisk.102",
+            "TS3006a.C.dialog-act.vkaraisk.118",
+            "TS3006a.C.dialog-act.vkaraisk.119",
+            "TS3006a.C.dialog-act.vkaraisk.120",
+            "TS3006a.C.dialog-act.vkaraisk.121",
+            "TS3006a.C.dialog-act.vkaraisk.122",
+            "TS3006a.C.dialog-act.vkaraisk.124",
+            "TS3006a.C.dialog-act.vkaraisk.125",
+            "TS3006a.C.dialog-act.vkaraisk.31",
+            "TS3006a.C.dialog-act.vkaraisk.5",
+            "TS3006a.D.dialog-act.vkaraisk.150",
+            "TS3006a.D.dialog-act.vkaraisk.151",
+            "TS3006a.D.dialog-act.vkaraisk.152",
+            "TS3006a.D.dialog-act.vkaraisk.153",
+            "TS3006a.D.dialog-act.vkaraisk.155",
+            "TS3006a.D.dialog-act.vkaraisk.156",
+            "TS3006a.D.dialog-act.vkaraisk.157",
+            "TS3006a.D.dialog-act.vkaraisk.158",
+            "TS3006a.D.dialog-act.vkaraisk.159",
+            "TS3006a.D.dialog-act.vkaraisk.168"
+          ],
+          "all_cited_dialogue_delivered": true
+        },
+        {
+          "item_key": "TS3006a#11",
+          "initial_delivered_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.221",
+            "TS3006a.C.dialog-act.vkaraisk.120",
+            "TS3006a.C.dialog-act.vkaraisk.121",
+            "TS3006a.D.dialog-act.vkaraisk.150",
+            "TS3006a.D.dialog-act.vkaraisk.151"
+          ],
+          "finish_da_ids": [
+            "TS3006a.C.dialog-act.vkaraisk.120",
+            "TS3006a.C.dialog-act.vkaraisk.121",
+            "TS3006a.D.dialog-act.vkaraisk.150",
+            "TS3006a.D.dialog-act.vkaraisk.151"
+          ],
+          "additional_observed_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.219",
+            "TS3006a.A.dialog-act.vkaraisk.220",
+            "TS3006a.A.dialog-act.vkaraisk.222",
+            "TS3006a.C.dialog-act.vkaraisk.117",
+            "TS3006a.C.dialog-act.vkaraisk.118",
+            "TS3006a.C.dialog-act.vkaraisk.119",
+            "TS3006a.D.dialog-act.vkaraisk.161",
+            "TS3006a.D.dialog-act.vkaraisk.162",
+            "TS3006a.D.dialog-act.vkaraisk.163"
+          ],
+          "all_cited_dialogue_delivered": true
+        }
+      ],
+      "restored_source_review": [
+        {
+          "item_key": "TS3006a#5",
+          "record": {
+            "id": "TS3006a.sys.s.6",
+            "text": "The Industrial Designer will produce a working design.",
+            "type": "actions",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006a.json",
+                "locator": "TS3006a.A.dialog-act.vkaraisk.146"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006a.json",
+                "locator": "TS3006a.C.dialog-act.vkaraisk.77"
+              }
+            ],
+            "owner": [
+              "MTD022ID"
+            ],
+            "owner_basis": "explicit",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": []
+          },
+          "original_evidence": [
+            "TS3006a.A.dialog-act.vkaraisk.145",
+            "TS3006a.A.dialog-act.vkaraisk.146",
+            "TS3006a.A.dialog-act.vkaraisk.147",
+            "TS3006a.C.dialog-act.vkaraisk.77"
+          ],
+          "successful_finish": true,
+          "tool_calls": [
+            {
+              "step": 1,
+              "action": "finish",
+              "outcome": "finished"
+            }
+          ],
+          "dialogue": [
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.146",
+              "participant": "MTD021PM",
+              "role": "PM",
+              "text": "this industrati Industrial Designer should produce a working design ."
+            },
+            {
+              "da_id": "TS3006a.C.dialog-act.vkaraisk.77",
+              "participant": "MTD022ID",
+              "role": "ID",
+              "text": "True ."
+            }
+          ]
+        },
+        {
+          "item_key": "TS3006a#6",
+          "record": {
+            "id": "TS3006a.sys.s.7",
+            "text": "The User Interface Designer will specify the technical functions.",
+            "type": "actions",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006a.json",
+                "locator": "TS3006a.A.dialog-act.vkaraisk.149"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006a.json",
+                "locator": "TS3006a.A.dialog-act.vkaraisk.150"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006a.json",
+                "locator": "TS3006a.B.dialog-act.vkaraisk.59"
+              }
+            ],
+            "owner": [
+              "MTD023UID"
+            ],
+            "owner_basis": "explicit",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": []
+          },
+          "original_evidence": [
+            "TS3006a.A.dialog-act.vkaraisk.149",
+            "TS3006a.A.dialog-act.vkaraisk.150",
+            "TS3006a.B.dialog-act.vkaraisk.59"
+          ],
+          "successful_finish": true,
+          "tool_calls": [
+            {
+              "step": 1,
+              "action": "read_dialogue",
+              "outcome": "ok"
+            },
+            {
+              "step": 2,
+              "action": "finish",
+              "outcome": "finished"
+            }
+          ],
+          "dialogue": [
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.149",
+              "participant": "MTD021PM",
+              "role": "PM",
+              "text": "Uh the User Interface Designer should specify the technical functions ."
+            },
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.150",
+              "participant": "MTD021PM",
+              "role": "PM",
+              "text": "Right ? Yeah ?"
+            },
+            {
+              "da_id": "TS3006a.B.dialog-act.vkaraisk.59",
+              "participant": "MTD023UID",
+              "role": "UI",
+              "text": "Yep ."
+            }
+          ]
+        },
+        {
+          "item_key": "TS3006a#7",
+          "record": {
+            "id": "TS3006a.sys.s.8",
+            "text": "The Marketing Expert will come up with user requirements.",
+            "type": "actions",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006a.json",
+                "locator": "TS3006a.A.dialog-act.vkaraisk.151"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006a.json",
+                "locator": "TS3006a.D.dialog-act.vkaraisk.100"
+              }
+            ],
+            "owner": [
+              "MTD024ME"
+            ],
+            "owner_basis": "explicit",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": []
+          },
+          "original_evidence": [
+            "TS3006a.A.dialog-act.vkaraisk.151",
+            "TS3006a.D.dialog-act.vkaraisk.100"
+          ],
+          "successful_finish": true,
+          "tool_calls": [
+            {
+              "step": 1,
+              "action": "read_dialogue",
+              "outcome": "ok"
+            },
+            {
+              "step": 2,
+              "action": "finish",
+              "outcome": "finished"
+            }
+          ],
+          "dialogue": [
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.151",
+              "participant": "MTD021PM",
+              "role": "PM",
+              "text": "<vocalsound> And the Marketing uh Expert should come up with user requirements ."
+            },
+            {
+              "da_id": "TS3006a.D.dialog-act.vkaraisk.100",
+              "participant": "MTD024ME",
+              "role": "ME",
+              "text": "Yeah ."
+            }
+          ]
+        },
+        {
+          "item_key": "TS3006a#8",
+          "record": {
+            "id": "TS3006a.sys.s.9",
+            "text": "The Industrial Designer will work on the conceptual design.",
+            "type": "actions",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006a.json",
+                "locator": "TS3006a.C.dialog-act.vkaraisk.117"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006a.json",
+                "locator": "TS3006a.C.dialog-act.vkaraisk.118"
+              }
+            ],
+            "owner": [
+              "MTD022ID"
+            ],
+            "owner_basis": "explicit",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": []
+          },
+          "original_evidence": [
+            "TS3006a.C.dialog-act.vkaraisk.117",
+            "TS3006a.C.dialog-act.vkaraisk.118",
+            "TS3006a.A.dialog-act.vkaraisk.219"
+          ],
+          "successful_finish": true,
+          "tool_calls": [
+            {
+              "step": 1,
+              "action": "read_dialogue",
+              "outcome": "ok"
+            },
+            {
+              "step": 2,
+              "action": "read_dialogue",
+              "outcome": "ok"
+            },
+            {
+              "step": 3,
+              "action": "get_prior_items",
+              "outcome": "ok"
+            },
+            {
+              "step": 4,
+              "action": "finish",
+              "outcome": "finished"
+            }
+          ],
+          "dialogue": [
+            {
+              "da_id": "TS3006a.C.dialog-act.vkaraisk.117",
+              "participant": "MTD022ID",
+              "role": "ID",
+              "text": "I am gonna work on the conceptual design already"
+            },
+            {
+              "da_id": "TS3006a.C.dialog-act.vkaraisk.118",
+              "participant": "MTD022ID",
+              "role": "ID",
+              "text": "'cause yeah it's fairly important to know what kind of components we want to put in ."
+            }
+          ]
+        },
+        {
+          "item_key": "TS3006a#9",
+          "record": {
+            "id": "TS3006a.sys.s.10",
+            "text": "Unclear which components should be included in the design; further clarification is needed.",
+            "type": "problems",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006a.json",
+                "locator": "TS3006a.C.dialog-act.vkaraisk.125"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006a.json",
+                "locator": "TS3006a.C.dialog-act.vkaraisk.124"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006a.json",
+                "locator": "TS3006a.C.dialog-act.vkaraisk.119"
+              }
+            ],
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": []
+          },
+          "original_evidence": [
+            "TS3006a.C.dialog-act.vkaraisk.118",
+            "TS3006a.A.dialog-act.vkaraisk.219",
+            "TS3006a.A.dialog-act.vkaraisk.220",
+            "TS3006a.C.dialog-act.vkaraisk.119",
+            "TS3006a.C.dialog-act.vkaraisk.120",
+            "TS3006a.C.dialog-act.vkaraisk.121",
+            "TS3006a.C.dialog-act.vkaraisk.125",
+            "TS3006a.D.dialog-act.vkaraisk.156",
+            "TS3006a.D.dialog-act.vkaraisk.157",
+            "TS3006a.A.dialog-act.vkaraisk.227"
+          ],
+          "successful_finish": true,
+          "tool_calls": [
+            {
+              "step": 1,
+              "action": "search_dialogue",
+              "outcome": "ok"
+            },
+            {
+              "step": 2,
+              "action": "get_prior_items",
+              "outcome": "ok"
+            },
+            {
+              "step": 3,
+              "action": "finish",
+              "outcome": "finished"
+            }
+          ],
+          "dialogue": [
+            {
+              "da_id": "TS3006a.C.dialog-act.vkaraisk.125",
+              "participant": "MTD022ID",
+              "role": "ID",
+              "text": "So if I don't know what components to put in , it's kind of hard ."
+            },
+            {
+              "da_id": "TS3006a.C.dialog-act.vkaraisk.124",
+              "participant": "MTD022ID",
+              "role": "ID",
+              "text": "'cause I have to f put the components into the design ."
+            },
+            {
+              "da_id": "TS3006a.C.dialog-act.vkaraisk.119",
+              "participant": "MTD022ID",
+              "role": "ID",
+              "text": "Do we <disfmarker>"
+            }
+          ]
+        },
+        {
+          "item_key": "TS3006a#10",
+          "record": {
+            "id": "TS3006a.sys.s.11",
+            "text": "There is a need for better communication about this stuff.",
+            "type": "problems",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006a.json",
+                "locator": "TS3006a.C.dialog-act.vkaraisk.123"
+              }
+            ],
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": []
+          },
+          "original_evidence": [
+            "TS3006a.C.dialog-act.vkaraisk.123",
+            "TS3006a.D.dialog-act.vkaraisk.154"
+          ],
+          "successful_finish": true,
+          "tool_calls": [
+            {
+              "step": 1,
+              "action": "read_dialogue",
+              "outcome": "ok"
+            },
+            {
+              "step": 2,
+              "action": "search_dialogue",
+              "outcome": "ok"
+            },
+            {
+              "step": 3,
+              "action": "get_prior_items",
+              "outcome": "ok"
+            },
+            {
+              "step": 4,
+              "action": "get_participants",
+              "outcome": "ok"
+            },
+            {
+              "step": 5,
+              "action": "finish",
+              "outcome": "finished"
+            }
+          ],
+          "dialogue": [
+            {
+              "da_id": "TS3006a.C.dialog-act.vkaraisk.123",
+              "participant": "MTD022ID",
+              "role": "ID",
+              "text": "But but we need good communication about this stuff ,"
+            }
+          ]
+        },
+        {
+          "item_key": "TS3006a#11",
+          "record": {
+            "id": "TS3006a.sys.s.12",
+            "text": "Unclear whether the design should be a multimedia control centre with video recorder compatibility.",
+            "type": "problems",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006a.json",
+                "locator": "TS3006a.C.dialog-act.vkaraisk.120"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006a.json",
+                "locator": "TS3006a.C.dialog-act.vkaraisk.121"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006a.json",
+                "locator": "TS3006a.D.dialog-act.vkaraisk.150"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006a.json",
+                "locator": "TS3006a.D.dialog-act.vkaraisk.151"
+              }
+            ],
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": []
+          },
+          "original_evidence": [
+            "TS3006a.C.dialog-act.vkaraisk.120",
+            "TS3006a.C.dialog-act.vkaraisk.121",
+            "TS3006a.D.dialog-act.vkaraisk.150",
+            "TS3006a.A.dialog-act.vkaraisk.221",
+            "TS3006a.D.dialog-act.vkaraisk.151"
+          ],
+          "successful_finish": true,
+          "tool_calls": [
+            {
+              "step": 1,
+              "action": "read_dialogue",
+              "outcome": "ok"
+            },
+            {
+              "step": 2,
+              "action": "search_dialogue",
+              "outcome": "ok"
+            },
+            {
+              "step": 3,
+              "action": "finish",
+              "outcome": "finished"
+            }
+          ],
+          "dialogue": [
+            {
+              "da_id": "TS3006a.C.dialog-act.vkaraisk.120",
+              "participant": "MTD022ID",
+              "role": "ID",
+              "text": "I mean , is it gonna be a multimedia control centre ?"
+            },
+            {
+              "da_id": "TS3006a.C.dialog-act.vkaraisk.121",
+              "participant": "MTD022ID",
+              "role": "ID",
+              "text": "Do we want to be able to use the video recorder with it ? <vocalsound>"
+            },
+            {
+              "da_id": "TS3006a.D.dialog-act.vkaraisk.150",
+              "participant": "MTD024ME",
+              "role": "ME",
+              "text": "Yeah . <vocalsound> That is my question also"
+            },
+            {
+              "da_id": "TS3006a.D.dialog-act.vkaraisk.151",
+              "participant": "MTD024ME",
+              "role": "ME",
+              "text": "because like new new functions <disfmarker>"
+            }
+          ]
+        }
+      ],
+      "p2_enabled": false,
+      "clarification_requests": 0,
+      "stage_seconds": 181.4,
+      "agent_fallbacks": null,
+      "recoverable_errors": []
+    },
+    {
+      "meeting_id": "TS3006b",
+      "status": "COMPLETED",
+      "errors": [],
+      "warnings": [],
+      "elapsed_seconds": 268.641,
+      "usage": {
+        "calls": 34,
+        "in": 151084,
+        "out": 137629,
+        "stages": {
+          "extract": {
+            "calls": 12,
+            "in": 91212,
+            "out": 99930
+          },
+          "consolidate": {
+            "calls": 3,
+            "in": 9567,
+            "out": 29597
+          },
+          "agent": {
+            "calls": 18,
+            "in": 49483,
+            "out": 6950
+          },
+          "abstract": {
+            "calls": 1,
+            "in": 822,
+            "out": 1152
+          }
+        }
+      },
+      "runtime_control": {
+        "limits": {
+          "calls": 80,
+          "tokens": 1000000,
+          "request_seconds": 300.0,
+          "meeting_seconds": 1200.0,
+          "inflight": 4,
+          "retries": 2,
+          "backoff": 0.5
+        },
+        "attempted_calls": 34,
+        "charged_tokens": 288713,
+        "unknown_usage_tokens": 0,
+        "reserved_tokens": 0,
+        "max_inflight_seen": 4,
+        "failure": null,
+        "input_bound_method": "utf8_request_bytes_plus_padding",
+        "unknown_usage_policy": "charge_full_reservation"
+      },
+      "stage_events": 113,
+      "agent_events": 18,
+      "request_events": 35,
+      "item_counts": {
+        "decisions": 5,
+        "problems": 4,
+        "actions": 3,
+        "abstract": 5
+      },
+      "flagged_items": 6,
+      "restored_items": 2,
+      "agent_outcomes": {
+        "ok": 9,
+        "finished": 6,
+        "invalid_finish": 2,
+        "tool_error": 1
+      },
+      "tool_calls": {
+        "get_prior_items": 7,
+        "read_dialogue": 3
+      },
+      "cross_meeting_links": [
+        {
+          "item_key": "TS3006b#2",
+          "record_id": "TS3006b.sys.s.3",
+          "text": "The UI will design the LCD screen function menu and create a multi-page menu layout to organize all functions.",
+          "id": "TS3006a.sys.s.7",
+          "relation": "continues"
+        },
+        {
+          "item_key": "TS3006b#4",
+          "record_id": "TS3006b.sys.s.5",
+          "text": "The layout of the remote will be designed by ID (MTD022ID).",
+          "id": "TS3006a.sys.s.6",
+          "relation": "continues"
+        }
+      ],
+      "reference_count": 52,
+      "citation_checks": [
+        {
+          "item_key": "TS3006b#1",
+          "initial_delivered_da_ids": [
+            "TS3006b.B.dialog-act.dharshi.32",
+            "TS3006b.D.dialog-act.dharshi.88",
+            "TS3006b.D.dialog-act.dharshi.89",
+            "TS3006b.D.dialog-act.dharshi.90",
+            "TS3006b.D.dialog-act.dharshi.91"
+          ],
+          "finish_da_ids": [
+            "TS3006b.B.dialog-act.dharshi.32",
+            "TS3006b.D.dialog-act.dharshi.88",
+            "TS3006b.D.dialog-act.dharshi.89",
+            "TS3006b.D.dialog-act.dharshi.90",
+            "TS3006b.D.dialog-act.dharshi.91"
+          ],
+          "additional_observed_ids": [],
+          "all_cited_dialogue_delivered": true
+        },
+        {
+          "item_key": "TS3006b#2",
+          "initial_delivered_da_ids": [
+            "TS3006b.A.dialog-act.dharshi.305",
+            "TS3006b.A.dialog-act.dharshi.311",
+            "TS3006b.B.dialog-act.dharshi.157",
+            "TS3006b.B.dialog-act.dharshi.163",
+            "TS3006b.B.dialog-act.dharshi.164"
+          ],
+          "finish_da_ids": [
+            "TS3006b.A.dialog-act.dharshi.305",
+            "TS3006b.A.dialog-act.dharshi.311",
+            "TS3006b.B.dialog-act.dharshi.163",
+            "TS3006b.B.dialog-act.dharshi.164"
+          ],
+          "additional_observed_ids": [
+            "TS3006a.sys.s.6",
+            "TS3006a.sys.s.7",
+            "TS3006a.sys.s.9"
+          ],
+          "all_cited_dialogue_delivered": true
+        },
+        {
+          "item_key": "TS3006b#4",
+          "initial_delivered_da_ids": [
+            "TS3006b.A.dialog-act.dharshi.320",
+            "TS3006b.A.dialog-act.dharshi.321"
+          ],
+          "finish_da_ids": [
+            "TS3006b.A.dialog-act.dharshi.320",
+            "TS3006b.A.dialog-act.dharshi.321"
+          ],
+          "additional_observed_ids": [
+            "TS3006a.sys.s.6",
+            "TS3006a.sys.s.7",
+            "TS3006a.sys.s.9"
+          ],
+          "all_cited_dialogue_delivered": true
+        },
+        {
+          "item_key": "TS3006b#6",
+          "initial_delivered_da_ids": [
+            "TS3006b.B.dialog-act.dharshi.215"
+          ],
+          "finish_da_ids": [
+            "TS3006b.B.dialog-act.dharshi.215"
+          ],
+          "additional_observed_ids": [
+            "TS3006a.sys.s.3",
+            "TS3006a.sys.s.7",
+            "TS3006a.sys.s.9"
+          ],
+          "all_cited_dialogue_delivered": true
+        },
+        {
+          "item_key": "TS3006b#10",
+          "initial_delivered_da_ids": [
+            "TS3006b.C.dialog-act.dharshi.17"
+          ],
+          "finish_da_ids": [
+            "TS3006b.C.dialog-act.dharshi.17"
+          ],
+          "additional_observed_ids": [
+            "TS3006b.A.dialog-act.dharshi.15",
+            "TS3006b.A.dialog-act.dharshi.16",
+            "TS3006b.A.dialog-act.dharshi.17",
+            "TS3006b.A.dialog-act.dharshi.18",
+            "TS3006b.B.dialog-act.dharshi.14",
+            "TS3006b.C.dialog-act.dharshi.15",
+            "TS3006b.C.dialog-act.dharshi.16",
+            "TS3006b.C.dialog-act.dharshi.18",
+            "TS3006b.D.dialog-act.dharshi.17",
+            "TS3006b.D.dialog-act.dharshi.18"
+          ],
+          "all_cited_dialogue_delivered": true
+        },
+        {
+          "item_key": "TS3006b#11",
+          "initial_delivered_da_ids": [
+            "TS3006b.C.dialog-act.dharshi.18"
+          ],
+          "finish_da_ids": [
+            "TS3006b.C.dialog-act.dharshi.18"
+          ],
+          "additional_observed_ids": [
+            "TS3006a.sys.s.1",
+            "TS3006a.sys.s.10",
+            "TS3006a.sys.s.11",
+            "TS3006b.A.dialog-act.dharshi.17",
+            "TS3006b.A.dialog-act.dharshi.18",
+            "TS3006b.A.dialog-act.dharshi.19",
+            "TS3006b.A.dialog-act.dharshi.20",
+            "TS3006b.B.dialog-act.dharshi.14",
+            "TS3006b.B.dialog-act.dharshi.15",
+            "TS3006b.C.dialog-act.dharshi.17",
+            "TS3006b.C.dialog-act.dharshi.19",
+            "TS3006b.D.dialog-act.dharshi.18",
+            "TS3006b.D.dialog-act.dharshi.19"
+          ],
+          "all_cited_dialogue_delivered": true
+        }
+      ],
+      "restored_source_review": [
+        {
+          "item_key": "TS3006b#10",
+          "record": {
+            "id": "TS3006b.sys.s.11",
+            "text": "MTD022ID's computer is not functioning properly.",
+            "type": "problems",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006b.json",
+                "locator": "TS3006b.C.dialog-act.dharshi.17"
+              }
+            ],
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": []
+          },
+          "original_evidence": [
+            "TS3006b.C.dialog-act.dharshi.17"
+          ],
+          "successful_finish": true,
+          "tool_calls": [
+            {
+              "step": 1,
+              "action": "read_dialogue",
+              "outcome": "ok"
+            },
+            {
+              "step": 2,
+              "action": "finish",
+              "outcome": "finished"
+            }
+          ],
+          "dialogue": [
+            {
+              "da_id": "TS3006b.C.dialog-act.dharshi.17",
+              "participant": "MTD022ID",
+              "role": "ID",
+              "text": "Yeah my computer is not functioning properly ."
+            }
+          ]
+        },
+        {
+          "item_key": "TS3006b#11",
+          "record": {
+            "id": "TS3006b.sys.s.12",
+            "text": "MTD022ID reports that their screen is reduced in size.",
+            "type": "problems",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006b.json",
+                "locator": "TS3006b.C.dialog-act.dharshi.18"
+              }
+            ],
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": []
+          },
+          "original_evidence": [
+            "TS3006b.C.dialog-act.dharshi.18"
+          ],
+          "successful_finish": true,
+          "tool_calls": [
+            {
+              "step": 1,
+              "action": "get_prior_items",
+              "outcome": "ok"
+            },
+            {
+              "step": 2,
+              "action": "get_prior_items",
+              "outcome": "ok"
+            },
+            {
+              "step": 3,
+              "action": "read_dialogue",
+              "outcome": "ok"
+            },
+            {
+              "step": 4,
+              "action": "finish",
+              "outcome": "finished"
+            }
+          ],
+          "dialogue": [
+            {
+              "da_id": "TS3006b.C.dialog-act.dharshi.18",
+              "participant": "MTD022ID",
+              "role": "ID",
+              "text": "Yeah yeah . No but my screen is reduced in size . <vocalsound>"
+            }
+          ]
+        }
+      ],
+      "p2_enabled": false,
+      "clarification_requests": 0,
+      "stage_seconds": 268.3,
+      "agent_fallbacks": null,
+      "recoverable_errors": [
+        {
+          "item": "TS3006b#4",
+          "step": 2,
+          "action": "finish",
+          "outcome": "invalid_finish",
+          "error": "Finish cites dialogue not delivered; retrieve/read the support first."
+        },
+        {
+          "item": "TS3006b#4",
+          "step": 3,
+          "action": "read_dialogue",
+          "outcome": "tool_error",
+          "error": "KeyError: 'TS3006a.sys.s.6 not found in TS3006a'"
+        },
+        {
+          "item": "TS3006b#4",
+          "step": 4,
+          "action": "finish",
+          "outcome": "invalid_finish",
+          "error": "Finish cites dialogue not delivered; retrieve/read the support first."
+        }
+      ]
+    },
+    {
+      "meeting_id": "TS3006c",
+      "status": "COMPLETED",
+      "errors": [],
+      "warnings": [],
+      "elapsed_seconds": 266.547,
+      "usage": {
+        "calls": 41,
+        "in": 174102,
+        "out": 127857,
+        "stages": {
+          "extract": {
+            "calls": 13,
+            "in": 98096,
+            "out": 81999
+          },
+          "consolidate": {
+            "calls": 4,
+            "in": 8941,
+            "out": 36609
+          },
+          "agent": {
+            "calls": 23,
+            "in": 66267,
+            "out": 7832
+          },
+          "abstract": {
+            "calls": 1,
+            "in": 798,
+            "out": 1417
+          }
+        }
+      },
+      "runtime_control": {
+        "limits": {
+          "calls": 80,
+          "tokens": 1000000,
+          "request_seconds": 300.0,
+          "meeting_seconds": 1200.0,
+          "inflight": 4,
+          "retries": 2,
+          "backoff": 0.5
+        },
+        "attempted_calls": 41,
+        "charged_tokens": 301959,
+        "unknown_usage_tokens": 0,
+        "reserved_tokens": 0,
+        "max_inflight_seen": 4,
+        "failure": null,
+        "input_bound_method": "utf8_request_bytes_plus_padding",
+        "unknown_usage_policy": "charge_full_reservation"
+      },
+      "stage_events": 129,
+      "agent_events": 23,
+      "request_events": 42,
+      "item_counts": {
+        "actions": 5,
+        "problems": 4,
+        "decisions": 5,
+        "abstract": 5
+      },
+      "flagged_items": 8,
+      "restored_items": 3,
+      "agent_outcomes": {
+        "ok": 14,
+        "finished": 8,
+        "tool_error": 1
+      },
+      "tool_calls": {
+        "read_dialogue": 5,
+        "get_prior_items": 9,
+        "search_dialogue": 1
+      },
+      "cross_meeting_links": [],
+      "reference_count": 34,
+      "citation_checks": [
+        {
+          "item_key": "TS3006c#0",
+          "initial_delivered_da_ids": [
+            "TS3006c.A.dialog-act.dharshi.273",
+            "TS3006c.A.dialog-act.dharshi.274"
+          ],
+          "finish_da_ids": [
+            "TS3006c.A.dialog-act.dharshi.273",
+            "TS3006c.A.dialog-act.dharshi.274"
+          ],
+          "additional_observed_ids": [
+            "TS3006c.A.dialog-act.dharshi.266",
+            "TS3006c.A.dialog-act.dharshi.267",
+            "TS3006c.A.dialog-act.dharshi.268",
+            "TS3006c.A.dialog-act.dharshi.269",
+            "TS3006c.A.dialog-act.dharshi.270",
+            "TS3006c.A.dialog-act.dharshi.271",
+            "TS3006c.A.dialog-act.dharshi.272",
+            "TS3006c.A.dialog-act.dharshi.275",
+            "TS3006c.A.dialog-act.dharshi.276",
+            "TS3006c.A.dialog-act.dharshi.277",
+            "TS3006c.A.dialog-act.dharshi.278",
+            "TS3006c.A.dialog-act.dharshi.279",
+            "TS3006c.A.dialog-act.dharshi.280",
+            "TS3006c.B.dialog-act.dharshi.193",
+            "TS3006c.B.dialog-act.dharshi.194",
+            "TS3006c.C.dialog-act.dharshi.276",
+            "TS3006c.C.dialog-act.dharshi.277",
+            "TS3006c.C.dialog-act.dharshi.278",
+            "TS3006c.C.dialog-act.dharshi.279",
+            "TS3006c.C.dialog-act.dharshi.280",
+            "TS3006c.D.dialog-act.dharshi.292",
+            "TS3006c.D.dialog-act.dharshi.293",
+            "TS3006c.D.dialog-act.dharshi.294",
+            "TS3006c.D.dialog-act.dharshi.295",
+            "TS3006c.D.dialog-act.dharshi.296",
+            "TS3006c.D.dialog-act.dharshi.297",
+            "TS3006c.D.dialog-act.dharshi.298",
+            "TS3006c.D.dialog-act.dharshi.299",
+            "TS3006c.D.dialog-act.dharshi.300"
+          ],
+          "all_cited_dialogue_delivered": true
+        },
+        {
+          "item_key": "TS3006c#3",
+          "initial_delivered_da_ids": [
+            "TS3006c.A.dialog-act.dharshi.300",
+            "TS3006c.A.dialog-act.dharshi.301",
+            "TS3006c.C.dialog-act.dharshi.291",
+            "TS3006c.C.dialog-act.dharshi.292"
+          ],
+          "finish_da_ids": [
+            "TS3006c.A.dialog-act.dharshi.300",
+            "TS3006c.A.dialog-act.dharshi.301",
+            "TS3006c.C.dialog-act.dharshi.291",
+            "TS3006c.C.dialog-act.dharshi.292"
+          ],
+          "additional_observed_ids": [
+            "TS3006a.sys.s.3",
+            "TS3006a.sys.s.7",
+            "TS3006b.sys.s.7"
+          ],
+          "all_cited_dialogue_delivered": true
+        },
+        {
+          "item_key": "TS3006c#5",
+          "initial_delivered_da_ids": [
+            "TS3006c.A.dialog-act.dharshi.275",
+            "TS3006c.D.dialog-act.dharshi.297"
+          ],
+          "finish_da_ids": [
+            "TS3006c.A.dialog-act.dharshi.276",
+            "TS3006c.D.dialog-act.dharshi.297"
+          ],
+          "additional_observed_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.158",
+            "TS3006a.D.dialog-act.vkaraisk.115",
+            "TS3006b.A.dialog-act.dharshi.50",
+            "TS3006b.B.dialog-act.dharshi.100",
+            "TS3006b.D.dialog-act.dharshi.79",
+            "TS3006c.A.dialog-act.dharshi.269",
+            "TS3006c.A.dialog-act.dharshi.270",
+            "TS3006c.A.dialog-act.dharshi.271",
+            "TS3006c.A.dialog-act.dharshi.272",
+            "TS3006c.A.dialog-act.dharshi.273",
+            "TS3006c.A.dialog-act.dharshi.274",
+            "TS3006c.A.dialog-act.dharshi.276",
+            "TS3006c.A.dialog-act.dharshi.277",
+            "TS3006c.A.dialog-act.dharshi.278",
+            "TS3006c.A.dialog-act.dharshi.279",
+            "TS3006c.A.dialog-act.dharshi.280",
+            "TS3006c.A.dialog-act.dharshi.281",
+            "TS3006c.A.dialog-act.dharshi.282",
+            "TS3006c.A.dialog-act.dharshi.283",
+            "TS3006c.A.dialog-act.dharshi.284",
+            "TS3006c.B.dialog-act.dharshi.194",
+            "TS3006c.C.dialog-act.dharshi.279",
+            "TS3006c.C.dialog-act.dharshi.280",
+            "TS3006c.D.dialog-act.dharshi.293",
+            "TS3006c.D.dialog-act.dharshi.294",
+            "TS3006c.D.dialog-act.dharshi.295",
+            "TS3006c.D.dialog-act.dharshi.296",
+            "TS3006c.D.dialog-act.dharshi.298",
+            "TS3006c.D.dialog-act.dharshi.299",
+            "TS3006c.D.dialog-act.dharshi.300",
+            "TS3006c.D.dialog-act.dharshi.301",
+            "TS3006c.D.dialog-act.dharshi.302",
+            "TS3006c.D.dialog-act.dharshi.303",
+            "TS3006c.D.dialog-act.dharshi.304"
+          ],
+          "all_cited_dialogue_delivered": true
+        },
+        {
+          "item_key": "TS3006c#7",
+          "initial_delivered_da_ids": [
+            "TS3006c.A.dialog-act.dharshi.83",
+            "TS3006c.D.dialog-act.dharshi.104"
+          ],
+          "finish_da_ids": [
+            "TS3006c.A.dialog-act.dharshi.83",
+            "TS3006c.D.dialog-act.dharshi.104"
+          ],
+          "additional_observed_ids": [
+            "TS3006c.A.dialog-act.dharshi.78",
+            "TS3006c.A.dialog-act.dharshi.80",
+            "TS3006c.A.dialog-act.dharshi.81",
+            "TS3006c.A.dialog-act.dharshi.82",
+            "TS3006c.A.dialog-act.dharshi.84",
+            "TS3006c.A.dialog-act.dharshi.85",
+            "TS3006c.C.dialog-act.dharshi.100",
+            "TS3006c.C.dialog-act.dharshi.99",
+            "TS3006c.D.dialog-act.dharshi.103"
+          ],
+          "all_cited_dialogue_delivered": true
+        },
+        {
+          "item_key": "TS3006c#9",
+          "initial_delivered_da_ids": [
+            "TS3006c.A.dialog-act.dharshi.86",
+            "TS3006c.C.dialog-act.dharshi.100"
+          ],
+          "finish_da_ids": [
+            "TS3006c.A.dialog-act.dharshi.86",
+            "TS3006c.C.dialog-act.dharshi.100"
+          ],
+          "additional_observed_ids": [
+            "TS3006b.sys.s.10",
+            "TS3006b.sys.s.4",
+            "TS3006b.sys.s.8"
+          ],
+          "all_cited_dialogue_delivered": true
+        },
+        {
+          "item_key": "TS3006c#11",
+          "initial_delivered_da_ids": [
+            "TS3006c.A.dialog-act.dharshi.294",
+            "TS3006c.D.dialog-act.dharshi.309"
+          ],
+          "finish_da_ids": [
+            "TS3006c.A.dialog-act.dharshi.294",
+            "TS3006c.D.dialog-act.dharshi.309"
+          ],
+          "additional_observed_ids": [
+            "TS3006a.sys.s.9",
+            "TS3006b.sys.s.3",
+            "TS3006b.sys.s.5"
+          ],
+          "all_cited_dialogue_delivered": true
+        },
+        {
+          "item_key": "TS3006c#12",
+          "initial_delivered_da_ids": [
+            "TS3006c.D.dialog-act.dharshi.17"
+          ],
+          "finish_da_ids": [
+            "TS3006c.D.dialog-act.dharshi.17"
+          ],
+          "additional_observed_ids": [
+            "TS3006a.sys.s.1",
+            "TS3006a.sys.s.10",
+            "TS3006a.sys.s.12",
+            "TS3006c.A.dialog-act.dharshi.10",
+            "TS3006c.A.dialog-act.dharshi.11",
+            "TS3006c.A.dialog-act.dharshi.12",
+            "TS3006c.A.dialog-act.dharshi.13",
+            "TS3006c.A.dialog-act.dharshi.14",
+            "TS3006c.A.dialog-act.dharshi.15",
+            "TS3006c.A.dialog-act.dharshi.16",
+            "TS3006c.A.dialog-act.dharshi.17",
+            "TS3006c.B.dialog-act.dharshi.1",
+            "TS3006c.B.dialog-act.dharshi.2",
+            "TS3006c.B.dialog-act.dharshi.3",
+            "TS3006c.B.dialog-act.dharshi.4",
+            "TS3006c.C.dialog-act.dharshi.10",
+            "TS3006c.C.dialog-act.dharshi.11",
+            "TS3006c.C.dialog-act.dharshi.12",
+            "TS3006c.C.dialog-act.dharshi.13",
+            "TS3006c.C.dialog-act.dharshi.14",
+            "TS3006c.C.dialog-act.dharshi.15",
+            "TS3006c.C.dialog-act.dharshi.8",
+            "TS3006c.C.dialog-act.dharshi.9",
+            "TS3006c.D.dialog-act.dharshi.11",
+            "TS3006c.D.dialog-act.dharshi.12",
+            "TS3006c.D.dialog-act.dharshi.13",
+            "TS3006c.D.dialog-act.dharshi.14",
+            "TS3006c.D.dialog-act.dharshi.16",
+            "TS3006c.D.dialog-act.dharshi.18",
+            "TS3006c.D.dialog-act.dharshi.19",
+            "TS3006c.D.dialog-act.dharshi.20",
+            "TS3006c.D.dialog-act.dharshi.21",
+            "TS3006c.D.dialog-act.dharshi.22"
+          ],
+          "all_cited_dialogue_delivered": true
+        },
+        {
+          "item_key": "TS3006c#13",
+          "initial_delivered_da_ids": [
+            "TS3006c.C.dialog-act.dharshi.14"
+          ],
+          "finish_da_ids": [
+            "TS3006c.C.dialog-act.dharshi.14"
+          ],
+          "additional_observed_ids": [],
+          "all_cited_dialogue_delivered": true
+        }
+      ],
+      "restored_source_review": [
+        {
+          "item_key": "TS3006c#11",
+          "record": {
+            "id": "TS3006c.sys.s.12",
+            "text": "ME and UI will create a new page on the board and be creative.",
+            "type": "actions",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.D.dialog-act.dharshi.309"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.A.dialog-act.dharshi.294"
+              }
+            ],
+            "owner": [
+              "MTD024ME",
+              "MTD023UID"
+            ],
+            "owner_basis": "explicit",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": []
+          },
+          "original_evidence": [
+            "TS3006c.D.dialog-act.dharshi.309",
+            "TS3006c.A.dialog-act.dharshi.294"
+          ],
+          "successful_finish": true,
+          "tool_calls": [
+            {
+              "step": 1,
+              "action": "get_prior_items",
+              "outcome": "ok"
+            },
+            {
+              "step": 2,
+              "action": "finish",
+              "outcome": "finished"
+            }
+          ],
+          "dialogue": [
+            {
+              "da_id": "TS3006c.D.dialog-act.dharshi.309",
+              "participant": "MTD024ME",
+              "role": "ME",
+              "text": "Alright so that's uh <disfmarker>"
+            },
+            {
+              "da_id": "TS3006c.A.dialog-act.dharshi.294",
+              "participant": "MTD021PM",
+              "role": "PM",
+              "text": "thirty minutes ."
+            }
+          ]
+        },
+        {
+          "item_key": "TS3006c#12",
+          "record": {
+            "id": "TS3006c.sys.s.13",
+            "text": "I can't cut and paste it into the other folder but <disfmarker>",
+            "type": "problems",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.D.dialog-act.dharshi.17"
+              }
+            ],
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": []
+          },
+          "original_evidence": [
+            "TS3006c.D.dialog-act.dharshi.17"
+          ],
+          "successful_finish": true,
+          "tool_calls": [
+            {
+              "step": 1,
+              "action": "read_dialogue",
+              "outcome": "ok"
+            },
+            {
+              "step": 2,
+              "action": "get_prior_items",
+              "outcome": "ok"
+            },
+            {
+              "step": 3,
+              "action": "finish",
+              "outcome": "finished"
+            }
+          ],
+          "dialogue": [
+            {
+              "da_id": "TS3006c.D.dialog-act.dharshi.17",
+              "participant": "MTD024ME",
+              "role": "ME",
+              "text": "I can't cut and paste it into the other folder but <disfmarker>"
+            }
+          ]
+        },
+        {
+          "item_key": "TS3006c#13",
+          "record": {
+            "id": "TS3006c.sys.s.14",
+            "text": "I don't know how to use PowerPoint , so it takes me forever to get something done with it.",
+            "type": "problems",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006c.json",
+                "locator": "TS3006c.C.dialog-act.dharshi.14"
+              }
+            ],
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": []
+          },
+          "original_evidence": [
+            "TS3006c.C.dialog-act.dharshi.14"
+          ],
+          "successful_finish": true,
+          "tool_calls": [
+            {
+              "step": 1,
+              "action": "get_prior_items",
+              "outcome": "ok"
+            },
+            {
+              "step": 2,
+              "action": "read_dialogue",
+              "outcome": "tool_error"
+            },
+            {
+              "step": 3,
+              "action": "finish",
+              "outcome": "finished"
+            }
+          ],
+          "dialogue": [
+            {
+              "da_id": "TS3006c.C.dialog-act.dharshi.14",
+              "participant": "MTD022ID",
+              "role": "ID",
+              "text": "and also with <disfmarker> I don't know how to use PowerPoint , so it takes me forever to get something done with it ."
+            }
+          ]
+        }
+      ],
+      "p2_enabled": false,
+      "clarification_requests": 0,
+      "stage_seconds": 266.3,
+      "agent_fallbacks": null,
+      "recoverable_errors": [
+        {
+          "item": "TS3006c#13",
+          "step": 2,
+          "action": "read_dialogue",
+          "outcome": "tool_error",
+          "error": "KeyError: 'C.dialog-act.dharshi.14 not found in TS3006c'"
+        }
+      ]
+    },
+    {
+      "meeting_id": "TS3006d",
+      "status": "COMPLETED",
+      "errors": [],
+      "warnings": [],
+      "elapsed_seconds": 279.953,
+      "usage": {
+        "calls": 47,
+        "in": 210489,
+        "out": 159721,
+        "stages": {
+          "extract": {
+            "calls": 16,
+            "in": 126866,
+            "out": 115276
+          },
+          "consolidate": {
+            "calls": 3,
+            "in": 8571,
+            "out": 31659
+          },
+          "agent": {
+            "calls": 27,
+            "in": 74265,
+            "out": 11325
+          },
+          "abstract": {
+            "calls": 1,
+            "in": 787,
+            "out": 1461
+          }
+        }
+      },
+      "runtime_control": {
+        "limits": {
+          "calls": 80,
+          "tokens": 1000000,
+          "request_seconds": 300.0,
+          "meeting_seconds": 1200.0,
+          "inflight": 4,
+          "retries": 2,
+          "backoff": 0.5
+        },
+        "attempted_calls": 47,
+        "charged_tokens": 370210,
+        "unknown_usage_tokens": 0,
+        "reserved_tokens": 0,
+        "max_inflight_seen": 4,
+        "failure": null,
+        "input_bound_method": "utf8_request_bytes_plus_padding",
+        "unknown_usage_policy": "charge_full_reservation"
+      },
+      "stage_events": 143,
+      "agent_events": 27,
+      "request_events": 48,
+      "item_counts": {
+        "actions": 3,
+        "decisions": 6,
+        "problems": 4,
+        "abstract": 5
+      },
+      "flagged_items": 10,
+      "restored_items": 3,
+      "agent_outcomes": {
+        "ok": 17,
+        "finished": 10
+      },
+      "tool_calls": {
+        "get_prior_items": 11,
+        "read_prior_item": 4,
+        "read_dialogue": 1,
+        "get_participants": 1
+      },
+      "cross_meeting_links": [
+        {
+          "item_key": "TS3006d#1",
+          "record_id": "TS3006d.sys.s.2",
+          "text": "The group adopted four as the remote control button count.",
+          "id": "TS3006b.sys.s.10",
+          "relation": "continues"
+        },
+        {
+          "item_key": "TS3006d#2",
+          "record_id": "TS3006d.sys.s.3",
+          "text": "The screen drawing area is too small, making it difficult to draw on the lower half of the display.",
+          "id": "TS3006a.sys.s.1",
+          "relation": "continues"
+        },
+        {
+          "item_key": "TS3006d#2",
+          "record_id": "TS3006d.sys.s.3",
+          "text": "The screen drawing area is too small, making it difficult to draw on the lower half of the display.",
+          "id": "TS3006b.sys.s.12",
+          "relation": "continues"
+        },
+        {
+          "item_key": "TS3006d#2",
+          "record_id": "TS3006d.sys.s.3",
+          "text": "The screen drawing area is too small, making it difficult to draw on the lower half of the display.",
+          "id": "TS3006c.sys.s.2",
+          "relation": "continues"
+        },
+        {
+          "item_key": "TS3006d#3",
+          "record_id": "TS3006d.sys.s.4",
+          "text": "ID will design/make one large LCD screen.",
+          "id": "TS3006b.sys.s.3",
+          "relation": "continues"
+        },
+        {
+          "item_key": "TS3006d#4",
+          "record_id": "TS3006d.sys.s.5",
+          "text": "The product will use a hand dynamo as the power source.",
+          "id": "TS3006c.sys.s.3",
+          "relation": "continues"
+        },
+        {
+          "item_key": "TS3006d#5",
+          "record_id": "TS3006d.sys.s.6",
+          "text": "The LCD display will be kept.",
+          "id": "TS3006b.sys.s.10",
+          "relation": "continues"
+        },
+        {
+          "item_key": "TS3006d#8",
+          "record_id": "TS3006d.sys.s.9",
+          "text": "We will implement Morse code for the remote input and drop speech recognition from the remote.",
+          "id": "TS3006b.sys.s.9",
+          "relation": "replaces"
+        },
+        {
+          "item_key": "TS3006d#9",
+          "record_id": "TS3006d.sys.s.10",
+          "text": "The price will be reduced by one and a half euros, and some features will be dropped to stay within budget.",
+          "id": "TS3006a.sys.s.2",
+          "relation": "updates"
+        },
+        {
+          "item_key": "TS3006d#11",
+          "record_id": "TS3006d.sys.s.12",
+          "text": "Dropping the LCD screen would destroy the concept.",
+          "id": "TS3006b.sys.s.12",
+          "relation": "updates"
+        }
+      ],
+      "reference_count": 56,
+      "citation_checks": [
+        {
+          "item_key": "TS3006d#1",
+          "initial_delivered_da_ids": [
+            "TS3006d.A.dialog-act.dharshi.296",
+            "TS3006d.A.dialog-act.dharshi.308",
+            "TS3006d.B.dialog-act.dharshi.153",
+            "TS3006d.C.dialog-act.dharshi.203",
+            "TS3006d.D.dialog-act.dharshi.374",
+            "TS3006d.D.dialog-act.dharshi.378",
+            "TS3006d.D.dialog-act.dharshi.379"
+          ],
+          "finish_da_ids": [
+            "TS3006d.A.dialog-act.dharshi.296",
+            "TS3006d.A.dialog-act.dharshi.308",
+            "TS3006d.B.dialog-act.dharshi.153",
+            "TS3006d.C.dialog-act.dharshi.203",
+            "TS3006d.D.dialog-act.dharshi.374",
+            "TS3006d.D.dialog-act.dharshi.378",
+            "TS3006d.D.dialog-act.dharshi.379"
+          ],
+          "additional_observed_ids": [
+            "TS3006b.A.dialog-act.dharshi.253",
+            "TS3006b.A.dialog-act.dharshi.254",
+            "TS3006b.A.dialog-act.dharshi.255",
+            "TS3006b.A.dialog-act.dharshi.256",
+            "TS3006b.C.dialog-act.dharshi.158",
+            "TS3006b.C.dialog-act.dharshi.159",
+            "TS3006b.D.dialog-act.dharshi.310",
+            "TS3006b.sys.s.10",
+            "TS3006b.sys.s.8",
+            "TS3006c.sys.s.3"
+          ],
+          "all_cited_dialogue_delivered": true
+        },
+        {
+          "item_key": "TS3006d#2",
+          "initial_delivered_da_ids": [
+            "TS3006d.C.dialog-act.dharshi.180"
+          ],
+          "finish_da_ids": [
+            "TS3006d.C.dialog-act.dharshi.180"
+          ],
+          "additional_observed_ids": [
+            "TS3006a.sys.s.1",
+            "TS3006b.sys.s.12",
+            "TS3006c.sys.s.2"
+          ],
+          "all_cited_dialogue_delivered": true
+        },
+        {
+          "item_key": "TS3006d#3",
+          "initial_delivered_da_ids": [
+            "TS3006d.A.dialog-act.dharshi.346",
+            "TS3006d.B.dialog-act.dharshi.176",
+            "TS3006d.C.dialog-act.dharshi.254",
+            "TS3006d.D.dialog-act.dharshi.450"
+          ],
+          "finish_da_ids": [
+            "TS3006d.A.dialog-act.dharshi.346",
+            "TS3006d.B.dialog-act.dharshi.176",
+            "TS3006d.C.dialog-act.dharshi.254",
+            "TS3006d.D.dialog-act.dharshi.450"
+          ],
+          "additional_observed_ids": [
+            "TS3006b.sys.s.3"
+          ],
+          "all_cited_dialogue_delivered": true
+        },
+        {
+          "item_key": "TS3006d#4",
+          "initial_delivered_da_ids": [
+            "TS3006d.A.dialog-act.dharshi.179",
+            "TS3006d.A.dialog-act.dharshi.18",
+            "TS3006d.D.dialog-act.dharshi.159",
+            "TS3006d.D.dialog-act.dharshi.8"
+          ],
+          "finish_da_ids": [
+            "TS3006c.A.dialog-act.dharshi.81",
+            "TS3006d.A.dialog-act.dharshi.179",
+            "TS3006d.A.dialog-act.dharshi.18",
+            "TS3006d.D.dialog-act.dharshi.159"
+          ],
+          "additional_observed_ids": [
+            "TS3006c.A.dialog-act.dharshi.80",
+            "TS3006c.A.dialog-act.dharshi.81",
+            "TS3006c.D.dialog-act.dharshi.103",
+            "TS3006c.sys.s.3"
+          ],
+          "all_cited_dialogue_delivered": true
+        },
+        {
+          "item_key": "TS3006d#5",
+          "initial_delivered_da_ids": [
+            "TS3006d.A.dialog-act.dharshi.140",
+            "TS3006d.A.dialog-act.dharshi.181",
+            "TS3006d.C.dialog-act.dharshi.102",
+            "TS3006d.D.dialog-act.dharshi.127",
+            "TS3006d.D.dialog-act.dharshi.163"
+          ],
+          "finish_da_ids": [
+            "TS3006d.A.dialog-act.dharshi.181",
+            "TS3006d.C.dialog-act.dharshi.102",
+            "TS3006d.D.dialog-act.dharshi.127",
+            "TS3006d.D.dialog-act.dharshi.163"
+          ],
+          "additional_observed_ids": [
+            "TS3006b.sys.s.10",
+            "TS3006b.sys.s.4",
+            "TS3006c.sys.s.10"
+          ],
+          "all_cited_dialogue_delivered": true
+        },
+        {
+          "item_key": "TS3006d#8",
+          "initial_delivered_da_ids": [
+            "TS3006d.C.dialog-act.dharshi.147",
+            "TS3006d.D.dialog-act.dharshi.308"
+          ],
+          "finish_da_ids": [
+            "TS3006d.C.dialog-act.dharshi.147",
+            "TS3006d.D.dialog-act.dharshi.308"
+          ],
+          "additional_observed_ids": [
+            "TS3006b.A.dialog-act.dharshi.79",
+            "TS3006b.B.dialog-act.dharshi.60",
+            "TS3006b.B.dialog-act.dharshi.61",
+            "TS3006b.C.dialog-act.dharshi.56",
+            "TS3006b.D.dialog-act.dharshi.128",
+            "TS3006b.sys.s.10",
+            "TS3006b.sys.s.8",
+            "TS3006b.sys.s.9"
+          ],
+          "all_cited_dialogue_delivered": true
+        },
+        {
+          "item_key": "TS3006d#9",
+          "initial_delivered_da_ids": [
+            "TS3006d.A.dialog-act.dharshi.152",
+            "TS3006d.A.dialog-act.dharshi.153",
+            "TS3006d.A.dialog-act.dharshi.157",
+            "TS3006d.C.dialog-act.dharshi.84",
+            "TS3006d.C.dialog-act.dharshi.86",
+            "TS3006d.D.dialog-act.dharshi.135",
+            "TS3006d.D.dialog-act.dharshi.139"
+          ],
+          "finish_da_ids": [
+            "TS3006d.A.dialog-act.dharshi.152",
+            "TS3006d.A.dialog-act.dharshi.157",
+            "TS3006d.D.dialog-act.dharshi.139"
+          ],
+          "additional_observed_ids": [
+            "TS3006a.sys.s.2"
+          ],
+          "all_cited_dialogue_delivered": true
+        },
+        {
+          "item_key": "TS3006d#10",
+          "initial_delivered_da_ids": [
+            "TS3006d.D.dialog-act.dharshi.613"
+          ],
+          "finish_da_ids": [
+            "TS3006d.D.dialog-act.dharshi.613"
+          ],
+          "additional_observed_ids": [
+            "TS3006c.sys.s.12",
+            "TS3006c.sys.s.6",
+            "TS3006c.sys.s.9"
+          ],
+          "all_cited_dialogue_delivered": true
+        },
+        {
+          "item_key": "TS3006d#11",
+          "initial_delivered_da_ids": [
+            "TS3006d.A.dialog-act.dharshi.76",
+            "TS3006d.B.dialog-act.dharshi.30",
+            "TS3006d.B.dialog-act.dharshi.31"
+          ],
+          "finish_da_ids": [
+            "TS3006b.C.dialog-act.dharshi.18",
+            "TS3006d.A.dialog-act.dharshi.76",
+            "TS3006d.B.dialog-act.dharshi.30",
+            "TS3006d.B.dialog-act.dharshi.31"
+          ],
+          "additional_observed_ids": [
+            "TS3006a.sys.s.1",
+            "TS3006b.C.dialog-act.dharshi.18",
+            "TS3006b.sys.s.12",
+            "TS3006c.sys.s.2"
+          ],
+          "all_cited_dialogue_delivered": true
+        },
+        {
+          "item_key": "TS3006d#12",
+          "initial_delivered_da_ids": [
+            "TS3006d.A.dialog-act.dharshi.61",
+            "TS3006d.B.dialog-act.dharshi.23"
+          ],
+          "finish_da_ids": [
+            "TS3006d.A.dialog-act.dharshi.61",
+            "TS3006d.B.dialog-act.dharshi.23"
+          ],
+          "additional_observed_ids": [
+            "MTD021PM",
+            "MTD022ID",
+            "MTD023UID",
+            "MTD024ME",
+            "TS3006d.A.dialog-act.dharshi.58",
+            "TS3006d.A.dialog-act.dharshi.59",
+            "TS3006d.A.dialog-act.dharshi.60",
+            "TS3006d.B.dialog-act.dharshi.22",
+            "TS3006d.C.dialog-act.dharshi.37",
+            "TS3006d.D.dialog-act.dharshi.35",
+            "TS3006d.D.dialog-act.dharshi.36",
+            "TS3006d.D.dialog-act.dharshi.37",
+            "TS3006d.D.dialog-act.dharshi.38"
+          ],
+          "all_cited_dialogue_delivered": true
+        }
+      ],
+      "restored_source_review": [
+        {
+          "item_key": "TS3006d#10",
+          "record": {
+            "id": "TS3006d.sys.s.11",
+            "text": "ME will check your email.",
+            "type": "actions",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006d.json",
+                "locator": "TS3006d.D.dialog-act.dharshi.613"
+              }
+            ],
+            "owner": [
+              "MTD024ME"
+            ],
+            "owner_basis": "explicit",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": []
+          },
+          "original_evidence": [
+            "TS3006d.D.dialog-act.dharshi.613"
+          ],
+          "successful_finish": true,
+          "tool_calls": [
+            {
+              "step": 1,
+              "action": "get_prior_items",
+              "outcome": "ok"
+            },
+            {
+              "step": 2,
+              "action": "finish",
+              "outcome": "finished"
+            }
+          ],
+          "dialogue": [
+            {
+              "da_id": "TS3006d.D.dialog-act.dharshi.613",
+              "participant": "MTD024ME",
+              "role": "ME",
+              "text": "Yes . Check your email ."
+            }
+          ]
+        },
+        {
+          "item_key": "TS3006d#11",
+          "record": {
+            "id": "TS3006d.sys.s.12",
+            "text": "Dropping the LCD screen would destroy the concept.",
+            "type": "problems",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006d.json",
+                "locator": "TS3006d.B.dialog-act.dharshi.30"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006d.json",
+                "locator": "TS3006d.B.dialog-act.dharshi.31"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006d.json",
+                "locator": "TS3006d.A.dialog-act.dharshi.76"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006b.json",
+                "locator": "TS3006b.C.dialog-act.dharshi.18"
+              }
+            ],
+            "status": "open",
+            "prior_context_needed": true,
+            "related_items": [
+              {
+                "id": "TS3006b.sys.s.12",
+                "relation": "updates"
+              }
+            ]
+          },
+          "original_evidence": [
+            "TS3006d.B.dialog-act.dharshi.30",
+            "TS3006d.B.dialog-act.dharshi.31",
+            "TS3006d.A.dialog-act.dharshi.76"
+          ],
+          "successful_finish": true,
+          "tool_calls": [
+            {
+              "step": 1,
+              "action": "get_prior_items",
+              "outcome": "ok"
+            },
+            {
+              "step": 2,
+              "action": "read_prior_item",
+              "outcome": "ok"
+            },
+            {
+              "step": 3,
+              "action": "finish",
+              "outcome": "finished"
+            }
+          ],
+          "dialogue": [
+            {
+              "da_id": "TS3006d.B.dialog-act.dharshi.30",
+              "participant": "MTD023UID",
+              "role": "UI",
+              "text": "We lose our whole concept ."
+            },
+            {
+              "da_id": "TS3006d.B.dialog-act.dharshi.31",
+              "participant": "MTD023UID",
+              "role": "UI",
+              "text": "Uh so <disfmarker> No we just <disfmarker>"
+            },
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.76",
+              "participant": "MTD021PM",
+              "role": "PM",
+              "text": "Yeah ."
+            },
+            {
+              "da_id": "TS3006b.C.dialog-act.dharshi.18",
+              "participant": "MTD022ID",
+              "role": "ID",
+              "text": "Yeah yeah . No but my screen is reduced in size . <vocalsound>"
+            }
+          ]
+        },
+        {
+          "item_key": "TS3006d#12",
+          "record": {
+            "id": "TS3006d.sys.s.13",
+            "text": "The integrated button is costly, with a single one costing five times as much as a normal button.",
+            "type": "problems",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006d.json",
+                "locator": "TS3006d.B.dialog-act.dharshi.23"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006d.json",
+                "locator": "TS3006d.A.dialog-act.dharshi.61"
+              }
+            ],
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": []
+          },
+          "original_evidence": [
+            "TS3006d.B.dialog-act.dharshi.23",
+            "TS3006d.A.dialog-act.dharshi.61"
+          ],
+          "successful_finish": true,
+          "tool_calls": [
+            {
+              "step": 1,
+              "action": "get_prior_items",
+              "outcome": "ok"
+            },
+            {
+              "step": 2,
+              "action": "read_dialogue",
+              "outcome": "ok"
+            },
+            {
+              "step": 3,
+              "action": "get_participants",
+              "outcome": "ok"
+            },
+            {
+              "step": 4,
+              "action": "finish",
+              "outcome": "finished"
+            }
+          ],
+          "dialogue": [
+            {
+              "da_id": "TS3006d.B.dialog-act.dharshi.23",
+              "participant": "MTD023UID",
+              "role": "UI",
+              "text": "But but th the cost of one integrated button is far more than a few extra push-buttons ."
+            },
+            {
+              "da_id": "TS3006d.A.dialog-act.dharshi.61",
+              "participant": "MTD021PM",
+              "role": "PM",
+              "text": "One integrated button is five times the cost of a normal button ."
+            }
+          ]
+        }
+      ],
+      "p2_enabled": false,
+      "clarification_requests": 0,
+      "stage_seconds": 279.7,
+      "agent_fallbacks": null,
+      "recoverable_errors": []
+    }
+  ]
+}

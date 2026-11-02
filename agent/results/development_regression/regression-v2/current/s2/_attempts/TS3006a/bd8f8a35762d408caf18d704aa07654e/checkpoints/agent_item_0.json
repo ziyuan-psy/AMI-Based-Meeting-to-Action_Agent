@@ -1,0 +1,931 @@
+{
+  "item": 0,
+  "fields": {
+    "item_key": "TS3006a#0",
+    "record_id": null,
+    "item_type": "problems",
+    "item_text": "There is a hardware/display problem as the presenter reports the screen is missing ('where has my screen gone?' and 'My screen is gone').",
+    "state": "pending",
+    "recordable": true,
+    "fields": {
+      "status": "unknown",
+      "prior_context_needed": false,
+      "related_items": [],
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3006a.json",
+          "locator": "TS3006a.D.dialog-act.vkaraisk.9"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3006a.json",
+          "locator": "TS3006a.D.dialog-act.vkaraisk.13"
+        }
+      ]
+    },
+    "draft_fields": {
+      "status": "open",
+      "prior_context_needed": false,
+      "related_items": [],
+      "evidence_da_ids": [
+        "TS3006a.D.dialog-act.vkaraisk.9",
+        "TS3006a.D.dialog-act.vkaraisk.13"
+      ],
+      "owner": null,
+      "owner_basis": "missing",
+      "deadline": null,
+      "deadline_basis": "missing"
+    },
+    "checks": {
+      "statement": {
+        "result": "pass",
+        "reason": "Dialogue shows ME reporting the screen is missing with phrases \"where has my screen gone\" and \"My screen is gone\".",
+        "quotes": [
+          {
+            "da_id": "TS3006a.D.dialog-act.vkaraisk.9",
+            "quote": "Uh <vocalsound> where has my screen gone ?"
+          },
+          {
+            "da_id": "TS3006a.D.dialog-act.vkaraisk.13",
+            "quote": "My screen is gone ."
+          }
+        ],
+        "fields": [
+          "statement"
+        ]
+      },
+      "owner": {
+        "result": "not_applicable",
+        "reason": "field_not_applicable",
+        "quotes": [],
+        "fields": [
+          "owner"
+        ]
+      },
+      "deadline": {
+        "result": "not_applicable",
+        "reason": "field_not_applicable",
+        "quotes": [],
+        "fields": [
+          "deadline"
+        ]
+      },
+      "status": {
+        "result": "uncertain",
+        "reason": "current_meeting_support_required",
+        "quotes": [],
+        "fields": [
+          "status"
+        ]
+      },
+      "conflict": {
+        "result": "pass",
+        "reason": "No contradiction in dialogue.",
+        "quotes": [
+          {
+            "da_id": "TS3006a.D.dialog-act.vkaraisk.9",
+            "quote": "Uh <vocalsound> where has my screen gone ?"
+          },
+          {
+            "da_id": "TS3006a.D.dialog-act.vkaraisk.13",
+            "quote": "My screen is gone ."
+          }
+        ],
+        "fields": []
+      },
+      "relation": {
+        "result": "not_applicable",
+        "reason": "no prior items to relate.",
+        "quotes": [],
+        "fields": [
+          "related_items"
+        ]
+      }
+    },
+    "unresolved_fields": [
+      "status"
+    ],
+    "observed_evidence_da_ids": [
+      "TS3006a.D.dialog-act.vkaraisk.9",
+      "TS3006a.D.dialog-act.vkaraisk.13",
+      "TS3006a.A.dialog-act.vkaraisk.3",
+      "TS3006a.C.dialog-act.vkaraisk.1",
+      "TS3006a.D.dialog-act.vkaraisk.12",
+      "TS3006a.D.dialog-act.vkaraisk.14"
+    ],
+    "initial_context": {
+      "item": {
+        "type": "problems",
+        "text": "There is a hardware/display problem as the presenter reports the screen is missing ('where has my screen gone?' and 'My screen is gone').",
+        "flags": []
+      },
+      "fields": {
+        "owner": null,
+        "owner_basis": "missing",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "open",
+        "prior_context_needed": false,
+        "related_items": [],
+        "evidence_da_ids": [
+          "TS3006a.D.dialog-act.vkaraisk.9",
+          "TS3006a.D.dialog-act.vkaraisk.13"
+        ],
+        "used_participant_lookup": false
+      },
+      "current_meeting": "TS3006a",
+      "earlier_meetings": [],
+      "roster": [
+        {
+          "speaker": "A",
+          "participant_id": "MTD021PM",
+          "role": "PM"
+        },
+        {
+          "speaker": "B",
+          "participant_id": "MTD023UID",
+          "role": "UI"
+        },
+        {
+          "speaker": "C",
+          "participant_id": "MTD022ID",
+          "role": "ID"
+        },
+        {
+          "speaker": "D",
+          "participant_id": "MTD024ME",
+          "role": "ME"
+        }
+      ],
+      "observed_dialogue": [
+        {
+          "da_id": "TS3006a.D.dialog-act.vkaraisk.9",
+          "meeting_id": "TS3006a",
+          "text": "Uh <vocalsound> where has my screen gone ?",
+          "participant": "MTD024ME",
+          "role": "ME"
+        },
+        {
+          "da_id": "TS3006a.D.dialog-act.vkaraisk.13",
+          "meeting_id": "TS3006a",
+          "text": "My screen is gone .",
+          "participant": "MTD024ME",
+          "role": "ME"
+        },
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.3",
+          "participant": "MTD021PM",
+          "role": "PM",
+          "text": "Okay ."
+        },
+        {
+          "da_id": "TS3006a.C.dialog-act.vkaraisk.1",
+          "participant": "MTD022ID",
+          "role": "ID",
+          "text": "Hi ."
+        },
+        {
+          "da_id": "TS3006a.D.dialog-act.vkaraisk.12",
+          "participant": "MTD024ME",
+          "role": "ME",
+          "text": "Yeah ."
+        },
+        {
+          "da_id": "TS3006a.D.dialog-act.vkaraisk.14",
+          "participant": "MTD024ME",
+          "role": "ME",
+          "text": "<vocalsound> Oh ."
+        }
+      ],
+      "peer_items": []
+    },
+    "observed_documents": [],
+    "document_evidence": [],
+    "relation_evidence": [],
+    "history": [
+      {
+        "item": "TS3006a#0",
+        "step": 1,
+        "flags": [],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "uncertain",
+            "reason": "current_meeting_support_required",
+            "quotes": [],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "uncertain",
+            "reason": "current_meeting_support_required",
+            "quotes": [],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "uncertain",
+            "reason": "current_meeting_support_required",
+            "quotes": [],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No earlier related item to assess relationship with.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "decision": "reassess",
+        "reason": "missing_current_evidence_selection",
+        "requested_action": null,
+        "proposed_fields": {
+          "status": "open",
+          "prior_context_needed": false,
+          "related_items": [],
+          "evidence_da_ids": [
+            "TS3006a.D.dialog-act.vkaraisk.9",
+            "TS3006a.D.dialog-act.vkaraisk.13"
+          ],
+          "used_participant_lookup": false,
+          "owner": null,
+          "owner_basis": "missing",
+          "deadline": null,
+          "deadline_basis": "missing"
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue shows ME reporting the screen is missing with phrases \"where has my screen gone\" and \"My screen is gone\"."
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "This is a problem item, not an action with an owner in this assessment."
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "No deadline applies to a standalone problem item."
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Current dialogue indicates an open problem; no completion or closure yet."
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No internal contradiction found in the provided dialogue for this item."
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No earlier related item to assess relationship with."
+          }
+        },
+        "submitted_assessment": {
+          "fields": {
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": [],
+            "evidence_da_ids": [
+              "TS3006a.D.dialog-act.vkaraisk.9",
+              "TS3006a.D.dialog-act.vkaraisk.13"
+            ],
+            "used_participant_lookup": false
+          },
+          "checks": {
+            "statement": {
+              "result": "pass",
+              "reason": "Dialogue shows ME reporting the screen is missing with phrases \"where has my screen gone\" and \"My screen is gone\"."
+            },
+            "owner": {
+              "result": "not_applicable",
+              "reason": "This is a problem item, not an action with an owner in this assessment."
+            },
+            "deadline": {
+              "result": "not_applicable",
+              "reason": "No deadline applies to a standalone problem item."
+            },
+            "status": {
+              "result": "pass",
+              "reason": "Current dialogue indicates an open problem; no completion or closure yet."
+            },
+            "conflict": {
+              "result": "pass",
+              "reason": "No internal contradiction found in the provided dialogue for this item."
+            },
+            "relation": {
+              "result": "not_applicable",
+              "reason": "No earlier related item to assess relationship with."
+            }
+          }
+        },
+        "evidence_bindings": {},
+        "raw_tool_input": {
+          "fields": {
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": [],
+            "evidence_da_ids": [
+              "TS3006a.D.dialog-act.vkaraisk.9",
+              "TS3006a.D.dialog-act.vkaraisk.13"
+            ],
+            "used_participant_lookup": false
+          },
+          "checks": {
+            "statement": {
+              "result": "pass",
+              "reason": "Dialogue shows ME reporting the screen is missing with phrases \"where has my screen gone\" and \"My screen is gone\"."
+            },
+            "owner": {
+              "result": "not_applicable",
+              "reason": "This is a problem item, not an action with an owner in this assessment."
+            },
+            "deadline": {
+              "result": "not_applicable",
+              "reason": "No deadline applies to a standalone problem item."
+            },
+            "status": {
+              "result": "pass",
+              "reason": "Current dialogue indicates an open problem; no completion or closure yet."
+            },
+            "conflict": {
+              "result": "pass",
+              "reason": "No internal contradiction found in the provided dialogue for this item."
+            },
+            "relation": {
+              "result": "not_applicable",
+              "reason": "No earlier related item to assess relationship with."
+            }
+          }
+        },
+        "protocol_normalizations": []
+      },
+      {
+        "item": "TS3006a#0",
+        "step": 2,
+        "flags": [],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue shows ME reporting the screen is missing with phrases \"where has my screen gone\" and \"My screen is gone\".",
+            "quotes": [
+              {
+                "da_id": "TS3006a.D.dialog-act.vkaraisk.9",
+                "quote": "Uh <vocalsound> where has my screen gone ?"
+              },
+              {
+                "da_id": "TS3006a.D.dialog-act.vkaraisk.13",
+                "quote": "My screen is gone ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "uncertain",
+            "reason": "current_meeting_support_required",
+            "quotes": [],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No internal contradiction found in the provided dialogue for this item.",
+            "quotes": [
+              {
+                "da_id": "TS3006a.D.dialog-act.vkaraisk.9",
+                "quote": "Uh <vocalsound> where has my screen gone ?"
+              },
+              {
+                "da_id": "TS3006a.D.dialog-act.vkaraisk.13",
+                "quote": "My screen is gone ."
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No earlier related item to assess relationship with.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "decision": "retrieve",
+        "reason": "unresolved_checks",
+        "requested_action": null,
+        "proposed_fields": {
+          "owner": null,
+          "owner_basis": "missing",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "status": "open",
+          "prior_context_needed": false,
+          "related_items": [],
+          "evidence_da_ids": [
+            "TS3006a.D.dialog-act.vkaraisk.9",
+            "TS3006a.D.dialog-act.vkaraisk.13",
+            "TS3006a.A.dialog-act.vkaraisk.3"
+          ],
+          "used_participant_lookup": false
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue shows ME reporting the screen is missing with phrases \"where has my screen gone\" and \"My screen is gone\".",
+            "quotes": [
+              "TS3006a.D.dialog-act.vkaraisk.9",
+              "TS3006a.D.dialog-act.vkaraisk.13"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "This is a problem item, not an action with an owner in this assessment."
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "No deadline applies to a standalone problem item."
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Current dialogue indicates an open problem; no completion or closure yet."
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No internal contradiction found in the provided dialogue for this item."
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No earlier related item to assess relationship with."
+          }
+        },
+        "submitted_assessment": {
+          "fields": {
+            "owner": null,
+            "owner_basis": "missing",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": [],
+            "evidence_da_ids": [
+              "TS3006a.D.dialog-act.vkaraisk.9",
+              "TS3006a.D.dialog-act.vkaraisk.13",
+              "TS3006a.A.dialog-act.vkaraisk.3"
+            ],
+            "used_participant_lookup": false
+          },
+          "checks": {
+            "statement": {
+              "result": "pass",
+              "reason": "Dialogue shows ME reporting the screen is missing with phrases \"where has my screen gone\" and \"My screen is gone\".",
+              "quotes": [
+                "TS3006a.D.dialog-act.vkaraisk.9",
+                "TS3006a.D.dialog-act.vkaraisk.13"
+              ]
+            },
+            "owner": {
+              "result": "not_applicable",
+              "reason": "This is a problem item, not an action with an owner in this assessment."
+            },
+            "deadline": {
+              "result": "not_applicable",
+              "reason": "No deadline applies to a standalone problem item."
+            },
+            "status": {
+              "result": "pass",
+              "reason": "Current dialogue indicates an open problem; no completion or closure yet."
+            },
+            "conflict": {
+              "result": "pass",
+              "reason": "No internal contradiction found in the provided dialogue for this item."
+            },
+            "relation": {
+              "result": "not_applicable",
+              "reason": "No earlier related item to assess relationship with."
+            }
+          }
+        },
+        "evidence_bindings": {
+          "statement": [
+            "TS3006a.D.dialog-act.vkaraisk.9",
+            "TS3006a.D.dialog-act.vkaraisk.13"
+          ],
+          "conflict_scope": [
+            "TS3006a.D.dialog-act.vkaraisk.9",
+            "TS3006a.D.dialog-act.vkaraisk.13"
+          ]
+        },
+        "raw_tool_input": {
+          "fields": {
+            "owner": null,
+            "owner_basis": "missing",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": [],
+            "evidence_da_ids": [
+              "TS3006a.D.dialog-act.vkaraisk.9",
+              "TS3006a.D.dialog-act.vkaraisk.13",
+              "TS3006a.A.dialog-act.vkaraisk.3"
+            ],
+            "used_participant_lookup": false
+          },
+          "checks": {
+            "statement": {
+              "result": "pass",
+              "reason": "Dialogue shows ME reporting the screen is missing with phrases \"where has my screen gone\" and \"My screen is gone\".",
+              "quotes": [
+                "TS3006a.D.dialog-act.vkaraisk.9",
+                "TS3006a.D.dialog-act.vkaraisk.13"
+              ]
+            },
+            "owner": {
+              "result": "not_applicable",
+              "reason": "This is a problem item, not an action with an owner in this assessment."
+            },
+            "deadline": {
+              "result": "not_applicable",
+              "reason": "No deadline applies to a standalone problem item."
+            },
+            "status": {
+              "result": "pass",
+              "reason": "Current dialogue indicates an open problem; no completion or closure yet."
+            },
+            "conflict": {
+              "result": "pass",
+              "reason": "No internal contradiction found in the provided dialogue for this item."
+            },
+            "relation": {
+              "result": "not_applicable",
+              "reason": "No earlier related item to assess relationship with."
+            }
+          }
+        },
+        "protocol_normalizations": []
+      },
+      {
+        "item": "TS3006a#0",
+        "step": 3,
+        "flags": [],
+        "action": "get_participants",
+        "outcome": "lookup",
+        "decision": "retrieve",
+        "args": {
+          "meeting_id": "TS3006a"
+        },
+        "tool_result": {
+          "results": [
+            {
+              "speaker": "A",
+              "participant_id": "MTD021PM",
+              "role": "PM"
+            },
+            {
+              "speaker": "B",
+              "participant_id": "MTD023UID",
+              "role": "UI"
+            },
+            {
+              "speaker": "C",
+              "participant_id": "MTD022ID",
+              "role": "ID"
+            },
+            {
+              "speaker": "D",
+              "participant_id": "MTD024ME",
+              "role": "ME"
+            }
+          ]
+        },
+        "new_info": false
+      },
+      {
+        "item": "TS3006a#0",
+        "step": 4,
+        "flags": [],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue shows ME reporting the screen is missing with phrases \"where has my screen gone\" and \"My screen is gone\".",
+            "quotes": [
+              {
+                "da_id": "TS3006a.D.dialog-act.vkaraisk.9",
+                "quote": "Uh <vocalsound> where has my screen gone ?"
+              },
+              {
+                "da_id": "TS3006a.D.dialog-act.vkaraisk.13",
+                "quote": "My screen is gone ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "uncertain",
+            "reason": "current_meeting_support_required",
+            "quotes": [],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradiction in dialogue.",
+            "quotes": [
+              {
+                "da_id": "TS3006a.D.dialog-act.vkaraisk.9",
+                "quote": "Uh <vocalsound> where has my screen gone ?"
+              },
+              {
+                "da_id": "TS3006a.D.dialog-act.vkaraisk.13",
+                "quote": "My screen is gone ."
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "no prior items to relate.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "decision": "retrieve",
+        "reason": "unresolved_checks",
+        "requested_action": null,
+        "proposed_fields": {
+          "status": "open",
+          "prior_context_needed": false,
+          "related_items": [],
+          "evidence_da_ids": [
+            "TS3006a.D.dialog-act.vkaraisk.9",
+            "TS3006a.D.dialog-act.vkaraisk.13"
+          ],
+          "owner": null,
+          "owner_basis": "missing",
+          "deadline": null,
+          "deadline_basis": "missing"
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue shows ME reporting the screen is missing with phrases \"where has my screen gone\" and \"My screen is gone\".",
+            "quotes": [
+              "TS3006a.D.dialog-act.vkaraisk.9",
+              "TS3006a.D.dialog-act.vkaraisk.13"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "non-action item"
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "non-action item"
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Current dialogue indicates an open problem; no closure yet."
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradiction in dialogue."
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "no prior items to relate."
+          }
+        },
+        "submitted_assessment": {
+          "fields": {
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": [],
+            "evidence_da_ids": [
+              "TS3006a.D.dialog-act.vkaraisk.9",
+              "TS3006a.D.dialog-act.vkaraisk.13"
+            ]
+          },
+          "checks": {
+            "statement": {
+              "result": "pass",
+              "reason": "Dialogue shows ME reporting the screen is missing with phrases \"where has my screen gone\" and \"My screen is gone\".",
+              "quotes": [
+                "TS3006a.D.dialog-act.vkaraisk.9",
+                "TS3006a.D.dialog-act.vkaraisk.13"
+              ]
+            },
+            "owner": {
+              "result": "not_applicable",
+              "reason": "non-action item"
+            },
+            "deadline": {
+              "result": "not_applicable",
+              "reason": "non-action item"
+            },
+            "status": {
+              "result": "pass",
+              "reason": "Current dialogue indicates an open problem; no closure yet."
+            },
+            "conflict": {
+              "result": "pass",
+              "reason": "No contradiction in dialogue."
+            },
+            "relation": {
+              "result": "not_applicable",
+              "reason": "no prior items to relate."
+            }
+          }
+        },
+        "evidence_bindings": {
+          "statement": [
+            "TS3006a.D.dialog-act.vkaraisk.9",
+            "TS3006a.D.dialog-act.vkaraisk.13"
+          ],
+          "conflict_scope": [
+            "TS3006a.D.dialog-act.vkaraisk.9",
+            "TS3006a.D.dialog-act.vkaraisk.13"
+          ]
+        },
+        "raw_tool_input": {
+          "fields": {
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": [],
+            "evidence_da_ids": [
+              "TS3006a.D.dialog-act.vkaraisk.9",
+              "TS3006a.D.dialog-act.vkaraisk.13"
+            ]
+          },
+          "checks": {
+            "statement": {
+              "result": "pass",
+              "reason": "Dialogue shows ME reporting the screen is missing with phrases \"where has my screen gone\" and \"My screen is gone\".",
+              "quotes": [
+                "TS3006a.D.dialog-act.vkaraisk.9",
+                "TS3006a.D.dialog-act.vkaraisk.13"
+              ]
+            },
+            "owner": {
+              "result": "not_applicable",
+              "reason": "non-action item"
+            },
+            "deadline": {
+              "result": "not_applicable",
+              "reason": "non-action item"
+            },
+            "status": {
+              "result": "pass",
+              "reason": "Current dialogue indicates an open problem; no closure yet."
+            },
+            "conflict": {
+              "result": "pass",
+              "reason": "No contradiction in dialogue."
+            },
+            "relation": {
+              "result": "not_applicable",
+              "reason": "no prior items to relate."
+            }
+          }
+        },
+        "protocol_normalizations": []
+      },
+      {
+        "item": "TS3006a#0",
+        "step": 5,
+        "flags": [],
+        "action": "get_participants",
+        "outcome": "lookup",
+        "decision": "retrieve",
+        "args": {
+          "meeting_id": "TS3006a"
+        },
+        "tool_result": {
+          "results": [
+            {
+              "speaker": "A",
+              "participant_id": "MTD021PM",
+              "role": "PM"
+            },
+            {
+              "speaker": "B",
+              "participant_id": "MTD023UID",
+              "role": "UI"
+            },
+            {
+              "speaker": "C",
+              "participant_id": "MTD022ID",
+              "role": "ID"
+            },
+            {
+              "speaker": "D",
+              "participant_id": "MTD024ME",
+              "role": "ME"
+            }
+          ],
+          "duplicate": true
+        },
+        "new_info": false
+      },
+      {
+        "item": "TS3006a#0",
+        "step": 5,
+        "flags": [],
+        "action": "stop",
+        "outcome": "pending",
+        "termination_reason": "no_progress",
+        "unresolved_fields": [
+          "status"
+        ]
+      }
+    ],
+    "lookups": 2,
+    "termination_reason": "no_progress",
+    "clarifications": [
+      {
+        "request_id": "7846b104dbae3f8b",
+        "item_key": "TS3006a#0",
+        "record_id": null,
+        "field": "status",
+        "question": "What is this item's status at the end of the current meeting?",
+        "item_text": "There is a hardware/display problem as the presenter reports the screen is missing ('where has my screen gone?' and 'My screen is gone').",
+        "reason": "current_meeting_support_required",
+        "evidence_da_ids": [],
+        "available_evidence_da_ids": [
+          "TS3006a.D.dialog-act.vkaraisk.9",
+          "TS3006a.D.dialog-act.vkaraisk.13",
+          "TS3006a.A.dialog-act.vkaraisk.3",
+          "TS3006a.C.dialog-act.vkaraisk.1",
+          "TS3006a.D.dialog-act.vkaraisk.12",
+          "TS3006a.D.dialog-act.vkaraisk.14"
+        ],
+        "status": "open",
+        "termination_reason": "no_progress"
+      }
+    ]
+  }
+}

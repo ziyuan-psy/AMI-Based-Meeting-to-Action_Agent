@@ -1,0 +1,813 @@
+{
+  "item": 4,
+  "fields": {
+    "item_key": "IS1008a#4",
+    "record_id": null,
+    "item_type": "actions",
+    "item_text": "Copy all emails and discussions to MIO086.",
+    "state": "pending",
+    "recordable": true,
+    "fields": {
+      "status": "unknown",
+      "prior_context_needed": false,
+      "related_items": [],
+      "owner": [
+        "FIE038"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/IS1008a.json",
+          "locator": "IS1008a.A.dialog-act.s9553330.119"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/IS1008a.json",
+          "locator": "IS1008a.B.dialog-act.s9553330.22"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/IS1008a.json",
+          "locator": "IS1008a.A.dialog-act.s9553330.118"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/IS1008a.json",
+          "locator": "IS1008a.A.dialog-act.s9553330.117"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/IS1008a.json",
+          "locator": "IS1008a.A.dialog-act.s9553330.116"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/IS1008a.json",
+          "locator": "IS1008a.B.dialog-act.s9553330.23"
+        }
+      ]
+    },
+    "draft_fields": {
+      "status": "open",
+      "related_items": [],
+      "owner": [
+        "FIE038"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "prior_context_needed": false,
+      "used_participant_lookup": false,
+      "evidence_da_ids": [
+        "IS1008a.A.dialog-act.s9553330.119",
+        "IS1008a.B.dialog-act.s9553330.22",
+        "IS1008a.A.dialog-act.s9553330.118",
+        "IS1008a.A.dialog-act.s9553330.117",
+        "IS1008a.A.dialog-act.s9553330.116",
+        "IS1008a.B.dialog-act.s9553330.23"
+      ]
+    },
+    "checks": {
+      "statement": {
+        "result": "pass",
+        "reason": "The dialogue includes explicit request by MIO086 to copy all mails and discussions to themselves and confirms capability to include discussions and documents; owner is explicit and no conflicting constraints are present.",
+        "quotes": [
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.119",
+            "quote": "Okay and please please copy all the mails , okay , all the discussions to me , okay ,"
+          },
+          {
+            "da_id": "IS1008a.B.dialog-act.s9553330.22",
+            "quote": "Yeah , we can C_C_ him on any discussions or documents that are passed around ."
+          },
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.118",
+            "quote": "Yes ."
+          },
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.117",
+            "quote": "But what I request , okay , <gap> keep Ed in the loop , okay , in between your uh meeting and Christine meeting , because uh he should know what's happening ."
+          },
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.116",
+            "quote": "Yep ."
+          },
+          {
+            "da_id": "IS1008a.B.dialog-act.s9553330.23",
+            "quote": "Sure ."
+          }
+        ],
+        "fields": [
+          "statement"
+        ]
+      },
+      "owner": {
+        "result": "pass",
+        "reason": "Owner is explicitly specified as FIE038 in provisional data and the dialogue context aligns with assignment scope.",
+        "quotes": [
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.119",
+            "quote": "Okay and please please copy all the mails , okay , all the discussions to me , okay ,"
+          },
+          {
+            "da_id": "IS1008a.B.dialog-act.s9553330.22",
+            "quote": "Yeah , we can C_C_ him on any discussions or documents that are passed around ."
+          }
+        ],
+        "fields": [
+          "owner"
+        ]
+      },
+      "deadline": {
+        "result": "uncertain",
+        "reason": "deadline_unresolved",
+        "quotes": [],
+        "fields": [
+          "deadline"
+        ]
+      },
+      "status": {
+        "result": "uncertain",
+        "reason": "Status shown as open in provisional data; current dialogue does not definitively confirm completion or advancement; hence uncertain.",
+        "quotes": [
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.119",
+            "quote": "Okay and please please copy all the mails , okay , all the discussions to me , okay ,"
+          },
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.116",
+            "quote": "Yep ."
+          }
+        ],
+        "fields": [
+          "status"
+        ]
+      },
+      "conflict": {
+        "result": "pass",
+        "reason": "No contradictions detected within provided dialogue regarding this action; scope aligns with requests to copy emails/discussions and keep Ed in the loop.",
+        "quotes": [
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.119",
+            "quote": "Okay and please please copy all the mails , okay , all the discussions to me , okay ,"
+          },
+          {
+            "da_id": "IS1008a.B.dialog-act.s9553330.22",
+            "quote": "Yeah , we can C_C_ him on any discussions or documents that are passed around ."
+          }
+        ],
+        "fields": [
+          "statement",
+          "owner",
+          "deadline",
+          "status"
+        ]
+      },
+      "relation": {
+        "result": "not_applicable",
+        "reason": "No prior item relationship to establish from the current dialogue; this is a standalone action.",
+        "quotes": [],
+        "fields": [
+          "related_items"
+        ]
+      }
+    },
+    "unresolved_fields": [
+      "deadline",
+      "status"
+    ],
+    "observed_evidence_da_ids": [
+      "IS1008a.A.dialog-act.s9553330.117",
+      "IS1008a.B.dialog-act.s9553330.21",
+      "IS1008a.B.dialog-act.s9553330.22",
+      "IS1008a.A.dialog-act.s9553330.118",
+      "IS1008a.A.dialog-act.s9553330.119",
+      "IS1008a.B.dialog-act.s9553330.23",
+      "IS1008a.A.dialog-act.s9553330.116",
+      "IS1008a.A.dialog-act.s9553330.120"
+    ],
+    "initial_context": {
+      "item": {
+        "type": "actions",
+        "text": "Copy all emails and discussions to MIO086.",
+        "flags": []
+      },
+      "current_meeting": "IS1008a",
+      "earlier_meetings": [],
+      "roster": [
+        {
+          "speaker": "A",
+          "participant_id": "MIO086",
+          "role": "PM"
+        },
+        {
+          "speaker": "B",
+          "participant_id": "FIE038",
+          "role": "UI"
+        },
+        {
+          "speaker": "C",
+          "participant_id": "FIE073",
+          "role": "ID"
+        },
+        {
+          "speaker": "D",
+          "participant_id": "MIE085",
+          "role": "ME"
+        }
+      ],
+      "observed_dialogue": [
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.117",
+          "meeting_id": "IS1008a",
+          "text": "But what I request , okay , <gap> keep Ed in the loop , okay , in between your uh meeting and Christine meeting , because uh he should know what's happening .",
+          "participant": "MIO086",
+          "role": "PM"
+        },
+        {
+          "da_id": "IS1008a.B.dialog-act.s9553330.21",
+          "meeting_id": "IS1008a",
+          "text": "Yeah , of course <vocalsound> .",
+          "participant": "FIE038",
+          "role": "UI"
+        },
+        {
+          "da_id": "IS1008a.B.dialog-act.s9553330.22",
+          "meeting_id": "IS1008a",
+          "text": "Yeah , we can C_C_ him on any discussions or documents that are passed around .",
+          "participant": "FIE038",
+          "role": "UI"
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.118",
+          "meeting_id": "IS1008a",
+          "text": "Yes .",
+          "participant": "MIO086",
+          "role": "PM"
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.119",
+          "meeting_id": "IS1008a",
+          "text": "Okay and please please copy all the mails , okay , all the discussions to me , okay ,",
+          "participant": "MIO086",
+          "role": "PM"
+        },
+        {
+          "da_id": "IS1008a.B.dialog-act.s9553330.23",
+          "meeting_id": "IS1008a",
+          "text": "Sure .",
+          "participant": "FIE038",
+          "role": "UI"
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.116",
+          "participant": "MIO086",
+          "role": "PM",
+          "text": "Yep ."
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.120",
+          "participant": "MIO086",
+          "role": "PM",
+          "text": "so I need to submit to the management ."
+        }
+      ],
+      "peer_items": [
+        {
+          "item_key": "IS1008a#0",
+          "type": "actions",
+          "text": "Provide a written project plan including functional and technical designs, staffing, timeline, budget, and market plan by two weeks."
+        },
+        {
+          "item_key": "IS1008a#1",
+          "type": "actions",
+          "text": "Determine the functional design and discuss with Ed."
+        },
+        {
+          "item_key": "IS1008a#2",
+          "type": "problems",
+          "text": "There is confusion about the project goal, with some participants thinking the product is a remote control while others expect a monitor."
+        },
+        {
+          "item_key": "IS1008a#3",
+          "type": "actions",
+          "text": "Prepare a project plan by the next meeting."
+        }
+      ],
+      "provisional_values": {
+        "owner": [
+          "FIE038"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "open",
+        "related_items": []
+      },
+      "candidate_evidence_da_ids": [
+        "IS1008a.A.dialog-act.s9553330.117",
+        "IS1008a.B.dialog-act.s9553330.21",
+        "IS1008a.B.dialog-act.s9553330.22",
+        "IS1008a.A.dialog-act.s9553330.118",
+        "IS1008a.A.dialog-act.s9553330.119",
+        "IS1008a.B.dialog-act.s9553330.23"
+      ]
+    },
+    "observed_documents": [],
+    "document_evidence": [],
+    "relation_evidence": [],
+    "history": [
+      {
+        "item": "IS1008a#4",
+        "step": 1,
+        "flags": [],
+        "action": "assess_item",
+        "outcome": "invalid_action",
+        "error": "Correct these argument fields: status_check/result: 'open' is not one of ['pass', 'fail', 'uncertain'] Tool assess_item accepts root keys: status, related_items, owner, owner_basis, deadline, deadline_basis, statement, owner_check, deadline_check, status_check, conflict_check, relation_check, next_action. Check keys: status_check={result, reason, evidence_da_ids, documents}. Resubmit the complete advertised object. Select only delivered supporting dialogue IDs; if support is unavailable use uncertain with an explanation, never invent an ID or mark pass with no evidence. Documents belong inside the check they inform.",
+        "raw_tool_input": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "FIE038"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "statement": {
+            "result": "pass",
+            "reason": "The dialogue includes explicit request by MIO086 to copy all mails and discussions to themselves and confirms capability to include discussions and documents; owner is explicit and no conflicting constraints are present.",
+            "evidence_da_ids": [
+              "IS1008a.A.dialog-act.s9553330.119",
+              "IS1008a.B.dialog-act.s9553330.22",
+              "IS1008a.A.dialog-act.s9553330.118",
+              "IS1008a.A.dialog-act.s9553330.117",
+              "IS1008a.A.dialog-act.s9553330.116",
+              "IS1008a.B.dialog-act.s9553330.23"
+            ]
+          },
+          "owner_check": {
+            "result": "pass",
+            "reason": "Owner is explicitly specified as FIE038 in provisional data and the dialogue context aligns with assignment scope.",
+            "evidence_da_ids": [
+              "IS1008a.A.dialog-act.s9553330.119",
+              "IS1008a.B.dialog-act.s9553330.22"
+            ]
+          },
+          "deadline_check": {
+            "result": "uncertain",
+            "reason": "No explicit deadline expressed in dialogue; deadline_basis is missing.",
+            "evidence_da_ids": []
+          },
+          "status_check": {
+            "result": "open",
+            "reason": "Status in provisional data is open and no evidence in dialogue contradicts this.",
+            "evidence_da_ids": [
+              "IS1008a.A.dialog-act.s9553330.119",
+              "IS1008a.A.dialog-act.s9553330.116"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No contradictions detected within provided dialogue regarding this action; scope aligns with requests to copy emails/discussions and keep Ed in the loop.",
+            "evidence_da_ids": [
+              "IS1008a.A.dialog-act.s9553330.119",
+              "IS1008a.B.dialog-act.s9553330.22"
+            ],
+            "affected_fields": [
+              "statement",
+              "owner",
+              "deadline",
+              "status"
+            ]
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior item relationship to establish from the current dialogue; this is a standalone action.",
+            "evidence_da_ids": []
+          },
+          "next_action": "accept"
+        }
+      },
+      {
+        "item": "IS1008a#4",
+        "step": 2,
+        "flags": [],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "The dialogue includes explicit request by MIO086 to copy all mails and discussions to themselves and confirms capability to include discussions and documents; owner is explicit and no conflicting constraints are present.",
+            "quotes": [
+              {
+                "da_id": "IS1008a.A.dialog-act.s9553330.119",
+                "quote": "Okay and please please copy all the mails , okay , all the discussions to me , okay ,"
+              },
+              {
+                "da_id": "IS1008a.B.dialog-act.s9553330.22",
+                "quote": "Yeah , we can C_C_ him on any discussions or documents that are passed around ."
+              },
+              {
+                "da_id": "IS1008a.A.dialog-act.s9553330.118",
+                "quote": "Yes ."
+              },
+              {
+                "da_id": "IS1008a.A.dialog-act.s9553330.117",
+                "quote": "But what I request , okay , <gap> keep Ed in the loop , okay , in between your uh meeting and Christine meeting , because uh he should know what's happening ."
+              },
+              {
+                "da_id": "IS1008a.A.dialog-act.s9553330.116",
+                "quote": "Yep ."
+              },
+              {
+                "da_id": "IS1008a.B.dialog-act.s9553330.23",
+                "quote": "Sure ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Owner is explicitly specified as FIE038 in provisional data and the dialogue context aligns with assignment scope.",
+            "quotes": [
+              {
+                "da_id": "IS1008a.A.dialog-act.s9553330.119",
+                "quote": "Okay and please please copy all the mails , okay , all the discussions to me , okay ,"
+              },
+              {
+                "da_id": "IS1008a.B.dialog-act.s9553330.22",
+                "quote": "Yeah , we can C_C_ him on any discussions or documents that are passed around ."
+              }
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "deadline_unresolved",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "uncertain",
+            "reason": "Status shown as open in provisional data; current dialogue does not definitively confirm completion or advancement; hence uncertain.",
+            "quotes": [
+              {
+                "da_id": "IS1008a.A.dialog-act.s9553330.119",
+                "quote": "Okay and please please copy all the mails , okay , all the discussions to me , okay ,"
+              },
+              {
+                "da_id": "IS1008a.A.dialog-act.s9553330.116",
+                "quote": "Yep ."
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions detected within provided dialogue regarding this action; scope aligns with requests to copy emails/discussions and keep Ed in the loop.",
+            "quotes": [
+              {
+                "da_id": "IS1008a.A.dialog-act.s9553330.119",
+                "quote": "Okay and please please copy all the mails , okay , all the discussions to me , okay ,"
+              },
+              {
+                "da_id": "IS1008a.B.dialog-act.s9553330.22",
+                "quote": "Yeah , we can C_C_ him on any discussions or documents that are passed around ."
+              }
+            ],
+            "fields": [
+              "statement",
+              "owner",
+              "deadline",
+              "status"
+            ]
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior item relationship to establish from the current dialogue; this is a standalone action.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "decision": "request_clarification",
+        "reason": "supported_statement_with_unresolved_fields",
+        "assessed_text": "Copy all emails and discussions to MIO086.",
+        "requested_action": "accept",
+        "proposed_fields": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "FIE038"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.119",
+            "IS1008a.B.dialog-act.s9553330.22",
+            "IS1008a.A.dialog-act.s9553330.118",
+            "IS1008a.A.dialog-act.s9553330.117",
+            "IS1008a.A.dialog-act.s9553330.116",
+            "IS1008a.B.dialog-act.s9553330.23"
+          ]
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "The dialogue includes explicit request by MIO086 to copy all mails and discussions to themselves and confirms capability to include discussions and documents; owner is explicit and no conflicting constraints are present.",
+            "quotes": [
+              "IS1008a.A.dialog-act.s9553330.119",
+              "IS1008a.B.dialog-act.s9553330.22",
+              "IS1008a.A.dialog-act.s9553330.118",
+              "IS1008a.A.dialog-act.s9553330.117",
+              "IS1008a.A.dialog-act.s9553330.116",
+              "IS1008a.B.dialog-act.s9553330.23"
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Owner is explicitly specified as FIE038 in provisional data and the dialogue context aligns with assignment scope.",
+            "quotes": [
+              "IS1008a.A.dialog-act.s9553330.119",
+              "IS1008a.B.dialog-act.s9553330.22"
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "No explicit deadline expressed in dialogue; deadline_basis is missing.",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "uncertain",
+            "reason": "Status shown as open in provisional data; current dialogue does not definitively confirm completion or advancement; hence uncertain.",
+            "quotes": [
+              "IS1008a.A.dialog-act.s9553330.119",
+              "IS1008a.A.dialog-act.s9553330.116"
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions detected within provided dialogue regarding this action; scope aligns with requests to copy emails/discussions and keep Ed in the loop.",
+            "quotes": [
+              "IS1008a.A.dialog-act.s9553330.119",
+              "IS1008a.B.dialog-act.s9553330.22"
+            ],
+            "fields": [
+              "statement",
+              "owner",
+              "deadline",
+              "status"
+            ]
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior item relationship to establish from the current dialogue; this is a standalone action.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "FIE038"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "statement": {
+            "result": "pass",
+            "reason": "The dialogue includes explicit request by MIO086 to copy all mails and discussions to themselves and confirms capability to include discussions and documents; owner is explicit and no conflicting constraints are present.",
+            "evidence_da_ids": [
+              "IS1008a.A.dialog-act.s9553330.119",
+              "IS1008a.B.dialog-act.s9553330.22",
+              "IS1008a.A.dialog-act.s9553330.118",
+              "IS1008a.A.dialog-act.s9553330.117",
+              "IS1008a.A.dialog-act.s9553330.116",
+              "IS1008a.B.dialog-act.s9553330.23"
+            ]
+          },
+          "owner_check": {
+            "result": "pass",
+            "reason": "Owner is explicitly specified as FIE038 in provisional data and the dialogue context aligns with assignment scope.",
+            "evidence_da_ids": [
+              "IS1008a.A.dialog-act.s9553330.119",
+              "IS1008a.B.dialog-act.s9553330.22"
+            ]
+          },
+          "deadline_check": {
+            "result": "uncertain",
+            "reason": "No explicit deadline expressed in dialogue; deadline_basis is missing.",
+            "evidence_da_ids": []
+          },
+          "status_check": {
+            "result": "uncertain",
+            "reason": "Status shown as open in provisional data; current dialogue does not definitively confirm completion or advancement; hence uncertain.",
+            "evidence_da_ids": [
+              "IS1008a.A.dialog-act.s9553330.119",
+              "IS1008a.A.dialog-act.s9553330.116"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No contradictions detected within provided dialogue regarding this action; scope aligns with requests to copy emails/discussions and keep Ed in the loop.",
+            "evidence_da_ids": [
+              "IS1008a.A.dialog-act.s9553330.119",
+              "IS1008a.B.dialog-act.s9553330.22"
+            ],
+            "affected_fields": [
+              "statement",
+              "owner",
+              "deadline",
+              "status"
+            ]
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior item relationship to establish from the current dialogue; this is a standalone action.",
+            "evidence_da_ids": []
+          },
+          "next_action": "accept"
+        },
+        "evidence_bindings": {
+          "statement": [
+            "IS1008a.A.dialog-act.s9553330.119",
+            "IS1008a.B.dialog-act.s9553330.22",
+            "IS1008a.A.dialog-act.s9553330.118",
+            "IS1008a.A.dialog-act.s9553330.117",
+            "IS1008a.A.dialog-act.s9553330.116",
+            "IS1008a.B.dialog-act.s9553330.23"
+          ],
+          "owner": [
+            "IS1008a.A.dialog-act.s9553330.119",
+            "IS1008a.B.dialog-act.s9553330.22"
+          ],
+          "status": [
+            "IS1008a.A.dialog-act.s9553330.119",
+            "IS1008a.A.dialog-act.s9553330.116"
+          ],
+          "conflict": [
+            "IS1008a.A.dialog-act.s9553330.119",
+            "IS1008a.B.dialog-act.s9553330.22"
+          ]
+        },
+        "raw_tool_input": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "FIE038"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "statement": {
+            "result": "pass",
+            "reason": "The dialogue includes explicit request by MIO086 to copy all mails and discussions to themselves and confirms capability to include discussions and documents; owner is explicit and no conflicting constraints are present.",
+            "evidence_da_ids": [
+              "IS1008a.A.dialog-act.s9553330.119",
+              "IS1008a.B.dialog-act.s9553330.22",
+              "IS1008a.A.dialog-act.s9553330.118",
+              "IS1008a.A.dialog-act.s9553330.117",
+              "IS1008a.A.dialog-act.s9553330.116",
+              "IS1008a.B.dialog-act.s9553330.23"
+            ]
+          },
+          "owner_check": {
+            "result": "pass",
+            "reason": "Owner is explicitly specified as FIE038 in provisional data and the dialogue context aligns with assignment scope.",
+            "evidence_da_ids": [
+              "IS1008a.A.dialog-act.s9553330.119",
+              "IS1008a.B.dialog-act.s9553330.22"
+            ]
+          },
+          "deadline_check": {
+            "result": "uncertain",
+            "reason": "No explicit deadline expressed in dialogue; deadline_basis is missing.",
+            "evidence_da_ids": []
+          },
+          "status_check": {
+            "result": "uncertain",
+            "reason": "Status shown as open in provisional data; current dialogue does not definitively confirm completion or advancement; hence uncertain.",
+            "evidence_da_ids": [
+              "IS1008a.A.dialog-act.s9553330.119",
+              "IS1008a.A.dialog-act.s9553330.116"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No contradictions detected within provided dialogue regarding this action; scope aligns with requests to copy emails/discussions and keep Ed in the loop.",
+            "evidence_da_ids": [
+              "IS1008a.A.dialog-act.s9553330.119",
+              "IS1008a.B.dialog-act.s9553330.22"
+            ],
+            "affected_fields": [
+              "statement",
+              "owner",
+              "deadline",
+              "status"
+            ]
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior item relationship to establish from the current dialogue; this is a standalone action.",
+            "evidence_da_ids": []
+          },
+          "next_action": "accept"
+        },
+        "protocol_normalizations": []
+      },
+      {
+        "item": "IS1008a#4",
+        "step": 2,
+        "flags": [],
+        "action": "stop",
+        "outcome": "pending",
+        "termination_reason": "supported_statement_with_unresolved_fields",
+        "unresolved_fields": [
+          "deadline",
+          "status"
+        ]
+      }
+    ],
+    "lookups": 0,
+    "termination_reason": "supported_statement_with_unresolved_fields",
+    "clarifications": [
+      {
+        "request_id": "f3073b859a461ecb",
+        "item_key": "IS1008a#4",
+        "record_id": null,
+        "field": "deadline",
+        "question": "What is the agreed deadline, in its original wording?",
+        "item_text": "Copy all emails and discussions to MIO086.",
+        "reason": "deadline_unresolved",
+        "evidence_da_ids": [],
+        "available_evidence_da_ids": [
+          "IS1008a.A.dialog-act.s9553330.117",
+          "IS1008a.B.dialog-act.s9553330.21",
+          "IS1008a.B.dialog-act.s9553330.22",
+          "IS1008a.A.dialog-act.s9553330.118",
+          "IS1008a.A.dialog-act.s9553330.119",
+          "IS1008a.B.dialog-act.s9553330.23",
+          "IS1008a.A.dialog-act.s9553330.116",
+          "IS1008a.A.dialog-act.s9553330.120"
+        ],
+        "status": "open",
+        "termination_reason": "supported_statement_with_unresolved_fields"
+      },
+      {
+        "request_id": "f6f2c89b9cb2cc0e",
+        "item_key": "IS1008a#4",
+        "record_id": null,
+        "field": "status",
+        "question": "What is this item's status at the end of the current meeting?",
+        "item_text": "Copy all emails and discussions to MIO086.",
+        "reason": "Status shown as open in provisional data; current dialogue does not definitively confirm completion or advancement; hence uncertain.",
+        "evidence_da_ids": [
+          "IS1008a.A.dialog-act.s9553330.119",
+          "IS1008a.A.dialog-act.s9553330.116"
+        ],
+        "available_evidence_da_ids": [
+          "IS1008a.A.dialog-act.s9553330.117",
+          "IS1008a.B.dialog-act.s9553330.21",
+          "IS1008a.B.dialog-act.s9553330.22",
+          "IS1008a.A.dialog-act.s9553330.118",
+          "IS1008a.A.dialog-act.s9553330.119",
+          "IS1008a.B.dialog-act.s9553330.23",
+          "IS1008a.A.dialog-act.s9553330.116",
+          "IS1008a.A.dialog-act.s9553330.120"
+        ],
+        "status": "open",
+        "termination_reason": "supported_statement_with_unresolved_fields"
+      }
+    ]
+  }
+}

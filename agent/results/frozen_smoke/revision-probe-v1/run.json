@@ -1,0 +1,82 @@
+{
+  "status": "FAILED",
+  "driver_sha256": "c6779ae159a835dee5c8bc77b058d1d60e169f44f204d7a5040efc6b1dc382e2",
+  "scope": "Supplementary controlled test only; not a natural extraction or evaluation case.",
+  "error_type": "RunStopped",
+  "reason": "model_request_failed",
+  "actual_api_usage": {
+    "calls": 0,
+    "in": 0,
+    "out": 0,
+    "stages": {}
+  },
+  "control": {
+    "limits": {
+      "calls": 80,
+      "tokens": 1000000,
+      "request_seconds": 300.0,
+      "meeting_seconds": 1200.0,
+      "inflight": 4,
+      "retries": 2,
+      "backoff": 0.5
+    },
+    "attempted_calls": 3,
+    "charged_tokens": 171378,
+    "unknown_usage_tokens": 171378,
+    "reserved_tokens": 0,
+    "max_inflight_seen": 1,
+    "failure": {
+      "code": "model_request_failed",
+      "status": "FAILED",
+      "stage": "p2_check",
+      "error_type": "APIConnectionError",
+      "retries_exhausted": true,
+      "http_status": null
+    },
+    "attempts": [
+      {
+        "attempt": 0,
+        "stage": "p2_check",
+        "reserved_tokens": 57126,
+        "input_bound": 25126,
+        "output_cap": 32000,
+        "outcome": "error",
+        "charged_tokens": 57126,
+        "usage_known": false,
+        "error_type": "APIConnectionError"
+      },
+      {
+        "attempt": 1,
+        "stage": "p2_check",
+        "reserved_tokens": 57126,
+        "input_bound": 25126,
+        "output_cap": 32000,
+        "outcome": "error",
+        "charged_tokens": 57126,
+        "usage_known": false,
+        "error_type": "APIConnectionError"
+      },
+      {
+        "attempt": 2,
+        "stage": "p2_check",
+        "reserved_tokens": 57126,
+        "input_bound": 25126,
+        "output_cap": 32000,
+        "outcome": "error",
+        "charged_tokens": 57126,
+        "usage_known": false,
+        "error_type": "APIConnectionError"
+      }
+    ],
+    "input_bound_method": "utf8_request_bytes_plus_padding",
+    "unknown_usage_policy": "charge_full_reservation"
+  },
+  "admission": {
+    "capacity": 77,
+    "tail_calls_reserved": 3,
+    "attempts_by_item": {
+      "IS1008a#controlled-friday": 3
+    },
+    "issued": 3
+  }
+}

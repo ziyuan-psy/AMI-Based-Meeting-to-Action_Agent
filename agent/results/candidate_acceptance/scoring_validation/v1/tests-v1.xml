@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="10" skipped="0" tests="30" time="1.679" timestamp="2026-10-31T12:32:53.393023-05:00" hostname="FAKE-DATA"><testcase classname="agent.results.candidate_acceptance.tests.test_score_frozen" name="test_fewshot_excludes_gold_and_its_matched_prediction_together" time="0.002"><failure message="IndexError: list index out of range">job = {'meeting_id': 'TS3006a', 'mode': 's2', 'execution_kind': 'SCRIPTED_TEST_NOT_REAL_MODEL', 'semantics': 'none', ...}
+
+    def test_fewshot_excludes_gold_and_its_matched_prediction_together(job):
+        record=job['record']+[item(iid='TS3006a.sys.s.2',text='Other task')]
+        gold=job['gold_items']+[item(iid='TS3006a.JacquelinePalmer.s.2',text='Other task')]
+&gt;       result=s.score_items(record,gold,lambda ss,gg:{ss[0]['id']:gg[0]['id'],ss[1]['id']:gg[1]['id']},[gold[0]['id']])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+agent\results\candidate_acceptance\tests\test_score_frozen.py:40: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+agent\src\mta\regression.py:243: in score_items
+    pairs = matcher(ss, gg)
+            ^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+ss = [], gg = []
+
+&gt;   result=s.score_items(record,gold,lambda ss,gg:{ss[0]['id']:gg[0]['id'],ss[1]['id']:gg[1]['id']},[gold[0]['id']])
+                                                   ^^^^^
+E   IndexError: list index out of range
+
+agent\results\candidate_acceptance\tests\test_score_frozen.py:40: IndexError</failure></testcase><testcase classname="agent.results.candidate_acceptance.tests.test_score_frozen" name="test_na_category_has_no_system_or_gold_denominator[NA]" time="0.001"><failure message="Failed: NA category must not invoke matcher">job = {'meeting_id': 'TS3006a', 'mode': 's2', 'execution_kind': 'SCRIPTED_TEST_NOT_REAL_MODEL', 'semantics': 'none', ...}
+placeholder = 'NA'
+
+    @pytest.mark.parametrize('placeholder',['NA','N/A','na.',' n/a '])
+    def test_na_category_has_no_system_or_gold_denominator(job,placeholder):
+        gold=[item(text=placeholder)]
+        def forbidden(*args):pytest.fail('NA category must not invoke matcher')
+&gt;       result=s.score_items(job['record'],gold,forbidden)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+agent\results\candidate_acceptance\tests\test_score_frozen.py:48: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+agent\src\mta\regression.py:243: in score_items
+    pairs = matcher(ss, gg)
+            ^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+args = ([], [])
+
+&gt;   def forbidden(*args):pytest.fail('NA category must not invoke matcher')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   Failed: NA category must not invoke matcher
+
+agent\results\candidate_acceptance\tests\test_score_frozen.py:47: Failed</failure></testcase><testcase classname="agent.results.candidate_acceptance.tests.test_score_frozen" name="test_na_category_has_no_system_or_gold_denominator[N/A]" time="0.001"><failure message="Failed: NA category must not invoke matcher">job = {'meeting_id': 'TS3006a', 'mode': 's2', 'execution_kind': 'SCRIPTED_TEST_NOT_REAL_MODEL', 'semantics': 'none', ...}
+placeholder = 'N/A'
+
+    @pytest.mark.parametrize('placeholder',['NA','N/A','na.',' n/a '])
+    def test_na_category_has_no_system_or_gold_denominator(job,placeholder):
+        gold=[item(text=placeholder)]
+        def forbidden(*args):pytest.fail('NA category must not invoke matcher')
+&gt;       result=s.score_items(job['record'],gold,forbidden)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+agent\results\candidate_acceptance\tests\test_score_frozen.py:48: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+agent\src\mta\regression.py:243: in score_items
+    pairs = matcher(ss, gg)
+            ^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+args = ([], [])
+
+&gt;   def forbidden(*args):pytest.fail('NA category must not invoke matcher')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   Failed: NA category must not invoke matcher
+
+agent\results\candidate_acceptance\tests\test_score_frozen.py:47: Failed</failure></testcase><testcase classname="agent.results.candidate_acceptance.tests.test_score_frozen" name="test_na_category_has_no_system_or_gold_denominator[na.]" time="0.001"><failure message="Failed: NA category must not invoke matcher">job = {'meeting_id': 'TS3006a', 'mode': 's2', 'execution_kind': 'SCRIPTED_TEST_NOT_REAL_MODEL', 'semantics': 'none', ...}
+placeholder = 'na.'
+
+    @pytest.mark.parametrize('placeholder',['NA','N/A','na.',' n/a '])
+    def test_na_category_has_no_system_or_gold_denominator(job,placeholder):
+        gold=[item(text=placeholder)]
+        def forbidden(*args):pytest.fail('NA category must not invoke matcher')
+&gt;       result=s.score_items(job['record'],gold,forbidden)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+agent\results\candidate_acceptance\tests\test_score_frozen.py:48: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+agent\src\mta\regression.py:243: in score_items
+    pairs = matcher(ss, gg)
+            ^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+args = ([], [])
+
+&gt;   def forbidden(*args):pytest.fail('NA category must not invoke matcher')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   Failed: NA category must not invoke matcher
+
+agent\results\candidate_acceptance\tests\test_score_frozen.py:47: Failed</failure></testcase><testcase classname="agent.results.candidate_acceptance.tests.test_score_frozen" name="test_na_category_has_no_system_or_gold_denominator[ n/a ]" time="0.001"><failure message="Failed: NA category must not invoke matcher">job = {'meeting_id': 'TS3006a', 'mode': 's2', 'execution_kind': 'SCRIPTED_TEST_NOT_REAL_MODEL', 'semantics': 'none', ...}
+placeholder = ' n/a '
+
+    @pytest.mark.parametrize('placeholder',['NA','N/A','na.',' n/a '])
+    def test_na_category_has_no_system_or_gold_denominator(job,placeholder):
+        gold=[item(text=placeholder)]
+        def forbidden(*args):pytest.fail('NA category must not invoke matcher')
+&gt;       result=s.score_items(job['record'],gold,forbidden)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+agent\results\candidate_acceptance\tests\test_score_frozen.py:48: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+agent\src\mta\regression.py:243: in score_items
+    pairs = matcher(ss, gg)
+            ^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+args = ([], [])
+
+&gt;   def forbidden(*args):pytest.fail('NA category must not invoke matcher')
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   Failed: NA category must not invoke matcher
+
+agent\results\candidate_acceptance\tests\test_score_frozen.py:47: Failed</failure></testcase><testcase classname="agent.results.candidate_acceptance.tests.test_score_frozen" name="test_micro_uses_summed_counts_not_mean_type_f1" time="0.001" /><testcase classname="agent.results.candidate_acceptance.tests.test_score_frozen" name="test_owner_accuracy_uses_only_scored_matches" time="0.002"><failure message="IndexError: list index out of range">job = {'meeting_id': 'TS3006a', 'mode': 's2', 'execution_kind': 'SCRIPTED_TEST_NOT_REAL_MODEL', 'semantics': 'none', ...}
+
+    def test_owner_accuracy_uses_only_scored_matches(job):
+&gt;       result=s.score_items(job['record'],job['gold_items'],lambda ss,gg:{ss[0]['id']:gg[0]['id']})
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+agent\results\candidate_acceptance\tests\test_score_frozen.py:56: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+agent\src\mta\regression.py:243: in score_items
+    pairs = matcher(ss, gg)
+            ^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+ss = [], gg = []
+
+&gt;   result=s.score_items(job['record'],job['gold_items'],lambda ss,gg:{ss[0]['id']:gg[0]['id']})
+                                                                       ^^^^^
+E   IndexError: list index out of range
+
+agent\results\candidate_acceptance\tests\test_score_frozen.py:56: IndexError</failure></testcase><testcase classname="agent.results.candidate_acceptance.tests.test_score_frozen" name="test_cached_votes_reject_provenance_or_order_changes[model]" time="0.040" /><testcase classname="agent.results.candidate_acceptance.tests.test_score_frozen" name="test_cached_votes_reject_provenance_or_order_changes[prompt]" time="0.013" /><testcase classname="agent.results.candidate_acceptance.tests.test_score_frozen" name="test_cached_votes_reject_provenance_or_order_changes[text]" time="0.012" /><testcase classname="agent.results.candidate_acceptance.tests.test_score_frozen" name="test_cached_votes_reject_provenance_or_order_changes[type]" time="0.009" /><testcase classname="agent.results.candidate_acceptance.tests.test_score_frozen" name="test_existing_votes_are_append_only" time="0.008" /><testcase classname="agent.results.candidate_acceptance.tests.test_score_frozen" name="test_three_votes_are_reused_without_replacement" time="0.008" /><testcase classname="agent.results.candidate_acceptance.tests.test_score_frozen" name="test_missing_votes_fail_offline_instead_of_inventing_zero_score" time="0.013" /><testcase classname="agent.results.candidate_acceptance.tests.test_score_frozen" name="test_heldout_guard_precedes_every_file_read" time="0.004" /><testcase classname="agent.results.candidate_acceptance.tests.test_score_frozen" name="test_prediction_source_scope_is_checked[TS3006b.A.dialog-act.test.1]" time="0.003" /><testcase classname="agent.results.candidate_acceptance.tests.test_score_frozen" name="test_prediction_source_scope_is_checked[ES2011a.A.dialog-act.test.1]" time="0.002" /><testcase classname="agent.results.candidate_acceptance.tests.test_score_frozen" name="test_duplicate_gold_ids_are_refused" time="0.002" /><testcase classname="agent.results.candidate_acceptance.tests.test_score_frozen" name="test_missing_native_completion_is_not_treated_as_empty" time="0.029" /><testcase classname="agent.results.candidate_acceptance.tests.test_score_frozen" name="test_fake_online_uses_three_calls_under_the_real_controller" time="0.025"><failure message="AssertionError: assert ('FAILED' == 'COMPLETED'&#10;  &#10;  - COMPLETED&#10;  + FAILED)">tmp_path = WindowsPath('C:/Users/win/AppData/Local/Temp/pytest-of-win/pytest-136/test_fake_online_uses_three_ca0')
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x0000021DE4B533E0&gt;
+protocol = {'votes': 3, 'judge': {'name': '@30875-fall26-openai/gpt-5-nano', 'client': 'mta.llm.OpenAIAdapter', 'endpoint': 'http...e': 'object', 'properties': {'sys': {...}, 'gold': {...}}, 'required': ['sys', 'gold']}}}, 'required': ['pairs']}, ...}
+job = {'meeting_id': 'TS3006a', 'mode': 's2', 'execution_kind': 'SCRIPTED_TEST_NOT_REAL_MODEL', 'semantics': 'none', ...}
+
+    def test_fake_online_uses_three_calls_under_the_real_controller(tmp_path,monkeypatch,protocol,job):
+        client=Client();fake_online(monkeypatch,client)
+        result=s.score_job(job,protocol,tmp_path,True,None)
+&gt;       assert result['status']=='COMPLETED' and result['score']['metrics']['actions']==s.prf(1,1,1)
+E       AssertionError: assert ('FAILED' == 'COMPLETED'
+E         
+E         - COMPLETED
+E         + FAILED)
+
+agent\results\candidate_acceptance\tests\test_score_frozen.py:119: AssertionError</failure></testcase><testcase classname="agent.results.candidate_acceptance.tests.test_score_frozen" name="test_transport_retry_shares_call_and_token_budget" time="0.024"><failure message="AssertionError: assert ('FAILED' == 'COMPLETED'&#10;  &#10;  - COMPLETED&#10;  + FAILED)">tmp_path = WindowsPath('C:/Users/win/AppData/Local/Temp/pytest-of-win/pytest-136/test_transport_retry_shares_ca0')
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x0000021DE4B53140&gt;
+protocol = {'votes': 3, 'judge': {'name': '@30875-fall26-openai/gpt-5-nano', 'client': 'mta.llm.OpenAIAdapter', 'endpoint': 'http...e': 'object', 'properties': {'sys': {...}, 'gold': {...}}, 'required': ['sys', 'gold']}}}, 'required': ['pairs']}, ...}
+job = {'meeting_id': 'TS3006a', 'mode': 's2', 'execution_kind': 'SCRIPTED_TEST_NOT_REAL_MODEL', 'semantics': 'none', ...}
+
+    def test_transport_retry_shares_call_and_token_budget(tmp_path,monkeypatch,protocol,job):
+        def handler(n,*args):
+            if n==1:raise ConnectionError('scripted transient')
+            return {'pairs':[{'sys':0,'gold':0}]}
+        client=Client(handler);fake_online(monkeypatch,client);monkeypatch.setattr(s.config,'RETRY_BACKOFF',0)
+        result=s.score_job(job,protocol,tmp_path,True,None)
+&gt;       assert result['status']=='COMPLETED' and client.calls==result['runtime_control']['attempted_calls']==4
+E       AssertionError: assert ('FAILED' == 'COMPLETED'
+E         
+E         - COMPLETED
+E         + FAILED)
+
+agent\results\candidate_acceptance\tests\test_score_frozen.py:129: AssertionError</failure></testcase><testcase classname="agent.results.candidate_acceptance.tests.test_score_frozen" name="test_model_call_budget_stops_missing_third_vote" time="0.031" /><testcase classname="agent.results.candidate_acceptance.tests.test_score_frozen" name="test_token_budget_refuses_model_before_send" time="0.012" /><testcase classname="agent.results.candidate_acceptance.tests.test_score_frozen" name="test_timeout_saves_result_and_fences_late_reply" time="0.102" /><testcase classname="agent.results.candidate_acceptance.tests.test_score_frozen" name="test_bad_vote_format_fails_without_replacement" time="0.014" /><testcase classname="agent.results.candidate_acceptance.tests.test_score_frozen" name="test_partial_population_has_no_headline_f1" time="0.007" /><testcase classname="agent.results.candidate_acceptance.tests.test_score_frozen" name="test_unmapped_relation_targets_are_counted_separately" time="0.001" /><testcase classname="agent.results.candidate_acceptance.tests.test_score_frozen" name="test_optional_semantic_scores_use_same_bounded_client" time="0.062"><failure message="AssertionError: assert ('FAILED' == 'COMPLETED'&#10;  &#10;  - COMPLETED&#10;  + FAILED)">tmp_path = WindowsPath('C:/Users/win/AppData/Local/Temp/pytest-of-win/pytest-136/test_optional_semantic_scores_0')
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x0000021DE4AF0F50&gt;
+protocol = {'votes': 3, 'judge': {'name': '@30875-fall26-openai/gpt-5-nano', 'client': 'mta.llm.OpenAIAdapter', 'endpoint': 'http...e': 'object', 'properties': {'sys': {...}, 'gold': {...}}, 'required': ['sys', 'gold']}}}, 'required': ['pairs']}, ...}
+job = {'meeting_id': 'TS3006a', 'mode': 's2', 'execution_kind': 'SCRIPTED_TEST_NOT_REAL_MODEL', 'semantics': 'all', ...}
+
+    def test_optional_semantic_scores_use_same_bounded_client(tmp_path,monkeypatch,protocol,job):
+        _,p,helpers=s.frozen_protocol();job=semantic_job(job);client=Client(semantic_handler);fake_online(monkeypatch,client)
+        result=s.score_job(job,p,tmp_path,True,helpers)
+&gt;       assert result['status']=='COMPLETED' and client.calls==6
+E       AssertionError: assert ('FAILED' == 'COMPLETED'
+E         
+E         - COMPLETED
+E         + FAILED)
+
+agent\results\candidate_acceptance\tests\test_score_frozen.py:189: AssertionError</failure></testcase><testcase classname="agent.results.candidate_acceptance.tests.test_score_frozen" name="test_duplicate_summary_indexes_fail_even_with_correct_total_count" time="0.044"><failure message="AssertionError: assert ('FAILED' == 'FAILED'&#10;  &#10;    FAILED and 'Duplicate/missing summary' in 'judge_or_artifact_error; transport details are limited to error type')">tmp_path = WindowsPath('C:/Users/win/AppData/Local/Temp/pytest-of-win/pytest-136/test_duplicate_summary_indexes0')
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x0000021DE493B8F0&gt;
+protocol = {'votes': 3, 'judge': {'name': '@30875-fall26-openai/gpt-5-nano', 'client': 'mta.llm.OpenAIAdapter', 'endpoint': 'http...e': 'object', 'properties': {'sys': {...}, 'gold': {...}}, 'required': ['sys', 'gold']}}}, 'required': ['pairs']}, ...}
+job = {'meeting_id': 'TS3006a', 'mode': 's2', 'execution_kind': 'SCRIPTED_TEST_NOT_REAL_MODEL', 'semantics': 'all', ...}
+
+    def test_duplicate_summary_indexes_fail_even_with_correct_total_count(tmp_path,monkeypatch,protocol,job):
+        _,p,helpers=s.frozen_protocol();job=semantic_job(job)
+        def handler(n,name,kw):
+            result=semantic_handler(n,name,kw)
+            if name=='submit_faithfulness':result['sentences'][1]['index']=0
+            return result
+        client=Client(handler);fake_online(monkeypatch,client)
+        result=s.score_job(job,p,tmp_path,True,helpers)
+&gt;       assert result['status']=='FAILED' and 'Duplicate/missing summary' in result['failure']['reason']
+E       AssertionError: assert ('FAILED' == 'FAILED'
+E         
+E           FAILED and 'Duplicate/missing summary' in 'judge_or_artifact_error; transport details are limited to error type')
+
+agent\results\candidate_acceptance\tests\test_score_frozen.py:201: AssertionError</failure></testcase><testcase classname="agent.results.candidate_acceptance.tests.test_score_frozen" name="test_manifest_rejects_changed_vote_file" time="0.026" /></testsuite></testsuites>

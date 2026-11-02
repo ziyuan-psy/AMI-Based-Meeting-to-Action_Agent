@@ -4,7 +4,7 @@ from __future__ import annotations
 import re
 
 from . import config
-from .store import Store, tokenize
+from .store import Store, history_tokens, tokenize
 
 CONTENT_STOP = set("the a an of to and in for on will be is are with by that this it as at from or we they their "
                    "should would can have has not no use design remote control user project meeting".split())
@@ -15,12 +15,16 @@ def content(text: str) -> set[str]:
 
 
 def best_overlap(text: str, prior: list[dict]) -> float:
-    a = content(text)
-    return max((len(a & content(p["text"])) / len(a | content(p["text"])) for p in prior if a | content(p["text"])), default=0.0)
+    def normalized(s):
+        return {w for w in history_tokens(s) if w not in CONTENT_STOP and len(w) > 2}
+    a = normalized(text)
+    return max((len(a & normalized(p["text"])) / len(a | normalized(p["text"]))
+                for p in prior if a | normalized(p["text"])), default=0.0)
 
 STATUS_WORDS = re.compile(
     r"\b(done|finished|completed|already|dropp?ed?|cancel\w*|instead|no longer|rather than|changed?|"
-    r"scrap\w*|postpone\w*|decided against|not going to)\b", re.I)
+    r"scrap\w*|postpone\w*|decided against|not going to|continu(?:e|es|ed|ing)|previous(?:ly)?|earlier|"
+    r"still|as before|last (?:time|meeting)|same (?:task|plan|choice|design|approach))\b", re.I)
 
 
 def flag_items(items: list[dict], store: Store) -> None:
@@ -42,6 +46,6 @@ def flag_items(items: list[dict], store: Store) -> None:
             if prior_items:
                 if best_overlap(it["text"], prior_items) >= config.PRIOR_JACCARD:
                     flags.append("POSSIBLE_PRIOR")
-            elif it["type"] == "actions":  # no earlier system output available: let the agent check the dialogue
-                flags.append("POSSIBLE_PRIOR")
+            else:  # missing system history is not evidence that no relationship exists
+                flags += ["POSSIBLE_PRIOR", "PRIOR_RECORDS_UNAVAILABLE"]
         it["flags"] = flags

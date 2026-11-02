@@ -1,0 +1,665 @@
+{
+  "item": 7,
+  "fields": {
+    "item_key": "IS1008a#7",
+    "record_id": null,
+    "item_type": "actions",
+    "item_text": "UI will determine the functional design as the immediate next step.",
+    "state": "pending",
+    "recordable": true,
+    "fields": {
+      "status": "open",
+      "prior_context_needed": false,
+      "related_items": [],
+      "owner": [
+        "FIE038"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/IS1008a.json",
+          "locator": "IS1008a.B.dialog-act.s9553330.25"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/IS1008a.json",
+          "locator": "IS1008a.A.dialog-act.s9553330.122"
+        }
+      ]
+    },
+    "draft_fields": {
+      "status": "open",
+      "related_items": [],
+      "owner": [
+        "FIE038"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "prior_context_needed": false,
+      "used_participant_lookup": false,
+      "evidence_da_ids": [
+        "IS1008a.B.dialog-act.s9553330.25"
+      ]
+    },
+    "checks": {
+      "statement": {
+        "result": "pass",
+        "reason": "Dialogue asserts the immediate next step is to start determining the functional design, which matches the stated action scope (UI to determine functional design). Evidence: IS1008a.B.dialog-act.s9553330.25",
+        "quotes": [
+          {
+            "da_id": "IS1008a.B.dialog-act.s9553330.25",
+            "quote": "So , the immediate next step is to start determining the functional design , or"
+          }
+        ],
+        "fields": [
+          "statement"
+        ]
+      },
+      "owner": {
+        "result": "pass",
+        "reason": "Owner is the UI participant FIE038 visible in the dialog as the one driving the action proposal. Evidence: IS1008a.B.dialog-act.s9553330.25; IS1008a.A.dialog-act.s9553330.122 shows PM acknowledgment.",
+        "quotes": [
+          {
+            "da_id": "IS1008a.B.dialog-act.s9553330.25",
+            "quote": "So , the immediate next step is to start determining the functional design , or"
+          },
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.122",
+            "quote": "Yes ."
+          }
+        ],
+        "fields": [
+          "owner"
+        ]
+      },
+      "deadline": {
+        "result": "uncertain",
+        "reason": "deadline_unresolved",
+        "quotes": [
+          {
+            "da_id": "IS1008a.B.dialog-act.s9553330.25",
+            "quote": "So , the immediate next step is to start determining the functional design , or"
+          }
+        ],
+        "fields": [
+          "deadline"
+        ]
+      },
+      "status": {
+        "result": "pass",
+        "reason": "Open status is consistent with being proposed and not yet completed. Dialog shows acknowledgment but no closure.",
+        "quotes": [
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.122",
+            "quote": "Yes ."
+          },
+          {
+            "da_id": "IS1008a.B.dialog-act.s9553330.25",
+            "quote": "So , the immediate next step is to start determining the functional design , or"
+          }
+        ],
+        "fields": [
+          "status"
+        ]
+      },
+      "conflict": {
+        "result": "pass",
+        "reason": "No conflicts detected among the available statements; content aligns with earlier message.",
+        "quotes": [
+          {
+            "da_id": "IS1008a.B.dialog-act.s9553330.25",
+            "quote": "So , the immediate next step is to start determining the functional design , or"
+          },
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.122",
+            "quote": "Yes ."
+          }
+        ],
+        "fields": []
+      },
+      "relation": {
+        "result": "not_applicable",
+        "reason": "No prior relationship assessment requested or available in this scope.",
+        "quotes": [],
+        "fields": [
+          "related_items"
+        ]
+      }
+    },
+    "unresolved_fields": [
+      "deadline"
+    ],
+    "observed_evidence_da_ids": [
+      "IS1008a.B.dialog-act.s9553330.25",
+      "IS1008a.A.dialog-act.s9553330.122",
+      "IS1008a.B.dialog-act.s9553330.26",
+      "IS1008a.D.dialog-act.s9553330.51",
+      "IS1008a.A.dialog-act.s9553330.123"
+    ],
+    "initial_context": {
+      "item": {
+        "type": "actions",
+        "text": "UI will determine the functional design as the immediate next step.",
+        "flags": []
+      },
+      "current_meeting": "IS1008a",
+      "earlier_meetings": [],
+      "roster": [
+        {
+          "speaker": "A",
+          "participant_id": "MIO086",
+          "role": "PM"
+        },
+        {
+          "speaker": "B",
+          "participant_id": "FIE038",
+          "role": "UI"
+        },
+        {
+          "speaker": "C",
+          "participant_id": "FIE073",
+          "role": "ID"
+        },
+        {
+          "speaker": "D",
+          "participant_id": "MIE085",
+          "role": "ME"
+        }
+      ],
+      "observed_dialogue": [
+        {
+          "da_id": "IS1008a.B.dialog-act.s9553330.25",
+          "meeting_id": "IS1008a",
+          "text": "So , the immediate next step is to start determining the functional design , or",
+          "participant": "FIE038",
+          "role": "UI"
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.122",
+          "meeting_id": "IS1008a",
+          "text": "Yes .",
+          "participant": "MIO086",
+          "role": "PM"
+        },
+        {
+          "da_id": "IS1008a.B.dialog-act.s9553330.26",
+          "meeting_id": "IS1008a",
+          "text": "<disfmarker> okay .",
+          "participant": "FIE038",
+          "role": "UI"
+        },
+        {
+          "da_id": "IS1008a.D.dialog-act.s9553330.51",
+          "participant": "MIE085",
+          "role": "ME",
+          "text": "No ."
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.123",
+          "participant": "MIO086",
+          "role": "PM",
+          "text": "Okay ."
+        }
+      ],
+      "peer_items": [
+        {
+          "item_key": "IS1008a#0",
+          "type": "actions",
+          "text": "ID(FIE073) will deliver a written plan covering functional and technical design, staffing, timeframe, budget, and market plan by two weeks."
+        },
+        {
+          "item_key": "IS1008a#1",
+          "type": "actions",
+          "text": "Ed will coordinate with Christine to discuss cost and the sales plan as part of preparing the overall plan."
+        },
+        {
+          "item_key": "IS1008a#2",
+          "type": "problems",
+          "text": "ID(FIE073) did not understand the project goal and believed the project was a different product, indicating a scope/goal misalignment."
+        },
+        {
+          "item_key": "IS1008a#3",
+          "type": "problems",
+          "text": "There is no written project plan or budget yet, and documentation is missing to present to management."
+        },
+        {
+          "item_key": "IS1008a#4",
+          "type": "decisions",
+          "text": "The group decided that the project will focus on designing a remote control for television and will start with that remote control as the first product."
+        },
+        {
+          "item_key": "IS1008a#5",
+          "type": "actions",
+          "text": "The project manager will send a copy of the slides to all attendees at the conclusion of the meeting."
+        },
+        {
+          "item_key": "IS1008a#6",
+          "type": "actions",
+          "text": "ID(FIE073) will identify additional contributors from marketing, technical, and administration for the plan and inform PM."
+        }
+      ],
+      "provisional_values": {
+        "owner": [
+          "FIE038"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "open",
+        "related_items": []
+      },
+      "candidate_evidence_da_ids": [
+        "IS1008a.B.dialog-act.s9553330.25",
+        "IS1008a.A.dialog-act.s9553330.122",
+        "IS1008a.B.dialog-act.s9553330.26"
+      ]
+    },
+    "observed_documents": [],
+    "document_evidence": [],
+    "relation_evidence": [],
+    "history": [
+      {
+        "item": "IS1008a#7",
+        "step": 1,
+        "flags": [],
+        "action": "assess_item",
+        "outcome": "invalid_action",
+        "error": "Correct these argument fields: relation_check: None is not of type 'object'; : Additional properties are not allowed ('planned_action_check' was unexpected)",
+        "raw_tool_input": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "FIE038"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue asserts the immediate next step is to start determining the functional design, which matches the stated action scope (UI to determine functional design). Evidence: IS1008a.B.dialog-act.s9553330.25",
+            "evidence_da_ids": [
+              "IS1008a.B.dialog-act.s9553330.25"
+            ]
+          },
+          "owner_check": {
+            "result": "pass",
+            "reason": "Owner is the UI participant FIE038 visible in the dialog as the one driving the action proposal. Evidence: IS1008a.B.dialog-act.s9553330.25; IS1008a.A.dialog-act.s9553330.122 shows PM acknowledgment.",
+            "evidence_da_ids": [
+              "IS1008a.B.dialog-act.s9553330.25",
+              "IS1008a.A.dialog-act.s9553330.122"
+            ]
+          },
+          "deadline_check": {
+            "result": "uncertain",
+            "reason": "Deadline not specified in dialog; no date or relative deadline provided. Missing deadline.",
+            "evidence_da_ids": [
+              "IS1008a.B.dialog-act.s9553330.25"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Open status is consistent with being proposed and not yet completed. Dialog shows acknowledgment but no closure.",
+            "evidence_da_ids": [
+              "IS1008a.A.dialog-act.s9553330.122",
+              "IS1008a.B.dialog-act.s9553330.25"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No conflicts detected among the available statements; content aligns with earlier message.",
+            "evidence_da_ids": [
+              "IS1008a.B.dialog-act.s9553330.25",
+              "IS1008a.A.dialog-act.s9553330.122"
+            ]
+          },
+          "planned_action_check": null,
+          "relation_check": null,
+          "next_action": "accept"
+        }
+      },
+      {
+        "item": "IS1008a#7",
+        "step": 2,
+        "flags": [],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue asserts the immediate next step is to start determining the functional design, which matches the stated action scope (UI to determine functional design). Evidence: IS1008a.B.dialog-act.s9553330.25",
+            "quotes": [
+              {
+                "da_id": "IS1008a.B.dialog-act.s9553330.25",
+                "quote": "So , the immediate next step is to start determining the functional design , or"
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Owner is the UI participant FIE038 visible in the dialog as the one driving the action proposal. Evidence: IS1008a.B.dialog-act.s9553330.25; IS1008a.A.dialog-act.s9553330.122 shows PM acknowledgment.",
+            "quotes": [
+              {
+                "da_id": "IS1008a.B.dialog-act.s9553330.25",
+                "quote": "So , the immediate next step is to start determining the functional design , or"
+              },
+              {
+                "da_id": "IS1008a.A.dialog-act.s9553330.122",
+                "quote": "Yes ."
+              }
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "deadline_unresolved",
+            "quotes": [
+              {
+                "da_id": "IS1008a.B.dialog-act.s9553330.25",
+                "quote": "So , the immediate next step is to start determining the functional design , or"
+              }
+            ],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Open status is consistent with being proposed and not yet completed. Dialog shows acknowledgment but no closure.",
+            "quotes": [
+              {
+                "da_id": "IS1008a.A.dialog-act.s9553330.122",
+                "quote": "Yes ."
+              },
+              {
+                "da_id": "IS1008a.B.dialog-act.s9553330.25",
+                "quote": "So , the immediate next step is to start determining the functional design , or"
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicts detected among the available statements; content aligns with earlier message.",
+            "quotes": [
+              {
+                "da_id": "IS1008a.B.dialog-act.s9553330.25",
+                "quote": "So , the immediate next step is to start determining the functional design , or"
+              },
+              {
+                "da_id": "IS1008a.A.dialog-act.s9553330.122",
+                "quote": "Yes ."
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior relationship assessment requested or available in this scope.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "decision": "request_clarification",
+        "reason": "supported_statement_with_unresolved_fields",
+        "assessed_text": "UI will determine the functional design as the immediate next step.",
+        "requested_action": "accept",
+        "proposed_fields": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "FIE038"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "IS1008a.B.dialog-act.s9553330.25"
+          ]
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue asserts the immediate next step is to start determining the functional design, which matches the stated action scope (UI to determine functional design). Evidence: IS1008a.B.dialog-act.s9553330.25",
+            "quotes": [
+              "IS1008a.B.dialog-act.s9553330.25"
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Owner is the UI participant FIE038 visible in the dialog as the one driving the action proposal. Evidence: IS1008a.B.dialog-act.s9553330.25; IS1008a.A.dialog-act.s9553330.122 shows PM acknowledgment.",
+            "quotes": [
+              "IS1008a.B.dialog-act.s9553330.25",
+              "IS1008a.A.dialog-act.s9553330.122"
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "Deadline not specified in dialog; no date or relative deadline provided. Missing deadline.",
+            "quotes": [
+              "IS1008a.B.dialog-act.s9553330.25"
+            ],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Open status is consistent with being proposed and not yet completed. Dialog shows acknowledgment but no closure.",
+            "quotes": [
+              "IS1008a.A.dialog-act.s9553330.122",
+              "IS1008a.B.dialog-act.s9553330.25"
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicts detected among the available statements; content aligns with earlier message.",
+            "quotes": [
+              "IS1008a.B.dialog-act.s9553330.25",
+              "IS1008a.A.dialog-act.s9553330.122"
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior relationship assessment requested or available in this scope.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "FIE038"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue asserts the immediate next step is to start determining the functional design, which matches the stated action scope (UI to determine functional design). Evidence: IS1008a.B.dialog-act.s9553330.25",
+            "evidence_da_ids": [
+              "IS1008a.B.dialog-act.s9553330.25"
+            ]
+          },
+          "owner_check": {
+            "result": "pass",
+            "reason": "Owner is the UI participant FIE038 visible in the dialog as the one driving the action proposal. Evidence: IS1008a.B.dialog-act.s9553330.25; IS1008a.A.dialog-act.s9553330.122 shows PM acknowledgment.",
+            "evidence_da_ids": [
+              "IS1008a.B.dialog-act.s9553330.25",
+              "IS1008a.A.dialog-act.s9553330.122"
+            ]
+          },
+          "deadline_check": {
+            "result": "uncertain",
+            "reason": "Deadline not specified in dialog; no date or relative deadline provided. Missing deadline.",
+            "evidence_da_ids": [
+              "IS1008a.B.dialog-act.s9553330.25"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Open status is consistent with being proposed and not yet completed. Dialog shows acknowledgment but no closure.",
+            "evidence_da_ids": [
+              "IS1008a.A.dialog-act.s9553330.122",
+              "IS1008a.B.dialog-act.s9553330.25"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No conflicts detected among the available statements; content aligns with earlier message.",
+            "evidence_da_ids": [
+              "IS1008a.B.dialog-act.s9553330.25",
+              "IS1008a.A.dialog-act.s9553330.122"
+            ],
+            "affected_fields": []
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior relationship assessment requested or available in this scope.",
+            "evidence_da_ids": []
+          },
+          "next_action": "accept"
+        },
+        "evidence_bindings": {
+          "statement": [
+            "IS1008a.B.dialog-act.s9553330.25"
+          ],
+          "owner": [
+            "IS1008a.B.dialog-act.s9553330.25",
+            "IS1008a.A.dialog-act.s9553330.122"
+          ],
+          "deadline": [
+            "IS1008a.B.dialog-act.s9553330.25"
+          ],
+          "status": [
+            "IS1008a.A.dialog-act.s9553330.122",
+            "IS1008a.B.dialog-act.s9553330.25"
+          ],
+          "conflict": [
+            "IS1008a.B.dialog-act.s9553330.25",
+            "IS1008a.A.dialog-act.s9553330.122"
+          ]
+        },
+        "raw_tool_input": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "FIE038"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue asserts the immediate next step is to start determining the functional design, which matches the stated action scope (UI to determine functional design). Evidence: IS1008a.B.dialog-act.s9553330.25",
+            "evidence_da_ids": [
+              "IS1008a.B.dialog-act.s9553330.25"
+            ]
+          },
+          "owner_check": {
+            "result": "pass",
+            "reason": "Owner is the UI participant FIE038 visible in the dialog as the one driving the action proposal. Evidence: IS1008a.B.dialog-act.s9553330.25; IS1008a.A.dialog-act.s9553330.122 shows PM acknowledgment.",
+            "evidence_da_ids": [
+              "IS1008a.B.dialog-act.s9553330.25",
+              "IS1008a.A.dialog-act.s9553330.122"
+            ]
+          },
+          "deadline_check": {
+            "result": "uncertain",
+            "reason": "Deadline not specified in dialog; no date or relative deadline provided. Missing deadline.",
+            "evidence_da_ids": [
+              "IS1008a.B.dialog-act.s9553330.25"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Open status is consistent with being proposed and not yet completed. Dialog shows acknowledgment but no closure.",
+            "evidence_da_ids": [
+              "IS1008a.A.dialog-act.s9553330.122",
+              "IS1008a.B.dialog-act.s9553330.25"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No conflicts detected among the available statements; content aligns with earlier message.",
+            "evidence_da_ids": [
+              "IS1008a.B.dialog-act.s9553330.25",
+              "IS1008a.A.dialog-act.s9553330.122"
+            ],
+            "affected_fields": []
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior relationship assessment requested or available in this scope.",
+            "evidence_da_ids": []
+          },
+          "next_action": "accept"
+        },
+        "protocol_normalizations": []
+      },
+      {
+        "item": "IS1008a#7",
+        "step": 2,
+        "flags": [],
+        "action": "stop",
+        "outcome": "pending",
+        "termination_reason": "supported_statement_with_unresolved_fields",
+        "unresolved_fields": [
+          "deadline"
+        ]
+      }
+    ],
+    "lookups": 0,
+    "termination_reason": "supported_statement_with_unresolved_fields",
+    "clarifications": [
+      {
+        "request_id": "c4f7d1d1ab921c9a",
+        "item_key": "IS1008a#7",
+        "record_id": null,
+        "field": "deadline",
+        "question": "What is the agreed deadline, in its original wording?",
+        "item_text": "UI will determine the functional design as the immediate next step.",
+        "reason": "deadline_unresolved",
+        "evidence_da_ids": [
+          "IS1008a.B.dialog-act.s9553330.25"
+        ],
+        "available_evidence_da_ids": [
+          "IS1008a.B.dialog-act.s9553330.25",
+          "IS1008a.A.dialog-act.s9553330.122",
+          "IS1008a.B.dialog-act.s9553330.26",
+          "IS1008a.D.dialog-act.s9553330.51",
+          "IS1008a.A.dialog-act.s9553330.123"
+        ],
+        "status": "open",
+        "termination_reason": "supported_statement_with_unresolved_fields"
+      }
+    ]
+  }
+}

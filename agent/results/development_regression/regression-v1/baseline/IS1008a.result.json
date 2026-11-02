@@ -1,0 +1,318 @@
+{
+  "meeting_id": "IS1008a",
+  "arm": "baseline",
+  "started_at": "2026-10-28T04:31:06.057959+00:00",
+  "status": "COMPLETED",
+  "mode": "s2",
+  "items": 7,
+  "flagged": 2,
+  "agent runs": 2,
+  "agent fallbacks": 0,
+  "lookups used": 7,
+  "repairs": 0,
+  "input tokens": 51760,
+  "output tokens": 59138,
+  "llm calls": 17,
+  "seconds": 116.1,
+  "stages": {
+    "extract": {
+      "calls": 4,
+      "in": 23954,
+      "out": 31260
+    },
+    "consolidate": {
+      "calls": 3,
+      "in": 4929,
+      "out": 23482
+    },
+    "abstract": {
+      "calls": 1,
+      "in": 730,
+      "out": 1430
+    },
+    "agent": {
+      "calls": 9,
+      "in": 22147,
+      "out": 2966
+    }
+  },
+  "stage_seconds": {
+    "extract": 56.6,
+    "consolidate": 46.3,
+    "agent+abstract": 13.1,
+    "total": 116.1
+  },
+  "output": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\development_regression\\regression-v1\\baseline\\s2\\IS1008a.json",
+  "usage": {
+    "calls": 17,
+    "in": 51760,
+    "out": 59138,
+    "stages": {
+      "extract": {
+        "calls": 4,
+        "in": 23954,
+        "out": 31260
+      },
+      "consolidate": {
+        "calls": 3,
+        "in": 4929,
+        "out": 23482
+      },
+      "abstract": {
+        "calls": 1,
+        "in": 730,
+        "out": 1430
+      },
+      "agent": {
+        "calls": 9,
+        "in": 22147,
+        "out": 2966
+      }
+    }
+  },
+  "runtime_control": {
+    "limits": {
+      "calls": 80,
+      "tokens": 1000000,
+      "request_seconds": 300.0,
+      "meeting_seconds": 1200.0,
+      "inflight": 4,
+      "retries": 2,
+      "backoff": 0.5
+    },
+    "attempted_calls": 17,
+    "charged_tokens": 110898,
+    "unknown_usage_tokens": 0,
+    "reserved_tokens": 0,
+    "max_inflight_seen": 4,
+    "failure": null,
+    "attempts": [
+      {
+        "attempt": 0,
+        "stage": "extract",
+        "reserved_tokens": 52456,
+        "input_bound": 20456,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 9957,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 4807,
+        "output_tokens": 5150
+      },
+      {
+        "attempt": 1,
+        "stage": "extract",
+        "reserved_tokens": 52090,
+        "input_bound": 20090,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 10592,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 4619,
+        "output_tokens": 5973
+      },
+      {
+        "attempt": 2,
+        "stage": "extract",
+        "reserved_tokens": 61253,
+        "input_bound": 29253,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 16770,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 7264,
+        "output_tokens": 9506
+      },
+      {
+        "attempt": 3,
+        "stage": "extract",
+        "reserved_tokens": 61253,
+        "input_bound": 29253,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 17895,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 7264,
+        "output_tokens": 10631
+      },
+      {
+        "attempt": 4,
+        "stage": "consolidate",
+        "reserved_tokens": 41137,
+        "input_bound": 9137,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 10347,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 1643,
+        "output_tokens": 8704
+      },
+      {
+        "attempt": 5,
+        "stage": "consolidate",
+        "reserved_tokens": 41137,
+        "input_bound": 9137,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 7671,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 1643,
+        "output_tokens": 6028
+      },
+      {
+        "attempt": 6,
+        "stage": "consolidate",
+        "reserved_tokens": 41137,
+        "input_bound": 9137,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 10393,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 1643,
+        "output_tokens": 8750
+      },
+      {
+        "attempt": 7,
+        "stage": "abstract",
+        "reserved_tokens": 36881,
+        "input_bound": 4881,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 2160,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 730,
+        "output_tokens": 1430
+      },
+      {
+        "attempt": 8,
+        "stage": "agent",
+        "reserved_tokens": 43109,
+        "input_bound": 11109,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 2449,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 2093,
+        "output_tokens": 356
+      },
+      {
+        "attempt": 9,
+        "stage": "agent",
+        "reserved_tokens": 42553,
+        "input_bound": 10553,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 2082,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 1926,
+        "output_tokens": 156
+      },
+      {
+        "attempt": 10,
+        "stage": "agent",
+        "reserved_tokens": 43155,
+        "input_bound": 11155,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 2339,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 2048,
+        "output_tokens": 291
+      },
+      {
+        "attempt": 11,
+        "stage": "agent",
+        "reserved_tokens": 44787,
+        "input_bound": 12787,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 2744,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 2524,
+        "output_tokens": 220
+      },
+      {
+        "attempt": 12,
+        "stage": "agent",
+        "reserved_tokens": 44739,
+        "input_bound": 12739,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 2675,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 2455,
+        "output_tokens": 220
+      },
+      {
+        "attempt": 13,
+        "stage": "agent",
+        "reserved_tokens": 45389,
+        "input_bound": 13389,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 2880,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 2646,
+        "output_tokens": 234
+      },
+      {
+        "attempt": 14,
+        "stage": "agent",
+        "reserved_tokens": 46203,
+        "input_bound": 14203,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 3221,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 2846,
+        "output_tokens": 375
+      },
+      {
+        "attempt": 15,
+        "stage": "agent",
+        "reserved_tokens": 45775,
+        "input_bound": 13775,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 3323,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 2698,
+        "output_tokens": 625
+      },
+      {
+        "attempt": 16,
+        "stage": "agent",
+        "reserved_tokens": 46707,
+        "input_bound": 14707,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 3400,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 2911,
+        "output_tokens": 489
+      }
+    ],
+    "input_bound_method": "utf8_request_bytes_plus_padding",
+    "unknown_usage_policy": "charge_full_reservation"
+  },
+  "finished_at": "2026-10-28T04:33:02.120984+00:00",
+  "elapsed_seconds": 116.062,
+  "record_sha256": "d25eab82067dc00c3ce758e1693b32405452bb56e007b2706640e1751e11703c"
+}

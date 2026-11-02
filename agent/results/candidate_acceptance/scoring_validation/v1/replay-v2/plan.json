@@ -1,0 +1,496 @@
+{
+  "format_version": 1,
+  "created_at": "2026-10-31T17:35:52.986896+00:00",
+  "status": "COMPLETED",
+  "scope": "DEVELOPMENT_VALIDATION",
+  "protocol": {
+    "votes": 3,
+    "judge": {
+      "name": "@30875-fall26-openai/gpt-5-nano",
+      "client": "mta.llm.OpenAIAdapter",
+      "endpoint": "https://api.portkey.ai/v1",
+      "supports_reasoning_effort": true
+    },
+    "match_system": "You compare two lists of items from the same meeting record: SYSTEM items and GOLD items.\nMatch each system item to at most one gold item that records the same commitment, decision or problem.\nParaphrase is fine; for actions it must be the same person doing essentially the same task. A system item that\nis only loosely related, much narrower, or about something else is NOT a match. Matching is one-to-one.",
+    "match_schema": {
+      "type": "object",
+      "properties": {
+        "pairs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "sys": {
+                "type": "integer"
+              },
+              "gold": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "sys",
+              "gold"
+            ]
+          }
+        }
+      },
+      "required": [
+        "pairs"
+      ]
+    },
+    "fewshot_excluded_ids": [
+      "ES2011b.JacquelinePalmer.s.13",
+      "ES2011b.JacquelinePalmer.s.14",
+      "ES2011b.JacquelinePalmer.s.15",
+      "ES2011b.JacquelinePalmer.s.20",
+      "ES2011b.revised.s.23",
+      "IS1008b.JacquelinePalmer.s.10",
+      "IS1008b.JacquelinePalmer.s.12",
+      "IS1008b.JacquelinePalmer.s.17",
+      "TS3004c.JacquelinePalmer.s.17",
+      "TS3004c.JacquelinePalmer.s.19"
+    ],
+    "matching": "Same type; one-to-one; original semantic prompt; first three votes with majority. Shared text-keyed cache for all arms in each meeting. No version labels in judge prompt.",
+    "denominators": "Any NA/N/A placeholder makes that meeting/type unscored in all arms. Few-shot gold and system items aligned to those examples are excluded together.",
+    "aggregate": "Micro precision/recall/F1 from summed TP/system/gold, over identically eligible complete meetings. Never count an incomplete pipeline as empty output.",
+    "format_version": 1,
+    "name": "frozen_final_scoring_v1",
+    "source": "16-meeting development comparison protocol",
+    "support_votes": 1,
+    "summary_votes": 1,
+    "semantic_prompts": {
+      "FAITH_SYSTEM": "You check a meeting summary against the meeting transcript. For EACH summary sentence decide whether\nthe transcript supports it: supported (stated or clearly implied), partial (partly supported, or overstated / imprecise),\nunsupported (not in the transcript or contradicted). Then give one faithfulness score:\n5 = every sentence supported; 4 = all supported but one is slightly imprecise; 3 = one sentence partial or unsupported;\n2 = several sentences partial or unsupported; 1 = most sentences unsupported.\nJudge only from the transcript. Speakers are shown by role.",
+      "FAITH_SCHEMA": {
+        "type": "object",
+        "properties": {
+          "sentences": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "index": {
+                  "type": "integer"
+                },
+                "verdict": {
+                  "enum": [
+                    "supported",
+                    "partial",
+                    "unsupported"
+                  ]
+                }
+              },
+              "required": [
+                "index",
+                "verdict"
+              ]
+            }
+          },
+          "score": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 5
+          },
+          "reason": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "sentences",
+          "score"
+        ]
+      },
+      "COVER_SYSTEM": "You compare a meeting summary with REFERENCE points written by an annotator for the same meeting.\nFor EACH reference point decide whether the summary conveys it: covered, partial, or missed (paraphrase is fine).\nThen give one coverage score:\n5 = all or nearly all points covered; 4 = most covered, one or two missed; 3 = about half covered;\n2 = only a few covered; 1 = almost none covered.\nDo not reward content that is not among the reference points.",
+      "COVER_SCHEMA": {
+        "type": "object",
+        "properties": {
+          "points": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "index": {
+                  "type": "integer"
+                },
+                "verdict": {
+                  "enum": [
+                    "covered",
+                    "partial",
+                    "missed"
+                  ]
+                }
+              },
+              "required": [
+                "index",
+                "verdict"
+              ]
+            }
+          },
+          "score": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 5
+          },
+          "reason": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "points",
+          "score"
+        ]
+      }
+    },
+    "support_prompt": "You check whether cited meeting dialogue supports a recorded claim. Judge ONLY from the cited lines.\nFor each item decide:\n- statement: do the lines support that this commitment / decision / problem was stated or agreed? (supported / partial / unsupported)\n- owner (actions with an owner only): do the lines show that exactly this person or role is assigned? (supported / partial / unsupported)\n- deadline (actions with a deadline only): do the lines support this deadline wording? (supported / partial / unsupported)\nUse \"partial\" when the lines support only part of the claim, or support it only loosely. Speakers are shown as ROLE(PARTICIPANT_ID).",
+    "support_schema": {
+      "type": "object",
+      "properties": {
+        "verdicts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "item": {
+                "type": "integer"
+              },
+              "statement": {
+                "enum": [
+                  "supported",
+                  "partial",
+                  "unsupported"
+                ]
+              },
+              "owner": {
+                "enum": [
+                  "supported",
+                  "partial",
+                  "unsupported",
+                  "na"
+                ]
+              },
+              "deadline": {
+                "enum": [
+                  "supported",
+                  "partial",
+                  "unsupported",
+                  "na"
+                ]
+              },
+              "note": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "item",
+              "statement",
+              "owner",
+              "deadline"
+            ]
+          }
+        }
+      },
+      "required": [
+        "verdicts"
+      ]
+    },
+    "scorer_source_sha256": {
+      "agent/src/mta/evaluate.py": "abdbe3dbbee04baef7284e5141578ecfab3b3d8aa5f535b0fa3c3794319b6985",
+      "agent/src/mta/regression.py": "068fc561a08c7788c6de6e018ad9cdf5eaed24fddc5bf3bb6631fd2ae98bd8a9",
+      "agent/src/mta/support.py": "51587e85394c60a9c6faa53ea3ba2c42d724f5ba7b766071c054d66e16eae284",
+      "agent/scripts/full_eval.py": "10b97880a16415fb817d3acc04ca138b229fa1eb9c75864fabb69ca388264a88"
+    },
+    "adapter_sha256": "f126cba78cc0c58bb55c934063b115c0fad36ac6758d9fc63f8d21c29b0739e5"
+  },
+  "protocol_digest": "b0de1ae95eec59aaf3bc5fb2cfea27cd70c891ec74424f35af4726ab0aa7c596",
+  "runtime_reference_commit": "66a21d7c58651ef79c8d9e8f146ebd3880f35385",
+  "online": false,
+  "semantics": "none",
+  "generation": {
+    "cache_policy": "recorded_development_votes",
+    "saved_study_sha256": "1eea8c7113366058311de6ea74f68450d852f3834d6df14cd5b6139114332608",
+    "gold_version": "frozen development gold",
+    "legacy_protocol": {
+      "format_version": 1,
+      "current_commit": "213ccfcc4db898714f8be66eace0a12861d92341",
+      "baseline_commit": "414a31fe1581b147851ec2bd61b340bf0be26843",
+      "meetings": [
+        "ES2011a",
+        "ES2011b",
+        "ES2011c",
+        "ES2011d",
+        "IS1008a",
+        "IS1008b",
+        "IS1008c",
+        "IS1008d",
+        "TS3004a",
+        "TS3004b",
+        "TS3004c",
+        "TS3004d",
+        "TS3006a",
+        "TS3006b",
+        "TS3006c",
+        "TS3006d"
+      ],
+      "types": [
+        "actions",
+        "decisions",
+        "problems"
+      ],
+      "arms": [
+        "baseline",
+        "retention_actions",
+        "retention_actions_issues",
+        "selection213",
+        "selection_issue",
+        "p2_current"
+      ],
+      "votes": 3,
+      "judge": {
+        "name": "@30875-fall26-openai/gpt-5-nano",
+        "client": "mta.llm.OpenAIAdapter",
+        "endpoint": "https://api.portkey.ai/v1",
+        "supports_reasoning_effort": true
+      },
+      "match_system": "You compare two lists of items from the same meeting record: SYSTEM items and GOLD items.\nMatch each system item to at most one gold item that records the same commitment, decision or problem.\nParaphrase is fine; for actions it must be the same person doing essentially the same task. A system item that\nis only loosely related, much narrower, or about something else is NOT a match. Matching is one-to-one.",
+      "match_schema": {
+        "type": "object",
+        "properties": {
+          "pairs": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "sys": {
+                  "type": "integer"
+                },
+                "gold": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "sys",
+                "gold"
+              ]
+            }
+          }
+        },
+        "required": [
+          "pairs"
+        ]
+      },
+      "fewshot_excluded_ids": [
+        "ES2011b.JacquelinePalmer.s.13",
+        "ES2011b.JacquelinePalmer.s.14",
+        "ES2011b.JacquelinePalmer.s.15",
+        "ES2011b.JacquelinePalmer.s.20",
+        "ES2011b.revised.s.23",
+        "IS1008b.JacquelinePalmer.s.10",
+        "IS1008b.JacquelinePalmer.s.12",
+        "IS1008b.JacquelinePalmer.s.17",
+        "TS3004c.JacquelinePalmer.s.17",
+        "TS3004c.JacquelinePalmer.s.19"
+      ],
+      "gold_sha256": {
+        "ES2011a": "45ccd96875f012fefed4ca3775c110d1fa558e27c7abf2fc94c49a50731d290f",
+        "ES2011b": "7010c32ddccda6ca347feef1f3a9d9db5d1f72c29202ca1f6a42ffd8757f8171",
+        "ES2011c": "16b7e910a3555b60c100ef8f0daf169d71100c879d0def2e7fd70e026a3a234b",
+        "ES2011d": "034478891ab01e7eb320b2475e78a79716a934fcf87568caad27246bd0ad4725",
+        "IS1008a": "175e1a7a0a4ce8f09e62778b3c04509e7030be947b0d3a5a56c4054ce353f089",
+        "IS1008b": "f8c8bd225c35e9f65c740f1627537047d6f4948ba43ff0ceb134531af7f9ebfc",
+        "IS1008c": "18544f9f961b56e9f085b079dd624dfbf0aefde36bfe757e46a0c6654b65a13c",
+        "IS1008d": "e5b15fb507313929b94a6951524acef5a6a0ad47a5216cbb33e8d9f80dff61d8",
+        "TS3004a": "0e8bb4c8951c46dad20039fb671d073e0e176cd8027b0b783a801ebd0036fa25",
+        "TS3004b": "5920d138d4245a46e3a61230449d5a07ff1b97af8ada1d6ebe2eed7313858794",
+        "TS3004c": "306b3abc04df390a52faa98c17148f6758ab0587116f6d126b65f6f5c7fd801c",
+        "TS3004d": "679ab328bfdec35bd762470de60a919b943d49e2473f1b335428bd19883cf494",
+        "TS3006a": "68b6958266d4c97fd0f7d176975af97e9789a198917d41aed2ec4f8fd0ac4b85",
+        "TS3006b": "4c8635087940ea170532827d77ac24f256a6d821779e08af52d0487d6f801540",
+        "TS3006c": "09c618c5832cf408742df7e442d19f91c292e2f854ad3c7a17597fbdd01b884e",
+        "TS3006d": "b2a73f39ecacbc0abb085685a448df1f5c2e7947f4bc01c556ce6ed03edc464c"
+      },
+      "scoring_source_sha256": {
+        "agent/src/mta/evaluate.py": "abdbe3dbbee04baef7284e5141578ecfab3b3d8aa5f535b0fa3c3794319b6985",
+        "agent/src/mta/regression.py": "068fc561a08c7788c6de6e018ad9cdf5eaed24fddc5bf3bb6631fd2ae98bd8a9",
+        "agent/scripts/full_eval.py": "10b97880a16415fb817d3acc04ca138b229fa1eb9c75864fabb69ca388264a88"
+      },
+      "matching": "Same type; one-to-one; original semantic prompt; first three votes with majority. Shared text-keyed cache for all arms in each meeting. No version labels in judge prompt.",
+      "denominators": "Any NA/N/A placeholder makes that meeting/type unscored in all arms. Few-shot gold and system items aligned to those examples are excluded together.",
+      "aggregate": "Micro precision/recall/F1 from summed TP/system/gold, over identically eligible complete meetings. Never count an incomplete pipeline as empty output.",
+      "scope": "SB development regression with draft gold and model-judged matches. No heldout data, independent human signoff, support/summary judging or stability claim.",
+      "original16_baseline_replayed_api_calls": 0,
+      "driver_sha256": "8be2c52af38732f1f76bb48f54fd34324925576bebcf3c99e5926da24a271107",
+      "boundary_driver_sha256": "18f46d5956ff80d430d25352c89a5a66ea352cb2ea0638bd465d440d94aa2073",
+      "policy": "Single fixed boundary response per arm; original text-keyed votes reused; no resampling. Generation never sees gold, votes or scores."
+    }
+  },
+  "modes": [
+    "s2"
+  ],
+  "jobs": [
+    {
+      "meeting_id": "ES2011a",
+      "mode": "s2",
+      "prediction": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\recall_candidate\\41654ab-v2\\replay\\ES2011a\\record.json",
+      "prediction_sha256": "d3293196c5f54ecaa686b684e090e80683aa305794979155d7b0350cf6c670f8",
+      "gold": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\recall_candidate\\41654ab-v2\\replay\\ES2011a\\gold.json",
+      "gold_sha256": "45ccd96875f012fefed4ca3775c110d1fa558e27c7abf2fc94c49a50731d290f",
+      "execution_kind": "FIXED_RESPONSE_REPLAY_NOT_FRESH_PIPELINE",
+      "metadata_sha256": null
+    },
+    {
+      "meeting_id": "ES2011b",
+      "mode": "s2",
+      "prediction": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\recall_candidate\\41654ab-v2\\replay\\ES2011b\\record.json",
+      "prediction_sha256": "86d6bddde3494bded2ec5047d18739aea0a1ea09e8e1d784963f0ad2434fc0cf",
+      "gold": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\recall_candidate\\41654ab-v2\\replay\\ES2011b\\gold.json",
+      "gold_sha256": "7010c32ddccda6ca347feef1f3a9d9db5d1f72c29202ca1f6a42ffd8757f8171",
+      "execution_kind": "FIXED_RESPONSE_REPLAY_NOT_FRESH_PIPELINE",
+      "metadata_sha256": null
+    },
+    {
+      "meeting_id": "ES2011c",
+      "mode": "s2",
+      "prediction": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\recall_candidate\\41654ab-v2\\replay\\ES2011c\\record.json",
+      "prediction_sha256": "aa80bd906c1c6aa807e5c32a72bd7328cb95c6cab81d3243bff9c985a292f766",
+      "gold": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\recall_candidate\\41654ab-v2\\replay\\ES2011c\\gold.json",
+      "gold_sha256": "16b7e910a3555b60c100ef8f0daf169d71100c879d0def2e7fd70e026a3a234b",
+      "execution_kind": "FIXED_RESPONSE_REPLAY_NOT_FRESH_PIPELINE",
+      "metadata_sha256": null
+    },
+    {
+      "meeting_id": "ES2011d",
+      "mode": "s2",
+      "prediction": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\recall_candidate\\41654ab-v2\\replay\\ES2011d\\record.json",
+      "prediction_sha256": "9ff2e548d826777d3b045f581a278c2710b866383ff28937f10d5f2f018d7f99",
+      "gold": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\recall_candidate\\41654ab-v2\\replay\\ES2011d\\gold.json",
+      "gold_sha256": "034478891ab01e7eb320b2475e78a79716a934fcf87568caad27246bd0ad4725",
+      "execution_kind": "FIXED_RESPONSE_REPLAY_NOT_FRESH_PIPELINE",
+      "metadata_sha256": null
+    },
+    {
+      "meeting_id": "IS1008a",
+      "mode": "s2",
+      "prediction": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\recall_candidate\\41654ab-v2\\replay\\IS1008a\\record.json",
+      "prediction_sha256": "1b25f9f871b11abd9498f6a7e740e294b2cb78f8e151c7060181330cd13764b7",
+      "gold": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\recall_candidate\\41654ab-v2\\replay\\IS1008a\\gold.json",
+      "gold_sha256": "175e1a7a0a4ce8f09e62778b3c04509e7030be947b0d3a5a56c4054ce353f089",
+      "execution_kind": "FIXED_RESPONSE_REPLAY_NOT_FRESH_PIPELINE",
+      "metadata_sha256": null
+    },
+    {
+      "meeting_id": "IS1008b",
+      "mode": "s2",
+      "prediction": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\recall_candidate\\41654ab-v2\\replay\\IS1008b\\record.json",
+      "prediction_sha256": "15fd0e4d9131ddc13c83378cd71ab2afd5122ee06d3efdd9539d71be49d88d86",
+      "gold": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\recall_candidate\\41654ab-v2\\replay\\IS1008b\\gold.json",
+      "gold_sha256": "f8c8bd225c35e9f65c740f1627537047d6f4948ba43ff0ceb134531af7f9ebfc",
+      "execution_kind": "FIXED_RESPONSE_REPLAY_NOT_FRESH_PIPELINE",
+      "metadata_sha256": null
+    },
+    {
+      "meeting_id": "IS1008c",
+      "mode": "s2",
+      "prediction": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\recall_candidate\\41654ab-v2\\replay\\IS1008c\\record.json",
+      "prediction_sha256": "67f90c372f780623ae7cbd9dae3ed4c15b9050ff66eff6f0f7635ccf23ae6178",
+      "gold": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\recall_candidate\\41654ab-v2\\replay\\IS1008c\\gold.json",
+      "gold_sha256": "18544f9f961b56e9f085b079dd624dfbf0aefde36bfe757e46a0c6654b65a13c",
+      "execution_kind": "FIXED_RESPONSE_REPLAY_NOT_FRESH_PIPELINE",
+      "metadata_sha256": null
+    },
+    {
+      "meeting_id": "IS1008d",
+      "mode": "s2",
+      "prediction": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\recall_candidate\\41654ab-v2\\replay\\IS1008d\\record.json",
+      "prediction_sha256": "2a94a6d6a5a591f3532d1ae9fb64e063b0ea92b5854ccd1a141f6d7d471b7942",
+      "gold": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\recall_candidate\\41654ab-v2\\replay\\IS1008d\\gold.json",
+      "gold_sha256": "e5b15fb507313929b94a6951524acef5a6a0ad47a5216cbb33e8d9f80dff61d8",
+      "execution_kind": "FIXED_RESPONSE_REPLAY_NOT_FRESH_PIPELINE",
+      "metadata_sha256": null
+    },
+    {
+      "meeting_id": "TS3004a",
+      "mode": "s2",
+      "prediction": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\recall_candidate\\41654ab-v2\\replay\\TS3004a\\record.json",
+      "prediction_sha256": "90779b5a5d9ec92187b19a161c0cc7c184a98290d9b247c5b07a24d43d18086e",
+      "gold": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\recall_candidate\\41654ab-v2\\replay\\TS3004a\\gold.json",
+      "gold_sha256": "0e8bb4c8951c46dad20039fb671d073e0e176cd8027b0b783a801ebd0036fa25",
+      "execution_kind": "FIXED_RESPONSE_REPLAY_NOT_FRESH_PIPELINE",
+      "metadata_sha256": null
+    },
+    {
+      "meeting_id": "TS3004b",
+      "mode": "s2",
+      "prediction": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\recall_candidate\\41654ab-v2\\replay\\TS3004b\\record.json",
+      "prediction_sha256": "230b0b34ddb1f1acfd60cc8202f83e9913913b1e3616313a181446d72e41c1d2",
+      "gold": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\recall_candidate\\41654ab-v2\\replay\\TS3004b\\gold.json",
+      "gold_sha256": "5920d138d4245a46e3a61230449d5a07ff1b97af8ada1d6ebe2eed7313858794",
+      "execution_kind": "FIXED_RESPONSE_REPLAY_NOT_FRESH_PIPELINE",
+      "metadata_sha256": null
+    },
+    {
+      "meeting_id": "TS3004c",
+      "mode": "s2",
+      "prediction": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\recall_candidate\\41654ab-v2\\replay\\TS3004c\\record.json",
+      "prediction_sha256": "e017a75be6b1c275e804756c9ab7ea12c6be9caa46b7e262f461a88bd73a98eb",
+      "gold": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\recall_candidate\\41654ab-v2\\replay\\TS3004c\\gold.json",
+      "gold_sha256": "306b3abc04df390a52faa98c17148f6758ab0587116f6d126b65f6f5c7fd801c",
+      "execution_kind": "FIXED_RESPONSE_REPLAY_NOT_FRESH_PIPELINE",
+      "metadata_sha256": null
+    },
+    {
+      "meeting_id": "TS3004d",
+      "mode": "s2",
+      "prediction": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\recall_candidate\\41654ab-v2\\replay\\TS3004d\\record.json",
+      "prediction_sha256": "2b5b143c4cdbd1a8c787f03b6ec51005c2282fcc24cfe877a33f2503cb2f813f",
+      "gold": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\recall_candidate\\41654ab-v2\\replay\\TS3004d\\gold.json",
+      "gold_sha256": "679ab328bfdec35bd762470de60a919b943d49e2473f1b335428bd19883cf494",
+      "execution_kind": "FIXED_RESPONSE_REPLAY_NOT_FRESH_PIPELINE",
+      "metadata_sha256": null
+    },
+    {
+      "meeting_id": "TS3006a",
+      "mode": "s2",
+      "prediction": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\recall_candidate\\41654ab-v2\\replay\\TS3006a\\record.json",
+      "prediction_sha256": "18d9ec1dd5c614ae4f7a6d3442d54e4b98ce1d212f07bee6d84bf11a197b701a",
+      "gold": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\recall_candidate\\41654ab-v2\\replay\\TS3006a\\gold.json",
+      "gold_sha256": "68b6958266d4c97fd0f7d176975af97e9789a198917d41aed2ec4f8fd0ac4b85",
+      "execution_kind": "FIXED_RESPONSE_REPLAY_NOT_FRESH_PIPELINE",
+      "metadata_sha256": null
+    },
+    {
+      "meeting_id": "TS3006b",
+      "mode": "s2",
+      "prediction": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\recall_candidate\\41654ab-v2\\replay\\TS3006b\\record.json",
+      "prediction_sha256": "688c16cfcb5b50f745074d3819595589dde36f774a4aa9002f3bc0e30331c22c",
+      "gold": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\recall_candidate\\41654ab-v2\\replay\\TS3006b\\gold.json",
+      "gold_sha256": "4c8635087940ea170532827d77ac24f256a6d821779e08af52d0487d6f801540",
+      "execution_kind": "FIXED_RESPONSE_REPLAY_NOT_FRESH_PIPELINE",
+      "metadata_sha256": null
+    },
+    {
+      "meeting_id": "TS3006c",
+      "mode": "s2",
+      "prediction": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\recall_candidate\\41654ab-v2\\replay\\TS3006c\\record.json",
+      "prediction_sha256": "fb12a36a3358be3053cbf59f0d3eb583081b135381da63b25116136ec8425a62",
+      "gold": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\recall_candidate\\41654ab-v2\\replay\\TS3006c\\gold.json",
+      "gold_sha256": "09c618c5832cf408742df7e442d19f91c292e2f854ad3c7a17597fbdd01b884e",
+      "execution_kind": "FIXED_RESPONSE_REPLAY_NOT_FRESH_PIPELINE",
+      "metadata_sha256": null
+    },
+    {
+      "meeting_id": "TS3006d",
+      "mode": "s2",
+      "prediction": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\recall_candidate\\41654ab-v2\\replay\\TS3006d\\record.json",
+      "prediction_sha256": "3f70716aa788354d2a524380cff2beedf631d778472adb6b5f474e6d34bdfa61",
+      "gold": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\recall_candidate\\41654ab-v2\\replay\\TS3006d\\gold.json",
+      "gold_sha256": "b2a73f39ecacbc0abb085685a448df1f5c2e7947f4bc01c556ce6ed03edc464c",
+      "execution_kind": "FIXED_RESPONSE_REPLAY_NOT_FRESH_PIPELINE",
+      "metadata_sha256": null
+    }
+  ],
+  "saved_reference_validation": {
+    "status": "PASSED",
+    "per_meeting_exact_matches": 16,
+    "all_type_and_pooled_metrics_exact": true,
+    "reference_sha256": "e9e9d2a509bc8f6ccd09fa955e3113f558aa7d25483e006aa80cb182b0b5dd41"
+  }
+}

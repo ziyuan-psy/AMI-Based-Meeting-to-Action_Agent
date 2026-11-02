@@ -1,0 +1,1393 @@
+{
+  "item_key": "TS3006a#13",
+  "record_id": null,
+  "item_type": "actions",
+  "item_text": "Marketing Expert will conduct internet searches and user interviews to determine user requirements.",
+  "state": "pending",
+  "recordable": true,
+  "fields": {
+    "status": "open",
+    "prior_context_needed": false,
+    "related_items": [],
+    "owner": [
+      "MTD024ME"
+    ],
+    "owner_basis": "explicit",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "reference": [
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3006a.json",
+        "locator": "TS3006a.D.dialog-act.vkaraisk.116"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3006a.json",
+        "locator": "TS3006a.D.dialog-act.vkaraisk.118"
+      }
+    ]
+  },
+  "draft_fields": {
+    "status": "open",
+    "related_items": [],
+    "owner": [
+      "MTD024ME"
+    ],
+    "owner_basis": "explicit",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "prior_context_needed": false,
+    "used_participant_lookup": false,
+    "evidence_da_ids": [
+      "TS3006a.D.dialog-act.vkaraisk.116",
+      "TS3006a.D.dialog-act.vkaraisk.118"
+    ]
+  },
+  "checks": {
+    "statement": {
+      "result": "pass",
+      "reason": "Dialogue supports internet search by ME and interviews with current and future users as part of determining user requirements; this matches the task scope.",
+      "quotes": [
+        {
+          "da_id": "TS3006a.D.dialog-act.vkaraisk.116",
+          "quote": "Um therefore we have to to do some internet search . For example for um well what kind of applications do current remote controls support , and what are f featur features of uh current and future televisions ?"
+        },
+        {
+          "da_id": "TS3006a.D.dialog-act.vkaraisk.118",
+          "quote": "Um <vocalsound> and we can interview current users and future users . What w what would they like to see uh on a new remote control ? Um especially for future users ,"
+        }
+      ],
+      "fields": [
+        "statement"
+      ]
+    },
+    "owner": {
+      "result": "pass",
+      "reason": "Owner is explicitly stated in provisional_values; ME (MTD024ME) is the owner.",
+      "quotes": [
+        {
+          "da_id": "TS3006a.D.dialog-act.vkaraisk.116",
+          "quote": "Um therefore we have to to do some internet search . For example for um well what kind of applications do current remote controls support , and what are f featur features of uh current and future televisions ?"
+        },
+        {
+          "da_id": "TS3006a.D.dialog-act.vkaraisk.118",
+          "quote": "Um <vocalsound> and we can interview current users and future users . What w what would they like to see uh on a new remote control ? Um especially for future users ,"
+        }
+      ],
+      "fields": [
+        "owner"
+      ]
+    },
+    "deadline": {
+      "result": "uncertain",
+      "reason": "deadline_unresolved",
+      "quotes": [],
+      "fields": [
+        "deadline"
+      ]
+    },
+    "status": {
+      "result": "pass",
+      "reason": "Status is open as per provisional values; no change indicated in dialogue.",
+      "quotes": [
+        {
+          "da_id": "TS3006a.D.dialog-act.vkaraisk.116",
+          "quote": "Um therefore we have to to do some internet search . For example for um well what kind of applications do current remote controls support , and what are f featur features of uh current and future televisions ?"
+        },
+        {
+          "da_id": "TS3006a.D.dialog-act.vkaraisk.118",
+          "quote": "Um <vocalsound> and we can interview current users and future users . What w what would they like to see uh on a new remote control ? Um especially for future users ,"
+        }
+      ],
+      "fields": [
+        "status"
+      ]
+    },
+    "conflict": {
+      "result": "pass",
+      "reason": "No internal conflicts detected among provided evidence.",
+      "quotes": [
+        {
+          "da_id": "TS3006a.D.dialog-act.vkaraisk.116",
+          "quote": "Um therefore we have to to do some internet search . For example for um well what kind of applications do current remote controls support , and what are f featur features of uh current and future televisions ?"
+        },
+        {
+          "da_id": "TS3006a.D.dialog-act.vkaraisk.118",
+          "quote": "Um <vocalsound> and we can interview current users and future users . What w what would they like to see uh on a new remote control ? Um especially for future users ,"
+        }
+      ],
+      "fields": [
+        "statement",
+        "owner",
+        "deadline",
+        "status"
+      ]
+    },
+    "relation": {
+      "result": "not_applicable",
+      "reason": "No prior related_items to assess; none provided.",
+      "quotes": [],
+      "fields": [
+        "related_items"
+      ]
+    }
+  },
+  "unresolved_fields": [
+    "deadline"
+  ],
+  "observed_evidence_da_ids": [
+    "TS3006a.D.dialog-act.vkaraisk.116",
+    "TS3006a.A.dialog-act.vkaraisk.175",
+    "TS3006a.A.dialog-act.vkaraisk.172",
+    "TS3006a.A.dialog-act.vkaraisk.173",
+    "TS3006a.D.dialog-act.vkaraisk.118",
+    "TS3006a.A.dialog-act.vkaraisk.176",
+    "TS3006a.A.dialog-act.vkaraisk.244",
+    "TS3006a.A.dialog-act.vkaraisk.12",
+    "TS3006a.B.dialog-act.vkaraisk.65"
+  ],
+  "initial_context": {
+    "item": {
+      "type": "actions",
+      "text": "Marketing Expert will conduct internet searches and user interviews to determine user requirements.",
+      "flags": []
+    },
+    "current_meeting": "TS3006a",
+    "earlier_meetings": [],
+    "roster": [
+      {
+        "speaker": "A",
+        "participant_id": "MTD021PM",
+        "role": "PM"
+      },
+      {
+        "speaker": "B",
+        "participant_id": "MTD023UID",
+        "role": "UI"
+      },
+      {
+        "speaker": "C",
+        "participant_id": "MTD022ID",
+        "role": "ID"
+      },
+      {
+        "speaker": "D",
+        "participant_id": "MTD024ME",
+        "role": "ME"
+      }
+    ],
+    "observed_dialogue": [
+      {
+        "da_id": "TS3006a.D.dialog-act.vkaraisk.116",
+        "meeting_id": "TS3006a",
+        "text": "Um therefore we have to to do some internet search . For example for um well what kind of applications do current remote controls support , and what are f featur features of uh current and future televisions ?",
+        "participant": "MTD024ME",
+        "role": "ME"
+      },
+      {
+        "da_id": "TS3006a.A.dialog-act.vkaraisk.175",
+        "meeting_id": "TS3006a",
+        "text": "Okay .",
+        "participant": "MTD021PM",
+        "role": "PM"
+      },
+      {
+        "da_id": "TS3006a.A.dialog-act.vkaraisk.172",
+        "participant": "MTD021PM",
+        "role": "PM",
+        "text": "Mm-hmm ."
+      },
+      {
+        "da_id": "TS3006a.A.dialog-act.vkaraisk.173",
+        "participant": "MTD021PM",
+        "role": "PM",
+        "text": "Yep ."
+      },
+      {
+        "da_id": "TS3006a.D.dialog-act.vkaraisk.118",
+        "participant": "MTD024ME",
+        "role": "ME",
+        "text": "Um <vocalsound> and we can interview current users and future users . What w what would they like to see uh on a new remote control ? Um especially for future users ,"
+      },
+      {
+        "da_id": "TS3006a.A.dialog-act.vkaraisk.176",
+        "participant": "MTD021PM",
+        "role": "PM",
+        "text": "Okay ."
+      }
+    ],
+    "peer_items": [
+      {
+        "item_key": "TS3006a#0",
+        "type": "problems",
+        "text": "Screen/display hardware problem: presenter reports the screen is missing ('where has my screen gone?' / 'My screen is gone')"
+      },
+      {
+        "item_key": "TS3006a#1",
+        "type": "problems",
+        "text": "Kickoff participation shows participants slow and under-prepared, indicating preparation/coordination gaps."
+      },
+      {
+        "item_key": "TS3006a#2",
+        "type": "problems",
+        "text": "Unclear scope: unclear which animal to draw and lack of agreement on subject and components to include."
+      },
+      {
+        "item_key": "TS3006a#3",
+        "type": "decisions",
+        "text": "Pricing will be set at 25 Euros."
+      },
+      {
+        "item_key": "TS3006a#4",
+        "type": "decisions",
+        "text": "Sales target is 50 million Euros in sales."
+      },
+      {
+        "item_key": "TS3006a#5",
+        "type": "decisions",
+        "text": "Production cost should be half of the selling price."
+      },
+      {
+        "item_key": "TS3006a#6",
+        "type": "decisions",
+        "text": "Phase one will be the functional design."
+      },
+      {
+        "item_key": "TS3006a#7",
+        "type": "decisions",
+        "text": "Assume system for TV and video with potential future features."
+      },
+      {
+        "item_key": "TS3006a#8",
+        "type": "decisions",
+        "text": "Product must be user-friendly."
+      },
+      {
+        "item_key": "TS3006a#9",
+        "type": "decisions",
+        "text": "Product should have the least number of functions to simplify usage."
+      },
+      {
+        "item_key": "TS3006a#10",
+        "type": "actions",
+        "text": "Industrial Designer will work on the conceptual design."
+      },
+      {
+        "item_key": "TS3006a#11",
+        "type": "actions",
+        "text": "Project Manager will summarize the discussed items and place the summary in the project folder."
+      },
+      {
+        "item_key": "TS3006a#12",
+        "type": "actions",
+        "text": "Industrial Designer will create an overview for the three design phases."
+      }
+    ],
+    "provisional_values": {
+      "owner": [
+        "MTD024ME"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "status": "open",
+      "related_items": []
+    },
+    "candidate_evidence_da_ids": [
+      "TS3006a.D.dialog-act.vkaraisk.116",
+      "TS3006a.A.dialog-act.vkaraisk.175"
+    ]
+  },
+  "observed_documents": [],
+  "document_evidence": [],
+  "relation_evidence": [],
+  "history": [
+    {
+      "item": "TS3006a#13",
+      "step": 1,
+      "flags": [],
+      "action": "assess_item",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue supports internet search by ME and interviews with current and future users as part of determining user requirements; this matches the task scope.",
+          "quotes": [
+            {
+              "da_id": "TS3006a.D.dialog-act.vkaraisk.116",
+              "quote": "Um therefore we have to to do some internet search . For example for um well what kind of applications do current remote controls support , and what are f featur features of uh current and future televisions ?"
+            },
+            {
+              "da_id": "TS3006a.D.dialog-act.vkaraisk.118",
+              "quote": "Um <vocalsound> and we can interview current users and future users . What w what would they like to see uh on a new remote control ? Um especially for future users ,"
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Owner is explicitly stated in provisional_values; ME (MTD024ME) is the owner.",
+          "quotes": [
+            {
+              "da_id": "TS3006a.D.dialog-act.vkaraisk.116",
+              "quote": "Um therefore we have to to do some internet search . For example for um well what kind of applications do current remote controls support , and what are f featur features of uh current and future televisions ?"
+            },
+            {
+              "da_id": "TS3006a.D.dialog-act.vkaraisk.118",
+              "quote": "Um <vocalsound> and we can interview current users and future users . What w what would they like to see uh on a new remote control ? Um especially for future users ,"
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "deadline_unresolved",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Status is open as per provisional values; no change indicated in dialogue.",
+          "quotes": [
+            {
+              "da_id": "TS3006a.D.dialog-act.vkaraisk.116",
+              "quote": "Um therefore we have to to do some internet search . For example for um well what kind of applications do current remote controls support , and what are f featur features of uh current and future televisions ?"
+            },
+            {
+              "da_id": "TS3006a.D.dialog-act.vkaraisk.118",
+              "quote": "Um <vocalsound> and we can interview current users and future users . What w what would they like to see uh on a new remote control ? Um especially for future users ,"
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No internal conflicts detected among provided evidence.",
+          "quotes": [
+            {
+              "da_id": "TS3006a.D.dialog-act.vkaraisk.116",
+              "quote": "Um therefore we have to to do some internet search . For example for um well what kind of applications do current remote controls support , and what are f featur features of uh current and future televisions ?"
+            },
+            {
+              "da_id": "TS3006a.D.dialog-act.vkaraisk.118",
+              "quote": "Um <vocalsound> and we can interview current users and future users . What w what would they like to see uh on a new remote control ? Um especially for future users ,"
+            }
+          ],
+          "fields": [
+            "statement",
+            "owner",
+            "deadline",
+            "status"
+          ]
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No prior related_items to assess; none provided.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "decision": "retrieve",
+      "reason": "unresolved_checks",
+      "assessed_text": "Marketing Expert will conduct internet searches and user interviews to determine user requirements.",
+      "requested_action": "retrieve",
+      "proposed_fields": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD024ME"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "TS3006a.D.dialog-act.vkaraisk.116",
+          "TS3006a.D.dialog-act.vkaraisk.118"
+        ]
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue supports internet search by ME and interviews with current and future users as part of determining user requirements; this matches the task scope.",
+          "quotes": [
+            "TS3006a.D.dialog-act.vkaraisk.116",
+            "TS3006a.D.dialog-act.vkaraisk.118"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Owner is explicitly stated in provisional_values; ME (MTD024ME) is the owner.",
+          "quotes": [
+            "TS3006a.D.dialog-act.vkaraisk.116",
+            "TS3006a.D.dialog-act.vkaraisk.118"
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "No deadline is stated in the dialogue or in provisional values; ambiguity remains.",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Status is open as per provisional values; no change indicated in dialogue.",
+          "quotes": [
+            "TS3006a.D.dialog-act.vkaraisk.116",
+            "TS3006a.D.dialog-act.vkaraisk.118"
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No internal conflicts detected among provided evidence.",
+          "quotes": [
+            "TS3006a.D.dialog-act.vkaraisk.116",
+            "TS3006a.D.dialog-act.vkaraisk.118"
+          ],
+          "fields": [
+            "statement",
+            "owner",
+            "deadline",
+            "status"
+          ]
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No prior related_items to assess; none provided.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD024ME"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue supports internet search by ME and interviews with current and future users as part of determining user requirements; this matches the task scope.",
+          "evidence_da_ids": [
+            "TS3006a.D.dialog-act.vkaraisk.116",
+            "TS3006a.D.dialog-act.vkaraisk.118"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "Owner is explicitly stated in provisional_values; ME (MTD024ME) is the owner.",
+          "evidence_da_ids": [
+            "TS3006a.D.dialog-act.vkaraisk.116",
+            "TS3006a.D.dialog-act.vkaraisk.118"
+          ]
+        },
+        "deadline_check": {
+          "result": "uncertain",
+          "reason": "No deadline is stated in the dialogue or in provisional values; ambiguity remains.",
+          "evidence_da_ids": []
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "Status is open as per provisional values; no change indicated in dialogue.",
+          "evidence_da_ids": [
+            "TS3006a.D.dialog-act.vkaraisk.116",
+            "TS3006a.D.dialog-act.vkaraisk.118"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No internal conflicts detected among provided evidence.",
+          "evidence_da_ids": [
+            "TS3006a.D.dialog-act.vkaraisk.116",
+            "TS3006a.D.dialog-act.vkaraisk.118"
+          ],
+          "affected_fields": [
+            "statement",
+            "owner",
+            "deadline",
+            "status"
+          ]
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No prior related_items to assess; none provided.",
+          "evidence_da_ids": []
+        },
+        "next_action": "retrieve"
+      },
+      "evidence_bindings": {
+        "statement": [
+          "TS3006a.D.dialog-act.vkaraisk.116",
+          "TS3006a.D.dialog-act.vkaraisk.118"
+        ],
+        "owner": [
+          "TS3006a.D.dialog-act.vkaraisk.116",
+          "TS3006a.D.dialog-act.vkaraisk.118"
+        ],
+        "status": [
+          "TS3006a.D.dialog-act.vkaraisk.116",
+          "TS3006a.D.dialog-act.vkaraisk.118"
+        ],
+        "conflict": [
+          "TS3006a.D.dialog-act.vkaraisk.116",
+          "TS3006a.D.dialog-act.vkaraisk.118"
+        ]
+      },
+      "raw_tool_input": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD024ME"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue supports internet search by ME and interviews with current and future users as part of determining user requirements; this matches the task scope.",
+          "evidence_da_ids": [
+            "TS3006a.D.dialog-act.vkaraisk.116",
+            "TS3006a.D.dialog-act.vkaraisk.118"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "Owner is explicitly stated in provisional_values; ME (MTD024ME) is the owner.",
+          "evidence_da_ids": [
+            "TS3006a.D.dialog-act.vkaraisk.116",
+            "TS3006a.D.dialog-act.vkaraisk.118"
+          ]
+        },
+        "deadline_check": {
+          "result": "uncertain",
+          "reason": "No deadline is stated in the dialogue or in provisional values; ambiguity remains.",
+          "evidence_da_ids": []
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "Status is open as per provisional values; no change indicated in dialogue.",
+          "evidence_da_ids": [
+            "TS3006a.D.dialog-act.vkaraisk.116",
+            "TS3006a.D.dialog-act.vkaraisk.118"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No internal conflicts detected among provided evidence.",
+          "evidence_da_ids": [
+            "TS3006a.D.dialog-act.vkaraisk.116",
+            "TS3006a.D.dialog-act.vkaraisk.118"
+          ],
+          "affected_fields": [
+            "statement",
+            "owner",
+            "deadline",
+            "status"
+          ]
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No prior related_items to assess; none provided.",
+          "evidence_da_ids": []
+        },
+        "next_action": "retrieve"
+      },
+      "protocol_normalizations": []
+    },
+    {
+      "item": "TS3006a#13",
+      "step": 2,
+      "flags": [],
+      "action": "get_participants",
+      "outcome": "lookup",
+      "decision": "retrieve",
+      "args": {
+        "meeting_id": "TS3006a"
+      },
+      "tool_result": {
+        "results": [
+          {
+            "speaker": "A",
+            "participant_id": "MTD021PM",
+            "role": "PM"
+          },
+          {
+            "speaker": "B",
+            "participant_id": "MTD023UID",
+            "role": "UI"
+          },
+          {
+            "speaker": "C",
+            "participant_id": "MTD022ID",
+            "role": "ID"
+          },
+          {
+            "speaker": "D",
+            "participant_id": "MTD024ME",
+            "role": "ME"
+          }
+        ]
+      },
+      "new_info": false
+    },
+    {
+      "item": "TS3006a#13",
+      "step": 3,
+      "flags": [],
+      "action": "assess_item",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue supports internet search by ME and interviews with current and future users as part of determining user requirements; this matches the task scope.",
+          "quotes": [
+            {
+              "da_id": "TS3006a.D.dialog-act.vkaraisk.116",
+              "quote": "Um therefore we have to to do some internet search . For example for um well what kind of applications do current remote controls support , and what are f featur features of uh current and future televisions ?"
+            },
+            {
+              "da_id": "TS3006a.D.dialog-act.vkaraisk.118",
+              "quote": "Um <vocalsound> and we can interview current users and future users . What w what would they like to see uh on a new remote control ? Um especially for future users ,"
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Owner is explicitly stated in provisional_values; ME (MTD024ME) is the owner.",
+          "quotes": [
+            {
+              "da_id": "TS3006a.D.dialog-act.vkaraisk.116",
+              "quote": "Um therefore we have to to do some internet search . For example for um well what kind of applications do current remote controls support , and what are f featur features of uh current and future televisions ?"
+            },
+            {
+              "da_id": "TS3006a.D.dialog-act.vkaraisk.118",
+              "quote": "Um <vocalsound> and we can interview current users and future users . What w what would they like to see uh on a new remote control ? Um especially for future users ,"
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "deadline_unresolved",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Status is open as per provisional values; no change indicated in dialogue.",
+          "quotes": [
+            {
+              "da_id": "TS3006a.D.dialog-act.vkaraisk.116",
+              "quote": "Um therefore we have to to do some internet search . For example for um well what kind of applications do current remote controls support , and what are f featur features of uh current and future televisions ?"
+            },
+            {
+              "da_id": "TS3006a.D.dialog-act.vkaraisk.118",
+              "quote": "Um <vocalsound> and we can interview current users and future users . What w what would they like to see uh on a new remote control ? Um especially for future users ,"
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No internal conflicts detected among provided evidence.",
+          "quotes": [
+            {
+              "da_id": "TS3006a.D.dialog-act.vkaraisk.116",
+              "quote": "Um therefore we have to to do some internet search . For example for um well what kind of applications do current remote controls support , and what are f featur features of uh current and future televisions ?"
+            },
+            {
+              "da_id": "TS3006a.D.dialog-act.vkaraisk.118",
+              "quote": "Um <vocalsound> and we can interview current users and future users . What w what would they like to see uh on a new remote control ? Um especially for future users ,"
+            }
+          ],
+          "fields": [
+            "statement",
+            "owner",
+            "deadline",
+            "status"
+          ]
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No prior related_items to assess; none provided.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "decision": "retrieve",
+      "reason": "unresolved_checks",
+      "assessed_text": "Marketing Expert will conduct internet searches and user interviews to determine user requirements.",
+      "requested_action": "retrieve",
+      "proposed_fields": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD024ME"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "TS3006a.D.dialog-act.vkaraisk.116",
+          "TS3006a.D.dialog-act.vkaraisk.118"
+        ]
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue supports internet search by ME and interviews with current and future users as part of determining user requirements; this matches the task scope.",
+          "quotes": [
+            "TS3006a.D.dialog-act.vkaraisk.116",
+            "TS3006a.D.dialog-act.vkaraisk.118"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Owner is explicitly stated in provisional_values; ME (MTD024ME) is the owner.",
+          "quotes": [
+            "TS3006a.D.dialog-act.vkaraisk.116",
+            "TS3006a.D.dialog-act.vkaraisk.118"
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "No deadline is stated in the dialogue or in provisional values; ambiguity remains.",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Status is open as per provisional values; no change indicated in dialogue.",
+          "quotes": [
+            "TS3006a.D.dialog-act.vkaraisk.116",
+            "TS3006a.D.dialog-act.vkaraisk.118"
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No internal conflicts detected among provided evidence.",
+          "quotes": [
+            "TS3006a.D.dialog-act.vkaraisk.116",
+            "TS3006a.D.dialog-act.vkaraisk.118"
+          ],
+          "fields": [
+            "statement",
+            "owner",
+            "deadline",
+            "status"
+          ]
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No prior related_items to assess; none provided.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD024ME"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue supports internet search by ME and interviews with current and future users as part of determining user requirements; this matches the task scope.",
+          "evidence_da_ids": [
+            "TS3006a.D.dialog-act.vkaraisk.116",
+            "TS3006a.D.dialog-act.vkaraisk.118"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "Owner is explicitly stated in provisional_values; ME (MTD024ME) is the owner.",
+          "evidence_da_ids": [
+            "TS3006a.D.dialog-act.vkaraisk.116",
+            "TS3006a.D.dialog-act.vkaraisk.118"
+          ]
+        },
+        "deadline_check": {
+          "result": "uncertain",
+          "reason": "No deadline is stated in the dialogue or in provisional values; ambiguity remains.",
+          "evidence_da_ids": []
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "Status is open as per provisional values; no change indicated in dialogue.",
+          "evidence_da_ids": [
+            "TS3006a.D.dialog-act.vkaraisk.116",
+            "TS3006a.D.dialog-act.vkaraisk.118"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No internal conflicts detected among provided evidence.",
+          "evidence_da_ids": [
+            "TS3006a.D.dialog-act.vkaraisk.116",
+            "TS3006a.D.dialog-act.vkaraisk.118"
+          ],
+          "affected_fields": [
+            "statement",
+            "owner",
+            "deadline",
+            "status"
+          ]
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No prior related_items to assess; none provided.",
+          "evidence_da_ids": []
+        },
+        "next_action": "retrieve"
+      },
+      "evidence_bindings": {
+        "statement": [
+          "TS3006a.D.dialog-act.vkaraisk.116",
+          "TS3006a.D.dialog-act.vkaraisk.118"
+        ],
+        "owner": [
+          "TS3006a.D.dialog-act.vkaraisk.116",
+          "TS3006a.D.dialog-act.vkaraisk.118"
+        ],
+        "status": [
+          "TS3006a.D.dialog-act.vkaraisk.116",
+          "TS3006a.D.dialog-act.vkaraisk.118"
+        ],
+        "conflict": [
+          "TS3006a.D.dialog-act.vkaraisk.116",
+          "TS3006a.D.dialog-act.vkaraisk.118"
+        ]
+      },
+      "raw_tool_input": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD024ME"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue supports internet search by ME and interviews with current and future users as part of determining user requirements; this matches the task scope.",
+          "evidence_da_ids": [
+            "TS3006a.D.dialog-act.vkaraisk.116",
+            "TS3006a.D.dialog-act.vkaraisk.118"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "Owner is explicitly stated in provisional_values; ME (MTD024ME) is the owner.",
+          "evidence_da_ids": [
+            "TS3006a.D.dialog-act.vkaraisk.116",
+            "TS3006a.D.dialog-act.vkaraisk.118"
+          ]
+        },
+        "deadline_check": {
+          "result": "uncertain",
+          "reason": "No deadline is stated in the dialogue or in provisional values; ambiguity remains.",
+          "evidence_da_ids": []
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "Status is open as per provisional values; no change indicated in dialogue.",
+          "evidence_da_ids": [
+            "TS3006a.D.dialog-act.vkaraisk.116",
+            "TS3006a.D.dialog-act.vkaraisk.118"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No internal conflicts detected among provided evidence.",
+          "evidence_da_ids": [
+            "TS3006a.D.dialog-act.vkaraisk.116",
+            "TS3006a.D.dialog-act.vkaraisk.118"
+          ],
+          "affected_fields": [
+            "statement",
+            "owner",
+            "deadline",
+            "status"
+          ]
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No prior related_items to assess; none provided.",
+          "evidence_da_ids": []
+        },
+        "next_action": "retrieve"
+      },
+      "protocol_normalizations": []
+    },
+    {
+      "item": "TS3006a#13",
+      "step": 4,
+      "flags": [],
+      "action": "search_dialogue",
+      "outcome": "lookup",
+      "decision": "retrieve",
+      "args": {
+        "query": "internet search current remote controls support features",
+        "scope": "current",
+        "k": 5
+      },
+      "tool_result": {
+        "results": [
+          {
+            "da_id": "TS3006a.D.dialog-act.vkaraisk.116",
+            "meeting_id": "TS3006a",
+            "participant": "MTD024ME",
+            "role": "ME",
+            "text": "Um therefore we have to to do some internet search . For example for um well what kind of applications do current remote controls support , and what are f featur features of uh current and future televisions ?",
+            "score": 10.47
+          },
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.244",
+            "meeting_id": "TS3006a",
+            "participant": "MTD021PM",
+            "role": "PM",
+            "text": "And um reserve the possibility to add other features .",
+            "score": 3.78
+          },
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.12",
+            "meeting_id": "TS3006a",
+            "participant": "MTD021PM",
+            "role": "PM",
+            "text": "Um we're supposed to develop a new remote control ,",
+            "score": 3.13
+          },
+          {
+            "da_id": "TS3006a.B.dialog-act.vkaraisk.65",
+            "meeting_id": "TS3006a",
+            "participant": "MTD023UID",
+            "role": "UI",
+            "text": "That are the the basic options for a remote control .",
+            "score": 2.93
+          },
+          {
+            "da_id": "TS3006a.D.dialog-act.vkaraisk.118",
+            "meeting_id": "TS3006a",
+            "participant": "MTD024ME",
+            "role": "ME",
+            "text": "Um <vocalsound> and we can interview current users and future users . What w what would they like to see uh on a new remote control ? Um especially for future users ,",
+            "score": 2.8
+          }
+        ]
+      },
+      "new_info": true
+    },
+    {
+      "item": "TS3006a#13",
+      "step": 5,
+      "flags": [],
+      "action": "assess_item",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue supports internet search by ME and interviews with current and future users as part of determining user requirements; this matches the task scope.",
+          "quotes": [
+            {
+              "da_id": "TS3006a.D.dialog-act.vkaraisk.116",
+              "quote": "Um therefore we have to to do some internet search . For example for um well what kind of applications do current remote controls support , and what are f featur features of uh current and future televisions ?"
+            },
+            {
+              "da_id": "TS3006a.D.dialog-act.vkaraisk.118",
+              "quote": "Um <vocalsound> and we can interview current users and future users . What w what would they like to see uh on a new remote control ? Um especially for future users ,"
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Owner is explicitly stated in provisional_values; ME (MTD024ME) is the owner.",
+          "quotes": [
+            {
+              "da_id": "TS3006a.D.dialog-act.vkaraisk.116",
+              "quote": "Um therefore we have to to do some internet search . For example for um well what kind of applications do current remote controls support , and what are f featur features of uh current and future televisions ?"
+            },
+            {
+              "da_id": "TS3006a.D.dialog-act.vkaraisk.118",
+              "quote": "Um <vocalsound> and we can interview current users and future users . What w what would they like to see uh on a new remote control ? Um especially for future users ,"
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "deadline_unresolved",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Status is open as per provisional values; no change indicated in dialogue.",
+          "quotes": [
+            {
+              "da_id": "TS3006a.D.dialog-act.vkaraisk.116",
+              "quote": "Um therefore we have to to do some internet search . For example for um well what kind of applications do current remote controls support , and what are f featur features of uh current and future televisions ?"
+            },
+            {
+              "da_id": "TS3006a.D.dialog-act.vkaraisk.118",
+              "quote": "Um <vocalsound> and we can interview current users and future users . What w what would they like to see uh on a new remote control ? Um especially for future users ,"
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No internal conflicts detected among provided evidence.",
+          "quotes": [
+            {
+              "da_id": "TS3006a.D.dialog-act.vkaraisk.116",
+              "quote": "Um therefore we have to to do some internet search . For example for um well what kind of applications do current remote controls support , and what are f featur features of uh current and future televisions ?"
+            },
+            {
+              "da_id": "TS3006a.D.dialog-act.vkaraisk.118",
+              "quote": "Um <vocalsound> and we can interview current users and future users . What w what would they like to see uh on a new remote control ? Um especially for future users ,"
+            }
+          ],
+          "fields": [
+            "statement",
+            "owner",
+            "deadline",
+            "status"
+          ]
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No prior related_items to assess; none provided.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "decision": "request_clarification",
+      "reason": "no_progress",
+      "assessed_text": "Marketing Expert will conduct internet searches and user interviews to determine user requirements.",
+      "requested_action": "retrieve",
+      "proposed_fields": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD024ME"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "TS3006a.D.dialog-act.vkaraisk.116",
+          "TS3006a.D.dialog-act.vkaraisk.118"
+        ]
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue supports internet search by ME and interviews with current and future users as part of determining user requirements; this matches the task scope.",
+          "quotes": [
+            "TS3006a.D.dialog-act.vkaraisk.116",
+            "TS3006a.D.dialog-act.vkaraisk.118"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Owner is explicitly stated in provisional_values; ME (MTD024ME) is the owner.",
+          "quotes": [
+            "TS3006a.D.dialog-act.vkaraisk.116",
+            "TS3006a.D.dialog-act.vkaraisk.118"
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "No deadline is stated in the dialogue or in provisional values; ambiguity remains.",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Status is open as per provisional values; no change indicated in dialogue.",
+          "quotes": [
+            "TS3006a.D.dialog-act.vkaraisk.116",
+            "TS3006a.D.dialog-act.vkaraisk.118"
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No internal conflicts detected among provided evidence.",
+          "quotes": [
+            "TS3006a.D.dialog-act.vkaraisk.116",
+            "TS3006a.D.dialog-act.vkaraisk.118"
+          ],
+          "fields": [
+            "statement",
+            "owner",
+            "deadline",
+            "status"
+          ]
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No prior related_items to assess; none provided.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD024ME"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue supports internet search by ME and interviews with current and future users as part of determining user requirements; this matches the task scope.",
+          "evidence_da_ids": [
+            "TS3006a.D.dialog-act.vkaraisk.116",
+            "TS3006a.D.dialog-act.vkaraisk.118"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "Owner is explicitly stated in provisional_values; ME (MTD024ME) is the owner.",
+          "evidence_da_ids": [
+            "TS3006a.D.dialog-act.vkaraisk.116",
+            "TS3006a.D.dialog-act.vkaraisk.118"
+          ]
+        },
+        "deadline_check": {
+          "result": "uncertain",
+          "reason": "No deadline is stated in the dialogue or in provisional values; ambiguity remains.",
+          "evidence_da_ids": []
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "Status is open as per provisional values; no change indicated in dialogue.",
+          "evidence_da_ids": [
+            "TS3006a.D.dialog-act.vkaraisk.116",
+            "TS3006a.D.dialog-act.vkaraisk.118"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No internal conflicts detected among provided evidence.",
+          "evidence_da_ids": [
+            "TS3006a.D.dialog-act.vkaraisk.116",
+            "TS3006a.D.dialog-act.vkaraisk.118"
+          ],
+          "affected_fields": [
+            "statement",
+            "owner",
+            "deadline",
+            "status"
+          ]
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No prior related_items to assess; none provided.",
+          "evidence_da_ids": []
+        },
+        "next_action": "retrieve"
+      },
+      "evidence_bindings": {
+        "statement": [
+          "TS3006a.D.dialog-act.vkaraisk.116",
+          "TS3006a.D.dialog-act.vkaraisk.118"
+        ],
+        "owner": [
+          "TS3006a.D.dialog-act.vkaraisk.116",
+          "TS3006a.D.dialog-act.vkaraisk.118"
+        ],
+        "status": [
+          "TS3006a.D.dialog-act.vkaraisk.116",
+          "TS3006a.D.dialog-act.vkaraisk.118"
+        ],
+        "conflict": [
+          "TS3006a.D.dialog-act.vkaraisk.116",
+          "TS3006a.D.dialog-act.vkaraisk.118"
+        ]
+      },
+      "raw_tool_input": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD024ME"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue supports internet search by ME and interviews with current and future users as part of determining user requirements; this matches the task scope.",
+          "evidence_da_ids": [
+            "TS3006a.D.dialog-act.vkaraisk.116",
+            "TS3006a.D.dialog-act.vkaraisk.118"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "Owner is explicitly stated in provisional_values; ME (MTD024ME) is the owner.",
+          "evidence_da_ids": [
+            "TS3006a.D.dialog-act.vkaraisk.116",
+            "TS3006a.D.dialog-act.vkaraisk.118"
+          ]
+        },
+        "deadline_check": {
+          "result": "uncertain",
+          "reason": "No deadline is stated in the dialogue or in provisional values; ambiguity remains.",
+          "evidence_da_ids": []
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "Status is open as per provisional values; no change indicated in dialogue.",
+          "evidence_da_ids": [
+            "TS3006a.D.dialog-act.vkaraisk.116",
+            "TS3006a.D.dialog-act.vkaraisk.118"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No internal conflicts detected among provided evidence.",
+          "evidence_da_ids": [
+            "TS3006a.D.dialog-act.vkaraisk.116",
+            "TS3006a.D.dialog-act.vkaraisk.118"
+          ],
+          "affected_fields": [
+            "statement",
+            "owner",
+            "deadline",
+            "status"
+          ]
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No prior related_items to assess; none provided.",
+          "evidence_da_ids": []
+        },
+        "next_action": "retrieve"
+      },
+      "protocol_normalizations": []
+    },
+    {
+      "item": "TS3006a#13",
+      "step": 5,
+      "flags": [],
+      "action": "stop",
+      "outcome": "pending",
+      "termination_reason": "no_progress",
+      "unresolved_fields": [
+        "deadline"
+      ]
+    }
+  ],
+  "lookups": 2,
+  "termination_reason": "no_progress",
+  "clarifications": [
+    {
+      "request_id": "717d768e50f77dfb",
+      "item_key": "TS3006a#13",
+      "record_id": null,
+      "field": "deadline",
+      "question": "What is the agreed deadline, in its original wording?",
+      "item_text": "Marketing Expert will conduct internet searches and user interviews to determine user requirements.",
+      "reason": "deadline_unresolved",
+      "evidence_da_ids": [],
+      "available_evidence_da_ids": [
+        "TS3006a.D.dialog-act.vkaraisk.116",
+        "TS3006a.A.dialog-act.vkaraisk.175",
+        "TS3006a.A.dialog-act.vkaraisk.172",
+        "TS3006a.A.dialog-act.vkaraisk.173",
+        "TS3006a.D.dialog-act.vkaraisk.118",
+        "TS3006a.A.dialog-act.vkaraisk.176",
+        "TS3006a.A.dialog-act.vkaraisk.244",
+        "TS3006a.A.dialog-act.vkaraisk.12",
+        "TS3006a.B.dialog-act.vkaraisk.65"
+      ],
+      "status": "open",
+      "termination_reason": "no_progress"
+    }
+  ]
+}

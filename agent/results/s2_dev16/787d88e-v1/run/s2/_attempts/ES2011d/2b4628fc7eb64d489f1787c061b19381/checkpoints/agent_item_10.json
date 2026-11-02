@@ -1,0 +1,1311 @@
+{
+  "item": 10,
+  "fields": {
+    "item_key": "ES2011d#10",
+    "record_id": null,
+    "item_type": "actions",
+    "item_text": "All participants will write final reports.",
+    "state": "pending",
+    "recordable": false,
+    "fields": {
+      "status": "unknown",
+      "prior_context_needed": false,
+      "related_items": [],
+      "owner": null,
+      "owner_basis": "ambiguous",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/ES2011d.json",
+          "locator": "ES2011d.A.dialog-act.dharshi.288"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/ES2011d.json",
+          "locator": "ES2011d.B.dialog-act.dharshi.195"
+        }
+      ]
+    },
+    "draft_fields": {
+      "status": "open",
+      "related_items": [],
+      "owner": null,
+      "owner_basis": "ambiguous",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "prior_context_needed": false,
+      "used_participant_lookup": false,
+      "evidence_da_ids": [
+        "ES2011d.A.dialog-act.dharshi.288",
+        "ES2011d.A.dialog-act.dharshi.289",
+        "ES2011d.B.dialog-act.dharshi.195"
+      ]
+    },
+    "checks": {
+      "statement": {
+        "result": "uncertain",
+        "reason": "Dialogue shows a plan to write final reports but no explicit commitment or assignment to all participants; owner unresolved.",
+        "quotes": [
+          {
+            "da_id": "ES2011d.A.dialog-act.dharshi.288",
+            "quote": "So I guess we're supposed to write final reports ."
+          },
+          {
+            "da_id": "ES2011d.A.dialog-act.dharshi.289",
+            "quote": "'Cause <disfmarker>"
+          },
+          {
+            "da_id": "ES2011d.B.dialog-act.dharshi.195",
+            "quote": "All of us ?"
+          }
+        ],
+        "fields": [
+          "statement"
+        ]
+      },
+      "owner": {
+        "result": "uncertain",
+        "reason": "owner_unresolved",
+        "quotes": [],
+        "fields": [
+          "owner"
+        ]
+      },
+      "deadline": {
+        "result": "uncertain",
+        "reason": "deadline_unresolved",
+        "quotes": [],
+        "fields": [
+          "deadline"
+        ]
+      },
+      "status": {
+        "result": "uncertain",
+        "reason": "Status is open; no completion or assignment evidenced in dialogue. Evidence DA IDs: ES2011d.A.dialog-act.dharshi.288, ES2011d.A.dialog-act.dharshi.289, ES2011d.B.dialog-act.dharshi.195",
+        "quotes": [],
+        "fields": [
+          "status"
+        ]
+      },
+      "conflict": {
+        "result": "pass",
+        "reason": "No direct contradiction found within the provided evidence; the statement is uncertain but not contradicted.",
+        "quotes": [
+          {
+            "da_id": "ES2011d.A.dialog-act.dharshi.288",
+            "quote": "So I guess we're supposed to write final reports ."
+          },
+          {
+            "da_id": "ES2011d.B.dialog-act.dharshi.195",
+            "quote": "All of us ?"
+          }
+        ],
+        "fields": [
+          "statement",
+          "owner",
+          "deadline",
+          "status"
+        ]
+      },
+      "relation": {
+        "result": "not_applicable",
+        "reason": "No prior related_item changes identified in this current dataset.",
+        "quotes": [],
+        "fields": [
+          "related_items"
+        ]
+      }
+    },
+    "unresolved_fields": [
+      "statement",
+      "owner",
+      "deadline",
+      "status"
+    ],
+    "observed_evidence_da_ids": [
+      "ES2011d.A.dialog-act.dharshi.288",
+      "ES2011d.A.dialog-act.dharshi.289",
+      "ES2011d.B.dialog-act.dharshi.195",
+      "ES2011d.B.dialog-act.dharshi.194",
+      "ES2011d.A.dialog-act.dharshi.290",
+      "ES2011d.A.dialog-act.dharshi.79",
+      "ES2011d.D.dialog-act.dharshi.208",
+      "ES2011d.B.dialog-act.dharshi.162"
+    ],
+    "initial_context": {
+      "item": {
+        "type": "actions",
+        "text": "All participants will write final reports.",
+        "flags": [
+          "OWNER_UNRESOLVED"
+        ]
+      },
+      "current_meeting": "ES2011d",
+      "earlier_meetings": [
+        "ES2011a",
+        "ES2011b",
+        "ES2011c"
+      ],
+      "roster": [
+        {
+          "speaker": "A",
+          "participant_id": "FEE041",
+          "role": "PM"
+        },
+        {
+          "speaker": "B",
+          "participant_id": "FEE042",
+          "role": "ID"
+        },
+        {
+          "speaker": "C",
+          "participant_id": "FEE043",
+          "role": "UI"
+        },
+        {
+          "speaker": "D",
+          "participant_id": "FEE044",
+          "role": "ME"
+        }
+      ],
+      "observed_dialogue": [
+        {
+          "da_id": "ES2011d.A.dialog-act.dharshi.288",
+          "meeting_id": "ES2011d",
+          "text": "So I guess we're supposed to write final reports .",
+          "participant": "FEE041",
+          "role": "PM"
+        },
+        {
+          "da_id": "ES2011d.A.dialog-act.dharshi.289",
+          "meeting_id": "ES2011d",
+          "text": "'Cause <disfmarker>",
+          "participant": "FEE041",
+          "role": "PM"
+        },
+        {
+          "da_id": "ES2011d.B.dialog-act.dharshi.195",
+          "meeting_id": "ES2011d",
+          "text": "All of us ?",
+          "participant": "FEE042",
+          "role": "ID"
+        },
+        {
+          "da_id": "ES2011d.B.dialog-act.dharshi.194",
+          "participant": "FEE042",
+          "role": "ID",
+          "text": "Especially if you have food ."
+        },
+        {
+          "da_id": "ES2011d.A.dialog-act.dharshi.290",
+          "participant": "FEE041",
+          "role": "PM",
+          "text": "I don't know . Hmm ."
+        }
+      ],
+      "peer_items": [
+        {
+          "item_key": "ES2011d#0",
+          "type": "problems",
+          "text": "Locator button integration is not yet designed; how the button attaches to the locator remains undefined, and coordination between the locator and the beeper is not yet designed and requires integration work."
+        },
+        {
+          "item_key": "ES2011d#1",
+          "type": "problems",
+          "text": "There is ambiguity about the scoring method for the evaluation, specifically whether to sum the scores and divide by four."
+        },
+        {
+          "item_key": "ES2011d#2",
+          "type": "problems",
+          "text": "Compatibility issues with WordPerfect and reliance on old disks may hamper access to documents."
+        },
+        {
+          "item_key": "ES2011d#3",
+          "type": "decisions",
+          "text": "We decided on batteries as the power source for the remote."
+        },
+        {
+          "item_key": "ES2011d#4",
+          "type": "decisions",
+          "text": "We decided that a regular chip would be necessary for the more advanced iPod-like button."
+        },
+        {
+          "item_key": "ES2011d#5",
+          "type": "decisions",
+          "text": "We will develop a variety of trendy fruit designs for the remote control."
+        },
+        {
+          "item_key": "ES2011d#6",
+          "type": "decisions",
+          "text": "We went with shape because we were having fun with the play-dough."
+        },
+        {
+          "item_key": "ES2011d#7",
+          "type": "decisions",
+          "text": "Yeah the broccoli I guess wins."
+        },
+        {
+          "item_key": "ES2011d#8",
+          "type": "decisions",
+          "text": "Yeah I'd agree with changing the shape ."
+        },
+        {
+          "item_key": "ES2011d#9",
+          "type": "decisions",
+          "text": "Apparently I'm supposed to use the whiteboard."
+        }
+      ],
+      "provisional_values": {
+        "owner": null,
+        "owner_basis": "ambiguous",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "open",
+        "related_items": []
+      },
+      "candidate_evidence_da_ids": [
+        "ES2011d.A.dialog-act.dharshi.288",
+        "ES2011d.A.dialog-act.dharshi.289",
+        "ES2011d.B.dialog-act.dharshi.195"
+      ]
+    },
+    "observed_documents": [],
+    "document_evidence": [],
+    "relation_evidence": [],
+    "history": [
+      {
+        "item": "ES2011d#10",
+        "step": 1,
+        "flags": [
+          "OWNER_UNRESOLVED"
+        ],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "uncertain",
+            "reason": "invalid_proposed_fields: evidence_da_ids must not be empty",
+            "quotes": [],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "uncertain",
+            "reason": "owner_unresolved",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "deadline_unresolved",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "uncertain",
+            "reason": "Status is open; no completion or assignment evidenced in dialogue. Evidence DA IDs: ES2011d.A.dialog-act.dharshi.288, ES2011d.A.dialog-act.dharshi.289, ES2011d.B.dialog-act.dharshi.195",
+            "quotes": [],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No direct conflict found within the provided evidence; the statement is uncertain but not contradicted. A potential conflict wasn't identified.",
+            "quotes": [
+              {
+                "da_id": "ES2011d.A.dialog-act.dharshi.288",
+                "quote": "So I guess we're supposed to write final reports ."
+              },
+              {
+                "da_id": "ES2011d.B.dialog-act.dharshi.195",
+                "quote": "All of us ?"
+              }
+            ],
+            "fields": [
+              "statement",
+              "owner",
+              "deadline",
+              "status"
+            ]
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related_item changes identified in this current dataset.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "decision": "retrieve",
+        "reason": "unresolved_checks",
+        "assessed_text": "All participants will write final reports.",
+        "requested_action": null,
+        "proposed_fields": {
+          "status": "open",
+          "related_items": [],
+          "owner": null,
+          "owner_basis": "ambiguous",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": []
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "uncertain",
+            "reason": "Dialogue shows a plan to write final reports but no explicit commitment or assignment to all participants; owner unresolved. Evidence DA IDs: ES2011d.A.dialog-act.dharshi.288, ES2011d.A.dialog-act.dharshi.289, ES2011d.B.dialog-act.dharshi.195",
+            "quotes": [],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "uncertain",
+            "reason": "No explicit owner assigned in dialogue; only PM hints at a plan. Evidence DA IDs: ES2011d.A.dialog-act.dharshi.288, ES2011d.A.dialog-act.dharshi.289, ES2011d.B.dialog-act.dharshi.195",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "No deadline stated in dialogue. Evidence DA IDs: ES2011d.A.dialog-act.dharshi.288, ES2011d.A.dialog-act.dharshi.289, ES2011d.B.dialog-act.dharshi.195",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "uncertain",
+            "reason": "Status is open; no completion or assignment evidenced in dialogue. Evidence DA IDs: ES2011d.A.dialog-act.dharshi.288, ES2011d.A.dialog-act.dharshi.289, ES2011d.B.dialog-act.dharshi.195",
+            "quotes": [],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No direct conflict found within the provided evidence; the statement is uncertain but not contradicted. A potential conflict wasn't identified.",
+            "quotes": [
+              "ES2011d.A.dialog-act.dharshi.288",
+              "ES2011d.B.dialog-act.dharshi.195"
+            ],
+            "fields": [
+              "statement",
+              "owner",
+              "deadline",
+              "status"
+            ]
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related_item changes identified in this current dataset.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "status": "open",
+          "related_items": [],
+          "owner": null,
+          "owner_basis": "ambiguous",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "statement": {
+            "result": "uncertain",
+            "reason": "Dialogue shows a plan to write final reports but no explicit commitment or assignment to all participants; owner unresolved. Evidence DA IDs: ES2011d.A.dialog-act.dharshi.288, ES2011d.A.dialog-act.dharshi.289, ES2011d.B.dialog-act.dharshi.195",
+            "evidence_da_ids": []
+          },
+          "owner_check": {
+            "result": "uncertain",
+            "reason": "No explicit owner assigned in dialogue; only PM hints at a plan. Evidence DA IDs: ES2011d.A.dialog-act.dharshi.288, ES2011d.A.dialog-act.dharshi.289, ES2011d.B.dialog-act.dharshi.195",
+            "evidence_da_ids": []
+          },
+          "deadline_check": {
+            "result": "uncertain",
+            "reason": "No deadline stated in dialogue. Evidence DA IDs: ES2011d.A.dialog-act.dharshi.288, ES2011d.A.dialog-act.dharshi.289, ES2011d.B.dialog-act.dharshi.195",
+            "evidence_da_ids": []
+          },
+          "status_check": {
+            "result": "uncertain",
+            "reason": "Status is open; no completion or assignment evidenced in dialogue. Evidence DA IDs: ES2011d.A.dialog-act.dharshi.288, ES2011d.A.dialog-act.dharshi.289, ES2011d.B.dialog-act.dharshi.195",
+            "evidence_da_ids": []
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No direct conflict found within the provided evidence; the statement is uncertain but not contradicted. A potential conflict wasn't identified.",
+            "evidence_da_ids": [
+              "ES2011d.A.dialog-act.dharshi.288",
+              "ES2011d.B.dialog-act.dharshi.195"
+            ],
+            "affected_fields": [
+              "statement",
+              "owner",
+              "deadline",
+              "status"
+            ]
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior related_item changes identified in this current dataset.",
+            "evidence_da_ids": []
+          }
+        },
+        "evidence_bindings": {
+          "conflict": [
+            "ES2011d.A.dialog-act.dharshi.288",
+            "ES2011d.B.dialog-act.dharshi.195"
+          ]
+        },
+        "raw_tool_input": {
+          "status": "open",
+          "related_items": [],
+          "owner": null,
+          "owner_basis": "ambiguous",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "statement": {
+            "result": "uncertain",
+            "reason": "Dialogue shows a plan to write final reports but no explicit commitment or assignment to all participants; owner unresolved. Evidence DA IDs: ES2011d.A.dialog-act.dharshi.288, ES2011d.A.dialog-act.dharshi.289, ES2011d.B.dialog-act.dharshi.195"
+          },
+          "owner_check": {
+            "result": "uncertain",
+            "reason": "No explicit owner assigned in dialogue; only PM hints at a plan. Evidence DA IDs: ES2011d.A.dialog-act.dharshi.288, ES2011d.A.dialog-act.dharshi.289, ES2011d.B.dialog-act.dharshi.195"
+          },
+          "deadline_check": {
+            "result": "uncertain",
+            "reason": "No deadline stated in dialogue. Evidence DA IDs: ES2011d.A.dialog-act.dharshi.288, ES2011d.A.dialog-act.dharshi.289, ES2011d.B.dialog-act.dharshi.195"
+          },
+          "status_check": {
+            "result": "uncertain",
+            "reason": "Status is open; no completion or assignment evidenced in dialogue. Evidence DA IDs: ES2011d.A.dialog-act.dharshi.288, ES2011d.A.dialog-act.dharshi.289, ES2011d.B.dialog-act.dharshi.195"
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No direct conflict found within the provided evidence; the statement is uncertain but not contradicted. A potential conflict wasn't identified.",
+            "evidence_da_ids": [
+              "ES2011d.A.dialog-act.dharshi.288",
+              "ES2011d.B.dialog-act.dharshi.195"
+            ],
+            "affected_fields": [
+              "statement",
+              "owner",
+              "deadline",
+              "status"
+            ]
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior related_item changes identified in this current dataset.",
+            "evidence_da_ids": []
+          }
+        },
+        "protocol_normalizations": [
+          "empty_evidence_for_nonaffirmative:statement",
+          "empty_evidence_for_nonaffirmative:owner_check",
+          "empty_evidence_for_nonaffirmative:deadline_check",
+          "empty_evidence_for_nonaffirmative:status_check",
+          "controller_action_for_missing_hint:retrieve"
+        ],
+        "unresolved_before": [
+          "deadline",
+          "owner",
+          "statement",
+          "status"
+        ],
+        "unresolved_after": [
+          "deadline",
+          "owner",
+          "statement",
+          "status"
+        ],
+        "semantic_stalls": 0,
+        "validation_codes": {
+          "owner": [
+            "owner_unresolved"
+          ],
+          "deadline": [
+            "deadline_unresolved"
+          ],
+          "statement": [
+            "invalid_proposed_fields"
+          ]
+        }
+      },
+      {
+        "item": "ES2011d#10",
+        "step": 2,
+        "flags": [
+          "OWNER_UNRESOLVED"
+        ],
+        "action": "search_dialogue",
+        "outcome": "lookup",
+        "decision": "retrieve",
+        "args": {
+          "query": "All participants will write final reports",
+          "scope": "current"
+        },
+        "tool_result": {
+          "results": [
+            {
+              "da_id": "ES2011d.A.dialog-act.dharshi.288",
+              "meeting_id": "ES2011d",
+              "participant": "FEE041",
+              "role": "PM",
+              "text": "So I guess we're supposed to write final reports .",
+              "score": 13.57
+            },
+            {
+              "da_id": "ES2011d.A.dialog-act.dharshi.79",
+              "meeting_id": "ES2011d",
+              "participant": "FEE041",
+              "role": "PM",
+              "text": "Our animals will forever be there .",
+              "score": 5.1
+            },
+            {
+              "da_id": "ES2011d.D.dialog-act.dharshi.208",
+              "meeting_id": "ES2011d",
+              "participant": "FEE044",
+              "role": "ME",
+              "text": "you supposed to write a report ?",
+              "score": 4.91
+            },
+            {
+              "da_id": "ES2011d.B.dialog-act.dharshi.162",
+              "meeting_id": "ES2011d",
+              "participant": "FEE042",
+              "role": "ID",
+              "text": "They're kinda hard to write with though .",
+              "score": 4.55
+            },
+            {
+              "da_id": "ES2011d.B.dialog-act.dharshi.195",
+              "meeting_id": "ES2011d",
+              "participant": "FEE042",
+              "role": "ID",
+              "text": "All of us ?",
+              "score": 4.43
+            }
+          ]
+        },
+        "new_info": true
+      },
+      {
+        "item": "ES2011d#10",
+        "step": 3,
+        "flags": [
+          "OWNER_UNRESOLVED"
+        ],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "uncertain",
+            "reason": "Dialogue shows a plan to write final reports but no explicit commitment or assignment to all participants; owner unresolved. Evidence DA IDs: ES2011d.A.dialog-act.dharshi.288, ES2011d.A.dialog-act.dharshi.289, ES2011d.B.dialog-act.dharshi.195",
+            "quotes": [
+              {
+                "da_id": "ES2011d.A.dialog-act.dharshi.288",
+                "quote": "So I guess we're supposed to write final reports ."
+              },
+              {
+                "da_id": "ES2011d.A.dialog-act.dharshi.289",
+                "quote": "'Cause <disfmarker>"
+              },
+              {
+                "da_id": "ES2011d.B.dialog-act.dharshi.195",
+                "quote": "All of us ?"
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "uncertain",
+            "reason": "owner_unresolved",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "deadline_unresolved",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "uncertain",
+            "reason": "Status is open; no completion or assignment evidenced in dialogue. Evidence DA IDs: ES2011d.A.dialog-act.dharshi.288, ES2011d.A.dialog-act.dharshi.289, ES2011d.B.dialog-act.dharshi.195",
+            "quotes": [],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No direct conflict found within the provided evidence; the statement is uncertain but not contradicted. A potential conflict wasn't identified.",
+            "quotes": [
+              {
+                "da_id": "ES2011d.A.dialog-act.dharshi.288",
+                "quote": "So I guess we're supposed to write final reports ."
+              },
+              {
+                "da_id": "ES2011d.B.dialog-act.dharshi.195",
+                "quote": "All of us ?"
+              }
+            ],
+            "fields": [
+              "statement",
+              "owner",
+              "deadline",
+              "status"
+            ]
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related_item changes identified in this current dataset.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "decision": "retrieve",
+        "reason": "unresolved_checks",
+        "assessed_text": "All participants will write final reports.",
+        "requested_action": "retrieve",
+        "proposed_fields": {
+          "status": "open",
+          "related_items": [],
+          "owner": null,
+          "owner_basis": "ambiguous",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "ES2011d.A.dialog-act.dharshi.288",
+            "ES2011d.A.dialog-act.dharshi.289",
+            "ES2011d.B.dialog-act.dharshi.195"
+          ]
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "uncertain",
+            "reason": "Dialogue shows a plan to write final reports but no explicit commitment or assignment to all participants; owner unresolved. Evidence DA IDs: ES2011d.A.dialog-act.dharshi.288, ES2011d.A.dialog-act.dharshi.289, ES2011d.B.dialog-act.dharshi.195",
+            "quotes": [
+              "ES2011d.A.dialog-act.dharshi.288",
+              "ES2011d.A.dialog-act.dharshi.289",
+              "ES2011d.B.dialog-act.dharshi.195"
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "uncertain",
+            "reason": "No explicit owner assigned in dialogue; only PM hints at a plan. Evidence DA IDs: ES2011d.A.dialog-act.dharshi.288, ES2011d.A.dialog-act.dharshi.289, ES2011d.B.dialog-act.dharshi.195",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "No deadline stated in dialogue. Evidence DA IDs: ES2011d.A.dialog-act.dharshi.288, ES2011d.A.dialog-act.dharshi.289, ES2011d.B.dialog-act.dharshi.195",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "uncertain",
+            "reason": "Status is open; no completion or assignment evidenced in dialogue. Evidence DA IDs: ES2011d.A.dialog-act.dharshi.288, ES2011d.A.dialog-act.dharshi.289, ES2011d.B.dialog-act.dharshi.195",
+            "quotes": [],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No direct conflict found within the provided evidence; the statement is uncertain but not contradicted. A potential conflict wasn't identified.",
+            "quotes": [
+              "ES2011d.A.dialog-act.dharshi.288",
+              "ES2011d.B.dialog-act.dharshi.195"
+            ],
+            "fields": [
+              "statement",
+              "owner",
+              "deadline",
+              "status"
+            ]
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related_item changes identified in this current dataset.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "status": "open",
+          "related_items": [],
+          "owner": null,
+          "owner_basis": "ambiguous",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "statement": {
+            "result": "uncertain",
+            "reason": "Dialogue shows a plan to write final reports but no explicit commitment or assignment to all participants; owner unresolved. Evidence DA IDs: ES2011d.A.dialog-act.dharshi.288, ES2011d.A.dialog-act.dharshi.289, ES2011d.B.dialog-act.dharshi.195",
+            "evidence_da_ids": [
+              "ES2011d.A.dialog-act.dharshi.288",
+              "ES2011d.A.dialog-act.dharshi.289",
+              "ES2011d.B.dialog-act.dharshi.195"
+            ]
+          },
+          "owner_check": {
+            "result": "uncertain",
+            "reason": "No explicit owner assigned in dialogue; only PM hints at a plan. Evidence DA IDs: ES2011d.A.dialog-act.dharshi.288, ES2011d.A.dialog-act.dharshi.289, ES2011d.B.dialog-act.dharshi.195",
+            "evidence_da_ids": []
+          },
+          "deadline_check": {
+            "result": "uncertain",
+            "reason": "No deadline stated in dialogue. Evidence DA IDs: ES2011d.A.dialog-act.dharshi.288, ES2011d.A.dialog-act.dharshi.289, ES2011d.B.dialog-act.dharshi.195",
+            "evidence_da_ids": []
+          },
+          "status_check": {
+            "result": "uncertain",
+            "reason": "Status is open; no completion or assignment evidenced in dialogue. Evidence DA IDs: ES2011d.A.dialog-act.dharshi.288, ES2011d.A.dialog-act.dharshi.289, ES2011d.B.dialog-act.dharshi.195",
+            "evidence_da_ids": []
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No direct conflict found within the provided evidence; the statement is uncertain but not contradicted. A potential conflict wasn't identified.",
+            "evidence_da_ids": [
+              "ES2011d.A.dialog-act.dharshi.288",
+              "ES2011d.B.dialog-act.dharshi.195"
+            ],
+            "affected_fields": [
+              "statement",
+              "owner",
+              "deadline",
+              "status"
+            ]
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior related_item changes identified in this current dataset.",
+            "evidence_da_ids": []
+          },
+          "next_action": "retrieve"
+        },
+        "evidence_bindings": {
+          "statement": [
+            "ES2011d.A.dialog-act.dharshi.288",
+            "ES2011d.A.dialog-act.dharshi.289",
+            "ES2011d.B.dialog-act.dharshi.195"
+          ],
+          "conflict": [
+            "ES2011d.A.dialog-act.dharshi.288",
+            "ES2011d.B.dialog-act.dharshi.195"
+          ]
+        },
+        "raw_tool_input": {
+          "status": "open",
+          "related_items": [],
+          "owner": null,
+          "owner_basis": "ambiguous",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "statement": {
+            "result": "uncertain",
+            "reason": "Dialogue shows a plan to write final reports but no explicit commitment or assignment to all participants; owner unresolved. Evidence DA IDs: ES2011d.A.dialog-act.dharshi.288, ES2011d.A.dialog-act.dharshi.289, ES2011d.B.dialog-act.dharshi.195",
+            "evidence_da_ids": [
+              "ES2011d.A.dialog-act.dharshi.288",
+              "ES2011d.A.dialog-act.dharshi.289",
+              "ES2011d.B.dialog-act.dharshi.195"
+            ]
+          },
+          "owner_check": {
+            "result": "uncertain",
+            "reason": "No explicit owner assigned in dialogue; only PM hints at a plan. Evidence DA IDs: ES2011d.A.dialog-act.dharshi.288, ES2011d.A.dialog-act.dharshi.289, ES2011d.B.dialog-act.dharshi.195"
+          },
+          "deadline_check": {
+            "result": "uncertain",
+            "reason": "No deadline stated in dialogue. Evidence DA IDs: ES2011d.A.dialog-act.dharshi.288, ES2011d.A.dialog-act.dharshi.289, ES2011d.B.dialog-act.dharshi.195"
+          },
+          "status_check": {
+            "result": "uncertain",
+            "reason": "Status is open; no completion or assignment evidenced in dialogue. Evidence DA IDs: ES2011d.A.dialog-act.dharshi.288, ES2011d.A.dialog-act.dharshi.289, ES2011d.B.dialog-act.dharshi.195"
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No direct conflict found within the provided evidence; the statement is uncertain but not contradicted. A potential conflict wasn't identified.",
+            "evidence_da_ids": [
+              "ES2011d.A.dialog-act.dharshi.288",
+              "ES2011d.B.dialog-act.dharshi.195"
+            ],
+            "affected_fields": [
+              "statement",
+              "owner",
+              "deadline",
+              "status"
+            ]
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior related_item changes identified in this current dataset.",
+            "evidence_da_ids": []
+          },
+          "next_action": "retrieve"
+        },
+        "protocol_normalizations": [
+          "empty_evidence_for_nonaffirmative:owner_check",
+          "empty_evidence_for_nonaffirmative:deadline_check",
+          "empty_evidence_for_nonaffirmative:status_check"
+        ],
+        "unresolved_before": [
+          "deadline",
+          "owner",
+          "statement",
+          "status"
+        ],
+        "unresolved_after": [
+          "deadline",
+          "owner",
+          "statement",
+          "status"
+        ],
+        "semantic_stalls": 0,
+        "validation_codes": {
+          "owner": [
+            "owner_unresolved"
+          ],
+          "deadline": [
+            "deadline_unresolved"
+          ]
+        }
+      },
+      {
+        "item": "ES2011d#10",
+        "step": 4,
+        "flags": [
+          "OWNER_UNRESOLVED"
+        ],
+        "action": "core_recheck_offered",
+        "outcome": "focused_review",
+        "reason": "semantic_core_uncertainty_with_read_evidence"
+      },
+      {
+        "item": "ES2011d#10",
+        "step": 5,
+        "flags": [
+          "OWNER_UNRESOLVED"
+        ],
+        "action": "assess_core",
+        "outcome": "invalid_action",
+        "error": "Correct these argument fields: statement/result: 'unclear' is not one of ['pass', 'fail', 'uncertain'] Tool assess_core accepts root keys: statement, conflict_check, next_action. Check keys: statement={result, reason, evidence_da_ids, documents}. Resubmit the complete advertised object. Select only delivered supporting dialogue IDs; if support is unavailable use uncertain with an explanation, never invent an ID or mark pass with no evidence. Documents belong inside the check they inform.",
+        "raw_tool_input": {
+          "statement": {
+            "result": "unclear",
+            "reason": "Dialogue shows a plan to write final reports but no explicit commitment or assignment to all participants; owner unresolved.",
+            "evidence_da_ids": [
+              "ES2011d.A.dialog-act.dharshi.288",
+              "ES2011d.A.dialog-act.dharshi.289",
+              "ES2011d.B.dialog-act.dharshi.195"
+            ]
+          }
+        }
+      },
+      {
+        "item": "ES2011d#10",
+        "step": 6,
+        "flags": [
+          "OWNER_UNRESOLVED"
+        ],
+        "action": "assess_core",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "uncertain",
+            "reason": "Dialogue shows a plan to write final reports but no explicit commitment or assignment to all participants; owner unresolved.",
+            "quotes": [
+              {
+                "da_id": "ES2011d.A.dialog-act.dharshi.288",
+                "quote": "So I guess we're supposed to write final reports ."
+              },
+              {
+                "da_id": "ES2011d.A.dialog-act.dharshi.289",
+                "quote": "'Cause <disfmarker>"
+              },
+              {
+                "da_id": "ES2011d.B.dialog-act.dharshi.195",
+                "quote": "All of us ?"
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "uncertain",
+            "reason": "owner_unresolved",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "deadline_unresolved",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "uncertain",
+            "reason": "Status is open; no completion or assignment evidenced in dialogue. Evidence DA IDs: ES2011d.A.dialog-act.dharshi.288, ES2011d.A.dialog-act.dharshi.289, ES2011d.B.dialog-act.dharshi.195",
+            "quotes": [],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No direct contradiction found within the provided evidence; the statement is uncertain but not contradicted.",
+            "quotes": [
+              {
+                "da_id": "ES2011d.A.dialog-act.dharshi.288",
+                "quote": "So I guess we're supposed to write final reports ."
+              },
+              {
+                "da_id": "ES2011d.B.dialog-act.dharshi.195",
+                "quote": "All of us ?"
+              }
+            ],
+            "fields": [
+              "statement",
+              "owner",
+              "deadline",
+              "status"
+            ]
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related_item changes identified in this current dataset.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "decision": "retrieve",
+        "reason": "unresolved_checks",
+        "assessed_text": "All participants will write final reports.",
+        "requested_action": "retrieve",
+        "proposed_fields": {
+          "status": "open",
+          "related_items": [],
+          "owner": null,
+          "owner_basis": "ambiguous",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "ES2011d.A.dialog-act.dharshi.288",
+            "ES2011d.A.dialog-act.dharshi.289",
+            "ES2011d.B.dialog-act.dharshi.195"
+          ]
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "uncertain",
+            "reason": "Dialogue shows a plan to write final reports but no explicit commitment or assignment to all participants; owner unresolved.",
+            "quotes": [
+              "ES2011d.A.dialog-act.dharshi.288",
+              "ES2011d.A.dialog-act.dharshi.289",
+              "ES2011d.B.dialog-act.dharshi.195"
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "uncertain",
+            "reason": "owner_unresolved",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "deadline_unresolved",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "uncertain",
+            "reason": "Status is open; no completion or assignment evidenced in dialogue. Evidence DA IDs: ES2011d.A.dialog-act.dharshi.288, ES2011d.A.dialog-act.dharshi.289, ES2011d.B.dialog-act.dharshi.195",
+            "quotes": [],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No direct contradiction found within the provided evidence; the statement is uncertain but not contradicted.",
+            "quotes": [
+              "ES2011d.A.dialog-act.dharshi.288",
+              "ES2011d.B.dialog-act.dharshi.195"
+            ],
+            "fields": [
+              "statement",
+              "owner",
+              "deadline",
+              "status"
+            ]
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related_item changes identified in this current dataset.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "statement": {
+            "result": "uncertain",
+            "reason": "Dialogue shows a plan to write final reports but no explicit commitment or assignment to all participants; owner unresolved.",
+            "evidence_da_ids": [
+              "ES2011d.A.dialog-act.dharshi.288",
+              "ES2011d.A.dialog-act.dharshi.289",
+              "ES2011d.B.dialog-act.dharshi.195"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No direct contradiction found within the provided evidence; the statement is uncertain but not contradicted.",
+            "evidence_da_ids": [
+              "ES2011d.A.dialog-act.dharshi.288",
+              "ES2011d.B.dialog-act.dharshi.195"
+            ],
+            "affected_fields": [
+              "statement",
+              "owner",
+              "deadline",
+              "status"
+            ]
+          },
+          "next_action": "retrieve"
+        },
+        "evidence_bindings": {
+          "statement": [
+            "ES2011d.A.dialog-act.dharshi.288",
+            "ES2011d.A.dialog-act.dharshi.289",
+            "ES2011d.B.dialog-act.dharshi.195"
+          ],
+          "conflict": [
+            "ES2011d.A.dialog-act.dharshi.288",
+            "ES2011d.B.dialog-act.dharshi.195"
+          ]
+        },
+        "raw_tool_input": {
+          "statement": {
+            "result": "uncertain",
+            "reason": "Dialogue shows a plan to write final reports but no explicit commitment or assignment to all participants; owner unresolved.",
+            "evidence_da_ids": [
+              "ES2011d.A.dialog-act.dharshi.288",
+              "ES2011d.A.dialog-act.dharshi.289",
+              "ES2011d.B.dialog-act.dharshi.195"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No direct contradiction found within the provided evidence; the statement is uncertain but not contradicted.",
+            "evidence_da_ids": [
+              "ES2011d.A.dialog-act.dharshi.288",
+              "ES2011d.B.dialog-act.dharshi.195"
+            ],
+            "affected_fields": [
+              "statement",
+              "owner",
+              "deadline",
+              "status"
+            ]
+          },
+          "next_action": "retrieve"
+        },
+        "protocol_normalizations": [],
+        "unresolved_before": [
+          "deadline",
+          "owner",
+          "statement",
+          "status"
+        ],
+        "unresolved_after": [
+          "deadline",
+          "owner",
+          "statement",
+          "status"
+        ],
+        "semantic_stalls": 1,
+        "validation_codes": {
+          "owner": [
+            "owner_unresolved"
+          ],
+          "deadline": [
+            "deadline_unresolved"
+          ]
+        }
+      },
+      {
+        "item": "ES2011d#10",
+        "step": 7,
+        "flags": [
+          "OWNER_UNRESOLVED"
+        ],
+        "action": "request_clarification",
+        "outcome": "pending",
+        "reason": "evidence is ambiguous on who owns the action and any deadline; request clarification to resolve ownership and timing before acceptance.",
+        "decision": "request_clarification"
+      },
+      {
+        "item": "ES2011d#10",
+        "step": 7,
+        "flags": [
+          "OWNER_UNRESOLVED"
+        ],
+        "action": "stop",
+        "outcome": "pending",
+        "termination_reason": "request_clarification",
+        "unresolved_fields": [
+          "statement",
+          "owner",
+          "deadline",
+          "status"
+        ]
+      }
+    ],
+    "lookups": 1,
+    "termination_reason": "request_clarification",
+    "clarifications": [
+      {
+        "request_id": "5056ac7c24d3ef10",
+        "item_key": "ES2011d#10",
+        "record_id": null,
+        "field": "statement",
+        "question": "Should this be recorded as a substantive, supported actions item?",
+        "item_text": "All participants will write final reports.",
+        "reason": "Dialogue shows a plan to write final reports but no explicit commitment or assignment to all participants; owner unresolved.",
+        "evidence_da_ids": [
+          "ES2011d.A.dialog-act.dharshi.288",
+          "ES2011d.A.dialog-act.dharshi.289",
+          "ES2011d.B.dialog-act.dharshi.195"
+        ],
+        "available_evidence_da_ids": [
+          "ES2011d.A.dialog-act.dharshi.288",
+          "ES2011d.A.dialog-act.dharshi.289",
+          "ES2011d.B.dialog-act.dharshi.195",
+          "ES2011d.B.dialog-act.dharshi.194",
+          "ES2011d.A.dialog-act.dharshi.290",
+          "ES2011d.A.dialog-act.dharshi.79",
+          "ES2011d.D.dialog-act.dharshi.208",
+          "ES2011d.B.dialog-act.dharshi.162"
+        ],
+        "status": "open",
+        "termination_reason": "request_clarification"
+      },
+      {
+        "request_id": "1adaf163e9369546",
+        "item_key": "ES2011d#10",
+        "record_id": null,
+        "field": "owner",
+        "question": "Who is responsible for this task?",
+        "item_text": "All participants will write final reports.",
+        "reason": "owner_unresolved",
+        "evidence_da_ids": [],
+        "available_evidence_da_ids": [
+          "ES2011d.A.dialog-act.dharshi.288",
+          "ES2011d.A.dialog-act.dharshi.289",
+          "ES2011d.B.dialog-act.dharshi.195",
+          "ES2011d.B.dialog-act.dharshi.194",
+          "ES2011d.A.dialog-act.dharshi.290",
+          "ES2011d.A.dialog-act.dharshi.79",
+          "ES2011d.D.dialog-act.dharshi.208",
+          "ES2011d.B.dialog-act.dharshi.162"
+        ],
+        "status": "open",
+        "termination_reason": "request_clarification"
+      },
+      {
+        "request_id": "d3612afa7699ca1c",
+        "item_key": "ES2011d#10",
+        "record_id": null,
+        "field": "deadline",
+        "question": "What is the agreed deadline, in its original wording?",
+        "item_text": "All participants will write final reports.",
+        "reason": "deadline_unresolved",
+        "evidence_da_ids": [],
+        "available_evidence_da_ids": [
+          "ES2011d.A.dialog-act.dharshi.288",
+          "ES2011d.A.dialog-act.dharshi.289",
+          "ES2011d.B.dialog-act.dharshi.195",
+          "ES2011d.B.dialog-act.dharshi.194",
+          "ES2011d.A.dialog-act.dharshi.290",
+          "ES2011d.A.dialog-act.dharshi.79",
+          "ES2011d.D.dialog-act.dharshi.208",
+          "ES2011d.B.dialog-act.dharshi.162"
+        ],
+        "status": "open",
+        "termination_reason": "request_clarification"
+      },
+      {
+        "request_id": "af802c18d247351b",
+        "item_key": "ES2011d#10",
+        "record_id": null,
+        "field": "status",
+        "question": "What is this item's status at the end of the current meeting?",
+        "item_text": "All participants will write final reports.",
+        "reason": "Status is open; no completion or assignment evidenced in dialogue. Evidence DA IDs: ES2011d.A.dialog-act.dharshi.288, ES2011d.A.dialog-act.dharshi.289, ES2011d.B.dialog-act.dharshi.195",
+        "evidence_da_ids": [],
+        "available_evidence_da_ids": [
+          "ES2011d.A.dialog-act.dharshi.288",
+          "ES2011d.A.dialog-act.dharshi.289",
+          "ES2011d.B.dialog-act.dharshi.195",
+          "ES2011d.B.dialog-act.dharshi.194",
+          "ES2011d.A.dialog-act.dharshi.290",
+          "ES2011d.A.dialog-act.dharshi.79",
+          "ES2011d.D.dialog-act.dharshi.208",
+          "ES2011d.B.dialog-act.dharshi.162"
+        ],
+        "status": "open",
+        "termination_reason": "request_clarification"
+      }
+    ]
+  }
+}

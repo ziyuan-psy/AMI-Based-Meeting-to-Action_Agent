@@ -1,0 +1,105 @@
+{
+  "created_at": "2026-10-28T05:09:33.333943+00:00",
+  "scope": "Development regression; quality findings need review before delivery freeze.",
+  "branch": "agent-development",
+  "head": "df0e6ed3fdede653e815fa8d03dec12dd0b4f250",
+  "committed": false,
+  "tests": {
+    "passed": 240,
+    "subtests_passed": 11,
+    "seconds": 36.4,
+    "api_calls": 0,
+    "command": "python -X utf8 -m pytest agent/tests tests -q -p no:cacheprovider --tb=short --maxfail=3"
+  },
+  "protected_annotation_files_unchanged": 28,
+  "earlier_artifact_hashes_unchanged": 1727,
+  "pipeline_output_revalidation": true,
+  "controls": [
+    {
+      "arm": "baseline",
+      "meeting": "IS1008a",
+      "status": "COMPLETED",
+      "attempts": 17,
+      "charged_tokens": 110898,
+      "unknown_usage_tokens": 0
+    },
+    {
+      "arm": "baseline",
+      "meeting": "TS3006a",
+      "status": "COMPLETED",
+      "attempts": 12,
+      "charged_tokens": 132901,
+      "unknown_usage_tokens": 0
+    },
+    {
+      "arm": "baseline",
+      "meeting": "TS3006b",
+      "status": "COMPLETED",
+      "attempts": 28,
+      "charged_tokens": 268607,
+      "unknown_usage_tokens": 0
+    },
+    {
+      "arm": "current",
+      "meeting": "IS1008a",
+      "status": "COMPLETED",
+      "attempts": 46,
+      "charged_tokens": 368145,
+      "unknown_usage_tokens": 0
+    },
+    {
+      "arm": "current",
+      "meeting": "TS3006a",
+      "status": "COMPLETED",
+      "attempts": 80,
+      "charged_tokens": 587141,
+      "unknown_usage_tokens": 0
+    },
+    {
+      "arm": "current",
+      "meeting": "TS3006b",
+      "status": "BUDGET_EXCEEDED",
+      "attempts": 80,
+      "charged_tokens": 755570,
+      "unknown_usage_tokens": 74042
+    }
+  ],
+  "review_required": {
+    "f1_declines": [
+      "actions",
+      "decisions",
+      "problems"
+    ],
+    "unscored_meetings": [
+      "TS3006b"
+    ],
+    "failed_pipelines": [
+      {
+        "arm": "current",
+        "meeting": "TS3006b",
+        "status": "BUDGET_EXCEEDED",
+        "attempts": 80,
+        "charged_tokens": 755570,
+        "unknown_usage_tokens": 74042
+      }
+    ],
+    "quarantined_statement_missing_quote_ids": [
+      "IS1008a#0",
+      "IS1008a#2",
+      "IS1008a#4",
+      "IS1008a#7",
+      "TS3006a#4",
+      "TS3006a#9",
+      "TS3006a#13"
+    ],
+    "independent_gold_review": false,
+    "held_out_evaluation": false
+  },
+  "credential_scan": {
+    "inherited_key_available": true,
+    "matches": 0,
+    "key_never_stored_or_displayed": true
+  },
+  "baseline_reuse": "Original v1 live runs and timings; no duplicate model calls in v2.",
+  "source_and_input_snapshots_verified": true
+}

@@ -1,0 +1,861 @@
+{
+  "created_at": "2026-10-28T05:09:31.027114+00:00",
+  "scope": "Offline audit; field labels are draft annotations; support judges see at most 10 dialogue references, no document entailment judgment.",
+  "meetings": [
+    {
+      "meeting_id": "IS1008a",
+      "runtime": {
+        "baseline": {
+          "status": "COMPLETED",
+          "reason": null,
+          "seconds": 116.062,
+          "model_attempts": 17,
+          "known_tokens": 110898,
+          "unknown_usage_charge": 0
+        },
+        "current": {
+          "status": "COMPLETED",
+          "reason": null,
+          "seconds": 209.844,
+          "model_attempts": 46,
+          "known_tokens": 368145,
+          "unknown_usage_charge": 0
+        }
+      },
+      "field_checks": {
+        "baseline": {
+          "owner_exact": {
+            "correct": 2,
+            "total": 3,
+            "rate": 0.667
+          },
+          "owner_basis": {
+            "correct": 3,
+            "total": 3,
+            "rate": 1.0
+          },
+          "deadline": {
+            "correct": 2,
+            "total": 3,
+            "rate": 0.667
+          },
+          "status": {
+            "correct": 3,
+            "total": 4,
+            "rate": 0.75
+          },
+          "prior_context_needed": {
+            "correct": 4,
+            "total": 4,
+            "rate": 1.0
+          },
+          "relations_on_matched_items": {
+            "tp": 0,
+            "sys": 0,
+            "gold": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "scope": "Conditional on matched current items with reviewed draft prior flags, each arm has its own denominator."
+          }
+        },
+        "current": {
+          "owner_exact": {
+            "correct": 0,
+            "total": 1,
+            "rate": 0.0
+          },
+          "owner_basis": {
+            "correct": 0,
+            "total": 1,
+            "rate": 0.0
+          },
+          "deadline": {
+            "correct": 1,
+            "total": 1,
+            "rate": 1.0
+          },
+          "status": {
+            "correct": 0,
+            "total": 1,
+            "rate": 0.0
+          },
+          "prior_context_needed": {
+            "correct": 1,
+            "total": 1,
+            "rate": 1.0
+          },
+          "relations_on_matched_items": {
+            "tp": 0,
+            "sys": 0,
+            "gold": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "scope": "Conditional on matched current items with reviewed draft prior flags, each arm has its own denominator."
+          }
+        }
+      },
+      "protocol_diagnostics": {
+        "items_with_pass_but_no_quote_selection": [
+          {
+            "item_key": "IS1008a#0",
+            "submissions": [
+              {
+                "step": 1,
+                "checks": [
+                  "statement",
+                  "status",
+                  "conflict"
+                ]
+              },
+              {
+                "step": 2,
+                "checks": [
+                  "statement",
+                  "status",
+                  "conflict"
+                ]
+              },
+              {
+                "step": 4,
+                "checks": [
+                  "statement",
+                  "status",
+                  "conflict"
+                ]
+              }
+            ]
+          },
+          {
+            "item_key": "IS1008a#1",
+            "submissions": [
+              {
+                "step": 1,
+                "checks": [
+                  "deadline",
+                  "conflict"
+                ]
+              },
+              {
+                "step": 2,
+                "checks": [
+                  "deadline",
+                  "conflict"
+                ]
+              },
+              {
+                "step": 4,
+                "checks": [
+                  "deadline",
+                  "conflict"
+                ]
+              }
+            ]
+          },
+          {
+            "item_key": "IS1008a#2",
+            "submissions": [
+              {
+                "step": 2,
+                "checks": [
+                  "statement",
+                  "status",
+                  "conflict"
+                ]
+              },
+              {
+                "step": 3,
+                "checks": [
+                  "statement",
+                  "status",
+                  "conflict"
+                ]
+              },
+              {
+                "step": 5,
+                "checks": [
+                  "statement",
+                  "status",
+                  "conflict"
+                ]
+              }
+            ]
+          },
+          {
+            "item_key": "IS1008a#4",
+            "submissions": [
+              {
+                "step": 2,
+                "checks": [
+                  "statement",
+                  "owner",
+                  "status",
+                  "conflict"
+                ]
+              }
+            ]
+          },
+          {
+            "item_key": "IS1008a#5",
+            "submissions": [
+              {
+                "step": 2,
+                "checks": [
+                  "status",
+                  "conflict"
+                ]
+              },
+              {
+                "step": 3,
+                "checks": [
+                  "statement",
+                  "status",
+                  "conflict"
+                ]
+              },
+              {
+                "step": 5,
+                "checks": [
+                  "status",
+                  "conflict"
+                ]
+              }
+            ]
+          },
+          {
+            "item_key": "IS1008a#6",
+            "submissions": [
+              {
+                "step": 2,
+                "checks": [
+                  "conflict"
+                ]
+              }
+            ]
+          },
+          {
+            "item_key": "IS1008a#7",
+            "submissions": [
+              {
+                "step": 1,
+                "checks": [
+                  "statement",
+                  "status",
+                  "conflict"
+                ]
+              },
+              {
+                "step": 2,
+                "checks": [
+                  "statement",
+                  "status",
+                  "conflict"
+                ]
+              },
+              {
+                "step": 4,
+                "checks": [
+                  "statement",
+                  "status",
+                  "conflict"
+                ]
+              },
+              {
+                "step": 6,
+                "checks": [
+                  "statement",
+                  "status",
+                  "conflict"
+                ]
+              }
+            ]
+          },
+          {
+            "item_key": "IS1008a#8",
+            "submissions": [
+              {
+                "step": 1,
+                "checks": [
+                  "status"
+                ]
+              }
+            ]
+          }
+        ],
+        "quarantined_statement_missing_current_selection": [
+          "IS1008a#0",
+          "IS1008a#2",
+          "IS1008a#4",
+          "IS1008a#7"
+        ]
+      },
+      "quarantined_previously_matched_items": [
+        {
+          "item_key": "IS1008a#0",
+          "gold_id": "IS1008a.JacquelinePalmer.s.14",
+          "text": "ID(FIE073) did not understand the project goal and believed the project was a different product, indicating a scope/goal misalignment.",
+          "termination_reason": "no_progress",
+          "unresolved": {
+            "statement": "current_meeting_support_required",
+            "status": "current_meeting_support_required",
+            "conflict": "current_meeting_support_required"
+          }
+        },
+        {
+          "item_key": "IS1008a#1",
+          "gold_id": "IS1008a.JacquelinePalmer.s.9",
+          "text": "ID will deliver a written plan covering functional and technical design, staffing, timeframe, budget, and market plan by two weeks.",
+          "termination_reason": "no_progress",
+          "unresolved": {
+            "statement": "Current dialogue shows discussion about delivering a written plan and timeframe, but no explicit, binding commitment to a two-week deadline by ID; references to two weeks appear as a question and general expectation, not a firm due date.",
+            "owner": "Owner is listed as FIE073 in the record, but the observed dialogue does not contain an explicit assignment or acknowledgment by FIE073 as owner; ownership is evidenced by PM remarks requesting a written plan, not assignment.",
+            "deadline": "current_meeting_support_required",
+            "status": "No explicit statement of current status beyond 'open' in the record; dialogue indicates ongoing planning but no final status change.",
+            "conflict": "current_meeting_support_required"
+          }
+        }
+      ],
+      "trace": {
+        "p2_items": 9,
+        "items_with_history": 9,
+        "clarifications": 23,
+        "lookup_steps": 10,
+        "lookups_with_actual_results": 10
+      },
+      "support": {
+        "baseline": {
+          "counts": {
+            "supported": 5,
+            "unsupported": 2
+          },
+          "judged": 7,
+          "supported_rate": 0.714
+        },
+        "current": {
+          "counts": {
+            "partial": 2
+          },
+          "judged": 2,
+          "supported_rate": 0.0
+        }
+      }
+    },
+    {
+      "meeting_id": "TS3006a",
+      "runtime": {
+        "baseline": {
+          "status": "COMPLETED",
+          "reason": null,
+          "seconds": 155.718,
+          "model_attempts": 12,
+          "known_tokens": 132901,
+          "unknown_usage_charge": 0
+        },
+        "current": {
+          "status": "COMPLETED",
+          "reason": null,
+          "seconds": 286.375,
+          "model_attempts": 80,
+          "known_tokens": 587141,
+          "unknown_usage_charge": 0
+        }
+      },
+      "field_checks": {
+        "baseline": {
+          "owner_exact": {
+            "correct": 4,
+            "total": 4,
+            "rate": 1.0
+          },
+          "owner_basis": {
+            "correct": 4,
+            "total": 4,
+            "rate": 1.0
+          },
+          "deadline": {
+            "correct": 3,
+            "total": 4,
+            "rate": 0.75
+          },
+          "status": {
+            "correct": 2,
+            "total": 6,
+            "rate": 0.333
+          },
+          "prior_context_needed": {
+            "correct": 6,
+            "total": 6,
+            "rate": 1.0
+          },
+          "relations_on_matched_items": {
+            "tp": 0,
+            "sys": 0,
+            "gold": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "scope": "Conditional on matched current items with reviewed draft prior flags, each arm has its own denominator."
+          }
+        },
+        "current": {
+          "owner_exact": {
+            "correct": 0,
+            "total": 0,
+            "rate": null
+          },
+          "owner_basis": {
+            "correct": 0,
+            "total": 0,
+            "rate": null
+          },
+          "deadline": {
+            "correct": 0,
+            "total": 0,
+            "rate": null
+          },
+          "status": {
+            "correct": 0,
+            "total": 1,
+            "rate": 0.0
+          },
+          "prior_context_needed": {
+            "correct": 1,
+            "total": 1,
+            "rate": 1.0
+          },
+          "relations_on_matched_items": {
+            "tp": 0,
+            "sys": 0,
+            "gold": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "scope": "Conditional on matched current items with reviewed draft prior flags, each arm has its own denominator."
+          }
+        }
+      },
+      "protocol_diagnostics": {
+        "items_with_pass_but_no_quote_selection": [
+          {
+            "item_key": "TS3006a#0",
+            "submissions": [
+              {
+                "step": 1,
+                "checks": [
+                  "statement",
+                  "status",
+                  "conflict"
+                ]
+              },
+              {
+                "step": 2,
+                "checks": [
+                  "status",
+                  "conflict"
+                ]
+              },
+              {
+                "step": 4,
+                "checks": [
+                  "status",
+                  "conflict"
+                ]
+              }
+            ]
+          },
+          {
+            "item_key": "TS3006a#3",
+            "submissions": [
+              {
+                "step": 1,
+                "checks": [
+                  "owner",
+                  "status",
+                  "conflict"
+                ]
+              },
+              {
+                "step": 2,
+                "checks": [
+                  "owner",
+                  "status",
+                  "conflict"
+                ]
+              },
+              {
+                "step": 5,
+                "checks": [
+                  "owner",
+                  "status",
+                  "conflict"
+                ]
+              }
+            ]
+          },
+          {
+            "item_key": "TS3006a#4",
+            "submissions": [
+              {
+                "step": 2,
+                "checks": [
+                  "statement",
+                  "owner",
+                  "status",
+                  "conflict"
+                ]
+              },
+              {
+                "step": 3,
+                "checks": [
+                  "statement",
+                  "owner",
+                  "status",
+                  "conflict"
+                ]
+              },
+              {
+                "step": 5,
+                "checks": [
+                  "statement",
+                  "owner",
+                  "status",
+                  "conflict"
+                ]
+              },
+              {
+                "step": 7,
+                "checks": [
+                  "statement",
+                  "owner",
+                  "status",
+                  "conflict"
+                ]
+              }
+            ]
+          },
+          {
+            "item_key": "TS3006a#5",
+            "submissions": [
+              {
+                "step": 1,
+                "checks": [
+                  "status",
+                  "conflict"
+                ]
+              }
+            ]
+          },
+          {
+            "item_key": "TS3006a#7",
+            "submissions": [
+              {
+                "step": 2,
+                "checks": [
+                  "owner",
+                  "status",
+                  "conflict"
+                ]
+              },
+              {
+                "step": 3,
+                "checks": [
+                  "owner",
+                  "status",
+                  "conflict"
+                ]
+              },
+              {
+                "step": 5,
+                "checks": [
+                  "owner",
+                  "status",
+                  "conflict"
+                ]
+              }
+            ]
+          },
+          {
+            "item_key": "TS3006a#8",
+            "submissions": [
+              {
+                "step": 1,
+                "checks": [
+                  "statement",
+                  "status",
+                  "conflict"
+                ]
+              },
+              {
+                "step": 2,
+                "checks": [
+                  "statement",
+                  "status",
+                  "conflict"
+                ]
+              },
+              {
+                "step": 4,
+                "checks": [
+                  "status",
+                  "conflict"
+                ]
+              },
+              {
+                "step": 6,
+                "checks": [
+                  "status",
+                  "conflict"
+                ]
+              }
+            ]
+          },
+          {
+            "item_key": "TS3006a#9",
+            "submissions": [
+              {
+                "step": 1,
+                "checks": [
+                  "statement",
+                  "status",
+                  "conflict"
+                ]
+              },
+              {
+                "step": 2,
+                "checks": [
+                  "statement",
+                  "status",
+                  "conflict"
+                ]
+              },
+              {
+                "step": 4,
+                "checks": [
+                  "statement",
+                  "status",
+                  "conflict"
+                ]
+              }
+            ]
+          },
+          {
+            "item_key": "TS3006a#10",
+            "submissions": [
+              {
+                "step": 1,
+                "checks": [
+                  "status",
+                  "conflict"
+                ]
+              },
+              {
+                "step": 2,
+                "checks": [
+                  "status",
+                  "conflict"
+                ]
+              },
+              {
+                "step": 4,
+                "checks": [
+                  "status",
+                  "conflict"
+                ]
+              },
+              {
+                "step": 6,
+                "checks": [
+                  "status",
+                  "conflict"
+                ]
+              }
+            ]
+          },
+          {
+            "item_key": "TS3006a#11",
+            "submissions": [
+              {
+                "step": 1,
+                "checks": [
+                  "status",
+                  "conflict"
+                ]
+              },
+              {
+                "step": 2,
+                "checks": [
+                  "status",
+                  "conflict"
+                ]
+              },
+              {
+                "step": 4,
+                "checks": [
+                  "status",
+                  "conflict"
+                ]
+              }
+            ]
+          },
+          {
+            "item_key": "TS3006a#12",
+            "submissions": [
+              {
+                "step": 1,
+                "checks": [
+                  "status",
+                  "conflict"
+                ]
+              },
+              {
+                "step": 2,
+                "checks": [
+                  "status",
+                  "conflict"
+                ]
+              },
+              {
+                "step": 4,
+                "checks": [
+                  "status",
+                  "conflict"
+                ]
+              }
+            ]
+          },
+          {
+            "item_key": "TS3006a#13",
+            "submissions": [
+              {
+                "step": 1,
+                "checks": [
+                  "statement",
+                  "status",
+                  "conflict"
+                ]
+              },
+              {
+                "step": 2,
+                "checks": [
+                  "statement",
+                  "status",
+                  "conflict"
+                ]
+              },
+              {
+                "step": 4,
+                "checks": [
+                  "statement",
+                  "status",
+                  "conflict"
+                ]
+              }
+            ]
+          }
+        ],
+        "quarantined_statement_missing_current_selection": [
+          "TS3006a#4",
+          "TS3006a#9",
+          "TS3006a#13"
+        ]
+      },
+      "quarantined_previously_matched_items": [
+        {
+          "item_key": "TS3006a#1",
+          "gold_id": "TS3006a.manual.s.1",
+          "text": "The Project Manager will summarize the discussed items and place the summary in the project folder.",
+          "termination_reason": "invalid_action_limit",
+          "unresolved": {
+            "statement": "not_checked",
+            "owner": "not_checked",
+            "deadline": "not_checked",
+            "status": "not_checked",
+            "conflict": "not_checked"
+          }
+        },
+        {
+          "item_key": "TS3006a#4",
+          "gold_id": "TS3006a.elana.s.11",
+          "text": "The Industrial Designer will work on the conceptual design.",
+          "termination_reason": "no_progress",
+          "unresolved": {
+            "statement": "current_meeting_support_required",
+            "owner": "current_meeting_support_required",
+            "deadline": "deadline_unresolved",
+            "status": "current_meeting_support_required",
+            "conflict": "current_meeting_support_required"
+          }
+        },
+        {
+          "item_key": "TS3006a#6",
+          "gold_id": "TS3006a.elana.s.10",
+          "text": "The Marketing Expert will conduct internet searches and user interviews to determine user requirements.",
+          "termination_reason": "invalid_action_limit",
+          "unresolved": {
+            "statement": "not_checked",
+            "owner": "not_checked",
+            "deadline": "not_checked",
+            "status": "not_checked",
+            "conflict": "not_checked"
+          }
+        },
+        {
+          "item_key": "TS3006a#9",
+          "gold_id": "TS3006a.elana.s.13",
+          "text": "Pricing will be set at 25 Euros, with a target of 50 million Euros in sales and production cost equal to half of the selling price.",
+          "termination_reason": "no_progress",
+          "unresolved": {
+            "statement": "current_meeting_support_required",
+            "status": "current_meeting_support_required",
+            "conflict": "current_meeting_support_required"
+          }
+        }
+      ],
+      "trace": {
+        "p2_items": 14,
+        "items_with_history": 14,
+        "clarifications": 32,
+        "lookup_steps": 20,
+        "lookups_with_actual_results": 20
+      },
+      "support": {
+        "baseline": {
+          "counts": {
+            "supported": 12
+          },
+          "judged": 12,
+          "supported_rate": 1.0
+        },
+        "current": {
+          "counts": {
+            "supported": 6
+          },
+          "judged": 6,
+          "supported_rate": 1.0
+        }
+      }
+    },
+    {
+      "meeting_id": "TS3006b",
+      "runtime": {
+        "baseline": {
+          "status": "COMPLETED",
+          "reason": null,
+          "seconds": 226.563,
+          "model_attempts": 28,
+          "known_tokens": 268607,
+          "unknown_usage_charge": 0
+        },
+        "current": {
+          "status": "BUDGET_EXCEEDED",
+          "reason": "call_budget_exhausted",
+          "seconds": 329.844,
+          "model_attempts": 80,
+          "known_tokens": 681528,
+          "unknown_usage_charge": 74042
+        }
+      }
+    }
+  ]
+}

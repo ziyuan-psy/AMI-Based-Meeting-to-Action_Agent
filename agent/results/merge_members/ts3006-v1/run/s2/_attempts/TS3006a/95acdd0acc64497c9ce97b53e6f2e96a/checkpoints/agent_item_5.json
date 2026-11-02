@@ -1,0 +1,430 @@
+{
+  "item": 5,
+  "fields": {
+    "item_key": "TS3006a#5",
+    "record_id": null,
+    "item_type": "decisions",
+    "item_text": "The target is to sell 50 million Euros in total.",
+    "state": "accepted",
+    "recordable": true,
+    "fields": {
+      "status": "adopted",
+      "prior_context_needed": false,
+      "related_items": [],
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3006a.json",
+          "locator": "TS3006a.A.dialog-act.vkaraisk.131"
+        }
+      ]
+    },
+    "draft_fields": {
+      "status": "adopted",
+      "related_items": [],
+      "prior_context_needed": false,
+      "used_participant_lookup": false,
+      "evidence_da_ids": [
+        "TS3006a.A.dialog-act.vkaraisk.131"
+      ],
+      "owner": null,
+      "owner_basis": "missing",
+      "deadline": null,
+      "deadline_basis": "missing"
+    },
+    "checks": {
+      "statement": {
+        "result": "pass",
+        "reason": "The current dialogue corpus shows a commitment that Selling price will be 25 Euros, matching the item. The key supporting utterance is the explicit statement TS3006a.A.dialog-act.vkaraisk.131 where the PM states \"we can sell them at twenty five Euros\".",
+        "quotes": [
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.131",
+            "quote": "the aim is to reach <disfmarker> uh uh to sell as much as fifty million Euros ."
+          }
+        ],
+        "fields": [
+          "statement"
+        ]
+      },
+      "status": {
+        "result": "pass",
+        "reason": "The item already has an adopted status in provisional values; no conflicting deadlines or owners are expressed.",
+        "quotes": [
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.131",
+            "quote": "the aim is to reach <disfmarker> uh uh to sell as much as fifty million Euros ."
+          }
+        ],
+        "fields": [
+          "status"
+        ]
+      },
+      "conflict": {
+        "result": "pass",
+        "reason": "No contradictions found within the delivered dialogue about the selling price; the earlier item TS3006a#4 confirms the decision to sell at 25 Euros aligns with current text.",
+        "quotes": [
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.131",
+            "quote": "the aim is to reach <disfmarker> uh uh to sell as much as fifty million Euros ."
+          }
+        ],
+        "fields": [
+          "statement"
+        ]
+      },
+      "relation": {
+        "result": "not_applicable",
+        "reason": "No prior item provided to relate; this is a standalone decision linked to a future target price.",
+        "quotes": [],
+        "fields": [
+          "related_items"
+        ]
+      },
+      "owner": {
+        "result": "not_applicable",
+        "reason": "field_not_applicable",
+        "quotes": [],
+        "fields": [
+          "owner"
+        ]
+      },
+      "deadline": {
+        "result": "not_applicable",
+        "reason": "field_not_applicable",
+        "quotes": [],
+        "fields": [
+          "deadline"
+        ]
+      }
+    },
+    "unresolved_fields": [],
+    "observed_evidence_da_ids": [
+      "TS3006a.A.dialog-act.vkaraisk.131",
+      "TS3006a.A.dialog-act.vkaraisk.130",
+      "TS3006a.A.dialog-act.vkaraisk.132"
+    ],
+    "initial_context": {
+      "item": {
+        "type": "decisions",
+        "text": "The target is to sell 50 million Euros in total.",
+        "flags": []
+      },
+      "current_meeting": "TS3006a",
+      "earlier_meetings": [],
+      "roster": [
+        {
+          "speaker": "A",
+          "participant_id": "MTD021PM",
+          "role": "PM"
+        },
+        {
+          "speaker": "B",
+          "participant_id": "MTD023UID",
+          "role": "UI"
+        },
+        {
+          "speaker": "C",
+          "participant_id": "MTD022ID",
+          "role": "ID"
+        },
+        {
+          "speaker": "D",
+          "participant_id": "MTD024ME",
+          "role": "ME"
+        }
+      ],
+      "observed_dialogue": [
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.131",
+          "meeting_id": "TS3006a",
+          "text": "the aim is to reach <disfmarker> uh uh to sell as much as fifty million Euros .",
+          "participant": "MTD021PM",
+          "role": "PM"
+        },
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.130",
+          "participant": "MTD021PM",
+          "role": "PM",
+          "text": "Um we can sell them at twenty five Euros . Uh"
+        },
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.132",
+          "participant": "MTD021PM",
+          "role": "PM",
+          "text": "Uh that's quite a big amount of money ."
+        }
+      ],
+      "peer_items": [
+        {
+          "item_key": "TS3006a#0",
+          "type": "actions",
+          "text": "The Industrial Designer will produce a working design."
+        },
+        {
+          "item_key": "TS3006a#1",
+          "type": "actions",
+          "text": "The User Interface Designer should specify the technical functions."
+        },
+        {
+          "item_key": "TS3006a#2",
+          "type": "actions",
+          "text": "The Marketing Expert should come up with user requirements."
+        },
+        {
+          "item_key": "TS3006a#3",
+          "type": "actions",
+          "text": "The Industrial Designer will work on the conceptual design."
+        },
+        {
+          "item_key": "TS3006a#4",
+          "type": "decisions",
+          "text": "Selling price will be 25 Euros."
+        }
+      ],
+      "provisional_values": {
+        "owner": null,
+        "owner_basis": "missing",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "adopted",
+        "related_items": []
+      },
+      "candidate_evidence_da_ids": [
+        "TS3006a.A.dialog-act.vkaraisk.131"
+      ]
+    },
+    "observed_documents": [],
+    "document_evidence": [],
+    "relation_evidence": [],
+    "history": [
+      {
+        "item": "TS3006a#5",
+        "step": 1,
+        "flags": [],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "The current dialogue corpus shows a commitment that Selling price will be 25 Euros, matching the item. The key supporting utterance is the explicit statement TS3006a.A.dialog-act.vkaraisk.131 where the PM states \"we can sell them at twenty five Euros\".",
+            "quotes": [
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.131",
+                "quote": "the aim is to reach <disfmarker> uh uh to sell as much as fifty million Euros ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "The item already has an adopted status in provisional values; no conflicting deadlines or owners are expressed.",
+            "quotes": [
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.131",
+                "quote": "the aim is to reach <disfmarker> uh uh to sell as much as fifty million Euros ."
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions found within the delivered dialogue about the selling price; the earlier item TS3006a#4 confirms the decision to sell at 25 Euros aligns with current text.",
+            "quotes": [
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.131",
+                "quote": "the aim is to reach <disfmarker> uh uh to sell as much as fifty million Euros ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior item provided to relate; this is a standalone decision linked to a future target price.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          }
+        },
+        "decision": "accept",
+        "reason": "all_required_checks_passed",
+        "assessed_text": "The target is to sell 50 million Euros in total.",
+        "requested_action": "accept",
+        "proposed_fields": {
+          "status": "adopted",
+          "related_items": [],
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.131"
+          ],
+          "owner": null,
+          "owner_basis": "missing",
+          "deadline": null,
+          "deadline_basis": "missing"
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "The current dialogue corpus shows a commitment that Selling price will be 25 Euros, matching the item. The key supporting utterance is the explicit statement TS3006a.A.dialog-act.vkaraisk.131 where the PM states \"we can sell them at twenty five Euros\".",
+            "quotes": [
+              "TS3006a.A.dialog-act.vkaraisk.131"
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "The item already has an adopted status in provisional values; no conflicting deadlines or owners are expressed.",
+            "quotes": [
+              "TS3006a.A.dialog-act.vkaraisk.131"
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions found within the delivered dialogue about the selling price; the earlier item TS3006a#4 confirms the decision to sell at 25 Euros aligns with current text.",
+            "quotes": [
+              "TS3006a.A.dialog-act.vkaraisk.131"
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior item provided to relate; this is a standalone decision linked to a future target price.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "status": "adopted",
+          "related_items": [],
+          "statement": {
+            "result": "pass",
+            "reason": "The current dialogue corpus shows a commitment that Selling price will be 25 Euros, matching the item. The key supporting utterance is the explicit statement TS3006a.A.dialog-act.vkaraisk.131 where the PM states \"we can sell them at twenty five Euros\".",
+            "evidence_da_ids": [
+              "TS3006a.A.dialog-act.vkaraisk.131"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "The item already has an adopted status in provisional values; no conflicting deadlines or owners are expressed.",
+            "evidence_da_ids": [
+              "TS3006a.A.dialog-act.vkaraisk.131"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No contradictions found within the delivered dialogue about the selling price; the earlier item TS3006a#4 confirms the decision to sell at 25 Euros aligns with current text.",
+            "evidence_da_ids": [
+              "TS3006a.A.dialog-act.vkaraisk.131"
+            ],
+            "affected_fields": [
+              "statement"
+            ]
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior item provided to relate; this is a standalone decision linked to a future target price.",
+            "evidence_da_ids": []
+          },
+          "next_action": "accept"
+        },
+        "evidence_bindings": {
+          "statement": [
+            "TS3006a.A.dialog-act.vkaraisk.131"
+          ],
+          "status": [
+            "TS3006a.A.dialog-act.vkaraisk.131"
+          ],
+          "conflict": [
+            "TS3006a.A.dialog-act.vkaraisk.131"
+          ]
+        },
+        "raw_tool_input": {
+          "status": "adopted",
+          "related_items": [],
+          "statement": {
+            "result": "pass",
+            "reason": "The current dialogue corpus shows a commitment that Selling price will be 25 Euros, matching the item. The key supporting utterance is the explicit statement TS3006a.A.dialog-act.vkaraisk.131 where the PM states \"we can sell them at twenty five Euros\".",
+            "evidence_da_ids": [
+              "TS3006a.A.dialog-act.vkaraisk.131"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "The item already has an adopted status in provisional values; no conflicting deadlines or owners are expressed.",
+            "evidence_da_ids": [
+              "TS3006a.A.dialog-act.vkaraisk.131"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No contradictions found within the delivered dialogue about the selling price; the earlier item TS3006a#4 confirms the decision to sell at 25 Euros aligns with current text.",
+            "evidence_da_ids": [
+              "TS3006a.A.dialog-act.vkaraisk.131"
+            ],
+            "affected_fields": [
+              "statement"
+            ]
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior item provided to relate; this is a standalone decision linked to a future target price.",
+            "evidence_da_ids": []
+          },
+          "next_action": "accept"
+        },
+        "protocol_normalizations": [],
+        "unresolved_before": [
+          "statement",
+          "status"
+        ],
+        "unresolved_after": [],
+        "semantic_stalls": 0,
+        "validation_codes": {}
+      },
+      {
+        "item": "TS3006a#5",
+        "step": 1,
+        "flags": [],
+        "action": "accept",
+        "outcome": "accepted",
+        "termination_reason": "all_required_checks_passed",
+        "unresolved_fields": []
+      }
+    ],
+    "lookups": 0,
+    "termination_reason": "all_required_checks_passed",
+    "clarifications": []
+  }
+}

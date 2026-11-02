@@ -1,0 +1,178 @@
+{
+  "control": {
+    "limits": {
+      "calls": 80,
+      "tokens": 1000000,
+      "request_seconds": 300.0,
+      "meeting_seconds": 1200.0,
+      "inflight": 4,
+      "retries": 2,
+      "backoff": 0.5
+    },
+    "attempted_calls": 10,
+    "charged_tokens": 78664,
+    "unknown_usage_tokens": 0,
+    "reserved_tokens": 0,
+    "max_inflight_seen": 1,
+    "failure": null,
+    "attempts": [
+      {
+        "attempt": 0,
+        "stage": "p2_check",
+        "reserved_tokens": 57551,
+        "input_bound": 25551,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 5768,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 4832,
+        "output_tokens": 936
+      },
+      {
+        "attempt": 1,
+        "stage": "agent",
+        "reserved_tokens": 55466,
+        "input_bound": 23466,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 5170,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 4879,
+        "output_tokens": 291
+      },
+      {
+        "attempt": 2,
+        "stage": "p2_check",
+        "reserved_tokens": 63309,
+        "input_bound": 31309,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 6921,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 6215,
+        "output_tokens": 706
+      },
+      {
+        "attempt": 3,
+        "stage": "agent",
+        "reserved_tokens": 60856,
+        "input_bound": 28856,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 6360,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 6084,
+        "output_tokens": 276
+      },
+      {
+        "attempt": 4,
+        "stage": "agent",
+        "reserved_tokens": 61230,
+        "input_bound": 29230,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 6313,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 6136,
+        "output_tokens": 177
+      },
+      {
+        "attempt": 5,
+        "stage": "p2_check",
+        "reserved_tokens": 69839,
+        "input_bound": 37839,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 8398,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 7882,
+        "output_tokens": 516
+      },
+      {
+        "attempt": 6,
+        "stage": "agent",
+        "reserved_tokens": 67406,
+        "input_bound": 35406,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 7996,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 7755,
+        "output_tokens": 241
+      },
+      {
+        "attempt": 7,
+        "stage": "p2_check",
+        "reserved_tokens": 76036,
+        "input_bound": 44036,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 10278,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 9506,
+        "output_tokens": 772
+      },
+      {
+        "attempt": 8,
+        "stage": "agent",
+        "reserved_tokens": 73603,
+        "input_bound": 41603,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 9748,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 9379,
+        "output_tokens": 369
+      },
+      {
+        "attempt": 9,
+        "stage": "p2_check",
+        "reserved_tokens": 82238,
+        "input_bound": 50238,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 11712,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 11132,
+        "output_tokens": 580
+      }
+    ],
+    "input_bound_method": "utf8_request_bytes_plus_padding",
+    "unknown_usage_policy": "charge_full_reservation"
+  },
+  "actual_usage": {
+    "calls": 10,
+    "in": 73800,
+    "out": 4864,
+    "stages": {
+      "p2_check": {
+        "calls": 5,
+        "in": 39567,
+        "out": 3510
+      },
+      "agent": {
+        "calls": 5,
+        "in": 34233,
+        "out": 1354
+      }
+    }
+  },
+  "admission": {
+    "capacity": 77,
+    "tail_calls_reserved": 3,
+    "attempts_by_item": {
+      "IS1008a#controlled-friday": 10
+    },
+    "issued": 10
+  }
+}

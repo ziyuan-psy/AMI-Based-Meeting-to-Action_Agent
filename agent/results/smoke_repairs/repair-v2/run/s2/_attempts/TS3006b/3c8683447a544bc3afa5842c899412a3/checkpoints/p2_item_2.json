@@ -1,0 +1,927 @@
+{
+  "item_key": "TS3006b#2",
+  "record_id": null,
+  "item_type": "actions",
+  "item_text": "Design a multi-page LCD screen menu",
+  "state": "pending",
+  "recordable": true,
+  "fields": {
+    "status": "unknown",
+    "prior_context_needed": false,
+    "related_items": [],
+    "owner": [
+      "MTD023UID"
+    ],
+    "owner_basis": "explicit",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "reference": [
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3006b.json",
+        "locator": "TS3006b.B.dialog-act.dharshi.157"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3006b.json",
+        "locator": "TS3006b.D.dialog-act.dharshi.364"
+      }
+    ]
+  },
+  "draft_fields": {
+    "status": "open",
+    "related_items": [],
+    "owner": [
+      "MTD023UID"
+    ],
+    "owner_basis": "explicit",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "prior_context_needed": false,
+    "used_participant_lookup": false,
+    "evidence_da_ids": [
+      "TS3006b.B.dialog-act.dharshi.157",
+      "TS3006b.D.dialog-act.dharshi.364"
+    ]
+  },
+  "checks": {
+    "statement": {
+      "result": "pass",
+      "reason": "Dialogue includes PM assigning UI designer to design a menu for all functions; UI appears to take ownership and produce menu; provisional owner is MTD023UID.",
+      "quotes": [
+        {
+          "da_id": "TS3006b.B.dialog-act.dharshi.157",
+          "quote": "Yeah ? I I'm going to make <disfmarker>"
+        },
+        {
+          "da_id": "TS3006b.D.dialog-act.dharshi.364",
+          "quote": "Yeah ."
+        }
+      ],
+      "fields": [
+        "statement"
+      ]
+    },
+    "owner": {
+      "result": "pass",
+      "reason": "Owner is explicitly MTD023UID in provisional_values; dialogue shows UI involvement taking design task.",
+      "quotes": [
+        {
+          "da_id": "TS3006b.B.dialog-act.dharshi.157",
+          "quote": "Yeah ? I I'm going to make <disfmarker>"
+        }
+      ],
+      "fields": [
+        "owner"
+      ]
+    },
+    "deadline": {
+      "result": "uncertain",
+      "reason": "deadline_unresolved",
+      "quotes": [],
+      "fields": [
+        "deadline"
+      ]
+    },
+    "status": {
+      "result": "uncertain",
+      "reason": "No explicit status change in dialogue; status remains open per provisional values.",
+      "quotes": [],
+      "fields": [
+        "status"
+      ]
+    },
+    "conflict": {
+      "result": "pass",
+      "reason": "No contradictions found in the current evidence.",
+      "quotes": [
+        {
+          "da_id": "TS3006b.B.dialog-act.dharshi.157",
+          "quote": "Yeah ? I I'm going to make <disfmarker>"
+        }
+      ],
+      "fields": [
+        "statement",
+        "owner",
+        "deadline",
+        "status"
+      ]
+    },
+    "relation": {
+      "result": "uncertain",
+      "reason": "No explicit linkage to earlier items in current dialogue; peer_items exist but no explicit changed_fields.",
+      "links": [],
+      "quotes": [],
+      "fields": [
+        "related_items"
+      ]
+    }
+  },
+  "unresolved_fields": [
+    "deadline",
+    "status",
+    "related_items"
+  ],
+  "observed_evidence_da_ids": [
+    "TS3006b.B.dialog-act.dharshi.157",
+    "TS3006b.D.dialog-act.dharshi.364",
+    "TS3006b.D.dialog-act.dharshi.363",
+    "TS3006b.A.dialog-act.dharshi.323",
+    "TS3006b.B.dialog-act.dharshi.158",
+    "TS3006b.A.dialog-act.dharshi.324"
+  ],
+  "initial_context": {
+    "item": {
+      "type": "actions",
+      "text": "Design a multi-page LCD screen menu",
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ]
+    },
+    "current_meeting": "TS3006b",
+    "earlier_meetings": [
+      "TS3006a"
+    ],
+    "roster": [
+      {
+        "speaker": "A",
+        "participant_id": "MTD021PM",
+        "role": "PM"
+      },
+      {
+        "speaker": "B",
+        "participant_id": "MTD023UID",
+        "role": "UI"
+      },
+      {
+        "speaker": "C",
+        "participant_id": "MTD022ID",
+        "role": "ID"
+      },
+      {
+        "speaker": "D",
+        "participant_id": "MTD024ME",
+        "role": "ME"
+      }
+    ],
+    "observed_dialogue": [
+      {
+        "da_id": "TS3006b.B.dialog-act.dharshi.157",
+        "meeting_id": "TS3006b",
+        "text": "Yeah ? I I'm going to make <disfmarker>",
+        "participant": "MTD023UID",
+        "role": "UI"
+      },
+      {
+        "da_id": "TS3006b.D.dialog-act.dharshi.364",
+        "meeting_id": "TS3006b",
+        "text": "Yeah .",
+        "participant": "MTD024ME",
+        "role": "ME"
+      },
+      {
+        "da_id": "TS3006b.D.dialog-act.dharshi.363",
+        "participant": "MTD024ME",
+        "role": "ME",
+        "text": "Yeah . Yeah I guess so ."
+      },
+      {
+        "da_id": "TS3006b.A.dialog-act.dharshi.323",
+        "participant": "MTD021PM",
+        "role": "PM",
+        "text": "I think i that's your department yes ,"
+      },
+      {
+        "da_id": "TS3006b.B.dialog-act.dharshi.158",
+        "participant": "MTD023UID",
+        "role": "UI",
+        "text": "yeah o okay ."
+      },
+      {
+        "da_id": "TS3006b.A.dialog-act.dharshi.324",
+        "participant": "MTD021PM",
+        "role": "PM",
+        "text": "because w he already knows what <disfmarker>"
+      }
+    ],
+    "peer_items": [
+      {
+        "item_key": "TS3006b#0",
+        "type": "actions",
+        "text": "PM asked UI designer to design a menu for all these function"
+      },
+      {
+        "item_key": "TS3006b#1",
+        "type": "actions",
+        "text": "PM will design the basic function menu for the LCD screen"
+      }
+    ],
+    "provisional_values": {
+      "owner": [
+        "MTD023UID"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "status": "open",
+      "related_items": []
+    },
+    "candidate_evidence_da_ids": [
+      "TS3006b.B.dialog-act.dharshi.157",
+      "TS3006b.D.dialog-act.dharshi.364"
+    ]
+  },
+  "observed_documents": [],
+  "document_evidence": [],
+  "relation_evidence": [],
+  "history": [
+    {
+      "item": "TS3006b#2",
+      "step": 1,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "assess_item",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue includes PM assigning UI designer to design a menu for all functions; UI appears to take ownership and produce menu; provisional owner is MTD023UID.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.B.dialog-act.dharshi.157",
+              "quote": "Yeah ? I I'm going to make <disfmarker>"
+            },
+            {
+              "da_id": "TS3006b.D.dialog-act.dharshi.364",
+              "quote": "Yeah ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Owner is explicitly MTD023UID in provisional_values; dialogue shows UI involvement taking design task.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.B.dialog-act.dharshi.157",
+              "quote": "Yeah ? I I'm going to make <disfmarker>"
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "deadline_unresolved",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "uncertain",
+          "reason": "No explicit status change in dialogue; status remains open per provisional values.",
+          "quotes": [],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions found in the current evidence.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.B.dialog-act.dharshi.157",
+              "quote": "Yeah ? I I'm going to make <disfmarker>"
+            }
+          ],
+          "fields": [
+            "statement",
+            "owner",
+            "deadline",
+            "status"
+          ]
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "prior_context_not_checked",
+          "links": [],
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "decision": "retrieve",
+      "reason": "required_history_check_before_partial_accept",
+      "assessed_text": "Design a multi-page LCD screen menu",
+      "requested_action": "accept",
+      "proposed_fields": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD023UID"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "TS3006b.B.dialog-act.dharshi.157",
+          "TS3006b.D.dialog-act.dharshi.364"
+        ]
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue includes PM assigning UI designer to design a menu for all functions; UI appears to take ownership and produce menu; provisional owner is MTD023UID.",
+          "quotes": [
+            "TS3006b.B.dialog-act.dharshi.157",
+            "TS3006b.D.dialog-act.dharshi.364"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Owner is explicitly MTD023UID in provisional_values; dialogue shows UI involvement taking design task.",
+          "quotes": [
+            "TS3006b.B.dialog-act.dharshi.157"
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "No deadline provided in dialogue or provisional values.",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "uncertain",
+          "reason": "No explicit status change in dialogue; status remains open per provisional values.",
+          "quotes": [],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions found in the current evidence.",
+          "quotes": [
+            "TS3006b.B.dialog-act.dharshi.157"
+          ],
+          "fields": [
+            "statement",
+            "owner",
+            "deadline",
+            "status"
+          ]
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "No explicit linkage to earlier items in current dialogue; peer_items exist but no explicit changed_fields.",
+          "links": [],
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD023UID"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue includes PM assigning UI designer to design a menu for all functions; UI appears to take ownership and produce menu; provisional owner is MTD023UID.",
+          "evidence_da_ids": [
+            "TS3006b.B.dialog-act.dharshi.157",
+            "TS3006b.D.dialog-act.dharshi.364"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "Owner is explicitly MTD023UID in provisional_values; dialogue shows UI involvement taking design task.",
+          "evidence_da_ids": [
+            "TS3006b.B.dialog-act.dharshi.157"
+          ]
+        },
+        "deadline_check": {
+          "result": "uncertain",
+          "reason": "No deadline provided in dialogue or provisional values.",
+          "evidence_da_ids": []
+        },
+        "status_check": {
+          "result": "uncertain",
+          "reason": "No explicit status change in dialogue; status remains open per provisional values.",
+          "evidence_da_ids": []
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No contradictions found in the current evidence.",
+          "evidence_da_ids": [
+            "TS3006b.B.dialog-act.dharshi.157"
+          ],
+          "affected_fields": [
+            "statement",
+            "owner",
+            "deadline",
+            "status"
+          ]
+        },
+        "relation_check": {
+          "result": "uncertain",
+          "reason": "No explicit linkage to earlier items in current dialogue; peer_items exist but no explicit changed_fields.",
+          "evidence_da_ids": [],
+          "links": []
+        },
+        "next_action": "accept"
+      },
+      "evidence_bindings": {
+        "statement": [
+          "TS3006b.B.dialog-act.dharshi.157",
+          "TS3006b.D.dialog-act.dharshi.364"
+        ],
+        "owner": [
+          "TS3006b.B.dialog-act.dharshi.157"
+        ],
+        "conflict": [
+          "TS3006b.B.dialog-act.dharshi.157"
+        ]
+      },
+      "raw_tool_input": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD023UID"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue includes PM assigning UI designer to design a menu for all functions; UI appears to take ownership and produce menu; provisional owner is MTD023UID.",
+          "evidence_da_ids": [
+            "TS3006b.B.dialog-act.dharshi.157",
+            "TS3006b.D.dialog-act.dharshi.364"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "Owner is explicitly MTD023UID in provisional_values; dialogue shows UI involvement taking design task.",
+          "evidence_da_ids": [
+            "TS3006b.B.dialog-act.dharshi.157"
+          ]
+        },
+        "deadline_check": {
+          "result": "uncertain",
+          "reason": "No deadline provided in dialogue or provisional values.",
+          "evidence_da_ids": []
+        },
+        "status_check": {
+          "result": "uncertain",
+          "reason": "No explicit status change in dialogue; status remains open per provisional values.",
+          "evidence_da_ids": []
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No contradictions found in the current evidence.",
+          "evidence_da_ids": [
+            "TS3006b.B.dialog-act.dharshi.157"
+          ],
+          "affected_fields": [
+            "statement",
+            "owner",
+            "deadline",
+            "status"
+          ]
+        },
+        "relation_check": {
+          "result": "uncertain",
+          "reason": "No explicit linkage to earlier items in current dialogue; peer_items exist but no explicit changed_fields.",
+          "evidence_da_ids": [],
+          "links": []
+        },
+        "next_action": "accept"
+      },
+      "protocol_normalizations": []
+    },
+    {
+      "item": "TS3006b#2",
+      "step": 2,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "get_prior_items",
+      "outcome": "lookup",
+      "decision": "retrieve",
+      "args": {
+        "query": "LCD screen menu",
+        "item_type": "actions"
+      },
+      "tool_result": {
+        "results": []
+      },
+      "new_info": false
+    },
+    {
+      "item": "TS3006b#2",
+      "step": 3,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "assess_item",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue includes PM assigning UI designer to design a menu for all functions; UI appears to take ownership and produce menu; provisional owner is MTD023UID.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.B.dialog-act.dharshi.157",
+              "quote": "Yeah ? I I'm going to make <disfmarker>"
+            },
+            {
+              "da_id": "TS3006b.D.dialog-act.dharshi.364",
+              "quote": "Yeah ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Owner is explicitly MTD023UID in provisional_values; dialogue shows UI involvement taking design task.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.B.dialog-act.dharshi.157",
+              "quote": "Yeah ? I I'm going to make <disfmarker>"
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "deadline_unresolved",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "uncertain",
+          "reason": "No explicit status change in dialogue; status remains open per provisional values.",
+          "quotes": [],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions found in the current evidence.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.B.dialog-act.dharshi.157",
+              "quote": "Yeah ? I I'm going to make <disfmarker>"
+            }
+          ],
+          "fields": [
+            "statement",
+            "owner",
+            "deadline",
+            "status"
+          ]
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "No explicit linkage to earlier items in current dialogue; peer_items exist but no explicit changed_fields.",
+          "links": [],
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "decision": "retrieve",
+      "reason": "unresolved_checks",
+      "assessed_text": "Design a multi-page LCD screen menu",
+      "requested_action": "retrieve",
+      "proposed_fields": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD023UID"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "TS3006b.B.dialog-act.dharshi.157",
+          "TS3006b.D.dialog-act.dharshi.364"
+        ]
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue includes PM assigning UI designer to design a menu for all functions; UI appears to take ownership and produce menu; provisional owner is MTD023UID.",
+          "quotes": [
+            "TS3006b.B.dialog-act.dharshi.157",
+            "TS3006b.D.dialog-act.dharshi.364"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Owner is explicitly MTD023UID in provisional_values; dialogue shows UI involvement taking design task.",
+          "quotes": [
+            "TS3006b.B.dialog-act.dharshi.157"
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "No deadline provided in dialogue or provisional values.",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "uncertain",
+          "reason": "No explicit status change in dialogue; status remains open per provisional values.",
+          "quotes": [],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions found in the current evidence.",
+          "quotes": [
+            "TS3006b.B.dialog-act.dharshi.157"
+          ],
+          "fields": [
+            "statement",
+            "owner",
+            "deadline",
+            "status"
+          ]
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "No explicit linkage to earlier items in current dialogue; peer_items exist but no explicit changed_fields.",
+          "links": [],
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD023UID"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue includes PM assigning UI designer to design a menu for all functions; UI appears to take ownership and produce menu; provisional owner is MTD023UID.",
+          "evidence_da_ids": [
+            "TS3006b.B.dialog-act.dharshi.157",
+            "TS3006b.D.dialog-act.dharshi.364"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "Owner is explicitly MTD023UID in provisional_values; dialogue shows UI involvement taking design task.",
+          "evidence_da_ids": [
+            "TS3006b.B.dialog-act.dharshi.157"
+          ]
+        },
+        "deadline_check": {
+          "result": "uncertain",
+          "reason": "No deadline provided in dialogue or provisional values.",
+          "evidence_da_ids": []
+        },
+        "status_check": {
+          "result": "uncertain",
+          "reason": "No explicit status change in dialogue; status remains open per provisional values.",
+          "evidence_da_ids": []
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No contradictions found in the current evidence.",
+          "evidence_da_ids": [
+            "TS3006b.B.dialog-act.dharshi.157"
+          ],
+          "affected_fields": [
+            "statement",
+            "owner",
+            "deadline",
+            "status"
+          ]
+        },
+        "relation_check": {
+          "result": "uncertain",
+          "reason": "No explicit linkage to earlier items in current dialogue; peer_items exist but no explicit changed_fields.",
+          "evidence_da_ids": [],
+          "links": []
+        },
+        "next_action": "retrieve"
+      },
+      "evidence_bindings": {
+        "statement": [
+          "TS3006b.B.dialog-act.dharshi.157",
+          "TS3006b.D.dialog-act.dharshi.364"
+        ],
+        "owner": [
+          "TS3006b.B.dialog-act.dharshi.157"
+        ],
+        "conflict": [
+          "TS3006b.B.dialog-act.dharshi.157"
+        ]
+      },
+      "raw_tool_input": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD023UID"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue includes PM assigning UI designer to design a menu for all functions; UI appears to take ownership and produce menu; provisional owner is MTD023UID.",
+          "evidence_da_ids": [
+            "TS3006b.B.dialog-act.dharshi.157",
+            "TS3006b.D.dialog-act.dharshi.364"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "Owner is explicitly MTD023UID in provisional_values; dialogue shows UI involvement taking design task.",
+          "evidence_da_ids": [
+            "TS3006b.B.dialog-act.dharshi.157"
+          ]
+        },
+        "deadline_check": {
+          "result": "uncertain",
+          "reason": "No deadline provided in dialogue or provisional values.",
+          "evidence_da_ids": []
+        },
+        "status_check": {
+          "result": "uncertain",
+          "reason": "No explicit status change in dialogue; status remains open per provisional values.",
+          "evidence_da_ids": []
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No contradictions found in the current evidence.",
+          "evidence_da_ids": [
+            "TS3006b.B.dialog-act.dharshi.157"
+          ],
+          "affected_fields": [
+            "statement",
+            "owner",
+            "deadline",
+            "status"
+          ]
+        },
+        "relation_check": {
+          "result": "uncertain",
+          "reason": "No explicit linkage to earlier items in current dialogue; peer_items exist but no explicit changed_fields.",
+          "evidence_da_ids": [],
+          "links": []
+        },
+        "next_action": "retrieve"
+      },
+      "protocol_normalizations": []
+    },
+    {
+      "item": "TS3006b#2",
+      "step": 4,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "get_prior_items",
+      "outcome": "lookup",
+      "decision": "retrieve",
+      "args": {
+        "query": "LCD screen menu",
+        "item_type": "actions"
+      },
+      "tool_result": {
+        "results": [],
+        "duplicate": true
+      },
+      "new_info": false
+    },
+    {
+      "item": "TS3006b#2",
+      "step": 4,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "stop",
+      "outcome": "pending",
+      "termination_reason": "no_progress",
+      "unresolved_fields": [
+        "deadline",
+        "status",
+        "related_items"
+      ]
+    }
+  ],
+  "lookups": 2,
+  "termination_reason": "no_progress",
+  "clarifications": [
+    {
+      "request_id": "500e478734a3ec59",
+      "item_key": "TS3006b#2",
+      "record_id": null,
+      "field": "deadline",
+      "question": "What is the agreed deadline, in its original wording?",
+      "item_text": "Design a multi-page LCD screen menu",
+      "reason": "deadline_unresolved",
+      "evidence_da_ids": [],
+      "available_evidence_da_ids": [
+        "TS3006b.B.dialog-act.dharshi.157",
+        "TS3006b.D.dialog-act.dharshi.364",
+        "TS3006b.D.dialog-act.dharshi.363",
+        "TS3006b.A.dialog-act.dharshi.323",
+        "TS3006b.B.dialog-act.dharshi.158",
+        "TS3006b.A.dialog-act.dharshi.324"
+      ],
+      "status": "open",
+      "termination_reason": "no_progress"
+    },
+    {
+      "request_id": "317dca6f8e5e782d",
+      "item_key": "TS3006b#2",
+      "record_id": null,
+      "field": "status",
+      "question": "What is this item's status at the end of the current meeting?",
+      "item_text": "Design a multi-page LCD screen menu",
+      "reason": "No explicit status change in dialogue; status remains open per provisional values.",
+      "evidence_da_ids": [],
+      "available_evidence_da_ids": [
+        "TS3006b.B.dialog-act.dharshi.157",
+        "TS3006b.D.dialog-act.dharshi.364",
+        "TS3006b.D.dialog-act.dharshi.363",
+        "TS3006b.A.dialog-act.dharshi.323",
+        "TS3006b.B.dialog-act.dharshi.158",
+        "TS3006b.A.dialog-act.dharshi.324"
+      ],
+      "status": "open",
+      "termination_reason": "no_progress"
+    },
+    {
+      "request_id": "f5e61497a4bf33b5",
+      "item_key": "TS3006b#2",
+      "record_id": null,
+      "field": "related_items",
+      "question": "Which earlier record does this item continue or change, and how?",
+      "item_text": "Design a multi-page LCD screen menu",
+      "reason": "No explicit linkage to earlier items in current dialogue; peer_items exist but no explicit changed_fields.",
+      "evidence_da_ids": [],
+      "available_evidence_da_ids": [
+        "TS3006b.B.dialog-act.dharshi.157",
+        "TS3006b.D.dialog-act.dharshi.364",
+        "TS3006b.D.dialog-act.dharshi.363",
+        "TS3006b.A.dialog-act.dharshi.323",
+        "TS3006b.B.dialog-act.dharshi.158",
+        "TS3006b.A.dialog-act.dharshi.324"
+      ],
+      "status": "open",
+      "termination_reason": "no_progress"
+    }
+  ]
+}

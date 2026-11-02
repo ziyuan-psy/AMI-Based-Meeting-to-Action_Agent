@@ -1,0 +1,579 @@
+{
+  "item": 4,
+  "fields": {
+    "item_key": "IS1008a#4",
+    "record_id": null,
+    "item_type": "actions",
+    "item_text": "The UI will CC Ed on all discussions or documents that are passed around.",
+    "state": "pending",
+    "recordable": true,
+    "fields": {
+      "status": "open",
+      "prior_context_needed": false,
+      "related_items": [],
+      "owner": [
+        "FIE038"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/IS1008a.json",
+          "locator": "IS1008a.B.dialog-act.s9553330.22"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/IS1008a.json",
+          "locator": "IS1008a.B.dialog-act.s9553330.21"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/IS1008a.json",
+          "locator": "IS1008a.A.dialog-act.s9553330.118"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/IS1008a.json",
+          "locator": "IS1008a.A.dialog-act.s9553330.117"
+        }
+      ]
+    },
+    "draft_fields": {
+      "status": "open",
+      "related_items": [],
+      "owner": [
+        "FIE038"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "prior_context_needed": false,
+      "used_participant_lookup": false,
+      "evidence_da_ids": [
+        "IS1008a.B.dialog-act.s9553330.22"
+      ]
+    },
+    "checks": {
+      "statement": {
+        "result": "pass",
+        "reason": "Dialogue shows UI agrees to CC Ed on any discussions or documents that are passed around; Ed is to be copied on all communications per B's proposal.",
+        "quotes": [
+          {
+            "da_id": "IS1008a.B.dialog-act.s9553330.22",
+            "quote": "Yeah , we can C_C_ him on any discussions or documents that are passed around ."
+          }
+        ],
+        "fields": [
+          "statement"
+        ]
+      },
+      "owner": {
+        "result": "pass",
+        "reason": "Owner is explicitly declared as FIE038 in provisional_values and supported by the dialogue where UI acknowledges CC.",
+        "quotes": [
+          {
+            "da_id": "IS1008a.B.dialog-act.s9553330.21",
+            "quote": "Yeah , of course <vocalsound> ."
+          },
+          {
+            "da_id": "IS1008a.B.dialog-act.s9553330.22",
+            "quote": "Yeah , we can C_C_ him on any discussions or documents that are passed around ."
+          }
+        ],
+        "fields": [
+          "owner"
+        ]
+      },
+      "deadline": {
+        "result": "uncertain",
+        "reason": "deadline_unresolved",
+        "quotes": [],
+        "fields": [
+          "deadline"
+        ]
+      },
+      "status": {
+        "result": "pass",
+        "reason": "Current dialogue indicates the item is open and not rejected or completed.",
+        "quotes": [
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.118",
+            "quote": "Yes ."
+          },
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.117",
+            "quote": "But what I request , okay , <gap> keep Ed in the loop , okay , in between your uh meeting and Christine meeting , because uh he should know what's happening ."
+          }
+        ],
+        "fields": [
+          "status"
+        ]
+      },
+      "conflict": {
+        "result": "pass",
+        "reason": "No contradictions detected within the delivered evidence.",
+        "quotes": [
+          {
+            "da_id": "IS1008a.B.dialog-act.s9553330.22",
+            "quote": "Yeah , we can C_C_ him on any discussions or documents that are passed around ."
+          }
+        ],
+        "fields": []
+      },
+      "relation": {
+        "result": "not_applicable",
+        "reason": "No prior related item to relate this to; this is a standalone articulation.",
+        "quotes": [],
+        "fields": [
+          "related_items"
+        ]
+      }
+    },
+    "unresolved_fields": [
+      "deadline"
+    ],
+    "observed_evidence_da_ids": [
+      "IS1008a.A.dialog-act.s9553330.117",
+      "IS1008a.B.dialog-act.s9553330.21",
+      "IS1008a.B.dialog-act.s9553330.22",
+      "IS1008a.A.dialog-act.s9553330.118",
+      "IS1008a.A.dialog-act.s9553330.116",
+      "IS1008a.A.dialog-act.s9553330.119"
+    ],
+    "initial_context": {
+      "item": {
+        "type": "actions",
+        "text": "The UI will CC Ed on all discussions or documents that are passed around.",
+        "flags": []
+      },
+      "current_meeting": "IS1008a",
+      "earlier_meetings": [],
+      "roster": [
+        {
+          "speaker": "A",
+          "participant_id": "MIO086",
+          "role": "PM"
+        },
+        {
+          "speaker": "B",
+          "participant_id": "FIE038",
+          "role": "UI"
+        },
+        {
+          "speaker": "C",
+          "participant_id": "FIE073",
+          "role": "ID"
+        },
+        {
+          "speaker": "D",
+          "participant_id": "MIE085",
+          "role": "ME"
+        }
+      ],
+      "observed_dialogue": [
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.117",
+          "meeting_id": "IS1008a",
+          "text": "But what I request , okay , <gap> keep Ed in the loop , okay , in between your uh meeting and Christine meeting , because uh he should know what's happening .",
+          "participant": "MIO086",
+          "role": "PM"
+        },
+        {
+          "da_id": "IS1008a.B.dialog-act.s9553330.21",
+          "meeting_id": "IS1008a",
+          "text": "Yeah , of course <vocalsound> .",
+          "participant": "FIE038",
+          "role": "UI"
+        },
+        {
+          "da_id": "IS1008a.B.dialog-act.s9553330.22",
+          "meeting_id": "IS1008a",
+          "text": "Yeah , we can C_C_ him on any discussions or documents that are passed around .",
+          "participant": "FIE038",
+          "role": "UI"
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.118",
+          "meeting_id": "IS1008a",
+          "text": "Yes .",
+          "participant": "MIO086",
+          "role": "PM"
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.116",
+          "participant": "MIO086",
+          "role": "PM",
+          "text": "Yep ."
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.119",
+          "participant": "MIO086",
+          "role": "PM",
+          "text": "Okay and please please copy all the mails , okay , all the discussions to me , okay ,"
+        }
+      ],
+      "peer_items": [
+        {
+          "item_key": "IS1008a#0",
+          "type": "actions",
+          "text": "Ed will provide a written project plan by the next meeting, including functional and technical design, required team size, timeframe, budget, and marketing plan."
+        },
+        {
+          "item_key": "IS1008a#1",
+          "type": "actions",
+          "text": "PM will send a copy of the slides to attendees after the meeting."
+        },
+        {
+          "item_key": "IS1008a#2",
+          "type": "actions",
+          "text": "UI will start determining the functional design."
+        },
+        {
+          "item_key": "IS1008a#3",
+          "type": "actions",
+          "text": "Industrial designer will identify which people from marketing, technical, and administration will contribute to the plan."
+        }
+      ],
+      "provisional_values": {
+        "owner": [
+          "FIE038"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "open",
+        "related_items": []
+      },
+      "candidate_evidence_da_ids": [
+        "IS1008a.A.dialog-act.s9553330.117",
+        "IS1008a.B.dialog-act.s9553330.21",
+        "IS1008a.B.dialog-act.s9553330.22",
+        "IS1008a.A.dialog-act.s9553330.118"
+      ]
+    },
+    "observed_documents": [],
+    "document_evidence": [],
+    "relation_evidence": [],
+    "history": [
+      {
+        "item": "IS1008a#4",
+        "step": 1,
+        "flags": [],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue shows UI agrees to CC Ed on any discussions or documents that are passed around; Ed is to be copied on all communications per B's proposal.",
+            "quotes": [
+              {
+                "da_id": "IS1008a.B.dialog-act.s9553330.22",
+                "quote": "Yeah , we can C_C_ him on any discussions or documents that are passed around ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Owner is explicitly declared as FIE038 in provisional_values and supported by the dialogue where UI acknowledges CC.",
+            "quotes": [
+              {
+                "da_id": "IS1008a.B.dialog-act.s9553330.21",
+                "quote": "Yeah , of course <vocalsound> ."
+              },
+              {
+                "da_id": "IS1008a.B.dialog-act.s9553330.22",
+                "quote": "Yeah , we can C_C_ him on any discussions or documents that are passed around ."
+              }
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "deadline_unresolved",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Current dialogue indicates the item is open and not rejected or completed.",
+            "quotes": [
+              {
+                "da_id": "IS1008a.A.dialog-act.s9553330.118",
+                "quote": "Yes ."
+              },
+              {
+                "da_id": "IS1008a.A.dialog-act.s9553330.117",
+                "quote": "But what I request , okay , <gap> keep Ed in the loop , okay , in between your uh meeting and Christine meeting , because uh he should know what's happening ."
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions detected within the delivered evidence.",
+            "quotes": [
+              {
+                "da_id": "IS1008a.B.dialog-act.s9553330.22",
+                "quote": "Yeah , we can C_C_ him on any discussions or documents that are passed around ."
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related item to relate this to; this is a standalone articulation.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "decision": "request_clarification",
+        "reason": "supported_statement_with_unresolved_fields",
+        "assessed_text": "The UI will CC Ed on all discussions or documents that are passed around.",
+        "requested_action": "accept",
+        "proposed_fields": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "FIE038"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "IS1008a.B.dialog-act.s9553330.22"
+          ]
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue shows UI agrees to CC Ed on any discussions or documents that are passed around; Ed is to be copied on all communications per B's proposal.",
+            "quotes": [
+              "IS1008a.B.dialog-act.s9553330.22"
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Owner is explicitly declared as FIE038 in provisional_values and supported by the dialogue where UI acknowledges CC.",
+            "quotes": [
+              "IS1008a.B.dialog-act.s9553330.21",
+              "IS1008a.B.dialog-act.s9553330.22"
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "No explicit deadline present in the dialogue for this action.",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Current dialogue indicates the item is open and not rejected or completed.",
+            "quotes": [
+              "IS1008a.A.dialog-act.s9553330.118",
+              "IS1008a.A.dialog-act.s9553330.117"
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions detected within the delivered evidence.",
+            "quotes": [
+              "IS1008a.B.dialog-act.s9553330.22"
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related item to relate this to; this is a standalone articulation.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "FIE038"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue shows UI agrees to CC Ed on any discussions or documents that are passed around; Ed is to be copied on all communications per B's proposal.",
+            "evidence_da_ids": [
+              "IS1008a.B.dialog-act.s9553330.22"
+            ]
+          },
+          "owner_check": {
+            "result": "pass",
+            "reason": "Owner is explicitly declared as FIE038 in provisional_values and supported by the dialogue where UI acknowledges CC.",
+            "evidence_da_ids": [
+              "IS1008a.B.dialog-act.s9553330.21",
+              "IS1008a.B.dialog-act.s9553330.22"
+            ]
+          },
+          "deadline_check": {
+            "result": "uncertain",
+            "reason": "No explicit deadline present in the dialogue for this action.",
+            "evidence_da_ids": []
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Current dialogue indicates the item is open and not rejected or completed.",
+            "evidence_da_ids": [
+              "IS1008a.A.dialog-act.s9553330.118",
+              "IS1008a.A.dialog-act.s9553330.117"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No contradictions detected within the delivered evidence.",
+            "evidence_da_ids": [
+              "IS1008a.B.dialog-act.s9553330.22"
+            ],
+            "affected_fields": []
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior related item to relate this to; this is a standalone articulation.",
+            "evidence_da_ids": []
+          },
+          "next_action": "accept"
+        },
+        "evidence_bindings": {
+          "statement": [
+            "IS1008a.B.dialog-act.s9553330.22"
+          ],
+          "owner": [
+            "IS1008a.B.dialog-act.s9553330.21",
+            "IS1008a.B.dialog-act.s9553330.22"
+          ],
+          "status": [
+            "IS1008a.A.dialog-act.s9553330.118",
+            "IS1008a.A.dialog-act.s9553330.117"
+          ],
+          "conflict": [
+            "IS1008a.B.dialog-act.s9553330.22"
+          ]
+        },
+        "raw_tool_input": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "FIE038"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue shows UI agrees to CC Ed on any discussions or documents that are passed around; Ed is to be copied on all communications per B's proposal.",
+            "evidence_da_ids": [
+              "IS1008a.B.dialog-act.s9553330.22"
+            ]
+          },
+          "owner_check": {
+            "result": "pass",
+            "reason": "Owner is explicitly declared as FIE038 in provisional_values and supported by the dialogue where UI acknowledges CC.",
+            "evidence_da_ids": [
+              "IS1008a.B.dialog-act.s9553330.21",
+              "IS1008a.B.dialog-act.s9553330.22"
+            ]
+          },
+          "deadline_check": {
+            "result": "uncertain",
+            "reason": "No explicit deadline present in the dialogue for this action.",
+            "evidence_da_ids": []
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Current dialogue indicates the item is open and not rejected or completed.",
+            "evidence_da_ids": [
+              "IS1008a.A.dialog-act.s9553330.118",
+              "IS1008a.A.dialog-act.s9553330.117"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No contradictions detected within the delivered evidence.",
+            "evidence_da_ids": [
+              "IS1008a.B.dialog-act.s9553330.22"
+            ]
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior related item to relate this to; this is a standalone articulation.",
+            "evidence_da_ids": []
+          },
+          "next_action": "accept"
+        },
+        "protocol_normalizations": [
+          "empty_affected_fields_for_no_conflict"
+        ]
+      },
+      {
+        "item": "IS1008a#4",
+        "step": 1,
+        "flags": [],
+        "action": "stop",
+        "outcome": "pending",
+        "termination_reason": "supported_statement_with_unresolved_fields",
+        "unresolved_fields": [
+          "deadline"
+        ]
+      }
+    ],
+    "lookups": 0,
+    "termination_reason": "supported_statement_with_unresolved_fields",
+    "clarifications": [
+      {
+        "request_id": "50997509671c1eea",
+        "item_key": "IS1008a#4",
+        "record_id": null,
+        "field": "deadline",
+        "question": "What is the agreed deadline, in its original wording?",
+        "item_text": "The UI will CC Ed on all discussions or documents that are passed around.",
+        "reason": "deadline_unresolved",
+        "evidence_da_ids": [],
+        "available_evidence_da_ids": [
+          "IS1008a.A.dialog-act.s9553330.117",
+          "IS1008a.B.dialog-act.s9553330.21",
+          "IS1008a.B.dialog-act.s9553330.22",
+          "IS1008a.A.dialog-act.s9553330.118",
+          "IS1008a.A.dialog-act.s9553330.116",
+          "IS1008a.A.dialog-act.s9553330.119"
+        ],
+        "status": "open",
+        "termination_reason": "supported_statement_with_unresolved_fields"
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "identity": {
+    "protocol_digest": "3e12e777261bc6f000043ee97b251767817e36fd701be2468b2a974be3579a96",
+    "judge": {
+      "name": "@30875-fall26-openai/gpt-5-nano",
+      "client": "mta.llm.OpenAIAdapter",
+      "endpoint": "https://api.portkey.ai/v1",
+      "supports_reasoning_effort": true
+    },
+    "type": "problems",
+    "input_sha256": "954fa770236e90147385e7c9592c1862f50d691aad8c679e58ae2cbd6dd73c50",
+    "system_texts": [
+      "Ambiguity about product scope: universal remote vs TV remote.",
+      "Feasibility: the proposed price around 25 EUR may be too high given production cost of 12.5 EUR.",
+      "There is a tight timeline to get the product to market."
+    ],
+    "gold_texts": [
+      "There was a misunderstanding about the target user group that forced the group to reevaluate their decisions on several components once they received the correct information.",
+      "The new requirement that the remote was only to control television forced the group to change some of their initial design ideas.",
+      "The group did not reach a decision on how to ensure that the remote would recognize all brands of televisions."
+    ]
+  },
+  "votes": {
+    "954fa770236e90147385": [
+      [
+        {
+          "sys": 0,
+          "gold": 1
+        },
+        {
+          "sys": 1,
+          "gold": 0
+        },
+        {
+          "sys": 2,
+          "gold": 2
+        }
+      ],
+      [
+        {
+          "sys": 0,
+          "gold": 1
+        }
+      ],
+      [
+        {
+          "sys": 0,
+          "gold": 1
+        }
+      ]
+    ]
+  },
+  "imported_from": {
+    "path": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\recall_candidate\\41654ab-v2\\replay\\TS3004b\\issue_votes.json",
+    "sha256": "73a61bb88cb64715300d5c735bf33b23d47039f7ee8cb220049149201577db06",
+    "kind": "verified_saved_development_study"
+  }
+}

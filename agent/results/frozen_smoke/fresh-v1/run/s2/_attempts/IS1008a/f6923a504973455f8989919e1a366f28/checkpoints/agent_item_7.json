@@ -1,0 +1,848 @@
+{
+  "item": 7,
+  "fields": {
+    "item_key": "IS1008a#7",
+    "record_id": null,
+    "item_type": "actions",
+    "item_text": "Collaborate to develop cost and marketing plan including pricing and market strategy.",
+    "state": "pending",
+    "recordable": true,
+    "fields": {
+      "status": "open",
+      "prior_context_needed": false,
+      "related_items": [],
+      "owner": [
+        "MIE085",
+        "FIE073"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/IS1008a.json",
+          "locator": "IS1008a.A.dialog-act.s9553330.89"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/IS1008a.json",
+          "locator": "IS1008a.A.dialog-act.s9553330.90"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/IS1008a.json",
+          "locator": "IS1008a.A.dialog-act.s9553330.96"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/IS1008a.json",
+          "locator": "IS1008a.A.dialog-act.s9553330.97"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/IS1008a.json",
+          "locator": "IS1008a.A.dialog-act.s9553330.98"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/IS1008a.json",
+          "locator": "IS1008a.D.dialog-act.s9553330.42"
+        }
+      ]
+    },
+    "draft_fields": {
+      "status": "open",
+      "related_items": [],
+      "owner": [
+        "MIE085",
+        "FIE073"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "prior_context_needed": false,
+      "used_participant_lookup": false,
+      "evidence_da_ids": [
+        "IS1008a.A.dialog-act.s9553330.89",
+        "IS1008a.A.dialog-act.s9553330.90",
+        "IS1008a.A.dialog-act.s9553330.96",
+        "IS1008a.A.dialog-act.s9553330.97",
+        "IS1008a.A.dialog-act.s9553330.98",
+        "IS1008a.D.dialog-act.s9553330.42"
+      ]
+    },
+    "checks": {
+      "statement": {
+        "result": "pass",
+        "reason": "The dialogue includes explicit discussion of cost, market strategy, and collaboration between PM and marketing/design roles, supporting a joint effort to develop a cost and marketing plan including pricing and market strategy.",
+        "quotes": [
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.89",
+            "quote": "but you are the core because you are in the marketing , okay ,"
+          },
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.90",
+            "quote": "so because you need to sell <disfmarker> and you're the responsible for the all the money , the finance , okay , tomorrow ."
+          },
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.96",
+            "quote": "so the best thing is you <disfmarker> uh both of uh the Christine and you discuss with yourself , okay , and come up with the cost ,"
+          },
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.97",
+            "quote": "and how we are going to compete in the market , okay , in the the technically , or in the sales wise , okay , the commercial wise , okay ."
+          },
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.98",
+            "quote": "Then uh we have to design , okay , how long it will take the whole project , okay , how much is going to cost us , and how much we are going to benefit for the company ."
+          },
+          {
+            "da_id": "IS1008a.D.dialog-act.s9553330.42",
+            "quote": "and then it's gotta be simple to use ."
+          }
+        ],
+        "fields": [
+          "statement"
+        ]
+      },
+      "owner": {
+        "result": "pass",
+        "reason": "Owner clearly identified in the item as MIE085 and FIE073; explicit basis confirmed by item_meta.",
+        "quotes": [
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.89",
+            "quote": "but you are the core because you are in the marketing , okay ,"
+          }
+        ],
+        "fields": [
+          "owner"
+        ]
+      },
+      "deadline": {
+        "result": "uncertain",
+        "reason": "deadline_unresolved",
+        "quotes": [],
+        "fields": [
+          "deadline"
+        ]
+      },
+      "status": {
+        "result": "pass",
+        "reason": "Status is open in the provisional values and the dialogue supports continuation; no conflicting signals.",
+        "quotes": [
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.89",
+            "quote": "but you are the core because you are in the marketing , okay ,"
+          },
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.90",
+            "quote": "so because you need to sell <disfmarker> and you're the responsible for the all the money , the finance , okay , tomorrow ."
+          }
+        ],
+        "fields": [
+          "status"
+        ]
+      },
+      "conflict": {
+        "result": "pass",
+        "reason": "No conflicting information found in the observed dialogue with this item; evidence aligns with stated task.",
+        "quotes": [
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.89",
+            "quote": "but you are the core because you are in the marketing , okay ,"
+          },
+          {
+            "da_id": "IS1008a.A.dialog-act.s9553330.90",
+            "quote": "so because you need to sell <disfmarker> and you're the responsible for the all the money , the finance , okay , tomorrow ."
+          }
+        ],
+        "fields": []
+      },
+      "relation": {
+        "result": "not_applicable",
+        "reason": "No prior related item provided to assess relation; this is a standalone next-step item.",
+        "quotes": [],
+        "fields": [
+          "related_items"
+        ]
+      }
+    },
+    "unresolved_fields": [
+      "deadline"
+    ],
+    "observed_evidence_da_ids": [
+      "IS1008a.A.dialog-act.s9553330.85",
+      "IS1008a.A.dialog-act.s9553330.86",
+      "IS1008a.A.dialog-act.s9553330.87",
+      "IS1008a.A.dialog-act.s9553330.88",
+      "IS1008a.A.dialog-act.s9553330.89",
+      "IS1008a.D.dialog-act.s9553330.43",
+      "IS1008a.A.dialog-act.s9553330.90",
+      "IS1008a.D.dialog-act.s9553330.44",
+      "IS1008a.A.dialog-act.s9553330.91",
+      "IS1008a.A.dialog-act.s9553330.96",
+      "IS1008a.A.dialog-act.s9553330.97",
+      "IS1008a.A.dialog-act.s9553330.98",
+      "IS1008a.D.dialog-act.s9553330.42",
+      "IS1008a.D.dialog-act.s9553330.45",
+      "IS1008a.A.dialog-act.s9553330.95",
+      "IS1008a.A.dialog-act.s9553330.99"
+    ],
+    "initial_context": {
+      "item": {
+        "type": "actions",
+        "text": "Collaborate to develop cost and marketing plan including pricing and market strategy.",
+        "flags": [
+          "JOINT_OWNER_CHECK"
+        ]
+      },
+      "current_meeting": "IS1008a",
+      "earlier_meetings": [],
+      "roster": [
+        {
+          "speaker": "A",
+          "participant_id": "MIO086",
+          "role": "PM"
+        },
+        {
+          "speaker": "B",
+          "participant_id": "FIE038",
+          "role": "UI"
+        },
+        {
+          "speaker": "C",
+          "participant_id": "FIE073",
+          "role": "ID"
+        },
+        {
+          "speaker": "D",
+          "participant_id": "MIE085",
+          "role": "ME"
+        }
+      ],
+      "observed_dialogue": [
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.85",
+          "meeting_id": "IS1008a",
+          "text": "Yes , so what I uh prefer maybe uh you need to interact uh more with the Christine , okay ,",
+          "participant": "MIO086",
+          "role": "PM"
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.86",
+          "meeting_id": "IS1008a",
+          "text": "because you know what she is going to do it , okay ,",
+          "participant": "MIO086",
+          "role": "PM"
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.87",
+          "meeting_id": "IS1008a",
+          "text": "and you know how to sell it . Okay ,",
+          "participant": "MIO086",
+          "role": "PM"
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.88",
+          "meeting_id": "IS1008a",
+          "text": "because uh she is doing the design ,",
+          "participant": "MIO086",
+          "role": "PM"
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.89",
+          "meeting_id": "IS1008a",
+          "text": "but you are the core because you are in the marketing , okay ,",
+          "participant": "MIO086",
+          "role": "PM"
+        },
+        {
+          "da_id": "IS1008a.D.dialog-act.s9553330.43",
+          "meeting_id": "IS1008a",
+          "text": "Yeah .",
+          "participant": "MIE085",
+          "role": "ME"
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.90",
+          "meeting_id": "IS1008a",
+          "text": "so because you need to sell <disfmarker> and you're the responsible for the all the money , the finance , okay , tomorrow .",
+          "participant": "MIO086",
+          "role": "PM"
+        },
+        {
+          "da_id": "IS1008a.D.dialog-act.s9553330.44",
+          "meeting_id": "IS1008a",
+          "text": "Mm-hmm .",
+          "participant": "MIE085",
+          "role": "ME"
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.91",
+          "meeting_id": "IS1008a",
+          "text": "So , what I prefer , okay , so you need to interact with the Christine more and uh within her team , okay , who is using the functional design or technical design , okay ,",
+          "participant": "MIO086",
+          "role": "PM"
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.96",
+          "meeting_id": "IS1008a",
+          "text": "so the best thing is you <disfmarker> uh both of uh the Christine and you discuss with yourself , okay , and come up with the cost ,",
+          "participant": "MIO086",
+          "role": "PM"
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.97",
+          "meeting_id": "IS1008a",
+          "text": "and how we are going to compete in the market , okay , in the the technically , or in the sales wise , okay , the commercial wise , okay .",
+          "participant": "MIO086",
+          "role": "PM"
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.98",
+          "meeting_id": "IS1008a",
+          "text": "Then uh we have to design , okay , how long it will take the whole project , okay , how much is going to cost us , and how much we are going to benefit for the company .",
+          "participant": "MIO086",
+          "role": "PM"
+        },
+        {
+          "da_id": "IS1008a.D.dialog-act.s9553330.42",
+          "participant": "MIE085",
+          "role": "ME",
+          "text": "and then it's gotta be simple to use ."
+        },
+        {
+          "da_id": "IS1008a.D.dialog-act.s9553330.45",
+          "participant": "MIE085",
+          "role": "ME",
+          "text": "Mm-hmm ."
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.95",
+          "participant": "MIO086",
+          "role": "PM",
+          "text": "Yes , that's <disfmarker> you have to decide , okay ,"
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.99",
+          "participant": "MIO086",
+          "role": "PM",
+          "text": "Okay , of course it's it's uh of benefit for everybody individually ."
+        }
+      ],
+      "peer_items": [
+        {
+          "item_key": "IS1008a#0",
+          "type": "actions",
+          "text": "A written project plan will be prepared and delivered by the next meeting."
+        },
+        {
+          "item_key": "IS1008a#1",
+          "type": "actions",
+          "text": "Produce a written plan detailing functional design, technical design, number of team members, timeframe, budget and market plan by two weeks."
+        },
+        {
+          "item_key": "IS1008a#2",
+          "type": "problems",
+          "text": "There is confusion about the project goal (some participants believed the project was to design a monitor, not a remote control) and no written functional/technical design or project plan exists yet; the team has not begun design work."
+        },
+        {
+          "item_key": "IS1008a#3",
+          "type": "decisions",
+          "text": "The product scope is defined as a remote control for television."
+        },
+        {
+          "item_key": "IS1008a#4",
+          "type": "decisions",
+          "text": "The written project plan will be provided within two weeks."
+        },
+        {
+          "item_key": "IS1008a#5",
+          "type": "actions",
+          "text": "UI038 will coordinate usability testing with Christine and Ed, start determining the functional design, and CC ME on all discussions and copy emails to PM."
+        },
+        {
+          "item_key": "IS1008a#6",
+          "type": "actions",
+          "text": "Conduct market research on remote controls; identify target market and competitors."
+        }
+      ],
+      "provisional_values": {
+        "owner": [
+          "MIE085",
+          "FIE073"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "open",
+        "related_items": []
+      },
+      "candidate_evidence_da_ids": [
+        "IS1008a.A.dialog-act.s9553330.85",
+        "IS1008a.A.dialog-act.s9553330.86",
+        "IS1008a.A.dialog-act.s9553330.87",
+        "IS1008a.A.dialog-act.s9553330.88",
+        "IS1008a.A.dialog-act.s9553330.89",
+        "IS1008a.D.dialog-act.s9553330.43",
+        "IS1008a.A.dialog-act.s9553330.90",
+        "IS1008a.D.dialog-act.s9553330.44",
+        "IS1008a.A.dialog-act.s9553330.91",
+        "IS1008a.A.dialog-act.s9553330.96",
+        "IS1008a.A.dialog-act.s9553330.97",
+        "IS1008a.A.dialog-act.s9553330.98"
+      ]
+    },
+    "observed_documents": [],
+    "document_evidence": [],
+    "relation_evidence": [],
+    "history": [
+      {
+        "item": "IS1008a#7",
+        "step": 1,
+        "flags": [
+          "JOINT_OWNER_CHECK"
+        ],
+        "action": "assess_item",
+        "outcome": "invalid_action",
+        "error": "Correct these argument fields: deadline_check/evidence_da_ids: [] should be non-empty",
+        "raw_tool_input": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "MIE085",
+            "FIE073"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "statement": {
+            "result": "pass",
+            "reason": "The dialogue includes explicit discussion of cost, market strategy, and collaboration between PM and marketing/design roles, supporting a joint effort to develop a cost and marketing plan including pricing and market strategy.",
+            "evidence_da_ids": [
+              "IS1008a.A.dialog-act.s9553330.89",
+              "IS1008a.A.dialog-act.s9553330.90",
+              "IS1008a.A.dialog-act.s9553330.96",
+              "IS1008a.A.dialog-act.s9553330.97",
+              "IS1008a.A.dialog-act.s9553330.98",
+              "IS1008a.D.dialog-act.s9553330.42"
+            ]
+          },
+          "owner_check": {
+            "result": "pass",
+            "reason": "Owner clearly identified in the item as MIE085 and FIE073; explicit basis confirmed by item_meta.",
+            "evidence_da_ids": [
+              "IS1008a.A.dialog-act.s9553330.89"
+            ]
+          },
+          "deadline_check": {
+            "result": "pass",
+            "reason": "No deadline stated in the item; therefore cannot be violated; evidence not applicable.",
+            "evidence_da_ids": []
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Status is open in the provisional values and the dialogue supports continuation; no conflicting signals.",
+            "evidence_da_ids": [
+              "IS1008a.A.dialog-act.s9553330.89",
+              "IS1008a.A.dialog-act.s9553330.90"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No conflicting information found in the observed dialogue with this item; evidence aligns with stated task.",
+            "evidence_da_ids": [
+              "IS1008a.A.dialog-act.s9553330.89",
+              "IS1008a.A.dialog-act.s9553330.90"
+            ]
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior related item provided to assess relation; this is a standalone next-step item.",
+            "evidence_da_ids": []
+          },
+          "next_action": "accept"
+        }
+      },
+      {
+        "item": "IS1008a#7",
+        "step": 2,
+        "flags": [
+          "JOINT_OWNER_CHECK"
+        ],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "The dialogue includes explicit discussion of cost, market strategy, and collaboration between PM and marketing/design roles, supporting a joint effort to develop a cost and marketing plan including pricing and market strategy.",
+            "quotes": [
+              {
+                "da_id": "IS1008a.A.dialog-act.s9553330.89",
+                "quote": "but you are the core because you are in the marketing , okay ,"
+              },
+              {
+                "da_id": "IS1008a.A.dialog-act.s9553330.90",
+                "quote": "so because you need to sell <disfmarker> and you're the responsible for the all the money , the finance , okay , tomorrow ."
+              },
+              {
+                "da_id": "IS1008a.A.dialog-act.s9553330.96",
+                "quote": "so the best thing is you <disfmarker> uh both of uh the Christine and you discuss with yourself , okay , and come up with the cost ,"
+              },
+              {
+                "da_id": "IS1008a.A.dialog-act.s9553330.97",
+                "quote": "and how we are going to compete in the market , okay , in the the technically , or in the sales wise , okay , the commercial wise , okay ."
+              },
+              {
+                "da_id": "IS1008a.A.dialog-act.s9553330.98",
+                "quote": "Then uh we have to design , okay , how long it will take the whole project , okay , how much is going to cost us , and how much we are going to benefit for the company ."
+              },
+              {
+                "da_id": "IS1008a.D.dialog-act.s9553330.42",
+                "quote": "and then it's gotta be simple to use ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Owner clearly identified in the item as MIE085 and FIE073; explicit basis confirmed by item_meta.",
+            "quotes": [
+              {
+                "da_id": "IS1008a.A.dialog-act.s9553330.89",
+                "quote": "but you are the core because you are in the marketing , okay ,"
+              }
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "deadline_unresolved",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Status is open in the provisional values and the dialogue supports continuation; no conflicting signals.",
+            "quotes": [
+              {
+                "da_id": "IS1008a.A.dialog-act.s9553330.89",
+                "quote": "but you are the core because you are in the marketing , okay ,"
+              },
+              {
+                "da_id": "IS1008a.A.dialog-act.s9553330.90",
+                "quote": "so because you need to sell <disfmarker> and you're the responsible for the all the money , the finance , okay , tomorrow ."
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting information found in the observed dialogue with this item; evidence aligns with stated task.",
+            "quotes": [
+              {
+                "da_id": "IS1008a.A.dialog-act.s9553330.89",
+                "quote": "but you are the core because you are in the marketing , okay ,"
+              },
+              {
+                "da_id": "IS1008a.A.dialog-act.s9553330.90",
+                "quote": "so because you need to sell <disfmarker> and you're the responsible for the all the money , the finance , okay , tomorrow ."
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related item provided to assess relation; this is a standalone next-step item.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "decision": "request_clarification",
+        "reason": "supported_statement_with_unresolved_fields",
+        "assessed_text": "Collaborate to develop cost and marketing plan including pricing and market strategy.",
+        "requested_action": "accept",
+        "proposed_fields": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "MIE085",
+            "FIE073"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.89",
+            "IS1008a.A.dialog-act.s9553330.90",
+            "IS1008a.A.dialog-act.s9553330.96",
+            "IS1008a.A.dialog-act.s9553330.97",
+            "IS1008a.A.dialog-act.s9553330.98",
+            "IS1008a.D.dialog-act.s9553330.42"
+          ]
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "The dialogue includes explicit discussion of cost, market strategy, and collaboration between PM and marketing/design roles, supporting a joint effort to develop a cost and marketing plan including pricing and market strategy.",
+            "quotes": [
+              "IS1008a.A.dialog-act.s9553330.89",
+              "IS1008a.A.dialog-act.s9553330.90",
+              "IS1008a.A.dialog-act.s9553330.96",
+              "IS1008a.A.dialog-act.s9553330.97",
+              "IS1008a.A.dialog-act.s9553330.98",
+              "IS1008a.D.dialog-act.s9553330.42"
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Owner clearly identified in the item as MIE085 and FIE073; explicit basis confirmed by item_meta.",
+            "quotes": [
+              "IS1008a.A.dialog-act.s9553330.89"
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "No explicit deadline stated in the dialogue or item metadata.",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Status is open in the provisional values and the dialogue supports continuation; no conflicting signals.",
+            "quotes": [
+              "IS1008a.A.dialog-act.s9553330.89",
+              "IS1008a.A.dialog-act.s9553330.90"
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting information found in the observed dialogue with this item; evidence aligns with stated task.",
+            "quotes": [
+              "IS1008a.A.dialog-act.s9553330.89",
+              "IS1008a.A.dialog-act.s9553330.90"
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related item provided to assess relation; this is a standalone next-step item.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "MIE085",
+            "FIE073"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "statement": {
+            "result": "pass",
+            "reason": "The dialogue includes explicit discussion of cost, market strategy, and collaboration between PM and marketing/design roles, supporting a joint effort to develop a cost and marketing plan including pricing and market strategy.",
+            "evidence_da_ids": [
+              "IS1008a.A.dialog-act.s9553330.89",
+              "IS1008a.A.dialog-act.s9553330.90",
+              "IS1008a.A.dialog-act.s9553330.96",
+              "IS1008a.A.dialog-act.s9553330.97",
+              "IS1008a.A.dialog-act.s9553330.98",
+              "IS1008a.D.dialog-act.s9553330.42"
+            ]
+          },
+          "owner_check": {
+            "result": "pass",
+            "reason": "Owner clearly identified in the item as MIE085 and FIE073; explicit basis confirmed by item_meta.",
+            "evidence_da_ids": [
+              "IS1008a.A.dialog-act.s9553330.89"
+            ]
+          },
+          "deadline_check": {
+            "result": "uncertain",
+            "reason": "No explicit deadline stated in the dialogue or item metadata.",
+            "evidence_da_ids": []
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Status is open in the provisional values and the dialogue supports continuation; no conflicting signals.",
+            "evidence_da_ids": [
+              "IS1008a.A.dialog-act.s9553330.89",
+              "IS1008a.A.dialog-act.s9553330.90"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No conflicting information found in the observed dialogue with this item; evidence aligns with stated task.",
+            "evidence_da_ids": [
+              "IS1008a.A.dialog-act.s9553330.89",
+              "IS1008a.A.dialog-act.s9553330.90"
+            ],
+            "affected_fields": []
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior related item provided to assess relation; this is a standalone next-step item.",
+            "evidence_da_ids": []
+          },
+          "next_action": "accept"
+        },
+        "evidence_bindings": {
+          "statement": [
+            "IS1008a.A.dialog-act.s9553330.89",
+            "IS1008a.A.dialog-act.s9553330.90",
+            "IS1008a.A.dialog-act.s9553330.96",
+            "IS1008a.A.dialog-act.s9553330.97",
+            "IS1008a.A.dialog-act.s9553330.98",
+            "IS1008a.D.dialog-act.s9553330.42"
+          ],
+          "owner": [
+            "IS1008a.A.dialog-act.s9553330.89"
+          ],
+          "status": [
+            "IS1008a.A.dialog-act.s9553330.89",
+            "IS1008a.A.dialog-act.s9553330.90"
+          ],
+          "conflict": [
+            "IS1008a.A.dialog-act.s9553330.89",
+            "IS1008a.A.dialog-act.s9553330.90"
+          ]
+        },
+        "raw_tool_input": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "MIE085",
+            "FIE073"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "statement": {
+            "result": "pass",
+            "reason": "The dialogue includes explicit discussion of cost, market strategy, and collaboration between PM and marketing/design roles, supporting a joint effort to develop a cost and marketing plan including pricing and market strategy.",
+            "evidence_da_ids": [
+              "IS1008a.A.dialog-act.s9553330.89",
+              "IS1008a.A.dialog-act.s9553330.90",
+              "IS1008a.A.dialog-act.s9553330.96",
+              "IS1008a.A.dialog-act.s9553330.97",
+              "IS1008a.A.dialog-act.s9553330.98",
+              "IS1008a.D.dialog-act.s9553330.42"
+            ]
+          },
+          "owner_check": {
+            "result": "pass",
+            "reason": "Owner clearly identified in the item as MIE085 and FIE073; explicit basis confirmed by item_meta.",
+            "evidence_da_ids": [
+              "IS1008a.A.dialog-act.s9553330.89"
+            ]
+          },
+          "deadline_check": {
+            "result": "uncertain",
+            "reason": "No explicit deadline stated in the dialogue or item metadata.",
+            "evidence_da_ids": []
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Status is open in the provisional values and the dialogue supports continuation; no conflicting signals.",
+            "evidence_da_ids": [
+              "IS1008a.A.dialog-act.s9553330.89",
+              "IS1008a.A.dialog-act.s9553330.90"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No conflicting information found in the observed dialogue with this item; evidence aligns with stated task.",
+            "evidence_da_ids": [
+              "IS1008a.A.dialog-act.s9553330.89",
+              "IS1008a.A.dialog-act.s9553330.90"
+            ],
+            "affected_fields": []
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior related item provided to assess relation; this is a standalone next-step item.",
+            "evidence_da_ids": []
+          },
+          "next_action": "accept"
+        },
+        "protocol_normalizations": []
+      },
+      {
+        "item": "IS1008a#7",
+        "step": 2,
+        "flags": [
+          "JOINT_OWNER_CHECK"
+        ],
+        "action": "stop",
+        "outcome": "pending",
+        "termination_reason": "supported_statement_with_unresolved_fields",
+        "unresolved_fields": [
+          "deadline"
+        ]
+      }
+    ],
+    "lookups": 0,
+    "termination_reason": "supported_statement_with_unresolved_fields",
+    "clarifications": [
+      {
+        "request_id": "5431e24214b9ca82",
+        "item_key": "IS1008a#7",
+        "record_id": null,
+        "field": "deadline",
+        "question": "What is the agreed deadline, in its original wording?",
+        "item_text": "Collaborate to develop cost and marketing plan including pricing and market strategy.",
+        "reason": "deadline_unresolved",
+        "evidence_da_ids": [],
+        "available_evidence_da_ids": [
+          "IS1008a.A.dialog-act.s9553330.85",
+          "IS1008a.A.dialog-act.s9553330.86",
+          "IS1008a.A.dialog-act.s9553330.87",
+          "IS1008a.A.dialog-act.s9553330.88",
+          "IS1008a.A.dialog-act.s9553330.89",
+          "IS1008a.D.dialog-act.s9553330.43",
+          "IS1008a.A.dialog-act.s9553330.90",
+          "IS1008a.D.dialog-act.s9553330.44",
+          "IS1008a.A.dialog-act.s9553330.91",
+          "IS1008a.A.dialog-act.s9553330.96",
+          "IS1008a.A.dialog-act.s9553330.97",
+          "IS1008a.A.dialog-act.s9553330.98",
+          "IS1008a.D.dialog-act.s9553330.42",
+          "IS1008a.D.dialog-act.s9553330.45",
+          "IS1008a.A.dialog-act.s9553330.95",
+          "IS1008a.A.dialog-act.s9553330.99"
+        ],
+        "status": "open",
+        "termination_reason": "supported_statement_with_unresolved_fields"
+      }
+    ]
+  }
+}

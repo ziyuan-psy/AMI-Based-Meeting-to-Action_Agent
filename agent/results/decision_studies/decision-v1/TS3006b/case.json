@@ -1,0 +1,81 @@
+{
+  "status": "COMPLETED",
+  "meeting_id": "TS3006b",
+  "input_sha256": "5b9b91a6010a7aef1233695f67b41160fb82e462fdccc7ba907199b1bc09ab9b",
+  "candidate_source": "frozen_live_trace-v1-ts3006ab",
+  "candidate_sha256": "d68c2327cbd4bbc4de7a37ead3d23787c495ce3608cd72988d11f3041d819c11",
+  "before_prompt_sha256": "e9bf6902cf04f1d3dec5c458da13edbf0faf0ae04175c2ec6ffa667e64cb3577",
+  "after_prompt_sha256": "85008bc69443ad5fadc2bda7319fe38c63773af646ff7f8012e8826bcfc8227a",
+  "runtime_control": {
+    "limits": {
+      "calls": 80,
+      "tokens": 1000000,
+      "request_seconds": 300.0,
+      "meeting_seconds": 1200.0,
+      "inflight": 4,
+      "retries": 2,
+      "backoff": 0.5
+    },
+    "attempted_calls": 3,
+    "charged_tokens": 45078,
+    "unknown_usage_tokens": 0,
+    "reserved_tokens": 0,
+    "max_inflight_seen": 3,
+    "failure": null,
+    "attempts": [
+      {
+        "attempt": 0,
+        "stage": "consolidate",
+        "reserved_tokens": 47393,
+        "input_bound": 15393,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 14372,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 3100,
+        "output_tokens": 11272
+      },
+      {
+        "attempt": 1,
+        "stage": "consolidate",
+        "reserved_tokens": 47393,
+        "input_bound": 15393,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 14493,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 3100,
+        "output_tokens": 11393
+      },
+      {
+        "attempt": 2,
+        "stage": "consolidate",
+        "reserved_tokens": 47393,
+        "input_bound": 15393,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 16213,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 3100,
+        "output_tokens": 13113
+      }
+    ],
+    "input_bound_method": "utf8_request_bytes_plus_padding",
+    "unknown_usage_policy": "charge_full_reservation"
+  },
+  "usage": {
+    "calls": 3,
+    "in": 9300,
+    "out": 35778,
+    "stages": {
+      "consolidate": {
+        "calls": 3,
+        "in": 9300,
+        "out": 35778
+      }
+    }
+  }
+}

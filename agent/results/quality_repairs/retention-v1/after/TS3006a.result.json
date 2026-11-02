@@ -1,0 +1,91 @@
+{
+  "mode": "s2",
+  "meeting_id": "TS3006a",
+  "status": "FAILED",
+  "reason": "stage_failed",
+  "failed_stage": "select",
+  "failure": {
+    "code": "stage_failed",
+    "status": "FAILED",
+    "stage": "select",
+    "error_type": "ValueError"
+  },
+  "runtime_control": {
+    "limits": {
+      "calls": 65,
+      "tokens": 819727,
+      "request_seconds": 300.0,
+      "meeting_seconds": 977.076,
+      "inflight": 4,
+      "retries": 2,
+      "backoff": 0.5
+    },
+    "attempted_calls": 2,
+    "charged_tokens": 27966,
+    "unknown_usage_tokens": 0,
+    "reserved_tokens": 0,
+    "max_inflight_seen": 1,
+    "failure": {
+      "code": "stage_failed",
+      "status": "FAILED",
+      "stage": "select",
+      "error_type": "ValueError"
+    },
+    "attempts": [
+      {
+        "attempt": 0,
+        "stage": "select",
+        "reserved_tokens": 54725,
+        "input_bound": 22725,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 12108,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 6253,
+        "output_tokens": 5855
+      },
+      {
+        "attempt": 1,
+        "stage": "select",
+        "reserved_tokens": 54780,
+        "input_bound": 22780,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 15858,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 6265,
+        "output_tokens": 9593
+      }
+    ],
+    "input_bound_method": "utf8_request_bytes_plus_padding",
+    "unknown_usage_policy": "charge_full_reservation"
+  },
+  "run_metadata": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\quality_repairs\\retention-v1\\after\\s2\\TS3006a.run.json",
+  "stage_trace": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\quality_repairs\\retention-v1\\after\\s2\\TS3006a.stages.jsonl",
+  "partial_artifact": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\quality_repairs\\retention-v1\\after\\s2\\_attempts\\TS3006a\\b8736720fd694e4d907010d83da09877\\partial.json",
+  "actual_new_usage": {
+    "calls": 2,
+    "in": 12518,
+    "out": 15448,
+    "stages": {
+      "select": {
+        "calls": 2,
+        "in": 12518,
+        "out": 15448
+      }
+    }
+  },
+  "whole_meeting_budget": {
+    "captured_upstream": {
+      "attempts": 15,
+      "charged_tokens": 180273,
+      "elapsed_seconds": 222.924,
+      "source_metadata_sha256": "97f2407fc582158fc0b10b74abf57f2c1a3370e12bb6bf62afd8492912483b76",
+      "normalized_sha256": "e2a36b603e5a25c8b3c481a4e97dcd8f9f6bfde0b7539ec8e7a1f61a2b43282e"
+    },
+    "combined_attempts": 17,
+    "combined_charged_tokens": 208239
+  }
+}

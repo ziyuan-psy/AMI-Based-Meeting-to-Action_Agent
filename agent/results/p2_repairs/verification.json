@@ -1,0 +1,327 @@
+{
+  "created_at": "2026-10-28T16:59:43.928447+00:00",
+  "scope": "Development validation; not independently adjudicated or final evaluation.",
+  "branch": "agent-development",
+  "head": "df0e6ed3fdede653e815fa8d03dec12dd0b4f250",
+  "committed": false,
+  "tests": {
+    "passed": 265,
+    "subtests_passed": 11,
+    "seconds": 39.08,
+    "api_calls": 0,
+    "command": "python -X utf8 -m pytest agent/tests tests -q -p no:cacheprovider --tb=short --maxfail=3"
+  },
+  "protected_annotation_files_unchanged": 28,
+  "earlier_artifact_hashes_unchanged": 2084,
+  "source_differences_from_current": {
+    "repair-v1": [
+      "agent/src/mta/config.py",
+      "agent/src/mta/p2.py",
+      "agent/src/mta/p2_repair.py"
+    ],
+    "fresh-v1": [
+      "agent/src/mta/config.py",
+      "agent/src/mta/p2.py"
+    ],
+    "repair-v3": []
+  },
+  "source_difference_explanation": "Initial repair-v1/fresh-v1 use policy 2. Final policy 3 adds advisory/no-conflict normalization and current-dialogue routing. repair-v3 and focused-v3 use the exact current source; all older captures and raw scoring remain frozen.",
+  "focused_live_shared_budget": {
+    "limits": {
+      "calls": 80,
+      "tokens": 1000000,
+      "request_seconds": 300.0,
+      "meeting_seconds": 1200.0,
+      "inflight": 4,
+      "retries": 2,
+      "backoff": 0.5
+    },
+    "attempted_calls": 13,
+    "charged_tokens": 108427,
+    "unknown_usage_tokens": 0,
+    "reserved_tokens": 0,
+    "max_inflight_seen": 1,
+    "failure": null,
+    "attempts": [
+      {
+        "attempt": 0,
+        "stage": "p2_check",
+        "reserved_tokens": 57683,
+        "input_bound": 25683,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 5885,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 5253,
+        "output_tokens": 632
+      },
+      {
+        "attempt": 1,
+        "stage": "p2_check",
+        "reserved_tokens": 58900,
+        "input_bound": 26900,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 6452,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 5553,
+        "output_tokens": 899
+      },
+      {
+        "attempt": 2,
+        "stage": "p2_check",
+        "reserved_tokens": 56964,
+        "input_bound": 24964,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 7877,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 4713,
+        "output_tokens": 3164
+      },
+      {
+        "attempt": 3,
+        "stage": "agent",
+        "reserved_tokens": 55041,
+        "input_bound": 23041,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 5347,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 4483,
+        "output_tokens": 864
+      },
+      {
+        "attempt": 4,
+        "stage": "p2_check",
+        "reserved_tokens": 60957,
+        "input_bound": 28957,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 8197,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 5617,
+        "output_tokens": 2580
+      },
+      {
+        "attempt": 5,
+        "stage": "agent",
+        "reserved_tokens": 58980,
+        "input_bound": 26980,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 6783,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 5411,
+        "output_tokens": 1372
+      },
+      {
+        "attempt": 6,
+        "stage": "p2_check",
+        "reserved_tokens": 64999,
+        "input_bound": 32999,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 8946,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 6506,
+        "output_tokens": 2440
+      },
+      {
+        "attempt": 7,
+        "stage": "agent",
+        "reserved_tokens": 63590,
+        "input_bound": 31590,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 7340,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 6476,
+        "output_tokens": 864
+      },
+      {
+        "attempt": 8,
+        "stage": "p2_check",
+        "reserved_tokens": 73945,
+        "input_bound": 41945,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 10301,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 8572,
+        "output_tokens": 1729
+      },
+      {
+        "attempt": 9,
+        "stage": "p2_check",
+        "reserved_tokens": 74798,
+        "input_bound": 42798,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 11619,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 8741,
+        "output_tokens": 2878
+      },
+      {
+        "attempt": 10,
+        "stage": "agent",
+        "reserved_tokens": 70930,
+        "input_bound": 38930,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 9901,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 8337,
+        "output_tokens": 1564
+      },
+      {
+        "attempt": 11,
+        "stage": "p2_check",
+        "reserved_tokens": 79460,
+        "input_bound": 47460,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 11101,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 9862,
+        "output_tokens": 1239
+      },
+      {
+        "attempt": 12,
+        "stage": "p2_check",
+        "reserved_tokens": 58840,
+        "input_bound": 26840,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 8678,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 5537,
+        "output_tokens": 3141
+      }
+    ],
+    "input_bound_method": "utf8_request_bytes_plus_padding",
+    "unknown_usage_policy": "charge_full_reservation"
+  },
+  "original_response_replay_api_calls": 0,
+  "controls": [
+    {
+      "case": "repair-v1",
+      "meeting": "IS1008a",
+      "new_attempts": 12,
+      "whole_attempts": 22,
+      "whole_charged_tokens": 193630,
+      "unknown_usage_tokens": 0,
+      "p2_items": 9,
+      "recordable": 8,
+      "missing_statement_selection": 0
+    },
+    {
+      "case": "repair-v1",
+      "meeting": "TS3006a",
+      "new_attempts": 22,
+      "whole_attempts": 37,
+      "whole_charged_tokens": 303169,
+      "unknown_usage_tokens": 0,
+      "p2_items": 14,
+      "recordable": 14,
+      "missing_statement_selection": 0
+    },
+    {
+      "case": "repair-v1",
+      "meeting": "TS3006b",
+      "new_attempts": 26,
+      "whole_attempts": 44,
+      "whole_charged_tokens": 446777,
+      "unknown_usage_tokens": 0,
+      "p2_items": 13,
+      "recordable": 13,
+      "missing_statement_selection": 0
+    },
+    {
+      "case": "fresh-v1",
+      "meeting": "IS1008a",
+      "new_attempts": 40,
+      "whole_attempts": 40,
+      "whole_charged_tokens": 308500,
+      "unknown_usage_tokens": 0,
+      "p2_items": 8,
+      "recordable": 4,
+      "missing_statement_selection": 0
+    },
+    {
+      "case": "fresh-v1",
+      "meeting": "TS3006a",
+      "new_attempts": 42,
+      "whole_attempts": 42,
+      "whole_charged_tokens": 373676,
+      "unknown_usage_tokens": 42370,
+      "p2_items": 14,
+      "recordable": 13,
+      "missing_statement_selection": 0
+    },
+    {
+      "case": "fresh-v1",
+      "meeting": "TS3006b",
+      "new_attempts": 44,
+      "whole_attempts": 44,
+      "whole_charged_tokens": 482309,
+      "unknown_usage_tokens": 46466,
+      "p2_items": 14,
+      "recordable": 11,
+      "missing_statement_selection": 0
+    },
+    {
+      "case": "repair-v3",
+      "meeting": "IS1008a",
+      "new_attempts": 11,
+      "whole_attempts": 21,
+      "whole_charged_tokens": 188800,
+      "unknown_usage_tokens": 0,
+      "p2_items": 9,
+      "recordable": 7,
+      "missing_statement_selection": 0
+    },
+    {
+      "case": "repair-v3",
+      "meeting": "TS3006a",
+      "new_attempts": 23,
+      "whole_attempts": 38,
+      "whole_charged_tokens": 310098,
+      "unknown_usage_tokens": 0,
+      "p2_items": 14,
+      "recordable": 14,
+      "missing_statement_selection": 0
+    },
+    {
+      "case": "repair-v3",
+      "meeting": "TS3006b",
+      "new_attempts": 31,
+      "whole_attempts": 49,
+      "whole_charged_tokens": 487733,
+      "unknown_usage_tokens": 0,
+      "p2_items": 13,
+      "recordable": 9,
+      "missing_statement_selection": 0
+    }
+  ],
+  "all_output_and_sidecar_validators_pass": true,
+  "credentials": {
+    "inherited_key_available": true,
+    "matches": 0,
+    "key_not_stored_or_displayed": true
+  }
+}

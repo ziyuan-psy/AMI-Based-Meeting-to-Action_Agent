@@ -7,9 +7,11 @@ from __future__ import annotations
 
 import json
 import os
+import threading
 from types import SimpleNamespace as NS
 
 from . import config
+from .control import RunStopped, input_token_bound, launch, usage_tokens
 
 
 class OpenAIAdapter:
@@ -41,9 +43,12 @@ class OpenAIAdapter:
                         out.append({"role": "tool", "tool_call_id": b["tool_use_id"], "content": body})
         return out
 
-    def create(self, model, system, messages, max_tokens=4096, tools=None, tool_choice=None):
+    def create(self, model, system, messages, max_tokens=4096, tools=None, tool_choice=None, reasoning_effort=None,
+               request_timeout=None):
         kw = dict(model=model, messages=self._messages(system, messages),
                   max_completion_tokens=max(max_tokens, config.OPENAI_MIN_COMPLETION_TOKENS))
+        if reasoning_effort:
+            kw["reasoning_effort"] = reasoning_effort
         if tools:
             kw["tools"] = [{"type": "function", "function": {
                 "name": t["name"], "description": t["description"], "parameters": t["input_schema"]}} for t in tools]
@@ -51,7 +56,8 @@ class OpenAIAdapter:
                 kw["tool_choice"] = {"type": "function", "function": {"name": tool_choice["name"]}}
             elif tool_choice:
                 kw["tool_choice"] = "required"
-        resp = self.client.chat.completions.create(**kw)
+        client = self.client.with_options(timeout=request_timeout, max_retries=0) if request_timeout is not None else self.client
+        resp = client.chat.completions.create(**kw)
         msg = resp.choices[0].message
         content = []
         if msg.content:
@@ -63,8 +69,8 @@ class OpenAIAdapter:
                 args = {}
             content.append(NS(type="tool_use", id=tc.id, name=tc.function.name, input=args))
         u = resp.usage
-        return NS(content=content, usage=NS(input_tokens=getattr(u, "prompt_tokens", 0),
-                                            output_tokens=getattr(u, "completion_tokens", 0)))
+        return NS(content=content, usage=NS(input_tokens=getattr(u, "prompt_tokens", None),
+                                            output_tokens=getattr(u, "completion_tokens", None)) if u else None)
 
 
 class LLM:
@@ -80,30 +86,129 @@ class LLM:
                 raise RuntimeError("Set OPENAI_API_KEY (or ANTHROPIC_API_KEY) in .env")
         self.client = client
         self.model = model or config.MODEL
+        # Reasoning effort is an OpenAI reasoning-model parameter; other clients never receive it.
+        self.supports_effort = isinstance(client, OpenAIAdapter)
         self.in_tokens = 0
         self.out_tokens = 0
+        self.calls = 0
+        # Per pipeline stage (extract, consolidate, agent, abstract, ...): {"calls", "in", "out"}. Every completed
+        # request counts, including retries inside forced_tool; the SDK's own HTTP retries are not visible here.
+        self.stages: dict[str, dict] = {}
+        self._lock = threading.Lock()  # calls run in parallel threads; keep the counters exact
 
     def create(self, system: str, messages: list, tools: list | None = None,
-               tool_choice: dict | None = None, max_tokens: int = 4096):
+               tool_choice: dict | None = None, max_tokens: int = 4096, effort: str | None = None,
+               stage: str | None = None):
+        return self._create(system, messages, tools, tool_choice, max_tokens, effort, stage)
+
+    def scoped(self, control):
+        return ScopedLLM(self, control)
+
+    def _create(self, system, messages, tools=None, tool_choice=None, max_tokens=4096, effort=None,
+                stage=None, control=None):
         kw = dict(model=self.model, system=system, messages=messages, max_tokens=max_tokens)
         if tools:
             kw["tools"] = tools
             if tool_choice:
                 kw["tool_choice"] = tool_choice
-        resp = self.client.messages.create(**kw)
-        u = getattr(resp, "usage", None)
-        if u:
-            self.in_tokens += getattr(u, "input_tokens", 0)
-            self.out_tokens += getattr(u, "output_tokens", 0)
-        return resp
+        if effort and self.supports_effort:
+            kw["reasoning_effort"] = effort
+        if control is None:
+            resp = self.client.messages.create(**kw)
+            self._account(resp, stage)
+            return resp
 
-    def forced_tool(self, system: str, user: str, name: str, schema: dict, max_tokens: int = 8192) -> dict:
+        stage = stage or "other"
+        output_cap = max(max_tokens, config.OPENAI_MIN_COMPLETION_TOKENS) if self.supports_effort else max_tokens
+        input_bound = input_token_bound(system, messages, tools, tool_choice)
+        for retry in range(control.limits.retries + 1):
+            attempt = control.reserve(stage, input_bound + output_cap, input_bound, output_cap)
+            timeout = min(control.limits.request_seconds, control.remaining())
+
+            def send():
+                control.check(stage)
+                if isinstance(self.client, OpenAIAdapter):
+                    return self.client.messages.create(**kw, request_timeout=timeout)
+                if hasattr(self.client, "with_options"):
+                    return self.client.with_options(timeout=timeout, max_retries=0).messages.create(**kw)
+                return self.client.messages.create(**kw)
+
+            try:
+                resp = control.wait(launch(send), stage=stage, request_timeout=timeout)
+            except RunStopped:
+                raise
+            except Exception as error:
+                control.settle(attempt, error_type=type(error).__name__)
+                status = getattr(error, "status_code", None)
+                transient = (isinstance(error, (ConnectionError, TimeoutError))
+                             or type(error).__name__ in ("APIConnectionError", "APITimeoutError", "RateLimitError")
+                             or status in (408, 409, 429) or isinstance(status, int) and status >= 500)
+                if transient and retry < control.limits.retries:
+                    control._event("retry_scheduled", request_stage=stage, retry=retry + 1)
+                    control.pause(control.limits.backoff * (2 ** retry))
+                    continue
+                raise control.stop("model_request_failed", "FAILED", stage, error_type=type(error).__name__,
+                                   retries_exhausted=transient, http_status=status if isinstance(status, int) else None)
+            with control.guard():
+                self._account(resp, stage)
+                response_tools = [{"name": b.name, "input": b.input} for b in resp.content if b.type == "tool_use"]
+                control.settle(attempt, usage=getattr(resp, "usage", None), response_tools=response_tools)
+            return resp
+
+    def _account(self, resp, stage):
+        u = getattr(resp, "usage", None)
+        t_in, t_out = usage_tokens(u) or (0, 0)
+        with self._lock:
+            self.calls += 1
+            self.in_tokens += t_in
+            self.out_tokens += t_out
+            s = self.stages.setdefault(stage or "other", {"calls": 0, "in": 0, "out": 0})
+            s["calls"] += 1
+            s["in"] += t_in
+            s["out"] += t_out
+
+    def usage_snapshot(self) -> dict:
+        with self._lock:
+            return {"calls": self.calls, "in": self.in_tokens, "out": self.out_tokens,
+                    "stages": {k: dict(v) for k, v in self.stages.items()}}
+
+    @staticmethod
+    def usage_since(before: dict, after: dict) -> dict:
+        """What was spent between two snapshots (one meeting, when the LLM object is shared across a series)."""
+        stages = {}
+        for k, v in after["stages"].items():
+            b = before["stages"].get(k, {"calls": 0, "in": 0, "out": 0})
+            d = {f: v[f] - b[f] for f in ("calls", "in", "out")}
+            if d["calls"]:
+                stages[k] = d
+        return {"calls": after["calls"] - before["calls"], "in": after["in"] - before["in"],
+                "out": after["out"] - before["out"], "stages": stages}
+
+    def forced_tool(self, system: str, user: str, name: str, schema: dict, max_tokens: int = 8192,
+                    effort: str | None = None, stage: str | None = None) -> dict:
         """One call that must return the input of tool `name` (structured output). Retries with a bigger budget."""
         tool = {"name": name, "description": "Submit the result.", "input_schema": schema}
         for attempt in range(3):
             resp = self.create(system, [{"role": "user", "content": user}], [tool],
-                               {"type": "tool", "name": name}, max_tokens * (2 ** attempt))
+                               {"type": "tool", "name": name}, max_tokens * (2 ** attempt), effort, stage)
             for block in resp.content:
                 if block.type == "tool_use" and block.name == name and block.input:
                     return block.input
         raise RuntimeError(f"model did not call {name} after 3 attempts")
+
+
+class ScopedLLM:
+    """One meeting's controller, with the original client's cumulative statistics shared safely."""
+    def __init__(self, parent, control):
+        self.parent, self.control = parent, control
+
+    def __getattr__(self, name):
+        return getattr(self.parent, name)
+
+    def create(self, *args, **kwargs):
+        return self.parent._create(*args, **kwargs, control=self.control)
+
+    def usage_snapshot(self):
+        return self.control.usage_snapshot()
+
+    forced_tool = LLM.forced_tool

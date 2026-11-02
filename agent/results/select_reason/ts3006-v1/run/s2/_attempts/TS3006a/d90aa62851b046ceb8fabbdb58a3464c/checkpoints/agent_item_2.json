@@ -1,0 +1,606 @@
+{
+  "item": 2,
+  "fields": {
+    "item_key": "TS3006a#2",
+    "record_id": null,
+    "item_type": "actions",
+    "item_text": "The Marketing Expert will come up with user requirements.",
+    "state": "pending",
+    "recordable": true,
+    "fields": {
+      "status": "open",
+      "prior_context_needed": false,
+      "related_items": [],
+      "owner": [
+        "MTD024ME"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3006a.json",
+          "locator": "TS3006a.A.dialog-act.vkaraisk.151"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3006a.json",
+          "locator": "TS3006a.D.dialog-act.vkaraisk.100"
+        }
+      ]
+    },
+    "draft_fields": {
+      "status": "open",
+      "related_items": [],
+      "owner": [
+        "MTD024ME"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "prior_context_needed": false,
+      "used_participant_lookup": false,
+      "evidence_da_ids": [
+        "TS3006a.A.dialog-act.vkaraisk.151",
+        "TS3006a.D.dialog-act.vkaraisk.100"
+      ]
+    },
+    "checks": {
+      "statement": {
+        "result": "pass",
+        "reason": "The dialogue explicitly inserts an assignment-like statement that the Marketing Expert will come up with user requirements and supports assigning ownership to ME (MTD024ME).",
+        "quotes": [
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.151",
+            "quote": "<vocalsound> And the Marketing uh Expert should come up with user requirements ."
+          },
+          {
+            "da_id": "TS3006a.D.dialog-act.vkaraisk.100",
+            "quote": "Yeah ."
+          }
+        ],
+        "fields": [
+          "statement"
+        ]
+      },
+      "owner": {
+        "result": "pass",
+        "reason": "Owner is explicitly assigned to MTD024ME in the provided provisional values; observed dialogue confirms ME involvement.",
+        "quotes": [
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.151",
+            "quote": "<vocalsound> And the Marketing uh Expert should come up with user requirements ."
+          },
+          {
+            "da_id": "TS3006a.D.dialog-act.vkaraisk.100",
+            "quote": "Yeah ."
+          }
+        ],
+        "fields": [
+          "owner"
+        ]
+      },
+      "deadline": {
+        "result": "uncertain",
+        "reason": "deadline_unresolved",
+        "quotes": [],
+        "fields": [
+          "deadline"
+        ]
+      },
+      "status": {
+        "result": "pass",
+        "reason": "Current status is open as indicated by provisional values; no conflicting evidence.",
+        "quotes": [
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.151",
+            "quote": "<vocalsound> And the Marketing uh Expert should come up with user requirements ."
+          },
+          {
+            "da_id": "TS3006a.D.dialog-act.vkaraisk.100",
+            "quote": "Yeah ."
+          }
+        ],
+        "fields": [
+          "status"
+        ]
+      },
+      "conflict": {
+        "result": "pass",
+        "reason": "No conflicts identified within the supplied evidence; fields align with the stated action.",
+        "quotes": [
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.151",
+            "quote": "<vocalsound> And the Marketing uh Expert should come up with user requirements ."
+          },
+          {
+            "da_id": "TS3006a.D.dialog-act.vkaraisk.100",
+            "quote": "Yeah ."
+          }
+        ],
+        "fields": []
+      },
+      "relation": {
+        "result": "not_applicable",
+        "reason": "No prior item references or changes to relate to in this prompt.",
+        "quotes": [],
+        "fields": [
+          "related_items"
+        ]
+      }
+    },
+    "unresolved_fields": [
+      "deadline"
+    ],
+    "observed_evidence_da_ids": [
+      "TS3006a.A.dialog-act.vkaraisk.151",
+      "TS3006a.D.dialog-act.vkaraisk.100",
+      "TS3006a.B.dialog-act.vkaraisk.59",
+      "TS3006a.A.dialog-act.vkaraisk.152"
+    ],
+    "initial_context": {
+      "item": {
+        "type": "actions",
+        "text": "The Marketing Expert will come up with user requirements.",
+        "flags": []
+      },
+      "current_meeting": "TS3006a",
+      "earlier_meetings": [],
+      "roster": [
+        {
+          "speaker": "A",
+          "participant_id": "MTD021PM",
+          "role": "PM"
+        },
+        {
+          "speaker": "B",
+          "participant_id": "MTD023UID",
+          "role": "UI"
+        },
+        {
+          "speaker": "C",
+          "participant_id": "MTD022ID",
+          "role": "ID"
+        },
+        {
+          "speaker": "D",
+          "participant_id": "MTD024ME",
+          "role": "ME"
+        }
+      ],
+      "observed_dialogue": [
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.151",
+          "meeting_id": "TS3006a",
+          "text": "<vocalsound> And the Marketing uh Expert should come up with user requirements .",
+          "participant": "MTD021PM",
+          "role": "PM"
+        },
+        {
+          "da_id": "TS3006a.D.dialog-act.vkaraisk.100",
+          "meeting_id": "TS3006a",
+          "text": "Yeah .",
+          "participant": "MTD024ME",
+          "role": "ME"
+        },
+        {
+          "da_id": "TS3006a.B.dialog-act.vkaraisk.59",
+          "participant": "MTD023UID",
+          "role": "UI",
+          "text": "Yep ."
+        },
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.152",
+          "participant": "MTD021PM",
+          "role": "PM",
+          "text": "Uh did any of you already do some work on this part"
+        }
+      ],
+      "peer_items": [
+        {
+          "item_key": "TS3006a#0",
+          "type": "actions",
+          "text": "The Industrial Designer will produce a working design."
+        },
+        {
+          "item_key": "TS3006a#1",
+          "type": "actions",
+          "text": "The User Interface Designer will specify the technical functions."
+        }
+      ],
+      "provisional_values": {
+        "owner": [
+          "MTD024ME"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "open",
+        "related_items": []
+      },
+      "candidate_evidence_da_ids": [
+        "TS3006a.A.dialog-act.vkaraisk.151",
+        "TS3006a.D.dialog-act.vkaraisk.100"
+      ]
+    },
+    "observed_documents": [],
+    "document_evidence": [],
+    "relation_evidence": [],
+    "history": [
+      {
+        "item": "TS3006a#2",
+        "step": 1,
+        "flags": [],
+        "action": "assess_item",
+        "outcome": "invalid_action",
+        "error": "Correct these argument fields: : 'owner_check' is a required property; : 'deadline_check' is a required property; : 'status_check' is a required property; : 'conflict_check' is a required property Tool assess_item accepts root keys: status, related_items, owner, owner_basis, deadline, deadline_basis, statement, owner_check, deadline_check, status_check, conflict_check, relation_check, next_action. Resubmit the complete advertised object. Select only delivered supporting dialogue IDs; if support is unavailable use uncertain with an explanation, never invent an ID or mark pass with no evidence. Documents belong inside the check they inform.",
+        "raw_tool_input": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "MTD024ME"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "statement": {
+            "result": "pass",
+            "reason": "The dialogue explicitly inserts an assignment-like statement that the Marketing Expert will come up with user requirements and the proposed owner is the ME (MTD024ME). The observed dialogue includes supportive utterances by PM and ME confirming the topic, aligning with the action intent.",
+            "evidence_da_ids": [
+              "TS3006a.A.dialog-act.vkaraisk.151",
+              "TS3006a.D.dialog-act.vkaraisk.100"
+            ],
+            "documents": []
+          }
+        }
+      },
+      {
+        "item": "TS3006a#2",
+        "step": 2,
+        "flags": [],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "The dialogue explicitly inserts an assignment-like statement that the Marketing Expert will come up with user requirements and supports assigning ownership to ME (MTD024ME).",
+            "quotes": [
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.151",
+                "quote": "<vocalsound> And the Marketing uh Expert should come up with user requirements ."
+              },
+              {
+                "da_id": "TS3006a.D.dialog-act.vkaraisk.100",
+                "quote": "Yeah ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Owner is explicitly assigned to MTD024ME in the provided provisional values; observed dialogue confirms ME involvement.",
+            "quotes": [
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.151",
+                "quote": "<vocalsound> And the Marketing uh Expert should come up with user requirements ."
+              },
+              {
+                "da_id": "TS3006a.D.dialog-act.vkaraisk.100",
+                "quote": "Yeah ."
+              }
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "deadline_unresolved",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Current status is open as indicated by provisional values; no conflicting evidence.",
+            "quotes": [
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.151",
+                "quote": "<vocalsound> And the Marketing uh Expert should come up with user requirements ."
+              },
+              {
+                "da_id": "TS3006a.D.dialog-act.vkaraisk.100",
+                "quote": "Yeah ."
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicts identified within the supplied evidence; fields align with the stated action.",
+            "quotes": [
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.151",
+                "quote": "<vocalsound> And the Marketing uh Expert should come up with user requirements ."
+              },
+              {
+                "da_id": "TS3006a.D.dialog-act.vkaraisk.100",
+                "quote": "Yeah ."
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior item references or changes to relate to in this prompt.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "decision": "request_clarification",
+        "reason": "supported_statement_with_unresolved_fields",
+        "assessed_text": "The Marketing Expert will come up with user requirements.",
+        "requested_action": "accept",
+        "proposed_fields": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "MTD024ME"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.151",
+            "TS3006a.D.dialog-act.vkaraisk.100"
+          ]
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "The dialogue explicitly inserts an assignment-like statement that the Marketing Expert will come up with user requirements and supports assigning ownership to ME (MTD024ME).",
+            "quotes": [
+              "TS3006a.A.dialog-act.vkaraisk.151",
+              "TS3006a.D.dialog-act.vkaraisk.100"
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Owner is explicitly assigned to MTD024ME in the provided provisional values; observed dialogue confirms ME involvement.",
+            "quotes": [
+              "TS3006a.A.dialog-act.vkaraisk.151",
+              "TS3006a.D.dialog-act.vkaraisk.100"
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "No deadline is specified in the current text; deadline is missing and cannot be inferred.",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Current status is open as indicated by provisional values; no conflicting evidence.",
+            "quotes": [
+              "TS3006a.A.dialog-act.vkaraisk.151",
+              "TS3006a.D.dialog-act.vkaraisk.100"
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicts identified within the supplied evidence; fields align with the stated action.",
+            "quotes": [
+              "TS3006a.A.dialog-act.vkaraisk.151",
+              "TS3006a.D.dialog-act.vkaraisk.100"
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior item references or changes to relate to in this prompt.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "MTD024ME"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "statement": {
+            "result": "pass",
+            "reason": "The dialogue explicitly inserts an assignment-like statement that the Marketing Expert will come up with user requirements and supports assigning ownership to ME (MTD024ME).",
+            "evidence_da_ids": [
+              "TS3006a.A.dialog-act.vkaraisk.151",
+              "TS3006a.D.dialog-act.vkaraisk.100"
+            ]
+          },
+          "owner_check": {
+            "result": "pass",
+            "reason": "Owner is explicitly assigned to MTD024ME in the provided provisional values; observed dialogue confirms ME involvement.",
+            "evidence_da_ids": [
+              "TS3006a.A.dialog-act.vkaraisk.151",
+              "TS3006a.D.dialog-act.vkaraisk.100"
+            ]
+          },
+          "deadline_check": {
+            "result": "uncertain",
+            "reason": "No deadline is specified in the current text; deadline is missing and cannot be inferred.",
+            "evidence_da_ids": []
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Current status is open as indicated by provisional values; no conflicting evidence.",
+            "evidence_da_ids": [
+              "TS3006a.A.dialog-act.vkaraisk.151",
+              "TS3006a.D.dialog-act.vkaraisk.100"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No conflicts identified within the supplied evidence; fields align with the stated action.",
+            "evidence_da_ids": [
+              "TS3006a.A.dialog-act.vkaraisk.151",
+              "TS3006a.D.dialog-act.vkaraisk.100"
+            ],
+            "affected_fields": []
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior item references or changes to relate to in this prompt.",
+            "evidence_da_ids": []
+          },
+          "next_action": "accept"
+        },
+        "evidence_bindings": {
+          "statement": [
+            "TS3006a.A.dialog-act.vkaraisk.151",
+            "TS3006a.D.dialog-act.vkaraisk.100"
+          ],
+          "owner": [
+            "TS3006a.A.dialog-act.vkaraisk.151",
+            "TS3006a.D.dialog-act.vkaraisk.100"
+          ],
+          "status": [
+            "TS3006a.A.dialog-act.vkaraisk.151",
+            "TS3006a.D.dialog-act.vkaraisk.100"
+          ],
+          "conflict": [
+            "TS3006a.A.dialog-act.vkaraisk.151",
+            "TS3006a.D.dialog-act.vkaraisk.100"
+          ]
+        },
+        "raw_tool_input": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "MTD024ME"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "statement": {
+            "result": "pass",
+            "reason": "The dialogue explicitly inserts an assignment-like statement that the Marketing Expert will come up with user requirements and supports assigning ownership to ME (MTD024ME).",
+            "evidence_da_ids": [
+              "TS3006a.A.dialog-act.vkaraisk.151",
+              "TS3006a.D.dialog-act.vkaraisk.100"
+            ]
+          },
+          "owner_check": {
+            "result": "pass",
+            "reason": "Owner is explicitly assigned to MTD024ME in the provided provisional values; observed dialogue confirms ME involvement.",
+            "evidence_da_ids": [
+              "TS3006a.A.dialog-act.vkaraisk.151",
+              "TS3006a.D.dialog-act.vkaraisk.100"
+            ]
+          },
+          "deadline_check": {
+            "result": "uncertain",
+            "reason": "No deadline is specified in the current text; deadline is missing and cannot be inferred.",
+            "evidence_da_ids": []
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Current status is open as indicated by provisional values; no conflicting evidence.",
+            "evidence_da_ids": [
+              "TS3006a.A.dialog-act.vkaraisk.151",
+              "TS3006a.D.dialog-act.vkaraisk.100"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No conflicts identified within the supplied evidence; fields align with the stated action.",
+            "evidence_da_ids": [
+              "TS3006a.A.dialog-act.vkaraisk.151",
+              "TS3006a.D.dialog-act.vkaraisk.100"
+            ],
+            "affected_fields": []
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior item references or changes to relate to in this prompt.",
+            "evidence_da_ids": []
+          },
+          "next_action": "accept"
+        },
+        "protocol_normalizations": [],
+        "unresolved_before": [
+          "deadline",
+          "owner",
+          "statement",
+          "status"
+        ],
+        "unresolved_after": [
+          "deadline"
+        ],
+        "semantic_stalls": 0,
+        "validation_codes": {
+          "deadline": [
+            "deadline_unresolved"
+          ]
+        }
+      },
+      {
+        "item": "TS3006a#2",
+        "step": 2,
+        "flags": [],
+        "action": "stop",
+        "outcome": "pending",
+        "termination_reason": "supported_statement_with_unresolved_fields",
+        "unresolved_fields": [
+          "deadline"
+        ]
+      }
+    ],
+    "lookups": 0,
+    "termination_reason": "supported_statement_with_unresolved_fields",
+    "clarifications": [
+      {
+        "request_id": "799c2c763ace232b",
+        "item_key": "TS3006a#2",
+        "record_id": null,
+        "field": "deadline",
+        "question": "What is the agreed deadline, in its original wording?",
+        "item_text": "The Marketing Expert will come up with user requirements.",
+        "reason": "deadline_unresolved",
+        "evidence_da_ids": [],
+        "available_evidence_da_ids": [
+          "TS3006a.A.dialog-act.vkaraisk.151",
+          "TS3006a.D.dialog-act.vkaraisk.100",
+          "TS3006a.B.dialog-act.vkaraisk.59",
+          "TS3006a.A.dialog-act.vkaraisk.152"
+        ],
+        "status": "open",
+        "termination_reason": "supported_statement_with_unresolved_fields"
+      }
+    ]
+  }
+}

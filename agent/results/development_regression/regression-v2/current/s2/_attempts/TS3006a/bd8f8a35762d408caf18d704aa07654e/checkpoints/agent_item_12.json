@@ -1,0 +1,960 @@
+{
+  "item": 12,
+  "fields": {
+    "item_key": "TS3006a#12",
+    "record_id": null,
+    "item_type": "decisions",
+    "item_text": "The product must be user-friendly.",
+    "state": "pending",
+    "recordable": true,
+    "fields": {
+      "status": "unknown",
+      "prior_context_needed": false,
+      "related_items": [],
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3006a.json",
+          "locator": "TS3006a.B.dialog-act.vkaraisk.101"
+        }
+      ]
+    },
+    "draft_fields": {
+      "owner": null,
+      "owner_basis": "missing",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "status": "adopted",
+      "prior_context_needed": false,
+      "related_items": [],
+      "evidence_da_ids": [
+        "TS3006a.B.dialog-act.vkaraisk.101"
+      ],
+      "used_participant_lookup": false
+    },
+    "checks": {
+      "statement": {
+        "result": "pass",
+        "reason": "Dialogue shows the UI speaker states the product must be user-friendly, supporting the exact decision statement.",
+        "quotes": [
+          {
+            "da_id": "TS3006a.B.dialog-act.vkaraisk.101",
+            "quote": "it it has yeah it has to be user-friendly ."
+          }
+        ],
+        "fields": [
+          "statement"
+        ]
+      },
+      "owner": {
+        "result": "not_applicable",
+        "reason": "field_not_applicable",
+        "quotes": [],
+        "fields": [
+          "owner"
+        ]
+      },
+      "deadline": {
+        "result": "not_applicable",
+        "reason": "field_not_applicable",
+        "quotes": [],
+        "fields": [
+          "deadline"
+        ]
+      },
+      "status": {
+        "result": "uncertain",
+        "reason": "current_meeting_support_required",
+        "quotes": [],
+        "fields": [
+          "status"
+        ]
+      },
+      "conflict": {
+        "result": "pass",
+        "reason": "No conflicting information in available dialogue regarding ownership or deadline; only adoption status is evident.",
+        "quotes": [
+          {
+            "da_id": "TS3006a.B.dialog-act.vkaraisk.101",
+            "quote": "it it has yeah it has to be user-friendly ."
+          }
+        ],
+        "fields": []
+      },
+      "relation": {
+        "result": "not_applicable",
+        "reason": "No related items to assess; this decision does not reference prior items.",
+        "quotes": [],
+        "fields": [
+          "related_items"
+        ]
+      }
+    },
+    "unresolved_fields": [
+      "status"
+    ],
+    "observed_evidence_da_ids": [
+      "TS3006a.B.dialog-act.vkaraisk.101",
+      "TS3006a.C.dialog-act.vkaraisk.139",
+      "TS3006a.B.dialog-act.vkaraisk.102"
+    ],
+    "initial_context": {
+      "item": {
+        "type": "decisions",
+        "text": "The product must be user-friendly.",
+        "flags": []
+      },
+      "fields": {
+        "owner": null,
+        "owner_basis": "missing",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "adopted",
+        "prior_context_needed": false,
+        "related_items": [],
+        "evidence_da_ids": [
+          "TS3006a.B.dialog-act.vkaraisk.101"
+        ],
+        "used_participant_lookup": false
+      },
+      "current_meeting": "TS3006a",
+      "earlier_meetings": [],
+      "roster": [
+        {
+          "speaker": "A",
+          "participant_id": "MTD021PM",
+          "role": "PM"
+        },
+        {
+          "speaker": "B",
+          "participant_id": "MTD023UID",
+          "role": "UI"
+        },
+        {
+          "speaker": "C",
+          "participant_id": "MTD022ID",
+          "role": "ID"
+        },
+        {
+          "speaker": "D",
+          "participant_id": "MTD024ME",
+          "role": "ME"
+        }
+      ],
+      "observed_dialogue": [
+        {
+          "da_id": "TS3006a.B.dialog-act.vkaraisk.101",
+          "meeting_id": "TS3006a",
+          "text": "it it has yeah it has to be user-friendly .",
+          "participant": "MTD023UID",
+          "role": "UI"
+        },
+        {
+          "da_id": "TS3006a.C.dialog-act.vkaraisk.139",
+          "participant": "MTD022ID",
+          "role": "ID",
+          "text": "Alright ."
+        },
+        {
+          "da_id": "TS3006a.B.dialog-act.vkaraisk.102",
+          "participant": "MTD023UID",
+          "role": "UI",
+          "text": "So it's hasn't <gap> <disfmarker> it's <disfmarker> yeah ."
+        }
+      ],
+      "peer_items": [
+        {
+          "item_key": "TS3006a#0",
+          "type": "problems",
+          "text": "There is a hardware/display problem as the presenter reports the screen is missing ('where has my screen gone?' and 'My screen is gone')."
+        },
+        {
+          "item_key": "TS3006a#1",
+          "type": "actions",
+          "text": "The Project Manager will summarize the discussed items and place the summary in the project folder."
+        },
+        {
+          "item_key": "TS3006a#2",
+          "type": "problems",
+          "text": "Participants report being slow and under-prepared for the kickoff, indicating preparation/co-ordination gaps."
+        },
+        {
+          "item_key": "TS3006a#3",
+          "type": "actions",
+          "text": "The Industrial Designer will create an overview for the three design phases."
+        },
+        {
+          "item_key": "TS3006a#4",
+          "type": "actions",
+          "text": "The Industrial Designer will work on the conceptual design."
+        },
+        {
+          "item_key": "TS3006a#5",
+          "type": "problems",
+          "text": "Unclear scope: unclear which animal to draw and lack of agreement on the subject, as well as unclear which components to include in the design."
+        },
+        {
+          "item_key": "TS3006a#6",
+          "type": "actions",
+          "text": "The Marketing Expert will conduct internet searches and user interviews to determine user requirements."
+        },
+        {
+          "item_key": "TS3006a#7",
+          "type": "actions",
+          "text": "The Project Manager will defend our design."
+        },
+        {
+          "item_key": "TS3006a#8",
+          "type": "decisions",
+          "text": "The activity is introduction and get acquainted."
+        },
+        {
+          "item_key": "TS3006a#9",
+          "type": "decisions",
+          "text": "Pricing will be set at 25 Euros, with a target of 50 million Euros in sales and production cost equal to half of the selling price."
+        },
+        {
+          "item_key": "TS3006a#10",
+          "type": "decisions",
+          "text": "Phase one will be the functional design."
+        },
+        {
+          "item_key": "TS3006a#11",
+          "type": "decisions",
+          "text": "The team will start with the assumption that the system is only for TV and video, and will reserve the possibility to add other features later."
+        }
+      ]
+    },
+    "observed_documents": [],
+    "document_evidence": [],
+    "relation_evidence": [],
+    "history": [
+      {
+        "item": "TS3006a#12",
+        "step": 1,
+        "flags": [],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue shows the UI speaker states the product must be user-friendly, supporting the exact decision statement.",
+            "quotes": [
+              {
+                "da_id": "TS3006a.B.dialog-act.vkaraisk.101",
+                "quote": "it it has yeah it has to be user-friendly ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "uncertain",
+            "reason": "current_meeting_support_required",
+            "quotes": [],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting information in available dialogue regarding ownership or deadline; only adoption status is evident.",
+            "quotes": [
+              {
+                "da_id": "TS3006a.B.dialog-act.vkaraisk.101",
+                "quote": "it it has yeah it has to be user-friendly ."
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No related items to assess; this decision does not reference prior items.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "decision": "reassess",
+        "reason": "missing_current_evidence_selection",
+        "requested_action": null,
+        "proposed_fields": {
+          "owner": null,
+          "owner_basis": "missing",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "status": "adopted",
+          "prior_context_needed": false,
+          "related_items": [],
+          "evidence_da_ids": [
+            "TS3006a.B.dialog-act.vkaraisk.101"
+          ],
+          "used_participant_lookup": false
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue shows the UI speaker states the product must be user-friendly, supporting the exact decision statement.",
+            "quotes": [
+              "TS3006a.B.dialog-act.vkaraisk.101"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "Action is a non-action; owner not required for this decision."
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "Action is a non-action; deadline not required for this decision."
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Decision status adopted is consistent with observed dialogue and item field."
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting information in available dialogue regarding ownership or deadline; only adoption status is evident."
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No related items to assess; this decision does not reference prior items."
+          }
+        },
+        "submitted_assessment": {
+          "fields": {
+            "owner": null,
+            "owner_basis": "missing",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "adopted",
+            "prior_context_needed": false,
+            "related_items": [],
+            "evidence_da_ids": [
+              "TS3006a.B.dialog-act.vkaraisk.101"
+            ],
+            "used_participant_lookup": false
+          },
+          "checks": {
+            "statement": {
+              "result": "pass",
+              "reason": "Dialogue shows the UI speaker states the product must be user-friendly, supporting the exact decision statement.",
+              "quotes": [
+                "TS3006a.B.dialog-act.vkaraisk.101"
+              ]
+            },
+            "owner": {
+              "result": "not_applicable",
+              "reason": "Action is a non-action; owner not required for this decision."
+            },
+            "deadline": {
+              "result": "not_applicable",
+              "reason": "Action is a non-action; deadline not required for this decision."
+            },
+            "status": {
+              "result": "pass",
+              "reason": "Decision status adopted is consistent with observed dialogue and item field."
+            },
+            "conflict": {
+              "result": "pass",
+              "reason": "No conflicting information in available dialogue regarding ownership or deadline; only adoption status is evident."
+            },
+            "relation": {
+              "result": "not_applicable",
+              "reason": "No related items to assess; this decision does not reference prior items."
+            }
+          }
+        },
+        "evidence_bindings": {
+          "statement": [
+            "TS3006a.B.dialog-act.vkaraisk.101"
+          ],
+          "conflict_scope": [
+            "TS3006a.B.dialog-act.vkaraisk.101"
+          ]
+        },
+        "raw_tool_input": {
+          "fields": {
+            "owner": null,
+            "owner_basis": "missing",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "adopted",
+            "prior_context_needed": false,
+            "related_items": [],
+            "evidence_da_ids": [
+              "TS3006a.B.dialog-act.vkaraisk.101"
+            ],
+            "used_participant_lookup": false
+          },
+          "checks": {
+            "statement": {
+              "result": "pass",
+              "reason": "Dialogue shows the UI speaker states the product must be user-friendly, supporting the exact decision statement.",
+              "quotes": [
+                "TS3006a.B.dialog-act.vkaraisk.101"
+              ]
+            },
+            "owner": {
+              "result": "not_applicable",
+              "reason": "Action is a non-action; owner not required for this decision."
+            },
+            "deadline": {
+              "result": "not_applicable",
+              "reason": "Action is a non-action; deadline not required for this decision."
+            },
+            "status": {
+              "result": "pass",
+              "reason": "Decision status adopted is consistent with observed dialogue and item field."
+            },
+            "conflict": {
+              "result": "pass",
+              "reason": "No conflicting information in available dialogue regarding ownership or deadline; only adoption status is evident."
+            },
+            "relation": {
+              "result": "not_applicable",
+              "reason": "No related items to assess; this decision does not reference prior items."
+            }
+          }
+        },
+        "protocol_normalizations": []
+      },
+      {
+        "item": "TS3006a#12",
+        "step": 2,
+        "flags": [],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue shows the UI speaker states the product must be user-friendly, supporting the exact decision statement.",
+            "quotes": [
+              {
+                "da_id": "TS3006a.B.dialog-act.vkaraisk.101",
+                "quote": "it it has yeah it has to be user-friendly ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "uncertain",
+            "reason": "current_meeting_support_required",
+            "quotes": [],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting information in available dialogue regarding ownership or deadline; only adoption status is evident.",
+            "quotes": [
+              {
+                "da_id": "TS3006a.B.dialog-act.vkaraisk.101",
+                "quote": "it it has yeah it has to be user-friendly ."
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No related items to assess; this decision does not reference prior items.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "decision": "retrieve",
+        "reason": "unresolved_checks",
+        "requested_action": null,
+        "proposed_fields": {
+          "owner": null,
+          "owner_basis": "missing",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "status": "adopted",
+          "prior_context_needed": false,
+          "related_items": [],
+          "evidence_da_ids": [
+            "TS3006a.B.dialog-act.vkaraisk.101"
+          ],
+          "used_participant_lookup": false
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue shows the UI speaker states the product must be user-friendly, supporting the exact decision statement.",
+            "quotes": [
+              "TS3006a.B.dialog-act.vkaraisk.101"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "Action is a non-action; owner not required for this decision."
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "Action is a non-action; deadline not required for this decision."
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Decision status adopted is consistent with observed dialogue and item field."
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting information in available dialogue regarding ownership or deadline; only adoption status is evident."
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No related items to assess; this decision does not reference prior items."
+          }
+        },
+        "submitted_assessment": {
+          "fields": {
+            "owner": null,
+            "owner_basis": "missing",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "adopted",
+            "prior_context_needed": false,
+            "related_items": [],
+            "evidence_da_ids": [
+              "TS3006a.B.dialog-act.vkaraisk.101"
+            ],
+            "used_participant_lookup": false
+          },
+          "checks": {
+            "statement": {
+              "result": "pass",
+              "reason": "Dialogue shows the UI speaker states the product must be user-friendly, supporting the exact decision statement.",
+              "quotes": [
+                "TS3006a.B.dialog-act.vkaraisk.101"
+              ]
+            },
+            "owner": {
+              "result": "not_applicable",
+              "reason": "Action is a non-action; owner not required for this decision."
+            },
+            "deadline": {
+              "result": "not_applicable",
+              "reason": "Action is a non-action; deadline not required for this decision."
+            },
+            "status": {
+              "result": "pass",
+              "reason": "Decision status adopted is consistent with observed dialogue and item field."
+            },
+            "conflict": {
+              "result": "pass",
+              "reason": "No conflicting information in available dialogue regarding ownership or deadline; only adoption status is evident."
+            },
+            "relation": {
+              "result": "not_applicable",
+              "reason": "No related items to assess; this decision does not reference prior items."
+            }
+          }
+        },
+        "evidence_bindings": {
+          "statement": [
+            "TS3006a.B.dialog-act.vkaraisk.101"
+          ],
+          "conflict_scope": [
+            "TS3006a.B.dialog-act.vkaraisk.101"
+          ]
+        },
+        "raw_tool_input": {
+          "fields": {
+            "owner": null,
+            "owner_basis": "missing",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "adopted",
+            "prior_context_needed": false,
+            "related_items": [],
+            "evidence_da_ids": [
+              "TS3006a.B.dialog-act.vkaraisk.101"
+            ],
+            "used_participant_lookup": false
+          },
+          "checks": {
+            "statement": {
+              "result": "pass",
+              "reason": "Dialogue shows the UI speaker states the product must be user-friendly, supporting the exact decision statement.",
+              "quotes": [
+                "TS3006a.B.dialog-act.vkaraisk.101"
+              ]
+            },
+            "owner": {
+              "result": "not_applicable",
+              "reason": "Action is a non-action; owner not required for this decision."
+            },
+            "deadline": {
+              "result": "not_applicable",
+              "reason": "Action is a non-action; deadline not required for this decision."
+            },
+            "status": {
+              "result": "pass",
+              "reason": "Decision status adopted is consistent with observed dialogue and item field."
+            },
+            "conflict": {
+              "result": "pass",
+              "reason": "No conflicting information in available dialogue regarding ownership or deadline; only adoption status is evident."
+            },
+            "relation": {
+              "result": "not_applicable",
+              "reason": "No related items to assess; this decision does not reference prior items."
+            }
+          }
+        },
+        "protocol_normalizations": []
+      },
+      {
+        "item": "TS3006a#12",
+        "step": 3,
+        "flags": [],
+        "action": "get_participants",
+        "outcome": "lookup",
+        "decision": "retrieve",
+        "args": {
+          "meeting_id": "TS3006a"
+        },
+        "tool_result": {
+          "results": [
+            {
+              "speaker": "A",
+              "participant_id": "MTD021PM",
+              "role": "PM"
+            },
+            {
+              "speaker": "B",
+              "participant_id": "MTD023UID",
+              "role": "UI"
+            },
+            {
+              "speaker": "C",
+              "participant_id": "MTD022ID",
+              "role": "ID"
+            },
+            {
+              "speaker": "D",
+              "participant_id": "MTD024ME",
+              "role": "ME"
+            }
+          ]
+        },
+        "new_info": false
+      },
+      {
+        "item": "TS3006a#12",
+        "step": 4,
+        "flags": [],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue shows the UI speaker states the product must be user-friendly, supporting the exact decision statement.",
+            "quotes": [
+              {
+                "da_id": "TS3006a.B.dialog-act.vkaraisk.101",
+                "quote": "it it has yeah it has to be user-friendly ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "uncertain",
+            "reason": "current_meeting_support_required",
+            "quotes": [],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting information in available dialogue regarding ownership or deadline; only adoption status is evident.",
+            "quotes": [
+              {
+                "da_id": "TS3006a.B.dialog-act.vkaraisk.101",
+                "quote": "it it has yeah it has to be user-friendly ."
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No related items to assess; this decision does not reference prior items.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "decision": "retrieve",
+        "reason": "unresolved_checks",
+        "requested_action": null,
+        "proposed_fields": {
+          "owner": null,
+          "owner_basis": "missing",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "status": "adopted",
+          "prior_context_needed": false,
+          "related_items": [],
+          "evidence_da_ids": [
+            "TS3006a.B.dialog-act.vkaraisk.101"
+          ],
+          "used_participant_lookup": false
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue shows the UI speaker states the product must be user-friendly, supporting the exact decision statement.",
+            "quotes": [
+              "TS3006a.B.dialog-act.vkaraisk.101"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "Action is a non-action; owner not required for this decision."
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "Action is a non-action; deadline not required for this decision."
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Decision status adopted is consistent with observed dialogue and item field."
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting information in available dialogue regarding ownership or deadline; only adoption status is evident."
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No related items to assess; this decision does not reference prior items."
+          }
+        },
+        "submitted_assessment": {
+          "fields": {
+            "owner": null,
+            "owner_basis": "missing",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "adopted",
+            "prior_context_needed": false,
+            "related_items": [],
+            "evidence_da_ids": [
+              "TS3006a.B.dialog-act.vkaraisk.101"
+            ],
+            "used_participant_lookup": false
+          },
+          "checks": {
+            "statement": {
+              "result": "pass",
+              "reason": "Dialogue shows the UI speaker states the product must be user-friendly, supporting the exact decision statement.",
+              "quotes": [
+                "TS3006a.B.dialog-act.vkaraisk.101"
+              ]
+            },
+            "owner": {
+              "result": "not_applicable",
+              "reason": "Action is a non-action; owner not required for this decision."
+            },
+            "deadline": {
+              "result": "not_applicable",
+              "reason": "Action is a non-action; deadline not required for this decision."
+            },
+            "status": {
+              "result": "pass",
+              "reason": "Decision status adopted is consistent with observed dialogue and item field."
+            },
+            "conflict": {
+              "result": "pass",
+              "reason": "No conflicting information in available dialogue regarding ownership or deadline; only adoption status is evident."
+            },
+            "relation": {
+              "result": "not_applicable",
+              "reason": "No related items to assess; this decision does not reference prior items."
+            }
+          }
+        },
+        "evidence_bindings": {
+          "statement": [
+            "TS3006a.B.dialog-act.vkaraisk.101"
+          ],
+          "conflict_scope": [
+            "TS3006a.B.dialog-act.vkaraisk.101"
+          ]
+        },
+        "raw_tool_input": {
+          "fields": {
+            "owner": null,
+            "owner_basis": "missing",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "adopted",
+            "prior_context_needed": false,
+            "related_items": [],
+            "evidence_da_ids": [
+              "TS3006a.B.dialog-act.vkaraisk.101"
+            ],
+            "used_participant_lookup": false
+          },
+          "checks": {
+            "statement": {
+              "result": "pass",
+              "reason": "Dialogue shows the UI speaker states the product must be user-friendly, supporting the exact decision statement.",
+              "quotes": [
+                "TS3006a.B.dialog-act.vkaraisk.101"
+              ]
+            },
+            "owner": {
+              "result": "not_applicable",
+              "reason": "Action is a non-action; owner not required for this decision."
+            },
+            "deadline": {
+              "result": "not_applicable",
+              "reason": "Action is a non-action; deadline not required for this decision."
+            },
+            "status": {
+              "result": "pass",
+              "reason": "Decision status adopted is consistent with observed dialogue and item field."
+            },
+            "conflict": {
+              "result": "pass",
+              "reason": "No conflicting information in available dialogue regarding ownership or deadline; only adoption status is evident."
+            },
+            "relation": {
+              "result": "not_applicable",
+              "reason": "No related items to assess; this decision does not reference prior items."
+            }
+          }
+        },
+        "protocol_normalizations": []
+      },
+      {
+        "item": "TS3006a#12",
+        "step": 5,
+        "flags": [],
+        "action": "get_participants",
+        "outcome": "lookup",
+        "decision": "retrieve",
+        "args": {
+          "meeting_id": "TS3006a"
+        },
+        "tool_result": {
+          "results": [
+            {
+              "speaker": "A",
+              "participant_id": "MTD021PM",
+              "role": "PM"
+            },
+            {
+              "speaker": "B",
+              "participant_id": "MTD023UID",
+              "role": "UI"
+            },
+            {
+              "speaker": "C",
+              "participant_id": "MTD022ID",
+              "role": "ID"
+            },
+            {
+              "speaker": "D",
+              "participant_id": "MTD024ME",
+              "role": "ME"
+            }
+          ],
+          "duplicate": true
+        },
+        "new_info": false
+      },
+      {
+        "item": "TS3006a#12",
+        "step": 5,
+        "flags": [],
+        "action": "stop",
+        "outcome": "pending",
+        "termination_reason": "no_progress",
+        "unresolved_fields": [
+          "status"
+        ]
+      }
+    ],
+    "lookups": 2,
+    "termination_reason": "no_progress",
+    "clarifications": [
+      {
+        "request_id": "dfd8bb31aa9c517a",
+        "item_key": "TS3006a#12",
+        "record_id": null,
+        "field": "status",
+        "question": "What is this item's status at the end of the current meeting?",
+        "item_text": "The product must be user-friendly.",
+        "reason": "current_meeting_support_required",
+        "evidence_da_ids": [],
+        "available_evidence_da_ids": [
+          "TS3006a.B.dialog-act.vkaraisk.101",
+          "TS3006a.C.dialog-act.vkaraisk.139",
+          "TS3006a.B.dialog-act.vkaraisk.102"
+        ],
+        "status": "open",
+        "termination_reason": "no_progress"
+      }
+    ]
+  }
+}

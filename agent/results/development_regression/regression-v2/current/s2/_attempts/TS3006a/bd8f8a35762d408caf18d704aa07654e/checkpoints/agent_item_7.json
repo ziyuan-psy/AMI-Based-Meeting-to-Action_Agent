@@ -1,0 +1,1007 @@
+{
+  "item": 7,
+  "fields": {
+    "item_key": "TS3006a#7",
+    "record_id": null,
+    "item_type": "actions",
+    "item_text": "The Project Manager will defend our design.",
+    "state": "pending",
+    "recordable": true,
+    "fields": {
+      "status": "unknown",
+      "prior_context_needed": false,
+      "related_items": [],
+      "owner": null,
+      "owner_basis": "ambiguous",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3006a.json",
+          "locator": "TS3006a.A.dialog-act.vkaraisk.216"
+        }
+      ]
+    },
+    "draft_fields": {
+      "owner": [
+        "MTD021PM"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "status": "open",
+      "prior_context_needed": false,
+      "related_items": [],
+      "evidence_da_ids": [
+        "TS3006a.A.dialog-act.vkaraisk.216"
+      ],
+      "used_participant_lookup": false
+    },
+    "checks": {
+      "statement": {
+        "result": "pass",
+        "reason": "PM states defense of the design and preparation explicit in dialogue.",
+        "quotes": [
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.216",
+            "quote": "And then I have to prepare <disfmarker> uh I have to defend our design ,"
+          }
+        ],
+        "fields": [
+          "statement"
+        ]
+      },
+      "owner": {
+        "result": "uncertain",
+        "reason": "current_meeting_support_required",
+        "quotes": [],
+        "fields": [
+          "owner"
+        ]
+      },
+      "deadline": {
+        "result": "uncertain",
+        "reason": "deadline_unresolved",
+        "quotes": [],
+        "fields": [
+          "deadline"
+        ]
+      },
+      "status": {
+        "result": "uncertain",
+        "reason": "current_meeting_support_required",
+        "quotes": [],
+        "fields": [
+          "status"
+        ]
+      },
+      "conflict": {
+        "result": "pass",
+        "reason": "No conflicts in observed dialogue.",
+        "quotes": [
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.216",
+            "quote": "And then I have to prepare <disfmarker> uh I have to defend our design ,"
+          }
+        ],
+        "fields": []
+      },
+      "relation": {
+        "result": "not_applicable",
+        "reason": "No prior items related to this one.",
+        "quotes": [],
+        "fields": [
+          "related_items"
+        ]
+      }
+    },
+    "unresolved_fields": [
+      "owner",
+      "deadline",
+      "status"
+    ],
+    "observed_evidence_da_ids": [
+      "TS3006a.A.dialog-act.vkaraisk.216",
+      "TS3006a.A.dialog-act.vkaraisk.215",
+      "TS3006a.B.dialog-act.vkaraisk.92"
+    ],
+    "initial_context": {
+      "item": {
+        "type": "actions",
+        "text": "The Project Manager will defend our design.",
+        "flags": []
+      },
+      "fields": {
+        "owner": [
+          "MTD021PM"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "open",
+        "prior_context_needed": false,
+        "related_items": [],
+        "evidence_da_ids": [
+          "TS3006a.A.dialog-act.vkaraisk.216"
+        ],
+        "used_participant_lookup": false
+      },
+      "current_meeting": "TS3006a",
+      "earlier_meetings": [],
+      "roster": [
+        {
+          "speaker": "A",
+          "participant_id": "MTD021PM",
+          "role": "PM"
+        },
+        {
+          "speaker": "B",
+          "participant_id": "MTD023UID",
+          "role": "UI"
+        },
+        {
+          "speaker": "C",
+          "participant_id": "MTD022ID",
+          "role": "ID"
+        },
+        {
+          "speaker": "D",
+          "participant_id": "MTD024ME",
+          "role": "ME"
+        }
+      ],
+      "observed_dialogue": [
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.216",
+          "meeting_id": "TS3006a",
+          "text": "And then I have to prepare <disfmarker> uh I have to defend our design ,",
+          "participant": "MTD021PM",
+          "role": "PM"
+        },
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.215",
+          "participant": "MTD021PM",
+          "role": "PM",
+          "text": "And at the end of the day we have a final meeting ."
+        },
+        {
+          "da_id": "TS3006a.B.dialog-act.vkaraisk.92",
+          "participant": "MTD023UID",
+          "role": "UI",
+          "text": "<vocalsound>"
+        }
+      ],
+      "peer_items": [
+        {
+          "item_key": "TS3006a#0",
+          "type": "problems",
+          "text": "There is a hardware/display problem as the presenter reports the screen is missing ('where has my screen gone?' and 'My screen is gone')."
+        },
+        {
+          "item_key": "TS3006a#1",
+          "type": "actions",
+          "text": "The Project Manager will summarize the discussed items and place the summary in the project folder."
+        },
+        {
+          "item_key": "TS3006a#2",
+          "type": "problems",
+          "text": "Participants report being slow and under-prepared for the kickoff, indicating preparation/co-ordination gaps."
+        },
+        {
+          "item_key": "TS3006a#3",
+          "type": "actions",
+          "text": "The Industrial Designer will create an overview for the three design phases."
+        },
+        {
+          "item_key": "TS3006a#4",
+          "type": "actions",
+          "text": "The Industrial Designer will work on the conceptual design."
+        },
+        {
+          "item_key": "TS3006a#5",
+          "type": "problems",
+          "text": "Unclear scope: unclear which animal to draw and lack of agreement on the subject, as well as unclear which components to include in the design."
+        },
+        {
+          "item_key": "TS3006a#6",
+          "type": "actions",
+          "text": "The Marketing Expert will conduct internet searches and user interviews to determine user requirements."
+        }
+      ]
+    },
+    "observed_documents": [],
+    "document_evidence": [],
+    "relation_evidence": [],
+    "history": [
+      {
+        "item": "TS3006a#7",
+        "step": 1,
+        "flags": [],
+        "action": "assess_item",
+        "outcome": "invalid_action",
+        "error": "Correct these argument fields: : Additional properties are not allowed ('owner' was unexpected)"
+      },
+      {
+        "item": "TS3006a#7",
+        "step": 2,
+        "flags": [],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue shows PM states defense of the design: 'defend our design' and 'prepare' indicates ongoing responsibility.",
+            "quotes": [
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.216",
+                "quote": "And then I have to prepare <disfmarker> uh I have to defend our design ,"
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "uncertain",
+            "reason": "current_meeting_support_required",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "deadline_unresolved",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "uncertain",
+            "reason": "current_meeting_support_required",
+            "quotes": [],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting evidence found in the observed dialogue.",
+            "quotes": [
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.216",
+                "quote": "And then I have to prepare <disfmarker> uh I have to defend our design ,"
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior item relationships present in this item.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "decision": "reassess",
+        "reason": "missing_current_evidence_selection",
+        "requested_action": null,
+        "proposed_fields": {
+          "owner": [
+            "MTD021PM"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "status": "open",
+          "prior_context_needed": false,
+          "related_items": [],
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.216"
+          ],
+          "used_participant_lookup": false
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue shows PM states defense of the design: 'defend our design' and 'prepare' indicates ongoing responsibility.",
+            "quotes": [
+              "TS3006a.A.dialog-act.vkaraisk.216"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Dialogue identifies MTD021PM as the Project Manager who announced/embodies the action."
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "No explicit deadline stated; deadline_basis missing."
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Action is listed as open in this meeting; no contradiction in dialogue."
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting evidence found in the observed dialogue."
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior item relationships present in this item."
+          }
+        },
+        "submitted_assessment": {
+          "fields": {
+            "owner": [
+              "MTD021PM"
+            ],
+            "owner_basis": "explicit",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": [],
+            "evidence_da_ids": [
+              "TS3006a.A.dialog-act.vkaraisk.216"
+            ],
+            "used_participant_lookup": false
+          },
+          "checks": {
+            "statement": {
+              "result": "pass",
+              "reason": "Dialogue shows PM states defense of the design: 'defend our design' and 'prepare' indicates ongoing responsibility.",
+              "quotes": [
+                "TS3006a.A.dialog-act.vkaraisk.216"
+              ]
+            },
+            "owner": {
+              "result": "pass",
+              "reason": "Dialogue identifies MTD021PM as the Project Manager who announced/embodies the action."
+            },
+            "deadline": {
+              "result": "uncertain",
+              "reason": "No explicit deadline stated; deadline_basis missing."
+            },
+            "status": {
+              "result": "pass",
+              "reason": "Action is listed as open in this meeting; no contradiction in dialogue."
+            },
+            "conflict": {
+              "result": "pass",
+              "reason": "No conflicting evidence found in the observed dialogue."
+            },
+            "relation": {
+              "result": "not_applicable",
+              "reason": "No prior item relationships present in this item."
+            }
+          }
+        },
+        "evidence_bindings": {
+          "statement": [
+            "TS3006a.A.dialog-act.vkaraisk.216"
+          ],
+          "conflict_scope": [
+            "TS3006a.A.dialog-act.vkaraisk.216"
+          ]
+        },
+        "raw_tool_input": {
+          "fields": {
+            "owner": [
+              "MTD021PM"
+            ],
+            "owner_basis": "explicit",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": [],
+            "evidence_da_ids": [
+              "TS3006a.A.dialog-act.vkaraisk.216"
+            ],
+            "used_participant_lookup": false
+          },
+          "checks": {
+            "statement": {
+              "result": "pass",
+              "reason": "Dialogue shows PM states defense of the design: 'defend our design' and 'prepare' indicates ongoing responsibility.",
+              "quotes": [
+                "TS3006a.A.dialog-act.vkaraisk.216"
+              ]
+            },
+            "owner": {
+              "result": "pass",
+              "reason": "Dialogue identifies MTD021PM as the Project Manager who announced/embodies the action."
+            },
+            "deadline": {
+              "result": "uncertain",
+              "reason": "No explicit deadline stated; deadline_basis missing."
+            },
+            "status": {
+              "result": "pass",
+              "reason": "Action is listed as open in this meeting; no contradiction in dialogue."
+            },
+            "conflict": {
+              "result": "pass",
+              "reason": "No conflicting evidence found in the observed dialogue."
+            },
+            "relation": {
+              "result": "not_applicable",
+              "reason": "No prior item relationships present in this item."
+            }
+          }
+        },
+        "protocol_normalizations": []
+      },
+      {
+        "item": "TS3006a#7",
+        "step": 3,
+        "flags": [],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue shows PM states defense of the design: 'defend our design' and 'prepare' indicates ongoing responsibility.",
+            "quotes": [
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.216",
+                "quote": "And then I have to prepare <disfmarker> uh I have to defend our design ,"
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "uncertain",
+            "reason": "current_meeting_support_required",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "deadline_unresolved",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "uncertain",
+            "reason": "current_meeting_support_required",
+            "quotes": [],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting evidence found in the observed dialogue.",
+            "quotes": [
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.216",
+                "quote": "And then I have to prepare <disfmarker> uh I have to defend our design ,"
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior item relationships present in this item.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "decision": "retrieve",
+        "reason": "unresolved_checks",
+        "requested_action": null,
+        "proposed_fields": {
+          "owner": [
+            "MTD021PM"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "status": "open",
+          "prior_context_needed": false,
+          "related_items": [],
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.216"
+          ],
+          "used_participant_lookup": false
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue shows PM states defense of the design: 'defend our design' and 'prepare' indicates ongoing responsibility.",
+            "quotes": [
+              "TS3006a.A.dialog-act.vkaraisk.216"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Dialogue identifies MTD021PM as the Project Manager who announced/embodies the action."
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "No explicit deadline stated; deadline_basis missing."
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Action is listed as open in this meeting; no contradiction in dialogue."
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting evidence found in the observed dialogue."
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior item relationships present in this item."
+          }
+        },
+        "submitted_assessment": {
+          "fields": {
+            "owner": [
+              "MTD021PM"
+            ],
+            "owner_basis": "explicit",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": [],
+            "evidence_da_ids": [
+              "TS3006a.A.dialog-act.vkaraisk.216"
+            ],
+            "used_participant_lookup": false
+          },
+          "checks": {
+            "statement": {
+              "result": "pass",
+              "reason": "Dialogue shows PM states defense of the design: 'defend our design' and 'prepare' indicates ongoing responsibility.",
+              "quotes": [
+                "TS3006a.A.dialog-act.vkaraisk.216"
+              ]
+            },
+            "owner": {
+              "result": "pass",
+              "reason": "Dialogue identifies MTD021PM as the Project Manager who announced/embodies the action."
+            },
+            "deadline": {
+              "result": "uncertain",
+              "reason": "No explicit deadline stated; deadline_basis missing."
+            },
+            "status": {
+              "result": "pass",
+              "reason": "Action is listed as open in this meeting; no contradiction in dialogue."
+            },
+            "conflict": {
+              "result": "pass",
+              "reason": "No conflicting evidence found in the observed dialogue."
+            },
+            "relation": {
+              "result": "not_applicable",
+              "reason": "No prior item relationships present in this item."
+            }
+          }
+        },
+        "evidence_bindings": {
+          "statement": [
+            "TS3006a.A.dialog-act.vkaraisk.216"
+          ],
+          "conflict_scope": [
+            "TS3006a.A.dialog-act.vkaraisk.216"
+          ]
+        },
+        "raw_tool_input": {
+          "fields": {
+            "owner": [
+              "MTD021PM"
+            ],
+            "owner_basis": "explicit",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": [],
+            "evidence_da_ids": [
+              "TS3006a.A.dialog-act.vkaraisk.216"
+            ],
+            "used_participant_lookup": false
+          },
+          "checks": {
+            "statement": {
+              "result": "pass",
+              "reason": "Dialogue shows PM states defense of the design: 'defend our design' and 'prepare' indicates ongoing responsibility.",
+              "quotes": [
+                "TS3006a.A.dialog-act.vkaraisk.216"
+              ]
+            },
+            "owner": {
+              "result": "pass",
+              "reason": "Dialogue identifies MTD021PM as the Project Manager who announced/embodies the action."
+            },
+            "deadline": {
+              "result": "uncertain",
+              "reason": "No explicit deadline stated; deadline_basis missing."
+            },
+            "status": {
+              "result": "pass",
+              "reason": "Action is listed as open in this meeting; no contradiction in dialogue."
+            },
+            "conflict": {
+              "result": "pass",
+              "reason": "No conflicting evidence found in the observed dialogue."
+            },
+            "relation": {
+              "result": "not_applicable",
+              "reason": "No prior item relationships present in this item."
+            }
+          }
+        },
+        "protocol_normalizations": []
+      },
+      {
+        "item": "TS3006a#7",
+        "step": 4,
+        "flags": [],
+        "action": "get_participants",
+        "outcome": "lookup",
+        "decision": "retrieve",
+        "args": {
+          "meeting_id": "TS3006a"
+        },
+        "tool_result": {
+          "results": [
+            {
+              "speaker": "A",
+              "participant_id": "MTD021PM",
+              "role": "PM"
+            },
+            {
+              "speaker": "B",
+              "participant_id": "MTD023UID",
+              "role": "UI"
+            },
+            {
+              "speaker": "C",
+              "participant_id": "MTD022ID",
+              "role": "ID"
+            },
+            {
+              "speaker": "D",
+              "participant_id": "MTD024ME",
+              "role": "ME"
+            }
+          ]
+        },
+        "new_info": false
+      },
+      {
+        "item": "TS3006a#7",
+        "step": 5,
+        "flags": [],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "PM states defense of the design and preparation explicit in dialogue.",
+            "quotes": [
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.216",
+                "quote": "And then I have to prepare <disfmarker> uh I have to defend our design ,"
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "uncertain",
+            "reason": "current_meeting_support_required",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "deadline_unresolved",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "uncertain",
+            "reason": "current_meeting_support_required",
+            "quotes": [],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicts in observed dialogue.",
+            "quotes": [
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.216",
+                "quote": "And then I have to prepare <disfmarker> uh I have to defend our design ,"
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior items related to this one.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "decision": "retrieve",
+        "reason": "unresolved_checks",
+        "requested_action": null,
+        "proposed_fields": {
+          "owner": [
+            "MTD021PM"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "status": "open",
+          "prior_context_needed": false,
+          "related_items": [],
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.216"
+          ],
+          "used_participant_lookup": false
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "PM states defense of the design and preparation explicit in dialogue.",
+            "quotes": [
+              "TS3006a.A.dialog-act.vkaraisk.216"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "MTD021PM identified as the Project Manager in dialogue."
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "No explicit deadline given; deadline_basis missing."
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Action listed as open with no contradiction."
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicts in observed dialogue."
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior items related to this one."
+          }
+        },
+        "submitted_assessment": {
+          "fields": {
+            "owner": [
+              "MTD021PM"
+            ],
+            "owner_basis": "explicit",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": [],
+            "evidence_da_ids": [
+              "TS3006a.A.dialog-act.vkaraisk.216"
+            ],
+            "used_participant_lookup": false
+          },
+          "checks": {
+            "statement": {
+              "result": "pass",
+              "reason": "PM states defense of the design and preparation explicit in dialogue.",
+              "quotes": [
+                "TS3006a.A.dialog-act.vkaraisk.216"
+              ]
+            },
+            "owner": {
+              "result": "pass",
+              "reason": "MTD021PM identified as the Project Manager in dialogue."
+            },
+            "deadline": {
+              "result": "uncertain",
+              "reason": "No explicit deadline given; deadline_basis missing."
+            },
+            "status": {
+              "result": "pass",
+              "reason": "Action listed as open with no contradiction."
+            },
+            "conflict": {
+              "result": "pass",
+              "reason": "No conflicts in observed dialogue."
+            },
+            "relation": {
+              "result": "not_applicable",
+              "reason": "No prior items related to this one."
+            }
+          }
+        },
+        "evidence_bindings": {
+          "statement": [
+            "TS3006a.A.dialog-act.vkaraisk.216"
+          ],
+          "conflict_scope": [
+            "TS3006a.A.dialog-act.vkaraisk.216"
+          ]
+        },
+        "raw_tool_input": {
+          "fields": {
+            "owner": [
+              "MTD021PM"
+            ],
+            "owner_basis": "explicit",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": [],
+            "evidence_da_ids": [
+              "TS3006a.A.dialog-act.vkaraisk.216"
+            ],
+            "used_participant_lookup": false
+          },
+          "checks": {
+            "statement": {
+              "result": "pass",
+              "reason": "PM states defense of the design and preparation explicit in dialogue.",
+              "quotes": [
+                "TS3006a.A.dialog-act.vkaraisk.216"
+              ]
+            },
+            "owner": {
+              "result": "pass",
+              "reason": "MTD021PM identified as the Project Manager in dialogue."
+            },
+            "deadline": {
+              "result": "uncertain",
+              "reason": "No explicit deadline given; deadline_basis missing."
+            },
+            "status": {
+              "result": "pass",
+              "reason": "Action listed as open with no contradiction."
+            },
+            "conflict": {
+              "result": "pass",
+              "reason": "No conflicts in observed dialogue."
+            },
+            "relation": {
+              "result": "not_applicable",
+              "reason": "No prior items related to this one."
+            }
+          }
+        },
+        "protocol_normalizations": []
+      },
+      {
+        "item": "TS3006a#7",
+        "step": 6,
+        "flags": [],
+        "action": "get_participants",
+        "outcome": "lookup",
+        "decision": "retrieve",
+        "args": {
+          "meeting_id": "TS3006a"
+        },
+        "tool_result": {
+          "results": [
+            {
+              "speaker": "A",
+              "participant_id": "MTD021PM",
+              "role": "PM"
+            },
+            {
+              "speaker": "B",
+              "participant_id": "MTD023UID",
+              "role": "UI"
+            },
+            {
+              "speaker": "C",
+              "participant_id": "MTD022ID",
+              "role": "ID"
+            },
+            {
+              "speaker": "D",
+              "participant_id": "MTD024ME",
+              "role": "ME"
+            }
+          ],
+          "duplicate": true
+        },
+        "new_info": false
+      },
+      {
+        "item": "TS3006a#7",
+        "step": 6,
+        "flags": [],
+        "action": "stop",
+        "outcome": "pending",
+        "termination_reason": "no_progress",
+        "unresolved_fields": [
+          "owner",
+          "deadline",
+          "status"
+        ]
+      }
+    ],
+    "lookups": 2,
+    "termination_reason": "no_progress",
+    "clarifications": [
+      {
+        "request_id": "18adee129cf5ee6f",
+        "item_key": "TS3006a#7",
+        "record_id": null,
+        "field": "owner",
+        "question": "Who is responsible for this task?",
+        "item_text": "The Project Manager will defend our design.",
+        "reason": "current_meeting_support_required",
+        "evidence_da_ids": [],
+        "available_evidence_da_ids": [
+          "TS3006a.A.dialog-act.vkaraisk.216",
+          "TS3006a.A.dialog-act.vkaraisk.215",
+          "TS3006a.B.dialog-act.vkaraisk.92"
+        ],
+        "status": "open",
+        "termination_reason": "no_progress"
+      },
+      {
+        "request_id": "82ac2cb5ca2ea01a",
+        "item_key": "TS3006a#7",
+        "record_id": null,
+        "field": "deadline",
+        "question": "What is the agreed deadline, in its original wording?",
+        "item_text": "The Project Manager will defend our design.",
+        "reason": "deadline_unresolved",
+        "evidence_da_ids": [],
+        "available_evidence_da_ids": [
+          "TS3006a.A.dialog-act.vkaraisk.216",
+          "TS3006a.A.dialog-act.vkaraisk.215",
+          "TS3006a.B.dialog-act.vkaraisk.92"
+        ],
+        "status": "open",
+        "termination_reason": "no_progress"
+      },
+      {
+        "request_id": "cf09ed9819ac4f1b",
+        "item_key": "TS3006a#7",
+        "record_id": null,
+        "field": "status",
+        "question": "What is this item's status at the end of the current meeting?",
+        "item_text": "The Project Manager will defend our design.",
+        "reason": "current_meeting_support_required",
+        "evidence_da_ids": [],
+        "available_evidence_da_ids": [
+          "TS3006a.A.dialog-act.vkaraisk.216",
+          "TS3006a.A.dialog-act.vkaraisk.215",
+          "TS3006a.B.dialog-act.vkaraisk.92"
+        ],
+        "status": "open",
+        "termination_reason": "no_progress"
+      }
+    ]
+  }
+}

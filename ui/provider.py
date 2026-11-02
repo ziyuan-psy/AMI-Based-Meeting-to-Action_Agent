@@ -21,6 +21,7 @@ from jsonschema import Draft202012Validator
 from markdown_it import MarkdownIt
 
 from transcript_parser import parse_transcript_file
+from .release import PACKAGE, PROFILE, REFERENCE, json_lines, load, verify_artifacts
 
 ROOT = Path(__file__).resolve().parents[1]
 DEVELOPMENT_SERIES = ("ES2011", "IS1008", "TS3004", "TS3006")
@@ -70,9 +71,10 @@ class MeetingProvider(Protocol):
 class SavedDevelopmentProvider:
     """Read-only S2 snapshot, restricted to SB and current/earlier same-series data."""
 
-    def __init__(self, root: Path = ROOT):
+    def __init__(self, root: Path = ROOT, results: Path | None = None, source: str = "saved_acceptance"):
         self.root = root
-        self.results = root / "agent" / "results" / "mvp" / "s2"
+        self.results = results or root / PACKAGE / "run/s2"
+        self.source = source
         # Read the schema, not any annotation JSON. The agent copy is checked in tests.
         self.schema = json.loads((root / "revised_gold_output" / "revised_gold schema template.json").read_text(encoding="utf-8"))
         self.validator = Draft202012Validator(self.schema)
@@ -89,7 +91,8 @@ class SavedDevelopmentProvider:
                                  "has_saved_run": (self.results / f"{mid}.json").is_file(),
                                  "prior_meeting_ids": visible_meetings(mid)[:-1]})
         return {"series": list(DEVELOPMENT_SERIES), "meetings": meetings,
-                "schema_version": SCHEMA_VERSION, "source": "saved_development"}
+                "schema_version": SCHEMA_VERSION, "source": "saved_development", "ui_version": 2,
+                "release": {"profile": PROFILE, "reference": REFERENCE, "p2_enabled": False}}
 
     @lru_cache(maxsize=16)
     def meeting(self, meeting_id: str) -> dict:
@@ -131,13 +134,16 @@ class SavedDevelopmentProvider:
         unavailable = {"kind": "unavailable", "locator": locator, "text": "Source unavailable in this saved run."}
         allowed = visible_meetings(current)
         if source_type == "project_document":
-            match = re.fullmatch(r"PDF page (\d+)(?: \(one-based\))?", locator)
+            match = re.fullmatch(r"PDF page (\d+)(?: \(one-based\))?(?:, chars (\d+)-(\d+) \(zero-based, end-exclusive\))?", locator)
             if match:
                 raw = (self.root / "agent" / "data" / "scenario_text.txt").read_text(encoding="utf-8")
                 parts = re.split(r"=== PDF PAGE (\d+) ===", raw)
                 for page, text in zip(parts[1::2], parts[2::2]):
                     if int(page) == int(match[1]):
-                        return {"kind": "document", "locator": locator, "text": text.strip(), "page": int(page)}
+                        text = text.strip()
+                        if match[2] is not None:
+                            text = text[int(match[2]):int(match[3])]
+                        return {"kind": "document", "locator": locator, "text": text, "page": int(page)}
             return unavailable
         da_id = locator.split(" ")[0]
         mid = da_id.split(".")[0]
@@ -174,10 +180,20 @@ class SavedDevelopmentProvider:
 
     def start_run(self, meeting_id: str) -> RunBundle:
         meeting_parts(meeting_id)
+        try:
+            metadata = verify_artifacts(self.results, meeting_id)
+        except FileNotFoundError:
+            raise DataError("No completed accepted-profile record is available for this meeting yet.", "saved_run_unavailable", 404) from None
+        except (ValueError, KeyError):
+            raise DataError("The saved run failed its completion or artifact-integrity checks.", "artifact_invalid", 422) from None
         items, raw = self._record(meeting_id)
         earlier = []
         for mid in visible_meetings(meeting_id)[:-1]:
             if (self.results / f"{mid}.json").is_file():
+                try:
+                    verify_artifacts(self.results, mid)
+                except (OSError, ValueError, KeyError):
+                    raise DataError("An earlier record failed its completion or artifact-integrity checks.", "artifact_invalid", 422) from None
                 previous, _ = self._record(mid)
                 earlier.append({"meeting_id": mid, "items": previous})
         prior = {i["id"]: i for record in earlier for i in record["items"] if i["type"] != "abstract"}
@@ -190,31 +206,62 @@ class SavedDevelopmentProvider:
             for ref in item["reference"]:
                 evidence[ref["source_type"] + ":" + ref["locator"]] = self._resolve(ref["locator"], meeting_id, prior, ref["source_type"])
         trace_path = self.results / f"{meeting_id}.trace.jsonl"
-        trace = [json.loads(line) for line in trace_path.read_text(encoding="utf-8").splitlines() if line.strip()]
+        trace = json_lines(trace_path)
+        stages = json_lines(self.results / f"{meeting_id}.stages.jsonl")
+        item_map = {}
+        for stage in stages:
+            if stage.get("stage") == "assemble":
+                item_map.update(stage.get("item_record_map", {}))
         events = []
         for original in trace:
             event = copy.deepcopy(original)
-            # Existing traces use meeting#<zero-based record position>. The live
-            # adapter should emit record_id directly rather than rely on this map.
-            match = re.fullmatch(re.escape(meeting_id) + r"#(\d+)", event.get("item", ""))
-            index = int(match[1]) if match else -1
-            event["record_id"] = items[index]["id"] if 0 <= index < len(items) and items[index]["type"] != "abstract" else None
-            event["observations"] = [self._observation(loc, meeting_id, prior, event) for loc in event.get("observation_ids", [])]
-            event["observation_source"] = "resolved_logged_ids"
+            # Removed/quarantined candidates must never be mapped by array position.
+            event["record_id"] = item_map.get(event.get("item"))
+            event["observations"] = []
+            if "delivered_result" in event:
+                delivered = event["delivered_result"]
+                try:
+                    delivered = json.loads(delivered) if isinstance(delivered, str) else delivered
+                except ValueError:
+                    delivered = {}
+                for row in delivered.get("results", []) if isinstance(delivered, dict) else []:
+                    if not isinstance(row, dict):
+                        continue
+                    locator = row.get("da_id") or row.get("id") or row.get("participant_id") or ""
+                    if isinstance(row.get("page"), int):
+                        locator = f"PDF page {row['page']} (one-based)"
+                        observation = self._resolve(locator, meeting_id, prior, "project_document")
+                    else:
+                        observation = self._observation(locator, meeting_id, prior, event)
+                    if observation["kind"] != "unavailable":
+                        observation.update(text=row.get("text", row.get("snippet", observation["text"])), score=row.get("score"))
+                        event["observations"].append(observation)
+                event["observation_source"] = "delivered_tool_result"
+            else:
+                event["observations"] = [self._observation(loc, meeting_id, prior, event) for loc in event.get("observation_ids", [])]
+                event["observation_source"] = "resolved_logged_ids"
             events.append(event)
         markdown = (self.results / f"{meeting_id}_report.md").read_text(encoding="utf-8")
         unresolved = [i["id"] for i in items if i["type"] == "actions" and
                       (i["owner_basis"] in ("ambiguous", "missing") or i["deadline_basis"] == "ambiguous")]
         people = {mid: self.meeting(mid)["participants"] for mid in visible_meetings(meeting_id)}
         run_id = uuid.uuid4().hex
-        payload = {"run_id": run_id, "meeting_id": meeting_id, "source": "saved_development", "mode": "s2",
+        payload = {"run_id": run_id, "meeting_id": meeting_id, "source": self.source, "mode": "s2",
                    "status": "COMPLETED", "stage": "ready", "schema_version": SCHEMA_VERSION, "schema_valid": True,
-                   "review_state": "unreviewed", "items": items, "earlier_records": earlier, "events": events,
+                   "review_state": "draft_candidate", "items": items, "earlier_records": earlier, "events": events,
                    "evidence": evidence, "participants": people, "unresolved_item_ids": unresolved,
                    "counts": dict(Counter(i["type"] for i in items)),
                    "report_markdown": markdown, "report_html": render_markdown(markdown),
-                   "provenance": {"record": f"agent/results/mvp/s2/{meeting_id}.json",
-                                  "trace": f"agent/results/mvp/s2/{meeting_id}.trace.jsonl"},
+                   "provenance": {"record": (self.results / f"{meeting_id}.json").relative_to(self.root).as_posix(),
+                                  "trace": (self.results / f"{meeting_id}.trace.jsonl").relative_to(self.root).as_posix()},
+                   "workflow": {"reference": REFERENCE, "agent_run_id": metadata["run_id"],
+                                "model": metadata.get("model", {}).get("name"),
+                                "profile": metadata["quality_policy"]["name"], "policy": metadata["quality_policy"],
+                                "p2_enabled": load(self.results / f"{meeting_id}.p2.json")["enabled"],
+                                "clarifications": load(self.results / f"{meeting_id}.clarifications.json").get("requests", []),
+                                "elapsed_seconds": metadata.get("elapsed_seconds"), "usage": metadata.get("usage", {}),
+                                "budget": {k: v for k, v in metadata.get("runtime_control", {}).items() if k not in ("attempts",)},
+                                "stages": [{k: e[k] for k in ("seq", "t", "stage", "event", "current_stage", "status") if k in e} for e in stages]},
                    "warnings": current["parser_warnings"]}
         bundle = RunBundle(payload, raw, markdown)
         with self._lock:

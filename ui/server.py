@@ -10,6 +10,7 @@ from pathlib import Path
 from urllib.parse import parse_qs, unquote, urlsplit
 
 from .provider import DataError, MeetingProvider, SavedDevelopmentProvider
+from .jobs import LiveJobs
 
 STATIC = Path(__file__).resolve().parent / "static"
 ASSETS = {"/": ("index.html", "text/html"), "/app.js": ("app.js", "text/javascript"),
@@ -17,8 +18,17 @@ ASSETS = {"/": ("index.html", "text/html"), "/app.js": ("app.js", "text/javascri
 
 
 def make_server(host: str = "127.0.0.1", port: int = 8765,
-                provider: MeetingProvider | None = None) -> ThreadingHTTPServer:
+                provider: MeetingProvider | None = None, jobs: LiveJobs | None = None) -> ThreadingHTTPServer:
     source = provider or SavedDevelopmentProvider()
+    live = jobs or LiveJobs()
+
+    def bundle(run_id):
+        try:
+            return source.get_run(run_id)
+        except DataError as error:
+            if error.code != "run_not_found":
+                raise
+            return live.bundle(run_id)
 
     class Handler(BaseHTTPRequestHandler):
         def _send(self, body: bytes, content_type: str, status: int = 200, filename: str | None = None):
@@ -38,10 +48,14 @@ def make_server(host: str = "127.0.0.1", port: int = 8765,
             self._send(json.dumps(value, ensure_ascii=False).encode("utf-8"), "application/json", status)
 
         def _dispatch(self, post: bool = False):
+            hostname = urlsplit("http://" + self.headers.get("Host", "")).hostname
+            if hostname not in ("127.0.0.1", "localhost", "::1"):
+                raise DataError("Open this app using its localhost address.", "host_rejected", 403)
             url = urlsplit(self.path)
             path = unquote(url.path)
             if post:
-                if path != "/api/runs":
+                cancel_match = re.fullmatch(r"/api/agent/runs/([a-f0-9]{32})/cancel", path)
+                if path not in ("/api/runs", "/api/agent/runs") and not cancel_match:
                     raise DataError("Endpoint not found.", "not_found", 404)
                 origin = self.headers.get("Origin")
                 if origin and origin not in {f"http://{self.headers.get('Host')}"}:
@@ -51,30 +65,41 @@ def make_server(host: str = "127.0.0.1", port: int = 8765,
                     if length < 1 or length > 4096:
                         raise ValueError
                     data = json.loads(self.rfile.read(length))
-                    if not isinstance(data, dict) or set(data) != {"meeting_id"} or not isinstance(data["meeting_id"], str):
+                    if not isinstance(data, dict):
+                        raise ValueError
+                    if not cancel_match and (set(data) != {"meeting_id"} or not isinstance(data["meeting_id"], str)):
                         raise ValueError
                 except (ValueError, UnicodeDecodeError):
                     raise DataError("Send a JSON object containing meeting_id.") from None
-                self._json(source.start_run(data["meeting_id"]).payload, 201)
+                if cancel_match:
+                    self._json(live.cancel(cancel_match[1]))
+                elif path == "/api/agent/runs":
+                    self._json(live.start(data["meeting_id"]), 202)
+                else:
+                    self._json(source.start_run(data["meeting_id"]).payload, 201)
                 return
             if path in ASSETS:
                 name, content_type = ASSETS[path]
                 self._send((STATIC / name).read_bytes(), content_type)
             elif path == "/api/catalog":
                 self._json(source.catalog())
+            elif path == "/api/agent":
+                self._json(live.capabilities())
+            elif match := re.fullmatch(r"/api/agent/runs/([a-f0-9]{32})", path):
+                self._json(live.get(match[1]))
             elif match := re.fullmatch(r"/api/meetings/([^/]+)", path):
                 self._json(source.meeting(match[1]))
             elif match := re.fullmatch(r"/api/runs/([a-f0-9]{32})(/export)?", path):
-                bundle = source.get_run(match[1])
+                record = bundle(match[1])
                 if not match[2]:
-                    self._json(bundle.payload)
+                    self._json(record.payload)
                     return
                 fmt = parse_qs(url.query).get("format", ["json"])[0]
-                mid = bundle.payload["meeting_id"]
+                mid = record.payload["meeting_id"]
                 if fmt == "json":
-                    self._send(bundle.record_text.encode("utf-8"), "application/json", filename=f"{mid}.json")
+                    self._send(record.record_text.encode("utf-8"), "application/json", filename=f"{mid}.json")
                 elif fmt == "markdown":
-                    self._send(bundle.report_markdown.encode("utf-8"), "text/markdown", filename=f"{mid}_report.md")
+                    self._send(record.report_markdown.encode("utf-8"), "text/markdown", filename=f"{mid}_report.md")
                 else:
                     raise DataError("Export format must be json or markdown.")
             else:
@@ -100,7 +125,9 @@ def make_server(host: str = "127.0.0.1", port: int = 8765,
         def log_message(self, fmt, *args):
             logging.info(fmt, *args)
 
-    return ThreadingHTTPServer((host, port), Handler)
+    server = ThreadingHTTPServer((host, port), Handler)
+    server.live_jobs = live
+    return server
 
 
 def main():
@@ -115,6 +142,7 @@ def main():
     except KeyboardInterrupt:
         pass
     finally:
+        server.live_jobs.close()
         server.server_close()
 
 

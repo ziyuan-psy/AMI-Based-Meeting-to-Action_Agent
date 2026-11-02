@@ -8,6 +8,7 @@ from urllib.request import Request, urlopen
 
 from ui.provider import ROOT, DataError, SavedDevelopmentProvider, render_markdown
 from ui.server import make_server
+from ui.release import json_lines
 
 
 class ProviderTests(unittest.TestCase):
@@ -33,8 +34,9 @@ class ProviderTests(unittest.TestCase):
             self.assertEqual(bundle.payload["items"], expected)
             self.assertEqual(json.loads(bundle.record_text), expected)
             self.provider.validator.validate(bundle.payload["items"])
-            self.assertEqual(bundle.payload["source"], "saved_development")
+            self.assertEqual(bundle.payload["source"], "saved_acceptance")
             self.assertTrue(bundle.payload["schema_valid"])
+            self.assertFalse(bundle.payload["workflow"]["p2_enabled"])
 
     def test_parser_and_participant_enrichment(self):
         meeting = self.provider.meeting("TS3006b")
@@ -56,9 +58,11 @@ class ProviderTests(unittest.TestCase):
     def test_later_meeting_has_only_earlier_records_and_logged_observations(self):
         run = self.provider.start_run("TS3006c").payload
         self.assertEqual([r["meeting_id"] for r in run["earlier_records"]], ["TS3006a", "TS3006b"])
-        self.assertEqual(run["events"][0]["record_id"], "TS3006c.sys.s.1")
-        self.assertEqual(run["events"][0]["observation_source"], "resolved_logged_ids")
-        self.assertTrue(run["events"][0]["observations"])
+        assembly = next(e for e in json_lines(self.provider.results / "TS3006c.stages.jsonl") if e.get("stage") == "assemble")
+        self.assertEqual(run["events"][0]["record_id"], assembly["item_record_map"][run["events"][0]["item"]])
+        self.assertEqual(run["events"][0]["observation_source"], "delivered_tool_result")
+        self.assertEqual(run["events"][0]["observations"], [])  # actual first lookup returned no matches
+        self.assertTrue(any(e["observations"] for e in run["events"]))
         for event in run["events"]:
             for observation in event["observations"]:
                 if "meeting_id" in observation:
@@ -72,7 +76,7 @@ class ProviderTests(unittest.TestCase):
         for locator in ("TS3006d.A.dialog-act.dharshi.1", "ES2011a.A.dialog-act.dharshi.1", "ES2004a.A.dialog-act.dharshi.1"):
             self.assertEqual(self.provider._resolve(locator, "TS3006b", {})["kind"], "unavailable")
         run = self.provider.start_run("TS3006c").payload
-        evidence = run["evidence"]["dialogue:TS3006c.A.dialog-act.dharshi.274"]
+        evidence = next(e for e in run["evidence"].values() if e["kind"] == "dialogue")
         self.assertEqual(evidence["kind"], "dialogue")
         self.assertEqual(sum(line["highlight"] for line in evidence["context"]), 1)
 
@@ -126,7 +130,7 @@ class TransportTests(unittest.TestCase):
         for fmt, filename in (("json", "TS3006c.json"), ("markdown", "TS3006c_report.md")):
             with urlopen(f"{self.base}/api/runs/{run['run_id']}/export?format={fmt}") as response:
                 self.assertIn(filename, response.headers["Content-Disposition"])
-                original = (ROOT / "agent/results/mvp/s2" / filename).read_text(encoding="utf-8")
+                original = (SavedDevelopmentProvider().results / filename).read_text(encoding="utf-8")
                 self.assertEqual(response.read().decode(), original)
 
     def test_unknown_held_out_and_malformed_requests_are_rejected(self):
@@ -141,6 +145,11 @@ class TransportTests(unittest.TestCase):
     def test_cross_origin_post_is_rejected(self):
         with self.assertRaises(HTTPError) as caught:
             urlopen(Request(self.base + "/api/runs", data=b'{"meeting_id":"TS3006c"}', headers={"Origin": "https://example.org"}))
+        self.assertEqual(caught.exception.code, 403)
+
+    def test_nonlocal_host_cannot_access_the_live_capability_endpoint(self):
+        with self.assertRaises(HTTPError) as caught:
+            urlopen(Request(self.base + "/api/agent", headers={"Host": "example.org"}))
         self.assertEqual(caught.exception.code, 403)
 
 

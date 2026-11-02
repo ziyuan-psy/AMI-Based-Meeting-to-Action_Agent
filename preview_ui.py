@@ -19,7 +19,7 @@ def is_ui_running(port: int) -> bool:
     try:
         with urlopen(f"http://127.0.0.1:{port}/api/catalog", timeout=1) as response:
             catalog = json.load(response)
-        return isinstance(catalog, dict) and catalog.get("source") == "saved_development"
+        return isinstance(catalog, dict) and catalog.get("source") == "saved_development" and catalog.get("ui_version", 0) >= 2
     except (OSError, ValueError):
         return False
 

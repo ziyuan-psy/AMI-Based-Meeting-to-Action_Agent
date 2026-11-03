@@ -1,0 +1,672 @@
+{
+  "item": 13,
+  "fields": {
+    "item_key": "TS3007c#13",
+    "record_id": null,
+    "item_type": "actions",
+    "item_text": "Draw the concept in 3-D.",
+    "state": "pending",
+    "recordable": true,
+    "fields": {
+      "status": "open",
+      "prior_context_needed": false,
+      "related_items": [],
+      "owner": [
+        "MTD026UID"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3007c.json",
+          "locator": "TS3007c.C.dialog-act.dharshi.86"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3007c.json",
+          "locator": "TS3007c.D.dialog-act.dharshi.35"
+        }
+      ]
+    },
+    "draft_fields": {
+      "status": "open",
+      "related_items": [],
+      "owner": [
+        "MTD026UID"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "prior_context_needed": false,
+      "used_participant_lookup": false,
+      "evidence_da_ids": [
+        "TS3007c.C.dialog-act.dharshi.86",
+        "TS3007c.D.dialog-act.dharshi.35"
+      ]
+    },
+    "checks": {
+      "statement": {
+        "result": "pass",
+        "reason": "The dialogue shows a clear action request: draw the concept in 3-D, with confirmation by ME.",
+        "quotes": [
+          {
+            "da_id": "TS3007c.C.dialog-act.dharshi.86",
+            "quote": "You want me to draw in three-D_ ?"
+          },
+          {
+            "da_id": "TS3007c.D.dialog-act.dharshi.35",
+            "quote": "Yeah ."
+          }
+        ],
+        "fields": [
+          "statement"
+        ]
+      },
+      "owner": {
+        "result": "pass",
+        "reason": "Owner is explicitly stated as MTD026UID in provisional values and corroborated by the dialogue showing assignment to that participant.",
+        "quotes": [
+          {
+            "da_id": "TS3007c.C.dialog-act.dharshi.86",
+            "quote": "You want me to draw in three-D_ ?"
+          },
+          {
+            "da_id": "TS3007c.D.dialog-act.dharshi.35",
+            "quote": "Yeah ."
+          }
+        ],
+        "fields": [
+          "owner"
+        ]
+      },
+      "deadline": {
+        "result": "uncertain",
+        "reason": "deadline_unresolved",
+        "quotes": [
+          {
+            "da_id": "TS3007c.C.dialog-act.dharshi.86",
+            "quote": "You want me to draw in three-D_ ?"
+          },
+          {
+            "da_id": "TS3007c.D.dialog-act.dharshi.35",
+            "quote": "Yeah ."
+          }
+        ],
+        "fields": [
+          "deadline"
+        ]
+      },
+      "status": {
+        "result": "pass",
+        "reason": "Action is currently open with no evidence of completion or closure in dialogue.",
+        "quotes": [
+          {
+            "da_id": "TS3007c.C.dialog-act.dharshi.86",
+            "quote": "You want me to draw in three-D_ ?"
+          },
+          {
+            "da_id": "TS3007c.D.dialog-act.dharshi.35",
+            "quote": "Yeah ."
+          }
+        ],
+        "fields": [
+          "status"
+        ]
+      },
+      "conflict": {
+        "result": "pass",
+        "reason": "No conflicting statements found within the observed dialogue.",
+        "quotes": [
+          {
+            "da_id": "TS3007c.C.dialog-act.dharshi.86",
+            "quote": "You want me to draw in three-D_ ?"
+          },
+          {
+            "da_id": "TS3007c.D.dialog-act.dharshi.35",
+            "quote": "Yeah ."
+          }
+        ],
+        "fields": []
+      },
+      "relation": {
+        "result": "not_applicable",
+        "reason": "No prior related item identified to relate this action to in the provided data.",
+        "quotes": [],
+        "fields": [
+          "related_items"
+        ]
+      }
+    },
+    "unresolved_fields": [
+      "deadline"
+    ],
+    "observed_evidence_da_ids": [
+      "TS3007c.C.dialog-act.dharshi.86",
+      "TS3007c.D.dialog-act.dharshi.35",
+      "TS3007c.D.dialog-act.dharshi.34",
+      "TS3007c.B.dialog-act.dharshi.25",
+      "TS3007c.D.dialog-act.dharshi.36"
+    ],
+    "initial_context": {
+      "item": {
+        "type": "actions",
+        "text": "Draw the concept in 3-D.",
+        "flags": []
+      },
+      "current_meeting": "TS3007c",
+      "earlier_meetings": [
+        "TS3007a",
+        "TS3007b"
+      ],
+      "roster": [
+        {
+          "speaker": "A",
+          "participant_id": "MTD025PM",
+          "role": "PM"
+        },
+        {
+          "speaker": "B",
+          "participant_id": "MTD027ID",
+          "role": "UI"
+        },
+        {
+          "speaker": "C",
+          "participant_id": "MTD026UID",
+          "role": "ID"
+        },
+        {
+          "speaker": "D",
+          "participant_id": "MTD028ME",
+          "role": "ME"
+        }
+      ],
+      "observed_dialogue": [
+        {
+          "da_id": "TS3007c.C.dialog-act.dharshi.86",
+          "meeting_id": "TS3007c",
+          "text": "You want me to draw in three-D_ ?",
+          "participant": "MTD026UID",
+          "role": "ID"
+        },
+        {
+          "da_id": "TS3007c.D.dialog-act.dharshi.35",
+          "meeting_id": "TS3007c",
+          "text": "Yeah .",
+          "participant": "MTD028ME",
+          "role": "ME"
+        },
+        {
+          "da_id": "TS3007c.D.dialog-act.dharshi.34",
+          "participant": "MTD028ME",
+          "role": "ME",
+          "text": "The <disfmarker>"
+        },
+        {
+          "da_id": "TS3007c.B.dialog-act.dharshi.25",
+          "participant": "MTD027ID",
+          "role": "UI",
+          "text": "Th th yeah . Yeah ."
+        },
+        {
+          "da_id": "TS3007c.D.dialog-act.dharshi.36",
+          "participant": "MTD028ME",
+          "role": "ME",
+          "text": "Yeah ."
+        }
+      ],
+      "peer_items": [
+        {
+          "item_key": "TS3007c#0",
+          "type": "problems",
+          "text": "Open problem: UI's laptop failure (Windows hang) reduced time available to complete tasks."
+        },
+        {
+          "item_key": "TS3007c#1",
+          "type": "problems",
+          "text": "Solar panels are impractical due to limited space on the remote, reducing space for the interface and for harvesting energy."
+        },
+        {
+          "item_key": "TS3007c#2",
+          "type": "decisions",
+          "text": "Adopt a combined power system using a rechargeable battery with kinetic energy as a back-up."
+        },
+        {
+          "item_key": "TS3007c#3",
+          "type": "decisions",
+          "text": "Charge the battery when the remote is moved."
+        },
+        {
+          "item_key": "TS3007c#4",
+          "type": "decisions",
+          "text": "The remote will use rubber casing material."
+        },
+        {
+          "item_key": "TS3007c#5",
+          "type": "decisions",
+          "text": "The casing must be firm and not bendable."
+        },
+        {
+          "item_key": "TS3007c#6",
+          "type": "decisions",
+          "text": "The touch-screen concept will be housed in a protective case to prevent breakage."
+        },
+        {
+          "item_key": "TS3007c#7",
+          "type": "decisions",
+          "text": "Parental control will be incorporated but not too complex and offered as a menu option."
+        },
+        {
+          "item_key": "TS3007c#8",
+          "type": "decisions",
+          "text": "The remote will use a square LCD as the standard touch-screen; if LCD is used, include an advanced LCD option."
+        },
+        {
+          "item_key": "TS3007c#9",
+          "type": "problems",
+          "text": "Budget constraints may force moving from advanced chip sets to simpler button solutions if costs are not manageable."
+        },
+        {
+          "item_key": "TS3007c#10",
+          "type": "problems",
+          "text": "Using a combination battery and kinetic charging may increase costs."
+        },
+        {
+          "item_key": "TS3007c#11",
+          "type": "actions",
+          "text": "Take notes and place the minutes in the shared folder."
+        },
+        {
+          "item_key": "TS3007c#12",
+          "type": "actions",
+          "text": "Create a dynamic PowerPoint mock-up of the interface."
+        }
+      ],
+      "provisional_values": {
+        "owner": [
+          "MTD026UID"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "open",
+        "related_items": []
+      },
+      "candidate_evidence_da_ids": [
+        "TS3007c.C.dialog-act.dharshi.86",
+        "TS3007c.D.dialog-act.dharshi.35"
+      ]
+    },
+    "observed_documents": [],
+    "document_evidence": [],
+    "relation_evidence": [],
+    "history": [
+      {
+        "item": "TS3007c#13",
+        "step": 1,
+        "flags": [],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "The dialogue shows a clear action request: draw the concept in 3-D, with confirmation by ME.",
+            "quotes": [
+              {
+                "da_id": "TS3007c.C.dialog-act.dharshi.86",
+                "quote": "You want me to draw in three-D_ ?"
+              },
+              {
+                "da_id": "TS3007c.D.dialog-act.dharshi.35",
+                "quote": "Yeah ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Owner is explicitly stated as MTD026UID in provisional values and corroborated by the dialogue showing assignment to that participant.",
+            "quotes": [
+              {
+                "da_id": "TS3007c.C.dialog-act.dharshi.86",
+                "quote": "You want me to draw in three-D_ ?"
+              },
+              {
+                "da_id": "TS3007c.D.dialog-act.dharshi.35",
+                "quote": "Yeah ."
+              }
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "deadline_unresolved",
+            "quotes": [
+              {
+                "da_id": "TS3007c.C.dialog-act.dharshi.86",
+                "quote": "You want me to draw in three-D_ ?"
+              },
+              {
+                "da_id": "TS3007c.D.dialog-act.dharshi.35",
+                "quote": "Yeah ."
+              }
+            ],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Action is currently open with no evidence of completion or closure in dialogue.",
+            "quotes": [
+              {
+                "da_id": "TS3007c.C.dialog-act.dharshi.86",
+                "quote": "You want me to draw in three-D_ ?"
+              },
+              {
+                "da_id": "TS3007c.D.dialog-act.dharshi.35",
+                "quote": "Yeah ."
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting statements found within the observed dialogue.",
+            "quotes": [
+              {
+                "da_id": "TS3007c.C.dialog-act.dharshi.86",
+                "quote": "You want me to draw in three-D_ ?"
+              },
+              {
+                "da_id": "TS3007c.D.dialog-act.dharshi.35",
+                "quote": "Yeah ."
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related item identified to relate this action to in the provided data.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "decision": "request_clarification",
+        "reason": "unresolved_checks",
+        "assessed_text": "Draw the concept in 3-D.",
+        "requested_action": null,
+        "proposed_fields": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "MTD026UID"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "TS3007c.C.dialog-act.dharshi.86",
+            "TS3007c.D.dialog-act.dharshi.35"
+          ]
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "The dialogue shows a clear action request: draw the concept in 3-D, with confirmation by ME.",
+            "quotes": [
+              "TS3007c.C.dialog-act.dharshi.86",
+              "TS3007c.D.dialog-act.dharshi.35"
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Owner is explicitly stated as MTD026UID in provisional values and corroborated by the dialogue showing assignment to that participant.",
+            "quotes": [
+              "TS3007c.C.dialog-act.dharshi.86",
+              "TS3007c.D.dialog-act.dharshi.35"
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "No explicit deadline mentioned in the current dialogue; deadline is missing in provisional data.",
+            "quotes": [
+              "TS3007c.C.dialog-act.dharshi.86",
+              "TS3007c.D.dialog-act.dharshi.35"
+            ],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Action is currently open with no evidence of completion or closure in dialogue.",
+            "quotes": [
+              "TS3007c.C.dialog-act.dharshi.86",
+              "TS3007c.D.dialog-act.dharshi.35"
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting statements found within the observed dialogue.",
+            "quotes": [],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related item identified to relate this action to in the provided data.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "MTD026UID"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "statement": {
+            "result": "pass",
+            "reason": "The dialogue shows a clear action request: draw the concept in 3-D, with confirmation by ME.",
+            "evidence_da_ids": [
+              "TS3007c.C.dialog-act.dharshi.86",
+              "TS3007c.D.dialog-act.dharshi.35"
+            ]
+          },
+          "owner_check": {
+            "result": "pass",
+            "reason": "Owner is explicitly stated as MTD026UID in provisional values and corroborated by the dialogue showing assignment to that participant.",
+            "evidence_da_ids": [
+              "TS3007c.C.dialog-act.dharshi.86",
+              "TS3007c.D.dialog-act.dharshi.35"
+            ]
+          },
+          "deadline_check": {
+            "result": "uncertain",
+            "reason": "No explicit deadline mentioned in the current dialogue; deadline is missing in provisional data.",
+            "evidence_da_ids": [
+              "TS3007c.C.dialog-act.dharshi.86",
+              "TS3007c.D.dialog-act.dharshi.35"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Action is currently open with no evidence of completion or closure in dialogue.",
+            "evidence_da_ids": [
+              "TS3007c.C.dialog-act.dharshi.86",
+              "TS3007c.D.dialog-act.dharshi.35"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No conflicting statements found within the observed dialogue.",
+            "evidence_da_ids": [],
+            "affected_fields": []
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior related item identified to relate this action to in the provided data.",
+            "evidence_da_ids": []
+          }
+        },
+        "evidence_bindings": {
+          "statement": [
+            "TS3007c.C.dialog-act.dharshi.86",
+            "TS3007c.D.dialog-act.dharshi.35"
+          ],
+          "owner": [
+            "TS3007c.C.dialog-act.dharshi.86",
+            "TS3007c.D.dialog-act.dharshi.35"
+          ],
+          "deadline": [
+            "TS3007c.C.dialog-act.dharshi.86",
+            "TS3007c.D.dialog-act.dharshi.35"
+          ],
+          "status": [
+            "TS3007c.C.dialog-act.dharshi.86",
+            "TS3007c.D.dialog-act.dharshi.35"
+          ],
+          "conflict_scope": [
+            "TS3007c.C.dialog-act.dharshi.86",
+            "TS3007c.D.dialog-act.dharshi.35"
+          ]
+        },
+        "raw_tool_input": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "MTD026UID"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "statement": {
+            "result": "pass",
+            "reason": "The dialogue shows a clear action request: draw the concept in 3-D, with confirmation by ME.",
+            "evidence_da_ids": [
+              "TS3007c.C.dialog-act.dharshi.86",
+              "TS3007c.D.dialog-act.dharshi.35"
+            ]
+          },
+          "owner_check": {
+            "result": "pass",
+            "reason": "Owner is explicitly stated as MTD026UID in provisional values and corroborated by the dialogue showing assignment to that participant.",
+            "evidence_da_ids": [
+              "TS3007c.C.dialog-act.dharshi.86",
+              "TS3007c.D.dialog-act.dharshi.35"
+            ]
+          },
+          "deadline_check": {
+            "result": "uncertain",
+            "reason": "No explicit deadline mentioned in the current dialogue; deadline is missing in provisional data.",
+            "evidence_da_ids": [
+              "TS3007c.C.dialog-act.dharshi.86",
+              "TS3007c.D.dialog-act.dharshi.35"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Action is currently open with no evidence of completion or closure in dialogue.",
+            "evidence_da_ids": [
+              "TS3007c.C.dialog-act.dharshi.86",
+              "TS3007c.D.dialog-act.dharshi.35"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No conflicting statements found within the observed dialogue.",
+            "evidence_da_ids": [],
+            "affected_fields": []
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior related item identified to relate this action to in the provided data.",
+            "evidence_da_ids": []
+          },
+          "documents": []
+        },
+        "protocol_normalizations": [
+          "empty_unscoped_documents",
+          "controller_action_for_missing_hint:request_clarification"
+        ],
+        "unresolved_before": [
+          "deadline",
+          "owner",
+          "statement",
+          "status"
+        ],
+        "unresolved_after": [
+          "deadline"
+        ],
+        "semantic_stalls": 0,
+        "validation_codes": {
+          "deadline": [
+            "deadline_unresolved"
+          ]
+        }
+      },
+      {
+        "item": "TS3007c#13",
+        "step": 1,
+        "flags": [],
+        "action": "stop",
+        "outcome": "pending",
+        "termination_reason": "unresolved_checks",
+        "unresolved_fields": [
+          "deadline"
+        ]
+      }
+    ],
+    "lookups": 0,
+    "termination_reason": "unresolved_checks",
+    "clarifications": [
+      {
+        "request_id": "462ead8af8c308b3",
+        "item_key": "TS3007c#13",
+        "record_id": null,
+        "field": "deadline",
+        "question": "What is the agreed deadline, in its original wording?",
+        "item_text": "Draw the concept in 3-D.",
+        "reason": "deadline_unresolved",
+        "evidence_da_ids": [
+          "TS3007c.C.dialog-act.dharshi.86",
+          "TS3007c.D.dialog-act.dharshi.35"
+        ],
+        "available_evidence_da_ids": [
+          "TS3007c.C.dialog-act.dharshi.86",
+          "TS3007c.D.dialog-act.dharshi.35",
+          "TS3007c.D.dialog-act.dharshi.34",
+          "TS3007c.B.dialog-act.dharshi.25",
+          "TS3007c.D.dialog-act.dharshi.36"
+        ],
+        "status": "open",
+        "termination_reason": "unresolved_checks"
+      }
+    ]
+  }
+}

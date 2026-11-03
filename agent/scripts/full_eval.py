@@ -85,6 +85,44 @@ def extraction(run: Path, mode: str, gold_dir: Path, llm) -> dict:
             "fewshot_gold_items_excluded": excluded}
 
 
+def tolerant_extraction(run: Path, mode: str, gold_dir: Path, llm, meetings: list[str] | None = None) -> dict:
+    """Split/merge-tolerant P/R/F1 (mta.evaluate.make_tolerant_matcher + tolerant_prf), reported next to the strict
+    one-to-one scores. Few-shot gold items are removed, with the system items linked only to them. Owner accuracy is
+    over linked action pairs (each kept link is one pair)."""
+    from mta.evaluate import make_tolerant_matcher, tolerant_prf
+    matcher = make_tolerant_matcher(llm)
+    acc = {t: {"linked_sys": 0, "sys": 0, "covered_gold": 0, "gold": 0, "relations": {"same": 0, "split": 0, "merge": 0},
+               "duplicate_links_removed": 0, "duplicates_counted_fp": 0} for t in TYPES}
+    owner = [0, 0]
+    for m in meetings or MEETINGS:
+        sys_items, gold_items = load(run / mode / f"{m}.json"), load(gold_dir / f"{m}.json")
+        for t in TYPES:
+            ss = [i for i in sys_items if i["type"] == t]
+            gg = [i for i in gold_items if i["type"] == t]
+            links = matcher(ss, gg)  # judged against the full gold, as in the strict score
+            only_fewshot = {s["id"] for s in ss if (gs := {g for x, g, _ in links if x == s["id"]}) and gs <= FEWSHOT_GOLD}
+            sys_ids = [s["id"] for s in ss if s["id"] not in only_fewshot]
+            gold_ids = [g["id"] for g in gg if g["id"] not in FEWSHOT_GOLD]
+            kept = [x for x in links if x[0] not in only_fewshot and x[1] not in FEWSHOT_GOLD]
+            r = tolerant_prf(sys_ids, gold_ids, kept)
+            a = acc[t]
+            for k in ("linked_sys", "sys", "covered_gold", "gold", "duplicate_links_removed", "duplicates_counted_fp"):
+                a[k] += r[k]
+            for k, v in r["relations"].items():
+                a["relations"][k] += v
+            if t == "actions":
+                sid, gid = {i["id"]: i for i in ss}, {i["id"]: i for i in gg}
+                for s, g, _ in r["kept_links"]:
+                    owner[1] += 1
+                    owner[0] += set(sid[s]["owner"] or []) == set(gid[g]["owner"] or [])
+    for a in acc.values():
+        p = a["linked_sys"] / a["sys"] if a["sys"] else 0.0
+        rr = a["covered_gold"] / a["gold"] if a["gold"] else 0.0
+        a.update(precision=round(p, 3), recall=round(rr, 3), f1=round(2 * p * rr / (p + rr), 3) if p + rr else 0.0)
+    return {"per_type": acc, "owner_accuracy": {"correct": owner[0], "total": owner[1],
+                                                "rate": round(owner[0] / owner[1], 3) if owner[1] else None}}
+
+
 # ---- support ----------------------------------------------------------------------------------------------------
 def support_rate(run: Path, mode: str, llm) -> dict:
     stmt = {"supported": 0, "partial": 0, "unsupported": 0}
@@ -285,6 +323,18 @@ def render(res: dict, run: Path) -> str:
         o = e["owner_accuracy"]
         L.append(f"| {mode} | {cell('actions')} | {cell('decisions')} | {cell('problems')} | {o['correct']}/{o['total']} = {o['rate']} |")
     L += ["", "Counts in brackets: matched / system items / gold items. Owner accuracy is over matched actions.", "",
+          "## Extraction, split/merge tolerant (P / R / F1)", "",
+          "| Mode | Actions | Decisions | Issues (problems) | Owner accuracy (linked pairs) |", "|---|---|---|---|---|"]
+    for mode in MODES:
+        e = res["tolerant"][mode]
+        cell = lambda t: (f"{e['per_type'][t]['precision']:.2f} / {e['per_type'][t]['recall']:.2f} / "
+                          f"**{e['per_type'][t]['f1']:.2f}** ({e['per_type'][t]['linked_sys']}/{e['per_type'][t]['sys']}, "
+                          f"{e['per_type'][t]['covered_gold']}/{e['per_type'][t]['gold']})")
+        o = e["owner_accuracy"]
+        L.append(f"| {mode} | {cell('actions')} | {cell('decisions')} | {cell('problems')} | {o['correct']}/{o['total']} = {o['rate']} |")
+    L += ["", "Many-to-many links labelled same / split / merge (majority of the judge runs). Counts: linked system items / "
+          "system items, covered gold items / gold items. A gold item restated in full by several system items counts "
+          "once; the extra restatements are false positives.", "",
           "## Support rate", "", "| Mode | Items | With a dialogue reference | Statement supported | Supported or partial |", "|---|---|---|---|---|"]
     for mode in MODES:
         s = res["support"][mode]
@@ -313,8 +363,9 @@ def main() -> int:
     llm = get_judge()
     with ThreadPoolExecutor(max_workers=3) as pool:  # one thread per mode: each mode has its own cache files
         ext = dict(zip(MODES, pool.map(lambda m: extraction(a.run, m, a.gold, llm), MODES)))
+        tol = dict(zip(MODES, pool.map(lambda m: tolerant_extraction(a.run, m, a.gold, llm), MODES)))
         sup = dict(zip(MODES, pool.map(lambda m: support_rate(a.run, m, llm), MODES)))
-    res = {"extraction": ext, "support": sup, "summary": summary_quality(a.run, a.gold, llm),
+    res = {"extraction": ext, "tolerant": tol, "support": sup, "summary": summary_quality(a.run, a.gold, llm),
            "efficiency": efficiency(a.run),
            "judge": {"model": llm.model, "effort": getattr(llm, "effort", None) or "model default",
                      "calls": getattr(llm, "calls", None), "input_tokens": llm.in_tokens, "output_tokens": llm.out_tokens}}

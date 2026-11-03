@@ -1,0 +1,619 @@
+{
+  "item_key": "ES2004a#0",
+  "record_id": null,
+  "item_type": "actions",
+  "item_text": "Prepare the next PowerPoint presentation.",
+  "state": "pending",
+  "recordable": true,
+  "fields": {
+    "status": "unknown",
+    "prior_context_needed": false,
+    "related_items": [],
+    "owner": null,
+    "owner_basis": "ambiguous",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "reference": [
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/ES2004a.json",
+        "locator": "ES2004a.B.dialog-act.s9553330.175"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/ES2004a.json",
+        "locator": "ES2004a.C.dialog-act.s9553330.70"
+      }
+    ]
+  },
+  "draft_fields": {
+    "status": "open",
+    "related_items": [],
+    "owner": [
+      "FEE013"
+    ],
+    "owner_basis": "explicit",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "prior_context_needed": false,
+    "used_participant_lookup": false,
+    "evidence_da_ids": [
+      "ES2004a.B.dialog-act.s9553330.175",
+      "ES2004a.C.dialog-act.s9553330.70"
+    ]
+  },
+  "checks": {
+    "statement": {
+      "result": "pass",
+      "reason": "The dialogue suite contains explicit mention of preparing a PowerPoint presentation and acceptance by the PM ('Sure'), and the action text matches the item's scope.",
+      "quotes": [
+        {
+          "da_id": "ES2004a.B.dialog-act.s9553330.175",
+          "quote": "and I get to do another fantastic PowerPoint presentation ."
+        },
+        {
+          "da_id": "ES2004a.C.dialog-act.s9553330.70",
+          "quote": "Just just a quick thing about the um <vocalsound>"
+        }
+      ],
+      "fields": [
+        "statement"
+      ]
+    },
+    "owner": {
+      "result": "uncertain",
+      "reason": "No explicit assignment language in the observed dialogue; ownership appears as metadata rather than a spoken commitment.",
+      "quotes": [
+        {
+          "da_id": "ES2004a.B.dialog-act.s9553330.175",
+          "quote": "and I get to do another fantastic PowerPoint presentation ."
+        }
+      ],
+      "fields": [
+        "owner"
+      ]
+    },
+    "deadline": {
+      "result": "uncertain",
+      "reason": "deadline_unresolved",
+      "quotes": [
+        {
+          "da_id": "ES2004a.B.dialog-act.s9553330.175",
+          "quote": "and I get to do another fantastic PowerPoint presentation ."
+        }
+      ],
+      "fields": [
+        "deadline"
+      ]
+    },
+    "status": {
+      "result": "uncertain",
+      "reason": "Status is open in metadata; no explicit end-state commitment observed in dialogue.",
+      "quotes": [
+        {
+          "da_id": "ES2004a.B.dialog-act.s9553330.175",
+          "quote": "and I get to do another fantastic PowerPoint presentation ."
+        },
+        {
+          "da_id": "ES2004a.C.dialog-act.s9553330.70",
+          "quote": "Just just a quick thing about the um <vocalsound>"
+        }
+      ],
+      "fields": [
+        "status"
+      ]
+    },
+    "conflict": {
+      "result": "pass",
+      "reason": "No conflicting evidence found within the provided dialogues.",
+      "quotes": [
+        {
+          "da_id": "ES2004a.B.dialog-act.s9553330.175",
+          "quote": "and I get to do another fantastic PowerPoint presentation ."
+        },
+        {
+          "da_id": "ES2004a.C.dialog-act.s9553330.70",
+          "quote": "Just just a quick thing about the um <vocalsound>"
+        }
+      ],
+      "fields": []
+    },
+    "relation": {
+      "result": "not_applicable",
+      "reason": "No prior related item to relate to in this single-item assessment.",
+      "quotes": [],
+      "fields": [
+        "related_items"
+      ]
+    }
+  },
+  "unresolved_fields": [
+    "owner",
+    "deadline",
+    "status"
+  ],
+  "observed_evidence_da_ids": [
+    "ES2004a.B.dialog-act.s9553330.175",
+    "ES2004a.C.dialog-act.s9553330.70",
+    "ES2004a.C.dialog-act.s9553330.69",
+    "ES2004a.B.dialog-act.s9553330.176"
+  ],
+  "initial_context": {
+    "item": {
+      "type": "actions",
+      "text": "Prepare the next PowerPoint presentation.",
+      "flags": []
+    },
+    "current_meeting": "ES2004a",
+    "earlier_meetings": [],
+    "roster": [
+      {
+        "speaker": "A",
+        "participant_id": "MEO015",
+        "role": "UI"
+      },
+      {
+        "speaker": "B",
+        "participant_id": "FEE013",
+        "role": "PM"
+      },
+      {
+        "speaker": "C",
+        "participant_id": "MEE014",
+        "role": "ID"
+      },
+      {
+        "speaker": "D",
+        "participant_id": "FEE016",
+        "role": "ME"
+      }
+    ],
+    "observed_dialogue": [
+      {
+        "da_id": "ES2004a.B.dialog-act.s9553330.175",
+        "meeting_id": "ES2004a",
+        "text": "and I get to do another fantastic PowerPoint presentation .",
+        "participant": "FEE013",
+        "role": "PM"
+      },
+      {
+        "da_id": "ES2004a.C.dialog-act.s9553330.70",
+        "meeting_id": "ES2004a",
+        "text": "Just just a quick thing about the um <vocalsound>",
+        "participant": "MEE014",
+        "role": "ID"
+      },
+      {
+        "da_id": "ES2004a.C.dialog-act.s9553330.69",
+        "participant": "MEE014",
+        "role": "ID",
+        "text": "Yeah ."
+      },
+      {
+        "da_id": "ES2004a.B.dialog-act.s9553330.176",
+        "participant": "FEE013",
+        "role": "PM",
+        "text": "Sure ."
+      }
+    ],
+    "peer_items": [],
+    "provisional_values": {
+      "owner": [
+        "FEE013"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "status": "open",
+      "related_items": []
+    },
+    "candidate_evidence_da_ids": [
+      "ES2004a.B.dialog-act.s9553330.175",
+      "ES2004a.C.dialog-act.s9553330.70"
+    ]
+  },
+  "observed_documents": [],
+  "document_evidence": [],
+  "relation_evidence": [],
+  "history": [
+    {
+      "item": "ES2004a#0",
+      "step": 1,
+      "flags": [],
+      "action": "assess_item",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue suite contains explicit mention of preparing a PowerPoint presentation and acceptance by the PM ('Sure'), and the action text matches the item's scope.",
+          "quotes": [
+            {
+              "da_id": "ES2004a.B.dialog-act.s9553330.175",
+              "quote": "and I get to do another fantastic PowerPoint presentation ."
+            },
+            {
+              "da_id": "ES2004a.C.dialog-act.s9553330.70",
+              "quote": "Just just a quick thing about the um <vocalsound>"
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "uncertain",
+          "reason": "No explicit assignment language in the observed dialogue; ownership appears as metadata rather than a spoken commitment.",
+          "quotes": [
+            {
+              "da_id": "ES2004a.B.dialog-act.s9553330.175",
+              "quote": "and I get to do another fantastic PowerPoint presentation ."
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "deadline_unresolved",
+          "quotes": [
+            {
+              "da_id": "ES2004a.B.dialog-act.s9553330.175",
+              "quote": "and I get to do another fantastic PowerPoint presentation ."
+            }
+          ],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "uncertain",
+          "reason": "Status is open in metadata; no explicit end-state commitment observed in dialogue.",
+          "quotes": [
+            {
+              "da_id": "ES2004a.B.dialog-act.s9553330.175",
+              "quote": "and I get to do another fantastic PowerPoint presentation ."
+            },
+            {
+              "da_id": "ES2004a.C.dialog-act.s9553330.70",
+              "quote": "Just just a quick thing about the um <vocalsound>"
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No conflicting evidence found within the provided dialogues.",
+          "quotes": [
+            {
+              "da_id": "ES2004a.B.dialog-act.s9553330.175",
+              "quote": "and I get to do another fantastic PowerPoint presentation ."
+            },
+            {
+              "da_id": "ES2004a.C.dialog-act.s9553330.70",
+              "quote": "Just just a quick thing about the um <vocalsound>"
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No prior related item to relate to in this single-item assessment.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "decision": "request_clarification",
+      "reason": "unresolved_checks",
+      "assessed_text": "Prepare the next PowerPoint presentation.",
+      "requested_action": null,
+      "proposed_fields": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "FEE013"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "ES2004a.B.dialog-act.s9553330.175",
+          "ES2004a.C.dialog-act.s9553330.70"
+        ]
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue suite contains explicit mention of preparing a PowerPoint presentation and acceptance by the PM ('Sure'), and the action text matches the item's scope.",
+          "quotes": [
+            "ES2004a.B.dialog-act.s9553330.175",
+            "ES2004a.C.dialog-act.s9553330.70"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "uncertain",
+          "reason": "No explicit assignment language in the observed dialogue; ownership appears as metadata rather than a spoken commitment.",
+          "quotes": [
+            "ES2004a.B.dialog-act.s9553330.175"
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "No deadline stated in dialogue or metadata beyond 'deadline': null.",
+          "quotes": [
+            "ES2004a.B.dialog-act.s9553330.175"
+          ],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "uncertain",
+          "reason": "Status is open in metadata; no explicit end-state commitment observed in dialogue.",
+          "quotes": [
+            "ES2004a.B.dialog-act.s9553330.175",
+            "ES2004a.C.dialog-act.s9553330.70"
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No conflicting evidence found within the provided dialogues.",
+          "quotes": [
+            "ES2004a.B.dialog-act.s9553330.175",
+            "ES2004a.C.dialog-act.s9553330.70"
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No prior related item to relate to in this single-item assessment.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "FEE013"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue suite contains explicit mention of preparing a PowerPoint presentation and acceptance by the PM ('Sure'), and the action text matches the item's scope.",
+          "evidence_da_ids": [
+            "ES2004a.B.dialog-act.s9553330.175",
+            "ES2004a.C.dialog-act.s9553330.70"
+          ]
+        },
+        "owner_check": {
+          "result": "uncertain",
+          "reason": "No explicit assignment language in the observed dialogue; ownership appears as metadata rather than a spoken commitment.",
+          "evidence_da_ids": [
+            "ES2004a.B.dialog-act.s9553330.175"
+          ]
+        },
+        "deadline_check": {
+          "result": "uncertain",
+          "reason": "No deadline stated in dialogue or metadata beyond 'deadline': null.",
+          "evidence_da_ids": [
+            "ES2004a.B.dialog-act.s9553330.175"
+          ]
+        },
+        "status_check": {
+          "result": "uncertain",
+          "reason": "Status is open in metadata; no explicit end-state commitment observed in dialogue.",
+          "evidence_da_ids": [
+            "ES2004a.B.dialog-act.s9553330.175",
+            "ES2004a.C.dialog-act.s9553330.70"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No conflicting evidence found within the provided dialogues.",
+          "evidence_da_ids": [
+            "ES2004a.B.dialog-act.s9553330.175",
+            "ES2004a.C.dialog-act.s9553330.70"
+          ],
+          "affected_fields": []
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No prior related item to relate to in this single-item assessment.",
+          "evidence_da_ids": []
+        }
+      },
+      "evidence_bindings": {
+        "statement": [
+          "ES2004a.B.dialog-act.s9553330.175",
+          "ES2004a.C.dialog-act.s9553330.70"
+        ],
+        "owner": [
+          "ES2004a.B.dialog-act.s9553330.175"
+        ],
+        "deadline": [
+          "ES2004a.B.dialog-act.s9553330.175"
+        ],
+        "status": [
+          "ES2004a.B.dialog-act.s9553330.175",
+          "ES2004a.C.dialog-act.s9553330.70"
+        ],
+        "conflict": [
+          "ES2004a.B.dialog-act.s9553330.175",
+          "ES2004a.C.dialog-act.s9553330.70"
+        ]
+      },
+      "raw_tool_input": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "FEE013"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue suite contains explicit mention of preparing a PowerPoint presentation and acceptance by the PM ('Sure'), and the action text matches the item's scope.",
+          "evidence_da_ids": [
+            "ES2004a.B.dialog-act.s9553330.175",
+            "ES2004a.C.dialog-act.s9553330.70"
+          ]
+        },
+        "owner_check": {
+          "result": "uncertain",
+          "reason": "No explicit assignment language in the observed dialogue; ownership appears as metadata rather than a spoken commitment.",
+          "evidence_da_ids": [
+            "ES2004a.B.dialog-act.s9553330.175"
+          ]
+        },
+        "deadline_check": {
+          "result": "uncertain",
+          "reason": "No deadline stated in dialogue or metadata beyond 'deadline': null.",
+          "evidence_da_ids": [
+            "ES2004a.B.dialog-act.s9553330.175"
+          ]
+        },
+        "status_check": {
+          "result": "uncertain",
+          "reason": "Status is open in metadata; no explicit end-state commitment observed in dialogue.",
+          "evidence_da_ids": [
+            "ES2004a.B.dialog-act.s9553330.175",
+            "ES2004a.C.dialog-act.s9553330.70"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No conflicting evidence found within the provided dialogues.",
+          "evidence_da_ids": [
+            "ES2004a.B.dialog-act.s9553330.175",
+            "ES2004a.C.dialog-act.s9553330.70"
+          ],
+          "affected_fields": []
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No prior related item to relate to in this single-item assessment.",
+          "evidence_da_ids": []
+        }
+      },
+      "protocol_normalizations": [
+        "controller_action_for_missing_hint:request_clarification"
+      ],
+      "unresolved_before": [
+        "deadline",
+        "owner",
+        "statement",
+        "status"
+      ],
+      "unresolved_after": [
+        "deadline",
+        "owner",
+        "status"
+      ],
+      "semantic_stalls": 0,
+      "validation_codes": {
+        "deadline": [
+          "deadline_unresolved"
+        ]
+      }
+    },
+    {
+      "item": "ES2004a#0",
+      "step": 1,
+      "flags": [],
+      "action": "stop",
+      "outcome": "pending",
+      "termination_reason": "unresolved_checks",
+      "unresolved_fields": [
+        "owner",
+        "deadline",
+        "status"
+      ]
+    }
+  ],
+  "lookups": 0,
+  "termination_reason": "unresolved_checks",
+  "clarifications": [
+    {
+      "request_id": "3ff4162b68eaeeaa",
+      "item_key": "ES2004a#0",
+      "record_id": null,
+      "field": "owner",
+      "question": "Who is responsible for this task?",
+      "item_text": "Prepare the next PowerPoint presentation.",
+      "reason": "No explicit assignment language in the observed dialogue; ownership appears as metadata rather than a spoken commitment.",
+      "evidence_da_ids": [
+        "ES2004a.B.dialog-act.s9553330.175"
+      ],
+      "available_evidence_da_ids": [
+        "ES2004a.B.dialog-act.s9553330.175",
+        "ES2004a.C.dialog-act.s9553330.70",
+        "ES2004a.C.dialog-act.s9553330.69",
+        "ES2004a.B.dialog-act.s9553330.176"
+      ],
+      "status": "open",
+      "termination_reason": "unresolved_checks"
+    },
+    {
+      "request_id": "7a13d52018bceab3",
+      "item_key": "ES2004a#0",
+      "record_id": null,
+      "field": "deadline",
+      "question": "What is the agreed deadline, in its original wording?",
+      "item_text": "Prepare the next PowerPoint presentation.",
+      "reason": "deadline_unresolved",
+      "evidence_da_ids": [
+        "ES2004a.B.dialog-act.s9553330.175"
+      ],
+      "available_evidence_da_ids": [
+        "ES2004a.B.dialog-act.s9553330.175",
+        "ES2004a.C.dialog-act.s9553330.70",
+        "ES2004a.C.dialog-act.s9553330.69",
+        "ES2004a.B.dialog-act.s9553330.176"
+      ],
+      "status": "open",
+      "termination_reason": "unresolved_checks"
+    },
+    {
+      "request_id": "fda8769d545c4f3b",
+      "item_key": "ES2004a#0",
+      "record_id": null,
+      "field": "status",
+      "question": "What is this item's status at the end of the current meeting?",
+      "item_text": "Prepare the next PowerPoint presentation.",
+      "reason": "Status is open in metadata; no explicit end-state commitment observed in dialogue.",
+      "evidence_da_ids": [
+        "ES2004a.B.dialog-act.s9553330.175",
+        "ES2004a.C.dialog-act.s9553330.70"
+      ],
+      "available_evidence_da_ids": [
+        "ES2004a.B.dialog-act.s9553330.175",
+        "ES2004a.C.dialog-act.s9553330.70",
+        "ES2004a.C.dialog-act.s9553330.69",
+        "ES2004a.B.dialog-act.s9553330.176"
+      ],
+      "status": "open",
+      "termination_reason": "unresolved_checks"
+    }
+  ]
+}

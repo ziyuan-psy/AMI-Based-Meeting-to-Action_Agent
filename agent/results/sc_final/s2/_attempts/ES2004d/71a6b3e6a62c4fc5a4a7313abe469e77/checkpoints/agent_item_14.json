@@ -1,0 +1,1592 @@
+{
+  "item": 14,
+  "fields": {
+    "item_key": "ES2004d#14",
+    "record_id": null,
+    "item_type": "decisions",
+    "item_text": "Proposed to make the price fit.",
+    "state": "pending",
+    "recordable": true,
+    "fields": {
+      "status": "proposed",
+      "prior_context_needed": false,
+      "related_items": [],
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/ES2004d.json",
+          "locator": "ES2004d.B.dialog-act.vkaraisk.190"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/ES2004d.json",
+          "locator": "ES2004d.B.dialog-act.vkaraisk.189"
+        }
+      ]
+    },
+    "draft_fields": {
+      "status": "proposed",
+      "related_items": [],
+      "prior_context_needed": false,
+      "used_participant_lookup": false,
+      "evidence_da_ids": [
+        "ES2004d.B.dialog-act.vkaraisk.190",
+        "ES2004d.B.dialog-act.vkaraisk.189",
+        "ES2004a.D.dialog-act.s9553330.65",
+        "ES2004a.B.dialog-act.s9553330.94",
+        "ES2004a.B.dialog-act.s9553330.95"
+      ],
+      "owner": null,
+      "owner_basis": "missing",
+      "deadline": null,
+      "deadline_basis": "missing"
+    },
+    "checks": {
+      "statement": {
+        "result": "pass",
+        "reason": "Observed dialogue includes PM's explicit remark 'we can make the price fit' directly supporting the proposed decision to adjust pricing.",
+        "quotes": [
+          {
+            "da_id": "ES2004d.B.dialog-act.vkaraisk.190",
+            "quote": "we can make the price fit ,"
+          },
+          {
+            "da_id": "ES2004d.B.dialog-act.vkaraisk.189",
+            "quote": "Okay ,"
+          }
+        ],
+        "fields": [
+          "statement"
+        ]
+      },
+      "status": {
+        "result": "pass",
+        "reason": "Current text and observed dialogue corroborate that the item description is supported by the recorded discussion.",
+        "quotes": [
+          {
+            "da_id": "ES2004d.B.dialog-act.vkaraisk.190",
+            "quote": "we can make the price fit ,"
+          },
+          {
+            "da_id": "ES2004d.B.dialog-act.vkaraisk.189",
+            "quote": "Okay ,"
+          }
+        ],
+        "fields": [
+          "status"
+        ]
+      },
+      "conflict": {
+        "result": "pass",
+        "reason": "No contradictions found in the supplied evidence with the proposed decision; price-fit aligns with PM's statement.",
+        "quotes": [
+          {
+            "da_id": "ES2004d.B.dialog-act.vkaraisk.190",
+            "quote": "we can make the price fit ,"
+          },
+          {
+            "da_id": "ES2004d.B.dialog-act.vkaraisk.189",
+            "quote": "Okay ,"
+          }
+        ],
+        "fields": [
+          "statement",
+          "status"
+        ]
+      },
+      "relation": {
+        "result": "uncertain",
+        "reason": "per_link_assessment_required_for_each_related_item",
+        "quotes": [],
+        "links": [
+          {
+            "id": "ES2004a.sys.s.5",
+            "relation": "updates",
+            "changed_fields": [
+              "scope"
+            ],
+            "reason": "The current item refines pricing scope from a fixed Seventeen Pounds to a 'price fit' approach, updating the scope of pricing rather than adopting a new price point.",
+            "prior_evidence_da_ids": [
+              "ES2004a.D.dialog-act.s9553330.65",
+              "ES2004a.B.dialog-act.s9553330.94",
+              "ES2004a.B.dialog-act.s9553330.95"
+            ],
+            "current_evidence_da_ids": [
+              "ES2004d.B.dialog-act.vkaraisk.189",
+              "ES2004d.B.dialog-act.vkaraisk.190"
+            ]
+          }
+        ],
+        "fields": [
+          "related_items"
+        ]
+      },
+      "owner": {
+        "result": "not_applicable",
+        "reason": "field_not_applicable",
+        "quotes": [],
+        "fields": [
+          "owner"
+        ]
+      },
+      "deadline": {
+        "result": "not_applicable",
+        "reason": "field_not_applicable",
+        "quotes": [],
+        "fields": [
+          "deadline"
+        ]
+      }
+    },
+    "unresolved_fields": [
+      "related_items"
+    ],
+    "observed_evidence_da_ids": [
+      "ES2004d.B.dialog-act.vkaraisk.189",
+      "ES2004d.C.dialog-act.vkaraisk.222",
+      "ES2004d.D.dialog-act.vkaraisk.243",
+      "ES2004d.B.dialog-act.vkaraisk.190",
+      "ES2004d.C.dialog-act.vkaraisk.223",
+      "ES2004a.C.dialog-act.s9553330.39",
+      "ES2004a.D.dialog-act.s9553330.65",
+      "ES2004a.B.dialog-act.s9553330.94",
+      "ES2004a.B.dialog-act.s9553330.95",
+      "ES2004a.D.dialog-act.s9553330.66"
+    ],
+    "initial_context": {
+      "item": {
+        "type": "decisions",
+        "text": "Proposed to make the price fit.",
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ]
+      },
+      "current_meeting": "ES2004d",
+      "earlier_meetings": [
+        "ES2004a",
+        "ES2004b",
+        "ES2004c"
+      ],
+      "roster": [
+        {
+          "speaker": "A",
+          "participant_id": "MEO015",
+          "role": "UI"
+        },
+        {
+          "speaker": "B",
+          "participant_id": "FEE013",
+          "role": "PM"
+        },
+        {
+          "speaker": "C",
+          "participant_id": "MEE014",
+          "role": "ID"
+        },
+        {
+          "speaker": "D",
+          "participant_id": "FEE016",
+          "role": "ME"
+        }
+      ],
+      "observed_dialogue": [
+        {
+          "da_id": "ES2004d.B.dialog-act.vkaraisk.189",
+          "meeting_id": "ES2004d",
+          "text": "Okay ,",
+          "participant": "FEE013",
+          "role": "PM"
+        },
+        {
+          "da_id": "ES2004d.C.dialog-act.vkaraisk.222",
+          "meeting_id": "ES2004d",
+          "text": "Yeah ,",
+          "participant": "MEE014",
+          "role": "ID"
+        },
+        {
+          "da_id": "ES2004d.D.dialog-act.vkaraisk.243",
+          "participant": "FEE016",
+          "role": "ME",
+          "text": "Um as you say , we can offer the voice recognition initially to business class customers"
+        },
+        {
+          "da_id": "ES2004d.B.dialog-act.vkaraisk.190",
+          "participant": "FEE013",
+          "role": "PM",
+          "text": "we can make the price fit ,"
+        },
+        {
+          "da_id": "ES2004d.C.dialog-act.vkaraisk.223",
+          "participant": "MEE014",
+          "role": "ID",
+          "text": "I s"
+        }
+      ],
+      "peer_items": [
+        {
+          "item_key": "ES2004d#0",
+          "type": "actions",
+          "text": "Provide recommendations for head office specifications."
+        },
+        {
+          "item_key": "ES2004d#1",
+          "type": "actions",
+          "text": "All team members will provide individual ratings for the evaluation criteria."
+        },
+        {
+          "item_key": "ES2004d#2",
+          "type": "problems",
+          "text": "Pricing currency is unclear; pricing may be in Euros or Dollars."
+        },
+        {
+          "item_key": "ES2004d#3",
+          "type": "problems",
+          "text": "Projected profitability is uncertain because overheads remain to be accounted for beyond a stated 50 percent profit."
+        },
+        {
+          "item_key": "ES2004d#4",
+          "type": "problems",
+          "text": "There is concern that the budget may not include all overhead costs, including salaries and heating."
+        },
+        {
+          "item_key": "ES2004d#5",
+          "type": "decisions",
+          "text": "We decided to use a kinetic charger."
+        },
+        {
+          "item_key": "ES2004d#6",
+          "type": "decisions",
+          "text": "Kinetic batteries will be placed in the top section near the hinge."
+        },
+        {
+          "item_key": "ES2004d#7",
+          "type": "decisions",
+          "text": "Proceed to produce a prototype and bring it to market based on evaluation results."
+        },
+        {
+          "item_key": "ES2004d#8",
+          "type": "decisions",
+          "text": "Rubber used in the casing will be counted as one unit in total cost."
+        },
+        {
+          "item_key": "ES2004d#9",
+          "type": "decisions",
+          "text": "Interface will use push-buttons."
+        },
+        {
+          "item_key": "ES2004d#10",
+          "type": "problems",
+          "text": "Cost information for voice recognition integration is not known; feasibility/expense needs to be assessed."
+        },
+        {
+          "item_key": "ES2004d#11",
+          "type": "actions",
+          "text": "Delegate tasks as Project Supervisor."
+        },
+        {
+          "item_key": "ES2004d#12",
+          "type": "actions",
+          "text": "Compute the average rating for the evaluation criteria."
+        },
+        {
+          "item_key": "ES2004d#13",
+          "type": "decisions",
+          "text": "Proposed to remove voice recognition."
+        }
+      ],
+      "provisional_values": {
+        "owner": null,
+        "owner_basis": "missing",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "proposed",
+        "related_items": []
+      },
+      "candidate_evidence_da_ids": [
+        "ES2004d.B.dialog-act.vkaraisk.189",
+        "ES2004d.C.dialog-act.vkaraisk.222"
+      ]
+    },
+    "observed_documents": [],
+    "document_evidence": [],
+    "relation_evidence": [
+      {
+        "prior_item_id": "ES2004a.sys.s.5",
+        "relation": "updates",
+        "state": "pending",
+        "changed_fields": [
+          "scope"
+        ],
+        "reason": "The current item refines pricing scope from a fixed Seventeen Pounds to a 'price fit' approach, updating the scope of pricing rather than adopting a new price point.",
+        "before": {
+          "kind": "prior_item",
+          "id": "ES2004a.sys.s.5",
+          "meeting_id": "ES2004a",
+          "type": "decisions",
+          "text": "Selling price is Seventeen Pounds.",
+          "owner": null,
+          "owner_basis": null,
+          "deadline": null,
+          "deadline_basis": null,
+          "status": "adopted",
+          "evidence": [
+            "ES2004a.D.dialog-act.s9553330.65",
+            "ES2004a.B.dialog-act.s9553330.94",
+            "ES2004a.B.dialog-act.s9553330.95"
+          ],
+          "source_file": "ES2004a.json",
+          "source_sha256": "a4e869f0d9690efd06f9672d7327e7a14f518f9c399717761fb009768fc31a06",
+          "review_state": "accepted",
+          "unresolved_fields": [],
+          "unreadable_reference_ids": [],
+          "selected_reference_ids": [
+            "ES2004a.D.dialog-act.s9553330.65",
+            "ES2004a.B.dialog-act.s9553330.94",
+            "ES2004a.B.dialog-act.s9553330.95"
+          ],
+          "next_offset": null
+        },
+        "after": {
+          "item_key": "ES2004d#14",
+          "text": "Proposed to make the price fit.",
+          "type": "decisions",
+          "status": "proposed",
+          "owner": null,
+          "deadline": null
+        },
+        "prior_quotes": [],
+        "current_quotes": []
+      }
+    ],
+    "history": [
+      {
+        "item": "ES2004d#14",
+        "step": 1,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "assess_item",
+        "outcome": "invalid_action",
+        "error": "Correct these argument fields: relation_check/evidence_da_ids: [] should be non-empty Tool assess_item accepts root keys: status, related_items, statement, status_check, conflict_check, relation_check, next_action. Check keys: relation_check={result, reason, evidence_da_ids, documents, links}. Resubmit the complete advertised object. Select only delivered supporting dialogue IDs; if support is unavailable use uncertain with an explanation, never invent an ID or mark pass with no evidence. Documents belong inside the check they inform.",
+        "raw_tool_input": {
+          "status": "proposed",
+          "related_items": [],
+          "statement": {
+            "result": "pass",
+            "reason": "Observed dialogue includes PM's explicit remark 'we can make the price fit' directly supporting the proposed decision to adjust pricing.",
+            "evidence_da_ids": [
+              "ES2004d.B.dialog-act.vkaraisk.190"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Current text and observed dialogue corroborate that the item description is supported by the recorded discussion.",
+            "evidence_da_ids": [
+              "ES2004d.B.dialog-act.vkaraisk.190",
+              "ES2004d.B.dialog-act.vkaraisk.189"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No contradictions found in the supplied evidence with the proposed decision; price-fit aligns with PM's statement.",
+            "evidence_da_ids": [
+              "ES2004d.B.dialog-act.vkaraisk.190"
+            ],
+            "affected_fields": [
+              "statement",
+              "status"
+            ]
+          },
+          "relation_check": {
+            "result": "pass",
+            "reason": "No prior related_items to link; this item stands independently in the current discussion.",
+            "evidence_da_ids": []
+          },
+          "next_action": "accept"
+        }
+      },
+      {
+        "item": "ES2004d#14",
+        "step": 2,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Observed dialogue includes PM's explicit remark 'we can make the price fit' directly supporting the proposed decision to adjust pricing.",
+            "quotes": [
+              {
+                "da_id": "ES2004d.B.dialog-act.vkaraisk.190",
+                "quote": "we can make the price fit ,"
+              },
+              {
+                "da_id": "ES2004d.B.dialog-act.vkaraisk.189",
+                "quote": "Okay ,"
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Current text and observed dialogue corroborate that the item description is supported by the recorded discussion.",
+            "quotes": [
+              {
+                "da_id": "ES2004d.B.dialog-act.vkaraisk.190",
+                "quote": "we can make the price fit ,"
+              },
+              {
+                "da_id": "ES2004d.B.dialog-act.vkaraisk.189",
+                "quote": "Okay ,"
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions found in the supplied evidence with the proposed decision; price-fit aligns with PM's statement.",
+            "quotes": [
+              {
+                "da_id": "ES2004d.B.dialog-act.vkaraisk.190",
+                "quote": "we can make the price fit ,"
+              },
+              {
+                "da_id": "ES2004d.B.dialog-act.vkaraisk.189",
+                "quote": "Okay ,"
+              }
+            ],
+            "fields": [
+              "statement",
+              "status"
+            ]
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "prior_context_not_checked",
+            "links": [],
+            "quotes": [
+              {
+                "da_id": "ES2004d.B.dialog-act.vkaraisk.189",
+                "quote": "Okay ,"
+              },
+              {
+                "da_id": "ES2004d.B.dialog-act.vkaraisk.190",
+                "quote": "we can make the price fit ,"
+              }
+            ],
+            "fields": [
+              "related_items"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          }
+        },
+        "decision": "retrieve",
+        "reason": "required_history_check_before_partial_accept",
+        "assessed_text": "Proposed to make the price fit.",
+        "requested_action": "accept",
+        "proposed_fields": {
+          "status": "proposed",
+          "related_items": [],
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "ES2004d.B.dialog-act.vkaraisk.190",
+            "ES2004d.B.dialog-act.vkaraisk.189"
+          ],
+          "owner": null,
+          "owner_basis": "missing",
+          "deadline": null,
+          "deadline_basis": "missing"
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Observed dialogue includes PM's explicit remark 'we can make the price fit' directly supporting the proposed decision to adjust pricing.",
+            "quotes": [
+              "ES2004d.B.dialog-act.vkaraisk.190",
+              "ES2004d.B.dialog-act.vkaraisk.189"
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Current text and observed dialogue corroborate that the item description is supported by the recorded discussion.",
+            "quotes": [
+              "ES2004d.B.dialog-act.vkaraisk.190",
+              "ES2004d.B.dialog-act.vkaraisk.189"
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions found in the supplied evidence with the proposed decision; price-fit aligns with PM's statement.",
+            "quotes": [
+              "ES2004d.B.dialog-act.vkaraisk.190",
+              "ES2004d.B.dialog-act.vkaraisk.189"
+            ],
+            "fields": [
+              "statement",
+              "status"
+            ]
+          },
+          "relation": {
+            "result": "pass",
+            "reason": "No prior related_items to link; this item stands independently in the current discussion.",
+            "links": [],
+            "quotes": [
+              "ES2004d.B.dialog-act.vkaraisk.189",
+              "ES2004d.B.dialog-act.vkaraisk.190"
+            ],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "status": "proposed",
+          "related_items": [],
+          "statement": {
+            "result": "pass",
+            "reason": "Observed dialogue includes PM's explicit remark 'we can make the price fit' directly supporting the proposed decision to adjust pricing.",
+            "evidence_da_ids": [
+              "ES2004d.B.dialog-act.vkaraisk.190",
+              "ES2004d.B.dialog-act.vkaraisk.189"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Current text and observed dialogue corroborate that the item description is supported by the recorded discussion.",
+            "evidence_da_ids": [
+              "ES2004d.B.dialog-act.vkaraisk.190",
+              "ES2004d.B.dialog-act.vkaraisk.189"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No contradictions found in the supplied evidence with the proposed decision; price-fit aligns with PM's statement.",
+            "evidence_da_ids": [
+              "ES2004d.B.dialog-act.vkaraisk.190",
+              "ES2004d.B.dialog-act.vkaraisk.189"
+            ],
+            "affected_fields": [
+              "statement",
+              "status"
+            ]
+          },
+          "relation_check": {
+            "result": "pass",
+            "reason": "No prior related_items to link; this item stands independently in the current discussion.",
+            "evidence_da_ids": [
+              "ES2004d.B.dialog-act.vkaraisk.189",
+              "ES2004d.B.dialog-act.vkaraisk.190"
+            ],
+            "links": []
+          },
+          "next_action": "accept"
+        },
+        "evidence_bindings": {
+          "statement": [
+            "ES2004d.B.dialog-act.vkaraisk.190",
+            "ES2004d.B.dialog-act.vkaraisk.189"
+          ],
+          "status": [
+            "ES2004d.B.dialog-act.vkaraisk.190",
+            "ES2004d.B.dialog-act.vkaraisk.189"
+          ],
+          "conflict": [
+            "ES2004d.B.dialog-act.vkaraisk.190",
+            "ES2004d.B.dialog-act.vkaraisk.189"
+          ],
+          "relation": [
+            "ES2004d.B.dialog-act.vkaraisk.189",
+            "ES2004d.B.dialog-act.vkaraisk.190"
+          ]
+        },
+        "raw_tool_input": {
+          "status": "proposed",
+          "related_items": [],
+          "statement": {
+            "result": "pass",
+            "reason": "Observed dialogue includes PM's explicit remark 'we can make the price fit' directly supporting the proposed decision to adjust pricing.",
+            "evidence_da_ids": [
+              "ES2004d.B.dialog-act.vkaraisk.190",
+              "ES2004d.B.dialog-act.vkaraisk.189"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Current text and observed dialogue corroborate that the item description is supported by the recorded discussion.",
+            "evidence_da_ids": [
+              "ES2004d.B.dialog-act.vkaraisk.190",
+              "ES2004d.B.dialog-act.vkaraisk.189"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No contradictions found in the supplied evidence with the proposed decision; price-fit aligns with PM's statement.",
+            "evidence_da_ids": [
+              "ES2004d.B.dialog-act.vkaraisk.190",
+              "ES2004d.B.dialog-act.vkaraisk.189"
+            ],
+            "affected_fields": [
+              "statement",
+              "status"
+            ]
+          },
+          "relation_check": {
+            "result": "pass",
+            "reason": "No prior related_items to link; this item stands independently in the current discussion.",
+            "evidence_da_ids": [
+              "ES2004d.B.dialog-act.vkaraisk.189",
+              "ES2004d.B.dialog-act.vkaraisk.190"
+            ],
+            "links": []
+          },
+          "next_action": "accept"
+        },
+        "protocol_normalizations": [],
+        "unresolved_before": [
+          "related_items",
+          "statement",
+          "status"
+        ],
+        "unresolved_after": [
+          "related_items"
+        ],
+        "semantic_stalls": 0,
+        "validation_codes": {
+          "relation": [
+            "prior_context_not_checked"
+          ]
+        }
+      },
+      {
+        "item": "ES2004d#14",
+        "step": 3,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "history_context_focused",
+        "outcome": "delivered",
+        "evidence_da_ids": [
+          "ES2004d.B.dialog-act.vkaraisk.189",
+          "ES2004d.C.dialog-act.vkaraisk.222",
+          "ES2004d.D.dialog-act.vkaraisk.243",
+          "ES2004d.B.dialog-act.vkaraisk.190",
+          "ES2004d.C.dialog-act.vkaraisk.223"
+        ]
+      },
+      {
+        "item": "ES2004d#14",
+        "step": 3,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "get_prior_items",
+        "outcome": "lookup",
+        "decision": "retrieve",
+        "args": {
+          "query": "price fit",
+          "item_type": "decisions"
+        },
+        "tool_result": {
+          "results": [
+            {
+              "id": "ES2004a.sys.s.5",
+              "meeting_id": "ES2004a",
+              "type": "decisions",
+              "text": "Selling price is Seventeen Pounds.",
+              "owner": null,
+              "owner_basis": null,
+              "deadline": null,
+              "deadline_basis": null,
+              "status": "adopted",
+              "evidence": [
+                "ES2004a.D.dialog-act.s9553330.65",
+                "ES2004a.B.dialog-act.s9553330.94",
+                "ES2004a.B.dialog-act.s9553330.95"
+              ],
+              "source_file": "ES2004a.json",
+              "source_sha256": "a4e869f0d9690efd06f9672d7327e7a14f518f9c399717761fb009768fc31a06",
+              "review_state": "accepted",
+              "unresolved_fields": [],
+              "unreadable_reference_ids": [],
+              "score": 2.18
+            }
+          ]
+        },
+        "new_info": true
+      },
+      {
+        "item": "ES2004d#14",
+        "step": 4,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "read_prior_item",
+        "outcome": "lookup",
+        "decision": "retrieve",
+        "args": {
+          "item_id": "ES2004a.sys.s.5"
+        },
+        "tool_result": {
+          "results": [
+            {
+              "kind": "prior_item",
+              "id": "ES2004a.sys.s.5",
+              "meeting_id": "ES2004a",
+              "type": "decisions",
+              "text": "Selling price is Seventeen Pounds.",
+              "owner": null,
+              "owner_basis": null,
+              "deadline": null,
+              "deadline_basis": null,
+              "status": "adopted",
+              "evidence": [
+                "ES2004a.D.dialog-act.s9553330.65",
+                "ES2004a.B.dialog-act.s9553330.94",
+                "ES2004a.B.dialog-act.s9553330.95"
+              ],
+              "source_file": "ES2004a.json",
+              "source_sha256": "a4e869f0d9690efd06f9672d7327e7a14f518f9c399717761fb009768fc31a06",
+              "review_state": "accepted",
+              "unresolved_fields": [],
+              "unreadable_reference_ids": [],
+              "selected_reference_ids": [
+                "ES2004a.D.dialog-act.s9553330.65",
+                "ES2004a.B.dialog-act.s9553330.94",
+                "ES2004a.B.dialog-act.s9553330.95"
+              ],
+              "next_offset": null
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "ES2004a.C.dialog-act.s9553330.39",
+              "meeting_id": "ES2004a",
+              "text": "yeah about seventeen , seventeen Pounds , something like that .",
+              "participant": "MEE014",
+              "role": "ID",
+              "supports_item_id": "ES2004a.sys.s.5",
+              "is_reference": false
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "ES2004a.D.dialog-act.s9553330.65",
+              "meeting_id": "ES2004a",
+              "text": "Seventeen Pounds .",
+              "participant": "FEE016",
+              "role": "ME",
+              "supports_item_id": "ES2004a.sys.s.5",
+              "is_reference": true
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "ES2004a.B.dialog-act.s9553330.94",
+              "meeting_id": "ES2004a",
+              "text": "Seventeen .",
+              "participant": "FEE013",
+              "role": "PM",
+              "supports_item_id": "ES2004a.sys.s.5",
+              "is_reference": true
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "ES2004a.B.dialog-act.s9553330.95",
+              "meeting_id": "ES2004a",
+              "text": "Okay , that's expensive .",
+              "participant": "FEE013",
+              "role": "PM",
+              "supports_item_id": "ES2004a.sys.s.5",
+              "is_reference": true
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "ES2004a.D.dialog-act.s9553330.66",
+              "meeting_id": "ES2004a",
+              "text": "Should we be making notes of this ?",
+              "participant": "FEE016",
+              "role": "ME",
+              "supports_item_id": "ES2004a.sys.s.5",
+              "is_reference": false
+            }
+          ]
+        },
+        "new_info": true
+      },
+      {
+        "item": "ES2004d#14",
+        "step": 5,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "assess_relation",
+        "outcome": "invalid_action",
+        "error": "Correct these argument fields: : 'links' is a required property Tool assess_relation accepts root keys: result, reason, quotes, documents, links, related_items, next_action. Resubmit the complete advertised object. Select only delivered supporting dialogue IDs; if support is unavailable use uncertain with an explanation, never invent an ID or mark pass with no evidence. Documents belong inside the check they inform.",
+        "raw_tool_input": {
+          "result": "pass",
+          "reason": "Current item proposes to adjust an earlier price decision (Seventeen Pounds) by suggesting a flexible price, i.e., updating the scope of the price rather than adopting a new, unrelated decision.",
+          "quotes": [
+            {
+              "da_id": "ES2004d.B.dialog-act.vkaraisk.190",
+              "quote": "we can make the price fit,"
+            },
+            {
+              "da_id": "ES2004a.D.dialog-act.s9553330.65",
+              "quote": "Seventeen Pounds."
+            },
+            {
+              "da_id": "ES2004a.B.dialog-act.s9553330.94",
+              "quote": "Seventeen."
+            },
+            {
+              "da_id": "ES2004a.B.dialog-act.s9553330.95",
+              "quote": "Okay , that's expensive ."
+            }
+          ],
+          "documents": []
+        }
+      },
+      {
+        "item": "ES2004d#14",
+        "step": 6,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "assess_relation",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Observed dialogue includes PM's explicit remark 'we can make the price fit' directly supporting the proposed decision to adjust pricing.",
+            "quotes": [
+              {
+                "da_id": "ES2004d.B.dialog-act.vkaraisk.190",
+                "quote": "we can make the price fit ,"
+              },
+              {
+                "da_id": "ES2004d.B.dialog-act.vkaraisk.189",
+                "quote": "Okay ,"
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Current text and observed dialogue corroborate that the item description is supported by the recorded discussion.",
+            "quotes": [
+              {
+                "da_id": "ES2004d.B.dialog-act.vkaraisk.190",
+                "quote": "we can make the price fit ,"
+              },
+              {
+                "da_id": "ES2004d.B.dialog-act.vkaraisk.189",
+                "quote": "Okay ,"
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions found in the supplied evidence with the proposed decision; price-fit aligns with PM's statement.",
+            "quotes": [
+              {
+                "da_id": "ES2004d.B.dialog-act.vkaraisk.190",
+                "quote": "we can make the price fit ,"
+              },
+              {
+                "da_id": "ES2004d.B.dialog-act.vkaraisk.189",
+                "quote": "Okay ,"
+              }
+            ],
+            "fields": [
+              "statement",
+              "status"
+            ]
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "per_link_assessment_required_for_each_related_item",
+            "quotes": [],
+            "links": [
+              {
+                "id": "ES2004a.sys.s.5",
+                "relation": "updates",
+                "changed_fields": [
+                  "scope"
+                ],
+                "reason": "The current item refines the pricing scope from a fixed Seventeen Pounds to a 'price fit' approach, updating the scope of pricing rather than adopting a new price point.",
+                "prior_evidence_da_ids": [
+                  "ES2004a.D.dialog-act.s9553330.65",
+                  "ES2004a.B.dialog-act.s9553330.94",
+                  "ES2004a.B.dialog-act.s9553330.95"
+                ],
+                "current_evidence_da_ids": [
+                  "ES2004d.B.dialog-act.vkaraisk.190",
+                  "ES2004d.B.dialog-act.vkaraisk.189"
+                ]
+              }
+            ],
+            "documents": [],
+            "fields": [
+              "related_items"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          }
+        },
+        "decision": "reassess",
+        "reason": "incomplete_link_evidence_submission",
+        "assessed_text": "Proposed to make the price fit.",
+        "requested_action": "accept",
+        "proposed_fields": {
+          "status": "proposed",
+          "related_items": [],
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "ES2004d.B.dialog-act.vkaraisk.190",
+            "ES2004d.B.dialog-act.vkaraisk.189",
+            "ES2004a.D.dialog-act.s9553330.65",
+            "ES2004a.B.dialog-act.s9553330.94",
+            "ES2004a.B.dialog-act.s9553330.95"
+          ],
+          "owner": null,
+          "owner_basis": "missing",
+          "deadline": null,
+          "deadline_basis": "missing"
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Observed dialogue includes PM's explicit remark 'we can make the price fit' directly supporting the proposed decision to adjust pricing.",
+            "quotes": [
+              {
+                "da_id": "ES2004d.B.dialog-act.vkaraisk.190",
+                "quote": "we can make the price fit ,"
+              },
+              {
+                "da_id": "ES2004d.B.dialog-act.vkaraisk.189",
+                "quote": "Okay ,"
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Current text and observed dialogue corroborate that the item description is supported by the recorded discussion.",
+            "quotes": [
+              {
+                "da_id": "ES2004d.B.dialog-act.vkaraisk.190",
+                "quote": "we can make the price fit ,"
+              },
+              {
+                "da_id": "ES2004d.B.dialog-act.vkaraisk.189",
+                "quote": "Okay ,"
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions found in the supplied evidence with the proposed decision; price-fit aligns with PM's statement.",
+            "quotes": [
+              {
+                "da_id": "ES2004d.B.dialog-act.vkaraisk.190",
+                "quote": "we can make the price fit ,"
+              },
+              {
+                "da_id": "ES2004d.B.dialog-act.vkaraisk.189",
+                "quote": "Okay ,"
+              }
+            ],
+            "fields": [
+              "statement",
+              "status"
+            ]
+          },
+          "relation": {
+            "result": "pass",
+            "reason": "Current item proposes to update the previously established price point by suggesting a price-fit approach, updating the scope of pricing rather than adopting a new unrelated decision.",
+            "quotes": [
+              {
+                "da_id": "ES2004d.B.dialog-act.vkaraisk.190",
+                "quote": "we can make the price fit,"
+              },
+              {
+                "da_id": "ES2004a.D.dialog-act.s9553330.65",
+                "quote": "Seventeen Pounds."
+              },
+              {
+                "da_id": "ES2004a.B.dialog-act.s9553330.94",
+                "quote": "Seventeen."
+              },
+              {
+                "da_id": "ES2004a.B.dialog-act.s9553330.95",
+                "quote": "Okay , that's expensive ."
+              }
+            ],
+            "links": [
+              {
+                "id": "ES2004a.sys.s.5",
+                "relation": "updates",
+                "changed_fields": [
+                  "scope"
+                ],
+                "reason": "The current item refines the pricing scope from a fixed Seventeen Pounds to a 'price fit' approach, updating the scope of pricing rather than adopting a new price point.",
+                "prior_evidence_da_ids": [
+                  "ES2004a.D.dialog-act.s9553330.65",
+                  "ES2004a.B.dialog-act.s9553330.94",
+                  "ES2004a.B.dialog-act.s9553330.95"
+                ],
+                "current_evidence_da_ids": [
+                  "ES2004d.B.dialog-act.vkaraisk.190",
+                  "ES2004d.B.dialog-act.vkaraisk.189"
+                ]
+              }
+            ],
+            "documents": [],
+            "fields": [
+              "related_items"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "result": "pass",
+          "reason": "Current item proposes to update the previously established price point by suggesting a price-fit approach, updating the scope of pricing rather than adopting a new unrelated decision.",
+          "quotes": [
+            {
+              "da_id": "ES2004d.B.dialog-act.vkaraisk.190",
+              "quote": "we can make the price fit,"
+            },
+            {
+              "da_id": "ES2004a.D.dialog-act.s9553330.65",
+              "quote": "Seventeen Pounds."
+            },
+            {
+              "da_id": "ES2004a.B.dialog-act.s9553330.94",
+              "quote": "Seventeen."
+            },
+            {
+              "da_id": "ES2004a.B.dialog-act.s9553330.95",
+              "quote": "Okay , that's expensive ."
+            }
+          ],
+          "links": [
+            {
+              "id": "ES2004a.sys.s.5",
+              "relation": "updates",
+              "changed_fields": [
+                "scope"
+              ],
+              "reason": "The current item refines the pricing scope from a fixed Seventeen Pounds to a 'price fit' approach, updating the scope of pricing rather than adopting a new price point.",
+              "prior_evidence_da_ids": [
+                "ES2004a.D.dialog-act.s9553330.65",
+                "ES2004a.B.dialog-act.s9553330.94",
+                "ES2004a.B.dialog-act.s9553330.95"
+              ],
+              "current_evidence_da_ids": [
+                "ES2004d.B.dialog-act.vkaraisk.190",
+                "ES2004d.B.dialog-act.vkaraisk.189"
+              ]
+            }
+          ],
+          "related_items": [],
+          "next_action": "accept",
+          "documents": []
+        },
+        "evidence_bindings": {
+          "relation": [
+            "ES2004d.B.dialog-act.vkaraisk.189"
+          ]
+        },
+        "raw_tool_input": {
+          "result": "pass",
+          "reason": "Current item proposes to update the previously established price point by suggesting a price-fit approach, updating the scope of pricing rather than adopting a new unrelated decision.",
+          "quotes": [
+            {
+              "da_id": "ES2004d.B.dialog-act.vkaraisk.190",
+              "quote": "we can make the price fit,"
+            },
+            {
+              "da_id": "ES2004a.D.dialog-act.s9553330.65",
+              "quote": "Seventeen Pounds."
+            },
+            {
+              "da_id": "ES2004a.B.dialog-act.s9553330.94",
+              "quote": "Seventeen."
+            },
+            {
+              "da_id": "ES2004a.B.dialog-act.s9553330.95",
+              "quote": "Okay , that's expensive ."
+            }
+          ],
+          "links": [
+            {
+              "id": "ES2004a.sys.s.5",
+              "relation": "updates",
+              "changed_fields": [
+                "scope"
+              ],
+              "reason": "The current item refines the pricing scope from a fixed Seventeen Pounds to a 'price fit' approach, updating the scope of pricing rather than adopting a new price point.",
+              "prior_evidence_da_ids": [
+                "ES2004a.D.dialog-act.s9553330.65",
+                "ES2004a.B.dialog-act.s9553330.94",
+                "ES2004a.B.dialog-act.s9553330.95"
+              ],
+              "current_evidence_da_ids": [
+                "ES2004d.B.dialog-act.vkaraisk.190",
+                "ES2004d.B.dialog-act.vkaraisk.189"
+              ]
+            }
+          ],
+          "related_items": [],
+          "next_action": "accept",
+          "documents": []
+        },
+        "protocol_normalizations": [],
+        "unresolved_before": [
+          "related_items"
+        ],
+        "unresolved_after": [
+          "related_items"
+        ],
+        "semantic_stalls": 0,
+        "validation_codes": {
+          "relation": [
+            "unobserved_or_inexact_quote",
+            "per_link_assessment_required_for_each_related_item"
+          ]
+        }
+      },
+      {
+        "item": "ES2004d#14",
+        "step": 7,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "assess_relation",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Observed dialogue includes PM's explicit remark 'we can make the price fit' directly supporting the proposed decision to adjust pricing.",
+            "quotes": [
+              {
+                "da_id": "ES2004d.B.dialog-act.vkaraisk.190",
+                "quote": "we can make the price fit ,"
+              },
+              {
+                "da_id": "ES2004d.B.dialog-act.vkaraisk.189",
+                "quote": "Okay ,"
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Current text and observed dialogue corroborate that the item description is supported by the recorded discussion.",
+            "quotes": [
+              {
+                "da_id": "ES2004d.B.dialog-act.vkaraisk.190",
+                "quote": "we can make the price fit ,"
+              },
+              {
+                "da_id": "ES2004d.B.dialog-act.vkaraisk.189",
+                "quote": "Okay ,"
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions found in the supplied evidence with the proposed decision; price-fit aligns with PM's statement.",
+            "quotes": [
+              {
+                "da_id": "ES2004d.B.dialog-act.vkaraisk.190",
+                "quote": "we can make the price fit ,"
+              },
+              {
+                "da_id": "ES2004d.B.dialog-act.vkaraisk.189",
+                "quote": "Okay ,"
+              }
+            ],
+            "fields": [
+              "statement",
+              "status"
+            ]
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "per_link_assessment_required_for_each_related_item",
+            "quotes": [],
+            "links": [
+              {
+                "id": "ES2004a.sys.s.5",
+                "relation": "updates",
+                "changed_fields": [
+                  "scope"
+                ],
+                "reason": "The current item refines pricing scope from a fixed Seventeen Pounds to a 'price fit' approach, updating the scope of pricing rather than adopting a new price point.",
+                "prior_evidence_da_ids": [
+                  "ES2004a.D.dialog-act.s9553330.65",
+                  "ES2004a.B.dialog-act.s9553330.94",
+                  "ES2004a.B.dialog-act.s9553330.95"
+                ],
+                "current_evidence_da_ids": [
+                  "ES2004d.B.dialog-act.vkaraisk.189",
+                  "ES2004d.B.dialog-act.vkaraisk.190"
+                ]
+              }
+            ],
+            "fields": [
+              "related_items"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          }
+        },
+        "decision": "request_clarification",
+        "reason": "supported_statement_with_unresolved_fields",
+        "assessed_text": "Proposed to make the price fit.",
+        "requested_action": "accept",
+        "proposed_fields": {
+          "status": "proposed",
+          "related_items": [],
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "ES2004d.B.dialog-act.vkaraisk.190",
+            "ES2004d.B.dialog-act.vkaraisk.189",
+            "ES2004a.D.dialog-act.s9553330.65",
+            "ES2004a.B.dialog-act.s9553330.94",
+            "ES2004a.B.dialog-act.s9553330.95"
+          ],
+          "owner": null,
+          "owner_basis": "missing",
+          "deadline": null,
+          "deadline_basis": "missing"
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Observed dialogue includes PM's explicit remark 'we can make the price fit' directly supporting the proposed decision to adjust pricing.",
+            "quotes": [
+              {
+                "da_id": "ES2004d.B.dialog-act.vkaraisk.190",
+                "quote": "we can make the price fit ,"
+              },
+              {
+                "da_id": "ES2004d.B.dialog-act.vkaraisk.189",
+                "quote": "Okay ,"
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Current text and observed dialogue corroborate that the item description is supported by the recorded discussion.",
+            "quotes": [
+              {
+                "da_id": "ES2004d.B.dialog-act.vkaraisk.190",
+                "quote": "we can make the price fit ,"
+              },
+              {
+                "da_id": "ES2004d.B.dialog-act.vkaraisk.189",
+                "quote": "Okay ,"
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions found in the supplied evidence with the proposed decision; price-fit aligns with PM's statement.",
+            "quotes": [
+              {
+                "da_id": "ES2004d.B.dialog-act.vkaraisk.190",
+                "quote": "we can make the price fit ,"
+              },
+              {
+                "da_id": "ES2004d.B.dialog-act.vkaraisk.189",
+                "quote": "Okay ,"
+              }
+            ],
+            "fields": [
+              "statement",
+              "status"
+            ]
+          },
+          "relation": {
+            "result": "pass",
+            "reason": "Current item proposes to update pricing scope by fitting price; evidence shows PM's line 'we can make the price fit,' which updates the previous fixed price point 'Seventeen Pounds'.",
+            "quotes": [
+              {
+                "da_id": "ES2004d.B.dialog-act.vkaraisk.190",
+                "quote": "we can make the price fit,"
+              },
+              {
+                "da_id": "ES2004d.B.dialog-act.vkaraisk.189",
+                "quote": "Okay ,"
+              }
+            ],
+            "links": [
+              {
+                "id": "ES2004a.sys.s.5",
+                "relation": "updates",
+                "changed_fields": [
+                  "scope"
+                ],
+                "reason": "The current item refines pricing scope from a fixed Seventeen Pounds to a 'price fit' approach, updating the scope of pricing rather than adopting a new price point.",
+                "prior_evidence_da_ids": [
+                  "ES2004a.D.dialog-act.s9553330.65",
+                  "ES2004a.B.dialog-act.s9553330.94",
+                  "ES2004a.B.dialog-act.s9553330.95"
+                ],
+                "current_evidence_da_ids": [
+                  "ES2004d.B.dialog-act.vkaraisk.189",
+                  "ES2004d.B.dialog-act.vkaraisk.190"
+                ]
+              }
+            ],
+            "fields": [
+              "related_items"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "result": "pass",
+          "reason": "Current item proposes to update pricing scope by fitting price; evidence shows PM's line 'we can make the price fit,' which updates the previous fixed price point 'Seventeen Pounds'.",
+          "quotes": [
+            {
+              "da_id": "ES2004d.B.dialog-act.vkaraisk.190",
+              "quote": "we can make the price fit,"
+            },
+            {
+              "da_id": "ES2004d.B.dialog-act.vkaraisk.189",
+              "quote": "Okay ,"
+            }
+          ],
+          "links": [
+            {
+              "id": "ES2004a.sys.s.5",
+              "relation": "updates",
+              "changed_fields": [
+                "scope"
+              ],
+              "reason": "The current item refines pricing scope from a fixed Seventeen Pounds to a 'price fit' approach, updating the scope of pricing rather than adopting a new price point.",
+              "prior_evidence_da_ids": [
+                "ES2004a.D.dialog-act.s9553330.65",
+                "ES2004a.B.dialog-act.s9553330.94",
+                "ES2004a.B.dialog-act.s9553330.95"
+              ],
+              "current_evidence_da_ids": [
+                "ES2004d.B.dialog-act.vkaraisk.189",
+                "ES2004d.B.dialog-act.vkaraisk.190"
+              ]
+            }
+          ],
+          "related_items": [],
+          "next_action": "accept"
+        },
+        "evidence_bindings": {
+          "relation": [
+            "ES2004a.D.dialog-act.s9553330.65",
+            "ES2004a.B.dialog-act.s9553330.94",
+            "ES2004a.B.dialog-act.s9553330.95"
+          ]
+        },
+        "raw_tool_input": {
+          "result": "pass",
+          "reason": "Current item proposes to update pricing scope by fitting price; evidence shows PM's line 'we can make the price fit,' which updates the previous fixed price point 'Seventeen Pounds'.",
+          "quotes": [
+            {
+              "da_id": "ES2004d.B.dialog-act.vkaraisk.190",
+              "quote": "we can make the price fit,"
+            },
+            {
+              "da_id": "ES2004d.B.dialog-act.vkaraisk.189",
+              "quote": "Okay ,"
+            }
+          ],
+          "links": [
+            {
+              "id": "ES2004a.sys.s.5",
+              "relation": "updates",
+              "changed_fields": [
+                "scope"
+              ],
+              "reason": "The current item refines pricing scope from a fixed Seventeen Pounds to a 'price fit' approach, updating the scope of pricing rather than adopting a new price point.",
+              "prior_evidence_da_ids": [
+                "ES2004a.D.dialog-act.s9553330.65",
+                "ES2004a.B.dialog-act.s9553330.94",
+                "ES2004a.B.dialog-act.s9553330.95"
+              ],
+              "current_evidence_da_ids": [
+                "ES2004d.B.dialog-act.vkaraisk.189",
+                "ES2004d.B.dialog-act.vkaraisk.190"
+              ]
+            }
+          ],
+          "related_items": [],
+          "next_action": "accept"
+        },
+        "protocol_normalizations": [],
+        "unresolved_before": [
+          "related_items"
+        ],
+        "unresolved_after": [
+          "related_items"
+        ],
+        "semantic_stalls": 1,
+        "validation_codes": {
+          "relation": [
+            "unobserved_or_inexact_quote",
+            "per_link_assessment_required_for_each_related_item"
+          ]
+        }
+      },
+      {
+        "item": "ES2004d#14",
+        "step": 7,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "stop",
+        "outcome": "pending",
+        "termination_reason": "supported_statement_with_unresolved_fields",
+        "unresolved_fields": [
+          "related_items"
+        ]
+      }
+    ],
+    "lookups": 2,
+    "termination_reason": "supported_statement_with_unresolved_fields",
+    "clarifications": [
+      {
+        "request_id": "7a995ca5950421de",
+        "item_key": "ES2004d#14",
+        "record_id": null,
+        "field": "related_items",
+        "question": "Which earlier record does this item continue or change, and how?",
+        "item_text": "Proposed to make the price fit.",
+        "reason": "per_link_assessment_required_for_each_related_item",
+        "evidence_da_ids": [],
+        "available_evidence_da_ids": [
+          "ES2004d.B.dialog-act.vkaraisk.189",
+          "ES2004d.C.dialog-act.vkaraisk.222",
+          "ES2004d.D.dialog-act.vkaraisk.243",
+          "ES2004d.B.dialog-act.vkaraisk.190",
+          "ES2004d.C.dialog-act.vkaraisk.223",
+          "ES2004a.C.dialog-act.s9553330.39",
+          "ES2004a.D.dialog-act.s9553330.65",
+          "ES2004a.B.dialog-act.s9553330.94",
+          "ES2004a.B.dialog-act.s9553330.95",
+          "ES2004a.D.dialog-act.s9553330.66"
+        ],
+        "status": "open",
+        "termination_reason": "supported_statement_with_unresolved_fields"
+      }
+    ]
+  }
+}

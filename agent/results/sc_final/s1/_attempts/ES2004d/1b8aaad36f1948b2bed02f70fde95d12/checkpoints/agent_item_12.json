@@ -1,0 +1,1148 @@
+{
+  "item": 12,
+  "fields": {
+    "item_key": "ES2004d#12",
+    "record_id": null,
+    "item_type": "actions",
+    "item_text": "Compute the average rating for the evaluation criteria.",
+    "state": "pending",
+    "recordable": true,
+    "fields": {
+      "status": "open",
+      "prior_context_needed": false,
+      "related_items": [],
+      "owner": [
+        "FEE016"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/ES2004d.json",
+          "locator": "ES2004d.D.dialog-act.vkaraisk.82"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/ES2004d.json",
+          "locator": "ES2004d.D.dialog-act.vkaraisk.89"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/ES2004d.json",
+          "locator": "ES2004d.D.dialog-act.vkaraisk.90"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/ES2004d.json",
+          "locator": "ES2004d.D.dialog-act.vkaraisk.91"
+        }
+      ]
+    },
+    "draft_fields": {
+      "status": "open",
+      "related_items": [],
+      "owner": [
+        "FEE016"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "prior_context_needed": false,
+      "used_participant_lookup": false,
+      "evidence_da_ids": [
+        "ES2004d.D.dialog-act.vkaraisk.82",
+        "ES2004d.D.dialog-act.vkaraisk.89"
+      ]
+    },
+    "checks": {
+      "statement": {
+        "result": "pass",
+        "reason": "This is a straightforward action item to compute an average rating once inputs are collected; no contradiction in the text.",
+        "quotes": [
+          {
+            "da_id": "ES2004d.D.dialog-act.vkaraisk.82",
+            "quote": "The average <disfmarker>"
+          },
+          {
+            "da_id": "ES2004d.D.dialog-act.vkaraisk.89",
+            "quote": "I'll work out the average for that again at the end ."
+          }
+        ],
+        "fields": [
+          "statement"
+        ]
+      },
+      "owner": {
+        "result": "pass",
+        "reason": "Owner explicitly stated as FEE016 in provisional_values.",
+        "quotes": [
+          {
+            "da_id": "ES2004d.D.dialog-act.vkaraisk.82",
+            "quote": "The average <disfmarker>"
+          },
+          {
+            "da_id": "ES2004d.D.dialog-act.vkaraisk.89",
+            "quote": "I'll work out the average for that again at the end ."
+          },
+          {
+            "da_id": "ES2004d.D.dialog-act.vkaraisk.90",
+            "quote": "It's a very slightly altered <disfmarker>"
+          },
+          {
+            "da_id": "ES2004d.D.dialog-act.vkaraisk.91",
+            "quote": "Okay ,"
+          }
+        ],
+        "fields": [
+          "owner"
+        ]
+      },
+      "deadline": {
+        "result": "uncertain",
+        "reason": "deadline_unresolved",
+        "quotes": [
+          {
+            "da_id": "ES2004d.D.dialog-act.vkaraisk.82",
+            "quote": "The average <disfmarker>"
+          },
+          {
+            "da_id": "ES2004d.D.dialog-act.vkaraisk.89",
+            "quote": "I'll work out the average for that again at the end ."
+          },
+          {
+            "da_id": "ES2004d.D.dialog-act.vkaraisk.90",
+            "quote": "It's a very slightly altered <disfmarker>"
+          },
+          {
+            "da_id": "ES2004d.D.dialog-act.vkaraisk.91",
+            "quote": "Okay ,"
+          }
+        ],
+        "fields": [
+          "deadline"
+        ]
+      },
+      "status": {
+        "result": "pass",
+        "reason": "Status is open as per provisional_values.",
+        "quotes": [
+          {
+            "da_id": "ES2004d.D.dialog-act.vkaraisk.82",
+            "quote": "The average <disfmarker>"
+          },
+          {
+            "da_id": "ES2004d.D.dialog-act.vkaraisk.89",
+            "quote": "I'll work out the average for that again at the end ."
+          },
+          {
+            "da_id": "ES2004d.D.dialog-act.vkaraisk.90",
+            "quote": "It's a very slightly altered <disfmarker>"
+          },
+          {
+            "da_id": "ES2004d.D.dialog-act.vkaraisk.91",
+            "quote": "Okay ,"
+          }
+        ],
+        "fields": [
+          "status"
+        ]
+      },
+      "conflict": {
+        "result": "pass",
+        "reason": "No conflicting statements detected in the observed dialogue.",
+        "quotes": [
+          {
+            "da_id": "ES2004d.D.dialog-act.vkaraisk.82",
+            "quote": "The average <disfmarker>"
+          },
+          {
+            "da_id": "ES2004d.D.dialog-act.vkaraisk.89",
+            "quote": "I'll work out the average for that again at the end ."
+          },
+          {
+            "da_id": "ES2004d.D.dialog-act.vkaraisk.90",
+            "quote": "It's a very slightly altered <disfmarker>"
+          },
+          {
+            "da_id": "ES2004d.D.dialog-act.vkaraisk.91",
+            "quote": "Okay ,"
+          }
+        ],
+        "fields": []
+      },
+      "relation": {
+        "result": "not_applicable",
+        "reason": "No prior related item to link to in this scenario.",
+        "quotes": [],
+        "fields": [
+          "related_items"
+        ]
+      }
+    },
+    "unresolved_fields": [
+      "deadline"
+    ],
+    "observed_evidence_da_ids": [
+      "ES2004d.D.dialog-act.vkaraisk.82",
+      "ES2004d.D.dialog-act.vkaraisk.89",
+      "ES2004d.D.dialog-act.vkaraisk.90",
+      "ES2004d.D.dialog-act.vkaraisk.91",
+      "ES2004d.A.dialog-act.vkaraisk.66",
+      "ES2004d.D.dialog-act.vkaraisk.84",
+      "ES2004d.A.dialog-act.vkaraisk.72",
+      "ES2004d.D.dialog-act.vkaraisk.92"
+    ],
+    "initial_context": {
+      "item": {
+        "type": "actions",
+        "text": "Compute the average rating for the evaluation criteria.",
+        "flags": []
+      },
+      "current_meeting": "ES2004d",
+      "earlier_meetings": [],
+      "roster": [
+        {
+          "speaker": "A",
+          "participant_id": "MEO015",
+          "role": "UI"
+        },
+        {
+          "speaker": "B",
+          "participant_id": "FEE013",
+          "role": "PM"
+        },
+        {
+          "speaker": "C",
+          "participant_id": "MEE014",
+          "role": "ID"
+        },
+        {
+          "speaker": "D",
+          "participant_id": "FEE016",
+          "role": "ME"
+        }
+      ],
+      "observed_dialogue": [
+        {
+          "da_id": "ES2004d.D.dialog-act.vkaraisk.82",
+          "meeting_id": "ES2004d",
+          "text": "The average <disfmarker>",
+          "participant": "FEE016",
+          "role": "ME"
+        },
+        {
+          "da_id": "ES2004d.D.dialog-act.vkaraisk.89",
+          "meeting_id": "ES2004d",
+          "text": "I'll work out the average for that again at the end .",
+          "participant": "FEE016",
+          "role": "ME"
+        },
+        {
+          "da_id": "ES2004d.D.dialog-act.vkaraisk.90",
+          "meeting_id": "ES2004d",
+          "text": "It's a very slightly altered <disfmarker>",
+          "participant": "FEE016",
+          "role": "ME"
+        },
+        {
+          "da_id": "ES2004d.D.dialog-act.vkaraisk.91",
+          "meeting_id": "ES2004d",
+          "text": "Okay ,",
+          "participant": "FEE016",
+          "role": "ME"
+        },
+        {
+          "da_id": "ES2004d.A.dialog-act.vkaraisk.66",
+          "participant": "MEO015",
+          "role": "UI",
+          "text": "Can you just make it two ? The first ."
+        },
+        {
+          "da_id": "ES2004d.D.dialog-act.vkaraisk.84",
+          "participant": "FEE016",
+          "role": "ME",
+          "text": "oh , for you ? You want your rating to be a two ? Is that what you're saying ?"
+        },
+        {
+          "da_id": "ES2004d.A.dialog-act.vkaraisk.72",
+          "participant": "MEO015",
+          "role": "UI",
+          "text": "<gap>"
+        },
+        {
+          "da_id": "ES2004d.D.dialog-act.vkaraisk.92",
+          "participant": "FEE016",
+          "role": "ME",
+          "text": "and we're just waiting for your rating"
+        }
+      ],
+      "peer_items": [
+        {
+          "item_key": "ES2004d#0",
+          "type": "actions",
+          "text": "Provide recommendations for head office specifications."
+        },
+        {
+          "item_key": "ES2004d#1",
+          "type": "actions",
+          "text": "All team members will provide individual ratings for the evaluation criteria."
+        },
+        {
+          "item_key": "ES2004d#2",
+          "type": "problems",
+          "text": "Pricing currency is unclear; pricing may be in Euros or Dollars."
+        },
+        {
+          "item_key": "ES2004d#3",
+          "type": "problems",
+          "text": "Projected profitability is uncertain because overheads remain to be accounted for beyond a stated 50 percent profit."
+        },
+        {
+          "item_key": "ES2004d#4",
+          "type": "problems",
+          "text": "There is concern that the budget may not include all overhead costs, including salaries and heating."
+        },
+        {
+          "item_key": "ES2004d#5",
+          "type": "decisions",
+          "text": "We decided to use a kinetic charger."
+        },
+        {
+          "item_key": "ES2004d#6",
+          "type": "decisions",
+          "text": "Kinetic batteries will be placed in the top section near the hinge."
+        },
+        {
+          "item_key": "ES2004d#7",
+          "type": "decisions",
+          "text": "Proceed to produce a prototype and bring it to market based on evaluation results."
+        },
+        {
+          "item_key": "ES2004d#8",
+          "type": "decisions",
+          "text": "Rubber used in the casing will be counted as one unit in total cost."
+        },
+        {
+          "item_key": "ES2004d#9",
+          "type": "decisions",
+          "text": "Interface will use push-buttons."
+        },
+        {
+          "item_key": "ES2004d#10",
+          "type": "problems",
+          "text": "Cost information for voice recognition integration is not known; feasibility/expense needs to be assessed."
+        },
+        {
+          "item_key": "ES2004d#11",
+          "type": "actions",
+          "text": "Delegate tasks as Project Supervisor."
+        }
+      ],
+      "provisional_values": {
+        "owner": [
+          "FEE016"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "open",
+        "related_items": []
+      },
+      "candidate_evidence_da_ids": [
+        "ES2004d.D.dialog-act.vkaraisk.82",
+        "ES2004d.D.dialog-act.vkaraisk.89",
+        "ES2004d.D.dialog-act.vkaraisk.90",
+        "ES2004d.D.dialog-act.vkaraisk.91"
+      ]
+    },
+    "observed_documents": [],
+    "document_evidence": [],
+    "relation_evidence": [],
+    "history": [
+      {
+        "item": "ES2004d#12",
+        "step": 1,
+        "flags": [],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "uncertain",
+            "reason": "Dialogue shows ongoing discussion about rating and awaiting input; no explicit commitment to compute average yet. There is an instruction to compute at end, but not confirmed who will do it or when.",
+            "quotes": [
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.82",
+                "quote": "The average <disfmarker>"
+              },
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.89",
+                "quote": "I'll work out the average for that again at the end ."
+              },
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.90",
+                "quote": "It's a very slightly altered <disfmarker>"
+              },
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.91",
+                "quote": "Okay ,"
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Owner explicitly stated as FEE016 in provisional_values.",
+            "quotes": [
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.82",
+                "quote": "The average <disfmarker>"
+              },
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.89",
+                "quote": "I'll work out the average for that again at the end ."
+              },
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.90",
+                "quote": "It's a very slightly altered <disfmarker>"
+              },
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.91",
+                "quote": "Okay ,"
+              }
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "deadline_unresolved",
+            "quotes": [
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.82",
+                "quote": "The average <disfmarker>"
+              },
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.89",
+                "quote": "I'll work out the average for that again at the end ."
+              },
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.90",
+                "quote": "It's a very slightly altered <disfmarker>"
+              },
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.91",
+                "quote": "Okay ,"
+              }
+            ],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Status is open as per provisional_values.",
+            "quotes": [
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.82",
+                "quote": "The average <disfmarker>"
+              },
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.89",
+                "quote": "I'll work out the average for that again at the end ."
+              },
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.90",
+                "quote": "It's a very slightly altered <disfmarker>"
+              },
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.91",
+                "quote": "Okay ,"
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting statements detected in the observed dialogue.",
+            "quotes": [
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.82",
+                "quote": "The average <disfmarker>"
+              },
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.89",
+                "quote": "I'll work out the average for that again at the end ."
+              },
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.90",
+                "quote": "It's a very slightly altered <disfmarker>"
+              },
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.91",
+                "quote": "Okay ,"
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related item to link to in this scenario.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "decision": "retrieve",
+        "reason": "unresolved_checks",
+        "assessed_text": "Compute the average rating for the evaluation criteria.",
+        "requested_action": "retrieve",
+        "proposed_fields": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "FEE016"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "ES2004d.D.dialog-act.vkaraisk.82",
+            "ES2004d.D.dialog-act.vkaraisk.89",
+            "ES2004d.D.dialog-act.vkaraisk.90",
+            "ES2004d.D.dialog-act.vkaraisk.91"
+          ]
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "uncertain",
+            "reason": "Dialogue shows ongoing discussion about rating and awaiting input; no explicit commitment to compute average yet. There is an instruction to compute at end, but not confirmed who will do it or when.",
+            "quotes": [
+              "ES2004d.D.dialog-act.vkaraisk.82",
+              "ES2004d.D.dialog-act.vkaraisk.89",
+              "ES2004d.D.dialog-act.vkaraisk.90",
+              "ES2004d.D.dialog-act.vkaraisk.91"
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Owner explicitly stated as FEE016 in provisional_values.",
+            "quotes": [
+              "ES2004d.D.dialog-act.vkaraisk.82",
+              "ES2004d.D.dialog-act.vkaraisk.89",
+              "ES2004d.D.dialog-act.vkaraisk.90",
+              "ES2004d.D.dialog-act.vkaraisk.91"
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "pass",
+            "reason": "No deadline specified in item; deadline_basis is missing; but no deadline required for this action.",
+            "quotes": [
+              "ES2004d.D.dialog-act.vkaraisk.82",
+              "ES2004d.D.dialog-act.vkaraisk.89",
+              "ES2004d.D.dialog-act.vkaraisk.90",
+              "ES2004d.D.dialog-act.vkaraisk.91"
+            ],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Status is open as per provisional_values.",
+            "quotes": [
+              "ES2004d.D.dialog-act.vkaraisk.82",
+              "ES2004d.D.dialog-act.vkaraisk.89",
+              "ES2004d.D.dialog-act.vkaraisk.90",
+              "ES2004d.D.dialog-act.vkaraisk.91"
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting statements detected in the observed dialogue.",
+            "quotes": [
+              "ES2004d.D.dialog-act.vkaraisk.82",
+              "ES2004d.D.dialog-act.vkaraisk.89",
+              "ES2004d.D.dialog-act.vkaraisk.90",
+              "ES2004d.D.dialog-act.vkaraisk.91"
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related item to link to in this scenario.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "FEE016"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "statement": {
+            "result": "uncertain",
+            "reason": "Dialogue shows ongoing discussion about rating and awaiting input; no explicit commitment to compute average yet. There is an instruction to compute at end, but not confirmed who will do it or when.",
+            "evidence_da_ids": [
+              "ES2004d.D.dialog-act.vkaraisk.82",
+              "ES2004d.D.dialog-act.vkaraisk.89",
+              "ES2004d.D.dialog-act.vkaraisk.90",
+              "ES2004d.D.dialog-act.vkaraisk.91"
+            ]
+          },
+          "owner_check": {
+            "result": "pass",
+            "reason": "Owner explicitly stated as FEE016 in provisional_values.",
+            "evidence_da_ids": [
+              "ES2004d.D.dialog-act.vkaraisk.82",
+              "ES2004d.D.dialog-act.vkaraisk.89",
+              "ES2004d.D.dialog-act.vkaraisk.90",
+              "ES2004d.D.dialog-act.vkaraisk.91"
+            ]
+          },
+          "deadline_check": {
+            "result": "pass",
+            "reason": "No deadline specified in item; deadline_basis is missing; but no deadline required for this action.",
+            "evidence_da_ids": [
+              "ES2004d.D.dialog-act.vkaraisk.82",
+              "ES2004d.D.dialog-act.vkaraisk.89",
+              "ES2004d.D.dialog-act.vkaraisk.90",
+              "ES2004d.D.dialog-act.vkaraisk.91"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Status is open as per provisional_values.",
+            "evidence_da_ids": [
+              "ES2004d.D.dialog-act.vkaraisk.82",
+              "ES2004d.D.dialog-act.vkaraisk.89",
+              "ES2004d.D.dialog-act.vkaraisk.90",
+              "ES2004d.D.dialog-act.vkaraisk.91"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No conflicting statements detected in the observed dialogue.",
+            "evidence_da_ids": [
+              "ES2004d.D.dialog-act.vkaraisk.82",
+              "ES2004d.D.dialog-act.vkaraisk.89",
+              "ES2004d.D.dialog-act.vkaraisk.90",
+              "ES2004d.D.dialog-act.vkaraisk.91"
+            ],
+            "affected_fields": []
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior related item to link to in this scenario.",
+            "evidence_da_ids": []
+          },
+          "next_action": "retrieve"
+        },
+        "evidence_bindings": {
+          "statement": [
+            "ES2004d.D.dialog-act.vkaraisk.82",
+            "ES2004d.D.dialog-act.vkaraisk.89",
+            "ES2004d.D.dialog-act.vkaraisk.90",
+            "ES2004d.D.dialog-act.vkaraisk.91"
+          ],
+          "owner": [
+            "ES2004d.D.dialog-act.vkaraisk.82",
+            "ES2004d.D.dialog-act.vkaraisk.89",
+            "ES2004d.D.dialog-act.vkaraisk.90",
+            "ES2004d.D.dialog-act.vkaraisk.91"
+          ],
+          "deadline": [
+            "ES2004d.D.dialog-act.vkaraisk.82",
+            "ES2004d.D.dialog-act.vkaraisk.89",
+            "ES2004d.D.dialog-act.vkaraisk.90",
+            "ES2004d.D.dialog-act.vkaraisk.91"
+          ],
+          "status": [
+            "ES2004d.D.dialog-act.vkaraisk.82",
+            "ES2004d.D.dialog-act.vkaraisk.89",
+            "ES2004d.D.dialog-act.vkaraisk.90",
+            "ES2004d.D.dialog-act.vkaraisk.91"
+          ],
+          "conflict": [
+            "ES2004d.D.dialog-act.vkaraisk.82",
+            "ES2004d.D.dialog-act.vkaraisk.89",
+            "ES2004d.D.dialog-act.vkaraisk.90",
+            "ES2004d.D.dialog-act.vkaraisk.91"
+          ]
+        },
+        "raw_tool_input": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "FEE016"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "statement": {
+            "result": "uncertain",
+            "reason": "Dialogue shows ongoing discussion about rating and awaiting input; no explicit commitment to compute average yet. There is an instruction to compute at end, but not confirmed who will do it or when.",
+            "evidence_da_ids": [
+              "ES2004d.D.dialog-act.vkaraisk.82",
+              "ES2004d.D.dialog-act.vkaraisk.89",
+              "ES2004d.D.dialog-act.vkaraisk.90",
+              "ES2004d.D.dialog-act.vkaraisk.91"
+            ]
+          },
+          "owner_check": {
+            "result": "pass",
+            "reason": "Owner explicitly stated as FEE016 in provisional_values.",
+            "evidence_da_ids": [
+              "ES2004d.D.dialog-act.vkaraisk.82",
+              "ES2004d.D.dialog-act.vkaraisk.89",
+              "ES2004d.D.dialog-act.vkaraisk.90",
+              "ES2004d.D.dialog-act.vkaraisk.91"
+            ]
+          },
+          "deadline_check": {
+            "result": "pass",
+            "reason": "No deadline specified in item; deadline_basis is missing; but no deadline required for this action.",
+            "evidence_da_ids": [
+              "ES2004d.D.dialog-act.vkaraisk.82",
+              "ES2004d.D.dialog-act.vkaraisk.89",
+              "ES2004d.D.dialog-act.vkaraisk.90",
+              "ES2004d.D.dialog-act.vkaraisk.91"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Status is open as per provisional_values.",
+            "evidence_da_ids": [
+              "ES2004d.D.dialog-act.vkaraisk.82",
+              "ES2004d.D.dialog-act.vkaraisk.89",
+              "ES2004d.D.dialog-act.vkaraisk.90",
+              "ES2004d.D.dialog-act.vkaraisk.91"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No conflicting statements detected in the observed dialogue.",
+            "evidence_da_ids": [
+              "ES2004d.D.dialog-act.vkaraisk.82",
+              "ES2004d.D.dialog-act.vkaraisk.89",
+              "ES2004d.D.dialog-act.vkaraisk.90",
+              "ES2004d.D.dialog-act.vkaraisk.91"
+            ],
+            "affected_fields": []
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior related item to link to in this scenario.",
+            "evidence_da_ids": []
+          },
+          "next_action": "retrieve"
+        },
+        "protocol_normalizations": [],
+        "unresolved_before": [
+          "deadline",
+          "owner",
+          "statement",
+          "status"
+        ],
+        "unresolved_after": [
+          "deadline",
+          "statement"
+        ],
+        "semantic_stalls": 0,
+        "validation_codes": {
+          "deadline": [
+            "deadline_unresolved"
+          ]
+        }
+      },
+      {
+        "item": "ES2004d#12",
+        "step": 2,
+        "flags": [],
+        "action": "core_recheck_offered",
+        "outcome": "focused_review",
+        "reason": "semantic_core_uncertainty_with_read_evidence"
+      },
+      {
+        "item": "ES2004d#12",
+        "step": 3,
+        "flags": [],
+        "action": "assess_core",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "This is a straightforward action item to compute an average rating once inputs are collected; no contradiction in the text.",
+            "quotes": [
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.82",
+                "quote": "The average <disfmarker>"
+              },
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.89",
+                "quote": "I'll work out the average for that again at the end ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Owner explicitly stated as FEE016 in provisional_values.",
+            "quotes": [
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.82",
+                "quote": "The average <disfmarker>"
+              },
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.89",
+                "quote": "I'll work out the average for that again at the end ."
+              },
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.90",
+                "quote": "It's a very slightly altered <disfmarker>"
+              },
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.91",
+                "quote": "Okay ,"
+              }
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "deadline_unresolved",
+            "quotes": [
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.82",
+                "quote": "The average <disfmarker>"
+              },
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.89",
+                "quote": "I'll work out the average for that again at the end ."
+              },
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.90",
+                "quote": "It's a very slightly altered <disfmarker>"
+              },
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.91",
+                "quote": "Okay ,"
+              }
+            ],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Status is open as per provisional_values.",
+            "quotes": [
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.82",
+                "quote": "The average <disfmarker>"
+              },
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.89",
+                "quote": "I'll work out the average for that again at the end ."
+              },
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.90",
+                "quote": "It's a very slightly altered <disfmarker>"
+              },
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.91",
+                "quote": "Okay ,"
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting statements detected in the observed dialogue.",
+            "quotes": [
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.82",
+                "quote": "The average <disfmarker>"
+              },
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.89",
+                "quote": "I'll work out the average for that again at the end ."
+              },
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.90",
+                "quote": "It's a very slightly altered <disfmarker>"
+              },
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.91",
+                "quote": "Okay ,"
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related item to link to in this scenario.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "decision": "request_clarification",
+        "reason": "unresolved_checks",
+        "assessed_text": "Compute the average rating for the evaluation criteria.",
+        "requested_action": null,
+        "proposed_fields": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "FEE016"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "ES2004d.D.dialog-act.vkaraisk.82",
+            "ES2004d.D.dialog-act.vkaraisk.89"
+          ]
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "This is a straightforward action item to compute an average rating once inputs are collected; no contradiction in the text.",
+            "quotes": [
+              "ES2004d.D.dialog-act.vkaraisk.82",
+              "ES2004d.D.dialog-act.vkaraisk.89"
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Owner explicitly stated as FEE016 in provisional_values.",
+            "quotes": [
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.82",
+                "quote": "The average <disfmarker>"
+              },
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.89",
+                "quote": "I'll work out the average for that again at the end ."
+              },
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.90",
+                "quote": "It's a very slightly altered <disfmarker>"
+              },
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.91",
+                "quote": "Okay ,"
+              }
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "deadline_unresolved",
+            "quotes": [
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.82",
+                "quote": "The average <disfmarker>"
+              },
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.89",
+                "quote": "I'll work out the average for that again at the end ."
+              },
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.90",
+                "quote": "It's a very slightly altered <disfmarker>"
+              },
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.91",
+                "quote": "Okay ,"
+              }
+            ],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Status is open as per provisional_values.",
+            "quotes": [
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.82",
+                "quote": "The average <disfmarker>"
+              },
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.89",
+                "quote": "I'll work out the average for that again at the end ."
+              },
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.90",
+                "quote": "It's a very slightly altered <disfmarker>"
+              },
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.91",
+                "quote": "Okay ,"
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting statements detected in the observed dialogue.",
+            "quotes": [
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.82",
+                "quote": "The average <disfmarker>"
+              },
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.89",
+                "quote": "I'll work out the average for that again at the end ."
+              },
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.90",
+                "quote": "It's a very slightly altered <disfmarker>"
+              },
+              {
+                "da_id": "ES2004d.D.dialog-act.vkaraisk.91",
+                "quote": "Okay ,"
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related item to link to in this scenario.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "statement": {
+            "result": "pass",
+            "reason": "This is a straightforward action item to compute an average rating once inputs are collected; no contradiction in the text.",
+            "evidence_da_ids": [
+              "ES2004d.D.dialog-act.vkaraisk.82",
+              "ES2004d.D.dialog-act.vkaraisk.89"
+            ]
+          }
+        },
+        "evidence_bindings": {
+          "statement": [
+            "ES2004d.D.dialog-act.vkaraisk.82",
+            "ES2004d.D.dialog-act.vkaraisk.89"
+          ]
+        },
+        "raw_tool_input": {
+          "statement": {
+            "result": "pass",
+            "reason": "This is a straightforward action item to compute an average rating once inputs are collected; no contradiction in the text.",
+            "evidence_da_ids": [
+              "ES2004d.D.dialog-act.vkaraisk.82",
+              "ES2004d.D.dialog-act.vkaraisk.89"
+            ]
+          }
+        },
+        "protocol_normalizations": [
+          "retained_checked_conflict",
+          "controller_action_for_missing_hint:request_clarification"
+        ],
+        "unresolved_before": [
+          "deadline",
+          "statement"
+        ],
+        "unresolved_after": [
+          "deadline"
+        ],
+        "semantic_stalls": 0,
+        "validation_codes": {
+          "deadline": [
+            "deadline_unresolved"
+          ]
+        }
+      },
+      {
+        "item": "ES2004d#12",
+        "step": 3,
+        "flags": [],
+        "action": "stop",
+        "outcome": "pending",
+        "termination_reason": "unresolved_checks",
+        "unresolved_fields": [
+          "deadline"
+        ]
+      }
+    ],
+    "lookups": 0,
+    "termination_reason": "unresolved_checks",
+    "clarifications": [
+      {
+        "request_id": "5ca56967af70f307",
+        "item_key": "ES2004d#12",
+        "record_id": null,
+        "field": "deadline",
+        "question": "What is the agreed deadline, in its original wording?",
+        "item_text": "Compute the average rating for the evaluation criteria.",
+        "reason": "deadline_unresolved",
+        "evidence_da_ids": [
+          "ES2004d.D.dialog-act.vkaraisk.82",
+          "ES2004d.D.dialog-act.vkaraisk.89",
+          "ES2004d.D.dialog-act.vkaraisk.90",
+          "ES2004d.D.dialog-act.vkaraisk.91"
+        ],
+        "available_evidence_da_ids": [
+          "ES2004d.D.dialog-act.vkaraisk.82",
+          "ES2004d.D.dialog-act.vkaraisk.89",
+          "ES2004d.D.dialog-act.vkaraisk.90",
+          "ES2004d.D.dialog-act.vkaraisk.91",
+          "ES2004d.A.dialog-act.vkaraisk.66",
+          "ES2004d.D.dialog-act.vkaraisk.84",
+          "ES2004d.A.dialog-act.vkaraisk.72",
+          "ES2004d.D.dialog-act.vkaraisk.92"
+        ],
+        "status": "open",
+        "termination_reason": "unresolved_checks"
+      }
+    ]
+  }
+}

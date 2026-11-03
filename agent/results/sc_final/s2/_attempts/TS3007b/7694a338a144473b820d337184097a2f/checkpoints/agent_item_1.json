@@ -1,0 +1,640 @@
+{
+  "item": 1,
+  "fields": {
+    "item_key": "TS3007b#1",
+    "record_id": null,
+    "item_type": "actions",
+    "item_text": "Fill in the questionnaire after lunch.",
+    "state": "accepted",
+    "recordable": true,
+    "fields": {
+      "status": "open",
+      "prior_context_needed": false,
+      "related_items": [],
+      "owner": [
+        "MTD025PM"
+      ],
+      "owner_basis": "explicit",
+      "deadline": "after lunch",
+      "deadline_basis": "explicit",
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3007b.json",
+          "locator": "TS3007b.A.dialog-act.vkaraisk.189"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3007b.json",
+          "locator": "TS3007b.A.dialog-act.vkaraisk.193"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3007b.json",
+          "locator": "TS3007b.B.dialog-act.vkaraisk.263"
+        }
+      ]
+    },
+    "draft_fields": {
+      "status": "open",
+      "related_items": [],
+      "owner": [
+        "MTD025PM"
+      ],
+      "owner_basis": "explicit",
+      "deadline": "after lunch",
+      "deadline_basis": "explicit",
+      "prior_context_needed": false,
+      "used_participant_lookup": false,
+      "evidence_da_ids": [
+        "TS3007b.A.dialog-act.vkaraisk.189",
+        "TS3007b.A.dialog-act.vkaraisk.193",
+        "TS3007b.B.dialog-act.vkaraisk.263"
+      ]
+    },
+    "checks": {
+      "statement": {
+        "result": "pass",
+        "reason": "The dialogue supports the assignment and timing: the PM acknowledges filling out the questionnaire and the note 'after lunch' indicates timing.",
+        "quotes": [
+          {
+            "da_id": "TS3007b.A.dialog-act.vkaraisk.189",
+            "quote": "it's it's simply filling <disfmarker>"
+          },
+          {
+            "da_id": "TS3007b.A.dialog-act.vkaraisk.193",
+            "quote": "I'd do it after lunch I think ."
+          },
+          {
+            "da_id": "TS3007b.B.dialog-act.vkaraisk.263",
+            "quote": "The questionnaire , fill in <disfmarker> uh we fill out d after lunch or uh <disfmarker>"
+          }
+        ],
+        "fields": [
+          "statement"
+        ]
+      },
+      "owner": {
+        "result": "pass",
+        "reason": "Owner explicitly specified in provisional values; indications of assignment in dialogue corroborate.",
+        "quotes": [
+          {
+            "da_id": "TS3007b.A.dialog-act.vkaraisk.189",
+            "quote": "it's it's simply filling <disfmarker>"
+          },
+          {
+            "da_id": "TS3007b.A.dialog-act.vkaraisk.193",
+            "quote": "I'd do it after lunch I think ."
+          }
+        ],
+        "fields": [
+          "owner"
+        ]
+      },
+      "deadline": {
+        "result": "pass",
+        "reason": "Deadline explicitly stated as 'after lunch' in provisional values and supported by dialogue context referring to lunch timing.",
+        "quotes": [
+          {
+            "da_id": "TS3007b.A.dialog-act.vkaraisk.193",
+            "quote": "I'd do it after lunch I think ."
+          },
+          {
+            "da_id": "TS3007b.B.dialog-act.vkaraisk.263",
+            "quote": "The questionnaire , fill in <disfmarker> uh we fill out d after lunch or uh <disfmarker>"
+          }
+        ],
+        "fields": [
+          "deadline"
+        ]
+      },
+      "status": {
+        "result": "pass",
+        "reason": "Status is open per provisional values; no evidence of completion in dialogue.",
+        "quotes": [
+          {
+            "da_id": "TS3007b.A.dialog-act.vkaraisk.189",
+            "quote": "it's it's simply filling <disfmarker>"
+          },
+          {
+            "da_id": "TS3007b.A.dialog-act.vkaraisk.193",
+            "quote": "I'd do it after lunch I think ."
+          }
+        ],
+        "fields": [
+          "status"
+        ]
+      },
+      "conflict": {
+        "result": "pass",
+        "reason": "No conflicts detected within provided evidence; fields not affected.",
+        "quotes": [
+          {
+            "da_id": "TS3007b.A.dialog-act.vkaraisk.189",
+            "quote": "it's it's simply filling <disfmarker>"
+          },
+          {
+            "da_id": "TS3007b.A.dialog-act.vkaraisk.193",
+            "quote": "I'd do it after lunch I think ."
+          },
+          {
+            "da_id": "TS3007b.B.dialog-act.vkaraisk.263",
+            "quote": "The questionnaire , fill in <disfmarker> uh we fill out d after lunch or uh <disfmarker>"
+          }
+        ],
+        "fields": []
+      },
+      "relation": {
+        "result": "not_applicable",
+        "reason": "No prior related item to assess relation with in this instance.",
+        "quotes": [],
+        "fields": [
+          "related_items"
+        ]
+      }
+    },
+    "unresolved_fields": [],
+    "observed_evidence_da_ids": [
+      "TS3007b.B.dialog-act.vkaraisk.263",
+      "TS3007b.A.dialog-act.vkaraisk.189",
+      "TS3007b.A.dialog-act.vkaraisk.190",
+      "TS3007b.A.dialog-act.vkaraisk.191",
+      "TS3007b.A.dialog-act.vkaraisk.192",
+      "TS3007b.A.dialog-act.vkaraisk.193",
+      "TS3007b.A.dialog-act.vkaraisk.187",
+      "TS3007b.A.dialog-act.vkaraisk.188",
+      "TS3007b.D.dialog-act.vkaraisk.274"
+    ],
+    "initial_context": {
+      "item": {
+        "type": "actions",
+        "text": "Fill in the questionnaire after lunch.",
+        "flags": []
+      },
+      "current_meeting": "TS3007b",
+      "earlier_meetings": [
+        "TS3007a"
+      ],
+      "roster": [
+        {
+          "speaker": "A",
+          "participant_id": "MTD025PM",
+          "role": "PM"
+        },
+        {
+          "speaker": "B",
+          "participant_id": "MTD027ID",
+          "role": "UI"
+        },
+        {
+          "speaker": "C",
+          "participant_id": "MTD026UID",
+          "role": "ID"
+        },
+        {
+          "speaker": "D",
+          "participant_id": "MTD028ME",
+          "role": "ME"
+        }
+      ],
+      "observed_dialogue": [
+        {
+          "da_id": "TS3007b.B.dialog-act.vkaraisk.263",
+          "meeting_id": "TS3007b",
+          "text": "The questionnaire , fill in <disfmarker> uh we fill out d after lunch or uh <disfmarker>",
+          "participant": "MTD027ID",
+          "role": "UI"
+        },
+        {
+          "da_id": "TS3007b.A.dialog-act.vkaraisk.189",
+          "meeting_id": "TS3007b",
+          "text": "it's it's simply filling <disfmarker>",
+          "participant": "MTD025PM",
+          "role": "PM"
+        },
+        {
+          "da_id": "TS3007b.A.dialog-act.vkaraisk.190",
+          "meeting_id": "TS3007b",
+          "text": "oh no ,",
+          "participant": "MTD025PM",
+          "role": "PM"
+        },
+        {
+          "da_id": "TS3007b.A.dialog-act.vkaraisk.191",
+          "meeting_id": "TS3007b",
+          "text": "it's uh it's also filling out <disfmarker>",
+          "participant": "MTD025PM",
+          "role": "PM"
+        },
+        {
+          "da_id": "TS3007b.A.dialog-act.vkaraisk.192",
+          "meeting_id": "TS3007b",
+          "text": "no ,",
+          "participant": "MTD025PM",
+          "role": "PM"
+        },
+        {
+          "da_id": "TS3007b.A.dialog-act.vkaraisk.193",
+          "meeting_id": "TS3007b",
+          "text": "I'd do it after lunch I think .",
+          "participant": "MTD025PM",
+          "role": "PM"
+        },
+        {
+          "da_id": "TS3007b.A.dialog-act.vkaraisk.187",
+          "participant": "MTD025PM",
+          "role": "PM",
+          "text": "thank you ."
+        },
+        {
+          "da_id": "TS3007b.A.dialog-act.vkaraisk.188",
+          "participant": "MTD025PM",
+          "role": "PM",
+          "text": "Uh well ,"
+        },
+        {
+          "da_id": "TS3007b.D.dialog-act.vkaraisk.274",
+          "participant": "MTD028ME",
+          "role": "ME",
+          "text": "<vocalsound>"
+        }
+      ],
+      "peer_items": [
+        {
+          "item_key": "TS3007b#0",
+          "type": "actions",
+          "text": "Take minutes and place them in the shared folder by end of session."
+        }
+      ],
+      "provisional_values": {
+        "owner": [
+          "MTD025PM"
+        ],
+        "owner_basis": "explicit",
+        "deadline": "after lunch",
+        "deadline_basis": "explicit",
+        "status": "open",
+        "related_items": []
+      },
+      "candidate_evidence_da_ids": [
+        "TS3007b.B.dialog-act.vkaraisk.263",
+        "TS3007b.A.dialog-act.vkaraisk.189",
+        "TS3007b.A.dialog-act.vkaraisk.190",
+        "TS3007b.A.dialog-act.vkaraisk.191",
+        "TS3007b.A.dialog-act.vkaraisk.192",
+        "TS3007b.A.dialog-act.vkaraisk.193"
+      ]
+    },
+    "observed_documents": [],
+    "document_evidence": [],
+    "relation_evidence": [],
+    "history": [
+      {
+        "item": "TS3007b#1",
+        "step": 1,
+        "flags": [],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "The dialogue supports the assignment and timing: the PM acknowledges filling out the questionnaire and the note 'after lunch' indicates timing.",
+            "quotes": [
+              {
+                "da_id": "TS3007b.A.dialog-act.vkaraisk.189",
+                "quote": "it's it's simply filling <disfmarker>"
+              },
+              {
+                "da_id": "TS3007b.A.dialog-act.vkaraisk.193",
+                "quote": "I'd do it after lunch I think ."
+              },
+              {
+                "da_id": "TS3007b.B.dialog-act.vkaraisk.263",
+                "quote": "The questionnaire , fill in <disfmarker> uh we fill out d after lunch or uh <disfmarker>"
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Owner explicitly specified in provisional values; indications of assignment in dialogue corroborate.",
+            "quotes": [
+              {
+                "da_id": "TS3007b.A.dialog-act.vkaraisk.189",
+                "quote": "it's it's simply filling <disfmarker>"
+              },
+              {
+                "da_id": "TS3007b.A.dialog-act.vkaraisk.193",
+                "quote": "I'd do it after lunch I think ."
+              }
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "pass",
+            "reason": "Deadline explicitly stated as 'after lunch' in provisional values and supported by dialogue context referring to lunch timing.",
+            "quotes": [
+              {
+                "da_id": "TS3007b.A.dialog-act.vkaraisk.193",
+                "quote": "I'd do it after lunch I think ."
+              },
+              {
+                "da_id": "TS3007b.B.dialog-act.vkaraisk.263",
+                "quote": "The questionnaire , fill in <disfmarker> uh we fill out d after lunch or uh <disfmarker>"
+              }
+            ],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Status is open per provisional values; no evidence of completion in dialogue.",
+            "quotes": [
+              {
+                "da_id": "TS3007b.A.dialog-act.vkaraisk.189",
+                "quote": "it's it's simply filling <disfmarker>"
+              },
+              {
+                "da_id": "TS3007b.A.dialog-act.vkaraisk.193",
+                "quote": "I'd do it after lunch I think ."
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicts detected within provided evidence; fields not affected.",
+            "quotes": [
+              {
+                "da_id": "TS3007b.A.dialog-act.vkaraisk.189",
+                "quote": "it's it's simply filling <disfmarker>"
+              },
+              {
+                "da_id": "TS3007b.A.dialog-act.vkaraisk.193",
+                "quote": "I'd do it after lunch I think ."
+              },
+              {
+                "da_id": "TS3007b.B.dialog-act.vkaraisk.263",
+                "quote": "The questionnaire , fill in <disfmarker> uh we fill out d after lunch or uh <disfmarker>"
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related item to assess relation with in this instance.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "decision": "accept",
+        "reason": "all_required_checks_passed",
+        "assessed_text": "Fill in the questionnaire after lunch.",
+        "requested_action": "accept",
+        "proposed_fields": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "MTD025PM"
+          ],
+          "owner_basis": "explicit",
+          "deadline": "after lunch",
+          "deadline_basis": "explicit",
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "TS3007b.A.dialog-act.vkaraisk.189",
+            "TS3007b.A.dialog-act.vkaraisk.193",
+            "TS3007b.B.dialog-act.vkaraisk.263"
+          ]
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "The dialogue supports the assignment and timing: the PM acknowledges filling out the questionnaire and the note 'after lunch' indicates timing.",
+            "quotes": [
+              "TS3007b.A.dialog-act.vkaraisk.189",
+              "TS3007b.A.dialog-act.vkaraisk.193",
+              "TS3007b.B.dialog-act.vkaraisk.263"
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Owner explicitly specified in provisional values; indications of assignment in dialogue corroborate.",
+            "quotes": [
+              "TS3007b.A.dialog-act.vkaraisk.189",
+              "TS3007b.A.dialog-act.vkaraisk.193"
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "pass",
+            "reason": "Deadline explicitly stated as 'after lunch' in provisional values and supported by dialogue context referring to lunch timing.",
+            "quotes": [
+              "TS3007b.A.dialog-act.vkaraisk.193",
+              "TS3007b.B.dialog-act.vkaraisk.263"
+            ],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Status is open per provisional values; no evidence of completion in dialogue.",
+            "quotes": [
+              "TS3007b.A.dialog-act.vkaraisk.189",
+              "TS3007b.A.dialog-act.vkaraisk.193"
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicts detected within provided evidence; fields not affected.",
+            "quotes": [],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related item to assess relation with in this instance.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "MTD025PM"
+          ],
+          "owner_basis": "explicit",
+          "deadline": "after lunch",
+          "deadline_basis": "explicit",
+          "statement": {
+            "result": "pass",
+            "reason": "The dialogue supports the assignment and timing: the PM acknowledges filling out the questionnaire and the note 'after lunch' indicates timing.",
+            "evidence_da_ids": [
+              "TS3007b.A.dialog-act.vkaraisk.189",
+              "TS3007b.A.dialog-act.vkaraisk.193",
+              "TS3007b.B.dialog-act.vkaraisk.263"
+            ]
+          },
+          "owner_check": {
+            "result": "pass",
+            "reason": "Owner explicitly specified in provisional values; indications of assignment in dialogue corroborate.",
+            "evidence_da_ids": [
+              "TS3007b.A.dialog-act.vkaraisk.189",
+              "TS3007b.A.dialog-act.vkaraisk.193"
+            ]
+          },
+          "deadline_check": {
+            "result": "pass",
+            "reason": "Deadline explicitly stated as 'after lunch' in provisional values and supported by dialogue context referring to lunch timing.",
+            "evidence_da_ids": [
+              "TS3007b.A.dialog-act.vkaraisk.193",
+              "TS3007b.B.dialog-act.vkaraisk.263"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Status is open per provisional values; no evidence of completion in dialogue.",
+            "evidence_da_ids": [
+              "TS3007b.A.dialog-act.vkaraisk.189",
+              "TS3007b.A.dialog-act.vkaraisk.193"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No conflicts detected within provided evidence; fields not affected.",
+            "evidence_da_ids": [],
+            "affected_fields": []
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior related item to assess relation with in this instance.",
+            "evidence_da_ids": []
+          },
+          "next_action": "accept"
+        },
+        "evidence_bindings": {
+          "statement": [
+            "TS3007b.A.dialog-act.vkaraisk.189",
+            "TS3007b.A.dialog-act.vkaraisk.193",
+            "TS3007b.B.dialog-act.vkaraisk.263"
+          ],
+          "owner": [
+            "TS3007b.A.dialog-act.vkaraisk.189",
+            "TS3007b.A.dialog-act.vkaraisk.193"
+          ],
+          "deadline": [
+            "TS3007b.A.dialog-act.vkaraisk.193",
+            "TS3007b.B.dialog-act.vkaraisk.263"
+          ],
+          "status": [
+            "TS3007b.A.dialog-act.vkaraisk.189",
+            "TS3007b.A.dialog-act.vkaraisk.193"
+          ],
+          "conflict_scope": [
+            "TS3007b.A.dialog-act.vkaraisk.189",
+            "TS3007b.A.dialog-act.vkaraisk.193",
+            "TS3007b.B.dialog-act.vkaraisk.263"
+          ]
+        },
+        "raw_tool_input": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "MTD025PM"
+          ],
+          "owner_basis": "explicit",
+          "deadline": "after lunch",
+          "deadline_basis": "explicit",
+          "statement": {
+            "result": "pass",
+            "reason": "The dialogue supports the assignment and timing: the PM acknowledges filling out the questionnaire and the note 'after lunch' indicates timing.",
+            "evidence_da_ids": [
+              "TS3007b.A.dialog-act.vkaraisk.189",
+              "TS3007b.A.dialog-act.vkaraisk.193",
+              "TS3007b.B.dialog-act.vkaraisk.263"
+            ]
+          },
+          "owner_check": {
+            "result": "pass",
+            "reason": "Owner explicitly specified in provisional values; indications of assignment in dialogue corroborate.",
+            "evidence_da_ids": [
+              "TS3007b.A.dialog-act.vkaraisk.189",
+              "TS3007b.A.dialog-act.vkaraisk.193"
+            ]
+          },
+          "deadline_check": {
+            "result": "pass",
+            "reason": "Deadline explicitly stated as 'after lunch' in provisional values and supported by dialogue context referring to lunch timing.",
+            "evidence_da_ids": [
+              "TS3007b.A.dialog-act.vkaraisk.193",
+              "TS3007b.B.dialog-act.vkaraisk.263"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Status is open per provisional values; no evidence of completion in dialogue.",
+            "evidence_da_ids": [
+              "TS3007b.A.dialog-act.vkaraisk.189",
+              "TS3007b.A.dialog-act.vkaraisk.193"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No conflicts detected within provided evidence; fields not affected.",
+            "evidence_da_ids": [],
+            "affected_fields": []
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior related item to assess relation with in this instance.",
+            "evidence_da_ids": []
+          },
+          "next_action": "accept"
+        },
+        "protocol_normalizations": [],
+        "unresolved_before": [
+          "deadline",
+          "owner",
+          "statement",
+          "status"
+        ],
+        "unresolved_after": [],
+        "semantic_stalls": 0,
+        "validation_codes": {}
+      },
+      {
+        "item": "TS3007b#1",
+        "step": 1,
+        "flags": [],
+        "action": "accept",
+        "outcome": "accepted",
+        "termination_reason": "all_required_checks_passed",
+        "unresolved_fields": []
+      }
+    ],
+    "lookups": 0,
+    "termination_reason": "all_required_checks_passed",
+    "clarifications": []
+  }
+}

@@ -1,0 +1,1357 @@
+{
+  "item": 11,
+  "fields": {
+    "item_key": "TS3007d#11",
+    "record_id": null,
+    "item_type": "problems",
+    "item_text": "Production costs for the design have not been accounted for in the budget.",
+    "state": "accepted",
+    "recordable": true,
+    "fields": {
+      "status": "open",
+      "prior_context_needed": true,
+      "related_items": [
+        {
+          "id": "TS3007c.sys.s.9",
+          "relation": "continues"
+        }
+      ],
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3007d.json",
+          "locator": "TS3007d.D.dialog-act.dharshi.198"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3007c.json",
+          "locator": "TS3007c.C.dialog-act.dharshi.118"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3007c.json",
+          "locator": "TS3007c.C.dialog-act.dharshi.119"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3007c.json",
+          "locator": "TS3007c.C.dialog-act.dharshi.120"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3007c.json",
+          "locator": "TS3007c.C.dialog-act.dharshi.121"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3007c.json",
+          "locator": "TS3007c.C.dialog-act.dharshi.122"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3007c.json",
+          "locator": "TS3007c.C.dialog-act.dharshi.116"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3007c.json",
+          "locator": "TS3007c.C.dialog-act.dharshi.117"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3007d.json",
+          "locator": "TS3007d.B.dialog-act.dharshi.203"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3007d.json",
+          "locator": "TS3007d.A.dialog-act.dharshi.188"
+        }
+      ]
+    },
+    "draft_fields": {
+      "status": "open",
+      "related_items": [
+        {
+          "id": "TS3007c.sys.s.9",
+          "relation": "continues"
+        }
+      ],
+      "prior_context_needed": false,
+      "used_participant_lookup": false,
+      "evidence_da_ids": [
+        "TS3007d.D.dialog-act.dharshi.198",
+        "TS3007c.C.dialog-act.dharshi.118"
+      ],
+      "owner": null,
+      "owner_basis": "missing",
+      "deadline": null,
+      "deadline_basis": "missing"
+    },
+    "checks": {
+      "statement": {
+        "result": "pass",
+        "reason": "The current dialogue indicates the production cost issue affecting the budget (ME: production costs not accounted for). The observation TS3007d.D.dialog-act.dharshi.198 supports that the concern exists as described in the item.",
+        "quotes": [
+          {
+            "da_id": "TS3007d.D.dialog-act.dharshi.198",
+            "quote": "That doesn't account for this . Producing this ."
+          }
+        ],
+        "fields": [
+          "statement"
+        ]
+      },
+      "status": {
+        "result": "pass",
+        "reason": "Evidence supports the open status of the problem; no resolution is demonstrated in the observed dialogue.",
+        "quotes": [
+          {
+            "da_id": "TS3007d.D.dialog-act.dharshi.198",
+            "quote": "That doesn't account for this . Producing this ."
+          }
+        ],
+        "fields": [
+          "status"
+        ]
+      },
+      "conflict": {
+        "result": "pass",
+        "reason": "No contradictions found within the observed dialogue regarding this budget issue.",
+        "quotes": [
+          {
+            "da_id": "TS3007d.D.dialog-act.dharshi.198",
+            "quote": "That doesn't account for this . Producing this ."
+          }
+        ],
+        "fields": [
+          "statement"
+        ]
+      },
+      "relation": {
+        "result": "pass",
+        "reason": "The current problem about production costs not accounted for in the budget aligns with the prior TS3007c.sys.s.9 budget-constrained discussion, indicating a continuation of the same budget-cost challenge rather than a new issue.",
+        "quotes": [
+          {
+            "da_id": "TS3007d.D.dialog-act.dharshi.198",
+            "quote": "That doesn't account for this . Producing this ."
+          },
+          {
+            "da_id": "TS3007c.C.dialog-act.dharshi.118",
+            "quote": "well uh if we are going to use traditional buttons , we could go uh with a simple chip set ."
+          },
+          {
+            "da_id": "TS3007c.C.dialog-act.dharshi.119",
+            "quote": "But uh if we decide to go on a n uh um L_C_D_ screen , we would use an uh <disfmarker> we have to use an a advanced chip set ."
+          },
+          {
+            "da_id": "TS3007c.C.dialog-act.dharshi.120",
+            "quote": "And that would bring uh the necessary costs with with it ."
+          },
+          {
+            "da_id": "TS3007c.C.dialog-act.dharshi.121",
+            "quote": "So that's something we th have to keep in mind ."
+          },
+          {
+            "da_id": "TS3007c.C.dialog-act.dharshi.122",
+            "quote": "If it isn't uh manageable uh budget-wise , we'd have to go over to uh to sim to simple buttons ."
+          },
+          {
+            "da_id": "TS3007c.C.dialog-act.dharshi.116",
+            "quote": "Well , we discussed it in a previous meeting , so I figured I'll just leave it at the L_C_D_ ."
+          },
+          {
+            "da_id": "TS3007c.C.dialog-act.dharshi.117",
+            "quote": "And uh chip set ,"
+          },
+          {
+            "da_id": "TS3007d.B.dialog-act.dharshi.203",
+            "quote": "Uh , j maybe we'll finish uh the the list first and then look back , aye ?"
+          },
+          {
+            "da_id": "TS3007d.A.dialog-act.dharshi.188",
+            "quote": "Okay ,"
+          }
+        ],
+        "links": [
+          {
+            "id": "TS3007c.sys.s.9",
+            "relation": "continues",
+            "changed_fields": [],
+            "reason": "Current production-cost-budget debate continues from the prior budget-cost discussion.",
+            "prior_evidence_da_ids": [
+              "TS3007c.C.dialog-act.dharshi.118",
+              "TS3007c.C.dialog-act.dharshi.119",
+              "TS3007c.C.dialog-act.dharshi.120",
+              "TS3007c.C.dialog-act.dharshi.121",
+              "TS3007c.C.dialog-act.dharshi.122",
+              "TS3007c.C.dialog-act.dharshi.116",
+              "TS3007c.C.dialog-act.dharshi.117"
+            ],
+            "current_evidence_da_ids": [
+              "TS3007d.D.dialog-act.dharshi.198",
+              "TS3007d.B.dialog-act.dharshi.203",
+              "TS3007d.A.dialog-act.dharshi.188"
+            ]
+          }
+        ],
+        "documents": [],
+        "fields": [
+          "related_items"
+        ]
+      },
+      "owner": {
+        "result": "not_applicable",
+        "reason": "field_not_applicable",
+        "quotes": [],
+        "fields": [
+          "owner"
+        ]
+      },
+      "deadline": {
+        "result": "not_applicable",
+        "reason": "field_not_applicable",
+        "quotes": [],
+        "fields": [
+          "deadline"
+        ]
+      }
+    },
+    "unresolved_fields": [],
+    "observed_evidence_da_ids": [
+      "TS3007d.D.dialog-act.dharshi.198",
+      "TS3007d.B.dialog-act.dharshi.203",
+      "TS3007d.A.dialog-act.dharshi.188",
+      "TS3007c.C.dialog-act.dharshi.117",
+      "TS3007c.C.dialog-act.dharshi.118",
+      "TS3007c.C.dialog-act.dharshi.119",
+      "TS3007c.C.dialog-act.dharshi.120",
+      "TS3007c.C.dialog-act.dharshi.121",
+      "TS3007c.C.dialog-act.dharshi.122",
+      "TS3007c.D.dialog-act.dharshi.48",
+      "TS3007c.C.dialog-act.dharshi.115",
+      "TS3007c.C.dialog-act.dharshi.116"
+    ],
+    "initial_context": {
+      "item": {
+        "type": "problems",
+        "text": "Production costs for the design have not been accounted for in the budget.",
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ]
+      },
+      "current_meeting": "TS3007d",
+      "earlier_meetings": [
+        "TS3007a",
+        "TS3007b",
+        "TS3007c"
+      ],
+      "roster": [
+        {
+          "speaker": "A",
+          "participant_id": "MTD025PM",
+          "role": "PM"
+        },
+        {
+          "speaker": "B",
+          "participant_id": "MTD027ID",
+          "role": "UI"
+        },
+        {
+          "speaker": "C",
+          "participant_id": "MTD026UID",
+          "role": "ID"
+        },
+        {
+          "speaker": "D",
+          "participant_id": "MTD028ME",
+          "role": "ME"
+        }
+      ],
+      "observed_dialogue": [
+        {
+          "da_id": "TS3007d.D.dialog-act.dharshi.198",
+          "meeting_id": "TS3007d",
+          "text": "That doesn't account for this . Producing this .",
+          "participant": "MTD028ME",
+          "role": "ME"
+        },
+        {
+          "da_id": "TS3007d.B.dialog-act.dharshi.203",
+          "participant": "MTD027ID",
+          "role": "UI",
+          "text": "Uh , j maybe we'll finish uh the the list first and then look back , aye ?"
+        },
+        {
+          "da_id": "TS3007d.A.dialog-act.dharshi.188",
+          "participant": "MTD025PM",
+          "role": "PM",
+          "text": "Okay ,"
+        }
+      ],
+      "peer_items": [
+        {
+          "item_key": "TS3007d#0",
+          "type": "actions",
+          "text": "Finish the end report."
+        },
+        {
+          "item_key": "TS3007d#1",
+          "type": "actions",
+          "text": "The PM will redesign something now."
+        },
+        {
+          "item_key": "TS3007d#2",
+          "type": "problems",
+          "text": "There is disagreement about whether the remote control has speech recognition."
+        },
+        {
+          "item_key": "TS3007d#3",
+          "type": "problems",
+          "text": "Budget overrun: the project costs exceed budget (initially stated as eleven euros over; later updated to four euros over)."
+        },
+        {
+          "item_key": "TS3007d#4",
+          "type": "decisions",
+          "text": "We decided to use a single touch-screen."
+        },
+        {
+          "item_key": "TS3007d#5",
+          "type": "decisions",
+          "text": "The group will use a black and red color scheme for the remote."
+        },
+        {
+          "item_key": "TS3007d#6",
+          "type": "decisions",
+          "text": "Base colours should be white or metallic grey."
+        },
+        {
+          "item_key": "TS3007d#7",
+          "type": "decisions",
+          "text": "The standard cover should be cheap and white (or similar)."
+        },
+        {
+          "item_key": "TS3007d#8",
+          "type": "decisions",
+          "text": "The design will use ten buttons, as that is the easiest configuration."
+        },
+        {
+          "item_key": "TS3007d#9",
+          "type": "decisions",
+          "text": "Price is treated as fixed at twelve and a half euros (12.50) for the product."
+        },
+        {
+          "item_key": "TS3007d#10",
+          "type": "problems",
+          "text": "A miscalculation in the production cost figures was raised ('this isn't right')."
+        }
+      ],
+      "item_type_contract": "This is a Problem, not a task or decision. Verify that the stated obstacle/concern and its impact were actually raised. It need not have an owner, deadline, accepted remedy or resolution. A supported information gap can remain open. Assess end status separately; uncertainty about a cause or remedy is not absence of evidence that the concern exists. Do not infer project-document content or cite a passage that was not delivered.",
+      "provisional_values": {
+        "owner": null,
+        "owner_basis": "missing",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "open",
+        "related_items": []
+      },
+      "candidate_evidence_da_ids": [
+        "TS3007d.D.dialog-act.dharshi.198"
+      ]
+    },
+    "observed_documents": [],
+    "document_evidence": [],
+    "relation_evidence": [
+      {
+        "prior_item_id": "TS3007c.sys.s.9",
+        "relation": "continues",
+        "state": "supported",
+        "changed_fields": [],
+        "reason": "Current production-cost-budget debate continues from the prior budget-cost discussion.",
+        "before": {
+          "kind": "prior_item",
+          "id": "TS3007c.sys.s.9",
+          "meeting_id": "TS3007c",
+          "type": "problems",
+          "text": "Budget constraints may force moving from advanced chip sets to simpler button solutions if costs are not manageable.",
+          "owner": null,
+          "owner_basis": null,
+          "deadline": null,
+          "deadline_basis": null,
+          "status": "open",
+          "evidence": [
+            "TS3007c.C.dialog-act.dharshi.118",
+            "TS3007c.C.dialog-act.dharshi.119",
+            "TS3007c.C.dialog-act.dharshi.120",
+            "TS3007c.C.dialog-act.dharshi.121",
+            "TS3007c.C.dialog-act.dharshi.122",
+            "TS3007c.C.dialog-act.dharshi.116",
+            "TS3007c.C.dialog-act.dharshi.117"
+          ],
+          "source_file": "TS3007c.json",
+          "source_sha256": "0b75077072dbf5d5e064789e7bae768a52880d577af6a829eaf3a97ab535edaa",
+          "review_state": "accepted",
+          "unresolved_fields": [],
+          "unreadable_reference_ids": [],
+          "selected_reference_ids": [
+            "TS3007c.C.dialog-act.dharshi.118",
+            "TS3007c.C.dialog-act.dharshi.119",
+            "TS3007c.C.dialog-act.dharshi.120",
+            "TS3007c.C.dialog-act.dharshi.121",
+            "TS3007c.C.dialog-act.dharshi.122",
+            "TS3007c.C.dialog-act.dharshi.116",
+            "TS3007c.C.dialog-act.dharshi.117"
+          ],
+          "next_offset": null
+        },
+        "after": {
+          "item_key": "TS3007d#11",
+          "text": "Production costs for the design have not been accounted for in the budget.",
+          "type": "problems",
+          "status": "open",
+          "owner": null,
+          "deadline": null
+        },
+        "prior_quotes": [
+          {
+            "da_id": "TS3007c.C.dialog-act.dharshi.118",
+            "quote": "well uh if we are going to use traditional buttons , we could go uh with a simple chip set ."
+          },
+          {
+            "da_id": "TS3007c.C.dialog-act.dharshi.119",
+            "quote": "But uh if we decide to go on a n uh um L_C_D_ screen , we would use an uh <disfmarker> we have to use an a advanced chip set ."
+          },
+          {
+            "da_id": "TS3007c.C.dialog-act.dharshi.120",
+            "quote": "And that would bring uh the necessary costs with with it ."
+          },
+          {
+            "da_id": "TS3007c.C.dialog-act.dharshi.121",
+            "quote": "So that's something we th have to keep in mind ."
+          },
+          {
+            "da_id": "TS3007c.C.dialog-act.dharshi.122",
+            "quote": "If it isn't uh manageable uh budget-wise , we'd have to go over to uh to sim to simple buttons ."
+          },
+          {
+            "da_id": "TS3007c.C.dialog-act.dharshi.116",
+            "quote": "Well , we discussed it in a previous meeting , so I figured I'll just leave it at the L_C_D_ ."
+          },
+          {
+            "da_id": "TS3007c.C.dialog-act.dharshi.117",
+            "quote": "And uh chip set ,"
+          }
+        ],
+        "current_quotes": [
+          {
+            "da_id": "TS3007d.D.dialog-act.dharshi.198",
+            "quote": "That doesn't account for this . Producing this ."
+          },
+          {
+            "da_id": "TS3007d.B.dialog-act.dharshi.203",
+            "quote": "Uh , j maybe we'll finish uh the the list first and then look back , aye ?"
+          },
+          {
+            "da_id": "TS3007d.A.dialog-act.dharshi.188",
+            "quote": "Okay ,"
+          }
+        ]
+      }
+    ],
+    "history": [
+      {
+        "item": "TS3007d#11",
+        "step": 1,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "The current dialogue indicates the production cost issue affecting the budget (ME: production costs not accounted for). The observation TS3007d.D.dialog-act.dharshi.198 supports that the concern exists as described in the item.",
+            "quotes": [
+              {
+                "da_id": "TS3007d.D.dialog-act.dharshi.198",
+                "quote": "That doesn't account for this . Producing this ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Evidence supports the open status of the problem; no resolution is demonstrated in the observed dialogue.",
+            "quotes": [
+              {
+                "da_id": "TS3007d.D.dialog-act.dharshi.198",
+                "quote": "That doesn't account for this . Producing this ."
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions found within the observed dialogue regarding this budget issue.",
+            "quotes": [
+              {
+                "da_id": "TS3007d.D.dialog-act.dharshi.198",
+                "quote": "That doesn't account for this . Producing this ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "prior_context_not_checked",
+            "links": [],
+            "quotes": [
+              {
+                "da_id": "TS3007d.D.dialog-act.dharshi.198",
+                "quote": "That doesn't account for this . Producing this ."
+              }
+            ],
+            "fields": [
+              "related_items"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          }
+        },
+        "decision": "retrieve",
+        "reason": "unresolved_checks",
+        "assessed_text": "Production costs for the design have not been accounted for in the budget.",
+        "requested_action": "retrieve",
+        "proposed_fields": {
+          "status": "open",
+          "related_items": [],
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "TS3007d.D.dialog-act.dharshi.198"
+          ],
+          "owner": null,
+          "owner_basis": "missing",
+          "deadline": null,
+          "deadline_basis": "missing"
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "The current dialogue indicates the production cost issue affecting the budget (ME: production costs not accounted for). The observation TS3007d.D.dialog-act.dharshi.198 supports that the concern exists as described in the item.",
+            "quotes": [
+              "TS3007d.D.dialog-act.dharshi.198"
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Evidence supports the open status of the problem; no resolution is demonstrated in the observed dialogue.",
+            "quotes": [
+              "TS3007d.D.dialog-act.dharshi.198"
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions found within the observed dialogue regarding this budget issue.",
+            "quotes": [
+              "TS3007d.D.dialog-act.dharshi.198"
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "There is no explicit linkage in the current dialogue to an earlier related item; prior relation cannot be established from the observed data.",
+            "links": [],
+            "quotes": [
+              "TS3007d.D.dialog-act.dharshi.198"
+            ],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "status": "open",
+          "related_items": [],
+          "statement": {
+            "result": "pass",
+            "reason": "The current dialogue indicates the production cost issue affecting the budget (ME: production costs not accounted for). The observation TS3007d.D.dialog-act.dharshi.198 supports that the concern exists as described in the item.",
+            "evidence_da_ids": [
+              "TS3007d.D.dialog-act.dharshi.198"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Evidence supports the open status of the problem; no resolution is demonstrated in the observed dialogue.",
+            "evidence_da_ids": [
+              "TS3007d.D.dialog-act.dharshi.198"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No contradictions found within the observed dialogue regarding this budget issue.",
+            "evidence_da_ids": [
+              "TS3007d.D.dialog-act.dharshi.198"
+            ],
+            "affected_fields": [
+              "statement"
+            ]
+          },
+          "relation_check": {
+            "result": "uncertain",
+            "reason": "There is no explicit linkage in the current dialogue to an earlier related item; prior relation cannot be established from the observed data.",
+            "evidence_da_ids": [
+              "TS3007d.D.dialog-act.dharshi.198"
+            ],
+            "links": []
+          },
+          "next_action": "retrieve"
+        },
+        "evidence_bindings": {
+          "statement": [
+            "TS3007d.D.dialog-act.dharshi.198"
+          ],
+          "status": [
+            "TS3007d.D.dialog-act.dharshi.198"
+          ],
+          "conflict": [
+            "TS3007d.D.dialog-act.dharshi.198"
+          ],
+          "relation": [
+            "TS3007d.D.dialog-act.dharshi.198"
+          ]
+        },
+        "raw_tool_input": {
+          "status": "open",
+          "related_items": [],
+          "statement": {
+            "result": "pass",
+            "reason": "The current dialogue indicates the production cost issue affecting the budget (ME: production costs not accounted for). The observation TS3007d.D.dialog-act.dharshi.198 supports that the concern exists as described in the item.",
+            "evidence_da_ids": [
+              "TS3007d.D.dialog-act.dharshi.198"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Evidence supports the open status of the problem; no resolution is demonstrated in the observed dialogue.",
+            "evidence_da_ids": [
+              "TS3007d.D.dialog-act.dharshi.198"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No contradictions found within the observed dialogue regarding this budget issue.",
+            "evidence_da_ids": [
+              "TS3007d.D.dialog-act.dharshi.198"
+            ],
+            "affected_fields": [
+              "statement"
+            ]
+          },
+          "relation_check": {
+            "result": "uncertain",
+            "reason": "There is no explicit linkage in the current dialogue to an earlier related item; prior relation cannot be established from the observed data.",
+            "evidence_da_ids": [
+              "TS3007d.D.dialog-act.dharshi.198"
+            ],
+            "links": []
+          },
+          "next_action": "retrieve"
+        },
+        "protocol_normalizations": [],
+        "unresolved_before": [
+          "related_items",
+          "statement",
+          "status"
+        ],
+        "unresolved_after": [
+          "related_items"
+        ],
+        "semantic_stalls": 0,
+        "validation_codes": {
+          "relation": [
+            "prior_context_not_checked"
+          ]
+        }
+      },
+      {
+        "item": "TS3007d#11",
+        "step": 2,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "history_context_focused",
+        "outcome": "delivered",
+        "evidence_da_ids": [
+          "TS3007d.D.dialog-act.dharshi.198",
+          "TS3007d.B.dialog-act.dharshi.203",
+          "TS3007d.A.dialog-act.dharshi.188"
+        ]
+      },
+      {
+        "item": "TS3007d#11",
+        "step": 2,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "get_prior_items",
+        "outcome": "lookup",
+        "decision": "retrieve",
+        "args": {
+          "query": "budget design production costs",
+          "item_type": "problems"
+        },
+        "tool_result": {
+          "results": [
+            {
+              "id": "TS3007c.sys.s.9",
+              "meeting_id": "TS3007c",
+              "type": "problems",
+              "text": "Budget constraints may force moving from advanced chip sets to simpler button solutions if costs are not manageable.",
+              "owner": null,
+              "owner_basis": null,
+              "deadline": null,
+              "deadline_basis": null,
+              "status": "open",
+              "evidence": [
+                "TS3007c.C.dialog-act.dharshi.118",
+                "TS3007c.C.dialog-act.dharshi.119",
+                "TS3007c.C.dialog-act.dharshi.120",
+                "TS3007c.C.dialog-act.dharshi.121",
+                "TS3007c.C.dialog-act.dharshi.122",
+                "TS3007c.C.dialog-act.dharshi.116",
+                "TS3007c.C.dialog-act.dharshi.117"
+              ],
+              "source_file": "TS3007c.json",
+              "source_sha256": "0b75077072dbf5d5e064789e7bae768a52880d577af6a829eaf3a97ab535edaa",
+              "review_state": "accepted",
+              "unresolved_fields": [],
+              "unreadable_reference_ids": [],
+              "score": 3.28
+            },
+            {
+              "id": "TS3007b.sys.s.13",
+              "meeting_id": "TS3007b",
+              "type": "problems",
+              "text": "Including a receiver in the remote would add extra components, design complexity, and cost.",
+              "owner": null,
+              "owner_basis": null,
+              "deadline": null,
+              "deadline_basis": null,
+              "status": "open",
+              "evidence": [
+                "TS3007b.C.dialog-act.vkaraisk.124",
+                "TS3007b.C.dialog-act.vkaraisk.125",
+                "TS3007b.C.dialog-act.vkaraisk.126"
+              ],
+              "source_file": "TS3007b.json",
+              "source_sha256": "ccb955c7d6539538ad725e38056f32f80fdff1806aa324c8113cab4054612dca",
+              "review_state": "pending",
+              "unresolved_fields": [
+                "related_items"
+              ],
+              "unreadable_reference_ids": [],
+              "score": 2.11
+            },
+            {
+              "id": "TS3007c.sys.s.10",
+              "meeting_id": "TS3007c",
+              "type": "problems",
+              "text": "Using a combination battery and kinetic charging may increase costs.",
+              "owner": null,
+              "owner_basis": null,
+              "deadline": null,
+              "deadline_basis": null,
+              "status": "unknown",
+              "evidence": [
+                "TS3007c.C.dialog-act.dharshi.142",
+                "TS3007c.C.dialog-act.dharshi.143"
+              ],
+              "source_file": "TS3007c.json",
+              "source_sha256": "0b75077072dbf5d5e064789e7bae768a52880d577af6a829eaf3a97ab535edaa",
+              "review_state": "pending",
+              "unresolved_fields": [
+                "status"
+              ],
+              "unreadable_reference_ids": [],
+              "score": 1.78
+            }
+          ]
+        },
+        "new_info": true
+      },
+      {
+        "item": "TS3007d#11",
+        "step": 3,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "read_prior_item",
+        "outcome": "lookup",
+        "decision": "retrieve",
+        "args": {
+          "item_id": "TS3007c.sys.s.9"
+        },
+        "tool_result": {
+          "results": [
+            {
+              "kind": "prior_item",
+              "id": "TS3007c.sys.s.9",
+              "meeting_id": "TS3007c",
+              "type": "problems",
+              "text": "Budget constraints may force moving from advanced chip sets to simpler button solutions if costs are not manageable.",
+              "owner": null,
+              "owner_basis": null,
+              "deadline": null,
+              "deadline_basis": null,
+              "status": "open",
+              "evidence": [
+                "TS3007c.C.dialog-act.dharshi.118",
+                "TS3007c.C.dialog-act.dharshi.119",
+                "TS3007c.C.dialog-act.dharshi.120",
+                "TS3007c.C.dialog-act.dharshi.121",
+                "TS3007c.C.dialog-act.dharshi.122",
+                "TS3007c.C.dialog-act.dharshi.116",
+                "TS3007c.C.dialog-act.dharshi.117"
+              ],
+              "source_file": "TS3007c.json",
+              "source_sha256": "0b75077072dbf5d5e064789e7bae768a52880d577af6a829eaf3a97ab535edaa",
+              "review_state": "accepted",
+              "unresolved_fields": [],
+              "unreadable_reference_ids": [],
+              "selected_reference_ids": [
+                "TS3007c.C.dialog-act.dharshi.118",
+                "TS3007c.C.dialog-act.dharshi.119",
+                "TS3007c.C.dialog-act.dharshi.120",
+                "TS3007c.C.dialog-act.dharshi.121",
+                "TS3007c.C.dialog-act.dharshi.122",
+                "TS3007c.C.dialog-act.dharshi.116",
+                "TS3007c.C.dialog-act.dharshi.117"
+              ],
+              "next_offset": null
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "TS3007c.C.dialog-act.dharshi.117",
+              "meeting_id": "TS3007c",
+              "text": "And uh chip set ,",
+              "participant": "MTD026UID",
+              "role": "ID",
+              "supports_item_id": "TS3007c.sys.s.9",
+              "is_reference": true
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "TS3007c.C.dialog-act.dharshi.118",
+              "meeting_id": "TS3007c",
+              "text": "well uh if we are going to use traditional buttons , we could go uh with a simple chip set .",
+              "participant": "MTD026UID",
+              "role": "ID",
+              "supports_item_id": "TS3007c.sys.s.9",
+              "is_reference": true
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "TS3007c.C.dialog-act.dharshi.119",
+              "meeting_id": "TS3007c",
+              "text": "But uh if we decide to go on a n uh um L_C_D_ screen , we would use an uh <disfmarker> we have to use an a advanced chip set .",
+              "participant": "MTD026UID",
+              "role": "ID",
+              "supports_item_id": "TS3007c.sys.s.9",
+              "is_reference": true
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "TS3007c.C.dialog-act.dharshi.120",
+              "meeting_id": "TS3007c",
+              "text": "And that would bring uh the necessary costs with with it .",
+              "participant": "MTD026UID",
+              "role": "ID",
+              "supports_item_id": "TS3007c.sys.s.9",
+              "is_reference": true
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "TS3007c.C.dialog-act.dharshi.121",
+              "meeting_id": "TS3007c",
+              "text": "So that's something we th have to keep in mind .",
+              "participant": "MTD026UID",
+              "role": "ID",
+              "supports_item_id": "TS3007c.sys.s.9",
+              "is_reference": true
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "TS3007c.C.dialog-act.dharshi.122",
+              "meeting_id": "TS3007c",
+              "text": "If it isn't uh manageable uh budget-wise , we'd have to go over to uh to sim to simple buttons .",
+              "participant": "MTD026UID",
+              "role": "ID",
+              "supports_item_id": "TS3007c.sys.s.9",
+              "is_reference": true
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "TS3007c.D.dialog-act.dharshi.48",
+              "meeting_id": "TS3007c",
+              "text": "Well , I think uh we're going to sell tell <disfmarker> ten millions of them .",
+              "participant": "MTD028ME",
+              "role": "ME",
+              "supports_item_id": "TS3007c.sys.s.9",
+              "is_reference": false
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "TS3007c.C.dialog-act.dharshi.115",
+              "meeting_id": "TS3007c",
+              "text": "Uh traditional uh or a touch screen .",
+              "participant": "MTD026UID",
+              "role": "ID",
+              "supports_item_id": "TS3007c.sys.s.9",
+              "is_reference": false
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "TS3007c.C.dialog-act.dharshi.116",
+              "meeting_id": "TS3007c",
+              "text": "Well , we discussed it in a previous meeting , so I figured I'll just leave it at the L_C_D_ .",
+              "participant": "MTD026UID",
+              "role": "ID",
+              "supports_item_id": "TS3007c.sys.s.9",
+              "is_reference": true
+            }
+          ]
+        },
+        "new_info": true
+      },
+      {
+        "item": "TS3007d#11",
+        "step": 4,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "assess_relation",
+        "outcome": "invalid_action",
+        "error": "Correct these argument fields: : 'links' is a required property Tool assess_relation accepts root keys: result, reason, quotes, documents, links, related_items, next_action. Resubmit the complete advertised object. Select only delivered supporting dialogue IDs; if support is unavailable use uncertain with an explanation, never invent an ID or mark pass with no evidence. Documents belong inside the check they inform.",
+        "raw_tool_input": {
+          "result": "pass",
+          "reason": "The current problem about production costs not being accounted for in the budget aligns with the prior TS3007c.sys.s.9 budget-constrained discussion, indicating a continuation of the same budget-cost challenge rather than a new issue.",
+          "quotes": [
+            {
+              "da_id": "TS3007d.D.dialog-act.dharshi.198",
+              "quote": "That doesn't account for this . Producing this ."
+            }
+          ],
+          "documents": []
+        }
+      },
+      {
+        "item": "TS3007d#11",
+        "step": 5,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "assess_relation",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "The current dialogue indicates the production cost issue affecting the budget (ME: production costs not accounted for). The observation TS3007d.D.dialog-act.dharshi.198 supports that the concern exists as described in the item.",
+            "quotes": [
+              {
+                "da_id": "TS3007d.D.dialog-act.dharshi.198",
+                "quote": "That doesn't account for this . Producing this ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Evidence supports the open status of the problem; no resolution is demonstrated in the observed dialogue.",
+            "quotes": [
+              {
+                "da_id": "TS3007d.D.dialog-act.dharshi.198",
+                "quote": "That doesn't account for this . Producing this ."
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions found within the observed dialogue regarding this budget issue.",
+            "quotes": [
+              {
+                "da_id": "TS3007d.D.dialog-act.dharshi.198",
+                "quote": "That doesn't account for this . Producing this ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "relation": {
+            "result": "pass",
+            "reason": "The current problem about production costs not accounted for in the budget aligns with the prior TS3007c.sys.s.9 budget-constrained discussion, indicating a continuation of the same budget-cost challenge rather than a new issue.",
+            "quotes": [
+              {
+                "da_id": "TS3007d.D.dialog-act.dharshi.198",
+                "quote": "That doesn't account for this . Producing this ."
+              },
+              {
+                "da_id": "TS3007c.C.dialog-act.dharshi.118",
+                "quote": "well uh if we are going to use traditional buttons , we could go uh with a simple chip set ."
+              },
+              {
+                "da_id": "TS3007c.C.dialog-act.dharshi.119",
+                "quote": "But uh if we decide to go on a n uh um L_C_D_ screen , we would use an uh <disfmarker> we have to use an a advanced chip set ."
+              },
+              {
+                "da_id": "TS3007c.C.dialog-act.dharshi.120",
+                "quote": "And that would bring uh the necessary costs with with it ."
+              },
+              {
+                "da_id": "TS3007c.C.dialog-act.dharshi.121",
+                "quote": "So that's something we th have to keep in mind ."
+              },
+              {
+                "da_id": "TS3007c.C.dialog-act.dharshi.122",
+                "quote": "If it isn't uh manageable uh budget-wise , we'd have to go over to uh to sim to simple buttons ."
+              },
+              {
+                "da_id": "TS3007c.C.dialog-act.dharshi.116",
+                "quote": "Well , we discussed it in a previous meeting , so I figured I'll just leave it at the L_C_D_ ."
+              },
+              {
+                "da_id": "TS3007c.C.dialog-act.dharshi.117",
+                "quote": "And uh chip set ,"
+              },
+              {
+                "da_id": "TS3007d.B.dialog-act.dharshi.203",
+                "quote": "Uh , j maybe we'll finish uh the the list first and then look back , aye ?"
+              },
+              {
+                "da_id": "TS3007d.A.dialog-act.dharshi.188",
+                "quote": "Okay ,"
+              }
+            ],
+            "links": [
+              {
+                "id": "TS3007c.sys.s.9",
+                "relation": "continues",
+                "changed_fields": [],
+                "reason": "Current production-cost-budget debate continues from the prior budget-cost discussion.",
+                "prior_evidence_da_ids": [
+                  "TS3007c.C.dialog-act.dharshi.118",
+                  "TS3007c.C.dialog-act.dharshi.119",
+                  "TS3007c.C.dialog-act.dharshi.120",
+                  "TS3007c.C.dialog-act.dharshi.121",
+                  "TS3007c.C.dialog-act.dharshi.122",
+                  "TS3007c.C.dialog-act.dharshi.116",
+                  "TS3007c.C.dialog-act.dharshi.117"
+                ],
+                "current_evidence_da_ids": [
+                  "TS3007d.D.dialog-act.dharshi.198",
+                  "TS3007d.B.dialog-act.dharshi.203",
+                  "TS3007d.A.dialog-act.dharshi.188"
+                ]
+              }
+            ],
+            "documents": [],
+            "fields": [
+              "related_items"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          }
+        },
+        "decision": "accept",
+        "reason": "all_required_checks_passed",
+        "assessed_text": "Production costs for the design have not been accounted for in the budget.",
+        "requested_action": "accept",
+        "proposed_fields": {
+          "status": "open",
+          "related_items": [
+            {
+              "id": "TS3007c.sys.s.9",
+              "relation": "continues"
+            }
+          ],
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "TS3007d.D.dialog-act.dharshi.198",
+            "TS3007c.C.dialog-act.dharshi.118"
+          ],
+          "owner": null,
+          "owner_basis": "missing",
+          "deadline": null,
+          "deadline_basis": "missing"
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "The current dialogue indicates the production cost issue affecting the budget (ME: production costs not accounted for). The observation TS3007d.D.dialog-act.dharshi.198 supports that the concern exists as described in the item.",
+            "quotes": [
+              {
+                "da_id": "TS3007d.D.dialog-act.dharshi.198",
+                "quote": "That doesn't account for this . Producing this ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Evidence supports the open status of the problem; no resolution is demonstrated in the observed dialogue.",
+            "quotes": [
+              {
+                "da_id": "TS3007d.D.dialog-act.dharshi.198",
+                "quote": "That doesn't account for this . Producing this ."
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions found within the observed dialogue regarding this budget issue.",
+            "quotes": [
+              {
+                "da_id": "TS3007d.D.dialog-act.dharshi.198",
+                "quote": "That doesn't account for this . Producing this ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "relation": {
+            "result": "pass",
+            "reason": "The current problem about production costs not accounted for in the budget aligns with the prior TS3007c.sys.s.9 budget-constrained discussion, indicating a continuation of the same budget-cost challenge rather than a new issue.",
+            "quotes": [
+              {
+                "da_id": "TS3007d.D.dialog-act.dharshi.198",
+                "quote": "That doesn't account for this . Producing this ."
+              },
+              {
+                "da_id": "TS3007c.C.dialog-act.dharshi.118",
+                "quote": "well uh if we are going to use traditional buttons , we could go uh with a simple chip set ."
+              }
+            ],
+            "links": [
+              {
+                "id": "TS3007c.sys.s.9",
+                "relation": "continues",
+                "changed_fields": [],
+                "reason": "Current production-cost-budget debate continues from the prior budget-cost discussion.",
+                "prior_evidence_da_ids": [
+                  "TS3007c.C.dialog-act.dharshi.118",
+                  "TS3007c.C.dialog-act.dharshi.119",
+                  "TS3007c.C.dialog-act.dharshi.120",
+                  "TS3007c.C.dialog-act.dharshi.121",
+                  "TS3007c.C.dialog-act.dharshi.122",
+                  "TS3007c.C.dialog-act.dharshi.116",
+                  "TS3007c.C.dialog-act.dharshi.117"
+                ],
+                "current_evidence_da_ids": [
+                  "TS3007d.D.dialog-act.dharshi.198",
+                  "TS3007d.B.dialog-act.dharshi.203",
+                  "TS3007d.A.dialog-act.dharshi.188"
+                ]
+              }
+            ],
+            "documents": [],
+            "fields": [
+              "related_items"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "result": "pass",
+          "reason": "The current problem about production costs not accounted for in the budget aligns with the prior TS3007c.sys.s.9 budget-constrained discussion, indicating a continuation of the same budget-cost challenge rather than a new issue.",
+          "quotes": [
+            {
+              "da_id": "TS3007d.D.dialog-act.dharshi.198",
+              "quote": "That doesn't account for this . Producing this ."
+            },
+            {
+              "da_id": "TS3007c.C.dialog-act.dharshi.118",
+              "quote": "well uh if we are going to use traditional buttons , we could go uh with a simple chip set ."
+            }
+          ],
+          "documents": [],
+          "links": [
+            {
+              "id": "TS3007c.sys.s.9",
+              "relation": "continues",
+              "changed_fields": [],
+              "reason": "Current production-cost-budget debate continues from the prior budget-cost discussion.",
+              "prior_evidence_da_ids": [
+                "TS3007c.C.dialog-act.dharshi.118",
+                "TS3007c.C.dialog-act.dharshi.119",
+                "TS3007c.C.dialog-act.dharshi.120",
+                "TS3007c.C.dialog-act.dharshi.121",
+                "TS3007c.C.dialog-act.dharshi.122",
+                "TS3007c.C.dialog-act.dharshi.116",
+                "TS3007c.C.dialog-act.dharshi.117"
+              ],
+              "current_evidence_da_ids": [
+                "TS3007d.D.dialog-act.dharshi.198",
+                "TS3007d.B.dialog-act.dharshi.203",
+                "TS3007d.A.dialog-act.dharshi.188"
+              ]
+            }
+          ],
+          "related_items": [
+            {
+              "id": "TS3007c.sys.s.9",
+              "relation": "continues"
+            }
+          ],
+          "next_action": "accept"
+        },
+        "evidence_bindings": {
+          "relation": [
+            "TS3007c.C.dialog-act.dharshi.119",
+            "TS3007c.C.dialog-act.dharshi.120",
+            "TS3007c.C.dialog-act.dharshi.121",
+            "TS3007c.C.dialog-act.dharshi.122",
+            "TS3007c.C.dialog-act.dharshi.116",
+            "TS3007c.C.dialog-act.dharshi.117",
+            "TS3007d.B.dialog-act.dharshi.203",
+            "TS3007d.A.dialog-act.dharshi.188"
+          ]
+        },
+        "raw_tool_input": {
+          "result": "pass",
+          "reason": "The current problem about production costs not accounted for in the budget aligns with the prior TS3007c.sys.s.9 budget-constrained discussion, indicating a continuation of the same budget-cost challenge rather than a new issue.",
+          "quotes": [
+            {
+              "da_id": "TS3007d.D.dialog-act.dharshi.198",
+              "quote": "That doesn't account for this . Producing this ."
+            },
+            {
+              "da_id": "TS3007c.C.dialog-act.dharshi.118",
+              "quote": "well uh if we are going to use traditional buttons , we could go uh with a simple chip set ."
+            }
+          ],
+          "documents": [],
+          "links": [
+            {
+              "id": "TS3007c.sys.s.9",
+              "relation": "continues",
+              "changed_fields": [],
+              "reason": "Current production-cost-budget debate continues from the prior budget-cost discussion.",
+              "prior_evidence_da_ids": [
+                "TS3007c.C.dialog-act.dharshi.118",
+                "TS3007c.C.dialog-act.dharshi.119",
+                "TS3007c.C.dialog-act.dharshi.120",
+                "TS3007c.C.dialog-act.dharshi.121",
+                "TS3007c.C.dialog-act.dharshi.122",
+                "TS3007c.C.dialog-act.dharshi.116",
+                "TS3007c.C.dialog-act.dharshi.117"
+              ],
+              "current_evidence_da_ids": [
+                "TS3007d.D.dialog-act.dharshi.198",
+                "TS3007d.B.dialog-act.dharshi.203",
+                "TS3007d.A.dialog-act.dharshi.188"
+              ]
+            }
+          ],
+          "related_items": [
+            {
+              "id": "TS3007c.sys.s.9",
+              "relation": "continues"
+            }
+          ],
+          "next_action": "accept"
+        },
+        "protocol_normalizations": [],
+        "unresolved_before": [
+          "related_items"
+        ],
+        "unresolved_after": [],
+        "semantic_stalls": 0,
+        "validation_codes": {}
+      },
+      {
+        "item": "TS3007d#11",
+        "step": 5,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "accept",
+        "outcome": "accepted",
+        "termination_reason": "all_required_checks_passed",
+        "unresolved_fields": []
+      }
+    ],
+    "lookups": 2,
+    "termination_reason": "all_required_checks_passed",
+    "clarifications": []
+  }
+}

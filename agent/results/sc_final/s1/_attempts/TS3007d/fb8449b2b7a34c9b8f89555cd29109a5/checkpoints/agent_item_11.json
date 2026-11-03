@@ -1,0 +1,461 @@
+{
+  "item": 11,
+  "fields": {
+    "item_key": "TS3007d#11",
+    "record_id": null,
+    "item_type": "problems",
+    "item_text": "Production costs for the design have not been accounted for in the budget.",
+    "state": "accepted",
+    "recordable": true,
+    "fields": {
+      "status": "open",
+      "prior_context_needed": false,
+      "related_items": [],
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3007d.json",
+          "locator": "TS3007d.D.dialog-act.dharshi.198"
+        }
+      ]
+    },
+    "draft_fields": {
+      "status": "open",
+      "related_items": [],
+      "prior_context_needed": false,
+      "used_participant_lookup": false,
+      "evidence_da_ids": [
+        "TS3007d.D.dialog-act.dharshi.198"
+      ],
+      "owner": null,
+      "owner_basis": "missing",
+      "deadline": null,
+      "deadline_basis": "missing"
+    },
+    "checks": {
+      "statement": {
+        "result": "pass",
+        "reason": "Dialogue acknowledges or implies production cost concern affecting budget; the issue is raised in observed dialogue as part of cost discussion.",
+        "quotes": [
+          {
+            "da_id": "TS3007d.D.dialog-act.dharshi.198",
+            "quote": "That doesn't account for this . Producing this ."
+          }
+        ],
+        "fields": [
+          "statement"
+        ]
+      },
+      "status": {
+        "result": "pass",
+        "reason": "No explicit deadline/owner in this problem; status is open by proposal and no contradictory evidence.",
+        "quotes": [
+          {
+            "da_id": "TS3007d.D.dialog-act.dharshi.198",
+            "quote": "That doesn't account for this . Producing this ."
+          }
+        ],
+        "fields": [
+          "status"
+        ]
+      },
+      "conflict": {
+        "result": "pass",
+        "reason": "No contradiction found in available dialogue about the problem; the concern stands open without conflicting statements.",
+        "quotes": [
+          {
+            "da_id": "TS3007d.D.dialog-act.dharshi.198",
+            "quote": "That doesn't account for this . Producing this ."
+          }
+        ],
+        "fields": [
+          "status"
+        ]
+      },
+      "relation": {
+        "result": "not_applicable",
+        "reason": "No prior item to relate to in this single meeting; this is the first occurrence of this problem statement in the provided data.",
+        "quotes": [],
+        "fields": [
+          "related_items"
+        ]
+      },
+      "owner": {
+        "result": "not_applicable",
+        "reason": "field_not_applicable",
+        "quotes": [],
+        "fields": [
+          "owner"
+        ]
+      },
+      "deadline": {
+        "result": "not_applicable",
+        "reason": "field_not_applicable",
+        "quotes": [],
+        "fields": [
+          "deadline"
+        ]
+      }
+    },
+    "unresolved_fields": [],
+    "observed_evidence_da_ids": [
+      "TS3007d.D.dialog-act.dharshi.198",
+      "TS3007d.B.dialog-act.dharshi.203",
+      "TS3007d.A.dialog-act.dharshi.188"
+    ],
+    "initial_context": {
+      "item": {
+        "type": "problems",
+        "text": "Production costs for the design have not been accounted for in the budget.",
+        "flags": []
+      },
+      "current_meeting": "TS3007d",
+      "earlier_meetings": [],
+      "roster": [
+        {
+          "speaker": "A",
+          "participant_id": "MTD025PM",
+          "role": "PM"
+        },
+        {
+          "speaker": "B",
+          "participant_id": "MTD027ID",
+          "role": "UI"
+        },
+        {
+          "speaker": "C",
+          "participant_id": "MTD026UID",
+          "role": "ID"
+        },
+        {
+          "speaker": "D",
+          "participant_id": "MTD028ME",
+          "role": "ME"
+        }
+      ],
+      "observed_dialogue": [
+        {
+          "da_id": "TS3007d.D.dialog-act.dharshi.198",
+          "meeting_id": "TS3007d",
+          "text": "That doesn't account for this . Producing this .",
+          "participant": "MTD028ME",
+          "role": "ME"
+        },
+        {
+          "da_id": "TS3007d.B.dialog-act.dharshi.203",
+          "participant": "MTD027ID",
+          "role": "UI",
+          "text": "Uh , j maybe we'll finish uh the the list first and then look back , aye ?"
+        },
+        {
+          "da_id": "TS3007d.A.dialog-act.dharshi.188",
+          "participant": "MTD025PM",
+          "role": "PM",
+          "text": "Okay ,"
+        }
+      ],
+      "peer_items": [
+        {
+          "item_key": "TS3007d#0",
+          "type": "actions",
+          "text": "Finish the end report."
+        },
+        {
+          "item_key": "TS3007d#1",
+          "type": "actions",
+          "text": "The PM will redesign something now."
+        },
+        {
+          "item_key": "TS3007d#2",
+          "type": "problems",
+          "text": "There is disagreement about whether the remote control has speech recognition."
+        },
+        {
+          "item_key": "TS3007d#3",
+          "type": "problems",
+          "text": "Budget overrun: the project costs exceed budget (initially stated as eleven euros over; later updated to four euros over)."
+        },
+        {
+          "item_key": "TS3007d#4",
+          "type": "decisions",
+          "text": "We decided to use a single touch-screen."
+        },
+        {
+          "item_key": "TS3007d#5",
+          "type": "decisions",
+          "text": "The group will use a black and red color scheme for the remote."
+        },
+        {
+          "item_key": "TS3007d#6",
+          "type": "decisions",
+          "text": "Base colours should be white or metallic grey."
+        },
+        {
+          "item_key": "TS3007d#7",
+          "type": "decisions",
+          "text": "The standard cover should be cheap and white (or similar)."
+        },
+        {
+          "item_key": "TS3007d#8",
+          "type": "decisions",
+          "text": "The design will use ten buttons, as that is the easiest configuration."
+        },
+        {
+          "item_key": "TS3007d#9",
+          "type": "decisions",
+          "text": "Price is treated as fixed at twelve and a half euros (12.50) for the product."
+        },
+        {
+          "item_key": "TS3007d#10",
+          "type": "problems",
+          "text": "A miscalculation in the production cost figures was raised ('this isn't right')."
+        }
+      ],
+      "item_type_contract": "This is a Problem, not a task or decision. Verify that the stated obstacle/concern and its impact were actually raised. It need not have an owner, deadline, accepted remedy or resolution. A supported information gap can remain open. Assess end status separately; uncertainty about a cause or remedy is not absence of evidence that the concern exists. Do not infer project-document content or cite a passage that was not delivered.",
+      "provisional_values": {
+        "owner": null,
+        "owner_basis": "missing",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "open",
+        "related_items": []
+      },
+      "candidate_evidence_da_ids": [
+        "TS3007d.D.dialog-act.dharshi.198"
+      ]
+    },
+    "observed_documents": [],
+    "document_evidence": [],
+    "relation_evidence": [],
+    "history": [
+      {
+        "item": "TS3007d#11",
+        "step": 1,
+        "flags": [],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue acknowledges or implies production cost concern affecting budget; the issue is raised in observed dialogue as part of cost discussion.",
+            "quotes": [
+              {
+                "da_id": "TS3007d.D.dialog-act.dharshi.198",
+                "quote": "That doesn't account for this . Producing this ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "No explicit deadline/owner in this problem; status is open by proposal and no contradictory evidence.",
+            "quotes": [
+              {
+                "da_id": "TS3007d.D.dialog-act.dharshi.198",
+                "quote": "That doesn't account for this . Producing this ."
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradiction found in available dialogue about the problem; the concern stands open without conflicting statements.",
+            "quotes": [
+              {
+                "da_id": "TS3007d.D.dialog-act.dharshi.198",
+                "quote": "That doesn't account for this . Producing this ."
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior item to relate to in this single meeting; this is the first occurrence of this problem statement in the provided data.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          }
+        },
+        "decision": "accept",
+        "reason": "all_required_checks_passed",
+        "assessed_text": "Production costs for the design have not been accounted for in the budget.",
+        "requested_action": null,
+        "proposed_fields": {
+          "status": "open",
+          "related_items": [],
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "TS3007d.D.dialog-act.dharshi.198"
+          ],
+          "owner": null,
+          "owner_basis": "missing",
+          "deadline": null,
+          "deadline_basis": "missing"
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue acknowledges or implies production cost concern affecting budget; the issue is raised in observed dialogue as part of cost discussion.",
+            "quotes": [
+              "TS3007d.D.dialog-act.dharshi.198"
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "No explicit deadline/owner in this problem; status is open by proposal and no contradictory evidence.",
+            "quotes": [
+              "TS3007d.D.dialog-act.dharshi.198"
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradiction found in available dialogue about the problem; the concern stands open without conflicting statements.",
+            "quotes": [
+              "TS3007d.D.dialog-act.dharshi.198"
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior item to relate to in this single meeting; this is the first occurrence of this problem statement in the provided data.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "status": "open",
+          "related_items": [],
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue acknowledges or implies production cost concern affecting budget; the issue is raised in observed dialogue as part of cost discussion.",
+            "evidence_da_ids": [
+              "TS3007d.D.dialog-act.dharshi.198"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "No explicit deadline/owner in this problem; status is open by proposal and no contradictory evidence.",
+            "evidence_da_ids": [
+              "TS3007d.D.dialog-act.dharshi.198"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No contradiction found in available dialogue about the problem; the concern stands open without conflicting statements.",
+            "evidence_da_ids": [
+              "TS3007d.D.dialog-act.dharshi.198"
+            ],
+            "affected_fields": [
+              "status"
+            ]
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior item to relate to in this single meeting; this is the first occurrence of this problem statement in the provided data.",
+            "evidence_da_ids": []
+          }
+        },
+        "evidence_bindings": {
+          "statement": [
+            "TS3007d.D.dialog-act.dharshi.198"
+          ],
+          "status": [
+            "TS3007d.D.dialog-act.dharshi.198"
+          ],
+          "conflict": [
+            "TS3007d.D.dialog-act.dharshi.198"
+          ]
+        },
+        "raw_tool_input": {
+          "status": "open",
+          "related_items": [],
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue acknowledges or implies production cost concern affecting budget; the issue is raised in observed dialogue as part of cost discussion.",
+            "evidence_da_ids": [
+              "TS3007d.D.dialog-act.dharshi.198"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "No explicit deadline/owner in this problem; status is open by proposal and no contradictory evidence.",
+            "evidence_da_ids": [
+              "TS3007d.D.dialog-act.dharshi.198"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No contradiction found in available dialogue about the problem; the concern stands open without conflicting statements.",
+            "evidence_da_ids": [
+              "TS3007d.D.dialog-act.dharshi.198"
+            ],
+            "affected_fields": [
+              "status"
+            ]
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior item to relate to in this single meeting; this is the first occurrence of this problem statement in the provided data.",
+            "evidence_da_ids": []
+          }
+        },
+        "protocol_normalizations": [
+          "controller_action_for_missing_hint:request_clarification"
+        ],
+        "unresolved_before": [
+          "statement",
+          "status"
+        ],
+        "unresolved_after": [],
+        "semantic_stalls": 0,
+        "validation_codes": {}
+      },
+      {
+        "item": "TS3007d#11",
+        "step": 1,
+        "flags": [],
+        "action": "accept",
+        "outcome": "accepted",
+        "termination_reason": "all_required_checks_passed",
+        "unresolved_fields": []
+      }
+    ],
+    "lookups": 0,
+    "termination_reason": "all_required_checks_passed",
+    "clarifications": []
+  }
+}

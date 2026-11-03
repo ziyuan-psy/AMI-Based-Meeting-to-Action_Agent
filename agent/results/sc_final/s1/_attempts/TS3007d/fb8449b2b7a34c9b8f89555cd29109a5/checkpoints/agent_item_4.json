@@ -1,0 +1,510 @@
+{
+  "item": 4,
+  "fields": {
+    "item_key": "TS3007d#4",
+    "record_id": null,
+    "item_type": "decisions",
+    "item_text": "We decided to use a single touch-screen.",
+    "state": "accepted",
+    "recordable": true,
+    "fields": {
+      "status": "adopted",
+      "prior_context_needed": false,
+      "related_items": [],
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3007d.json",
+          "locator": "TS3007d.B.dialog-act.dharshi.14"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3007d.json",
+          "locator": "TS3007d.B.dialog-act.dharshi.13"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3007d.json",
+          "locator": "TS3007d.B.dialog-act.dharshi.15"
+        }
+      ]
+    },
+    "draft_fields": {
+      "status": "adopted",
+      "related_items": [],
+      "prior_context_needed": false,
+      "used_participant_lookup": false,
+      "evidence_da_ids": [
+        "TS3007d.B.dialog-act.dharshi.14",
+        "TS3007d.B.dialog-act.dharshi.13",
+        "TS3007d.B.dialog-act.dharshi.15"
+      ],
+      "owner": null,
+      "owner_basis": "missing",
+      "deadline": null,
+      "deadline_basis": "missing"
+    },
+    "checks": {
+      "statement": {
+        "result": "pass",
+        "reason": "The dialogue explicitly states the decision: to use a single touch-screen. The scope is the discussed concept and aligns with the observed statements TS3007d.B.dialog-act.dharshi.14 and surrounding UI remarks.",
+        "quotes": [
+          {
+            "da_id": "TS3007d.B.dialog-act.dharshi.14",
+            "quote": "We decided to use a single touch-screen ."
+          },
+          {
+            "da_id": "TS3007d.B.dialog-act.dharshi.13",
+            "quote": "Um , this was our first concept ."
+          },
+          {
+            "da_id": "TS3007d.B.dialog-act.dharshi.15",
+            "quote": "So , we've worked out this concepts ,"
+          }
+        ],
+        "fields": [
+          "statement"
+        ]
+      },
+      "status": {
+        "result": "pass",
+        "reason": "Current dialogue supports the adopted decision and there is no evidence of reversal or alternative constraint in the observed speech.",
+        "quotes": [
+          {
+            "da_id": "TS3007d.B.dialog-act.dharshi.14",
+            "quote": "We decided to use a single touch-screen ."
+          }
+        ],
+        "fields": [
+          "status"
+        ]
+      },
+      "conflict": {
+        "result": "pass",
+        "reason": "No conflicting information within the observed dialogue regarding the touch-screen decision (the remote control disagreement relates to scope, not the touch-screen choice).",
+        "quotes": [
+          {
+            "da_id": "TS3007d.B.dialog-act.dharshi.14",
+            "quote": "We decided to use a single touch-screen ."
+          },
+          {
+            "da_id": "TS3007d.B.dialog-act.dharshi.13",
+            "quote": "Um , this was our first concept ."
+          },
+          {
+            "da_id": "TS3007d.B.dialog-act.dharshi.15",
+            "quote": "So , we've worked out this concepts ,"
+          }
+        ],
+        "fields": [
+          "statement",
+          "status"
+        ]
+      },
+      "relation": {
+        "result": "not_applicable",
+        "reason": "No prior related items to compare in this session; first meeting in context.",
+        "quotes": [],
+        "fields": [
+          "related_items"
+        ]
+      },
+      "owner": {
+        "result": "not_applicable",
+        "reason": "field_not_applicable",
+        "quotes": [],
+        "fields": [
+          "owner"
+        ]
+      },
+      "deadline": {
+        "result": "not_applicable",
+        "reason": "field_not_applicable",
+        "quotes": [],
+        "fields": [
+          "deadline"
+        ]
+      }
+    },
+    "unresolved_fields": [],
+    "observed_evidence_da_ids": [
+      "TS3007d.B.dialog-act.dharshi.13",
+      "TS3007d.B.dialog-act.dharshi.14",
+      "TS3007d.B.dialog-act.dharshi.15",
+      "TS3007d.D.dialog-act.dharshi.12",
+      "TS3007d.B.dialog-act.dharshi.16"
+    ],
+    "initial_context": {
+      "item": {
+        "type": "decisions",
+        "text": "We decided to use a single touch-screen.",
+        "flags": []
+      },
+      "current_meeting": "TS3007d",
+      "earlier_meetings": [],
+      "roster": [
+        {
+          "speaker": "A",
+          "participant_id": "MTD025PM",
+          "role": "PM"
+        },
+        {
+          "speaker": "B",
+          "participant_id": "MTD027ID",
+          "role": "UI"
+        },
+        {
+          "speaker": "C",
+          "participant_id": "MTD026UID",
+          "role": "ID"
+        },
+        {
+          "speaker": "D",
+          "participant_id": "MTD028ME",
+          "role": "ME"
+        }
+      ],
+      "observed_dialogue": [
+        {
+          "da_id": "TS3007d.B.dialog-act.dharshi.13",
+          "meeting_id": "TS3007d",
+          "text": "Um , this was our first concept .",
+          "participant": "MTD027ID",
+          "role": "UI"
+        },
+        {
+          "da_id": "TS3007d.B.dialog-act.dharshi.14",
+          "meeting_id": "TS3007d",
+          "text": "We decided to use a single touch-screen .",
+          "participant": "MTD027ID",
+          "role": "UI"
+        },
+        {
+          "da_id": "TS3007d.B.dialog-act.dharshi.15",
+          "meeting_id": "TS3007d",
+          "text": "So , we've worked out this concepts ,",
+          "participant": "MTD027ID",
+          "role": "UI"
+        },
+        {
+          "da_id": "TS3007d.D.dialog-act.dharshi.12",
+          "participant": "MTD028ME",
+          "role": "ME",
+          "text": "<vocalsound>"
+        },
+        {
+          "da_id": "TS3007d.B.dialog-act.dharshi.16",
+          "participant": "MTD027ID",
+          "role": "UI",
+          "text": "how to how to hold it , where to put the buttons and and stuff ."
+        }
+      ],
+      "peer_items": [
+        {
+          "item_key": "TS3007d#0",
+          "type": "actions",
+          "text": "Finish the end report."
+        },
+        {
+          "item_key": "TS3007d#1",
+          "type": "actions",
+          "text": "The PM will redesign something now."
+        },
+        {
+          "item_key": "TS3007d#2",
+          "type": "problems",
+          "text": "There is disagreement about whether the remote control has speech recognition."
+        },
+        {
+          "item_key": "TS3007d#3",
+          "type": "problems",
+          "text": "Budget overrun: the project costs exceed budget (initially stated as eleven euros over; later updated to four euros over)."
+        }
+      ],
+      "provisional_values": {
+        "owner": null,
+        "owner_basis": "missing",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "adopted",
+        "related_items": []
+      },
+      "candidate_evidence_da_ids": [
+        "TS3007d.B.dialog-act.dharshi.13",
+        "TS3007d.B.dialog-act.dharshi.14",
+        "TS3007d.B.dialog-act.dharshi.15"
+      ]
+    },
+    "observed_documents": [],
+    "document_evidence": [],
+    "relation_evidence": [],
+    "history": [
+      {
+        "item": "TS3007d#4",
+        "step": 1,
+        "flags": [],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "The dialogue explicitly states the decision: to use a single touch-screen. The scope is the discussed concept and aligns with the observed statements TS3007d.B.dialog-act.dharshi.14 and surrounding UI remarks.",
+            "quotes": [
+              {
+                "da_id": "TS3007d.B.dialog-act.dharshi.14",
+                "quote": "We decided to use a single touch-screen ."
+              },
+              {
+                "da_id": "TS3007d.B.dialog-act.dharshi.13",
+                "quote": "Um , this was our first concept ."
+              },
+              {
+                "da_id": "TS3007d.B.dialog-act.dharshi.15",
+                "quote": "So , we've worked out this concepts ,"
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Current dialogue supports the adopted decision and there is no evidence of reversal or alternative constraint in the observed speech.",
+            "quotes": [
+              {
+                "da_id": "TS3007d.B.dialog-act.dharshi.14",
+                "quote": "We decided to use a single touch-screen ."
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting information within the observed dialogue regarding the touch-screen decision (the remote control disagreement relates to scope, not the touch-screen choice).",
+            "quotes": [
+              {
+                "da_id": "TS3007d.B.dialog-act.dharshi.14",
+                "quote": "We decided to use a single touch-screen ."
+              },
+              {
+                "da_id": "TS3007d.B.dialog-act.dharshi.13",
+                "quote": "Um , this was our first concept ."
+              },
+              {
+                "da_id": "TS3007d.B.dialog-act.dharshi.15",
+                "quote": "So , we've worked out this concepts ,"
+              }
+            ],
+            "fields": [
+              "statement",
+              "status"
+            ]
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related items to compare in this session; first meeting in context.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          }
+        },
+        "decision": "accept",
+        "reason": "all_required_checks_passed",
+        "assessed_text": "We decided to use a single touch-screen.",
+        "requested_action": null,
+        "proposed_fields": {
+          "status": "adopted",
+          "related_items": [],
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "TS3007d.B.dialog-act.dharshi.14",
+            "TS3007d.B.dialog-act.dharshi.13",
+            "TS3007d.B.dialog-act.dharshi.15"
+          ],
+          "owner": null,
+          "owner_basis": "missing",
+          "deadline": null,
+          "deadline_basis": "missing"
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "The dialogue explicitly states the decision: to use a single touch-screen. The scope is the discussed concept and aligns with the observed statements TS3007d.B.dialog-act.dharshi.14 and surrounding UI remarks.",
+            "quotes": [
+              "TS3007d.B.dialog-act.dharshi.14",
+              "TS3007d.B.dialog-act.dharshi.13",
+              "TS3007d.B.dialog-act.dharshi.15"
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Current dialogue supports the adopted decision and there is no evidence of reversal or alternative constraint in the observed speech.",
+            "quotes": [
+              "TS3007d.B.dialog-act.dharshi.14"
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting information within the observed dialogue regarding the touch-screen decision (the remote control disagreement relates to scope, not the touch-screen choice).",
+            "quotes": [
+              "TS3007d.B.dialog-act.dharshi.14",
+              "TS3007d.B.dialog-act.dharshi.13",
+              "TS3007d.B.dialog-act.dharshi.15"
+            ],
+            "fields": [
+              "statement",
+              "status"
+            ]
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related items to compare in this session; first meeting in context.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "status": "adopted",
+          "related_items": [],
+          "statement": {
+            "result": "pass",
+            "reason": "The dialogue explicitly states the decision: to use a single touch-screen. The scope is the discussed concept and aligns with the observed statements TS3007d.B.dialog-act.dharshi.14 and surrounding UI remarks.",
+            "evidence_da_ids": [
+              "TS3007d.B.dialog-act.dharshi.14",
+              "TS3007d.B.dialog-act.dharshi.13",
+              "TS3007d.B.dialog-act.dharshi.15"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Current dialogue supports the adopted decision and there is no evidence of reversal or alternative constraint in the observed speech.",
+            "evidence_da_ids": [
+              "TS3007d.B.dialog-act.dharshi.14"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No conflicting information within the observed dialogue regarding the touch-screen decision (the remote control disagreement relates to scope, not the touch-screen choice).",
+            "evidence_da_ids": [
+              "TS3007d.B.dialog-act.dharshi.14",
+              "TS3007d.B.dialog-act.dharshi.13",
+              "TS3007d.B.dialog-act.dharshi.15"
+            ],
+            "affected_fields": [
+              "statement",
+              "status"
+            ]
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior related items to compare in this session; first meeting in context.",
+            "evidence_da_ids": []
+          }
+        },
+        "evidence_bindings": {
+          "statement": [
+            "TS3007d.B.dialog-act.dharshi.14",
+            "TS3007d.B.dialog-act.dharshi.13",
+            "TS3007d.B.dialog-act.dharshi.15"
+          ],
+          "status": [
+            "TS3007d.B.dialog-act.dharshi.14"
+          ],
+          "conflict": [
+            "TS3007d.B.dialog-act.dharshi.14",
+            "TS3007d.B.dialog-act.dharshi.13",
+            "TS3007d.B.dialog-act.dharshi.15"
+          ]
+        },
+        "raw_tool_input": {
+          "status": "adopted",
+          "related_items": [],
+          "statement": {
+            "result": "pass",
+            "reason": "The dialogue explicitly states the decision: to use a single touch-screen. The scope is the discussed concept and aligns with the observed statements TS3007d.B.dialog-act.dharshi.14 and surrounding UI remarks.",
+            "evidence_da_ids": [
+              "TS3007d.B.dialog-act.dharshi.14",
+              "TS3007d.B.dialog-act.dharshi.13",
+              "TS3007d.B.dialog-act.dharshi.15"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Current dialogue supports the adopted decision and there is no evidence of reversal or alternative constraint in the observed speech.",
+            "evidence_da_ids": [
+              "TS3007d.B.dialog-act.dharshi.14"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No conflicting information within the observed dialogue regarding the touch-screen decision (the remote control disagreement relates to scope, not the touch-screen choice).",
+            "evidence_da_ids": [
+              "TS3007d.B.dialog-act.dharshi.14",
+              "TS3007d.B.dialog-act.dharshi.13",
+              "TS3007d.B.dialog-act.dharshi.15"
+            ],
+            "affected_fields": [
+              "statement",
+              "status"
+            ]
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior related items to compare in this session; first meeting in context.",
+            "evidence_da_ids": []
+          }
+        },
+        "protocol_normalizations": [
+          "controller_action_for_missing_hint:request_clarification"
+        ],
+        "unresolved_before": [
+          "statement",
+          "status"
+        ],
+        "unresolved_after": [],
+        "semantic_stalls": 0,
+        "validation_codes": {}
+      },
+      {
+        "item": "TS3007d#4",
+        "step": 1,
+        "flags": [],
+        "action": "accept",
+        "outcome": "accepted",
+        "termination_reason": "all_required_checks_passed",
+        "unresolved_fields": []
+      }
+    ],
+    "lookups": 0,
+    "termination_reason": "all_required_checks_passed",
+    "clarifications": []
+  }
+}

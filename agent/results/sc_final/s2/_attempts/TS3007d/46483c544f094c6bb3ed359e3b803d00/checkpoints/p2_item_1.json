@@ -1,0 +1,604 @@
+{
+  "item_key": "TS3007d#1",
+  "record_id": null,
+  "item_type": "actions",
+  "item_text": "The PM will redesign something now.",
+  "state": "accepted",
+  "recordable": true,
+  "fields": {
+    "status": "open",
+    "prior_context_needed": false,
+    "related_items": [],
+    "owner": [
+      "MTD025PM"
+    ],
+    "owner_basis": "explicit",
+    "deadline": "now",
+    "deadline_basis": "explicit",
+    "reference": [
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3007d.json",
+        "locator": "TS3007d.A.dialog-act.dharshi.499"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3007d.json",
+        "locator": "TS3007d.A.dialog-act.dharshi.502"
+      }
+    ]
+  },
+  "draft_fields": {
+    "status": "open",
+    "related_items": [],
+    "owner": [
+      "MTD025PM"
+    ],
+    "owner_basis": "explicit",
+    "deadline": "now",
+    "deadline_basis": "explicit",
+    "prior_context_needed": false,
+    "used_participant_lookup": false,
+    "evidence_da_ids": [
+      "TS3007d.A.dialog-act.dharshi.499",
+      "TS3007d.A.dialog-act.dharshi.502"
+    ]
+  },
+  "checks": {
+    "statement": {
+      "result": "pass",
+      "reason": "Dialogue shows PM announces redesign now and commits to action within the current meeting. Supporting evidence from PM's dialog acts TS3007d.A.dialog-act.dharshi.499 and TS3007d.A.dialog-act.dharshi.502.",
+      "quotes": [
+        {
+          "da_id": "TS3007d.A.dialog-act.dharshi.499",
+          "quote": "well I gonna redesign uh something now ."
+        },
+        {
+          "da_id": "TS3007d.A.dialog-act.dharshi.502",
+          "quote": "Oh , five minutes from <disfmarker> to finish meeting ."
+        }
+      ],
+      "fields": [
+        "statement"
+      ]
+    },
+    "owner": {
+      "result": "pass",
+      "reason": "PM is identified as the owner in the dialogue (MTD025PM).",
+      "quotes": [
+        {
+          "da_id": "TS3007d.A.dialog-act.dharshi.499",
+          "quote": "well I gonna redesign uh something now ."
+        },
+        {
+          "da_id": "TS3007d.A.dialog-act.dharshi.502",
+          "quote": "Oh , five minutes from <disfmarker> to finish meeting ."
+        }
+      ],
+      "fields": [
+        "owner"
+      ]
+    },
+    "deadline": {
+      "result": "pass",
+      "reason": "Deadline stated as 'now' with explicit basis. Time constraint implied by meeting context (e.g., five minutes remaining).",
+      "quotes": [
+        {
+          "da_id": "TS3007d.A.dialog-act.dharshi.502",
+          "quote": "Oh , five minutes from <disfmarker> to finish meeting ."
+        }
+      ],
+      "fields": [
+        "deadline"
+      ]
+    },
+    "status": {
+      "result": "pass",
+      "reason": "Action is described as open and ongoing in this meeting; no completion indicated.",
+      "quotes": [
+        {
+          "da_id": "TS3007d.A.dialog-act.dharshi.499",
+          "quote": "well I gonna redesign uh something now ."
+        },
+        {
+          "da_id": "TS3007d.A.dialog-act.dharshi.502",
+          "quote": "Oh , five minutes from <disfmarker> to finish meeting ."
+        }
+      ],
+      "fields": [
+        "status"
+      ]
+    },
+    "conflict": {
+      "result": "pass",
+      "reason": "No conflicting statements found within the delivered evidence.",
+      "quotes": [
+        {
+          "da_id": "TS3007d.A.dialog-act.dharshi.499",
+          "quote": "well I gonna redesign uh something now ."
+        },
+        {
+          "da_id": "TS3007d.A.dialog-act.dharshi.502",
+          "quote": "Oh , five minutes from <disfmarker> to finish meeting ."
+        }
+      ],
+      "fields": [
+        "statement",
+        "owner",
+        "deadline",
+        "status"
+      ]
+    },
+    "relation": {
+      "result": "not_applicable",
+      "reason": "No prior item relationship to assess from the provided data.",
+      "quotes": [],
+      "fields": [
+        "related_items"
+      ]
+    }
+  },
+  "unresolved_fields": [],
+  "observed_evidence_da_ids": [
+    "TS3007d.A.dialog-act.dharshi.499",
+    "TS3007d.A.dialog-act.dharshi.502",
+    "TS3007d.A.dialog-act.dharshi.498",
+    "TS3007d.D.dialog-act.dharshi.417",
+    "TS3007d.A.dialog-act.dharshi.501",
+    "TS3007d.B.dialog-act.dharshi.414"
+  ],
+  "initial_context": {
+    "item": {
+      "type": "actions",
+      "text": "The PM will redesign something now.",
+      "flags": []
+    },
+    "current_meeting": "TS3007d",
+    "earlier_meetings": [
+      "TS3007a",
+      "TS3007b",
+      "TS3007c"
+    ],
+    "roster": [
+      {
+        "speaker": "A",
+        "participant_id": "MTD025PM",
+        "role": "PM"
+      },
+      {
+        "speaker": "B",
+        "participant_id": "MTD027ID",
+        "role": "UI"
+      },
+      {
+        "speaker": "C",
+        "participant_id": "MTD026UID",
+        "role": "ID"
+      },
+      {
+        "speaker": "D",
+        "participant_id": "MTD028ME",
+        "role": "ME"
+      }
+    ],
+    "observed_dialogue": [
+      {
+        "da_id": "TS3007d.A.dialog-act.dharshi.499",
+        "meeting_id": "TS3007d",
+        "text": "well I gonna redesign uh something now .",
+        "participant": "MTD025PM",
+        "role": "PM"
+      },
+      {
+        "da_id": "TS3007d.A.dialog-act.dharshi.502",
+        "meeting_id": "TS3007d",
+        "text": "Oh , five minutes from <disfmarker> to finish meeting .",
+        "participant": "MTD025PM",
+        "role": "PM"
+      },
+      {
+        "da_id": "TS3007d.A.dialog-act.dharshi.498",
+        "participant": "MTD025PM",
+        "role": "PM",
+        "text": "Yeah , okay ,"
+      },
+      {
+        "da_id": "TS3007d.D.dialog-act.dharshi.417",
+        "participant": "MTD028ME",
+        "role": "ME",
+        "text": "Yeah . Um <disfmarker>"
+      },
+      {
+        "da_id": "TS3007d.A.dialog-act.dharshi.501",
+        "participant": "MTD025PM",
+        "role": "PM",
+        "text": "Because I think it will <disfmarker>"
+      },
+      {
+        "da_id": "TS3007d.B.dialog-act.dharshi.414",
+        "participant": "MTD027ID",
+        "role": "UI",
+        "text": "Oh , before you change anything maybe you um save it first ."
+      }
+    ],
+    "peer_items": [
+      {
+        "item_key": "TS3007d#0",
+        "type": "actions",
+        "text": "Finish the end report."
+      }
+    ],
+    "provisional_values": {
+      "owner": [
+        "MTD025PM"
+      ],
+      "owner_basis": "explicit",
+      "deadline": "now",
+      "deadline_basis": "explicit",
+      "status": "open",
+      "related_items": []
+    },
+    "candidate_evidence_da_ids": [
+      "TS3007d.A.dialog-act.dharshi.499",
+      "TS3007d.A.dialog-act.dharshi.502"
+    ]
+  },
+  "observed_documents": [],
+  "document_evidence": [],
+  "relation_evidence": [],
+  "history": [
+    {
+      "item": "TS3007d#1",
+      "step": 1,
+      "flags": [],
+      "action": "assess_item",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue shows PM announces redesign now and commits to action within the current meeting. Supporting evidence from PM's dialog acts TS3007d.A.dialog-act.dharshi.499 and TS3007d.A.dialog-act.dharshi.502.",
+          "quotes": [
+            {
+              "da_id": "TS3007d.A.dialog-act.dharshi.499",
+              "quote": "well I gonna redesign uh something now ."
+            },
+            {
+              "da_id": "TS3007d.A.dialog-act.dharshi.502",
+              "quote": "Oh , five minutes from <disfmarker> to finish meeting ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "PM is identified as the owner in the dialogue (MTD025PM).",
+          "quotes": [
+            {
+              "da_id": "TS3007d.A.dialog-act.dharshi.499",
+              "quote": "well I gonna redesign uh something now ."
+            },
+            {
+              "da_id": "TS3007d.A.dialog-act.dharshi.502",
+              "quote": "Oh , five minutes from <disfmarker> to finish meeting ."
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "pass",
+          "reason": "Deadline stated as 'now' with explicit basis. Time constraint implied by meeting context (e.g., five minutes remaining).",
+          "quotes": [
+            {
+              "da_id": "TS3007d.A.dialog-act.dharshi.502",
+              "quote": "Oh , five minutes from <disfmarker> to finish meeting ."
+            }
+          ],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Action is described as open and ongoing in this meeting; no completion indicated.",
+          "quotes": [
+            {
+              "da_id": "TS3007d.A.dialog-act.dharshi.499",
+              "quote": "well I gonna redesign uh something now ."
+            },
+            {
+              "da_id": "TS3007d.A.dialog-act.dharshi.502",
+              "quote": "Oh , five minutes from <disfmarker> to finish meeting ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No conflicting statements found within the delivered evidence.",
+          "quotes": [
+            {
+              "da_id": "TS3007d.A.dialog-act.dharshi.499",
+              "quote": "well I gonna redesign uh something now ."
+            },
+            {
+              "da_id": "TS3007d.A.dialog-act.dharshi.502",
+              "quote": "Oh , five minutes from <disfmarker> to finish meeting ."
+            }
+          ],
+          "fields": [
+            "statement",
+            "owner",
+            "deadline",
+            "status"
+          ]
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No prior item relationship to assess from the provided data.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "decision": "accept",
+      "reason": "all_required_checks_passed",
+      "assessed_text": "The PM will redesign something now.",
+      "requested_action": "accept",
+      "proposed_fields": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD025PM"
+        ],
+        "owner_basis": "explicit",
+        "deadline": "now",
+        "deadline_basis": "explicit",
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "TS3007d.A.dialog-act.dharshi.499",
+          "TS3007d.A.dialog-act.dharshi.502"
+        ]
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue shows PM announces redesign now and commits to action within the current meeting. Supporting evidence from PM's dialog acts TS3007d.A.dialog-act.dharshi.499 and TS3007d.A.dialog-act.dharshi.502.",
+          "quotes": [
+            "TS3007d.A.dialog-act.dharshi.499",
+            "TS3007d.A.dialog-act.dharshi.502"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "PM is identified as the owner in the dialogue (MTD025PM).",
+          "quotes": [
+            "TS3007d.A.dialog-act.dharshi.499",
+            "TS3007d.A.dialog-act.dharshi.502"
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "pass",
+          "reason": "Deadline stated as 'now' with explicit basis. Time constraint implied by meeting context (e.g., five minutes remaining).",
+          "quotes": [
+            "TS3007d.A.dialog-act.dharshi.502"
+          ],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Action is described as open and ongoing in this meeting; no completion indicated.",
+          "quotes": [
+            "TS3007d.A.dialog-act.dharshi.499",
+            "TS3007d.A.dialog-act.dharshi.502"
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No conflicting statements found within the delivered evidence.",
+          "quotes": [
+            "TS3007d.A.dialog-act.dharshi.499",
+            "TS3007d.A.dialog-act.dharshi.502"
+          ],
+          "fields": [
+            "statement",
+            "owner",
+            "deadline",
+            "status"
+          ]
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No prior item relationship to assess from the provided data.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD025PM"
+        ],
+        "owner_basis": "explicit",
+        "deadline": "now",
+        "deadline_basis": "explicit",
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue shows PM announces redesign now and commits to action within the current meeting. Supporting evidence from PM's dialog acts TS3007d.A.dialog-act.dharshi.499 and TS3007d.A.dialog-act.dharshi.502.",
+          "evidence_da_ids": [
+            "TS3007d.A.dialog-act.dharshi.499",
+            "TS3007d.A.dialog-act.dharshi.502"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "PM is identified as the owner in the dialogue (MTD025PM).",
+          "evidence_da_ids": [
+            "TS3007d.A.dialog-act.dharshi.499",
+            "TS3007d.A.dialog-act.dharshi.502"
+          ]
+        },
+        "deadline_check": {
+          "result": "pass",
+          "reason": "Deadline stated as 'now' with explicit basis. Time constraint implied by meeting context (e.g., five minutes remaining).",
+          "evidence_da_ids": [
+            "TS3007d.A.dialog-act.dharshi.502"
+          ]
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "Action is described as open and ongoing in this meeting; no completion indicated.",
+          "evidence_da_ids": [
+            "TS3007d.A.dialog-act.dharshi.499",
+            "TS3007d.A.dialog-act.dharshi.502"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No conflicting statements found within the delivered evidence.",
+          "evidence_da_ids": [
+            "TS3007d.A.dialog-act.dharshi.499",
+            "TS3007d.A.dialog-act.dharshi.502"
+          ],
+          "affected_fields": [
+            "statement",
+            "owner",
+            "deadline",
+            "status"
+          ]
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No prior item relationship to assess from the provided data.",
+          "evidence_da_ids": []
+        },
+        "next_action": "accept"
+      },
+      "evidence_bindings": {
+        "statement": [
+          "TS3007d.A.dialog-act.dharshi.499",
+          "TS3007d.A.dialog-act.dharshi.502"
+        ],
+        "owner": [
+          "TS3007d.A.dialog-act.dharshi.499",
+          "TS3007d.A.dialog-act.dharshi.502"
+        ],
+        "deadline": [
+          "TS3007d.A.dialog-act.dharshi.502"
+        ],
+        "status": [
+          "TS3007d.A.dialog-act.dharshi.499",
+          "TS3007d.A.dialog-act.dharshi.502"
+        ],
+        "conflict": [
+          "TS3007d.A.dialog-act.dharshi.499",
+          "TS3007d.A.dialog-act.dharshi.502"
+        ]
+      },
+      "raw_tool_input": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD025PM"
+        ],
+        "owner_basis": "explicit",
+        "deadline": "now",
+        "deadline_basis": "explicit",
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue shows PM announces redesign now and commits to action within the current meeting. Supporting evidence from PM's dialog acts TS3007d.A.dialog-act.dharshi.499 and TS3007d.A.dialog-act.dharshi.502.",
+          "evidence_da_ids": [
+            "TS3007d.A.dialog-act.dharshi.499",
+            "TS3007d.A.dialog-act.dharshi.502"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "PM is identified as the owner in the dialogue (MTD025PM).",
+          "evidence_da_ids": [
+            "TS3007d.A.dialog-act.dharshi.499",
+            "TS3007d.A.dialog-act.dharshi.502"
+          ]
+        },
+        "deadline_check": {
+          "result": "pass",
+          "reason": "Deadline stated as 'now' with explicit basis. Time constraint implied by meeting context (e.g., five minutes remaining).",
+          "evidence_da_ids": [
+            "TS3007d.A.dialog-act.dharshi.502"
+          ]
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "Action is described as open and ongoing in this meeting; no completion indicated.",
+          "evidence_da_ids": [
+            "TS3007d.A.dialog-act.dharshi.499",
+            "TS3007d.A.dialog-act.dharshi.502"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No conflicting statements found within the delivered evidence.",
+          "evidence_da_ids": [
+            "TS3007d.A.dialog-act.dharshi.499",
+            "TS3007d.A.dialog-act.dharshi.502"
+          ],
+          "affected_fields": [
+            "statement",
+            "owner",
+            "deadline",
+            "status"
+          ]
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No prior item relationship to assess from the provided data.",
+          "evidence_da_ids": []
+        },
+        "next_action": "accept"
+      },
+      "protocol_normalizations": [],
+      "unresolved_before": [
+        "deadline",
+        "owner",
+        "statement",
+        "status"
+      ],
+      "unresolved_after": [],
+      "semantic_stalls": 0,
+      "validation_codes": {}
+    },
+    {
+      "item": "TS3007d#1",
+      "step": 1,
+      "flags": [],
+      "action": "accept",
+      "outcome": "accepted",
+      "termination_reason": "all_required_checks_passed",
+      "unresolved_fields": []
+    }
+  ],
+  "lookups": 0,
+  "termination_reason": "all_required_checks_passed",
+  "clarifications": []
+}

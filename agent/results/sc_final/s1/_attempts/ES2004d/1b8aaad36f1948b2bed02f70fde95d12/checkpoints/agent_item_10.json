@@ -1,0 +1,498 @@
+{
+  "item": 10,
+  "fields": {
+    "item_key": "ES2004d#10",
+    "record_id": null,
+    "item_type": "problems",
+    "item_text": "Cost information for voice recognition integration is not known; feasibility/expense needs to be assessed.",
+    "state": "accepted",
+    "recordable": true,
+    "fields": {
+      "status": "open",
+      "prior_context_needed": false,
+      "related_items": [],
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/ES2004d.json",
+          "locator": "ES2004d.B.dialog-act.vkaraisk.16"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/ES2004d.json",
+          "locator": "ES2004d.B.dialog-act.vkaraisk.17"
+        }
+      ]
+    },
+    "draft_fields": {
+      "status": "open",
+      "related_items": [],
+      "prior_context_needed": false,
+      "used_participant_lookup": false,
+      "evidence_da_ids": [
+        "ES2004d.B.dialog-act.vkaraisk.16",
+        "ES2004d.B.dialog-act.vkaraisk.17"
+      ],
+      "owner": null,
+      "owner_basis": "missing",
+      "deadline": null,
+      "deadline_basis": "missing"
+    },
+    "checks": {
+      "statement": {
+        "result": "pass",
+        "reason": "The prompt identifies a cost-related information gap for voice recognition integration and requests feasibility/expense assessment. This is a valid problem statement that raises a concern about cost and feasibility without asserting a solution or owner.",
+        "quotes": [
+          {
+            "da_id": "ES2004d.B.dialog-act.vkaraisk.16",
+            "quote": "Um <vocalsound> and to try and incorporate voice recognition software into our design until we can find out more about the cost of things like that ."
+          },
+          {
+            "da_id": "ES2004d.B.dialog-act.vkaraisk.17",
+            "quote": "Um <vocalsound> and the rubber buttons that we'll use will be anti-R_S_I_ ."
+          }
+        ],
+        "fields": [
+          "statement"
+        ]
+      },
+      "status": {
+        "result": "pass",
+        "reason": "No evidence in the current dialogue contradicts or expands the problem; the two cited lines establish cost uncertainty for voice recognition and related cost considerations.",
+        "quotes": [
+          {
+            "da_id": "ES2004d.B.dialog-act.vkaraisk.16",
+            "quote": "Um <vocalsound> and to try and incorporate voice recognition software into our design until we can find out more about the cost of things like that ."
+          },
+          {
+            "da_id": "ES2004d.B.dialog-act.vkaraisk.17",
+            "quote": "Um <vocalsound> and the rubber buttons that we'll use will be anti-R_S_I_ ."
+          }
+        ],
+        "fields": [
+          "status"
+        ]
+      },
+      "conflict": {
+        "result": "pass",
+        "reason": "No detected conflicts within the provided dialogue about this problem statement.",
+        "quotes": [
+          {
+            "da_id": "ES2004d.B.dialog-act.vkaraisk.16",
+            "quote": "Um <vocalsound> and to try and incorporate voice recognition software into our design until we can find out more about the cost of things like that ."
+          },
+          {
+            "da_id": "ES2004d.B.dialog-act.vkaraisk.17",
+            "quote": "Um <vocalsound> and the rubber buttons that we'll use will be anti-R_S_I_ ."
+          }
+        ],
+        "fields": []
+      },
+      "relation": {
+        "result": "not_applicable",
+        "reason": "No prior related item is being updated or linked in this single-item assessment.",
+        "quotes": [],
+        "fields": [
+          "related_items"
+        ]
+      },
+      "owner": {
+        "result": "not_applicable",
+        "reason": "field_not_applicable",
+        "quotes": [],
+        "fields": [
+          "owner"
+        ]
+      },
+      "deadline": {
+        "result": "not_applicable",
+        "reason": "field_not_applicable",
+        "quotes": [],
+        "fields": [
+          "deadline"
+        ]
+      }
+    },
+    "unresolved_fields": [],
+    "observed_evidence_da_ids": [
+      "ES2004d.B.dialog-act.vkaraisk.16",
+      "ES2004d.B.dialog-act.vkaraisk.17",
+      "ES2004d.B.dialog-act.vkaraisk.15",
+      "ES2004d.B.dialog-act.vkaraisk.18"
+    ],
+    "initial_context": {
+      "item": {
+        "type": "problems",
+        "text": "Cost information for voice recognition integration is not known; feasibility/expense needs to be assessed.",
+        "flags": []
+      },
+      "current_meeting": "ES2004d",
+      "earlier_meetings": [],
+      "roster": [
+        {
+          "speaker": "A",
+          "participant_id": "MEO015",
+          "role": "UI"
+        },
+        {
+          "speaker": "B",
+          "participant_id": "FEE013",
+          "role": "PM"
+        },
+        {
+          "speaker": "C",
+          "participant_id": "MEE014",
+          "role": "ID"
+        },
+        {
+          "speaker": "D",
+          "participant_id": "FEE016",
+          "role": "ME"
+        }
+      ],
+      "observed_dialogue": [
+        {
+          "da_id": "ES2004d.B.dialog-act.vkaraisk.16",
+          "meeting_id": "ES2004d",
+          "text": "Um <vocalsound> and to try and incorporate voice recognition software into our design until we can find out more about the cost of things like that .",
+          "participant": "FEE013",
+          "role": "PM"
+        },
+        {
+          "da_id": "ES2004d.B.dialog-act.vkaraisk.17",
+          "meeting_id": "ES2004d",
+          "text": "Um <vocalsound> and the rubber buttons that we'll use will be anti-R_S_I_ .",
+          "participant": "FEE013",
+          "role": "PM"
+        },
+        {
+          "da_id": "ES2004d.B.dialog-act.vkaraisk.15",
+          "participant": "FEE013",
+          "role": "PM",
+          "text": "Um bright funky designs inspired by fruit , keeping with the hip kind of feel ."
+        },
+        {
+          "da_id": "ES2004d.B.dialog-act.vkaraisk.18",
+          "participant": "FEE013",
+          "role": "PM",
+          "text": "Okay ?"
+        }
+      ],
+      "peer_items": [
+        {
+          "item_key": "ES2004d#0",
+          "type": "actions",
+          "text": "Provide recommendations for head office specifications."
+        },
+        {
+          "item_key": "ES2004d#1",
+          "type": "actions",
+          "text": "All team members will provide individual ratings for the evaluation criteria."
+        },
+        {
+          "item_key": "ES2004d#2",
+          "type": "problems",
+          "text": "Pricing currency is unclear; pricing may be in Euros or Dollars."
+        },
+        {
+          "item_key": "ES2004d#3",
+          "type": "problems",
+          "text": "Projected profitability is uncertain because overheads remain to be accounted for beyond a stated 50 percent profit."
+        },
+        {
+          "item_key": "ES2004d#4",
+          "type": "problems",
+          "text": "There is concern that the budget may not include all overhead costs, including salaries and heating."
+        },
+        {
+          "item_key": "ES2004d#5",
+          "type": "decisions",
+          "text": "We decided to use a kinetic charger."
+        },
+        {
+          "item_key": "ES2004d#6",
+          "type": "decisions",
+          "text": "Kinetic batteries will be placed in the top section near the hinge."
+        },
+        {
+          "item_key": "ES2004d#7",
+          "type": "decisions",
+          "text": "Proceed to produce a prototype and bring it to market based on evaluation results."
+        },
+        {
+          "item_key": "ES2004d#8",
+          "type": "decisions",
+          "text": "Rubber used in the casing will be counted as one unit in total cost."
+        },
+        {
+          "item_key": "ES2004d#9",
+          "type": "decisions",
+          "text": "Interface will use push-buttons."
+        }
+      ],
+      "item_type_contract": "This is a Problem, not a task or decision. Verify that the stated obstacle/concern and its impact were actually raised. It need not have an owner, deadline, accepted remedy or resolution. A supported information gap can remain open. Assess end status separately; uncertainty about a cause or remedy is not absence of evidence that the concern exists. Do not infer project-document content or cite a passage that was not delivered.",
+      "provisional_values": {
+        "owner": null,
+        "owner_basis": "missing",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "open",
+        "related_items": []
+      },
+      "candidate_evidence_da_ids": [
+        "ES2004d.B.dialog-act.vkaraisk.16",
+        "ES2004d.B.dialog-act.vkaraisk.17"
+      ]
+    },
+    "observed_documents": [],
+    "document_evidence": [],
+    "relation_evidence": [],
+    "history": [
+      {
+        "item": "ES2004d#10",
+        "step": 1,
+        "flags": [],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "The prompt identifies a cost-related information gap for voice recognition integration and requests feasibility/expense assessment. This is a valid problem statement that raises a concern about cost and feasibility without asserting a solution or owner.",
+            "quotes": [
+              {
+                "da_id": "ES2004d.B.dialog-act.vkaraisk.16",
+                "quote": "Um <vocalsound> and to try and incorporate voice recognition software into our design until we can find out more about the cost of things like that ."
+              },
+              {
+                "da_id": "ES2004d.B.dialog-act.vkaraisk.17",
+                "quote": "Um <vocalsound> and the rubber buttons that we'll use will be anti-R_S_I_ ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "No evidence in the current dialogue contradicts or expands the problem; the two cited lines establish cost uncertainty for voice recognition and related cost considerations.",
+            "quotes": [
+              {
+                "da_id": "ES2004d.B.dialog-act.vkaraisk.16",
+                "quote": "Um <vocalsound> and to try and incorporate voice recognition software into our design until we can find out more about the cost of things like that ."
+              },
+              {
+                "da_id": "ES2004d.B.dialog-act.vkaraisk.17",
+                "quote": "Um <vocalsound> and the rubber buttons that we'll use will be anti-R_S_I_ ."
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No detected conflicts within the provided dialogue about this problem statement.",
+            "quotes": [
+              {
+                "da_id": "ES2004d.B.dialog-act.vkaraisk.16",
+                "quote": "Um <vocalsound> and to try and incorporate voice recognition software into our design until we can find out more about the cost of things like that ."
+              },
+              {
+                "da_id": "ES2004d.B.dialog-act.vkaraisk.17",
+                "quote": "Um <vocalsound> and the rubber buttons that we'll use will be anti-R_S_I_ ."
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related item is being updated or linked in this single-item assessment.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          }
+        },
+        "decision": "accept",
+        "reason": "all_required_checks_passed",
+        "assessed_text": "Cost information for voice recognition integration is not known; feasibility/expense needs to be assessed.",
+        "requested_action": "accept",
+        "proposed_fields": {
+          "status": "open",
+          "related_items": [],
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "ES2004d.B.dialog-act.vkaraisk.16",
+            "ES2004d.B.dialog-act.vkaraisk.17"
+          ],
+          "owner": null,
+          "owner_basis": "missing",
+          "deadline": null,
+          "deadline_basis": "missing"
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "The prompt identifies a cost-related information gap for voice recognition integration and requests feasibility/expense assessment. This is a valid problem statement that raises a concern about cost and feasibility without asserting a solution or owner.",
+            "quotes": [
+              "ES2004d.B.dialog-act.vkaraisk.16",
+              "ES2004d.B.dialog-act.vkaraisk.17"
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "No evidence in the current dialogue contradicts or expands the problem; the two cited lines establish cost uncertainty for voice recognition and related cost considerations.",
+            "quotes": [
+              "ES2004d.B.dialog-act.vkaraisk.16",
+              "ES2004d.B.dialog-act.vkaraisk.17"
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No detected conflicts within the provided dialogue about this problem statement.",
+            "quotes": [
+              "ES2004d.B.dialog-act.vkaraisk.16",
+              "ES2004d.B.dialog-act.vkaraisk.17"
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related item is being updated or linked in this single-item assessment.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "status": "open",
+          "related_items": [],
+          "statement": {
+            "result": "pass",
+            "reason": "The prompt identifies a cost-related information gap for voice recognition integration and requests feasibility/expense assessment. This is a valid problem statement that raises a concern about cost and feasibility without asserting a solution or owner.",
+            "evidence_da_ids": [
+              "ES2004d.B.dialog-act.vkaraisk.16",
+              "ES2004d.B.dialog-act.vkaraisk.17"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "No evidence in the current dialogue contradicts or expands the problem; the two cited lines establish cost uncertainty for voice recognition and related cost considerations.",
+            "evidence_da_ids": [
+              "ES2004d.B.dialog-act.vkaraisk.16",
+              "ES2004d.B.dialog-act.vkaraisk.17"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No detected conflicts within the provided dialogue about this problem statement.",
+            "evidence_da_ids": [
+              "ES2004d.B.dialog-act.vkaraisk.16",
+              "ES2004d.B.dialog-act.vkaraisk.17"
+            ],
+            "affected_fields": []
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior related item is being updated or linked in this single-item assessment.",
+            "evidence_da_ids": []
+          },
+          "next_action": "accept"
+        },
+        "evidence_bindings": {
+          "statement": [
+            "ES2004d.B.dialog-act.vkaraisk.16",
+            "ES2004d.B.dialog-act.vkaraisk.17"
+          ],
+          "status": [
+            "ES2004d.B.dialog-act.vkaraisk.16",
+            "ES2004d.B.dialog-act.vkaraisk.17"
+          ],
+          "conflict": [
+            "ES2004d.B.dialog-act.vkaraisk.16",
+            "ES2004d.B.dialog-act.vkaraisk.17"
+          ]
+        },
+        "raw_tool_input": {
+          "status": "open",
+          "related_items": [],
+          "statement": {
+            "result": "pass",
+            "reason": "The prompt identifies a cost-related information gap for voice recognition integration and requests feasibility/expense assessment. This is a valid problem statement that raises a concern about cost and feasibility without asserting a solution or owner.",
+            "evidence_da_ids": [
+              "ES2004d.B.dialog-act.vkaraisk.16",
+              "ES2004d.B.dialog-act.vkaraisk.17"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "No evidence in the current dialogue contradicts or expands the problem; the two cited lines establish cost uncertainty for voice recognition and related cost considerations.",
+            "evidence_da_ids": [
+              "ES2004d.B.dialog-act.vkaraisk.16",
+              "ES2004d.B.dialog-act.vkaraisk.17"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No detected conflicts within the provided dialogue about this problem statement.",
+            "evidence_da_ids": [
+              "ES2004d.B.dialog-act.vkaraisk.16",
+              "ES2004d.B.dialog-act.vkaraisk.17"
+            ],
+            "affected_fields": []
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior related item is being updated or linked in this single-item assessment.",
+            "evidence_da_ids": []
+          },
+          "next_action": "accept"
+        },
+        "protocol_normalizations": [],
+        "unresolved_before": [
+          "statement",
+          "status"
+        ],
+        "unresolved_after": [],
+        "semantic_stalls": 0,
+        "validation_codes": {}
+      },
+      {
+        "item": "ES2004d#10",
+        "step": 1,
+        "flags": [],
+        "action": "accept",
+        "outcome": "accepted",
+        "termination_reason": "all_required_checks_passed",
+        "unresolved_fields": []
+      }
+    ],
+    "lookups": 0,
+    "termination_reason": "all_required_checks_passed",
+    "clarifications": []
+  }
+}

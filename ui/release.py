@@ -10,6 +10,10 @@ ROOT = Path(__file__).resolve().parents[1]
 PACKAGE = Path("agent/results/candidate_acceptance/66a21d7-v1")
 PROFILE = "recall_candidate_v1"
 REFERENCE = "66a21d7c58651ef79c8d9e8f146ebd3880f35385"
+# Offline scorers are captured for provenance but are not called by the live UI.
+# Keep executing their frozen bytes in the private runtime while allowing the
+# checkout's evaluation tools to evolve independently.
+EVALUATION_ONLY_FILES = frozenset({"agent/scripts/full_eval.py", "agent/src/mta/evaluate.py"})
 
 
 class ReleaseMismatch(ValueError):
@@ -62,8 +66,9 @@ def materialize_runtime(root: Path = ROOT) -> Path:
 
     Git's Windows line-ending conversion changes some captured byte hashes. The
     committed source snapshot preserves the accepted bytes. Require checkout
-    content to agree (allowing ONLY newline conversion), then execute that exact
-    snapshot in an ignored, private runtime directory. No source edits or tuning.
+    generation content to agree (allowing ONLY newline conversion), then execute
+    that exact snapshot in an ignored, private runtime directory. Offline scoring
+    files may evolve in the checkout; their frozen copies are still verified.
     """
     package = root / PACKAGE
     study = load(package / "study.json")
@@ -78,9 +83,10 @@ def materialize_runtime(root: Path = ROOT) -> Path:
         frozen = source.read_bytes()
         if hashlib.sha256(frozen).hexdigest() != expected:
             raise ReleaseMismatch("Frozen runtime snapshot failed verification: " + relative)
-        current = (root / relative).read_bytes()
-        if current.replace(b"\r\n", b"\n") != frozen.replace(b"\r\n", b"\n"):
-            raise ReleaseMismatch("Agent source differs from the accepted release: " + relative)
+        if relative not in EVALUATION_ONLY_FILES:
+            current = (root / relative).read_bytes()
+            if current.replace(b"\r\n", b"\n") != frozen.replace(b"\r\n", b"\n"):
+                raise ReleaseMismatch("Agent source differs from the accepted release: " + relative)
         target = destination / relative
         if not target.exists() or digest(target) != expected:
             target.parent.mkdir(parents=True, exist_ok=True)

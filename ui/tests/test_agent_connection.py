@@ -14,7 +14,7 @@ from urllib.error import HTTPError
 from ui import agent_worker
 from ui.jobs import LiveJobs
 from ui.provider import ROOT, DataError, SavedDevelopmentProvider
-from ui.release import PACKAGE, PROFILE, digest, load, materialize_runtime
+from ui.release import PACKAGE, PROFILE, ReleaseMismatch, digest, load, materialize_runtime
 
 
 class Process:
@@ -127,6 +127,36 @@ class ReleaseTests(unittest.TestCase):
         self.assertEqual(len(list((runtime / "agent/data/transcripts").glob("*.txt"))), 16)
         self.assertFalse((runtime / "agent/data/transcripts/ES2004a.txt").exists())
         self.assertFalse((runtime / "agent/.env").exists())
+
+    def test_updated_evaluation_tools_still_execute_the_verified_frozen_copies(self):
+        original_read = Path.read_bytes
+        changed = {ROOT / "agent/scripts/full_eval.py", ROOT / "agent/src/mta/evaluate.py"}
+        def read(path):
+            data = original_read(path)
+            return data + b"\n# Updated offline scorer\n" if path in changed else data
+        with patch.object(Path, "read_bytes", read):
+            runtime = materialize_runtime()
+        for path in changed:
+            relative = path.relative_to(ROOT)
+            self.assertEqual((runtime / relative).read_bytes(), (ROOT / PACKAGE / "source" / relative).read_bytes())
+
+    def test_generation_source_changes_still_fail_release_preflight(self):
+        original_read = Path.read_bytes
+        def read(path):
+            data = original_read(path)
+            return data + b"\n# Changed generation code\n" if path == ROOT / "agent/src/mta/pipeline.py" else data
+        with patch.object(Path, "read_bytes", read):
+            with self.assertRaisesRegex(ReleaseMismatch, "Agent source differs.*pipeline.py"):
+                materialize_runtime()
+
+    def test_frozen_evaluation_snapshot_changes_still_fail_verification(self):
+        original_read = Path.read_bytes
+        def read(path):
+            data = original_read(path)
+            return data + b"\n# Corrupted snapshot\n" if path == ROOT / PACKAGE / "source/agent/src/mta/evaluate.py" else data
+        with patch.object(Path, "read_bytes", read):
+            with self.assertRaisesRegex(ReleaseMismatch, "Frozen runtime snapshot failed.*evaluate.py"):
+                materialize_runtime()
 
     def test_trace_map_is_authoritative_even_when_a_candidate_has_no_record(self):
         from ui.release import json_lines as actual

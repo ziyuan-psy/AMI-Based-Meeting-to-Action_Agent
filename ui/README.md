@@ -79,9 +79,13 @@ profile. Model calls occur only after the user starts a live run.
 For live use, set `OPENAI_API_KEY` in the server environment or **`agent/.env`**,
 then restart the server. The pinned OpenAI SDK is installed by the Windows
 shortcut. Do not enter keys into the UI. The model, effective configuration and
-runtime hash set must match the frozen study; a mismatch fails preflight instead
+generation runtime hash set must match the frozen study; a mismatch fails preflight instead
 of silently selecting another experiment. The default `development` profile is
 not the accepted release and is not exposed as a demo toggle.
+
+The checkout's offline scorers (`agent/scripts/full_eval.py` and
+`agent/src/mta/evaluate.py`) can evolve for held-out evaluation. Live UI runs
+still use and verify their original frozen copies from the accepted snapshot.
 
 Each live job gets a new directory under **`agent/runs/ui/<job_id>/`**, with its
 own output, cache, results, worker log and status. Earlier meetings run a→selected

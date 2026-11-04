@@ -1,0 +1,3025 @@
+{
+  "created_at": "2026-10-28T16:45:58.141673+00:00",
+  "actual_api_calls": 0,
+  "policy_version": 3,
+  "results": [
+    {
+      "item_key": "IS1008a#0",
+      "residual": "affected_fields",
+      "actual_api_calls": 0,
+      "source_trace_sha256": "114760331c373fb6a411f3f1e9897197ce301eda6206a38f1aba0490696b1c75",
+      "replayed_choices": [
+        [
+          "assess_item",
+          {
+            "status": "open",
+            "related_items": [],
+            "statement": {
+              "result": "pass",
+              "reason": "Dialogue confirms project goals are unclear (remote control vs monitor) and there is no functional/technical design yet; design work has not begun.",
+              "evidence_da_ids": [
+                "IS1008a.C.dialog-act.s9553330.11",
+                "IS1008a.C.dialog-act.s9553330.12",
+                "IS1008a.C.dialog-act.s9553330.13",
+                "IS1008a.C.dialog-act.s9553330.14",
+                "IS1008a.C.dialog-act.s9553330.15",
+                "IS1008a.C.dialog-act.s9553330.16",
+                "IS1008a.A.dialog-act.s9553330.23",
+                "IS1008a.C.dialog-act.s9553330.9",
+                "IS1008a.A.dialog-act.s9553330.10"
+              ],
+              "documents": []
+            }
+          }
+        ],
+        [
+          "assess_item",
+          {
+            "status": "open",
+            "related_items": [],
+            "statement": {
+              "result": "pass",
+              "reason": "Dialogue confirms project goals are unclear (remote control vs monitor) and there is no functional/technical design yet; design work has not begun.",
+              "evidence_da_ids": [
+                "IS1008a.C.dialog-act.s9553330.11",
+                "IS1008a.C.dialog-act.s9553330.12",
+                "IS1008a.C.dialog-act.s9553330.13",
+                "IS1008a.C.dialog-act.s9553330.14",
+                "IS1008a.C.dialog-act.s9553330.15",
+                "IS1008a.C.dialog-act.s9553330.16",
+                "IS1008a.A.dialog-act.s9553330.23",
+                "IS1008a.C.dialog-act.s9553330.9",
+                "IS1008a.A.dialog-act.s9553330.10"
+              ]
+            },
+            "status_check": {
+              "result": "pass",
+              "reason": "Current dialogue shows no evidence of a launched design or acceptance of a design; status remains open with no commitments.",
+              "evidence_da_ids": [
+                "IS1008a.C.dialog-act.s9553330.11",
+                "IS1008a.C.dialog-act.s9553330.12",
+                "IS1008a.C.dialog-act.s9553330.13",
+                "IS1008a.C.dialog-act.s9553330.14",
+                "IS1008a.C.dialog-act.s9553330.15",
+                "IS1008a.C.dialog-act.s9553330.16",
+                "IS1008a.A.dialog-act.s9553330.23",
+                "IS1008a.A.dialog-act.s9553330.10"
+              ]
+            },
+            "conflict_check": {
+              "result": "pass",
+              "reason": "No conflicting statements found in the observed dialogue about ownership or deadlines.",
+              "evidence_da_ids": [
+                "IS1008a.C.dialog-act.s9553330.11",
+                "IS1008a.C.dialog-act.s9553330.12",
+                "IS1008a.C.dialog-act.s9553330.13",
+                "IS1008a.C.dialog-act.s9553330.14",
+                "IS1008a.C.dialog-act.s9553330.15",
+                "IS1008a.C.dialog-act.s9553330.16",
+                "IS1008a.A.dialog-act.s9553330.23",
+                "IS1008a.A.dialog-act.s9553330.10"
+              ]
+            },
+            "relation_check": {
+              "result": "not_applicable",
+              "reason": "No prior related_items to assess; this is the initial problem statement in this meeting.",
+              "evidence_da_ids": []
+            },
+            "next_action": "accept"
+          }
+        ]
+      ],
+      "outcome": {
+        "item_key": "IS1008a#0",
+        "record_id": null,
+        "item_type": "problems",
+        "item_text": "The project goals are unclear, with confusion over whether the product is a remote control or a monitor, and there is no functional or technical design yet; design work has not begun.",
+        "state": "pending",
+        "recordable": false,
+        "fields": {
+          "status": "unknown",
+          "prior_context_needed": false,
+          "related_items": [],
+          "reference": []
+        },
+        "draft_fields": {
+          "status": "open",
+          "related_items": [],
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "IS1008a.C.dialog-act.s9553330.11",
+            "IS1008a.C.dialog-act.s9553330.12",
+            "IS1008a.C.dialog-act.s9553330.13",
+            "IS1008a.C.dialog-act.s9553330.14",
+            "IS1008a.C.dialog-act.s9553330.15",
+            "IS1008a.C.dialog-act.s9553330.16",
+            "IS1008a.A.dialog-act.s9553330.23",
+            "IS1008a.C.dialog-act.s9553330.9",
+            "IS1008a.A.dialog-act.s9553330.10"
+          ],
+          "owner": null,
+          "owner_basis": "missing",
+          "deadline": null,
+          "deadline_basis": "missing"
+        },
+        "checks": {
+          "statement": {
+            "result": "uncertain",
+            "reason": "finish_cites_unobserved_evidence",
+            "quotes": [],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "uncertain",
+            "reason": "unobserved_or_inexact_quote",
+            "quotes": [],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "uncertain",
+            "reason": "unobserved_or_inexact_quote",
+            "quotes": [],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related_items to assess; this is the initial problem statement in this meeting.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          }
+        },
+        "unresolved_fields": [
+          "statement",
+          "status"
+        ],
+        "observed_evidence_da_ids": [
+          "IS1008a.C.dialog-act.s9553330.11",
+          "IS1008a.C.dialog-act.s9553330.12",
+          "IS1008a.C.dialog-act.s9553330.13",
+          "IS1008a.C.dialog-act.s9553330.14",
+          "IS1008a.C.dialog-act.s9553330.15",
+          "IS1008a.C.dialog-act.s9553330.16",
+          "IS1008a.A.dialog-act.s9553330.48",
+          "IS1008a.A.dialog-act.s9553330.23",
+          "IS1008a.D.dialog-act.s9553330.11",
+          "IS1008a.A.dialog-act.s9553330.24",
+          "IS1008a.C.dialog-act.s9553330.9",
+          "IS1008a.A.dialog-act.s9553330.47",
+          "IS1008a.C.dialog-act.s9553330.10",
+          "IS1008a.C.dialog-act.s9553330.17",
+          "IS1008a.A.dialog-act.s9553330.22",
+          "IS1008a.A.dialog-act.s9553330.25",
+          "IS1008a.A.dialog-act.s9553330.46"
+        ],
+        "initial_context": {
+          "item": {
+            "type": "problems",
+            "text": "The project goals are unclear, with confusion over whether the product is a remote control or a monitor, and there is no functional or technical design yet; design work has not begun.",
+            "flags": []
+          },
+          "current_meeting": "IS1008a",
+          "earlier_meetings": [],
+          "roster": [
+            {
+              "speaker": "A",
+              "participant_id": "MIO086",
+              "role": "PM"
+            },
+            {
+              "speaker": "B",
+              "participant_id": "FIE038",
+              "role": "UI"
+            },
+            {
+              "speaker": "C",
+              "participant_id": "FIE073",
+              "role": "ID"
+            },
+            {
+              "speaker": "D",
+              "participant_id": "MIE085",
+              "role": "ME"
+            }
+          ],
+          "observed_dialogue": [
+            {
+              "da_id": "IS1008a.C.dialog-act.s9553330.11",
+              "meeting_id": "IS1008a",
+              "text": "I actually didn't know we were designing a remote control ,",
+              "participant": "FIE073",
+              "role": "ID"
+            },
+            {
+              "da_id": "IS1008a.C.dialog-act.s9553330.12",
+              "meeting_id": "IS1008a",
+              "text": "I thought we were designing a new monitor .",
+              "participant": "FIE073",
+              "role": "ID"
+            },
+            {
+              "da_id": "IS1008a.C.dialog-act.s9553330.13",
+              "meeting_id": "IS1008a",
+              "text": "Um the website I went to look at had some announcements about an introduction of a um uh some sort of a seven inch um monitor ,",
+              "participant": "FIE073",
+              "role": "ID"
+            },
+            {
+              "da_id": "IS1008a.C.dialog-act.s9553330.14",
+              "meeting_id": "IS1008a",
+              "text": "and um I understood that that was the project goal .",
+              "participant": "FIE073",
+              "role": "ID"
+            },
+            {
+              "da_id": "IS1008a.C.dialog-act.s9553330.15",
+              "meeting_id": "IS1008a",
+              "text": "So um I'm glad I didn't d do any work um ahead of time",
+              "participant": "FIE073",
+              "role": "ID"
+            },
+            {
+              "da_id": "IS1008a.C.dialog-act.s9553330.16",
+              "meeting_id": "IS1008a",
+              "text": "because uh I clearly didn't understand the project goal .",
+              "participant": "FIE073",
+              "role": "ID"
+            },
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.48",
+              "meeting_id": "IS1008a",
+              "text": "Okay .",
+              "participant": "MIO086",
+              "role": "PM"
+            },
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.23",
+              "meeting_id": "IS1008a",
+              "text": "but uh do you already have like a functional design or a technical design or <disfmarker>",
+              "participant": "MIO086",
+              "role": "PM"
+            },
+            {
+              "da_id": "IS1008a.D.dialog-act.s9553330.11",
+              "meeting_id": "IS1008a",
+              "text": "<vocalsound> Uh for the moment not yet .",
+              "participant": "MIE085",
+              "role": "ME"
+            },
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.24",
+              "meeting_id": "IS1008a",
+              "text": "Oh for the moment not yet , okay ,",
+              "participant": "MIO086",
+              "role": "PM"
+            },
+            {
+              "da_id": "IS1008a.C.dialog-act.s9553330.9",
+              "meeting_id": "IS1008a",
+              "text": "Um no , I I have not begun working on the design ,",
+              "participant": "FIE073",
+              "role": "ID"
+            },
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.47",
+              "meeting_id": "IS1008a",
+              "text": "Mm-hmm .",
+              "participant": "MIO086",
+              "role": "PM"
+            },
+            {
+              "da_id": "IS1008a.C.dialog-act.s9553330.10",
+              "participant": "FIE073",
+              "role": "ID",
+              "text": "and um I uh"
+            },
+            {
+              "da_id": "IS1008a.C.dialog-act.s9553330.17",
+              "participant": "FIE073",
+              "role": "ID",
+              "text": "Um I just did s see that we were starting a new project together"
+            },
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.22",
+              "participant": "MIO086",
+              "role": "PM",
+              "text": "Mm-hmm"
+            },
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.25",
+              "participant": "MIO086",
+              "role": "PM",
+              "text": "but uh what's what's your uh <disfmarker>"
+            },
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.46",
+              "participant": "MIO086",
+              "role": "PM",
+              "text": "Are you have a design already on this product or uh you're still working on the design ?"
+            }
+          ],
+          "peer_items": [],
+          "provisional_values": {
+            "owner": null,
+            "owner_basis": "missing",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "open",
+            "related_items": []
+          },
+          "candidate_evidence_da_ids": [
+            "IS1008a.C.dialog-act.s9553330.11",
+            "IS1008a.C.dialog-act.s9553330.12",
+            "IS1008a.C.dialog-act.s9553330.13",
+            "IS1008a.C.dialog-act.s9553330.14",
+            "IS1008a.C.dialog-act.s9553330.15",
+            "IS1008a.C.dialog-act.s9553330.16",
+            "IS1008a.A.dialog-act.s9553330.48",
+            "IS1008a.A.dialog-act.s9553330.23",
+            "IS1008a.D.dialog-act.s9553330.11",
+            "IS1008a.A.dialog-act.s9553330.24",
+            "IS1008a.C.dialog-act.s9553330.9",
+            "IS1008a.A.dialog-act.s9553330.47",
+            "IS1008a.C.dialog-act.s9553330.10"
+          ]
+        },
+        "observed_documents": [],
+        "document_evidence": [],
+        "relation_evidence": [],
+        "history": [
+          {
+            "item": "IS1008a#0",
+            "step": 1,
+            "flags": [],
+            "action": "assess_item",
+            "outcome": "invalid_action",
+            "error": "Correct these argument fields: : 'next_action' is a required property; : 'status_check' is a required property; : 'conflict_check' is a required property; : 'relation_check' is a required property",
+            "raw_tool_input": {
+              "status": "open",
+              "related_items": [],
+              "statement": {
+                "result": "pass",
+                "reason": "Dialogue confirms project goals are unclear (remote control vs monitor) and there is no functional/technical design yet; design work has not begun.",
+                "evidence_da_ids": [
+                  "IS1008a.C.dialog-act.s9553330.11",
+                  "IS1008a.C.dialog-act.s9553330.12",
+                  "IS1008a.C.dialog-act.s9553330.13",
+                  "IS1008a.C.dialog-act.s9553330.14",
+                  "IS1008a.C.dialog-act.s9553330.15",
+                  "IS1008a.C.dialog-act.s9553330.16",
+                  "IS1008a.A.dialog-act.s9553330.23",
+                  "IS1008a.C.dialog-act.s9553330.9",
+                  "IS1008a.A.dialog-act.s9553330.10"
+                ],
+                "documents": []
+              }
+            }
+          },
+          {
+            "item": "IS1008a#0",
+            "step": 2,
+            "flags": [],
+            "action": "assess_item",
+            "outcome": "checked",
+            "checks": {
+              "statement": {
+                "result": "uncertain",
+                "reason": "finish_cites_unobserved_evidence",
+                "quotes": [],
+                "fields": [
+                  "statement"
+                ]
+              },
+              "status": {
+                "result": "uncertain",
+                "reason": "unobserved_or_inexact_quote",
+                "quotes": [],
+                "fields": [
+                  "status"
+                ]
+              },
+              "conflict": {
+                "result": "uncertain",
+                "reason": "unobserved_or_inexact_quote",
+                "quotes": [],
+                "fields": []
+              },
+              "relation": {
+                "result": "not_applicable",
+                "reason": "No prior related_items to assess; this is the initial problem statement in this meeting.",
+                "quotes": [],
+                "fields": [
+                  "related_items"
+                ]
+              },
+              "owner": {
+                "result": "not_applicable",
+                "reason": "field_not_applicable",
+                "quotes": [],
+                "fields": [
+                  "owner"
+                ]
+              },
+              "deadline": {
+                "result": "not_applicable",
+                "reason": "field_not_applicable",
+                "quotes": [],
+                "fields": [
+                  "deadline"
+                ]
+              }
+            },
+            "decision": "retrieve",
+            "reason": "unresolved_checks",
+            "requested_action": "accept",
+            "proposed_fields": {
+              "status": "open",
+              "related_items": [],
+              "prior_context_needed": false,
+              "used_participant_lookup": false,
+              "evidence_da_ids": [
+                "IS1008a.C.dialog-act.s9553330.11",
+                "IS1008a.C.dialog-act.s9553330.12",
+                "IS1008a.C.dialog-act.s9553330.13",
+                "IS1008a.C.dialog-act.s9553330.14",
+                "IS1008a.C.dialog-act.s9553330.15",
+                "IS1008a.C.dialog-act.s9553330.16",
+                "IS1008a.A.dialog-act.s9553330.23",
+                "IS1008a.C.dialog-act.s9553330.9",
+                "IS1008a.A.dialog-act.s9553330.10"
+              ],
+              "owner": null,
+              "owner_basis": "missing",
+              "deadline": null,
+              "deadline_basis": "missing"
+            },
+            "submitted_checks": {
+              "statement": {
+                "result": "pass",
+                "reason": "Dialogue confirms project goals are unclear (remote control vs monitor) and there is no functional/technical design yet; design work has not begun.",
+                "quotes": [
+                  "IS1008a.C.dialog-act.s9553330.11",
+                  "IS1008a.C.dialog-act.s9553330.12",
+                  "IS1008a.C.dialog-act.s9553330.13",
+                  "IS1008a.C.dialog-act.s9553330.14",
+                  "IS1008a.C.dialog-act.s9553330.15",
+                  "IS1008a.C.dialog-act.s9553330.16",
+                  "IS1008a.A.dialog-act.s9553330.23",
+                  "IS1008a.C.dialog-act.s9553330.9",
+                  "IS1008a.A.dialog-act.s9553330.10"
+                ],
+                "fields": [
+                  "statement"
+                ]
+              },
+              "status": {
+                "result": "pass",
+                "reason": "Current dialogue shows no evidence of a launched design or acceptance of a design; status remains open with no commitments.",
+                "quotes": [
+                  "IS1008a.C.dialog-act.s9553330.11",
+                  "IS1008a.C.dialog-act.s9553330.12",
+                  "IS1008a.C.dialog-act.s9553330.13",
+                  "IS1008a.C.dialog-act.s9553330.14",
+                  "IS1008a.C.dialog-act.s9553330.15",
+                  "IS1008a.C.dialog-act.s9553330.16",
+                  "IS1008a.A.dialog-act.s9553330.23",
+                  "IS1008a.A.dialog-act.s9553330.10"
+                ],
+                "fields": [
+                  "status"
+                ]
+              },
+              "conflict": {
+                "result": "pass",
+                "reason": "No conflicting statements found in the observed dialogue about ownership or deadlines.",
+                "quotes": [
+                  "IS1008a.C.dialog-act.s9553330.11",
+                  "IS1008a.C.dialog-act.s9553330.12",
+                  "IS1008a.C.dialog-act.s9553330.13",
+                  "IS1008a.C.dialog-act.s9553330.14",
+                  "IS1008a.C.dialog-act.s9553330.15",
+                  "IS1008a.C.dialog-act.s9553330.16",
+                  "IS1008a.A.dialog-act.s9553330.23",
+                  "IS1008a.A.dialog-act.s9553330.10"
+                ],
+                "fields": []
+              },
+              "relation": {
+                "result": "not_applicable",
+                "reason": "No prior related_items to assess; this is the initial problem statement in this meeting.",
+                "quotes": [],
+                "fields": [
+                  "related_items"
+                ]
+              }
+            },
+            "submitted_assessment": {
+              "status": "open",
+              "related_items": [],
+              "statement": {
+                "result": "pass",
+                "reason": "Dialogue confirms project goals are unclear (remote control vs monitor) and there is no functional/technical design yet; design work has not begun.",
+                "evidence_da_ids": [
+                  "IS1008a.C.dialog-act.s9553330.11",
+                  "IS1008a.C.dialog-act.s9553330.12",
+                  "IS1008a.C.dialog-act.s9553330.13",
+                  "IS1008a.C.dialog-act.s9553330.14",
+                  "IS1008a.C.dialog-act.s9553330.15",
+                  "IS1008a.C.dialog-act.s9553330.16",
+                  "IS1008a.A.dialog-act.s9553330.23",
+                  "IS1008a.C.dialog-act.s9553330.9",
+                  "IS1008a.A.dialog-act.s9553330.10"
+                ]
+              },
+              "status_check": {
+                "result": "pass",
+                "reason": "Current dialogue shows no evidence of a launched design or acceptance of a design; status remains open with no commitments.",
+                "evidence_da_ids": [
+                  "IS1008a.C.dialog-act.s9553330.11",
+                  "IS1008a.C.dialog-act.s9553330.12",
+                  "IS1008a.C.dialog-act.s9553330.13",
+                  "IS1008a.C.dialog-act.s9553330.14",
+                  "IS1008a.C.dialog-act.s9553330.15",
+                  "IS1008a.C.dialog-act.s9553330.16",
+                  "IS1008a.A.dialog-act.s9553330.23",
+                  "IS1008a.A.dialog-act.s9553330.10"
+                ]
+              },
+              "conflict_check": {
+                "result": "pass",
+                "reason": "No conflicting statements found in the observed dialogue about ownership or deadlines.",
+                "evidence_da_ids": [
+                  "IS1008a.C.dialog-act.s9553330.11",
+                  "IS1008a.C.dialog-act.s9553330.12",
+                  "IS1008a.C.dialog-act.s9553330.13",
+                  "IS1008a.C.dialog-act.s9553330.14",
+                  "IS1008a.C.dialog-act.s9553330.15",
+                  "IS1008a.C.dialog-act.s9553330.16",
+                  "IS1008a.A.dialog-act.s9553330.23",
+                  "IS1008a.A.dialog-act.s9553330.10"
+                ],
+                "affected_fields": []
+              },
+              "relation_check": {
+                "result": "not_applicable",
+                "reason": "No prior related_items to assess; this is the initial problem statement in this meeting.",
+                "evidence_da_ids": []
+              },
+              "next_action": "accept"
+            },
+            "evidence_bindings": {
+              "statement": [
+                "IS1008a.C.dialog-act.s9553330.11",
+                "IS1008a.C.dialog-act.s9553330.12",
+                "IS1008a.C.dialog-act.s9553330.13",
+                "IS1008a.C.dialog-act.s9553330.14",
+                "IS1008a.C.dialog-act.s9553330.15",
+                "IS1008a.C.dialog-act.s9553330.16",
+                "IS1008a.A.dialog-act.s9553330.23",
+                "IS1008a.C.dialog-act.s9553330.9"
+              ],
+              "status": [
+                "IS1008a.C.dialog-act.s9553330.11",
+                "IS1008a.C.dialog-act.s9553330.12",
+                "IS1008a.C.dialog-act.s9553330.13",
+                "IS1008a.C.dialog-act.s9553330.14",
+                "IS1008a.C.dialog-act.s9553330.15",
+                "IS1008a.C.dialog-act.s9553330.16",
+                "IS1008a.A.dialog-act.s9553330.23"
+              ],
+              "conflict": [
+                "IS1008a.C.dialog-act.s9553330.11",
+                "IS1008a.C.dialog-act.s9553330.12",
+                "IS1008a.C.dialog-act.s9553330.13",
+                "IS1008a.C.dialog-act.s9553330.14",
+                "IS1008a.C.dialog-act.s9553330.15",
+                "IS1008a.C.dialog-act.s9553330.16",
+                "IS1008a.A.dialog-act.s9553330.23"
+              ]
+            },
+            "raw_tool_input": {
+              "status": "open",
+              "related_items": [],
+              "statement": {
+                "result": "pass",
+                "reason": "Dialogue confirms project goals are unclear (remote control vs monitor) and there is no functional/technical design yet; design work has not begun.",
+                "evidence_da_ids": [
+                  "IS1008a.C.dialog-act.s9553330.11",
+                  "IS1008a.C.dialog-act.s9553330.12",
+                  "IS1008a.C.dialog-act.s9553330.13",
+                  "IS1008a.C.dialog-act.s9553330.14",
+                  "IS1008a.C.dialog-act.s9553330.15",
+                  "IS1008a.C.dialog-act.s9553330.16",
+                  "IS1008a.A.dialog-act.s9553330.23",
+                  "IS1008a.C.dialog-act.s9553330.9",
+                  "IS1008a.A.dialog-act.s9553330.10"
+                ]
+              },
+              "status_check": {
+                "result": "pass",
+                "reason": "Current dialogue shows no evidence of a launched design or acceptance of a design; status remains open with no commitments.",
+                "evidence_da_ids": [
+                  "IS1008a.C.dialog-act.s9553330.11",
+                  "IS1008a.C.dialog-act.s9553330.12",
+                  "IS1008a.C.dialog-act.s9553330.13",
+                  "IS1008a.C.dialog-act.s9553330.14",
+                  "IS1008a.C.dialog-act.s9553330.15",
+                  "IS1008a.C.dialog-act.s9553330.16",
+                  "IS1008a.A.dialog-act.s9553330.23",
+                  "IS1008a.A.dialog-act.s9553330.10"
+                ]
+              },
+              "conflict_check": {
+                "result": "pass",
+                "reason": "No conflicting statements found in the observed dialogue about ownership or deadlines.",
+                "evidence_da_ids": [
+                  "IS1008a.C.dialog-act.s9553330.11",
+                  "IS1008a.C.dialog-act.s9553330.12",
+                  "IS1008a.C.dialog-act.s9553330.13",
+                  "IS1008a.C.dialog-act.s9553330.14",
+                  "IS1008a.C.dialog-act.s9553330.15",
+                  "IS1008a.C.dialog-act.s9553330.16",
+                  "IS1008a.A.dialog-act.s9553330.23",
+                  "IS1008a.A.dialog-act.s9553330.10"
+                ]
+              },
+              "relation_check": {
+                "result": "not_applicable",
+                "reason": "No prior related_items to assess; this is the initial problem statement in this meeting.",
+                "evidence_da_ids": []
+              },
+              "next_action": "accept"
+            },
+            "protocol_normalizations": [
+              "empty_affected_fields_for_no_conflict"
+            ]
+          },
+          {
+            "item": "IS1008a#0",
+            "step": 2,
+            "flags": [],
+            "action": "stop",
+            "outcome": "pending",
+            "termination_reason": "step_limit",
+            "unresolved_fields": [
+              "statement",
+              "status"
+            ]
+          }
+        ],
+        "lookups": 0,
+        "termination_reason": "step_limit",
+        "clarifications": [
+          {
+            "request_id": "7d9945d5324ea9e8",
+            "item_key": "IS1008a#0",
+            "record_id": null,
+            "field": "statement",
+            "question": "Should this be recorded as a substantive, supported problems item?",
+            "item_text": "The project goals are unclear, with confusion over whether the product is a remote control or a monitor, and there is no functional or technical design yet; design work has not begun.",
+            "reason": "finish_cites_unobserved_evidence; unobserved_or_inexact_quote",
+            "evidence_da_ids": [],
+            "available_evidence_da_ids": [
+              "IS1008a.C.dialog-act.s9553330.11",
+              "IS1008a.C.dialog-act.s9553330.12",
+              "IS1008a.C.dialog-act.s9553330.13",
+              "IS1008a.C.dialog-act.s9553330.14",
+              "IS1008a.C.dialog-act.s9553330.15",
+              "IS1008a.C.dialog-act.s9553330.16",
+              "IS1008a.A.dialog-act.s9553330.48",
+              "IS1008a.A.dialog-act.s9553330.23",
+              "IS1008a.D.dialog-act.s9553330.11",
+              "IS1008a.A.dialog-act.s9553330.24",
+              "IS1008a.C.dialog-act.s9553330.9",
+              "IS1008a.A.dialog-act.s9553330.47",
+              "IS1008a.C.dialog-act.s9553330.10",
+              "IS1008a.C.dialog-act.s9553330.17",
+              "IS1008a.A.dialog-act.s9553330.22",
+              "IS1008a.A.dialog-act.s9553330.25",
+              "IS1008a.A.dialog-act.s9553330.46"
+            ],
+            "status": "open",
+            "termination_reason": "step_limit"
+          },
+          {
+            "request_id": "38ffb16758128c28",
+            "item_key": "IS1008a#0",
+            "record_id": null,
+            "field": "status",
+            "question": "What is this item's status at the end of the current meeting?",
+            "item_text": "The project goals are unclear, with confusion over whether the product is a remote control or a monitor, and there is no functional or technical design yet; design work has not begun.",
+            "reason": "unobserved_or_inexact_quote",
+            "evidence_da_ids": [],
+            "available_evidence_da_ids": [
+              "IS1008a.C.dialog-act.s9553330.11",
+              "IS1008a.C.dialog-act.s9553330.12",
+              "IS1008a.C.dialog-act.s9553330.13",
+              "IS1008a.C.dialog-act.s9553330.14",
+              "IS1008a.C.dialog-act.s9553330.15",
+              "IS1008a.C.dialog-act.s9553330.16",
+              "IS1008a.A.dialog-act.s9553330.48",
+              "IS1008a.A.dialog-act.s9553330.23",
+              "IS1008a.D.dialog-act.s9553330.11",
+              "IS1008a.A.dialog-act.s9553330.24",
+              "IS1008a.C.dialog-act.s9553330.9",
+              "IS1008a.A.dialog-act.s9553330.47",
+              "IS1008a.C.dialog-act.s9553330.10",
+              "IS1008a.C.dialog-act.s9553330.17",
+              "IS1008a.A.dialog-act.s9553330.22",
+              "IS1008a.A.dialog-act.s9553330.25",
+              "IS1008a.A.dialog-act.s9553330.46"
+            ],
+            "status": "open",
+            "termination_reason": "step_limit"
+          }
+        ]
+      },
+      "record": [],
+      "scope": "Bounded replay of existing assessment/tool choices, not a new live run or human semantic validation."
+    },
+    {
+      "item_key": "TS3006b#12",
+      "residual": "confidence",
+      "actual_api_calls": 0,
+      "source_trace_sha256": "d92d327e11d3e79646856130f2db63727a378a4cdd6707301bec5928ddaaa7e4",
+      "replayed_choices": [
+        [
+          "assess_item",
+          {
+            "status": "unknown",
+            "related_items": [],
+            "statement": {
+              "result": "pass",
+              "reason": "The dialogue supports a design direction to hide advanced features behind a screen and expose only basic functions via a screen menu for configuration, with explicit references to basic functions and screen-based configuration.",
+              "evidence_da_ids": [
+                "TS3006b.B.dialog-act.dharshi.72",
+                "TS3006b.B.dialog-act.dharshi.73",
+                "TS3006b.A.dialog-act.dharshi.86",
+                "TS3006b.A.dialog-act.dharshi.87",
+                "TS3006b.D.dialog-act.dharshi.139",
+                "TS3006b.D.dialog-act.dharshi.137"
+              ]
+            },
+            "status_check": {
+              "result": "pass",
+              "reason": "Current dialogue endorses using a screen menu for configuration, aligning with the stated decision.",
+              "evidence_da_ids": [
+                "TS3006b.B.dialog-act.dharshi.72",
+                "TS3006b.B.dialog-act.dharshi.73",
+                "TS3006b.A.dialog-act.dharshi.86",
+                "TS3006b.A.dialog-act.dharshi.87",
+                "TS3006b.D.dialog-act.dharshi.139",
+                "TS3006b.D.dialog-act.dharshi.137"
+              ]
+            },
+            "confidence": 0.0,
+            "conflict_check": {
+              "result": "uncertain",
+              "reason": "There is an open problem about screen requirements and scope (e.g., 'what should the screen do' and 'requirements to satisfy'), which could conflict with the proposed simplification, so evidence does not fully resolve the constraint.",
+              "evidence_da_ids": [
+                "TS3006b.B.dialog-act.dharshi.72",
+                "TS3006b.B.dialog-act.dharshi.73",
+                "TS3006b.D.dialog-act.dharshi.139",
+                "TS3006b.D.dialog-act.dharshi.137",
+                "TS3006b.A.dialog-act.dharshi.86",
+                "TS3006b.A.dialog-act.dharshi.87"
+              ],
+              "affected_fields": [
+                "statement",
+                "owner",
+                "deadline",
+                "status"
+              ]
+            },
+            "relation_check": {
+              "result": "uncertain",
+              "reason": "No clearly identified prior item to relate; cannot determine the relationship to earlier TS3006a without explicit linkage.",
+              "evidence_da_ids": [
+                "TS3006b.D.dialog-act.dharshi.139",
+                "TS3006b.A.dialog-act.dharshi.87"
+              ]
+            },
+            "next_action": "request_clarification"
+          }
+        ]
+      ],
+      "outcome": {
+        "item_key": "TS3006b#12",
+        "record_id": null,
+        "item_type": "decisions",
+        "item_text": "We should hide the advanced features behind the screen and expose only the basic functions on the device, using a screen menu for configuration.",
+        "state": "pending",
+        "recordable": false,
+        "fields": {
+          "status": "unknown",
+          "prior_context_needed": false,
+          "related_items": [],
+          "reference": [
+            {
+              "source_type": "dialogue",
+              "source": "ami-corpus/dialogueActs/TS3006b.json",
+              "locator": "TS3006b.B.dialog-act.dharshi.72"
+            },
+            {
+              "source_type": "dialogue",
+              "source": "ami-corpus/dialogueActs/TS3006b.json",
+              "locator": "TS3006b.B.dialog-act.dharshi.73"
+            },
+            {
+              "source_type": "dialogue",
+              "source": "ami-corpus/dialogueActs/TS3006b.json",
+              "locator": "TS3006b.A.dialog-act.dharshi.86"
+            },
+            {
+              "source_type": "dialogue",
+              "source": "ami-corpus/dialogueActs/TS3006b.json",
+              "locator": "TS3006b.A.dialog-act.dharshi.87"
+            },
+            {
+              "source_type": "dialogue",
+              "source": "ami-corpus/dialogueActs/TS3006b.json",
+              "locator": "TS3006b.D.dialog-act.dharshi.139"
+            },
+            {
+              "source_type": "dialogue",
+              "source": "ami-corpus/dialogueActs/TS3006b.json",
+              "locator": "TS3006b.D.dialog-act.dharshi.137"
+            }
+          ]
+        },
+        "draft_fields": {
+          "status": "unknown",
+          "related_items": [],
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "TS3006b.B.dialog-act.dharshi.72",
+            "TS3006b.B.dialog-act.dharshi.73",
+            "TS3006b.A.dialog-act.dharshi.86",
+            "TS3006b.A.dialog-act.dharshi.87",
+            "TS3006b.D.dialog-act.dharshi.139",
+            "TS3006b.D.dialog-act.dharshi.137"
+          ],
+          "owner": null,
+          "owner_basis": "missing",
+          "deadline": null,
+          "deadline_basis": "missing"
+        },
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "The dialogue supports a design direction to hide advanced features behind a screen and expose only basic functions via a screen menu for configuration, with explicit references to basic functions and screen-based configuration.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.B.dialog-act.dharshi.72",
+                "quote": "Uh yeah the basic functions ."
+              },
+              {
+                "da_id": "TS3006b.B.dialog-act.dharshi.73",
+                "quote": "Um yeah only use a extra function if they are really needed ."
+              },
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.86",
+                "quote": "so maybe you can hide them or something ."
+              },
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.87",
+                "quote": "Yeah you make a screen menu or something ."
+              },
+              {
+                "da_id": "TS3006b.D.dialog-act.dharshi.139",
+                "quote": "yeah screen menu to to to uh to do that ,"
+              },
+              {
+                "da_id": "TS3006b.D.dialog-act.dharshi.137",
+                "quote": "Yeah well what what we can do with the screen is is all the the configuration options , you can put that in the screen ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Current dialogue endorses using a screen menu for configuration, aligning with the stated decision.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.B.dialog-act.dharshi.72",
+                "quote": "Uh yeah the basic functions ."
+              },
+              {
+                "da_id": "TS3006b.B.dialog-act.dharshi.73",
+                "quote": "Um yeah only use a extra function if they are really needed ."
+              },
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.86",
+                "quote": "so maybe you can hide them or something ."
+              },
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.87",
+                "quote": "Yeah you make a screen menu or something ."
+              },
+              {
+                "da_id": "TS3006b.D.dialog-act.dharshi.139",
+                "quote": "yeah screen menu to to to uh to do that ,"
+              },
+              {
+                "da_id": "TS3006b.D.dialog-act.dharshi.137",
+                "quote": "Yeah well what what we can do with the screen is is all the the configuration options , you can put that in the screen ."
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "uncertain",
+            "reason": "There is an open problem about screen requirements and scope (e.g., 'what should the screen do' and 'requirements to satisfy'), which could conflict with the proposed simplification, so evidence does not fully resolve the constraint.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.B.dialog-act.dharshi.72",
+                "quote": "Uh yeah the basic functions ."
+              },
+              {
+                "da_id": "TS3006b.B.dialog-act.dharshi.73",
+                "quote": "Um yeah only use a extra function if they are really needed ."
+              },
+              {
+                "da_id": "TS3006b.D.dialog-act.dharshi.139",
+                "quote": "yeah screen menu to to to uh to do that ,"
+              },
+              {
+                "da_id": "TS3006b.D.dialog-act.dharshi.137",
+                "quote": "Yeah well what what we can do with the screen is is all the the configuration options , you can put that in the screen ."
+              },
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.86",
+                "quote": "so maybe you can hide them or something ."
+              },
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.87",
+                "quote": "Yeah you make a screen menu or something ."
+              }
+            ],
+            "fields": [
+              "statement",
+              "owner",
+              "deadline",
+              "status"
+            ]
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "prior_context_not_checked",
+            "quotes": [
+              {
+                "da_id": "TS3006b.D.dialog-act.dharshi.139",
+                "quote": "yeah screen menu to to to uh to do that ,"
+              },
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.87",
+                "quote": "Yeah you make a screen menu or something ."
+              }
+            ],
+            "fields": [
+              "related_items"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          }
+        },
+        "unresolved_fields": [
+          "statement",
+          "owner",
+          "deadline",
+          "status",
+          "related_items"
+        ],
+        "observed_evidence_da_ids": [
+          "TS3006b.B.dialog-act.dharshi.71",
+          "TS3006b.D.dialog-act.dharshi.134",
+          "TS3006b.A.dialog-act.dharshi.84",
+          "TS3006b.B.dialog-act.dharshi.72",
+          "TS3006b.B.dialog-act.dharshi.73",
+          "TS3006b.A.dialog-act.dharshi.85",
+          "TS3006b.D.dialog-act.dharshi.135",
+          "TS3006b.A.dialog-act.dharshi.86",
+          "TS3006b.B.dialog-act.dharshi.74",
+          "TS3006b.D.dialog-act.dharshi.137",
+          "TS3006b.A.dialog-act.dharshi.87",
+          "TS3006b.D.dialog-act.dharshi.138",
+          "TS3006b.A.dialog-act.dharshi.83",
+          "TS3006b.D.dialog-act.dharshi.139"
+        ],
+        "initial_context": {
+          "item": {
+            "type": "decisions",
+            "text": "We should hide the advanced features behind the screen and expose only the basic functions on the device, using a screen menu for configuration.",
+            "flags": [
+              "POSSIBLE_PRIOR"
+            ]
+          },
+          "current_meeting": "TS3006b",
+          "earlier_meetings": [
+            "TS3006a"
+          ],
+          "roster": [
+            {
+              "speaker": "A",
+              "participant_id": "MTD021PM",
+              "role": "PM"
+            },
+            {
+              "speaker": "B",
+              "participant_id": "MTD023UID",
+              "role": "UI"
+            },
+            {
+              "speaker": "C",
+              "participant_id": "MTD022ID",
+              "role": "ID"
+            },
+            {
+              "speaker": "D",
+              "participant_id": "MTD024ME",
+              "role": "ME"
+            }
+          ],
+          "observed_dialogue": [
+            {
+              "da_id": "TS3006b.B.dialog-act.dharshi.71",
+              "meeting_id": "TS3006b",
+              "text": "We have to make it fashionable . Like you uh said uh before .",
+              "participant": "MTD023UID",
+              "role": "UI"
+            },
+            {
+              "da_id": "TS3006b.D.dialog-act.dharshi.134",
+              "meeting_id": "TS3006b",
+              "text": "Yeah .",
+              "participant": "MTD024ME",
+              "role": "ME"
+            },
+            {
+              "da_id": "TS3006b.A.dialog-act.dharshi.84",
+              "meeting_id": "TS3006b",
+              "text": "Yeah .",
+              "participant": "MTD021PM",
+              "role": "PM"
+            },
+            {
+              "da_id": "TS3006b.B.dialog-act.dharshi.72",
+              "meeting_id": "TS3006b",
+              "text": "Uh yeah the basic functions .",
+              "participant": "MTD023UID",
+              "role": "UI"
+            },
+            {
+              "da_id": "TS3006b.B.dialog-act.dharshi.73",
+              "meeting_id": "TS3006b",
+              "text": "Um yeah only use a extra function if they are really needed .",
+              "participant": "MTD023UID",
+              "role": "UI"
+            },
+            {
+              "da_id": "TS3006b.A.dialog-act.dharshi.85",
+              "meeting_id": "TS3006b",
+              "text": "Yeah",
+              "participant": "MTD021PM",
+              "role": "PM"
+            },
+            {
+              "da_id": "TS3006b.D.dialog-act.dharshi.135",
+              "meeting_id": "TS3006b",
+              "text": "Yeah .",
+              "participant": "MTD024ME",
+              "role": "ME"
+            },
+            {
+              "da_id": "TS3006b.A.dialog-act.dharshi.86",
+              "meeting_id": "TS3006b",
+              "text": "so maybe you can hide them or something .",
+              "participant": "MTD021PM",
+              "role": "PM"
+            },
+            {
+              "da_id": "TS3006b.B.dialog-act.dharshi.74",
+              "meeting_id": "TS3006b",
+              "text": "Yeah .",
+              "participant": "MTD023UID",
+              "role": "UI"
+            },
+            {
+              "da_id": "TS3006b.D.dialog-act.dharshi.137",
+              "meeting_id": "TS3006b",
+              "text": "Yeah well what what we can do with the screen is is all the the configuration options , you can put that in the screen .",
+              "participant": "MTD024ME",
+              "role": "ME"
+            },
+            {
+              "da_id": "TS3006b.A.dialog-act.dharshi.87",
+              "meeting_id": "TS3006b",
+              "text": "Yeah you make a screen menu or something .",
+              "participant": "MTD021PM",
+              "role": "PM"
+            },
+            {
+              "da_id": "TS3006b.D.dialog-act.dharshi.138",
+              "meeting_id": "TS3006b",
+              "text": "And the and the <disfmarker>",
+              "participant": "MTD024ME",
+              "role": "ME"
+            },
+            {
+              "da_id": "TS3006b.A.dialog-act.dharshi.83",
+              "participant": "MTD021PM",
+              "role": "PM",
+              "text": "Okay ."
+            },
+            {
+              "da_id": "TS3006b.D.dialog-act.dharshi.139",
+              "participant": "MTD024ME",
+              "role": "ME",
+              "text": "yeah screen menu to to to uh to do that ,"
+            }
+          ],
+          "peer_items": [
+            {
+              "item_key": "TS3006b#0",
+              "type": "actions",
+              "text": "The UI Designer will design a menu for all functions."
+            },
+            {
+              "item_key": "TS3006b#1",
+              "type": "problems",
+              "text": "The team has not clarified what the screen should do or what requirements it should satisfy."
+            },
+            {
+              "item_key": "TS3006b#2",
+              "type": "problems",
+              "text": "The session shows language and clarity issues, with remarks like 'I have no idea' and 'not really English' hindering alignment."
+            },
+            {
+              "item_key": "TS3006b#3",
+              "type": "actions",
+              "text": "The UI will design the basic function menu for the LCD screen."
+            },
+            {
+              "item_key": "TS3006b#4",
+              "type": "actions",
+              "text": "The UI will list the functions to be included on the screen menu."
+            },
+            {
+              "item_key": "TS3006b#5",
+              "type": "problems",
+              "text": "The layout as designed is bending and not working well; it is causing usability and stability issues in the prototype."
+            },
+            {
+              "item_key": "TS3006b#6",
+              "type": "actions",
+              "text": "The Project Manager will write the meeting minutes."
+            },
+            {
+              "item_key": "TS3006b#7",
+              "type": "actions",
+              "text": "The UI will create a nice multi-page menu for the LCD screen."
+            },
+            {
+              "item_key": "TS3006b#8",
+              "type": "decisions",
+              "text": "The group proposed that the new product should reach new markets by targeting customers below forty."
+            },
+            {
+              "item_key": "TS3006b#9",
+              "type": "decisions",
+              "text": "We will remove content for users under 16 and set the minimum age to sixteen, with advanced options available."
+            },
+            {
+              "item_key": "TS3006b#10",
+              "type": "decisions",
+              "text": "Target age group for the remote is sixteen to forty (16–40 years)."
+            },
+            {
+              "item_key": "TS3006b#11",
+              "type": "decisions",
+              "text": "We will limit control to a single device (one television) to simplify the system."
+            }
+          ],
+          "provisional_values": {
+            "owner": null,
+            "owner_basis": "missing",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "adopted",
+            "related_items": []
+          },
+          "candidate_evidence_da_ids": [
+            "TS3006b.B.dialog-act.dharshi.71",
+            "TS3006b.D.dialog-act.dharshi.134",
+            "TS3006b.A.dialog-act.dharshi.84",
+            "TS3006b.B.dialog-act.dharshi.72",
+            "TS3006b.B.dialog-act.dharshi.73",
+            "TS3006b.A.dialog-act.dharshi.85",
+            "TS3006b.D.dialog-act.dharshi.135",
+            "TS3006b.A.dialog-act.dharshi.86",
+            "TS3006b.B.dialog-act.dharshi.74",
+            "TS3006b.D.dialog-act.dharshi.137",
+            "TS3006b.A.dialog-act.dharshi.87",
+            "TS3006b.D.dialog-act.dharshi.138",
+            "TS3006b.D.dialog-act.dharshi.139"
+          ]
+        },
+        "observed_documents": [],
+        "document_evidence": [],
+        "relation_evidence": [],
+        "history": [
+          {
+            "item": "TS3006b#12",
+            "step": 1,
+            "flags": [
+              "POSSIBLE_PRIOR"
+            ],
+            "action": "assess_item",
+            "outcome": "checked",
+            "checks": {
+              "statement": {
+                "result": "pass",
+                "reason": "The dialogue supports a design direction to hide advanced features behind a screen and expose only basic functions via a screen menu for configuration, with explicit references to basic functions and screen-based configuration.",
+                "quotes": [
+                  {
+                    "da_id": "TS3006b.B.dialog-act.dharshi.72",
+                    "quote": "Uh yeah the basic functions ."
+                  },
+                  {
+                    "da_id": "TS3006b.B.dialog-act.dharshi.73",
+                    "quote": "Um yeah only use a extra function if they are really needed ."
+                  },
+                  {
+                    "da_id": "TS3006b.A.dialog-act.dharshi.86",
+                    "quote": "so maybe you can hide them or something ."
+                  },
+                  {
+                    "da_id": "TS3006b.A.dialog-act.dharshi.87",
+                    "quote": "Yeah you make a screen menu or something ."
+                  },
+                  {
+                    "da_id": "TS3006b.D.dialog-act.dharshi.139",
+                    "quote": "yeah screen menu to to to uh to do that ,"
+                  },
+                  {
+                    "da_id": "TS3006b.D.dialog-act.dharshi.137",
+                    "quote": "Yeah well what what we can do with the screen is is all the the configuration options , you can put that in the screen ."
+                  }
+                ],
+                "fields": [
+                  "statement"
+                ]
+              },
+              "status": {
+                "result": "pass",
+                "reason": "Current dialogue endorses using a screen menu for configuration, aligning with the stated decision.",
+                "quotes": [
+                  {
+                    "da_id": "TS3006b.B.dialog-act.dharshi.72",
+                    "quote": "Uh yeah the basic functions ."
+                  },
+                  {
+                    "da_id": "TS3006b.B.dialog-act.dharshi.73",
+                    "quote": "Um yeah only use a extra function if they are really needed ."
+                  },
+                  {
+                    "da_id": "TS3006b.A.dialog-act.dharshi.86",
+                    "quote": "so maybe you can hide them or something ."
+                  },
+                  {
+                    "da_id": "TS3006b.A.dialog-act.dharshi.87",
+                    "quote": "Yeah you make a screen menu or something ."
+                  },
+                  {
+                    "da_id": "TS3006b.D.dialog-act.dharshi.139",
+                    "quote": "yeah screen menu to to to uh to do that ,"
+                  },
+                  {
+                    "da_id": "TS3006b.D.dialog-act.dharshi.137",
+                    "quote": "Yeah well what what we can do with the screen is is all the the configuration options , you can put that in the screen ."
+                  }
+                ],
+                "fields": [
+                  "status"
+                ]
+              },
+              "conflict": {
+                "result": "uncertain",
+                "reason": "There is an open problem about screen requirements and scope (e.g., 'what should the screen do' and 'requirements to satisfy'), which could conflict with the proposed simplification, so evidence does not fully resolve the constraint.",
+                "quotes": [
+                  {
+                    "da_id": "TS3006b.B.dialog-act.dharshi.72",
+                    "quote": "Uh yeah the basic functions ."
+                  },
+                  {
+                    "da_id": "TS3006b.B.dialog-act.dharshi.73",
+                    "quote": "Um yeah only use a extra function if they are really needed ."
+                  },
+                  {
+                    "da_id": "TS3006b.D.dialog-act.dharshi.139",
+                    "quote": "yeah screen menu to to to uh to do that ,"
+                  },
+                  {
+                    "da_id": "TS3006b.D.dialog-act.dharshi.137",
+                    "quote": "Yeah well what what we can do with the screen is is all the the configuration options , you can put that in the screen ."
+                  },
+                  {
+                    "da_id": "TS3006b.A.dialog-act.dharshi.86",
+                    "quote": "so maybe you can hide them or something ."
+                  },
+                  {
+                    "da_id": "TS3006b.A.dialog-act.dharshi.87",
+                    "quote": "Yeah you make a screen menu or something ."
+                  }
+                ],
+                "fields": [
+                  "statement",
+                  "owner",
+                  "deadline",
+                  "status"
+                ]
+              },
+              "relation": {
+                "result": "uncertain",
+                "reason": "prior_context_not_checked",
+                "quotes": [
+                  {
+                    "da_id": "TS3006b.D.dialog-act.dharshi.139",
+                    "quote": "yeah screen menu to to to uh to do that ,"
+                  },
+                  {
+                    "da_id": "TS3006b.A.dialog-act.dharshi.87",
+                    "quote": "Yeah you make a screen menu or something ."
+                  }
+                ],
+                "fields": [
+                  "related_items"
+                ]
+              },
+              "owner": {
+                "result": "not_applicable",
+                "reason": "field_not_applicable",
+                "quotes": [],
+                "fields": [
+                  "owner"
+                ]
+              },
+              "deadline": {
+                "result": "not_applicable",
+                "reason": "field_not_applicable",
+                "quotes": [],
+                "fields": [
+                  "deadline"
+                ]
+              }
+            },
+            "decision": "request_clarification",
+            "reason": "unresolved_checks",
+            "requested_action": "request_clarification",
+            "proposed_fields": {
+              "status": "unknown",
+              "related_items": [],
+              "prior_context_needed": false,
+              "used_participant_lookup": false,
+              "evidence_da_ids": [
+                "TS3006b.B.dialog-act.dharshi.72",
+                "TS3006b.B.dialog-act.dharshi.73",
+                "TS3006b.A.dialog-act.dharshi.86",
+                "TS3006b.A.dialog-act.dharshi.87",
+                "TS3006b.D.dialog-act.dharshi.139",
+                "TS3006b.D.dialog-act.dharshi.137"
+              ],
+              "owner": null,
+              "owner_basis": "missing",
+              "deadline": null,
+              "deadline_basis": "missing"
+            },
+            "submitted_checks": {
+              "statement": {
+                "result": "pass",
+                "reason": "The dialogue supports a design direction to hide advanced features behind a screen and expose only basic functions via a screen menu for configuration, with explicit references to basic functions and screen-based configuration.",
+                "quotes": [
+                  "TS3006b.B.dialog-act.dharshi.72",
+                  "TS3006b.B.dialog-act.dharshi.73",
+                  "TS3006b.A.dialog-act.dharshi.86",
+                  "TS3006b.A.dialog-act.dharshi.87",
+                  "TS3006b.D.dialog-act.dharshi.139",
+                  "TS3006b.D.dialog-act.dharshi.137"
+                ],
+                "fields": [
+                  "statement"
+                ]
+              },
+              "status": {
+                "result": "pass",
+                "reason": "Current dialogue endorses using a screen menu for configuration, aligning with the stated decision.",
+                "quotes": [
+                  "TS3006b.B.dialog-act.dharshi.72",
+                  "TS3006b.B.dialog-act.dharshi.73",
+                  "TS3006b.A.dialog-act.dharshi.86",
+                  "TS3006b.A.dialog-act.dharshi.87",
+                  "TS3006b.D.dialog-act.dharshi.139",
+                  "TS3006b.D.dialog-act.dharshi.137"
+                ],
+                "fields": [
+                  "status"
+                ]
+              },
+              "conflict": {
+                "result": "uncertain",
+                "reason": "There is an open problem about screen requirements and scope (e.g., 'what should the screen do' and 'requirements to satisfy'), which could conflict with the proposed simplification, so evidence does not fully resolve the constraint.",
+                "quotes": [
+                  "TS3006b.B.dialog-act.dharshi.72",
+                  "TS3006b.B.dialog-act.dharshi.73",
+                  "TS3006b.D.dialog-act.dharshi.139",
+                  "TS3006b.D.dialog-act.dharshi.137",
+                  "TS3006b.A.dialog-act.dharshi.86",
+                  "TS3006b.A.dialog-act.dharshi.87"
+                ],
+                "fields": [
+                  "statement",
+                  "owner",
+                  "deadline",
+                  "status"
+                ]
+              },
+              "relation": {
+                "result": "uncertain",
+                "reason": "No clearly identified prior item to relate; cannot determine the relationship to earlier TS3006a without explicit linkage.",
+                "quotes": [
+                  "TS3006b.D.dialog-act.dharshi.139",
+                  "TS3006b.A.dialog-act.dharshi.87"
+                ],
+                "fields": [
+                  "related_items"
+                ]
+              }
+            },
+            "submitted_assessment": {
+              "status": "unknown",
+              "related_items": [],
+              "statement": {
+                "result": "pass",
+                "reason": "The dialogue supports a design direction to hide advanced features behind a screen and expose only basic functions via a screen menu for configuration, with explicit references to basic functions and screen-based configuration.",
+                "evidence_da_ids": [
+                  "TS3006b.B.dialog-act.dharshi.72",
+                  "TS3006b.B.dialog-act.dharshi.73",
+                  "TS3006b.A.dialog-act.dharshi.86",
+                  "TS3006b.A.dialog-act.dharshi.87",
+                  "TS3006b.D.dialog-act.dharshi.139",
+                  "TS3006b.D.dialog-act.dharshi.137"
+                ]
+              },
+              "status_check": {
+                "result": "pass",
+                "reason": "Current dialogue endorses using a screen menu for configuration, aligning with the stated decision.",
+                "evidence_da_ids": [
+                  "TS3006b.B.dialog-act.dharshi.72",
+                  "TS3006b.B.dialog-act.dharshi.73",
+                  "TS3006b.A.dialog-act.dharshi.86",
+                  "TS3006b.A.dialog-act.dharshi.87",
+                  "TS3006b.D.dialog-act.dharshi.139",
+                  "TS3006b.D.dialog-act.dharshi.137"
+                ]
+              },
+              "conflict_check": {
+                "result": "uncertain",
+                "reason": "There is an open problem about screen requirements and scope (e.g., 'what should the screen do' and 'requirements to satisfy'), which could conflict with the proposed simplification, so evidence does not fully resolve the constraint.",
+                "evidence_da_ids": [
+                  "TS3006b.B.dialog-act.dharshi.72",
+                  "TS3006b.B.dialog-act.dharshi.73",
+                  "TS3006b.D.dialog-act.dharshi.139",
+                  "TS3006b.D.dialog-act.dharshi.137",
+                  "TS3006b.A.dialog-act.dharshi.86",
+                  "TS3006b.A.dialog-act.dharshi.87"
+                ],
+                "affected_fields": [
+                  "statement",
+                  "owner",
+                  "deadline",
+                  "status"
+                ]
+              },
+              "relation_check": {
+                "result": "uncertain",
+                "reason": "No clearly identified prior item to relate; cannot determine the relationship to earlier TS3006a without explicit linkage.",
+                "evidence_da_ids": [
+                  "TS3006b.D.dialog-act.dharshi.139",
+                  "TS3006b.A.dialog-act.dharshi.87"
+                ]
+              },
+              "next_action": "request_clarification"
+            },
+            "evidence_bindings": {
+              "statement": [
+                "TS3006b.B.dialog-act.dharshi.72",
+                "TS3006b.B.dialog-act.dharshi.73",
+                "TS3006b.A.dialog-act.dharshi.86",
+                "TS3006b.A.dialog-act.dharshi.87",
+                "TS3006b.D.dialog-act.dharshi.139",
+                "TS3006b.D.dialog-act.dharshi.137"
+              ],
+              "status": [
+                "TS3006b.B.dialog-act.dharshi.72",
+                "TS3006b.B.dialog-act.dharshi.73",
+                "TS3006b.A.dialog-act.dharshi.86",
+                "TS3006b.A.dialog-act.dharshi.87",
+                "TS3006b.D.dialog-act.dharshi.139",
+                "TS3006b.D.dialog-act.dharshi.137"
+              ],
+              "conflict": [
+                "TS3006b.B.dialog-act.dharshi.72",
+                "TS3006b.B.dialog-act.dharshi.73",
+                "TS3006b.D.dialog-act.dharshi.139",
+                "TS3006b.D.dialog-act.dharshi.137",
+                "TS3006b.A.dialog-act.dharshi.86",
+                "TS3006b.A.dialog-act.dharshi.87"
+              ],
+              "relation": [
+                "TS3006b.D.dialog-act.dharshi.139",
+                "TS3006b.A.dialog-act.dharshi.87"
+              ]
+            },
+            "raw_tool_input": {
+              "status": "unknown",
+              "related_items": [],
+              "statement": {
+                "result": "pass",
+                "reason": "The dialogue supports a design direction to hide advanced features behind a screen and expose only basic functions via a screen menu for configuration, with explicit references to basic functions and screen-based configuration.",
+                "evidence_da_ids": [
+                  "TS3006b.B.dialog-act.dharshi.72",
+                  "TS3006b.B.dialog-act.dharshi.73",
+                  "TS3006b.A.dialog-act.dharshi.86",
+                  "TS3006b.A.dialog-act.dharshi.87",
+                  "TS3006b.D.dialog-act.dharshi.139",
+                  "TS3006b.D.dialog-act.dharshi.137"
+                ]
+              },
+              "status_check": {
+                "result": "pass",
+                "reason": "Current dialogue endorses using a screen menu for configuration, aligning with the stated decision.",
+                "evidence_da_ids": [
+                  "TS3006b.B.dialog-act.dharshi.72",
+                  "TS3006b.B.dialog-act.dharshi.73",
+                  "TS3006b.A.dialog-act.dharshi.86",
+                  "TS3006b.A.dialog-act.dharshi.87",
+                  "TS3006b.D.dialog-act.dharshi.139",
+                  "TS3006b.D.dialog-act.dharshi.137"
+                ]
+              },
+              "confidence": 0.0,
+              "conflict_check": {
+                "result": "uncertain",
+                "reason": "There is an open problem about screen requirements and scope (e.g., 'what should the screen do' and 'requirements to satisfy'), which could conflict with the proposed simplification, so evidence does not fully resolve the constraint.",
+                "evidence_da_ids": [
+                  "TS3006b.B.dialog-act.dharshi.72",
+                  "TS3006b.B.dialog-act.dharshi.73",
+                  "TS3006b.D.dialog-act.dharshi.139",
+                  "TS3006b.D.dialog-act.dharshi.137",
+                  "TS3006b.A.dialog-act.dharshi.86",
+                  "TS3006b.A.dialog-act.dharshi.87"
+                ],
+                "affected_fields": [
+                  "statement",
+                  "owner",
+                  "deadline",
+                  "status"
+                ]
+              },
+              "relation_check": {
+                "result": "uncertain",
+                "reason": "No clearly identified prior item to relate; cannot determine the relationship to earlier TS3006a without explicit linkage.",
+                "evidence_da_ids": [
+                  "TS3006b.D.dialog-act.dharshi.139",
+                  "TS3006b.A.dialog-act.dharshi.87"
+                ]
+              },
+              "next_action": "request_clarification"
+            },
+            "protocol_normalizations": [
+              "ignored_advisory_confidence"
+            ]
+          },
+          {
+            "item": "TS3006b#12",
+            "step": 1,
+            "flags": [
+              "POSSIBLE_PRIOR"
+            ],
+            "action": "stop",
+            "outcome": "pending",
+            "termination_reason": "unresolved_checks",
+            "unresolved_fields": [
+              "statement",
+              "owner",
+              "deadline",
+              "status",
+              "related_items"
+            ]
+          }
+        ],
+        "lookups": 0,
+        "termination_reason": "unresolved_checks",
+        "clarifications": [
+          {
+            "request_id": "6cf5c6067bd25e3c",
+            "item_key": "TS3006b#12",
+            "record_id": null,
+            "field": "statement",
+            "question": "Should this be recorded as a substantive, supported decisions item?",
+            "item_text": "We should hide the advanced features behind the screen and expose only the basic functions on the device, using a screen menu for configuration.",
+            "reason": "There is an open problem about screen requirements and scope (e.g., 'what should the screen do' and 'requirements to satisfy'), which could conflict with the proposed simplification, so evidence does not fully resolve the constraint.",
+            "evidence_da_ids": [
+              "TS3006b.B.dialog-act.dharshi.72",
+              "TS3006b.B.dialog-act.dharshi.73",
+              "TS3006b.D.dialog-act.dharshi.139",
+              "TS3006b.D.dialog-act.dharshi.137",
+              "TS3006b.A.dialog-act.dharshi.86",
+              "TS3006b.A.dialog-act.dharshi.87"
+            ],
+            "available_evidence_da_ids": [
+              "TS3006b.B.dialog-act.dharshi.71",
+              "TS3006b.D.dialog-act.dharshi.134",
+              "TS3006b.A.dialog-act.dharshi.84",
+              "TS3006b.B.dialog-act.dharshi.72",
+              "TS3006b.B.dialog-act.dharshi.73",
+              "TS3006b.A.dialog-act.dharshi.85",
+              "TS3006b.D.dialog-act.dharshi.135",
+              "TS3006b.A.dialog-act.dharshi.86",
+              "TS3006b.B.dialog-act.dharshi.74",
+              "TS3006b.D.dialog-act.dharshi.137",
+              "TS3006b.A.dialog-act.dharshi.87",
+              "TS3006b.D.dialog-act.dharshi.138",
+              "TS3006b.A.dialog-act.dharshi.83",
+              "TS3006b.D.dialog-act.dharshi.139"
+            ],
+            "status": "open",
+            "termination_reason": "unresolved_checks"
+          },
+          {
+            "request_id": "51da509bac825527",
+            "item_key": "TS3006b#12",
+            "record_id": null,
+            "field": "owner",
+            "question": "Who is responsible for this task?",
+            "item_text": "We should hide the advanced features behind the screen and expose only the basic functions on the device, using a screen menu for configuration.",
+            "reason": "There is an open problem about screen requirements and scope (e.g., 'what should the screen do' and 'requirements to satisfy'), which could conflict with the proposed simplification, so evidence does not fully resolve the constraint.",
+            "evidence_da_ids": [
+              "TS3006b.B.dialog-act.dharshi.72",
+              "TS3006b.B.dialog-act.dharshi.73",
+              "TS3006b.D.dialog-act.dharshi.139",
+              "TS3006b.D.dialog-act.dharshi.137",
+              "TS3006b.A.dialog-act.dharshi.86",
+              "TS3006b.A.dialog-act.dharshi.87"
+            ],
+            "available_evidence_da_ids": [
+              "TS3006b.B.dialog-act.dharshi.71",
+              "TS3006b.D.dialog-act.dharshi.134",
+              "TS3006b.A.dialog-act.dharshi.84",
+              "TS3006b.B.dialog-act.dharshi.72",
+              "TS3006b.B.dialog-act.dharshi.73",
+              "TS3006b.A.dialog-act.dharshi.85",
+              "TS3006b.D.dialog-act.dharshi.135",
+              "TS3006b.A.dialog-act.dharshi.86",
+              "TS3006b.B.dialog-act.dharshi.74",
+              "TS3006b.D.dialog-act.dharshi.137",
+              "TS3006b.A.dialog-act.dharshi.87",
+              "TS3006b.D.dialog-act.dharshi.138",
+              "TS3006b.A.dialog-act.dharshi.83",
+              "TS3006b.D.dialog-act.dharshi.139"
+            ],
+            "status": "open",
+            "termination_reason": "unresolved_checks"
+          },
+          {
+            "request_id": "4a5a2722f5beda16",
+            "item_key": "TS3006b#12",
+            "record_id": null,
+            "field": "deadline",
+            "question": "What is the agreed deadline, in its original wording?",
+            "item_text": "We should hide the advanced features behind the screen and expose only the basic functions on the device, using a screen menu for configuration.",
+            "reason": "There is an open problem about screen requirements and scope (e.g., 'what should the screen do' and 'requirements to satisfy'), which could conflict with the proposed simplification, so evidence does not fully resolve the constraint.",
+            "evidence_da_ids": [
+              "TS3006b.B.dialog-act.dharshi.72",
+              "TS3006b.B.dialog-act.dharshi.73",
+              "TS3006b.D.dialog-act.dharshi.139",
+              "TS3006b.D.dialog-act.dharshi.137",
+              "TS3006b.A.dialog-act.dharshi.86",
+              "TS3006b.A.dialog-act.dharshi.87"
+            ],
+            "available_evidence_da_ids": [
+              "TS3006b.B.dialog-act.dharshi.71",
+              "TS3006b.D.dialog-act.dharshi.134",
+              "TS3006b.A.dialog-act.dharshi.84",
+              "TS3006b.B.dialog-act.dharshi.72",
+              "TS3006b.B.dialog-act.dharshi.73",
+              "TS3006b.A.dialog-act.dharshi.85",
+              "TS3006b.D.dialog-act.dharshi.135",
+              "TS3006b.A.dialog-act.dharshi.86",
+              "TS3006b.B.dialog-act.dharshi.74",
+              "TS3006b.D.dialog-act.dharshi.137",
+              "TS3006b.A.dialog-act.dharshi.87",
+              "TS3006b.D.dialog-act.dharshi.138",
+              "TS3006b.A.dialog-act.dharshi.83",
+              "TS3006b.D.dialog-act.dharshi.139"
+            ],
+            "status": "open",
+            "termination_reason": "unresolved_checks"
+          },
+          {
+            "request_id": "009b2d16a98955d4",
+            "item_key": "TS3006b#12",
+            "record_id": null,
+            "field": "status",
+            "question": "What is this item's status at the end of the current meeting?",
+            "item_text": "We should hide the advanced features behind the screen and expose only the basic functions on the device, using a screen menu for configuration.",
+            "reason": "There is an open problem about screen requirements and scope (e.g., 'what should the screen do' and 'requirements to satisfy'), which could conflict with the proposed simplification, so evidence does not fully resolve the constraint.",
+            "evidence_da_ids": [
+              "TS3006b.B.dialog-act.dharshi.72",
+              "TS3006b.B.dialog-act.dharshi.73",
+              "TS3006b.D.dialog-act.dharshi.139",
+              "TS3006b.D.dialog-act.dharshi.137",
+              "TS3006b.A.dialog-act.dharshi.86",
+              "TS3006b.A.dialog-act.dharshi.87"
+            ],
+            "available_evidence_da_ids": [
+              "TS3006b.B.dialog-act.dharshi.71",
+              "TS3006b.D.dialog-act.dharshi.134",
+              "TS3006b.A.dialog-act.dharshi.84",
+              "TS3006b.B.dialog-act.dharshi.72",
+              "TS3006b.B.dialog-act.dharshi.73",
+              "TS3006b.A.dialog-act.dharshi.85",
+              "TS3006b.D.dialog-act.dharshi.135",
+              "TS3006b.A.dialog-act.dharshi.86",
+              "TS3006b.B.dialog-act.dharshi.74",
+              "TS3006b.D.dialog-act.dharshi.137",
+              "TS3006b.A.dialog-act.dharshi.87",
+              "TS3006b.D.dialog-act.dharshi.138",
+              "TS3006b.A.dialog-act.dharshi.83",
+              "TS3006b.D.dialog-act.dharshi.139"
+            ],
+            "status": "open",
+            "termination_reason": "unresolved_checks"
+          },
+          {
+            "request_id": "33eba3516aedca76",
+            "item_key": "TS3006b#12",
+            "record_id": null,
+            "field": "related_items",
+            "question": "Which earlier record does this item continue or change, and how?",
+            "item_text": "We should hide the advanced features behind the screen and expose only the basic functions on the device, using a screen menu for configuration.",
+            "reason": "prior_context_not_checked",
+            "evidence_da_ids": [
+              "TS3006b.D.dialog-act.dharshi.139",
+              "TS3006b.A.dialog-act.dharshi.87"
+            ],
+            "available_evidence_da_ids": [
+              "TS3006b.B.dialog-act.dharshi.71",
+              "TS3006b.D.dialog-act.dharshi.134",
+              "TS3006b.A.dialog-act.dharshi.84",
+              "TS3006b.B.dialog-act.dharshi.72",
+              "TS3006b.B.dialog-act.dharshi.73",
+              "TS3006b.A.dialog-act.dharshi.85",
+              "TS3006b.D.dialog-act.dharshi.135",
+              "TS3006b.A.dialog-act.dharshi.86",
+              "TS3006b.B.dialog-act.dharshi.74",
+              "TS3006b.D.dialog-act.dharshi.137",
+              "TS3006b.A.dialog-act.dharshi.87",
+              "TS3006b.D.dialog-act.dharshi.138",
+              "TS3006b.A.dialog-act.dharshi.83",
+              "TS3006b.D.dialog-act.dharshi.139"
+            ],
+            "status": "open",
+            "termination_reason": "unresolved_checks"
+          }
+        ]
+      },
+      "record": [],
+      "scope": "Bounded replay of existing assessment/tool choices, not a new live run or human semantic validation."
+    },
+    {
+      "item_key": "TS3006b#0",
+      "residual": "routing",
+      "actual_api_calls": 0,
+      "source_trace_sha256": "d92d327e11d3e79646856130f2db63727a378a4cdd6707301bec5928ddaaa7e4",
+      "replayed_choices": [
+        [
+          "assess_item",
+          {
+            "status": "open",
+            "related_items": [],
+            "owner": [
+              "MTD023UID"
+            ],
+            "owner_basis": "explicit",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "statement": {
+              "result": "pass",
+              "reason": "Dialogue explicitly assigns the UI designer to design a menu for all functions; supports task initiation.",
+              "evidence_da_ids": [
+                "TS3006b.A.dialog-act.dharshi.305",
+                "TS3006b.D.dialog-act.dharshi.357"
+              ]
+            },
+            "owner_check": {
+              "result": "pass",
+              "reason": "Observed dialogue assigns UI owner explicitly in 305.",
+              "evidence_da_ids": [
+                "TS3006b.A.dialog-act.dharshi.305"
+              ]
+            },
+            "deadline_check": {
+              "result": "uncertain",
+              "reason": "No explicit deadline provided; basis missing.",
+              "evidence_da_ids": []
+            },
+            "status_check": {
+              "result": "pass",
+              "reason": "Current status is open and not contradicted by dialogue.",
+              "evidence_da_ids": [
+                "TS3006b.A.dialog-act.dharshi.305"
+              ]
+            },
+            "conflict_check": {
+              "result": "pass",
+              "reason": "No conflicts among statements; ownership aligns with dialogue.",
+              "evidence_da_ids": [
+                "TS3006b.A.dialog-act.dharshi.305",
+                "TS3006b.D.dialog-act.dharshi.357"
+              ],
+              "affected_fields": []
+            },
+            "relation_check": {
+              "result": "uncertain",
+              "reason": "No clear linkage to earlier TS3006a item evidenced in the current dialogue.",
+              "evidence_da_ids": [],
+              "links": []
+            },
+            "next_action": "retrieve"
+          }
+        ],
+        [
+          "get_prior_items",
+          {
+            "query": "UI designer menu functions",
+            "item_type": "actions"
+          }
+        ],
+        [
+          "assess_item",
+          {
+            "status": "open",
+            "related_items": [],
+            "owner": [
+              "MTD023UID"
+            ],
+            "owner_basis": "explicit",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "statement": {
+              "result": "pass",
+              "reason": "Dialogue explicitly assigns the UI designer to design a menu for all functions; supports task initiation.",
+              "evidence_da_ids": [
+                "TS3006b.A.dialog-act.dharshi.305",
+                "TS3006b.D.dialog-act.dharshi.357"
+              ]
+            },
+            "owner_check": {
+              "result": "pass",
+              "reason": "Observed dialogue assigns UI owner explicitly in 305.",
+              "evidence_da_ids": [
+                "TS3006b.A.dialog-act.dharshi.305"
+              ]
+            },
+            "deadline_check": {
+              "result": "uncertain",
+              "reason": "deadline_unresolved",
+              "evidence_da_ids": []
+            },
+            "status_check": {
+              "result": "pass",
+              "reason": "Current status is open and not contradicted by dialogue.",
+              "evidence_da_ids": [
+                "TS3006b.A.dialog-act.dharshi.305"
+              ]
+            },
+            "conflict_check": {
+              "result": "pass",
+              "reason": "No conflicts among statements; ownership aligns with dialogue.",
+              "evidence_da_ids": [
+                "TS3006b.A.dialog-act.dharshi.305",
+                "TS3006b.D.dialog-act.dharshi.357"
+              ],
+              "affected_fields": []
+            },
+            "relation_check": {
+              "result": "uncertain",
+              "reason": "No clear linkage to earlier TS3006a item evidenced in the current dialogue.",
+              "evidence_da_ids": [],
+              "links": []
+            },
+            "next_action": "retrieve"
+          }
+        ],
+        [
+          "read_dialogue",
+          {
+            "da_id": "TS3006b.A.dialog-act.dharshi.305",
+            "window": 5
+          }
+        ]
+      ],
+      "outcome": {
+        "item_key": "TS3006b#0",
+        "record_id": "TS3006b.sys.s.1",
+        "item_type": "actions",
+        "item_text": "The UI Designer will design a menu for all functions.",
+        "state": "pending",
+        "recordable": true,
+        "fields": {
+          "status": "open",
+          "prior_context_needed": false,
+          "related_items": [],
+          "owner": [
+            "MTD023UID"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "reference": [
+            {
+              "source_type": "dialogue",
+              "source": "ami-corpus/dialogueActs/TS3006b.json",
+              "locator": "TS3006b.A.dialog-act.dharshi.305"
+            },
+            {
+              "source_type": "dialogue",
+              "source": "ami-corpus/dialogueActs/TS3006b.json",
+              "locator": "TS3006b.D.dialog-act.dharshi.357"
+            }
+          ]
+        },
+        "draft_fields": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "MTD023UID"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "TS3006b.A.dialog-act.dharshi.305",
+            "TS3006b.D.dialog-act.dharshi.357"
+          ]
+        },
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue explicitly assigns the UI designer to design a menu for all functions; supports task initiation.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              },
+              {
+                "da_id": "TS3006b.D.dialog-act.dharshi.357",
+                "quote": "Yeah k kind of structure into layers ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Observed dialogue assigns UI owner explicitly in 305.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              }
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "deadline_unresolved",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Current status is open and not contradicted by dialogue.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicts among statements; ownership aligns with dialogue.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                "quote": "The User Interface Designer can design a menu for all these function"
+              },
+              {
+                "da_id": "TS3006b.D.dialog-act.dharshi.357",
+                "quote": "Yeah k kind of structure into layers ."
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "No clear linkage to earlier TS3006a item evidenced in the current dialogue.",
+            "links": [],
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "unresolved_fields": [
+          "deadline",
+          "related_items"
+        ],
+        "observed_evidence_da_ids": [
+          "TS3006b.A.dialog-act.dharshi.305",
+          "TS3006b.D.dialog-act.dharshi.357",
+          "TS3006b.A.dialog-act.dharshi.303",
+          "TS3006b.A.dialog-act.dharshi.306",
+          "TS3006b.D.dialog-act.dharshi.355",
+          "TS3006b.A.dialog-act.dharshi.301",
+          "TS3006b.D.dialog-act.dharshi.356",
+          "TS3006b.A.dialog-act.dharshi.302",
+          "TS3006b.B.dialog-act.dharshi.147",
+          "TS3006b.B.dialog-act.dharshi.148",
+          "TS3006b.B.dialog-act.dharshi.149"
+        ],
+        "initial_context": {
+          "item": {
+            "type": "actions",
+            "text": "The UI Designer will design a menu for all functions.",
+            "flags": [
+              "POSSIBLE_PRIOR"
+            ]
+          },
+          "current_meeting": "TS3006b",
+          "earlier_meetings": [
+            "TS3006a"
+          ],
+          "roster": [
+            {
+              "speaker": "A",
+              "participant_id": "MTD021PM",
+              "role": "PM"
+            },
+            {
+              "speaker": "B",
+              "participant_id": "MTD023UID",
+              "role": "UI"
+            },
+            {
+              "speaker": "C",
+              "participant_id": "MTD022ID",
+              "role": "ID"
+            },
+            {
+              "speaker": "D",
+              "participant_id": "MTD024ME",
+              "role": "ME"
+            }
+          ],
+          "observed_dialogue": [
+            {
+              "da_id": "TS3006b.A.dialog-act.dharshi.305",
+              "meeting_id": "TS3006b",
+              "text": "The User Interface Designer can design a menu for all these function",
+              "participant": "MTD021PM",
+              "role": "PM"
+            },
+            {
+              "da_id": "TS3006b.D.dialog-act.dharshi.357",
+              "meeting_id": "TS3006b",
+              "text": "Yeah k kind of structure into layers .",
+              "participant": "MTD024ME",
+              "role": "ME"
+            },
+            {
+              "da_id": "TS3006b.A.dialog-act.dharshi.303",
+              "participant": "MTD021PM",
+              "role": "PM",
+              "text": "Um <disfmarker>"
+            },
+            {
+              "da_id": "TS3006b.A.dialog-act.dharshi.306",
+              "participant": "MTD021PM",
+              "role": "PM",
+              "text": "I put them on the <vocalsound> <disfmarker>"
+            }
+          ],
+          "peer_items": [],
+          "provisional_values": {
+            "owner": [
+              "MTD023UID"
+            ],
+            "owner_basis": "explicit",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "open",
+            "related_items": []
+          },
+          "candidate_evidence_da_ids": [
+            "TS3006b.A.dialog-act.dharshi.305",
+            "TS3006b.D.dialog-act.dharshi.357"
+          ]
+        },
+        "observed_documents": [],
+        "document_evidence": [],
+        "relation_evidence": [],
+        "history": [
+          {
+            "item": "TS3006b#0",
+            "step": 1,
+            "flags": [
+              "POSSIBLE_PRIOR"
+            ],
+            "action": "assess_item",
+            "outcome": "checked",
+            "checks": {
+              "statement": {
+                "result": "pass",
+                "reason": "Dialogue explicitly assigns the UI designer to design a menu for all functions; supports task initiation.",
+                "quotes": [
+                  {
+                    "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                    "quote": "The User Interface Designer can design a menu for all these function"
+                  },
+                  {
+                    "da_id": "TS3006b.D.dialog-act.dharshi.357",
+                    "quote": "Yeah k kind of structure into layers ."
+                  }
+                ],
+                "fields": [
+                  "statement"
+                ]
+              },
+              "owner": {
+                "result": "pass",
+                "reason": "Observed dialogue assigns UI owner explicitly in 305.",
+                "quotes": [
+                  {
+                    "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                    "quote": "The User Interface Designer can design a menu for all these function"
+                  }
+                ],
+                "fields": [
+                  "owner"
+                ]
+              },
+              "deadline": {
+                "result": "uncertain",
+                "reason": "deadline_unresolved",
+                "quotes": [],
+                "fields": [
+                  "deadline"
+                ]
+              },
+              "status": {
+                "result": "pass",
+                "reason": "Current status is open and not contradicted by dialogue.",
+                "quotes": [
+                  {
+                    "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                    "quote": "The User Interface Designer can design a menu for all these function"
+                  }
+                ],
+                "fields": [
+                  "status"
+                ]
+              },
+              "conflict": {
+                "result": "pass",
+                "reason": "No conflicts among statements; ownership aligns with dialogue.",
+                "quotes": [
+                  {
+                    "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                    "quote": "The User Interface Designer can design a menu for all these function"
+                  },
+                  {
+                    "da_id": "TS3006b.D.dialog-act.dharshi.357",
+                    "quote": "Yeah k kind of structure into layers ."
+                  }
+                ],
+                "fields": []
+              },
+              "relation": {
+                "result": "uncertain",
+                "reason": "prior_context_not_checked",
+                "links": [],
+                "quotes": [],
+                "fields": [
+                  "related_items"
+                ]
+              }
+            },
+            "decision": "retrieve",
+            "reason": "unresolved_checks",
+            "requested_action": "retrieve",
+            "proposed_fields": {
+              "status": "open",
+              "related_items": [],
+              "owner": [
+                "MTD023UID"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "prior_context_needed": false,
+              "used_participant_lookup": false,
+              "evidence_da_ids": [
+                "TS3006b.A.dialog-act.dharshi.305",
+                "TS3006b.D.dialog-act.dharshi.357"
+              ]
+            },
+            "submitted_checks": {
+              "statement": {
+                "result": "pass",
+                "reason": "Dialogue explicitly assigns the UI designer to design a menu for all functions; supports task initiation.",
+                "quotes": [
+                  "TS3006b.A.dialog-act.dharshi.305",
+                  "TS3006b.D.dialog-act.dharshi.357"
+                ],
+                "fields": [
+                  "statement"
+                ]
+              },
+              "owner": {
+                "result": "pass",
+                "reason": "Observed dialogue assigns UI owner explicitly in 305.",
+                "quotes": [
+                  "TS3006b.A.dialog-act.dharshi.305"
+                ],
+                "fields": [
+                  "owner"
+                ]
+              },
+              "deadline": {
+                "result": "uncertain",
+                "reason": "No explicit deadline provided; basis missing.",
+                "quotes": [],
+                "fields": [
+                  "deadline"
+                ]
+              },
+              "status": {
+                "result": "pass",
+                "reason": "Current status is open and not contradicted by dialogue.",
+                "quotes": [
+                  "TS3006b.A.dialog-act.dharshi.305"
+                ],
+                "fields": [
+                  "status"
+                ]
+              },
+              "conflict": {
+                "result": "pass",
+                "reason": "No conflicts among statements; ownership aligns with dialogue.",
+                "quotes": [
+                  "TS3006b.A.dialog-act.dharshi.305",
+                  "TS3006b.D.dialog-act.dharshi.357"
+                ],
+                "fields": []
+              },
+              "relation": {
+                "result": "uncertain",
+                "reason": "No clear linkage to earlier TS3006a item evidenced in the current dialogue.",
+                "links": [],
+                "quotes": [],
+                "fields": [
+                  "related_items"
+                ]
+              }
+            },
+            "submitted_assessment": {
+              "status": "open",
+              "related_items": [],
+              "owner": [
+                "MTD023UID"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "statement": {
+                "result": "pass",
+                "reason": "Dialogue explicitly assigns the UI designer to design a menu for all functions; supports task initiation.",
+                "evidence_da_ids": [
+                  "TS3006b.A.dialog-act.dharshi.305",
+                  "TS3006b.D.dialog-act.dharshi.357"
+                ]
+              },
+              "owner_check": {
+                "result": "pass",
+                "reason": "Observed dialogue assigns UI owner explicitly in 305.",
+                "evidence_da_ids": [
+                  "TS3006b.A.dialog-act.dharshi.305"
+                ]
+              },
+              "deadline_check": {
+                "result": "uncertain",
+                "reason": "No explicit deadline provided; basis missing.",
+                "evidence_da_ids": []
+              },
+              "status_check": {
+                "result": "pass",
+                "reason": "Current status is open and not contradicted by dialogue.",
+                "evidence_da_ids": [
+                  "TS3006b.A.dialog-act.dharshi.305"
+                ]
+              },
+              "conflict_check": {
+                "result": "pass",
+                "reason": "No conflicts among statements; ownership aligns with dialogue.",
+                "evidence_da_ids": [
+                  "TS3006b.A.dialog-act.dharshi.305",
+                  "TS3006b.D.dialog-act.dharshi.357"
+                ],
+                "affected_fields": []
+              },
+              "relation_check": {
+                "result": "uncertain",
+                "reason": "No clear linkage to earlier TS3006a item evidenced in the current dialogue.",
+                "evidence_da_ids": [],
+                "links": []
+              },
+              "next_action": "retrieve"
+            },
+            "evidence_bindings": {
+              "statement": [
+                "TS3006b.A.dialog-act.dharshi.305",
+                "TS3006b.D.dialog-act.dharshi.357"
+              ],
+              "owner": [
+                "TS3006b.A.dialog-act.dharshi.305"
+              ],
+              "status": [
+                "TS3006b.A.dialog-act.dharshi.305"
+              ],
+              "conflict": [
+                "TS3006b.A.dialog-act.dharshi.305",
+                "TS3006b.D.dialog-act.dharshi.357"
+              ]
+            },
+            "raw_tool_input": {
+              "status": "open",
+              "related_items": [],
+              "owner": [
+                "MTD023UID"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "statement": {
+                "result": "pass",
+                "reason": "Dialogue explicitly assigns the UI designer to design a menu for all functions; supports task initiation.",
+                "evidence_da_ids": [
+                  "TS3006b.A.dialog-act.dharshi.305",
+                  "TS3006b.D.dialog-act.dharshi.357"
+                ]
+              },
+              "owner_check": {
+                "result": "pass",
+                "reason": "Observed dialogue assigns UI owner explicitly in 305.",
+                "evidence_da_ids": [
+                  "TS3006b.A.dialog-act.dharshi.305"
+                ]
+              },
+              "deadline_check": {
+                "result": "uncertain",
+                "reason": "No explicit deadline provided; basis missing.",
+                "evidence_da_ids": []
+              },
+              "status_check": {
+                "result": "pass",
+                "reason": "Current status is open and not contradicted by dialogue.",
+                "evidence_da_ids": [
+                  "TS3006b.A.dialog-act.dharshi.305"
+                ]
+              },
+              "conflict_check": {
+                "result": "pass",
+                "reason": "No conflicts among statements; ownership aligns with dialogue.",
+                "evidence_da_ids": [
+                  "TS3006b.A.dialog-act.dharshi.305",
+                  "TS3006b.D.dialog-act.dharshi.357"
+                ],
+                "affected_fields": []
+              },
+              "relation_check": {
+                "result": "uncertain",
+                "reason": "No clear linkage to earlier TS3006a item evidenced in the current dialogue.",
+                "evidence_da_ids": [],
+                "links": []
+              },
+              "next_action": "retrieve"
+            },
+            "protocol_normalizations": []
+          },
+          {
+            "item": "TS3006b#0",
+            "step": 2,
+            "flags": [
+              "POSSIBLE_PRIOR"
+            ],
+            "action": "get_prior_items",
+            "outcome": "lookup",
+            "decision": "retrieve",
+            "args": {
+              "query": "UI designer menu functions",
+              "item_type": "actions"
+            },
+            "tool_result": {
+              "results": [
+                {
+                  "id": "TS3006a.sys.s.2",
+                  "meeting_id": "TS3006a",
+                  "type": "actions",
+                  "text": "The User Interface Designer will specify the technical functions.",
+                  "owner": [
+                    "MTD023UID"
+                  ],
+                  "owner_basis": "explicit",
+                  "deadline": null,
+                  "deadline_basis": "missing",
+                  "status": "open",
+                  "evidence": [
+                    "TS3006a.A.dialog-act.vkaraisk.149",
+                    "TS3006a.B.dialog-act.vkaraisk.59"
+                  ],
+                  "source_file": "TS3006a.json",
+                  "source_sha256": "d7f141990f6b37a4d460d7ff9542e12521300b5f7d33c74cb5cf0d6ddf8bdd78",
+                  "review_state": "pending",
+                  "unresolved_fields": [
+                    "deadline"
+                  ],
+                  "unreadable_reference_ids": [],
+                  "score": 3.52
+                },
+                {
+                  "id": "TS3006a.sys.s.6",
+                  "meeting_id": "TS3006a",
+                  "type": "actions",
+                  "text": "The Industrial Designer will work on the conceptual design.",
+                  "owner": [
+                    "MTD022ID"
+                  ],
+                  "owner_basis": "explicit",
+                  "deadline": null,
+                  "deadline_basis": "missing",
+                  "status": "in_progress",
+                  "evidence": [
+                    "TS3006a.C.dialog-act.vkaraisk.117"
+                  ],
+                  "source_file": "TS3006a.json",
+                  "source_sha256": "d7f141990f6b37a4d460d7ff9542e12521300b5f7d33c74cb5cf0d6ddf8bdd78",
+                  "review_state": "pending",
+                  "unresolved_fields": [
+                    "deadline"
+                  ],
+                  "unreadable_reference_ids": [],
+                  "score": 0.79
+                }
+              ]
+            },
+            "new_info": true
+          },
+          {
+            "item": "TS3006b#0",
+            "step": 3,
+            "flags": [
+              "POSSIBLE_PRIOR"
+            ],
+            "action": "assess_item",
+            "outcome": "checked",
+            "checks": {
+              "statement": {
+                "result": "pass",
+                "reason": "Dialogue explicitly assigns the UI designer to design a menu for all functions; supports task initiation.",
+                "quotes": [
+                  {
+                    "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                    "quote": "The User Interface Designer can design a menu for all these function"
+                  },
+                  {
+                    "da_id": "TS3006b.D.dialog-act.dharshi.357",
+                    "quote": "Yeah k kind of structure into layers ."
+                  }
+                ],
+                "fields": [
+                  "statement"
+                ]
+              },
+              "owner": {
+                "result": "pass",
+                "reason": "Observed dialogue assigns UI owner explicitly in 305.",
+                "quotes": [
+                  {
+                    "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                    "quote": "The User Interface Designer can design a menu for all these function"
+                  }
+                ],
+                "fields": [
+                  "owner"
+                ]
+              },
+              "deadline": {
+                "result": "uncertain",
+                "reason": "deadline_unresolved",
+                "quotes": [],
+                "fields": [
+                  "deadline"
+                ]
+              },
+              "status": {
+                "result": "pass",
+                "reason": "Current status is open and not contradicted by dialogue.",
+                "quotes": [
+                  {
+                    "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                    "quote": "The User Interface Designer can design a menu for all these function"
+                  }
+                ],
+                "fields": [
+                  "status"
+                ]
+              },
+              "conflict": {
+                "result": "pass",
+                "reason": "No conflicts among statements; ownership aligns with dialogue.",
+                "quotes": [
+                  {
+                    "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                    "quote": "The User Interface Designer can design a menu for all these function"
+                  },
+                  {
+                    "da_id": "TS3006b.D.dialog-act.dharshi.357",
+                    "quote": "Yeah k kind of structure into layers ."
+                  }
+                ],
+                "fields": []
+              },
+              "relation": {
+                "result": "uncertain",
+                "reason": "No clear linkage to earlier TS3006a item evidenced in the current dialogue.",
+                "links": [],
+                "quotes": [],
+                "fields": [
+                  "related_items"
+                ]
+              }
+            },
+            "decision": "retrieve",
+            "reason": "unresolved_checks",
+            "requested_action": "retrieve",
+            "proposed_fields": {
+              "status": "open",
+              "related_items": [],
+              "owner": [
+                "MTD023UID"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "prior_context_needed": false,
+              "used_participant_lookup": false,
+              "evidence_da_ids": [
+                "TS3006b.A.dialog-act.dharshi.305",
+                "TS3006b.D.dialog-act.dharshi.357"
+              ]
+            },
+            "submitted_checks": {
+              "statement": {
+                "result": "pass",
+                "reason": "Dialogue explicitly assigns the UI designer to design a menu for all functions; supports task initiation.",
+                "quotes": [
+                  "TS3006b.A.dialog-act.dharshi.305",
+                  "TS3006b.D.dialog-act.dharshi.357"
+                ],
+                "fields": [
+                  "statement"
+                ]
+              },
+              "owner": {
+                "result": "pass",
+                "reason": "Observed dialogue assigns UI owner explicitly in 305.",
+                "quotes": [
+                  "TS3006b.A.dialog-act.dharshi.305"
+                ],
+                "fields": [
+                  "owner"
+                ]
+              },
+              "deadline": {
+                "result": "uncertain",
+                "reason": "deadline_unresolved",
+                "quotes": [],
+                "fields": [
+                  "deadline"
+                ]
+              },
+              "status": {
+                "result": "pass",
+                "reason": "Current status is open and not contradicted by dialogue.",
+                "quotes": [
+                  "TS3006b.A.dialog-act.dharshi.305"
+                ],
+                "fields": [
+                  "status"
+                ]
+              },
+              "conflict": {
+                "result": "pass",
+                "reason": "No conflicts among statements; ownership aligns with dialogue.",
+                "quotes": [
+                  "TS3006b.A.dialog-act.dharshi.305",
+                  "TS3006b.D.dialog-act.dharshi.357"
+                ],
+                "fields": []
+              },
+              "relation": {
+                "result": "uncertain",
+                "reason": "No clear linkage to earlier TS3006a item evidenced in the current dialogue.",
+                "links": [],
+                "quotes": [],
+                "fields": [
+                  "related_items"
+                ]
+              }
+            },
+            "submitted_assessment": {
+              "status": "open",
+              "related_items": [],
+              "owner": [
+                "MTD023UID"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "statement": {
+                "result": "pass",
+                "reason": "Dialogue explicitly assigns the UI designer to design a menu for all functions; supports task initiation.",
+                "evidence_da_ids": [
+                  "TS3006b.A.dialog-act.dharshi.305",
+                  "TS3006b.D.dialog-act.dharshi.357"
+                ]
+              },
+              "owner_check": {
+                "result": "pass",
+                "reason": "Observed dialogue assigns UI owner explicitly in 305.",
+                "evidence_da_ids": [
+                  "TS3006b.A.dialog-act.dharshi.305"
+                ]
+              },
+              "deadline_check": {
+                "result": "uncertain",
+                "reason": "deadline_unresolved",
+                "evidence_da_ids": []
+              },
+              "status_check": {
+                "result": "pass",
+                "reason": "Current status is open and not contradicted by dialogue.",
+                "evidence_da_ids": [
+                  "TS3006b.A.dialog-act.dharshi.305"
+                ]
+              },
+              "conflict_check": {
+                "result": "pass",
+                "reason": "No conflicts among statements; ownership aligns with dialogue.",
+                "evidence_da_ids": [
+                  "TS3006b.A.dialog-act.dharshi.305",
+                  "TS3006b.D.dialog-act.dharshi.357"
+                ],
+                "affected_fields": []
+              },
+              "relation_check": {
+                "result": "uncertain",
+                "reason": "No clear linkage to earlier TS3006a item evidenced in the current dialogue.",
+                "evidence_da_ids": [],
+                "links": []
+              },
+              "next_action": "retrieve"
+            },
+            "evidence_bindings": {
+              "statement": [
+                "TS3006b.A.dialog-act.dharshi.305",
+                "TS3006b.D.dialog-act.dharshi.357"
+              ],
+              "owner": [
+                "TS3006b.A.dialog-act.dharshi.305"
+              ],
+              "status": [
+                "TS3006b.A.dialog-act.dharshi.305"
+              ],
+              "conflict": [
+                "TS3006b.A.dialog-act.dharshi.305",
+                "TS3006b.D.dialog-act.dharshi.357"
+              ]
+            },
+            "raw_tool_input": {
+              "status": "open",
+              "related_items": [],
+              "owner": [
+                "MTD023UID"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "statement": {
+                "result": "pass",
+                "reason": "Dialogue explicitly assigns the UI designer to design a menu for all functions; supports task initiation.",
+                "evidence_da_ids": [
+                  "TS3006b.A.dialog-act.dharshi.305",
+                  "TS3006b.D.dialog-act.dharshi.357"
+                ]
+              },
+              "owner_check": {
+                "result": "pass",
+                "reason": "Observed dialogue assigns UI owner explicitly in 305.",
+                "evidence_da_ids": [
+                  "TS3006b.A.dialog-act.dharshi.305"
+                ]
+              },
+              "deadline_check": {
+                "result": "uncertain",
+                "reason": "deadline_unresolved",
+                "evidence_da_ids": []
+              },
+              "status_check": {
+                "result": "pass",
+                "reason": "Current status is open and not contradicted by dialogue.",
+                "evidence_da_ids": [
+                  "TS3006b.A.dialog-act.dharshi.305"
+                ]
+              },
+              "conflict_check": {
+                "result": "pass",
+                "reason": "No conflicts among statements; ownership aligns with dialogue.",
+                "evidence_da_ids": [
+                  "TS3006b.A.dialog-act.dharshi.305",
+                  "TS3006b.D.dialog-act.dharshi.357"
+                ],
+                "affected_fields": []
+              },
+              "relation_check": {
+                "result": "uncertain",
+                "reason": "No clear linkage to earlier TS3006a item evidenced in the current dialogue.",
+                "evidence_da_ids": [],
+                "links": []
+              },
+              "next_action": "retrieve"
+            },
+            "protocol_normalizations": []
+          },
+          {
+            "item": "TS3006b#0",
+            "step": 4,
+            "flags": [
+              "POSSIBLE_PRIOR"
+            ],
+            "action": "read_dialogue",
+            "outcome": "lookup",
+            "decision": "retrieve",
+            "args": {
+              "da_id": "TS3006b.A.dialog-act.dharshi.305",
+              "window": 5,
+              "meeting_id": "TS3006b"
+            },
+            "tool_result": {
+              "results": [
+                {
+                  "da_id": "TS3006b.D.dialog-act.dharshi.355",
+                  "participant": "MTD024ME",
+                  "role": "ME",
+                  "text": "it's it's it's harder to , if you have already programmed it , to to swap ."
+                },
+                {
+                  "da_id": "TS3006b.A.dialog-act.dharshi.301",
+                  "participant": "MTD021PM",
+                  "role": "PM",
+                  "text": "Yeah ."
+                },
+                {
+                  "da_id": "TS3006b.D.dialog-act.dharshi.356",
+                  "participant": "MTD024ME",
+                  "role": "ME",
+                  "text": "So we have to think of something for that ."
+                },
+                {
+                  "da_id": "TS3006b.A.dialog-act.dharshi.302",
+                  "participant": "MTD021PM",
+                  "role": "PM",
+                  "text": "So but <disfmarker>"
+                },
+                {
+                  "da_id": "TS3006b.A.dialog-act.dharshi.303",
+                  "participant": "MTD021PM",
+                  "role": "PM",
+                  "text": "Um <disfmarker>"
+                },
+                {
+                  "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                  "participant": "MTD021PM",
+                  "role": "PM",
+                  "text": "The User Interface Designer can design a menu for all these function"
+                },
+                {
+                  "da_id": "TS3006b.D.dialog-act.dharshi.357",
+                  "participant": "MTD024ME",
+                  "role": "ME",
+                  "text": "Yeah k kind of structure into layers ."
+                },
+                {
+                  "da_id": "TS3006b.A.dialog-act.dharshi.306",
+                  "participant": "MTD021PM",
+                  "role": "PM",
+                  "text": "I put them on the <vocalsound> <disfmarker>"
+                },
+                {
+                  "da_id": "TS3006b.B.dialog-act.dharshi.147",
+                  "participant": "MTD023UID",
+                  "role": "UI",
+                  "text": "On the uh"
+                },
+                {
+                  "da_id": "TS3006b.B.dialog-act.dharshi.148",
+                  "participant": "MTD023UID",
+                  "role": "UI",
+                  "text": "yeah can you i make a a map with with all the <disfmarker>"
+                },
+                {
+                  "da_id": "TS3006b.B.dialog-act.dharshi.149",
+                  "participant": "MTD023UID",
+                  "role": "UI",
+                  "text": "yeah 'cause it's now <disfmarker> there are lots and lots of documents"
+                }
+              ]
+            },
+            "new_info": true
+          },
+          {
+            "item": "TS3006b#0",
+            "step": 4,
+            "flags": [
+              "POSSIBLE_PRIOR"
+            ],
+            "action": "stop",
+            "outcome": "pending",
+            "termination_reason": "step_limit",
+            "unresolved_fields": [
+              "deadline",
+              "related_items"
+            ]
+          }
+        ],
+        "lookups": 2,
+        "termination_reason": "step_limit",
+        "clarifications": [
+          {
+            "request_id": "46047ad25baaa056",
+            "item_key": "TS3006b#0",
+            "record_id": "TS3006b.sys.s.1",
+            "field": "deadline",
+            "question": "What is the agreed deadline, in its original wording?",
+            "item_text": "The UI Designer will design a menu for all functions.",
+            "reason": "deadline_unresolved",
+            "evidence_da_ids": [],
+            "available_evidence_da_ids": [
+              "TS3006b.A.dialog-act.dharshi.305",
+              "TS3006b.D.dialog-act.dharshi.357",
+              "TS3006b.A.dialog-act.dharshi.303",
+              "TS3006b.A.dialog-act.dharshi.306",
+              "TS3006b.D.dialog-act.dharshi.355",
+              "TS3006b.A.dialog-act.dharshi.301",
+              "TS3006b.D.dialog-act.dharshi.356",
+              "TS3006b.A.dialog-act.dharshi.302",
+              "TS3006b.B.dialog-act.dharshi.147",
+              "TS3006b.B.dialog-act.dharshi.148",
+              "TS3006b.B.dialog-act.dharshi.149"
+            ],
+            "status": "open",
+            "termination_reason": "step_limit"
+          },
+          {
+            "request_id": "a8e206b5ed489e98",
+            "item_key": "TS3006b#0",
+            "record_id": "TS3006b.sys.s.1",
+            "field": "related_items",
+            "question": "Which earlier record does this item continue or change, and how?",
+            "item_text": "The UI Designer will design a menu for all functions.",
+            "reason": "No clear linkage to earlier TS3006a item evidenced in the current dialogue.",
+            "evidence_da_ids": [],
+            "available_evidence_da_ids": [
+              "TS3006b.A.dialog-act.dharshi.305",
+              "TS3006b.D.dialog-act.dharshi.357",
+              "TS3006b.A.dialog-act.dharshi.303",
+              "TS3006b.A.dialog-act.dharshi.306",
+              "TS3006b.D.dialog-act.dharshi.355",
+              "TS3006b.A.dialog-act.dharshi.301",
+              "TS3006b.D.dialog-act.dharshi.356",
+              "TS3006b.A.dialog-act.dharshi.302",
+              "TS3006b.B.dialog-act.dharshi.147",
+              "TS3006b.B.dialog-act.dharshi.148",
+              "TS3006b.B.dialog-act.dharshi.149"
+            ],
+            "status": "open",
+            "termination_reason": "step_limit"
+          }
+        ]
+      },
+      "record": [
+        {
+          "id": "TS3006b.sys.s.1",
+          "text": "The UI Designer will design a menu for all functions.",
+          "type": "actions",
+          "reference": [
+            {
+              "source_type": "dialogue",
+              "source": "ami-corpus/dialogueActs/TS3006b.json",
+              "locator": "TS3006b.A.dialog-act.dharshi.305"
+            },
+            {
+              "source_type": "dialogue",
+              "source": "ami-corpus/dialogueActs/TS3006b.json",
+              "locator": "TS3006b.D.dialog-act.dharshi.357"
+            }
+          ],
+          "owner": [
+            "MTD023UID"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "status": "open",
+          "prior_context_needed": false,
+          "related_items": []
+        }
+      ],
+      "scope": "Bounded replay of existing assessment/tool choices, not a new live run or human semantic validation."
+    }
+  ]
+}

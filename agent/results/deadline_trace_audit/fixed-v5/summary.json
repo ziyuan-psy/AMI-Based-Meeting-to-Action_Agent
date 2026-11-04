@@ -1,0 +1,3638 @@
+{
+  "result": "PASSED",
+  "scope": "Captured identical upstream candidates and TS3006a history; new live P2, validation, report and summary. Original upstream calls/tokens/time reserved. Separate same-user-request extraction probe. Not a fresh all-stage run or evaluation.",
+  "meetings": [
+    {
+      "meeting_id": "IS1008a",
+      "status": "COMPLETED",
+      "before_new_stage_calls": 13,
+      "before_new_stage_tokens": 71830,
+      "before_p2_and_tail_seconds": 32.289,
+      "after_new_stage_calls": 15,
+      "captured_upstream": {
+        "attempts": 13,
+        "charged_tokens": 145305,
+        "elapsed_seconds": 326.711
+      },
+      "equivalent_whole_calls": 28,
+      "new_known_tokens": 87856,
+      "new_charged_tokens": 87856,
+      "new_seconds": 45.2,
+      "before_trace": {
+        "lookups": 0,
+        "exact_repeated_executed_lookups": 0,
+        "repeated_lookups": [],
+        "invalid_actions": 2,
+        "invalid_details": [
+          {
+            "item_key": "IS1008a#4",
+            "item": "IS1008a#4",
+            "step": 1,
+            "flags": [],
+            "action": "assess_item",
+            "outcome": "invalid_action",
+            "error": "Correct these argument fields: : Additional properties are not allowed ('evidence_da_ids' was unexpected)",
+            "raw_tool_input": {
+              "status": "open",
+              "related_items": [],
+              "owner": [
+                "FIE038"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "statement": {
+                "result": "pass",
+                "reason": "Dialogue includes explicit request to copy all emails and discussions to MIO086; the owner is identified and no conflicting constraints are present.",
+                "evidence_da_ids": [
+                  "IS1008a.A.dialog-act.s9553330.118",
+                  "IS1008a.A.dialog-act.s9553330.119",
+                  "IS1008a.A.dialog-act.s9553330.117",
+                  "IS1008a.A.dialog-act.s9553330.116"
+                ]
+              },
+              "owner_check": {
+                "result": "pass",
+                "reason": "Owner aligns with explicit assignment in the dialogue; no conflicting owner evidence.",
+                "evidence_da_ids": [
+                  "IS1008a.A.dialog-act.s9553330.118",
+                  "IS1008a.A.dialog-act.s9553330.119"
+                ]
+              },
+              "deadline_check": {
+                "result": "uncertain",
+                "reason": "No deadline mentioned in the current dialogue; deadline is null and basis missing.",
+                "evidence_da_ids": [
+                  "IS1008a.A.dialog-act.s9553330.116",
+                  "IS1008a.A.dialog-act.s9553330.119"
+                ]
+              },
+              "status_check": {
+                "result": "pass",
+                "reason": "Open status reflected by the ongoing discussion; no final commitment or completion stated.",
+                "evidence_da_ids": [
+                  "IS1008a.A.dialog-act.s9553330.118",
+                  "IS1008a.A.dialog-act.s9553330.119"
+                ]
+              },
+              "conflict_check": {
+                "result": "pass",
+                "reason": "No conflicting statements found within available dialogue.",
+                "evidence_da_ids": [
+                  "IS1008a.A.dialog-act.s9553330.118",
+                  "IS1008a.A.dialog-act.s9553330.119"
+                ]
+              },
+              "evidence_da_ids": [
+                "IS1008a.A.dialog-act.s9553330.118",
+                "IS1008a.A.dialog-act.s9553330.119",
+                "IS1008a.A.dialog-act.s9553330.117",
+                "IS1008a.A.dialog-act.s9553330.116"
+              ]
+            }
+          },
+          {
+            "item_key": "IS1008a#7",
+            "item": "IS1008a#7",
+            "step": 1,
+            "flags": [],
+            "action": "assess_item",
+            "outcome": "invalid_action",
+            "error": "Correct these argument fields: : 'status_check' is a required property; : 'conflict_check' is a required property",
+            "raw_tool_input": {
+              "status": "adopted",
+              "related_items": [],
+              "statement": {
+                "result": "pass",
+                "reason": "The dialogue shows PM endorsing a two-week target and proposing a written plan timeline by two weeks, aligning with the item text.",
+                "evidence_da_ids": [
+                  "IS1008a.A.dialog-act.s9553330.66",
+                  "IS1008a.A.dialog-act.s9553330.65"
+                ],
+                "documents": []
+              }
+            }
+          }
+        ],
+        "executed_lookups": []
+      },
+      "after_trace": {
+        "lookups": 0,
+        "exact_repeated_executed_lookups": 0,
+        "repeated_lookups": [],
+        "invalid_actions": 2,
+        "invalid_details": [
+          {
+            "item_key": "IS1008a#0",
+            "item": "IS1008a#0",
+            "step": 1,
+            "flags": [],
+            "action": "assess_item",
+            "outcome": "invalid_action",
+            "error": "Correct these argument fields: : Additional properties are not allowed ('documents' was unexpected)",
+            "raw_tool_input": {
+              "status": "open",
+              "related_items": [],
+              "owner": [
+                "FIE073"
+              ],
+              "owner_basis": "explicit",
+              "deadline": "two weeks",
+              "deadline_basis": "explicit",
+              "statement": {
+                "result": "pass",
+                "reason": "The current dialogue includes explicit assignment of owner FIE073 and a deadline phrasing 'two weeks' for delivering a written project plan, with PM requesting the plan in writing and confirming the timeframe.",
+                "evidence_da_ids": [
+                  "IS1008a.A.dialog-act.s9553330.59",
+                  "IS1008a.A.dialog-act.s9553330.60",
+                  "IS1008a.A.dialog-act.s9553330.61",
+                  "IS1008a.A.dialog-act.s9553330.62",
+                  "IS1008a.A.dialog-act.s9553330.63",
+                  "IS1008a.A.dialog-act.s9553330.64",
+                  "IS1008a.A.dialog-act.s9553330.65",
+                  "IS1008a.A.dialog-act.s9553330.67"
+                ]
+              },
+              "owner_check": {
+                "result": "pass",
+                "reason": "Owner is explicitly stated as FIE073 in the dialogue as PM role participation maps to FIE073 in the roster.",
+                "evidence_da_ids": [
+                  "IS1008a.A.dialog-act.s9553330.59",
+                  "IS1008a.A.dialog-act.s9553330.60",
+                  "IS1008a.A.dialog-act.s9553330.63",
+                  "IS1008a.A.dialog-act.s9553330.65"
+                ]
+              },
+              "deadline_check": {
+                "result": "pass",
+                "reason": "Deadline text 'two weeks' matches the stated deadline in the item. Explicitly supported by dialogue.",
+                "evidence_da_ids": [
+                  "IS1008a.A.dialog-act.s9553330.63",
+                  "IS1008a.A.dialog-act.s9553330.65"
+                ]
+              },
+              "status_check": {
+                "result": "pass",
+                "reason": "Status is open as it is an ongoing assignment with no completion indicated in current dialogue.",
+                "evidence_da_ids": [
+                  "IS1008a.A.dialog-act.s9553330.63",
+                  "IS1008a.A.dialog-act.s9553330.65"
+                ]
+              },
+              "conflict_check": {
+                "result": "pass",
+                "reason": "No conflicting statements found within the provided dialogue; the item's scope is consistent with the discussed requirement.",
+                "evidence_da_ids": [
+                  "IS1008a.A.dialog-act.s9553330.63",
+                  "IS1008a.A.dialog-act.s9553330.65"
+                ]
+              },
+              "relation_check": {
+                "result": "not_applicable",
+                "reason": "No prior related_items to assess relation against in the current data.",
+                "evidence_da_ids": []
+              },
+              "documents": []
+            }
+          },
+          {
+            "item_key": "IS1008a#6",
+            "item": "IS1008a#6",
+            "step": 1,
+            "flags": [],
+            "action": "assess_item",
+            "outcome": "invalid_action",
+            "error": "Correct these argument fields: : Additional properties are not allowed ('documents' was unexpected)",
+            "raw_tool_input": {
+              "status": "open",
+              "related_items": [],
+              "owner": [
+                "MIO086"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "statement": {
+                "result": "pass",
+                "reason": "Dialogue shows explicit commitment by the owner (MIO086) to send slides after the meeting; multiple utterances confirm action scope (send a copy of slides to attendees).",
+                "evidence_da_ids": [
+                  "IS1008a.A.dialog-act.s9553330.130",
+                  "IS1008a.A.dialog-act.s9553330.131",
+                  "IS1008a.A.dialog-act.s9553330.129"
+                ]
+              },
+              "owner_check": {
+                "result": "pass",
+                "reason": "There is explicit ownership asserted by MIO086 in the dialogue when committing to perform the action.",
+                "evidence_da_ids": [
+                  "IS1008a.A.dialog-act.s9553330.130"
+                ]
+              },
+              "deadline_check": {
+                "result": "uncertain",
+                "reason": "No explicit deadline stated beyond 'at the conclusion of our meeting' from the question; but the user-provided item does not specify such a deadline in the current text.",
+                "evidence_da_ids": [
+                  "IS1008a.C.dialog-act.s9553330.42"
+                ]
+              },
+              "status_check": {
+                "result": "pass",
+                "reason": "Action status is still open as it has not been marked completed in the dialogue. It aligns with the ongoing meeting context.",
+                "evidence_da_ids": [
+                  "IS1008a.A.dialog-act.s9553330.130",
+                  "IS1008a.A.dialog-act.s9553330.131",
+                  "IS1008a.A.dialog-act.s9553330.132"
+                ]
+              },
+              "conflict_check": {
+                "result": "pass",
+                "reason": "No contradictions found in the observed dialogue regarding this action.",
+                "evidence_da_ids": [
+                  "IS1008a.A.dialog-act.s9553330.130"
+                ]
+              },
+              "relation_check": {
+                "result": "not_applicable",
+                "reason": "No prior related items identified to relate to; this is a standalone action in this meeting.",
+                "evidence_da_ids": []
+              },
+              "documents": []
+            }
+          }
+        ],
+        "executed_lookups": []
+      },
+      "recordable": 10,
+      "published": 9,
+      "validation_errors": []
+    },
+    {
+      "meeting_id": "TS3006b",
+      "status": "COMPLETED",
+      "before_new_stage_calls": 52,
+      "before_new_stage_tokens": 363916,
+      "before_p2_and_tail_seconds": 161.617,
+      "after_new_stage_calls": 51,
+      "captured_upstream": {
+        "attempts": 22,
+        "charged_tokens": 300289,
+        "elapsed_seconds": 635.683
+      },
+      "equivalent_whole_calls": 73,
+      "new_known_tokens": 413246,
+      "new_charged_tokens": 413246,
+      "new_seconds": 168.4,
+      "before_trace": {
+        "lookups": 14,
+        "exact_repeated_executed_lookups": 3,
+        "repeated_lookups": [
+          {
+            "item_key": "TS3006b#0",
+            "item": "TS3006b#0",
+            "step": 5,
+            "flags": [
+              "POSSIBLE_PRIOR"
+            ],
+            "action": "get_prior_items",
+            "outcome": "lookup",
+            "decision": "retrieve",
+            "args": {
+              "query": "The User Interface Designer can design a menu for all these function",
+              "item_type": "actions"
+            },
+            "tool_result": {
+              "results": [
+                {
+                  "id": "TS3006a.sys.s.3",
+                  "meeting_id": "TS3006a",
+                  "type": "actions",
+                  "text": "Produce a working design.",
+                  "owner": [
+                    "MTD022ID"
+                  ],
+                  "owner_basis": "explicit",
+                  "deadline": null,
+                  "deadline_basis": "missing",
+                  "status": "open",
+                  "evidence": [
+                    "TS3006a.A.dialog-act.vkaraisk.146",
+                    "TS3006a.A.dialog-act.vkaraisk.147",
+                    "TS3006a.C.dialog-act.vkaraisk.77"
+                  ],
+                  "source_file": "TS3006a.json",
+                  "source_sha256": "eb352dfc8d7158fe0e58de4c136e4a04aa01b20634413804bd3aed84999cd7d4",
+                  "review_state": "pending",
+                  "unresolved_fields": [
+                    "deadline"
+                  ],
+                  "unreadable_reference_ids": [],
+                  "score": 2.2
+                },
+                {
+                  "id": "TS3006a.sys.s.2",
+                  "meeting_id": "TS3006a",
+                  "type": "actions",
+                  "text": "Start on the conceptual design.",
+                  "owner": [
+                    "MTD022ID"
+                  ],
+                  "owner_basis": "explicit",
+                  "deadline": null,
+                  "deadline_basis": "missing",
+                  "status": "open",
+                  "evidence": [
+                    "TS3006a.C.dialog-act.vkaraisk.117",
+                    "TS3006a.C.dialog-act.vkaraisk.118"
+                  ],
+                  "source_file": "TS3006a.json",
+                  "source_sha256": "eb352dfc8d7158fe0e58de4c136e4a04aa01b20634413804bd3aed84999cd7d4",
+                  "review_state": "pending",
+                  "unresolved_fields": [
+                    "deadline"
+                  ],
+                  "unreadable_reference_ids": [],
+                  "score": 1.12
+                },
+                {
+                  "id": "TS3006a.sys.s.4",
+                  "meeting_id": "TS3006a",
+                  "type": "actions",
+                  "text": "Specify the technical functions.",
+                  "owner": [
+                    "MTD023UID"
+                  ],
+                  "owner_basis": "explicit",
+                  "deadline": null,
+                  "deadline_basis": "missing",
+                  "status": "open",
+                  "evidence": [
+                    "TS3006a.A.dialog-act.vkaraisk.149",
+                    "TS3006a.A.dialog-act.vkaraisk.150",
+                    "TS3006a.B.dialog-act.vkaraisk.59"
+                  ],
+                  "source_file": "TS3006a.json",
+                  "source_sha256": "eb352dfc8d7158fe0e58de4c136e4a04aa01b20634413804bd3aed84999cd7d4",
+                  "review_state": "pending",
+                  "unresolved_fields": [
+                    "deadline"
+                  ],
+                  "unreadable_reference_ids": [],
+                  "score": 0.41
+                }
+              ],
+              "duplicate": true
+            },
+            "new_info": false
+          },
+          {
+            "item_key": "TS3006b#0",
+            "item": "TS3006b#0",
+            "step": 6,
+            "flags": [
+              "POSSIBLE_PRIOR"
+            ],
+            "action": "get_prior_items",
+            "outcome": "lookup",
+            "decision": "retrieve",
+            "args": {
+              "query": "The User Interface Designer can design a menu for all these function",
+              "item_type": "actions"
+            },
+            "tool_result": {
+              "results": [
+                {
+                  "id": "TS3006a.sys.s.3",
+                  "meeting_id": "TS3006a",
+                  "type": "actions",
+                  "text": "Produce a working design.",
+                  "owner": [
+                    "MTD022ID"
+                  ],
+                  "owner_basis": "explicit",
+                  "deadline": null,
+                  "deadline_basis": "missing",
+                  "status": "open",
+                  "evidence": [
+                    "TS3006a.A.dialog-act.vkaraisk.146",
+                    "TS3006a.A.dialog-act.vkaraisk.147",
+                    "TS3006a.C.dialog-act.vkaraisk.77"
+                  ],
+                  "source_file": "TS3006a.json",
+                  "source_sha256": "eb352dfc8d7158fe0e58de4c136e4a04aa01b20634413804bd3aed84999cd7d4",
+                  "review_state": "pending",
+                  "unresolved_fields": [
+                    "deadline"
+                  ],
+                  "unreadable_reference_ids": [],
+                  "score": 2.2
+                },
+                {
+                  "id": "TS3006a.sys.s.2",
+                  "meeting_id": "TS3006a",
+                  "type": "actions",
+                  "text": "Start on the conceptual design.",
+                  "owner": [
+                    "MTD022ID"
+                  ],
+                  "owner_basis": "explicit",
+                  "deadline": null,
+                  "deadline_basis": "missing",
+                  "status": "open",
+                  "evidence": [
+                    "TS3006a.C.dialog-act.vkaraisk.117",
+                    "TS3006a.C.dialog-act.vkaraisk.118"
+                  ],
+                  "source_file": "TS3006a.json",
+                  "source_sha256": "eb352dfc8d7158fe0e58de4c136e4a04aa01b20634413804bd3aed84999cd7d4",
+                  "review_state": "pending",
+                  "unresolved_fields": [
+                    "deadline"
+                  ],
+                  "unreadable_reference_ids": [],
+                  "score": 1.12
+                },
+                {
+                  "id": "TS3006a.sys.s.4",
+                  "meeting_id": "TS3006a",
+                  "type": "actions",
+                  "text": "Specify the technical functions.",
+                  "owner": [
+                    "MTD023UID"
+                  ],
+                  "owner_basis": "explicit",
+                  "deadline": null,
+                  "deadline_basis": "missing",
+                  "status": "open",
+                  "evidence": [
+                    "TS3006a.A.dialog-act.vkaraisk.149",
+                    "TS3006a.A.dialog-act.vkaraisk.150",
+                    "TS3006a.B.dialog-act.vkaraisk.59"
+                  ],
+                  "source_file": "TS3006a.json",
+                  "source_sha256": "eb352dfc8d7158fe0e58de4c136e4a04aa01b20634413804bd3aed84999cd7d4",
+                  "review_state": "pending",
+                  "unresolved_fields": [
+                    "deadline"
+                  ],
+                  "unreadable_reference_ids": [],
+                  "score": 0.41
+                }
+              ],
+              "duplicate": true
+            },
+            "new_info": false
+          },
+          {
+            "item_key": "TS3006b#11",
+            "item": "TS3006b#11",
+            "step": 4,
+            "flags": [
+              "POSSIBLE_PRIOR"
+            ],
+            "action": "get_prior_items",
+            "outcome": "lookup",
+            "decision": "retrieve",
+            "args": {
+              "query": "TS3006b UI compile list of functions LCD screen",
+              "item_type": "actions"
+            },
+            "tool_result": {
+              "results": [
+                {
+                  "id": "TS3006a.sys.s.4",
+                  "meeting_id": "TS3006a",
+                  "type": "actions",
+                  "text": "Specify the technical functions.",
+                  "owner": [
+                    "MTD023UID"
+                  ],
+                  "owner_basis": "explicit",
+                  "deadline": null,
+                  "deadline_basis": "missing",
+                  "status": "open",
+                  "evidence": [
+                    "TS3006a.A.dialog-act.vkaraisk.149",
+                    "TS3006a.A.dialog-act.vkaraisk.150",
+                    "TS3006a.B.dialog-act.vkaraisk.59"
+                  ],
+                  "source_file": "TS3006a.json",
+                  "source_sha256": "eb352dfc8d7158fe0e58de4c136e4a04aa01b20634413804bd3aed84999cd7d4",
+                  "review_state": "pending",
+                  "unresolved_fields": [
+                    "deadline"
+                  ],
+                  "unreadable_reference_ids": [],
+                  "score": 1.4
+                }
+              ],
+              "duplicate": true
+            },
+            "new_info": false
+          }
+        ],
+        "invalid_actions": 8,
+        "invalid_details": [
+          {
+            "item_key": "TS3006b#3",
+            "item": "TS3006b#3",
+            "step": 2,
+            "flags": [],
+            "action": "assess_core",
+            "outcome": "invalid_action",
+            "error": "Correct these argument fields: : 'conflict_check' is a required property",
+            "raw_tool_input": {
+              "statement": {
+                "result": "uncertain",
+                "reason": "The current dialogue mentions saving but does not establish whether saving is automatic or where the project file is stored. Evidence is limited to three dialogue lines mentioning saving and a marker, without a definitive answer.",
+                "evidence_da_ids": [
+                  "TS3006b.D.dialog-act.dharshi.433",
+                  "TS3006b.D.dialog-act.dharshi.435",
+                  "TS3006b.A.dialog-act.dharshi.393"
+                ]
+              },
+              "status": "open",
+              "related_items": []
+            }
+          },
+          {
+            "item_key": "TS3006b#3",
+            "item": "TS3006b#3",
+            "step": 3,
+            "flags": [],
+            "action": "assess_core",
+            "outcome": "invalid_action",
+            "error": "Correct these argument fields: : 'conflict_check' is a required property",
+            "raw_tool_input": {
+              "statement": {
+                "result": "uncertain",
+                "reason": "The current dialogue mentions saving but does not establish whether saving is automatic or where the project file is stored. Evidence is limited to three dialogue lines mentioning saving and a marker, without a definitive answer.",
+                "evidence_da_ids": [
+                  "TS3006b.D.dialog-act.dharshi.433",
+                  "TS3006b.D.dialog-act.dharshi.435",
+                  "TS3006b.A.dialog-act.dharshi.393"
+                ]
+              },
+              "status": "open",
+              "related_items": []
+            }
+          },
+          {
+            "item_key": "TS3006b#8",
+            "item": "TS3006b#8",
+            "step": 1,
+            "flags": [],
+            "action": "assess_item",
+            "outcome": "invalid_action",
+            "error": "Correct these argument fields: : Additional properties are not allowed ('documents', 'evidence_da_ids' were unexpected)",
+            "raw_tool_input": {
+              "status": "adopted",
+              "related_items": [],
+              "statement": {
+                "result": "pass",
+                "reason": "Dialogue clearly confirms requirement for corporate identity including logo presence and consistent colours as part of the product requirements.",
+                "evidence_da_ids": [
+                  "TS3006b.A.dialog-act.dharshi.54",
+                  "TS3006b.D.dialog-act.dharshi.105",
+                  "TS3006b.D.dialog-act.dharshi.109",
+                  "TS3006b.A.dialog-act.dharshi.55",
+                  "TS3006b.A.dialog-act.dharshi.56"
+                ]
+              },
+              "status_check": {
+                "result": "pass",
+                "reason": "Current dialogue explicitly expresses the need for logo presence and colour consistency; no contradictions found.",
+                "evidence_da_ids": [
+                  "TS3006b.A.dialog-act.dharshi.54",
+                  "TS3006b.D.dialog-act.dharshi.105",
+                  "TS3006b.D.dialog-act.dharshi.109",
+                  "TS3006b.A.dialog-act.dharshi.55",
+                  "TS3006b.A.dialog-act.dharshi.56"
+                ]
+              },
+              "conflict_check": {
+                "result": "pass",
+                "reason": "No contradictions found in available evidence regarding identity/logo/colours within this dialogue.",
+                "evidence_da_ids": [
+                  "TS3006b.A.dialog-act.dharshi.54",
+                  "TS3006b.D.dialog-act.dharshi.105",
+                  "TS3006b.D.dialog-act.dharshi.109",
+                  "TS3006b.A.dialog-act.dharshi.55",
+                  "TS3006b.A.dialog-act.dharshi.56"
+                ],
+                "affected_fields": []
+              },
+              "relation_check": {
+                "result": "not_applicable",
+                "reason": "No related_items to assess; this is a standalone statement in this meeting.",
+                "evidence_da_ids": []
+              },
+              "evidence_da_ids": [
+                "TS3006b.A.dialog-act.dharshi.54",
+                "TS3006b.D.dialog-act.dharshi.105",
+                "TS3006b.D.dialog-act.dharshi.109",
+                "TS3006b.A.dialog-act.dharshi.55",
+                "TS3006b.A.dialog-act.dharshi.56"
+              ],
+              "documents": [],
+              "next_action": "accept"
+            }
+          },
+          {
+            "item_key": "TS3006b#9",
+            "item": "TS3006b#9",
+            "step": 1,
+            "flags": [],
+            "action": "assess_item",
+            "outcome": "invalid_action",
+            "error": "Correct these argument fields: : 'relation_check' is a required property",
+            "raw_tool_input": {
+              "status": "open",
+              "related_items": [],
+              "owner": [
+                "MTD021PM"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "statement": {
+                "result": "pass",
+                "reason": "Dialogue shows PM states intent to write meeting minutes; explicit owner is PM. Scope matches item: writing minutes for current meeting.",
+                "evidence_da_ids": [
+                  "TS3006b.A.dialog-act.dharshi.378",
+                  "TS3006b.A.dialog-act.dharshi.379"
+                ]
+              },
+              "owner_check": {
+                "result": "pass",
+                "reason": "Dialogue confirms PM is the one who will write the minutes; explicit owner present in dialogue.",
+                "evidence_da_ids": [
+                  "TS3006b.A.dialog-act.dharshi.378",
+                  "TS3006b.A.dialog-act.dharshi.379"
+                ]
+              },
+              "deadline_check": {
+                "result": "uncertain",
+                "reason": "No deadline stated in dialogue or item; deadline missing. Needs clarification if a deadline is required.",
+                "evidence_da_ids": []
+              },
+              "status_check": {
+                "result": "pass",
+                "reason": "Open status aligned with provisional status; no evidence of completion.",
+                "evidence_da_ids": [
+                  "TS3006b.A.dialog-act.dharshi.378",
+                  "TS3006b.A.dialog-act.dharshi.379"
+                ]
+              },
+              "conflict_check": {
+                "result": "pass",
+                "reason": "No contradicting evidence found in the provided dialogue; owner and statement align.",
+                "evidence_da_ids": [
+                  "TS3006b.A.dialog-act.dharshi.378",
+                  "TS3006b.A.dialog-act.dharshi.379"
+                ],
+                "affected_fields": [
+                  "statement",
+                  "owner"
+                ]
+              },
+              "next_action": "accept"
+            }
+          },
+          {
+            "item_key": "TS3006b#10",
+            "item": "TS3006b#10",
+            "step": 2,
+            "flags": [
+              "POSSIBLE_PRIOR"
+            ],
+            "action": "get_prior_items",
+            "outcome": "invalid_action",
+            "error": "Search earlier record TEXT using subject/property keywords, not a meeting ID. Choose a content query, search again or stop pending.",
+            "raw_tool_input": {
+              "query": "TS3006a",
+              "item_type": "actions"
+            }
+          },
+          {
+            "item_key": "TS3006b#10",
+            "item": "TS3006b#10",
+            "step": 5,
+            "flags": [
+              "POSSIBLE_PRIOR"
+            ],
+            "action": "get_prior_items",
+            "outcome": "invalid_action",
+            "error": "Search earlier record TEXT using subject/property keywords, not a meeting ID. Choose a content query, search again or stop pending.",
+            "raw_tool_input": {
+              "query": "TS3006a",
+              "item_type": "actions"
+            }
+          },
+          {
+            "item_key": "TS3006b#11",
+            "item": "TS3006b#11",
+            "step": 1,
+            "flags": [
+              "POSSIBLE_PRIOR"
+            ],
+            "action": "assess_item",
+            "outcome": "invalid_action",
+            "error": "Correct these argument fields: status_check/evidence_da_ids: [] should be non-empty",
+            "raw_tool_input": {
+              "status": "open",
+              "related_items": [],
+              "owner": [
+                "MTD023UID"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "statement": {
+                "result": "pass",
+                "reason": "The dialogue indicates the UI Designer is assigned to compile a list of functions to be displayed on the LCD screen, and explicitly assigns the owner to MTD023UID (UI). Evidence from the current dialogue line TS3006b.B.dialog-act.dharshi.163 confirms the instruction.",
+                "evidence_da_ids": [
+                  "TS3006b.B.dialog-act.dharshi.163"
+                ]
+              },
+              "owner_check": {
+                "result": "pass",
+                "reason": "Current dialogue contains an explicit instruction assigning the task to MTD023UID as part of the UI discussion.",
+                "evidence_da_ids": [
+                  "TS3006b.B.dialog-act.dharshi.163"
+                ]
+              },
+              "deadline_check": {
+                "result": "uncertain",
+                "reason": "No deadline is stated in dialogue or item; deadline is missing.",
+                "evidence_da_ids": []
+              },
+              "status_check": {
+                "result": "pass",
+                "reason": "Provisional status is open as indicated by the item; no completion/cancellation asserted in dialogue.",
+                "evidence_da_ids": []
+              },
+              "conflict_check": {
+                "result": "pass",
+                "reason": "No contradictions observed between current statement and available evidence.",
+                "evidence_da_ids": [],
+                "affected_fields": []
+              },
+              "relation_check": {
+                "result": "uncertain",
+                "reason": "No earlier related item identified in provided peer items; this item stands independently without a clear prior relationship.",
+                "evidence_da_ids": []
+              },
+              "next_action": "accept"
+            }
+          },
+          {
+            "item_key": "TS3006b#16",
+            "item": "TS3006b#16",
+            "step": 2,
+            "flags": [],
+            "action": "assess_core",
+            "outcome": "invalid_action",
+            "error": "Correct these argument fields: : 'statement' is a required property; : 'conflict_check' is a required property; : Additional properties are not allowed ('evidence_da_ids', 'reason' were unexpected)",
+            "raw_tool_input": {
+              "status": "uncertain",
+              "reason": "Core claim about two-button scheme vs dialogue evidence is unclear; also owner/deadline unresolved.",
+              "evidence_da_ids": [
+                "TS3006b.D.dialog-act.dharshi.419",
+                "TS3006b.A.dialog-act.dharshi.370"
+              ]
+            }
+          }
+        ],
+        "executed_lookups": [
+          {
+            "item_key": "TS3006b#0",
+            "item": "TS3006b#0",
+            "step": 2,
+            "flags": [
+              "POSSIBLE_PRIOR"
+            ],
+            "action": "read_dialogue",
+            "outcome": "lookup",
+            "decision": "retrieve",
+            "args": {
+              "meeting_id": "TS3006b",
+              "da_id": "TS3006b.A.dialog-act.dharshi.305",
+              "window": 15
+            },
+            "tool_result": {
+              "results": [
+                {
+                  "da_id": "TS3006b.A.dialog-act.dharshi.300",
+                  "participant": "MTD021PM",
+                  "role": "PM",
+                  "text": "<vocalsound>"
+                },
+                {
+                  "da_id": "TS3006b.C.dialog-act.dharshi.171",
+                  "participant": "MTD022ID",
+                  "role": "ID",
+                  "text": "Thank god ."
+                },
+                {
+                  "da_id": "TS3006b.D.dialog-act.dharshi.349",
+                  "participant": "MTD024ME",
+                  "role": "ME",
+                  "text": "Yeah ."
+                },
+                {
+                  "da_id": "TS3006b.B.dialog-act.dharshi.146",
+                  "participant": "MTD023UID",
+                  "role": "UI",
+                  "text": "Okay <disfmarker>"
+                },
+                {
+                  "da_id": "TS3006b.D.dialog-act.dharshi.350",
+                  "participant": "MTD024ME",
+                  "role": "ME",
+                  "text": "So we have a figure a figure out a way to to do that easily ."
+                },
+                {
+                  "da_id": "TS3006b.D.dialog-act.dharshi.351",
+                  "participant": "MTD024ME",
+                  "role": "ME",
+                  "text": "I mean th the autoseek is is not a problem ."
+                },
+                {
+                  "da_id": "TS3006b.D.dialog-act.dharshi.352",
+                  "participant": "MTD024ME",
+                  "role": "ME",
+                  "text": "I mean you uh you uh current channel and then then it just says , uh on which number do you want to save this ,"
+                },
+                {
+                  "da_id": "TS3006b.A.dialog-act.dharshi.304",
+                  "participant": "MTD021PM",
+                  "role": "PM",
+                  "text": "No that's the <disfmarker>"
+                },
+                {
+                  "da_id": "TS3006b.D.dialog-act.dharshi.353",
+                  "participant": "MTD024ME",
+                  "role": "ME",
+                  "text": "and you just press a number on your remote , and then say confirm , okay , and then it's it's saved ."
+                },
+                {
+                  "da_id": "TS3006b.D.dialog-act.dharshi.354",
+                  "participant": "MTD024ME",
+                  "role": "ME",
+                  "text": "It's easier , <gap>"
+                },
+                {
+                  "da_id": "TS3006b.D.dialog-act.dharshi.355",
+                  "participant": "MTD024ME",
+                  "role": "ME",
+                  "text": "it's it's it's harder to , if you have already programmed it , to to swap ."
+                },
+                {
+                  "da_id": "TS3006b.A.dialog-act.dharshi.301",
+                  "participant": "MTD021PM",
+                  "role": "PM",
+                  "text": "Yeah ."
+                },
+                {
+                  "da_id": "TS3006b.D.dialog-act.dharshi.356",
+                  "participant": "MTD024ME",
+                  "role": "ME",
+                  "text": "So we have to think of something for that ."
+                },
+                {
+                  "da_id": "TS3006b.A.dialog-act.dharshi.302",
+                  "participant": "MTD021PM",
+                  "role": "PM",
+                  "text": "So but <disfmarker>"
+                },
+                {
+                  "da_id": "TS3006b.A.dialog-act.dharshi.303",
+                  "participant": "MTD021PM",
+                  "role": "PM",
+                  "text": "Um <disfmarker>"
+                },
+                {
+                  "da_id": "TS3006b.A.dialog-act.dharshi.305",
+                  "participant": "MTD021PM",
+                  "role": "PM",
+                  "text": "The User Interface Designer can design a menu for all these function"
+                },
+                {
+                  "da_id": "TS3006b.D.dialog-act.dharshi.357",
+                  "participant": "MTD024ME",
+                  "role": "ME",
+                  "text": "Yeah k kind of structure into layers ."
+                },
+                {
+                  "da_id": "TS3006b.A.dialog-act.dharshi.306",
+                  "participant": "MTD021PM",
+                  "role": "PM",
+                  "text": "I put them on the <vocalsound> <disfmarker>"
+                },
+                {
+                  "da_id": "TS3006b.B.dialog-act.dharshi.147",
+                  "participant": "MTD023UID",
+                  "role": "UI",
+                  "text": "On the uh"
+                },
+                {
+                  "da_id": "TS3006b.B.dialog-act.dharshi.148",
+                  "participant": "MTD023UID",
+                  "role": "UI",
+                  "text": "yeah can you i make a a map with with all the <disfmarker>"
+                },
+                {
+                  "da_id": "TS3006b.B.dialog-act.dharshi.149",
+                  "participant": "MTD023UID",
+                  "role": "UI",
+                  "text": "yeah 'cause it's now <disfmarker> there are lots and lots of documents"
+                },
+                {
+                  "da_id": "TS3006b.A.dialog-act.dharshi.307",
+                  "participant": "MTD021PM",
+                  "role": "PM",
+                  "text": "<gap> ."
+                },
+                {
+                  "da_id": "TS3006b.A.dialog-act.dharshi.308",
+                  "participant": "MTD021PM",
+                  "role": "PM",
+                  "text": "Yeah . Yeah I can ."
+                },
+                {
+                  "da_id": "TS3006b.B.dialog-act.dharshi.150",
+                  "participant": "MTD023UID",
+                  "role": "UI",
+                  "text": "and <disfmarker>"
+                },
+                {
+                  "da_id": "TS3006b.A.dialog-act.dharshi.309",
+                  "participant": "MTD021PM",
+                  "role": "PM",
+                  "text": "I'll just try to reorganise uh things ."
+                },
+                {
+                  "da_id": "TS3006b.D.dialog-act.dharshi.358",
+                  "participant": "MTD024ME",
+                  "role": "ME",
+                  "text": "So <disfmarker>"
+                },
+                {
+                  "da_id": "TS3006b.A.dialog-act.dharshi.310",
+                  "participant": "MTD021PM",
+                  "role": "PM",
+                  "text": "Um <disfmarker>"
+                },
+                {
+                  "da_id": "TS3006b.A.dialog-act.dharshi.311",
+                  "participant": "MTD021PM",
+                  "role": "PM",
+                  "text": "So you design the basic function menu for the L_C_D_ screen ?"
+                },
+                {
+                  "da_id": "TS3006b.A.dialog-act.dharshi.312",
+                  "participant": "MTD021PM",
+                  "role": "PM",
+                  "text": "Uh um <disfmarker>"
+                },
+                {
+                  "da_id": "TS3006b.D.dialog-act.dharshi.359",
+                  "participant": "MTD024ME",
+                  "role": "ME",
+                  "text": "And and the layout of of the thing itself ."
+                },
+                {
+                  "da_id": "TS3006b.A.dialog-act.dharshi.313",
+                  "participant": "MTD021PM",
+                  "role": "PM",
+                  "text": "I think <vocalsound>"
+                }
+              ]
+            },
+            "new_info": true
+          },
+          {
+            "item_key": "TS3006b#0",
+            "item": "TS3006b#0",
+            "step": 4,
+            "flags": [
+              "POSSIBLE_PRIOR"
+            ],
+            "action": "get_prior_items",
+            "outcome": "lookup",
+            "decision": "retrieve",
+            "args": {
+              "query": "The User Interface Designer can design a menu for all these function",
+              "item_type": "actions"
+            },
+            "tool_result": {
+              "results": [
+                {
+                  "id": "TS3006a.sys.s.3",
+                  "meeting_id": "TS3006a",
+                  "type": "actions",
+                  "text": "Produce a working design.",
+                  "owner": [
+                    "MTD022ID"
+                  ],
+                  "owner_basis": "explicit",
+                  "deadline": null,
+                  "deadline_basis": "missing",
+                  "status": "open",
+                  "evidence": [
+                    "TS3006a.A.dialog-act.vkaraisk.146",
+                    "TS3006a.A.dialog-act.vkaraisk.147",
+                    "TS3006a.C.dialog-act.vkaraisk.77"
+                  ],
+                  "source_file": "TS3006a.json",
+                  "source_sha256": "eb352dfc8d7158fe0e58de4c136e4a04aa01b20634413804bd3aed84999cd7d4",
+                  "review_state": "pending",
+                  "unresolved_fields": [
+                    "deadline"
+                  ],
+                  "unreadable_reference_ids": [],
+                  "score": 2.2
+                },
+                {
+                  "id": "TS3006a.sys.s.2",
+                  "meeting_id": "TS3006a",
+                  "type": "actions",
+                  "text": "Start on the conceptual design.",
+                  "owner": [
+                    "MTD022ID"
+                  ],
+                  "owner_basis": "explicit",
+                  "deadline": null,
+                  "deadline_basis": "missing",
+                  "status": "open",
+                  "evidence": [
+                    "TS3006a.C.dialog-act.vkaraisk.117",
+                    "TS3006a.C.dialog-act.vkaraisk.118"
+                  ],
+                  "source_file": "TS3006a.json",
+                  "source_sha256": "eb352dfc8d7158fe0e58de4c136e4a04aa01b20634413804bd3aed84999cd7d4",
+                  "review_state": "pending",
+                  "unresolved_fields": [
+                    "deadline"
+                  ],
+                  "unreadable_reference_ids": [],
+                  "score": 1.12
+                },
+                {
+                  "id": "TS3006a.sys.s.4",
+                  "meeting_id": "TS3006a",
+                  "type": "actions",
+                  "text": "Specify the technical functions.",
+                  "owner": [
+                    "MTD023UID"
+                  ],
+                  "owner_basis": "explicit",
+                  "deadline": null,
+                  "deadline_basis": "missing",
+                  "status": "open",
+                  "evidence": [
+                    "TS3006a.A.dialog-act.vkaraisk.149",
+                    "TS3006a.A.dialog-act.vkaraisk.150",
+                    "TS3006a.B.dialog-act.vkaraisk.59"
+                  ],
+                  "source_file": "TS3006a.json",
+                  "source_sha256": "eb352dfc8d7158fe0e58de4c136e4a04aa01b20634413804bd3aed84999cd7d4",
+                  "review_state": "pending",
+                  "unresolved_fields": [
+                    "deadline"
+                  ],
+                  "unreadable_reference_ids": [],
+                  "score": 0.41
+                }
+              ]
+            },
+            "new_info": true
+          },
+          {
+            "item_key": "TS3006b#0",
+            "item": "TS3006b#0",
+            "step": 5,
+            "flags": [
+              "POSSIBLE_PRIOR"
+            ],
+            "action": "get_prior_items",
+            "outcome": "lookup",
+            "decision": "retrieve",
+            "args": {
+              "query": "The User Interface Designer can design a menu for all these function",
+              "item_type": "actions"
+            },
+            "tool_result": {
+              "results": [
+                {
+                  "id": "TS3006a.sys.s.3",
+                  "meeting_id": "TS3006a",
+                  "type": "actions",
+                  "text": "Produce a working design.",
+                  "owner": [
+                    "MTD022ID"
+                  ],
+                  "owner_basis": "explicit",
+                  "deadline": null,
+                  "deadline_basis": "missing",
+                  "status": "open",
+                  "evidence": [
+                    "TS3006a.A.dialog-act.vkaraisk.146",
+                    "TS3006a.A.dialog-act.vkaraisk.147",
+                    "TS3006a.C.dialog-act.vkaraisk.77"
+                  ],
+                  "source_file": "TS3006a.json",
+                  "source_sha256": "eb352dfc8d7158fe0e58de4c136e4a04aa01b20634413804bd3aed84999cd7d4",
+                  "review_state": "pending",
+                  "unresolved_fields": [
+                    "deadline"
+                  ],
+                  "unreadable_reference_ids": [],
+                  "score": 2.2
+                },
+                {
+                  "id": "TS3006a.sys.s.2",
+                  "meeting_id": "TS3006a",
+                  "type": "actions",
+                  "text": "Start on the conceptual design.",
+                  "owner": [
+                    "MTD022ID"
+                  ],
+                  "owner_basis": "explicit",
+                  "deadline": null,
+                  "deadline_basis": "missing",
+                  "status": "open",
+                  "evidence": [
+                    "TS3006a.C.dialog-act.vkaraisk.117",
+                    "TS3006a.C.dialog-act.vkaraisk.118"
+                  ],
+                  "source_file": "TS3006a.json",
+                  "source_sha256": "eb352dfc8d7158fe0e58de4c136e4a04aa01b20634413804bd3aed84999cd7d4",
+                  "review_state": "pending",
+                  "unresolved_fields": [
+                    "deadline"
+                  ],
+                  "unreadable_reference_ids": [],
+                  "score": 1.12
+                },
+                {
+                  "id": "TS3006a.sys.s.4",
+                  "meeting_id": "TS3006a",
+                  "type": "actions",
+                  "text": "Specify the technical functions.",
+                  "owner": [
+                    "MTD023UID"
+                  ],
+                  "owner_basis": "explicit",
+                  "deadline": null,
+                  "deadline_basis": "missing",
+                  "status": "open",
+                  "evidence": [
+                    "TS3006a.A.dialog-act.vkaraisk.149",
+                    "TS3006a.A.dialog-act.vkaraisk.150",
+                    "TS3006a.B.dialog-act.vkaraisk.59"
+                  ],
+                  "source_file": "TS3006a.json",
+                  "source_sha256": "eb352dfc8d7158fe0e58de4c136e4a04aa01b20634413804bd3aed84999cd7d4",
+                  "review_state": "pending",
+                  "unresolved_fields": [
+                    "deadline"
+                  ],
+                  "unreadable_reference_ids": [],
+                  "score": 0.41
+                }
+              ],
+              "duplicate": true
+            },
+            "new_info": false
+          },
+          {
+            "item_key": "TS3006b#0",
+            "item": "TS3006b#0",
+            "step": 6,
+            "flags": [
+              "POSSIBLE_PRIOR"
+            ],
+            "action": "get_prior_items",
+            "outcome": "lookup",
+            "decision": "retrieve",
+            "args": {
+              "query": "The User Interface Designer can design a menu for all these function",
+              "item_type": "actions"
+            },
+            "tool_result": {
+              "results": [
+                {
+                  "id": "TS3006a.sys.s.3",
+                  "meeting_id": "TS3006a",
+                  "type": "actions",
+                  "text": "Produce a working design.",
+                  "owner": [
+                    "MTD022ID"
+                  ],
+                  "owner_basis": "explicit",
+                  "deadline": null,
+                  "deadline_basis": "missing",
+                  "status": "open",
+                  "evidence": [
+                    "TS3006a.A.dialog-act.vkaraisk.146",
+                    "TS3006a.A.dialog-act.vkaraisk.147",
+                    "TS3006a.C.dialog-act.vkaraisk.77"
+                  ],
+                  "source_file": "TS3006a.json",
+                  "source_sha256": "eb352dfc8d7158fe0e58de4c136e4a04aa01b20634413804bd3aed84999cd7d4",
+                  "review_state": "pending",
+                  "unresolved_fields": [
+                    "deadline"
+                  ],
+                  "unreadable_reference_ids": [],
+                  "score": 2.2
+                },
+                {
+                  "id": "TS3006a.sys.s.2",
+                  "meeting_id": "TS3006a",
+                  "type": "actions",
+                  "text": "Start on the conceptual design.",
+                  "owner": [
+                    "MTD022ID"
+                  ],
+                  "owner_basis": "explicit",
+                  "deadline": null,
+                  "deadline_basis": "missing",
+                  "status": "open",
+                  "evidence": [
+                    "TS3006a.C.dialog-act.vkaraisk.117",
+                    "TS3006a.C.dialog-act.vkaraisk.118"
+                  ],
+                  "source_file": "TS3006a.json",
+                  "source_sha256": "eb352dfc8d7158fe0e58de4c136e4a04aa01b20634413804bd3aed84999cd7d4",
+                  "review_state": "pending",
+                  "unresolved_fields": [
+                    "deadline"
+                  ],
+                  "unreadable_reference_ids": [],
+                  "score": 1.12
+                },
+                {
+                  "id": "TS3006a.sys.s.4",
+                  "meeting_id": "TS3006a",
+                  "type": "actions",
+                  "text": "Specify the technical functions.",
+                  "owner": [
+                    "MTD023UID"
+                  ],
+                  "owner_basis": "explicit",
+                  "deadline": null,
+                  "deadline_basis": "missing",
+                  "status": "open",
+                  "evidence": [
+                    "TS3006a.A.dialog-act.vkaraisk.149",
+                    "TS3006a.A.dialog-act.vkaraisk.150",
+                    "TS3006a.B.dialog-act.vkaraisk.59"
+                  ],
+                  "source_file": "TS3006a.json",
+                  "source_sha256": "eb352dfc8d7158fe0e58de4c136e4a04aa01b20634413804bd3aed84999cd7d4",
+                  "review_state": "pending",
+                  "unresolved_fields": [
+                    "deadline"
+                  ],
+                  "unreadable_reference_ids": [],
+                  "score": 0.41
+                }
+              ],
+              "duplicate": true
+            },
+            "new_info": false
+          },
+          {
+            "item_key": "TS3006b#2",
+            "item": "TS3006b#2",
+            "step": 2,
+            "flags": [],
+            "action": "get_prior_items",
+            "outcome": "lookup",
+            "decision": "retrieve",
+            "args": {
+              "query": "screen function unclear",
+              "item_type": "problems"
+            },
+            "tool_result": {
+              "results": []
+            },
+            "new_info": false
+          },
+          {
+            "item_key": "TS3006b#7",
+            "item": "TS3006b#7",
+            "step": 2,
+            "flags": [
+              "POSSIBLE_PRIOR"
+            ],
+            "action": "get_prior_items",
+            "outcome": "lookup",
+            "decision": "retrieve",
+            "args": {
+              "query": "TS3006a decisions",
+              "item_type": "decisions"
+            },
+            "tool_result": {
+              "results": []
+            },
+            "new_info": false
+          },
+          {
+            "item_key": "TS3006b#10",
+            "item": "TS3006b#10",
+            "step": 3,
+            "flags": [
+              "POSSIBLE_PRIOR"
+            ],
+            "action": "get_prior_items",
+            "outcome": "lookup",
+            "decision": "retrieve",
+            "args": {
+              "query": "group two groups display basic UI",
+              "item_type": "actions"
+            },
+            "tool_result": {
+              "results": []
+            },
+            "new_info": false
+          },
+          {
+            "item_key": "TS3006b#10",
+            "item": "TS3006b#10",
+            "step": 6,
+            "flags": [
+              "POSSIBLE_PRIOR"
+            ],
+            "action": "get_prior_items",
+            "outcome": "lookup",
+            "decision": "retrieve",
+            "args": {
+              "query": "group two groups display basic UI functions",
+              "item_type": "actions"
+            },
+            "tool_result": {
+              "results": [
+                {
+                  "id": "TS3006a.sys.s.4",
+                  "meeting_id": "TS3006a",
+                  "type": "actions",
+                  "text": "Specify the technical functions.",
+                  "owner": [
+                    "MTD023UID"
+                  ],
+                  "owner_basis": "explicit",
+                  "deadline": null,
+                  "deadline_basis": "missing",
+                  "status": "open",
+                  "evidence": [
+                    "TS3006a.A.dialog-act.vkaraisk.149",
+                    "TS3006a.A.dialog-act.vkaraisk.150",
+                    "TS3006a.B.dialog-act.vkaraisk.59"
+                  ],
+                  "source_file": "TS3006a.json",
+                  "source_sha256": "eb352dfc8d7158fe0e58de4c136e4a04aa01b20634413804bd3aed84999cd7d4",
+                  "review_state": "pending",
+                  "unresolved_fields": [
+                    "deadline"
+                  ],
+                  "unreadable_reference_ids": [],
+                  "score": 1.4
+                }
+              ]
+            },
+            "new_info": true
+          },
+          {
+            "item_key": "TS3006b#10",
+            "item": "TS3006b#10",
+            "step": 7,
+            "flags": [
+              "POSSIBLE_PRIOR"
+            ],
+            "action": "read_prior_item",
+            "outcome": "lookup",
+            "decision": "retrieve",
+            "args": {
+              "item_id": "TS3006a.sys.s.4"
+            },
+            "tool_result": {
+              "results": [
+                {
+                  "kind": "prior_item",
+                  "id": "TS3006a.sys.s.4",
+                  "meeting_id": "TS3006a",
+                  "type": "actions",
+                  "text": "Specify the technical functions.",
+                  "owner": [
+                    "MTD023UID"
+                  ],
+                  "owner_basis": "explicit",
+                  "deadline": null,
+                  "deadline_basis": "missing",
+                  "status": "open",
+                  "evidence": [
+                    "TS3006a.A.dialog-act.vkaraisk.149",
+                    "TS3006a.A.dialog-act.vkaraisk.150",
+                    "TS3006a.B.dialog-act.vkaraisk.59"
+                  ],
+                  "source_file": "TS3006a.json",
+                  "source_sha256": "eb352dfc8d7158fe0e58de4c136e4a04aa01b20634413804bd3aed84999cd7d4",
+                  "review_state": "pending",
+                  "unresolved_fields": [
+                    "deadline"
+                  ],
+                  "unreadable_reference_ids": [],
+                  "selected_reference_ids": [
+                    "TS3006a.A.dialog-act.vkaraisk.149",
+                    "TS3006a.A.dialog-act.vkaraisk.150",
+                    "TS3006a.B.dialog-act.vkaraisk.59"
+                  ],
+                  "next_offset": null
+                },
+                {
+                  "kind": "dialogue",
+                  "da_id": "TS3006a.A.dialog-act.vkaraisk.148",
+                  "meeting_id": "TS3006a",
+                  "text": "Okay .",
+                  "participant": "MTD021PM",
+                  "role": "PM",
+                  "supports_item_id": "TS3006a.sys.s.4",
+                  "is_reference": false
+                },
+                {
+                  "kind": "dialogue",
+                  "da_id": "TS3006a.A.dialog-act.vkaraisk.149",
+                  "meeting_id": "TS3006a",
+                  "text": "Uh the User Interface Designer should specify the technical functions .",
+                  "participant": "MTD021PM",
+                  "role": "PM",
+                  "supports_item_id": "TS3006a.sys.s.4",
+                  "is_reference": true
+                },
+                {
+                  "kind": "dialogue",
+                  "da_id": "TS3006a.A.dialog-act.vkaraisk.150",
+                  "meeting_id": "TS3006a",
+                  "text": "Right ? Yeah ?",
+                  "participant": "MTD021PM",
+                  "role": "PM",
+                  "supports_item_id": "TS3006a.sys.s.4",
+                  "is_reference": true
+                },
+                {
+                  "kind": "dialogue",
+                  "da_id": "TS3006a.B.dialog-act.vkaraisk.59",
+                  "meeting_id": "TS3006a",
+                  "text": "Yep .",
+                  "participant": "MTD023UID",
+                  "role": "UI",
+                  "supports_item_id": "TS3006a.sys.s.4",
+                  "is_reference": true
+                },
+                {
+                  "kind": "dialogue",
+                  "da_id": "TS3006a.A.dialog-act.vkaraisk.151",
+                  "meeting_id": "TS3006a",
+                  "text": "<vocalsound> And the Marketing uh Expert should come up with user requirements .",
+                  "participant": "MTD021PM",
+                  "role": "PM",
+                  "supports_item_id": "TS3006a.sys.s.4",
+                  "is_reference": false
+                }
+              ]
+            },
+            "new_info": true
+          },
+          {
+            "item_key": "TS3006b#11",
+            "item": "TS3006b#11",
+            "step": 3,
+            "flags": [
+              "POSSIBLE_PRIOR"
+            ],
+            "action": "get_prior_items",
+            "outcome": "lookup",
+            "decision": "retrieve",
+            "args": {
+              "query": "TS3006b UI compile list of functions LCD screen",
+              "item_type": "actions"
+            },
+            "tool_result": {
+              "results": [
+                {
+                  "id": "TS3006a.sys.s.4",
+                  "meeting_id": "TS3006a",
+                  "type": "actions",
+                  "text": "Specify the technical functions.",
+                  "owner": [
+                    "MTD023UID"
+                  ],
+                  "owner_basis": "explicit",
+                  "deadline": null,
+                  "deadline_basis": "missing",
+                  "status": "open",
+                  "evidence": [
+                    "TS3006a.A.dialog-act.vkaraisk.149",
+                    "TS3006a.A.dialog-act.vkaraisk.150",
+                    "TS3006a.B.dialog-act.vkaraisk.59"
+                  ],
+                  "source_file": "TS3006a.json",
+                  "source_sha256": "eb352dfc8d7158fe0e58de4c136e4a04aa01b20634413804bd3aed84999cd7d4",
+                  "review_state": "pending",
+                  "unresolved_fields": [
+                    "deadline"
+                  ],
+                  "unreadable_reference_ids": [],
+                  "score": 1.4
+                }
+              ]
+            },
+            "new_info": true
+          },
+          {
+            "item_key": "TS3006b#11",
+            "item": "TS3006b#11",
+            "step": 4,
+            "flags": [
+              "POSSIBLE_PRIOR"
+            ],
+            "action": "get_prior_items",
+            "outcome": "lookup",
+            "decision": "retrieve",
+            "args": {
+              "query": "TS3006b UI compile list of functions LCD screen",
+              "item_type": "actions"
+            },
+            "tool_result": {
+              "results": [
+                {
+                  "id": "TS3006a.sys.s.4",
+                  "meeting_id": "TS3006a",
+                  "type": "actions",
+                  "text": "Specify the technical functions.",
+                  "owner": [
+                    "MTD023UID"
+                  ],
+                  "owner_basis": "explicit",
+                  "deadline": null,
+                  "deadline_basis": "missing",
+                  "status": "open",
+                  "evidence": [
+                    "TS3006a.A.dialog-act.vkaraisk.149",
+                    "TS3006a.A.dialog-act.vkaraisk.150",
+                    "TS3006a.B.dialog-act.vkaraisk.59"
+                  ],
+                  "source_file": "TS3006a.json",
+                  "source_sha256": "eb352dfc8d7158fe0e58de4c136e4a04aa01b20634413804bd3aed84999cd7d4",
+                  "review_state": "pending",
+                  "unresolved_fields": [
+                    "deadline"
+                  ],
+                  "unreadable_reference_ids": [],
+                  "score": 1.4
+                }
+              ],
+              "duplicate": true
+            },
+            "new_info": false
+          },
+          {
+            "item_key": "TS3006b#11",
+            "item": "TS3006b#11",
+            "step": 5,
+            "flags": [
+              "POSSIBLE_PRIOR"
+            ],
+            "action": "read_dialogue",
+            "outcome": "lookup",
+            "decision": "retrieve",
+            "args": {
+              "meeting_id": "TS3006b",
+              "da_id": "TS3006b.B.dialog-act.dharshi.163",
+              "window": 5
+            },
+            "tool_result": {
+              "results": [
+                {
+                  "da_id": "TS3006b.D.dialog-act.dharshi.365",
+                  "participant": "MTD024ME",
+                  "role": "ME",
+                  "text": "<vocalsound>"
+                },
+                {
+                  "da_id": "TS3006b.B.dialog-act.dharshi.159",
+                  "participant": "MTD023UID",
+                  "role": "UI",
+                  "text": "<vocalsound>"
+                },
+                {
+                  "da_id": "TS3006b.C.dialog-act.dharshi.180",
+                  "participant": "MTD022ID",
+                  "role": "ID",
+                  "text": "and then you have to decide , it's , in a in a way that b is user-friendly ."
+                },
+                {
+                  "da_id": "TS3006b.B.dialog-act.dharshi.161",
+                  "participant": "MTD023UID",
+                  "role": "UI",
+                  "text": "Yeah ."
+                },
+                {
+                  "da_id": "TS3006b.B.dialog-act.dharshi.162",
+                  "participant": "MTD023UID",
+                  "role": "UI",
+                  "text": "Okay ."
+                },
+                {
+                  "da_id": "TS3006b.B.dialog-act.dharshi.163",
+                  "participant": "MTD023UID",
+                  "role": "UI",
+                  "text": "Y you you are going to make a list of what functions are uh are going to to be on the the screen , the menu screen ."
+                },
+                {
+                  "da_id": "TS3006b.A.dialog-act.dharshi.327",
+                  "participant": "MTD021PM",
+                  "role": "PM",
+                  "text": "Yeah ."
+                },
+                {
+                  "da_id": "TS3006b.C.dialog-act.dharshi.181",
+                  "participant": "MTD022ID",
+                  "role": "ID",
+                  "text": "Yeah ."
+                },
+                {
+                  "da_id": "TS3006b.B.dialog-act.dharshi.164",
+                  "participant": "MTD023UID",
+                  "role": "UI",
+                  "text": "And I'm going to make a a nice menu uh with with <gap> pages and yeah ."
+                },
+                {
+                  "da_id": "TS3006b.D.dialog-act.dharshi.366",
+                  "participant": "MTD024ME",
+                  "role": "ME",
+                  "text": "Yeah ."
+                },
+                {
+                  "da_id": "TS3006b.A.dialog-act.dharshi.328",
+                  "participant": "MTD021PM",
+                  "role": "PM",
+                  "text": "Yeah ."
+                }
+              ]
+            },
+            "new_info": true
+          },
+          {
+            "item_key": "TS3006b#17",
+            "item": "TS3006b#17",
+            "step": 2,
+            "flags": [],
+            "action": "get_prior_items",
+            "outcome": "lookup",
+            "decision": "retrieve",
+            "args": {
+              "query": "UI Designer group advanced options two groups",
+              "item_type": "actions"
+            },
+            "tool_result": {
+              "results": []
+            },
+            "new_info": false
+          },
+          {
+            "item_key": "TS3006b#17",
+            "item": "TS3006b#17",
+            "step": 4,
+            "flags": [],
+            "action": "get_participants",
+            "outcome": "lookup",
+            "decision": "retrieve",
+            "args": {
+              "meeting_id": "TS3006b"
+            },
+            "tool_result": {
+              "results": [
+                {
+                  "speaker": "A",
+                  "participant_id": "MTD021PM",
+                  "role": "PM"
+                },
+                {
+                  "speaker": "B",
+                  "participant_id": "MTD023UID",
+                  "role": "UI"
+                },
+                {
+                  "speaker": "C",
+                  "participant_id": "MTD022ID",
+                  "role": "ID"
+                },
+                {
+                  "speaker": "D",
+                  "participant_id": "MTD024ME",
+                  "role": "ME"
+                }
+              ]
+            },
+            "new_info": false
+          }
+        ]
+      },
+      "after_trace": {
+        "lookups": 7,
+        "exact_repeated_executed_lookups": 0,
+        "repeated_lookups": [],
+        "invalid_actions": 14,
+        "invalid_details": [
+          {
+            "item_key": "TS3006b#1",
+            "item": "TS3006b#1",
+            "step": 1,
+            "flags": [],
+            "action": "assess_item",
+            "outcome": "invalid_action",
+            "error": "Correct these argument fields: relation_check: 'evidence_da_ids' is a required property; relation_check: Additional properties are not allowed ('evidence_da_ids:' was unexpected)",
+            "raw_tool_input": {
+              "status": "open",
+              "related_items": [],
+              "statement": {
+                "result": "pass",
+                "reason": "The current meeting dialogue includes explicit statements about remotes being disliked, ugly, not matching user behavior, often lost, and hard to learn, which directly supports the stated problem.",
+                "evidence_da_ids": [
+                  "TS3006b.D.dialog-act.dharshi.42",
+                  "TS3006b.D.dialog-act.dharshi.43",
+                  "TS3006b.D.dialog-act.dharshi.44",
+                  "TS3006b.D.dialog-act.dharshi.45",
+                  "TS3006b.D.dialog-act.dharshi.47",
+                  "TS3006b.D.dialog-act.dharshi.48",
+                  "TS3006b.D.dialog-act.dharshi.49"
+                ]
+              },
+              "status_check": {
+                "result": "pass",
+                "reason": "The problem description is supported by multiple lines showing negative sentiments on look-and-feel and learnability.",
+                "evidence_da_ids": [
+                  "TS3006b.D.dialog-act.dharshi.42",
+                  "TS3006b.D.dialog-act.dharshi.43",
+                  "TS3006b.D.dialog-act.dharshi.44",
+                  "TS3006b.D.dialog-act.dharshi.45",
+                  "TS3006b.D.dialog-act.dharshi.48"
+                ]
+              },
+              "conflict_check": {
+                "result": "pass",
+                "reason": "No conflicting statements found within the provided dialogue about the problem.",
+                "evidence_da_ids": [
+                  "TS3006b.D.dialog-act.dharshi.42",
+                  "TS3006b.D.dialog-act.dharshi.43"
+                ],
+                "affected_fields": []
+              },
+              "relation_check": {
+                "result": "not_applicable",
+                "reason": "No related_items to assess at this moment.",
+                "evidence_da_ids:": []
+              }
+            }
+          },
+          {
+            "item_key": "TS3006b#7",
+            "item": "TS3006b#7",
+            "step": 2,
+            "flags": [
+              "POSSIBLE_PRIOR"
+            ],
+            "action": "get_prior_items",
+            "outcome": "invalid_action",
+            "error": "Search earlier record TEXT using subject/property keywords, not a meeting ID. Choose a content query, search again or stop pending.",
+            "raw_tool_input": {
+              "query": "TS3006a",
+              "item_type": "decisions"
+            }
+          },
+          {
+            "item_key": "TS3006b#7",
+            "item": "TS3006b#7",
+            "step": 5,
+            "flags": [
+              "POSSIBLE_PRIOR"
+            ],
+            "action": "assess_relation",
+            "outcome": "invalid_action",
+            "error": "Correct these argument fields: : 'links' is a required property",
+            "raw_tool_input": {
+              "result": "uncertain",
+              "reason": "No explicit linkage to TS3006a or any prior decisions shown in the observed_dialogue. The current item TS3006b focuses on keeping classic remote functions and improving button usability and corporate identity; TS3006a discusses TV/video scope. The relation is not evidenced in the available dialogue and requires historical lookup.",
+              "quotes": [
+                "Um well we have to keep all the classic functions but make the buttons as user-friendly as possible .",
+                "Um and and also there's <disfmarker>",
+                "so not only the design of the bus uh buttons but o how you can push them , and stuff like that . So the physical uh aspect of it .",
+                "Um <disfmarker>",
+                "But it also needs to have corporate identity .",
+                "Yeah",
+                "so the the logo has to be",
+                "uh present yeah , and the colours as well .",
+                "Present and the colours .",
+                "<vocalsound> So we can't change much of that ."
+              ],
+              "next_action": "retrieve"
+            }
+          },
+          {
+            "item_key": "TS3006b#7",
+            "item": "TS3006b#7",
+            "step": 7,
+            "flags": [
+              "POSSIBLE_PRIOR"
+            ],
+            "action": "read_prior_item",
+            "outcome": "invalid_action",
+            "error": "This lookup was already executed on this item and cannot add evidence. Read a returned prior record/locator, change the query or window, assess delivered history when offered, or stop pending. Do not repeat it.",
+            "raw_tool_input": {
+              "item_id": "TS3006a.sys.s.7",
+              "query": ""
+            }
+          },
+          {
+            "item_key": "TS3006b#7",
+            "item": "TS3006b#7",
+            "step": 9,
+            "flags": [
+              "POSSIBLE_PRIOR"
+            ],
+            "action": "assess_item",
+            "outcome": "invalid_action",
+            "error": "Correct these argument fields: relation_check: Additional properties are not allowed ('quotes' was unexpected)",
+            "raw_tool_input": {
+              "status": "adopted",
+              "related_items": [],
+              "statement": {
+                "result": "pass",
+                "reason": "The dialogue explicitly calls for keeping classic remote functions and improving button usability and the physical design; includes mentions of logo, colors, and corporate identity supporting the scope.",
+                "evidence_da_ids": [
+                  "TS3006b.D.dialog-act.dharshi.95",
+                  "TS3006b.D.dialog-act.dharshi.96",
+                  "TS3006b.D.dialog-act.dharshi.97",
+                  "TS3006b.D.dialog-act.dharshi.98",
+                  "TS3006b.A.dialog-act.dharshi.54",
+                  "TS3006b.D.dialog-act.dharshi.104",
+                  "TS3006b.D.dialog-act.dharshi.105",
+                  "TS3006b.D.dialog-act.dharshi.109",
+                  "TS3006b.A.dialog-act.dharshi.55",
+                  "TS3006b.A.dialog-act.dharshi.56"
+                ]
+              },
+              "status_check": {
+                "result": "pass",
+                "reason": "Current dialogue includes multiple statements confirming the need to keep classic functions and enhance physical design, including button usability and corporate identity.",
+                "evidence_da_ids": [
+                  "TS3006b.D.dialog-act.dharshi.95",
+                  "TS3006b.D.dialog-act.dharshi.96",
+                  "TS3006b.D.dialog-act.dharshi.97",
+                  "TS3006b.D.dialog-act.dharshi.98",
+                  "TS3006b.A.dialog-act.dharshi.54",
+                  "TS3006b.D.dialog-act.dharshi.104",
+                  "TS3006b.D.dialog-act.dharshi.105",
+                  "TS3006b.D.dialog-act.dharshi.109",
+                  "TS3006b.A.dialog-act.dharshi.55",
+                  "TS3006b.A.dialog-act.dharshi.56"
+                ]
+              },
+              "conflict_check": {
+                "result": "pass",
+                "reason": "No contradictions detected within the provided dialogue; statements align with the adopted decision.",
+                "evidence_da_ids": [
+                  "TS3006b.D.dialog-act.dharshi.95",
+                  "TS3006b.D.dialog-act.dharshi.96",
+                  "TS3006b.D.dialog-act.dharshi.97",
+                  "TS3006b.D.dialog-act.dharshi.98",
+                  "TS3006b.A.dialog-act.dharshi.54",
+                  "TS3006b.D.dialog-act.dharshi.104",
+                  "TS3006b.D.dialog-act.dharshi.105",
+                  "TS3006b.D.dialog-act.dharshi.109",
+                  "TS3006b.A.dialog-act.dharshi.55",
+                  "TS3006b.A.dialog-act.dharshi.56"
+                ]
+              },
+              "relation_check": {
+                "result": "uncertain",
+                "reason": "prior_context_not_checked",
+                "quotes": [],
+                "documents": [],
+                "links": [],
+                "evidence_da_ids": []
+              }
+            }
+          },
+          {
+            "item_key": "TS3006b#7",
+            "item": "TS3006b#7",
+            "step": 12,
+            "flags": [
+              "POSSIBLE_PRIOR"
+            ],
+            "action": "get_prior_items",
+            "outcome": "invalid_action",
+            "error": "This lookup was already executed on this item and cannot add evidence. Read a returned prior record/locator, change the query or window, assess delivered history when offered, or stop pending. Do not repeat it.",
+            "raw_tool_input": {
+              "query": "sixteen to forty",
+              "item_type": "decisions"
+            }
+          },
+          {
+            "item_key": "TS3006b#11",
+            "item": "TS3006b#11",
+            "step": 1,
+            "flags": [
+              "POSSIBLE_PRIOR"
+            ],
+            "action": "assess_item",
+            "outcome": "invalid_action",
+            "error": "Correct these argument fields: status_check/evidence_da_ids: [] should be non-empty; relation_check/evidence_da_ids: [] should be non-empty",
+            "raw_tool_input": {
+              "status": "open",
+              "related_items": [],
+              "owner": [
+                "MTD023UID"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "statement": {
+                "result": "pass",
+                "reason": "Current dialogue supports that the UI designer will compile a list of functions for the LCD screen menu; the UI explicitly indicates planning to make such a list.",
+                "evidence_da_ids": [
+                  "TS3006b.B.dialog-act.dharshi.163"
+                ]
+              },
+              "owner_check": {
+                "result": "pass",
+                "reason": "Owner is explicitly assigned in provisional values (MTD023UID) and dialogue confirms the action scope.",
+                "evidence_da_ids": [
+                  "TS3006b.B.dialog-act.dharshi.163"
+                ]
+              },
+              "deadline_check": {
+                "result": "uncertain",
+                "reason": "No deadline stated in dialogue or provisional values; deadline is missing.",
+                "evidence_da_ids": []
+              },
+              "status_check": {
+                "result": "pass",
+                "reason": "Status is open in provisional_values; no conflicting evidence in observed_dialogue.",
+                "evidence_da_ids": []
+              },
+              "conflict_check": {
+                "result": "pass",
+                "reason": "No conflicts found within the available evidence for this item.",
+                "evidence_da_ids": [],
+                "affected_fields": []
+              },
+              "relation_check": {
+                "result": "pass",
+                "reason": "No relation to earlier items detected based on available data; related_items is empty.",
+                "evidence_da_ids": [],
+                "links": []
+              },
+              "next_action": "request_clarification"
+            }
+          },
+          {
+            "item_key": "TS3006b#13",
+            "item": "TS3006b#13",
+            "step": 1,
+            "flags": [],
+            "action": "assess_item",
+            "outcome": "invalid_action",
+            "error": "Correct these argument fields: status_check/evidence_da_ids: [] should be non-empty",
+            "raw_tool_input": {
+              "status": "open",
+              "related_items": [],
+              "owner": [
+                "MTD022ID"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "statement": {
+                "result": "pass",
+                "reason": "The dialogue shows the ID states the need to integrate the channel-changing functionality into the design, confirming scope alignment with the task.",
+                "evidence_da_ids": [
+                  "TS3006b.C.dialog-act.dharshi.174",
+                  "TS3006b.C.dialog-act.dharshi.173"
+                ]
+              },
+              "owner_check": {
+                "result": "pass",
+                "reason": "Owner matches the declared owner (MTD022ID) in the tentative values.",
+                "evidence_da_ids": [
+                  "TS3006b.C.dialog-act.dharshi.174",
+                  "TS3006b.C.dialog-act.dharshi.173"
+                ]
+              },
+              "deadline_check": {
+                "result": "uncertain",
+                "reason": "No explicit deadline provided in dialogue or provisional values; deadline is missing.",
+                "evidence_da_ids": []
+              },
+              "status_check": {
+                "result": "pass",
+                "reason": "Status is provisionally open according to provided provisional_values.",
+                "evidence_da_ids": []
+              },
+              "conflict_check": {
+                "result": "pass",
+                "reason": "No conflicts detected within the provided evidence.",
+                "evidence_da_ids": [],
+                "affected_fields": []
+              },
+              "relation_check": {
+                "result": "not_applicable",
+                "reason": "No prior item relation to modify; this is a standalone action.",
+                "evidence_da_ids": []
+              },
+              "next_action": "accept"
+            }
+          },
+          {
+            "item_key": "TS3006b#14",
+            "item": "TS3006b#14",
+            "step": 1,
+            "flags": [],
+            "action": "assess_item",
+            "outcome": "invalid_action",
+            "error": "Correct these argument fields: relation_check: 'evidence_da_ids' is a required property",
+            "raw_tool_input": {
+              "status": "open",
+              "related_items": [],
+              "owner": [
+                "MTD023UID"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "statement": {
+                "result": "uncertain",
+                "reason": "Current dialogue contains conflicting statements about LCD placement: PM advocates placing the LCD on top (TS3006b.A.dialog-act.dharshi.339) while ME suggests placing it under the screen (TS3006b.D.dialog-act.dharshi.386). Evidence supports neither as a confirmed unified decision.",
+                "evidence_da_ids": [
+                  "TS3006b.A.dialog-act.dharshi.339",
+                  "TS3006b.D.dialog-act.dharshi.386"
+                ]
+              },
+              "owner_check": {
+                "result": "pass",
+                "reason": "Owner is explicitly stated as MTD023UID in provisional values; no contradiction found in dialogues.",
+                "evidence_da_ids": [
+                  "TS3006b.A.dialog-act.dharshi.339",
+                  "TS3006b.D.dialog-act.dharshi.386"
+                ]
+              },
+              "deadline_check": {
+                "result": "uncertain",
+                "reason": "No deadline wording present in item; deadline missing in provisional data.",
+                "evidence_da_ids": []
+              },
+              "status_check": {
+                "result": "uncertain",
+                "reason": "Item is an open action; no explicit final status reached in current dialogue.",
+                "evidence_da_ids": [
+                  "TS3006b.A.dialog-act.dharshi.339",
+                  "TS3006b.D.dialog-act.dharshi.386"
+                ]
+              },
+              "conflict_check": {
+                "result": "uncertain",
+                "reason": "Conflicting placement statements exist in the current dialogue; no resolution within provided evidence.",
+                "evidence_da_ids": [
+                  "TS3006b.A.dialog-act.dharshi.339",
+                  "TS3006b.D.dialog-act.dharshi.386"
+                ],
+                "affected_fields": [
+                  "statement",
+                  "deadline",
+                  "owner"
+                ]
+              },
+              "relation_check": {
+                "result": "not_applicable",
+                "reason": "No prior related item relationship to evaluate in this single-item assessment."
+              },
+              "next_action": "request_clarification"
+            }
+          },
+          {
+            "item_key": "TS3006b#16",
+            "item": "TS3006b#16",
+            "step": 1,
+            "flags": [],
+            "action": "assess_item",
+            "outcome": "invalid_action",
+            "error": "Correct these argument fields: relation_check: 'evidence_da_ids' is a required property",
+            "raw_tool_input": {
+              "status": "open",
+              "related_items": [],
+              "owner": [
+                "MTD023UID"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "statement": {
+                "result": "uncertain",
+                "reason": "Dialogue references an OK button and a back button and mentions four buttons; the exact described scope (two-button scheme with OK and back plus a separate navigation button) is not fully supported by the dialogue, which mentions four buttons and a multifunctional navigation button potentially altering scope.",
+                "evidence_da_ids": [
+                  "TS3006b.D.dialog-act.dharshi.419",
+                  "TS3006b.A.dialog-act.dharshi.368",
+                  "TS3006b.B.dialog-act.dharshi.202",
+                  "TS3006b.D.dialog-act.dharshi.422"
+                ]
+              },
+              "owner_check": {
+                "result": "uncertain",
+                "reason": "Owner listed in provisional values; dialogue does not specify assignment changes beyond initial mention. Current dialogue confirms ME as speaker of related content but not ownership.",
+                "evidence_da_ids": [
+                  "TS3006b.D.dialog-act.dharshi.419",
+                  "TS3006b.A.dialog-act.dharshi.368"
+                ]
+              },
+              "deadline_check": {
+                "result": "uncertain",
+                "reason": "No explicit deadline mentioned in dialogue for this action.",
+                "evidence_da_ids": []
+              },
+              "status_check": {
+                "result": "pass",
+                "reason": "The action is introduced as ongoing/open in the provisional values; no contradictory statements in dialogue.",
+                "evidence_da_ids": [
+                  "TS3006b.A.dialog-act.dharshi.368"
+                ]
+              },
+              "conflict_check": {
+                "result": "pass",
+                "reason": "No direct contradictions found within the current dialogue regarding this task; evidence aligns with ongoing/open status.",
+                "evidence_da_ids": [
+                  "TS3006b.A.dialog-act.dharshi.368",
+                  "TS3006b.D.dialog-act.dharshi.419",
+                  "TS3006b.B.dialog-act.dharshi.202",
+                  "TS3006b.D.dialog-act.dharshi.422"
+                ],
+                "affected_fields": [
+                  "statement",
+                  "owner",
+                  "deadline",
+                  "status"
+                ]
+              },
+              "relation_check": {
+                "result": "not_applicable",
+                "reason": "No previous related item identified in this single-turn assessment."
+              },
+              "next_action": "retrieve"
+            }
+          },
+          {
+            "item_key": "TS3006b#16",
+            "item": "TS3006b#16",
+            "step": 7,
+            "flags": [],
+            "action": "assess_core",
+            "outcome": "invalid_action",
+            "error": "Correct these argument fields: : Additional properties are not allowed ('documents', 'evidence_da_ids' were unexpected)",
+            "raw_tool_input": {
+              "statement": {
+                "result": "uncertain",
+                "reason": "No clear prior item text exactly mirrors the described two-button scheme with OK and back, prior items mention grouping and LCD menu, but not this exact combination.",
+                "evidence_da_ids": []
+              },
+              "evidence_da_ids": [],
+              "documents": [],
+              "conflict_check": {
+                "result": "uncertain",
+                "reason": "No direct prior evidence to compare with the current item; different scope.",
+                "evidence_da_ids": [],
+                "affected_fields": []
+              }
+            }
+          },
+          {
+            "item_key": "TS3006b#16",
+            "item": "TS3006b#16",
+            "step": 8,
+            "flags": [],
+            "action": "assess_core",
+            "outcome": "invalid_action",
+            "error": "Correct these argument fields: : Additional properties are not allowed ('documents', 'evidence_da_ids' were unexpected)",
+            "raw_tool_input": {
+              "statement": {
+                "result": "uncertain",
+                "reason": "Dialogue references an OK button and a back button and mentions four buttons; the exact described scope (two-button scheme with OK and back plus a separate navigation button) is not fully supported by the dialogue, which mentions four buttons and a multifunctional navigation button potentially altering scope.",
+                "evidence_da_ids": [
+                  "TS3006b.D.dialog-act.dharshi.419",
+                  "TS3006b.A.dialog-act.dharshi.368",
+                  "TS3006b.B.dialog-act.dharshi.202",
+                  "TS3006b.D.dialog-act.dharshi.422"
+                ]
+              },
+              "evidence_da_ids": [
+                "TS3006b.D.dialog-act.dharshi.419",
+                "TS3006b.A.dialog-act.dharshi.368",
+                "TS3006b.B.dialog-act.dharshi.202",
+                "TS3006b.D.dialog-act.dharshi.422"
+              ],
+              "documents": []
+            }
+          },
+          {
+            "item_key": "TS3006b#15",
+            "item": "TS3006b#15",
+            "step": 1,
+            "flags": [],
+            "action": "assess_item",
+            "outcome": "invalid_action",
+            "error": "Correct these argument fields: owner_check/evidence_da_ids: [] should be non-empty",
+            "raw_tool_input": {
+              "status": "open",
+              "related_items": [],
+              "owner": [
+                "MTD023UID"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "statement": {
+                "result": "pass",
+                "reason": "Dialogue supports LED indicator concept; ME endorses; the item scope matches: add LED indicators under buttons to show active ones.",
+                "evidence_da_ids": [
+                  "TS3006b.C.dialog-act.dharshi.192",
+                  "TS3006b.A.dialog-act.dharshi.360"
+                ]
+              },
+              "owner_check": {
+                "result": "pass",
+                "reason": "Owner is explicitly identified in provisional values.",
+                "evidence_da_ids": []
+              },
+              "deadline_check": {
+                "result": "uncertain",
+                "reason": "No deadline provided in discussion; cannot verify timing.",
+                "evidence_da_ids": []
+              },
+              "status_check": {
+                "result": "pass",
+                "reason": "No contradictory statements; open status remains plausible given discussion.",
+                "evidence_da_ids": [
+                  "TS3006b.A.dialog-act.dharshi.359",
+                  "TS3006b.D.dialog-act.dharshi.408"
+                ]
+              },
+              "conflict_check": {
+                "result": "pass",
+                "reason": "No conflicts detected in available evidence for this task.",
+                "evidence_da_ids": [],
+                "affected_fields": []
+              },
+              "relation_check": {
+                "result": "not_applicable",
+                "reason": "No earlier related item to check against.",
+                "evidence_da_ids": []
+              },
+              "next_action": "accept"
+            }
+          },
+          {
+            "item_key": "TS3006b#17",
+            "item": "TS3006b#17",
+            "step": 1,
+            "flags": [],
+            "action": "assess_item",
+            "outcome": "invalid_action",
+            "error": "Correct these argument fields: : Additional properties are not allowed ('documents' was unexpected)",
+            "raw_tool_input": {
+              "status": "open",
+              "related_items": [],
+              "owner": [
+                "MTD023UID"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "statement": {
+                "result": "pass",
+                "reason": "Current dialogue supports that the UI designer is considering a plan to group advanced options in the on-screen display while keeping basic functions visible on the device itself; this aligns with the action text about grouping functions.",
+                "evidence_da_ids": [
+                  "TS3006b.D.dialog-act.dharshi.178",
+                  "TS3006b.A.dialog-act.dharshi.155"
+                ]
+              },
+              "owner_check": {
+                "result": "pass",
+                "reason": "Owner is explicitly stated in provisional values as MTD023UID.",
+                "evidence_da_ids": [
+                  "TS3006b.D.dialog-act.dharshi.178",
+                  "TS3006b.A.dialog-act.dharshi.155"
+                ]
+              },
+              "deadline_check": {
+                "result": "uncertain",
+                "reason": "No explicit deadline provided in dialogue or provisional values; missing deadline_basis set to missing.",
+                "evidence_da_ids": [
+                  "TS3006b.D.dialog-act.dharshi.178",
+                  "TS3006b.A.dialog-act.dharshi.155"
+                ]
+              },
+              "status_check": {
+                "result": "pass",
+                "reason": "Status is open in provisional values and consistent with current discussion; no conflicting evidence.",
+                "evidence_da_ids": [
+                  "TS3006b.D.dialog-act.dharshi.178",
+                  "TS3006b.A.dialog-act.dharshi.155"
+                ]
+              },
+              "conflict_check": {
+                "result": "pass",
+                "reason": "No conflict found within the provided dialogue; scope matches the stated action.",
+                "evidence_da_ids": [
+                  "TS3006b.D.dialog-act.dharshi.178",
+                  "TS3006b.A.dialog-act.dharshi.155"
+                ],
+                "affected_fields": []
+              },
+              "relation_check": {
+                "result": "not_applicable",
+                "reason": "No prior related item to relate to in this single-item assessment.",
+                "evidence_da_ids": [],
+                "links": []
+              },
+              "documents": []
+            }
+          }
+        ],
+        "executed_lookups": [
+          {
+            "item_key": "TS3006b#0",
+            "item": "TS3006b#0",
+            "step": 2,
+            "flags": [
+              "POSSIBLE_PRIOR"
+            ],
+            "action": "get_prior_items",
+            "outcome": "lookup",
+            "decision": "retrieve",
+            "args": {
+              "query": "menu for all these functions",
+              "item_type": "actions"
+            },
+            "tool_result": {
+              "results": [
+                {
+                  "id": "TS3006a.sys.s.4",
+                  "meeting_id": "TS3006a",
+                  "type": "actions",
+                  "text": "Specify the technical functions.",
+                  "owner": [
+                    "MTD023UID"
+                  ],
+                  "owner_basis": "explicit",
+                  "deadline": null,
+                  "deadline_basis": "missing",
+                  "status": "open",
+                  "evidence": [
+                    "TS3006a.A.dialog-act.vkaraisk.149",
+                    "TS3006a.A.dialog-act.vkaraisk.150",
+                    "TS3006a.B.dialog-act.vkaraisk.59"
+                  ],
+                  "source_file": "TS3006a.json",
+                  "source_sha256": "eb352dfc8d7158fe0e58de4c136e4a04aa01b20634413804bd3aed84999cd7d4",
+                  "review_state": "legacy_unchecked",
+                  "unresolved_fields": [],
+                  "unreadable_reference_ids": [],
+                  "score": 1.4
+                }
+              ]
+            },
+            "new_info": true
+          },
+          {
+            "item_key": "TS3006b#0",
+            "item": "TS3006b#0",
+            "step": 3,
+            "flags": [
+              "POSSIBLE_PRIOR"
+            ],
+            "action": "read_prior_item",
+            "outcome": "lookup",
+            "decision": "retrieve",
+            "args": {
+              "item_id": "TS3006a.sys.s.4"
+            },
+            "tool_result": {
+              "results": [
+                {
+                  "kind": "prior_item",
+                  "id": "TS3006a.sys.s.4",
+                  "meeting_id": "TS3006a",
+                  "type": "actions",
+                  "text": "Specify the technical functions.",
+                  "owner": [
+                    "MTD023UID"
+                  ],
+                  "owner_basis": "explicit",
+                  "deadline": null,
+                  "deadline_basis": "missing",
+                  "status": "open",
+                  "evidence": [
+                    "TS3006a.A.dialog-act.vkaraisk.149",
+                    "TS3006a.A.dialog-act.vkaraisk.150",
+                    "TS3006a.B.dialog-act.vkaraisk.59"
+                  ],
+                  "source_file": "TS3006a.json",
+                  "source_sha256": "eb352dfc8d7158fe0e58de4c136e4a04aa01b20634413804bd3aed84999cd7d4",
+                  "review_state": "legacy_unchecked",
+                  "unresolved_fields": [],
+                  "unreadable_reference_ids": [],
+                  "selected_reference_ids": [
+                    "TS3006a.A.dialog-act.vkaraisk.149",
+                    "TS3006a.A.dialog-act.vkaraisk.150",
+                    "TS3006a.B.dialog-act.vkaraisk.59"
+                  ],
+                  "next_offset": null
+                },
+                {
+                  "kind": "dialogue",
+                  "da_id": "TS3006a.A.dialog-act.vkaraisk.148",
+                  "meeting_id": "TS3006a",
+                  "text": "Okay .",
+                  "participant": "MTD021PM",
+                  "role": "PM",
+                  "supports_item_id": "TS3006a.sys.s.4",
+                  "is_reference": false
+                },
+                {
+                  "kind": "dialogue",
+                  "da_id": "TS3006a.A.dialog-act.vkaraisk.149",
+                  "meeting_id": "TS3006a",
+                  "text": "Uh the User Interface Designer should specify the technical functions .",
+                  "participant": "MTD021PM",
+                  "role": "PM",
+                  "supports_item_id": "TS3006a.sys.s.4",
+                  "is_reference": true
+                },
+                {
+                  "kind": "dialogue",
+                  "da_id": "TS3006a.A.dialog-act.vkaraisk.150",
+                  "meeting_id": "TS3006a",
+                  "text": "Right ? Yeah ?",
+                  "participant": "MTD021PM",
+                  "role": "PM",
+                  "supports_item_id": "TS3006a.sys.s.4",
+                  "is_reference": true
+                },
+                {
+                  "kind": "dialogue",
+                  "da_id": "TS3006a.B.dialog-act.vkaraisk.59",
+                  "meeting_id": "TS3006a",
+                  "text": "Yep .",
+                  "participant": "MTD023UID",
+                  "role": "UI",
+                  "supports_item_id": "TS3006a.sys.s.4",
+                  "is_reference": true
+                },
+                {
+                  "kind": "dialogue",
+                  "da_id": "TS3006a.A.dialog-act.vkaraisk.151",
+                  "meeting_id": "TS3006a",
+                  "text": "<vocalsound> And the Marketing uh Expert should come up with user requirements .",
+                  "participant": "MTD021PM",
+                  "role": "PM",
+                  "supports_item_id": "TS3006a.sys.s.4",
+                  "is_reference": false
+                }
+              ]
+            },
+            "new_info": true
+          },
+          {
+            "item_key": "TS3006b#7",
+            "item": "TS3006b#7",
+            "step": 3,
+            "flags": [
+              "POSSIBLE_PRIOR"
+            ],
+            "action": "get_prior_items",
+            "outcome": "lookup",
+            "decision": "retrieve",
+            "args": {
+              "query": "sixteen to forty",
+              "item_type": "decisions"
+            },
+            "tool_result": {
+              "results": [
+                {
+                  "id": "TS3006a.sys.s.7",
+                  "meeting_id": "TS3006a",
+                  "type": "decisions",
+                  "text": "We will start with TV and video as the initial scope, with the possibility to add other features later.",
+                  "owner": null,
+                  "owner_basis": null,
+                  "deadline": null,
+                  "deadline_basis": null,
+                  "status": "adopted",
+                  "evidence": [
+                    "TS3006a.A.dialog-act.vkaraisk.243",
+                    "TS3006a.A.dialog-act.vkaraisk.244"
+                  ],
+                  "source_file": "TS3006a.json",
+                  "source_sha256": "eb352dfc8d7158fe0e58de4c136e4a04aa01b20634413804bd3aed84999cd7d4",
+                  "review_state": "legacy_unchecked",
+                  "unresolved_fields": [],
+                  "unreadable_reference_ids": [],
+                  "score": 0.74
+                }
+              ]
+            },
+            "new_info": true
+          },
+          {
+            "item_key": "TS3006b#7",
+            "item": "TS3006b#7",
+            "step": 4,
+            "flags": [
+              "POSSIBLE_PRIOR"
+            ],
+            "action": "read_prior_item",
+            "outcome": "lookup",
+            "decision": "retrieve",
+            "args": {
+              "item_id": "TS3006a.sys.s.7",
+              "query": ""
+            },
+            "tool_result": {
+              "results": [
+                {
+                  "kind": "prior_item",
+                  "id": "TS3006a.sys.s.7",
+                  "meeting_id": "TS3006a",
+                  "type": "decisions",
+                  "text": "We will start with TV and video as the initial scope, with the possibility to add other features later.",
+                  "owner": null,
+                  "owner_basis": null,
+                  "deadline": null,
+                  "deadline_basis": null,
+                  "status": "adopted",
+                  "evidence": [
+                    "TS3006a.A.dialog-act.vkaraisk.243",
+                    "TS3006a.A.dialog-act.vkaraisk.244"
+                  ],
+                  "source_file": "TS3006a.json",
+                  "source_sha256": "eb352dfc8d7158fe0e58de4c136e4a04aa01b20634413804bd3aed84999cd7d4",
+                  "review_state": "legacy_unchecked",
+                  "unresolved_fields": [],
+                  "unreadable_reference_ids": [],
+                  "selected_reference_ids": [
+                    "TS3006a.A.dialog-act.vkaraisk.243",
+                    "TS3006a.A.dialog-act.vkaraisk.244"
+                  ],
+                  "next_offset": null
+                },
+                {
+                  "kind": "dialogue",
+                  "da_id": "TS3006a.A.dialog-act.vkaraisk.242",
+                  "meeting_id": "TS3006a",
+                  "text": "Yeah .",
+                  "participant": "MTD021PM",
+                  "role": "PM",
+                  "supports_item_id": "TS3006a.sys.s.7",
+                  "is_reference": false
+                },
+                {
+                  "kind": "dialogue",
+                  "da_id": "TS3006a.A.dialog-act.vkaraisk.243",
+                  "meeting_id": "TS3006a",
+                  "text": "We could just start with the assumption that's only for T_V_ and video .",
+                  "participant": "MTD021PM",
+                  "role": "PM",
+                  "supports_item_id": "TS3006a.sys.s.7",
+                  "is_reference": true
+                },
+                {
+                  "kind": "dialogue",
+                  "da_id": "TS3006a.A.dialog-act.vkaraisk.244",
+                  "meeting_id": "TS3006a",
+                  "text": "And um reserve the possibility to add other features .",
+                  "participant": "MTD021PM",
+                  "role": "PM",
+                  "supports_item_id": "TS3006a.sys.s.7",
+                  "is_reference": true
+                },
+                {
+                  "kind": "dialogue",
+                  "da_id": "TS3006a.C.dialog-act.vkaraisk.137",
+                  "meeting_id": "TS3006a",
+                  "text": "Okay .",
+                  "participant": "MTD022ID",
+                  "role": "ID",
+                  "supports_item_id": "TS3006a.sys.s.7",
+                  "is_reference": false
+                }
+              ]
+            },
+            "new_info": true
+          },
+          {
+            "item_key": "TS3006b#7",
+            "item": "TS3006b#7",
+            "step": 8,
+            "flags": [
+              "POSSIBLE_PRIOR"
+            ],
+            "action": "get_prior_items",
+            "outcome": "lookup",
+            "decision": "retrieve",
+            "args": {
+              "query": "TV video initial scope",
+              "item_type": "decisions"
+            },
+            "tool_result": {
+              "results": [
+                {
+                  "id": "TS3006a.sys.s.7",
+                  "meeting_id": "TS3006a",
+                  "type": "decisions",
+                  "text": "We will start with TV and video as the initial scope, with the possibility to add other features later.",
+                  "owner": null,
+                  "owner_basis": null,
+                  "deadline": null,
+                  "deadline_basis": null,
+                  "status": "adopted",
+                  "evidence": [
+                    "TS3006a.A.dialog-act.vkaraisk.243",
+                    "TS3006a.A.dialog-act.vkaraisk.244"
+                  ],
+                  "source_file": "TS3006a.json",
+                  "source_sha256": "eb352dfc8d7158fe0e58de4c136e4a04aa01b20634413804bd3aed84999cd7d4",
+                  "review_state": "legacy_unchecked",
+                  "unresolved_fields": [],
+                  "unreadable_reference_ids": [],
+                  "score": 3.71
+                }
+              ]
+            },
+            "new_info": false
+          },
+          {
+            "item_key": "TS3006b#16",
+            "item": "TS3006b#16",
+            "step": 3,
+            "flags": [],
+            "action": "get_prior_items",
+            "outcome": "lookup",
+            "decision": "retrieve",
+            "args": {
+              "query": "The UI Designer will group the functions",
+              "item_type": "actions"
+            },
+            "tool_result": {
+              "results": [
+                {
+                  "id": "TS3006a.sys.s.4",
+                  "meeting_id": "TS3006a",
+                  "type": "actions",
+                  "text": "Specify the technical functions.",
+                  "owner": [
+                    "MTD023UID"
+                  ],
+                  "owner_basis": "explicit",
+                  "deadline": null,
+                  "deadline_basis": "missing",
+                  "status": "open",
+                  "evidence": [
+                    "TS3006a.A.dialog-act.vkaraisk.149",
+                    "TS3006a.A.dialog-act.vkaraisk.150",
+                    "TS3006a.B.dialog-act.vkaraisk.59"
+                  ],
+                  "source_file": "TS3006a.json",
+                  "source_sha256": "eb352dfc8d7158fe0e58de4c136e4a04aa01b20634413804bd3aed84999cd7d4",
+                  "review_state": "legacy_unchecked",
+                  "unresolved_fields": [],
+                  "unreadable_reference_ids": [],
+                  "score": 1.81
+                },
+                {
+                  "id": "TS3006a.sys.s.1",
+                  "meeting_id": "TS3006a",
+                  "type": "actions",
+                  "text": "Summarise the discussed items and place in the project folder.",
+                  "owner": [
+                    "MTD021PM"
+                  ],
+                  "owner_basis": "explicit",
+                  "deadline": null,
+                  "deadline_basis": "missing",
+                  "status": "open",
+                  "evidence": [
+                    "TS3006a.A.dialog-act.vkaraisk.197",
+                    "TS3006a.A.dialog-act.vkaraisk.198",
+                    "TS3006a.A.dialog-act.vkaraisk.199",
+                    "TS3006a.A.dialog-act.vkaraisk.200"
+                  ],
+                  "source_file": "TS3006a.json",
+                  "source_sha256": "eb352dfc8d7158fe0e58de4c136e4a04aa01b20634413804bd3aed84999cd7d4",
+                  "review_state": "legacy_unchecked",
+                  "unresolved_fields": [],
+                  "unreadable_reference_ids": [],
+                  "score": 0.41
+                },
+                {
+                  "id": "TS3006a.sys.s.2",
+                  "meeting_id": "TS3006a",
+                  "type": "actions",
+                  "text": "Start on the conceptual design.",
+                  "owner": [
+                    "MTD022ID"
+                  ],
+                  "owner_basis": "explicit",
+                  "deadline": null,
+                  "deadline_basis": "missing",
+                  "status": "open",
+                  "evidence": [
+                    "TS3006a.C.dialog-act.vkaraisk.117",
+                    "TS3006a.C.dialog-act.vkaraisk.118"
+                  ],
+                  "source_file": "TS3006a.json",
+                  "source_sha256": "eb352dfc8d7158fe0e58de4c136e4a04aa01b20634413804bd3aed84999cd7d4",
+                  "review_state": "legacy_unchecked",
+                  "unresolved_fields": [],
+                  "unreadable_reference_ids": [],
+                  "score": 0.38
+                }
+              ]
+            },
+            "new_info": true
+          },
+          {
+            "item_key": "TS3006b#16",
+            "item": "TS3006b#16",
+            "step": 5,
+            "flags": [],
+            "action": "read_dialogue",
+            "outcome": "lookup",
+            "decision": "retrieve",
+            "args": {
+              "meeting_id": "TS3006b",
+              "da_id": "TS3006b.A.dialog-act.dharshi.368",
+              "window": 5
+            },
+            "tool_result": {
+              "results": [
+                {
+                  "da_id": "TS3006b.A.dialog-act.dharshi.367",
+                  "participant": "MTD021PM",
+                  "role": "PM",
+                  "text": "Volume ."
+                },
+                {
+                  "da_id": "TS3006b.B.dialog-act.dharshi.198",
+                  "participant": "MTD023UID",
+                  "role": "UI",
+                  "text": "Yeah . <vocalsound>"
+                },
+                {
+                  "da_id": "TS3006b.C.dialog-act.dharshi.196",
+                  "participant": "MTD022ID",
+                  "role": "ID",
+                  "text": "Yeah keep it optional 'cause maybe you can you know go left to right and up and down in a in one menu ."
+                },
+                {
+                  "da_id": "TS3006b.D.dialog-act.dharshi.418",
+                  "participant": "MTD024ME",
+                  "role": "ME",
+                  "text": "Yeah ."
+                },
+                {
+                  "da_id": "TS3006b.D.dialog-act.dharshi.419",
+                  "participant": "MTD024ME",
+                  "role": "ME",
+                  "text": "And maybe we should use this also as an okay button , still . And then just only a back button ."
+                },
+                {
+                  "da_id": "TS3006b.A.dialog-act.dharshi.368",
+                  "participant": "MTD021PM",
+                  "role": "PM",
+                  "text": "Well we have those buttons . We use all four ."
+                },
+                {
+                  "da_id": "TS3006b.B.dialog-act.dharshi.199",
+                  "participant": "MTD023UID",
+                  "role": "UI",
+                  "text": "No <disfmarker>"
+                },
+                {
+                  "da_id": "TS3006b.C.dialog-act.dharshi.197",
+                  "participant": "MTD022ID",
+                  "role": "ID",
+                  "text": "The pr the problem with the okay button in the middle is ,"
+                },
+                {
+                  "da_id": "TS3006b.C.dialog-act.dharshi.198",
+                  "participant": "MTD022ID",
+                  "role": "ID",
+                  "text": "sorry"
+                },
+                {
+                  "da_id": "TS3006b.A.dialog-act.dharshi.369",
+                  "participant": "MTD021PM",
+                  "role": "PM",
+                  "text": "Yeah okay go ahead ."
+                },
+                {
+                  "da_id": "TS3006b.D.dialog-act.dharshi.420",
+                  "participant": "MTD024ME",
+                  "role": "ME",
+                  "text": "Yeah ?"
+                }
+              ]
+            },
+            "new_info": true
+          }
+        ]
+      },
+      "recordable": 16,
+      "published": 13,
+      "validation_errors": []
+    }
+  ],
+  "slides": [
+    {
+      "id": "IS1008a.sys.s.6",
+      "text": "Send a copy of slides to attendees.",
+      "type": "actions",
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/IS1008a.json",
+          "locator": "IS1008a.A.dialog-act.s9553330.130"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/IS1008a.json",
+          "locator": "IS1008a.A.dialog-act.s9553330.131"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/IS1008a.json",
+          "locator": "IS1008a.A.dialog-act.s9553330.129"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/IS1008a.json",
+          "locator": "IS1008a.C.dialog-act.s9553330.42"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/IS1008a.json",
+          "locator": "IS1008a.A.dialog-act.s9553330.132"
+        }
+      ],
+      "owner": [
+        "MIO086"
+      ],
+      "owner_basis": "explicit",
+      "deadline": "at the conclusion of our meeting",
+      "deadline_basis": "explicit",
+      "status": "open",
+      "prior_context_needed": false,
+      "related_items": []
+    }
+  ],
+  "slides_deadline_check": {
+    "result": "pass",
+    "reason": "The request specifies event-relative timing and the recipient explicitly accepts that timing. The dialogue 'Would you mind at the conclusion of our meeting could you send us a copy of your slides?' establishes the timing, and 'Yes, I will' confirms acceptance of that timing.",
+    "quotes": [
+      {
+        "da_id": "IS1008a.C.dialog-act.s9553330.42",
+        "quote": "Would you mind um at the conclusion of our meeting could could you send us a copy of your slides ?"
+      },
+      {
+        "da_id": "IS1008a.A.dialog-act.s9553330.130",
+        "quote": "Yes , I will . Yes ."
+      }
+    ],
+    "fields": [
+      "deadline"
+    ]
+  },
+  "slides_time_evidence": {
+    "da_id": "IS1008a.C.dialog-act.s9553330.42",
+    "quote": "Would you mind um at the conclusion of our meeting could could you send us a copy of your slides ?"
+  },
+  "published_links": [],
+  "historical_link_comparison": {
+    "before": 1,
+    "after": 0,
+    "case": {
+      "item_key": "TS3006b#10",
+      "record_id": "TS3006b.sys.s.10",
+      "item_type": "actions",
+      "item_text": "The UI Designer will group the functions into two groups: display functions and basic functions.",
+      "state": "pending",
+      "recordable": true,
+      "fields": {
+        "status": "open",
+        "prior_context_needed": false,
+        "related_items": [],
+        "owner": [
+          "MTD023UID"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "reference": [
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3006b.json",
+            "locator": "TS3006b.B.dialog-act.dharshi.168"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3006b.json",
+            "locator": "TS3006b.B.dialog-act.dharshi.169"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3006b.json",
+            "locator": "TS3006b.B.dialog-act.dharshi.170"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3006b.json",
+            "locator": "TS3006b.C.dialog-act.dharshi.186"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3006b.json",
+            "locator": "TS3006b.A.dialog-act.dharshi.336"
+          }
+        ]
+      },
+      "draft_fields": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD023UID"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "TS3006b.B.dialog-act.dharshi.168",
+          "TS3006b.B.dialog-act.dharshi.169",
+          "TS3006b.B.dialog-act.dharshi.170",
+          "TS3006b.C.dialog-act.dharshi.186"
+        ]
+      },
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue includes explicit statements and cues that the UI designer will group the functions into two groups (display vs basic). The UI designer's role and actions align with the proposed action.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.B.dialog-act.dharshi.168",
+              "quote": "Uh I think we have to to group , to make two groups ."
+            },
+            {
+              "da_id": "TS3006b.B.dialog-act.dharshi.169",
+              "quote": "Um the <disfmarker> one group for the for the display , and one group for the basic functions ,"
+            },
+            {
+              "da_id": "TS3006b.B.dialog-act.dharshi.170",
+              "quote": "and <disfmarker>"
+            },
+            {
+              "da_id": "TS3006b.C.dialog-act.dharshi.186",
+              "quote": "Yeah ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Lines show UI designer discussing grouping into two groups; evidence that MTD023UID (UI) is the owner who announced or suggested the action.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.B.dialog-act.dharshi.169",
+              "quote": "Um the <disfmarker> one group for the for the display , and one group for the basic functions ,"
+            },
+            {
+              "da_id": "TS3006b.B.dialog-act.dharshi.168",
+              "quote": "Uh I think we have to to group , to make two groups ."
+            },
+            {
+              "da_id": "TS3006b.B.dialog-act.dharshi.170",
+              "quote": "and <disfmarker>"
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "deadline_unresolved",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Current status is 'open' per provisional values and the dialogue shows ongoing discussion; no completion or approval evidence.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.A.dialog-act.dharshi.336",
+              "quote": "Yeah but they're incorporated <gap> ?"
+            },
+            {
+              "da_id": "TS3006b.B.dialog-act.dharshi.169",
+              "quote": "Um the <disfmarker> one group for the for the display , and one group for the basic functions ,"
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No conflicting evidence found in the delivered dialogue; the proposed action aligns with the discussion.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.B.dialog-act.dharshi.169",
+              "quote": "Um the <disfmarker> one group for the for the display , and one group for the basic functions ,"
+            },
+            {
+              "da_id": "TS3006b.B.dialog-act.dharshi.168",
+              "quote": "Uh I think we have to to group , to make two groups ."
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "prior_context_not_checked",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "unresolved_fields": [
+        "deadline",
+        "related_items"
+      ],
+      "observed_evidence_da_ids": [
+        "TS3006b.B.dialog-act.dharshi.169",
+        "TS3006b.C.dialog-act.dharshi.186",
+        "TS3006b.B.dialog-act.dharshi.168",
+        "TS3006b.B.dialog-act.dharshi.170",
+        "TS3006b.A.dialog-act.dharshi.336"
+      ],
+      "initial_context": {
+        "item": {
+          "type": "actions",
+          "text": "The UI Designer will group the functions into two groups: display functions and basic functions.",
+          "flags": [
+            "POSSIBLE_PRIOR"
+          ]
+        },
+        "current_meeting": "TS3006b",
+        "earlier_meetings": [
+          "TS3006a"
+        ],
+        "roster": [
+          {
+            "speaker": "A",
+            "participant_id": "MTD021PM",
+            "role": "PM"
+          },
+          {
+            "speaker": "B",
+            "participant_id": "MTD023UID",
+            "role": "UI"
+          },
+          {
+            "speaker": "C",
+            "participant_id": "MTD022ID",
+            "role": "ID"
+          },
+          {
+            "speaker": "D",
+            "participant_id": "MTD024ME",
+            "role": "ME"
+          }
+        ],
+        "observed_dialogue": [
+          {
+            "da_id": "TS3006b.B.dialog-act.dharshi.169",
+            "meeting_id": "TS3006b",
+            "text": "Um the <disfmarker> one group for the for the display , and one group for the basic functions ,",
+            "participant": "MTD023UID",
+            "role": "UI"
+          },
+          {
+            "da_id": "TS3006b.C.dialog-act.dharshi.186",
+            "meeting_id": "TS3006b",
+            "text": "Yeah .",
+            "participant": "MTD022ID",
+            "role": "ID"
+          },
+          {
+            "da_id": "TS3006b.B.dialog-act.dharshi.168",
+            "participant": "MTD023UID",
+            "role": "UI",
+            "text": "Uh I think we have to to group , to make two groups ."
+          },
+          {
+            "da_id": "TS3006b.B.dialog-act.dharshi.170",
+            "participant": "MTD023UID",
+            "role": "UI",
+            "text": "and <disfmarker>"
+          },
+          {
+            "da_id": "TS3006b.A.dialog-act.dharshi.336",
+            "participant": "MTD021PM",
+            "role": "PM",
+            "text": "Yeah but they're incorporated <gap> ?"
+          }
+        ],
+        "peer_items": [
+          {
+            "item_key": "TS3006b#0",
+            "type": "actions",
+            "text": "The User Interface Designer can design a menu for all these functions."
+          },
+          {
+            "item_key": "TS3006b#1",
+            "type": "problems",
+            "text": "The current look-and-feel and usability of remote controls are disliked by users and are hard to learn, with remotes often getting lost in rooms."
+          },
+          {
+            "item_key": "TS3006b#2",
+            "type": "problems",
+            "text": "Open problem: it is unclear what the screen should do or what is required from it."
+          },
+          {
+            "item_key": "TS3006b#3",
+            "type": "problems",
+            "text": "Uncertainty about saving the project file (whether it saves automatically and where)."
+          },
+          {
+            "item_key": "TS3006b#4",
+            "type": "decisions",
+            "text": "The target group will be sixteen to forty."
+          },
+          {
+            "item_key": "TS3006b#5",
+            "type": "decisions",
+            "text": "The basic new requirements of the management were no teletext, only for T_V_."
+          },
+          {
+            "item_key": "TS3006b#6",
+            "type": "decisions",
+            "text": "Teletext and the newsflash feature will not be used in the future."
+          },
+          {
+            "item_key": "TS3006b#7",
+            "type": "decisions",
+            "text": "Keep all classic remote functions and improve button usability and the physical design."
+          },
+          {
+            "item_key": "TS3006b#8",
+            "type": "decisions",
+            "text": "The product must include corporate identity with the logo present and colours consistent."
+          },
+          {
+            "item_key": "TS3006b#9",
+            "type": "actions",
+            "text": "The PM will write the meeting minutes."
+          }
+        ],
+        "provisional_values": {
+          "owner": [
+            "MTD023UID"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "status": "open",
+          "related_items": []
+        },
+        "candidate_evidence_da_ids": [
+          "TS3006b.B.dialog-act.dharshi.169",
+          "TS3006b.C.dialog-act.dharshi.186"
+        ]
+      },
+      "observed_documents": [],
+      "document_evidence": [],
+      "relation_evidence": [],
+      "history": [
+        {
+          "item": "TS3006b#10",
+          "step": 1,
+          "flags": [
+            "POSSIBLE_PRIOR"
+          ],
+          "action": "assess_item",
+          "outcome": "checked",
+          "checks": {
+            "statement": {
+              "result": "pass",
+              "reason": "The dialogue includes explicit statements and cues that the UI designer will group the functions into two groups (display vs basic). The UI designer's role and actions align with the proposed action.",
+              "quotes": [
+                {
+                  "da_id": "TS3006b.B.dialog-act.dharshi.168",
+                  "quote": "Uh I think we have to to group , to make two groups ."
+                },
+                {
+                  "da_id": "TS3006b.B.dialog-act.dharshi.169",
+                  "quote": "Um the <disfmarker> one group for the for the display , and one group for the basic functions ,"
+                },
+                {
+                  "da_id": "TS3006b.B.dialog-act.dharshi.170",
+                  "quote": "and <disfmarker>"
+                },
+                {
+                  "da_id": "TS3006b.C.dialog-act.dharshi.186",
+                  "quote": "Yeah ."
+                }
+              ],
+              "fields": [
+                "statement"
+              ]
+            },
+            "owner": {
+              "result": "pass",
+              "reason": "Lines show UI designer discussing grouping into two groups; evidence that MTD023UID (UI) is the owner who announced or suggested the action.",
+              "quotes": [
+                {
+                  "da_id": "TS3006b.B.dialog-act.dharshi.169",
+                  "quote": "Um the <disfmarker> one group for the for the display , and one group for the basic functions ,"
+                },
+                {
+                  "da_id": "TS3006b.B.dialog-act.dharshi.168",
+                  "quote": "Uh I think we have to to group , to make two groups ."
+                },
+                {
+                  "da_id": "TS3006b.B.dialog-act.dharshi.170",
+                  "quote": "and <disfmarker>"
+                }
+              ],
+              "fields": [
+                "owner"
+              ]
+            },
+            "deadline": {
+              "result": "uncertain",
+              "reason": "deadline_unresolved",
+              "quotes": [],
+              "fields": [
+                "deadline"
+              ]
+            },
+            "status": {
+              "result": "pass",
+              "reason": "Current status is 'open' per provisional values and the dialogue shows ongoing discussion; no completion or approval evidence.",
+              "quotes": [
+                {
+                  "da_id": "TS3006b.A.dialog-act.dharshi.336",
+                  "quote": "Yeah but they're incorporated <gap> ?"
+                },
+                {
+                  "da_id": "TS3006b.B.dialog-act.dharshi.169",
+                  "quote": "Um the <disfmarker> one group for the for the display , and one group for the basic functions ,"
+                }
+              ],
+              "fields": [
+                "status"
+              ]
+            },
+            "conflict": {
+              "result": "pass",
+              "reason": "No conflicting evidence found in the delivered dialogue; the proposed action aligns with the discussion.",
+              "quotes": [
+                {
+                  "da_id": "TS3006b.B.dialog-act.dharshi.169",
+                  "quote": "Um the <disfmarker> one group for the for the display , and one group for the basic functions ,"
+                },
+                {
+                  "da_id": "TS3006b.B.dialog-act.dharshi.168",
+                  "quote": "Uh I think we have to to group , to make two groups ."
+                }
+              ],
+              "fields": []
+            },
+            "relation": {
+              "result": "uncertain",
+              "reason": "prior_context_not_checked",
+              "quotes": [],
+              "fields": [
+                "related_items"
+              ]
+            }
+          },
+          "decision": "request_clarification",
+          "reason": "unresolved_checks",
+          "assessed_text": "The UI Designer will group the functions into two groups: display functions and basic functions.",
+          "requested_action": "request_clarification",
+          "proposed_fields": {
+            "status": "open",
+            "related_items": [],
+            "owner": [
+              "MTD023UID"
+            ],
+            "owner_basis": "explicit",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "prior_context_needed": false,
+            "used_participant_lookup": false,
+            "evidence_da_ids": [
+              "TS3006b.B.dialog-act.dharshi.168",
+              "TS3006b.B.dialog-act.dharshi.169",
+              "TS3006b.B.dialog-act.dharshi.170",
+              "TS3006b.C.dialog-act.dharshi.186"
+            ]
+          },
+          "submitted_checks": {
+            "statement": {
+              "result": "pass",
+              "reason": "The dialogue includes explicit statements and cues that the UI designer will group the functions into two groups (display vs basic). The UI designer's role and actions align with the proposed action.",
+              "quotes": [
+                "TS3006b.B.dialog-act.dharshi.168",
+                "TS3006b.B.dialog-act.dharshi.169",
+                "TS3006b.B.dialog-act.dharshi.170",
+                "TS3006b.C.dialog-act.dharshi.186"
+              ],
+              "fields": [
+                "statement"
+              ]
+            },
+            "owner": {
+              "result": "pass",
+              "reason": "Lines show UI designer discussing grouping into two groups; evidence that MTD023UID (UI) is the owner who announced or suggested the action.",
+              "quotes": [
+                "TS3006b.B.dialog-act.dharshi.169",
+                "TS3006b.B.dialog-act.dharshi.168",
+                "TS3006b.B.dialog-act.dharshi.170"
+              ],
+              "fields": [
+                "owner"
+              ]
+            },
+            "deadline": {
+              "result": "uncertain",
+              "reason": "No explicit deadline is stated in the dialogue or documentation; deadline_basis is missing.",
+              "quotes": [],
+              "fields": [
+                "deadline"
+              ]
+            },
+            "status": {
+              "result": "pass",
+              "reason": "Current status is 'open' per provisional values and the dialogue shows ongoing discussion; no completion or approval evidence.",
+              "quotes": [
+                "TS3006b.A.dialog-act.dharshi.336",
+                "TS3006b.B.dialog-act.dharshi.169"
+              ],
+              "fields": [
+                "status"
+              ]
+            },
+            "conflict": {
+              "result": "pass",
+              "reason": "No conflicting evidence found in the delivered dialogue; the proposed action aligns with the discussion.",
+              "quotes": [
+                "TS3006b.B.dialog-act.dharshi.169",
+                "TS3006b.B.dialog-act.dharshi.168"
+              ],
+              "fields": []
+            },
+            "relation": {
+              "result": "uncertain",
+              "reason": "No prior related_items to link; cannot confirm continuation or update of earlier items without more context",
+              "quotes": [],
+              "fields": [
+                "related_items"
+              ]
+            }
+          },
+          "submitted_assessment": {
+            "status": "open",
+            "related_items": [],
+            "owner": [
+              "MTD023UID"
+            ],
+            "owner_basis": "explicit",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "statement": {
+              "result": "pass",
+              "reason": "The dialogue includes explicit statements and cues that the UI designer will group the functions into two groups (display vs basic). The UI designer's role and actions align with the proposed action.",
+              "evidence_da_ids": [
+                "TS3006b.B.dialog-act.dharshi.168",
+                "TS3006b.B.dialog-act.dharshi.169",
+                "TS3006b.B.dialog-act.dharshi.170",
+                "TS3006b.C.dialog-act.dharshi.186"
+              ]
+            },
+            "owner_check": {
+              "result": "pass",
+              "reason": "Lines show UI designer discussing grouping into two groups; evidence that MTD023UID (UI) is the owner who announced or suggested the action.",
+              "evidence_da_ids": [
+                "TS3006b.B.dialog-act.dharshi.169",
+                "TS3006b.B.dialog-act.dharshi.168",
+                "TS3006b.B.dialog-act.dharshi.170"
+              ]
+            },
+            "deadline_check": {
+              "result": "uncertain",
+              "reason": "No explicit deadline is stated in the dialogue or documentation; deadline_basis is missing.",
+              "evidence_da_ids": []
+            },
+            "status_check": {
+              "result": "pass",
+              "reason": "Current status is 'open' per provisional values and the dialogue shows ongoing discussion; no completion or approval evidence.",
+              "evidence_da_ids": [
+                "TS3006b.A.dialog-act.dharshi.336",
+                "TS3006b.B.dialog-act.dharshi.169"
+              ]
+            },
+            "conflict_check": {
+              "result": "pass",
+              "reason": "No conflicting evidence found in the delivered dialogue; the proposed action aligns with the discussion.",
+              "evidence_da_ids": [
+                "TS3006b.B.dialog-act.dharshi.169",
+                "TS3006b.B.dialog-act.dharshi.168"
+              ],
+              "affected_fields": []
+            },
+            "relation_check": {
+              "result": "uncertain",
+              "reason": "No prior related_items to link; cannot confirm continuation or update of earlier items without more context",
+              "evidence_da_ids": []
+            },
+            "next_action": "request_clarification"
+          },
+          "evidence_bindings": {
+            "statement": [
+              "TS3006b.B.dialog-act.dharshi.168",
+              "TS3006b.B.dialog-act.dharshi.169",
+              "TS3006b.B.dialog-act.dharshi.170",
+              "TS3006b.C.dialog-act.dharshi.186"
+            ],
+            "owner": [
+              "TS3006b.B.dialog-act.dharshi.169",
+              "TS3006b.B.dialog-act.dharshi.168",
+              "TS3006b.B.dialog-act.dharshi.170"
+            ],
+            "status": [
+              "TS3006b.A.dialog-act.dharshi.336",
+              "TS3006b.B.dialog-act.dharshi.169"
+            ],
+            "conflict": [
+              "TS3006b.B.dialog-act.dharshi.169",
+              "TS3006b.B.dialog-act.dharshi.168"
+            ]
+          },
+          "raw_tool_input": {
+            "status": "open",
+            "related_items": [],
+            "owner": [
+              "MTD023UID"
+            ],
+            "owner_basis": "explicit",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "statement": {
+              "result": "pass",
+              "reason": "The dialogue includes explicit statements and cues that the UI designer will group the functions into two groups (display vs basic). The UI designer's role and actions align with the proposed action.",
+              "evidence_da_ids": [
+                "TS3006b.B.dialog-act.dharshi.168",
+                "TS3006b.B.dialog-act.dharshi.169",
+                "TS3006b.B.dialog-act.dharshi.170",
+                "TS3006b.C.dialog-act.dharshi.186"
+              ]
+            },
+            "owner_check": {
+              "result": "pass",
+              "reason": "Lines show UI designer discussing grouping into two groups; evidence that MTD023UID (UI) is the owner who announced or suggested the action.",
+              "evidence_da_ids": [
+                "TS3006b.B.dialog-act.dharshi.169",
+                "TS3006b.B.dialog-act.dharshi.168",
+                "TS3006b.B.dialog-act.dharshi.170"
+              ]
+            },
+            "deadline_check": {
+              "result": "uncertain",
+              "reason": "No explicit deadline is stated in the dialogue or documentation; deadline_basis is missing.",
+              "evidence_da_ids": []
+            },
+            "status_check": {
+              "result": "pass",
+              "reason": "Current status is 'open' per provisional values and the dialogue shows ongoing discussion; no completion or approval evidence.",
+              "evidence_da_ids": [
+                "TS3006b.A.dialog-act.dharshi.336",
+                "TS3006b.B.dialog-act.dharshi.169"
+              ]
+            },
+            "conflict_check": {
+              "result": "pass",
+              "reason": "No conflicting evidence found in the delivered dialogue; the proposed action aligns with the discussion.",
+              "evidence_da_ids": [
+                "TS3006b.B.dialog-act.dharshi.169",
+                "TS3006b.B.dialog-act.dharshi.168"
+              ],
+              "affected_fields": []
+            },
+            "relation_check": {
+              "result": "uncertain",
+              "reason": "No prior related_items to link; cannot confirm continuation or update of earlier items without more context",
+              "evidence_da_ids": []
+            },
+            "next_action": "request_clarification"
+          },
+          "protocol_normalizations": []
+        },
+        {
+          "item": "TS3006b#10",
+          "step": 1,
+          "flags": [
+            "POSSIBLE_PRIOR"
+          ],
+          "action": "stop",
+          "outcome": "pending",
+          "termination_reason": "unresolved_checks",
+          "unresolved_fields": [
+            "deadline",
+            "related_items"
+          ]
+        }
+      ],
+      "lookups": 0,
+      "termination_reason": "unresolved_checks",
+      "clarifications": [
+        {
+          "request_id": "0627afa0f86efd50",
+          "item_key": "TS3006b#10",
+          "record_id": "TS3006b.sys.s.10",
+          "field": "deadline",
+          "question": "What is the agreed deadline, in its original wording?",
+          "item_text": "The UI Designer will group the functions into two groups: display functions and basic functions.",
+          "reason": "deadline_unresolved",
+          "evidence_da_ids": [],
+          "available_evidence_da_ids": [
+            "TS3006b.B.dialog-act.dharshi.169",
+            "TS3006b.C.dialog-act.dharshi.186",
+            "TS3006b.B.dialog-act.dharshi.168",
+            "TS3006b.B.dialog-act.dharshi.170",
+            "TS3006b.A.dialog-act.dharshi.336"
+          ],
+          "status": "open",
+          "termination_reason": "unresolved_checks"
+        },
+        {
+          "request_id": "c9a3f14a49973d49",
+          "item_key": "TS3006b#10",
+          "record_id": "TS3006b.sys.s.10",
+          "field": "related_items",
+          "question": "Which earlier record does this item continue or change, and how?",
+          "item_text": "The UI Designer will group the functions into two groups: display functions and basic functions.",
+          "reason": "prior_context_not_checked",
+          "evidence_da_ids": [],
+          "available_evidence_da_ids": [
+            "TS3006b.B.dialog-act.dharshi.169",
+            "TS3006b.C.dialog-act.dharshi.186",
+            "TS3006b.B.dialog-act.dharshi.168",
+            "TS3006b.B.dialog-act.dharshi.170",
+            "TS3006b.A.dialog-act.dharshi.336"
+          ],
+          "status": "open",
+          "termination_reason": "unresolved_checks"
+        }
+      ]
+    }
+  },
+  "gold_scored": false,
+  "limitations": [
+    "Fixed upstream live P2 regression, not fresh all-stage execution.",
+    "One model run per version; no significance or F1 claim.",
+    "New link outputs do not inherit an earlier human sign-off.",
+    "The previously generated continues link was not reproduced in this run; the item remains pending.",
+    "Repeated executed lookups fell, but format corrections increased and no overall speed/cost improvement is established."
+  ]
+}

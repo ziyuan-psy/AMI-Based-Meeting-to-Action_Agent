@@ -1,0 +1,1198 @@
+{
+  "item_key": "ES2011d#7",
+  "record_id": null,
+  "item_type": "actions",
+  "item_text": "All participants will write final reports after this meeting.",
+  "state": "pending",
+  "recordable": true,
+  "fields": {
+    "status": "open",
+    "prior_context_needed": false,
+    "related_items": [],
+    "owner": null,
+    "owner_basis": "ambiguous",
+    "deadline": null,
+    "deadline_basis": "ambiguous",
+    "reference": [
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/ES2011d.json",
+        "locator": "ES2011d.A.dialog-act.dharshi.288"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/ES2011d.json",
+        "locator": "ES2011d.B.dialog-act.dharshi.195"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/ES2011d.json",
+        "locator": "ES2011d.A.dialog-act.dharshi.290"
+      }
+    ]
+  },
+  "draft_fields": {
+    "status": "open",
+    "related_items": [],
+    "owner": null,
+    "owner_basis": "ambiguous",
+    "deadline": "after this meeting",
+    "deadline_basis": "explicit",
+    "prior_context_needed": false,
+    "used_participant_lookup": false,
+    "evidence_da_ids": [
+      "ES2011d.A.dialog-act.dharshi.288",
+      "ES2011d.B.dialog-act.dharshi.195"
+    ]
+  },
+  "checks": {
+    "statement": {
+      "result": "pass",
+      "reason": "Dialogue indicates that final reports are expected from all participants; PM initiates plan, B asks 'All of us?', and others reference attendees, implying comprehensive participation.",
+      "quotes": [
+        {
+          "da_id": "ES2011d.A.dialog-act.dharshi.288",
+          "quote": "So I guess we're supposed to write final reports ."
+        },
+        {
+          "da_id": "ES2011d.B.dialog-act.dharshi.195",
+          "quote": "All of us ?"
+        }
+      ],
+      "fields": [
+        "statement"
+      ]
+    },
+    "owner": {
+      "result": "uncertain",
+      "reason": "owner_unresolved",
+      "quotes": [
+        {
+          "da_id": "ES2011d.A.dialog-act.dharshi.288",
+          "quote": "So I guess we're supposed to write final reports ."
+        },
+        {
+          "da_id": "ES2011d.B.dialog-act.dharshi.195",
+          "quote": "All of us ?"
+        },
+        {
+          "da_id": "ES2011d.A.dialog-act.dharshi.289",
+          "quote": "'Cause <disfmarker>"
+        },
+        {
+          "da_id": "ES2011d.A.dialog-act.dharshi.290",
+          "quote": "I don't know . Hmm ."
+        },
+        {
+          "da_id": "ES2011d.D.dialog-act.dharshi.218",
+          "quote": "Well there's al eight , nine ."
+        }
+      ],
+      "fields": [
+        "owner"
+      ]
+    },
+    "deadline": {
+      "result": "uncertain",
+      "reason": "Deadline stated as 'after this meeting' in the item, but observed dialogue lacks explicit timing; evidence is not present in observed_dialogue.",
+      "quotes": [
+        {
+          "da_id": "ES2011d.A.dialog-act.dharshi.288",
+          "quote": "So I guess we're supposed to write final reports ."
+        },
+        {
+          "da_id": "ES2011d.B.dialog-act.dharshi.195",
+          "quote": "All of us ?"
+        },
+        {
+          "da_id": "ES2011d.A.dialog-act.dharshi.290",
+          "quote": "I don't know . Hmm ."
+        }
+      ],
+      "fields": [
+        "deadline"
+      ]
+    },
+    "status": {
+      "result": "pass",
+      "reason": "The task is described as ongoing (open) and not completed yet; the dialogue discusses preparing final reports.",
+      "quotes": [
+        {
+          "da_id": "ES2011d.A.dialog-act.dharshi.288",
+          "quote": "So I guess we're supposed to write final reports ."
+        },
+        {
+          "da_id": "ES2011d.B.dialog-act.dharshi.195",
+          "quote": "All of us ?"
+        },
+        {
+          "da_id": "ES2011d.A.dialog-act.dharshi.290",
+          "quote": "I don't know . Hmm ."
+        }
+      ],
+      "fields": [
+        "status"
+      ]
+    },
+    "conflict": {
+      "result": "pass",
+      "reason": "No contradictions found in the observed dialogue about who will write final reports or scope.",
+      "quotes": [
+        {
+          "da_id": "ES2011d.A.dialog-act.dharshi.288",
+          "quote": "So I guess we're supposed to write final reports ."
+        },
+        {
+          "da_id": "ES2011d.B.dialog-act.dharshi.195",
+          "quote": "All of us ?"
+        },
+        {
+          "da_id": "ES2011d.A.dialog-act.dharshi.290",
+          "quote": "I don't know . Hmm ."
+        }
+      ],
+      "fields": []
+    },
+    "relation": {
+      "result": "uncertain",
+      "reason": "unobserved_or_inexact_quote",
+      "quotes": [],
+      "links": [],
+      "documents": [],
+      "fields": [
+        "related_items"
+      ]
+    }
+  },
+  "unresolved_fields": [
+    "owner",
+    "deadline",
+    "related_items"
+  ],
+  "observed_evidence_da_ids": [
+    "ES2011d.A.dialog-act.dharshi.288",
+    "ES2011d.A.dialog-act.dharshi.289",
+    "ES2011d.B.dialog-act.dharshi.195",
+    "ES2011d.A.dialog-act.dharshi.290",
+    "ES2011d.D.dialog-act.dharshi.218",
+    "ES2011d.B.dialog-act.dharshi.194",
+    "ES2011d.C.dialog-act.dharshi.188"
+  ],
+  "initial_context": {
+    "item": {
+      "type": "actions",
+      "text": "All participants will write final reports after this meeting.",
+      "flags": [
+        "OWNER_UNRESOLVED",
+        "POSSIBLE_PRIOR"
+      ]
+    },
+    "current_meeting": "ES2011d",
+    "earlier_meetings": [
+      "ES2011a",
+      "ES2011b",
+      "ES2011c"
+    ],
+    "roster": [
+      {
+        "speaker": "A",
+        "participant_id": "FEE041",
+        "role": "PM"
+      },
+      {
+        "speaker": "B",
+        "participant_id": "FEE042",
+        "role": "ID"
+      },
+      {
+        "speaker": "C",
+        "participant_id": "FEE043",
+        "role": "UI"
+      },
+      {
+        "speaker": "D",
+        "participant_id": "FEE044",
+        "role": "ME"
+      }
+    ],
+    "observed_dialogue": [
+      {
+        "da_id": "ES2011d.A.dialog-act.dharshi.288",
+        "meeting_id": "ES2011d",
+        "text": "So I guess we're supposed to write final reports .",
+        "participant": "FEE041",
+        "role": "PM"
+      },
+      {
+        "da_id": "ES2011d.A.dialog-act.dharshi.289",
+        "meeting_id": "ES2011d",
+        "text": "'Cause <disfmarker>",
+        "participant": "FEE041",
+        "role": "PM"
+      },
+      {
+        "da_id": "ES2011d.B.dialog-act.dharshi.195",
+        "meeting_id": "ES2011d",
+        "text": "All of us ?",
+        "participant": "FEE042",
+        "role": "ID"
+      },
+      {
+        "da_id": "ES2011d.A.dialog-act.dharshi.290",
+        "meeting_id": "ES2011d",
+        "text": "I don't know . Hmm .",
+        "participant": "FEE041",
+        "role": "PM"
+      },
+      {
+        "da_id": "ES2011d.D.dialog-act.dharshi.218",
+        "meeting_id": "ES2011d",
+        "text": "Well there's al eight , nine .",
+        "participant": "FEE044",
+        "role": "ME"
+      },
+      {
+        "da_id": "ES2011d.B.dialog-act.dharshi.194",
+        "participant": "FEE042",
+        "role": "ID",
+        "text": "Especially if you have food ."
+      },
+      {
+        "da_id": "ES2011d.C.dialog-act.dharshi.188",
+        "participant": "FEE043",
+        "role": "UI",
+        "text": "<vocalsound>"
+      }
+    ],
+    "peer_items": [
+      {
+        "item_key": "ES2011d#0",
+        "type": "decisions",
+        "text": "We decided on batteries, and the regular chip would be necessary for the more advanced iPod-like button."
+      },
+      {
+        "item_key": "ES2011d#1",
+        "type": "problems",
+        "text": "It's been a little bit difficult to ensure that it's hand-holdable and easy to use, without being too big."
+      },
+      {
+        "item_key": "ES2011d#2",
+        "type": "decisions",
+        "text": "We can do the evaluation separately and then discuss it."
+      },
+      {
+        "item_key": "ES2011d#3",
+        "type": "problems",
+        "text": "The microphones are unreliable when moving to the whiteboard and could drop off if moved too much."
+      },
+      {
+        "item_key": "ES2011d#4",
+        "type": "decisions",
+        "text": "The broccoli-shaped design is the preferred option."
+      },
+      {
+        "item_key": "ES2011d#5",
+        "type": "problems",
+        "text": "There is confusion about how to compute the average score—whether to sum the four scores and divide by four, and results vary."
+      },
+      {
+        "item_key": "ES2011d#6",
+        "type": "decisions",
+        "text": "The product concept is satisfactory, fits the budget, and is trendy."
+      }
+    ],
+    "provisional_values": {
+      "owner": null,
+      "owner_basis": "ambiguous",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "status": "open",
+      "related_items": []
+    },
+    "candidate_evidence_da_ids": [
+      "ES2011d.A.dialog-act.dharshi.288",
+      "ES2011d.A.dialog-act.dharshi.289",
+      "ES2011d.B.dialog-act.dharshi.195",
+      "ES2011d.A.dialog-act.dharshi.290",
+      "ES2011d.D.dialog-act.dharshi.218"
+    ]
+  },
+  "observed_documents": [],
+  "document_evidence": [],
+  "relation_evidence": [],
+  "history": [
+    {
+      "item": "ES2011d#7",
+      "step": 1,
+      "flags": [
+        "OWNER_UNRESOLVED",
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "assess_item",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue indicates that final reports are expected from all participants; PM initiates plan, B asks 'All of us?', and others reference attendees, implying comprehensive participation.",
+          "quotes": [
+            {
+              "da_id": "ES2011d.A.dialog-act.dharshi.288",
+              "quote": "So I guess we're supposed to write final reports ."
+            },
+            {
+              "da_id": "ES2011d.B.dialog-act.dharshi.195",
+              "quote": "All of us ?"
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "uncertain",
+          "reason": "owner_unresolved",
+          "quotes": [
+            {
+              "da_id": "ES2011d.A.dialog-act.dharshi.288",
+              "quote": "So I guess we're supposed to write final reports ."
+            },
+            {
+              "da_id": "ES2011d.B.dialog-act.dharshi.195",
+              "quote": "All of us ?"
+            },
+            {
+              "da_id": "ES2011d.A.dialog-act.dharshi.289",
+              "quote": "'Cause <disfmarker>"
+            },
+            {
+              "da_id": "ES2011d.A.dialog-act.dharshi.290",
+              "quote": "I don't know . Hmm ."
+            },
+            {
+              "da_id": "ES2011d.D.dialog-act.dharshi.218",
+              "quote": "Well there's al eight , nine ."
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "Deadline stated as 'after this meeting' in the item, but observed dialogue lacks explicit timing; evidence is not present in observed_dialogue.",
+          "quotes": [
+            {
+              "da_id": "ES2011d.A.dialog-act.dharshi.288",
+              "quote": "So I guess we're supposed to write final reports ."
+            },
+            {
+              "da_id": "ES2011d.B.dialog-act.dharshi.195",
+              "quote": "All of us ?"
+            },
+            {
+              "da_id": "ES2011d.A.dialog-act.dharshi.290",
+              "quote": "I don't know . Hmm ."
+            }
+          ],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "The task is described as ongoing (open) and not completed yet; the dialogue discusses preparing final reports.",
+          "quotes": [
+            {
+              "da_id": "ES2011d.A.dialog-act.dharshi.288",
+              "quote": "So I guess we're supposed to write final reports ."
+            },
+            {
+              "da_id": "ES2011d.B.dialog-act.dharshi.195",
+              "quote": "All of us ?"
+            },
+            {
+              "da_id": "ES2011d.A.dialog-act.dharshi.290",
+              "quote": "I don't know . Hmm ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions found in the observed dialogue about who will write final reports or scope.",
+          "quotes": [
+            {
+              "da_id": "ES2011d.A.dialog-act.dharshi.288",
+              "quote": "So I guess we're supposed to write final reports ."
+            },
+            {
+              "da_id": "ES2011d.B.dialog-act.dharshi.195",
+              "quote": "All of us ?"
+            },
+            {
+              "da_id": "ES2011d.A.dialog-act.dharshi.290",
+              "quote": "I don't know . Hmm ."
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "prior_context_not_checked",
+          "links": [],
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "decision": "retrieve",
+      "reason": "required_history_check_before_partial_accept",
+      "assessed_text": "All participants will write final reports after this meeting.",
+      "requested_action": "request_clarification",
+      "proposed_fields": {
+        "status": "open",
+        "related_items": [],
+        "owner": null,
+        "owner_basis": "ambiguous",
+        "deadline": "after this meeting",
+        "deadline_basis": "explicit",
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "ES2011d.A.dialog-act.dharshi.288",
+          "ES2011d.B.dialog-act.dharshi.195"
+        ]
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue indicates that final reports are expected from all participants; PM initiates plan, B asks 'All of us?', and others reference attendees, implying comprehensive participation.",
+          "quotes": [
+            "ES2011d.A.dialog-act.dharshi.288",
+            "ES2011d.B.dialog-act.dharshi.195"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "uncertain",
+          "reason": "No explicit owner declared in dialogue; ownership of 'all participants' is ambiguous.",
+          "quotes": [
+            "ES2011d.A.dialog-act.dharshi.288",
+            "ES2011d.B.dialog-act.dharshi.195",
+            "ES2011d.A.dialog-act.dharshi.289",
+            "ES2011d.A.dialog-act.dharshi.290",
+            "ES2011d.D.dialog-act.dharshi.218"
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "Deadline stated as 'after this meeting' in the item, but observed dialogue lacks explicit timing; evidence is not present in observed_dialogue.",
+          "quotes": [
+            "ES2011d.A.dialog-act.dharshi.288",
+            "ES2011d.B.dialog-act.dharshi.195",
+            "ES2011d.A.dialog-act.dharshi.290"
+          ],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "The task is described as ongoing (open) and not completed yet; the dialogue discusses preparing final reports.",
+          "quotes": [
+            "ES2011d.A.dialog-act.dharshi.288",
+            "ES2011d.B.dialog-act.dharshi.195",
+            "ES2011d.A.dialog-act.dharshi.290"
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions found in the observed dialogue about who will write final reports or scope.",
+          "quotes": [
+            "ES2011d.A.dialog-act.dharshi.288",
+            "ES2011d.B.dialog-act.dharshi.195",
+            "ES2011d.A.dialog-act.dharshi.290"
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "No clear prior item relation documented in the provided dialogue; possible future linkage but not identifiable.",
+          "links": [],
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "status": "open",
+        "related_items": [],
+        "owner": null,
+        "owner_basis": "ambiguous",
+        "deadline": "after this meeting",
+        "deadline_basis": "explicit",
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue indicates that final reports are expected from all participants; PM initiates plan, B asks 'All of us?', and others reference attendees, implying comprehensive participation.",
+          "evidence_da_ids": [
+            "ES2011d.A.dialog-act.dharshi.288",
+            "ES2011d.B.dialog-act.dharshi.195"
+          ]
+        },
+        "owner_check": {
+          "result": "uncertain",
+          "reason": "No explicit owner declared in dialogue; ownership of 'all participants' is ambiguous.",
+          "evidence_da_ids": [
+            "ES2011d.A.dialog-act.dharshi.288",
+            "ES2011d.B.dialog-act.dharshi.195",
+            "ES2011d.A.dialog-act.dharshi.289",
+            "ES2011d.A.dialog-act.dharshi.290",
+            "ES2011d.D.dialog-act.dharshi.218"
+          ]
+        },
+        "deadline_check": {
+          "result": "uncertain",
+          "reason": "Deadline stated as 'after this meeting' in the item, but observed dialogue lacks explicit timing; evidence is not present in observed_dialogue.",
+          "evidence_da_ids": [
+            "ES2011d.A.dialog-act.dharshi.288",
+            "ES2011d.B.dialog-act.dharshi.195",
+            "ES2011d.A.dialog-act.dharshi.290"
+          ]
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "The task is described as ongoing (open) and not completed yet; the dialogue discusses preparing final reports.",
+          "evidence_da_ids": [
+            "ES2011d.A.dialog-act.dharshi.288",
+            "ES2011d.B.dialog-act.dharshi.195",
+            "ES2011d.A.dialog-act.dharshi.290"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No contradictions found in the observed dialogue about who will write final reports or scope.",
+          "evidence_da_ids": [
+            "ES2011d.A.dialog-act.dharshi.288",
+            "ES2011d.B.dialog-act.dharshi.195",
+            "ES2011d.A.dialog-act.dharshi.290"
+          ],
+          "affected_fields": []
+        },
+        "relation_check": {
+          "result": "uncertain",
+          "reason": "No clear prior item relation documented in the provided dialogue; possible future linkage but not identifiable.",
+          "evidence_da_ids": [],
+          "links": []
+        },
+        "next_action": "request_clarification"
+      },
+      "evidence_bindings": {
+        "statement": [
+          "ES2011d.A.dialog-act.dharshi.288",
+          "ES2011d.B.dialog-act.dharshi.195"
+        ],
+        "owner": [
+          "ES2011d.A.dialog-act.dharshi.288",
+          "ES2011d.B.dialog-act.dharshi.195",
+          "ES2011d.A.dialog-act.dharshi.289",
+          "ES2011d.A.dialog-act.dharshi.290",
+          "ES2011d.D.dialog-act.dharshi.218"
+        ],
+        "deadline": [
+          "ES2011d.A.dialog-act.dharshi.288",
+          "ES2011d.B.dialog-act.dharshi.195",
+          "ES2011d.A.dialog-act.dharshi.290"
+        ],
+        "status": [
+          "ES2011d.A.dialog-act.dharshi.288",
+          "ES2011d.B.dialog-act.dharshi.195",
+          "ES2011d.A.dialog-act.dharshi.290"
+        ],
+        "conflict": [
+          "ES2011d.A.dialog-act.dharshi.288",
+          "ES2011d.B.dialog-act.dharshi.195",
+          "ES2011d.A.dialog-act.dharshi.290"
+        ]
+      },
+      "raw_tool_input": {
+        "status": "open",
+        "related_items": [],
+        "owner": null,
+        "owner_basis": "ambiguous",
+        "deadline": "after this meeting",
+        "deadline_basis": "explicit",
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue indicates that final reports are expected from all participants; PM initiates plan, B asks 'All of us?', and others reference attendees, implying comprehensive participation.",
+          "evidence_da_ids": [
+            "ES2011d.A.dialog-act.dharshi.288",
+            "ES2011d.B.dialog-act.dharshi.195"
+          ]
+        },
+        "owner_check": {
+          "result": "uncertain",
+          "reason": "No explicit owner declared in dialogue; ownership of 'all participants' is ambiguous.",
+          "evidence_da_ids": [
+            "ES2011d.A.dialog-act.dharshi.288",
+            "ES2011d.B.dialog-act.dharshi.195",
+            "ES2011d.A.dialog-act.dharshi.289",
+            "ES2011d.A.dialog-act.dharshi.290",
+            "ES2011d.D.dialog-act.dharshi.218"
+          ]
+        },
+        "deadline_check": {
+          "result": "uncertain",
+          "reason": "Deadline stated as 'after this meeting' in the item, but observed dialogue lacks explicit timing; evidence is not present in observed_dialogue.",
+          "evidence_da_ids": [
+            "ES2011d.A.dialog-act.dharshi.288",
+            "ES2011d.B.dialog-act.dharshi.195",
+            "ES2011d.A.dialog-act.dharshi.290"
+          ]
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "The task is described as ongoing (open) and not completed yet; the dialogue discusses preparing final reports.",
+          "evidence_da_ids": [
+            "ES2011d.A.dialog-act.dharshi.288",
+            "ES2011d.B.dialog-act.dharshi.195",
+            "ES2011d.A.dialog-act.dharshi.290"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No contradictions found in the observed dialogue about who will write final reports or scope.",
+          "evidence_da_ids": [
+            "ES2011d.A.dialog-act.dharshi.288",
+            "ES2011d.B.dialog-act.dharshi.195",
+            "ES2011d.A.dialog-act.dharshi.290"
+          ]
+        },
+        "relation_check": {
+          "result": "uncertain",
+          "reason": "No clear prior item relation documented in the provided dialogue; possible future linkage but not identifiable.",
+          "evidence_da_ids": [],
+          "links": []
+        },
+        "next_action": "request_clarification"
+      },
+      "protocol_normalizations": [
+        "empty_affected_fields_for_no_conflict"
+      ],
+      "unresolved_before": [
+        "deadline",
+        "owner",
+        "related_items",
+        "statement",
+        "status"
+      ],
+      "unresolved_after": [
+        "deadline",
+        "owner",
+        "related_items"
+      ],
+      "semantic_stalls": 0,
+      "validation_codes": {
+        "owner": [
+          "owner_unresolved"
+        ],
+        "relation": [
+          "prior_context_not_checked"
+        ]
+      }
+    },
+    {
+      "item": "ES2011d#7",
+      "step": 2,
+      "flags": [
+        "OWNER_UNRESOLVED",
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "history_context_focused",
+      "outcome": "delivered",
+      "evidence_da_ids": [
+        "ES2011d.A.dialog-act.dharshi.288",
+        "ES2011d.A.dialog-act.dharshi.289",
+        "ES2011d.B.dialog-act.dharshi.195",
+        "ES2011d.A.dialog-act.dharshi.290",
+        "ES2011d.D.dialog-act.dharshi.218",
+        "ES2011d.B.dialog-act.dharshi.194",
+        "ES2011d.C.dialog-act.dharshi.188"
+      ]
+    },
+    {
+      "item": "ES2011d#7",
+      "step": 2,
+      "flags": [
+        "OWNER_UNRESOLVED",
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "get_prior_items",
+      "outcome": "lookup",
+      "decision": "retrieve",
+      "args": {
+        "query": "final reports",
+        "item_type": "actions"
+      },
+      "tool_result": {
+        "results": []
+      },
+      "new_info": false
+    },
+    {
+      "item": "ES2011d#7",
+      "step": 3,
+      "flags": [
+        "OWNER_UNRESOLVED",
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "assess_relation",
+      "outcome": "invalid_action",
+      "error": "Correct these argument fields: : 'result' is a required property; : 'reason' is a required property; : 'quotes' is a required property; : 'links' is a required property Tool assess_relation accepts root keys: result, reason, quotes, documents, links, related_items, next_action. Resubmit the complete advertised object. Select only delivered supporting dialogue IDs; if support is unavailable use uncertain with an explanation, never invent an ID or mark pass with no evidence. Documents belong inside the check they inform.",
+      "raw_tool_input": {}
+    },
+    {
+      "item": "ES2011d#7",
+      "step": 4,
+      "flags": [
+        "OWNER_UNRESOLVED",
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "assess_relation",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue indicates that final reports are expected from all participants; PM initiates plan, B asks 'All of us?', and others reference attendees, implying comprehensive participation.",
+          "quotes": [
+            {
+              "da_id": "ES2011d.A.dialog-act.dharshi.288",
+              "quote": "So I guess we're supposed to write final reports ."
+            },
+            {
+              "da_id": "ES2011d.B.dialog-act.dharshi.195",
+              "quote": "All of us ?"
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "uncertain",
+          "reason": "owner_unresolved",
+          "quotes": [
+            {
+              "da_id": "ES2011d.A.dialog-act.dharshi.288",
+              "quote": "So I guess we're supposed to write final reports ."
+            },
+            {
+              "da_id": "ES2011d.B.dialog-act.dharshi.195",
+              "quote": "All of us ?"
+            },
+            {
+              "da_id": "ES2011d.A.dialog-act.dharshi.289",
+              "quote": "'Cause <disfmarker>"
+            },
+            {
+              "da_id": "ES2011d.A.dialog-act.dharshi.290",
+              "quote": "I don't know . Hmm ."
+            },
+            {
+              "da_id": "ES2011d.D.dialog-act.dharshi.218",
+              "quote": "Well there's al eight , nine ."
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "Deadline stated as 'after this meeting' in the item, but observed dialogue lacks explicit timing; evidence is not present in observed_dialogue.",
+          "quotes": [
+            {
+              "da_id": "ES2011d.A.dialog-act.dharshi.288",
+              "quote": "So I guess we're supposed to write final reports ."
+            },
+            {
+              "da_id": "ES2011d.B.dialog-act.dharshi.195",
+              "quote": "All of us ?"
+            },
+            {
+              "da_id": "ES2011d.A.dialog-act.dharshi.290",
+              "quote": "I don't know . Hmm ."
+            }
+          ],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "The task is described as ongoing (open) and not completed yet; the dialogue discusses preparing final reports.",
+          "quotes": [
+            {
+              "da_id": "ES2011d.A.dialog-act.dharshi.288",
+              "quote": "So I guess we're supposed to write final reports ."
+            },
+            {
+              "da_id": "ES2011d.B.dialog-act.dharshi.195",
+              "quote": "All of us ?"
+            },
+            {
+              "da_id": "ES2011d.A.dialog-act.dharshi.290",
+              "quote": "I don't know . Hmm ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions found in the observed dialogue about who will write final reports or scope.",
+          "quotes": [
+            {
+              "da_id": "ES2011d.A.dialog-act.dharshi.288",
+              "quote": "So I guess we're supposed to write final reports ."
+            },
+            {
+              "da_id": "ES2011d.B.dialog-act.dharshi.195",
+              "quote": "All of us ?"
+            },
+            {
+              "da_id": "ES2011d.A.dialog-act.dharshi.290",
+              "quote": "I don't know . Hmm ."
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "unobserved_or_inexact_quote",
+          "quotes": [],
+          "links": [],
+          "documents": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "decision": "retrieve",
+      "reason": "unresolved_checks",
+      "assessed_text": "All participants will write final reports after this meeting.",
+      "requested_action": null,
+      "proposed_fields": {
+        "status": "open",
+        "related_items": [],
+        "owner": null,
+        "owner_basis": "ambiguous",
+        "deadline": "after this meeting",
+        "deadline_basis": "explicit",
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "ES2011d.A.dialog-act.dharshi.288",
+          "ES2011d.B.dialog-act.dharshi.195"
+        ]
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue indicates that final reports are expected from all participants; PM initiates plan, B asks 'All of us?', and others reference attendees, implying comprehensive participation.",
+          "quotes": [
+            {
+              "da_id": "ES2011d.A.dialog-act.dharshi.288",
+              "quote": "So I guess we're supposed to write final reports ."
+            },
+            {
+              "da_id": "ES2011d.B.dialog-act.dharshi.195",
+              "quote": "All of us ?"
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "uncertain",
+          "reason": "owner_unresolved",
+          "quotes": [
+            {
+              "da_id": "ES2011d.A.dialog-act.dharshi.288",
+              "quote": "So I guess we're supposed to write final reports ."
+            },
+            {
+              "da_id": "ES2011d.B.dialog-act.dharshi.195",
+              "quote": "All of us ?"
+            },
+            {
+              "da_id": "ES2011d.A.dialog-act.dharshi.289",
+              "quote": "'Cause <disfmarker>"
+            },
+            {
+              "da_id": "ES2011d.A.dialog-act.dharshi.290",
+              "quote": "I don't know . Hmm ."
+            },
+            {
+              "da_id": "ES2011d.D.dialog-act.dharshi.218",
+              "quote": "Well there's al eight , nine ."
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "Deadline stated as 'after this meeting' in the item, but observed dialogue lacks explicit timing; evidence is not present in observed_dialogue.",
+          "quotes": [
+            {
+              "da_id": "ES2011d.A.dialog-act.dharshi.288",
+              "quote": "So I guess we're supposed to write final reports ."
+            },
+            {
+              "da_id": "ES2011d.B.dialog-act.dharshi.195",
+              "quote": "All of us ?"
+            },
+            {
+              "da_id": "ES2011d.A.dialog-act.dharshi.290",
+              "quote": "I don't know . Hmm ."
+            }
+          ],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "The task is described as ongoing (open) and not completed yet; the dialogue discusses preparing final reports.",
+          "quotes": [
+            {
+              "da_id": "ES2011d.A.dialog-act.dharshi.288",
+              "quote": "So I guess we're supposed to write final reports ."
+            },
+            {
+              "da_id": "ES2011d.B.dialog-act.dharshi.195",
+              "quote": "All of us ?"
+            },
+            {
+              "da_id": "ES2011d.A.dialog-act.dharshi.290",
+              "quote": "I don't know . Hmm ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions found in the observed dialogue about who will write final reports or scope.",
+          "quotes": [
+            {
+              "da_id": "ES2011d.A.dialog-act.dharshi.288",
+              "quote": "So I guess we're supposed to write final reports ."
+            },
+            {
+              "da_id": "ES2011d.B.dialog-act.dharshi.195",
+              "quote": "All of us ?"
+            },
+            {
+              "da_id": "ES2011d.A.dialog-act.dharshi.290",
+              "quote": "I don't know . Hmm ."
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "No prior matching actions found in ES2011a/b/c for 'final reports'; cannot determine whether current item continues or changes an earlier item.",
+          "quotes": [
+            {
+              "da_id": "ES2011d.A.dialog-act.dharshi.288",
+              "quote": "So I guess we're supposed to write final reports."
+            }
+          ],
+          "links": [],
+          "documents": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "result": "uncertain",
+        "reason": "No prior matching actions found in ES2011a/b/c for 'final reports'; cannot determine whether current item continues or changes an earlier item.",
+        "quotes": [
+          {
+            "da_id": "ES2011d.A.dialog-act.dharshi.288",
+            "quote": "So I guess we're supposed to write final reports."
+          }
+        ],
+        "documents": [],
+        "links": [],
+        "related_items": []
+      },
+      "evidence_bindings": {},
+      "raw_tool_input": {
+        "result": "uncertain",
+        "reason": "No prior matching actions found in ES2011a/b/c for 'final reports'; cannot determine whether current item continues or changes an earlier item.",
+        "quotes": [
+          {
+            "da_id": "ES2011d.A.dialog-act.dharshi.288",
+            "quote": "So I guess we're supposed to write final reports."
+          }
+        ],
+        "documents": [],
+        "links": [],
+        "related_items": []
+      },
+      "protocol_normalizations": [
+        "controller_action_for_missing_hint:retrieve"
+      ],
+      "unresolved_before": [
+        "deadline",
+        "owner",
+        "related_items"
+      ],
+      "unresolved_after": [
+        "deadline",
+        "owner",
+        "related_items"
+      ],
+      "semantic_stalls": 0,
+      "validation_codes": {
+        "relation": [
+          "unobserved_or_inexact_quote"
+        ],
+        "owner": [
+          "owner_unresolved"
+        ]
+      }
+    },
+    {
+      "item": "ES2011d#7",
+      "step": 5,
+      "flags": [
+        "OWNER_UNRESOLVED",
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "get_prior_items",
+      "outcome": "lookup",
+      "decision": "retrieve",
+      "args": {
+        "query": "final report",
+        "item_type": "actions"
+      },
+      "tool_result": {
+        "results": []
+      },
+      "new_info": false
+    },
+    {
+      "item": "ES2011d#7",
+      "step": 5,
+      "flags": [
+        "OWNER_UNRESOLVED",
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "stop",
+      "outcome": "pending",
+      "termination_reason": "no_progress",
+      "unresolved_fields": [
+        "owner",
+        "deadline",
+        "related_items"
+      ]
+    }
+  ],
+  "lookups": 2,
+  "termination_reason": "no_progress",
+  "clarifications": [
+    {
+      "request_id": "015b46f645ce0cea",
+      "item_key": "ES2011d#7",
+      "record_id": null,
+      "field": "owner",
+      "question": "Who is responsible for this task?",
+      "item_text": "All participants will write final reports after this meeting.",
+      "reason": "owner_unresolved",
+      "evidence_da_ids": [
+        "ES2011d.A.dialog-act.dharshi.288",
+        "ES2011d.B.dialog-act.dharshi.195",
+        "ES2011d.A.dialog-act.dharshi.289",
+        "ES2011d.A.dialog-act.dharshi.290",
+        "ES2011d.D.dialog-act.dharshi.218"
+      ],
+      "available_evidence_da_ids": [
+        "ES2011d.A.dialog-act.dharshi.288",
+        "ES2011d.A.dialog-act.dharshi.289",
+        "ES2011d.B.dialog-act.dharshi.195",
+        "ES2011d.A.dialog-act.dharshi.290",
+        "ES2011d.D.dialog-act.dharshi.218",
+        "ES2011d.B.dialog-act.dharshi.194",
+        "ES2011d.C.dialog-act.dharshi.188"
+      ],
+      "status": "open",
+      "termination_reason": "no_progress"
+    },
+    {
+      "request_id": "7309f4dfaf07d3e2",
+      "item_key": "ES2011d#7",
+      "record_id": null,
+      "field": "deadline",
+      "question": "What is the agreed deadline, in its original wording?",
+      "item_text": "All participants will write final reports after this meeting.",
+      "reason": "Deadline stated as 'after this meeting' in the item, but observed dialogue lacks explicit timing; evidence is not present in observed_dialogue.",
+      "evidence_da_ids": [
+        "ES2011d.A.dialog-act.dharshi.288",
+        "ES2011d.B.dialog-act.dharshi.195",
+        "ES2011d.A.dialog-act.dharshi.290"
+      ],
+      "available_evidence_da_ids": [
+        "ES2011d.A.dialog-act.dharshi.288",
+        "ES2011d.A.dialog-act.dharshi.289",
+        "ES2011d.B.dialog-act.dharshi.195",
+        "ES2011d.A.dialog-act.dharshi.290",
+        "ES2011d.D.dialog-act.dharshi.218",
+        "ES2011d.B.dialog-act.dharshi.194",
+        "ES2011d.C.dialog-act.dharshi.188"
+      ],
+      "status": "open",
+      "termination_reason": "no_progress"
+    },
+    {
+      "request_id": "fa6c097b0ed2c9c4",
+      "item_key": "ES2011d#7",
+      "record_id": null,
+      "field": "related_items",
+      "question": "Which earlier record does this item continue or change, and how?",
+      "item_text": "All participants will write final reports after this meeting.",
+      "reason": "unobserved_or_inexact_quote",
+      "evidence_da_ids": [],
+      "available_evidence_da_ids": [
+        "ES2011d.A.dialog-act.dharshi.288",
+        "ES2011d.A.dialog-act.dharshi.289",
+        "ES2011d.B.dialog-act.dharshi.195",
+        "ES2011d.A.dialog-act.dharshi.290",
+        "ES2011d.D.dialog-act.dharshi.218",
+        "ES2011d.B.dialog-act.dharshi.194",
+        "ES2011d.C.dialog-act.dharshi.188"
+      ],
+      "status": "open",
+      "termination_reason": "no_progress"
+    }
+  ]
+}

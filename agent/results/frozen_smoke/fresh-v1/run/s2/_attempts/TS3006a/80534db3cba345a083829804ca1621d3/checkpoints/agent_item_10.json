@@ -1,0 +1,793 @@
+{
+  "item": 10,
+  "fields": {
+    "item_key": "TS3006a#10",
+    "record_id": null,
+    "item_type": "actions",
+    "item_text": "Industrial Designer will produce a working design.",
+    "state": "pending",
+    "recordable": false,
+    "fields": {
+      "status": "unknown",
+      "prior_context_needed": false,
+      "related_items": [],
+      "owner": null,
+      "owner_basis": "ambiguous",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3006a.json",
+          "locator": "TS3006a.A.dialog-act.vkaraisk.146"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3006a.json",
+          "locator": "TS3006a.A.dialog-act.vkaraisk.147"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3006a.json",
+          "locator": "TS3006a.C.dialog-act.vkaraisk.77"
+        }
+      ]
+    },
+    "draft_fields": {
+      "status": "open",
+      "related_items": [],
+      "owner": [
+        "MTD022ID"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "prior_context_needed": false,
+      "used_participant_lookup": false,
+      "evidence_da_ids": [
+        "TS3006a.A.dialog-act.vkaraisk.146",
+        "TS3006a.A.dialog-act.vkaraisk.147",
+        "TS3006a.C.dialog-act.vkaraisk.77"
+      ]
+    },
+    "checks": {
+      "statement": {
+        "result": "pass",
+        "reason": "The dialogue includes confirmation of the responsibility assignment and the proposed action. The ID explicitly confirms; the action text matches the discussed outcome.",
+        "quotes": [
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.146",
+            "quote": "this industrati Industrial Designer should produce a working design ."
+          },
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.147",
+            "quote": "Am I correct ?"
+          },
+          {
+            "da_id": "TS3006a.C.dialog-act.vkaraisk.77",
+            "quote": "True ."
+          }
+        ],
+        "fields": [
+          "statement"
+        ]
+      },
+      "owner": {
+        "result": "pass",
+        "reason": "Owner is explicitly stated in the candidate_evidence as MTD022ID and matches the proposed owner.",
+        "quotes": [
+          {
+            "da_id": "TS3006a.C.dialog-act.vkaraisk.77",
+            "quote": "True ."
+          }
+        ],
+        "fields": [
+          "owner"
+        ]
+      },
+      "deadline": {
+        "result": "uncertain",
+        "reason": "deadline_unresolved",
+        "quotes": [],
+        "fields": [
+          "deadline"
+        ]
+      },
+      "status": {
+        "result": "pass",
+        "reason": "Status is open as reflected in provisional_values; no completion or change observed in dialogue.",
+        "quotes": [
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.146",
+            "quote": "this industrati Industrial Designer should produce a working design ."
+          }
+        ],
+        "fields": [
+          "status"
+        ]
+      },
+      "conflict": {
+        "result": "uncertain",
+        "reason": "No conflicting statements found in the current dialogue; evidence is limited.",
+        "quotes": [
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.146",
+            "quote": "this industrati Industrial Designer should produce a working design ."
+          },
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.147",
+            "quote": "Am I correct ?"
+          },
+          {
+            "da_id": "TS3006a.C.dialog-act.vkaraisk.77",
+            "quote": "True ."
+          }
+        ],
+        "fields": [
+          "statement",
+          "owner",
+          "deadline",
+          "status"
+        ]
+      },
+      "relation": {
+        "result": "not_applicable",
+        "reason": "No prior item to relate to in this snapshot; first meeting item.",
+        "quotes": [],
+        "fields": [
+          "related_items"
+        ]
+      }
+    },
+    "unresolved_fields": [
+      "deadline",
+      "statement",
+      "owner",
+      "status"
+    ],
+    "observed_evidence_da_ids": [
+      "TS3006a.A.dialog-act.vkaraisk.146",
+      "TS3006a.A.dialog-act.vkaraisk.147",
+      "TS3006a.C.dialog-act.vkaraisk.77",
+      "TS3006a.A.dialog-act.vkaraisk.145",
+      "TS3006a.A.dialog-act.vkaraisk.148"
+    ],
+    "initial_context": {
+      "item": {
+        "type": "actions",
+        "text": "Industrial Designer will produce a working design.",
+        "flags": []
+      },
+      "current_meeting": "TS3006a",
+      "earlier_meetings": [],
+      "roster": [
+        {
+          "speaker": "A",
+          "participant_id": "MTD021PM",
+          "role": "PM"
+        },
+        {
+          "speaker": "B",
+          "participant_id": "MTD023UID",
+          "role": "UI"
+        },
+        {
+          "speaker": "C",
+          "participant_id": "MTD022ID",
+          "role": "ID"
+        },
+        {
+          "speaker": "D",
+          "participant_id": "MTD024ME",
+          "role": "ME"
+        }
+      ],
+      "observed_dialogue": [
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.146",
+          "meeting_id": "TS3006a",
+          "text": "this industrati Industrial Designer should produce a working design .",
+          "participant": "MTD021PM",
+          "role": "PM"
+        },
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.147",
+          "meeting_id": "TS3006a",
+          "text": "Am I correct ?",
+          "participant": "MTD021PM",
+          "role": "PM"
+        },
+        {
+          "da_id": "TS3006a.C.dialog-act.vkaraisk.77",
+          "meeting_id": "TS3006a",
+          "text": "True .",
+          "participant": "MTD022ID",
+          "role": "ID"
+        },
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.145",
+          "participant": "MTD021PM",
+          "role": "PM",
+          "text": "Okay so the um <vocalsound> uh <gap>"
+        },
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.148",
+          "participant": "MTD021PM",
+          "role": "PM",
+          "text": "Okay ."
+        }
+      ],
+      "peer_items": [
+        {
+          "item_key": "TS3006a#0",
+          "type": "problems",
+          "text": "Kickoff preparation was insufficient; risks misalignment and delays."
+        },
+        {
+          "item_key": "TS3006a#1",
+          "type": "problems",
+          "text": "User requirements are not clearly defined; no specifics identified."
+        },
+        {
+          "item_key": "TS3006a#2",
+          "type": "problems",
+          "text": "Need better communication about design discussions."
+        },
+        {
+          "item_key": "TS3006a#3",
+          "type": "decisions",
+          "text": "Develop a new remote control that is original, trendy and user-friendly."
+        },
+        {
+          "item_key": "TS3006a#4",
+          "type": "decisions",
+          "text": "Set selling price at 25 Euros."
+        },
+        {
+          "item_key": "TS3006a#5",
+          "type": "decisions",
+          "text": "Sales target of 50 million Euros."
+        },
+        {
+          "item_key": "TS3006a#6",
+          "type": "decisions",
+          "text": "Production costs equal to half the selling price."
+        },
+        {
+          "item_key": "TS3006a#7",
+          "type": "decisions",
+          "text": "Proceed with current plan as adopted."
+        },
+        {
+          "item_key": "TS3006a#8",
+          "type": "decisions",
+          "text": "Start with a basic starting point for TV and video."
+        },
+        {
+          "item_key": "TS3006a#9",
+          "type": "actions",
+          "text": "Summarise the discussed items and place in the project folder."
+        }
+      ],
+      "provisional_values": {
+        "owner": [
+          "MTD022ID"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "open",
+        "related_items": []
+      },
+      "candidate_evidence_da_ids": [
+        "TS3006a.A.dialog-act.vkaraisk.146",
+        "TS3006a.A.dialog-act.vkaraisk.147",
+        "TS3006a.C.dialog-act.vkaraisk.77"
+      ]
+    },
+    "observed_documents": [],
+    "document_evidence": [],
+    "relation_evidence": [],
+    "history": [
+      {
+        "item": "TS3006a#10",
+        "step": 1,
+        "flags": [],
+        "action": "assess_item",
+        "outcome": "invalid_action",
+        "error": "Correct these argument fields: conflict_check: 'evidence_da_ids' is a required property; relation_check: 'evidence_da_ids' is a required property",
+        "raw_tool_input": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "MTD022ID"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "statement": {
+            "result": "pass",
+            "reason": "The dialogue includes confirmation of the responsibility assignment and the proposed action. The ID explicitly confirms; the action text matches the discussed outcome.",
+            "evidence_da_ids": [
+              "TS3006a.A.dialog-act.vkaraisk.146",
+              "TS3006a.A.dialog-act.vkaraisk.147",
+              "TS3006a.C.dialog-act.vkaraisk.77"
+            ]
+          },
+          "owner_check": {
+            "result": "pass",
+            "reason": "Owner is explicitly stated in the candidate_evidence as MTD022ID and matches the proposed owner.",
+            "evidence_da_ids": [
+              "TS3006a.C.dialog-act.vkaraisk.77"
+            ]
+          },
+          "deadline_check": {
+            "result": "uncertain",
+            "reason": "No deadline is provided in the current text; deadline_basis set to missing.",
+            "evidence_da_ids": []
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Status is open as reflected in provisional_values; no completion or change observed in dialogue.",
+            "evidence_da_ids": [
+              "TS3006a.A.dialog-act.vkaraisk.146"
+            ]
+          },
+          "conflict_check": {
+            "result": "uncertain",
+            "reason": "No conflicting statements found in the current dialogue; evidence is limited.",
+            "affected_fields": [
+              "statement",
+              "owner",
+              "deadline",
+              "status"
+            ]
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior item to relate to in this snapshot; first meeting item."
+          },
+          "next_action": "accept"
+        }
+      },
+      {
+        "item": "TS3006a#10",
+        "step": 2,
+        "flags": [],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "The dialogue includes confirmation of the responsibility assignment and the proposed action. The ID explicitly confirms; the action text matches the discussed outcome.",
+            "quotes": [
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.146",
+                "quote": "this industrati Industrial Designer should produce a working design ."
+              },
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.147",
+                "quote": "Am I correct ?"
+              },
+              {
+                "da_id": "TS3006a.C.dialog-act.vkaraisk.77",
+                "quote": "True ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Owner is explicitly stated in the candidate_evidence as MTD022ID and matches the proposed owner.",
+            "quotes": [
+              {
+                "da_id": "TS3006a.C.dialog-act.vkaraisk.77",
+                "quote": "True ."
+              }
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "deadline_unresolved",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Status is open as reflected in provisional_values; no completion or change observed in dialogue.",
+            "quotes": [
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.146",
+                "quote": "this industrati Industrial Designer should produce a working design ."
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "uncertain",
+            "reason": "No conflicting statements found in the current dialogue; evidence is limited.",
+            "quotes": [
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.146",
+                "quote": "this industrati Industrial Designer should produce a working design ."
+              },
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.147",
+                "quote": "Am I correct ?"
+              },
+              {
+                "da_id": "TS3006a.C.dialog-act.vkaraisk.77",
+                "quote": "True ."
+              }
+            ],
+            "fields": [
+              "statement",
+              "owner",
+              "deadline",
+              "status"
+            ]
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior item to relate to in this snapshot; first meeting item.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "decision": "retrieve",
+        "reason": "unresolved_checks",
+        "assessed_text": "Industrial Designer will produce a working design.",
+        "requested_action": "accept",
+        "proposed_fields": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "MTD022ID"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.146",
+            "TS3006a.A.dialog-act.vkaraisk.147",
+            "TS3006a.C.dialog-act.vkaraisk.77"
+          ]
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "The dialogue includes confirmation of the responsibility assignment and the proposed action. The ID explicitly confirms; the action text matches the discussed outcome.",
+            "quotes": [
+              "TS3006a.A.dialog-act.vkaraisk.146",
+              "TS3006a.A.dialog-act.vkaraisk.147",
+              "TS3006a.C.dialog-act.vkaraisk.77"
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Owner is explicitly stated in the candidate_evidence as MTD022ID and matches the proposed owner.",
+            "quotes": [
+              "TS3006a.C.dialog-act.vkaraisk.77"
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "No deadline is provided in the current text; deadline_basis set to missing.",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Status is open as reflected in provisional_values; no completion or change observed in dialogue.",
+            "quotes": [
+              "TS3006a.A.dialog-act.vkaraisk.146"
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "uncertain",
+            "reason": "No conflicting statements found in the current dialogue; evidence is limited.",
+            "quotes": [
+              "TS3006a.A.dialog-act.vkaraisk.146",
+              "TS3006a.A.dialog-act.vkaraisk.147",
+              "TS3006a.C.dialog-act.vkaraisk.77"
+            ],
+            "fields": [
+              "statement",
+              "owner",
+              "deadline",
+              "status"
+            ]
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior item to relate to in this snapshot; first meeting item.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "MTD022ID"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "statement": {
+            "result": "pass",
+            "reason": "The dialogue includes confirmation of the responsibility assignment and the proposed action. The ID explicitly confirms; the action text matches the discussed outcome.",
+            "evidence_da_ids": [
+              "TS3006a.A.dialog-act.vkaraisk.146",
+              "TS3006a.A.dialog-act.vkaraisk.147",
+              "TS3006a.C.dialog-act.vkaraisk.77"
+            ]
+          },
+          "owner_check": {
+            "result": "pass",
+            "reason": "Owner is explicitly stated in the candidate_evidence as MTD022ID and matches the proposed owner.",
+            "evidence_da_ids": [
+              "TS3006a.C.dialog-act.vkaraisk.77"
+            ]
+          },
+          "deadline_check": {
+            "result": "uncertain",
+            "reason": "No deadline is provided in the current text; deadline_basis set to missing.",
+            "evidence_da_ids": []
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Status is open as reflected in provisional_values; no completion or change observed in dialogue.",
+            "evidence_da_ids": [
+              "TS3006a.A.dialog-act.vkaraisk.146"
+            ]
+          },
+          "conflict_check": {
+            "result": "uncertain",
+            "reason": "No conflicting statements found in the current dialogue; evidence is limited.",
+            "affected_fields": [
+              "statement",
+              "owner",
+              "deadline",
+              "status"
+            ],
+            "evidence_da_ids": [
+              "TS3006a.A.dialog-act.vkaraisk.146",
+              "TS3006a.A.dialog-act.vkaraisk.147",
+              "TS3006a.C.dialog-act.vkaraisk.77"
+            ]
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior item to relate to in this snapshot; first meeting item.",
+            "evidence_da_ids": []
+          },
+          "next_action": "accept"
+        },
+        "evidence_bindings": {
+          "statement": [
+            "TS3006a.A.dialog-act.vkaraisk.146",
+            "TS3006a.A.dialog-act.vkaraisk.147",
+            "TS3006a.C.dialog-act.vkaraisk.77"
+          ],
+          "owner": [
+            "TS3006a.C.dialog-act.vkaraisk.77"
+          ],
+          "status": [
+            "TS3006a.A.dialog-act.vkaraisk.146"
+          ],
+          "conflict": [
+            "TS3006a.A.dialog-act.vkaraisk.146",
+            "TS3006a.A.dialog-act.vkaraisk.147",
+            "TS3006a.C.dialog-act.vkaraisk.77"
+          ]
+        },
+        "raw_tool_input": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "MTD022ID"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "statement": {
+            "result": "pass",
+            "reason": "The dialogue includes confirmation of the responsibility assignment and the proposed action. The ID explicitly confirms; the action text matches the discussed outcome.",
+            "evidence_da_ids": [
+              "TS3006a.A.dialog-act.vkaraisk.146",
+              "TS3006a.A.dialog-act.vkaraisk.147",
+              "TS3006a.C.dialog-act.vkaraisk.77"
+            ]
+          },
+          "owner_check": {
+            "result": "pass",
+            "reason": "Owner is explicitly stated in the candidate_evidence as MTD022ID and matches the proposed owner.",
+            "evidence_da_ids": [
+              "TS3006a.C.dialog-act.vkaraisk.77"
+            ]
+          },
+          "deadline_check": {
+            "result": "uncertain",
+            "reason": "No deadline is provided in the current text; deadline_basis set to missing.",
+            "evidence_da_ids": []
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Status is open as reflected in provisional_values; no completion or change observed in dialogue.",
+            "evidence_da_ids": [
+              "TS3006a.A.dialog-act.vkaraisk.146"
+            ]
+          },
+          "conflict_check": {
+            "result": "uncertain",
+            "reason": "No conflicting statements found in the current dialogue; evidence is limited.",
+            "affected_fields": [
+              "statement",
+              "owner",
+              "deadline",
+              "status"
+            ],
+            "evidence_da_ids": [
+              "TS3006a.A.dialog-act.vkaraisk.146",
+              "TS3006a.A.dialog-act.vkaraisk.147",
+              "TS3006a.C.dialog-act.vkaraisk.77"
+            ]
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior item to relate to in this snapshot; first meeting item.",
+            "evidence_da_ids": []
+          },
+          "next_action": "accept"
+        },
+        "protocol_normalizations": []
+      },
+      {
+        "item": "TS3006a#10",
+        "step": 3,
+        "flags": [],
+        "action": "request_clarification",
+        "outcome": "pending",
+        "reason": "Deadline for the action 'Industrial Designer will produce a working design' is not specified in the current dialogue. Please confirm the deadline wording (or explicit deadline) to finalize ownership/status.",
+        "decision": "request_clarification"
+      },
+      {
+        "item": "TS3006a#10",
+        "step": 3,
+        "flags": [],
+        "action": "stop",
+        "outcome": "pending",
+        "termination_reason": "request_clarification",
+        "unresolved_fields": [
+          "deadline",
+          "statement",
+          "owner",
+          "status"
+        ]
+      }
+    ],
+    "lookups": 0,
+    "termination_reason": "request_clarification",
+    "clarifications": [
+      {
+        "request_id": "a6f2cc4691ce6647",
+        "item_key": "TS3006a#10",
+        "record_id": null,
+        "field": "deadline",
+        "question": "What is the agreed deadline, in its original wording?",
+        "item_text": "Industrial Designer will produce a working design.",
+        "reason": "deadline_unresolved; No conflicting statements found in the current dialogue; evidence is limited.",
+        "evidence_da_ids": [
+          "TS3006a.A.dialog-act.vkaraisk.146",
+          "TS3006a.A.dialog-act.vkaraisk.147",
+          "TS3006a.C.dialog-act.vkaraisk.77"
+        ],
+        "available_evidence_da_ids": [
+          "TS3006a.A.dialog-act.vkaraisk.146",
+          "TS3006a.A.dialog-act.vkaraisk.147",
+          "TS3006a.C.dialog-act.vkaraisk.77",
+          "TS3006a.A.dialog-act.vkaraisk.145",
+          "TS3006a.A.dialog-act.vkaraisk.148"
+        ],
+        "status": "open",
+        "termination_reason": "request_clarification"
+      },
+      {
+        "request_id": "9d4bb1835399f788",
+        "item_key": "TS3006a#10",
+        "record_id": null,
+        "field": "statement",
+        "question": "Should this be recorded as a substantive, supported actions item?",
+        "item_text": "Industrial Designer will produce a working design.",
+        "reason": "No conflicting statements found in the current dialogue; evidence is limited.",
+        "evidence_da_ids": [
+          "TS3006a.A.dialog-act.vkaraisk.146",
+          "TS3006a.A.dialog-act.vkaraisk.147",
+          "TS3006a.C.dialog-act.vkaraisk.77"
+        ],
+        "available_evidence_da_ids": [
+          "TS3006a.A.dialog-act.vkaraisk.146",
+          "TS3006a.A.dialog-act.vkaraisk.147",
+          "TS3006a.C.dialog-act.vkaraisk.77",
+          "TS3006a.A.dialog-act.vkaraisk.145",
+          "TS3006a.A.dialog-act.vkaraisk.148"
+        ],
+        "status": "open",
+        "termination_reason": "request_clarification"
+      },
+      {
+        "request_id": "583df90a0bb71dd7",
+        "item_key": "TS3006a#10",
+        "record_id": null,
+        "field": "owner",
+        "question": "Who is responsible for this task?",
+        "item_text": "Industrial Designer will produce a working design.",
+        "reason": "No conflicting statements found in the current dialogue; evidence is limited.",
+        "evidence_da_ids": [
+          "TS3006a.A.dialog-act.vkaraisk.146",
+          "TS3006a.A.dialog-act.vkaraisk.147",
+          "TS3006a.C.dialog-act.vkaraisk.77"
+        ],
+        "available_evidence_da_ids": [
+          "TS3006a.A.dialog-act.vkaraisk.146",
+          "TS3006a.A.dialog-act.vkaraisk.147",
+          "TS3006a.C.dialog-act.vkaraisk.77",
+          "TS3006a.A.dialog-act.vkaraisk.145",
+          "TS3006a.A.dialog-act.vkaraisk.148"
+        ],
+        "status": "open",
+        "termination_reason": "request_clarification"
+      },
+      {
+        "request_id": "177c0b78e9dd4a2e",
+        "item_key": "TS3006a#10",
+        "record_id": null,
+        "field": "status",
+        "question": "What is this item's status at the end of the current meeting?",
+        "item_text": "Industrial Designer will produce a working design.",
+        "reason": "No conflicting statements found in the current dialogue; evidence is limited.",
+        "evidence_da_ids": [
+          "TS3006a.A.dialog-act.vkaraisk.146",
+          "TS3006a.A.dialog-act.vkaraisk.147",
+          "TS3006a.C.dialog-act.vkaraisk.77"
+        ],
+        "available_evidence_da_ids": [
+          "TS3006a.A.dialog-act.vkaraisk.146",
+          "TS3006a.A.dialog-act.vkaraisk.147",
+          "TS3006a.C.dialog-act.vkaraisk.77",
+          "TS3006a.A.dialog-act.vkaraisk.145",
+          "TS3006a.A.dialog-act.vkaraisk.148"
+        ],
+        "status": "open",
+        "termination_reason": "request_clarification"
+      }
+    ]
+  }
+}

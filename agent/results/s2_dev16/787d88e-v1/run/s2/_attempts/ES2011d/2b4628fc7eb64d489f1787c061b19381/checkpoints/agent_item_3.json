@@ -1,0 +1,1354 @@
+{
+  "item": 3,
+  "fields": {
+    "item_key": "ES2011d#3",
+    "record_id": null,
+    "item_type": "decisions",
+    "item_text": "We decided on batteries as the power source for the remote.",
+    "state": "pending",
+    "recordable": true,
+    "fields": {
+      "status": "adopted",
+      "prior_context_needed": false,
+      "related_items": [],
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/ES2011d.json",
+          "locator": "ES2011d.A.dialog-act.dharshi.31"
+        }
+      ]
+    },
+    "draft_fields": {
+      "status": "adopted",
+      "related_items": [],
+      "prior_context_needed": false,
+      "used_participant_lookup": false,
+      "evidence_da_ids": [
+        "ES2011d.A.dialog-act.dharshi.31",
+        "ES2011d.A.dialog-act.dharshi.32"
+      ],
+      "owner": null,
+      "owner_basis": "missing",
+      "deadline": null,
+      "deadline_basis": "missing"
+    },
+    "checks": {
+      "statement": {
+        "result": "pass",
+        "reason": "Dialogue confirms batteries as the power source: ES2011d.A.dialog-act.dharshi.31 explicitly states, 'we decided on batteries'.",
+        "quotes": [
+          {
+            "da_id": "ES2011d.A.dialog-act.dharshi.31",
+            "quote": "I mean , we decided on batteries ,"
+          }
+        ],
+        "fields": [
+          "statement"
+        ]
+      },
+      "status": {
+        "result": "pass",
+        "reason": "Current dialogue corroborates the decision about batteries; no contradicting statements in the cited lines.",
+        "quotes": [
+          {
+            "da_id": "ES2011d.A.dialog-act.dharshi.31",
+            "quote": "I mean , we decided on batteries ,"
+          }
+        ],
+        "fields": [
+          "status"
+        ]
+      },
+      "conflict": {
+        "result": "pass",
+        "reason": "No contradictions found within the available evidence.",
+        "quotes": [
+          {
+            "da_id": "ES2011d.A.dialog-act.dharshi.31",
+            "quote": "I mean , we decided on batteries ,"
+          }
+        ],
+        "fields": [
+          "statement"
+        ]
+      },
+      "relation": {
+        "result": "uncertain",
+        "reason": "per_link_assessment_required_for_each_related_item",
+        "quotes": [
+          {
+            "da_id": "ES2011d.A.dialog-act.dharshi.31",
+            "quote": "I mean , we decided on batteries ,"
+          },
+          {
+            "da_id": "ES2011d.A.dialog-act.dharshi.32",
+            "quote": "and the regular chip would be necessary for the more advanced iPod-like button ."
+          },
+          {
+            "da_id": "ES2011c.A.dialog-act.dharshi.193",
+            "quote": "Um , so what d but what do we know about"
+          },
+          {
+            "da_id": "ES2011c.A.dialog-act.dharshi.201",
+            "quote": "I think batteries sound good ."
+          }
+        ],
+        "links": [
+          {
+            "id": "ES2011c.sys.s.7",
+            "relation": "continues",
+            "changed_fields": [],
+            "reason": "Current decision retains the same scope as the earlier decision.",
+            "prior_evidence_da_ids": [
+              "ES2011c.A.dialog-act.dharshi.193",
+              "ES2011c.A.dialog-act.dharshi.201"
+            ],
+            "current_evidence_da_ids": [
+              "ES2011d.A.dialog-act.dharshi.31",
+              "ES2011d.A.dialog-act.dharshi.32"
+            ]
+          }
+        ],
+        "documents": [],
+        "fields": [
+          "related_items"
+        ]
+      },
+      "owner": {
+        "result": "not_applicable",
+        "reason": "field_not_applicable",
+        "quotes": [],
+        "fields": [
+          "owner"
+        ]
+      },
+      "deadline": {
+        "result": "not_applicable",
+        "reason": "field_not_applicable",
+        "quotes": [],
+        "fields": [
+          "deadline"
+        ]
+      }
+    },
+    "unresolved_fields": [
+      "related_items"
+    ],
+    "observed_evidence_da_ids": [
+      "ES2011d.A.dialog-act.dharshi.31",
+      "ES2011d.A.dialog-act.dharshi.30",
+      "ES2011d.A.dialog-act.dharshi.32",
+      "ES2011c.A.dialog-act.dharshi.192",
+      "ES2011c.A.dialog-act.dharshi.193",
+      "ES2011c.A.dialog-act.dharshi.194",
+      "ES2011c.B.dialog-act.dharshi.140",
+      "ES2011c.A.dialog-act.dharshi.201",
+      "ES2011c.B.dialog-act.dharshi.141"
+    ],
+    "initial_context": {
+      "item": {
+        "type": "decisions",
+        "text": "We decided on batteries as the power source for the remote.",
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ]
+      },
+      "current_meeting": "ES2011d",
+      "earlier_meetings": [
+        "ES2011a",
+        "ES2011b",
+        "ES2011c"
+      ],
+      "roster": [
+        {
+          "speaker": "A",
+          "participant_id": "FEE041",
+          "role": "PM"
+        },
+        {
+          "speaker": "B",
+          "participant_id": "FEE042",
+          "role": "ID"
+        },
+        {
+          "speaker": "C",
+          "participant_id": "FEE043",
+          "role": "UI"
+        },
+        {
+          "speaker": "D",
+          "participant_id": "FEE044",
+          "role": "ME"
+        }
+      ],
+      "observed_dialogue": [
+        {
+          "da_id": "ES2011d.A.dialog-act.dharshi.31",
+          "meeting_id": "ES2011d",
+          "text": "I mean , we decided on batteries ,",
+          "participant": "FEE041",
+          "role": "PM"
+        },
+        {
+          "da_id": "ES2011d.A.dialog-act.dharshi.30",
+          "participant": "FEE041",
+          "role": "PM",
+          "text": "<vocalsound> But if I missed anything that we've gone over , or if you see something that has changed <disfmarker>"
+        },
+        {
+          "da_id": "ES2011d.A.dialog-act.dharshi.32",
+          "participant": "FEE041",
+          "role": "PM",
+          "text": "and the regular chip would be necessary for the more advanced iPod-like button ."
+        }
+      ],
+      "peer_items": [
+        {
+          "item_key": "ES2011d#0",
+          "type": "problems",
+          "text": "Locator button integration is not yet designed; how the button attaches to the locator remains undefined, and coordination between the locator and the beeper is not yet designed and requires integration work."
+        },
+        {
+          "item_key": "ES2011d#1",
+          "type": "problems",
+          "text": "There is ambiguity about the scoring method for the evaluation, specifically whether to sum the scores and divide by four."
+        },
+        {
+          "item_key": "ES2011d#2",
+          "type": "problems",
+          "text": "Compatibility issues with WordPerfect and reliance on old disks may hamper access to documents."
+        }
+      ],
+      "provisional_values": {
+        "owner": null,
+        "owner_basis": "missing",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "adopted",
+        "related_items": []
+      },
+      "candidate_evidence_da_ids": [
+        "ES2011d.A.dialog-act.dharshi.31"
+      ]
+    },
+    "observed_documents": [],
+    "document_evidence": [],
+    "relation_evidence": [
+      {
+        "prior_item_id": "ES2011c.sys.s.7",
+        "relation": "continues",
+        "state": "pending",
+        "changed_fields": [],
+        "reason": "Current decision retains the same scope as the earlier decision.",
+        "before": {
+          "kind": "prior_item",
+          "id": "ES2011c.sys.s.7",
+          "meeting_id": "ES2011c",
+          "type": "decisions",
+          "text": "Decision: Use batteries as the energy source.",
+          "owner": null,
+          "owner_basis": null,
+          "deadline": null,
+          "deadline_basis": null,
+          "status": "adopted",
+          "evidence": [
+            "ES2011c.A.dialog-act.dharshi.193",
+            "ES2011c.A.dialog-act.dharshi.201"
+          ],
+          "source_file": "ES2011c.json",
+          "source_sha256": "385e3fe0e60f7d721aa49ac4b87c645d892f4f1c8123e245a06101146da79822",
+          "review_state": "accepted",
+          "unresolved_fields": [],
+          "unreadable_reference_ids": [],
+          "selected_reference_ids": [
+            "ES2011c.A.dialog-act.dharshi.193",
+            "ES2011c.A.dialog-act.dharshi.201"
+          ],
+          "next_offset": null
+        },
+        "after": {
+          "item_key": "ES2011d#3",
+          "text": "We decided on batteries as the power source for the remote.",
+          "type": "decisions",
+          "status": "adopted",
+          "owner": null,
+          "deadline": null
+        },
+        "prior_quotes": [
+          {
+            "da_id": "ES2011c.A.dialog-act.dharshi.193",
+            "quote": "Um , so what d but what do we know about"
+          },
+          {
+            "da_id": "ES2011c.A.dialog-act.dharshi.201",
+            "quote": "I think batteries sound good ."
+          }
+        ],
+        "current_quotes": [
+          {
+            "da_id": "ES2011d.A.dialog-act.dharshi.31",
+            "quote": "I mean , we decided on batteries ,"
+          },
+          {
+            "da_id": "ES2011d.A.dialog-act.dharshi.32",
+            "quote": "and the regular chip would be necessary for the more advanced iPod-like button ."
+          }
+        ]
+      }
+    ],
+    "history": [
+      {
+        "item": "ES2011d#3",
+        "step": 1,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue confirms batteries as the power source: ES2011d.A.dialog-act.dharshi.31 explicitly states, 'we decided on batteries'.",
+            "quotes": [
+              {
+                "da_id": "ES2011d.A.dialog-act.dharshi.31",
+                "quote": "I mean , we decided on batteries ,"
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Current dialogue corroborates the decision about batteries; no contradicting statements in the cited lines.",
+            "quotes": [
+              {
+                "da_id": "ES2011d.A.dialog-act.dharshi.31",
+                "quote": "I mean , we decided on batteries ,"
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions found within the available evidence.",
+            "quotes": [
+              {
+                "da_id": "ES2011d.A.dialog-act.dharshi.31",
+                "quote": "I mean , we decided on batteries ,"
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "prior_context_not_checked",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          }
+        },
+        "decision": "retrieve",
+        "reason": "required_history_check_before_partial_accept",
+        "assessed_text": "We decided on batteries as the power source for the remote.",
+        "requested_action": "accept",
+        "proposed_fields": {
+          "status": "adopted",
+          "related_items": [],
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "ES2011d.A.dialog-act.dharshi.31"
+          ],
+          "owner": null,
+          "owner_basis": "missing",
+          "deadline": null,
+          "deadline_basis": "missing"
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue confirms batteries as the power source: ES2011d.A.dialog-act.dharshi.31 explicitly states, 'we decided on batteries'.",
+            "quotes": [
+              "ES2011d.A.dialog-act.dharshi.31"
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Current dialogue corroborates the decision about batteries; no contradicting statements in the cited lines.",
+            "quotes": [
+              "ES2011d.A.dialog-act.dharshi.31"
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions found within the available evidence.",
+            "quotes": [
+              "ES2011d.A.dialog-act.dharshi.31"
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "No explicit linkage to prior ES2011a-c items found in the current evidence; prior relation remains unclear.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "status": "adopted",
+          "related_items": [],
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue confirms batteries as the power source: ES2011d.A.dialog-act.dharshi.31 explicitly states, 'we decided on batteries'.",
+            "evidence_da_ids": [
+              "ES2011d.A.dialog-act.dharshi.31"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Current dialogue corroborates the decision about batteries; no contradicting statements in the cited lines.",
+            "evidence_da_ids": [
+              "ES2011d.A.dialog-act.dharshi.31"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No contradictions found within the available evidence.",
+            "evidence_da_ids": [
+              "ES2011d.A.dialog-act.dharshi.31"
+            ],
+            "affected_fields": [
+              "statement"
+            ]
+          },
+          "relation_check": {
+            "result": "uncertain",
+            "reason": "No explicit linkage to prior ES2011a-c items found in the current evidence; prior relation remains unclear.",
+            "evidence_da_ids": []
+          },
+          "next_action": "accept"
+        },
+        "evidence_bindings": {
+          "statement": [
+            "ES2011d.A.dialog-act.dharshi.31"
+          ],
+          "status": [
+            "ES2011d.A.dialog-act.dharshi.31"
+          ],
+          "conflict": [
+            "ES2011d.A.dialog-act.dharshi.31"
+          ]
+        },
+        "raw_tool_input": {
+          "status": "adopted",
+          "related_items": [],
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue confirms batteries as the power source: ES2011d.A.dialog-act.dharshi.31 explicitly states, 'we decided on batteries'.",
+            "evidence_da_ids": [
+              "ES2011d.A.dialog-act.dharshi.31"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Current dialogue corroborates the decision about batteries; no contradicting statements in the cited lines.",
+            "evidence_da_ids": [
+              "ES2011d.A.dialog-act.dharshi.31"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No contradictions found within the available evidence.",
+            "evidence_da_ids": [
+              "ES2011d.A.dialog-act.dharshi.31"
+            ],
+            "affected_fields": [
+              "statement"
+            ]
+          },
+          "relation_check": {
+            "result": "uncertain",
+            "reason": "No explicit linkage to prior ES2011a-c items found in the current evidence; prior relation remains unclear.",
+            "evidence_da_ids": []
+          },
+          "next_action": "accept"
+        },
+        "protocol_normalizations": [],
+        "unresolved_before": [
+          "related_items",
+          "statement",
+          "status"
+        ],
+        "unresolved_after": [
+          "related_items"
+        ],
+        "semantic_stalls": 0,
+        "validation_codes": {
+          "relation": [
+            "prior_context_not_checked"
+          ]
+        }
+      },
+      {
+        "item": "ES2011d#3",
+        "step": 2,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "history_context_focused",
+        "outcome": "delivered",
+        "evidence_da_ids": [
+          "ES2011d.A.dialog-act.dharshi.31",
+          "ES2011d.A.dialog-act.dharshi.30",
+          "ES2011d.A.dialog-act.dharshi.32"
+        ]
+      },
+      {
+        "item": "ES2011d#3",
+        "step": 2,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "get_prior_items",
+        "outcome": "lookup",
+        "decision": "retrieve",
+        "args": {
+          "query": "batteries power source",
+          "item_type": "decisions"
+        },
+        "tool_result": {
+          "results": [
+            {
+              "id": "ES2011c.sys.s.7",
+              "meeting_id": "ES2011c",
+              "type": "decisions",
+              "text": "Decision: Use batteries as the energy source.",
+              "owner": null,
+              "owner_basis": null,
+              "deadline": null,
+              "deadline_basis": null,
+              "status": "adopted",
+              "evidence": [
+                "ES2011c.A.dialog-act.dharshi.193",
+                "ES2011c.A.dialog-act.dharshi.201"
+              ],
+              "source_file": "ES2011c.json",
+              "source_sha256": "385e3fe0e60f7d721aa49ac4b87c645d892f4f1c8123e245a06101146da79822",
+              "review_state": "accepted",
+              "unresolved_fields": [],
+              "unreadable_reference_ids": [],
+              "score": 6.55
+            }
+          ]
+        },
+        "new_info": true
+      },
+      {
+        "item": "ES2011d#3",
+        "step": 3,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "read_prior_item",
+        "outcome": "lookup",
+        "decision": "retrieve",
+        "args": {
+          "item_id": "ES2011c.sys.s.7"
+        },
+        "tool_result": {
+          "results": [
+            {
+              "kind": "prior_item",
+              "id": "ES2011c.sys.s.7",
+              "meeting_id": "ES2011c",
+              "type": "decisions",
+              "text": "Decision: Use batteries as the energy source.",
+              "owner": null,
+              "owner_basis": null,
+              "deadline": null,
+              "deadline_basis": null,
+              "status": "adopted",
+              "evidence": [
+                "ES2011c.A.dialog-act.dharshi.193",
+                "ES2011c.A.dialog-act.dharshi.201"
+              ],
+              "source_file": "ES2011c.json",
+              "source_sha256": "385e3fe0e60f7d721aa49ac4b87c645d892f4f1c8123e245a06101146da79822",
+              "review_state": "accepted",
+              "unresolved_fields": [],
+              "unreadable_reference_ids": [],
+              "selected_reference_ids": [
+                "ES2011c.A.dialog-act.dharshi.193",
+                "ES2011c.A.dialog-act.dharshi.201"
+              ],
+              "next_offset": null
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "ES2011c.A.dialog-act.dharshi.192",
+              "meeting_id": "ES2011c",
+              "text": "Oh right right . Yeah .",
+              "participant": "FEE041",
+              "role": "PM",
+              "supports_item_id": "ES2011c.sys.s.7",
+              "is_reference": false
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "ES2011c.A.dialog-act.dharshi.193",
+              "meeting_id": "ES2011c",
+              "text": "Um , so what d but what do we know about",
+              "participant": "FEE041",
+              "role": "PM",
+              "supports_item_id": "ES2011c.sys.s.7",
+              "is_reference": true
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "ES2011c.A.dialog-act.dharshi.194",
+              "meeting_id": "ES2011c",
+              "text": "energy ?",
+              "participant": "FEE041",
+              "role": "PM",
+              "supports_item_id": "ES2011c.sys.s.7",
+              "is_reference": false
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "ES2011c.B.dialog-act.dharshi.140",
+              "meeting_id": "ES2011c",
+              "text": "Um but I think solar power's not available with the rubber case anyways .",
+              "participant": "FEE042",
+              "role": "ID",
+              "supports_item_id": "ES2011c.sys.s.7",
+              "is_reference": false
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "ES2011c.A.dialog-act.dharshi.201",
+              "meeting_id": "ES2011c",
+              "text": "I think batteries sound good .",
+              "participant": "FEE041",
+              "role": "PM",
+              "supports_item_id": "ES2011c.sys.s.7",
+              "is_reference": true
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "ES2011c.B.dialog-act.dharshi.141",
+              "meeting_id": "ES2011c",
+              "text": "It <vocalsound> it seems a little weird for a living room anyways .",
+              "participant": "FEE042",
+              "role": "ID",
+              "supports_item_id": "ES2011c.sys.s.7",
+              "is_reference": false
+            }
+          ]
+        },
+        "new_info": true
+      },
+      {
+        "item": "ES2011d#3",
+        "step": 4,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "assess_relation",
+        "outcome": "invalid_action",
+        "error": "Correct these argument fields: : 'links' is a required property Tool assess_relation accepts root keys: result, reason, quotes, documents, links, related_items, next_action. Resubmit the complete advertised object. Select only delivered supporting dialogue IDs; if support is unavailable use uncertain with an explanation, never invent an ID or mark pass with no evidence. Documents belong inside the check they inform.",
+        "raw_tool_input": {
+          "result": "pass",
+          "reason": "The current decision text matches the earlier decision to use batteries as the energy source (same scope: batteries as power source for remote). The current meeting simply restates/adopts the same conclusion without widening or narrowing the scope.",
+          "quotes": [
+            {
+              "da_id": "ES2011d.A.dialog-act.dharshi.31"
+            },
+            {
+              "da_id": "ES2011d.A.dialog-act.dharshi.32"
+            }
+          ],
+          "documents": []
+        }
+      },
+      {
+        "item": "ES2011d#3",
+        "step": 5,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "assess_relation",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue confirms batteries as the power source: ES2011d.A.dialog-act.dharshi.31 explicitly states, 'we decided on batteries'.",
+            "quotes": [
+              {
+                "da_id": "ES2011d.A.dialog-act.dharshi.31",
+                "quote": "I mean , we decided on batteries ,"
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Current dialogue corroborates the decision about batteries; no contradicting statements in the cited lines.",
+            "quotes": [
+              {
+                "da_id": "ES2011d.A.dialog-act.dharshi.31",
+                "quote": "I mean , we decided on batteries ,"
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions found within the available evidence.",
+            "quotes": [
+              {
+                "da_id": "ES2011d.A.dialog-act.dharshi.31",
+                "quote": "I mean , we decided on batteries ,"
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "per_link_assessment_required_for_each_related_item",
+            "quotes": [
+              {
+                "da_id": "ES2011d.A.dialog-act.dharshi.31",
+                "quote": "I mean , we decided on batteries ,"
+              },
+              {
+                "da_id": "ES2011d.A.dialog-act.dharshi.32",
+                "quote": "and the regular chip would be necessary for the more advanced iPod-like button ."
+              },
+              {
+                "da_id": "ES2011c.A.dialog-act.dharshi.193",
+                "quote": "Um , so what d but what do we know about"
+              },
+              {
+                "da_id": "ES2011c.A.dialog-act.dharshi.201",
+                "quote": "I think batteries sound good ."
+              }
+            ],
+            "links": [
+              {
+                "id": "ES2011c.sys.s.7",
+                "relation": "continues",
+                "changed_fields": [],
+                "reason": "Current decision retains the same scope as the earlier decision.",
+                "prior_evidence_da_ids": [
+                  "ES2011c.A.dialog-act.dharshi.193",
+                  "ES2011c.A.dialog-act.dharshi.201"
+                ],
+                "current_evidence_da_ids": [
+                  "ES2011d.A.dialog-act.dharshi.31",
+                  "ES2011d.A.dialog-act.dharshi.32"
+                ]
+              }
+            ],
+            "documents": [],
+            "fields": [
+              "related_items"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          }
+        },
+        "decision": "reassess",
+        "reason": "incomplete_link_evidence_submission",
+        "assessed_text": "We decided on batteries as the power source for the remote.",
+        "requested_action": "accept",
+        "proposed_fields": {
+          "status": "adopted",
+          "related_items": [],
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "ES2011d.A.dialog-act.dharshi.31",
+            "ES2011d.A.dialog-act.dharshi.32"
+          ],
+          "owner": null,
+          "owner_basis": "missing",
+          "deadline": null,
+          "deadline_basis": "missing"
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue confirms batteries as the power source: ES2011d.A.dialog-act.dharshi.31 explicitly states, 'we decided on batteries'.",
+            "quotes": [
+              {
+                "da_id": "ES2011d.A.dialog-act.dharshi.31",
+                "quote": "I mean , we decided on batteries ,"
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Current dialogue corroborates the decision about batteries; no contradicting statements in the cited lines.",
+            "quotes": [
+              {
+                "da_id": "ES2011d.A.dialog-act.dharshi.31",
+                "quote": "I mean , we decided on batteries ,"
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions found within the available evidence.",
+            "quotes": [
+              {
+                "da_id": "ES2011d.A.dialog-act.dharshi.31",
+                "quote": "I mean , we decided on batteries ,"
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "relation": {
+            "result": "pass",
+            "reason": "The current decision text matches the earlier decision to use batteries as the energy source (same scope: batteries as power source for remote). The current meeting simply restates/adopts the same conclusion without widening or narrowing the scope.",
+            "quotes": [
+              {
+                "da_id": "ES2011d.A.dialog-act.dharshi.31"
+              },
+              {
+                "da_id": "ES2011d.A.dialog-act.dharshi.32"
+              }
+            ],
+            "links": [
+              {
+                "id": "ES2011c.sys.s.7",
+                "relation": "continues",
+                "changed_fields": [],
+                "reason": "Current decision retains the same scope as the earlier decision.",
+                "prior_evidence_da_ids": [
+                  "ES2011c.A.dialog-act.dharshi.193",
+                  "ES2011c.A.dialog-act.dharshi.201"
+                ],
+                "current_evidence_da_ids": [
+                  "ES2011d.A.dialog-act.dharshi.31",
+                  "ES2011d.A.dialog-act.dharshi.32"
+                ]
+              }
+            ],
+            "documents": [],
+            "fields": [
+              "related_items"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "result": "pass",
+          "reason": "The current decision text matches the earlier decision to use batteries as the energy source (same scope: batteries as power source for remote). The current meeting simply restates/adopts the same conclusion without widening or narrowing the scope.",
+          "quotes": [
+            {
+              "da_id": "ES2011d.A.dialog-act.dharshi.31"
+            },
+            {
+              "da_id": "ES2011d.A.dialog-act.dharshi.32"
+            }
+          ],
+          "documents": [],
+          "links": [
+            {
+              "id": "ES2011c.sys.s.7",
+              "relation": "continues",
+              "changed_fields": [],
+              "reason": "Current decision retains the same scope as the earlier decision.",
+              "prior_evidence_da_ids": [
+                "ES2011c.A.dialog-act.dharshi.193",
+                "ES2011c.A.dialog-act.dharshi.201"
+              ],
+              "current_evidence_da_ids": [
+                "ES2011d.A.dialog-act.dharshi.31",
+                "ES2011d.A.dialog-act.dharshi.32"
+              ]
+            }
+          ],
+          "related_items": [],
+          "next_action": "accept"
+        },
+        "evidence_bindings": {
+          "relation": [
+            "ES2011d.A.dialog-act.dharshi.31",
+            "ES2011d.A.dialog-act.dharshi.32",
+            "ES2011c.A.dialog-act.dharshi.193",
+            "ES2011c.A.dialog-act.dharshi.201"
+          ]
+        },
+        "raw_tool_input": {
+          "result": "pass",
+          "reason": "The current decision text matches the earlier decision to use batteries as the energy source (same scope: batteries as power source for remote). The current meeting simply restates/adopts the same conclusion without widening or narrowing the scope.",
+          "quotes": [
+            {
+              "da_id": "ES2011d.A.dialog-act.dharshi.31"
+            },
+            {
+              "da_id": "ES2011d.A.dialog-act.dharshi.32"
+            }
+          ],
+          "documents": [],
+          "links": [
+            {
+              "id": "ES2011c.sys.s.7",
+              "relation": "continues",
+              "changed_fields": [],
+              "reason": "Current decision retains the same scope as the earlier decision.",
+              "prior_evidence_da_ids": [
+                "ES2011c.A.dialog-act.dharshi.193",
+                "ES2011c.A.dialog-act.dharshi.201"
+              ],
+              "current_evidence_da_ids": [
+                "ES2011d.A.dialog-act.dharshi.31",
+                "ES2011d.A.dialog-act.dharshi.32"
+              ]
+            }
+          ],
+          "related_items": [],
+          "next_action": "accept"
+        },
+        "protocol_normalizations": [],
+        "unresolved_before": [
+          "related_items"
+        ],
+        "unresolved_after": [
+          "related_items"
+        ],
+        "semantic_stalls": 0,
+        "validation_codes": {
+          "relation": [
+            "per_link_assessment_required_for_each_related_item"
+          ]
+        }
+      },
+      {
+        "item": "ES2011d#3",
+        "step": 6,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "assess_relation",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue confirms batteries as the power source: ES2011d.A.dialog-act.dharshi.31 explicitly states, 'we decided on batteries'.",
+            "quotes": [
+              {
+                "da_id": "ES2011d.A.dialog-act.dharshi.31",
+                "quote": "I mean , we decided on batteries ,"
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Current dialogue corroborates the decision about batteries; no contradicting statements in the cited lines.",
+            "quotes": [
+              {
+                "da_id": "ES2011d.A.dialog-act.dharshi.31",
+                "quote": "I mean , we decided on batteries ,"
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions found within the available evidence.",
+            "quotes": [
+              {
+                "da_id": "ES2011d.A.dialog-act.dharshi.31",
+                "quote": "I mean , we decided on batteries ,"
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "per_link_assessment_required_for_each_related_item",
+            "quotes": [
+              {
+                "da_id": "ES2011d.A.dialog-act.dharshi.31",
+                "quote": "I mean , we decided on batteries ,"
+              },
+              {
+                "da_id": "ES2011d.A.dialog-act.dharshi.32",
+                "quote": "and the regular chip would be necessary for the more advanced iPod-like button ."
+              },
+              {
+                "da_id": "ES2011c.A.dialog-act.dharshi.193",
+                "quote": "Um , so what d but what do we know about"
+              },
+              {
+                "da_id": "ES2011c.A.dialog-act.dharshi.201",
+                "quote": "I think batteries sound good ."
+              }
+            ],
+            "links": [
+              {
+                "id": "ES2011c.sys.s.7",
+                "relation": "continues",
+                "changed_fields": [],
+                "reason": "Current decision retains the same scope as the earlier decision.",
+                "prior_evidence_da_ids": [
+                  "ES2011c.A.dialog-act.dharshi.193",
+                  "ES2011c.A.dialog-act.dharshi.201"
+                ],
+                "current_evidence_da_ids": [
+                  "ES2011d.A.dialog-act.dharshi.31",
+                  "ES2011d.A.dialog-act.dharshi.32"
+                ]
+              }
+            ],
+            "documents": [],
+            "fields": [
+              "related_items"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          }
+        },
+        "decision": "request_clarification",
+        "reason": "supported_statement_with_unresolved_fields",
+        "assessed_text": "We decided on batteries as the power source for the remote.",
+        "requested_action": "accept",
+        "proposed_fields": {
+          "status": "adopted",
+          "related_items": [],
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "ES2011d.A.dialog-act.dharshi.31",
+            "ES2011d.A.dialog-act.dharshi.32"
+          ],
+          "owner": null,
+          "owner_basis": "missing",
+          "deadline": null,
+          "deadline_basis": "missing"
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue confirms batteries as the power source: ES2011d.A.dialog-act.dharshi.31 explicitly states, 'we decided on batteries'.",
+            "quotes": [
+              {
+                "da_id": "ES2011d.A.dialog-act.dharshi.31",
+                "quote": "I mean , we decided on batteries ,"
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Current dialogue corroborates the decision about batteries; no contradicting statements in the cited lines.",
+            "quotes": [
+              {
+                "da_id": "ES2011d.A.dialog-act.dharshi.31",
+                "quote": "I mean , we decided on batteries ,"
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions found within the available evidence.",
+            "quotes": [
+              {
+                "da_id": "ES2011d.A.dialog-act.dharshi.31",
+                "quote": "I mean , we decided on batteries ,"
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "relation": {
+            "result": "pass",
+            "reason": "The current decision text matches the earlier decision to use batteries as the energy source (same scope: batteries as power source for remote). The current meeting simply restates/adopts the same conclusion without widening or narrowing the scope.",
+            "quotes": [
+              {
+                "da_id": "ES2011d.A.dialog-act.dharshi.31",
+                "quote": "I mean , we decided on batteries ,"
+              },
+              {
+                "da_id": "ES2011d.A.dialog-act.dharshi.32",
+                "quote": "and the regular chip would be necessary for the more advanced iPod-like button ."
+              }
+            ],
+            "links": [
+              {
+                "id": "ES2011c.sys.s.7",
+                "relation": "continues",
+                "changed_fields": [],
+                "reason": "Current decision retains the same scope as the earlier decision.",
+                "prior_evidence_da_ids": [
+                  "ES2011c.A.dialog-act.dharshi.193",
+                  "ES2011c.A.dialog-act.dharshi.201"
+                ],
+                "current_evidence_da_ids": [
+                  "ES2011d.A.dialog-act.dharshi.31",
+                  "ES2011d.A.dialog-act.dharshi.32"
+                ]
+              }
+            ],
+            "documents": [],
+            "fields": [
+              "related_items"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "result": "pass",
+          "reason": "The current decision text matches the earlier decision to use batteries as the energy source (same scope: batteries as power source for remote). The current meeting simply restates/adopts the same conclusion without widening or narrowing the scope.",
+          "quotes": [
+            {
+              "da_id": "ES2011d.A.dialog-act.dharshi.31",
+              "quote": "I mean , we decided on batteries ,"
+            },
+            {
+              "da_id": "ES2011d.A.dialog-act.dharshi.32",
+              "quote": "and the regular chip would be necessary for the more advanced iPod-like button ."
+            }
+          ],
+          "documents": [],
+          "links": [
+            {
+              "id": "ES2011c.sys.s.7",
+              "relation": "continues",
+              "changed_fields": [],
+              "reason": "Current decision retains the same scope as the earlier decision.",
+              "prior_evidence_da_ids": [
+                "ES2011c.A.dialog-act.dharshi.193",
+                "ES2011c.A.dialog-act.dharshi.201"
+              ],
+              "current_evidence_da_ids": [
+                "ES2011d.A.dialog-act.dharshi.31",
+                "ES2011d.A.dialog-act.dharshi.32"
+              ]
+            }
+          ],
+          "related_items": [],
+          "next_action": "accept"
+        },
+        "evidence_bindings": {
+          "relation": [
+            "ES2011c.A.dialog-act.dharshi.193",
+            "ES2011c.A.dialog-act.dharshi.201"
+          ]
+        },
+        "raw_tool_input": {
+          "result": "pass",
+          "reason": "The current decision text matches the earlier decision to use batteries as the energy source (same scope: batteries as power source for remote). The current meeting simply restates/adopts the same conclusion without widening or narrowing the scope.",
+          "quotes": [
+            {
+              "da_id": "ES2011d.A.dialog-act.dharshi.31",
+              "quote": "I mean , we decided on batteries ,"
+            },
+            {
+              "da_id": "ES2011d.A.dialog-act.dharshi.32",
+              "quote": "and the regular chip would be necessary for the more advanced iPod-like button ."
+            }
+          ],
+          "documents": [],
+          "links": [
+            {
+              "id": "ES2011c.sys.s.7",
+              "relation": "continues",
+              "changed_fields": [],
+              "reason": "Current decision retains the same scope as the earlier decision.",
+              "prior_evidence_da_ids": [
+                "ES2011c.A.dialog-act.dharshi.193",
+                "ES2011c.A.dialog-act.dharshi.201"
+              ],
+              "current_evidence_da_ids": [
+                "ES2011d.A.dialog-act.dharshi.31",
+                "ES2011d.A.dialog-act.dharshi.32"
+              ]
+            }
+          ],
+          "related_items": [],
+          "next_action": "accept"
+        },
+        "protocol_normalizations": [],
+        "unresolved_before": [
+          "related_items"
+        ],
+        "unresolved_after": [
+          "related_items"
+        ],
+        "semantic_stalls": 1,
+        "validation_codes": {
+          "relation": [
+            "per_link_assessment_required_for_each_related_item"
+          ]
+        }
+      },
+      {
+        "item": "ES2011d#3",
+        "step": 6,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "stop",
+        "outcome": "pending",
+        "termination_reason": "supported_statement_with_unresolved_fields",
+        "unresolved_fields": [
+          "related_items"
+        ]
+      }
+    ],
+    "lookups": 2,
+    "termination_reason": "supported_statement_with_unresolved_fields",
+    "clarifications": [
+      {
+        "request_id": "ddf0046cde867775",
+        "item_key": "ES2011d#3",
+        "record_id": null,
+        "field": "related_items",
+        "question": "Which earlier record does this item continue or change, and how?",
+        "item_text": "We decided on batteries as the power source for the remote.",
+        "reason": "per_link_assessment_required_for_each_related_item",
+        "evidence_da_ids": [
+          "ES2011d.A.dialog-act.dharshi.31",
+          "ES2011d.A.dialog-act.dharshi.32",
+          "ES2011c.A.dialog-act.dharshi.193",
+          "ES2011c.A.dialog-act.dharshi.201"
+        ],
+        "available_evidence_da_ids": [
+          "ES2011d.A.dialog-act.dharshi.31",
+          "ES2011d.A.dialog-act.dharshi.30",
+          "ES2011d.A.dialog-act.dharshi.32",
+          "ES2011c.A.dialog-act.dharshi.192",
+          "ES2011c.A.dialog-act.dharshi.193",
+          "ES2011c.A.dialog-act.dharshi.194",
+          "ES2011c.B.dialog-act.dharshi.140",
+          "ES2011c.A.dialog-act.dharshi.201",
+          "ES2011c.B.dialog-act.dharshi.141"
+        ],
+        "status": "open",
+        "termination_reason": "supported_statement_with_unresolved_fields"
+      }
+    ]
+  }
+}

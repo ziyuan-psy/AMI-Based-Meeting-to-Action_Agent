@@ -1,0 +1,534 @@
+{
+  "item": 3,
+  "fields": {
+    "item_key": "TS3006a#3",
+    "record_id": null,
+    "item_type": "decisions",
+    "item_text": "The activity is introduction and get acquainted.",
+    "state": "accepted",
+    "recordable": true,
+    "fields": {
+      "status": "adopted",
+      "prior_context_needed": false,
+      "related_items": [],
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3006a.json",
+          "locator": "TS3006a.A.dialog-act.vkaraisk.76"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3006a.json",
+          "locator": "TS3006a.A.dialog-act.vkaraisk.77"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3006a.json",
+          "locator": "TS3006a.C.dialog-act.vkaraisk.21"
+        }
+      ]
+    },
+    "draft_fields": {
+      "status": "adopted",
+      "related_items": [],
+      "prior_context_needed": false,
+      "used_participant_lookup": false,
+      "evidence_da_ids": [
+        "TS3006a.A.dialog-act.vkaraisk.76",
+        "TS3006a.A.dialog-act.vkaraisk.77",
+        "TS3006a.C.dialog-act.vkaraisk.21"
+      ],
+      "owner": null,
+      "owner_basis": "missing",
+      "deadline": null,
+      "deadline_basis": "missing"
+    },
+    "checks": {
+      "statement": {
+        "result": "pass",
+        "reason": "Dialogue explicitly includes the phrase 'introduction and get acquainted' as the activity, confirming the decision scope.",
+        "quotes": [
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.76",
+            "quote": "introduction and get acquainted"
+          },
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.77",
+            "quote": "and <disfmarker>"
+          },
+          {
+            "da_id": "TS3006a.C.dialog-act.vkaraisk.21",
+            "quote": "Alright ."
+          }
+        ],
+        "fields": [
+          "statement"
+        ]
+      },
+      "status": {
+        "result": "pass",
+        "reason": "Current dialogue supports the adopted status and the stated activity.",
+        "quotes": [
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.76",
+            "quote": "introduction and get acquainted"
+          },
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.77",
+            "quote": "and <disfmarker>"
+          },
+          {
+            "da_id": "TS3006a.C.dialog-act.vkaraisk.21",
+            "quote": "Alright ."
+          }
+        ],
+        "fields": [
+          "status"
+        ]
+      },
+      "conflict": {
+        "result": "pass",
+        "reason": "No contradictions found in the observed dialogue regarding the activity scope.",
+        "quotes": [
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.76",
+            "quote": "introduction and get acquainted"
+          },
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.77",
+            "quote": "and <disfmarker>"
+          },
+          {
+            "da_id": "TS3006a.C.dialog-act.vkaraisk.21",
+            "quote": "Alright ."
+          }
+        ],
+        "fields": []
+      },
+      "relation": {
+        "result": "not_applicable",
+        "reason": "No prior related items to relate to in this run.",
+        "quotes": [],
+        "fields": [
+          "related_items"
+        ]
+      },
+      "owner": {
+        "result": "not_applicable",
+        "reason": "field_not_applicable",
+        "quotes": [],
+        "fields": [
+          "owner"
+        ]
+      },
+      "deadline": {
+        "result": "not_applicable",
+        "reason": "field_not_applicable",
+        "quotes": [],
+        "fields": [
+          "deadline"
+        ]
+      }
+    },
+    "unresolved_fields": [],
+    "observed_evidence_da_ids": [
+      "TS3006a.C.dialog-act.vkaraisk.20",
+      "TS3006a.A.dialog-act.vkaraisk.74",
+      "TS3006a.A.dialog-act.vkaraisk.75",
+      "TS3006a.D.dialog-act.vkaraisk.41",
+      "TS3006a.A.dialog-act.vkaraisk.76",
+      "TS3006a.A.dialog-act.vkaraisk.77",
+      "TS3006a.B.dialog-act.vkaraisk.42",
+      "TS3006a.C.dialog-act.vkaraisk.21"
+    ],
+    "initial_context": {
+      "item": {
+        "type": "decisions",
+        "text": "The activity is introduction and get acquainted.",
+        "flags": []
+      },
+      "current_meeting": "TS3006a",
+      "earlier_meetings": [],
+      "roster": [
+        {
+          "speaker": "A",
+          "participant_id": "MTD021PM",
+          "role": "PM"
+        },
+        {
+          "speaker": "B",
+          "participant_id": "MTD023UID",
+          "role": "UI"
+        },
+        {
+          "speaker": "C",
+          "participant_id": "MTD022ID",
+          "role": "ID"
+        },
+        {
+          "speaker": "D",
+          "participant_id": "MTD024ME",
+          "role": "ME"
+        }
+      ],
+      "observed_dialogue": [
+        {
+          "da_id": "TS3006a.C.dialog-act.vkaraisk.20",
+          "meeting_id": "TS3006a",
+          "text": "Is this part of our a acquai or introduction to each other ?",
+          "participant": "MTD022ID",
+          "role": "ID"
+        },
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.74",
+          "meeting_id": "TS3006a",
+          "text": "Yeah",
+          "participant": "MTD021PM",
+          "role": "PM"
+        },
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.75",
+          "meeting_id": "TS3006a",
+          "text": "sorry ,",
+          "participant": "MTD021PM",
+          "role": "PM"
+        },
+        {
+          "da_id": "TS3006a.D.dialog-act.vkaraisk.41",
+          "meeting_id": "TS3006a",
+          "text": "<vocalsound> Uh <disfmarker>",
+          "participant": "MTD024ME",
+          "role": "ME"
+        },
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.76",
+          "meeting_id": "TS3006a",
+          "text": "introduction and get acquainted",
+          "participant": "MTD021PM",
+          "role": "PM"
+        },
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.77",
+          "meeting_id": "TS3006a",
+          "text": "and <disfmarker>",
+          "participant": "MTD021PM",
+          "role": "PM"
+        },
+        {
+          "da_id": "TS3006a.B.dialog-act.vkaraisk.42",
+          "participant": "MTD023UID",
+          "role": "UI",
+          "text": "<vocalsound>"
+        },
+        {
+          "da_id": "TS3006a.C.dialog-act.vkaraisk.21",
+          "participant": "MTD022ID",
+          "role": "ID",
+          "text": "Alright ."
+        }
+      ],
+      "peer_items": [
+        {
+          "item_key": "TS3006a#0",
+          "type": "problems",
+          "text": "Screen/display hardware problem: presenter reports the screen is missing ('where has my screen gone?' / 'My screen is gone')"
+        },
+        {
+          "item_key": "TS3006a#1",
+          "type": "problems",
+          "text": "Kickoff participation shows participants slow and under-prepared, indicating preparation/coordination gaps."
+        },
+        {
+          "item_key": "TS3006a#2",
+          "type": "problems",
+          "text": "Unclear scope: unclear which animal to draw and lack of agreement on subject and components to include."
+        }
+      ],
+      "provisional_values": {
+        "owner": null,
+        "owner_basis": "missing",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "adopted",
+        "related_items": []
+      },
+      "candidate_evidence_da_ids": [
+        "TS3006a.C.dialog-act.vkaraisk.20",
+        "TS3006a.A.dialog-act.vkaraisk.74",
+        "TS3006a.A.dialog-act.vkaraisk.75",
+        "TS3006a.D.dialog-act.vkaraisk.41",
+        "TS3006a.A.dialog-act.vkaraisk.76",
+        "TS3006a.A.dialog-act.vkaraisk.77"
+      ]
+    },
+    "observed_documents": [],
+    "document_evidence": [],
+    "relation_evidence": [],
+    "history": [
+      {
+        "item": "TS3006a#3",
+        "step": 1,
+        "flags": [],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue explicitly includes the phrase 'introduction and get acquainted' as the activity, confirming the decision scope.",
+            "quotes": [
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.76",
+                "quote": "introduction and get acquainted"
+              },
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.77",
+                "quote": "and <disfmarker>"
+              },
+              {
+                "da_id": "TS3006a.C.dialog-act.vkaraisk.21",
+                "quote": "Alright ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Current dialogue supports the adopted status and the stated activity.",
+            "quotes": [
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.76",
+                "quote": "introduction and get acquainted"
+              },
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.77",
+                "quote": "and <disfmarker>"
+              },
+              {
+                "da_id": "TS3006a.C.dialog-act.vkaraisk.21",
+                "quote": "Alright ."
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions found in the observed dialogue regarding the activity scope.",
+            "quotes": [
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.76",
+                "quote": "introduction and get acquainted"
+              },
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.77",
+                "quote": "and <disfmarker>"
+              },
+              {
+                "da_id": "TS3006a.C.dialog-act.vkaraisk.21",
+                "quote": "Alright ."
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related items to relate to in this run.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          }
+        },
+        "decision": "accept",
+        "reason": "all_required_checks_passed",
+        "assessed_text": "The activity is introduction and get acquainted.",
+        "requested_action": "accept",
+        "proposed_fields": {
+          "status": "adopted",
+          "related_items": [],
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.76",
+            "TS3006a.A.dialog-act.vkaraisk.77",
+            "TS3006a.C.dialog-act.vkaraisk.21"
+          ],
+          "owner": null,
+          "owner_basis": "missing",
+          "deadline": null,
+          "deadline_basis": "missing"
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue explicitly includes the phrase 'introduction and get acquainted' as the activity, confirming the decision scope.",
+            "quotes": [
+              "TS3006a.A.dialog-act.vkaraisk.76",
+              "TS3006a.A.dialog-act.vkaraisk.77",
+              "TS3006a.C.dialog-act.vkaraisk.21"
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Current dialogue supports the adopted status and the stated activity.",
+            "quotes": [
+              "TS3006a.A.dialog-act.vkaraisk.76",
+              "TS3006a.A.dialog-act.vkaraisk.77",
+              "TS3006a.C.dialog-act.vkaraisk.21"
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions found in the observed dialogue regarding the activity scope.",
+            "quotes": [
+              "TS3006a.A.dialog-act.vkaraisk.76",
+              "TS3006a.A.dialog-act.vkaraisk.77",
+              "TS3006a.C.dialog-act.vkaraisk.21"
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related items to relate to in this run.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "status": "adopted",
+          "related_items": [],
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue explicitly includes the phrase 'introduction and get acquainted' as the activity, confirming the decision scope.",
+            "evidence_da_ids": [
+              "TS3006a.A.dialog-act.vkaraisk.76",
+              "TS3006a.A.dialog-act.vkaraisk.77",
+              "TS3006a.C.dialog-act.vkaraisk.21"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Current dialogue supports the adopted status and the stated activity.",
+            "evidence_da_ids": [
+              "TS3006a.A.dialog-act.vkaraisk.76",
+              "TS3006a.A.dialog-act.vkaraisk.77",
+              "TS3006a.C.dialog-act.vkaraisk.21"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No contradictions found in the observed dialogue regarding the activity scope.",
+            "evidence_da_ids": [
+              "TS3006a.A.dialog-act.vkaraisk.76",
+              "TS3006a.A.dialog-act.vkaraisk.77",
+              "TS3006a.C.dialog-act.vkaraisk.21"
+            ],
+            "affected_fields": []
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior related items to relate to in this run.",
+            "evidence_da_ids": []
+          },
+          "next_action": "accept"
+        },
+        "evidence_bindings": {
+          "statement": [
+            "TS3006a.A.dialog-act.vkaraisk.76",
+            "TS3006a.A.dialog-act.vkaraisk.77",
+            "TS3006a.C.dialog-act.vkaraisk.21"
+          ],
+          "status": [
+            "TS3006a.A.dialog-act.vkaraisk.76",
+            "TS3006a.A.dialog-act.vkaraisk.77",
+            "TS3006a.C.dialog-act.vkaraisk.21"
+          ],
+          "conflict": [
+            "TS3006a.A.dialog-act.vkaraisk.76",
+            "TS3006a.A.dialog-act.vkaraisk.77",
+            "TS3006a.C.dialog-act.vkaraisk.21"
+          ]
+        },
+        "raw_tool_input": {
+          "status": "adopted",
+          "related_items": [],
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue explicitly includes the phrase 'introduction and get acquainted' as the activity, confirming the decision scope.",
+            "evidence_da_ids": [
+              "TS3006a.A.dialog-act.vkaraisk.76",
+              "TS3006a.A.dialog-act.vkaraisk.77",
+              "TS3006a.C.dialog-act.vkaraisk.21"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Current dialogue supports the adopted status and the stated activity.",
+            "evidence_da_ids": [
+              "TS3006a.A.dialog-act.vkaraisk.76",
+              "TS3006a.A.dialog-act.vkaraisk.77",
+              "TS3006a.C.dialog-act.vkaraisk.21"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No contradictions found in the observed dialogue regarding the activity scope.",
+            "evidence_da_ids": [
+              "TS3006a.A.dialog-act.vkaraisk.76",
+              "TS3006a.A.dialog-act.vkaraisk.77",
+              "TS3006a.C.dialog-act.vkaraisk.21"
+            ],
+            "affected_fields": []
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior related items to relate to in this run.",
+            "evidence_da_ids": []
+          },
+          "next_action": "accept"
+        },
+        "protocol_normalizations": []
+      },
+      {
+        "item": "TS3006a#3",
+        "step": 1,
+        "flags": [],
+        "action": "accept",
+        "outcome": "accepted",
+        "termination_reason": "all_required_checks_passed",
+        "unresolved_fields": []
+      }
+    ],
+    "lookups": 0,
+    "termination_reason": "all_required_checks_passed",
+    "clarifications": []
+  }
+}

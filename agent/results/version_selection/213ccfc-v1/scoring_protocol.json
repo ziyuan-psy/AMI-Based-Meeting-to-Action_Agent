@@ -1,0 +1,113 @@
+{
+  "format_version": 1,
+  "current_commit": "213ccfcc4db898714f8be66eace0a12861d92341",
+  "baseline_commit": "414a31fe1581b147851ec2bd61b340bf0be26843",
+  "meetings": [
+    "ES2011a",
+    "ES2011b",
+    "ES2011c",
+    "ES2011d",
+    "IS1008a",
+    "IS1008b",
+    "IS1008c",
+    "IS1008d",
+    "TS3004a",
+    "TS3004b",
+    "TS3004c",
+    "TS3004d",
+    "TS3006a",
+    "TS3006b",
+    "TS3006c",
+    "TS3006d"
+  ],
+  "types": [
+    "actions",
+    "decisions",
+    "problems"
+  ],
+  "arms": [
+    "baseline",
+    "retention_actions",
+    "retention_actions_issues",
+    "selection213",
+    "selection_issue",
+    "p2_current"
+  ],
+  "votes": 3,
+  "judge": {
+    "name": "@30875-fall26-openai/gpt-5-nano",
+    "client": "mta.llm.OpenAIAdapter",
+    "endpoint": "https://api.portkey.ai/v1",
+    "supports_reasoning_effort": true
+  },
+  "match_system": "You compare two lists of items from the same meeting record: SYSTEM items and GOLD items.\nMatch each system item to at most one gold item that records the same commitment, decision or problem.\nParaphrase is fine; for actions it must be the same person doing essentially the same task. A system item that\nis only loosely related, much narrower, or about something else is NOT a match. Matching is one-to-one.",
+  "match_schema": {
+    "type": "object",
+    "properties": {
+      "pairs": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "sys": {
+              "type": "integer"
+            },
+            "gold": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "sys",
+            "gold"
+          ]
+        }
+      }
+    },
+    "required": [
+      "pairs"
+    ]
+  },
+  "fewshot_excluded_ids": [
+    "ES2011b.JacquelinePalmer.s.13",
+    "ES2011b.JacquelinePalmer.s.14",
+    "ES2011b.JacquelinePalmer.s.15",
+    "ES2011b.JacquelinePalmer.s.20",
+    "ES2011b.revised.s.23",
+    "IS1008b.JacquelinePalmer.s.10",
+    "IS1008b.JacquelinePalmer.s.12",
+    "IS1008b.JacquelinePalmer.s.17",
+    "TS3004c.JacquelinePalmer.s.17",
+    "TS3004c.JacquelinePalmer.s.19"
+  ],
+  "gold_sha256": {
+    "ES2011a": "45ccd96875f012fefed4ca3775c110d1fa558e27c7abf2fc94c49a50731d290f",
+    "ES2011b": "7010c32ddccda6ca347feef1f3a9d9db5d1f72c29202ca1f6a42ffd8757f8171",
+    "ES2011c": "16b7e910a3555b60c100ef8f0daf169d71100c879d0def2e7fd70e026a3a234b",
+    "ES2011d": "034478891ab01e7eb320b2475e78a79716a934fcf87568caad27246bd0ad4725",
+    "IS1008a": "175e1a7a0a4ce8f09e62778b3c04509e7030be947b0d3a5a56c4054ce353f089",
+    "IS1008b": "f8c8bd225c35e9f65c740f1627537047d6f4948ba43ff0ceb134531af7f9ebfc",
+    "IS1008c": "18544f9f961b56e9f085b079dd624dfbf0aefde36bfe757e46a0c6654b65a13c",
+    "IS1008d": "e5b15fb507313929b94a6951524acef5a6a0ad47a5216cbb33e8d9f80dff61d8",
+    "TS3004a": "0e8bb4c8951c46dad20039fb671d073e0e176cd8027b0b783a801ebd0036fa25",
+    "TS3004b": "5920d138d4245a46e3a61230449d5a07ff1b97af8ada1d6ebe2eed7313858794",
+    "TS3004c": "306b3abc04df390a52faa98c17148f6758ab0587116f6d126b65f6f5c7fd801c",
+    "TS3004d": "679ab328bfdec35bd762470de60a919b943d49e2473f1b335428bd19883cf494",
+    "TS3006a": "68b6958266d4c97fd0f7d176975af97e9789a198917d41aed2ec4f8fd0ac4b85",
+    "TS3006b": "4c8635087940ea170532827d77ac24f256a6d821779e08af52d0487d6f801540",
+    "TS3006c": "09c618c5832cf408742df7e442d19f91c292e2f854ad3c7a17597fbdd01b884e",
+    "TS3006d": "b2a73f39ecacbc0abb085685a448df1f5c2e7947f4bc01c556ce6ed03edc464c"
+  },
+  "scoring_source_sha256": {
+    "agent/src/mta/evaluate.py": "abdbe3dbbee04baef7284e5141578ecfab3b3d8aa5f535b0fa3c3794319b6985",
+    "agent/src/mta/regression.py": "068fc561a08c7788c6de6e018ad9cdf5eaed24fddc5bf3bb6631fd2ae98bd8a9",
+    "agent/scripts/full_eval.py": "10b97880a16415fb817d3acc04ca138b229fa1eb9c75864fabb69ca388264a88"
+  },
+  "matching": "Same type; one-to-one; original semantic prompt; first three votes with majority. Shared text-keyed cache for all arms in each meeting. No version labels in judge prompt.",
+  "denominators": "Any NA/N/A placeholder makes that meeting/type unscored in all arms. Few-shot gold and system items aligned to those examples are excluded together.",
+  "aggregate": "Micro precision/recall/F1 from summed TP/system/gold, over identically eligible complete meetings. Never count an incomplete pipeline as empty output.",
+  "scope": "SB development regression with draft gold and model-judged matches. No heldout data, independent human signoff, support/summary judging or stability claim.",
+  "original16_baseline_replayed_api_calls": 0,
+  "driver_sha256": "8be2c52af38732f1f76bb48f54fd34324925576bebcf3c99e5926da24a271107",
+  "boundary_driver_sha256": "18f46d5956ff80d430d25352c89a5a66ea352cb2ea0638bd465d440d94aa2073",
+  "policy": "Single fixed boundary response per arm; original text-keyed votes reused; no resampling. Generation never sees gold, votes or scores."
+}

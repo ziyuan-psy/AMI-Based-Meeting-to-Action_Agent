@@ -1,0 +1,52 @@
+{
+  "status": "COMPLETED",
+  "meeting_id": "IS1008a",
+  "candidate_sha256": "7504e1d7f658b199785b676c5f85e43000ac1cfa6624de16e761d7cd0061114d",
+  "input_sha256": "1bca29ace962d892e18f232d3e65d3c65cc67d299eb2c23427f7e99d685a6d58",
+  "runtime_control": {
+    "limits": {
+      "calls": 80,
+      "tokens": 1000000,
+      "request_seconds": 300.0,
+      "meeting_seconds": 1200.0,
+      "inflight": 4,
+      "retries": 2,
+      "backoff": 0.5
+    },
+    "attempted_calls": 1,
+    "charged_tokens": 10460,
+    "unknown_usage_tokens": 0,
+    "reserved_tokens": 0,
+    "max_inflight_seen": 1,
+    "failure": null,
+    "attempts": [
+      {
+        "attempt": 0,
+        "stage": "decision_review",
+        "reserved_tokens": 46514,
+        "input_bound": 14514,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 10460,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 3504,
+        "output_tokens": 6956
+      }
+    ],
+    "input_bound_method": "utf8_request_bytes_plus_padding",
+    "unknown_usage_policy": "charge_full_reservation"
+  },
+  "usage": {
+    "calls": 1,
+    "in": 3504,
+    "out": 6956,
+    "stages": {
+      "decision_review": {
+        "calls": 1,
+        "in": 3504,
+        "out": 6956
+      }
+    }
+  }
+}

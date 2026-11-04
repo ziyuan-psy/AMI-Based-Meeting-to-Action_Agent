@@ -1,0 +1,501 @@
+{
+  "item_key": "TS3006b#3",
+  "record_id": null,
+  "item_type": "problems",
+  "item_text": "Uncertainty about saving the project file (whether it saves automatically and where).",
+  "state": "pending",
+  "recordable": false,
+  "fields": {
+    "status": "unknown",
+    "prior_context_needed": false,
+    "related_items": [],
+    "reference": [
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3006b.json",
+        "locator": "TS3006b.D.dialog-act.dharshi.435"
+      }
+    ]
+  },
+  "draft_fields": {
+    "status": "open",
+    "related_items": [],
+    "prior_context_needed": false,
+    "used_participant_lookup": false,
+    "evidence_da_ids": [
+      "TS3006b.D.dialog-act.dharshi.435",
+      "TS3006b.A.dialog-act.dharshi.393"
+    ],
+    "owner": null,
+    "owner_basis": "missing",
+    "deadline": null,
+    "deadline_basis": "missing"
+  },
+  "checks": {
+    "statement": {
+      "result": "uncertain",
+      "reason": "Current dialogue shows a question about whether saving is automatic and where it saves, but no explicit commitment or final plan was stated.",
+      "quotes": [
+        {
+          "da_id": "TS3006b.D.dialog-act.dharshi.435",
+          "quote": "Does it save automatically in the project folder ? Or <disfmarker>"
+        },
+        {
+          "da_id": "TS3006b.A.dialog-act.dharshi.393",
+          "quote": "Yeah ."
+        }
+      ],
+      "fields": [
+        "statement"
+      ]
+    },
+    "status": {
+      "result": "uncertain",
+      "reason": "No clear confirmation or owner/deadline tied to this saving behavior in the current dialogue.",
+      "quotes": [
+        {
+          "da_id": "TS3006b.D.dialog-act.dharshi.435",
+          "quote": "Does it save automatically in the project folder ? Or <disfmarker>"
+        }
+      ],
+      "fields": [
+        "status"
+      ]
+    },
+    "conflict": {
+      "result": "pass",
+      "reason": "No conflicts found in the available dialogue about saving behavior.",
+      "quotes": [
+        {
+          "da_id": "TS3006b.D.dialog-act.dharshi.435",
+          "quote": "Does it save automatically in the project folder ? Or <disfmarker>"
+        }
+      ],
+      "fields": []
+    },
+    "relation": {
+      "result": "not_applicable",
+      "reason": "No earlier item to relate to in this context.",
+      "quotes": [],
+      "fields": [
+        "related_items"
+      ]
+    },
+    "owner": {
+      "result": "not_applicable",
+      "reason": "field_not_applicable",
+      "quotes": [],
+      "fields": [
+        "owner"
+      ]
+    },
+    "deadline": {
+      "result": "not_applicable",
+      "reason": "field_not_applicable",
+      "quotes": [],
+      "fields": [
+        "deadline"
+      ]
+    }
+  },
+  "unresolved_fields": [
+    "statement",
+    "status"
+  ],
+  "observed_evidence_da_ids": [
+    "TS3006b.D.dialog-act.dharshi.433",
+    "TS3006b.D.dialog-act.dharshi.435",
+    "TS3006b.A.dialog-act.dharshi.393",
+    "TS3006b.D.dialog-act.dharshi.432",
+    "TS3006b.A.dialog-act.dharshi.394"
+  ],
+  "initial_context": {
+    "item": {
+      "type": "problems",
+      "text": "Uncertainty about saving the project file (whether it saves automatically and where).",
+      "flags": []
+    },
+    "current_meeting": "TS3006b",
+    "earlier_meetings": [
+      "TS3006a"
+    ],
+    "roster": [
+      {
+        "speaker": "A",
+        "participant_id": "MTD021PM",
+        "role": "PM"
+      },
+      {
+        "speaker": "B",
+        "participant_id": "MTD023UID",
+        "role": "UI"
+      },
+      {
+        "speaker": "C",
+        "participant_id": "MTD022ID",
+        "role": "ID"
+      },
+      {
+        "speaker": "D",
+        "participant_id": "MTD024ME",
+        "role": "ME"
+      }
+    ],
+    "observed_dialogue": [
+      {
+        "da_id": "TS3006b.D.dialog-act.dharshi.433",
+        "meeting_id": "TS3006b",
+        "text": "Y you saved it ?",
+        "participant": "MTD024ME",
+        "role": "ME"
+      },
+      {
+        "da_id": "TS3006b.D.dialog-act.dharshi.435",
+        "meeting_id": "TS3006b",
+        "text": "Does it save automatically in the project folder ? Or <disfmarker>",
+        "participant": "MTD024ME",
+        "role": "ME"
+      },
+      {
+        "da_id": "TS3006b.A.dialog-act.dharshi.393",
+        "meeting_id": "TS3006b",
+        "text": "Yeah .",
+        "participant": "MTD021PM",
+        "role": "PM"
+      },
+      {
+        "da_id": "TS3006b.D.dialog-act.dharshi.432",
+        "participant": "MTD024ME",
+        "role": "ME",
+        "text": "Aye <disfmarker>"
+      },
+      {
+        "da_id": "TS3006b.A.dialog-act.dharshi.394",
+        "participant": "MTD021PM",
+        "role": "PM",
+        "text": "It's uh <disfmarker>"
+      }
+    ],
+    "peer_items": [
+      {
+        "item_key": "TS3006b#0",
+        "type": "actions",
+        "text": "The User Interface Designer can design a menu for all these functions."
+      },
+      {
+        "item_key": "TS3006b#1",
+        "type": "problems",
+        "text": "The current look-and-feel and usability of remote controls are disliked by users and are hard to learn, with remotes often getting lost in rooms."
+      },
+      {
+        "item_key": "TS3006b#2",
+        "type": "problems",
+        "text": "Open problem: it is unclear what the screen should do or what is required from it."
+      }
+    ],
+    "provisional_values": {
+      "owner": null,
+      "owner_basis": "missing",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "status": "open",
+      "related_items": []
+    },
+    "candidate_evidence_da_ids": [
+      "TS3006b.D.dialog-act.dharshi.433",
+      "TS3006b.D.dialog-act.dharshi.435",
+      "TS3006b.A.dialog-act.dharshi.393"
+    ]
+  },
+  "observed_documents": [],
+  "document_evidence": [],
+  "relation_evidence": [],
+  "history": [
+    {
+      "item": "TS3006b#3",
+      "step": 1,
+      "flags": [],
+      "action": "assess_item",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "uncertain",
+          "reason": "Current dialogue shows a question about whether saving is automatic and where it saves, but no explicit commitment or final plan was stated.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.D.dialog-act.dharshi.435",
+              "quote": "Does it save automatically in the project folder ? Or <disfmarker>"
+            },
+            {
+              "da_id": "TS3006b.A.dialog-act.dharshi.393",
+              "quote": "Yeah ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "status": {
+          "result": "uncertain",
+          "reason": "No clear confirmation or owner/deadline tied to this saving behavior in the current dialogue.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.D.dialog-act.dharshi.435",
+              "quote": "Does it save automatically in the project folder ? Or <disfmarker>"
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No conflicts found in the available dialogue about saving behavior.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.D.dialog-act.dharshi.435",
+              "quote": "Does it save automatically in the project folder ? Or <disfmarker>"
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No earlier item to relate to in this context.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        },
+        "owner": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        }
+      },
+      "decision": "retrieve",
+      "reason": "unresolved_checks",
+      "assessed_text": "Uncertainty about saving the project file (whether it saves automatically and where).",
+      "requested_action": null,
+      "proposed_fields": {
+        "status": "open",
+        "related_items": [],
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "TS3006b.D.dialog-act.dharshi.435",
+          "TS3006b.A.dialog-act.dharshi.393"
+        ],
+        "owner": null,
+        "owner_basis": "missing",
+        "deadline": null,
+        "deadline_basis": "missing"
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "uncertain",
+          "reason": "Current dialogue shows a question about whether saving is automatic and where it saves, but no explicit commitment or final plan was stated.",
+          "quotes": [
+            "TS3006b.D.dialog-act.dharshi.435",
+            "TS3006b.A.dialog-act.dharshi.393"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "status": {
+          "result": "uncertain",
+          "reason": "No clear confirmation or owner/deadline tied to this saving behavior in the current dialogue.",
+          "quotes": [
+            "TS3006b.D.dialog-act.dharshi.435"
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No conflicts found in the available dialogue about saving behavior.",
+          "quotes": [
+            "TS3006b.D.dialog-act.dharshi.435"
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No earlier item to relate to in this context.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "status": "open",
+        "related_items": [],
+        "statement": {
+          "result": "uncertain",
+          "reason": "Current dialogue shows a question about whether saving is automatic and where it saves, but no explicit commitment or final plan was stated.",
+          "evidence_da_ids": [
+            "TS3006b.D.dialog-act.dharshi.435",
+            "TS3006b.A.dialog-act.dharshi.393"
+          ]
+        },
+        "status_check": {
+          "result": "uncertain",
+          "reason": "No clear confirmation or owner/deadline tied to this saving behavior in the current dialogue.",
+          "evidence_da_ids": [
+            "TS3006b.D.dialog-act.dharshi.435"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No conflicts found in the available dialogue about saving behavior.",
+          "evidence_da_ids": [
+            "TS3006b.D.dialog-act.dharshi.435"
+          ],
+          "affected_fields": []
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No earlier item to relate to in this context.",
+          "evidence_da_ids": []
+        }
+      },
+      "evidence_bindings": {
+        "statement": [
+          "TS3006b.D.dialog-act.dharshi.435",
+          "TS3006b.A.dialog-act.dharshi.393"
+        ],
+        "status": [
+          "TS3006b.D.dialog-act.dharshi.435"
+        ],
+        "conflict": [
+          "TS3006b.D.dialog-act.dharshi.435"
+        ]
+      },
+      "raw_tool_input": {
+        "status": "open",
+        "related_items": [],
+        "statement": {
+          "result": "uncertain",
+          "reason": "Current dialogue shows a question about whether saving is automatic and where it saves, but no explicit commitment or final plan was stated.",
+          "evidence_da_ids": [
+            "TS3006b.D.dialog-act.dharshi.435",
+            "TS3006b.A.dialog-act.dharshi.393"
+          ]
+        },
+        "status_check": {
+          "result": "uncertain",
+          "reason": "No clear confirmation or owner/deadline tied to this saving behavior in the current dialogue.",
+          "evidence_da_ids": [
+            "TS3006b.D.dialog-act.dharshi.435"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No conflicts found in the available dialogue about saving behavior.",
+          "evidence_da_ids": [
+            "TS3006b.D.dialog-act.dharshi.435"
+          ],
+          "affected_fields": []
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No earlier item to relate to in this context.",
+          "evidence_da_ids": []
+        }
+      },
+      "protocol_normalizations": [
+        "controller_action_for_missing_hint:retrieve"
+      ]
+    },
+    {
+      "item": "TS3006b#3",
+      "step": 2,
+      "flags": [],
+      "action": "core_recheck_offered",
+      "outcome": "focused_review",
+      "reason": "semantic_core_uncertainty_with_read_evidence"
+    },
+    {
+      "item": "TS3006b#3",
+      "step": 3,
+      "flags": [],
+      "action": "request_clarification",
+      "outcome": "pending",
+      "reason": "To move this item forward, please clarify the saving behavior: (1) Is saving automatic or manual? (2) If automatic, where is the file saved (project folder/path)? (3) Who is responsible for confirming this behavior, and is there any deadline to resolve it?",
+      "decision": "request_clarification"
+    },
+    {
+      "item": "TS3006b#3",
+      "step": 3,
+      "flags": [],
+      "action": "stop",
+      "outcome": "pending",
+      "termination_reason": "request_clarification",
+      "unresolved_fields": [
+        "statement",
+        "status"
+      ]
+    }
+  ],
+  "lookups": 0,
+  "termination_reason": "request_clarification",
+  "clarifications": [
+    {
+      "request_id": "16566ff197a10c59",
+      "item_key": "TS3006b#3",
+      "record_id": null,
+      "field": "statement",
+      "question": "Should this be recorded as a substantive, supported problems item?",
+      "item_text": "Uncertainty about saving the project file (whether it saves automatically and where).",
+      "reason": "Current dialogue shows a question about whether saving is automatic and where it saves, but no explicit commitment or final plan was stated.",
+      "evidence_da_ids": [
+        "TS3006b.D.dialog-act.dharshi.435",
+        "TS3006b.A.dialog-act.dharshi.393"
+      ],
+      "available_evidence_da_ids": [
+        "TS3006b.D.dialog-act.dharshi.433",
+        "TS3006b.D.dialog-act.dharshi.435",
+        "TS3006b.A.dialog-act.dharshi.393",
+        "TS3006b.D.dialog-act.dharshi.432",
+        "TS3006b.A.dialog-act.dharshi.394"
+      ],
+      "status": "open",
+      "termination_reason": "request_clarification"
+    },
+    {
+      "request_id": "1400efddd675c9fe",
+      "item_key": "TS3006b#3",
+      "record_id": null,
+      "field": "status",
+      "question": "What is this item's status at the end of the current meeting?",
+      "item_text": "Uncertainty about saving the project file (whether it saves automatically and where).",
+      "reason": "No clear confirmation or owner/deadline tied to this saving behavior in the current dialogue.",
+      "evidence_da_ids": [
+        "TS3006b.D.dialog-act.dharshi.435"
+      ],
+      "available_evidence_da_ids": [
+        "TS3006b.D.dialog-act.dharshi.433",
+        "TS3006b.D.dialog-act.dharshi.435",
+        "TS3006b.A.dialog-act.dharshi.393",
+        "TS3006b.D.dialog-act.dharshi.432",
+        "TS3006b.A.dialog-act.dharshi.394"
+      ],
+      "status": "open",
+      "termination_reason": "request_clarification"
+    }
+  ]
+}

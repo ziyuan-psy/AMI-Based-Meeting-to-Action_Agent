@@ -1,0 +1,56 @@
+{
+  "votes": 3,
+  "judge": {
+    "name": "@30875-fall26-openai/gpt-5-nano",
+    "client": "mta.llm.OpenAIAdapter",
+    "endpoint": "https://api.portkey.ai/v1",
+    "supports_reasoning_effort": true
+  },
+  "match_system": "You compare two lists of items from the same meeting record: SYSTEM items and GOLD items.\nMatch each system item to at most one gold item that records the same commitment, decision or problem.\nParaphrase is fine; for actions it must be the same person doing essentially the same task. A system item that\nis only loosely related, much narrower, or about something else is NOT a match. Matching is one-to-one.",
+  "match_schema": {
+    "type": "object",
+    "properties": {
+      "pairs": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "sys": {
+              "type": "integer"
+            },
+            "gold": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "sys",
+            "gold"
+          ]
+        }
+      }
+    },
+    "required": [
+      "pairs"
+    ]
+  },
+  "fewshot_excluded_ids": [
+    "ES2011b.JacquelinePalmer.s.13",
+    "ES2011b.JacquelinePalmer.s.14",
+    "ES2011b.JacquelinePalmer.s.15",
+    "ES2011b.JacquelinePalmer.s.20",
+    "ES2011b.revised.s.23",
+    "IS1008b.JacquelinePalmer.s.10",
+    "IS1008b.JacquelinePalmer.s.12",
+    "IS1008b.JacquelinePalmer.s.17",
+    "TS3004c.JacquelinePalmer.s.17",
+    "TS3004c.JacquelinePalmer.s.19"
+  ],
+  "matching": "Same type; one-to-one; original semantic prompt; first three votes with majority. Shared text-keyed cache for all arms in each meeting. No version labels in judge prompt.",
+  "denominators": "Any NA/N/A placeholder makes that meeting/type unscored in all arms. Few-shot gold and system items aligned to those examples are excluded together.",
+  "aggregate": "Micro precision/recall/F1 from summed TP/system/gold, over identically eligible complete meetings. Never count an incomplete pipeline as empty output.",
+  "format_version": 1,
+  "name": "frozen_final_scoring_v1",
+  "source": "16-meeting development comparison protocol",
+  "support_votes": 1,
+  "summary_votes": 1
+}

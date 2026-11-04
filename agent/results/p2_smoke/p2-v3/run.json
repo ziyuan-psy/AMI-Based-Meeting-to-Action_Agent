@@ -1,0 +1,942 @@
+{
+  "format_version": 1,
+  "status": "COMPLETED",
+  "execution_kind": "live_p2_protocol_smoke",
+  "run_id": "64c46530ff5743bebf39dea04e231c37",
+  "created_at": "2026-10-27T19:12:59.102904+00:00",
+  "meeting_id": "TS3006a",
+  "scope": "saved development items; no extraction rerun, gold access, scoring or final evaluation",
+  "selected_types": [
+    "actions"
+  ],
+  "source_items_sha256": "2128a19ff53c844b63a86ed41b1ab5d7deb4871adaa2103400d9ce97314fa972",
+  "transcript_sha256": "989aaffb32827a926df149f62f651310067368cef0e6638de23df1f4acc24efe",
+  "code": {
+    "git_commit": "3d65c8df5c7eb56fff5d1fa357d6613d5286e43d",
+    "git_branch": "agent-development",
+    "dirty_source_files": [
+      "M agent/src/mta/agent.py",
+      " M agent/src/mta/baseline.py",
+      " M agent/src/mta/config.py",
+      " M agent/src/mta/observation.py",
+      " M agent/src/mta/pipeline.py",
+      " M agent/src/mta/prompts.py",
+      " M agent/src/mta/render.py",
+      " M agent/src/mta/store.py",
+      "?? agent/scripts/p2_smoke.py",
+      "?? agent/src/mta/p2.py"
+    ],
+    "git_status_available": true,
+    "source_sha256": {
+      "agent/scripts/decision_study.py": "ba7994158414512b46343199b9505fe1adc64251ef42b6d6f94e8e415b438bf3",
+      "agent/scripts/demo.py": "04c9203630e52f4441bbd9d6beb4da9679e8e2d7a5c2cd69b15c410764cc39ab",
+      "agent/scripts/full_eval.py": "10b97880a16415fb817d3acc04ca138b229fa1eb9c75864fabb69ca388264a88",
+      "agent/scripts/p2_smoke.py": "18c68fde6bd2cea89314a3bd14d84afc492433acf898d33a79494878a2a12d34",
+      "agent/scripts/prepare_data.py": "4d4349ae5a91dd62aa1e1b340ba685038629ca37e89e05e93f7b51b584d7ec97",
+      "agent/scripts/repeat_run.py": "01ecd17df48cf64fa917da8174b11b161dbe06b5605fe575cbbb47180ba6b25f",
+      "agent/scripts/run_series.py": "070404a6008b0471f988787415fdd2d6d205e4c79a452a761223263db13ddc6d",
+      "agent/scripts/smoke.py": "80d2ce932a11bacc17f2d72d0d092cd6f903f8778318bffd9d666aed20ba46e0",
+      "agent/src/mta/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "agent/src/mta/agent.py": "b3907c16dbf9b6572f839b0a092250d46a9d429b240f22c88351bcc9028f8228",
+      "agent/src/mta/baseline.py": "8afe53918fe135ee9b4faf8d69bf9e93b117b256b657cd54aaa224efc04bb75b",
+      "agent/src/mta/config.py": "cc4ca69e1de1193e1de0f96a6ea382363373132f4387a43f5ba3797b4910bbef",
+      "agent/src/mta/control.py": "60f236f312c05c6c6315c8fa8e2923af8af63d3d96b9e2107412d77c02317004",
+      "agent/src/mta/decision_audit.py": "273d28323917094174345a8f70b58982f6fb967cb66a865454426f3087f7776b",
+      "agent/src/mta/evaluate.py": "abdbe3dbbee04baef7284e5141578ecfab3b3d8aa5f535b0fa3c3794319b6985",
+      "agent/src/mta/extract.py": "1b5e17fc1ee563b4ef986c1074f2dc4d7a82d69ac180137d9f64b7872fd623db",
+      "agent/src/mta/judge.py": "10185b386349a33cc42912c0b7444a908241c82f9781baf64e4008719cd5fdef",
+      "agent/src/mta/llm.py": "e002a97eb94501be007769acee29e221fe574846f3a6d3a7443c33cc9db6b047",
+      "agent/src/mta/observation.py": "707a99e5da52065b3fa2a3708efc3888911baaab0f46816653efec0f680c1097",
+      "agent/src/mta/p2.py": "2644641e03f94cf7833df1fde4a980572f3262c31ef93ee3b86ed2c51fb66ddc",
+      "agent/src/mta/pipeline.py": "f927fce53609cf6ae853ca6a7fd9c46bb61f8bf45f69e25d062e80feb2048e1a",
+      "agent/src/mta/prompts.py": "e2c03d90c70d0944c28dd23d36c0e0db4d1be49d507b68f10d80c367bb1e1177",
+      "agent/src/mta/render.py": "6dd8fb97a6b48585f117f46fc0c4b97130977d4eaeebcb1f986d47ca395b68bf",
+      "agent/src/mta/run.py": "71206cbc81404c91b4c67434b8ccbb1c40ed961f89db15e5e5cba0609aff0c9e",
+      "agent/src/mta/store.py": "1d04a561d3d2334b62a4cdde21c010f3beba1aafc08567aedbbe8f66205be84b",
+      "agent/src/mta/support.py": "51587e85394c60a9c6faa53ea3ba2c42d724f5ba7b766071c054d66e16eae284",
+      "agent/src/mta/trace.py": "fe2c61824166b418b0f6f7fa2473e71971ed8f4807e57f3d1324dcf5a5c1dc0c",
+      "agent/src/mta/transcript_parser.py": "c7d7f3e535196eafb05da6413381679befbbc12250a47139b3e5628f1c311dc1",
+      "agent/src/mta/triage.py": "dfdabcd7e390cc354be6bef7cdb6b051492596f3399740b3df15e063adf13f04",
+      "agent/src/mta/validate.py": "11e56a82329f66bc64021ba54a8b4c858891ae6d58ff7582fdb6d7f0b2749039",
+      "transcript_parser.py": "1d2fc13cff098b459f232fb78e625c1b01124e9ab4b939cb400e01e98236ebfb"
+    },
+    "source_digest": "3e3a48cb42c7b1f47d2399a8796d1cab523aa10bc24768a8b37554b38f6c7fdf"
+  },
+  "model": {
+    "name": "@30875-fall26-openai/gpt-5-nano",
+    "client": "mta.llm.OpenAIAdapter",
+    "endpoint": "https://api.portkey.ai/v1",
+    "supports_reasoning_effort": true
+  },
+  "config": {
+    "CHUNK": 150,
+    "OVERLAP": 20,
+    "WORKERS": 4,
+    "EMPTY_RETRIES": 2,
+    "ACTION_SAMPLES": 2,
+    "CONSOLIDATE_SAMPLES": 3,
+    "MAX_ITEMS": {
+      "actions": 5,
+      "decisions": 7,
+      "problems": 4
+    },
+    "DECISION_RECONSOLIDATE": true,
+    "EFFORT_EXTRACT": null,
+    "EFFORT_CONSOLIDATE": null,
+    "EFFORT_AGENT": "low",
+    "EFFORT_ABSTRACT": "low",
+    "PRIOR_JACCARD": 0.08,
+    "MAX_CALLS_PER_ITEM": 4,
+    "MAX_CALLS_PER_MEETING": 30,
+    "MAX_INVALID_ACTIONS": 2,
+    "MAX_NO_PROGRESS": 2,
+    "MAX_FINISH_TRIES": 3,
+    "MAX_AGENT_STEPS": 12,
+    "P2_ENABLED": true,
+    "OPENAI_MIN_COMPLETION_TOKENS": 32000,
+    "MAX_MODEL_CALLS": 80,
+    "MAX_TOTAL_TOKENS": 1000000,
+    "REQUEST_TIMEOUT": 300.0,
+    "MEETING_TIMEOUT": 1200.0,
+    "MAX_INFLIGHT": 4,
+    "TRANSPORT_RETRIES": 2,
+    "RETRY_BACKOFF": 0.5,
+    "INPUT_TOKEN_PADDING": 1024
+  },
+  "config_digest": "1cabb25f81526ecc7fcd9fe45e0fee3542da60e98331f5466620ea965c926b57",
+  "prompts": {
+    "EXTRACT_SYSTEM": {
+      "text": "You read part of a meeting transcript and list candidate decisions, action items and problems.\n\nOUTPUT FIELD TEMPLATE (schema 0.5.0). Every item you produce must follow it. Do not add, drop or rename fields.\n\ntype: one of  abstract | actions | decisions | problems\n\nfield                 applies to                 meaning\nid                    all                        stable item id, assigned by the system\ntext                  all                        the statement; keep conditions, scope and uncertainty\ntype                  all                        abstract | actions | decisions | problems\nreference             all                        sources that actually support the item: {source_type, source, locator};\n                                                 source_type is dialogue | participant_metadata | project_document.\n                                                 It is NOT a retrieval log.\nowner                 actions                    stable participant IDs of the assigned person(s), e.g. [\"MTD021PM\"];\n                                                 several IDs = joint ownership; null if not determinable\nowner_basis           actions                    explicit | inferred | ambiguous | missing\ndeadline              actions                    the deadline in the ORIGINAL wording, or null\ndeadline_basis        actions                    explicit | inferred | ambiguous | missing\nstatus                actions/decisions/problems state supported at the END of this meeting:\n                                                 actions: open | in_progress | completed | cancelled | deferred | unknown\n                                                 decisions: proposed | adopted | conditional | rejected | deferred | unknown\n                                                 problems: open | resolved | deferred | unknown\nprior_context_needed  actions/decisions/problems is an EARLIER meeting necessary to interpret or verify this item?\nrelated_items         actions/decisions/problems earlier items this one affects: [{id, relation}];\n                                                 relation: continues | updates | replaces | cancels | completes | resolves | reopens\n\nRULES\n- Owner: the person who announces an assignment is not automatically the owner. Do not expand \"we\", \"someone\" or\n  \"everyone\" to all participants. explicit/inferred => give participant IDs; ambiguous/missing => owner null.\n  Joint assignments (\"A and B will ...\") list all assigned IDs.\n- Deadline: keep the original wording (\"by next meeting\" is explicit even though it is relative). Never invent a\n  calendar date. Do not treat a work duration, test duration, expected email or start condition as a deadline.\n  explicit/inferred => non-null; missing => null.\n- Status: distinguish suggestions and conditional offers from accepted commitments. Do not infer completion only\n  because something was presented later. A later cancellation or completion is recorded in the LATER item through\n  related_items; never rewrite an earlier meeting's historical state.\n- reference vs prior_context_needed vs related_items:\n    reference = which sources support the annotation;\n    prior_context_needed = could the item be interpreted/verified WITHOUT an earlier meeting? (participant or\n      scenario lookup alone does not make it true);\n    related_items = which earlier action/decision/problem this one continues or changes, and how.\n- Use only information available by the end of the current meeting. Speaker letters (A/B/C/D) are not stable across\n  meetings: use the participant IDs and roles you are given.\n- Scenario/project documents help interpretation but never override who was actually assigned in the meeting.\n- If the evidence does not settle owner or deadline, say so (ambiguous / missing). Nobody can be asked: do not guess.\n\nTranscript lines look like:  [n] ROLE(PARTICIPANT_ID): text\nReturn candidates through the tool. For each candidate:\n- type: actions | decisions | problems (abstract is produced later).\n- text: one self-contained sentence in your own words, faithful to the dialogue.\n- evidence: the line numbers [n] that support it (all lines needed, including those that settle the owner/deadline).\n- owner_ids: participant IDs from the roster you are given (actions only), [] if none can be determined.\n- owner_cue / deadline_cue: the wording in the dialogue that points to the owner / deadline, or null.\n- owner_basis / deadline_basis / deadline / status: as in the template (provisional; they may be checked later).\nEXAMPLES of well-formed items (taken from other meetings, only to show the right size and wording):\nactions:\n- The industrial designer will develop the components concept for the next design phase.\n- The marketing expert will continue trendwatching to inform the marketing concept.\n- The Project Manager will put the meeting minutes in the shared documents folder.\ndecisions:\n- (adopted) Speech recognition will not be used.\n- (adopted) The group decided that their target marketing group would be mostly teenagers and young professionals.\n- (adopted) The remote will feature plastic buttons and casing, rather than rubber.\n- (deferred) The group put off building a stand or wall holder for the remote, because the locator function means the remote can be kept anywhere.\n- (proposed) The scroll wheel could be small and yellow, to match the corporate colours.\nproblems:\n- (resolved) Some of the group members had difficulties with their computers in opening their presentations.\n- (open) The desired price/feature tradeoff and management's willingness to fund a more innovative product remained unclear.\n\nWHAT TO LIST (be selective; precision matters as much as recall)\n- actions: follow-up work that a named role takes on for the period AFTER this meeting (before the next one),\n  e.g. \"the designer will work out ...\", \"the expert will research ...\", \"the manager will write up the minutes\".\n  They are usually stated when the work is assigned, often near the end. NOT actions: things done during the\n  meeting itself (presenting slides, fixing the computer, drawing now, moving the agenda along, saving a file),\n  questions, vague wishes, restating the task, or things already done. status: open (just assigned),\n  in_progress (already started), completed (finished in the meeting).\n- decisions: choices the group settles about the product or project (target price, features, scope, design\n  direction, target group, what to include or exclude, how responsibilities are split). Something the group\n  agreed on is status adopted; use proposed only if it was floated but not agreed, conditional if it depends on\n  something. One decision per distinct choice.\n- problems: genuine obstacles in the project work or team coordination (technical failures that disrupt the work,\n  missing information, instructions that came too late, disputes about who does what). NOT problems: remarks\n  about the transcript itself (markers like <gap> or <vocalsound>, readability), the language of the session,\n  or minor remarks about how the session runs. status: resolved if it was settled in the meeting, else open.\nA typical meeting record has about 1-5 actions, 2-9 decisions and 0-5 problems. If a chunk has nothing that fits,\nreturn an empty list. If a chunk repeats an item from the overlap region, listing it again is fine.",
+      "sha256": "1951e91682342a5c31536a3a0a5dec3a8619a8ede1ea0eecd9ac371a916826ff"
+    },
+    "CONSOLIDATE_SYSTEM": {
+      "text": "You receive candidate items extracted from consecutive chunks of ONE meeting. Produce the final\nlist for the meeting record: keep the substantive project-level items, merge duplicates and near-duplicates, and\ndrop items that only describe in-meeting procedure, small talk, or things too minor for a project record.\n\nOUTPUT FIELD TEMPLATE (schema 0.5.0). Every item you produce must follow it. Do not add, drop or rename fields.\n\ntype: one of  abstract | actions | decisions | problems\n\nfield                 applies to                 meaning\nid                    all                        stable item id, assigned by the system\ntext                  all                        the statement; keep conditions, scope and uncertainty\ntype                  all                        abstract | actions | decisions | problems\nreference             all                        sources that actually support the item: {source_type, source, locator};\n                                                 source_type is dialogue | participant_metadata | project_document.\n                                                 It is NOT a retrieval log.\nowner                 actions                    stable participant IDs of the assigned person(s), e.g. [\"MTD021PM\"];\n                                                 several IDs = joint ownership; null if not determinable\nowner_basis           actions                    explicit | inferred | ambiguous | missing\ndeadline              actions                    the deadline in the ORIGINAL wording, or null\ndeadline_basis        actions                    explicit | inferred | ambiguous | missing\nstatus                actions/decisions/problems state supported at the END of this meeting:\n                                                 actions: open | in_progress | completed | cancelled | deferred | unknown\n                                                 decisions: proposed | adopted | conditional | rejected | deferred | unknown\n                                                 problems: open | resolved | deferred | unknown\nprior_context_needed  actions/decisions/problems is an EARLIER meeting necessary to interpret or verify this item?\nrelated_items         actions/decisions/problems earlier items this one affects: [{id, relation}];\n                                                 relation: continues | updates | replaces | cancels | completes | resolves | reopens\n\nEXAMPLES of well-formed items (taken from other meetings, only to show the right size and wording):\nactions:\n- The industrial designer will develop the components concept for the next design phase.\n- The marketing expert will continue trendwatching to inform the marketing concept.\n- The Project Manager will put the meeting minutes in the shared documents folder.\ndecisions:\n- (adopted) Speech recognition will not be used.\n- (adopted) The group decided that their target marketing group would be mostly teenagers and young professionals.\n- (adopted) The remote will feature plastic buttons and casing, rather than rubber.\n- (deferred) The group put off building a stand or wall holder for the remote, because the locator function means the remote can be kept anywhere.\n- (proposed) The scroll wheel could be small and yellow, to match the corporate colours.\nproblems:\n- (resolved) Some of the group members had difficulties with their computers in opening their presentations.\n- (open) The desired price/feature tradeoff and management's willingness to fund a more innovative product remained unclear.\n\nFor every kept item return the indexes of the candidates it merges (members) and one clear, self-contained text that\npreserves conditions and scope. Do not invent content that is not in the candidates. The text is a plain sentence:\nnever put candidate indexes or brackets like [12, 15] into it.\n\nHOW MANY: a meeting record is short. Typically 2-4 actions, 3-6 decisions and 1-3 problems; never more than 5\nactions, 7 decisions or 4 problems. Fewer is fine if the meeting had fewer. Within each type, list the most\nimportant items first (the ones a project manager would put in the minutes).\n\nTYPE: decide the type from what the item is, not from the candidate's label.\n- actions: a named role or person takes on work to be done AFTER this meeting (\"the designer will work out ...\").\n  A statement about what the product will be or have (\"the remote will have a hatch door\", \"we will use\n  batteries\") is a decision, not an action. One action per role and task; merge small steps of the same task.\n- decisions: a choice the group agreed on (or explicitly left as proposed / conditional) about the product or the\n  project. Several details of the same component or choice form ONE decision.\n- problems: an obstacle or concern the participants treated as a problem for the project or team work\n  (including equipment trouble that held up the work). An open question that simply has not been decided yet is\n  not a problem unless the participants raised it as a concern.\n\nDROP (these are not in a project record):\n- in-meeting procedure: agenda, order of presentations, who speaks next, time keeping, saving or sending a file\n  during the meeting, using the pen or whiteboard, \"we will work from top to bottom\";\n- passing suggestions nobody took up, jokes, and restatements of something already listed;\n- generic follow-ups with no specific task (\"assign owners and next steps\", \"the team will finalise things\");\n- small details already covered by a broader item you keep.",
+      "sha256": "e9bf6902cf04f1d3dec5c458da13edbf0faf0ae04175c2ec6ffa667e64cb3577"
+    },
+    "DECISION_CONSOLIDATE_SYSTEM": {
+      "text": "You receive candidate items extracted from consecutive chunks of ONE meeting. Produce the final\nlist for the meeting record: keep the substantive project-level items, merge duplicates and near-duplicates, and\ndrop items that only describe in-meeting procedure, small talk, or things too minor for a project record.\n\nOUTPUT FIELD TEMPLATE (schema 0.5.0). Every item you produce must follow it. Do not add, drop or rename fields.\n\ntype: one of  abstract | actions | decisions | problems\n\nfield                 applies to                 meaning\nid                    all                        stable item id, assigned by the system\ntext                  all                        the statement; keep conditions, scope and uncertainty\ntype                  all                        abstract | actions | decisions | problems\nreference             all                        sources that actually support the item: {source_type, source, locator};\n                                                 source_type is dialogue | participant_metadata | project_document.\n                                                 It is NOT a retrieval log.\nowner                 actions                    stable participant IDs of the assigned person(s), e.g. [\"MTD021PM\"];\n                                                 several IDs = joint ownership; null if not determinable\nowner_basis           actions                    explicit | inferred | ambiguous | missing\ndeadline              actions                    the deadline in the ORIGINAL wording, or null\ndeadline_basis        actions                    explicit | inferred | ambiguous | missing\nstatus                actions/decisions/problems state supported at the END of this meeting:\n                                                 actions: open | in_progress | completed | cancelled | deferred | unknown\n                                                 decisions: proposed | adopted | conditional | rejected | deferred | unknown\n                                                 problems: open | resolved | deferred | unknown\nprior_context_needed  actions/decisions/problems is an EARLIER meeting necessary to interpret or verify this item?\nrelated_items         actions/decisions/problems earlier items this one affects: [{id, relation}];\n                                                 relation: continues | updates | replaces | cancels | completes | resolves | reopens\n\nEXAMPLES of well-formed items (taken from other meetings, only to show the right size and wording):\nactions:\n- The industrial designer will develop the components concept for the next design phase.\n- The marketing expert will continue trendwatching to inform the marketing concept.\n- The Project Manager will put the meeting minutes in the shared documents folder.\ndecisions:\n- (adopted) Speech recognition will not be used.\n- (adopted) The group decided that their target marketing group would be mostly teenagers and young professionals.\n- (adopted) The remote will feature plastic buttons and casing, rather than rubber.\n- (deferred) The group put off building a stand or wall holder for the remote, because the locator function means the remote can be kept anywhere.\n- (proposed) The scroll wheel could be small and yellow, to match the corporate colours.\nproblems:\n- (resolved) Some of the group members had difficulties with their computers in opening their presentations.\n- (open) The desired price/feature tradeoff and management's willingness to fund a more innovative product remained unclear.\n\nFor every kept item return the indexes of the candidates it merges (members) and one clear, self-contained text that\npreserves conditions and scope. Do not invent content that is not in the candidates. The text is a plain sentence:\nnever put candidate indexes or brackets like [12, 15] into it.\n\nHOW MANY: a meeting record is short. Typically 2-4 actions, 3-6 decisions and 1-3 problems; never more than 5\nactions, 7 decisions or 4 problems. Fewer is fine if the meeting had fewer. Within each type, list the most\nimportant items first (the ones a project manager would put in the minutes).\n\nTYPE: decide the type from what the item is, not from the candidate's label.\n- actions: a named role or person takes on work to be done AFTER this meeting (\"the designer will work out ...\").\n  A statement about what the product will be or have (\"the remote will have a hatch door\", \"we will use\n  batteries\") is a decision, not an action. One action per role and task; merge small steps of the same task.\n- decisions: one independently testable choice the group agreed on (or explicitly left as proposed /\n  conditional) about the product or project. Merge repeated statements of the SAME choice. Sharing a component,\n  topic, speaker or paragraph does not make different choices duplicates: feature inclusion, target audience,\n  control layout and product scope are different choices. Keep their conditions and status separate. Do not\n  compress independent choices into a broad sentence to meet the typical item count. Candidate members may\n  support more than one decision if a candidate itself contains several independent choices.\n- problems: an obstacle or concern the participants treated as a problem for the project or team work\n  (including equipment trouble that held up the work). An open question that simply has not been decided yet is\n  not a problem unless the participants raised it as a concern.\n\nDROP (these are not in a project record):\n- in-meeting procedure: agenda, order of presentations, who speaks next, time keeping, saving or sending a file\n  during the meeting, using the pen or whiteboard, \"we will work from top to bottom\";\n- passing suggestions nobody took up, jokes, and restatements of something already listed;\n- generic follow-ups with no specific task (\"assign owners and next steps\", \"the team will finalise things\");\n- small details already covered by a broader item you keep.",
+      "sha256": "85008bc69443ad5fadc2bda7319fe38c63773af646ff7f8012e8826bcfc8227a"
+    },
+    "AGENT_SYSTEM": {
+      "text": "You verify ONE item from a meeting before it goes into the meeting record. The item was flagged\nbecause something about it is unclear. Decide what to look up, then call finish.\n\nOUTPUT FIELD TEMPLATE (schema 0.5.0). Every item you produce must follow it. Do not add, drop or rename fields.\n\ntype: one of  abstract | actions | decisions | problems\n\nfield                 applies to                 meaning\nid                    all                        stable item id, assigned by the system\ntext                  all                        the statement; keep conditions, scope and uncertainty\ntype                  all                        abstract | actions | decisions | problems\nreference             all                        sources that actually support the item: {source_type, source, locator};\n                                                 source_type is dialogue | participant_metadata | project_document.\n                                                 It is NOT a retrieval log.\nowner                 actions                    stable participant IDs of the assigned person(s), e.g. [\"MTD021PM\"];\n                                                 several IDs = joint ownership; null if not determinable\nowner_basis           actions                    explicit | inferred | ambiguous | missing\ndeadline              actions                    the deadline in the ORIGINAL wording, or null\ndeadline_basis        actions                    explicit | inferred | ambiguous | missing\nstatus                actions/decisions/problems state supported at the END of this meeting:\n                                                 actions: open | in_progress | completed | cancelled | deferred | unknown\n                                                 decisions: proposed | adopted | conditional | rejected | deferred | unknown\n                                                 problems: open | resolved | deferred | unknown\nprior_context_needed  actions/decisions/problems is an EARLIER meeting necessary to interpret or verify this item?\nrelated_items         actions/decisions/problems earlier items this one affects: [{id, relation}];\n                                                 relation: continues | updates | replaces | cancels | completes | resolves | reopens\n\nRULES\n- Owner: the person who announces an assignment is not automatically the owner. Do not expand \"we\", \"someone\" or\n  \"everyone\" to all participants. explicit/inferred => give participant IDs; ambiguous/missing => owner null.\n  Joint assignments (\"A and B will ...\") list all assigned IDs.\n- Deadline: keep the original wording (\"by next meeting\" is explicit even though it is relative). Never invent a\n  calendar date. Do not treat a work duration, test duration, expected email or start condition as a deadline.\n  explicit/inferred => non-null; missing => null.\n- Status: distinguish suggestions and conditional offers from accepted commitments. Do not infer completion only\n  because something was presented later. A later cancellation or completion is recorded in the LATER item through\n  related_items; never rewrite an earlier meeting's historical state.\n- reference vs prior_context_needed vs related_items:\n    reference = which sources support the annotation;\n    prior_context_needed = could the item be interpreted/verified WITHOUT an earlier meeting? (participant or\n      scenario lookup alone does not make it true);\n    related_items = which earlier action/decision/problem this one continues or changes, and how.\n- Use only information available by the end of the current meeting. Speaker letters (A/B/C/D) are not stable across\n  meetings: use the participant IDs and roles you are given.\n- Scenario/project documents help interpretation but never override who was actually assigned in the meeting.\n- If the evidence does not settle owner or deadline, say so (ambiguous / missing). Nobody can be asked: do not guess.\n\nTOOLS (read-only; you may use at most {max_calls} lookups for this item, then you must call finish):\n- search_dialogue(query, scope): keyword search in the current meeting (\"current\") or earlier meetings of this series (\"prior\").\n- read_dialogue(meeting_id, da_id, window): read the dialogue around one line.\n- get_participants(meeting_id): speaker letters, participant IDs and roles.\n- get_prior_items(query, item_type): items the system recorded for earlier meetings of this series (with their IDs).\n- search_project_doc(query): AMI scenario / project documents.\n- finish(...): submit the final fields for this item.\n\nHOW TO WORK\n- Pick the lookup that answers the flag. Flags: OWNER_UNRESOLVED, JOINT_OWNER_CHECK, DEADLINE_CHECK, POSSIBLE_PRIOR,\n  STATUS_CHECK, WEAK_EVIDENCE. One lookup at a time; stop as soon as you can decide.\n- If get_prior_items shows nothing similar, do not keep searching: finish.\n- Relations: updates = a revised or refined version of an earlier item; replaces/cancels = the earlier one no\n  longer holds; continues = the same item carried on unchanged; completes/resolves = it is finished/settled now.\n- If this item continues or changes an earlier item, set related_items with that item's ID (from get_prior_items)\n  and the right relation, and set prior_context_needed accordingly. Otherwise related_items = [].\n- In finish, evidence_da_ids must list the dialogue lines (full IDs) you actually relied on, from this or earlier\n  meetings. Set used_participant_lookup=true only if you relied on participant metadata.\n- Nobody can answer questions. If owner or deadline stays unclear after looking, use ambiguous/missing with null.\n",
+      "sha256": "3ada3ed619ad7ac3a241b047b97fa682d83b90d2bf1d560c70b7d28fa493d3f9"
+    },
+    "P2_SYSTEM": {
+      "text": "You check ONE provisional meeting item. Code, not your labels alone, controls acceptance and tools.\nOUTPUT FIELD TEMPLATE (schema 0.5.0). Every item you produce must follow it. Do not add, drop or rename fields.\n\ntype: one of  abstract | actions | decisions | problems\n\nfield                 applies to                 meaning\nid                    all                        stable item id, assigned by the system\ntext                  all                        the statement; keep conditions, scope and uncertainty\ntype                  all                        abstract | actions | decisions | problems\nreference             all                        sources that actually support the item: {source_type, source, locator};\n                                                 source_type is dialogue | participant_metadata | project_document.\n                                                 It is NOT a retrieval log.\nowner                 actions                    stable participant IDs of the assigned person(s), e.g. [\"MTD021PM\"];\n                                                 several IDs = joint ownership; null if not determinable\nowner_basis           actions                    explicit | inferred | ambiguous | missing\ndeadline              actions                    the deadline in the ORIGINAL wording, or null\ndeadline_basis        actions                    explicit | inferred | ambiguous | missing\nstatus                actions/decisions/problems state supported at the END of this meeting:\n                                                 actions: open | in_progress | completed | cancelled | deferred | unknown\n                                                 decisions: proposed | adopted | conditional | rejected | deferred | unknown\n                                                 problems: open | resolved | deferred | unknown\nprior_context_needed  actions/decisions/problems is an EARLIER meeting necessary to interpret or verify this item?\nrelated_items         actions/decisions/problems earlier items this one affects: [{id, relation}];\n                                                 relation: continues | updates | replaces | cancels | completes | resolves | reopens\n\nRULES\n- Owner: the person who announces an assignment is not automatically the owner. Do not expand \"we\", \"someone\" or\n  \"everyone\" to all participants. explicit/inferred => give participant IDs; ambiguous/missing => owner null.\n  Joint assignments (\"A and B will ...\") list all assigned IDs.\n- Deadline: keep the original wording (\"by next meeting\" is explicit even though it is relative). Never invent a\n  calendar date. Do not treat a work duration, test duration, expected email or start condition as a deadline.\n  explicit/inferred => non-null; missing => null.\n- Status: distinguish suggestions and conditional offers from accepted commitments. Do not infer completion only\n  because something was presented later. A later cancellation or completion is recorded in the LATER item through\n  related_items; never rewrite an earlier meeting's historical state.\n- reference vs prior_context_needed vs related_items:\n    reference = which sources support the annotation;\n    prior_context_needed = could the item be interpreted/verified WITHOUT an earlier meeting? (participant or\n      scenario lookup alone does not make it true);\n    related_items = which earlier action/decision/problem this one continues or changes, and how.\n- Use only information available by the end of the current meeting. Speaker letters (A/B/C/D) are not stable across\n  meetings: use the participant IDs and roles you are given.\n- Scenario/project documents help interpretation but never override who was actually assigned in the meeting.\n- If the evidence does not settle owner or deadline, say so (ambiguous / missing). Nobody can be asked: do not guess.\n\n\nThe controller alternates an assess_item call with an allowed lookup. Each assessment submits ALL proposed fields,\nsix checks (statement, owner, deadline, status, conflict, relation), and a recommended next_action.\nUse only dialogue actually included in observed_dialogue or returned by a lookup in this conversation.\nEvery pass needs exact short quotes with full dialogue IDs. Do not cite unread lines, invent quotes, or treat a\nparticipant roster as evidence of an assignment. Use the actual speaker/role mappings for this meeting.\n\nCHECKS\n- statement: does the dialogue support this exact substantive action/decision/problem, including its scope?\n  For Decisions, reject agenda, generic procedure and unaccepted brainstorming. peer_items lists earlier items\n  in this run: flag a true duplicate of the same choice, preserving genuinely different scope or constraints.\n- owner/deadline: does current dialogue support the claimed person and original deadline wording? An announcer\n  is not necessarily the owner. Missing or ambiguous values are uncertain and should be left null. These checks\n  are not_applicable only for non-actions.\n- status: is the proposed end-of-current-meeting status supported, preserving conditions and uncertainty?\n- conflict: pass only when there is no unresolved contradiction in the available evidence; otherwise identify\n  affected fields (statement, owner, deadline, status, related_items) and cite the conflicting lines.\n- relation: to assert a change to an earlier item, retrieve its recorded ID AND read its supporting dialogue.\n  Cite both current change evidence and that prior item's evidence. A search hit alone does not establish an\n  update/cancellation/completion. Use not_applicable only when earlier context is unavailable or no earlier\n  relationship needs checking. Do not rewrite an earlier meeting's historical state.\n\nresult is pass, fail, uncertain or not_applicable. Give a short evidence explanation, not private reasoning.\nNEVER use not_applicable for statement, status or conflict. For conflict, use pass with current dialogue quotes\nwhen no contradiction was found; use fail/uncertain with affected fields otherwise. For an Action, missing owner\nor deadline is uncertain, not not_applicable: recommend request_clarification if further evidence cannot settle it.\nThe proposed fields include owner, owner_basis, deadline, deadline_basis even for non-actions (null/missing).\nUse [] related_items when no relationship is established. fields.evidence_da_ids must be read, real dialogue IDs.\nThe root object contains fields and checks, plus optional next_action/reason. Keep evidence_da_ids and\nused_participant_lookup INSIDE fields, never at the root. checks must contain all six named checks, never {}.\n\nNEXT ACTION\naccept = all required checks pass. retrieve = lookup can fill an evidence gap; choose a permitted lookup next.\nsearch_again = the first lookup was unhelpful; shorten/change the query or scope. Repeating the same keywords is\nnot a new search. request_clarification = the available evidence cannot settle an important field or conflict.\nstop = further work is unhelpful. Unresolved checks remain pending; never guess to obtain acceptance.\nThe tool response states the controller's actual decision; follow it. Correct any schema errors named in the\nresponse before submitting another assessment. Queries and the choice of lookup remain yours.\nClarification requests are saved for human review; no person answers during this run.\n",
+      "sha256": "67f92cc5f04a135cde50322813402895b79742b54df20efc7293d3db1a1a3968"
+    },
+    "ABSTRACT_SYSTEM": {
+      "text": "You write the abstract part of a meeting record: 3 to 6 short sentences summarising what the\nmeeting covered, based ONLY on the items provided. Cite the items each sentence rests on by index.\n\nOUTPUT FIELD TEMPLATE (schema 0.5.0). Every item you produce must follow it. Do not add, drop or rename fields.\n\ntype: one of  abstract | actions | decisions | problems\n\nfield                 applies to                 meaning\nid                    all                        stable item id, assigned by the system\ntext                  all                        the statement; keep conditions, scope and uncertainty\ntype                  all                        abstract | actions | decisions | problems\nreference             all                        sources that actually support the item: {source_type, source, locator};\n                                                 source_type is dialogue | participant_metadata | project_document.\n                                                 It is NOT a retrieval log.\nowner                 actions                    stable participant IDs of the assigned person(s), e.g. [\"MTD021PM\"];\n                                                 several IDs = joint ownership; null if not determinable\nowner_basis           actions                    explicit | inferred | ambiguous | missing\ndeadline              actions                    the deadline in the ORIGINAL wording, or null\ndeadline_basis        actions                    explicit | inferred | ambiguous | missing\nstatus                actions/decisions/problems state supported at the END of this meeting:\n                                                 actions: open | in_progress | completed | cancelled | deferred | unknown\n                                                 decisions: proposed | adopted | conditional | rejected | deferred | unknown\n                                                 problems: open | resolved | deferred | unknown\nprior_context_needed  actions/decisions/problems is an EARLIER meeting necessary to interpret or verify this item?\nrelated_items         actions/decisions/problems earlier items this one affects: [{id, relation}];\n                                                 relation: continues | updates | replaces | cancels | completes | resolves | reopens\n\n",
+      "sha256": "369c5bd89a7def1fec884c53498e502ecaff7c0eb596c3e4bf86fb85513c29d6"
+    },
+    "ACTION_PASS_NOTE": {
+      "text": "List ONLY actions: follow-up work that a person takes on for the period AFTER this meeting. You see the whole meeting. Go through the roster one role at a time and ask: what did this person agree, or get asked, to do before the next meeting (prepare, research, design, draw, write, send, report, finish)? Assignments are usually settled late, when the manager wraps up and says what each person does next: read the last part of the meeting line by line, but also catch tasks taken on earlier. A task given to everyone (e.g. filling in a questionnaire) is still an action. Joint tasks list every assigned person. Use the roster IDs. Do not list decisions, problems, or work done during the meeting itself.",
+      "sha256": "5bf0fe88bf44ba498282aa38b04124a72aeec30d476f78c703fc20dece90b127"
+    },
+    "CHUNK_NOTE": {
+      "text": "List only decisions and problems for this chunk (actions are collected in a separate pass).",
+      "sha256": "1c229ab1d35a4781719d00c3e7c4fdc52641e816747f96cb1dcd02a7a804bb32"
+    },
+    "B0_NOTE": {
+      "text": "List actions, decisions and problems.",
+      "sha256": "721988daea1f80af8eaafa7961b5ad3643620a5f4b2c0ced0629509544b1979d"
+    }
+  },
+  "environment": {
+    "python": "3.12.14",
+    "packages": {
+      "openai": "3.39.0",
+      "anthropic": null,
+      "jsonschema": "4.26.0"
+    }
+  },
+  "items": [
+    {
+      "item_key": "TS3006a#0",
+      "state": "pending",
+      "recordable": true,
+      "fields": {
+        "status": "open",
+        "prior_context_needed": false,
+        "related_items": [],
+        "owner": [
+          "MTD022ID"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "reference": [
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3006a.json",
+            "locator": "TS3006a.C.dialog-act.vkaraisk.117"
+          }
+        ]
+      },
+      "draft_fields": {
+        "owner": [
+          "MTD022ID"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "open",
+        "prior_context_needed": false,
+        "related_items": [],
+        "evidence_da_ids": [
+          "TS3006a.C.dialog-act.vkaraisk.117",
+          "TS3006a.C.dialog-act.vkaraisk.118"
+        ],
+        "used_participant_lookup": false
+      },
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue explicitly states ID will work on conceptual design in the near term; scope matches item",
+          "quotes": [
+            {
+              "da_id": "TS3006a.C.dialog-act.vkaraisk.117",
+              "quote": "I am gonna work on the conceptual design already"
+            }
+          ],
+          "fields": [
+            "statement",
+            "owner",
+            "deadline",
+            "status"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Owner ID explicitly announced in the item as MTD022ID; dialogue supports assignment to ID",
+          "quotes": [
+            {
+              "da_id": "TS3006a.C.dialog-act.vkaraisk.117",
+              "quote": "I am gonna work on the conceptual design already"
+            }
+          ],
+          "fields": [
+            "owner",
+            "deadline",
+            "status"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "deadline_unresolved",
+          "quotes": [
+            {
+              "da_id": "TS3006a.C.dialog-act.vkaraisk.117",
+              "quote": "I am gonna work on the conceptual design already"
+            }
+          ],
+          "fields": [
+            "deadline",
+            "status"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Status open matches item; text shows ongoing assignment",
+          "quotes": [
+            {
+              "da_id": "TS3006a.C.dialog-act.vkaraisk.117",
+              "quote": "I am gonna work on the conceptual design already"
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions between item and dialogue; no conflicting statements found",
+          "quotes": [
+            {
+              "da_id": "TS3006a.C.dialog-act.vkaraisk.117",
+              "quote": "I am gonna work on the conceptual design already"
+            }
+          ],
+          "fields": [
+            "statement",
+            "owner",
+            "deadline",
+            "status"
+          ]
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No prior item to relate; none provided",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "unresolved_fields": [
+        "deadline"
+      ],
+      "history": [
+        {
+          "item": "TS3006a#0",
+          "step": 1,
+          "flags": [],
+          "action": "assess_item",
+          "outcome": "checked",
+          "checks": {
+            "statement": {
+              "result": "pass",
+              "reason": "Dialogue explicitly states ID will work on conceptual design in the near term; scope matches item",
+              "quotes": [
+                {
+                  "da_id": "TS3006a.C.dialog-act.vkaraisk.117",
+                  "quote": "I am gonna work on the conceptual design already"
+                }
+              ],
+              "fields": [
+                "statement",
+                "owner",
+                "deadline",
+                "status"
+              ]
+            },
+            "owner": {
+              "result": "pass",
+              "reason": "Owner ID explicitly announced in the item as MTD022ID; dialogue supports assignment to ID",
+              "quotes": [
+                {
+                  "da_id": "TS3006a.C.dialog-act.vkaraisk.117",
+                  "quote": "I am gonna work on the conceptual design already"
+                }
+              ],
+              "fields": [
+                "owner",
+                "deadline",
+                "status"
+              ]
+            },
+            "deadline": {
+              "result": "uncertain",
+              "reason": "deadline_unresolved",
+              "quotes": [
+                {
+                  "da_id": "TS3006a.C.dialog-act.vkaraisk.117",
+                  "quote": "I am gonna work on the conceptual design already"
+                }
+              ],
+              "fields": [
+                "deadline",
+                "status"
+              ]
+            },
+            "status": {
+              "result": "pass",
+              "reason": "Status open matches item; text shows ongoing assignment",
+              "quotes": [
+                {
+                  "da_id": "TS3006a.C.dialog-act.vkaraisk.117",
+                  "quote": "I am gonna work on the conceptual design already"
+                }
+              ],
+              "fields": [
+                "status"
+              ]
+            },
+            "conflict": {
+              "result": "pass",
+              "reason": "No contradictions between item and dialogue; no conflicting statements found",
+              "quotes": [
+                {
+                  "da_id": "TS3006a.C.dialog-act.vkaraisk.117",
+                  "quote": "I am gonna work on the conceptual design already"
+                }
+              ],
+              "fields": [
+                "statement",
+                "owner",
+                "deadline",
+                "status"
+              ]
+            },
+            "relation": {
+              "result": "not_applicable",
+              "reason": "No prior item to relate; none provided",
+              "quotes": [],
+              "fields": [
+                "related_items"
+              ]
+            }
+          },
+          "decision": "retrieve",
+          "reason": "unresolved_checks",
+          "requested_action": "accept",
+          "proposed_fields": {
+            "owner": [
+              "MTD022ID"
+            ],
+            "owner_basis": "explicit",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": [],
+            "evidence_da_ids": [
+              "TS3006a.C.dialog-act.vkaraisk.117",
+              "TS3006a.C.dialog-act.vkaraisk.118"
+            ],
+            "used_participant_lookup": false
+          }
+        },
+        {
+          "item": "TS3006a#0",
+          "step": 2,
+          "flags": [],
+          "action": "read_dialogue",
+          "outcome": "lookup",
+          "decision": "retrieve",
+          "args": {
+            "meeting_id": "TS3006a",
+            "da_id": "TS3006a.C.dialog-act.vkaraisk.117",
+            "window": 5
+          },
+          "tool_result": {
+            "results": [
+              {
+                "da_id": "TS3006a.C.dialog-act.vkaraisk.116",
+                "participant": "MTD022ID",
+                "role": "ID",
+                "text": "Yeah okay . We'll do our best ."
+              },
+              {
+                "da_id": "TS3006a.D.dialog-act.vkaraisk.148",
+                "participant": "MTD024ME",
+                "role": "ME",
+                "text": "Okay ."
+              },
+              {
+                "da_id": "TS3006a.B.dialog-act.vkaraisk.93",
+                "participant": "MTD023UID",
+                "role": "UI",
+                "text": "Okay ."
+              },
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.218",
+                "participant": "MTD021PM",
+                "role": "PM",
+                "text": "I depend on you ."
+              },
+              {
+                "da_id": "TS3006a.D.dialog-act.vkaraisk.149",
+                "participant": "MTD024ME",
+                "role": "ME",
+                "text": "<vocalsound> Better make it <disfmarker> <vocalsound>"
+              },
+              {
+                "da_id": "TS3006a.C.dialog-act.vkaraisk.117",
+                "participant": "MTD022ID",
+                "role": "ID",
+                "text": "I am gonna work on the conceptual design already"
+              },
+              {
+                "da_id": "TS3006a.C.dialog-act.vkaraisk.118",
+                "participant": "MTD022ID",
+                "role": "ID",
+                "text": "'cause yeah it's fairly important to know what kind of components we want to put in ."
+              },
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.219",
+                "participant": "MTD021PM",
+                "role": "PM",
+                "text": "Yeah ? If you can mix it it's okay ."
+              },
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.220",
+                "participant": "MTD021PM",
+                "role": "PM",
+                "text": "Mm-hmm . Yeah ."
+              },
+              {
+                "da_id": "TS3006a.C.dialog-act.vkaraisk.119",
+                "participant": "MTD022ID",
+                "role": "ID",
+                "text": "Do we <disfmarker>"
+              },
+              {
+                "da_id": "TS3006a.C.dialog-act.vkaraisk.120",
+                "participant": "MTD022ID",
+                "role": "ID",
+                "text": "I mean , is it gonna be a multimedia control centre ?"
+              }
+            ]
+          },
+          "new_info": true
+        },
+        {
+          "item": "TS3006a#0",
+          "step": 3,
+          "flags": [],
+          "action": "assess_item",
+          "outcome": "checked",
+          "checks": {
+            "statement": {
+              "result": "pass",
+              "reason": "Dialogue explicitly states ID will work on conceptual design in the near term; scope matches item",
+              "quotes": [
+                {
+                  "da_id": "TS3006a.C.dialog-act.vkaraisk.117",
+                  "quote": "I am gonna work on the conceptual design already"
+                }
+              ],
+              "fields": [
+                "statement",
+                "owner",
+                "deadline",
+                "status"
+              ]
+            },
+            "owner": {
+              "result": "pass",
+              "reason": "Owner ID explicitly announced in the item as MTD022ID; dialogue supports assignment to ID",
+              "quotes": [
+                {
+                  "da_id": "TS3006a.C.dialog-act.vkaraisk.117",
+                  "quote": "I am gonna work on the conceptual design already"
+                }
+              ],
+              "fields": [
+                "owner",
+                "deadline",
+                "status"
+              ]
+            },
+            "deadline": {
+              "result": "uncertain",
+              "reason": "deadline_unresolved",
+              "quotes": [
+                {
+                  "da_id": "TS3006a.C.dialog-act.vkaraisk.117",
+                  "quote": "I am gonna work on the conceptual design already"
+                }
+              ],
+              "fields": [
+                "deadline",
+                "status"
+              ]
+            },
+            "status": {
+              "result": "pass",
+              "reason": "Status open matches item; text shows ongoing assignment",
+              "quotes": [
+                {
+                  "da_id": "TS3006a.C.dialog-act.vkaraisk.117",
+                  "quote": "I am gonna work on the conceptual design already"
+                }
+              ],
+              "fields": [
+                "status"
+              ]
+            },
+            "conflict": {
+              "result": "pass",
+              "reason": "No contradictions between item and dialogue; no conflicting statements found",
+              "quotes": [
+                {
+                  "da_id": "TS3006a.C.dialog-act.vkaraisk.117",
+                  "quote": "I am gonna work on the conceptual design already"
+                }
+              ],
+              "fields": [
+                "statement",
+                "owner",
+                "deadline",
+                "status"
+              ]
+            },
+            "relation": {
+              "result": "not_applicable",
+              "reason": "No prior item to relate; none provided",
+              "quotes": [],
+              "fields": [
+                "related_items"
+              ]
+            }
+          },
+          "decision": "search_again",
+          "reason": "unresolved_checks",
+          "requested_action": "accept",
+          "proposed_fields": {
+            "owner": [
+              "MTD022ID"
+            ],
+            "owner_basis": "explicit",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": [],
+            "evidence_da_ids": [
+              "TS3006a.C.dialog-act.vkaraisk.117",
+              "TS3006a.C.dialog-act.vkaraisk.118"
+            ],
+            "used_participant_lookup": false
+          }
+        },
+        {
+          "item": "TS3006a#0",
+          "step": 4,
+          "flags": [],
+          "action": "search_dialogue",
+          "outcome": "lookup",
+          "decision": "search_again",
+          "args": {
+            "query": "I am gonna work on the conceptual design already",
+            "scope": "current"
+          },
+          "tool_result": {
+            "results": [
+              {
+                "da_id": "TS3006a.C.dialog-act.vkaraisk.117",
+                "meeting_id": "TS3006a",
+                "participant": "MTD022ID",
+                "role": "ID",
+                "text": "I am gonna work on the conceptual design already",
+                "score": 25.17
+              },
+              {
+                "da_id": "TS3006a.C.dialog-act.vkaraisk.44",
+                "meeting_id": "TS3006a",
+                "participant": "MTD022ID",
+                "role": "ID",
+                "text": "How am I gonna do this ? Um <disfmarker>",
+                "score": 9.08
+              },
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.147",
+                "meeting_id": "TS3006a",
+                "participant": "MTD021PM",
+                "role": "PM",
+                "text": "Am I correct ?",
+                "score": 8.73
+              },
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.199",
+                "meeting_id": "TS3006a",
+                "participant": "MTD021PM",
+                "role": "PM",
+                "text": "Uh the use of the Industrial Designer can work on the working design , etcetera etcetera .",
+                "score": 7.95
+              },
+              {
+                "da_id": "TS3006a.C.dialog-act.vkaraisk.88",
+                "meeting_id": "TS3006a",
+                "participant": "MTD022ID",
+                "role": "ID",
+                "text": "I had to focus on the working design , which you said .",
+                "score": 7.35
+              }
+            ]
+          },
+          "new_info": true
+        },
+        {
+          "item": "TS3006a#0",
+          "step": 5,
+          "flags": [],
+          "action": "assess_item",
+          "outcome": "checked",
+          "checks": {
+            "statement": {
+              "result": "pass",
+              "reason": "Dialogue explicitly states ID will work on conceptual design in the near term; scope matches item",
+              "quotes": [
+                {
+                  "da_id": "TS3006a.C.dialog-act.vkaraisk.117",
+                  "quote": "I am gonna work on the conceptual design already"
+                }
+              ],
+              "fields": [
+                "statement",
+                "owner",
+                "deadline",
+                "status"
+              ]
+            },
+            "owner": {
+              "result": "pass",
+              "reason": "Owner ID explicitly announced in the item as MTD022ID; dialogue supports assignment to ID",
+              "quotes": [
+                {
+                  "da_id": "TS3006a.C.dialog-act.vkaraisk.117",
+                  "quote": "I am gonna work on the conceptual design already"
+                }
+              ],
+              "fields": [
+                "owner",
+                "deadline",
+                "status"
+              ]
+            },
+            "deadline": {
+              "result": "uncertain",
+              "reason": "deadline_unresolved",
+              "quotes": [
+                {
+                  "da_id": "TS3006a.C.dialog-act.vkaraisk.117",
+                  "quote": "I am gonna work on the conceptual design already"
+                }
+              ],
+              "fields": [
+                "deadline",
+                "status"
+              ]
+            },
+            "status": {
+              "result": "pass",
+              "reason": "Status open matches item; text shows ongoing assignment",
+              "quotes": [
+                {
+                  "da_id": "TS3006a.C.dialog-act.vkaraisk.117",
+                  "quote": "I am gonna work on the conceptual design already"
+                }
+              ],
+              "fields": [
+                "status"
+              ]
+            },
+            "conflict": {
+              "result": "pass",
+              "reason": "No contradictions between item and dialogue; no conflicting statements found",
+              "quotes": [
+                {
+                  "da_id": "TS3006a.C.dialog-act.vkaraisk.117",
+                  "quote": "I am gonna work on the conceptual design already"
+                }
+              ],
+              "fields": [
+                "statement",
+                "owner",
+                "deadline",
+                "status"
+              ]
+            },
+            "relation": {
+              "result": "not_applicable",
+              "reason": "No prior item to relate; none provided",
+              "quotes": [],
+              "fields": [
+                "related_items"
+              ]
+            }
+          },
+          "decision": "request_clarification",
+          "reason": "no_progress",
+          "requested_action": null,
+          "proposed_fields": {
+            "owner": [
+              "MTD022ID"
+            ],
+            "owner_basis": "explicit",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": [],
+            "evidence_da_ids": [
+              "TS3006a.C.dialog-act.vkaraisk.117",
+              "TS3006a.C.dialog-act.vkaraisk.118"
+            ],
+            "used_participant_lookup": false
+          }
+        },
+        {
+          "item": "TS3006a#0",
+          "step": 5,
+          "flags": [],
+          "action": "stop",
+          "outcome": "pending",
+          "termination_reason": "no_progress",
+          "unresolved_fields": [
+            "deadline"
+          ]
+        }
+      ],
+      "lookups": 2,
+      "termination_reason": "no_progress",
+      "clarifications": [
+        {
+          "request_id": "74487c886f8d3093",
+          "item_key": "TS3006a#0",
+          "record_id": null,
+          "field": "deadline",
+          "question": "What is the agreed deadline, in its original wording?",
+          "item_text": "The Industrial Designer will work on the conceptual design.",
+          "reason": "deadline_unresolved",
+          "evidence_da_ids": [
+            "TS3006a.C.dialog-act.vkaraisk.117"
+          ],
+          "available_evidence_da_ids": [
+            "TS3006a.C.dialog-act.vkaraisk.117",
+            "TS3006a.C.dialog-act.vkaraisk.118",
+            "TS3006a.C.dialog-act.vkaraisk.116",
+            "TS3006a.D.dialog-act.vkaraisk.148",
+            "TS3006a.B.dialog-act.vkaraisk.93",
+            "TS3006a.A.dialog-act.vkaraisk.218",
+            "TS3006a.D.dialog-act.vkaraisk.149",
+            "TS3006a.A.dialog-act.vkaraisk.219",
+            "TS3006a.A.dialog-act.vkaraisk.220",
+            "TS3006a.C.dialog-act.vkaraisk.119",
+            "TS3006a.C.dialog-act.vkaraisk.120",
+            "TS3006a.C.dialog-act.vkaraisk.44",
+            "TS3006a.A.dialog-act.vkaraisk.147",
+            "TS3006a.A.dialog-act.vkaraisk.199",
+            "TS3006a.C.dialog-act.vkaraisk.88"
+          ],
+          "status": "open",
+          "termination_reason": "no_progress"
+        }
+      ]
+    }
+  ],
+  "runtime_control": {
+    "limits": {
+      "calls": 80,
+      "tokens": 1000000,
+      "request_seconds": 300.0,
+      "meeting_seconds": 1200.0,
+      "inflight": 4,
+      "retries": 2,
+      "backoff": 0.5
+    },
+    "attempted_calls": 5,
+    "charged_tokens": 22106,
+    "unknown_usage_tokens": 0,
+    "reserved_tokens": 0,
+    "max_inflight_seen": 1,
+    "failure": null,
+    "attempts": [
+      {
+        "attempt": 0,
+        "stage": "p2_check",
+        "reserved_tokens": 46805,
+        "input_bound": 14805,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 3190,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 2540,
+        "output_tokens": 650
+      },
+      {
+        "attempt": 1,
+        "stage": "agent",
+        "reserved_tokens": 47160,
+        "input_bound": 15160,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 3321,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 2888,
+        "output_tokens": 433
+      },
+      {
+        "attempt": 2,
+        "stage": "p2_check",
+        "reserved_tokens": 52768,
+        "input_bound": 20768,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 4733,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 4018,
+        "output_tokens": 715
+      },
+      {
+        "attempt": 3,
+        "stage": "agent",
+        "reserved_tokens": 52628,
+        "input_bound": 20628,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 4980,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 4303,
+        "output_tokens": 677
+      },
+      {
+        "attempt": 4,
+        "stage": "p2_check",
+        "reserved_tokens": 58140,
+        "input_bound": 26140,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 5882,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 5301,
+        "output_tokens": 581
+      }
+    ],
+    "input_bound_method": "utf8_request_bytes_plus_padding",
+    "unknown_usage_policy": "charge_full_reservation"
+  },
+  "usage": {
+    "calls": 5,
+    "in": 19050,
+    "out": 3056,
+    "stages": {
+      "p2_check": {
+        "calls": 3,
+        "in": 11859,
+        "out": 1946
+      },
+      "agent": {
+        "calls": 2,
+        "in": 7191,
+        "out": 1110
+      }
+    }
+  },
+  "finished_at": "2026-10-27T19:13:35.784461+00:00",
+  "artifact_sha256": {
+    "agent.trace.jsonl": "c7dc9a3b7f95413f2ad43c1ccb17c1ddf228c1fdce716e5c8789364d5b37d901",
+    "inputs.json": "d31274cf2951bf81a9821648ac2c9b6cda6bc7a4efa012f58ae2c079839f7a43",
+    "item_0.checkpoint.json": "2130c2a5e34edb8c3984b72127a8fa7a264ce773fbf981f27ac2fb2afc8ebad4",
+    "source/agent/schemas/p2_output_schema.json": "d4531f8619f797edd750199d6a720efad4ab98857339182cf82656387b028f12",
+    "source/agent/scripts/decision_study.py": "ba7994158414512b46343199b9505fe1adc64251ef42b6d6f94e8e415b438bf3",
+    "source/agent/scripts/demo.py": "04c9203630e52f4441bbd9d6beb4da9679e8e2d7a5c2cd69b15c410764cc39ab",
+    "source/agent/scripts/full_eval.py": "10b97880a16415fb817d3acc04ca138b229fa1eb9c75864fabb69ca388264a88",
+    "source/agent/scripts/p2_smoke.py": "18c68fde6bd2cea89314a3bd14d84afc492433acf898d33a79494878a2a12d34",
+    "source/agent/scripts/prepare_data.py": "4d4349ae5a91dd62aa1e1b340ba685038629ca37e89e05e93f7b51b584d7ec97",
+    "source/agent/scripts/repeat_run.py": "01ecd17df48cf64fa917da8174b11b161dbe06b5605fe575cbbb47180ba6b25f",
+    "source/agent/scripts/run_series.py": "070404a6008b0471f988787415fdd2d6d205e4c79a452a761223263db13ddc6d",
+    "source/agent/scripts/smoke.py": "80d2ce932a11bacc17f2d72d0d092cd6f903f8778318bffd9d666aed20ba46e0",
+    "source/agent/src/mta/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source/agent/src/mta/agent.py": "b3907c16dbf9b6572f839b0a092250d46a9d429b240f22c88351bcc9028f8228",
+    "source/agent/src/mta/baseline.py": "8afe53918fe135ee9b4faf8d69bf9e93b117b256b657cd54aaa224efc04bb75b",
+    "source/agent/src/mta/config.py": "cc4ca69e1de1193e1de0f96a6ea382363373132f4387a43f5ba3797b4910bbef",
+    "source/agent/src/mta/control.py": "60f236f312c05c6c6315c8fa8e2923af8af63d3d96b9e2107412d77c02317004",
+    "source/agent/src/mta/decision_audit.py": "273d28323917094174345a8f70b58982f6fb967cb66a865454426f3087f7776b",
+    "source/agent/src/mta/evaluate.py": "abdbe3dbbee04baef7284e5141578ecfab3b3d8aa5f535b0fa3c3794319b6985",
+    "source/agent/src/mta/extract.py": "1b5e17fc1ee563b4ef986c1074f2dc4d7a82d69ac180137d9f64b7872fd623db",
+    "source/agent/src/mta/judge.py": "10185b386349a33cc42912c0b7444a908241c82f9781baf64e4008719cd5fdef",
+    "source/agent/src/mta/llm.py": "e002a97eb94501be007769acee29e221fe574846f3a6d3a7443c33cc9db6b047",
+    "source/agent/src/mta/observation.py": "707a99e5da52065b3fa2a3708efc3888911baaab0f46816653efec0f680c1097",
+    "source/agent/src/mta/p2.py": "2644641e03f94cf7833df1fde4a980572f3262c31ef93ee3b86ed2c51fb66ddc",
+    "source/agent/src/mta/pipeline.py": "f927fce53609cf6ae853ca6a7fd9c46bb61f8bf45f69e25d062e80feb2048e1a",
+    "source/agent/src/mta/prompts.py": "e2c03d90c70d0944c28dd23d36c0e0db4d1be49d507b68f10d80c367bb1e1177",
+    "source/agent/src/mta/render.py": "6dd8fb97a6b48585f117f46fc0c4b97130977d4eaeebcb1f986d47ca395b68bf",
+    "source/agent/src/mta/run.py": "71206cbc81404c91b4c67434b8ccbb1c40ed961f89db15e5e5cba0609aff0c9e",
+    "source/agent/src/mta/store.py": "1d04a561d3d2334b62a4cdde21c010f3beba1aafc08567aedbbe8f66205be84b",
+    "source/agent/src/mta/support.py": "51587e85394c60a9c6faa53ea3ba2c42d724f5ba7b766071c054d66e16eae284",
+    "source/agent/src/mta/trace.py": "fe2c61824166b418b0f6f7fa2473e71971ed8f4807e57f3d1324dcf5a5c1dc0c",
+    "source/agent/src/mta/transcript_parser.py": "c7d7f3e535196eafb05da6413381679befbbc12250a47139b3e5628f1c311dc1",
+    "source/agent/src/mta/triage.py": "dfdabcd7e390cc354be6bef7cdb6b051492596f3399740b3df15e063adf13f04",
+    "source/agent/src/mta/validate.py": "11e56a82329f66bc64021ba54a8b4c858891ae6d58ff7582fdb6d7f0b2749039",
+    "source/transcript_parser.py": "1d2fc13cff098b459f232fb78e625c1b01124e9ab4b939cb400e01e98236ebfb",
+    "stages.jsonl": "9a5b36e43d631e4cdd1de1b4ef62df04e2d4192627933d73ec7540bb68410503"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "identity": {
+    "protocol_digest": "b0de1ae95eec59aaf3bc5fb2cfea27cd70c891ec74424f35af4726ab0aa7c596",
+    "judge": {
+      "name": "@30875-fall26-openai/gpt-5-nano",
+      "client": "mta.llm.OpenAIAdapter",
+      "endpoint": "https://api.portkey.ai/v1",
+      "supports_reasoning_effort": true
+    },
+    "type": "decisions",
+    "input_sha256": "baf4333a9e54888fc8d9819ea6177ee7844e56f77eddfc7a7c9c36b11cbfa986",
+    "system_texts": [
+      "The group decided to use a hand dynamo as the power source.",
+      "The device will use five push-buttons plus one integrated scroll-wheel push-button.",
+      "The case should be plastic.",
+      "The menu button will also perform the OK function.",
+      "We will make one big LCD screen.",
+      "The device must be curved."
+    ],
+    "gold_texts": [
+      "Use a single-curved case, replacing the double-curved concept.",
+      "Drop speech recognition while retaining the LCD and its menu-based concept.",
+      "Replace the rubber casing with plastic, while retaining special colour for the design.",
+      "Use one integrated scroll-wheel/pushbutton and no separate buttons, with functions accessed through the LCD; detailed click/hold/menu behavior was not fully settled.",
+      "Replace kinetic power with a hand dynamo after considering a battery and other cost reductions."
+    ]
+  },
+  "votes": {
+    "baf4333a9e54888fc8d9": [
+      [
+        {
+          "sys": 0,
+          "gold": 4
+        },
+        {
+          "sys": 2,
+          "gold": 2
+        },
+        {
+          "sys": 4,
+          "gold": 1
+        },
+        {
+          "sys": 5,
+          "gold": 0
+        }
+      ],
+      [
+        {
+          "sys": 0,
+          "gold": 4
+        },
+        {
+          "sys": 2,
+          "gold": 2
+        },
+        {
+          "sys": 3,
+          "gold": 3
+        },
+        {
+          "sys": 4,
+          "gold": 1
+        },
+        {
+          "sys": 5,
+          "gold": 0
+        }
+      ],
+      [
+        {
+          "sys": 0,
+          "gold": 4
+        },
+        {
+          "sys": 2,
+          "gold": 2
+        },
+        {
+          "sys": 5,
+          "gold": 0
+        }
+      ]
+    ]
+  },
+  "imported_from": {
+    "path": "agent\\results\\candidate_acceptance\\scoring_validation\\v1\\replay-v2\\votes\\TS3006d\\decisions.baf4333a9e54888fc8d9.json",
+    "sha256": "c2657ae93be66e4851516879c362a5a42035c730f9d3ca4dd8813d433afdf374"
+  }
+}

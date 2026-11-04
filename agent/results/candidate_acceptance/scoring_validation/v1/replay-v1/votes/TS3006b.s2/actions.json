@@ -1,0 +1,68 @@
+{
+  "identity": {
+    "protocol_digest": "3e12e777261bc6f000043ee97b251767817e36fd701be2468b2a974be3579a96",
+    "judge": {
+      "name": "@30875-fall26-openai/gpt-5-nano",
+      "client": "mta.llm.OpenAIAdapter",
+      "endpoint": "https://api.portkey.ai/v1",
+      "supports_reasoning_effort": true
+    },
+    "type": "actions",
+    "input_sha256": "cdfa90b898c5106b8b73b15ea2762cf3ea8a7e0bc92c7ad470d95aa569fd106c",
+    "system_texts": [
+      "The UI Designer will design the LCD screen menu for all functions.",
+      "The UI designer will make a list of the functions to be included on the screen.",
+      "The UI designer will create maps with all the data we have gathered.",
+      "The Project Manager will write the minutes."
+    ],
+    "gold_texts": [
+      "The project manager will write and place the meeting minutes in the project folder.",
+      "The user interface designer will develop the remote layout and a user-friendly LCD menu, including navigation and button usage.",
+      "The industrial designer will define the functional aspects and the list of functions to include in the LCD menu, coordinating with the user interface designer.",
+      "The project manager will reorganize the shared project information into clearer folders."
+    ]
+  },
+  "votes": {
+    "cdfa90b898c5106b8b73": [
+      [
+        {
+          "sys": 0,
+          "gold": 1
+        },
+        {
+          "sys": 1,
+          "gold": 2
+        },
+        {
+          "sys": 3,
+          "gold": 0
+        }
+      ],
+      [
+        {
+          "sys": 0,
+          "gold": 1
+        },
+        {
+          "sys": 3,
+          "gold": 0
+        }
+      ],
+      [
+        {
+          "sys": 0,
+          "gold": 1
+        },
+        {
+          "sys": 3,
+          "gold": 0
+        }
+      ]
+    ]
+  },
+  "imported_from": {
+    "path": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\recall_candidate\\41654ab-v2\\replay\\TS3006b\\stable_votes.json",
+    "sha256": "1614663dc634a9fb96e22ffdeafe19c6f042c0d950a1dbb4757559190ebb06ca",
+    "kind": "verified_saved_development_study"
+  }
+}

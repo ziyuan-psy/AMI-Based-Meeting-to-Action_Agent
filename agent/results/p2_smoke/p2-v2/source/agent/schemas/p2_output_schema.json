@@ -1,0 +1,320 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "P2 check outcomes and clarification requests, version 1",
+  "type": "object",
+  "properties": {
+    "p2": {
+      "type": "object",
+      "properties": {
+        "format_version": {
+          "const": 1
+        },
+        "run_id": {
+          "type": "string"
+        },
+        "meeting_id": {
+          "type": "string"
+        },
+        "enabled": {
+          "type": "boolean"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/outcome"
+          }
+        }
+      },
+      "required": [
+        "format_version",
+        "run_id",
+        "meeting_id",
+        "enabled",
+        "items"
+      ],
+      "additionalProperties": false
+    },
+    "clarifications": {
+      "type": "object",
+      "properties": {
+        "format_version": {
+          "const": 1
+        },
+        "run_id": {
+          "type": "string"
+        },
+        "meeting_id": {
+          "type": "string"
+        },
+        "requests": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/request"
+          }
+        }
+      },
+      "required": [
+        "format_version",
+        "run_id",
+        "meeting_id",
+        "requests"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "p2",
+    "clarifications"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "finding": {
+      "type": "object",
+      "properties": {
+        "result": {
+          "enum": [
+            "pass",
+            "fail",
+            "uncertain",
+            "not_applicable"
+          ]
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        },
+        "quotes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "da_id": {
+                "type": "string"
+              },
+              "quote": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "da_id",
+              "quote"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "fields": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "statement",
+              "owner",
+              "deadline",
+              "status",
+              "related_items"
+            ]
+          }
+        }
+      },
+      "required": [
+        "result",
+        "reason",
+        "quotes",
+        "fields"
+      ],
+      "additionalProperties": false
+    },
+    "request": {
+      "type": "object",
+      "properties": {
+        "request_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "item_key": {
+          "type": "string"
+        },
+        "record_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "field": {
+          "enum": [
+            "statement",
+            "owner",
+            "deadline",
+            "status",
+            "related_items"
+          ]
+        },
+        "question": {
+          "type": "string",
+          "minLength": 1
+        },
+        "item_text": {
+          "type": "string"
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence_da_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "available_evidence_da_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "status": {
+          "const": "open"
+        },
+        "termination_reason": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "request_id",
+        "item_key",
+        "record_id",
+        "field",
+        "question",
+        "item_text",
+        "reason",
+        "evidence_da_ids",
+        "available_evidence_da_ids",
+        "status",
+        "termination_reason"
+      ],
+      "additionalProperties": false
+    },
+    "outcome": {
+      "type": "object",
+      "properties": {
+        "item_key": {
+          "type": "string"
+        },
+        "record_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "item_type": {
+          "enum": [
+            "actions",
+            "decisions",
+            "problems"
+          ]
+        },
+        "item_text": {
+          "type": "string"
+        },
+        "state": {
+          "enum": [
+            "accepted",
+            "pending"
+          ]
+        },
+        "recordable": {
+          "type": "boolean"
+        },
+        "fields": {
+          "type": "object"
+        },
+        "draft_fields": {
+          "type": "object"
+        },
+        "checks": {
+          "type": "object",
+          "properties": {
+            "statement": {
+              "$ref": "#/$defs/finding"
+            },
+            "owner": {
+              "$ref": "#/$defs/finding"
+            },
+            "deadline": {
+              "$ref": "#/$defs/finding"
+            },
+            "status": {
+              "$ref": "#/$defs/finding"
+            },
+            "conflict": {
+              "$ref": "#/$defs/finding"
+            },
+            "relation": {
+              "$ref": "#/$defs/finding"
+            }
+          },
+          "required": [
+            "statement",
+            "owner",
+            "deadline",
+            "status",
+            "conflict",
+            "relation"
+          ],
+          "additionalProperties": false
+        },
+        "unresolved_fields": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "statement",
+              "owner",
+              "deadline",
+              "status",
+              "related_items"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "history": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "lookups": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "termination_reason": {
+          "type": "string"
+        },
+        "clarifications": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/request"
+          }
+        }
+      },
+      "required": [
+        "item_key",
+        "record_id",
+        "item_type",
+        "item_text",
+        "state",
+        "recordable",
+        "fields",
+        "draft_fields",
+        "checks",
+        "unresolved_fields",
+        "history",
+        "lookups",
+        "termination_reason",
+        "clarifications"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

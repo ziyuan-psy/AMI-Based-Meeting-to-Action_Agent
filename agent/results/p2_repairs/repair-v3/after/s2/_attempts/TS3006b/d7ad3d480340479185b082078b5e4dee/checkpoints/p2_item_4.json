@@ -1,0 +1,1034 @@
+{
+  "item_key": "TS3006b#4",
+  "record_id": null,
+  "item_type": "actions",
+  "item_text": "The User Interface Designer will group the menu into a display group and a basic functions group.",
+  "state": "pending",
+  "recordable": true,
+  "fields": {
+    "status": "open",
+    "prior_context_needed": false,
+    "related_items": [],
+    "owner": null,
+    "owner_basis": "ambiguous",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "reference": [
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3006b.json",
+        "locator": "TS3006b.B.dialog-act.dharshi.169"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3006b.json",
+        "locator": "TS3006b.B.dialog-act.dharshi.170"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3006b.json",
+        "locator": "TS3006b.A.dialog-act.dharshi.336"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3006b.json",
+        "locator": "TS3006b.C.dialog-act.dharshi.186"
+      }
+    ]
+  },
+  "draft_fields": {
+    "status": "open",
+    "related_items": [],
+    "owner": [
+      "MTD023UID"
+    ],
+    "owner_basis": "explicit",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "prior_context_needed": false,
+    "used_participant_lookup": false,
+    "evidence_da_ids": [
+      "TS3006b.B.dialog-act.dharshi.169",
+      "TS3006b.B.dialog-act.dharshi.170"
+    ]
+  },
+  "checks": {
+    "statement": {
+      "result": "pass",
+      "reason": "Current dialogue indicates the UI designer plans to group the menu into two groups (display group and basic functions group); line TS3006b.B.dialog-act.dharshi.169 explicitly states the grouping, supporting the action.",
+      "quotes": [
+        {
+          "da_id": "TS3006b.B.dialog-act.dharshi.169",
+          "quote": "Um the <disfmarker> one group for the for the display , and one group for the basic functions ,"
+        },
+        {
+          "da_id": "TS3006b.B.dialog-act.dharshi.170",
+          "quote": "and <disfmarker>"
+        }
+      ],
+      "fields": [
+        "statement"
+      ]
+    },
+    "owner": {
+      "result": "uncertain",
+      "reason": "No explicit ownership assignment dialogue detected; owner is stated in the item data but not evidenced in observed dialogue.",
+      "quotes": [
+        {
+          "da_id": "TS3006b.B.dialog-act.dharshi.169",
+          "quote": "Um the <disfmarker> one group for the for the display , and one group for the basic functions ,"
+        },
+        {
+          "da_id": "TS3006b.B.dialog-act.dharshi.170",
+          "quote": "and <disfmarker>"
+        }
+      ],
+      "fields": [
+        "owner"
+      ]
+    },
+    "deadline": {
+      "result": "uncertain",
+      "reason": "deadline_unresolved",
+      "quotes": [
+        {
+          "da_id": "TS3006b.B.dialog-act.dharshi.169",
+          "quote": "Um the <disfmarker> one group for the for the display , and one group for the basic functions ,"
+        },
+        {
+          "da_id": "TS3006b.C.dialog-act.dharshi.186",
+          "quote": "Yeah ."
+        }
+      ],
+      "fields": [
+        "deadline"
+      ]
+    },
+    "status": {
+      "result": "pass",
+      "reason": "The item is described as open in the provisional data and the dialogue does not show completion; no conflicting conditions.",
+      "quotes": [
+        {
+          "da_id": "TS3006b.A.dialog-act.dharshi.336",
+          "quote": "Yeah but they're incorporated <gap> ?"
+        },
+        {
+          "da_id": "TS3006b.B.dialog-act.dharshi.169",
+          "quote": "Um the <disfmarker> one group for the for the display , and one group for the basic functions ,"
+        }
+      ],
+      "fields": [
+        "status"
+      ]
+    },
+    "conflict": {
+      "result": "pass",
+      "reason": "No unresolved contradictions found in the available dialogue regarding the grouping action.",
+      "quotes": [
+        {
+          "da_id": "TS3006b.B.dialog-act.dharshi.169",
+          "quote": "Um the <disfmarker> one group for the for the display , and one group for the basic functions ,"
+        },
+        {
+          "da_id": "TS3006b.C.dialog-act.dharshi.186",
+          "quote": "Yeah ."
+        }
+      ],
+      "fields": []
+    },
+    "relation": {
+      "result": "uncertain",
+      "reason": "prior_context_not_checked",
+      "quotes": [],
+      "fields": [
+        "related_items"
+      ]
+    }
+  },
+  "unresolved_fields": [
+    "owner",
+    "deadline",
+    "related_items"
+  ],
+  "observed_evidence_da_ids": [
+    "TS3006b.B.dialog-act.dharshi.169",
+    "TS3006b.B.dialog-act.dharshi.170",
+    "TS3006b.C.dialog-act.dharshi.186",
+    "TS3006b.B.dialog-act.dharshi.168",
+    "TS3006b.A.dialog-act.dharshi.336"
+  ],
+  "initial_context": {
+    "item": {
+      "type": "actions",
+      "text": "The User Interface Designer will group the menu into a display group and a basic functions group.",
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ]
+    },
+    "current_meeting": "TS3006b",
+    "earlier_meetings": [
+      "TS3006a"
+    ],
+    "roster": [
+      {
+        "speaker": "A",
+        "participant_id": "MTD021PM",
+        "role": "PM"
+      },
+      {
+        "speaker": "B",
+        "participant_id": "MTD023UID",
+        "role": "UI"
+      },
+      {
+        "speaker": "C",
+        "participant_id": "MTD022ID",
+        "role": "ID"
+      },
+      {
+        "speaker": "D",
+        "participant_id": "MTD024ME",
+        "role": "ME"
+      }
+    ],
+    "observed_dialogue": [
+      {
+        "da_id": "TS3006b.B.dialog-act.dharshi.169",
+        "meeting_id": "TS3006b",
+        "text": "Um the <disfmarker> one group for the for the display , and one group for the basic functions ,",
+        "participant": "MTD023UID",
+        "role": "UI"
+      },
+      {
+        "da_id": "TS3006b.B.dialog-act.dharshi.170",
+        "meeting_id": "TS3006b",
+        "text": "and <disfmarker>",
+        "participant": "MTD023UID",
+        "role": "UI"
+      },
+      {
+        "da_id": "TS3006b.C.dialog-act.dharshi.186",
+        "meeting_id": "TS3006b",
+        "text": "Yeah .",
+        "participant": "MTD022ID",
+        "role": "ID"
+      },
+      {
+        "da_id": "TS3006b.B.dialog-act.dharshi.168",
+        "participant": "MTD023UID",
+        "role": "UI",
+        "text": "Uh I think we have to to group , to make two groups ."
+      },
+      {
+        "da_id": "TS3006b.A.dialog-act.dharshi.336",
+        "participant": "MTD021PM",
+        "role": "PM",
+        "text": "Yeah but they're incorporated <gap> ?"
+      }
+    ],
+    "peer_items": [
+      {
+        "item_key": "TS3006b#0",
+        "type": "actions",
+        "text": "The User Interface Designer will design the LCD screen function menu."
+      },
+      {
+        "item_key": "TS3006b#1",
+        "type": "problems",
+        "text": "Unclear what functions we had to include yet."
+      },
+      {
+        "item_key": "TS3006b#2",
+        "type": "problems",
+        "text": "Elderly users may not understand the remote well; a simpler remote is needed."
+      },
+      {
+        "item_key": "TS3006b#3",
+        "type": "actions",
+        "text": "The User Interface Designer will prepare a list of the functions to be shown on the screen/menu."
+      }
+    ],
+    "provisional_values": {
+      "owner": [
+        "MTD023UID"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "status": "open",
+      "related_items": []
+    },
+    "candidate_evidence_da_ids": [
+      "TS3006b.B.dialog-act.dharshi.169",
+      "TS3006b.B.dialog-act.dharshi.170",
+      "TS3006b.C.dialog-act.dharshi.186"
+    ]
+  },
+  "observed_documents": [],
+  "document_evidence": [],
+  "relation_evidence": [],
+  "history": [
+    {
+      "item": "TS3006b#4",
+      "step": 1,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "assess_item",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Current dialogue indicates the UI designer plans to group the menu into two groups (display group and basic functions group); line TS3006b.B.dialog-act.dharshi.169 explicitly states the grouping, supporting the action.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.B.dialog-act.dharshi.169",
+              "quote": "Um the <disfmarker> one group for the for the display , and one group for the basic functions ,"
+            },
+            {
+              "da_id": "TS3006b.B.dialog-act.dharshi.170",
+              "quote": "and <disfmarker>"
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "uncertain",
+          "reason": "No explicit ownership assignment dialogue detected; owner is stated in the item data but not evidenced in observed dialogue.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.B.dialog-act.dharshi.169",
+              "quote": "Um the <disfmarker> one group for the for the display , and one group for the basic functions ,"
+            },
+            {
+              "da_id": "TS3006b.B.dialog-act.dharshi.170",
+              "quote": "and <disfmarker>"
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "deadline_unresolved",
+          "quotes": [
+            {
+              "da_id": "TS3006b.B.dialog-act.dharshi.169",
+              "quote": "Um the <disfmarker> one group for the for the display , and one group for the basic functions ,"
+            },
+            {
+              "da_id": "TS3006b.C.dialog-act.dharshi.186",
+              "quote": "Yeah ."
+            }
+          ],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "The item is described as open in the provisional data and the dialogue does not show completion; no conflicting conditions.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.A.dialog-act.dharshi.336",
+              "quote": "Yeah but they're incorporated <gap> ?"
+            },
+            {
+              "da_id": "TS3006b.B.dialog-act.dharshi.169",
+              "quote": "Um the <disfmarker> one group for the for the display , and one group for the basic functions ,"
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No unresolved contradictions found in the available dialogue regarding the grouping action.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.B.dialog-act.dharshi.169",
+              "quote": "Um the <disfmarker> one group for the for the display , and one group for the basic functions ,"
+            },
+            {
+              "da_id": "TS3006b.C.dialog-act.dharshi.186",
+              "quote": "Yeah ."
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "prior_context_not_checked",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "decision": "retrieve",
+      "reason": "unresolved_checks",
+      "requested_action": "retrieve",
+      "proposed_fields": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD023UID"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "TS3006b.B.dialog-act.dharshi.169",
+          "TS3006b.B.dialog-act.dharshi.170"
+        ]
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Current dialogue indicates the UI designer plans to group the menu into two groups (display group and basic functions group); line TS3006b.B.dialog-act.dharshi.169 explicitly states the grouping, supporting the action.",
+          "quotes": [
+            "TS3006b.B.dialog-act.dharshi.169",
+            "TS3006b.B.dialog-act.dharshi.170"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "uncertain",
+          "reason": "No explicit ownership assignment dialogue detected; owner is stated in the item data but not evidenced in observed dialogue.",
+          "quotes": [
+            "TS3006b.B.dialog-act.dharshi.169",
+            "TS3006b.B.dialog-act.dharshi.170"
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "No deadline wording or constraint shown in the observed dialogue.",
+          "quotes": [
+            "TS3006b.B.dialog-act.dharshi.169",
+            "TS3006b.C.dialog-act.dharshi.186"
+          ],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "The item is described as open in the provisional data and the dialogue does not show completion; no conflicting conditions.",
+          "quotes": [
+            "TS3006b.A.dialog-act.dharshi.336",
+            "TS3006b.B.dialog-act.dharshi.169"
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No unresolved contradictions found in the available dialogue regarding the grouping action.",
+          "quotes": [
+            "TS3006b.B.dialog-act.dharshi.169",
+            "TS3006b.C.dialog-act.dharshi.186"
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "No explicit linkage to prior items TS3006a or earlier actions found in the current dialogue.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD023UID"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "statement": {
+          "result": "pass",
+          "reason": "Current dialogue indicates the UI designer plans to group the menu into two groups (display group and basic functions group); line TS3006b.B.dialog-act.dharshi.169 explicitly states the grouping, supporting the action.",
+          "evidence_da_ids": [
+            "TS3006b.B.dialog-act.dharshi.169",
+            "TS3006b.B.dialog-act.dharshi.170"
+          ]
+        },
+        "owner_check": {
+          "result": "uncertain",
+          "reason": "No explicit ownership assignment dialogue detected; owner is stated in the item data but not evidenced in observed dialogue.",
+          "evidence_da_ids": [
+            "TS3006b.B.dialog-act.dharshi.169",
+            "TS3006b.B.dialog-act.dharshi.170"
+          ]
+        },
+        "deadline_check": {
+          "result": "uncertain",
+          "reason": "No deadline wording or constraint shown in the observed dialogue.",
+          "evidence_da_ids": [
+            "TS3006b.B.dialog-act.dharshi.169",
+            "TS3006b.C.dialog-act.dharshi.186"
+          ]
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "The item is described as open in the provisional data and the dialogue does not show completion; no conflicting conditions.",
+          "evidence_da_ids": [
+            "TS3006b.A.dialog-act.dharshi.336",
+            "TS3006b.B.dialog-act.dharshi.169"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No unresolved contradictions found in the available dialogue regarding the grouping action.",
+          "evidence_da_ids": [
+            "TS3006b.B.dialog-act.dharshi.169",
+            "TS3006b.C.dialog-act.dharshi.186"
+          ],
+          "affected_fields": []
+        },
+        "relation_check": {
+          "result": "uncertain",
+          "reason": "No explicit linkage to prior items TS3006a or earlier actions found in the current dialogue.",
+          "evidence_da_ids": []
+        },
+        "next_action": "retrieve"
+      },
+      "evidence_bindings": {
+        "statement": [
+          "TS3006b.B.dialog-act.dharshi.169",
+          "TS3006b.B.dialog-act.dharshi.170"
+        ],
+        "owner": [
+          "TS3006b.B.dialog-act.dharshi.169",
+          "TS3006b.B.dialog-act.dharshi.170"
+        ],
+        "deadline": [
+          "TS3006b.B.dialog-act.dharshi.169",
+          "TS3006b.C.dialog-act.dharshi.186"
+        ],
+        "status": [
+          "TS3006b.A.dialog-act.dharshi.336",
+          "TS3006b.B.dialog-act.dharshi.169"
+        ],
+        "conflict": [
+          "TS3006b.B.dialog-act.dharshi.169",
+          "TS3006b.C.dialog-act.dharshi.186"
+        ]
+      },
+      "raw_tool_input": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD023UID"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "statement": {
+          "result": "pass",
+          "reason": "Current dialogue indicates the UI designer plans to group the menu into two groups (display group and basic functions group); line TS3006b.B.dialog-act.dharshi.169 explicitly states the grouping, supporting the action.",
+          "evidence_da_ids": [
+            "TS3006b.B.dialog-act.dharshi.169",
+            "TS3006b.B.dialog-act.dharshi.170"
+          ]
+        },
+        "owner_check": {
+          "result": "uncertain",
+          "reason": "No explicit ownership assignment dialogue detected; owner is stated in the item data but not evidenced in observed dialogue.",
+          "evidence_da_ids": [
+            "TS3006b.B.dialog-act.dharshi.169",
+            "TS3006b.B.dialog-act.dharshi.170"
+          ]
+        },
+        "deadline_check": {
+          "result": "uncertain",
+          "reason": "No deadline wording or constraint shown in the observed dialogue.",
+          "evidence_da_ids": [
+            "TS3006b.B.dialog-act.dharshi.169",
+            "TS3006b.C.dialog-act.dharshi.186"
+          ]
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "The item is described as open in the provisional data and the dialogue does not show completion; no conflicting conditions.",
+          "evidence_da_ids": [
+            "TS3006b.A.dialog-act.dharshi.336",
+            "TS3006b.B.dialog-act.dharshi.169"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No unresolved contradictions found in the available dialogue regarding the grouping action.",
+          "evidence_da_ids": [
+            "TS3006b.B.dialog-act.dharshi.169",
+            "TS3006b.C.dialog-act.dharshi.186"
+          ]
+        },
+        "relation_check": {
+          "result": "uncertain",
+          "reason": "No explicit linkage to prior items TS3006a or earlier actions found in the current dialogue.",
+          "evidence_da_ids": []
+        },
+        "next_action": "retrieve"
+      },
+      "protocol_normalizations": [
+        "empty_affected_fields_for_no_conflict"
+      ]
+    },
+    {
+      "item": "TS3006b#4",
+      "step": 2,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "get_prior_items",
+      "outcome": "lookup",
+      "decision": "retrieve",
+      "args": {
+        "query": "UI menu groups display basic functions",
+        "item_type": "actions"
+      },
+      "tool_result": {
+        "results": []
+      },
+      "new_info": false
+    },
+    {
+      "item": "TS3006b#4",
+      "step": 3,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "assess_item",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Current dialogue indicates the UI designer plans to group the menu into two groups (display group and basic functions group); line TS3006b.B.dialog-act.dharshi.169 explicitly states the grouping, supporting the action.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.B.dialog-act.dharshi.169",
+              "quote": "Um the <disfmarker> one group for the for the display , and one group for the basic functions ,"
+            },
+            {
+              "da_id": "TS3006b.B.dialog-act.dharshi.170",
+              "quote": "and <disfmarker>"
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "uncertain",
+          "reason": "No explicit ownership assignment dialogue detected; owner is stated in the item data but not evidenced in observed dialogue.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.B.dialog-act.dharshi.169",
+              "quote": "Um the <disfmarker> one group for the for the display , and one group for the basic functions ,"
+            },
+            {
+              "da_id": "TS3006b.B.dialog-act.dharshi.170",
+              "quote": "and <disfmarker>"
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "deadline_unresolved",
+          "quotes": [
+            {
+              "da_id": "TS3006b.B.dialog-act.dharshi.169",
+              "quote": "Um the <disfmarker> one group for the for the display , and one group for the basic functions ,"
+            },
+            {
+              "da_id": "TS3006b.C.dialog-act.dharshi.186",
+              "quote": "Yeah ."
+            }
+          ],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "The item is described as open in the provisional data and the dialogue does not show completion; no conflicting conditions.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.A.dialog-act.dharshi.336",
+              "quote": "Yeah but they're incorporated <gap> ?"
+            },
+            {
+              "da_id": "TS3006b.B.dialog-act.dharshi.169",
+              "quote": "Um the <disfmarker> one group for the for the display , and one group for the basic functions ,"
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No unresolved contradictions found in the available dialogue regarding the grouping action.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.B.dialog-act.dharshi.169",
+              "quote": "Um the <disfmarker> one group for the for the display , and one group for the basic functions ,"
+            },
+            {
+              "da_id": "TS3006b.C.dialog-act.dharshi.186",
+              "quote": "Yeah ."
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "prior_context_not_checked",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "decision": "retrieve",
+      "reason": "unresolved_checks",
+      "requested_action": "retrieve",
+      "proposed_fields": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD023UID"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "TS3006b.B.dialog-act.dharshi.169",
+          "TS3006b.B.dialog-act.dharshi.170"
+        ]
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Current dialogue indicates the UI designer plans to group the menu into two groups (display group and basic functions group); line TS3006b.B.dialog-act.dharshi.169 explicitly states the grouping, supporting the action.",
+          "quotes": [
+            "TS3006b.B.dialog-act.dharshi.169",
+            "TS3006b.B.dialog-act.dharshi.170"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "uncertain",
+          "reason": "No explicit ownership assignment dialogue detected; owner is stated in the item data but not evidenced in observed dialogue.",
+          "quotes": [
+            "TS3006b.B.dialog-act.dharshi.169",
+            "TS3006b.B.dialog-act.dharshi.170"
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "No deadline wording or constraint shown in the observed dialogue.",
+          "quotes": [
+            "TS3006b.B.dialog-act.dharshi.169",
+            "TS3006b.C.dialog-act.dharshi.186"
+          ],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "The item is described as open in the provisional data and the dialogue does not show completion; no conflicting conditions.",
+          "quotes": [
+            "TS3006b.A.dialog-act.dharshi.336",
+            "TS3006b.B.dialog-act.dharshi.169"
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No unresolved contradictions found in the available dialogue regarding the grouping action.",
+          "quotes": [
+            "TS3006b.B.dialog-act.dharshi.169",
+            "TS3006b.C.dialog-act.dharshi.186"
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "prior_context_not_checked",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD023UID"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "statement": {
+          "result": "pass",
+          "reason": "Current dialogue indicates the UI designer plans to group the menu into two groups (display group and basic functions group); line TS3006b.B.dialog-act.dharshi.169 explicitly states the grouping, supporting the action.",
+          "evidence_da_ids": [
+            "TS3006b.B.dialog-act.dharshi.169",
+            "TS3006b.B.dialog-act.dharshi.170"
+          ]
+        },
+        "owner_check": {
+          "result": "uncertain",
+          "reason": "No explicit ownership assignment dialogue detected; owner is stated in the item data but not evidenced in observed dialogue.",
+          "evidence_da_ids": [
+            "TS3006b.B.dialog-act.dharshi.169",
+            "TS3006b.B.dialog-act.dharshi.170"
+          ]
+        },
+        "deadline_check": {
+          "result": "uncertain",
+          "reason": "No deadline wording or constraint shown in the observed dialogue.",
+          "evidence_da_ids": [
+            "TS3006b.B.dialog-act.dharshi.169",
+            "TS3006b.C.dialog-act.dharshi.186"
+          ]
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "The item is described as open in the provisional data and the dialogue does not show completion; no conflicting conditions.",
+          "evidence_da_ids": [
+            "TS3006b.A.dialog-act.dharshi.336",
+            "TS3006b.B.dialog-act.dharshi.169"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No unresolved contradictions found in the available dialogue regarding the grouping action.",
+          "evidence_da_ids": [
+            "TS3006b.B.dialog-act.dharshi.169",
+            "TS3006b.C.dialog-act.dharshi.186"
+          ],
+          "affected_fields": []
+        },
+        "relation_check": {
+          "result": "uncertain",
+          "reason": "prior_context_not_checked",
+          "evidence_da_ids": []
+        },
+        "next_action": "retrieve"
+      },
+      "evidence_bindings": {
+        "statement": [
+          "TS3006b.B.dialog-act.dharshi.169",
+          "TS3006b.B.dialog-act.dharshi.170"
+        ],
+        "owner": [
+          "TS3006b.B.dialog-act.dharshi.169",
+          "TS3006b.B.dialog-act.dharshi.170"
+        ],
+        "deadline": [
+          "TS3006b.B.dialog-act.dharshi.169",
+          "TS3006b.C.dialog-act.dharshi.186"
+        ],
+        "status": [
+          "TS3006b.A.dialog-act.dharshi.336",
+          "TS3006b.B.dialog-act.dharshi.169"
+        ],
+        "conflict": [
+          "TS3006b.B.dialog-act.dharshi.169",
+          "TS3006b.C.dialog-act.dharshi.186"
+        ]
+      },
+      "raw_tool_input": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD023UID"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "statement": {
+          "result": "pass",
+          "reason": "Current dialogue indicates the UI designer plans to group the menu into two groups (display group and basic functions group); line TS3006b.B.dialog-act.dharshi.169 explicitly states the grouping, supporting the action.",
+          "evidence_da_ids": [
+            "TS3006b.B.dialog-act.dharshi.169",
+            "TS3006b.B.dialog-act.dharshi.170"
+          ]
+        },
+        "owner_check": {
+          "result": "uncertain",
+          "reason": "No explicit ownership assignment dialogue detected; owner is stated in the item data but not evidenced in observed dialogue.",
+          "evidence_da_ids": [
+            "TS3006b.B.dialog-act.dharshi.169",
+            "TS3006b.B.dialog-act.dharshi.170"
+          ]
+        },
+        "deadline_check": {
+          "result": "uncertain",
+          "reason": "No deadline wording or constraint shown in the observed dialogue.",
+          "evidence_da_ids": [
+            "TS3006b.B.dialog-act.dharshi.169",
+            "TS3006b.C.dialog-act.dharshi.186"
+          ]
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "The item is described as open in the provisional data and the dialogue does not show completion; no conflicting conditions.",
+          "evidence_da_ids": [
+            "TS3006b.A.dialog-act.dharshi.336",
+            "TS3006b.B.dialog-act.dharshi.169"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No unresolved contradictions found in the available dialogue regarding the grouping action.",
+          "evidence_da_ids": [
+            "TS3006b.B.dialog-act.dharshi.169",
+            "TS3006b.C.dialog-act.dharshi.186"
+          ]
+        },
+        "relation_check": {
+          "result": "uncertain",
+          "reason": "prior_context_not_checked",
+          "evidence_da_ids": []
+        },
+        "next_action": "retrieve"
+      },
+      "protocol_normalizations": [
+        "empty_affected_fields_for_no_conflict"
+      ]
+    },
+    {
+      "item": "TS3006b#4",
+      "step": 4,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "get_prior_items",
+      "outcome": "lookup",
+      "decision": "retrieve",
+      "args": {
+        "query": "UI menu groups",
+        "item_type": "actions"
+      },
+      "tool_result": {
+        "results": []
+      },
+      "new_info": false
+    },
+    {
+      "item": "TS3006b#4",
+      "step": 4,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "stop",
+      "outcome": "pending",
+      "termination_reason": "no_progress",
+      "unresolved_fields": [
+        "owner",
+        "deadline",
+        "related_items"
+      ]
+    }
+  ],
+  "lookups": 2,
+  "termination_reason": "no_progress",
+  "clarifications": [
+    {
+      "request_id": "9988741e6ecb6e54",
+      "item_key": "TS3006b#4",
+      "record_id": null,
+      "field": "owner",
+      "question": "Who is responsible for this task?",
+      "item_text": "The User Interface Designer will group the menu into a display group and a basic functions group.",
+      "reason": "No explicit ownership assignment dialogue detected; owner is stated in the item data but not evidenced in observed dialogue.",
+      "evidence_da_ids": [
+        "TS3006b.B.dialog-act.dharshi.169",
+        "TS3006b.B.dialog-act.dharshi.170"
+      ],
+      "available_evidence_da_ids": [
+        "TS3006b.B.dialog-act.dharshi.169",
+        "TS3006b.B.dialog-act.dharshi.170",
+        "TS3006b.C.dialog-act.dharshi.186",
+        "TS3006b.B.dialog-act.dharshi.168",
+        "TS3006b.A.dialog-act.dharshi.336"
+      ],
+      "status": "open",
+      "termination_reason": "no_progress"
+    },
+    {
+      "request_id": "355bbbf203efea68",
+      "item_key": "TS3006b#4",
+      "record_id": null,
+      "field": "deadline",
+      "question": "What is the agreed deadline, in its original wording?",
+      "item_text": "The User Interface Designer will group the menu into a display group and a basic functions group.",
+      "reason": "deadline_unresolved",
+      "evidence_da_ids": [
+        "TS3006b.B.dialog-act.dharshi.169",
+        "TS3006b.C.dialog-act.dharshi.186"
+      ],
+      "available_evidence_da_ids": [
+        "TS3006b.B.dialog-act.dharshi.169",
+        "TS3006b.B.dialog-act.dharshi.170",
+        "TS3006b.C.dialog-act.dharshi.186",
+        "TS3006b.B.dialog-act.dharshi.168",
+        "TS3006b.A.dialog-act.dharshi.336"
+      ],
+      "status": "open",
+      "termination_reason": "no_progress"
+    },
+    {
+      "request_id": "bacf0eb73582cac8",
+      "item_key": "TS3006b#4",
+      "record_id": null,
+      "field": "related_items",
+      "question": "Which earlier record does this item continue or change, and how?",
+      "item_text": "The User Interface Designer will group the menu into a display group and a basic functions group.",
+      "reason": "prior_context_not_checked",
+      "evidence_da_ids": [],
+      "available_evidence_da_ids": [
+        "TS3006b.B.dialog-act.dharshi.169",
+        "TS3006b.B.dialog-act.dharshi.170",
+        "TS3006b.C.dialog-act.dharshi.186",
+        "TS3006b.B.dialog-act.dharshi.168",
+        "TS3006b.A.dialog-act.dharshi.336"
+      ],
+      "status": "open",
+      "termination_reason": "no_progress"
+    }
+  ]
+}

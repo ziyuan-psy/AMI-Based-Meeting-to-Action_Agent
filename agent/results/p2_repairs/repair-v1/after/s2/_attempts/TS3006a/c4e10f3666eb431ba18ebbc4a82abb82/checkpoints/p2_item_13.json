@@ -1,0 +1,499 @@
+{
+  "item_key": "TS3006a#13",
+  "record_id": null,
+  "item_type": "decisions",
+  "item_text": "The product should have the least amount of functions possible to make it easier to know how it works.",
+  "state": "accepted",
+  "recordable": true,
+  "fields": {
+    "status": "adopted",
+    "prior_context_needed": false,
+    "related_items": [],
+    "reference": [
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3006a.json",
+        "locator": "TS3006a.A.dialog-act.vkaraisk.248"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3006a.json",
+        "locator": "TS3006a.A.dialog-act.vkaraisk.249"
+      }
+    ]
+  },
+  "draft_fields": {
+    "status": "adopted",
+    "related_items": [],
+    "prior_context_needed": false,
+    "used_participant_lookup": false,
+    "evidence_da_ids": [
+      "TS3006a.A.dialog-act.vkaraisk.248",
+      "TS3006a.A.dialog-act.vkaraisk.249"
+    ],
+    "owner": null,
+    "owner_basis": "missing",
+    "deadline": null,
+    "deadline_basis": "missing"
+  },
+  "checks": {
+    "statement": {
+      "result": "pass",
+      "reason": "Dialogue explicitly establishes a constraint to minimize features to ease understanding; PM mentions ease of use,",
+      "quotes": [
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.248",
+          "quote": "<vocalsound> Th the least amount of functions possible"
+        },
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.249",
+          "quote": "so it's easier to get to know how it works etcetera ."
+        }
+      ],
+      "fields": [
+        "statement"
+      ]
+    },
+    "status": {
+      "result": "pass",
+      "reason": "Current dialogue supports the adopted decision and no new contradictions are evident.",
+      "quotes": [
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.248",
+          "quote": "<vocalsound> Th the least amount of functions possible"
+        },
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.249",
+          "quote": "so it's easier to get to know how it works etcetera ."
+        }
+      ],
+      "fields": [
+        "status"
+      ]
+    },
+    "conflict": {
+      "result": "pass",
+      "reason": "No unresolved contradictions found in the dialogue about this decision.",
+      "quotes": [
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.248",
+          "quote": "<vocalsound> Th the least amount of functions possible"
+        },
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.249",
+          "quote": "so it's easier to get to know how it works etcetera ."
+        }
+      ],
+      "fields": []
+    },
+    "relation": {
+      "result": "not_applicable",
+      "reason": "No prior or dependent relationship to modify in this run; no related_items present.",
+      "quotes": [],
+      "fields": [
+        "related_items"
+      ]
+    },
+    "owner": {
+      "result": "not_applicable",
+      "reason": "field_not_applicable",
+      "quotes": [],
+      "fields": [
+        "owner"
+      ]
+    },
+    "deadline": {
+      "result": "not_applicable",
+      "reason": "field_not_applicable",
+      "quotes": [],
+      "fields": [
+        "deadline"
+      ]
+    }
+  },
+  "unresolved_fields": [],
+  "observed_evidence_da_ids": [
+    "TS3006a.A.dialog-act.vkaraisk.248",
+    "TS3006a.A.dialog-act.vkaraisk.249",
+    "TS3006a.B.dialog-act.vkaraisk.102",
+    "TS3006a.B.dialog-act.vkaraisk.104",
+    "TS3006a.B.dialog-act.vkaraisk.105"
+  ],
+  "initial_context": {
+    "item": {
+      "type": "decisions",
+      "text": "The product should have the least amount of functions possible to make it easier to know how it works.",
+      "flags": []
+    },
+    "current_meeting": "TS3006a",
+    "earlier_meetings": [],
+    "roster": [
+      {
+        "speaker": "A",
+        "participant_id": "MTD021PM",
+        "role": "PM"
+      },
+      {
+        "speaker": "B",
+        "participant_id": "MTD023UID",
+        "role": "UI"
+      },
+      {
+        "speaker": "C",
+        "participant_id": "MTD022ID",
+        "role": "ID"
+      },
+      {
+        "speaker": "D",
+        "participant_id": "MTD024ME",
+        "role": "ME"
+      }
+    ],
+    "observed_dialogue": [
+      {
+        "da_id": "TS3006a.A.dialog-act.vkaraisk.248",
+        "meeting_id": "TS3006a",
+        "text": "<vocalsound> Th the least amount of functions possible",
+        "participant": "MTD021PM",
+        "role": "PM"
+      },
+      {
+        "da_id": "TS3006a.A.dialog-act.vkaraisk.249",
+        "meeting_id": "TS3006a",
+        "text": "so it's easier to get to know how it works etcetera .",
+        "participant": "MTD021PM",
+        "role": "PM"
+      },
+      {
+        "da_id": "TS3006a.B.dialog-act.vkaraisk.102",
+        "participant": "MTD023UID",
+        "role": "UI",
+        "text": "So it's hasn't <gap> <disfmarker> it's <disfmarker> yeah ."
+      },
+      {
+        "da_id": "TS3006a.B.dialog-act.vkaraisk.104",
+        "participant": "MTD023UID",
+        "role": "UI",
+        "text": "Yeah ."
+      },
+      {
+        "da_id": "TS3006a.B.dialog-act.vkaraisk.105",
+        "participant": "MTD023UID",
+        "role": "UI",
+        "text": "Okay ."
+      }
+    ],
+    "peer_items": [
+      {
+        "item_key": "TS3006a#0",
+        "type": "problems",
+        "text": "There is a hardware/display problem as the presenter reports the screen is missing ('where has my screen gone?' and 'My screen is gone')."
+      },
+      {
+        "item_key": "TS3006a#1",
+        "type": "actions",
+        "text": "The Project Manager will summarize the discussed items and place the summary in the project folder."
+      },
+      {
+        "item_key": "TS3006a#2",
+        "type": "problems",
+        "text": "Participants report being slow and under-prepared for the kickoff, indicating preparation/co-ordination gaps."
+      },
+      {
+        "item_key": "TS3006a#3",
+        "type": "actions",
+        "text": "The Industrial Designer will create an overview for the three design phases."
+      },
+      {
+        "item_key": "TS3006a#4",
+        "type": "actions",
+        "text": "The Industrial Designer will work on the conceptual design."
+      },
+      {
+        "item_key": "TS3006a#5",
+        "type": "problems",
+        "text": "Unclear scope: unclear which animal to draw and lack of agreement on the subject, as well as unclear which components to include in the design."
+      },
+      {
+        "item_key": "TS3006a#6",
+        "type": "actions",
+        "text": "The Marketing Expert will conduct internet searches and user interviews to determine user requirements."
+      },
+      {
+        "item_key": "TS3006a#7",
+        "type": "actions",
+        "text": "The Project Manager will defend our design."
+      },
+      {
+        "item_key": "TS3006a#8",
+        "type": "decisions",
+        "text": "The activity is introduction and get acquainted."
+      },
+      {
+        "item_key": "TS3006a#9",
+        "type": "decisions",
+        "text": "Pricing will be set at 25 Euros, with a target of 50 million Euros in sales and production cost equal to half of the selling price."
+      },
+      {
+        "item_key": "TS3006a#10",
+        "type": "decisions",
+        "text": "Phase one will be the functional design."
+      },
+      {
+        "item_key": "TS3006a#11",
+        "type": "decisions",
+        "text": "The team will start with the assumption that the system is only for TV and video, and will reserve the possibility to add other features later."
+      },
+      {
+        "item_key": "TS3006a#12",
+        "type": "decisions",
+        "text": "The product must be user-friendly."
+      }
+    ],
+    "provisional_values": {
+      "owner": null,
+      "owner_basis": "missing",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "status": "adopted",
+      "related_items": []
+    },
+    "candidate_evidence_da_ids": [
+      "TS3006a.A.dialog-act.vkaraisk.248",
+      "TS3006a.A.dialog-act.vkaraisk.249"
+    ]
+  },
+  "observed_documents": [],
+  "document_evidence": [],
+  "relation_evidence": [],
+  "history": [
+    {
+      "item": "TS3006a#13",
+      "step": 1,
+      "flags": [],
+      "action": "assess_item",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue explicitly establishes a constraint to minimize features to ease understanding; PM mentions ease of use,",
+          "quotes": [
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.248",
+              "quote": "<vocalsound> Th the least amount of functions possible"
+            },
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.249",
+              "quote": "so it's easier to get to know how it works etcetera ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Current dialogue supports the adopted decision and no new contradictions are evident.",
+          "quotes": [
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.248",
+              "quote": "<vocalsound> Th the least amount of functions possible"
+            },
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.249",
+              "quote": "so it's easier to get to know how it works etcetera ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No unresolved contradictions found in the dialogue about this decision.",
+          "quotes": [
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.248",
+              "quote": "<vocalsound> Th the least amount of functions possible"
+            },
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.249",
+              "quote": "so it's easier to get to know how it works etcetera ."
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No prior or dependent relationship to modify in this run; no related_items present.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        },
+        "owner": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        }
+      },
+      "decision": "accept",
+      "reason": "all_required_checks_passed",
+      "requested_action": "accept",
+      "proposed_fields": {
+        "status": "adopted",
+        "related_items": [],
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "TS3006a.A.dialog-act.vkaraisk.248",
+          "TS3006a.A.dialog-act.vkaraisk.249"
+        ],
+        "owner": null,
+        "owner_basis": "missing",
+        "deadline": null,
+        "deadline_basis": "missing"
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue explicitly establishes a constraint to minimize features to ease understanding; PM mentions ease of use,",
+          "quotes": [
+            "TS3006a.A.dialog-act.vkaraisk.248",
+            "TS3006a.A.dialog-act.vkaraisk.249"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Current dialogue supports the adopted decision and no new contradictions are evident.",
+          "quotes": [
+            "TS3006a.A.dialog-act.vkaraisk.248",
+            "TS3006a.A.dialog-act.vkaraisk.249"
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No unresolved contradictions found in the dialogue about this decision.",
+          "quotes": [],
+          "fields": []
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No prior or dependent relationship to modify in this run; no related_items present.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "status": "adopted",
+        "related_items": [],
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue explicitly establishes a constraint to minimize features to ease understanding; PM mentions ease of use,",
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.248",
+            "TS3006a.A.dialog-act.vkaraisk.249"
+          ]
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "Current dialogue supports the adopted decision and no new contradictions are evident.",
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.248",
+            "TS3006a.A.dialog-act.vkaraisk.249"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No unresolved contradictions found in the dialogue about this decision.",
+          "evidence_da_ids": [],
+          "affected_fields": []
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No prior or dependent relationship to modify in this run; no related_items present.",
+          "evidence_da_ids": []
+        },
+        "next_action": "accept"
+      },
+      "evidence_bindings": {
+        "statement": [
+          "TS3006a.A.dialog-act.vkaraisk.248",
+          "TS3006a.A.dialog-act.vkaraisk.249"
+        ],
+        "status": [
+          "TS3006a.A.dialog-act.vkaraisk.248",
+          "TS3006a.A.dialog-act.vkaraisk.249"
+        ],
+        "conflict_scope": [
+          "TS3006a.A.dialog-act.vkaraisk.248",
+          "TS3006a.A.dialog-act.vkaraisk.249"
+        ]
+      },
+      "raw_tool_input": {
+        "status": "adopted",
+        "related_items": [],
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue explicitly establishes a constraint to minimize features to ease understanding; PM mentions ease of use,",
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.248",
+            "TS3006a.A.dialog-act.vkaraisk.249"
+          ]
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "Current dialogue supports the adopted decision and no new contradictions are evident.",
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.248",
+            "TS3006a.A.dialog-act.vkaraisk.249"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No unresolved contradictions found in the dialogue about this decision.",
+          "evidence_da_ids": [],
+          "affected_fields": []
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No prior or dependent relationship to modify in this run; no related_items present.",
+          "evidence_da_ids": []
+        },
+        "next_action": "accept"
+      },
+      "protocol_normalizations": []
+    },
+    {
+      "item": "TS3006a#13",
+      "step": 1,
+      "flags": [],
+      "action": "accept",
+      "outcome": "accepted",
+      "termination_reason": "all_required_checks_passed",
+      "unresolved_fields": []
+    }
+  ],
+  "lookups": 0,
+  "termination_reason": "all_required_checks_passed",
+  "clarifications": []
+}

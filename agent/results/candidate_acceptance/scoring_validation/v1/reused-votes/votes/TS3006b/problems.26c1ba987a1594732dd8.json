@@ -1,0 +1,62 @@
+{
+  "identity": {
+    "protocol_digest": "b0de1ae95eec59aaf3bc5fb2cfea27cd70c891ec74424f35af4726ab0aa7c596",
+    "judge": {
+      "name": "@30875-fall26-openai/gpt-5-nano",
+      "client": "mta.llm.OpenAIAdapter",
+      "endpoint": "https://api.portkey.ai/v1",
+      "supports_reasoning_effort": true
+    },
+    "type": "problems",
+    "input_sha256": "26c1ba987a1594732dd8609e44f69bd70c2c176fd3f648e38c00b3c270816db5",
+    "system_texts": [
+      "Ownership and accountability of decisions are unclear due to delegation phrases with no explicit owner.",
+      "Not everybody is ready to start the meeting, as one participant says 'Not really' when asked if everyone is ready.",
+      "One participant reports their computer is not functioning properly, creating a pressing issue for participation.",
+      "It is unclear where to find the Appearance settings in the UI."
+    ],
+    "gold_texts": [
+      "Computer/display problems disrupted preparation and presentation; the screen-size problem was adjusted and the presentation was brought back online during the meeting.",
+      "The industrial designer received key instructions too late to incorporate them fully, leaving the presentation and design incomplete.",
+      "The industrial and user interface designers initially disputed their responsibilities. They settled on industrial design defining functions and user interface design arranging the layout and menu, with coordination between them."
+    ]
+  },
+  "votes": {
+    "26c1ba987a1594732dd8": [
+      [
+        {
+          "sys": 0,
+          "gold": 2
+        },
+        {
+          "sys": 2,
+          "gold": 0
+        }
+      ],
+      [
+        {
+          "sys": 0,
+          "gold": 2
+        },
+        {
+          "sys": 2,
+          "gold": 0
+        }
+      ],
+      [
+        {
+          "sys": 0,
+          "gold": 2
+        },
+        {
+          "sys": 2,
+          "gold": 0
+        }
+      ]
+    ]
+  },
+  "imported_from": {
+    "path": "agent\\results\\candidate_acceptance\\scoring_validation\\v1\\replay-v2\\votes\\TS3006b\\problems.26c1ba987a1594732dd8.json",
+    "sha256": "1e05e9e8a1c3cdbeda8623e3b6dde6eed6c9a321f101b0b5fcb7cbbcef49d018"
+  }
+}

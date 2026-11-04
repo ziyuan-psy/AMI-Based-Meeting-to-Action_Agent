@@ -1,0 +1,473 @@
+{
+  "meeting_id": "TS3006c",
+  "status": "COMPLETED",
+  "errors": [],
+  "warnings": [],
+  "elapsed_seconds": 266.547,
+  "usage": {
+    "calls": 41,
+    "in": 174102,
+    "out": 127857,
+    "stages": {
+      "extract": {
+        "calls": 13,
+        "in": 98096,
+        "out": 81999
+      },
+      "consolidate": {
+        "calls": 4,
+        "in": 8941,
+        "out": 36609
+      },
+      "agent": {
+        "calls": 23,
+        "in": 66267,
+        "out": 7832
+      },
+      "abstract": {
+        "calls": 1,
+        "in": 798,
+        "out": 1417
+      }
+    }
+  },
+  "runtime_control": {
+    "limits": {
+      "calls": 80,
+      "tokens": 1000000,
+      "request_seconds": 300.0,
+      "meeting_seconds": 1200.0,
+      "inflight": 4,
+      "retries": 2,
+      "backoff": 0.5
+    },
+    "attempted_calls": 41,
+    "charged_tokens": 301959,
+    "unknown_usage_tokens": 0,
+    "reserved_tokens": 0,
+    "max_inflight_seen": 4,
+    "failure": null,
+    "input_bound_method": "utf8_request_bytes_plus_padding",
+    "unknown_usage_policy": "charge_full_reservation"
+  },
+  "stage_events": 129,
+  "agent_events": 23,
+  "request_events": 42,
+  "item_counts": {
+    "actions": 5,
+    "problems": 4,
+    "decisions": 5,
+    "abstract": 5
+  },
+  "flagged_items": 8,
+  "restored_items": 3,
+  "agent_outcomes": {
+    "ok": 14,
+    "finished": 8,
+    "tool_error": 1
+  },
+  "tool_calls": {
+    "read_dialogue": 5,
+    "get_prior_items": 9,
+    "search_dialogue": 1
+  },
+  "cross_meeting_links": [],
+  "reference_count": 34,
+  "citation_checks": [
+    {
+      "item_key": "TS3006c#0",
+      "initial_delivered_da_ids": [
+        "TS3006c.A.dialog-act.dharshi.273",
+        "TS3006c.A.dialog-act.dharshi.274"
+      ],
+      "finish_da_ids": [
+        "TS3006c.A.dialog-act.dharshi.273",
+        "TS3006c.A.dialog-act.dharshi.274"
+      ],
+      "additional_observed_ids": [
+        "TS3006c.A.dialog-act.dharshi.266",
+        "TS3006c.A.dialog-act.dharshi.267",
+        "TS3006c.A.dialog-act.dharshi.268",
+        "TS3006c.A.dialog-act.dharshi.269",
+        "TS3006c.A.dialog-act.dharshi.270",
+        "TS3006c.A.dialog-act.dharshi.271",
+        "TS3006c.A.dialog-act.dharshi.272",
+        "TS3006c.A.dialog-act.dharshi.275",
+        "TS3006c.A.dialog-act.dharshi.276",
+        "TS3006c.A.dialog-act.dharshi.277",
+        "TS3006c.A.dialog-act.dharshi.278",
+        "TS3006c.A.dialog-act.dharshi.279",
+        "TS3006c.A.dialog-act.dharshi.280",
+        "TS3006c.B.dialog-act.dharshi.193",
+        "TS3006c.B.dialog-act.dharshi.194",
+        "TS3006c.C.dialog-act.dharshi.276",
+        "TS3006c.C.dialog-act.dharshi.277",
+        "TS3006c.C.dialog-act.dharshi.278",
+        "TS3006c.C.dialog-act.dharshi.279",
+        "TS3006c.C.dialog-act.dharshi.280",
+        "TS3006c.D.dialog-act.dharshi.292",
+        "TS3006c.D.dialog-act.dharshi.293",
+        "TS3006c.D.dialog-act.dharshi.294",
+        "TS3006c.D.dialog-act.dharshi.295",
+        "TS3006c.D.dialog-act.dharshi.296",
+        "TS3006c.D.dialog-act.dharshi.297",
+        "TS3006c.D.dialog-act.dharshi.298",
+        "TS3006c.D.dialog-act.dharshi.299",
+        "TS3006c.D.dialog-act.dharshi.300"
+      ],
+      "all_cited_dialogue_delivered": true
+    },
+    {
+      "item_key": "TS3006c#3",
+      "initial_delivered_da_ids": [
+        "TS3006c.A.dialog-act.dharshi.300",
+        "TS3006c.A.dialog-act.dharshi.301",
+        "TS3006c.C.dialog-act.dharshi.291",
+        "TS3006c.C.dialog-act.dharshi.292"
+      ],
+      "finish_da_ids": [
+        "TS3006c.A.dialog-act.dharshi.300",
+        "TS3006c.A.dialog-act.dharshi.301",
+        "TS3006c.C.dialog-act.dharshi.291",
+        "TS3006c.C.dialog-act.dharshi.292"
+      ],
+      "additional_observed_ids": [
+        "TS3006a.sys.s.3",
+        "TS3006a.sys.s.7",
+        "TS3006b.sys.s.7"
+      ],
+      "all_cited_dialogue_delivered": true
+    },
+    {
+      "item_key": "TS3006c#5",
+      "initial_delivered_da_ids": [
+        "TS3006c.A.dialog-act.dharshi.275",
+        "TS3006c.D.dialog-act.dharshi.297"
+      ],
+      "finish_da_ids": [
+        "TS3006c.A.dialog-act.dharshi.276",
+        "TS3006c.D.dialog-act.dharshi.297"
+      ],
+      "additional_observed_ids": [
+        "TS3006a.A.dialog-act.vkaraisk.158",
+        "TS3006a.D.dialog-act.vkaraisk.115",
+        "TS3006b.A.dialog-act.dharshi.50",
+        "TS3006b.B.dialog-act.dharshi.100",
+        "TS3006b.D.dialog-act.dharshi.79",
+        "TS3006c.A.dialog-act.dharshi.269",
+        "TS3006c.A.dialog-act.dharshi.270",
+        "TS3006c.A.dialog-act.dharshi.271",
+        "TS3006c.A.dialog-act.dharshi.272",
+        "TS3006c.A.dialog-act.dharshi.273",
+        "TS3006c.A.dialog-act.dharshi.274",
+        "TS3006c.A.dialog-act.dharshi.276",
+        "TS3006c.A.dialog-act.dharshi.277",
+        "TS3006c.A.dialog-act.dharshi.278",
+        "TS3006c.A.dialog-act.dharshi.279",
+        "TS3006c.A.dialog-act.dharshi.280",
+        "TS3006c.A.dialog-act.dharshi.281",
+        "TS3006c.A.dialog-act.dharshi.282",
+        "TS3006c.A.dialog-act.dharshi.283",
+        "TS3006c.A.dialog-act.dharshi.284",
+        "TS3006c.B.dialog-act.dharshi.194",
+        "TS3006c.C.dialog-act.dharshi.279",
+        "TS3006c.C.dialog-act.dharshi.280",
+        "TS3006c.D.dialog-act.dharshi.293",
+        "TS3006c.D.dialog-act.dharshi.294",
+        "TS3006c.D.dialog-act.dharshi.295",
+        "TS3006c.D.dialog-act.dharshi.296",
+        "TS3006c.D.dialog-act.dharshi.298",
+        "TS3006c.D.dialog-act.dharshi.299",
+        "TS3006c.D.dialog-act.dharshi.300",
+        "TS3006c.D.dialog-act.dharshi.301",
+        "TS3006c.D.dialog-act.dharshi.302",
+        "TS3006c.D.dialog-act.dharshi.303",
+        "TS3006c.D.dialog-act.dharshi.304"
+      ],
+      "all_cited_dialogue_delivered": true
+    },
+    {
+      "item_key": "TS3006c#7",
+      "initial_delivered_da_ids": [
+        "TS3006c.A.dialog-act.dharshi.83",
+        "TS3006c.D.dialog-act.dharshi.104"
+      ],
+      "finish_da_ids": [
+        "TS3006c.A.dialog-act.dharshi.83",
+        "TS3006c.D.dialog-act.dharshi.104"
+      ],
+      "additional_observed_ids": [
+        "TS3006c.A.dialog-act.dharshi.78",
+        "TS3006c.A.dialog-act.dharshi.80",
+        "TS3006c.A.dialog-act.dharshi.81",
+        "TS3006c.A.dialog-act.dharshi.82",
+        "TS3006c.A.dialog-act.dharshi.84",
+        "TS3006c.A.dialog-act.dharshi.85",
+        "TS3006c.C.dialog-act.dharshi.100",
+        "TS3006c.C.dialog-act.dharshi.99",
+        "TS3006c.D.dialog-act.dharshi.103"
+      ],
+      "all_cited_dialogue_delivered": true
+    },
+    {
+      "item_key": "TS3006c#9",
+      "initial_delivered_da_ids": [
+        "TS3006c.A.dialog-act.dharshi.86",
+        "TS3006c.C.dialog-act.dharshi.100"
+      ],
+      "finish_da_ids": [
+        "TS3006c.A.dialog-act.dharshi.86",
+        "TS3006c.C.dialog-act.dharshi.100"
+      ],
+      "additional_observed_ids": [
+        "TS3006b.sys.s.10",
+        "TS3006b.sys.s.4",
+        "TS3006b.sys.s.8"
+      ],
+      "all_cited_dialogue_delivered": true
+    },
+    {
+      "item_key": "TS3006c#11",
+      "initial_delivered_da_ids": [
+        "TS3006c.A.dialog-act.dharshi.294",
+        "TS3006c.D.dialog-act.dharshi.309"
+      ],
+      "finish_da_ids": [
+        "TS3006c.A.dialog-act.dharshi.294",
+        "TS3006c.D.dialog-act.dharshi.309"
+      ],
+      "additional_observed_ids": [
+        "TS3006a.sys.s.9",
+        "TS3006b.sys.s.3",
+        "TS3006b.sys.s.5"
+      ],
+      "all_cited_dialogue_delivered": true
+    },
+    {
+      "item_key": "TS3006c#12",
+      "initial_delivered_da_ids": [
+        "TS3006c.D.dialog-act.dharshi.17"
+      ],
+      "finish_da_ids": [
+        "TS3006c.D.dialog-act.dharshi.17"
+      ],
+      "additional_observed_ids": [
+        "TS3006a.sys.s.1",
+        "TS3006a.sys.s.10",
+        "TS3006a.sys.s.12",
+        "TS3006c.A.dialog-act.dharshi.10",
+        "TS3006c.A.dialog-act.dharshi.11",
+        "TS3006c.A.dialog-act.dharshi.12",
+        "TS3006c.A.dialog-act.dharshi.13",
+        "TS3006c.A.dialog-act.dharshi.14",
+        "TS3006c.A.dialog-act.dharshi.15",
+        "TS3006c.A.dialog-act.dharshi.16",
+        "TS3006c.A.dialog-act.dharshi.17",
+        "TS3006c.B.dialog-act.dharshi.1",
+        "TS3006c.B.dialog-act.dharshi.2",
+        "TS3006c.B.dialog-act.dharshi.3",
+        "TS3006c.B.dialog-act.dharshi.4",
+        "TS3006c.C.dialog-act.dharshi.10",
+        "TS3006c.C.dialog-act.dharshi.11",
+        "TS3006c.C.dialog-act.dharshi.12",
+        "TS3006c.C.dialog-act.dharshi.13",
+        "TS3006c.C.dialog-act.dharshi.14",
+        "TS3006c.C.dialog-act.dharshi.15",
+        "TS3006c.C.dialog-act.dharshi.8",
+        "TS3006c.C.dialog-act.dharshi.9",
+        "TS3006c.D.dialog-act.dharshi.11",
+        "TS3006c.D.dialog-act.dharshi.12",
+        "TS3006c.D.dialog-act.dharshi.13",
+        "TS3006c.D.dialog-act.dharshi.14",
+        "TS3006c.D.dialog-act.dharshi.16",
+        "TS3006c.D.dialog-act.dharshi.18",
+        "TS3006c.D.dialog-act.dharshi.19",
+        "TS3006c.D.dialog-act.dharshi.20",
+        "TS3006c.D.dialog-act.dharshi.21",
+        "TS3006c.D.dialog-act.dharshi.22"
+      ],
+      "all_cited_dialogue_delivered": true
+    },
+    {
+      "item_key": "TS3006c#13",
+      "initial_delivered_da_ids": [
+        "TS3006c.C.dialog-act.dharshi.14"
+      ],
+      "finish_da_ids": [
+        "TS3006c.C.dialog-act.dharshi.14"
+      ],
+      "additional_observed_ids": [],
+      "all_cited_dialogue_delivered": true
+    }
+  ],
+  "restored_source_review": [
+    {
+      "item_key": "TS3006c#11",
+      "record": {
+        "id": "TS3006c.sys.s.12",
+        "text": "ME and UI will create a new page on the board and be creative.",
+        "type": "actions",
+        "reference": [
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3006c.json",
+            "locator": "TS3006c.D.dialog-act.dharshi.309"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3006c.json",
+            "locator": "TS3006c.A.dialog-act.dharshi.294"
+          }
+        ],
+        "owner": [
+          "MTD024ME",
+          "MTD023UID"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "open",
+        "prior_context_needed": false,
+        "related_items": []
+      },
+      "original_evidence": [
+        "TS3006c.D.dialog-act.dharshi.309",
+        "TS3006c.A.dialog-act.dharshi.294"
+      ],
+      "successful_finish": true,
+      "tool_calls": [
+        {
+          "step": 1,
+          "action": "get_prior_items",
+          "outcome": "ok"
+        },
+        {
+          "step": 2,
+          "action": "finish",
+          "outcome": "finished"
+        }
+      ],
+      "dialogue": [
+        {
+          "da_id": "TS3006c.D.dialog-act.dharshi.309",
+          "participant": "MTD024ME",
+          "role": "ME",
+          "text": "Alright so that's uh <disfmarker>"
+        },
+        {
+          "da_id": "TS3006c.A.dialog-act.dharshi.294",
+          "participant": "MTD021PM",
+          "role": "PM",
+          "text": "thirty minutes ."
+        }
+      ]
+    },
+    {
+      "item_key": "TS3006c#12",
+      "record": {
+        "id": "TS3006c.sys.s.13",
+        "text": "I can't cut and paste it into the other folder but <disfmarker>",
+        "type": "problems",
+        "reference": [
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3006c.json",
+            "locator": "TS3006c.D.dialog-act.dharshi.17"
+          }
+        ],
+        "status": "open",
+        "prior_context_needed": false,
+        "related_items": []
+      },
+      "original_evidence": [
+        "TS3006c.D.dialog-act.dharshi.17"
+      ],
+      "successful_finish": true,
+      "tool_calls": [
+        {
+          "step": 1,
+          "action": "read_dialogue",
+          "outcome": "ok"
+        },
+        {
+          "step": 2,
+          "action": "get_prior_items",
+          "outcome": "ok"
+        },
+        {
+          "step": 3,
+          "action": "finish",
+          "outcome": "finished"
+        }
+      ],
+      "dialogue": [
+        {
+          "da_id": "TS3006c.D.dialog-act.dharshi.17",
+          "participant": "MTD024ME",
+          "role": "ME",
+          "text": "I can't cut and paste it into the other folder but <disfmarker>"
+        }
+      ]
+    },
+    {
+      "item_key": "TS3006c#13",
+      "record": {
+        "id": "TS3006c.sys.s.14",
+        "text": "I don't know how to use PowerPoint , so it takes me forever to get something done with it.",
+        "type": "problems",
+        "reference": [
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3006c.json",
+            "locator": "TS3006c.C.dialog-act.dharshi.14"
+          }
+        ],
+        "status": "open",
+        "prior_context_needed": false,
+        "related_items": []
+      },
+      "original_evidence": [
+        "TS3006c.C.dialog-act.dharshi.14"
+      ],
+      "successful_finish": true,
+      "tool_calls": [
+        {
+          "step": 1,
+          "action": "get_prior_items",
+          "outcome": "ok"
+        },
+        {
+          "step": 2,
+          "action": "read_dialogue",
+          "outcome": "tool_error"
+        },
+        {
+          "step": 3,
+          "action": "finish",
+          "outcome": "finished"
+        }
+      ],
+      "dialogue": [
+        {
+          "da_id": "TS3006c.C.dialog-act.dharshi.14",
+          "participant": "MTD022ID",
+          "role": "ID",
+          "text": "and also with <disfmarker> I don't know how to use PowerPoint , so it takes me forever to get something done with it ."
+        }
+      ]
+    }
+  ],
+  "p2_enabled": false,
+  "clarification_requests": 0,
+  "stage_seconds": 266.3,
+  "agent_fallbacks": null,
+  "recoverable_errors": [
+    {
+      "item": "TS3006c#13",
+      "step": 2,
+      "action": "read_dialogue",
+      "outcome": "tool_error",
+      "error": "KeyError: 'C.dialog-act.dharshi.14 not found in TS3006c'"
+    }
+  ]
+}

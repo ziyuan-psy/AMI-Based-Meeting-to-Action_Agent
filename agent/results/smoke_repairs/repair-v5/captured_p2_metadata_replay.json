@@ -1,0 +1,234 @@
+{
+  "kind": "OFFLINE_IDENTICAL_REAL_SUBMISSIONS",
+  "api_calls": 0,
+  "before_recordable": false,
+  "cases": [
+    {
+      "original_error": "Correct these argument fields: relation_check: 'reason' is a required property; relation_check: 'evidence_da_ids' is a required property",
+      "metadata_normalizations": [
+        "inactive_relation_reason_from_run_scope",
+        "empty_evidence_for_inactive_relation"
+      ],
+      "after_recordable": true,
+      "fields": {
+        "status": "open",
+        "prior_context_needed": false,
+        "related_items": [],
+        "owner": [
+          "MIO086"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "ambiguous",
+        "reference": [
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/IS1008a.json",
+            "locator": "IS1008a.C.dialog-act.s9553330.42"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/IS1008a.json",
+            "locator": "IS1008a.A.dialog-act.s9553330.130"
+          }
+        ]
+      },
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue includes a clear commitment by the owner to send attendees a copy of the slides after the meeting (PM MIO086 stated 'Yes, I will.' in IS1008a.C.dialog-act.s9553330.42 and corroborated by PM's confirmation IS1008a.A.dialog-act.s9553330.130).",
+          "quotes": [
+            {
+              "da_id": "IS1008a.C.dialog-act.s9553330.42",
+              "quote": "Would you mind um at the conclusion of our meeting could could you send us a copy of your slides ?"
+            },
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.130",
+              "quote": "Yes , I will . Yes ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Owner MIO086 is the announcer and has explicit assignment evidence (IS1008a.A.dialog-act.s9553330.130).",
+          "quotes": [
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.130",
+              "quote": "Yes , I will . Yes ."
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "Deadline is stated as 'at the conclusion of the meeting' but explicit confirmation in dialogue tying this deadline to the action is not directly shown beyond the phrase in the item. No separate dialogue line confirms the exact timing.",
+          "quotes": [
+            {
+              "da_id": "IS1008a.C.dialog-act.s9553330.42",
+              "quote": "Would you mind um at the conclusion of our meeting could could you send us a copy of your slides ?"
+            }
+          ],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Action is opened and awaiting completion; commitment exists in dialogue; no contradictory evidence.",
+          "quotes": [
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.130",
+              "quote": "Yes , I will . Yes ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No conflicts in available evidence; the lines show support for the action.",
+          "quotes": [
+            {
+              "da_id": "IS1008a.C.dialog-act.s9553330.42",
+              "quote": "Would you mind um at the conclusion of our meeting could could you send us a copy of your slides ?"
+            },
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.130",
+              "quote": "Yes , I will . Yes ."
+            }
+          ],
+          "fields": [
+            "statement",
+            "status"
+          ]
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "no_readable_prior_meetings",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      }
+    },
+    {
+      "original_error": "Correct these argument fields: : 'next_action' is a required property",
+      "metadata_normalizations": [],
+      "after_recordable": true,
+      "fields": {
+        "status": "open",
+        "prior_context_needed": false,
+        "related_items": [],
+        "owner": [
+          "MIO086"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "ambiguous",
+        "reference": [
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/IS1008a.json",
+            "locator": "IS1008a.C.dialog-act.s9553330.42"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/IS1008a.json",
+            "locator": "IS1008a.A.dialog-act.s9553330.130"
+          }
+        ]
+      },
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue includes a clear commitment by the owner to send attendees a copy of the slides after the meeting (PM MIO086 stated 'Yes, I will.' in IS1008a.C.dialog-act.s9553330.42 and corroborated by PM's confirmation IS1008a.A.dialog-act.s9553330.130).",
+          "quotes": [
+            {
+              "da_id": "IS1008a.C.dialog-act.s9553330.42",
+              "quote": "Would you mind um at the conclusion of our meeting could could you send us a copy of your slides ?"
+            },
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.130",
+              "quote": "Yes , I will . Yes ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Owner MIO086 is the announcer and has explicit assignment evidence (IS1008a.A.dialog-act.s9553330.130).",
+          "quotes": [
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.130",
+              "quote": "Yes , I will . Yes ."
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "Deadline is stated as 'at the conclusion of the meeting' but explicit confirmation in dialogue tying this deadline to the action is not directly shown beyond the phrase in the item. No separate dialogue line confirms the exact timing.",
+          "quotes": [
+            {
+              "da_id": "IS1008a.C.dialog-act.s9553330.42",
+              "quote": "Would you mind um at the conclusion of our meeting could could you send us a copy of your slides ?"
+            }
+          ],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Action is opened and awaiting completion; commitment exists in dialogue; no contradictory evidence.",
+          "quotes": [
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.130",
+              "quote": "Yes , I will . Yes ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No conflicts in available evidence; the lines show support for the action.",
+          "quotes": [
+            {
+              "da_id": "IS1008a.C.dialog-act.s9553330.42",
+              "quote": "Would you mind um at the conclusion of our meeting could could you send us a copy of your slides ?"
+            },
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.130",
+              "quote": "Yes , I will . Yes ."
+            }
+          ],
+          "fields": [
+            "statement",
+            "status"
+          ]
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No prior relation to check.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      }
+    }
+  ]
+}

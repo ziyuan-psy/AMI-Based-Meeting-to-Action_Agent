@@ -1,0 +1,334 @@
+{
+  "scope": "Identical frozen extraction/raw consolidation; replay the first real selection response with identical prompt/wire/model/input and live P2/summary. Captured extraction/consolidation/selection attempts, tokens and elapsed time reserved. SB development, not held-out evaluation.",
+  "primary_case": "release-v9",
+  "metrics": {
+    "teammate": {
+      "actions": {
+        "tp": 9,
+        "sys": 15,
+        "gold": 12,
+        "precision": 0.6,
+        "recall": 0.75,
+        "f1": 0.667,
+        "meetings": 3
+      },
+      "decisions": {
+        "tp": 6,
+        "sys": 9,
+        "gold": 14,
+        "precision": 0.667,
+        "recall": 0.429,
+        "f1": 0.522,
+        "meetings": 3
+      },
+      "problems": {
+        "tp": 2,
+        "sys": 6,
+        "gold": 4,
+        "precision": 0.333,
+        "recall": 0.5,
+        "f1": 0.4,
+        "meetings": 3
+      }
+    },
+    "before": {
+      "actions": {
+        "tp": 7,
+        "sys": 10,
+        "gold": 12,
+        "precision": 0.7,
+        "recall": 0.583,
+        "f1": 0.636,
+        "meetings": 3
+      },
+      "decisions": {
+        "tp": 6,
+        "sys": 13,
+        "gold": 14,
+        "precision": 0.462,
+        "recall": 0.429,
+        "f1": 0.444,
+        "meetings": 3
+      },
+      "problems": {
+        "tp": 2,
+        "sys": 7,
+        "gold": 4,
+        "precision": 0.286,
+        "recall": 0.5,
+        "f1": 0.364,
+        "meetings": 3
+      }
+    },
+    "before_p2": {
+      "actions": {
+        "tp": 10,
+        "sys": 15,
+        "gold": 12,
+        "precision": 0.667,
+        "recall": 0.833,
+        "f1": 0.741,
+        "meetings": 3
+      },
+      "decisions": {
+        "tp": 9,
+        "sys": 14,
+        "gold": 14,
+        "precision": 0.643,
+        "recall": 0.643,
+        "f1": 0.643,
+        "meetings": 3
+      },
+      "problems": {
+        "tp": 2,
+        "sys": 7,
+        "gold": 4,
+        "precision": 0.286,
+        "recall": 0.5,
+        "f1": 0.364,
+        "meetings": 3
+      }
+    },
+    "after": {
+      "actions": {
+        "tp": 8,
+        "sys": 11,
+        "gold": 12,
+        "precision": 0.727,
+        "recall": 0.667,
+        "f1": 0.696,
+        "meetings": 3
+      },
+      "decisions": {
+        "tp": 9,
+        "sys": 14,
+        "gold": 14,
+        "precision": 0.643,
+        "recall": 0.643,
+        "f1": 0.643,
+        "meetings": 3
+      },
+      "problems": {
+        "tp": 2,
+        "sys": 4,
+        "gold": 4,
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1": 0.5,
+        "meetings": 3
+      }
+    }
+  },
+  "runs": [
+    {
+      "meeting_id": "IS1008a",
+      "status": "COMPLETED",
+      "budget": {
+        "captured_upstream": {
+          "attempts": 11,
+          "charged_tokens": 137855,
+          "elapsed_seconds": 205.44,
+          "source_metadata_sha256": "a6c72146734dd0c91faede596f068a4e46d526ff444e3017c32d238303198b2f",
+          "normalized_sha256": "01622fda6ec2811836ee2becbef12b83420a1a2d10f3421fa3fbe00cc15f8c72",
+          "selection_replay": {
+            "source": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\quality_repairs\\final-v5",
+            "meeting": "IS1008a",
+            "attempt": 0,
+            "raw_response_sha256": "9d889ab2368783adecd1c9e66a86dc412f857a15ebbec3ccbcffa40796bca20f",
+            "policy": "Reuse first response, not best response; same system, wire, model and request input. Debit its actual captured cost.",
+            "captured_cost": {
+              "attempts": 1,
+              "charged_tokens": 11630,
+              "elapsed_seconds": 36.832
+            }
+          }
+        },
+        "combined_attempts": 37,
+        "combined_charged_tokens": 319917
+      },
+      "before_budget": {
+        "original_limits": {
+          "calls": 80,
+          "tokens": 1000000,
+          "seconds": 1200.0
+        },
+        "captured_upstream": {
+          "attempts": 10,
+          "charged_tokens": 126225,
+          "elapsed_seconds": 168.608,
+          "source_metadata_sha256": "a6c72146734dd0c91faede596f068a4e46d526ff444e3017c32d238303198b2f",
+          "normalized_sha256": "01622fda6ec2811836ee2becbef12b83420a1a2d10f3421fa3fbe00cc15f8c72"
+        },
+        "new_attempts": 11,
+        "new_charged_tokens": 62575,
+        "combined_attempts": 21,
+        "combined_charged_tokens": 188800
+      },
+      "recordable": 5,
+      "items": 8,
+      "states": {
+        "pending": 5,
+        "accepted": 3
+      },
+      "revisions": 0
+    },
+    {
+      "meeting_id": "TS3006a",
+      "status": "COMPLETED",
+      "budget": {
+        "captured_upstream": {
+          "attempts": 16,
+          "charged_tokens": 191389,
+          "elapsed_seconds": 255.793,
+          "source_metadata_sha256": "97f2407fc582158fc0b10b74abf57f2c1a3370e12bb6bf62afd8492912483b76",
+          "normalized_sha256": "e2a36b603e5a25c8b3c481a4e97dcd8f9f6bfde0b7539ec8e7a1f61a2b43282e",
+          "selection_replay": {
+            "source": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\quality_repairs\\final-v5",
+            "meeting": "TS3006a",
+            "attempt": 0,
+            "raw_response_sha256": "05fa9b6e865b8cb22c9f97f0d4d847b011d3906eb9207a48e74bcdf28a9d9a24",
+            "policy": "Reuse first response, not best response; same system, wire, model and request input. Debit its actual captured cost.",
+            "captured_cost": {
+              "attempts": 1,
+              "charged_tokens": 11116,
+              "elapsed_seconds": 32.869
+            }
+          }
+        },
+        "combined_attempts": 44,
+        "combined_charged_tokens": 351000
+      },
+      "before_budget": {
+        "original_limits": {
+          "calls": 80,
+          "tokens": 1000000,
+          "seconds": 1200.0
+        },
+        "captured_upstream": {
+          "attempts": 15,
+          "charged_tokens": 180273,
+          "elapsed_seconds": 222.924,
+          "source_metadata_sha256": "97f2407fc582158fc0b10b74abf57f2c1a3370e12bb6bf62afd8492912483b76",
+          "normalized_sha256": "e2a36b603e5a25c8b3c481a4e97dcd8f9f6bfde0b7539ec8e7a1f61a2b43282e"
+        },
+        "new_attempts": 23,
+        "new_charged_tokens": 129825,
+        "combined_attempts": 38,
+        "combined_charged_tokens": 310098
+      },
+      "recordable": 11,
+      "items": 15,
+      "states": {
+        "pending": 9,
+        "accepted": 6
+      },
+      "revisions": 0
+    },
+    {
+      "meeting_id": "TS3006b",
+      "status": "COMPLETED",
+      "budget": {
+        "captured_upstream": {
+          "attempts": 19,
+          "charged_tokens": 278937,
+          "elapsed_seconds": 292.171,
+          "source_metadata_sha256": "dc19160d7bedb9c40bba33cf6ebd64957a976839020d20af9d4addea69905016",
+          "normalized_sha256": "0fecd9a936f9ceafa35c3b8153279d415fe4b90ad9b5fdc75209e894056c5f77",
+          "selection_replay": {
+            "source": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\quality_repairs\\final-v5",
+            "meeting": "TS3006b",
+            "attempt": 0,
+            "raw_response_sha256": "fdcae0a11f7a56809623ee990fd1b3fdd3715b75db8e014d625248fcc783923d",
+            "policy": "Reuse first response, not best response; same system, wire, model and request input. Debit its actual captured cost.",
+            "captured_cost": {
+              "attempts": 1,
+              "charged_tokens": 12962,
+              "elapsed_seconds": 44.7
+            }
+          }
+        },
+        "combined_attempts": 41,
+        "combined_charged_tokens": 432365
+      },
+      "before_budget": {
+        "original_limits": {
+          "calls": 80,
+          "tokens": 1000000,
+          "seconds": 1200.0
+        },
+        "captured_upstream": {
+          "attempts": 18,
+          "charged_tokens": 265975,
+          "elapsed_seconds": 247.471,
+          "source_metadata_sha256": "dc19160d7bedb9c40bba33cf6ebd64957a976839020d20af9d4addea69905016",
+          "normalized_sha256": "0fecd9a936f9ceafa35c3b8153279d415fe4b90ad9b5fdc75209e894056c5f77"
+        },
+        "new_attempts": 31,
+        "new_charged_tokens": 221758,
+        "combined_attempts": 49,
+        "combined_charged_tokens": 487733
+      },
+      "recordable": 13,
+      "items": 13,
+      "states": {
+        "pending": 9,
+        "accepted": 4
+      },
+      "revisions": 0
+    }
+  ],
+  "human_review": {
+    "format_version": 1,
+    "status": "PARTIALLY_REVIEWED",
+    "authority": "Direct human replies in this chat; separate from model scores and runtime inputs.",
+    "cases": [
+      {
+        "case_id": "is1008a_slides",
+        "source_capture": "final-v5/after/s2/IS1008a.p2.json",
+        "source_item_key": "IS1008a#6",
+        "claim": "PM sends attendees slides at the conclusion of the meeting.",
+        "human_answer": "确认，任务及时间正确",
+        "result": "CONFIRMED_TASK_AND_TIMING",
+        "question_item_id": "[\"request_user_input_async\",\"call_f1f8600ec1624d17abe749a84e2fcd77\",0]"
+      },
+      {
+        "case_id": "is1008a_marketing_coordination",
+        "claim": "A task exists to coordinate with Christine on sales planning and cost; Ed identity is not confirmed by this review.",
+        "result": "PENDING_HUMAN_REPLY",
+        "question_item_id": "[\"request_user_input_async\",\"call_f1f8600ec1624d17abe749a84e2fcd77\",1]"
+      },
+      {
+        "case_id": "ts3006a_ui_functions",
+        "source_capture": "release-v6/after/s2/TS3006a.p2.json",
+        "source_item_key": "TS3006a#14",
+        "claim": "UI designer will specify technical functions.",
+        "result": "CONFIRMED_TASK",
+        "human_answer": "两组都确认正确",
+        "question_item_id": "[\"request_user_input_async\",\"call_dd2e8a705b134fc99f44b201e2cb1525\",0]"
+      },
+      {
+        "case_id": "ts3006a_atomic_financial_decisions",
+        "source_capture": "release-v6/after/s2/TS3006a.p2.json",
+        "source_item_keys": [
+          "TS3006a#3",
+          "TS3006a#4",
+          "TS3006a#5"
+        ],
+        "claim": "Price, sales target and production cost constraint are three separate choices.",
+        "result": "CONFIRMED_ATOMIC_SPLIT",
+        "human_answer": "两组都确认正确",
+        "question_item_id": "[\"request_user_input_async\",\"call_dd2e8a705b134fc99f44b201e2cb1525\",0]"
+      }
+    ],
+    "gold_changed": false,
+    "runtime_outputs_overwritten": false,
+    "freeze_status": "DEVELOPMENT_SOURCE_FROZEN_WITH_KNOWN_PENDING_ITEMS",
+    "required_cases": [
+      "is1008a_slides",
+      "ts3006a_ui_functions",
+      "ts3006a_atomic_financial_decisions"
+    ],
+    "freeze_explanation": "Required key differences were directly confirmed by the user. The supplemental marketing question is left pending; no answer or identity is inferred."
+  },
+  "evaluation_limit": "One development sample per meeting, draft gold and model alignment. Not final evaluation."
+}

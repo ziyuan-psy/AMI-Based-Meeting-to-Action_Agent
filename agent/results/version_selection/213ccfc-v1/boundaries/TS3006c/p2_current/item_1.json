@@ -1,0 +1,659 @@
+{
+  "item_key": "TS3006c#1",
+  "record_id": null,
+  "item_type": "problems",
+  "item_text": "MTD021PM will save this board.",
+  "state": "pending",
+  "recordable": false,
+  "fields": {
+    "status": "open",
+    "prior_context_needed": false,
+    "related_items": [],
+    "reference": [
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3006c.json",
+        "locator": "TS3006c.B.dialog-act.dharshi.36"
+      }
+    ]
+  },
+  "draft_fields": {
+    "status": "open",
+    "related_items": [],
+    "prior_context_needed": false,
+    "used_participant_lookup": false,
+    "evidence_da_ids": [
+      "TS3006c.B.dialog-act.dharshi.36",
+      "TS3006c.B.dialog-act.dharshi.35",
+      "TS3006c.C.dialog-act.dharshi.97"
+    ],
+    "owner": null,
+    "owner_basis": "missing",
+    "deadline": null,
+    "deadline_basis": "missing"
+  },
+  "checks": {
+    "statement": {
+      "result": "uncertain",
+      "reason": "The observed dialogue discusses how to implement something into the remote control and mentions 'Design ?', but there is no explicit mention or support in the dialogue for the claim that 'MTD021PM will save this board' or any obstacle tied to board-saving.",
+      "quotes": [
+        {
+          "da_id": "TS3006c.B.dialog-act.dharshi.36",
+          "quote": "yeah that's one thing uh which I'm not sure uh of how to implement it uh into the remote control ."
+        },
+        {
+          "da_id": "TS3006c.B.dialog-act.dharshi.35",
+          "quote": "Yeah um"
+        },
+        {
+          "da_id": "TS3006c.C.dialog-act.dharshi.97",
+          "quote": "Design ?"
+        }
+      ],
+      "fields": [
+        "statement"
+      ]
+    },
+    "status": {
+      "result": "pass",
+      "reason": "Status of the problem is stated as open in provisional_values and not contradicted in dialogue.",
+      "quotes": [
+        {
+          "da_id": "TS3006c.B.dialog-act.dharshi.36",
+          "quote": "yeah that's one thing uh which I'm not sure uh of how to implement it uh into the remote control ."
+        }
+      ],
+      "fields": [
+        "status"
+      ]
+    },
+    "conflict": {
+      "result": "pass",
+      "reason": "No conflicting statements found within the provided dialogue about status or owner.",
+      "quotes": [
+        {
+          "da_id": "TS3006c.B.dialog-act.dharshi.36",
+          "quote": "yeah that's one thing uh which I'm not sure uh of how to implement it uh into the remote control ."
+        }
+      ],
+      "fields": []
+    },
+    "relation": {
+      "result": "not_applicable",
+      "reason": "No prior item relationship to check for a first-meeting scenario; this is a continuation of a new problem raised in TS3006c.",
+      "quotes": [],
+      "fields": [
+        "related_items"
+      ]
+    },
+    "owner": {
+      "result": "not_applicable",
+      "reason": "field_not_applicable",
+      "quotes": [],
+      "fields": [
+        "owner"
+      ]
+    },
+    "deadline": {
+      "result": "not_applicable",
+      "reason": "field_not_applicable",
+      "quotes": [],
+      "fields": [
+        "deadline"
+      ]
+    }
+  },
+  "unresolved_fields": [
+    "statement"
+  ],
+  "observed_evidence_da_ids": [
+    "TS3006c.B.dialog-act.dharshi.36",
+    "TS3006c.B.dialog-act.dharshi.35",
+    "TS3006c.C.dialog-act.dharshi.97"
+  ],
+  "initial_context": {
+    "item": {
+      "type": "problems",
+      "text": "MTD021PM will save this board.",
+      "flags": []
+    },
+    "current_meeting": "TS3006c",
+    "earlier_meetings": [
+      "TS3006a",
+      "TS3006b"
+    ],
+    "roster": [
+      {
+        "speaker": "A",
+        "participant_id": "MTD021PM",
+        "role": "PM"
+      },
+      {
+        "speaker": "B",
+        "participant_id": "MTD023UID",
+        "role": "UI"
+      },
+      {
+        "speaker": "C",
+        "participant_id": "MTD022ID",
+        "role": "ID"
+      },
+      {
+        "speaker": "D",
+        "participant_id": "MTD024ME",
+        "role": "ME"
+      }
+    ],
+    "observed_dialogue": [
+      {
+        "da_id": "TS3006c.B.dialog-act.dharshi.36",
+        "meeting_id": "TS3006c",
+        "text": "yeah that's one thing uh which I'm not sure uh of how to implement it uh into the remote control .",
+        "participant": "MTD023UID",
+        "role": "UI"
+      },
+      {
+        "da_id": "TS3006c.B.dialog-act.dharshi.35",
+        "participant": "MTD023UID",
+        "role": "UI",
+        "text": "Yeah um"
+      },
+      {
+        "da_id": "TS3006c.C.dialog-act.dharshi.97",
+        "participant": "MTD022ID",
+        "role": "ID",
+        "text": "Design ?"
+      }
+    ],
+    "peer_items": [
+      {
+        "item_key": "TS3006c#0",
+        "type": "decisions",
+        "text": "ME and ID will work on the smartboard to design something during the next thirty minutes."
+      }
+    ],
+    "item_type_contract": "This is a Problem, not a task or decision. Verify that the stated obstacle/concern and its impact were actually raised. It need not have an owner, deadline, accepted remedy or resolution. A supported information gap can remain open. Assess end status separately; uncertainty about a cause or remedy is not absence of evidence that the concern exists. Do not infer project-document content or cite a passage that was not delivered.",
+    "provisional_values": {
+      "owner": null,
+      "owner_basis": "missing",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "status": "open",
+      "related_items": []
+    },
+    "candidate_evidence_da_ids": [
+      "TS3006c.B.dialog-act.dharshi.36"
+    ]
+  },
+  "observed_documents": [],
+  "document_evidence": [],
+  "relation_evidence": [],
+  "history": [
+    {
+      "item": "TS3006c#1",
+      "step": 1,
+      "flags": [],
+      "action": "assess_item",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "uncertain",
+          "reason": "The observed dialogue notes an implementation uncertainty about the remote control, and the item text asserts a claim about MTD021PM saving the board, but there is no direct evidence in the current dialogue tying this to a raised obstacle or its impact. The only explicit evidence is a line from UI expressing uncertainty about implementing the remote control feature.",
+          "quotes": [
+            {
+              "da_id": "TS3006c.B.dialog-act.dharshi.36",
+              "quote": "yeah that's one thing uh which I'm not sure uh of how to implement it uh into the remote control ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Status of the problem is stated as open in provisional_values and not contradicted in dialogue.",
+          "quotes": [
+            {
+              "da_id": "TS3006c.B.dialog-act.dharshi.36",
+              "quote": "yeah that's one thing uh which I'm not sure uh of how to implement it uh into the remote control ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No conflicting statements found within the provided dialogue about status or owner.",
+          "quotes": [
+            {
+              "da_id": "TS3006c.B.dialog-act.dharshi.36",
+              "quote": "yeah that's one thing uh which I'm not sure uh of how to implement it uh into the remote control ."
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No prior item relationship to check for a first-meeting scenario; this is a continuation of a new problem raised in TS3006c.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        },
+        "owner": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        }
+      },
+      "decision": "retrieve",
+      "reason": "unresolved_checks",
+      "assessed_text": "MTD021PM will save this board.",
+      "requested_action": null,
+      "proposed_fields": {
+        "status": "open",
+        "related_items": [],
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "TS3006c.B.dialog-act.dharshi.36"
+        ],
+        "owner": null,
+        "owner_basis": "missing",
+        "deadline": null,
+        "deadline_basis": "missing"
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "uncertain",
+          "reason": "The observed dialogue notes an implementation uncertainty about the remote control, and the item text asserts a claim about MTD021PM saving the board, but there is no direct evidence in the current dialogue tying this to a raised obstacle or its impact. The only explicit evidence is a line from UI expressing uncertainty about implementing the remote control feature.",
+          "quotes": [
+            "TS3006c.B.dialog-act.dharshi.36"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Status of the problem is stated as open in provisional_values and not contradicted in dialogue.",
+          "quotes": [
+            "TS3006c.B.dialog-act.dharshi.36"
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No conflicting statements found within the provided dialogue about status or owner.",
+          "quotes": [
+            "TS3006c.B.dialog-act.dharshi.36"
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No prior item relationship to check for a first-meeting scenario; this is a continuation of a new problem raised in TS3006c.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "status": "open",
+        "related_items": [],
+        "statement": {
+          "result": "uncertain",
+          "reason": "The observed dialogue notes an implementation uncertainty about the remote control, and the item text asserts a claim about MTD021PM saving the board, but there is no direct evidence in the current dialogue tying this to a raised obstacle or its impact. The only explicit evidence is a line from UI expressing uncertainty about implementing the remote control feature.",
+          "evidence_da_ids": [
+            "TS3006c.B.dialog-act.dharshi.36"
+          ]
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "Status of the problem is stated as open in provisional_values and not contradicted in dialogue.",
+          "evidence_da_ids": [
+            "TS3006c.B.dialog-act.dharshi.36"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No conflicting statements found within the provided dialogue about status or owner.",
+          "evidence_da_ids": [
+            "TS3006c.B.dialog-act.dharshi.36"
+          ],
+          "affected_fields": []
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No prior item relationship to check for a first-meeting scenario; this is a continuation of a new problem raised in TS3006c.",
+          "evidence_da_ids": []
+        }
+      },
+      "evidence_bindings": {
+        "statement": [
+          "TS3006c.B.dialog-act.dharshi.36"
+        ],
+        "status": [
+          "TS3006c.B.dialog-act.dharshi.36"
+        ],
+        "conflict": [
+          "TS3006c.B.dialog-act.dharshi.36"
+        ]
+      },
+      "raw_tool_input": {
+        "status": "open",
+        "related_items": [],
+        "statement": {
+          "result": "uncertain",
+          "reason": "The observed dialogue notes an implementation uncertainty about the remote control, and the item text asserts a claim about MTD021PM saving the board, but there is no direct evidence in the current dialogue tying this to a raised obstacle or its impact. The only explicit evidence is a line from UI expressing uncertainty about implementing the remote control feature.",
+          "evidence_da_ids": [
+            "TS3006c.B.dialog-act.dharshi.36"
+          ]
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "Status of the problem is stated as open in provisional_values and not contradicted in dialogue.",
+          "evidence_da_ids": [
+            "TS3006c.B.dialog-act.dharshi.36"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No conflicting statements found within the provided dialogue about status or owner.",
+          "evidence_da_ids": [
+            "TS3006c.B.dialog-act.dharshi.36"
+          ],
+          "affected_fields": []
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No prior item relationship to check for a first-meeting scenario; this is a continuation of a new problem raised in TS3006c.",
+          "evidence_da_ids": []
+        }
+      },
+      "protocol_normalizations": [
+        "controller_action_for_missing_hint:retrieve"
+      ],
+      "unresolved_before": [
+        "statement",
+        "status"
+      ],
+      "unresolved_after": [
+        "statement"
+      ],
+      "semantic_stalls": 0,
+      "validation_codes": {}
+    },
+    {
+      "item": "TS3006c#1",
+      "step": 2,
+      "flags": [],
+      "action": "core_recheck_offered",
+      "outcome": "focused_review",
+      "reason": "semantic_core_uncertainty_with_read_evidence"
+    },
+    {
+      "item": "TS3006c#1",
+      "step": 3,
+      "flags": [],
+      "action": "problem_core_review_context",
+      "outcome": "delivered",
+      "evidence_da_ids": [
+        "TS3006c.B.dialog-act.dharshi.36",
+        "TS3006c.B.dialog-act.dharshi.35",
+        "TS3006c.C.dialog-act.dharshi.97"
+      ]
+    },
+    {
+      "item": "TS3006c#1",
+      "step": 3,
+      "flags": [],
+      "action": "assess_core",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "uncertain",
+          "reason": "The observed dialogue discusses how to implement something into the remote control and mentions 'Design ?', but there is no explicit mention or support in the dialogue for the claim that 'MTD021PM will save this board' or any obstacle tied to board-saving.",
+          "quotes": [
+            {
+              "da_id": "TS3006c.B.dialog-act.dharshi.36",
+              "quote": "yeah that's one thing uh which I'm not sure uh of how to implement it uh into the remote control ."
+            },
+            {
+              "da_id": "TS3006c.B.dialog-act.dharshi.35",
+              "quote": "Yeah um"
+            },
+            {
+              "da_id": "TS3006c.C.dialog-act.dharshi.97",
+              "quote": "Design ?"
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Status of the problem is stated as open in provisional_values and not contradicted in dialogue.",
+          "quotes": [
+            {
+              "da_id": "TS3006c.B.dialog-act.dharshi.36",
+              "quote": "yeah that's one thing uh which I'm not sure uh of how to implement it uh into the remote control ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No conflicting statements found within the provided dialogue about status or owner.",
+          "quotes": [
+            {
+              "da_id": "TS3006c.B.dialog-act.dharshi.36",
+              "quote": "yeah that's one thing uh which I'm not sure uh of how to implement it uh into the remote control ."
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No prior item relationship to check for a first-meeting scenario; this is a continuation of a new problem raised in TS3006c.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        },
+        "owner": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        }
+      },
+      "decision": "request_clarification",
+      "reason": "unresolved_checks",
+      "assessed_text": "MTD021PM will save this board.",
+      "requested_action": null,
+      "proposed_fields": {
+        "status": "open",
+        "related_items": [],
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "TS3006c.B.dialog-act.dharshi.36",
+          "TS3006c.B.dialog-act.dharshi.35",
+          "TS3006c.C.dialog-act.dharshi.97"
+        ],
+        "owner": null,
+        "owner_basis": "missing",
+        "deadline": null,
+        "deadline_basis": "missing"
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "uncertain",
+          "reason": "The observed dialogue discusses how to implement something into the remote control and mentions 'Design ?', but there is no explicit mention or support in the dialogue for the claim that 'MTD021PM will save this board' or any obstacle tied to board-saving.",
+          "quotes": [
+            "TS3006c.B.dialog-act.dharshi.36",
+            "TS3006c.B.dialog-act.dharshi.35",
+            "TS3006c.C.dialog-act.dharshi.97"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Status of the problem is stated as open in provisional_values and not contradicted in dialogue.",
+          "quotes": [
+            {
+              "da_id": "TS3006c.B.dialog-act.dharshi.36",
+              "quote": "yeah that's one thing uh which I'm not sure uh of how to implement it uh into the remote control ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No conflicting statements found within the provided dialogue about status or owner.",
+          "quotes": [
+            {
+              "da_id": "TS3006c.B.dialog-act.dharshi.36",
+              "quote": "yeah that's one thing uh which I'm not sure uh of how to implement it uh into the remote control ."
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No prior item relationship to check for a first-meeting scenario; this is a continuation of a new problem raised in TS3006c.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        },
+        "owner": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "statement": {
+          "result": "uncertain",
+          "reason": "The observed dialogue discusses how to implement something into the remote control and mentions 'Design ?', but there is no explicit mention or support in the dialogue for the claim that 'MTD021PM will save this board' or any obstacle tied to board-saving.",
+          "evidence_da_ids": [
+            "TS3006c.B.dialog-act.dharshi.36",
+            "TS3006c.B.dialog-act.dharshi.35",
+            "TS3006c.C.dialog-act.dharshi.97"
+          ]
+        }
+      },
+      "evidence_bindings": {
+        "statement": [
+          "TS3006c.B.dialog-act.dharshi.36",
+          "TS3006c.B.dialog-act.dharshi.35",
+          "TS3006c.C.dialog-act.dharshi.97"
+        ]
+      },
+      "raw_tool_input": {
+        "statement": {
+          "result": "uncertain",
+          "reason": "The observed dialogue discusses how to implement something into the remote control and mentions 'Design ?', but there is no explicit mention or support in the dialogue for the claim that 'MTD021PM will save this board' or any obstacle tied to board-saving.",
+          "evidence_da_ids": [
+            "TS3006c.B.dialog-act.dharshi.36",
+            "TS3006c.B.dialog-act.dharshi.35",
+            "TS3006c.C.dialog-act.dharshi.97"
+          ]
+        }
+      },
+      "protocol_normalizations": [
+        "retained_checked_conflict",
+        "controller_action_for_missing_hint:request_clarification"
+      ],
+      "unresolved_before": [
+        "statement"
+      ],
+      "unresolved_after": [
+        "statement"
+      ],
+      "semantic_stalls": 0,
+      "validation_codes": {}
+    },
+    {
+      "item": "TS3006c#1",
+      "step": 3,
+      "flags": [],
+      "action": "stop",
+      "outcome": "pending",
+      "termination_reason": "unresolved_checks",
+      "unresolved_fields": [
+        "statement"
+      ]
+    }
+  ],
+  "lookups": 0,
+  "termination_reason": "unresolved_checks",
+  "clarifications": [
+    {
+      "request_id": "2d6e2fce3bfd61fc",
+      "item_key": "TS3006c#1",
+      "record_id": null,
+      "field": "statement",
+      "question": "Should this be recorded as a substantive, supported problems item?",
+      "item_text": "MTD021PM will save this board.",
+      "reason": "The observed dialogue discusses how to implement something into the remote control and mentions 'Design ?', but there is no explicit mention or support in the dialogue for the claim that 'MTD021PM will save this board' or any obstacle tied to board-saving.",
+      "evidence_da_ids": [
+        "TS3006c.B.dialog-act.dharshi.36",
+        "TS3006c.B.dialog-act.dharshi.35",
+        "TS3006c.C.dialog-act.dharshi.97"
+      ],
+      "available_evidence_da_ids": [
+        "TS3006c.B.dialog-act.dharshi.36",
+        "TS3006c.B.dialog-act.dharshi.35",
+        "TS3006c.C.dialog-act.dharshi.97"
+      ],
+      "status": "open",
+      "termination_reason": "unresolved_checks"
+    }
+  ]
+}

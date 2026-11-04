@@ -1,0 +1,98 @@
+{
+  "human_review": {
+    "status": "pending"
+  },
+  "relation_evidence": [
+    {
+      "prior_item_id": "TS3006a.sys.s.6",
+      "relation": "updates",
+      "state": "supported",
+      "changed_fields": [
+        "scope"
+      ],
+      "reason": "Current item narrows the previous scope by removing multi-device (TV and video) support in favor of a single-device (TV) control.",
+      "before": {
+        "kind": "prior_item",
+        "id": "TS3006a.sys.s.6",
+        "meeting_id": "TS3006a",
+        "type": "decisions",
+        "text": "We will go ahead with the current plan; we are adopting a three-phase approach and will start with TV and video only, with the possibility to add other features.",
+        "owner": null,
+        "owner_basis": null,
+        "deadline": null,
+        "deadline_basis": null,
+        "status": "adopted",
+        "evidence": [
+          "TS3006a.A.dialog-act.vkaraisk.196",
+          "TS3006a.A.dialog-act.vkaraisk.197",
+          "TS3006a.A.dialog-act.vkaraisk.198",
+          "TS3006a.D.dialog-act.vkaraisk.147",
+          "TS3006a.A.dialog-act.vkaraisk.243",
+          "TS3006a.A.dialog-act.vkaraisk.244"
+        ],
+        "source_file": "TS3006a.json",
+        "source_sha256": "cfda9ea9dad58a842c261dd0bfef6deb5a2da252ca7862d3d318e784134e374f",
+        "review_state": "legacy_unchecked",
+        "unresolved_fields": [],
+        "unreadable_reference_ids": [],
+        "selected_reference_ids": [
+          "TS3006a.A.dialog-act.vkaraisk.243",
+          "TS3006a.A.dialog-act.vkaraisk.198",
+          "TS3006a.A.dialog-act.vkaraisk.244",
+          "TS3006a.A.dialog-act.vkaraisk.196",
+          "TS3006a.A.dialog-act.vkaraisk.197",
+          "TS3006a.D.dialog-act.vkaraisk.147"
+        ],
+        "next_offset": null
+      },
+      "after": {
+        "item_key": "TS3006b#0",
+        "text": "The product will be limited to controlling only one device, specifically the television.",
+        "type": "decisions",
+        "status": "adopted",
+        "owner": null,
+        "deadline": null
+      },
+      "prior_quotes": [
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.243",
+          "quote": "We could just start with the assumption that's only for T_V_ and video ."
+        },
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.244",
+          "quote": "And um reserve the possibility to add other features ."
+        }
+      ],
+      "current_quotes": [
+        {
+          "da_id": "TS3006b.D.dialog-act.dharshi.132",
+          "quote": "Yeah but uh the the newsflash also stated that it should control only one device , only your television ."
+        },
+        {
+          "da_id": "TS3006b.B.dialog-act.dharshi.68",
+          "quote": "Okay one device ."
+        }
+      ]
+    }
+  ],
+  "source_item": {
+    "id": "TS3006b.sys.s.11",
+    "text": "The product will be limited to controlling only one device, specifically the television.",
+    "type": "decisions",
+    "reference": [
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3006b.json",
+        "locator": "TS3006b.D.dialog-act.dharshi.132"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3006b.json",
+        "locator": "TS3006b.B.dialog-act.dharshi.68"
+      }
+    ],
+    "status": "adopted",
+    "prior_context_needed": false,
+    "related_items": []
+  }
+}

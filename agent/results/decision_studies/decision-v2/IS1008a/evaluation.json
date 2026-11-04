@@ -1,0 +1,242 @@
+{
+  "meeting": "IS1008a",
+  "gold_sha256": "175e1a7a0a4ce8f09e62778b3c04509e7030be947b0d3a5a56c4054ce353f089",
+  "coverage": {
+    "votes": 3,
+    "raw_votes": [
+      [],
+      [],
+      []
+    ],
+    "matches": []
+  },
+  "arms": {
+    "before": {
+      "metrics": {
+        "actions": {
+          "tp": 3,
+          "sys": 5,
+          "gold": 4,
+          "precision": 0.6,
+          "recall": 0.75,
+          "f1": 0.667
+        },
+        "decisions": {
+          "tp": 0,
+          "sys": 1,
+          "gold": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "problems": {
+          "tp": 1,
+          "sys": 1,
+          "gold": 1,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "pairs": {
+        "2": "IS1008a.JacquelinePalmer.s.9",
+        "4": "IS1008a.JacquelinePalmer.s.8",
+        "6": "IS1008a.JacquelinePalmer.s.10",
+        "0": "IS1008a.JacquelinePalmer.s.14"
+      },
+      "diagnosis": [
+        {
+          "gold_id": "IS1008a.JacquelinePalmer.s.12",
+          "gold_text": "The team will discuss the developing functional-design, usability and marketing plans at the next meeting.",
+          "matched": false,
+          "attribution": "initial_extraction_or_type",
+          "candidate_witnesses": [],
+          "candidate_items": [],
+          "merged_samples": [
+            [],
+            [],
+            []
+          ],
+          "after_sample_caps": [
+            [],
+            [],
+            []
+          ],
+          "after_vote": [],
+          "after_final_cap_and_normalize": []
+        },
+        {
+          "gold_id": "IS1008a.JacquelinePalmer.s.13",
+          "gold_text": "The immediate next step is to determine the functional design in consultation with usability and marketing.",
+          "matched": false,
+          "attribution": "initial_extraction_or_type",
+          "candidate_witnesses": [],
+          "candidate_items": [],
+          "merged_samples": [
+            [],
+            [],
+            []
+          ],
+          "after_sample_caps": [
+            [],
+            [],
+            []
+          ],
+          "after_vote": [],
+          "after_final_cap_and_normalize": []
+        }
+      ]
+    },
+    "after": {
+      "metrics": {
+        "actions": {
+          "tp": 3,
+          "sys": 5,
+          "gold": 4,
+          "precision": 0.6,
+          "recall": 0.75,
+          "f1": 0.667
+        },
+        "decisions": {
+          "tp": 2,
+          "sys": 7,
+          "gold": 2,
+          "precision": 0.286,
+          "recall": 1.0,
+          "f1": 0.444
+        },
+        "problems": {
+          "tp": 1,
+          "sys": 1,
+          "gold": 1,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "pairs": {
+        "1": "IS1008a.JacquelinePalmer.s.9",
+        "3": "IS1008a.JacquelinePalmer.s.8",
+        "5": "IS1008a.JacquelinePalmer.s.10",
+        "11": "IS1008a.JacquelinePalmer.s.13",
+        "12": "IS1008a.JacquelinePalmer.s.12",
+        "0": "IS1008a.JacquelinePalmer.s.14"
+      },
+      "diagnosis": [
+        {
+          "gold_id": "IS1008a.JacquelinePalmer.s.12",
+          "gold_text": "The team will discuss the developing functional-design, usability and marketing plans at the next meeting.",
+          "matched": true,
+          "attribution": "recovered",
+          "candidate_witnesses": [],
+          "candidate_items": [],
+          "merged_samples": [
+            [],
+            [],
+            []
+          ],
+          "after_sample_caps": [
+            [],
+            [],
+            []
+          ],
+          "after_vote": [],
+          "after_final_cap_and_normalize": []
+        },
+        {
+          "gold_id": "IS1008a.JacquelinePalmer.s.13",
+          "gold_text": "The immediate next step is to determine the functional design in consultation with usability and marketing.",
+          "matched": true,
+          "attribution": "recovered",
+          "candidate_witnesses": [],
+          "candidate_items": [],
+          "merged_samples": [
+            [],
+            [],
+            []
+          ],
+          "after_sample_caps": [
+            [],
+            [],
+            []
+          ],
+          "after_vote": [],
+          "after_final_cap_and_normalize": []
+        }
+      ]
+    }
+  },
+  "unscored_types": {},
+  "usage": {
+    "calls": 3,
+    "in": 1260,
+    "out": 10549,
+    "stages": {
+      "other": {
+        "calls": 3,
+        "in": 1260,
+        "out": 10549
+      }
+    }
+  },
+  "runtime_control": {
+    "limits": {
+      "calls": 80,
+      "tokens": 1000000,
+      "request_seconds": 300.0,
+      "meeting_seconds": 1200.0,
+      "inflight": 4,
+      "retries": 2,
+      "backoff": 0.5
+    },
+    "attempted_calls": 3,
+    "charged_tokens": 11809,
+    "unknown_usage_tokens": 0,
+    "reserved_tokens": 0,
+    "max_inflight_seen": 1,
+    "failure": null,
+    "attempts": [
+      {
+        "attempt": 0,
+        "stage": "other",
+        "reserved_tokens": 34763,
+        "input_bound": 2763,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 4235,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 420,
+        "output_tokens": 3815
+      },
+      {
+        "attempt": 1,
+        "stage": "other",
+        "reserved_tokens": 34763,
+        "input_bound": 2763,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 3467,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 420,
+        "output_tokens": 3047
+      },
+      {
+        "attempt": 2,
+        "stage": "other",
+        "reserved_tokens": 34763,
+        "input_bound": 2763,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 4107,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 420,
+        "output_tokens": 3687
+      }
+    ],
+    "input_bound_method": "utf8_request_bytes_plus_padding",
+    "unknown_usage_policy": "charge_full_reservation"
+  }
+}

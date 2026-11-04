@@ -1,0 +1,94 @@
+{
+  "meeting_id": "ES2011a",
+  "status": "COMPLETED",
+  "score": {
+    "metrics": {
+      "actions": {
+        "tp": 2,
+        "sys": 2,
+        "gold": 3,
+        "precision": 1.0,
+        "recall": 0.667,
+        "f1": 0.8
+      },
+      "decisions": {
+        "unscored": "NA placeholder category"
+      },
+      "problems": {
+        "unscored": "NA placeholder category"
+      }
+    },
+    "matches": {
+      "ES2011a.sys.s.3": "ES2011a.JacquelinePalmer.s.10",
+      "ES2011a.sys.s.6": "ES2011a.JacquelinePalmer.s.12"
+    },
+    "unmatched": {
+      "actions": {
+        "system": [],
+        "gold": [
+          {
+            "id": "ES2011a.JacquelinePalmer.s.11",
+            "text": "The User Interface Designer will research the technical functions.",
+            "type": "actions",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011a.json",
+                "locator": "ES2011a.A.dialog-act.dharshi.154"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011a.json",
+                "locator": "ES2011a.C.dialog-act.dharshi.110"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011a.json",
+                "locator": "ES2011a.A.dialog-act.dharshi.141"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011a.json",
+                "locator": "ES2011a.A.dialog-act.dharshi.155"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/ES2011a.json",
+                "locator": "ES2011a.A.dialog-act.dharshi.156"
+              }
+            ],
+            "owner": [
+              "FEE043"
+            ],
+            "owner_basis": "explicit",
+            "deadline": "for the next meeting",
+            "deadline_basis": "inferred",
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": []
+          }
+        ]
+      }
+    }
+  },
+  "runtime_control": {
+    "limits": {
+      "calls": 80,
+      "tokens": 1000000,
+      "request_seconds": 300.0,
+      "meeting_seconds": 1200.0,
+      "inflight": 4,
+      "retries": 2,
+      "backoff": 0.5
+    },
+    "attempted_calls": 0,
+    "charged_tokens": 0,
+    "unknown_usage_tokens": 0,
+    "reserved_tokens": 0,
+    "max_inflight_seen": 0,
+    "failure": null,
+    "attempts": [],
+    "input_bound_method": "utf8_request_bytes_plus_padding",
+    "unknown_usage_policy": "charge_full_reservation"
+  }
+}

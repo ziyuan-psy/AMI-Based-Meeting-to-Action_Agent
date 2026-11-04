@@ -1,0 +1,1614 @@
+{
+  "item_key": "TS3004d#6",
+  "record_id": null,
+  "item_type": "actions",
+  "item_text": "ME will take some pictures after the meeting.",
+  "state": "pending",
+  "recordable": true,
+  "fields": {
+    "status": "open",
+    "prior_context_needed": false,
+    "related_items": [],
+    "owner": [
+      "MTD016ME"
+    ],
+    "owner_basis": "explicit",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "reference": [
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3004d.json",
+        "locator": "TS3004d.D.dialog-act.dharshi.255"
+      }
+    ]
+  },
+  "draft_fields": {
+    "status": "open",
+    "related_items": [],
+    "owner": [
+      "MTD016ME"
+    ],
+    "owner_basis": "explicit",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "prior_context_needed": false,
+    "used_participant_lookup": false,
+    "evidence_da_ids": [
+      "TS3004d.D.dialog-act.dharshi.255",
+      "TS3004b.A.dialog-act.vkaraisk.118"
+    ]
+  },
+  "checks": {
+    "statement": {
+      "result": "pass",
+      "reason": "Dialogue shows ME explicitly expressing intent to take pictures after the meeting, matching the action text.",
+      "quotes": [
+        {
+          "da_id": "TS3004d.D.dialog-act.dharshi.255",
+          "quote": "<gap> I should take some pictures uh ."
+        }
+      ],
+      "fields": [
+        "statement"
+      ]
+    },
+    "owner": {
+      "result": "pass",
+      "reason": "Owner is explicitly assigned to ME (MTD016ME) in the provided provisional values.",
+      "quotes": [
+        {
+          "da_id": "TS3004d.D.dialog-act.dharshi.255",
+          "quote": "<gap> I should take some pictures uh ."
+        }
+      ],
+      "fields": [
+        "owner"
+      ]
+    },
+    "deadline": {
+      "result": "uncertain",
+      "reason": "deadline_unresolved",
+      "quotes": [
+        {
+          "da_id": "TS3004d.D.dialog-act.dharshi.255",
+          "quote": "<gap> I should take some pictures uh ."
+        }
+      ],
+      "fields": [
+        "deadline"
+      ]
+    },
+    "status": {
+      "result": "pass",
+      "reason": "Status is open as per provisional values and no completion reported.",
+      "quotes": [
+        {
+          "da_id": "TS3004d.D.dialog-act.dharshi.255",
+          "quote": "<gap> I should take some pictures uh ."
+        }
+      ],
+      "fields": [
+        "status"
+      ]
+    },
+    "conflict": {
+      "result": "pass",
+      "reason": "No contradictions found in the delivered evidence.",
+      "quotes": [
+        {
+          "da_id": "TS3004d.D.dialog-act.dharshi.255",
+          "quote": "<gap> I should take some pictures uh ."
+        }
+      ],
+      "fields": []
+    },
+    "relation": {
+      "result": "uncertain",
+      "reason": "The current action text 'ME will take some pictures after the meeting' does not map to any clearly documented earlier action in TS3004a/b/c (UI/laptop placement and follow-up). The relation remains uncertain; no explicit linkage found in prior dialogues.",
+      "quotes": [
+        {
+          "da_id": "TS3004d.D.dialog-act.dharshi.255",
+          "quote": "<gap> I should take some pictures uh ."
+        }
+      ],
+      "links": [],
+      "documents": [],
+      "fields": [
+        "related_items"
+      ]
+    }
+  },
+  "unresolved_fields": [
+    "deadline",
+    "related_items"
+  ],
+  "observed_evidence_da_ids": [
+    "TS3004d.D.dialog-act.dharshi.255",
+    "TS3004d.B.dialog-act.dharshi.279",
+    "TS3004d.A.dialog-act.dharshi.316",
+    "TS3004b.A.dialog-act.vkaraisk.117",
+    "TS3004b.A.dialog-act.vkaraisk.118",
+    "TS3004b.D.dialog-act.vkaraisk.118"
+  ],
+  "initial_context": {
+    "item": {
+      "type": "actions",
+      "text": "ME will take some pictures after the meeting.",
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ]
+    },
+    "current_meeting": "TS3004d",
+    "earlier_meetings": [
+      "TS3004a",
+      "TS3004b",
+      "TS3004c"
+    ],
+    "roster": [
+      {
+        "speaker": "A",
+        "participant_id": "MTD013PM",
+        "role": "PM"
+      },
+      {
+        "speaker": "B",
+        "participant_id": "MTD015UID",
+        "role": "UI"
+      },
+      {
+        "speaker": "C",
+        "participant_id": "MTD014ID",
+        "role": "ID"
+      },
+      {
+        "speaker": "D",
+        "participant_id": "MTD016ME",
+        "role": "ME"
+      }
+    ],
+    "observed_dialogue": [
+      {
+        "da_id": "TS3004d.D.dialog-act.dharshi.255",
+        "meeting_id": "TS3004d",
+        "text": "<gap> I should take some pictures uh .",
+        "participant": "MTD016ME",
+        "role": "ME"
+      },
+      {
+        "da_id": "TS3004d.B.dialog-act.dharshi.279",
+        "participant": "MTD015UID",
+        "role": "UI",
+        "text": "Yep ."
+      },
+      {
+        "da_id": "TS3004d.A.dialog-act.dharshi.316",
+        "participant": "MTD013PM",
+        "role": "PM",
+        "text": "Okay ."
+      }
+    ],
+    "peer_items": [
+      {
+        "item_key": "TS3004d#0",
+        "type": "decisions",
+        "text": "UI will present their prototype presentation after PM."
+      },
+      {
+        "item_key": "TS3004d#1",
+        "type": "problems",
+        "text": "ME will take some pictures after the meeting."
+      },
+      {
+        "item_key": "TS3004d#2",
+        "type": "decisions",
+        "text": "The Project Manager will write a final report."
+      },
+      {
+        "item_key": "TS3004d#3",
+        "type": "actions",
+        "text": "ID will fill in the questionnaire."
+      },
+      {
+        "item_key": "TS3004d#4",
+        "type": "actions",
+        "text": "UI will present their prototype presentation after PM."
+      },
+      {
+        "item_key": "TS3004d#5",
+        "type": "actions",
+        "text": "The Project Manager will write a final report."
+      }
+    ],
+    "provisional_values": {
+      "owner": [
+        "MTD016ME"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "status": "open",
+      "related_items": []
+    },
+    "candidate_evidence_da_ids": [
+      "TS3004d.D.dialog-act.dharshi.255"
+    ]
+  },
+  "observed_documents": [],
+  "document_evidence": [],
+  "relation_evidence": [],
+  "history": [
+    {
+      "item": "TS3004d#6",
+      "step": 1,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "assess_item",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue shows ME explicitly expressing intent to take pictures after the meeting, matching the action text.",
+          "quotes": [
+            {
+              "da_id": "TS3004d.D.dialog-act.dharshi.255",
+              "quote": "<gap> I should take some pictures uh ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Owner is explicitly assigned to ME (MTD016ME) in the provided provisional values.",
+          "quotes": [
+            {
+              "da_id": "TS3004d.D.dialog-act.dharshi.255",
+              "quote": "<gap> I should take some pictures uh ."
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "deadline_unresolved",
+          "quotes": [
+            {
+              "da_id": "TS3004d.D.dialog-act.dharshi.255",
+              "quote": "<gap> I should take some pictures uh ."
+            }
+          ],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Status is open as per provisional values and no completion reported.",
+          "quotes": [
+            {
+              "da_id": "TS3004d.D.dialog-act.dharshi.255",
+              "quote": "<gap> I should take some pictures uh ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions found in the delivered evidence.",
+          "quotes": [
+            {
+              "da_id": "TS3004d.D.dialog-act.dharshi.255",
+              "quote": "<gap> I should take some pictures uh ."
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "related_item_not_retrieved_or_outside_visible_history",
+          "links": [
+            {
+              "id": "TS3004d#1",
+              "relation": "resolves",
+              "changed_fields": [],
+              "reason": "Directly addresses and closes the stated problem",
+              "prior_evidence_da_ids": [
+                "TS3004d.D.dialog-act.dharshi.255"
+              ],
+              "current_evidence_da_ids": [
+                "TS3004d.D.dialog-act.dharshi.255"
+              ]
+            }
+          ],
+          "quotes": [
+            {
+              "da_id": "TS3004d.D.dialog-act.dharshi.255",
+              "quote": "<gap> I should take some pictures uh ."
+            }
+          ],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "decision": "retrieve",
+      "reason": "unresolved_checks",
+      "assessed_text": "ME will take some pictures after the meeting.",
+      "requested_action": null,
+      "proposed_fields": {
+        "status": "open",
+        "related_items": [
+          {
+            "id": "TS3004d#1",
+            "relation": "resolves",
+            "changed_fields": [],
+            "reason": "Current action directly addresses the problem noted in TS3004d#1.",
+            "prior_evidence_da_ids": [
+              "TS3004d.D.dialog-act.dharshi.255"
+            ],
+            "current_evidence_da_ids": [
+              "TS3004d.D.dialog-act.dharshi.255"
+            ]
+          }
+        ],
+        "owner": [
+          "MTD016ME"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "TS3004d.D.dialog-act.dharshi.255"
+        ]
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue shows ME explicitly expressing intent to take pictures after the meeting, matching the action text.",
+          "quotes": [
+            "TS3004d.D.dialog-act.dharshi.255"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Owner is explicitly assigned to ME (MTD016ME) in the provided provisional values.",
+          "quotes": [
+            "TS3004d.D.dialog-act.dharshi.255"
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "No explicit deadline stated; only timing is described as 'after the meeting'.",
+          "quotes": [
+            "TS3004d.D.dialog-act.dharshi.255"
+          ],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Status is open as per provisional values and no completion reported.",
+          "quotes": [
+            "TS3004d.D.dialog-act.dharshi.255"
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions found in the delivered evidence.",
+          "quotes": [
+            "TS3004d.D.dialog-act.dharshi.255"
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "pass",
+          "reason": "The current item relates to a prior problem and resolves TS3004d#1.",
+          "links": [
+            {
+              "id": "TS3004d#1",
+              "relation": "resolves",
+              "changed_fields": [],
+              "reason": "Directly addresses and closes the stated problem",
+              "prior_evidence_da_ids": [
+                "TS3004d.D.dialog-act.dharshi.255"
+              ],
+              "current_evidence_da_ids": [
+                "TS3004d.D.dialog-act.dharshi.255"
+              ]
+            }
+          ],
+          "quotes": [
+            "TS3004d.D.dialog-act.dharshi.255"
+          ],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "status": "open",
+        "related_items": [
+          {
+            "id": "TS3004d#1",
+            "relation": "resolves",
+            "changed_fields": [],
+            "reason": "Current action directly addresses the problem noted in TS3004d#1.",
+            "prior_evidence_da_ids": [
+              "TS3004d.D.dialog-act.dharshi.255"
+            ],
+            "current_evidence_da_ids": [
+              "TS3004d.D.dialog-act.dharshi.255"
+            ]
+          }
+        ],
+        "owner": [
+          "MTD016ME"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue shows ME explicitly expressing intent to take pictures after the meeting, matching the action text.",
+          "evidence_da_ids": [
+            "TS3004d.D.dialog-act.dharshi.255"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "Owner is explicitly assigned to ME (MTD016ME) in the provided provisional values.",
+          "evidence_da_ids": [
+            "TS3004d.D.dialog-act.dharshi.255"
+          ]
+        },
+        "deadline_check": {
+          "result": "uncertain",
+          "reason": "No explicit deadline stated; only timing is described as 'after the meeting'.",
+          "evidence_da_ids": [
+            "TS3004d.D.dialog-act.dharshi.255"
+          ]
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "Status is open as per provisional values and no completion reported.",
+          "evidence_da_ids": [
+            "TS3004d.D.dialog-act.dharshi.255"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No contradictions found in the delivered evidence.",
+          "evidence_da_ids": [
+            "TS3004d.D.dialog-act.dharshi.255"
+          ],
+          "affected_fields": []
+        },
+        "relation_check": {
+          "result": "pass",
+          "reason": "The current item relates to a prior problem and resolves TS3004d#1.",
+          "evidence_da_ids": [
+            "TS3004d.D.dialog-act.dharshi.255"
+          ],
+          "links": [
+            {
+              "id": "TS3004d#1",
+              "relation": "resolves",
+              "changed_fields": [],
+              "reason": "Directly addresses and closes the stated problem",
+              "prior_evidence_da_ids": [
+                "TS3004d.D.dialog-act.dharshi.255"
+              ],
+              "current_evidence_da_ids": [
+                "TS3004d.D.dialog-act.dharshi.255"
+              ]
+            }
+          ]
+        }
+      },
+      "evidence_bindings": {
+        "statement": [
+          "TS3004d.D.dialog-act.dharshi.255"
+        ],
+        "owner": [
+          "TS3004d.D.dialog-act.dharshi.255"
+        ],
+        "deadline": [
+          "TS3004d.D.dialog-act.dharshi.255"
+        ],
+        "status": [
+          "TS3004d.D.dialog-act.dharshi.255"
+        ],
+        "conflict": [
+          "TS3004d.D.dialog-act.dharshi.255"
+        ],
+        "relation": [
+          "TS3004d.D.dialog-act.dharshi.255"
+        ]
+      },
+      "raw_tool_input": {
+        "status": "open",
+        "related_items": [
+          {
+            "id": "TS3004d#1",
+            "relation": "resolves",
+            "changed_fields": [],
+            "reason": "Current action directly addresses the problem noted in TS3004d#1.",
+            "prior_evidence_da_ids": [
+              "TS3004d.D.dialog-act.dharshi.255"
+            ],
+            "current_evidence_da_ids": [
+              "TS3004d.D.dialog-act.dharshi.255"
+            ]
+          }
+        ],
+        "owner": [
+          "MTD016ME"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue shows ME explicitly expressing intent to take pictures after the meeting, matching the action text.",
+          "evidence_da_ids": [
+            "TS3004d.D.dialog-act.dharshi.255"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "Owner is explicitly assigned to ME (MTD016ME) in the provided provisional values.",
+          "evidence_da_ids": [
+            "TS3004d.D.dialog-act.dharshi.255"
+          ]
+        },
+        "deadline_check": {
+          "result": "uncertain",
+          "reason": "No explicit deadline stated; only timing is described as 'after the meeting'.",
+          "evidence_da_ids": [
+            "TS3004d.D.dialog-act.dharshi.255"
+          ]
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "Status is open as per provisional values and no completion reported.",
+          "evidence_da_ids": [
+            "TS3004d.D.dialog-act.dharshi.255"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No contradictions found in the delivered evidence.",
+          "evidence_da_ids": [
+            "TS3004d.D.dialog-act.dharshi.255"
+          ],
+          "affected_fields": []
+        },
+        "relation_check": {
+          "result": "pass",
+          "reason": "The current item relates to a prior problem and resolves TS3004d#1.",
+          "evidence_da_ids": [
+            "TS3004d.D.dialog-act.dharshi.255"
+          ],
+          "links": [
+            {
+              "id": "TS3004d#1",
+              "relation": "resolves",
+              "changed_fields": [],
+              "reason": "Directly addresses and closes the stated problem",
+              "prior_evidence_da_ids": [
+                "TS3004d.D.dialog-act.dharshi.255"
+              ],
+              "current_evidence_da_ids": [
+                "TS3004d.D.dialog-act.dharshi.255"
+              ]
+            }
+          ]
+        },
+        "documents": []
+      },
+      "protocol_normalizations": [
+        "empty_unscoped_documents",
+        "controller_action_for_missing_hint:retrieve"
+      ],
+      "unresolved_before": [
+        "deadline",
+        "owner",
+        "related_items",
+        "statement",
+        "status"
+      ],
+      "unresolved_after": [
+        "deadline",
+        "related_items"
+      ],
+      "semantic_stalls": 0,
+      "validation_codes": {
+        "deadline": [
+          "deadline_unresolved"
+        ],
+        "relation": [
+          "retrieve_prior_record_and_read_its_evidence",
+          "selected_prior_item_evidence_not_read",
+          "related_item_not_retrieved_or_outside_visible_history"
+        ]
+      }
+    },
+    {
+      "item": "TS3004d#6",
+      "step": 2,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "history_context_focused",
+      "outcome": "delivered",
+      "evidence_da_ids": [
+        "TS3004d.D.dialog-act.dharshi.255",
+        "TS3004d.B.dialog-act.dharshi.279",
+        "TS3004d.A.dialog-act.dharshi.316"
+      ]
+    },
+    {
+      "item": "TS3004d#6",
+      "step": 2,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "get_prior_items",
+      "outcome": "lookup",
+      "decision": "retrieve",
+      "args": {
+        "query": "pictures after meeting",
+        "item_type": "actions"
+      },
+      "tool_result": {
+        "results": [
+          {
+            "id": "TS3004b.sys.s.9",
+            "meeting_id": "TS3004b",
+            "type": "actions",
+            "text": "Paul Wiezer (UI) will present the next item after this meeting.",
+            "owner": [
+              "MTD015UID"
+            ],
+            "owner_basis": "explicit",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "open",
+            "evidence": [
+              "TS3004b.A.dialog-act.vkaraisk.118"
+            ],
+            "source_file": "TS3004b.json",
+            "source_sha256": "f9e993ccb28ce20341aea1fc0577483476b227008e137ad318b461669cf75db5",
+            "review_state": "legacy_unchecked",
+            "unresolved_fields": [],
+            "unreadable_reference_ids": [],
+            "score": 2.46
+          },
+          {
+            "id": "TS3004c.sys.s.14",
+            "meeting_id": "TS3004c",
+            "type": "actions",
+            "text": "The UI will follow up on the item discussed after this meeting.",
+            "owner": [
+              "MTD015UID"
+            ],
+            "owner_basis": "explicit",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "open",
+            "evidence": [
+              "TS3004c.B.dialog-act.vkaraisk.27"
+            ],
+            "source_file": "TS3004c.json",
+            "source_sha256": "d437d6eaacff404ff1d83b94f76b27042d7276d010d22a3d154f5c24b3f65b3d",
+            "review_state": "legacy_unchecked",
+            "unresolved_fields": [],
+            "unreadable_reference_ids": [],
+            "score": 2.37
+          },
+          {
+            "id": "TS3004a.sys.s.11",
+            "meeting_id": "TS3004a",
+            "type": "actions",
+            "text": "The UI will place their laptop exactly on the square for the next meeting.",
+            "owner": [
+              "MTD015UID"
+            ],
+            "owner_basis": "explicit",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "open",
+            "evidence": [
+              "TS3004a.A.dialog-act.vkaraisk.302",
+              "TS3004a.B.dialog-act.vkaraisk.136"
+            ],
+            "source_file": "TS3004a.json",
+            "source_sha256": "83c41ada9eefeff60551d0bcf070e1e1a35fd9dda8efc04715f480ffe77f93a3",
+            "review_state": "legacy_unchecked",
+            "unresolved_fields": [],
+            "unreadable_reference_ids": [],
+            "score": 0.95
+          }
+        ]
+      },
+      "new_info": true
+    },
+    {
+      "item": "TS3004d#6",
+      "step": 3,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "read_prior_item",
+      "outcome": "lookup",
+      "decision": "retrieve",
+      "args": {
+        "item_id": "TS3004b.sys.s.9"
+      },
+      "tool_result": {
+        "results": [
+          {
+            "kind": "prior_item",
+            "id": "TS3004b.sys.s.9",
+            "meeting_id": "TS3004b",
+            "type": "actions",
+            "text": "Paul Wiezer (UI) will present the next item after this meeting.",
+            "owner": [
+              "MTD015UID"
+            ],
+            "owner_basis": "explicit",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "open",
+            "evidence": [
+              "TS3004b.A.dialog-act.vkaraisk.118"
+            ],
+            "source_file": "TS3004b.json",
+            "source_sha256": "f9e993ccb28ce20341aea1fc0577483476b227008e137ad318b461669cf75db5",
+            "review_state": "legacy_unchecked",
+            "unresolved_fields": [],
+            "unreadable_reference_ids": [],
+            "selected_reference_ids": [
+              "TS3004b.A.dialog-act.vkaraisk.118"
+            ],
+            "next_offset": null
+          },
+          {
+            "kind": "dialogue",
+            "da_id": "TS3004b.A.dialog-act.vkaraisk.117",
+            "meeting_id": "TS3004b",
+            "text": "So",
+            "participant": "MTD013PM",
+            "role": "PM",
+            "supports_item_id": "TS3004b.sys.s.9",
+            "is_reference": false
+          },
+          {
+            "kind": "dialogue",
+            "da_id": "TS3004b.A.dialog-act.vkaraisk.118",
+            "meeting_id": "TS3004b",
+            "text": "Paul , you can do the next one if you want .",
+            "participant": "MTD013PM",
+            "role": "PM",
+            "supports_item_id": "TS3004b.sys.s.9",
+            "is_reference": true
+          },
+          {
+            "kind": "dialogue",
+            "da_id": "TS3004b.D.dialog-act.vkaraisk.118",
+            "meeting_id": "TS3004b",
+            "text": "You can ask some questions or something .",
+            "participant": "MTD016ME",
+            "role": "ME",
+            "supports_item_id": "TS3004b.sys.s.9",
+            "is_reference": false
+          }
+        ]
+      },
+      "new_info": true
+    },
+    {
+      "item": "TS3004d#6",
+      "step": 4,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "assess_relation",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue shows ME explicitly expressing intent to take pictures after the meeting, matching the action text.",
+          "quotes": [
+            {
+              "da_id": "TS3004d.D.dialog-act.dharshi.255",
+              "quote": "<gap> I should take some pictures uh ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Owner is explicitly assigned to ME (MTD016ME) in the provided provisional values.",
+          "quotes": [
+            {
+              "da_id": "TS3004d.D.dialog-act.dharshi.255",
+              "quote": "<gap> I should take some pictures uh ."
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "deadline_unresolved",
+          "quotes": [
+            {
+              "da_id": "TS3004d.D.dialog-act.dharshi.255",
+              "quote": "<gap> I should take some pictures uh ."
+            }
+          ],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Status is open as per provisional values and no completion reported.",
+          "quotes": [
+            {
+              "da_id": "TS3004d.D.dialog-act.dharshi.255",
+              "quote": "<gap> I should take some pictures uh ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions found in the delivered evidence.",
+          "quotes": [
+            {
+              "da_id": "TS3004d.D.dialog-act.dharshi.255",
+              "quote": "<gap> I should take some pictures uh ."
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "The current action mentions ME taking pictures after the meeting, which does not map to any clearly documented earlier action in TS3004a/b/c. The only clearly related items concern UI follow-ups, presentations, or equipment, not photography. Evidence from current ME line and the earlier TS3004b items do not establish a linkage, so relation remains uncertain.",
+          "quotes": [
+            {
+              "da_id": "TS3004d.D.dialog-act.dharshi.255",
+              "quote": "I should take some pictures uh ."
+            },
+            {
+              "da_id": "TS3004b.A.dialog-act.vkaraisk.118",
+              "quote": "Paul , you can do the next one if you want ."
+            }
+          ],
+          "links": [],
+          "documents": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "decision": "retrieve",
+      "reason": "unresolved_checks",
+      "assessed_text": "ME will take some pictures after the meeting.",
+      "requested_action": null,
+      "proposed_fields": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD016ME"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "TS3004d.D.dialog-act.dharshi.255",
+          "TS3004b.A.dialog-act.vkaraisk.118"
+        ]
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue shows ME explicitly expressing intent to take pictures after the meeting, matching the action text.",
+          "quotes": [
+            {
+              "da_id": "TS3004d.D.dialog-act.dharshi.255",
+              "quote": "<gap> I should take some pictures uh ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Owner is explicitly assigned to ME (MTD016ME) in the provided provisional values.",
+          "quotes": [
+            {
+              "da_id": "TS3004d.D.dialog-act.dharshi.255",
+              "quote": "<gap> I should take some pictures uh ."
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "deadline_unresolved",
+          "quotes": [
+            {
+              "da_id": "TS3004d.D.dialog-act.dharshi.255",
+              "quote": "<gap> I should take some pictures uh ."
+            }
+          ],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Status is open as per provisional values and no completion reported.",
+          "quotes": [
+            {
+              "da_id": "TS3004d.D.dialog-act.dharshi.255",
+              "quote": "<gap> I should take some pictures uh ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions found in the delivered evidence.",
+          "quotes": [
+            {
+              "da_id": "TS3004d.D.dialog-act.dharshi.255",
+              "quote": "<gap> I should take some pictures uh ."
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "The current action mentions ME taking pictures after the meeting, which does not map to any clearly documented earlier action in TS3004a/b/c. The only clearly related items concern UI follow-ups, presentations, or equipment, not photography. Evidence from current ME line and the earlier TS3004b items do not establish a linkage, so relation remains uncertain.",
+          "quotes": [
+            {
+              "da_id": "TS3004d.D.dialog-act.dharshi.255",
+              "quote": "I should take some pictures uh ."
+            },
+            {
+              "da_id": "TS3004b.A.dialog-act.vkaraisk.118",
+              "quote": "Paul , you can do the next one if you want ."
+            }
+          ],
+          "links": [],
+          "documents": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "result": "uncertain",
+        "reason": "The current action mentions ME taking pictures after the meeting, which does not map to any clearly documented earlier action in TS3004a/b/c. The only clearly related items concern UI follow-ups, presentations, or equipment, not photography. Evidence from current ME line and the earlier TS3004b items do not establish a linkage, so relation remains uncertain.",
+        "quotes": [
+          {
+            "da_id": "TS3004d.D.dialog-act.dharshi.255",
+            "quote": "I should take some pictures uh ."
+          },
+          {
+            "da_id": "TS3004b.A.dialog-act.vkaraisk.118",
+            "quote": "Paul , you can do the next one if you want ."
+          }
+        ],
+        "documents": [],
+        "links": []
+      },
+      "evidence_bindings": {},
+      "raw_tool_input": {
+        "result": "uncertain",
+        "reason": "The current action mentions ME taking pictures after the meeting, which does not map to any clearly documented earlier action in TS3004a/b/c. The only clearly related items concern UI follow-ups, presentations, or equipment, not photography. Evidence from current ME line and the earlier TS3004b items do not establish a linkage, so relation remains uncertain.",
+        "quotes": [
+          {
+            "da_id": "TS3004d.D.dialog-act.dharshi.255",
+            "quote": "I should take some pictures uh ."
+          },
+          {
+            "da_id": "TS3004b.A.dialog-act.vkaraisk.118",
+            "quote": "Paul , you can do the next one if you want ."
+          }
+        ],
+        "documents": [],
+        "links": []
+      },
+      "protocol_normalizations": [
+        "controller_action_for_missing_hint:retrieve"
+      ],
+      "unresolved_before": [
+        "deadline",
+        "related_items"
+      ],
+      "unresolved_after": [
+        "deadline",
+        "related_items"
+      ],
+      "semantic_stalls": 0,
+      "validation_codes": {
+        "deadline": [
+          "deadline_unresolved"
+        ]
+      }
+    },
+    {
+      "item": "TS3004d#6",
+      "step": 5,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "read_prior_item",
+      "outcome": "invalid_action",
+      "error": "This lookup was already executed on this item and cannot add evidence. Read a returned prior record/locator, change the query or window, assess delivered history when offered, or stop pending. Do not repeat it.",
+      "raw_tool_input": {
+        "item_id": "TS3004b.sys.s.9"
+      }
+    },
+    {
+      "item": "TS3004d#6",
+      "step": 6,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "assess_relation",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue shows ME explicitly expressing intent to take pictures after the meeting, matching the action text.",
+          "quotes": [
+            {
+              "da_id": "TS3004d.D.dialog-act.dharshi.255",
+              "quote": "<gap> I should take some pictures uh ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Owner is explicitly assigned to ME (MTD016ME) in the provided provisional values.",
+          "quotes": [
+            {
+              "da_id": "TS3004d.D.dialog-act.dharshi.255",
+              "quote": "<gap> I should take some pictures uh ."
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "deadline_unresolved",
+          "quotes": [
+            {
+              "da_id": "TS3004d.D.dialog-act.dharshi.255",
+              "quote": "<gap> I should take some pictures uh ."
+            }
+          ],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Status is open as per provisional values and no completion reported.",
+          "quotes": [
+            {
+              "da_id": "TS3004d.D.dialog-act.dharshi.255",
+              "quote": "<gap> I should take some pictures uh ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions found in the delivered evidence.",
+          "quotes": [
+            {
+              "da_id": "TS3004d.D.dialog-act.dharshi.255",
+              "quote": "<gap> I should take some pictures uh ."
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "The current action text refers to ME taking pictures after the meeting. There is no clear linkage to prior TS3004a/b/c actions about UI follow-ups or equipment; relation remains uncertain.",
+          "quotes": [
+            {
+              "da_id": "TS3004d.D.dialog-act.dharshi.255",
+              "quote": "<gap> I should take some pictures uh ."
+            }
+          ],
+          "links": [],
+          "documents": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "decision": "retrieve",
+      "reason": "unresolved_checks",
+      "assessed_text": "ME will take some pictures after the meeting.",
+      "requested_action": null,
+      "proposed_fields": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD016ME"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "TS3004d.D.dialog-act.dharshi.255",
+          "TS3004b.A.dialog-act.vkaraisk.118"
+        ]
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue shows ME explicitly expressing intent to take pictures after the meeting, matching the action text.",
+          "quotes": [
+            {
+              "da_id": "TS3004d.D.dialog-act.dharshi.255",
+              "quote": "<gap> I should take some pictures uh ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Owner is explicitly assigned to ME (MTD016ME) in the provided provisional values.",
+          "quotes": [
+            {
+              "da_id": "TS3004d.D.dialog-act.dharshi.255",
+              "quote": "<gap> I should take some pictures uh ."
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "deadline_unresolved",
+          "quotes": [
+            {
+              "da_id": "TS3004d.D.dialog-act.dharshi.255",
+              "quote": "<gap> I should take some pictures uh ."
+            }
+          ],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Status is open as per provisional values and no completion reported.",
+          "quotes": [
+            {
+              "da_id": "TS3004d.D.dialog-act.dharshi.255",
+              "quote": "<gap> I should take some pictures uh ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions found in the delivered evidence.",
+          "quotes": [
+            {
+              "da_id": "TS3004d.D.dialog-act.dharshi.255",
+              "quote": "<gap> I should take some pictures uh ."
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "The current action text refers to ME taking pictures after the meeting. There is no clear linkage to prior TS3004a/b/c actions about UI follow-ups or equipment; relation remains uncertain.",
+          "quotes": [
+            {
+              "da_id": "TS3004d.D.dialog-act.dharshi.255",
+              "quote": "<gap> I should take some pictures uh ."
+            }
+          ],
+          "links": [],
+          "documents": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "result": "uncertain",
+        "reason": "The current action text refers to ME taking pictures after the meeting. There is no clear linkage to prior TS3004a/b/c actions about UI follow-ups or equipment; relation remains uncertain.",
+        "quotes": [
+          {
+            "da_id": "TS3004d.D.dialog-act.dharshi.255",
+            "quote": "<gap> I should take some pictures uh ."
+          }
+        ],
+        "documents": [],
+        "links": []
+      },
+      "evidence_bindings": {},
+      "raw_tool_input": {
+        "result": "uncertain",
+        "reason": "The current action text refers to ME taking pictures after the meeting. There is no clear linkage to prior TS3004a/b/c actions about UI follow-ups or equipment; relation remains uncertain.",
+        "quotes": [
+          {
+            "da_id": "TS3004d.D.dialog-act.dharshi.255",
+            "quote": "<gap> I should take some pictures uh ."
+          }
+        ],
+        "documents": []
+      },
+      "protocol_normalizations": [
+        "empty_links_for_unestablished_relation",
+        "controller_action_for_missing_hint:retrieve"
+      ],
+      "unresolved_before": [
+        "deadline",
+        "related_items"
+      ],
+      "unresolved_after": [
+        "deadline",
+        "related_items"
+      ],
+      "semantic_stalls": 1,
+      "validation_codes": {
+        "deadline": [
+          "deadline_unresolved"
+        ]
+      }
+    },
+    {
+      "item": "TS3004d#6",
+      "step": 7,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "assess_relation",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue shows ME explicitly expressing intent to take pictures after the meeting, matching the action text.",
+          "quotes": [
+            {
+              "da_id": "TS3004d.D.dialog-act.dharshi.255",
+              "quote": "<gap> I should take some pictures uh ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Owner is explicitly assigned to ME (MTD016ME) in the provided provisional values.",
+          "quotes": [
+            {
+              "da_id": "TS3004d.D.dialog-act.dharshi.255",
+              "quote": "<gap> I should take some pictures uh ."
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "deadline_unresolved",
+          "quotes": [
+            {
+              "da_id": "TS3004d.D.dialog-act.dharshi.255",
+              "quote": "<gap> I should take some pictures uh ."
+            }
+          ],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Status is open as per provisional values and no completion reported.",
+          "quotes": [
+            {
+              "da_id": "TS3004d.D.dialog-act.dharshi.255",
+              "quote": "<gap> I should take some pictures uh ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions found in the delivered evidence.",
+          "quotes": [
+            {
+              "da_id": "TS3004d.D.dialog-act.dharshi.255",
+              "quote": "<gap> I should take some pictures uh ."
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "The current action text 'ME will take some pictures after the meeting' does not map to any clearly documented earlier action in TS3004a/b/c (UI/laptop placement and follow-up). The relation remains uncertain; no explicit linkage found in prior dialogues.",
+          "quotes": [
+            {
+              "da_id": "TS3004d.D.dialog-act.dharshi.255",
+              "quote": "<gap> I should take some pictures uh ."
+            }
+          ],
+          "links": [],
+          "documents": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "decision": "request_clarification",
+      "reason": "no_progress",
+      "assessed_text": "ME will take some pictures after the meeting.",
+      "requested_action": null,
+      "proposed_fields": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD016ME"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "TS3004d.D.dialog-act.dharshi.255",
+          "TS3004b.A.dialog-act.vkaraisk.118"
+        ]
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue shows ME explicitly expressing intent to take pictures after the meeting, matching the action text.",
+          "quotes": [
+            {
+              "da_id": "TS3004d.D.dialog-act.dharshi.255",
+              "quote": "<gap> I should take some pictures uh ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Owner is explicitly assigned to ME (MTD016ME) in the provided provisional values.",
+          "quotes": [
+            {
+              "da_id": "TS3004d.D.dialog-act.dharshi.255",
+              "quote": "<gap> I should take some pictures uh ."
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "deadline_unresolved",
+          "quotes": [
+            {
+              "da_id": "TS3004d.D.dialog-act.dharshi.255",
+              "quote": "<gap> I should take some pictures uh ."
+            }
+          ],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Status is open as per provisional values and no completion reported.",
+          "quotes": [
+            {
+              "da_id": "TS3004d.D.dialog-act.dharshi.255",
+              "quote": "<gap> I should take some pictures uh ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions found in the delivered evidence.",
+          "quotes": [
+            {
+              "da_id": "TS3004d.D.dialog-act.dharshi.255",
+              "quote": "<gap> I should take some pictures uh ."
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "The current action text 'ME will take some pictures after the meeting' does not map to any clearly documented earlier action in TS3004a/b/c (UI/laptop placement and follow-up). The relation remains uncertain; no explicit linkage found in prior dialogues.",
+          "quotes": [
+            {
+              "da_id": "TS3004d.D.dialog-act.dharshi.255",
+              "quote": "<gap> I should take some pictures uh ."
+            }
+          ],
+          "links": [],
+          "documents": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "result": "uncertain",
+        "reason": "The current action text 'ME will take some pictures after the meeting' does not map to any clearly documented earlier action in TS3004a/b/c (UI/laptop placement and follow-up). The relation remains uncertain; no explicit linkage found in prior dialogues.",
+        "quotes": [
+          {
+            "da_id": "TS3004d.D.dialog-act.dharshi.255",
+            "quote": "<gap> I should take some pictures uh ."
+          }
+        ],
+        "documents": [],
+        "links": []
+      },
+      "evidence_bindings": {},
+      "raw_tool_input": {
+        "result": "uncertain",
+        "reason": "The current action text 'ME will take some pictures after the meeting' does not map to any clearly documented earlier action in TS3004a/b/c (UI/laptop placement and follow-up). The relation remains uncertain; no explicit linkage found in prior dialogues.",
+        "quotes": [
+          {
+            "da_id": "TS3004d.D.dialog-act.dharshi.255",
+            "quote": "<gap> I should take some pictures uh ."
+          }
+        ],
+        "documents": [],
+        "links": []
+      },
+      "protocol_normalizations": [
+        "controller_action_for_missing_hint:retrieve"
+      ],
+      "unresolved_before": [
+        "deadline",
+        "related_items"
+      ],
+      "unresolved_after": [
+        "deadline",
+        "related_items"
+      ],
+      "semantic_stalls": 2,
+      "validation_codes": {
+        "deadline": [
+          "deadline_unresolved"
+        ]
+      }
+    },
+    {
+      "item": "TS3004d#6",
+      "step": 7,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "stop",
+      "outcome": "pending",
+      "termination_reason": "no_progress",
+      "unresolved_fields": [
+        "deadline",
+        "related_items"
+      ]
+    }
+  ],
+  "lookups": 2,
+  "termination_reason": "no_progress",
+  "clarifications": [
+    {
+      "request_id": "e270f45b4a1c033c",
+      "item_key": "TS3004d#6",
+      "record_id": null,
+      "field": "deadline",
+      "question": "What is the agreed deadline, in its original wording?",
+      "item_text": "ME will take some pictures after the meeting.",
+      "reason": "deadline_unresolved",
+      "evidence_da_ids": [
+        "TS3004d.D.dialog-act.dharshi.255"
+      ],
+      "available_evidence_da_ids": [
+        "TS3004d.D.dialog-act.dharshi.255",
+        "TS3004d.B.dialog-act.dharshi.279",
+        "TS3004d.A.dialog-act.dharshi.316",
+        "TS3004b.A.dialog-act.vkaraisk.117",
+        "TS3004b.A.dialog-act.vkaraisk.118",
+        "TS3004b.D.dialog-act.vkaraisk.118"
+      ],
+      "status": "open",
+      "termination_reason": "no_progress"
+    },
+    {
+      "request_id": "6732867db273e3ca",
+      "item_key": "TS3004d#6",
+      "record_id": null,
+      "field": "related_items",
+      "question": "Which earlier record does this item continue or change, and how?",
+      "item_text": "ME will take some pictures after the meeting.",
+      "reason": "The current action text 'ME will take some pictures after the meeting' does not map to any clearly documented earlier action in TS3004a/b/c (UI/laptop placement and follow-up). The relation remains uncertain; no explicit linkage found in prior dialogues.",
+      "evidence_da_ids": [
+        "TS3004d.D.dialog-act.dharshi.255"
+      ],
+      "available_evidence_da_ids": [
+        "TS3004d.D.dialog-act.dharshi.255",
+        "TS3004d.B.dialog-act.dharshi.279",
+        "TS3004d.A.dialog-act.dharshi.316",
+        "TS3004b.A.dialog-act.vkaraisk.117",
+        "TS3004b.A.dialog-act.vkaraisk.118",
+        "TS3004b.D.dialog-act.vkaraisk.118"
+      ],
+      "status": "open",
+      "termination_reason": "no_progress"
+    }
+  ]
+}

@@ -1,0 +1,501 @@
+{
+  "created_at": "2026-10-29T05:20:48.844235+00:00",
+  "commit": "3b886f6c0c1520a1c5bc8628da7198a871c25495",
+  "execution_kind": "unmodified_frozen_cli_fresh_end_to_end",
+  "engineering_result": "PASSED",
+  "errors": [],
+  "meetings": [
+    {
+      "meeting_id": "IS1008a",
+      "status": "COMPLETED",
+      "failed_stage": null,
+      "reason": null,
+      "seconds": 329.8,
+      "stage_seconds": {
+        "extract": 85.7,
+        "consolidate": 204.3,
+        "select": 11.1,
+        "agent+abstract": 28.5,
+        "total": 329.8
+      },
+      "api_attempts": 30,
+      "known_tokens": 264703,
+      "charged_tokens": 264703,
+      "unknown_usage_tokens": 0,
+      "model_attempts_by_stage": {
+        "abstract": 1,
+        "agent": 4,
+        "consolidate": 5,
+        "decision_consolidate": 3,
+        "extract": 4,
+        "p2_check": 12,
+        "select": 1
+      },
+      "historical_response_cache_hits": 0,
+      "historical_budget_reserved": false,
+      "limits": {
+        "calls": 80,
+        "tokens": 1000000,
+        "request_seconds": 300.0,
+        "meeting_seconds": 1200.0,
+        "inflight": 4,
+        "retries": 2,
+        "backoff": 0.5
+      },
+      "max_inflight_seen": 4,
+      "validation_errors": [],
+      "missing_mandatory_model_stages": [],
+      "record_counts": {
+        "actions": 5,
+        "decisions": 2,
+        "problems": 1,
+        "abstract": 5
+      },
+      "p2_items": 8,
+      "accepted": 1,
+      "pending": 7,
+      "recordable": 8,
+      "clarification_requests": 9,
+      "all_questions_in_report": true,
+      "stage_trace_events": 109,
+      "agent_trace_events": 24,
+      "input_txt_and_parsed_checkpoint_verified": true,
+      "checkpoints_saved": 28,
+      "prior_context": [],
+      "actual_lookup_tools": {
+        "read_dialogue": 1,
+        "get_participants": 2
+      },
+      "delivered_dialogue_scope_verified": true
+    },
+    {
+      "meeting_id": "TS3006a",
+      "status": "COMPLETED",
+      "failed_stage": null,
+      "reason": null,
+      "seconds": 305.5,
+      "stage_seconds": {
+        "extract": 73.9,
+        "consolidate": 150.6,
+        "select": 26.6,
+        "agent+abstract": 54.0,
+        "total": 305.5
+      },
+      "api_attempts": 50,
+      "known_tokens": 361546,
+      "charged_tokens": 361546,
+      "unknown_usage_tokens": 0,
+      "model_attempts_by_stage": {
+        "abstract": 1,
+        "agent": 8,
+        "consolidate": 4,
+        "decision_consolidate": 3,
+        "extract": 8,
+        "p2_check": 25,
+        "select": 1
+      },
+      "historical_response_cache_hits": 0,
+      "historical_budget_reserved": false,
+      "limits": {
+        "calls": 80,
+        "tokens": 1000000,
+        "request_seconds": 300.0,
+        "meeting_seconds": 1200.0,
+        "inflight": 4,
+        "retries": 2,
+        "backoff": 0.5
+      },
+      "max_inflight_seen": 4,
+      "validation_errors": [],
+      "missing_mandatory_model_stages": [],
+      "record_counts": {
+        "actions": 4,
+        "decisions": 7,
+        "problems": 1,
+        "abstract": 5
+      },
+      "p2_items": 15,
+      "accepted": 8,
+      "pending": 7,
+      "recordable": 12,
+      "clarification_requests": 15,
+      "all_questions_in_report": true,
+      "stage_trace_events": 152,
+      "agent_trace_events": 50,
+      "input_txt_and_parsed_checkpoint_verified": true,
+      "checkpoints_saved": 42,
+      "prior_context": [],
+      "actual_lookup_tools": {
+        "search_dialogue": 2,
+        "get_participants": 4
+      },
+      "delivered_dialogue_scope_verified": true
+    },
+    {
+      "meeting_id": "TS3006b",
+      "status": "COMPLETED",
+      "failed_stage": null,
+      "reason": null,
+      "seconds": 437.0,
+      "stage_seconds": {
+        "extract": 121.8,
+        "consolidate": 181.3,
+        "select": 14.3,
+        "agent+abstract": 119.2,
+        "total": 437.0
+      },
+      "api_attempts": 65,
+      "known_tokens": 612400,
+      "charged_tokens": 612400,
+      "unknown_usage_tokens": 0,
+      "model_attempts_by_stage": {
+        "abstract": 1,
+        "agent": 12,
+        "consolidate": 3,
+        "decision_consolidate": 4,
+        "extract": 12,
+        "p2_check": 32,
+        "select": 1
+      },
+      "historical_response_cache_hits": 0,
+      "historical_budget_reserved": false,
+      "limits": {
+        "calls": 80,
+        "tokens": 1000000,
+        "request_seconds": 300.0,
+        "meeting_seconds": 1200.0,
+        "inflight": 4,
+        "retries": 2,
+        "backoff": 0.5
+      },
+      "max_inflight_seen": 4,
+      "validation_errors": [],
+      "missing_mandatory_model_stages": [],
+      "record_counts": {
+        "actions": 3,
+        "decisions": 5,
+        "problems": 1,
+        "abstract": 5
+      },
+      "p2_items": 14,
+      "accepted": 5,
+      "pending": 9,
+      "recordable": 9,
+      "clarification_requests": 25,
+      "all_questions_in_report": true,
+      "stage_trace_events": 186,
+      "agent_trace_events": 61,
+      "input_txt_and_parsed_checkpoint_verified": true,
+      "checkpoints_saved": 40,
+      "prior_context": [
+        {
+          "meeting_id": "TS3006a",
+          "transcript_sha256": "989aaffb32827a926df149f62f651310067368cef0e6638de23df1f4acc24efe",
+          "record_sha256": "ec28458f35da7536084892e6e8b6cf836f940614010e07617f9a64ec669ada50"
+        }
+      ],
+      "actual_lookup_tools": {
+        "get_participants": 2,
+        "get_prior_items": 5,
+        "read_dialogue": 5
+      },
+      "delivered_dialogue_scope_verified": true
+    }
+  ],
+  "limited_revision": {
+    "status": "ATTEMPTED_WITHOUT_VERIFIED_PUBLICATION",
+    "cases": 1,
+    "valid_revisions": 0,
+    "published_successes": 0
+  },
+  "supplementary_revision_probe": {
+    "status": "REPAIRED_AND_RECHECKED",
+    "kind": "CONTROLLED_FAULT_ON_REAL_DIALOGUE",
+    "included_in_natural_case_counts": false,
+    "published_as_main_meeting_output": false,
+    "api_calls": 3,
+    "known_tokens": 16615,
+    "valid_revisions": 1,
+    "fresh_rechecks": 1,
+    "state": "pending",
+    "recordable": true,
+    "final_text": "The project manager will send copies of the slides to attendees.",
+    "deadline": null,
+    "evidence": [
+      {
+        "da_id": "IS1008a.A.dialog-act.s9553330.130",
+        "meeting_id": "IS1008a",
+        "text": "Yes , I will . Yes .",
+        "participant": "MIO086",
+        "role": "PM"
+      }
+    ],
+    "artifact_directory": "../revision-probe-online-v1"
+  },
+  "totals": {
+    "api_attempts": 145,
+    "known_tokens": 1238649,
+    "meeting_seconds": 1072.3
+  },
+  "source_spot_checks": {
+    "reviewer": "Codex source spot checks; no new human sign-off",
+    "gold_used": false,
+    "observations": [
+      {
+        "id": "IS1008a_slides_cap",
+        "severity": "QUALITY_GAP",
+        "finding": "IS1008a 的 slides Action 已通过抽取、合并与模型选择，却因 priority=1、Action 上限为 5，被排第 7 而截掉。",
+        "dropped": {
+          "item": {
+            "type": "actions",
+            "text": "PM will send copies of slides to attendees at the conclusion of the meeting.",
+            "evidence_da_ids": [
+              "IS1008a.C.dialog-act.s9553330.42",
+              "IS1008a.A.dialog-act.s9553330.130",
+              "IS1008a.B.dialog-act.s9553330.30"
+            ],
+            "owner_ids": [
+              "MIO086"
+            ],
+            "owner_cue": "Yes, I will.",
+            "deadline_cue": "conclusion of our meeting",
+            "owner_basis": "explicit",
+            "deadline": "the conclusion of the meeting",
+            "deadline_basis": "explicit",
+            "status": "open",
+            "restored": true,
+            "source_item_indexes": [
+              7
+            ],
+            "candidate_indexes": [],
+            "selection_priority": 1,
+            "selection_reason": "C7 ensures dissemination of meeting materials."
+          },
+          "reason": "type_limit_after_selection",
+          "rank": 7,
+          "limit": 5
+        },
+        "stage_trace_seq": 61,
+        "source_trace": "run/s2/IS1008a.stages.jsonl"
+      },
+      {
+        "id": "IS1008a_coordination_claim",
+        "severity": "NEEDS_SEMANTIC_REVIEW",
+        "finding": "IS1008a 的 UI 任务仍写成负责协调，但已交付的原文否认处于协调者位置。owner/status 待确认没有消除正文中的这一限定，需语义复核。",
+        "item_key": "IS1008a#5",
+        "item_text": "UI038 will coordinate usability testing with Christine and Ed, start determining the functional design, and CC ME on all discussions and copy emails to PM.",
+        "state": "pending",
+        "recordable": true,
+        "statement_check": {
+          "result": "pass",
+          "reason": "The dialogue indicates UI lead FIE038 will engage Christine and keep Ed in the loop, and CC PM on communications, aligning with coordinating usability testing and initiating design discussions.",
+          "quotes": [
+            {
+              "da_id": "IS1008a.B.dialog-act.s9553330.10",
+              "quote": "So I think I'll have to interact with Christine and discuss with her , so that she's not designing something that my studies will show right off the bat that it's not going to work ,"
+            },
+            {
+              "da_id": "IS1008a.B.dialog-act.s9553330.11",
+              "quote": "and so it's sort of <disfmarker> it's a loop that feeds in ,"
+            },
+            {
+              "da_id": "IS1008a.B.dialog-act.s9553330.12",
+              "quote": "but I don't think necessarily that I'm in a coordinating position for it ."
+            },
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.119",
+              "quote": "Okay and please please copy all the mails , okay , all the discussions to me , okay ,"
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "source_quotes": [
+          {
+            "da_id": "IS1008a.B.dialog-act.s9553330.12",
+            "meeting_id": "IS1008a",
+            "text": "but I don't think necessarily that I'm in a coordinating position for it .",
+            "participant": "FIE038",
+            "role": "UI"
+          }
+        ],
+        "source_p2": "run/s2/IS1008a.p2.json"
+      },
+      {
+        "id": "TS3006a_ID_task_quarantined",
+        "severity": "SUSPECTED_P2_OVERBLOCKING",
+        "finding": "TS3006a 中 PM 分配 working design，ID 回应 True；statement 已通过，但 conflict 以“未发现矛盾、证据有限”为由保持 uncertain。Agent 因缺少 deadline 选择澄清，任务未进入主记录，疑似过度拦截。",
+        "item_key": "TS3006a#10",
+        "state": "pending",
+        "recordable": false,
+        "termination_reason": "request_clarification",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "The dialogue includes confirmation of the responsibility assignment and the proposed action. The ID explicitly confirms; the action text matches the discussed outcome.",
+            "quotes": [
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.146",
+                "quote": "this industrati Industrial Designer should produce a working design ."
+              },
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.147",
+                "quote": "Am I correct ?"
+              },
+              {
+                "da_id": "TS3006a.C.dialog-act.vkaraisk.77",
+                "quote": "True ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Owner is explicitly stated in the candidate_evidence as MTD022ID and matches the proposed owner.",
+            "quotes": [
+              {
+                "da_id": "TS3006a.C.dialog-act.vkaraisk.77",
+                "quote": "True ."
+              }
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "deadline_unresolved",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Status is open as reflected in provisional_values; no completion or change observed in dialogue.",
+            "quotes": [
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.146",
+                "quote": "this industrati Industrial Designer should produce a working design ."
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "uncertain",
+            "reason": "No conflicting statements found in the current dialogue; evidence is limited.",
+            "quotes": [
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.146",
+                "quote": "this industrati Industrial Designer should produce a working design ."
+              },
+              {
+                "da_id": "TS3006a.A.dialog-act.vkaraisk.147",
+                "quote": "Am I correct ?"
+              },
+              {
+                "da_id": "TS3006a.C.dialog-act.vkaraisk.77",
+                "quote": "True ."
+              }
+            ],
+            "fields": [
+              "statement",
+              "owner",
+              "deadline",
+              "status"
+            ]
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior item to relate to in this snapshot; first meeting item.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "source_quotes": [
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.146",
+            "meeting_id": "TS3006a",
+            "text": "this industrati Industrial Designer should produce a working design .",
+            "participant": "MTD021PM",
+            "role": "PM"
+          },
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.147",
+            "meeting_id": "TS3006a",
+            "text": "Am I correct ?",
+            "participant": "MTD021PM",
+            "role": "PM"
+          },
+          {
+            "da_id": "TS3006a.C.dialog-act.vkaraisk.77",
+            "meeting_id": "TS3006a",
+            "text": "True .",
+            "participant": "MTD022ID",
+            "role": "ID"
+          },
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.145",
+            "participant": "MTD021PM",
+            "role": "PM",
+            "text": "Okay so the um <vocalsound> uh <gap>"
+          },
+          {
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.148",
+            "participant": "MTD021PM",
+            "role": "PM",
+            "text": "Okay ."
+          }
+        ],
+        "source_p2": "run/s2/TS3006a.p2.json"
+      },
+      {
+        "id": "TS3006a_independent_decisions",
+        "severity": "POSITIVE_CHECK",
+        "finding": "TS3006a 的售价、销售额目标、生产成本已分别保留为三条 Decision。",
+        "all_three_recordable": true,
+        "texts": [
+          "Set selling price at 25 Euros.",
+          "Sales target of 50 million Euros.",
+          "Production costs equal to half the selling price."
+        ],
+        "source_p2": "run/s2/TS3006a.p2.json"
+      },
+      {
+        "id": "TS3006b_no_published_history_link",
+        "severity": "COVERAGE_GAP",
+        "finding": "TS3006b 实际检索了旧条目并读取对话，但最终没有发布跨会议关系；此前人工确认的 TV＋video → 仅 TV 范围更新，本次没有重现为最终关联。读取范围与本轮历史文件哈希仍通过检查。",
+        "published_links": [],
+        "scope_items": [
+          {
+            "item_key": "TS3006b#9",
+            "text": "No teletext functionality will be included; the product is designed for TV use only.",
+            "relation_check": {
+              "result": "uncertain",
+              "reason": "prior_context_not_checked",
+              "quotes": [],
+              "fields": [
+                "related_items"
+              ]
+            },
+            "state": "pending",
+            "recordable": true
+          }
+        ],
+        "source_p2": "run/s2/TS3006b.p2.json"
+      }
+    ]
+  },
+  "release_acceptance": "NOT_SIGNED_OFF",
+  "source_and_frozen_inputs_unchanged": true,
+  "protected_files_unchanged": 28,
+  "gold_scoring_performed": false,
+  "not_committed": true
+}

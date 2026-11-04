@@ -1,0 +1,601 @@
+{
+  "item": 12,
+  "fields": {
+    "item_key": "TS3006b#12",
+    "record_id": null,
+    "item_type": "actions",
+    "item_text": "The UI Designer will implement a paged LCD menu.",
+    "state": "pending",
+    "recordable": true,
+    "fields": {
+      "status": "open",
+      "prior_context_needed": false,
+      "related_items": [],
+      "owner": [
+        "MTD023UID"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3006b.json",
+          "locator": "TS3006b.B.dialog-act.dharshi.163"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3006b.json",
+          "locator": "TS3006b.A.dialog-act.dharshi.327"
+        }
+      ]
+    },
+    "draft_fields": {
+      "status": "open",
+      "related_items": [],
+      "owner": [
+        "MTD023UID"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "prior_context_needed": false,
+      "used_participant_lookup": false,
+      "evidence_da_ids": [
+        "TS3006b.B.dialog-act.dharshi.163",
+        "TS3006b.A.dialog-act.dharshi.327"
+      ]
+    },
+    "checks": {
+      "statement": {
+        "result": "pass",
+        "reason": "Dialogue evidence supports that the UI Designer is to implement a menu for the LCD screen by organizing and listing the functions; the current item \"The UI Designer will implement a paged LCD menu\" is consistent with the discussed actions (compile list of functions for the LCD menu).",
+        "quotes": [
+          {
+            "da_id": "TS3006b.B.dialog-act.dharshi.163",
+            "quote": "Y you you are going to make a list of what functions are uh are going to to be on the the screen , the menu screen ."
+          },
+          {
+            "da_id": "TS3006b.A.dialog-act.dharshi.327",
+            "quote": "Yeah ."
+          }
+        ],
+        "fields": [
+          "statement"
+        ]
+      },
+      "owner": {
+        "result": "pass",
+        "reason": "Owner is explicitly stated in the provisional values as MTD023UID.",
+        "quotes": [
+          {
+            "da_id": "TS3006b.B.dialog-act.dharshi.163",
+            "quote": "Y you you are going to make a list of what functions are uh are going to to be on the the screen , the menu screen ."
+          }
+        ],
+        "fields": [
+          "owner"
+        ]
+      },
+      "deadline": {
+        "result": "uncertain",
+        "reason": "deadline_unresolved",
+        "quotes": [
+          {
+            "da_id": "TS3006b.A.dialog-act.dharshi.327",
+            "quote": "Yeah ."
+          }
+        ],
+        "fields": [
+          "deadline"
+        ]
+      },
+      "status": {
+        "result": "pass",
+        "reason": "The item is currently open as per provisional values and dialogue indicates ongoing work.",
+        "quotes": [
+          {
+            "da_id": "TS3006b.B.dialog-act.dharshi.163",
+            "quote": "Y you you are going to make a list of what functions are uh are going to to be on the the screen , the menu screen ."
+          }
+        ],
+        "fields": [
+          "status"
+        ]
+      },
+      "conflict": {
+        "result": "pass",
+        "reason": "No contradictions detected within the evidence.",
+        "quotes": [
+          {
+            "da_id": "TS3006b.B.dialog-act.dharshi.163",
+            "quote": "Y you you are going to make a list of what functions are uh are going to to be on the the screen , the menu screen ."
+          }
+        ],
+        "fields": []
+      },
+      "relation": {
+        "result": "not_applicable",
+        "reason": "No prior relation to other items established in this small excerpt.",
+        "quotes": [],
+        "fields": [
+          "related_items"
+        ]
+      }
+    },
+    "unresolved_fields": [
+      "deadline"
+    ],
+    "observed_evidence_da_ids": [
+      "TS3006b.B.dialog-act.dharshi.163",
+      "TS3006b.A.dialog-act.dharshi.327",
+      "TS3006b.B.dialog-act.dharshi.162",
+      "TS3006b.C.dialog-act.dharshi.181"
+    ],
+    "initial_context": {
+      "item": {
+        "type": "actions",
+        "text": "The UI Designer will implement a paged LCD menu.",
+        "flags": []
+      },
+      "current_meeting": "TS3006b",
+      "earlier_meetings": [
+        "TS3006a"
+      ],
+      "roster": [
+        {
+          "speaker": "A",
+          "participant_id": "MTD021PM",
+          "role": "PM"
+        },
+        {
+          "speaker": "B",
+          "participant_id": "MTD023UID",
+          "role": "UI"
+        },
+        {
+          "speaker": "C",
+          "participant_id": "MTD022ID",
+          "role": "ID"
+        },
+        {
+          "speaker": "D",
+          "participant_id": "MTD024ME",
+          "role": "ME"
+        }
+      ],
+      "observed_dialogue": [
+        {
+          "da_id": "TS3006b.B.dialog-act.dharshi.163",
+          "meeting_id": "TS3006b",
+          "text": "Y you you are going to make a list of what functions are uh are going to to be on the the screen , the menu screen .",
+          "participant": "MTD023UID",
+          "role": "UI"
+        },
+        {
+          "da_id": "TS3006b.A.dialog-act.dharshi.327",
+          "meeting_id": "TS3006b",
+          "text": "Yeah .",
+          "participant": "MTD021PM",
+          "role": "PM"
+        },
+        {
+          "da_id": "TS3006b.B.dialog-act.dharshi.162",
+          "participant": "MTD023UID",
+          "role": "UI",
+          "text": "Okay ."
+        },
+        {
+          "da_id": "TS3006b.C.dialog-act.dharshi.181",
+          "participant": "MTD022ID",
+          "role": "ID",
+          "text": "Yeah ."
+        }
+      ],
+      "peer_items": [
+        {
+          "item_key": "TS3006b#0",
+          "type": "actions",
+          "text": "The User Interface Designer can design a menu for all these functions."
+        },
+        {
+          "item_key": "TS3006b#1",
+          "type": "problems",
+          "text": "The current look-and-feel and usability of remote controls are disliked by users and are hard to learn, with remotes often getting lost in rooms."
+        },
+        {
+          "item_key": "TS3006b#2",
+          "type": "problems",
+          "text": "Open problem: it is unclear what the screen should do or what is required from it."
+        },
+        {
+          "item_key": "TS3006b#3",
+          "type": "problems",
+          "text": "Uncertainty about saving the project file (whether it saves automatically and where)."
+        },
+        {
+          "item_key": "TS3006b#4",
+          "type": "decisions",
+          "text": "The target group will be sixteen to forty."
+        },
+        {
+          "item_key": "TS3006b#5",
+          "type": "decisions",
+          "text": "The basic new requirements of the management were no teletext, only for T_V_."
+        },
+        {
+          "item_key": "TS3006b#6",
+          "type": "decisions",
+          "text": "Teletext and the newsflash feature will not be used in the future."
+        },
+        {
+          "item_key": "TS3006b#7",
+          "type": "decisions",
+          "text": "Keep all classic remote functions and improve button usability and the physical design."
+        },
+        {
+          "item_key": "TS3006b#8",
+          "type": "decisions",
+          "text": "The product must include corporate identity with the logo present and colours consistent."
+        },
+        {
+          "item_key": "TS3006b#9",
+          "type": "actions",
+          "text": "The PM will write the meeting minutes."
+        },
+        {
+          "item_key": "TS3006b#10",
+          "type": "actions",
+          "text": "The UI Designer will group the functions into two groups: display functions and basic functions."
+        },
+        {
+          "item_key": "TS3006b#11",
+          "type": "actions",
+          "text": "The UI Designer will compile a list of the functions to be on the LCD screen menu."
+        }
+      ],
+      "provisional_values": {
+        "owner": [
+          "MTD023UID"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "open",
+        "related_items": []
+      },
+      "candidate_evidence_da_ids": [
+        "TS3006b.B.dialog-act.dharshi.163",
+        "TS3006b.A.dialog-act.dharshi.327"
+      ]
+    },
+    "observed_documents": [],
+    "document_evidence": [],
+    "relation_evidence": [],
+    "history": [
+      {
+        "item": "TS3006b#12",
+        "step": 1,
+        "flags": [],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue evidence supports that the UI Designer is to implement a menu for the LCD screen by organizing and listing the functions; the current item \"The UI Designer will implement a paged LCD menu\" is consistent with the discussed actions (compile list of functions for the LCD menu).",
+            "quotes": [
+              {
+                "da_id": "TS3006b.B.dialog-act.dharshi.163",
+                "quote": "Y you you are going to make a list of what functions are uh are going to to be on the the screen , the menu screen ."
+              },
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.327",
+                "quote": "Yeah ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Owner is explicitly stated in the provisional values as MTD023UID.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.B.dialog-act.dharshi.163",
+                "quote": "Y you you are going to make a list of what functions are uh are going to to be on the the screen , the menu screen ."
+              }
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "deadline_unresolved",
+            "quotes": [
+              {
+                "da_id": "TS3006b.A.dialog-act.dharshi.327",
+                "quote": "Yeah ."
+              }
+            ],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "The item is currently open as per provisional values and dialogue indicates ongoing work.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.B.dialog-act.dharshi.163",
+                "quote": "Y you you are going to make a list of what functions are uh are going to to be on the the screen , the menu screen ."
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions detected within the evidence.",
+            "quotes": [
+              {
+                "da_id": "TS3006b.B.dialog-act.dharshi.163",
+                "quote": "Y you you are going to make a list of what functions are uh are going to to be on the the screen , the menu screen ."
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior relation to other items established in this small excerpt.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "decision": "request_clarification",
+        "reason": "supported_statement_with_unresolved_fields",
+        "assessed_text": "The UI Designer will implement a paged LCD menu.",
+        "requested_action": "accept",
+        "proposed_fields": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "MTD023UID"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "TS3006b.B.dialog-act.dharshi.163",
+            "TS3006b.A.dialog-act.dharshi.327"
+          ]
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue evidence supports that the UI Designer is to implement a menu for the LCD screen by organizing and listing the functions; the current item \"The UI Designer will implement a paged LCD menu\" is consistent with the discussed actions (compile list of functions for the LCD menu).",
+            "quotes": [
+              "TS3006b.B.dialog-act.dharshi.163",
+              "TS3006b.A.dialog-act.dharshi.327"
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Owner is explicitly stated in the provisional values as MTD023UID.",
+            "quotes": [
+              "TS3006b.B.dialog-act.dharshi.163"
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "No deadline was provided in the current dialogue; explicit wording says by next meeting? The item text has no deadline.",
+            "quotes": [
+              "TS3006b.A.dialog-act.dharshi.327"
+            ],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "The item is currently open as per provisional values and dialogue indicates ongoing work.",
+            "quotes": [
+              "TS3006b.B.dialog-act.dharshi.163"
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No contradictions detected within the evidence.",
+            "quotes": [
+              "TS3006b.B.dialog-act.dharshi.163"
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior relation to other items established in this small excerpt.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "MTD023UID"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue evidence supports that the UI Designer is to implement a menu for the LCD screen by organizing and listing the functions; the current item \"The UI Designer will implement a paged LCD menu\" is consistent with the discussed actions (compile list of functions for the LCD menu).",
+            "evidence_da_ids": [
+              "TS3006b.B.dialog-act.dharshi.163",
+              "TS3006b.A.dialog-act.dharshi.327"
+            ]
+          },
+          "owner_check": {
+            "result": "pass",
+            "reason": "Owner is explicitly stated in the provisional values as MTD023UID.",
+            "evidence_da_ids": [
+              "TS3006b.B.dialog-act.dharshi.163"
+            ]
+          },
+          "deadline_check": {
+            "result": "uncertain",
+            "reason": "No deadline was provided in the current dialogue; explicit wording says by next meeting? The item text has no deadline.",
+            "evidence_da_ids": [
+              "TS3006b.A.dialog-act.dharshi.327"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "The item is currently open as per provisional values and dialogue indicates ongoing work.",
+            "evidence_da_ids": [
+              "TS3006b.B.dialog-act.dharshi.163"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No contradictions detected within the evidence.",
+            "evidence_da_ids": [
+              "TS3006b.B.dialog-act.dharshi.163"
+            ],
+            "affected_fields": []
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior relation to other items established in this small excerpt.",
+            "evidence_da_ids": []
+          },
+          "next_action": "accept"
+        },
+        "evidence_bindings": {
+          "statement": [
+            "TS3006b.B.dialog-act.dharshi.163",
+            "TS3006b.A.dialog-act.dharshi.327"
+          ],
+          "owner": [
+            "TS3006b.B.dialog-act.dharshi.163"
+          ],
+          "deadline": [
+            "TS3006b.A.dialog-act.dharshi.327"
+          ],
+          "status": [
+            "TS3006b.B.dialog-act.dharshi.163"
+          ],
+          "conflict": [
+            "TS3006b.B.dialog-act.dharshi.163"
+          ]
+        },
+        "raw_tool_input": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "MTD023UID"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue evidence supports that the UI Designer is to implement a menu for the LCD screen by organizing and listing the functions; the current item \"The UI Designer will implement a paged LCD menu\" is consistent with the discussed actions (compile list of functions for the LCD menu).",
+            "evidence_da_ids": [
+              "TS3006b.B.dialog-act.dharshi.163",
+              "TS3006b.A.dialog-act.dharshi.327"
+            ]
+          },
+          "owner_check": {
+            "result": "pass",
+            "reason": "Owner is explicitly stated in the provisional values as MTD023UID.",
+            "evidence_da_ids": [
+              "TS3006b.B.dialog-act.dharshi.163"
+            ]
+          },
+          "deadline_check": {
+            "result": "uncertain",
+            "reason": "No deadline was provided in the current dialogue; explicit wording says by next meeting? The item text has no deadline.",
+            "evidence_da_ids": [
+              "TS3006b.A.dialog-act.dharshi.327"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "The item is currently open as per provisional values and dialogue indicates ongoing work.",
+            "evidence_da_ids": [
+              "TS3006b.B.dialog-act.dharshi.163"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No contradictions detected within the evidence.",
+            "evidence_da_ids": [
+              "TS3006b.B.dialog-act.dharshi.163"
+            ],
+            "affected_fields": []
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior relation to other items established in this small excerpt.",
+            "evidence_da_ids": []
+          },
+          "next_action": "accept"
+        },
+        "protocol_normalizations": []
+      },
+      {
+        "item": "TS3006b#12",
+        "step": 1,
+        "flags": [],
+        "action": "stop",
+        "outcome": "pending",
+        "termination_reason": "supported_statement_with_unresolved_fields",
+        "unresolved_fields": [
+          "deadline"
+        ]
+      }
+    ],
+    "lookups": 0,
+    "termination_reason": "supported_statement_with_unresolved_fields",
+    "clarifications": [
+      {
+        "request_id": "6ebe64eabcb6bba2",
+        "item_key": "TS3006b#12",
+        "record_id": null,
+        "field": "deadline",
+        "question": "What is the agreed deadline, in its original wording?",
+        "item_text": "The UI Designer will implement a paged LCD menu.",
+        "reason": "deadline_unresolved",
+        "evidence_da_ids": [
+          "TS3006b.A.dialog-act.dharshi.327"
+        ],
+        "available_evidence_da_ids": [
+          "TS3006b.B.dialog-act.dharshi.163",
+          "TS3006b.A.dialog-act.dharshi.327",
+          "TS3006b.B.dialog-act.dharshi.162",
+          "TS3006b.C.dialog-act.dharshi.181"
+        ],
+        "status": "open",
+        "termination_reason": "supported_statement_with_unresolved_fields"
+      }
+    ]
+  }
+}

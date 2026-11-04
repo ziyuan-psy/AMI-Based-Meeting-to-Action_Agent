@@ -1,0 +1,128 @@
+{
+  "verified_at": "2026-10-28T04:04:48.833534+00:00",
+  "scope": "Step 7 development verification; not final evaluation or independent human review.",
+  "branch": "agent-development",
+  "head": "75da78e931d3ce8c422897599ea26ab05276c7bf",
+  "committed": false,
+  "tests": {
+    "command": "python -X utf8 -m pytest agent/tests tests -q -p no:cacheprovider --tb=short --maxfail=3",
+    "passed": 226,
+    "subtests_passed": 11,
+    "seconds": 33.1,
+    "api_calls": 0,
+    "captured_provider_response_replays": [
+      "scenario-v5",
+      "scenario-v7",
+      "evaluation-v2"
+    ]
+  },
+  "capture_integrity": {
+    "live_runs": 9,
+    "completed_outputs_revalidated": 7,
+    "failed_captures_preserved": 2,
+    "run_artifact_hashes_verified": 424,
+    "runtime_source_snapshots_verified": 315
+  },
+  "unchanged": {
+    "protected_annotation_files": 28,
+    "protected_file_set_identical": true,
+    "tracked_ui_diff_empty": true,
+    "earlier_frozen_artifact_hashes": 441,
+    "step6_frozen_artifact_hashes": 848,
+    "limits": {
+      "MAX_MODEL_CALLS": 80,
+      "MAX_TOTAL_TOKENS": 1000000,
+      "REQUEST_TIMEOUT": 300.0,
+      "MEETING_TIMEOUT": 1200.0,
+      "MAX_INFLIGHT": 4,
+      "TRANSPORT_RETRIES": 2,
+      "MAX_CALLS_PER_ITEM": 4,
+      "MAX_CALLS_PER_MEETING": 30,
+      "MAX_AGENT_STEPS": 12
+    }
+  },
+  "reader": {
+    "execution_kind": "direct_deterministic_tool_validation",
+    "physical_pdf_page": 66,
+    "calls": 2,
+    "api_calls": 0,
+    "exact_full_page_reconstruction": true,
+    "evidence_file": "reader_validation.json",
+    "is_live_agent_read": false
+  },
+  "runtime_source_differences_from_current": {
+    "scenario-v5": [
+      "agent/src/mta/p2.py"
+    ],
+    "scenario-v7": [],
+    "evaluation-v2": []
+  },
+  "current_code": {
+    "git_commit": "75da78e931d3ce8c422897599ea26ab05276c7bf",
+    "git_branch": "agent-development",
+    "dirty_source_files": [
+      "M agent/src/mta/agent.py",
+      " M agent/src/mta/config.py",
+      " M agent/src/mta/observation.py",
+      " M agent/src/mta/p2.py",
+      " M agent/src/mta/pipeline.py",
+      " M agent/src/mta/prompts.py",
+      " M agent/src/mta/render.py",
+      " M agent/src/mta/store.py",
+      " M agent/src/mta/validate.py",
+      "?? agent/scripts/scenario_demo.py",
+      "?? agent/src/mta/documents.py"
+    ],
+    "git_status_available": true,
+    "source_sha256": {
+      "agent/scripts/decision_study.py": "ba7994158414512b46343199b9505fe1adc64251ef42b6d6f94e8e415b438bf3",
+      "agent/scripts/demo.py": "04c9203630e52f4441bbd9d6beb4da9679e8e2d7a5c2cd69b15c410764cc39ab",
+      "agent/scripts/full_eval.py": "10b97880a16415fb817d3acc04ca138b229fa1eb9c75864fabb69ca388264a88",
+      "agent/scripts/link_demo.py": "a0183cb7a794e050ab7c4ce5eea355a212fd1ba4ab9b31b90e6752f6240be60f",
+      "agent/scripts/p2_smoke.py": "18c68fde6bd2cea89314a3bd14d84afc492433acf898d33a79494878a2a12d34",
+      "agent/scripts/prepare_data.py": "4d4349ae5a91dd62aa1e1b340ba685038629ca37e89e05e93f7b51b584d7ec97",
+      "agent/scripts/repeat_run.py": "01ecd17df48cf64fa917da8174b11b161dbe06b5605fe575cbbb47180ba6b25f",
+      "agent/scripts/run_series.py": "070404a6008b0471f988787415fdd2d6d205e4c79a452a761223263db13ddc6d",
+      "agent/scripts/scenario_demo.py": "d8e2b0d746a7cd8b9840627490eab809dd74b476cf80c97b082e292af09056a2",
+      "agent/scripts/smoke.py": "80d2ce932a11bacc17f2d72d0d092cd6f903f8778318bffd9d666aed20ba46e0",
+      "agent/src/mta/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "agent/src/mta/agent.py": "95bdc558ec1e20e68aceb5dd054ea5c15a2690daeba894ea14a26edc57b45a7b",
+      "agent/src/mta/baseline.py": "8afe53918fe135ee9b4faf8d69bf9e93b117b256b657cd54aaa224efc04bb75b",
+      "agent/src/mta/config.py": "7471cd02129f8d3b2e0191ad7fd133d3f604c64cbe851f281bc4ee088f546bbb",
+      "agent/src/mta/control.py": "60f236f312c05c6c6315c8fa8e2923af8af63d3d96b9e2107412d77c02317004",
+      "agent/src/mta/decision_audit.py": "273d28323917094174345a8f70b58982f6fb967cb66a865454426f3087f7776b",
+      "agent/src/mta/documents.py": "dc418455ee1a8a05e625538e7c75153a1420be33d4814cc08228aecb34d4cfd4",
+      "agent/src/mta/evaluate.py": "abdbe3dbbee04baef7284e5141578ecfab3b3d8aa5f535b0fa3c3794319b6985",
+      "agent/src/mta/extract.py": "1b5e17fc1ee563b4ef986c1074f2dc4d7a82d69ac180137d9f64b7872fd623db",
+      "agent/src/mta/judge.py": "10185b386349a33cc42912c0b7444a908241c82f9781baf64e4008719cd5fdef",
+      "agent/src/mta/linking.py": "2373637cc71e4320bfc79dbd62b475905449da034d8bbec5973e2476a4e7ad98",
+      "agent/src/mta/llm.py": "e002a97eb94501be007769acee29e221fe574846f3a6d3a7443c33cc9db6b047",
+      "agent/src/mta/observation.py": "e579265abecaffca61416133f1f03bbe1954fa7be9a2501a2f4b8cbf4645a8c6",
+      "agent/src/mta/p2.py": "3adf6ff9e9ab97fcc4b1cf9646a4bc3761eac6e18e9e39210d3b32edc514dbe1",
+      "agent/src/mta/pipeline.py": "871ca8c2ace6b1dac0dcd9418b090760253610e0f63016c19deb481ee0485dcd",
+      "agent/src/mta/prompts.py": "8b2a6de4b66865a916e420b2ffd5ec214661163307c794c381b92c952d2a9718",
+      "agent/src/mta/render.py": "b2d952e25a3d484e26dd4f38bc0a639786f447f1f639d9f306e174825f7e576c",
+      "agent/src/mta/run.py": "71206cbc81404c91b4c67434b8ccbb1c40ed961f89db15e5e5cba0609aff0c9e",
+      "agent/src/mta/store.py": "da899069c9a5348e464cb0ca492e4d5386de971bc46e2ec10eb3ab8caea1cbec",
+      "agent/src/mta/support.py": "51587e85394c60a9c6faa53ea3ba2c42d724f5ba7b766071c054d66e16eae284",
+      "agent/src/mta/trace.py": "fe2c61824166b418b0f6f7fa2473e71971ed8f4807e57f3d1324dcf5a5c1dc0c",
+      "agent/src/mta/transcript_parser.py": "c7d7f3e535196eafb05da6413381679befbbc12250a47139b3e5628f1c311dc1",
+      "agent/src/mta/triage.py": "725208874cdedae3426d43faa923b8c948446a3de576ff68defe9c82e401cfa9",
+      "agent/src/mta/validate.py": "a7548fc5010a2f233277f4e6919743d6fd176445c9aa7caef687254f08adf72b",
+      "transcript_parser.py": "1d2fc13cff098b459f232fb78e625c1b01124e9ab4b939cb400e01e98236ebfb"
+    },
+    "source_digest": "40af98fb3c7825bfb0732792d8dfb7854e5cc7a721cbc766e33695525e302d06"
+  },
+  "credential_scan": {
+    "inherited_key_available": true,
+    "files_scanned": 437,
+    "key_value_not_stored_or_displayed": true,
+    "matches": 0
+  },
+  "limitations": [
+    "Focused S1 Agent-stage inputs, LCD first clause of saved MVP record, explicit scenario verification request.",
+    "Positive live run predates final controller refinements; exact provider response replay passes on final code.",
+    "Final-code repeats remain pending; evaluation case also misuses a document ID in a dialogue field.",
+    "No claim of spontaneous document use, stable accuracy, a scenario time-access policy or final evaluation."
+  ]
+}

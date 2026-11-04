@@ -1,0 +1,115 @@
+{
+  "kind": "FRESH_LIVE_ALL_STAGES_SAME_INPUTS",
+  "base_commit": "3b886f6c0c1520a1c5bc8628da7198a871c25495",
+  "configuration_changes": {
+    "P2_PROTOCOL_VERSION": {
+      "before": 6,
+      "after": 8
+    },
+    "ITEM_POLICY_VERSION": {
+      "before": 5,
+      "after": 8
+    }
+  },
+  "checks": {
+    "all_pipeline_and_artifact_checks": false,
+    "slides_present": false,
+    "id_working_design_present": false,
+    "no_empty_revision_calls": true,
+    "published_cross_meeting_link": false,
+    "same_controlled_revision_passed": false
+  },
+  "result": "GAPS_REMAIN",
+  "errors": [
+    "TS3006a: FAILED",
+    "TS3006b: missing result"
+  ],
+  "meetings": [
+    {
+      "meeting_id": "IS1008a",
+      "status": "COMPLETED",
+      "seconds": 396.1,
+      "calls": 33,
+      "known_tokens": 288190,
+      "charged_tokens": 288190,
+      "unknown_usage_tokens": 0,
+      "stages": {
+        "abstract": 1,
+        "agent": 2,
+        "consolidate": 3,
+        "decision_consolidate": 3,
+        "extract": 4,
+        "p2_check": 18,
+        "select": 2
+      },
+      "historical_response_cache_hits": 0,
+      "validation_errors": [],
+      "record_counts": {
+        "actions": 5,
+        "decisions": 2,
+        "problems": 0
+      },
+      "p2_items": 12,
+      "recordable": 7,
+      "accepted": 4,
+      "verified_omitted": 2,
+      "clarification_requests": 13,
+      "core_rechecks": 1
+    },
+    {
+      "meeting_id": "TS3006a",
+      "status": "FAILED",
+      "seconds": null,
+      "calls": 13,
+      "known_tokens": 117613,
+      "charged_tokens": 243811,
+      "unknown_usage_tokens": 126198,
+      "stages": {
+        "consolidate": 5,
+        "extract": 8
+      },
+      "historical_response_cache_hits": 0,
+      "failure": {
+        "code": "model_request_failed",
+        "status": "FAILED",
+        "stage": "consolidate",
+        "error_type": "InternalServerError",
+        "retries_exhausted": true,
+        "http_status": 500
+      }
+    },
+    {
+      "meeting_id": "TS3006b",
+      "status": "NOT_RUN"
+    }
+  ],
+  "totals": {
+    "calls": 46,
+    "tokens": 405803,
+    "seconds": 396.1
+  },
+  "functional_comparison": {
+    "slides": {
+      "before": [],
+      "after": []
+    },
+    "id_working_design": {
+      "before": [],
+      "after": []
+    },
+    "empty_revision_calls": {
+      "before": 1,
+      "after": 0
+    },
+    "cross_meeting_links": {
+      "before": 0,
+      "after": 0
+    }
+  },
+  "controlled_probe": {
+    "status": "NOT_RUN"
+  },
+  "gold_scored": false,
+  "previous_smoke_unchanged": true,
+  "protected_files_unchanged": 28
+}

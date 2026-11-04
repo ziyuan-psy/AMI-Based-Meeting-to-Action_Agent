@@ -1,0 +1,566 @@
+{
+  "item_key": "IS1008c#13",
+  "record_id": null,
+  "item_type": "decisions",
+  "item_text": "Include audio and tactile feedback on button presses and provide a way to turn off voice control.",
+  "state": "accepted",
+  "recordable": true,
+  "fields": {
+    "status": "adopted",
+    "prior_context_needed": false,
+    "related_items": [],
+    "reference": [
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/IS1008c.json",
+        "locator": "IS1008c.B.dialog-act.s9553330.63"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/IS1008c.json",
+        "locator": "IS1008c.B.dialog-act.s9553330.75"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/IS1008c.json",
+        "locator": "IS1008c.C.dialog-act.s9553330.117"
+      }
+    ]
+  },
+  "draft_fields": {
+    "status": "adopted",
+    "related_items": [],
+    "prior_context_needed": false,
+    "used_participant_lookup": false,
+    "evidence_da_ids": [
+      "IS1008c.B.dialog-act.s9553330.63",
+      "IS1008c.B.dialog-act.s9553330.75",
+      "IS1008c.C.dialog-act.s9553330.117"
+    ],
+    "owner": null,
+    "owner_basis": "missing",
+    "deadline": null,
+    "deadline_basis": "missing"
+  },
+  "checks": {
+    "statement": {
+      "result": "pass",
+      "reason": "The dialogue supports adding audio and tactile feedback and providing a way to turn off voice control as requested in the decision.",
+      "quotes": [
+        {
+          "da_id": "IS1008c.B.dialog-act.s9553330.63",
+          "quote": "And in terms of invisible features , audio and um tactile feedback on button presses and , like you said , speech recognition ."
+        },
+        {
+          "da_id": "IS1008c.B.dialog-act.s9553330.75",
+          "quote": "So that if the user doesn't want to use their voice , they can just turn it off and you don't have the remote control accidentally changing things on you ."
+        },
+        {
+          "da_id": "IS1008c.C.dialog-act.s9553330.117",
+          "quote": "Mm-hmm ."
+        }
+      ],
+      "fields": [
+        "statement"
+      ]
+    },
+    "status": {
+      "result": "pass",
+      "reason": "Current dialogue confirms the decision scope is supported and evidenced by multiple utterances.",
+      "quotes": [
+        {
+          "da_id": "IS1008c.B.dialog-act.s9553330.63",
+          "quote": "And in terms of invisible features , audio and um tactile feedback on button presses and , like you said , speech recognition ."
+        },
+        {
+          "da_id": "IS1008c.B.dialog-act.s9553330.75",
+          "quote": "So that if the user doesn't want to use their voice , they can just turn it off and you don't have the remote control accidentally changing things on you ."
+        }
+      ],
+      "fields": [
+        "status"
+      ]
+    },
+    "conflict": {
+      "result": "pass",
+      "reason": "No contradictions found within the observed dialogue; the item scope is consistent with prior and current statements.",
+      "quotes": [
+        {
+          "da_id": "IS1008c.B.dialog-act.s9553330.63",
+          "quote": "And in terms of invisible features , audio and um tactile feedback on button presses and , like you said , speech recognition ."
+        },
+        {
+          "da_id": "IS1008c.B.dialog-act.s9553330.75",
+          "quote": "So that if the user doesn't want to use their voice , they can just turn it off and you don't have the remote control accidentally changing things on you ."
+        },
+        {
+          "da_id": "IS1008c.C.dialog-act.s9553330.117",
+          "quote": "Mm-hmm ."
+        }
+      ],
+      "fields": []
+    },
+    "relation": {
+      "result": "not_applicable",
+      "reason": "No prior related item to update or reference in this context.",
+      "quotes": [],
+      "fields": [
+        "related_items"
+      ]
+    },
+    "owner": {
+      "result": "not_applicable",
+      "reason": "field_not_applicable",
+      "quotes": [],
+      "fields": [
+        "owner"
+      ]
+    },
+    "deadline": {
+      "result": "not_applicable",
+      "reason": "field_not_applicable",
+      "quotes": [],
+      "fields": [
+        "deadline"
+      ]
+    }
+  },
+  "unresolved_fields": [],
+  "observed_evidence_da_ids": [
+    "IS1008c.B.dialog-act.s9553330.63",
+    "IS1008c.C.dialog-act.s9553330.117",
+    "IS1008c.B.dialog-act.s9553330.75",
+    "IS1008c.B.dialog-act.s9553330.62",
+    "IS1008c.B.dialog-act.s9553330.64",
+    "IS1008c.B.dialog-act.s9553330.74",
+    "IS1008c.C.dialog-act.s9553330.118"
+  ],
+  "initial_context": {
+    "item": {
+      "type": "decisions",
+      "text": "Include audio and tactile feedback on button presses and provide a way to turn off voice control.",
+      "flags": []
+    },
+    "current_meeting": "IS1008c",
+    "earlier_meetings": [
+      "IS1008a",
+      "IS1008b"
+    ],
+    "roster": [
+      {
+        "speaker": "A",
+        "participant_id": "MIO086",
+        "role": "PM"
+      },
+      {
+        "speaker": "B",
+        "participant_id": "FIE038",
+        "role": "UI"
+      },
+      {
+        "speaker": "C",
+        "participant_id": "FIE073",
+        "role": "ID"
+      },
+      {
+        "speaker": "D",
+        "participant_id": "MIE085",
+        "role": "ME"
+      }
+    ],
+    "observed_dialogue": [
+      {
+        "da_id": "IS1008c.B.dialog-act.s9553330.63",
+        "meeting_id": "IS1008c",
+        "text": "And in terms of invisible features , audio and um tactile feedback on button presses and , like you said , speech recognition .",
+        "participant": "FIE038",
+        "role": "UI"
+      },
+      {
+        "da_id": "IS1008c.C.dialog-act.s9553330.117",
+        "meeting_id": "IS1008c",
+        "text": "Mm-hmm .",
+        "participant": "FIE073",
+        "role": "ID"
+      },
+      {
+        "da_id": "IS1008c.B.dialog-act.s9553330.75",
+        "meeting_id": "IS1008c",
+        "text": "So that if the user doesn't want to use their voice , they can just turn it off and you don't have the remote control accidentally changing things on you .",
+        "participant": "FIE038",
+        "role": "UI"
+      },
+      {
+        "da_id": "IS1008c.B.dialog-act.s9553330.62",
+        "participant": "FIE038",
+        "role": "UI",
+        "text": "so I thought maybe we could put a little battery life-light on it that kind of goes dimmer and dimmer and dimmer as your battery is <disfmarker> starts to die ."
+      },
+      {
+        "da_id": "IS1008c.B.dialog-act.s9553330.64",
+        "participant": "FIE038",
+        "role": "UI",
+        "text": "So , in terms of what this thing would actually look like <disfmarker>"
+      },
+      {
+        "da_id": "IS1008c.B.dialog-act.s9553330.74",
+        "participant": "FIE038",
+        "role": "UI",
+        "text": "and on the other side a way to turn off the voice control ."
+      },
+      {
+        "da_id": "IS1008c.C.dialog-act.s9553330.118",
+        "participant": "FIE073",
+        "role": "ID",
+        "text": "Mm ."
+      }
+    ],
+    "peer_items": [
+      {
+        "item_key": "IS1008c#0",
+        "type": "decisions",
+        "text": "The group has reached an agreement to pursue a wooden, customizable case for the device."
+      },
+      {
+        "item_key": "IS1008c#1",
+        "type": "actions",
+        "text": "The presenters (FIE038 and FIE073) will come up with the prototype design for the remote control and show how it looks by the next meeting."
+      },
+      {
+        "item_key": "IS1008c#2",
+        "type": "problems",
+        "text": "Risk of splinters when using wood; user hand discomfort or injury if the wood finish is not handled properly."
+      },
+      {
+        "item_key": "IS1008c#3",
+        "type": "actions",
+        "text": "FIE073 will find out more about what 'advanced chip on print' means before the next meeting."
+      },
+      {
+        "item_key": "IS1008c#4",
+        "type": "decisions",
+        "text": "The buttons will be rubber like they are now, not wood, to preserve the tactile experience."
+      },
+      {
+        "item_key": "IS1008c#5",
+        "type": "problems",
+        "text": "Cost-related concerns: overall product cost and cost of adding a display are not known."
+      },
+      {
+        "item_key": "IS1008c#6",
+        "type": "actions",
+        "text": "The marketing manager will find out the cost of the display."
+      },
+      {
+        "item_key": "IS1008c#7",
+        "type": "problems",
+        "text": "There is concern that competitors are copying or stealing the product concept."
+      },
+      {
+        "item_key": "IS1008c#8",
+        "type": "decisions",
+        "text": "Include a battery-life indicator light that dims as the battery dies."
+      },
+      {
+        "item_key": "IS1008c#9",
+        "type": "actions",
+        "text": "The project manager will submit to management."
+      },
+      {
+        "item_key": "IS1008c#10",
+        "type": "decisions",
+        "text": "We will stick with the simple design for the time being until the cost of adding the display is known."
+      },
+      {
+        "item_key": "IS1008c#11",
+        "type": "actions",
+        "text": "MIE085 will develop the marketing strategy."
+      },
+      {
+        "item_key": "IS1008c#12",
+        "type": "decisions",
+        "text": "Incorporate a flip-screen feature on the remote to avoid accidental presses or damage when sat on."
+      }
+    ],
+    "provisional_values": {
+      "owner": null,
+      "owner_basis": "missing",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "status": "adopted",
+      "related_items": []
+    },
+    "candidate_evidence_da_ids": [
+      "IS1008c.B.dialog-act.s9553330.63",
+      "IS1008c.C.dialog-act.s9553330.117",
+      "IS1008c.B.dialog-act.s9553330.75"
+    ]
+  },
+  "observed_documents": [],
+  "document_evidence": [],
+  "relation_evidence": [],
+  "history": [
+    {
+      "item": "IS1008c#13",
+      "step": 1,
+      "flags": [],
+      "action": "assess_item",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue supports adding audio and tactile feedback and providing a way to turn off voice control as requested in the decision.",
+          "quotes": [
+            {
+              "da_id": "IS1008c.B.dialog-act.s9553330.63",
+              "quote": "And in terms of invisible features , audio and um tactile feedback on button presses and , like you said , speech recognition ."
+            },
+            {
+              "da_id": "IS1008c.B.dialog-act.s9553330.75",
+              "quote": "So that if the user doesn't want to use their voice , they can just turn it off and you don't have the remote control accidentally changing things on you ."
+            },
+            {
+              "da_id": "IS1008c.C.dialog-act.s9553330.117",
+              "quote": "Mm-hmm ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Current dialogue confirms the decision scope is supported and evidenced by multiple utterances.",
+          "quotes": [
+            {
+              "da_id": "IS1008c.B.dialog-act.s9553330.63",
+              "quote": "And in terms of invisible features , audio and um tactile feedback on button presses and , like you said , speech recognition ."
+            },
+            {
+              "da_id": "IS1008c.B.dialog-act.s9553330.75",
+              "quote": "So that if the user doesn't want to use their voice , they can just turn it off and you don't have the remote control accidentally changing things on you ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions found within the observed dialogue; the item scope is consistent with prior and current statements.",
+          "quotes": [
+            {
+              "da_id": "IS1008c.B.dialog-act.s9553330.63",
+              "quote": "And in terms of invisible features , audio and um tactile feedback on button presses and , like you said , speech recognition ."
+            },
+            {
+              "da_id": "IS1008c.B.dialog-act.s9553330.75",
+              "quote": "So that if the user doesn't want to use their voice , they can just turn it off and you don't have the remote control accidentally changing things on you ."
+            },
+            {
+              "da_id": "IS1008c.C.dialog-act.s9553330.117",
+              "quote": "Mm-hmm ."
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No prior related item to update or reference in this context.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        },
+        "owner": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        }
+      },
+      "decision": "accept",
+      "reason": "all_required_checks_passed",
+      "assessed_text": "Include audio and tactile feedback on button presses and provide a way to turn off voice control.",
+      "requested_action": "accept",
+      "proposed_fields": {
+        "status": "adopted",
+        "related_items": [],
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "IS1008c.B.dialog-act.s9553330.63",
+          "IS1008c.B.dialog-act.s9553330.75",
+          "IS1008c.C.dialog-act.s9553330.117"
+        ],
+        "owner": null,
+        "owner_basis": "missing",
+        "deadline": null,
+        "deadline_basis": "missing"
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue supports adding audio and tactile feedback and providing a way to turn off voice control as requested in the decision.",
+          "quotes": [
+            "IS1008c.B.dialog-act.s9553330.63",
+            "IS1008c.B.dialog-act.s9553330.75",
+            "IS1008c.C.dialog-act.s9553330.117"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Current dialogue confirms the decision scope is supported and evidenced by multiple utterances.",
+          "quotes": [
+            "IS1008c.B.dialog-act.s9553330.63",
+            "IS1008c.B.dialog-act.s9553330.75"
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions found within the observed dialogue; the item scope is consistent with prior and current statements.",
+          "quotes": [
+            "IS1008c.B.dialog-act.s9553330.63",
+            "IS1008c.B.dialog-act.s9553330.75",
+            "IS1008c.C.dialog-act.s9553330.117"
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No prior related item to update or reference in this context.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "status": "adopted",
+        "related_items": [],
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue supports adding audio and tactile feedback and providing a way to turn off voice control as requested in the decision.",
+          "evidence_da_ids": [
+            "IS1008c.B.dialog-act.s9553330.63",
+            "IS1008c.B.dialog-act.s9553330.75",
+            "IS1008c.C.dialog-act.s9553330.117"
+          ]
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "Current dialogue confirms the decision scope is supported and evidenced by multiple utterances.",
+          "evidence_da_ids": [
+            "IS1008c.B.dialog-act.s9553330.63",
+            "IS1008c.B.dialog-act.s9553330.75"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No contradictions found within the observed dialogue; the item scope is consistent with prior and current statements.",
+          "evidence_da_ids": [
+            "IS1008c.B.dialog-act.s9553330.63",
+            "IS1008c.B.dialog-act.s9553330.75",
+            "IS1008c.C.dialog-act.s9553330.117"
+          ],
+          "affected_fields": []
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No prior related item to update or reference in this context.",
+          "evidence_da_ids": []
+        },
+        "next_action": "accept"
+      },
+      "evidence_bindings": {
+        "statement": [
+          "IS1008c.B.dialog-act.s9553330.63",
+          "IS1008c.B.dialog-act.s9553330.75",
+          "IS1008c.C.dialog-act.s9553330.117"
+        ],
+        "status": [
+          "IS1008c.B.dialog-act.s9553330.63",
+          "IS1008c.B.dialog-act.s9553330.75"
+        ],
+        "conflict": [
+          "IS1008c.B.dialog-act.s9553330.63",
+          "IS1008c.B.dialog-act.s9553330.75",
+          "IS1008c.C.dialog-act.s9553330.117"
+        ]
+      },
+      "raw_tool_input": {
+        "status": "adopted",
+        "related_items": [],
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue supports adding audio and tactile feedback and providing a way to turn off voice control as requested in the decision.",
+          "evidence_da_ids": [
+            "IS1008c.B.dialog-act.s9553330.63",
+            "IS1008c.B.dialog-act.s9553330.75",
+            "IS1008c.C.dialog-act.s9553330.117"
+          ]
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "Current dialogue confirms the decision scope is supported and evidenced by multiple utterances.",
+          "evidence_da_ids": [
+            "IS1008c.B.dialog-act.s9553330.63",
+            "IS1008c.B.dialog-act.s9553330.75"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No contradictions found within the observed dialogue; the item scope is consistent with prior and current statements.",
+          "evidence_da_ids": [
+            "IS1008c.B.dialog-act.s9553330.63",
+            "IS1008c.B.dialog-act.s9553330.75",
+            "IS1008c.C.dialog-act.s9553330.117"
+          ],
+          "affected_fields": []
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No prior related item to update or reference in this context.",
+          "evidence_da_ids": []
+        },
+        "next_action": "accept"
+      },
+      "protocol_normalizations": [],
+      "unresolved_before": [
+        "statement",
+        "status"
+      ],
+      "unresolved_after": [],
+      "semantic_stalls": 0,
+      "validation_codes": {}
+    },
+    {
+      "item": "IS1008c#13",
+      "step": 1,
+      "flags": [],
+      "action": "accept",
+      "outcome": "accepted",
+      "termination_reason": "all_required_checks_passed",
+      "unresolved_fields": []
+    }
+  ],
+  "lookups": 0,
+  "termination_reason": "all_required_checks_passed",
+  "clarifications": []
+}

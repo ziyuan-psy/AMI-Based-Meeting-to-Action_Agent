@@ -1,0 +1,549 @@
+{
+  "meeting_id": "TS3004d",
+  "status": "COMPLETED",
+  "score": {
+    "metrics": {
+      "actions": {
+        "tp": 2,
+        "sys": 4,
+        "gold": 3,
+        "precision": 0.5,
+        "recall": 0.667,
+        "f1": 0.571
+      },
+      "decisions": {
+        "tp": 0,
+        "sys": 2,
+        "gold": 5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "problems": {
+        "tp": 0,
+        "sys": 1,
+        "gold": 5,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "matches": {
+      "TS3004d.sys.s.4": "TS3004d.dharshi.s.11",
+      "TS3004d.sys.s.6": "TS3004d.revised.s.20"
+    },
+    "unmatched": {
+      "actions": {
+        "system": [
+          {
+            "id": "TS3004d.sys.s.5",
+            "text": "UI will present their prototype presentation after PM.",
+            "type": "actions",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.A.dialog-act.dharshi.6"
+              }
+            ],
+            "owner": [
+              "MTD015UID"
+            ],
+            "owner_basis": "explicit",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": []
+          },
+          {
+            "id": "TS3004d.sys.s.7",
+            "text": "ME will take some pictures after the meeting.",
+            "type": "actions",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.D.dialog-act.dharshi.255"
+              }
+            ],
+            "owner": [
+              "MTD016ME"
+            ],
+            "owner_basis": "explicit",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": []
+          }
+        ],
+        "gold": [
+          {
+            "id": "TS3004d.revised.s.21",
+            "text": "The designers still need to draw the recharger (home station).",
+            "type": "actions",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.A.dialog-act.dharshi.187"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.A.dialog-act.dharshi.200"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.C.dialog-act.dharshi.147"
+              }
+            ],
+            "owner": [
+              "MTD014ID",
+              "MTD015UID"
+            ],
+            "owner_basis": "inferred",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": []
+          }
+        ]
+      },
+      "decisions": {
+        "system": [
+          {
+            "id": "TS3004d.sys.s.1",
+            "text": "UI will present their prototype presentation after PM.",
+            "type": "decisions",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.B.dialog-act.dharshi.17"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.C.dialog-act.dharshi.16"
+              }
+            ],
+            "status": "adopted",
+            "prior_context_needed": false,
+            "related_items": []
+          },
+          {
+            "id": "TS3004d.sys.s.3",
+            "text": "The Project Manager will write a final report.",
+            "type": "decisions",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.B.dialog-act.dharshi.13"
+              }
+            ],
+            "status": "adopted",
+            "prior_context_needed": false,
+            "related_items": []
+          }
+        ],
+        "gold": [
+          {
+            "id": "TS3004d.dharshi.s.12",
+            "text": "The remote will be made of hard, transparent coloured plastic, and will come in different colours.",
+            "type": "decisions",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.C.dialog-act.dharshi.23"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.C.dialog-act.dharshi.24"
+              }
+            ],
+            "status": "adopted",
+            "prior_context_needed": false,
+            "related_items": [
+              {
+                "id": "TS3004c.JacquelinePalmer.s.19",
+                "relation": "continues"
+              }
+            ]
+          },
+          {
+            "id": "TS3004d.dharshi.s.13",
+            "text": "The remote will include buttons and a scroll wheel.",
+            "type": "decisions",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.B.dialog-act.dharshi.48"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.B.dialog-act.dharshi.42"
+              }
+            ],
+            "status": "adopted",
+            "prior_context_needed": false,
+            "related_items": [
+              {
+                "id": "TS3004c.JacquelinePalmer.s.16",
+                "relation": "continues"
+              }
+            ]
+          },
+          {
+            "id": "TS3004d.dharshi.s.14",
+            "text": "The remote control will feature speech recognition and a slide-out second level.",
+            "type": "decisions",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.A.dialog-act.dharshi.13"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.A.dialog-act.dharshi.14"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.A.dialog-act.dharshi.16"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.A.dialog-act.dharshi.17"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.A.dialog-act.dharshi.18"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.A.dialog-act.dharshi.59"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.B.dialog-act.dharshi.6"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.C.dialog-act.dharshi.5"
+              }
+            ],
+            "status": "adopted",
+            "prior_context_needed": true,
+            "related_items": [
+              {
+                "id": "TS3004c.JacquelinePalmer.s.23",
+                "relation": "continues"
+              },
+              {
+                "id": "TS3004c.revised.s.25",
+                "relation": "updates"
+              }
+            ]
+          },
+          {
+            "id": "TS3004d.revised.s.22",
+            "text": "The remote will have three buttons to switch the backlight colour.",
+            "type": "decisions",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.D.dialog-act.dharshi.34"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.D.dialog-act.dharshi.38"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.D.dialog-act.dharshi.41"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.A.dialog-act.dharshi.71"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.A.dialog-act.dharshi.72"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.A.dialog-act.dharshi.73"
+              }
+            ],
+            "status": "adopted",
+            "prior_context_needed": false,
+            "related_items": []
+          },
+          {
+            "id": "TS3004d.revised.s.23",
+            "text": "The home station will keep a button that makes the remote beep so it can be found.",
+            "type": "decisions",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.D.dialog-act.dharshi.208"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.D.dialog-act.dharshi.211"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.A.dialog-act.dharshi.222"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.B.dialog-act.dharshi.219"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.C.dialog-act.dharshi.173"
+              }
+            ],
+            "status": "adopted",
+            "prior_context_needed": true,
+            "related_items": []
+          }
+        ]
+      },
+      "problems": {
+        "system": [
+          {
+            "id": "TS3004d.sys.s.2",
+            "text": "ME will take some pictures after the meeting.",
+            "type": "problems",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.B.dialog-act.dharshi.1"
+              }
+            ],
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": []
+          }
+        ],
+        "gold": [
+          {
+            "id": "TS3004d.dharshi.s.15",
+            "text": "The designers had not included the slide-out second level in their drawing of the prototype.",
+            "type": "problems",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.C.dialog-act.dharshi.42"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.D.dialog-act.dharshi.22"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.D.dialog-act.dharshi.23"
+              }
+            ],
+            "status": "resolved",
+            "prior_context_needed": false,
+            "related_items": []
+          },
+          {
+            "id": "TS3004d.dharshi.s.16",
+            "text": "The group were unsure how many extra buttons would be needed for speech recognition.",
+            "type": "problems",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.A.dialog-act.dharshi.36"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.A.dialog-act.dharshi.37"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.B.dialog-act.dharshi.21"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.A.dialog-act.dharshi.39"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.B.dialog-act.dharshi.23"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.B.dialog-act.dharshi.31"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.C.dialog-act.dharshi.70"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.C.dialog-act.dharshi.71"
+              }
+            ],
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": []
+          },
+          {
+            "id": "TS3004d.dharshi.s.17",
+            "text": "The group felt the information they got was not always useful, or was not given to them at the right time.",
+            "type": "problems",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.B.dialog-act.dharshi.240"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.B.dialog-act.dharshi.241"
+              }
+            ],
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": []
+          },
+          {
+            "id": "TS3004d.dharshi.s.18",
+            "text": "It was felt that the group should have received the information about costs before designing the prototype.",
+            "type": "problems",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.C.dialog-act.dharshi.184"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.B.dialog-act.dharshi.242"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.B.dialog-act.dharshi.243"
+              }
+            ],
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": []
+          },
+          {
+            "id": "TS3004d.dharshi.s.19",
+            "text": "The group had problems with the smart board and digital pens.",
+            "type": "problems",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.A.dialog-act.dharshi.285"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.A.dialog-act.dharshi.287"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.B.dialog-act.dharshi.251"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.C.dialog-act.dharshi.207"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.D.dialog-act.dharshi.239"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.C.dialog-act.dharshi.211"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004d.json",
+                "locator": "TS3004d.C.dialog-act.dharshi.212"
+              }
+            ],
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": []
+          }
+        ]
+      }
+    }
+  },
+  "runtime_control": {
+    "limits": {
+      "calls": 80,
+      "tokens": 1000000,
+      "request_seconds": 300.0,
+      "meeting_seconds": 1200.0,
+      "inflight": 4,
+      "retries": 2,
+      "backoff": 0.5
+    },
+    "attempted_calls": 0,
+    "charged_tokens": 0,
+    "unknown_usage_tokens": 0,
+    "reserved_tokens": 0,
+    "max_inflight_seen": 0,
+    "failure": null,
+    "attempts": [],
+    "input_bound_method": "utf8_request_bytes_plus_padding",
+    "unknown_usage_policy": "charge_full_reservation"
+  }
+}

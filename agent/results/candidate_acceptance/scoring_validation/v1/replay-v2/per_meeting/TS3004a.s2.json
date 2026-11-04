@@ -1,0 +1,475 @@
+{
+  "meeting_id": "TS3004a",
+  "mode": "s2",
+  "status": "COMPLETED",
+  "execution_kind": "FIXED_RESPONSE_REPLAY_NOT_FRESH_PIPELINE",
+  "score": {
+    "metrics": {
+      "actions": {
+        "tp": 1,
+        "sys": 3,
+        "gold": 1,
+        "precision": 0.333,
+        "recall": 1.0,
+        "f1": 0.5
+      },
+      "decisions": {
+        "tp": 1,
+        "sys": 5,
+        "gold": 2,
+        "precision": 0.2,
+        "recall": 0.5,
+        "f1": 0.286
+      },
+      "problems": {
+        "tp": 2,
+        "sys": 4,
+        "gold": 3,
+        "precision": 0.5,
+        "recall": 0.667,
+        "f1": 0.571
+      }
+    },
+    "matches": {
+      "TS3004a.sys.s.1": "TS3004a.JacquelinePalmer.s.11",
+      "TS3004a.sys.s.3": "TS3004a.JacquelinePalmer.s.12",
+      "TS3004a.sys.s.7": "TS3004a.JacquelinePalmer.s.15",
+      "TS3004a.sys.s.12": "TS3004a.JacquelinePalmer.s.13"
+    },
+    "unmatched": {
+      "actions": {
+        "system": [
+          {
+            "id": "TS3004a.sys.s.5",
+            "text": "A calculation is to be made of how many units need to be sold to achieve fifty million euros in profit.",
+            "type": "actions",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004a.json",
+                "locator": "TS3004a.A.dialog-act.vkaraisk.196"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004a.json",
+                "locator": "TS3004a.A.dialog-act.vkaraisk.197"
+              }
+            ],
+            "owner": null,
+            "owner_basis": "ambiguous",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": []
+          },
+          {
+            "id": "TS3004a.sys.s.11",
+            "text": "The UI will place their laptop exactly on the square for the next meeting.",
+            "type": "actions",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004a.json",
+                "locator": "TS3004a.A.dialog-act.vkaraisk.302"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004a.json",
+                "locator": "TS3004a.B.dialog-act.vkaraisk.136"
+              }
+            ],
+            "owner": [
+              "MTD015UID"
+            ],
+            "owner_basis": "explicit",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": []
+          }
+        ],
+        "gold": []
+      },
+      "decisions": {
+        "system": [
+          {
+            "id": "TS3004a.sys.s.4",
+            "text": "The design work will consist of three phases: functional design, conceptual design, and detailed design.",
+            "type": "decisions",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004a.json",
+                "locator": "TS3004a.A.dialog-act.vkaraisk.44"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004a.json",
+                "locator": "TS3004a.A.dialog-act.vkaraisk.45"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004a.json",
+                "locator": "TS3004a.A.dialog-act.vkaraisk.46"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004a.json",
+                "locator": "TS3004a.A.dialog-act.vkaraisk.47"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004a.json",
+                "locator": "TS3004a.A.dialog-act.vkaraisk.49"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004a.json",
+                "locator": "TS3004a.A.dialog-act.vkaraisk.50"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004a.json",
+                "locator": "TS3004a.A.dialog-act.vkaraisk.51"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004a.json",
+                "locator": "TS3004a.A.dialog-act.vkaraisk.52"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004a.json",
+                "locator": "TS3004a.A.dialog-act.vkaraisk.53"
+              }
+            ],
+            "status": "adopted",
+            "prior_context_needed": false,
+            "related_items": []
+          },
+          {
+            "id": "TS3004a.sys.s.8",
+            "text": "The group decided to set the selling price of the remote control at about twenty-five Euros, and to target a profit of fifty million Euros by targeting a large European market, and the remote control must be original, trendy, and user-friendly.",
+            "type": "decisions",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004a.json",
+                "locator": "TS3004a.A.dialog-act.vkaraisk.188"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004a.json",
+                "locator": "TS3004a.A.dialog-act.vkaraisk.191"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004a.json",
+                "locator": "TS3004a.A.dialog-act.vkaraisk.192"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004a.json",
+                "locator": "TS3004a.B.dialog-act.vkaraisk.58"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004a.json",
+                "locator": "TS3004a.A.dialog-act.vkaraisk.42"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004a.json",
+                "locator": "TS3004a.A.dialog-act.vkaraisk.43"
+              }
+            ],
+            "status": "adopted",
+            "prior_context_needed": false,
+            "related_items": []
+          },
+          {
+            "id": "TS3004a.sys.s.9",
+            "text": "The group aims to achieve a profit of fifty million Euros by targeting a large European market.",
+            "type": "decisions",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004a.json",
+                "locator": "TS3004a.A.dialog-act.vkaraisk.191"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004a.json",
+                "locator": "TS3004a.A.dialog-act.vkaraisk.192"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004a.json",
+                "locator": "TS3004a.B.dialog-act.vkaraisk.58"
+              }
+            ],
+            "status": "adopted",
+            "prior_context_needed": false,
+            "related_items": []
+          },
+          {
+            "id": "TS3004a.sys.s.10",
+            "text": "The team proposed to offer the rechargeable recharger as a separate option and to sell it separately.",
+            "type": "decisions",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004a.json",
+                "locator": "TS3004a.B.dialog-act.vkaraisk.105"
+              }
+            ],
+            "status": "proposed",
+            "prior_context_needed": false,
+            "related_items": []
+          }
+        ],
+        "gold": [
+          {
+            "id": "TS3004a.revised.s.16",
+            "text": "The remote will not have a touch screen, because it would be too expensive and too fragile.",
+            "type": "decisions",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004a.json",
+                "locator": "TS3004a.A.dialog-act.vkaraisk.240"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004a.json",
+                "locator": "TS3004a.A.dialog-act.vkaraisk.245"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004a.json",
+                "locator": "TS3004a.B.dialog-act.vkaraisk.93"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004a.json",
+                "locator": "TS3004a.B.dialog-act.vkaraisk.94"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004a.json",
+                "locator": "TS3004a.D.dialog-act.vkaraisk.107"
+              }
+            ],
+            "status": "adopted",
+            "prior_context_needed": false,
+            "related_items": []
+          }
+        ]
+      },
+      "problems": {
+        "system": [
+          {
+            "id": "TS3004a.sys.s.2",
+            "text": "The remote control is likely to be dropped and broken due to frequent handling, raising durability concerns.",
+            "type": "problems",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004a.json",
+                "locator": "TS3004a.D.dialog-act.vkaraisk.108"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004a.json",
+                "locator": "TS3004a.A.dialog-act.vkaraisk.243"
+              }
+            ],
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": []
+          },
+          {
+            "id": "TS3004a.sys.s.6",
+            "text": "A touchscreen on the remote could be fragile and not kid-friendly, raising durability and usability concerns.",
+            "type": "problems",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004a.json",
+                "locator": "TS3004a.A.dialog-act.vkaraisk.244"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004a.json",
+                "locator": "TS3004a.A.dialog-act.vkaraisk.246"
+              }
+            ],
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": []
+          }
+        ],
+        "gold": [
+          {
+            "id": "TS3004a.JacquelinePalmer.s.14",
+            "text": "The group leaned toward standard batteries, with a recharging home station sold separately as an option, but did not know what the station would cost.",
+            "type": "problems",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004a.json",
+                "locator": "TS3004a.D.dialog-act.vkaraisk.115"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004a.json",
+                "locator": "TS3004a.C.dialog-act.vkaraisk.60"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004a.json",
+                "locator": "TS3004a.B.dialog-act.vkaraisk.98"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004a.json",
+                "locator": "TS3004a.A.dialog-act.vkaraisk.257"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004a.json",
+                "locator": "TS3004a.A.dialog-act.vkaraisk.256"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004a.json",
+                "locator": "TS3004a.D.dialog-act.vkaraisk.121"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3004a.json",
+                "locator": "TS3004a.A.dialog-act.vkaraisk.259"
+              }
+            ],
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": []
+          }
+        ]
+      }
+    }
+  },
+  "fields": {
+    "status": {
+      "correct": 4,
+      "total": 4,
+      "rate": 1.0
+    },
+    "prior_context_needed": {
+      "correct": 4,
+      "total": 4,
+      "rate": 1.0
+    },
+    "owner_exact": {
+      "correct": 1,
+      "total": 1,
+      "rate": 1.0
+    },
+    "owner_basis": {
+      "correct": 1,
+      "total": 1,
+      "rate": 1.0
+    },
+    "deadline_match": {
+      "correct": 1,
+      "total": 1,
+      "rate": 1.0
+    },
+    "deadline_basis": {
+      "correct": 1,
+      "total": 1,
+      "rate": 1.0
+    }
+  },
+  "raw_alignment": {
+    "actions": {
+      "TS3004a.sys.s.1": "TS3004a.JacquelinePalmer.s.11"
+    },
+    "decisions": {
+      "TS3004a.sys.s.3": "TS3004a.JacquelinePalmer.s.12"
+    },
+    "problems": {
+      "TS3004a.sys.s.7": "TS3004a.JacquelinePalmer.s.15",
+      "TS3004a.sys.s.12": "TS3004a.JacquelinePalmer.s.13"
+    }
+  },
+  "category_accounting": {
+    "actions": {
+      "raw_system": 3,
+      "raw_gold": 1,
+      "unscored": false,
+      "excluded_gold_ids": [],
+      "excluded_system_ids": []
+    },
+    "decisions": {
+      "raw_system": 5,
+      "raw_gold": 2,
+      "unscored": false,
+      "excluded_gold_ids": [],
+      "excluded_system_ids": []
+    },
+    "problems": {
+      "raw_system": 4,
+      "raw_gold": 3,
+      "unscored": false,
+      "excluded_gold_ids": [],
+      "excluded_system_ids": []
+    }
+  },
+  "vote_caches": {
+    "actions": {
+      "path": "votes\\TS3004a\\actions.6c53be83f04655dec7c8.json",
+      "votes": 3,
+      "input_sha256": "6c53be83f04655dec7c84f8bdbdb2333526d0975dcd66f4588b6b5641795131b"
+    },
+    "decisions": {
+      "path": "votes\\TS3004a\\decisions.aa8ae108eabe5b66d8a1.json",
+      "votes": 3,
+      "input_sha256": "aa8ae108eabe5b66d8a15e1e1754a6ec1d665c2ee22da23336c933704d0fd785"
+    },
+    "problems": {
+      "path": "votes\\TS3004a\\problems.dd31cf0e0f8dc54bff6b.json",
+      "votes": 3,
+      "input_sha256": "dd31cf0e0f8dc54bff6b8186b53054cda0c6d92503b1d8ddfc94924d7291d071"
+    }
+  },
+  "runtime_control": {
+    "limits": {
+      "calls": 80,
+      "tokens": 1000000,
+      "request_seconds": 300.0,
+      "meeting_seconds": 1200.0,
+      "inflight": 4,
+      "retries": 2,
+      "backoff": 0.5
+    },
+    "attempted_calls": 0,
+    "charged_tokens": 0,
+    "unknown_usage_tokens": 0,
+    "reserved_tokens": 0,
+    "max_inflight_seen": 0,
+    "failure": null,
+    "attempts": [],
+    "input_bound_method": "utf8_request_bytes_plus_padding",
+    "unknown_usage_policy": "charge_full_reservation"
+  },
+  "judge_usage": {
+    "calls": 0,
+    "in": 0,
+    "out": 0,
+    "stages": {}
+  },
+  "elapsed_seconds": 0.016
+}

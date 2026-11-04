@@ -1,0 +1,1050 @@
+{
+  "item_key": "IS1008a#5",
+  "record_id": null,
+  "item_type": "actions",
+  "item_text": "PM(MIO086) will send a copy of his slides to all attendees after the meeting.",
+  "state": "pending",
+  "recordable": true,
+  "fields": {
+    "status": "open",
+    "prior_context_needed": false,
+    "related_items": [],
+    "owner": [
+      "MIO086"
+    ],
+    "owner_basis": "explicit",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "reference": [
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/IS1008a.json",
+        "locator": "IS1008a.A.dialog-act.s9553330.130"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/IS1008a.json",
+        "locator": "IS1008a.A.dialog-act.s9553330.131"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/IS1008a.json",
+        "locator": "IS1008a.A.dialog-act.s9553330.132"
+      }
+    ]
+  },
+  "draft_fields": {
+    "status": "open",
+    "related_items": [],
+    "owner": [
+      "MIO086"
+    ],
+    "owner_basis": "explicit",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "prior_context_needed": false,
+    "used_participant_lookup": false,
+    "evidence_da_ids": [
+      "IS1008a.A.dialog-act.s9553330.130",
+      "IS1008a.A.dialog-act.s9553330.131",
+      "IS1008a.A.dialog-act.s9553330.132"
+    ]
+  },
+  "checks": {
+    "statement": {
+      "result": "pass",
+      "reason": "Current dialogue indicates PM will send slides after meeting",
+      "quotes": [
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.130",
+          "quote": "Yes , I will . Yes ."
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.131",
+          "quote": "I'll copy , uh"
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.132",
+          "quote": "le let us keep all the emails and all the copies , okay , share each other , okay , so you know everybody what's happening , okay ?"
+        }
+      ],
+      "fields": [
+        "statement"
+      ]
+    },
+    "owner": {
+      "result": "pass",
+      "reason": "Owner is explicitly stated in roster and supported by action dialogue",
+      "quotes": [
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.130",
+          "quote": "Yes , I will . Yes ."
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.131",
+          "quote": "I'll copy , uh"
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.132",
+          "quote": "le let us keep all the emails and all the copies , okay , share each other , okay , so you know everybody what's happening , okay ?"
+        }
+      ],
+      "fields": [
+        "owner"
+      ]
+    },
+    "deadline": {
+      "result": "uncertain",
+      "reason": "deadline_unresolved",
+      "quotes": [],
+      "fields": [
+        "deadline"
+      ]
+    },
+    "status": {
+      "result": "pass",
+      "reason": "Action described as ongoing/open and anticipated to follow meeting",
+      "quotes": [
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.130",
+          "quote": "Yes , I will . Yes ."
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.131",
+          "quote": "I'll copy , uh"
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.132",
+          "quote": "le let us keep all the emails and all the copies , okay , share each other , okay , so you know everybody what's happening , okay ?"
+        }
+      ],
+      "fields": [
+        "status"
+      ]
+    },
+    "conflict": {
+      "result": "pass",
+      "reason": "No contradicting statements found in available dialogue",
+      "quotes": [
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.130",
+          "quote": "Yes , I will . Yes ."
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.131",
+          "quote": "I'll copy , uh"
+        },
+        {
+          "da_id": "IS1008a.A.dialog-act.s9553330.132",
+          "quote": "le let us keep all the emails and all the copies , okay , share each other , okay , so you know everybody what's happening , okay ?"
+        }
+      ],
+      "fields": []
+    },
+    "relation": {
+      "result": "not_applicable",
+      "reason": "No related_items to assess relation with",
+      "links": [],
+      "quotes": [],
+      "fields": [
+        "related_items"
+      ]
+    }
+  },
+  "unresolved_fields": [
+    "deadline"
+  ],
+  "observed_evidence_da_ids": [
+    "IS1008a.C.dialog-act.s9553330.42",
+    "IS1008a.A.dialog-act.s9553330.130",
+    "IS1008a.A.dialog-act.s9553330.131",
+    "IS1008a.A.dialog-act.s9553330.132",
+    "IS1008a.A.dialog-act.s9553330.129",
+    "IS1008a.B.dialog-act.s9553330.30",
+    "IS1008a.B.dialog-act.s9553330.31",
+    "IS1008a.B.dialog-act.s9553330.32"
+  ],
+  "initial_context": {
+    "item": {
+      "type": "actions",
+      "text": "PM(MIO086) will send a copy of his slides to all attendees after the meeting.",
+      "flags": []
+    },
+    "current_meeting": "IS1008a",
+    "earlier_meetings": [],
+    "roster": [
+      {
+        "speaker": "A",
+        "participant_id": "MIO086",
+        "role": "PM"
+      },
+      {
+        "speaker": "B",
+        "participant_id": "FIE038",
+        "role": "UI"
+      },
+      {
+        "speaker": "C",
+        "participant_id": "FIE073",
+        "role": "ID"
+      },
+      {
+        "speaker": "D",
+        "participant_id": "MIE085",
+        "role": "ME"
+      }
+    ],
+    "observed_dialogue": [
+      {
+        "da_id": "IS1008a.C.dialog-act.s9553330.42",
+        "meeting_id": "IS1008a",
+        "text": "Would you mind um at the conclusion of our meeting could could you send us a copy of your slides ?",
+        "participant": "FIE073",
+        "role": "ID"
+      },
+      {
+        "da_id": "IS1008a.A.dialog-act.s9553330.130",
+        "meeting_id": "IS1008a",
+        "text": "Yes , I will . Yes .",
+        "participant": "MIO086",
+        "role": "PM"
+      },
+      {
+        "da_id": "IS1008a.A.dialog-act.s9553330.131",
+        "meeting_id": "IS1008a",
+        "text": "I'll copy , uh",
+        "participant": "MIO086",
+        "role": "PM"
+      },
+      {
+        "da_id": "IS1008a.A.dialog-act.s9553330.132",
+        "meeting_id": "IS1008a",
+        "text": "le let us keep all the emails and all the copies , okay , share each other , okay , so you know everybody what's happening , okay ?",
+        "participant": "MIO086",
+        "role": "PM"
+      },
+      {
+        "da_id": "IS1008a.A.dialog-act.s9553330.129",
+        "participant": "MIO086",
+        "role": "PM",
+        "text": "Thanks for coming ."
+      },
+      {
+        "da_id": "IS1008a.B.dialog-act.s9553330.30",
+        "participant": "FIE038",
+        "role": "UI",
+        "text": "Mm-hmm ,"
+      },
+      {
+        "da_id": "IS1008a.B.dialog-act.s9553330.31",
+        "participant": "FIE038",
+        "role": "UI",
+        "text": "yeah , that would be useful ."
+      },
+      {
+        "da_id": "IS1008a.B.dialog-act.s9553330.32",
+        "participant": "FIE038",
+        "role": "UI",
+        "text": "Sure ."
+      }
+    ],
+    "peer_items": [
+      {
+        "item_key": "IS1008a#0",
+        "type": "problems",
+        "text": "The project goals are unclear, with confusion over whether the product is a remote control or a monitor, and there is no functional or technical design yet; design work has not begun."
+      },
+      {
+        "item_key": "IS1008a#1",
+        "type": "actions",
+        "text": "ID(FIE073) will provide a written plan covering the functional design, technical design, required team, budget, and market strategy within two weeks."
+      },
+      {
+        "item_key": "IS1008a#2",
+        "type": "problems",
+        "text": "PM cannot present to management without a written plan and cost/time estimates, and funding requests cannot be made because the plan/documentation is not prepared."
+      },
+      {
+        "item_key": "IS1008a#3",
+        "type": "actions",
+        "text": "UI(FIE038) will interact with Christine to ensure usability requirements are considered and coordinate with marketing on usability findings."
+      },
+      {
+        "item_key": "IS1008a#4",
+        "type": "actions",
+        "text": "FIE038 will start determining the functional design."
+      }
+    ],
+    "provisional_values": {
+      "owner": [
+        "MIO086"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "status": "open",
+      "related_items": []
+    },
+    "candidate_evidence_da_ids": [
+      "IS1008a.C.dialog-act.s9553330.42",
+      "IS1008a.A.dialog-act.s9553330.130",
+      "IS1008a.A.dialog-act.s9553330.131",
+      "IS1008a.A.dialog-act.s9553330.132"
+    ]
+  },
+  "observed_documents": [],
+  "document_evidence": [],
+  "relation_evidence": [],
+  "history": [
+    {
+      "item": "IS1008a#5",
+      "step": 1,
+      "flags": [],
+      "action": "assess_item",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Current dialogue indicates PM will send slides after meeting",
+          "quotes": [
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.130",
+              "quote": "Yes , I will . Yes ."
+            },
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.131",
+              "quote": "I'll copy , uh"
+            },
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.132",
+              "quote": "le let us keep all the emails and all the copies , okay , share each other , okay , so you know everybody what's happening , okay ?"
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Owner is explicitly stated in roster and supported by action dialogue",
+          "quotes": [
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.130",
+              "quote": "Yes , I will . Yes ."
+            },
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.131",
+              "quote": "I'll copy , uh"
+            },
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.132",
+              "quote": "le let us keep all the emails and all the copies , okay , share each other , okay , so you know everybody what's happening , okay ?"
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "deadline_unresolved",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Action described as ongoing/open and anticipated to follow meeting",
+          "quotes": [
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.130",
+              "quote": "Yes , I will . Yes ."
+            },
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.131",
+              "quote": "I'll copy , uh"
+            },
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.132",
+              "quote": "le let us keep all the emails and all the copies , okay , share each other , okay , so you know everybody what's happening , okay ?"
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradicting statements found in available dialogue",
+          "quotes": [
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.130",
+              "quote": "Yes , I will . Yes ."
+            },
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.131",
+              "quote": "I'll copy , uh"
+            },
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.132",
+              "quote": "le let us keep all the emails and all the copies , okay , share each other , okay , so you know everybody what's happening , okay ?"
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No related_items to assess relation with",
+          "links": [],
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "decision": "retrieve",
+      "reason": "unresolved_checks",
+      "requested_action": "retrieve",
+      "proposed_fields": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MIO086"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "IS1008a.A.dialog-act.s9553330.130",
+          "IS1008a.A.dialog-act.s9553330.131",
+          "IS1008a.A.dialog-act.s9553330.132"
+        ]
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Current dialogue indicates PM will send slides after meeting",
+          "quotes": [
+            "IS1008a.A.dialog-act.s9553330.130",
+            "IS1008a.A.dialog-act.s9553330.131",
+            "IS1008a.A.dialog-act.s9553330.132"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Owner is explicitly stated in roster and supported by action dialogue",
+          "quotes": [
+            "IS1008a.A.dialog-act.s9553330.130",
+            "IS1008a.A.dialog-act.s9553330.131",
+            "IS1008a.A.dialog-act.s9553330.132"
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "No explicit deadline wording found for sending slides",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Action described as ongoing/open and anticipated to follow meeting",
+          "quotes": [
+            "IS1008a.A.dialog-act.s9553330.130",
+            "IS1008a.A.dialog-act.s9553330.131",
+            "IS1008a.A.dialog-act.s9553330.132"
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradicting statements found in available dialogue",
+          "quotes": [
+            "IS1008a.A.dialog-act.s9553330.130",
+            "IS1008a.A.dialog-act.s9553330.131",
+            "IS1008a.A.dialog-act.s9553330.132"
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No related_items to assess relation with",
+          "links": [],
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MIO086"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "statement": {
+          "result": "pass",
+          "reason": "Current dialogue indicates PM will send slides after meeting",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.130",
+            "IS1008a.A.dialog-act.s9553330.131",
+            "IS1008a.A.dialog-act.s9553330.132"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "Owner is explicitly stated in roster and supported by action dialogue",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.130",
+            "IS1008a.A.dialog-act.s9553330.131",
+            "IS1008a.A.dialog-act.s9553330.132"
+          ]
+        },
+        "deadline_check": {
+          "result": "uncertain",
+          "reason": "No explicit deadline wording found for sending slides",
+          "evidence_da_ids": []
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "Action described as ongoing/open and anticipated to follow meeting",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.130",
+            "IS1008a.A.dialog-act.s9553330.131",
+            "IS1008a.A.dialog-act.s9553330.132"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No contradicting statements found in available dialogue",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.130",
+            "IS1008a.A.dialog-act.s9553330.131",
+            "IS1008a.A.dialog-act.s9553330.132"
+          ],
+          "affected_fields": []
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No related_items to assess relation with",
+          "evidence_da_ids": [],
+          "links": []
+        },
+        "next_action": "retrieve"
+      },
+      "evidence_bindings": {
+        "statement": [
+          "IS1008a.A.dialog-act.s9553330.130",
+          "IS1008a.A.dialog-act.s9553330.131",
+          "IS1008a.A.dialog-act.s9553330.132"
+        ],
+        "owner": [
+          "IS1008a.A.dialog-act.s9553330.130",
+          "IS1008a.A.dialog-act.s9553330.131",
+          "IS1008a.A.dialog-act.s9553330.132"
+        ],
+        "status": [
+          "IS1008a.A.dialog-act.s9553330.130",
+          "IS1008a.A.dialog-act.s9553330.131",
+          "IS1008a.A.dialog-act.s9553330.132"
+        ],
+        "conflict": [
+          "IS1008a.A.dialog-act.s9553330.130",
+          "IS1008a.A.dialog-act.s9553330.131",
+          "IS1008a.A.dialog-act.s9553330.132"
+        ]
+      },
+      "raw_tool_input": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MIO086"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "statement": {
+          "result": "pass",
+          "reason": "Current dialogue indicates PM will send slides after meeting",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.130",
+            "IS1008a.A.dialog-act.s9553330.131",
+            "IS1008a.A.dialog-act.s9553330.132"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "Owner is explicitly stated in roster and supported by action dialogue",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.130",
+            "IS1008a.A.dialog-act.s9553330.131",
+            "IS1008a.A.dialog-act.s9553330.132"
+          ]
+        },
+        "deadline_check": {
+          "result": "uncertain",
+          "reason": "No explicit deadline wording found for sending slides",
+          "evidence_da_ids": []
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "Action described as ongoing/open and anticipated to follow meeting",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.130",
+            "IS1008a.A.dialog-act.s9553330.131",
+            "IS1008a.A.dialog-act.s9553330.132"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No contradicting statements found in available dialogue",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.130",
+            "IS1008a.A.dialog-act.s9553330.131",
+            "IS1008a.A.dialog-act.s9553330.132"
+          ],
+          "affected_fields": []
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No related_items to assess relation with",
+          "evidence_da_ids": [],
+          "links": []
+        },
+        "next_action": "retrieve"
+      },
+      "protocol_normalizations": []
+    },
+    {
+      "item": "IS1008a#5",
+      "step": 2,
+      "flags": [],
+      "action": "get_participants",
+      "outcome": "lookup",
+      "decision": "retrieve",
+      "args": {
+        "meeting_id": "IS1008a"
+      },
+      "tool_result": {
+        "results": [
+          {
+            "speaker": "A",
+            "participant_id": "MIO086",
+            "role": "PM"
+          },
+          {
+            "speaker": "B",
+            "participant_id": "FIE038",
+            "role": "UI"
+          },
+          {
+            "speaker": "C",
+            "participant_id": "FIE073",
+            "role": "ID"
+          },
+          {
+            "speaker": "D",
+            "participant_id": "MIE085",
+            "role": "ME"
+          }
+        ]
+      },
+      "new_info": false
+    },
+    {
+      "item": "IS1008a#5",
+      "step": 3,
+      "flags": [],
+      "action": "assess_item",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Current dialogue indicates PM will send slides after meeting",
+          "quotes": [
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.130",
+              "quote": "Yes , I will . Yes ."
+            },
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.131",
+              "quote": "I'll copy , uh"
+            },
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.132",
+              "quote": "le let us keep all the emails and all the copies , okay , share each other , okay , so you know everybody what's happening , okay ?"
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Owner is explicitly stated in roster and supported by action dialogue",
+          "quotes": [
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.130",
+              "quote": "Yes , I will . Yes ."
+            },
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.131",
+              "quote": "I'll copy , uh"
+            },
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.132",
+              "quote": "le let us keep all the emails and all the copies , okay , share each other , okay , so you know everybody what's happening , okay ?"
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "deadline_unresolved",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Action described as ongoing/open and anticipated to follow meeting",
+          "quotes": [
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.130",
+              "quote": "Yes , I will . Yes ."
+            },
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.131",
+              "quote": "I'll copy , uh"
+            },
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.132",
+              "quote": "le let us keep all the emails and all the copies , okay , share each other , okay , so you know everybody what's happening , okay ?"
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradicting statements found in available dialogue",
+          "quotes": [
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.130",
+              "quote": "Yes , I will . Yes ."
+            },
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.131",
+              "quote": "I'll copy , uh"
+            },
+            {
+              "da_id": "IS1008a.A.dialog-act.s9553330.132",
+              "quote": "le let us keep all the emails and all the copies , okay , share each other , okay , so you know everybody what's happening , okay ?"
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No related_items to assess relation with",
+          "links": [],
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "decision": "retrieve",
+      "reason": "unresolved_checks",
+      "requested_action": "retrieve",
+      "proposed_fields": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MIO086"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "IS1008a.A.dialog-act.s9553330.130",
+          "IS1008a.A.dialog-act.s9553330.131",
+          "IS1008a.A.dialog-act.s9553330.132"
+        ]
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Current dialogue indicates PM will send slides after meeting",
+          "quotes": [
+            "IS1008a.A.dialog-act.s9553330.130",
+            "IS1008a.A.dialog-act.s9553330.131",
+            "IS1008a.A.dialog-act.s9553330.132"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Owner is explicitly stated in roster and supported by action dialogue",
+          "quotes": [
+            "IS1008a.A.dialog-act.s9553330.130",
+            "IS1008a.A.dialog-act.s9553330.131",
+            "IS1008a.A.dialog-act.s9553330.132"
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "No explicit deadline wording found for sending slides",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Action described as ongoing/open and anticipated to follow meeting",
+          "quotes": [
+            "IS1008a.A.dialog-act.s9553330.130",
+            "IS1008a.A.dialog-act.s9553330.131",
+            "IS1008a.A.dialog-act.s9553330.132"
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradicting statements found in available dialogue",
+          "quotes": [
+            "IS1008a.A.dialog-act.s9553330.130",
+            "IS1008a.A.dialog-act.s9553330.131",
+            "IS1008a.A.dialog-act.s9553330.132"
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No related_items to assess relation with",
+          "links": [],
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MIO086"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "statement": {
+          "result": "pass",
+          "reason": "Current dialogue indicates PM will send slides after meeting",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.130",
+            "IS1008a.A.dialog-act.s9553330.131",
+            "IS1008a.A.dialog-act.s9553330.132"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "Owner is explicitly stated in roster and supported by action dialogue",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.130",
+            "IS1008a.A.dialog-act.s9553330.131",
+            "IS1008a.A.dialog-act.s9553330.132"
+          ]
+        },
+        "deadline_check": {
+          "result": "uncertain",
+          "reason": "No explicit deadline wording found for sending slides",
+          "evidence_da_ids": []
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "Action described as ongoing/open and anticipated to follow meeting",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.130",
+            "IS1008a.A.dialog-act.s9553330.131",
+            "IS1008a.A.dialog-act.s9553330.132"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No contradicting statements found in available dialogue",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.130",
+            "IS1008a.A.dialog-act.s9553330.131",
+            "IS1008a.A.dialog-act.s9553330.132"
+          ],
+          "affected_fields": []
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No related_items to assess relation with",
+          "evidence_da_ids": [],
+          "links": []
+        },
+        "next_action": "retrieve"
+      },
+      "evidence_bindings": {
+        "statement": [
+          "IS1008a.A.dialog-act.s9553330.130",
+          "IS1008a.A.dialog-act.s9553330.131",
+          "IS1008a.A.dialog-act.s9553330.132"
+        ],
+        "owner": [
+          "IS1008a.A.dialog-act.s9553330.130",
+          "IS1008a.A.dialog-act.s9553330.131",
+          "IS1008a.A.dialog-act.s9553330.132"
+        ],
+        "status": [
+          "IS1008a.A.dialog-act.s9553330.130",
+          "IS1008a.A.dialog-act.s9553330.131",
+          "IS1008a.A.dialog-act.s9553330.132"
+        ],
+        "conflict": [
+          "IS1008a.A.dialog-act.s9553330.130",
+          "IS1008a.A.dialog-act.s9553330.131",
+          "IS1008a.A.dialog-act.s9553330.132"
+        ]
+      },
+      "raw_tool_input": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MIO086"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "statement": {
+          "result": "pass",
+          "reason": "Current dialogue indicates PM will send slides after meeting",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.130",
+            "IS1008a.A.dialog-act.s9553330.131",
+            "IS1008a.A.dialog-act.s9553330.132"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "Owner is explicitly stated in roster and supported by action dialogue",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.130",
+            "IS1008a.A.dialog-act.s9553330.131",
+            "IS1008a.A.dialog-act.s9553330.132"
+          ]
+        },
+        "deadline_check": {
+          "result": "uncertain",
+          "reason": "No explicit deadline wording found for sending slides",
+          "evidence_da_ids": []
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "Action described as ongoing/open and anticipated to follow meeting",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.130",
+            "IS1008a.A.dialog-act.s9553330.131",
+            "IS1008a.A.dialog-act.s9553330.132"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No contradicting statements found in available dialogue",
+          "evidence_da_ids": [
+            "IS1008a.A.dialog-act.s9553330.130",
+            "IS1008a.A.dialog-act.s9553330.131",
+            "IS1008a.A.dialog-act.s9553330.132"
+          ],
+          "affected_fields": []
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No related_items to assess relation with",
+          "evidence_da_ids": [],
+          "links": []
+        },
+        "next_action": "retrieve"
+      },
+      "protocol_normalizations": []
+    },
+    {
+      "item": "IS1008a#5",
+      "step": 4,
+      "flags": [],
+      "action": "stop",
+      "outcome": "pending",
+      "reason": "finalize",
+      "decision": "stop"
+    },
+    {
+      "item": "IS1008a#5",
+      "step": 4,
+      "flags": [],
+      "action": "stop",
+      "outcome": "pending",
+      "termination_reason": "stop",
+      "unresolved_fields": [
+        "deadline"
+      ]
+    }
+  ],
+  "lookups": 1,
+  "termination_reason": "stop",
+  "clarifications": [
+    {
+      "request_id": "11a8decd9a384961",
+      "item_key": "IS1008a#5",
+      "record_id": null,
+      "field": "deadline",
+      "question": "What is the agreed deadline, in its original wording?",
+      "item_text": "PM(MIO086) will send a copy of his slides to all attendees after the meeting.",
+      "reason": "deadline_unresolved",
+      "evidence_da_ids": [],
+      "available_evidence_da_ids": [
+        "IS1008a.C.dialog-act.s9553330.42",
+        "IS1008a.A.dialog-act.s9553330.130",
+        "IS1008a.A.dialog-act.s9553330.131",
+        "IS1008a.A.dialog-act.s9553330.132",
+        "IS1008a.A.dialog-act.s9553330.129",
+        "IS1008a.B.dialog-act.s9553330.30",
+        "IS1008a.B.dialog-act.s9553330.31",
+        "IS1008a.B.dialog-act.s9553330.32"
+      ],
+      "status": "open",
+      "termination_reason": "stop"
+    }
+  ]
+}

@@ -1,0 +1,601 @@
+{
+  "format_version": 1,
+  "run_id": "9d1eb39a5a0745e6aa2c243d850fd90f",
+  "meeting_id": "TS3006b",
+  "enabled": true,
+  "items": [
+    {
+      "item_key": "TS3006b#0",
+      "record_id": "TS3006b.sys.s.1",
+      "item_type": "decisions",
+      "item_text": "The product will be limited to controlling only one device, specifically the television.",
+      "state": "pending",
+      "recordable": true,
+      "fields": {
+        "status": "adopted",
+        "prior_context_needed": false,
+        "related_items": [],
+        "reference": [
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3006b.json",
+            "locator": "TS3006b.D.dialog-act.dharshi.132"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3006b.json",
+            "locator": "TS3006b.B.dialog-act.dharshi.68"
+          },
+          {
+            "source_type": "dialogue",
+            "source": "ami-corpus/dialogueActs/TS3006b.json",
+            "locator": "TS3006b.A.dialog-act.dharshi.81"
+          }
+        ]
+      },
+      "draft_fields": {
+        "owner": null,
+        "owner_basis": "missing",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "adopted",
+        "prior_context_needed": false,
+        "related_items": [],
+        "evidence_da_ids": [
+          "TS3006b.D.dialog-act.dharshi.132",
+          "TS3006b.B.dialog-act.dharshi.68"
+        ],
+        "used_participant_lookup": false
+      },
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue evidence links the constraint to the proposed item; the newsflash states 'control only one device, only your television' and a supporting short confirmation 'Okay one device.'",
+          "quotes": [
+            {
+              "da_id": "TS3006b.D.dialog-act.dharshi.132",
+              "quote": "Yeah but uh the the newsflash also stated that it should control only one device , only your television ."
+            },
+            {
+              "da_id": "TS3006b.B.dialog-act.dharshi.68",
+              "quote": "Okay one device ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "The adopted status is supported by the dialogue on device-limitation acceptance; UI states 'one device' and PM confirms ease, aligning with adoption.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.B.dialog-act.dharshi.68",
+              "quote": "Okay one device ."
+            },
+            {
+              "da_id": "TS3006b.A.dialog-act.dharshi.81",
+              "quote": "Yeah . So n it's very easy ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions found in the current dialogue about the constraint; statements align.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.B.dialog-act.dharshi.68",
+              "quote": "Okay one device ."
+            },
+            {
+              "da_id": "TS3006b.D.dialog-act.dharshi.132",
+              "quote": "Yeah but uh the the newsflash also stated that it should control only one device , only your television ."
+            }
+          ],
+          "fields": [
+            "statement",
+            "status"
+          ]
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "prior_context_not_checked",
+          "quotes": [
+            {
+              "da_id": "TS3006b.D.dialog-act.dharshi.132",
+              "quote": "Yeah but uh the the newsflash also stated that it should control only one device , only your television ."
+            },
+            {
+              "da_id": "TS3006b.B.dialog-act.dharshi.68",
+              "quote": "Okay one device ."
+            }
+          ],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "unresolved_fields": [
+        "related_items"
+      ],
+      "observed_evidence_da_ids": [
+        "TS3006b.D.dialog-act.dharshi.132",
+        "TS3006b.B.dialog-act.dharshi.68",
+        "TS3006b.B.dialog-act.dharshi.67",
+        "TS3006b.A.dialog-act.dharshi.81"
+      ],
+      "initial_context": {
+        "item": {
+          "type": "decisions",
+          "text": "The product will be limited to controlling only one device, specifically the television.",
+          "flags": [
+            "POSSIBLE_PRIOR"
+          ]
+        },
+        "fields": {
+          "owner": null,
+          "owner_basis": "missing",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "status": "adopted",
+          "prior_context_needed": false,
+          "related_items": [],
+          "evidence_da_ids": [
+            "TS3006b.D.dialog-act.dharshi.132",
+            "TS3006b.B.dialog-act.dharshi.68"
+          ],
+          "used_participant_lookup": false
+        },
+        "current_meeting": "TS3006b",
+        "earlier_meetings": [
+          "TS3006a"
+        ],
+        "roster": [
+          {
+            "speaker": "A",
+            "participant_id": "MTD021PM",
+            "role": "PM"
+          },
+          {
+            "speaker": "B",
+            "participant_id": "MTD023UID",
+            "role": "UI"
+          },
+          {
+            "speaker": "C",
+            "participant_id": "MTD022ID",
+            "role": "ID"
+          },
+          {
+            "speaker": "D",
+            "participant_id": "MTD024ME",
+            "role": "ME"
+          }
+        ],
+        "observed_dialogue": [
+          {
+            "da_id": "TS3006b.D.dialog-act.dharshi.132",
+            "meeting_id": "TS3006b",
+            "text": "Yeah but uh the the newsflash also stated that it should control only one device , only your television .",
+            "participant": "MTD024ME",
+            "role": "ME"
+          },
+          {
+            "da_id": "TS3006b.B.dialog-act.dharshi.68",
+            "meeting_id": "TS3006b",
+            "text": "Okay one device .",
+            "participant": "MTD023UID",
+            "role": "UI"
+          },
+          {
+            "da_id": "TS3006b.B.dialog-act.dharshi.67",
+            "participant": "MTD023UID",
+            "role": "UI",
+            "text": "But if you want to to use your your video recorder or something else , you should use use an uh an advanced option ."
+          },
+          {
+            "da_id": "TS3006b.A.dialog-act.dharshi.81",
+            "participant": "MTD021PM",
+            "role": "PM",
+            "text": "Yeah . So n it's very easy ."
+          }
+        ],
+        "peer_items": []
+      },
+      "relation_evidence": [],
+      "history": [
+        {
+          "item": "TS3006b#0",
+          "step": 1,
+          "flags": [
+            "POSSIBLE_PRIOR"
+          ],
+          "action": "assess_item",
+          "outcome": "checked",
+          "checks": {
+            "statement": {
+              "result": "pass",
+              "reason": "Dialogue evidence links the constraint to the proposed item; the newsflash states 'control only one device, only your television' and a supporting short confirmation 'Okay one device.'",
+              "quotes": [
+                {
+                  "da_id": "TS3006b.D.dialog-act.dharshi.132",
+                  "quote": "Yeah but uh the the newsflash also stated that it should control only one device , only your television ."
+                },
+                {
+                  "da_id": "TS3006b.B.dialog-act.dharshi.68",
+                  "quote": "Okay one device ."
+                }
+              ],
+              "fields": [
+                "statement"
+              ]
+            },
+            "owner": {
+              "result": "not_applicable",
+              "reason": "field_not_applicable",
+              "quotes": [],
+              "fields": [
+                "owner"
+              ]
+            },
+            "deadline": {
+              "result": "not_applicable",
+              "reason": "field_not_applicable",
+              "quotes": [],
+              "fields": [
+                "deadline"
+              ]
+            },
+            "status": {
+              "result": "pass",
+              "reason": "The adopted status is supported by the dialogue on device-limitation acceptance; UI states 'one device' and PM confirms ease, aligning with adoption.",
+              "quotes": [
+                {
+                  "da_id": "TS3006b.B.dialog-act.dharshi.68",
+                  "quote": "Okay one device ."
+                },
+                {
+                  "da_id": "TS3006b.A.dialog-act.dharshi.81",
+                  "quote": "Yeah . So n it's very easy ."
+                }
+              ],
+              "fields": [
+                "status"
+              ]
+            },
+            "conflict": {
+              "result": "pass",
+              "reason": "No contradictions found in the current dialogue about the constraint; statements align.",
+              "quotes": [
+                {
+                  "da_id": "TS3006b.B.dialog-act.dharshi.68",
+                  "quote": "Okay one device ."
+                },
+                {
+                  "da_id": "TS3006b.D.dialog-act.dharshi.132",
+                  "quote": "Yeah but uh the the newsflash also stated that it should control only one device , only your television ."
+                }
+              ],
+              "fields": [
+                "statement",
+                "status"
+              ]
+            },
+            "relation": {
+              "result": "uncertain",
+              "reason": "prior_context_not_checked",
+              "quotes": [
+                {
+                  "da_id": "TS3006b.D.dialog-act.dharshi.132",
+                  "quote": "Yeah but uh the the newsflash also stated that it should control only one device , only your television ."
+                },
+                {
+                  "da_id": "TS3006b.B.dialog-act.dharshi.68",
+                  "quote": "Okay one device ."
+                }
+              ],
+              "fields": [
+                "related_items"
+              ]
+            }
+          },
+          "decision": "request_clarification",
+          "reason": "unresolved_checks",
+          "requested_action": "request_clarification",
+          "proposed_fields": {
+            "owner": null,
+            "owner_basis": "missing",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "adopted",
+            "prior_context_needed": false,
+            "related_items": [],
+            "evidence_da_ids": [
+              "TS3006b.D.dialog-act.dharshi.132",
+              "TS3006b.B.dialog-act.dharshi.68"
+            ],
+            "used_participant_lookup": false
+          },
+          "submitted_checks": {
+            "statement": {
+              "result": "pass",
+              "reason": "Dialogue evidence links the constraint to the proposed item; the newsflash states 'control only one device, only your television' and a supporting short confirmation 'Okay one device.'",
+              "quotes": [
+                {
+                  "da_id": "TS3006b.D.dialog-act.dharshi.132",
+                  "quote": "Yeah but uh the the newsflash also stated that it should control only one device , only your television ."
+                },
+                {
+                  "da_id": "TS3006b.B.dialog-act.dharshi.68",
+                  "quote": "Okay one device ."
+                }
+              ],
+              "fields": [
+                "statement"
+              ]
+            },
+            "owner": {
+              "result": "uncertain",
+              "reason": "No explicit owner announced the assignment in observed dialogue; ownership remains unclear.",
+              "quotes": [
+                {
+                  "da_id": "TS3006b.D.dialog-act.dharshi.132",
+                  "quote": "Yeah but uh the the newsflash also stated that it should control only one device , only your television ."
+                },
+                {
+                  "da_id": "TS3006b.B.dialog-act.dharshi.68",
+                  "quote": "Okay one device ."
+                }
+              ],
+              "fields": [
+                "owner"
+              ]
+            },
+            "deadline": {
+              "result": "uncertain",
+              "reason": "No deadline wording is present in the observed dialogue; deadline is not specified.",
+              "quotes": [
+                {
+                  "da_id": "TS3006b.B.dialog-act.dharshi.68",
+                  "quote": "Okay one device ."
+                }
+              ],
+              "fields": [
+                "deadline"
+              ]
+            },
+            "status": {
+              "result": "pass",
+              "reason": "The adopted status is supported by the dialogue on device-limitation acceptance; UI states 'one device' and PM confirms ease, aligning with adoption.",
+              "quotes": [
+                {
+                  "da_id": "TS3006b.B.dialog-act.dharshi.68",
+                  "quote": "Okay one device ."
+                },
+                {
+                  "da_id": "TS3006b.A.dialog-act.dharshi.81",
+                  "quote": "Yeah . So n it's very easy ."
+                }
+              ],
+              "fields": [
+                "status"
+              ]
+            },
+            "conflict": {
+              "result": "pass",
+              "reason": "No contradictions found in the current dialogue about the constraint; statements align.",
+              "quotes": [
+                {
+                  "da_id": "TS3006b.B.dialog-act.dharshi.68",
+                  "quote": "Okay one device ."
+                },
+                {
+                  "da_id": "TS3006b.D.dialog-act.dharshi.132",
+                  "quote": "Yeah but uh the the newsflash also stated that it should control only one device , only your television ."
+                }
+              ],
+              "fields": [
+                "statement",
+                "status"
+              ]
+            },
+            "relation": {
+              "result": "uncertain",
+              "reason": "No related_items present to link to a prior item; cannot determine relationship.",
+              "quotes": [
+                {
+                  "da_id": "TS3006b.D.dialog-act.dharshi.132",
+                  "quote": "Yeah but uh the the newsflash also stated that it should control only one device , only your television ."
+                },
+                {
+                  "da_id": "TS3006b.B.dialog-act.dharshi.68",
+                  "quote": "Okay one device ."
+                }
+              ],
+              "fields": [
+                "related_items"
+              ]
+            }
+          },
+          "submitted_assessment": {
+            "fields": {
+              "owner": null,
+              "owner_basis": "missing",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": [],
+              "evidence_da_ids": [
+                "TS3006b.D.dialog-act.dharshi.132",
+                "TS3006b.B.dialog-act.dharshi.68"
+              ],
+              "used_participant_lookup": false
+            },
+            "checks": {
+              "statement": {
+                "result": "pass",
+                "reason": "Dialogue evidence links the constraint to the proposed item; the newsflash states 'control only one device, only your television' and a supporting short confirmation 'Okay one device.'",
+                "quotes": [
+                  {
+                    "da_id": "TS3006b.D.dialog-act.dharshi.132",
+                    "quote": "Yeah but uh the the newsflash also stated that it should control only one device , only your television ."
+                  },
+                  {
+                    "da_id": "TS3006b.B.dialog-act.dharshi.68",
+                    "quote": "Okay one device ."
+                  }
+                ],
+                "fields": [
+                  "statement"
+                ]
+              },
+              "owner": {
+                "result": "uncertain",
+                "reason": "No explicit owner announced the assignment in observed dialogue; ownership remains unclear.",
+                "quotes": [
+                  {
+                    "da_id": "TS3006b.D.dialog-act.dharshi.132",
+                    "quote": "Yeah but uh the the newsflash also stated that it should control only one device , only your television ."
+                  },
+                  {
+                    "da_id": "TS3006b.B.dialog-act.dharshi.68",
+                    "quote": "Okay one device ."
+                  }
+                ],
+                "fields": [
+                  "owner"
+                ]
+              },
+              "deadline": {
+                "result": "uncertain",
+                "reason": "No deadline wording is present in the observed dialogue; deadline is not specified.",
+                "quotes": [
+                  {
+                    "da_id": "TS3006b.B.dialog-act.dharshi.68",
+                    "quote": "Okay one device ."
+                  }
+                ],
+                "fields": [
+                  "deadline"
+                ]
+              },
+              "status": {
+                "result": "pass",
+                "reason": "The adopted status is supported by the dialogue on device-limitation acceptance; UI states 'one device' and PM confirms ease, aligning with adoption.",
+                "quotes": [
+                  {
+                    "da_id": "TS3006b.B.dialog-act.dharshi.68",
+                    "quote": "Okay one device ."
+                  },
+                  {
+                    "da_id": "TS3006b.A.dialog-act.dharshi.81",
+                    "quote": "Yeah . So n it's very easy ."
+                  }
+                ],
+                "fields": [
+                  "status"
+                ]
+              },
+              "conflict": {
+                "result": "pass",
+                "reason": "No contradictions found in the current dialogue about the constraint; statements align.",
+                "quotes": [
+                  {
+                    "da_id": "TS3006b.B.dialog-act.dharshi.68",
+                    "quote": "Okay one device ."
+                  },
+                  {
+                    "da_id": "TS3006b.D.dialog-act.dharshi.132",
+                    "quote": "Yeah but uh the the newsflash also stated that it should control only one device , only your television ."
+                  }
+                ],
+                "fields": [
+                  "statement",
+                  "status"
+                ]
+              },
+              "relation": {
+                "result": "uncertain",
+                "reason": "No related_items present to link to a prior item; cannot determine relationship.",
+                "quotes": [
+                  {
+                    "da_id": "TS3006b.D.dialog-act.dharshi.132",
+                    "quote": "Yeah but uh the the newsflash also stated that it should control only one device , only your television ."
+                  },
+                  {
+                    "da_id": "TS3006b.B.dialog-act.dharshi.68",
+                    "quote": "Okay one device ."
+                  }
+                ],
+                "fields": [
+                  "related_items"
+                ]
+              }
+            },
+            "next_action": "request_clarification",
+            "reason": "Owner and deadline are uncertain; request explicit owner assignment and deadline wording to finalize the decision."
+          },
+          "evidence_bindings": {}
+        },
+        {
+          "item": "TS3006b#0",
+          "step": 1,
+          "flags": [
+            "POSSIBLE_PRIOR"
+          ],
+          "action": "stop",
+          "outcome": "pending",
+          "termination_reason": "unresolved_checks",
+          "unresolved_fields": [
+            "related_items"
+          ]
+        }
+      ],
+      "lookups": 0,
+      "termination_reason": "unresolved_checks",
+      "clarifications": [
+        {
+          "request_id": "f3e205bb1099ab00",
+          "item_key": "TS3006b#0",
+          "record_id": "TS3006b.sys.s.1",
+          "field": "related_items",
+          "question": "Which earlier record does this item continue or change, and how?",
+          "item_text": "The product will be limited to controlling only one device, specifically the television.",
+          "reason": "prior_context_not_checked",
+          "evidence_da_ids": [
+            "TS3006b.D.dialog-act.dharshi.132",
+            "TS3006b.B.dialog-act.dharshi.68"
+          ],
+          "available_evidence_da_ids": [
+            "TS3006b.D.dialog-act.dharshi.132",
+            "TS3006b.B.dialog-act.dharshi.68",
+            "TS3006b.B.dialog-act.dharshi.67",
+            "TS3006b.A.dialog-act.dharshi.81"
+          ],
+          "status": "open",
+          "termination_reason": "unresolved_checks"
+        }
+      ]
+    }
+  ]
+}

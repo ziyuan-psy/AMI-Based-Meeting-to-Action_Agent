@@ -1,0 +1,386 @@
+{
+  "meeting_id": "TS3006a",
+  "mode": "s2",
+  "status": "COMPLETED",
+  "execution_kind": "FIXED_RESPONSE_REPLAY_NOT_FRESH_PIPELINE",
+  "score": {
+    "metrics": {
+      "actions": {
+        "tp": 4,
+        "sys": 5,
+        "gold": 4,
+        "precision": 0.8,
+        "recall": 1.0,
+        "f1": 0.889
+      },
+      "decisions": {
+        "tp": 1,
+        "sys": 5,
+        "gold": 4,
+        "precision": 0.2,
+        "recall": 0.25,
+        "f1": 0.222
+      },
+      "problems": {
+        "tp": 0,
+        "sys": 1,
+        "gold": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "matches": {
+      "TS3006a.sys.s.3": "TS3006a.manual.s.1",
+      "TS3006a.sys.s.8": "TS3006a.elana.s.11",
+      "TS3006a.sys.s.10": "TS3006a.elana.s.9",
+      "TS3006a.sys.s.11": "TS3006a.elana.s.10",
+      "TS3006a.sys.s.6": "TS3006a.elana.s.16"
+    },
+    "unmatched": {
+      "actions": {
+        "system": [
+          {
+            "id": "TS3006a.sys.s.7",
+            "text": "The Project Manager will defend the design at the final meeting.",
+            "type": "actions",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006a.json",
+                "locator": "TS3006a.A.dialog-act.vkaraisk.216"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006a.json",
+                "locator": "TS3006a.B.dialog-act.vkaraisk.92"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006a.json",
+                "locator": "TS3006a.A.dialog-act.vkaraisk.217"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006a.json",
+                "locator": "TS3006a.C.dialog-act.vkaraisk.116"
+              }
+            ],
+            "owner": [
+              "MTD021PM"
+            ],
+            "owner_basis": "explicit",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": []
+          }
+        ],
+        "gold": []
+      },
+      "decisions": {
+        "system": [
+          {
+            "id": "TS3006a.sys.s.2",
+            "text": "The Industrial Designer should produce a working design.",
+            "type": "decisions",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006a.json",
+                "locator": "TS3006a.A.dialog-act.vkaraisk.146"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006a.json",
+                "locator": "TS3006a.A.dialog-act.vkaraisk.147"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006a.json",
+                "locator": "TS3006a.C.dialog-act.vkaraisk.77"
+              }
+            ],
+            "status": "adopted",
+            "prior_context_needed": false,
+            "related_items": []
+          },
+          {
+            "id": "TS3006a.sys.s.4",
+            "text": "The User Interface Designer should specify the technical functions.",
+            "type": "decisions",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006a.json",
+                "locator": "TS3006a.A.dialog-act.vkaraisk.149"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006a.json",
+                "locator": "TS3006a.A.dialog-act.vkaraisk.150"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006a.json",
+                "locator": "TS3006a.B.dialog-act.vkaraisk.59"
+              }
+            ],
+            "status": "adopted",
+            "prior_context_needed": false,
+            "related_items": []
+          },
+          {
+            "id": "TS3006a.sys.s.5",
+            "text": "The Marketing Expert should come up with user requirements.",
+            "type": "decisions",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006a.json",
+                "locator": "TS3006a.A.dialog-act.vkaraisk.151"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006a.json",
+                "locator": "TS3006a.D.dialog-act.vkaraisk.100"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006a.json",
+                "locator": "TS3006a.A.dialog-act.vkaraisk.152"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006a.json",
+                "locator": "TS3006a.A.dialog-act.vkaraisk.153"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006a.json",
+                "locator": "TS3006a.D.dialog-act.vkaraisk.109"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006a.json",
+                "locator": "TS3006a.A.dialog-act.vkaraisk.176"
+              }
+            ],
+            "status": "adopted",
+            "prior_context_needed": false,
+            "related_items": []
+          },
+          {
+            "id": "TS3006a.sys.s.9",
+            "text": "The product should have the least number of functions possible to improve user-friendliness.",
+            "type": "decisions",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006a.json",
+                "locator": "TS3006a.A.dialog-act.vkaraisk.248"
+              }
+            ],
+            "status": "adopted",
+            "prior_context_needed": false,
+            "related_items": []
+          }
+        ],
+        "gold": [
+          {
+            "id": "TS3006a.elana.s.13",
+            "text": "Use EUR 25 as the product selling-price target.",
+            "type": "decisions",
+            "status": "adopted",
+            "prior_context_needed": false,
+            "related_items": [],
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006a.json",
+                "locator": "TS3006a.A.dialog-act.vkaraisk.130"
+              }
+            ]
+          },
+          {
+            "id": "TS3006a.elana.s.14",
+            "text": "The project manager stated an aim to sell EUR 50 million worth of product.",
+            "type": "decisions",
+            "status": "adopted",
+            "prior_context_needed": false,
+            "related_items": [],
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006a.json",
+                "locator": "TS3006a.A.dialog-act.vkaraisk.131"
+              }
+            ]
+          },
+          {
+            "id": "TS3006a.elana.s.15",
+            "text": "Allow production costs of half the EUR 25 selling price, i.e. EUR 12.50 per remote.",
+            "type": "decisions",
+            "status": "adopted",
+            "prior_context_needed": false,
+            "related_items": [],
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006a.json",
+                "locator": "TS3006a.A.dialog-act.vkaraisk.130"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006a.json",
+                "locator": "TS3006a.A.dialog-act.vkaraisk.133"
+              }
+            ]
+          }
+        ]
+      },
+      "problems": {
+        "system": [
+          {
+            "id": "TS3006a.sys.s.1",
+            "text": "Not enough preparation was done for the kickoff meeting.",
+            "type": "problems",
+            "reference": [
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006a.json",
+                "locator": "TS3006a.C.dialog-act.vkaraisk.7"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006a.json",
+                "locator": "TS3006a.B.dialog-act.vkaraisk.12"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006a.json",
+                "locator": "TS3006a.C.dialog-act.vkaraisk.8"
+              },
+              {
+                "source_type": "dialogue",
+                "source": "ami-corpus/dialogueActs/TS3006a.json",
+                "locator": "TS3006a.B.dialog-act.vkaraisk.11"
+              }
+            ],
+            "status": "open",
+            "prior_context_needed": false,
+            "related_items": []
+          }
+        ],
+        "gold": []
+      }
+    }
+  },
+  "fields": {
+    "status": {
+      "correct": 1,
+      "total": 5,
+      "rate": 0.2
+    },
+    "prior_context_needed": {
+      "correct": 5,
+      "total": 5,
+      "rate": 1.0
+    },
+    "owner_exact": {
+      "correct": 4,
+      "total": 4,
+      "rate": 1.0
+    },
+    "owner_basis": {
+      "correct": 4,
+      "total": 4,
+      "rate": 1.0
+    },
+    "deadline_match": {
+      "correct": 3,
+      "total": 4,
+      "rate": 0.75
+    },
+    "deadline_basis": {
+      "correct": 3,
+      "total": 4,
+      "rate": 0.75
+    }
+  },
+  "raw_alignment": {
+    "actions": {
+      "TS3006a.sys.s.3": "TS3006a.manual.s.1",
+      "TS3006a.sys.s.8": "TS3006a.elana.s.11",
+      "TS3006a.sys.s.10": "TS3006a.elana.s.9",
+      "TS3006a.sys.s.11": "TS3006a.elana.s.10"
+    },
+    "decisions": {
+      "TS3006a.sys.s.6": "TS3006a.elana.s.16"
+    },
+    "problems": {}
+  },
+  "category_accounting": {
+    "actions": {
+      "raw_system": 5,
+      "raw_gold": 4,
+      "unscored": false,
+      "excluded_gold_ids": [],
+      "excluded_system_ids": []
+    },
+    "decisions": {
+      "raw_system": 5,
+      "raw_gold": 4,
+      "unscored": false,
+      "excluded_gold_ids": [],
+      "excluded_system_ids": []
+    },
+    "problems": {
+      "raw_system": 1,
+      "raw_gold": 0,
+      "unscored": false,
+      "excluded_gold_ids": [],
+      "excluded_system_ids": []
+    }
+  },
+  "vote_caches": {
+    "actions": {
+      "path": "votes\\TS3006a\\actions.01c840f412542d8be09e.json",
+      "votes": 3,
+      "input_sha256": "01c840f412542d8be09e49626cf99b25b99be9ec9008f15add2d36495e005725"
+    },
+    "decisions": {
+      "path": "votes\\TS3006a\\decisions.04efc066dd5b1f1bc7e9.json",
+      "votes": 3,
+      "input_sha256": "04efc066dd5b1f1bc7e9254655a799dc2e73273f07519039a187012265426844"
+    }
+  },
+  "runtime_control": {
+    "limits": {
+      "calls": 80,
+      "tokens": 1000000,
+      "request_seconds": 300.0,
+      "meeting_seconds": 1200.0,
+      "inflight": 4,
+      "retries": 2,
+      "backoff": 0.5
+    },
+    "attempted_calls": 0,
+    "charged_tokens": 0,
+    "unknown_usage_tokens": 0,
+    "reserved_tokens": 0,
+    "max_inflight_seen": 0,
+    "failure": null,
+    "attempts": [],
+    "input_bound_method": "utf8_request_bytes_plus_padding",
+    "unknown_usage_policy": "charge_full_reservation"
+  },
+  "judge_usage": {
+    "calls": 0,
+    "in": 0,
+    "out": 0,
+    "stages": {}
+  },
+  "elapsed_seconds": 0.0
+}

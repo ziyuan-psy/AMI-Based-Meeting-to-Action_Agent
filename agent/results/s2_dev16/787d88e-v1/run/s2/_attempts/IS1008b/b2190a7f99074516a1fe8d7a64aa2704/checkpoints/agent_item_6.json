@@ -1,0 +1,973 @@
+{
+  "item": 6,
+  "fields": {
+    "item_key": "IS1008b#6",
+    "record_id": null,
+    "item_type": "actions",
+    "item_text": "ID(FIE073) will develop the components concept.",
+    "state": "pending",
+    "recordable": false,
+    "fields": {
+      "status": "open",
+      "prior_context_needed": false,
+      "related_items": [],
+      "owner": [
+        "FIE073"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/IS1008b.json",
+          "locator": "IS1008b.B.dialog-act.vkaraisk.161"
+        }
+      ]
+    },
+    "draft_fields": {
+      "status": "open",
+      "related_items": [],
+      "owner": [
+        "FIE073"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "prior_context_needed": false,
+      "used_participant_lookup": false,
+      "evidence_da_ids": [
+        "IS1008b.B.dialog-act.vkaraisk.161",
+        "IS1008b.B.dialog-act.vkaraisk.162"
+      ]
+    },
+    "checks": {
+      "statement": {
+        "result": "uncertain",
+        "reason": "Dialogue shows FIE073 mentions 'components concept' as something they are supposed to do, but the item asserts 'will develop the components concept' as a concrete future action without explicit confirm this is assigned or accepted in this meeting. No clear commitment to 'develop' is proven beyond the phrasing in IS1008b.B.dialog-act.vkaraisk.161/162.",
+        "quotes": [
+          {
+            "da_id": "IS1008b.B.dialog-act.vkaraisk.161",
+            "quote": "so I'm supposed to do the components concept ,"
+          },
+          {
+            "da_id": "IS1008b.B.dialog-act.vkaraisk.162",
+            "quote": "supposed to work on the user interface concept ,"
+          }
+        ],
+        "fields": [
+          "statement"
+        ]
+      },
+      "owner": {
+        "result": "pass",
+        "reason": "Owner is explicitly stated as FIE073 in the provisional_values and is the announcer/actor for the item text; dialogue confirms FIE073 is involved in related concept work",
+        "quotes": [
+          {
+            "da_id": "IS1008b.B.dialog-act.vkaraisk.161",
+            "quote": "so I'm supposed to do the components concept ,"
+          }
+        ],
+        "fields": [
+          "owner"
+        ]
+      },
+      "deadline": {
+        "result": "uncertain",
+        "reason": "deadline_unresolved",
+        "quotes": [
+          {
+            "da_id": "IS1008b.B.dialog-act.vkaraisk.161",
+            "quote": "so I'm supposed to do the components concept ,"
+          }
+        ],
+        "fields": [
+          "deadline"
+        ]
+      },
+      "status": {
+        "result": "pass",
+        "reason": "Action status would be open as no completion or further commitment is shown in current dialogue; the item is new",
+        "quotes": [
+          {
+            "da_id": "IS1008b.B.dialog-act.vkaraisk.161",
+            "quote": "so I'm supposed to do the components concept ,"
+          }
+        ],
+        "fields": [
+          "status"
+        ]
+      },
+      "conflict": {
+        "result": "uncertain",
+        "reason": "No conflicting statements found in current dialogue regarding this action; relation to other items not established",
+        "quotes": [
+          {
+            "da_id": "IS1008b.B.dialog-act.vkaraisk.161",
+            "quote": "so I'm supposed to do the components concept ,"
+          }
+        ],
+        "fields": [
+          "statement"
+        ]
+      },
+      "relation": {
+        "result": "not_applicable",
+        "reason": "No prior related item id provided in this request; this is a new action linked to current meeting",
+        "quotes": [],
+        "fields": [
+          "related_items"
+        ]
+      }
+    },
+    "unresolved_fields": [
+      "statement",
+      "deadline"
+    ],
+    "observed_evidence_da_ids": [
+      "IS1008b.B.dialog-act.vkaraisk.161",
+      "IS1008b.B.dialog-act.vkaraisk.162",
+      "IS1008b.C.dialog-act.vkaraisk.124",
+      "IS1008b.A.dialog-act.vkaraisk.214",
+      "IS1008b.B.dialog-act.vkaraisk.163"
+    ],
+    "initial_context": {
+      "item": {
+        "type": "actions",
+        "text": "ID(FIE073) will develop the components concept.",
+        "flags": []
+      },
+      "current_meeting": "IS1008b",
+      "earlier_meetings": [
+        "IS1008a"
+      ],
+      "roster": [
+        {
+          "speaker": "A",
+          "participant_id": "MIO086",
+          "role": "PM"
+        },
+        {
+          "speaker": "B",
+          "participant_id": "FIE073",
+          "role": "ID"
+        },
+        {
+          "speaker": "C",
+          "participant_id": "FIE038",
+          "role": "UI"
+        },
+        {
+          "speaker": "D",
+          "participant_id": "MIE085",
+          "role": "ME"
+        }
+      ],
+      "observed_dialogue": [
+        {
+          "da_id": "IS1008b.B.dialog-act.vkaraisk.161",
+          "meeting_id": "IS1008b",
+          "text": "so I'm supposed to do the components concept ,",
+          "participant": "FIE073",
+          "role": "ID"
+        },
+        {
+          "da_id": "IS1008b.B.dialog-act.vkaraisk.162",
+          "meeting_id": "IS1008b",
+          "text": "supposed to work on the user interface concept ,",
+          "participant": "FIE073",
+          "role": "ID"
+        },
+        {
+          "da_id": "IS1008b.C.dialog-act.vkaraisk.124",
+          "meeting_id": "IS1008b",
+          "text": "Mm-hmm .",
+          "participant": "FIE038",
+          "role": "UI"
+        },
+        {
+          "da_id": "IS1008b.A.dialog-act.vkaraisk.214",
+          "participant": "MIO086",
+          "role": "PM",
+          "text": "Yep ."
+        },
+        {
+          "da_id": "IS1008b.B.dialog-act.vkaraisk.163",
+          "participant": "FIE073",
+          "role": "ID",
+          "text": "and you're supposed to keep watching the trends ."
+        }
+      ],
+      "peer_items": [
+        {
+          "item_key": "IS1008b#0",
+          "type": "actions",
+          "text": "The PM will send the minutes of the meeting to the attendees."
+        },
+        {
+          "item_key": "IS1008b#1",
+          "type": "actions",
+          "text": "The PM will coordinate with Intel or IBM to obtain technical backup for the speech recognition feature."
+        },
+        {
+          "item_key": "IS1008b#2",
+          "type": "actions",
+          "text": "The team will start with all features now and prune later."
+        },
+        {
+          "item_key": "IS1008b#3",
+          "type": "actions",
+          "text": "PM will help Christine identify and contact technical companies to help slim the design."
+        },
+        {
+          "item_key": "IS1008b#4",
+          "type": "problems",
+          "text": "Nobody told me what our financial objective is, so the financial objective is unclear."
+        },
+        {
+          "item_key": "IS1008b#5",
+          "type": "actions",
+          "text": "The ME will go back to management to be more precise about what they want."
+        }
+      ],
+      "provisional_values": {
+        "owner": [
+          "FIE073"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "open",
+        "related_items": []
+      },
+      "candidate_evidence_da_ids": [
+        "IS1008b.B.dialog-act.vkaraisk.161",
+        "IS1008b.B.dialog-act.vkaraisk.162",
+        "IS1008b.C.dialog-act.vkaraisk.124"
+      ]
+    },
+    "observed_documents": [],
+    "document_evidence": [],
+    "relation_evidence": [],
+    "history": [
+      {
+        "item": "IS1008b#6",
+        "step": 1,
+        "flags": [],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "uncertain",
+            "reason": "Dialogue shows FIE073 mentions 'components concept' as something they are supposed to do, but the item asserts 'will develop the components concept' as a concrete future action without explicit confirm this is assigned or accepted in this meeting. No clear commitment to 'develop' is proven beyond the phrasing in IS1008b.B.dialog-act.vkaraisk.161/162. Evidence is limited to those lines.",
+            "quotes": [
+              {
+                "da_id": "IS1008b.B.dialog-act.vkaraisk.161",
+                "quote": "so I'm supposed to do the components concept ,"
+              },
+              {
+                "da_id": "IS1008b.B.dialog-act.vkaraisk.162",
+                "quote": "supposed to work on the user interface concept ,"
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Owner is explicitly stated as FIE073 in the provisional_values and is the announcer/actor for the item text; dialogue confirms FIE073 is involved in related concept work",
+            "quotes": [
+              {
+                "da_id": "IS1008b.B.dialog-act.vkaraisk.161",
+                "quote": "so I'm supposed to do the components concept ,"
+              }
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "deadline_unresolved",
+            "quotes": [
+              {
+                "da_id": "IS1008b.B.dialog-act.vkaraisk.161",
+                "quote": "so I'm supposed to do the components concept ,"
+              }
+            ],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Action status would be open as no completion or further commitment is shown in current dialogue; the item is new",
+            "quotes": [
+              {
+                "da_id": "IS1008b.B.dialog-act.vkaraisk.161",
+                "quote": "so I'm supposed to do the components concept ,"
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "uncertain",
+            "reason": "No conflicting statements found in current dialogue regarding this action; relation to other items not established",
+            "quotes": [
+              {
+                "da_id": "IS1008b.B.dialog-act.vkaraisk.161",
+                "quote": "so I'm supposed to do the components concept ,"
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related item id provided in this request; this is a new action linked to current meeting",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "decision": "retrieve",
+        "reason": "unresolved_checks",
+        "assessed_text": "ID(FIE073) will develop the components concept.",
+        "requested_action": null,
+        "proposed_fields": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "FIE073"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "IS1008b.B.dialog-act.vkaraisk.161",
+            "IS1008b.B.dialog-act.vkaraisk.162"
+          ]
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "uncertain",
+            "reason": "Dialogue shows FIE073 mentions 'components concept' as something they are supposed to do, but the item asserts 'will develop the components concept' as a concrete future action without explicit confirm this is assigned or accepted in this meeting. No clear commitment to 'develop' is proven beyond the phrasing in IS1008b.B.dialog-act.vkaraisk.161/162. Evidence is limited to those lines.",
+            "quotes": [
+              "IS1008b.B.dialog-act.vkaraisk.161",
+              "IS1008b.B.dialog-act.vkaraisk.162"
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Owner is explicitly stated as FIE073 in the provisional_values and is the announcer/actor for the item text; dialogue confirms FIE073 is involved in related concept work",
+            "quotes": [
+              "IS1008b.B.dialog-act.vkaraisk.161"
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "No deadline is specified in the item or in the observed dialogue; deadline_basis missing; cannot confirm",
+            "quotes": [
+              "IS1008b.B.dialog-act.vkaraisk.161"
+            ],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Action status would be open as no completion or further commitment is shown in current dialogue; the item is new",
+            "quotes": [
+              "IS1008b.B.dialog-act.vkaraisk.161"
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "uncertain",
+            "reason": "No conflicting statements found in current dialogue regarding this action; relation to other items not established",
+            "quotes": [
+              "IS1008b.B.dialog-act.vkaraisk.161"
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related item id provided in this request; this is a new action linked to current meeting",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "FIE073"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "statement": {
+            "result": "uncertain",
+            "reason": "Dialogue shows FIE073 mentions 'components concept' as something they are supposed to do, but the item asserts 'will develop the components concept' as a concrete future action without explicit confirm this is assigned or accepted in this meeting. No clear commitment to 'develop' is proven beyond the phrasing in IS1008b.B.dialog-act.vkaraisk.161/162. Evidence is limited to those lines.",
+            "evidence_da_ids": [
+              "IS1008b.B.dialog-act.vkaraisk.161",
+              "IS1008b.B.dialog-act.vkaraisk.162"
+            ]
+          },
+          "owner_check": {
+            "result": "pass",
+            "reason": "Owner is explicitly stated as FIE073 in the provisional_values and is the announcer/actor for the item text; dialogue confirms FIE073 is involved in related concept work",
+            "evidence_da_ids": [
+              "IS1008b.B.dialog-act.vkaraisk.161"
+            ]
+          },
+          "deadline_check": {
+            "result": "uncertain",
+            "reason": "No deadline is specified in the item or in the observed dialogue; deadline_basis missing; cannot confirm",
+            "evidence_da_ids": [
+              "IS1008b.B.dialog-act.vkaraisk.161"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Action status would be open as no completion or further commitment is shown in current dialogue; the item is new",
+            "evidence_da_ids": [
+              "IS1008b.B.dialog-act.vkaraisk.161"
+            ]
+          },
+          "conflict_check": {
+            "result": "uncertain",
+            "reason": "No conflicting statements found in current dialogue regarding this action; relation to other items not established",
+            "evidence_da_ids": [
+              "IS1008b.B.dialog-act.vkaraisk.161"
+            ],
+            "affected_fields": [
+              "statement"
+            ]
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior related item id provided in this request; this is a new action linked to current meeting",
+            "evidence_da_ids": []
+          }
+        },
+        "evidence_bindings": {
+          "statement": [
+            "IS1008b.B.dialog-act.vkaraisk.161",
+            "IS1008b.B.dialog-act.vkaraisk.162"
+          ],
+          "owner": [
+            "IS1008b.B.dialog-act.vkaraisk.161"
+          ],
+          "deadline": [
+            "IS1008b.B.dialog-act.vkaraisk.161"
+          ],
+          "status": [
+            "IS1008b.B.dialog-act.vkaraisk.161"
+          ],
+          "conflict": [
+            "IS1008b.B.dialog-act.vkaraisk.161"
+          ]
+        },
+        "raw_tool_input": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "FIE073"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "statement": {
+            "result": "uncertain",
+            "reason": "Dialogue shows FIE073 mentions 'components concept' as something they are supposed to do, but the item asserts 'will develop the components concept' as a concrete future action without explicit confirm this is assigned or accepted in this meeting. No clear commitment to 'develop' is proven beyond the phrasing in IS1008b.B.dialog-act.vkaraisk.161/162. Evidence is limited to those lines.",
+            "evidence_da_ids": [
+              "IS1008b.B.dialog-act.vkaraisk.161",
+              "IS1008b.B.dialog-act.vkaraisk.162"
+            ]
+          },
+          "owner_check": {
+            "result": "pass",
+            "reason": "Owner is explicitly stated as FIE073 in the provisional_values and is the announcer/actor for the item text; dialogue confirms FIE073 is involved in related concept work",
+            "evidence_da_ids": [
+              "IS1008b.B.dialog-act.vkaraisk.161"
+            ]
+          },
+          "deadline_check": {
+            "result": "uncertain",
+            "reason": "No deadline is specified in the item or in the observed dialogue; deadline_basis missing; cannot confirm",
+            "evidence_da_ids": [
+              "IS1008b.B.dialog-act.vkaraisk.161"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Action status would be open as no completion or further commitment is shown in current dialogue; the item is new",
+            "evidence_da_ids": [
+              "IS1008b.B.dialog-act.vkaraisk.161"
+            ]
+          },
+          "conflict_check": {
+            "result": "uncertain",
+            "reason": "No conflicting statements found in current dialogue regarding this action; relation to other items not established",
+            "evidence_da_ids": [
+              "IS1008b.B.dialog-act.vkaraisk.161"
+            ]
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior related item id provided in this request; this is a new action linked to current meeting",
+            "evidence_da_ids": []
+          },
+          "documents": []
+        },
+        "protocol_normalizations": [
+          "empty_unscoped_documents",
+          "unscoped_conflict_blocks_statement",
+          "controller_action_for_missing_hint:retrieve"
+        ],
+        "unresolved_before": [
+          "deadline",
+          "owner",
+          "statement",
+          "status"
+        ],
+        "unresolved_after": [
+          "deadline",
+          "statement"
+        ],
+        "semantic_stalls": 0,
+        "validation_codes": {
+          "deadline": [
+            "deadline_unresolved"
+          ]
+        }
+      },
+      {
+        "item": "IS1008b#6",
+        "step": 2,
+        "flags": [],
+        "action": "get_prior_items",
+        "outcome": "lookup",
+        "decision": "retrieve",
+        "args": {
+          "query": "IS1008b components concept",
+          "item_type": "actions"
+        },
+        "tool_result": {
+          "results": []
+        },
+        "new_info": false
+      },
+      {
+        "item": "IS1008b#6",
+        "step": 3,
+        "flags": [],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "uncertain",
+            "reason": "Dialogue shows FIE073 mentions 'components concept' as something they are supposed to do, but the item asserts 'will develop the components concept' as a concrete future action without explicit confirm this is assigned or accepted in this meeting. No clear commitment to 'develop' is proven beyond the phrasing in IS1008b.B.dialog-act.vkaraisk.161/162.",
+            "quotes": [
+              {
+                "da_id": "IS1008b.B.dialog-act.vkaraisk.161",
+                "quote": "so I'm supposed to do the components concept ,"
+              },
+              {
+                "da_id": "IS1008b.B.dialog-act.vkaraisk.162",
+                "quote": "supposed to work on the user interface concept ,"
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Owner is explicitly stated as FIE073 in the provisional_values and is the announcer/actor for the item text; dialogue confirms FIE073 is involved in related concept work",
+            "quotes": [
+              {
+                "da_id": "IS1008b.B.dialog-act.vkaraisk.161",
+                "quote": "so I'm supposed to do the components concept ,"
+              }
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "deadline_unresolved",
+            "quotes": [
+              {
+                "da_id": "IS1008b.B.dialog-act.vkaraisk.161",
+                "quote": "so I'm supposed to do the components concept ,"
+              }
+            ],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Action status would be open as no completion or further commitment is shown in current dialogue; the item is new",
+            "quotes": [
+              {
+                "da_id": "IS1008b.B.dialog-act.vkaraisk.161",
+                "quote": "so I'm supposed to do the components concept ,"
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "uncertain",
+            "reason": "No conflicting statements found in current dialogue regarding this action; relation to other items not established",
+            "quotes": [
+              {
+                "da_id": "IS1008b.B.dialog-act.vkaraisk.161",
+                "quote": "so I'm supposed to do the components concept ,"
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related item id provided in this request; this is a new action linked to current meeting",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "decision": "retrieve",
+        "reason": "unresolved_checks",
+        "assessed_text": "ID(FIE073) will develop the components concept.",
+        "requested_action": "retrieve",
+        "proposed_fields": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "FIE073"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "IS1008b.B.dialog-act.vkaraisk.161",
+            "IS1008b.B.dialog-act.vkaraisk.162"
+          ]
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "uncertain",
+            "reason": "Dialogue shows FIE073 mentions 'components concept' as something they are supposed to do, but the item asserts 'will develop the components concept' as a concrete future action without explicit confirm this is assigned or accepted in this meeting. No clear commitment to 'develop' is proven beyond the phrasing in IS1008b.B.dialog-act.vkaraisk.161/162.",
+            "quotes": [
+              "IS1008b.B.dialog-act.vkaraisk.161",
+              "IS1008b.B.dialog-act.vkaraisk.162"
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Owner is explicitly stated as FIE073 in the provisional_values and is the announcer/actor for the item text; dialogue confirms FIE073 is involved in related concept work",
+            "quotes": [
+              "IS1008b.B.dialog-act.vkaraisk.161"
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "No deadline is specified in the item or in the observed dialogue; deadline_basis missing; cannot confirm",
+            "quotes": [
+              "IS1008b.B.dialog-act.vkaraisk.161"
+            ],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Action status would be open as no completion or further commitment is shown in current dialogue; the item is new",
+            "quotes": [
+              "IS1008b.B.dialog-act.vkaraisk.161"
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "uncertain",
+            "reason": "No conflicting statements found in current dialogue regarding this action; relation to other items not established",
+            "quotes": [
+              "IS1008b.B.dialog-act.vkaraisk.161"
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related item id provided in this request; this is a new action linked to current meeting",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "FIE073"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "statement": {
+            "result": "uncertain",
+            "reason": "Dialogue shows FIE073 mentions 'components concept' as something they are supposed to do, but the item asserts 'will develop the components concept' as a concrete future action without explicit confirm this is assigned or accepted in this meeting. No clear commitment to 'develop' is proven beyond the phrasing in IS1008b.B.dialog-act.vkaraisk.161/162.",
+            "evidence_da_ids": [
+              "IS1008b.B.dialog-act.vkaraisk.161",
+              "IS1008b.B.dialog-act.vkaraisk.162"
+            ]
+          },
+          "owner_check": {
+            "result": "pass",
+            "reason": "Owner is explicitly stated as FIE073 in the provisional_values and is the announcer/actor for the item text; dialogue confirms FIE073 is involved in related concept work",
+            "evidence_da_ids": [
+              "IS1008b.B.dialog-act.vkaraisk.161"
+            ]
+          },
+          "deadline_check": {
+            "result": "uncertain",
+            "reason": "No deadline is specified in the item or in the observed dialogue; deadline_basis missing; cannot confirm",
+            "evidence_da_ids": [
+              "IS1008b.B.dialog-act.vkaraisk.161"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Action status would be open as no completion or further commitment is shown in current dialogue; the item is new",
+            "evidence_da_ids": [
+              "IS1008b.B.dialog-act.vkaraisk.161"
+            ]
+          },
+          "conflict_check": {
+            "result": "uncertain",
+            "reason": "No conflicting statements found in current dialogue regarding this action; relation to other items not established",
+            "evidence_da_ids": [
+              "IS1008b.B.dialog-act.vkaraisk.161"
+            ],
+            "affected_fields": [
+              "statement"
+            ]
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior related item id provided in this request; this is a new action linked to current meeting",
+            "evidence_da_ids": []
+          },
+          "next_action": "retrieve"
+        },
+        "evidence_bindings": {
+          "statement": [
+            "IS1008b.B.dialog-act.vkaraisk.161",
+            "IS1008b.B.dialog-act.vkaraisk.162"
+          ],
+          "owner": [
+            "IS1008b.B.dialog-act.vkaraisk.161"
+          ],
+          "deadline": [
+            "IS1008b.B.dialog-act.vkaraisk.161"
+          ],
+          "status": [
+            "IS1008b.B.dialog-act.vkaraisk.161"
+          ],
+          "conflict": [
+            "IS1008b.B.dialog-act.vkaraisk.161"
+          ]
+        },
+        "raw_tool_input": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "FIE073"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "statement": {
+            "result": "uncertain",
+            "reason": "Dialogue shows FIE073 mentions 'components concept' as something they are supposed to do, but the item asserts 'will develop the components concept' as a concrete future action without explicit confirm this is assigned or accepted in this meeting. No clear commitment to 'develop' is proven beyond the phrasing in IS1008b.B.dialog-act.vkaraisk.161/162.",
+            "evidence_da_ids": [
+              "IS1008b.B.dialog-act.vkaraisk.161",
+              "IS1008b.B.dialog-act.vkaraisk.162"
+            ]
+          },
+          "owner_check": {
+            "result": "pass",
+            "reason": "Owner is explicitly stated as FIE073 in the provisional_values and is the announcer/actor for the item text; dialogue confirms FIE073 is involved in related concept work",
+            "evidence_da_ids": [
+              "IS1008b.B.dialog-act.vkaraisk.161"
+            ]
+          },
+          "deadline_check": {
+            "result": "uncertain",
+            "reason": "No deadline is specified in the item or in the observed dialogue; deadline_basis missing; cannot confirm",
+            "evidence_da_ids": [
+              "IS1008b.B.dialog-act.vkaraisk.161"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Action status would be open as no completion or further commitment is shown in current dialogue; the item is new",
+            "evidence_da_ids": [
+              "IS1008b.B.dialog-act.vkaraisk.161"
+            ]
+          },
+          "conflict_check": {
+            "result": "uncertain",
+            "reason": "No conflicting statements found in current dialogue regarding this action; relation to other items not established",
+            "evidence_da_ids": [
+              "IS1008b.B.dialog-act.vkaraisk.161"
+            ],
+            "affected_fields": [
+              "statement"
+            ]
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior related item id provided in this request; this is a new action linked to current meeting",
+            "evidence_da_ids": []
+          },
+          "next_action": "retrieve"
+        },
+        "protocol_normalizations": [],
+        "unresolved_before": [
+          "deadline",
+          "statement"
+        ],
+        "unresolved_after": [
+          "deadline",
+          "statement"
+        ],
+        "semantic_stalls": 1,
+        "validation_codes": {
+          "deadline": [
+            "deadline_unresolved"
+          ]
+        }
+      },
+      {
+        "item": "IS1008b#6",
+        "step": 4,
+        "flags": [],
+        "action": "get_prior_items",
+        "outcome": "invalid_action",
+        "error": "Correct these argument fields: : 'query' is a required property Tool get_prior_items accepts root keys: query, item_type. Resubmit the complete advertised object. Select only delivered supporting dialogue IDs; if support is unavailable use uncertain with an explanation, never invent an ID or mark pass with no evidence. Documents belong inside the check they inform.",
+        "raw_tool_input": {}
+      },
+      {
+        "item": "IS1008b#6",
+        "step": 5,
+        "flags": [],
+        "action": "get_prior_items",
+        "outcome": "invalid_action",
+        "error": "This lookup was already executed on this item and cannot add evidence. Read a returned prior record/locator, change the query or window, assess delivered history when offered, or stop pending. Do not repeat it.",
+        "raw_tool_input": {
+          "query": "IS1008b components concept",
+          "item_type": "actions"
+        }
+      },
+      {
+        "item": "IS1008b#6",
+        "step": 5,
+        "flags": [],
+        "action": "stop",
+        "outcome": "pending",
+        "termination_reason": "invalid_action_limit",
+        "unresolved_fields": [
+          "statement",
+          "deadline"
+        ]
+      }
+    ],
+    "lookups": 1,
+    "termination_reason": "invalid_action_limit",
+    "clarifications": [
+      {
+        "request_id": "0011f8e3cb500375",
+        "item_key": "IS1008b#6",
+        "record_id": null,
+        "field": "statement",
+        "question": "Should this be recorded as a substantive, supported actions item?",
+        "item_text": "ID(FIE073) will develop the components concept.",
+        "reason": "Dialogue shows FIE073 mentions 'components concept' as something they are supposed to do, but the item asserts 'will develop the components concept' as a concrete future action without explicit confirm this is assigned or accepted in this meeting. No clear commitment to 'develop' is proven beyond the phrasing in IS1008b.B.dialog-act.vkaraisk.161/162.; No conflicting statements found in current dialogue regarding this action; relation to other items not established",
+        "evidence_da_ids": [
+          "IS1008b.B.dialog-act.vkaraisk.161",
+          "IS1008b.B.dialog-act.vkaraisk.162"
+        ],
+        "available_evidence_da_ids": [
+          "IS1008b.B.dialog-act.vkaraisk.161",
+          "IS1008b.B.dialog-act.vkaraisk.162",
+          "IS1008b.C.dialog-act.vkaraisk.124",
+          "IS1008b.A.dialog-act.vkaraisk.214",
+          "IS1008b.B.dialog-act.vkaraisk.163"
+        ],
+        "status": "open",
+        "termination_reason": "invalid_action_limit"
+      },
+      {
+        "request_id": "6405445d71a9c110",
+        "item_key": "IS1008b#6",
+        "record_id": null,
+        "field": "deadline",
+        "question": "What is the agreed deadline, in its original wording?",
+        "item_text": "ID(FIE073) will develop the components concept.",
+        "reason": "deadline_unresolved",
+        "evidence_da_ids": [
+          "IS1008b.B.dialog-act.vkaraisk.161"
+        ],
+        "available_evidence_da_ids": [
+          "IS1008b.B.dialog-act.vkaraisk.161",
+          "IS1008b.B.dialog-act.vkaraisk.162",
+          "IS1008b.C.dialog-act.vkaraisk.124",
+          "IS1008b.A.dialog-act.vkaraisk.214",
+          "IS1008b.B.dialog-act.vkaraisk.163"
+        ],
+        "status": "open",
+        "termination_reason": "invalid_action_limit"
+      }
+    ]
+  }
+}

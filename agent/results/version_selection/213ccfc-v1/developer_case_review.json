@@ -1,0 +1,595 @@
+{
+  "scope": "Targeted developer evidence review, not final human gold adjudication. No labels or runtime decisions changed.",
+  "cases": [
+    {
+      "item_key": "ES2011b#4",
+      "type": "actions",
+      "input_text": "All participants will finish their questionnaire after this meeting and bring new ideas to the next meeting.",
+      "verdict": "overblocking",
+      "reason": "证据明确要求 everyone 完成问卷，并为下次会议带来新想法。P2 将 owner/deadline/验收标准是否齐全作为 statement 的前提，隔离整条任务。这是核心任务与辅助字段混用的反例；不要求补造参与者 ID 或具体日期。",
+      "source_lines": [
+        {
+          "id": "ES2011b.A.dialog-act.dharshi.172",
+          "speaker": "A",
+          "starttime": "1553.55",
+          "startwordid": null,
+          "endtime": "1557.86",
+          "endwordid": null,
+          "text": "Um so everyone's gonna go finish their questionnaire ,",
+          "label": null,
+          "attributes": {
+            "participant": "FEE041",
+            "role": "PM"
+          }
+        },
+        {
+          "id": "ES2011b.A.dialog-act.dharshi.174",
+          "speaker": "A",
+          "starttime": "1562.75",
+          "startwordid": null,
+          "endtime": "1570.94",
+          "endwordid": null,
+          "text": "um yeah , so think about the things we've discussed and bring some new ideas to our next meeting .",
+          "label": null,
+          "attributes": {
+            "participant": "FEE041",
+            "role": "PM"
+          }
+        }
+      ],
+      "check_results": {
+        "statement": {
+          "result": "uncertain",
+          "reason": "The dialogue shows an instruction to finish questionnaires and bring ideas, but it does not establish an assigned owner, explicit deadline wording, or concrete acceptance criteria for completion. The text asserts a plan but does not confirm who is responsible or a deadline.",
+          "quotes": [
+            {
+              "da_id": "ES2011b.A.dialog-act.dharshi.172",
+              "quote": "Um so everyone's gonna go finish their questionnaire ,"
+            },
+            {
+              "da_id": "ES2011b.A.dialog-act.dharshi.173",
+              "quote": "uh then when we come back after lunch we'll have thirty minutes of individual work ,"
+            },
+            {
+              "da_id": "ES2011b.A.dialog-act.dharshi.174",
+              "quote": "um yeah , so think about the things we've discussed and bring some new ideas to our next meeting ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "uncertain",
+          "reason": "owner_unresolved",
+          "quotes": [
+            {
+              "da_id": "ES2011b.A.dialog-act.dharshi.172",
+              "quote": "Um so everyone's gonna go finish their questionnaire ,"
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "deadline_unresolved",
+          "quotes": [
+            {
+              "da_id": "ES2011b.A.dialog-act.dharshi.173",
+              "quote": "uh then when we come back after lunch we'll have thirty minutes of individual work ,"
+            }
+          ],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "uncertain",
+          "reason": "Status open by text; no confirmation of completion; the action is stated as ongoing.",
+          "quotes": [
+            {
+              "da_id": "ES2011b.A.dialog-act.dharshi.174",
+              "quote": "um yeah , so think about the things we've discussed and bring some new ideas to our next meeting ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "uncertain",
+          "reason": "No contradictory statements found in provided dialogue; insufficient evidence to determine conflict.",
+          "quotes": [
+            {
+              "da_id": "ES2011b.A.dialog-act.dharshi.174",
+              "quote": "um yeah , so think about the things we've discussed and bring some new ideas to our next meeting ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No prior related item to relate to in this assessment; first item in this run.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "p2_artifact_sha256": "039d493c31c158f576062fa7386b72a7176391ec28aa73bb6c70fba728bbde79",
+      "fixed_input_sha256": "3c895ae31212e5629708da3bbc00872d218be1bbdbd2529bba26eaeb973426ca",
+      "reviewer": "coding_agent_developer_source_review",
+      "user_human_confirmation": false
+    },
+    {
+      "item_key": "ES2011b#11",
+      "type": "decisions",
+      "input_text": "The group will include a power button and numeric controls, and avoid a hold-to-power mechanism or the absence of a dedicated power button to prevent user confusion.",
+      "verdict": "overblocking",
+      "reason": "P2 的 statement/status 已引用明确结论“we definitely want a power button and numbers”并判 pass；conflict 却把前面的竞品/备选机制讨论当成未解决矛盾，整条隔离。最终结论已交付给模型，因此不能解释为未读到结论。",
+      "source_lines": [
+        {
+          "id": "ES2011b.A.dialog-act.dharshi.114",
+          "speaker": "A",
+          "starttime": "1182.95",
+          "startwordid": null,
+          "endtime": "1186.23",
+          "endwordid": null,
+          "text": "So we definitely want a power button and numbers .",
+          "label": null,
+          "attributes": {
+            "participant": "FEE041",
+            "role": "PM"
+          }
+        }
+      ],
+      "check_results": {
+        "statement": {
+          "result": "pass",
+          "reason": "Current dialogue supports a decision that the product will include a power button and numeric controls to avoid hold-to-power mechanisms, with discussion of how this button might be perceived, but the stated outcome is inclusion of a dedicated power button and numeric controls.",
+          "quotes": [
+            {
+              "da_id": "ES2011b.A.dialog-act.dharshi.114",
+              "quote": "So we definitely want a power button and numbers ."
+            },
+            {
+              "da_id": "ES2011b.A.dialog-act.dharshi.104",
+              "quote": "You know , I've seen some remotes that <disfmarker> where you just hold one ,"
+            },
+            {
+              "da_id": "ES2011b.A.dialog-act.dharshi.105",
+              "quote": "like if you hold one down it's it's a different colour than the other buttons but that turns it on ."
+            },
+            {
+              "da_id": "ES2011b.A.dialog-act.dharshi.106",
+              "quote": "So you don't actually have a separate power button , it's just <disfmarker>"
+            },
+            {
+              "da_id": "ES2011b.D.dialog-act.dharshi.121",
+              "quote": "Oh okay , yeah ."
+            },
+            {
+              "da_id": "ES2011b.C.dialog-act.dharshi.96",
+              "quote": "It seems like that would be hard though ."
+            },
+            {
+              "da_id": "ES2011b.A.dialog-act.dharshi.107",
+              "quote": "But <disfmarker>"
+            },
+            {
+              "da_id": "ES2011b.C.dialog-act.dharshi.97",
+              "quote": "I mean , like because unless you know <disfmarker>"
+            },
+            {
+              "da_id": "ES2011b.A.dialog-act.dharshi.108",
+              "quote": "It might be confusing ."
+            },
+            {
+              "da_id": "ES2011b.C.dialog-act.dharshi.98",
+              "quote": "yeah ."
+            },
+            {
+              "da_id": "ES2011b.A.dialog-act.dharshi.109",
+              "quote": "Yeah ."
+            },
+            {
+              "da_id": "ES2011b.C.dialog-act.dharshi.99",
+              "quote": "Just 'cause I wouldn't <disfmarker>"
+            },
+            {
+              "da_id": "ES2011b.C.dialog-act.dharshi.100",
+              "quote": "I would probably pick it up and just be like uh why is there no on button . <vocalsound>"
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "The dialogue indicates acceptance of the proposed feature set (power button + numeric controls) in the main decision text.",
+          "quotes": [
+            {
+              "da_id": "ES2011b.A.dialog-act.dharshi.114",
+              "quote": "So we definitely want a power button and numbers ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "uncertain",
+          "reason": "There is some tension in the dialogue about whether a separate power button exists or whether power is inferred from other controls; no clear resolution in this meeting.",
+          "quotes": [
+            {
+              "da_id": "ES2011b.A.dialog-act.dharshi.106",
+              "quote": "So you don't actually have a separate power button , it's just <disfmarker>"
+            },
+            {
+              "da_id": "ES2011b.C.dialog-act.dharshi.96",
+              "quote": "It seems like that would be hard though ."
+            },
+            {
+              "da_id": "ES2011b.A.dialog-act.dharshi.108",
+              "quote": "It might be confusing ."
+            },
+            {
+              "da_id": "ES2011b.C.dialog-act.dharshi.97",
+              "quote": "I mean , like because unless you know <disfmarker>"
+            },
+            {
+              "da_id": "ES2011b.C.dialog-act.dharshi.95",
+              "quote": "Yeah ."
+            },
+            {
+              "da_id": "ES2011b.C.dialog-act.dharshi.100",
+              "quote": "I would probably pick it up and just be like uh why is there no on button . <vocalsound>"
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No prior related item to link to in this input.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        },
+        "owner": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        }
+      },
+      "p2_artifact_sha256": "039d493c31c158f576062fa7386b72a7176391ec28aa73bb6c70fba728bbde79",
+      "fixed_input_sha256": "3c895ae31212e5629708da3bbc00872d218be1bbdbd2529bba26eaeb973426ca",
+      "reviewer": "coding_agent_developer_source_review",
+      "user_human_confirmation": false
+    },
+    {
+      "item_key": "ES2011a#5",
+      "type": "actions",
+      "input_text": "All team members will work on the user requirements.",
+      "verdict": "do_not_equate_old_match_with_source_correctness",
+      "reason": "旧评分将 All team members ... user requirements 匹配到 Marketing Expert 的任务。原句 161–163 先谈 Marketing，再说 we；不足以证明全部成员共同承担。不能为了复现旧 TP 自动认定这条宽化任务正确。P2 的理由也夹杂辅助字段要求，应单独区分范围问题和 owner/deadline 问题。",
+      "source_lines": [
+        {
+          "id": "ES2011a.A.dialog-act.dharshi.161",
+          "speaker": "A",
+          "starttime": "1088.3",
+          "startwordid": null,
+          "endtime": "1091.61",
+          "endwordid": null,
+          "text": "And the M_E_ , what does that stand for <vocalsound> ? M",
+          "label": null,
+          "attributes": {
+            "participant": "FEE041",
+            "role": "PM"
+          }
+        },
+        {
+          "id": "ES2011a.A.dialog-act.dharshi.162",
+          "speaker": "A",
+          "starttime": "1092.74",
+          "startwordid": null,
+          "endtime": "1094.86",
+          "endwordid": null,
+          "text": "Marketing , right . Um <vocalsound> .",
+          "label": null,
+          "attributes": {
+            "participant": "FEE041",
+            "role": "PM"
+          }
+        },
+        {
+          "id": "ES2011a.A.dialog-act.dharshi.163",
+          "speaker": "A",
+          "starttime": "1096.93",
+          "startwordid": null,
+          "endtime": "1100.464",
+          "endwordid": null,
+          "text": "So we'll be working on the user requirements , um <disfmarker>",
+          "label": null,
+          "attributes": {
+            "participant": "FEE041",
+            "role": "PM"
+          }
+        }
+      ],
+      "check_results": {
+        "statement": {
+          "result": "uncertain",
+          "reason": "The text asserts All team members will work on the user requirements, but there is no explicit ownership or scoping; owner and deadline are missing.",
+          "quotes": [
+            {
+              "da_id": "ES2011a.A.dialog-act.dharshi.163",
+              "quote": "So we'll be working on the user requirements , um <disfmarker>"
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "uncertain",
+          "reason": "owner_unresolved",
+          "quotes": [
+            {
+              "da_id": "ES2011a.A.dialog-act.dharshi.162",
+              "quote": "Marketing , right . Um <vocalsound> ."
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "deadline_unresolved",
+          "quotes": [
+            {
+              "da_id": "ES2011a.A.dialog-act.dharshi.162",
+              "quote": "Marketing , right . Um <vocalsound> ."
+            }
+          ],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Status is stated as open in provisional_values and aligns with observed dialogue; no evidence of completion.",
+          "quotes": [
+            {
+              "da_id": "ES2011a.A.dialog-act.dharshi.162",
+              "quote": "Marketing , right . Um <vocalsound> ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "uncertain",
+          "reason": "No conflicting evidence found in provided dialogue; potential conflicts about owner/deadline exist but not evidenced.",
+          "quotes": [
+            {
+              "da_id": "ES2011a.A.dialog-act.dharshi.163",
+              "quote": "So we'll be working on the user requirements , um <disfmarker>"
+            }
+          ],
+          "fields": [
+            "owner",
+            "deadline",
+            "status"
+          ]
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No prior related item to relate to in this assessment.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "p2_artifact_sha256": "5e25bfe5dd01dc8da72e93ef4386d823ff1b8e4c538b016a69e5295dbca3718c",
+      "fixed_input_sha256": "e54265c4067d75a05a22a8e2e1b1659d961b158b035c997e9e4440f41c1ca60d",
+      "reviewer": "coding_agent_developer_source_review",
+      "user_human_confirmation": false
+    },
+    {
+      "item_key": "ES2011a#2",
+      "verdict": "unchanged_text_alignment_flip_and_baseline_misattribution",
+      "text": "The Project Manager will look into the working design, focusing on screen-related aspects discussed.",
+      "baseline_gold_id": "ES2011a.JacquelinePalmer.s.10",
+      "p2_same_text_still_published": true,
+      "reason": "原文本把任务交给 PM，但原句 145 先点名 Industrial Designer，148 才续说 working design。旧 matcher 仍给 TP；同样文本在 P2 输出仍存在，新组 matcher 不给 TP。这既不是 P2 删除任务，也不能据旧 TP 宣称基线归属正确。",
+      "source_lines": [
+        {
+          "id": "ES2011a.A.dialog-act.dharshi.145",
+          "speaker": "A",
+          "starttime": "1018.25",
+          "startwordid": null,
+          "endtime": "1021.32",
+          "endwordid": null,
+          "text": "The Industrial Designer ,",
+          "label": null,
+          "attributes": {
+            "participant": "FEE041",
+            "role": "PM"
+          }
+        },
+        {
+          "id": "ES2011a.A.dialog-act.dharshi.148",
+          "speaker": "A",
+          "starttime": "1023.53",
+          "startwordid": null,
+          "endtime": "1026.76",
+          "endwordid": null,
+          "text": "<vocalsound> um is going to be looking more into the working design .",
+          "label": null,
+          "attributes": {
+            "participant": "FEE041",
+            "role": "PM"
+          }
+        }
+      ],
+      "reviewer": "coding_agent_developer_source_review",
+      "user_human_confirmation": false
+    },
+    {
+      "meeting_id": "TS3006a",
+      "type": "actions",
+      "text": "The User Interface Designer will specify the technical functions.",
+      "verdict": "supported_type_aware_recovery",
+      "source_lines": [
+        {
+          "id": "TS3006a.A.dialog-act.vkaraisk.149",
+          "speaker": "A",
+          "starttime": "677.97",
+          "startwordid": null,
+          "endtime": "683.41",
+          "endwordid": null,
+          "text": "Uh the User Interface Designer should specify the technical functions .",
+          "label": null,
+          "attributes": {
+            "participant": "MTD021PM",
+            "role": "PM"
+          }
+        },
+        {
+          "id": "TS3006a.B.dialog-act.vkaraisk.59",
+          "speaker": "B",
+          "starttime": "684.8",
+          "startwordid": null,
+          "endtime": "685.2",
+          "endwordid": null,
+          "text": "Yep .",
+          "label": null,
+          "attributes": {
+            "participant": "MTD023UID",
+            "role": "UI"
+          }
+        }
+      ],
+      "initial_reference_has_assignment": true,
+      "reason": "类型恢复补回真实任务；保留原有排序后没有挤掉其他旧条目。ME 原候选引用只有回应及后续提问，未包含任务句151；组合版本应用时仍须补查并保留任务句引用，不把本次内容得分当作完整引用验证。",
+      "reviewer": "coding_agent_developer_source_review",
+      "user_human_confirmation": false
+    },
+    {
+      "meeting_id": "TS3006a",
+      "type": "actions",
+      "text": "The Marketing Expert will come up with user requirements.",
+      "verdict": "supported_type_aware_recovery",
+      "source_lines": [
+        {
+          "id": "TS3006a.A.dialog-act.vkaraisk.151",
+          "speaker": "A",
+          "starttime": "686.35",
+          "startwordid": null,
+          "endtime": "694.11",
+          "endwordid": null,
+          "text": "<vocalsound> And the Marketing uh Expert should come up with user requirements .",
+          "label": null,
+          "attributes": {
+            "participant": "MTD021PM",
+            "role": "PM"
+          }
+        },
+        {
+          "id": "TS3006a.D.dialog-act.vkaraisk.100",
+          "speaker": "D",
+          "starttime": "693.25",
+          "startwordid": null,
+          "endtime": "693.64",
+          "endwordid": null,
+          "text": "Yeah .",
+          "label": null,
+          "attributes": {
+            "participant": "MTD024ME",
+            "role": "ME"
+          }
+        }
+      ],
+      "initial_reference_has_assignment": false,
+      "reason": "类型恢复补回真实任务；保留原有排序后没有挤掉其他旧条目。ME 原候选引用只有回应及后续提问，未包含任务句151；组合版本应用时仍须补查并保留任务句引用，不把本次内容得分当作完整引用验证。",
+      "reviewer": "coding_agent_developer_source_review",
+      "user_human_confirmation": false
+    },
+    {
+      "case_id": "IS1008d_ranking_promotes_in_meeting_procedure",
+      "type": "actions",
+      "text": "UI FIE038 will pass the prototype around to participants, using a napkin for handling.",
+      "verdict": "new_ranking_promotes_in_meeting_procedure",
+      "reason": "同响应的新排序把当前会场内“现在传看原型、用纸巾拿”的操作纳入5条Action，替换旧池条目。原文是现场提议及回应，属于基准和现代规则均排除的会中操作；不能只因owner明确或覆盖新角色就提升到项目后续任务。",
+      "source_lines": [
+        {
+          "id": "IS1008d.C.dialog-act.s9553330.59",
+          "speaker": "C",
+          "starttime": "355.22",
+          "startwordid": null,
+          "endtime": "358.685",
+          "endwordid": null,
+          "text": "So , I mean I can pass this around if anyone wants to <disfmarker>",
+          "label": null,
+          "attributes": {
+            "participant": "FIE038",
+            "role": "UI"
+          }
+        },
+        {
+          "id": "IS1008d.A.dialog-act.s9553330.34",
+          "speaker": "A",
+          "starttime": "357.08",
+          "startwordid": null,
+          "endtime": "358.8",
+          "endwordid": null,
+          "text": "Yes . So it's maybe good idea .",
+          "label": null,
+          "attributes": {
+            "participant": "MIO086",
+            "role": "PM"
+          }
+        },
+        {
+          "id": "IS1008d.B.dialog-act.s9553330.17",
+          "speaker": "B",
+          "starttime": "359.32",
+          "startwordid": null,
+          "endtime": "362.556",
+          "endwordid": null,
+          "text": "Yeah , y better you pass it around with a napkin . <vocalsound>",
+          "label": null,
+          "attributes": {
+            "participant": "FIE073",
+            "role": "ID"
+          }
+        }
+      ],
+      "replay_sha256": "a6ded1c3d04b63244bb5919a4ed18dad3678ed31a70bf040bce3d1f2eae196aa",
+      "reviewer": "coding_agent_developer_source_review",
+      "user_human_confirmation": false
+    }
+  ]
+}

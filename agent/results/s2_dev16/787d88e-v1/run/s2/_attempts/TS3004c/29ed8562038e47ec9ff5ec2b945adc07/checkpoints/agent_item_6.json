@@ -1,0 +1,578 @@
+{
+  "item": 6,
+  "fields": {
+    "item_key": "TS3004c#6",
+    "record_id": null,
+    "item_type": "actions",
+    "item_text": "Assign to MTD015UID to diagnose and restore UI power indicator state.",
+    "state": "pending",
+    "recordable": true,
+    "fields": {
+      "status": "open",
+      "prior_context_needed": false,
+      "related_items": [],
+      "owner": [
+        "MTD015UID"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3004c.json",
+          "locator": "TS3004c.B.dialog-act.vkaraisk.27"
+        }
+      ]
+    },
+    "draft_fields": {
+      "status": "open",
+      "related_items": [],
+      "owner": [
+        "MTD015UID"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "prior_context_needed": false,
+      "used_participant_lookup": false,
+      "evidence_da_ids": [
+        "TS3004c.B.dialog-act.vkaraisk.27"
+      ]
+    },
+    "checks": {
+      "statement": {
+        "result": "pass",
+        "reason": "The item requests assigning responsibility to MTD015UID to diagnose and restore the UI power indicator state; the observed dialogue includes MTD015UID indicating they will address it, supporting assignment intent.",
+        "quotes": [
+          {
+            "da_id": "TS3004c.B.dialog-act.vkaraisk.27",
+            "quote": "I'll I'll get back on it ."
+          }
+        ],
+        "fields": [
+          "statement"
+        ]
+      },
+      "owner": {
+        "result": "pass",
+        "reason": "Owner explicitly provided as MTD015UID in the item; explicit ownership is supported by the provided provisional values.",
+        "quotes": [
+          {
+            "da_id": "TS3004c.B.dialog-act.vkaraisk.27",
+            "quote": "I'll I'll get back on it ."
+          }
+        ],
+        "fields": [
+          "owner"
+        ]
+      },
+      "deadline": {
+        "result": "uncertain",
+        "reason": "deadline_unresolved",
+        "quotes": [
+          {
+            "da_id": "TS3004c.B.dialog-act.vkaraisk.27",
+            "quote": "I'll I'll get back on it ."
+          }
+        ],
+        "fields": [
+          "deadline"
+        ]
+      },
+      "status": {
+        "result": "pass",
+        "reason": "Status is 'open' per provisional values and not contradicted by dialogue",
+        "quotes": [
+          {
+            "da_id": "TS3004c.B.dialog-act.vkaraisk.27",
+            "quote": "I'll I'll get back on it ."
+          }
+        ],
+        "fields": [
+          "status"
+        ]
+      },
+      "conflict": {
+        "result": "pass",
+        "reason": "No conflicting statements found in the available dialogue; the assignment aligns with the user's intent to address UI power indicator state.",
+        "quotes": [
+          {
+            "da_id": "TS3004c.B.dialog-act.vkaraisk.27",
+            "quote": "I'll I'll get back on it ."
+          }
+        ],
+        "fields": [
+          "statement",
+          "owner",
+          "deadline",
+          "status"
+        ]
+      },
+      "relation": {
+        "result": "not_applicable",
+        "reason": "No prior related item to relate to in this run; no relationship to check.",
+        "quotes": [],
+        "fields": [
+          "related_items"
+        ]
+      }
+    },
+    "unresolved_fields": [
+      "deadline"
+    ],
+    "observed_evidence_da_ids": [
+      "TS3004c.B.dialog-act.vkaraisk.27",
+      "TS3004c.A.dialog-act.vkaraisk.41",
+      "TS3004c.D.dialog-act.vkaraisk.41"
+    ],
+    "initial_context": {
+      "item": {
+        "type": "actions",
+        "text": "Assign to MTD015UID to diagnose and restore UI power indicator state.",
+        "flags": []
+      },
+      "current_meeting": "TS3004c",
+      "earlier_meetings": [
+        "TS3004a",
+        "TS3004b"
+      ],
+      "roster": [
+        {
+          "speaker": "A",
+          "participant_id": "MTD013PM",
+          "role": "PM"
+        },
+        {
+          "speaker": "B",
+          "participant_id": "MTD015UID",
+          "role": "UI"
+        },
+        {
+          "speaker": "C",
+          "participant_id": "MTD014ID",
+          "role": "ID"
+        },
+        {
+          "speaker": "D",
+          "participant_id": "MTD016ME",
+          "role": "ME"
+        }
+      ],
+      "observed_dialogue": [
+        {
+          "da_id": "TS3004c.B.dialog-act.vkaraisk.27",
+          "meeting_id": "TS3004c",
+          "text": "I'll I'll get back on it .",
+          "participant": "MTD015UID",
+          "role": "UI"
+        },
+        {
+          "da_id": "TS3004c.A.dialog-act.vkaraisk.41",
+          "participant": "MTD013PM",
+          "role": "PM",
+          "text": "Okay ."
+        },
+        {
+          "da_id": "TS3004c.D.dialog-act.vkaraisk.41",
+          "participant": "MTD016ME",
+          "role": "ME",
+          "text": "features not uh do not exist in current remote controls ."
+        }
+      ],
+      "peer_items": [
+        {
+          "item_key": "TS3004c#0",
+          "type": "problems",
+          "text": "Power light isn't working, leaving the device's on/off state unclear."
+        },
+        {
+          "item_key": "TS3004c#1",
+          "type": "problems",
+          "text": "Feasibility/cost risk of offering multiple LED colours; customer choice at purchase not supported."
+        },
+        {
+          "item_key": "TS3004c#2",
+          "type": "decisions",
+          "text": "Decision: five fronts on the market."
+        },
+        {
+          "item_key": "TS3004c#3",
+          "type": "decisions",
+          "text": "Decision 1: main controls should be placed on the top of the remote."
+        },
+        {
+          "item_key": "TS3004c#4",
+          "type": "decisions",
+          "text": "Decision 2: nonessential buttons moved to the bottom."
+        },
+        {
+          "item_key": "TS3004c#5",
+          "type": "decisions",
+          "text": "Case must be transparent so the backlight can work."
+        }
+      ],
+      "provisional_values": {
+        "owner": [
+          "MTD015UID"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "open",
+        "related_items": []
+      },
+      "candidate_evidence_da_ids": [
+        "TS3004c.B.dialog-act.vkaraisk.27"
+      ]
+    },
+    "observed_documents": [],
+    "document_evidence": [],
+    "relation_evidence": [],
+    "history": [
+      {
+        "item": "TS3004c#6",
+        "step": 1,
+        "flags": [],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "The item requests assigning responsibility to MTD015UID to diagnose and restore the UI power indicator state; the observed dialogue includes MTD015UID indicating they will address it, supporting assignment intent.",
+            "quotes": [
+              {
+                "da_id": "TS3004c.B.dialog-act.vkaraisk.27",
+                "quote": "I'll I'll get back on it ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Owner explicitly provided as MTD015UID in the item; explicit ownership is supported by the provided provisional values.",
+            "quotes": [
+              {
+                "da_id": "TS3004c.B.dialog-act.vkaraisk.27",
+                "quote": "I'll I'll get back on it ."
+              }
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "deadline_unresolved",
+            "quotes": [
+              {
+                "da_id": "TS3004c.B.dialog-act.vkaraisk.27",
+                "quote": "I'll I'll get back on it ."
+              }
+            ],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Status is 'open' per provisional values and not contradicted by dialogue",
+            "quotes": [
+              {
+                "da_id": "TS3004c.B.dialog-act.vkaraisk.27",
+                "quote": "I'll I'll get back on it ."
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting statements found in the available dialogue; the assignment aligns with the user's intent to address UI power indicator state.",
+            "quotes": [
+              {
+                "da_id": "TS3004c.B.dialog-act.vkaraisk.27",
+                "quote": "I'll I'll get back on it ."
+              }
+            ],
+            "fields": [
+              "statement",
+              "owner",
+              "deadline",
+              "status"
+            ]
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related item to relate to in this run; no relationship to check.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "decision": "request_clarification",
+        "reason": "supported_statement_with_unresolved_fields",
+        "assessed_text": "Assign to MTD015UID to diagnose and restore UI power indicator state.",
+        "requested_action": "accept",
+        "proposed_fields": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "MTD015UID"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "TS3004c.B.dialog-act.vkaraisk.27"
+          ]
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "The item requests assigning responsibility to MTD015UID to diagnose and restore the UI power indicator state; the observed dialogue includes MTD015UID indicating they will address it, supporting assignment intent.",
+            "quotes": [
+              "TS3004c.B.dialog-act.vkaraisk.27"
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "Owner explicitly provided as MTD015UID in the item; explicit ownership is supported by the provided provisional values.",
+            "quotes": [
+              "TS3004c.B.dialog-act.vkaraisk.27"
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "No deadline is stated in the current dialogue or provisional values beyond 'missing'; cannot determine a deadline from available evidence.",
+            "quotes": [
+              "TS3004c.B.dialog-act.vkaraisk.27"
+            ],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Status is 'open' per provisional values and not contradicted by dialogue",
+            "quotes": [
+              "TS3004c.B.dialog-act.vkaraisk.27"
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting statements found in the available dialogue; the assignment aligns with the user's intent to address UI power indicator state.",
+            "quotes": [],
+            "fields": [
+              "statement",
+              "owner",
+              "deadline",
+              "status"
+            ]
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related item to relate to in this run; no relationship to check.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "MTD015UID"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "statement": {
+            "result": "pass",
+            "reason": "The item requests assigning responsibility to MTD015UID to diagnose and restore the UI power indicator state; the observed dialogue includes MTD015UID indicating they will address it, supporting assignment intent.",
+            "evidence_da_ids": [
+              "TS3004c.B.dialog-act.vkaraisk.27"
+            ]
+          },
+          "owner_check": {
+            "result": "pass",
+            "reason": "Owner explicitly provided as MTD015UID in the item; explicit ownership is supported by the provided provisional values.",
+            "evidence_da_ids": [
+              "TS3004c.B.dialog-act.vkaraisk.27"
+            ]
+          },
+          "deadline_check": {
+            "result": "uncertain",
+            "reason": "No deadline is stated in the current dialogue or provisional values beyond 'missing'; cannot determine a deadline from available evidence.",
+            "evidence_da_ids": [
+              "TS3004c.B.dialog-act.vkaraisk.27"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Status is 'open' per provisional values and not contradicted by dialogue",
+            "evidence_da_ids": [
+              "TS3004c.B.dialog-act.vkaraisk.27"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No conflicting statements found in the available dialogue; the assignment aligns with the user's intent to address UI power indicator state.",
+            "affected_fields": [
+              "statement",
+              "owner",
+              "deadline",
+              "status"
+            ],
+            "evidence_da_ids": []
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior related item to relate to in this run; no relationship to check.",
+            "evidence_da_ids": []
+          },
+          "next_action": "accept"
+        },
+        "evidence_bindings": {
+          "statement": [
+            "TS3004c.B.dialog-act.vkaraisk.27"
+          ],
+          "owner": [
+            "TS3004c.B.dialog-act.vkaraisk.27"
+          ],
+          "deadline": [
+            "TS3004c.B.dialog-act.vkaraisk.27"
+          ],
+          "status": [
+            "TS3004c.B.dialog-act.vkaraisk.27"
+          ],
+          "conflict_scope": [
+            "TS3004c.B.dialog-act.vkaraisk.27"
+          ]
+        },
+        "raw_tool_input": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "MTD015UID"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "statement": {
+            "result": "pass",
+            "reason": "The item requests assigning responsibility to MTD015UID to diagnose and restore the UI power indicator state; the observed dialogue includes MTD015UID indicating they will address it, supporting assignment intent.",
+            "evidence_da_ids": [
+              "TS3004c.B.dialog-act.vkaraisk.27"
+            ]
+          },
+          "owner_check": {
+            "result": "pass",
+            "reason": "Owner explicitly provided as MTD015UID in the item; explicit ownership is supported by the provided provisional values.",
+            "evidence_da_ids": [
+              "TS3004c.B.dialog-act.vkaraisk.27"
+            ]
+          },
+          "deadline_check": {
+            "result": "uncertain",
+            "reason": "No deadline is stated in the current dialogue or provisional values beyond 'missing'; cannot determine a deadline from available evidence.",
+            "evidence_da_ids": [
+              "TS3004c.B.dialog-act.vkaraisk.27"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Status is 'open' per provisional values and not contradicted by dialogue",
+            "evidence_da_ids": [
+              "TS3004c.B.dialog-act.vkaraisk.27"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No conflicting statements found in the available dialogue; the assignment aligns with the user's intent to address UI power indicator state.",
+            "affected_fields": [
+              "statement",
+              "owner",
+              "deadline",
+              "status"
+            ]
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior related item to relate to in this run; no relationship to check.",
+            "evidence_da_ids": []
+          },
+          "next_action": "accept"
+        },
+        "protocol_normalizations": [
+          "no_conflict_uses_selected_statement_scope"
+        ],
+        "unresolved_before": [
+          "deadline",
+          "owner",
+          "statement",
+          "status"
+        ],
+        "unresolved_after": [
+          "deadline"
+        ],
+        "semantic_stalls": 0,
+        "validation_codes": {
+          "deadline": [
+            "deadline_unresolved"
+          ]
+        }
+      },
+      {
+        "item": "TS3004c#6",
+        "step": 1,
+        "flags": [],
+        "action": "stop",
+        "outcome": "pending",
+        "termination_reason": "supported_statement_with_unresolved_fields",
+        "unresolved_fields": [
+          "deadline"
+        ]
+      }
+    ],
+    "lookups": 0,
+    "termination_reason": "supported_statement_with_unresolved_fields",
+    "clarifications": [
+      {
+        "request_id": "e4eb0a66a249d5b9",
+        "item_key": "TS3004c#6",
+        "record_id": null,
+        "field": "deadline",
+        "question": "What is the agreed deadline, in its original wording?",
+        "item_text": "Assign to MTD015UID to diagnose and restore UI power indicator state.",
+        "reason": "deadline_unresolved",
+        "evidence_da_ids": [
+          "TS3004c.B.dialog-act.vkaraisk.27"
+        ],
+        "available_evidence_da_ids": [
+          "TS3004c.B.dialog-act.vkaraisk.27",
+          "TS3004c.A.dialog-act.vkaraisk.41",
+          "TS3004c.D.dialog-act.vkaraisk.41"
+        ],
+        "status": "open",
+        "termination_reason": "supported_statement_with_unresolved_fields"
+      }
+    ]
+  }
+}

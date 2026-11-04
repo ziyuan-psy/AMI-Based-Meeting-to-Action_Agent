@@ -1,0 +1,1769 @@
+{
+  "meeting_id": "IS1008a",
+  "status": "COMPLETED",
+  "started_at": "2026-10-28T04:58:11.061704+00:00",
+  "arms": {
+    "baseline": {
+      "metrics": {
+        "actions": {
+          "tp": 3,
+          "sys": 5,
+          "gold": 4,
+          "precision": 0.6,
+          "recall": 0.75,
+          "f1": 0.667
+        },
+        "decisions": {
+          "tp": 0,
+          "sys": 1,
+          "gold": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "problems": {
+          "tp": 1,
+          "sys": 1,
+          "gold": 1,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "matches": {
+        "IS1008a.sys.s.4": "IS1008a.JacquelinePalmer.s.9",
+        "IS1008a.sys.s.5": "IS1008a.JacquelinePalmer.s.8",
+        "IS1008a.sys.s.7": "IS1008a.JacquelinePalmer.s.10",
+        "IS1008a.sys.s.1": "IS1008a.JacquelinePalmer.s.14"
+      },
+      "unmatched": {
+        "actions": {
+          "system": [
+            {
+              "id": "IS1008a.sys.s.3",
+              "text": "ME will provide a written project plan by the next meeting.",
+              "type": "actions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.29"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.30"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.D.dialog-act.s9553330.16"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.31"
+                }
+              ],
+              "owner": [
+                "MIE085"
+              ],
+              "owner_basis": "explicit",
+              "deadline": "By next meeting",
+              "deadline_basis": "explicit",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "IS1008a.sys.s.6",
+              "text": "Ed will conduct research on remote controls and market opportunities to identify the target market, and coordinate with Christine on the marketing/sales plan.",
+              "type": "actions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.85"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.D.dialog-act.s9553330.36"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.78"
+                }
+              ],
+              "owner": [
+                "MIE085",
+                "FIE073"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ],
+          "gold": [
+            {
+              "id": "IS1008a.JacquelinePalmer.s.11",
+              "text": "The project manager will send the participants a copy of his presentation slides at the conclusion of this meeting.",
+              "type": "actions",
+              "owner": [
+                "MIO086"
+              ],
+              "owner_basis": "explicit",
+              "deadline": "at the conclusion of our meeting",
+              "deadline_basis": "explicit",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": [],
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.C.dialog-act.s9553330.42"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.130"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.131"
+                },
+                {
+                  "source_type": "participant_metadata",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.1 (attributes.participant and attributes.role)"
+                }
+              ]
+            }
+          ]
+        },
+        "decisions": {
+          "system": [
+            {
+              "id": "IS1008a.sys.s.2",
+              "text": "The plan delivery timeframe will be two weeks.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.C.dialog-act.s9553330.37"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.66"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ],
+          "gold": [
+            {
+              "id": "IS1008a.JacquelinePalmer.s.12",
+              "text": "The team will discuss the developing functional-design, usability and marketing plans at the next meeting.",
+              "type": "decisions",
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": [],
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.124"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.125"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.126"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.127"
+                }
+              ]
+            },
+            {
+              "id": "IS1008a.JacquelinePalmer.s.13",
+              "text": "The immediate next step is to determine the functional design in consultation with usability and marketing.",
+              "type": "decisions",
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": [],
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.B.dialog-act.s9553330.25"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.122"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.124"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.125"
+                }
+              ]
+            }
+          ]
+        },
+        "problems": {
+          "system": [],
+          "gold": []
+        }
+      }
+    },
+    "current": {
+      "metrics": {
+        "actions": {
+          "tp": 1,
+          "sys": 2,
+          "gold": 4,
+          "precision": 0.5,
+          "recall": 0.25,
+          "f1": 0.333
+        },
+        "decisions": {
+          "tp": 0,
+          "sys": 0,
+          "gold": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "problems": {
+          "tp": 0,
+          "sys": 0,
+          "gold": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "matches": {
+        "IS1008a.sys.s.1": "IS1008a.JacquelinePalmer.s.10"
+      },
+      "unmatched": {
+        "actions": {
+          "system": [
+            {
+              "id": "IS1008a.sys.s.2",
+              "text": "Ed will provide a written project plan by the next meeting.",
+              "type": "actions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.D.dialog-act.s9553330.16"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.31"
+                }
+              ],
+              "owner": [
+                "MIE085"
+              ],
+              "owner_basis": "explicit",
+              "deadline": "by the next meeting",
+              "deadline_basis": "explicit",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ],
+          "gold": [
+            {
+              "id": "IS1008a.JacquelinePalmer.s.8",
+              "text": "The marketing expert will prepare a sales/project plan, coordinating costs and marketing strategy with the industrial designer.",
+              "type": "actions",
+              "owner": [
+                "MIE085"
+              ],
+              "owner_basis": "explicit",
+              "deadline": "by the next meeting",
+              "deadline_basis": "explicit",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": [],
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.29"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.D.dialog-act.s9553330.16"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.31"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.85"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.91"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.92"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.96"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.97"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.100"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.D.dialog-act.s9553330.49"
+                },
+                {
+                  "source_type": "participant_metadata",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.D.dialog-act.s9553330.1 (attributes.participant and attributes.role)"
+                }
+              ]
+            },
+            {
+              "id": "IS1008a.JacquelinePalmer.s.9",
+              "text": "The industrial designer will prepare an initial written functional/technical design plan, including staffing, timing and budget, in consultation with marketing.",
+              "type": "actions",
+              "owner": [
+                "FIE073"
+              ],
+              "owner_basis": "explicit",
+              "deadline": "two weeks",
+              "deadline_basis": "explicit",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": [],
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.58"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.60"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.61"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.63"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.C.dialog-act.s9553330.37"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.66"
+                },
+                {
+                  "source_type": "participant_metadata",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.C.dialog-act.s9553330.1 (attributes.participant and attributes.role)"
+                }
+              ]
+            },
+            {
+              "id": "IS1008a.JacquelinePalmer.s.11",
+              "text": "The project manager will send the participants a copy of his presentation slides at the conclusion of this meeting.",
+              "type": "actions",
+              "owner": [
+                "MIO086"
+              ],
+              "owner_basis": "explicit",
+              "deadline": "at the conclusion of our meeting",
+              "deadline_basis": "explicit",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": [],
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.C.dialog-act.s9553330.42"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.130"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.131"
+                },
+                {
+                  "source_type": "participant_metadata",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.1 (attributes.participant and attributes.role)"
+                }
+              ]
+            }
+          ]
+        },
+        "decisions": {
+          "system": [],
+          "gold": [
+            {
+              "id": "IS1008a.JacquelinePalmer.s.12",
+              "text": "The team will discuss the developing functional-design, usability and marketing plans at the next meeting.",
+              "type": "decisions",
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": [],
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.124"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.125"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.126"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.127"
+                }
+              ]
+            },
+            {
+              "id": "IS1008a.JacquelinePalmer.s.13",
+              "text": "The immediate next step is to determine the functional design in consultation with usability and marketing.",
+              "type": "decisions",
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": [],
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.B.dialog-act.s9553330.25"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.122"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.124"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.125"
+                }
+              ]
+            }
+          ]
+        },
+        "problems": {
+          "system": [],
+          "gold": [
+            {
+              "id": "IS1008a.JacquelinePalmer.s.14",
+              "text": "Initial product confusion impeded preparation: the marketing expert mentioned coffee and the industrial designer expected a monitor. The meeting clarified that the project concerns a television remote control.",
+              "type": "problems",
+              "status": "resolved",
+              "prior_context_needed": false,
+              "related_items": [],
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.D.dialog-act.s9553330.20"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.38"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.D.dialog-act.s9553330.26"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.C.dialog-act.s9553330.9"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.C.dialog-act.s9553330.11"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.C.dialog-act.s9553330.12"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.C.dialog-act.s9553330.16"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "current_before_p2": {
+      "metrics": {
+        "actions": {
+          "tp": 2,
+          "sys": 5,
+          "gold": 4,
+          "precision": 0.4,
+          "recall": 0.5,
+          "f1": 0.444
+        },
+        "decisions": {
+          "tp": 0,
+          "sys": 2,
+          "gold": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "problems": {
+          "tp": 1,
+          "sys": 2,
+          "gold": 1,
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.667
+        }
+      },
+      "matches": {
+        "IS1008a.pre.1": "IS1008a.JacquelinePalmer.s.9",
+        "IS1008a.pre.5": "IS1008a.JacquelinePalmer.s.10",
+        "IS1008a.pre.0": "IS1008a.JacquelinePalmer.s.14"
+      },
+      "unmatched": {
+        "actions": {
+          "system": [
+            {
+              "id": "IS1008a.pre.3",
+              "type": "actions",
+              "text": "ID will identify additional contributors from marketing, technical, and administration for the plan and inform PM.",
+              "evidence_da_ids": [
+                "IS1008a.C.dialog-act.s9553330.38",
+                "IS1008a.A.dialog-act.s9553330.71",
+                "IS1008a.A.dialog-act.s9553330.72",
+                "IS1008a.A.dialog-act.s9553330.73",
+                "IS1008a.C.dialog-act.s9553330.39",
+                "IS1008a.A.dialog-act.s9553330.74",
+                "IS1008a.C.dialog-act.s9553330.40"
+              ],
+              "owner_ids": [
+                "FIE073"
+              ],
+              "owner_cue": "I'll get back to you on that.",
+              "deadline_cue": null,
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "open",
+              "candidate_indexes": [
+                7
+              ]
+            },
+            {
+              "id": "IS1008a.pre.4",
+              "type": "actions",
+              "text": "UI will determine the functional design as the immediate next step.",
+              "evidence_da_ids": [
+                "IS1008a.B.dialog-act.s9553330.25",
+                "IS1008a.A.dialog-act.s9553330.122",
+                "IS1008a.B.dialog-act.s9553330.26"
+              ],
+              "owner_ids": [
+                "FIE038"
+              ],
+              "owner_cue": "the immediate next step is to start determining the functional design",
+              "deadline_cue": null,
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "open",
+              "candidate_indexes": [
+                8
+              ]
+            },
+            {
+              "id": "IS1008a.pre.6",
+              "type": "actions",
+              "text": "Ed will provide a written project plan by the next meeting.",
+              "evidence_da_ids": [
+                "IS1008a.A.dialog-act.s9553330.29",
+                "IS1008a.A.dialog-act.s9553330.30",
+                "IS1008a.D.dialog-act.s9553330.16",
+                "IS1008a.A.dialog-act.s9553330.31"
+              ],
+              "owner_ids": [
+                "MIE085"
+              ],
+              "owner_cue": "by the next meeting",
+              "deadline_cue": "by the next meeting",
+              "owner_basis": "explicit",
+              "deadline": "by the next meeting",
+              "deadline_basis": "explicit",
+              "status": "open",
+              "restored": true
+            }
+          ],
+          "gold": [
+            {
+              "id": "IS1008a.JacquelinePalmer.s.8",
+              "text": "The marketing expert will prepare a sales/project plan, coordinating costs and marketing strategy with the industrial designer.",
+              "type": "actions",
+              "owner": [
+                "MIE085"
+              ],
+              "owner_basis": "explicit",
+              "deadline": "by the next meeting",
+              "deadline_basis": "explicit",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": [],
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.29"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.D.dialog-act.s9553330.16"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.31"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.85"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.91"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.92"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.96"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.97"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.100"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.D.dialog-act.s9553330.49"
+                },
+                {
+                  "source_type": "participant_metadata",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.D.dialog-act.s9553330.1 (attributes.participant and attributes.role)"
+                }
+              ]
+            },
+            {
+              "id": "IS1008a.JacquelinePalmer.s.11",
+              "text": "The project manager will send the participants a copy of his presentation slides at the conclusion of this meeting.",
+              "type": "actions",
+              "owner": [
+                "MIO086"
+              ],
+              "owner_basis": "explicit",
+              "deadline": "at the conclusion of our meeting",
+              "deadline_basis": "explicit",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": [],
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.C.dialog-act.s9553330.42"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.130"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.131"
+                },
+                {
+                  "source_type": "participant_metadata",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.1 (attributes.participant and attributes.role)"
+                }
+              ]
+            }
+          ]
+        },
+        "decisions": {
+          "system": [
+            {
+              "id": "IS1008a.pre.7",
+              "type": "decisions",
+              "text": "The group decided that the project will focus on designing a remote control for television and will start with that remote control as the first product.",
+              "evidence_da_ids": [
+                "IS1008a.D.dialog-act.s9553330.20",
+                "IS1008a.D.dialog-act.s9553330.21",
+                "IS1008a.A.dialog-act.s9553330.38",
+                "IS1008a.D.dialog-act.s9553330.22",
+                "IS1008a.D.dialog-act.s9553330.23",
+                "IS1008a.D.dialog-act.s9553330.24",
+                "IS1008a.D.dialog-act.s9553330.25",
+                "IS1008a.A.dialog-act.s9553330.39",
+                "IS1008a.D.dialog-act.s9553330.26",
+                "IS1008a.D.dialog-act.s9553330.27"
+              ],
+              "owner_ids": [],
+              "owner_cue": null,
+              "deadline_cue": null,
+              "owner_basis": "ambiguous",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "adopted",
+              "candidate_indexes": [
+                0
+              ]
+            },
+            {
+              "id": "IS1008a.pre.8",
+              "type": "decisions",
+              "text": "The team will deliver the project plan in two weeks.",
+              "evidence_da_ids": [
+                "IS1008a.C.dialog-act.s9553330.37",
+                "IS1008a.A.dialog-act.s9553330.66"
+              ],
+              "owner_ids": [],
+              "owner_cue": null,
+              "deadline_cue": "two weeks is close enough?",
+              "owner_basis": "missing",
+              "deadline": "two weeks",
+              "deadline_basis": "explicit",
+              "status": "adopted",
+              "candidate_indexes": [
+                3
+              ]
+            }
+          ],
+          "gold": [
+            {
+              "id": "IS1008a.JacquelinePalmer.s.12",
+              "text": "The team will discuss the developing functional-design, usability and marketing plans at the next meeting.",
+              "type": "decisions",
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": [],
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.124"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.125"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.126"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.127"
+                }
+              ]
+            },
+            {
+              "id": "IS1008a.JacquelinePalmer.s.13",
+              "text": "The immediate next step is to determine the functional design in consultation with usability and marketing.",
+              "type": "decisions",
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": [],
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.B.dialog-act.s9553330.25"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.122"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.124"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.125"
+                }
+              ]
+            }
+          ]
+        },
+        "problems": {
+          "system": [
+            {
+              "id": "IS1008a.pre.2",
+              "type": "problems",
+              "text": "There is no written project plan or budget yet, and documentation is missing to present to management.",
+              "evidence_da_ids": [
+                "IS1008a.A.dialog-act.s9553330.59",
+                "IS1008a.A.dialog-act.s9553330.60",
+                "IS1008a.C.dialog-act.s9553330.34",
+                "IS1008a.C.dialog-act.s9553330.35",
+                "IS1008a.A.dialog-act.s9553330.61",
+                "IS1008a.A.dialog-act.s9553330.62",
+                "IS1008a.A.dialog-act.s9553330.63",
+                "IS1008a.C.dialog-act.s9553330.36",
+                "IS1008a.A.dialog-act.s9553330.64",
+                "IS1008a.A.dialog-act.s9553330.65",
+                "IS1008a.C.dialog-act.s9553330.37",
+                "IS1008a.A.dialog-act.s9553330.66",
+                "IS1008a.A.dialog-act.s9553330.67",
+                "IS1008a.A.dialog-act.s9553330.68",
+                "IS1008a.A.dialog-act.s9553330.69"
+              ],
+              "owner_ids": [],
+              "owner_cue": null,
+              "deadline_cue": null,
+              "owner_basis": "ambiguous",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "open",
+              "candidate_indexes": [
+                2,
+                4
+              ]
+            }
+          ],
+          "gold": []
+        }
+      }
+    }
+  },
+  "judge": "pipeline model, same-type one-to-one, three votes; no independent human validation",
+  "p2": {
+    "items": 9,
+    "accepted": 1,
+    "pending": 8,
+    "quarantined": 7,
+    "recordable_pending": 1,
+    "clarification_requests": 23,
+    "by_termination": {
+      "all_required_checks_passed": 1,
+      "invalid_action_limit": 1,
+      "no_progress": 5,
+      "unresolved_checks": 2
+    },
+    "documents_observed": 0,
+    "documents_retained": 0,
+    "relations_supported": 0,
+    "quarantined_items": [
+      {
+        "item_key": "IS1008a#0",
+        "text": "ID(FIE073) did not understand the project goal and believed the project was a different product, indicating a scope/goal misalignment.",
+        "reason": "no_progress",
+        "checks": {
+          "statement": {
+            "result": "uncertain",
+            "reason": "current_meeting_support_required",
+            "quotes": [],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "uncertain",
+            "reason": "current_meeting_support_required",
+            "quotes": [],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "uncertain",
+            "reason": "current_meeting_support_required",
+            "quotes": [],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No related_items to assess relation with earlier decisions; this is a standalone problem observation.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        }
+      },
+      {
+        "item_key": "IS1008a#1",
+        "text": "ID will deliver a written plan covering functional and technical design, staffing, timeframe, budget, and market plan by two weeks.",
+        "reason": "no_progress",
+        "checks": {
+          "statement": {
+            "result": "uncertain",
+            "reason": "Current dialogue shows discussion about delivering a written plan and timeframe, but no explicit, binding commitment to a two-week deadline by ID; references to two weeks appear as a question and general expectation, not a firm due date.",
+            "quotes": [],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "uncertain",
+            "reason": "Owner is listed as FIE073 in the record, but the observed dialogue does not contain an explicit assignment or acknowledgment by FIE073 as owner; ownership is evidenced by PM remarks requesting a written plan, not assignment.",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "current_meeting_support_required",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "uncertain",
+            "reason": "No explicit statement of current status beyond 'open' in the record; dialogue indicates ongoing planning but no final status change.",
+            "quotes": [],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "uncertain",
+            "reason": "current_meeting_support_required",
+            "quotes": [],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related_items to assess; no relation needed.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        }
+      },
+      {
+        "item_key": "IS1008a#2",
+        "text": "There is no written project plan or budget yet, and documentation is missing to present to management.",
+        "reason": "no_progress",
+        "checks": {
+          "statement": {
+            "result": "uncertain",
+            "reason": "current_meeting_support_required",
+            "quotes": [],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "uncertain",
+            "reason": "current_meeting_support_required",
+            "quotes": [],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "uncertain",
+            "reason": "current_meeting_support_required",
+            "quotes": [],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior items to relate to within this single meeting context.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        }
+      },
+      {
+        "item_key": "IS1008a#3",
+        "text": "ID will identify additional contributors from marketing, technical, and administration for the plan and inform PM.",
+        "reason": "invalid_action_limit",
+        "checks": {
+          "statement": {
+            "result": "uncertain",
+            "reason": "not_checked",
+            "quotes": [],
+            "fields": []
+          },
+          "owner": {
+            "result": "uncertain",
+            "reason": "not_checked",
+            "quotes": [],
+            "fields": []
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "not_checked",
+            "quotes": [],
+            "fields": []
+          },
+          "status": {
+            "result": "uncertain",
+            "reason": "not_checked",
+            "quotes": [],
+            "fields": []
+          },
+          "conflict": {
+            "result": "uncertain",
+            "reason": "not_checked",
+            "quotes": [],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "no_prior_check_required",
+            "quotes": [],
+            "fields": []
+          }
+        }
+      },
+      {
+        "item_key": "IS1008a#4",
+        "text": "UI will determine the functional design as the immediate next step.",
+        "reason": "unresolved_checks",
+        "checks": {
+          "statement": {
+            "result": "uncertain",
+            "reason": "current_meeting_support_required",
+            "quotes": [],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "uncertain",
+            "reason": "current_meeting_support_required",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "deadline_unresolved",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "uncertain",
+            "reason": "current_meeting_support_required",
+            "quotes": [],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "uncertain",
+            "reason": "current_meeting_support_required",
+            "quotes": [],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior or related items referenced for this item.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        }
+      },
+      {
+        "item_key": "IS1008a#7",
+        "text": "The group decided that the project will focus on designing a remote control for television and will start with that remote control as the first product.",
+        "reason": "no_progress",
+        "checks": {
+          "statement": {
+            "result": "uncertain",
+            "reason": "current_meeting_support_required",
+            "quotes": [],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "uncertain",
+            "reason": "current_meeting_support_required",
+            "quotes": [],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "uncertain",
+            "reason": "current_meeting_support_required",
+            "quotes": [],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No related_items to assess relationship with.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        }
+      },
+      {
+        "item_key": "IS1008a#8",
+        "text": "The team will deliver the project plan in two weeks.",
+        "reason": "unresolved_checks",
+        "checks": {
+          "statement": {
+            "result": "uncertain",
+            "reason": "Dialogue shows agreement to the idea of delivering a project plan in two weeks, but no explicit confirmation of the two-week deadline in current statements; prior dialogue questions feasibility.",
+            "quotes": [
+              {
+                "da_id": "IS1008a.C.dialog-act.s9553330.37",
+                "quote": "<vocalsound> Uh well if uh if we have enough time uh then d do you think um two weeks is a <disfmarker> is close enough ?"
+              },
+              {
+                "da_id": "IS1008a.A.dialog-act.s9553330.66",
+                "quote": "Yes I think uh that would be good ,"
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "uncertain",
+            "reason": "current_meeting_support_required",
+            "quotes": [],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "uncertain",
+            "reason": "There is a potential misalignment with earlier concern about two-week feasibility seen in C's comment; not enough to declare conflict.",
+            "quotes": [],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No related items to assess relation.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "support": {
+    "baseline": [
+      {
+        "id": "IS1008a.sys.s.1",
+        "text": "The project goal and scope are unclear (conflicting ideas about whether the product is a remote control or a monitor); there is no written plan or design plan yet; functional and technical designs have not started; without documentation, PM cannot present cost/timeframe to management.",
+        "verdict": {
+          "item": 0,
+          "statement": "supported",
+          "owner": "na",
+          "deadline": "na"
+        }
+      },
+      {
+        "id": "IS1008a.sys.s.2",
+        "text": "The plan delivery timeframe will be two weeks.",
+        "verdict": {
+          "item": 1,
+          "statement": "supported",
+          "owner": "supported",
+          "deadline": "supported"
+        }
+      },
+      {
+        "id": "IS1008a.sys.s.3",
+        "text": "ME will provide a written project plan by the next meeting.",
+        "verdict": {
+          "item": 2,
+          "statement": "supported",
+          "owner": "supported",
+          "deadline": "supported"
+        }
+      },
+      {
+        "id": "IS1008a.sys.s.4",
+        "text": "FIE073 will prepare a written plan including functional design, technical design, team size, time frame, budget, and market plan within two weeks.",
+        "verdict": {
+          "item": 3,
+          "statement": "unsupported",
+          "owner": "partial",
+          "deadline": "unsupported"
+        }
+      },
+      {
+        "id": "IS1008a.sys.s.5",
+        "text": "FIE038, MIE085, and FIE073 will start determining the functional design and discuss and determine the project cost and how we will compete in the market.",
+        "verdict": {
+          "item": 4,
+          "statement": "supported",
+          "owner": "supported",
+          "deadline": "na"
+        }
+      },
+      {
+        "id": "IS1008a.sys.s.6",
+        "text": "Ed will conduct research on remote controls and market opportunities to identify the target market, and coordinate with Christine on the marketing/sales plan.",
+        "verdict": {
+          "item": 5,
+          "statement": "unsupported",
+          "owner": "partial",
+          "deadline": "na"
+        }
+      },
+      {
+        "id": "IS1008a.sys.s.7",
+        "text": "UI will keep Ed in the loop by copying him on discussions and documents.",
+        "verdict": {
+          "item": 6,
+          "statement": "supported",
+          "owner": "supported",
+          "deadline": "na"
+        }
+      }
+    ],
+    "current": [
+      {
+        "id": "IS1008a.sys.s.1",
+        "text": "UI will build the overall plan incorporating inputs from usability, marketing, and design groups.",
+        "verdict": {
+          "item": 0,
+          "statement": "partial",
+          "owner": "unsupported",
+          "deadline": "unsupported",
+          "note": "Lines show UI will build the plan but do not explicitly state 'written' or assign an owner or deadline."
+        }
+      },
+      {
+        "id": "IS1008a.sys.s.2",
+        "text": "Ed will provide a written project plan by the next meeting.",
+        "verdict": {
+          "item": 1,
+          "statement": "partial",
+          "owner": "supported",
+          "deadline": "supported",
+          "note": "Ed is the actor (MIE085) and deadline 'by the next meeting' is evidenced; 'written' qualifier is not explicit in lines."
+        }
+      }
+    ]
+  },
+  "finished_at": "2026-10-28T05:02:17.795652+00:00",
+  "runtime_control": {
+    "limits": {
+      "calls": 80,
+      "tokens": 1000000,
+      "request_seconds": 300.0,
+      "meeting_seconds": 1200.0,
+      "inflight": 4,
+      "retries": 2,
+      "backoff": 0.5
+    },
+    "attempted_calls": 23,
+    "charged_tokens": 59101,
+    "unknown_usage_tokens": 0,
+    "reserved_tokens": 0,
+    "max_inflight_seen": 1,
+    "failure": null,
+    "attempts": [
+      {
+        "attempt": 0,
+        "stage": "other",
+        "reserved_tokens": 35103,
+        "input_bound": 3103,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 4223,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 464,
+        "output_tokens": 3759
+      },
+      {
+        "attempt": 1,
+        "stage": "other",
+        "reserved_tokens": 35103,
+        "input_bound": 3103,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 5183,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 464,
+        "output_tokens": 4719
+      },
+      {
+        "attempt": 2,
+        "stage": "other",
+        "reserved_tokens": 35103,
+        "input_bound": 3103,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 4864,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 464,
+        "output_tokens": 4400
+      },
+      {
+        "attempt": 3,
+        "stage": "other",
+        "reserved_tokens": 34169,
+        "input_bound": 2169,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 943,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 280,
+        "output_tokens": 663
+      },
+      {
+        "attempt": 4,
+        "stage": "other",
+        "reserved_tokens": 34169,
+        "input_bound": 2169,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 943,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 280,
+        "output_tokens": 663
+      },
+      {
+        "attempt": 5,
+        "stage": "other",
+        "reserved_tokens": 34169,
+        "input_bound": 2169,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 815,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 280,
+        "output_tokens": 535
+      },
+      {
+        "attempt": 6,
+        "stage": "other",
+        "reserved_tokens": 34398,
+        "input_bound": 2398,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 1053,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 318,
+        "output_tokens": 735
+      },
+      {
+        "attempt": 7,
+        "stage": "other",
+        "reserved_tokens": 34398,
+        "input_bound": 2398,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 925,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 318,
+        "output_tokens": 607
+      },
+      {
+        "attempt": 8,
+        "stage": "other",
+        "reserved_tokens": 34398,
+        "input_bound": 2398,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 989,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 318,
+        "output_tokens": 671
+      },
+      {
+        "attempt": 9,
+        "stage": "other",
+        "reserved_tokens": 34653,
+        "input_bound": 2653,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 2189,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 366,
+        "output_tokens": 1823
+      },
+      {
+        "attempt": 10,
+        "stage": "other",
+        "reserved_tokens": 34653,
+        "input_bound": 2653,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 2317,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 366,
+        "output_tokens": 1951
+      },
+      {
+        "attempt": 11,
+        "stage": "other",
+        "reserved_tokens": 34653,
+        "input_bound": 2653,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 1997,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 366,
+        "output_tokens": 1631
+      },
+      {
+        "attempt": 12,
+        "stage": "other",
+        "reserved_tokens": 34983,
+        "input_bound": 2983,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 6302,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 431,
+        "output_tokens": 5871
+      },
+      {
+        "attempt": 13,
+        "stage": "other",
+        "reserved_tokens": 34983,
+        "input_bound": 2983,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 3288,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 431,
+        "output_tokens": 2857
+      },
+      {
+        "attempt": 14,
+        "stage": "other",
+        "reserved_tokens": 34983,
+        "input_bound": 2983,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 4054,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 431,
+        "output_tokens": 3623
+      },
+      {
+        "attempt": 15,
+        "stage": "other",
+        "reserved_tokens": 34333,
+        "input_bound": 2333,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 1487,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 312,
+        "output_tokens": 1175
+      },
+      {
+        "attempt": 16,
+        "stage": "other",
+        "reserved_tokens": 34333,
+        "input_bound": 2333,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 1487,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 312,
+        "output_tokens": 1175
+      },
+      {
+        "attempt": 17,
+        "stage": "other",
+        "reserved_tokens": 34333,
+        "input_bound": 2333,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 1680,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 312,
+        "output_tokens": 1368
+      },
+      {
+        "attempt": 18,
+        "stage": "other",
+        "reserved_tokens": 34355,
+        "input_bound": 2355,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 1050,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 315,
+        "output_tokens": 735
+      },
+      {
+        "attempt": 19,
+        "stage": "other",
+        "reserved_tokens": 34355,
+        "input_bound": 2355,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 1114,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 315,
+        "output_tokens": 799
+      },
+      {
+        "attempt": 20,
+        "stage": "other",
+        "reserved_tokens": 34355,
+        "input_bound": 2355,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 1114,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 315,
+        "output_tokens": 799
+      },
+      {
+        "attempt": 21,
+        "stage": "other",
+        "reserved_tokens": 40179,
+        "input_bound": 8179,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 8120,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 1899,
+        "output_tokens": 6221
+      },
+      {
+        "attempt": 22,
+        "stage": "other",
+        "reserved_tokens": 35152,
+        "input_bound": 3152,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 2964,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 543,
+        "output_tokens": 2421
+      }
+    ],
+    "input_bound_method": "utf8_request_bytes_plus_padding",
+    "unknown_usage_policy": "charge_full_reservation"
+  },
+  "usage": {
+    "calls": 23,
+    "in": 9900,
+    "out": 49201,
+    "stages": {
+      "other": {
+        "calls": 23,
+        "in": 9900,
+        "out": 49201
+      }
+    }
+  }
+}

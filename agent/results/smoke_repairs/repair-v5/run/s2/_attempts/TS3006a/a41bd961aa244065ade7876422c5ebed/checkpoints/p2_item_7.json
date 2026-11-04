@@ -1,0 +1,472 @@
+{
+  "item_key": "TS3006a#7",
+  "record_id": null,
+  "item_type": "decisions",
+  "item_text": "Production cost should be half of the selling price.",
+  "state": "accepted",
+  "recordable": true,
+  "fields": {
+    "status": "adopted",
+    "prior_context_needed": false,
+    "related_items": [],
+    "reference": [
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3006a.json",
+        "locator": "TS3006a.A.dialog-act.vkaraisk.133"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3006a.json",
+        "locator": "TS3006a.C.dialog-act.vkaraisk.73"
+      }
+    ]
+  },
+  "draft_fields": {
+    "status": "adopted",
+    "related_items": [],
+    "prior_context_needed": false,
+    "used_participant_lookup": false,
+    "evidence_da_ids": [
+      "TS3006a.A.dialog-act.vkaraisk.133",
+      "TS3006a.C.dialog-act.vkaraisk.73"
+    ],
+    "owner": null,
+    "owner_basis": "missing",
+    "deadline": null,
+    "deadline_basis": "missing"
+  },
+  "checks": {
+    "statement": {
+      "result": "pass",
+      "reason": "The dialogue explicitly states the production cost should be half of the selling price.",
+      "quotes": [
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.133",
+          "quote": "And the production cost should be the half of the selling price ."
+        },
+        {
+          "da_id": "TS3006a.C.dialog-act.vkaraisk.73",
+          "quote": "So we have to s"
+        }
+      ],
+      "fields": [
+        "statement"
+      ]
+    },
+    "status": {
+      "result": "pass",
+      "reason": "Current dialogue supports the stated decision; no contradictions found.",
+      "quotes": [
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.133",
+          "quote": "And the production cost should be the half of the selling price ."
+        },
+        {
+          "da_id": "TS3006a.C.dialog-act.vkaraisk.73",
+          "quote": "So we have to s"
+        }
+      ],
+      "fields": [
+        "status"
+      ]
+    },
+    "conflict": {
+      "result": "pass",
+      "reason": "No contradictions found within the presented dialogue; no affected fields.",
+      "quotes": [
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.133",
+          "quote": "And the production cost should be the half of the selling price ."
+        },
+        {
+          "da_id": "TS3006a.C.dialog-act.vkaraisk.73",
+          "quote": "So we have to s"
+        }
+      ],
+      "fields": []
+    },
+    "relation": {
+      "result": "not_applicable",
+      "reason": "No earlier related-items to compare; this is a standalone decision in this meeting.",
+      "quotes": [],
+      "fields": [
+        "related_items"
+      ]
+    },
+    "owner": {
+      "result": "not_applicable",
+      "reason": "field_not_applicable",
+      "quotes": [],
+      "fields": [
+        "owner"
+      ]
+    },
+    "deadline": {
+      "result": "not_applicable",
+      "reason": "field_not_applicable",
+      "quotes": [],
+      "fields": [
+        "deadline"
+      ]
+    }
+  },
+  "unresolved_fields": [],
+  "observed_evidence_da_ids": [
+    "TS3006a.A.dialog-act.vkaraisk.133",
+    "TS3006a.C.dialog-act.vkaraisk.73",
+    "TS3006a.A.dialog-act.vkaraisk.132",
+    "TS3006a.A.dialog-act.vkaraisk.134"
+  ],
+  "initial_context": {
+    "item": {
+      "type": "decisions",
+      "text": "Production cost should be half of the selling price.",
+      "flags": []
+    },
+    "current_meeting": "TS3006a",
+    "earlier_meetings": [],
+    "roster": [
+      {
+        "speaker": "A",
+        "participant_id": "MTD021PM",
+        "role": "PM"
+      },
+      {
+        "speaker": "B",
+        "participant_id": "MTD023UID",
+        "role": "UI"
+      },
+      {
+        "speaker": "C",
+        "participant_id": "MTD022ID",
+        "role": "ID"
+      },
+      {
+        "speaker": "D",
+        "participant_id": "MTD024ME",
+        "role": "ME"
+      }
+    ],
+    "observed_dialogue": [
+      {
+        "da_id": "TS3006a.A.dialog-act.vkaraisk.133",
+        "meeting_id": "TS3006a",
+        "text": "And the production cost should be the half of the selling price .",
+        "participant": "MTD021PM",
+        "role": "PM"
+      },
+      {
+        "da_id": "TS3006a.C.dialog-act.vkaraisk.73",
+        "meeting_id": "TS3006a",
+        "text": "So we have to s",
+        "participant": "MTD022ID",
+        "role": "ID"
+      },
+      {
+        "da_id": "TS3006a.A.dialog-act.vkaraisk.132",
+        "participant": "MTD021PM",
+        "role": "PM",
+        "text": "Uh that's quite a big amount of money ."
+      },
+      {
+        "da_id": "TS3006a.A.dialog-act.vkaraisk.134",
+        "participant": "MTD021PM",
+        "role": "PM",
+        "text": "Okay"
+      }
+    ],
+    "peer_items": [
+      {
+        "item_key": "TS3006a#0",
+        "type": "actions",
+        "text": "Summarise the discussed items and place in the project folder."
+      },
+      {
+        "item_key": "TS3006a#1",
+        "type": "actions",
+        "text": "Start on the conceptual design."
+      },
+      {
+        "item_key": "TS3006a#2",
+        "type": "actions",
+        "text": "Produce a working design."
+      },
+      {
+        "item_key": "TS3006a#3",
+        "type": "actions",
+        "text": "Specify the technical functions."
+      },
+      {
+        "item_key": "TS3006a#4",
+        "type": "actions",
+        "text": "Come up with user requirements."
+      },
+      {
+        "item_key": "TS3006a#5",
+        "type": "problems",
+        "text": "There is poor communication about component requirements and design decisions, and the next session plan and component specification are unclear."
+      },
+      {
+        "item_key": "TS3006a#6",
+        "type": "decisions",
+        "text": "Set selling price at 25 Euros."
+      }
+    ],
+    "provisional_values": {
+      "owner": null,
+      "owner_basis": "missing",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "status": "adopted",
+      "related_items": []
+    },
+    "candidate_evidence_da_ids": [
+      "TS3006a.A.dialog-act.vkaraisk.133",
+      "TS3006a.C.dialog-act.vkaraisk.73"
+    ]
+  },
+  "observed_documents": [],
+  "document_evidence": [],
+  "relation_evidence": [],
+  "history": [
+    {
+      "item": "TS3006a#7",
+      "step": 1,
+      "flags": [],
+      "action": "assess_item",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue explicitly states the production cost should be half of the selling price.",
+          "quotes": [
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.133",
+              "quote": "And the production cost should be the half of the selling price ."
+            },
+            {
+              "da_id": "TS3006a.C.dialog-act.vkaraisk.73",
+              "quote": "So we have to s"
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Current dialogue supports the stated decision; no contradictions found.",
+          "quotes": [
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.133",
+              "quote": "And the production cost should be the half of the selling price ."
+            },
+            {
+              "da_id": "TS3006a.C.dialog-act.vkaraisk.73",
+              "quote": "So we have to s"
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions found within the presented dialogue; no affected fields.",
+          "quotes": [
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.133",
+              "quote": "And the production cost should be the half of the selling price ."
+            },
+            {
+              "da_id": "TS3006a.C.dialog-act.vkaraisk.73",
+              "quote": "So we have to s"
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No earlier related-items to compare; this is a standalone decision in this meeting.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        },
+        "owner": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        }
+      },
+      "decision": "accept",
+      "reason": "all_required_checks_passed",
+      "assessed_text": "Production cost should be half of the selling price.",
+      "requested_action": "accept",
+      "proposed_fields": {
+        "status": "adopted",
+        "related_items": [],
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "TS3006a.A.dialog-act.vkaraisk.133",
+          "TS3006a.C.dialog-act.vkaraisk.73"
+        ],
+        "owner": null,
+        "owner_basis": "missing",
+        "deadline": null,
+        "deadline_basis": "missing"
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue explicitly states the production cost should be half of the selling price.",
+          "quotes": [
+            "TS3006a.A.dialog-act.vkaraisk.133",
+            "TS3006a.C.dialog-act.vkaraisk.73"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Current dialogue supports the stated decision; no contradictions found.",
+          "quotes": [
+            "TS3006a.A.dialog-act.vkaraisk.133",
+            "TS3006a.C.dialog-act.vkaraisk.73"
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions found within the presented dialogue; no affected fields.",
+          "quotes": [
+            "TS3006a.A.dialog-act.vkaraisk.133",
+            "TS3006a.C.dialog-act.vkaraisk.73"
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No earlier related-items to compare; this is a standalone decision in this meeting.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "status": "adopted",
+        "related_items": [],
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue explicitly states the production cost should be half of the selling price.",
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.133",
+            "TS3006a.C.dialog-act.vkaraisk.73"
+          ]
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "Current dialogue supports the stated decision; no contradictions found.",
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.133",
+            "TS3006a.C.dialog-act.vkaraisk.73"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No contradictions found within the presented dialogue; no affected fields.",
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.133",
+            "TS3006a.C.dialog-act.vkaraisk.73"
+          ],
+          "affected_fields": []
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No earlier related-items to compare; this is a standalone decision in this meeting.",
+          "evidence_da_ids": []
+        },
+        "next_action": "accept"
+      },
+      "evidence_bindings": {
+        "statement": [
+          "TS3006a.A.dialog-act.vkaraisk.133",
+          "TS3006a.C.dialog-act.vkaraisk.73"
+        ],
+        "status": [
+          "TS3006a.A.dialog-act.vkaraisk.133",
+          "TS3006a.C.dialog-act.vkaraisk.73"
+        ],
+        "conflict": [
+          "TS3006a.A.dialog-act.vkaraisk.133",
+          "TS3006a.C.dialog-act.vkaraisk.73"
+        ]
+      },
+      "raw_tool_input": {
+        "status": "adopted",
+        "related_items": [],
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue explicitly states the production cost should be half of the selling price.",
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.133",
+            "TS3006a.C.dialog-act.vkaraisk.73"
+          ]
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "Current dialogue supports the stated decision; no contradictions found.",
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.133",
+            "TS3006a.C.dialog-act.vkaraisk.73"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No contradictions found within the presented dialogue; no affected fields.",
+          "evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.133",
+            "TS3006a.C.dialog-act.vkaraisk.73"
+          ],
+          "affected_fields": []
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No earlier related-items to compare; this is a standalone decision in this meeting.",
+          "evidence_da_ids": []
+        },
+        "next_action": "accept"
+      },
+      "protocol_normalizations": []
+    },
+    {
+      "item": "TS3006a#7",
+      "step": 1,
+      "flags": [],
+      "action": "accept",
+      "outcome": "accepted",
+      "termination_reason": "all_required_checks_passed",
+      "unresolved_fields": []
+    }
+  ],
+  "lookups": 0,
+  "termination_reason": "all_required_checks_passed",
+  "clarifications": []
+}

@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-10-29T04:00:18.548146+00:00",
+  "status": "DEVELOPMENT_SOURCE_FROZEN_WITH_KNOWN_PENDING_ITEMS",
+  "scope": "Engineering/development freeze, not final evaluation or a claim of fully adjudicated model output.",
+  "primary": "release-v9",
+  "branch": "agent-development",
+  "head": "df0e6ed3fdede653e815fa8d03dec12dd0b4f250",
+  "committed": false,
+  "tests": {
+    "passed": 306,
+    "subtests_passed": 11,
+    "seconds": 41.56,
+    "api_calls": 0
+  },
+  "source_and_input_hashes_verified": true,
+  "frozen_launcher_verify_only": "PASSED; 0 API calls",
+  "frozen_package_parse_schema_smoke": "PASSED; imported snapshot source, parsed all three inputs, validated schemas; 0 API calls",
+  "protected_annotation_files_unchanged": 28,
+  "prior_artifact_hashes_unchanged": 2813,
+  "required_human_cases_confirmed": [
+    "is1008a_slides",
+    "ts3006a_atomic_financial_decisions",
+    "ts3006a_ui_functions"
+  ],
+  "supplemental_human_pending": [
+    "is1008a_marketing_coordination"
+  ],
+  "all_output_and_sidecar_validators_pass": true,
+  "original_limits_preserved": true,
+  "controls": [
+    {
+      "meeting": "IS1008a",
+      "new_model_attempts": 26,
+      "combined_attempts": 37,
+      "combined_charged_tokens": 319917,
+      "recordable": 5,
+      "items": 8,
+      "core_reviews": 2
+    },
+    {
+      "meeting": "TS3006a",
+      "new_model_attempts": 28,
+      "combined_attempts": 44,
+      "combined_charged_tokens": 351000,
+      "recordable": 11,
+      "items": 15,
+      "core_reviews": 1
+    },
+    {
+      "meeting": "TS3006b",
+      "new_model_attempts": 22,
+      "combined_attempts": 41,
+      "combined_charged_tokens": 432365,
+      "recordable": 13,
+      "items": 13,
+      "core_reviews": 0
+    }
+  ],
+  "literal_time_guard_original_response_replay": "PASSED; false Friday not published; zero API calls",
+  "credentials": {
+    "key_value_matches": 0,
+    "key_not_stored_or_displayed": true
+  },
+  "known_limits": [
+    "Draft development gold and noisy model alignment; inspect alignment_review.json.",
+    "Relative time/general semantic entailment remain model-judged.",
+    "No autonomous successful deletion was demonstrated by the online fault-injection sample; unit tests cover valid revision and mandatory reassessment.",
+    "Some supported candidates remain pending or can be cut by unchanged final type limits."
+  ]
+}

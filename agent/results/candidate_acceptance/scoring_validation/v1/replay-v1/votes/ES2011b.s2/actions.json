@@ -1,0 +1,71 @@
+{
+  "identity": {
+    "protocol_digest": "3e12e777261bc6f000043ee97b251767817e36fd701be2468b2a974be3579a96",
+    "judge": {
+      "name": "@30875-fall26-openai/gpt-5-nano",
+      "client": "mta.llm.OpenAIAdapter",
+      "endpoint": "https://api.portkey.ai/v1",
+      "supports_reasoning_effort": true
+    },
+    "type": "actions",
+    "input_sha256": "381d87551999a3cc58e3a4ecedb22f0f1103a6a5c256fcb95de939384805075b",
+    "system_texts": [
+      "The PM will upload the meeting minutes to the shared documents folder and have them up for the next meeting.",
+      "All participants will finish their questionnaire after this meeting and bring new ideas to the next meeting.",
+      "The PM will check the new project requirements and update the team at the next meeting."
+    ],
+    "gold_texts": [
+      "All participants will finish their questionnaire.",
+      "The Designers and the Marketing Expert will work on their individual presentations.",
+      "The Project Manager will check whether the television-only requirement rules out DVD control and update the group at the next meeting.",
+      "The Project Manager will put the meeting minutes in the shared documents folder."
+    ]
+  },
+  "votes": {
+    "381d87551999a3cc58e3": [
+      [
+        {
+          "sys": 0,
+          "gold": 3
+        },
+        {
+          "sys": 1,
+          "gold": 0
+        },
+        {
+          "sys": 2,
+          "gold": 2
+        }
+      ],
+      [
+        {
+          "sys": 0,
+          "gold": 3
+        },
+        {
+          "sys": 1,
+          "gold": 0
+        },
+        {
+          "sys": 2,
+          "gold": 2
+        }
+      ],
+      [
+        {
+          "sys": 0,
+          "gold": 3
+        },
+        {
+          "sys": 1,
+          "gold": 0
+        }
+      ]
+    ]
+  },
+  "imported_from": {
+    "path": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\recall_candidate\\41654ab-v2\\replay\\ES2011b\\stable_votes.json",
+    "sha256": "ef95e58d9bd9ba3df9fe04813ab4d1d03f150723c5988df9c2b7767fc2b29f00",
+    "kind": "verified_saved_development_study"
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "control": {
+    "limits": {
+      "calls": 58,
+      "tokens": 699711,
+      "request_seconds": 300.0,
+      "meeting_seconds": 564.317,
+      "inflight": 4,
+      "retries": 2,
+      "backoff": 0.5
+    },
+    "attempted_calls": 6,
+    "charged_tokens": 51814,
+    "unknown_usage_tokens": 0,
+    "reserved_tokens": 0,
+    "max_inflight_seen": 1,
+    "failure": null,
+    "attempts": [
+      {
+        "attempt": 0,
+        "stage": "p2_check",
+        "reserved_tokens": 60015,
+        "input_bound": 28015,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 9022,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 5392,
+        "output_tokens": 3630
+      },
+      {
+        "attempt": 1,
+        "stage": "agent",
+        "reserved_tokens": 52745,
+        "input_bound": 20745,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 4813,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 3946,
+        "output_tokens": 867
+      },
+      {
+        "attempt": 2,
+        "stage": "agent",
+        "reserved_tokens": 54252,
+        "input_bound": 22252,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 5221,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 4293,
+        "output_tokens": 928
+      },
+      {
+        "attempt": 3,
+        "stage": "p2_check",
+        "reserved_tokens": 67110,
+        "input_bound": 35110,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 10658,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 7146,
+        "output_tokens": 3512
+      },
+      {
+        "attempt": 4,
+        "stage": "p2_check",
+        "reserved_tokens": 68223,
+        "input_bound": 36223,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 10912,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 7352,
+        "output_tokens": 3560
+      },
+      {
+        "attempt": 5,
+        "stage": "p2_check",
+        "reserved_tokens": 74232,
+        "input_bound": 42232,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 11188,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 8858,
+        "output_tokens": 2330
+      }
+    ],
+    "input_bound_method": "utf8_request_bytes_plus_padding",
+    "unknown_usage_policy": "charge_full_reservation"
+  },
+  "usage": {
+    "calls": 6,
+    "in": 36987,
+    "out": 14827,
+    "stages": {
+      "p2_check": {
+        "calls": 4,
+        "in": 28748,
+        "out": 13032
+      },
+      "agent": {
+        "calls": 2,
+        "in": 8239,
+        "out": 1795
+      }
+    }
+  },
+  "admission": {
+    "capacity": 55,
+    "tail_calls_reserved": 3,
+    "attempts_by_item": {
+      "TS3006b#10": 6
+    },
+    "issued": 6
+  }
+}

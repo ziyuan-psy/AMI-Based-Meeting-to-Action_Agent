@@ -1,0 +1,439 @@
+{
+  "created_at": "2026-10-29T23:13:41.804202+00:00",
+  "commit": "787d88e34d803a3bcafa4817720634f2dd74b50e",
+  "mode": "s2",
+  "scheduled": 4,
+  "attempted": 4,
+  "completed": 3,
+  "completion_fraction": 0.75,
+  "statuses": {
+    "COMPLETED": 3,
+    "FAILED": 1
+  },
+  "artifact_audit": "PASSED",
+  "campaign_result": "COMPLETION_OR_AUDIT_GAPS",
+  "issues": [],
+  "meetings": [
+    {
+      "meeting_id": "TS3006a",
+      "status": "COMPLETED",
+      "seconds": 317.7,
+      "api_attempts": 38,
+      "known_tokens": 328324,
+      "charged_tokens": 328324,
+      "unknown_usage_tokens": 0,
+      "model_attempts_by_stage": {
+        "extract": 8,
+        "consolidate": 4,
+        "decision_consolidate": 3,
+        "select": 1,
+        "p2_check": 21,
+        "abstract": 1
+      },
+      "max_inflight_seen": 4,
+      "historical_cache_hits": 0,
+      "stage_trace_events": 129,
+      "agent_trace_events": 42,
+      "checkpoints_saved": 51,
+      "failed_stage": null,
+      "reason": null,
+      "parser_warnings": [],
+      "prior_context": [],
+      "selection_attempts": 1,
+      "selection_errors": [],
+      "duplicate_reason_metadata": [],
+      "validation_errors": [],
+      "record_counts": {
+        "actions": 5,
+        "problems": 2,
+        "decisions": 6,
+        "abstract": 1
+      },
+      "p2_items": 14,
+      "accepted": 9,
+      "pending": 5,
+      "recordable": 13,
+      "clarification_requests": 7,
+      "schema_rejections": 1,
+      "lookup_rejections": 0,
+      "invalid_actions": 1,
+      "protocol_normalizations": 9,
+      "actual_tools": {},
+      "termination_counts": {
+        "supported_statement_with_unresolved_fields": 3,
+        "unresolved_checks": 2,
+        "all_required_checks_passed": 9
+      },
+      "published_links": 0,
+      "relation_pending": 0,
+      "valid_revisions": 0,
+      "document_citations": 0
+    },
+    {
+      "meeting_id": "TS3006b",
+      "status": "COMPLETED",
+      "seconds": 469.3,
+      "api_attempts": 64,
+      "known_tokens": 645127,
+      "charged_tokens": 645127,
+      "unknown_usage_tokens": 0,
+      "model_attempts_by_stage": {
+        "extract": 12,
+        "consolidate": 4,
+        "decision_consolidate": 4,
+        "select": 1,
+        "p2_check": 20,
+        "agent": 22,
+        "abstract": 1
+      },
+      "max_inflight_seen": 4,
+      "historical_cache_hits": 0,
+      "stage_trace_events": 186,
+      "agent_trace_events": 59,
+      "checkpoints_saved": 37,
+      "failed_stage": null,
+      "reason": null,
+      "parser_warnings": [],
+      "prior_context": [
+        {
+          "meeting_id": "TS3006a",
+          "transcript_sha256": "989aaffb32827a926df149f62f651310067368cef0e6638de23df1f4acc24efe",
+          "record_sha256": "f7169296423149fde81a1acef85adf268644701e9fd0a13f3a881ecd0e3e580e"
+        }
+      ],
+      "selection_attempts": 1,
+      "selection_errors": [],
+      "duplicate_reason_metadata": [
+        {
+          "trace_seq": 83,
+          "source": "C2",
+          "duplicate_of": "C1",
+          "action": "duplicate_reason_from_explicit_target",
+          "reason_origin": "code_metadata"
+        },
+        {
+          "trace_seq": 83,
+          "source": "C4",
+          "duplicate_of": "C3",
+          "action": "duplicate_reason_from_explicit_target",
+          "reason_origin": "code_metadata"
+        },
+        {
+          "trace_seq": 83,
+          "source": "C9",
+          "duplicate_of": "C1",
+          "action": "duplicate_reason_from_explicit_target",
+          "reason_origin": "code_metadata"
+        },
+        {
+          "trace_seq": 83,
+          "source": "C10",
+          "duplicate_of": "C0",
+          "action": "duplicate_reason_from_explicit_target",
+          "reason_origin": "code_metadata"
+        },
+        {
+          "trace_seq": 83,
+          "source": "C14",
+          "duplicate_of": "C13",
+          "action": "duplicate_reason_from_explicit_target",
+          "reason_origin": "code_metadata"
+        }
+      ],
+      "validation_errors": [],
+      "record_counts": {
+        "actions": 3,
+        "decisions": 6,
+        "abstract": 5
+      },
+      "p2_items": 11,
+      "accepted": 5,
+      "pending": 6,
+      "recordable": 9,
+      "clarification_requests": 10,
+      "schema_rejections": 4,
+      "lookup_rejections": 0,
+      "invalid_actions": 4,
+      "protocol_normalizations": 33,
+      "actual_tools": {
+        "get_prior_items": 6,
+        "read_prior_item": 4,
+        "read_dialogue": 1
+      },
+      "termination_counts": {
+        "no_progress": 3,
+        "unresolved_checks": 2,
+        "stop": 1,
+        "all_required_checks_passed": 5
+      },
+      "published_links": 2,
+      "relation_pending": 4,
+      "valid_revisions": 0,
+      "document_citations": 0
+    },
+    {
+      "meeting_id": "TS3006c",
+      "status": "COMPLETED",
+      "seconds": 432.8,
+      "api_attempts": 78,
+      "known_tokens": 725521,
+      "charged_tokens": 725521,
+      "unknown_usage_tokens": 0,
+      "model_attempts_by_stage": {
+        "extract": 13,
+        "consolidate": 3,
+        "decision_consolidate": 3,
+        "select": 1,
+        "p2_check": 33,
+        "agent": 24,
+        "abstract": 1
+      },
+      "max_inflight_seen": 4,
+      "historical_cache_hits": 0,
+      "stage_trace_events": 216,
+      "agent_trace_events": 77,
+      "checkpoints_saved": 41,
+      "failed_stage": null,
+      "reason": null,
+      "parser_warnings": [],
+      "prior_context": [
+        {
+          "meeting_id": "TS3006a",
+          "transcript_sha256": "989aaffb32827a926df149f62f651310067368cef0e6638de23df1f4acc24efe",
+          "record_sha256": "f7169296423149fde81a1acef85adf268644701e9fd0a13f3a881ecd0e3e580e"
+        },
+        {
+          "meeting_id": "TS3006b",
+          "transcript_sha256": "5b9b91a6010a7aef1233695f67b41160fb82e462fdccc7ba907199b1bc09ab9b",
+          "record_sha256": "162bc2976aaa99497dd180ee28205477b8d87d344549a965ce4b97c96c684599"
+        }
+      ],
+      "selection_attempts": 1,
+      "selection_errors": [],
+      "duplicate_reason_metadata": [],
+      "validation_errors": [],
+      "record_counts": {
+        "actions": 4,
+        "problems": 1,
+        "decisions": 5,
+        "abstract": 4
+      },
+      "p2_items": 13,
+      "accepted": 3,
+      "pending": 10,
+      "recordable": 10,
+      "clarification_requests": 16,
+      "schema_rejections": 12,
+      "lookup_rejections": 0,
+      "invalid_actions": 12,
+      "protocol_normalizations": 13,
+      "actual_tools": {
+        "get_prior_items": 9,
+        "read_prior_item": 4,
+        "read_dialogue": 3
+      },
+      "termination_counts": {
+        "all_required_checks_passed": 3,
+        "unresolved_checks": 2,
+        "supported_statement_with_unresolved_fields": 1,
+        "invalid_action_limit": 2,
+        "no_progress": 1,
+        "request_clarification": 1,
+        "p2_call_allowance_exhausted": 3
+      },
+      "published_links": 1,
+      "relation_pending": 6,
+      "valid_revisions": 0,
+      "document_citations": 0
+    },
+    {
+      "meeting_id": "TS3006d",
+      "status": "FAILED",
+      "seconds": 228.25,
+      "api_attempts": 21,
+      "known_tokens": 320958,
+      "charged_tokens": 366880,
+      "unknown_usage_tokens": 45922,
+      "model_attempts_by_stage": {
+        "extract": 17,
+        "consolidate": 4
+      },
+      "max_inflight_seen": 4,
+      "historical_cache_hits": 0,
+      "stage_trace_events": 71,
+      "agent_trace_events": 0,
+      "checkpoints_saved": 2,
+      "failed_stage": "consolidate",
+      "reason": "stage_failed",
+      "parser_warnings": [],
+      "prior_context": [
+        {
+          "meeting_id": "TS3006a",
+          "transcript_sha256": "989aaffb32827a926df149f62f651310067368cef0e6638de23df1f4acc24efe",
+          "record_sha256": "f7169296423149fde81a1acef85adf268644701e9fd0a13f3a881ecd0e3e580e"
+        },
+        {
+          "meeting_id": "TS3006b",
+          "transcript_sha256": "5b9b91a6010a7aef1233695f67b41160fb82e462fdccc7ba907199b1bc09ab9b",
+          "record_sha256": "162bc2976aaa99497dd180ee28205477b8d87d344549a965ce4b97c96c684599"
+        },
+        {
+          "meeting_id": "TS3006c",
+          "transcript_sha256": "c7c5a22ad9d8e60648e502637fcbaf910fbf24f141f567cd4946b025ba71860f",
+          "record_sha256": "76089034f1bbdfbaeae12c4cac96e7678a3179fa9744d1d360e4eb11dd7ec095"
+        }
+      ],
+      "selection_attempts": 0,
+      "selection_errors": [],
+      "duplicate_reason_metadata": [],
+      "failure": {
+        "code": "stage_failed",
+        "status": "FAILED",
+        "stage": "consolidate",
+        "error_type": "TypeError",
+        "os_error": null,
+        "windows_error": null,
+        "io_operation": null
+      },
+      "partial_artifact": "D:\\OneDrive\\文档\\A UTAustin\\26 fall\\agentic\\AMI_group project\\AMI-Based-Meeting-to-Action_Agent\\agent\\results\\select_reason\\ts3006-v1\\run\\s2\\_attempts\\TS3006d\\49848eb4ea934c82b9eb545dfa57d7dc\\partial.json",
+      "saved_checkpoints": [
+        "parsed",
+        "extracted"
+      ]
+    }
+  ],
+  "totals": {
+    "api_attempts": 201,
+    "known_tokens": 2019930,
+    "charged_tokens": 2065852,
+    "unknown_usage_tokens": 45922,
+    "published_links": 3,
+    "clarification_requests": 33,
+    "valid_revisions": 0,
+    "p2_items": 38,
+    "accepted": 17,
+    "pending": 21,
+    "recordable": 32,
+    "relation_pending": 10,
+    "invalid_actions": 17,
+    "schema_rejections": 17,
+    "lookup_rejections": 0,
+    "protocol_normalizations": 55
+  },
+  "wall_seconds": 1451.5,
+  "protected_files_unchanged": 28,
+  "gold_loaded_or_scored": false,
+  "semantic_accuracy_measured": false,
+  "human_signoff": false,
+  "not_committed": true,
+  "logical_requests": {
+    "TS3006a": 38,
+    "TS3006b": 64,
+    "TS3006c": 81,
+    "TS3006d": 21
+  },
+  "request_log_note": "Logical calls only; runtime_control attempts include native transport retries and are authoritative.",
+  "old_artifacts_preserved": 825,
+  "offline_selection_replay_passed": true,
+  "new_consolidation_failure": {
+    "meeting_id": "TS3006d",
+    "status": "NEW_CONSOLIDATION_FAILURE_REPRODUCED",
+    "actual_new_api_calls": 0,
+    "error_type": "TypeError",
+    "failure": {
+      "native_attempt": 17,
+      "stage_trace_seq": 68,
+      "malformed_member_groups": [
+        {
+          "group": 9,
+          "members": [
+            {
+              "id": "MTD021PM"
+            }
+          ]
+        },
+        {
+          "group": 11,
+          "members": [
+            {
+              "id": "MTD021PM"
+            }
+          ]
+        }
+      ],
+      "offline_error": "unhashable type: 'dict'",
+      "merged_items": null
+    },
+    "cause": "Model supplied dict-valued candidate members. dict.fromkeys hashes them before the integer filter, aborting the meeting.",
+    "extract_code_unchanged_from_787d88e": true,
+    "not_caused_by_selection_reason_repair": true,
+    "native_consolidation_responses": [
+      {
+        "native_attempt": 19,
+        "stage_trace_seq": 63,
+        "malformed_member_groups": [],
+        "offline_error": null,
+        "merged_items": 0
+      },
+      {
+        "native_attempt": 18,
+        "stage_trace_seq": 66,
+        "malformed_member_groups": [],
+        "offline_error": null,
+        "merged_items": 11
+      },
+      {
+        "native_attempt": 17,
+        "stage_trace_seq": 68,
+        "malformed_member_groups": [
+          {
+            "group": 9,
+            "members": [
+              {
+                "id": "MTD021PM"
+              }
+            ]
+          },
+          {
+            "group": 11,
+            "members": [
+              {
+                "id": "MTD021PM"
+              }
+            ]
+          }
+        ],
+        "offline_error": "unhashable type: 'dict'",
+        "merged_items": null
+      }
+    ],
+    "calls_before_failure": 21,
+    "charged_tokens": 366880,
+    "unknown_usage_tokens": 45922,
+    "budget_exhausted": false,
+    "selection_entered": false,
+    "p2_entered": false,
+    "saved_checkpoints": [
+      "parsed",
+      "extracted"
+    ],
+    "scope": "New, independent consolidation defect discovered by cold coverage. No malformed member was mapped to a candidate or accepted; no source fix or online rerun performed."
+  },
+  "unit_tests": 400,
+  "scope_note": "Independent four-meeting cold rerun. Never combined with the old 13/16 cohort into a single-version 16/16 result.",
+  "duplicate_reason_metadata_count": 5,
+  "selection_failure_diagnosis": null,
+  "source_review_statuses": {
+    "NEEDS_SEMANTIC_REVIEW": 2
+  },
+  "item_termination_counts": {
+    "supported_statement_with_unresolved_fields": 4,
+    "unresolved_checks": 6,
+    "all_required_checks_passed": 17,
+    "no_progress": 4,
+    "stop": 1,
+    "invalid_action_limit": 2,
+    "request_clarification": 1,
+    "p2_call_allowance_exhausted": 3
+  }
+}

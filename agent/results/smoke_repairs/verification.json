@@ -1,0 +1,107 @@
+{
+  "result": "PASSED",
+  "verified_at": "2026-10-29T15:33:14.311830+00:00",
+  "branch": "agent-development",
+  "base_commit": "3b886f6c0c1520a1c5bc8628da7198a871c25495",
+  "committed": false,
+  "staged_files": [],
+  "configuration_changes": {
+    "ITEM_POLICY_VERSION": {
+      "before": 5,
+      "after": 8
+    },
+    "P2_PROTOCOL_VERSION": {
+      "before": 6,
+      "after": 9
+    }
+  },
+  "source_files_verified": 45,
+  "test_files_verified": 15,
+  "unit_tests": {
+    "passed": 319,
+    "seconds": 44.03,
+    "provider_calls": 0
+  },
+  "final_main_run": {
+    "calls": 133,
+    "tokens": 1201061,
+    "seconds": 1767.1
+  },
+  "functional_checks": {
+    "all_pipeline_and_artifact_checks": true,
+    "slides_present": true,
+    "id_working_design_present": true,
+    "no_empty_revision_calls": true,
+    "published_cross_meeting_link": true,
+    "same_controlled_revision_passed": true
+  },
+  "controlled_probe": {
+    "status": "PASSED",
+    "state": "pending",
+    "recordable": true,
+    "text": "The project manager will send copies of the slides to attendees.",
+    "valid_revisions": 1,
+    "fresh_rechecks": 4,
+    "deadline": null,
+    "actual_usage": {
+      "calls": 10,
+      "in": 73800,
+      "out": 4864,
+      "stages": {
+        "p2_check": {
+          "calls": 5,
+          "in": 39567,
+          "out": 3510
+        },
+        "agent": {
+          "calls": 5,
+          "in": 34233,
+          "out": 1354
+        }
+      }
+    },
+    "is_natural_case": false
+  },
+  "protected_files_unchanged": 28,
+  "previous_smoke_files_unchanged": 181,
+  "previous_release_files_unchanged": 242,
+  "experiment_snapshot_files_verified": {
+    "repair-v1": 52,
+    "repair-v2": 53,
+    "repair-v3": 53,
+    "repair-v4": 53,
+    "repair-v5": 53
+  },
+  "artifact_parse_checks": {
+    "json": 563,
+    "jsonl": 59,
+    "jsonl_rows": 4196,
+    "python": 232
+  },
+  "credential_scan": {
+    "inherited_key_present": true,
+    "matches": 0,
+    "key_disclosed": false
+  },
+  "tracked_changes": [
+    "agent/src/mta/assessment_protocol.py",
+    "agent/src/mta/config.py",
+    "agent/src/mta/extract.py",
+    "agent/src/mta/item_selection.py",
+    "agent/src/mta/p2.py",
+    "agent/src/mta/pipeline.py",
+    "agent/src/mta/prompts.py",
+    "agent/src/mta/statement_revision.py",
+    "agent/tests/test_decision_audit.py",
+    "agent/tests/test_item_quality.py",
+    "revised_gold_output/README.md"
+  ],
+  "preexisting_tracked_annotation_change": "revised_gold_output/README.md",
+  "gold_scored": false,
+  "limitations": [
+    "Single fresh main run; no F1 or stability assessment.",
+    "Main run slower than baseline.",
+    "Controlled revision probe is independent of natural extraction.",
+    "New continues case has no new human sign-off."
+  ]
+}

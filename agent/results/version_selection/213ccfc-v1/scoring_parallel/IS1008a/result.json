@@ -1,0 +1,1165 @@
+{
+  "meeting_id": "IS1008a",
+  "status": "FAILED",
+  "arms": {
+    "baseline": {
+      "metrics": {
+        "actions": {
+          "tp": 3,
+          "sys": 5,
+          "gold": 4,
+          "precision": 0.6,
+          "recall": 0.75,
+          "f1": 0.667
+        },
+        "decisions": {
+          "tp": 1,
+          "sys": 2,
+          "gold": 2,
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5
+        },
+        "problems": {
+          "tp": 1,
+          "sys": 1,
+          "gold": 1,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "matches": {
+        "IS1008a.sys.s.3": "IS1008a.JacquelinePalmer.s.10",
+        "IS1008a.sys.s.5": "IS1008a.JacquelinePalmer.s.11",
+        "IS1008a.sys.s.8": "IS1008a.JacquelinePalmer.s.9",
+        "IS1008a.sys.s.2": "IS1008a.JacquelinePalmer.s.12",
+        "IS1008a.sys.s.1": "IS1008a.JacquelinePalmer.s.14"
+      },
+      "unmatched": {
+        "actions": {
+          "system": [
+            {
+              "id": "IS1008a.sys.s.6",
+              "text": "Ed will coordinate with Christine to develop the sales plan and determine pricing and market strategy.",
+              "type": "actions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.85"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.97"
+                }
+              ],
+              "owner": [
+                "MIE085"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "IS1008a.sys.s.7",
+              "text": "Ed will prepare and deliver a written project plan by the next meeting.",
+              "type": "actions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.29"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.D.dialog-act.s9553330.16"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.31"
+                }
+              ],
+              "owner": [
+                "MIE085"
+              ],
+              "owner_basis": "explicit",
+              "deadline": "by the next meeting",
+              "deadline_basis": "explicit",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ],
+          "gold": [
+            {
+              "id": "IS1008a.JacquelinePalmer.s.8",
+              "text": "The marketing expert will prepare a sales/project plan, coordinating costs and marketing strategy with the industrial designer.",
+              "type": "actions",
+              "owner": [
+                "MIE085"
+              ],
+              "owner_basis": "explicit",
+              "deadline": "by the next meeting",
+              "deadline_basis": "explicit",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": [],
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.29"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.D.dialog-act.s9553330.16"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.31"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.85"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.91"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.92"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.96"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.97"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.100"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.D.dialog-act.s9553330.49"
+                },
+                {
+                  "source_type": "participant_metadata",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.D.dialog-act.s9553330.1 (attributes.participant and attributes.role)"
+                }
+              ]
+            }
+          ]
+        },
+        "decisions": {
+          "system": [
+            {
+              "id": "IS1008a.sys.s.4",
+              "text": "UI(FIE038) will ensure Ed is kept in the loop and CC’d on discussions and documents.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.117"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.B.dialog-act.s9553330.22"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.118"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ],
+          "gold": [
+            {
+              "id": "IS1008a.JacquelinePalmer.s.13",
+              "text": "The immediate next step is to determine the functional design in consultation with usability and marketing.",
+              "type": "decisions",
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": [],
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.B.dialog-act.s9553330.25"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.122"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.124"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.125"
+                }
+              ]
+            }
+          ]
+        },
+        "problems": {
+          "system": [],
+          "gold": []
+        }
+      }
+    },
+    "retention_actions": {
+      "metrics": {
+        "actions": {
+          "tp": 3,
+          "sys": 5,
+          "gold": 4,
+          "precision": 0.6,
+          "recall": 0.75,
+          "f1": 0.667
+        },
+        "decisions": {
+          "tp": 1,
+          "sys": 2,
+          "gold": 2,
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5
+        },
+        "problems": {
+          "tp": 1,
+          "sys": 1,
+          "gold": 1,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "matches": {
+        "IS1008a.sys.s.1": "IS1008a.JacquelinePalmer.s.11",
+        "IS1008a.sys.s.3": "IS1008a.JacquelinePalmer.s.9",
+        "IS1008a.sys.s.4": "IS1008a.JacquelinePalmer.s.10",
+        "IS1008a.sys.s.7": "IS1008a.JacquelinePalmer.s.12",
+        "IS1008a.sys.s.6": "IS1008a.JacquelinePalmer.s.14"
+      },
+      "unmatched": {
+        "actions": {
+          "system": [
+            {
+              "id": "IS1008a.sys.s.2",
+              "text": "Ed will prepare and deliver a written project plan by the next meeting.",
+              "type": "actions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.29"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.D.dialog-act.s9553330.16"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.31"
+                }
+              ],
+              "owner": [
+                "MIE085"
+              ],
+              "owner_basis": "explicit",
+              "deadline": "by the next meeting",
+              "deadline_basis": "explicit",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "IS1008a.sys.s.5",
+              "text": "Ed will coordinate with Christine to develop the sales plan and determine pricing and market strategy.",
+              "type": "actions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.85"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.97"
+                }
+              ],
+              "owner": [
+                "MIE085"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ],
+          "gold": [
+            {
+              "id": "IS1008a.JacquelinePalmer.s.8",
+              "text": "The marketing expert will prepare a sales/project plan, coordinating costs and marketing strategy with the industrial designer.",
+              "type": "actions",
+              "owner": [
+                "MIE085"
+              ],
+              "owner_basis": "explicit",
+              "deadline": "by the next meeting",
+              "deadline_basis": "explicit",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": [],
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.29"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.D.dialog-act.s9553330.16"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.31"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.85"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.91"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.92"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.96"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.97"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.100"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.D.dialog-act.s9553330.49"
+                },
+                {
+                  "source_type": "participant_metadata",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.D.dialog-act.s9553330.1 (attributes.participant and attributes.role)"
+                }
+              ]
+            }
+          ]
+        },
+        "decisions": {
+          "system": [
+            {
+              "id": "IS1008a.sys.s.8",
+              "text": "UI(FIE038) will ensure Ed is kept in the loop and CC’d on discussions and documents.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.117"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.B.dialog-act.s9553330.22"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.118"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ],
+          "gold": [
+            {
+              "id": "IS1008a.JacquelinePalmer.s.13",
+              "text": "The immediate next step is to determine the functional design in consultation with usability and marketing.",
+              "type": "decisions",
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": [],
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.B.dialog-act.s9553330.25"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.122"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.124"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.125"
+                }
+              ]
+            }
+          ]
+        },
+        "problems": {
+          "system": [],
+          "gold": []
+        }
+      }
+    },
+    "retention_actions_issues": {
+      "metrics": {
+        "actions": {
+          "tp": 3,
+          "sys": 5,
+          "gold": 4,
+          "precision": 0.6,
+          "recall": 0.75,
+          "f1": 0.667
+        },
+        "decisions": {
+          "tp": 1,
+          "sys": 2,
+          "gold": 2,
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5
+        },
+        "problems": {
+          "tp": 1,
+          "sys": 4,
+          "gold": 1,
+          "precision": 0.25,
+          "recall": 1.0,
+          "f1": 0.4
+        }
+      },
+      "matches": {
+        "IS1008a.sys.s.1": "IS1008a.JacquelinePalmer.s.11",
+        "IS1008a.sys.s.3": "IS1008a.JacquelinePalmer.s.9",
+        "IS1008a.sys.s.4": "IS1008a.JacquelinePalmer.s.10",
+        "IS1008a.sys.s.7": "IS1008a.JacquelinePalmer.s.12",
+        "IS1008a.sys.s.6": "IS1008a.JacquelinePalmer.s.14"
+      },
+      "unmatched": {
+        "actions": {
+          "system": [
+            {
+              "id": "IS1008a.sys.s.2",
+              "text": "Ed will prepare and deliver a written project plan by the next meeting.",
+              "type": "actions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.29"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.D.dialog-act.s9553330.16"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.31"
+                }
+              ],
+              "owner": [
+                "MIE085"
+              ],
+              "owner_basis": "explicit",
+              "deadline": "by the next meeting",
+              "deadline_basis": "explicit",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "IS1008a.sys.s.5",
+              "text": "Ed will coordinate with Christine to develop the sales plan and determine pricing and market strategy.",
+              "type": "actions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.85"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.97"
+                }
+              ],
+              "owner": [
+                "MIE085"
+              ],
+              "owner_basis": "explicit",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ],
+          "gold": [
+            {
+              "id": "IS1008a.JacquelinePalmer.s.8",
+              "text": "The marketing expert will prepare a sales/project plan, coordinating costs and marketing strategy with the industrial designer.",
+              "type": "actions",
+              "owner": [
+                "MIE085"
+              ],
+              "owner_basis": "explicit",
+              "deadline": "by the next meeting",
+              "deadline_basis": "explicit",
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": [],
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.29"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.D.dialog-act.s9553330.16"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.31"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.85"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.91"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.92"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.96"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.97"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.100"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.D.dialog-act.s9553330.49"
+                },
+                {
+                  "source_type": "participant_metadata",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.D.dialog-act.s9553330.1 (attributes.participant and attributes.role)"
+                }
+              ]
+            }
+          ]
+        },
+        "decisions": {
+          "system": [
+            {
+              "id": "IS1008a.sys.s.8",
+              "text": "UI(FIE038) will ensure Ed is kept in the loop and CC’d on discussions and documents.",
+              "type": "decisions",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.117"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.B.dialog-act.s9553330.22"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.118"
+                }
+              ],
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ],
+          "gold": [
+            {
+              "id": "IS1008a.JacquelinePalmer.s.13",
+              "text": "The immediate next step is to determine the functional design in consultation with usability and marketing.",
+              "type": "decisions",
+              "status": "adopted",
+              "prior_context_needed": false,
+              "related_items": [],
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.B.dialog-act.s9553330.25"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.122"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.124"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.125"
+                }
+              ]
+            }
+          ]
+        },
+        "problems": {
+          "system": [
+            {
+              "id": "IS1008a.sys.s.9",
+              "text": "Project goal/scope is unclear, with conflicting understandings about the product (remote control vs monitor).",
+              "type": "problems",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.C.dialog-act.s9553330.7"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.D.dialog-act.s9553330.20"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.38"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.C.dialog-act.s9553330.11"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.48"
+                }
+              ],
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "IS1008a.sys.s.10",
+              "text": "No functional or technical design or project plan has been produced yet; discussion is required to define scope and deliverables.",
+              "type": "problems",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.23"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.D.dialog-act.s9553330.11"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.24"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.D.dialog-act.s9553330.13"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.D.dialog-act.s9553330.14"
+                }
+              ],
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            },
+            {
+              "id": "IS1008a.sys.s.11",
+              "text": "Management requires a written project plan with budget and timeline, and a concrete response is expected soon; two weeks was suggested as a target.",
+              "type": "problems",
+              "reference": [
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.59"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.60"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.C.dialog-act.s9553330.34"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.C.dialog-act.s9553330.35"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.61"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.62"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.63"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.C.dialog-act.s9553330.36"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.64"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.65"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.C.dialog-act.s9553330.37"
+                },
+                {
+                  "source_type": "dialogue",
+                  "source": "ami-corpus/dialogueActs/IS1008a.json",
+                  "locator": "IS1008a.A.dialog-act.s9553330.66"
+                }
+              ],
+              "status": "open",
+              "prior_context_needed": false,
+              "related_items": []
+            }
+          ],
+          "gold": []
+        }
+      }
+    }
+  },
+  "replayed_scoring_attempts": 3,
+  "replayed_elapsed_seconds": 282.79423356056213,
+  "failure": {
+    "code": "model_request_failed",
+    "status": "FAILED",
+    "stage": "other",
+    "error_type": "APIConnectionError",
+    "retries_exhausted": true,
+    "http_status": null
+  },
+  "runtime_control": {
+    "limits": {
+      "calls": 80,
+      "tokens": 1000000,
+      "request_seconds": 300.0,
+      "meeting_seconds": 1200.0,
+      "inflight": 4,
+      "retries": 2,
+      "backoff": 0.5
+    },
+    "attempted_calls": 22,
+    "charged_tokens": 283378,
+    "unknown_usage_tokens": 241297,
+    "reserved_tokens": 0,
+    "max_inflight_seen": 4,
+    "failure": {
+      "code": "model_request_failed",
+      "status": "FAILED",
+      "stage": "other",
+      "error_type": "APIConnectionError",
+      "retries_exhausted": true,
+      "http_status": null
+    },
+    "attempts": [
+      {
+        "attempt": 0,
+        "stage": "replayed_interrupted_scoring",
+        "reserved_tokens": 35209,
+        "input_bound": 3209,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 3017,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 474,
+        "output_tokens": 2543
+      },
+      {
+        "attempt": 1,
+        "stage": "replayed_interrupted_scoring",
+        "reserved_tokens": 35209,
+        "input_bound": 3209,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 2706,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 474,
+        "output_tokens": 2232
+      },
+      {
+        "attempt": 2,
+        "stage": "replayed_interrupted_scoring",
+        "reserved_tokens": 35209,
+        "input_bound": 3209,
+        "output_cap": 32000,
+        "outcome": "error",
+        "charged_tokens": 35209,
+        "usage_known": false,
+        "error_type": "interrupted_usage_unknown"
+      },
+      {
+        "attempt": 3,
+        "stage": "other",
+        "reserved_tokens": 35209,
+        "input_bound": 3209,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 2441,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 474,
+        "output_tokens": 1967
+      },
+      {
+        "attempt": 4,
+        "stage": "other",
+        "reserved_tokens": 35112,
+        "input_bound": 3112,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 2223,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 455,
+        "output_tokens": 1768
+      },
+      {
+        "attempt": 5,
+        "stage": "other",
+        "reserved_tokens": 35153,
+        "input_bound": 3153,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 4038,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 463,
+        "output_tokens": 3575
+      },
+      {
+        "attempt": 6,
+        "stage": "other",
+        "reserved_tokens": 35112,
+        "input_bound": 3112,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 4734,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 455,
+        "output_tokens": 4279
+      },
+      {
+        "attempt": 7,
+        "stage": "other",
+        "reserved_tokens": 35101,
+        "input_bound": 3101,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 3125,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 454,
+        "output_tokens": 2671
+      },
+      {
+        "attempt": 8,
+        "stage": "other",
+        "reserved_tokens": 34761,
+        "input_bound": 2761,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 1826,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 387,
+        "output_tokens": 1439
+      },
+      {
+        "attempt": 9,
+        "stage": "other",
+        "reserved_tokens": 35153,
+        "input_bound": 3153,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 2942,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 463,
+        "output_tokens": 2479
+      },
+      {
+        "attempt": 10,
+        "stage": "other",
+        "reserved_tokens": 34761,
+        "input_bound": 2761,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 1506,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 387,
+        "output_tokens": 1119
+      },
+      {
+        "attempt": 11,
+        "stage": "other",
+        "reserved_tokens": 34761,
+        "input_bound": 2761,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 1506,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 387,
+        "output_tokens": 1119
+      },
+      {
+        "attempt": 12,
+        "stage": "other",
+        "reserved_tokens": 35101,
+        "input_bound": 3101,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 2614,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 454,
+        "output_tokens": 2160
+      },
+      {
+        "attempt": 13,
+        "stage": "other",
+        "reserved_tokens": 35112,
+        "input_bound": 3112,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 3966,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 455,
+        "output_tokens": 3511
+      },
+      {
+        "attempt": 14,
+        "stage": "other",
+        "reserved_tokens": 35153,
+        "input_bound": 3153,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 3078,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 463,
+        "output_tokens": 2615
+      },
+      {
+        "attempt": 15,
+        "stage": "other",
+        "reserved_tokens": 35101,
+        "input_bound": 3101,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 2359,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 454,
+        "output_tokens": 1905
+      },
+      {
+        "attempt": 16,
+        "stage": "other",
+        "reserved_tokens": 34365,
+        "input_bound": 2365,
+        "output_cap": 32000,
+        "outcome": "error",
+        "charged_tokens": 34365,
+        "usage_known": false,
+        "error_type": "APIConnectionError"
+      },
+      {
+        "attempt": 17,
+        "stage": "other",
+        "reserved_tokens": 34331,
+        "input_bound": 2331,
+        "output_cap": 32000,
+        "outcome": "error",
+        "charged_tokens": 34331,
+        "usage_known": false,
+        "error_type": "APIConnectionError"
+      },
+      {
+        "attempt": 18,
+        "stage": "other",
+        "reserved_tokens": 34331,
+        "input_bound": 2331,
+        "output_cap": 32000,
+        "outcome": "error",
+        "charged_tokens": 34331,
+        "usage_known": false,
+        "error_type": "APIConnectionError"
+      },
+      {
+        "attempt": 19,
+        "stage": "other",
+        "reserved_tokens": 34365,
+        "input_bound": 2365,
+        "output_cap": 32000,
+        "outcome": "error",
+        "charged_tokens": 34365,
+        "usage_known": false,
+        "error_type": "APIConnectionError"
+      },
+      {
+        "attempt": 20,
+        "stage": "other",
+        "reserved_tokens": 34331,
+        "input_bound": 2331,
+        "output_cap": 32000,
+        "outcome": "error",
+        "charged_tokens": 34331,
+        "usage_known": false,
+        "error_type": "APIConnectionError"
+      },
+      {
+        "attempt": 21,
+        "stage": "other",
+        "reserved_tokens": 34365,
+        "input_bound": 2365,
+        "output_cap": 32000,
+        "outcome": "error",
+        "charged_tokens": 34365,
+        "usage_known": false,
+        "error_type": "APIConnectionError"
+      }
+    ],
+    "input_bound_method": "utf8_request_bytes_plus_padding",
+    "unknown_usage_policy": "charge_full_reservation"
+  }
+}

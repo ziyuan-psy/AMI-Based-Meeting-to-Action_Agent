@@ -1,0 +1,1297 @@
+{
+  "item_key": "TS3006b#10",
+  "record_id": null,
+  "item_type": "actions",
+  "item_text": "The UI Designer will group the functions into two groups: display functions and basic functions.",
+  "state": "pending",
+  "recordable": true,
+  "fields": {
+    "status": "unknown",
+    "prior_context_needed": true,
+    "related_items": [
+      {
+        "id": "TS3006a.sys.s.4",
+        "relation": "updates"
+      }
+    ],
+    "owner": [
+      "MTD023UID"
+    ],
+    "owner_basis": "explicit",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "reference": [
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3006b.json",
+        "locator": "TS3006b.B.dialog-act.dharshi.169"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3006b.json",
+        "locator": "TS3006b.C.dialog-act.dharshi.186"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3006b.json",
+        "locator": "TS3006b.B.dialog-act.dharshi.168"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3006a.json",
+        "locator": "TS3006a.A.dialog-act.vkaraisk.149"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3006a.json",
+        "locator": "TS3006a.A.dialog-act.vkaraisk.150"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3006a.json",
+        "locator": "TS3006a.B.dialog-act.vkaraisk.59"
+      }
+    ]
+  },
+  "draft_fields": {
+    "status": "open",
+    "related_items": [
+      {
+        "id": "TS3006a.sys.s.4",
+        "relation": "updates"
+      }
+    ],
+    "owner": [
+      "MTD023UID"
+    ],
+    "owner_basis": "explicit",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "prior_context_needed": false,
+    "used_participant_lookup": false,
+    "evidence_da_ids": [
+      "TS3006b.B.dialog-act.dharshi.169",
+      "TS3006b.C.dialog-act.dharshi.186",
+      "TS3006b.B.dialog-act.dharshi.168"
+    ]
+  },
+  "checks": {
+    "statement": {
+      "result": "pass",
+      "reason": "The dialogue shows UI indicates grouping into two groups: display vs basic functions; acceptance is indicated by subsequent confirmation.",
+      "quotes": [
+        {
+          "da_id": "TS3006b.B.dialog-act.dharshi.169",
+          "quote": "Um the <disfmarker> one group for the for the display , and one group for the basic functions ,"
+        },
+        {
+          "da_id": "TS3006b.C.dialog-act.dharshi.186",
+          "quote": "Yeah ."
+        }
+      ],
+      "fields": [
+        "statement"
+      ]
+    },
+    "owner": {
+      "result": "pass",
+      "reason": "Dialogue shows MTD023UID proposed/groups the grouping; owner matches.",
+      "quotes": [
+        {
+          "da_id": "TS3006b.B.dialog-act.dharshi.169",
+          "quote": "Um the <disfmarker> one group for the for the display , and one group for the basic functions ,"
+        }
+      ],
+      "fields": [
+        "owner"
+      ]
+    },
+    "deadline": {
+      "result": "uncertain",
+      "reason": "deadline_unresolved",
+      "quotes": [],
+      "fields": [
+        "deadline"
+      ]
+    },
+    "status": {
+      "result": "uncertain",
+      "reason": "No explicit commitment to adopt/complete; current dialogue discusses grouping but not final status.",
+      "quotes": [
+        {
+          "da_id": "TS3006b.A.dialog-act.dharshi.336",
+          "quote": "Yeah but they're incorporated <gap> ?"
+        }
+      ],
+      "fields": [
+        "status"
+      ]
+    },
+    "conflict": {
+      "result": "pass",
+      "reason": "No contradictions in the observed dialogue regarding grouping.",
+      "quotes": [
+        {
+          "da_id": "TS3006b.B.dialog-act.dharshi.169",
+          "quote": "Um the <disfmarker> one group for the for the display , and one group for the basic functions ,"
+        },
+        {
+          "da_id": "TS3006b.C.dialog-act.dharshi.186",
+          "quote": "Yeah ."
+        }
+      ],
+      "fields": []
+    },
+    "relation": {
+      "result": "pass",
+      "reason": "Current item narrows the prior item by grouping UI functions into two categories (display vs basic), which updates the scope of the earlier 'specify the technical functions' item rather than creating a new independent task.",
+      "quotes": [
+        {
+          "da_id": "TS3006b.B.dialog-act.dharshi.169",
+          "quote": "Um the <disfmarker> one group for the for the display , and one group for the basic functions ,"
+        },
+        {
+          "da_id": "TS3006b.B.dialog-act.dharshi.168",
+          "quote": "Uh I think we have to to group , to make two groups ."
+        },
+        {
+          "da_id": "TS3006b.C.dialog-act.dharshi.186",
+          "quote": "Yeah ."
+        },
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.149",
+          "quote": "Uh the User Interface Designer should specify the technical functions ."
+        },
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.150",
+          "quote": "Right ? Yeah ?"
+        },
+        {
+          "da_id": "TS3006a.B.dialog-act.vkaraisk.59",
+          "quote": "Yep ."
+        }
+      ],
+      "links": [
+        {
+          "id": "TS3006a.sys.s.4",
+          "relation": "updates",
+          "changed_fields": [
+            "scope"
+          ],
+          "reason": "Current item narrows the previous 'specify the technical functions' into grouping into two groups, updating scope.",
+          "prior_evidence_da_ids": [
+            "TS3006a.A.dialog-act.vkaraisk.149",
+            "TS3006a.A.dialog-act.vkaraisk.150",
+            "TS3006a.B.dialog-act.vkaraisk.59"
+          ],
+          "current_evidence_da_ids": [
+            "TS3006b.B.dialog-act.dharshi.169",
+            "TS3006b.B.dialog-act.dharshi.168",
+            "TS3006b.C.dialog-act.dharshi.186"
+          ]
+        }
+      ],
+      "fields": [
+        "related_items"
+      ]
+    }
+  },
+  "unresolved_fields": [
+    "deadline",
+    "status"
+  ],
+  "observed_evidence_da_ids": [
+    "TS3006b.B.dialog-act.dharshi.169",
+    "TS3006b.C.dialog-act.dharshi.186",
+    "TS3006b.B.dialog-act.dharshi.168",
+    "TS3006b.B.dialog-act.dharshi.170",
+    "TS3006b.A.dialog-act.dharshi.336",
+    "TS3006a.A.dialog-act.vkaraisk.148",
+    "TS3006a.A.dialog-act.vkaraisk.149",
+    "TS3006a.A.dialog-act.vkaraisk.150",
+    "TS3006a.B.dialog-act.vkaraisk.59",
+    "TS3006a.A.dialog-act.vkaraisk.151"
+  ],
+  "initial_context": {
+    "item": {
+      "type": "actions",
+      "text": "The UI Designer will group the functions into two groups: display functions and basic functions.",
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ]
+    },
+    "current_meeting": "TS3006b",
+    "earlier_meetings": [
+      "TS3006a"
+    ],
+    "roster": [
+      {
+        "speaker": "A",
+        "participant_id": "MTD021PM",
+        "role": "PM"
+      },
+      {
+        "speaker": "B",
+        "participant_id": "MTD023UID",
+        "role": "UI"
+      },
+      {
+        "speaker": "C",
+        "participant_id": "MTD022ID",
+        "role": "ID"
+      },
+      {
+        "speaker": "D",
+        "participant_id": "MTD024ME",
+        "role": "ME"
+      }
+    ],
+    "observed_dialogue": [
+      {
+        "da_id": "TS3006b.B.dialog-act.dharshi.169",
+        "meeting_id": "TS3006b",
+        "text": "Um the <disfmarker> one group for the for the display , and one group for the basic functions ,",
+        "participant": "MTD023UID",
+        "role": "UI"
+      },
+      {
+        "da_id": "TS3006b.C.dialog-act.dharshi.186",
+        "meeting_id": "TS3006b",
+        "text": "Yeah .",
+        "participant": "MTD022ID",
+        "role": "ID"
+      },
+      {
+        "da_id": "TS3006b.B.dialog-act.dharshi.168",
+        "participant": "MTD023UID",
+        "role": "UI",
+        "text": "Uh I think we have to to group , to make two groups ."
+      },
+      {
+        "da_id": "TS3006b.B.dialog-act.dharshi.170",
+        "participant": "MTD023UID",
+        "role": "UI",
+        "text": "and <disfmarker>"
+      },
+      {
+        "da_id": "TS3006b.A.dialog-act.dharshi.336",
+        "participant": "MTD021PM",
+        "role": "PM",
+        "text": "Yeah but they're incorporated <gap> ?"
+      }
+    ],
+    "peer_items": [
+      {
+        "item_key": "TS3006b#0",
+        "type": "actions",
+        "text": "The User Interface Designer can design a menu for all these functions."
+      },
+      {
+        "item_key": "TS3006b#1",
+        "type": "problems",
+        "text": "The current look-and-feel and usability of remote controls are disliked by users and are hard to learn, with remotes often getting lost in rooms."
+      },
+      {
+        "item_key": "TS3006b#2",
+        "type": "problems",
+        "text": "Open problem: it is unclear what the screen should do or what is required from it."
+      },
+      {
+        "item_key": "TS3006b#3",
+        "type": "problems",
+        "text": "Uncertainty about saving the project file (whether it saves automatically and where)."
+      },
+      {
+        "item_key": "TS3006b#4",
+        "type": "decisions",
+        "text": "The target group will be sixteen to forty."
+      },
+      {
+        "item_key": "TS3006b#5",
+        "type": "decisions",
+        "text": "The basic new requirements of the management were no teletext, only for T_V_."
+      },
+      {
+        "item_key": "TS3006b#6",
+        "type": "decisions",
+        "text": "Teletext and the newsflash feature will not be used in the future."
+      },
+      {
+        "item_key": "TS3006b#7",
+        "type": "decisions",
+        "text": "Keep all classic remote functions and improve button usability and the physical design."
+      },
+      {
+        "item_key": "TS3006b#8",
+        "type": "decisions",
+        "text": "The product must include corporate identity with the logo present and colours consistent."
+      },
+      {
+        "item_key": "TS3006b#9",
+        "type": "actions",
+        "text": "The PM will write the meeting minutes."
+      }
+    ],
+    "provisional_values": {
+      "owner": [
+        "MTD023UID"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "status": "open",
+      "related_items": []
+    },
+    "candidate_evidence_da_ids": [
+      "TS3006b.B.dialog-act.dharshi.169",
+      "TS3006b.C.dialog-act.dharshi.186"
+    ]
+  },
+  "observed_documents": [],
+  "document_evidence": [],
+  "relation_evidence": [
+    {
+      "prior_item_id": "TS3006a.sys.s.4",
+      "relation": "updates",
+      "state": "supported",
+      "changed_fields": [
+        "scope"
+      ],
+      "reason": "Current item narrows the previous 'specify the technical functions' into grouping into two groups, updating scope.",
+      "before": {
+        "kind": "prior_item",
+        "id": "TS3006a.sys.s.4",
+        "meeting_id": "TS3006a",
+        "type": "actions",
+        "text": "Specify the technical functions.",
+        "owner": [
+          "MTD023UID"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "open",
+        "evidence": [
+          "TS3006a.A.dialog-act.vkaraisk.149",
+          "TS3006a.A.dialog-act.vkaraisk.150",
+          "TS3006a.B.dialog-act.vkaraisk.59"
+        ],
+        "source_file": "TS3006a.json",
+        "source_sha256": "eb352dfc8d7158fe0e58de4c136e4a04aa01b20634413804bd3aed84999cd7d4",
+        "review_state": "legacy_unchecked",
+        "unresolved_fields": [],
+        "unreadable_reference_ids": [],
+        "selected_reference_ids": [
+          "TS3006a.A.dialog-act.vkaraisk.149",
+          "TS3006a.A.dialog-act.vkaraisk.150",
+          "TS3006a.B.dialog-act.vkaraisk.59"
+        ],
+        "next_offset": null
+      },
+      "after": {
+        "item_key": "TS3006b#10",
+        "text": "The UI Designer will group the functions into two groups: display functions and basic functions.",
+        "type": "actions",
+        "status": "unknown",
+        "owner": [
+          "MTD023UID"
+        ],
+        "deadline": null
+      },
+      "prior_quotes": [
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.149",
+          "quote": "Uh the User Interface Designer should specify the technical functions ."
+        },
+        {
+          "da_id": "TS3006a.A.dialog-act.vkaraisk.150",
+          "quote": "Right ? Yeah ?"
+        },
+        {
+          "da_id": "TS3006a.B.dialog-act.vkaraisk.59",
+          "quote": "Yep ."
+        }
+      ],
+      "current_quotes": [
+        {
+          "da_id": "TS3006b.B.dialog-act.dharshi.169",
+          "quote": "Um the <disfmarker> one group for the for the display , and one group for the basic functions ,"
+        },
+        {
+          "da_id": "TS3006b.B.dialog-act.dharshi.168",
+          "quote": "Uh I think we have to to group , to make two groups ."
+        },
+        {
+          "da_id": "TS3006b.C.dialog-act.dharshi.186",
+          "quote": "Yeah ."
+        }
+      ]
+    }
+  ],
+  "history": [
+    {
+      "item": "TS3006b#10",
+      "step": 1,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "assess_item",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue shows UI indicates grouping into two groups: display vs basic functions; acceptance is indicated by subsequent confirmation.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.B.dialog-act.dharshi.169",
+              "quote": "Um the <disfmarker> one group for the for the display , and one group for the basic functions ,"
+            },
+            {
+              "da_id": "TS3006b.C.dialog-act.dharshi.186",
+              "quote": "Yeah ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Dialogue shows MTD023UID proposed/groups the grouping; owner matches.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.B.dialog-act.dharshi.169",
+              "quote": "Um the <disfmarker> one group for the for the display , and one group for the basic functions ,"
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "deadline_unresolved",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "uncertain",
+          "reason": "No explicit commitment to adopt/complete; current dialogue discusses grouping but not final status.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.A.dialog-act.dharshi.336",
+              "quote": "Yeah but they're incorporated <gap> ?"
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions in the observed dialogue regarding grouping.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.B.dialog-act.dharshi.169",
+              "quote": "Um the <disfmarker> one group for the for the display , and one group for the basic functions ,"
+            },
+            {
+              "da_id": "TS3006b.C.dialog-act.dharshi.186",
+              "quote": "Yeah ."
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "prior_context_not_checked",
+          "links": [],
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "decision": "retrieve",
+      "reason": "unresolved_checks",
+      "assessed_text": "The UI Designer will group the functions into two groups: display functions and basic functions.",
+      "requested_action": "retrieve",
+      "proposed_fields": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD023UID"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "TS3006b.B.dialog-act.dharshi.169",
+          "TS3006b.C.dialog-act.dharshi.186"
+        ]
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue shows UI indicates grouping into two groups: display vs basic functions; acceptance is indicated by subsequent confirmation.",
+          "quotes": [
+            "TS3006b.B.dialog-act.dharshi.169",
+            "TS3006b.C.dialog-act.dharshi.186"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Dialogue shows MTD023UID proposed/groups the grouping; owner matches.",
+          "quotes": [
+            "TS3006b.B.dialog-act.dharshi.169"
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "No deadline mentioned or implied in current dialogue or provisional values.",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "uncertain",
+          "reason": "No explicit commitment to adopt/complete; current dialogue discusses grouping but not final status.",
+          "quotes": [
+            "TS3006b.A.dialog-act.dharshi.336"
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions in the observed dialogue regarding grouping.",
+          "quotes": [
+            "TS3006b.B.dialog-act.dharshi.169",
+            "TS3006b.C.dialog-act.dharshi.186"
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "Relation to prior TS3006a item not established from current dialogue alone.",
+          "links": [],
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD023UID"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue shows UI indicates grouping into two groups: display vs basic functions; acceptance is indicated by subsequent confirmation.",
+          "evidence_da_ids": [
+            "TS3006b.B.dialog-act.dharshi.169",
+            "TS3006b.C.dialog-act.dharshi.186"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "Dialogue shows MTD023UID proposed/groups the grouping; owner matches.",
+          "evidence_da_ids": [
+            "TS3006b.B.dialog-act.dharshi.169"
+          ]
+        },
+        "deadline_check": {
+          "result": "uncertain",
+          "reason": "No deadline mentioned or implied in current dialogue or provisional values.",
+          "evidence_da_ids": []
+        },
+        "status_check": {
+          "result": "uncertain",
+          "reason": "No explicit commitment to adopt/complete; current dialogue discusses grouping but not final status.",
+          "evidence_da_ids": [
+            "TS3006b.A.dialog-act.dharshi.336"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No contradictions in the observed dialogue regarding grouping.",
+          "evidence_da_ids": [
+            "TS3006b.B.dialog-act.dharshi.169",
+            "TS3006b.C.dialog-act.dharshi.186"
+          ],
+          "affected_fields": []
+        },
+        "relation_check": {
+          "result": "uncertain",
+          "reason": "Relation to prior TS3006a item not established from current dialogue alone.",
+          "evidence_da_ids": [],
+          "links": []
+        },
+        "next_action": "retrieve"
+      },
+      "evidence_bindings": {
+        "statement": [
+          "TS3006b.B.dialog-act.dharshi.169",
+          "TS3006b.C.dialog-act.dharshi.186"
+        ],
+        "owner": [
+          "TS3006b.B.dialog-act.dharshi.169"
+        ],
+        "status": [
+          "TS3006b.A.dialog-act.dharshi.336"
+        ],
+        "conflict": [
+          "TS3006b.B.dialog-act.dharshi.169",
+          "TS3006b.C.dialog-act.dharshi.186"
+        ]
+      },
+      "raw_tool_input": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD023UID"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue shows UI indicates grouping into two groups: display vs basic functions; acceptance is indicated by subsequent confirmation.",
+          "evidence_da_ids": [
+            "TS3006b.B.dialog-act.dharshi.169",
+            "TS3006b.C.dialog-act.dharshi.186"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "Dialogue shows MTD023UID proposed/groups the grouping; owner matches.",
+          "evidence_da_ids": [
+            "TS3006b.B.dialog-act.dharshi.169"
+          ]
+        },
+        "deadline_check": {
+          "result": "uncertain",
+          "reason": "No deadline mentioned or implied in current dialogue or provisional values.",
+          "evidence_da_ids": []
+        },
+        "status_check": {
+          "result": "uncertain",
+          "reason": "No explicit commitment to adopt/complete; current dialogue discusses grouping but not final status.",
+          "evidence_da_ids": [
+            "TS3006b.A.dialog-act.dharshi.336"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No contradictions in the observed dialogue regarding grouping.",
+          "evidence_da_ids": [
+            "TS3006b.B.dialog-act.dharshi.169",
+            "TS3006b.C.dialog-act.dharshi.186"
+          ],
+          "affected_fields": []
+        },
+        "relation_check": {
+          "result": "uncertain",
+          "reason": "Relation to prior TS3006a item not established from current dialogue alone.",
+          "evidence_da_ids": [],
+          "links": []
+        },
+        "next_action": "retrieve"
+      },
+      "protocol_normalizations": []
+    },
+    {
+      "item": "TS3006b#10",
+      "step": 2,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "history_context_focused",
+      "outcome": "delivered",
+      "evidence_da_ids": [
+        "TS3006b.B.dialog-act.dharshi.169",
+        "TS3006b.C.dialog-act.dharshi.186",
+        "TS3006b.B.dialog-act.dharshi.168",
+        "TS3006b.B.dialog-act.dharshi.170",
+        "TS3006b.A.dialog-act.dharshi.336"
+      ]
+    },
+    {
+      "item": "TS3006b#10",
+      "step": 2,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "get_prior_items",
+      "outcome": "lookup",
+      "decision": "retrieve",
+      "args": {
+        "query": "group functions two groups display basic",
+        "item_type": "actions"
+      },
+      "tool_result": {
+        "results": [
+          {
+            "id": "TS3006a.sys.s.4",
+            "meeting_id": "TS3006a",
+            "type": "actions",
+            "text": "Specify the technical functions.",
+            "owner": [
+              "MTD023UID"
+            ],
+            "owner_basis": "explicit",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "open",
+            "evidence": [
+              "TS3006a.A.dialog-act.vkaraisk.149",
+              "TS3006a.A.dialog-act.vkaraisk.150",
+              "TS3006a.B.dialog-act.vkaraisk.59"
+            ],
+            "source_file": "TS3006a.json",
+            "source_sha256": "eb352dfc8d7158fe0e58de4c136e4a04aa01b20634413804bd3aed84999cd7d4",
+            "review_state": "legacy_unchecked",
+            "unresolved_fields": [],
+            "unreadable_reference_ids": [],
+            "score": 1.4
+          }
+        ]
+      },
+      "new_info": true
+    },
+    {
+      "item": "TS3006b#10",
+      "step": 3,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "read_prior_item",
+      "outcome": "lookup",
+      "decision": "retrieve",
+      "args": {
+        "item_id": "TS3006a.sys.s.4"
+      },
+      "tool_result": {
+        "results": [
+          {
+            "kind": "prior_item",
+            "id": "TS3006a.sys.s.4",
+            "meeting_id": "TS3006a",
+            "type": "actions",
+            "text": "Specify the technical functions.",
+            "owner": [
+              "MTD023UID"
+            ],
+            "owner_basis": "explicit",
+            "deadline": null,
+            "deadline_basis": "missing",
+            "status": "open",
+            "evidence": [
+              "TS3006a.A.dialog-act.vkaraisk.149",
+              "TS3006a.A.dialog-act.vkaraisk.150",
+              "TS3006a.B.dialog-act.vkaraisk.59"
+            ],
+            "source_file": "TS3006a.json",
+            "source_sha256": "eb352dfc8d7158fe0e58de4c136e4a04aa01b20634413804bd3aed84999cd7d4",
+            "review_state": "legacy_unchecked",
+            "unresolved_fields": [],
+            "unreadable_reference_ids": [],
+            "selected_reference_ids": [
+              "TS3006a.A.dialog-act.vkaraisk.149",
+              "TS3006a.A.dialog-act.vkaraisk.150",
+              "TS3006a.B.dialog-act.vkaraisk.59"
+            ],
+            "next_offset": null
+          },
+          {
+            "kind": "dialogue",
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.148",
+            "meeting_id": "TS3006a",
+            "text": "Okay .",
+            "participant": "MTD021PM",
+            "role": "PM",
+            "supports_item_id": "TS3006a.sys.s.4",
+            "is_reference": false
+          },
+          {
+            "kind": "dialogue",
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.149",
+            "meeting_id": "TS3006a",
+            "text": "Uh the User Interface Designer should specify the technical functions .",
+            "participant": "MTD021PM",
+            "role": "PM",
+            "supports_item_id": "TS3006a.sys.s.4",
+            "is_reference": true
+          },
+          {
+            "kind": "dialogue",
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.150",
+            "meeting_id": "TS3006a",
+            "text": "Right ? Yeah ?",
+            "participant": "MTD021PM",
+            "role": "PM",
+            "supports_item_id": "TS3006a.sys.s.4",
+            "is_reference": true
+          },
+          {
+            "kind": "dialogue",
+            "da_id": "TS3006a.B.dialog-act.vkaraisk.59",
+            "meeting_id": "TS3006a",
+            "text": "Yep .",
+            "participant": "MTD023UID",
+            "role": "UI",
+            "supports_item_id": "TS3006a.sys.s.4",
+            "is_reference": true
+          },
+          {
+            "kind": "dialogue",
+            "da_id": "TS3006a.A.dialog-act.vkaraisk.151",
+            "meeting_id": "TS3006a",
+            "text": "<vocalsound> And the Marketing uh Expert should come up with user requirements .",
+            "participant": "MTD021PM",
+            "role": "PM",
+            "supports_item_id": "TS3006a.sys.s.4",
+            "is_reference": false
+          }
+        ]
+      },
+      "new_info": true
+    },
+    {
+      "item": "TS3006b#10",
+      "step": 4,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "assess_relation",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue shows UI indicates grouping into two groups: display vs basic functions; acceptance is indicated by subsequent confirmation.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.B.dialog-act.dharshi.169",
+              "quote": "Um the <disfmarker> one group for the for the display , and one group for the basic functions ,"
+            },
+            {
+              "da_id": "TS3006b.C.dialog-act.dharshi.186",
+              "quote": "Yeah ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Dialogue shows MTD023UID proposed/groups the grouping; owner matches.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.B.dialog-act.dharshi.169",
+              "quote": "Um the <disfmarker> one group for the for the display , and one group for the basic functions ,"
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "deadline_unresolved",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "uncertain",
+          "reason": "No explicit commitment to adopt/complete; current dialogue discusses grouping but not final status.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.A.dialog-act.dharshi.336",
+              "quote": "Yeah but they're incorporated <gap> ?"
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions in the observed dialogue regarding grouping.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.B.dialog-act.dharshi.169",
+              "quote": "Um the <disfmarker> one group for the for the display , and one group for the basic functions ,"
+            },
+            {
+              "da_id": "TS3006b.C.dialog-act.dharshi.186",
+              "quote": "Yeah ."
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "pass",
+          "reason": "Current item narrows the prior item by grouping UI functions into two categories (display vs basic), which updates the scope of the earlier 'specify the technical functions' item rather than creating a new independent task.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.B.dialog-act.dharshi.169",
+              "quote": "Um the <disfmarker> one group for the for the display , and one group for the basic functions ,"
+            },
+            {
+              "da_id": "TS3006b.B.dialog-act.dharshi.168",
+              "quote": "Uh I think we have to to group , to make two groups ."
+            },
+            {
+              "da_id": "TS3006b.C.dialog-act.dharshi.186",
+              "quote": "Yeah ."
+            },
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.149",
+              "quote": "Uh the User Interface Designer should specify the technical functions ."
+            },
+            {
+              "da_id": "TS3006a.A.dialog-act.vkaraisk.150",
+              "quote": "Right ? Yeah ?"
+            },
+            {
+              "da_id": "TS3006a.B.dialog-act.vkaraisk.59",
+              "quote": "Yep ."
+            }
+          ],
+          "links": [
+            {
+              "id": "TS3006a.sys.s.4",
+              "relation": "updates",
+              "changed_fields": [
+                "scope"
+              ],
+              "reason": "Current item narrows the previous 'specify the technical functions' into grouping into two groups, updating scope.",
+              "prior_evidence_da_ids": [
+                "TS3006a.A.dialog-act.vkaraisk.149",
+                "TS3006a.A.dialog-act.vkaraisk.150",
+                "TS3006a.B.dialog-act.vkaraisk.59"
+              ],
+              "current_evidence_da_ids": [
+                "TS3006b.B.dialog-act.dharshi.169",
+                "TS3006b.B.dialog-act.dharshi.168",
+                "TS3006b.C.dialog-act.dharshi.186"
+              ]
+            }
+          ],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "decision": "request_clarification",
+      "reason": "supported_statement_with_unresolved_fields",
+      "assessed_text": "The UI Designer will group the functions into two groups: display functions and basic functions.",
+      "requested_action": "accept",
+      "proposed_fields": {
+        "status": "open",
+        "related_items": [
+          {
+            "id": "TS3006a.sys.s.4",
+            "relation": "updates"
+          }
+        ],
+        "owner": [
+          "MTD023UID"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "TS3006b.B.dialog-act.dharshi.169",
+          "TS3006b.C.dialog-act.dharshi.186",
+          "TS3006b.B.dialog-act.dharshi.168"
+        ]
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue shows UI indicates grouping into two groups: display vs basic functions; acceptance is indicated by subsequent confirmation.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.B.dialog-act.dharshi.169",
+              "quote": "Um the <disfmarker> one group for the for the display , and one group for the basic functions ,"
+            },
+            {
+              "da_id": "TS3006b.C.dialog-act.dharshi.186",
+              "quote": "Yeah ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Dialogue shows MTD023UID proposed/groups the grouping; owner matches.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.B.dialog-act.dharshi.169",
+              "quote": "Um the <disfmarker> one group for the for the display , and one group for the basic functions ,"
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "deadline_unresolved",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "uncertain",
+          "reason": "No explicit commitment to adopt/complete; current dialogue discusses grouping but not final status.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.A.dialog-act.dharshi.336",
+              "quote": "Yeah but they're incorporated <gap> ?"
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions in the observed dialogue regarding grouping.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.B.dialog-act.dharshi.169",
+              "quote": "Um the <disfmarker> one group for the for the display , and one group for the basic functions ,"
+            },
+            {
+              "da_id": "TS3006b.C.dialog-act.dharshi.186",
+              "quote": "Yeah ."
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "pass",
+          "reason": "Current item narrows the prior item by grouping UI functions into two categories (display vs basic), which updates the scope of the earlier 'specify the technical functions' item rather than creating a new independent task.",
+          "quotes": [
+            {
+              "da_id": "TS3006b.B.dialog-act.dharshi.169",
+              "quote": "Um the <disfmarker> one group for the for the display , and one group for the basic functions ,"
+            },
+            {
+              "da_id": "TS3006b.B.dialog-act.dharshi.168",
+              "quote": "Uh I think we have to to group , to make two groups ."
+            },
+            {
+              "da_id": "TS3006b.C.dialog-act.dharshi.186",
+              "quote": "Yeah ."
+            }
+          ],
+          "links": [
+            {
+              "id": "TS3006a.sys.s.4",
+              "relation": "updates",
+              "changed_fields": [
+                "scope"
+              ],
+              "reason": "Current item narrows the previous 'specify the technical functions' into grouping into two groups, updating scope.",
+              "prior_evidence_da_ids": [
+                "TS3006a.A.dialog-act.vkaraisk.149",
+                "TS3006a.A.dialog-act.vkaraisk.150",
+                "TS3006a.B.dialog-act.vkaraisk.59"
+              ],
+              "current_evidence_da_ids": [
+                "TS3006b.B.dialog-act.dharshi.169",
+                "TS3006b.B.dialog-act.dharshi.168",
+                "TS3006b.C.dialog-act.dharshi.186"
+              ]
+            }
+          ],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "result": "pass",
+        "reason": "Current item narrows the prior item by grouping UI functions into two categories (display vs basic), which updates the scope of the earlier 'specify the technical functions' item rather than creating a new independent task.",
+        "quotes": [
+          {
+            "da_id": "TS3006b.B.dialog-act.dharshi.169",
+            "quote": "Um the <disfmarker> one group for the for the display , and one group for the basic functions ,"
+          },
+          {
+            "da_id": "TS3006b.B.dialog-act.dharshi.168",
+            "quote": "Uh I think we have to to group , to make two groups ."
+          },
+          {
+            "da_id": "TS3006b.C.dialog-act.dharshi.186",
+            "quote": "Yeah ."
+          }
+        ],
+        "links": [
+          {
+            "id": "TS3006a.sys.s.4",
+            "relation": "updates",
+            "changed_fields": [
+              "scope"
+            ],
+            "reason": "Current item narrows the previous 'specify the technical functions' into grouping into two groups, updating scope.",
+            "prior_evidence_da_ids": [
+              "TS3006a.A.dialog-act.vkaraisk.149",
+              "TS3006a.A.dialog-act.vkaraisk.150",
+              "TS3006a.B.dialog-act.vkaraisk.59"
+            ],
+            "current_evidence_da_ids": [
+              "TS3006b.B.dialog-act.dharshi.169",
+              "TS3006b.B.dialog-act.dharshi.168",
+              "TS3006b.C.dialog-act.dharshi.186"
+            ]
+          }
+        ],
+        "next_action": "accept"
+      },
+      "evidence_bindings": {
+        "relation": [
+          "TS3006a.A.dialog-act.vkaraisk.149",
+          "TS3006a.A.dialog-act.vkaraisk.150",
+          "TS3006a.B.dialog-act.vkaraisk.59"
+        ]
+      },
+      "raw_tool_input": {
+        "result": "pass",
+        "reason": "Current item narrows the prior item by grouping UI functions into two categories (display vs basic), which updates the scope of the earlier 'specify the technical functions' item rather than creating a new independent task.",
+        "quotes": [
+          {
+            "da_id": "TS3006b.B.dialog-act.dharshi.169",
+            "quote": "Um the <disfmarker> one group for the for the display , and one group for the basic functions ,"
+          },
+          {
+            "da_id": "TS3006b.B.dialog-act.dharshi.168",
+            "quote": "Uh I think we have to to group , to make two groups ."
+          },
+          {
+            "da_id": "TS3006b.C.dialog-act.dharshi.186",
+            "quote": "Yeah ."
+          }
+        ],
+        "links": [
+          {
+            "id": "TS3006a.sys.s.4",
+            "relation": "updates",
+            "changed_fields": [
+              "scope"
+            ],
+            "reason": "Current item narrows the previous 'specify the technical functions' into grouping into two groups, updating scope.",
+            "prior_evidence_da_ids": [
+              "TS3006a.A.dialog-act.vkaraisk.149",
+              "TS3006a.A.dialog-act.vkaraisk.150",
+              "TS3006a.B.dialog-act.vkaraisk.59"
+            ],
+            "current_evidence_da_ids": [
+              "TS3006b.B.dialog-act.dharshi.169",
+              "TS3006b.B.dialog-act.dharshi.168",
+              "TS3006b.C.dialog-act.dharshi.186"
+            ]
+          }
+        ],
+        "next_action": "accept"
+      },
+      "protocol_normalizations": []
+    },
+    {
+      "item": "TS3006b#10",
+      "step": 4,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "stop",
+      "outcome": "pending",
+      "termination_reason": "supported_statement_with_unresolved_fields",
+      "unresolved_fields": [
+        "deadline",
+        "status"
+      ]
+    }
+  ],
+  "lookups": 2,
+  "termination_reason": "supported_statement_with_unresolved_fields",
+  "clarifications": [
+    {
+      "request_id": "ebb839a8fa5253cf",
+      "item_key": "TS3006b#10",
+      "record_id": null,
+      "field": "deadline",
+      "question": "What is the agreed deadline, in its original wording?",
+      "item_text": "The UI Designer will group the functions into two groups: display functions and basic functions.",
+      "reason": "deadline_unresolved",
+      "evidence_da_ids": [],
+      "available_evidence_da_ids": [
+        "TS3006b.B.dialog-act.dharshi.169",
+        "TS3006b.C.dialog-act.dharshi.186",
+        "TS3006b.B.dialog-act.dharshi.168",
+        "TS3006b.B.dialog-act.dharshi.170",
+        "TS3006b.A.dialog-act.dharshi.336",
+        "TS3006a.A.dialog-act.vkaraisk.148",
+        "TS3006a.A.dialog-act.vkaraisk.149",
+        "TS3006a.A.dialog-act.vkaraisk.150",
+        "TS3006a.B.dialog-act.vkaraisk.59",
+        "TS3006a.A.dialog-act.vkaraisk.151"
+      ],
+      "status": "open",
+      "termination_reason": "supported_statement_with_unresolved_fields"
+    },
+    {
+      "request_id": "ecf5d141766820b2",
+      "item_key": "TS3006b#10",
+      "record_id": null,
+      "field": "status",
+      "question": "What is this item's status at the end of the current meeting?",
+      "item_text": "The UI Designer will group the functions into two groups: display functions and basic functions.",
+      "reason": "No explicit commitment to adopt/complete; current dialogue discusses grouping but not final status.",
+      "evidence_da_ids": [
+        "TS3006b.A.dialog-act.dharshi.336"
+      ],
+      "available_evidence_da_ids": [
+        "TS3006b.B.dialog-act.dharshi.169",
+        "TS3006b.C.dialog-act.dharshi.186",
+        "TS3006b.B.dialog-act.dharshi.168",
+        "TS3006b.B.dialog-act.dharshi.170",
+        "TS3006b.A.dialog-act.dharshi.336",
+        "TS3006a.A.dialog-act.vkaraisk.148",
+        "TS3006a.A.dialog-act.vkaraisk.149",
+        "TS3006a.A.dialog-act.vkaraisk.150",
+        "TS3006a.B.dialog-act.vkaraisk.59",
+        "TS3006a.A.dialog-act.vkaraisk.151"
+      ],
+      "status": "open",
+      "termination_reason": "supported_statement_with_unresolved_fields"
+    }
+  ]
+}

@@ -1,0 +1,1958 @@
+{
+  "meeting": "TS3006a",
+  "gold_sha256": "68b6958266d4c97fd0f7d176975af97e9789a198917d41aed2ec4f8fd0ac4b85",
+  "coverage": {
+    "votes": 3,
+    "raw_votes": [
+      [
+        {
+          "sys": 4,
+          "gold": 0
+        },
+        {
+          "sys": 5,
+          "gold": 1
+        },
+        {
+          "sys": 6,
+          "gold": 2
+        },
+        {
+          "sys": 11,
+          "gold": 3
+        }
+      ],
+      [
+        {
+          "sys": 4,
+          "gold": 0
+        },
+        {
+          "sys": 5,
+          "gold": 1
+        },
+        {
+          "sys": 6,
+          "gold": 2
+        },
+        {
+          "sys": 11,
+          "gold": 3
+        }
+      ],
+      [
+        {
+          "sys": 4,
+          "gold": 0
+        },
+        {
+          "sys": 5,
+          "gold": 1
+        },
+        {
+          "sys": 6,
+          "gold": 2
+        },
+        {
+          "sys": 11,
+          "gold": 3
+        }
+      ]
+    ],
+    "matches": [
+      {
+        "candidate": 4,
+        "gold_id": "TS3006a.elana.s.13",
+        "votes": 3
+      },
+      {
+        "candidate": 5,
+        "gold_id": "TS3006a.elana.s.14",
+        "votes": 3
+      },
+      {
+        "candidate": 6,
+        "gold_id": "TS3006a.elana.s.15",
+        "votes": 3
+      },
+      {
+        "candidate": 11,
+        "gold_id": "TS3006a.elana.s.16",
+        "votes": 3
+      }
+    ]
+  },
+  "arms": {
+    "before": {
+      "metrics": {
+        "actions": {
+          "tp": 4,
+          "sys": 5,
+          "gold": 4,
+          "precision": 0.8,
+          "recall": 1.0,
+          "f1": 0.889
+        },
+        "decisions": {
+          "tp": 2,
+          "sys": 3,
+          "gold": 4,
+          "precision": 0.667,
+          "recall": 0.5,
+          "f1": 0.571
+        },
+        "problems": {
+          "tp": 0,
+          "sys": 1,
+          "gold": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "pairs": {
+        "4": "TS3006a.elana.s.9",
+        "6": "TS3006a.elana.s.10",
+        "7": "TS3006a.manual.s.1",
+        "8": "TS3006a.elana.s.11",
+        "5": "TS3006a.elana.s.16",
+        "3": "TS3006a.elana.s.13"
+      },
+      "diagnosis": [
+        {
+          "gold_id": "TS3006a.elana.s.13",
+          "gold_text": "Use EUR 25 as the product selling-price target.",
+          "matched": true,
+          "attribution": "recovered",
+          "candidate_witnesses": [
+            4
+          ],
+          "candidate_items": [
+            {
+              "type": "decisions",
+              "text": "The selling price is proposed to be twenty five Euros.",
+              "evidence_da_ids": [
+                "TS3006a.A.dialog-act.vkaraisk.130"
+              ],
+              "owner_ids": [],
+              "owner_cue": null,
+              "deadline_cue": null,
+              "owner_basis": "missing",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "proposed"
+            }
+          ],
+          "merged_samples": [
+            [
+              {
+                "type": "decisions",
+                "text": "The selling price is proposed to be twenty five Euros; the revenue target is fifty million Euros; production costs should be half of the selling price.",
+                "evidence_da_ids": [
+                  "TS3006a.A.dialog-act.vkaraisk.130",
+                  "TS3006a.A.dialog-act.vkaraisk.131",
+                  "TS3006a.A.dialog-act.vkaraisk.132",
+                  "TS3006a.A.dialog-act.vkaraisk.133"
+                ],
+                "owner_ids": [],
+                "owner_cue": null,
+                "deadline_cue": null,
+                "owner_basis": "missing",
+                "deadline": null,
+                "deadline_basis": "missing",
+                "status": "proposed",
+                "candidate_indexes": [
+                  4,
+                  5,
+                  6
+                ]
+              }
+            ],
+            [
+              {
+                "type": "decisions",
+                "text": "The selling price will be 25 Euros; the revenue target is 50 million Euros; production costs should be half of the selling price.",
+                "evidence_da_ids": [
+                  "TS3006a.A.dialog-act.vkaraisk.130",
+                  "TS3006a.A.dialog-act.vkaraisk.131",
+                  "TS3006a.A.dialog-act.vkaraisk.132",
+                  "TS3006a.A.dialog-act.vkaraisk.133"
+                ],
+                "owner_ids": [],
+                "owner_cue": null,
+                "deadline_cue": null,
+                "owner_basis": "missing",
+                "deadline": null,
+                "deadline_basis": "missing",
+                "status": "proposed",
+                "candidate_indexes": [
+                  4,
+                  5,
+                  6
+                ]
+              }
+            ],
+            [
+              {
+                "type": "decisions",
+                "text": "The selling price is proposed to be twenty five Euros and production costs should be half of the selling price.",
+                "evidence_da_ids": [
+                  "TS3006a.A.dialog-act.vkaraisk.130",
+                  "TS3006a.A.dialog-act.vkaraisk.133"
+                ],
+                "owner_ids": [],
+                "owner_cue": null,
+                "deadline_cue": null,
+                "owner_basis": "missing",
+                "deadline": null,
+                "deadline_basis": "missing",
+                "status": "proposed",
+                "candidate_indexes": [
+                  4,
+                  6
+                ]
+              }
+            ]
+          ],
+          "after_sample_caps": [
+            [
+              {
+                "type": "decisions",
+                "text": "The selling price is proposed to be twenty five Euros; the revenue target is fifty million Euros; production costs should be half of the selling price.",
+                "evidence_da_ids": [
+                  "TS3006a.A.dialog-act.vkaraisk.130",
+                  "TS3006a.A.dialog-act.vkaraisk.131",
+                  "TS3006a.A.dialog-act.vkaraisk.132",
+                  "TS3006a.A.dialog-act.vkaraisk.133"
+                ],
+                "owner_ids": [],
+                "owner_cue": null,
+                "deadline_cue": null,
+                "owner_basis": "missing",
+                "deadline": null,
+                "deadline_basis": "missing",
+                "status": "proposed",
+                "candidate_indexes": [
+                  4,
+                  5,
+                  6
+                ]
+              }
+            ],
+            [
+              {
+                "type": "decisions",
+                "text": "The selling price will be 25 Euros; the revenue target is 50 million Euros; production costs should be half of the selling price.",
+                "evidence_da_ids": [
+                  "TS3006a.A.dialog-act.vkaraisk.130",
+                  "TS3006a.A.dialog-act.vkaraisk.131",
+                  "TS3006a.A.dialog-act.vkaraisk.132",
+                  "TS3006a.A.dialog-act.vkaraisk.133"
+                ],
+                "owner_ids": [],
+                "owner_cue": null,
+                "deadline_cue": null,
+                "owner_basis": "missing",
+                "deadline": null,
+                "deadline_basis": "missing",
+                "status": "proposed",
+                "candidate_indexes": [
+                  4,
+                  5,
+                  6
+                ]
+              }
+            ],
+            [
+              {
+                "type": "decisions",
+                "text": "The selling price is proposed to be twenty five Euros and production costs should be half of the selling price.",
+                "evidence_da_ids": [
+                  "TS3006a.A.dialog-act.vkaraisk.130",
+                  "TS3006a.A.dialog-act.vkaraisk.133"
+                ],
+                "owner_ids": [],
+                "owner_cue": null,
+                "deadline_cue": null,
+                "owner_basis": "missing",
+                "deadline": null,
+                "deadline_basis": "missing",
+                "status": "proposed",
+                "candidate_indexes": [
+                  4,
+                  6
+                ]
+              }
+            ]
+          ],
+          "after_vote": [
+            {
+              "type": "decisions",
+              "text": "The selling price is proposed to be twenty five Euros; the revenue target is fifty million Euros; production costs should be half of the selling price.",
+              "evidence_da_ids": [
+                "TS3006a.A.dialog-act.vkaraisk.130",
+                "TS3006a.A.dialog-act.vkaraisk.131",
+                "TS3006a.A.dialog-act.vkaraisk.132",
+                "TS3006a.A.dialog-act.vkaraisk.133"
+              ],
+              "owner_ids": [],
+              "owner_cue": null,
+              "deadline_cue": null,
+              "owner_basis": "missing",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "proposed",
+              "candidate_indexes": [
+                4,
+                5,
+                6
+              ]
+            }
+          ],
+          "after_final_cap_and_normalize": [
+            {
+              "type": "decisions",
+              "text": "The selling price is proposed to be twenty five Euros; the revenue target is fifty million Euros; production costs should be half of the selling price.",
+              "evidence_da_ids": [
+                "TS3006a.A.dialog-act.vkaraisk.130",
+                "TS3006a.A.dialog-act.vkaraisk.131",
+                "TS3006a.A.dialog-act.vkaraisk.132",
+                "TS3006a.A.dialog-act.vkaraisk.133"
+              ],
+              "owner_ids": [],
+              "owner_cue": null,
+              "deadline_cue": null,
+              "owner_basis": "missing",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "proposed",
+              "candidate_indexes": [
+                4,
+                5,
+                6
+              ]
+            }
+          ]
+        },
+        {
+          "gold_id": "TS3006a.elana.s.14",
+          "gold_text": "The project manager stated an aim to sell EUR 50 million worth of product.",
+          "matched": false,
+          "attribution": "merge_granularity_or_wording",
+          "candidate_witnesses": [
+            5
+          ],
+          "candidate_items": [
+            {
+              "type": "decisions",
+              "text": "The revenue target is fifty million Euros.",
+              "evidence_da_ids": [
+                "TS3006a.A.dialog-act.vkaraisk.131",
+                "TS3006a.A.dialog-act.vkaraisk.132"
+              ],
+              "owner_ids": [],
+              "owner_cue": null,
+              "deadline_cue": null,
+              "owner_basis": "missing",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "proposed"
+            }
+          ],
+          "merged_samples": [
+            [
+              {
+                "type": "decisions",
+                "text": "The selling price is proposed to be twenty five Euros; the revenue target is fifty million Euros; production costs should be half of the selling price.",
+                "evidence_da_ids": [
+                  "TS3006a.A.dialog-act.vkaraisk.130",
+                  "TS3006a.A.dialog-act.vkaraisk.131",
+                  "TS3006a.A.dialog-act.vkaraisk.132",
+                  "TS3006a.A.dialog-act.vkaraisk.133"
+                ],
+                "owner_ids": [],
+                "owner_cue": null,
+                "deadline_cue": null,
+                "owner_basis": "missing",
+                "deadline": null,
+                "deadline_basis": "missing",
+                "status": "proposed",
+                "candidate_indexes": [
+                  4,
+                  5,
+                  6
+                ]
+              }
+            ],
+            [
+              {
+                "type": "decisions",
+                "text": "The selling price will be 25 Euros; the revenue target is 50 million Euros; production costs should be half of the selling price.",
+                "evidence_da_ids": [
+                  "TS3006a.A.dialog-act.vkaraisk.130",
+                  "TS3006a.A.dialog-act.vkaraisk.131",
+                  "TS3006a.A.dialog-act.vkaraisk.132",
+                  "TS3006a.A.dialog-act.vkaraisk.133"
+                ],
+                "owner_ids": [],
+                "owner_cue": null,
+                "deadline_cue": null,
+                "owner_basis": "missing",
+                "deadline": null,
+                "deadline_basis": "missing",
+                "status": "proposed",
+                "candidate_indexes": [
+                  4,
+                  5,
+                  6
+                ]
+              }
+            ],
+            [
+              {
+                "type": "decisions",
+                "text": "The revenue target is fifty million Euros.",
+                "evidence_da_ids": [
+                  "TS3006a.A.dialog-act.vkaraisk.131",
+                  "TS3006a.A.dialog-act.vkaraisk.132"
+                ],
+                "owner_ids": [],
+                "owner_cue": null,
+                "deadline_cue": null,
+                "owner_basis": "missing",
+                "deadline": null,
+                "deadline_basis": "missing",
+                "status": "proposed",
+                "candidate_indexes": [
+                  5
+                ]
+              }
+            ]
+          ],
+          "after_sample_caps": [
+            [
+              {
+                "type": "decisions",
+                "text": "The selling price is proposed to be twenty five Euros; the revenue target is fifty million Euros; production costs should be half of the selling price.",
+                "evidence_da_ids": [
+                  "TS3006a.A.dialog-act.vkaraisk.130",
+                  "TS3006a.A.dialog-act.vkaraisk.131",
+                  "TS3006a.A.dialog-act.vkaraisk.132",
+                  "TS3006a.A.dialog-act.vkaraisk.133"
+                ],
+                "owner_ids": [],
+                "owner_cue": null,
+                "deadline_cue": null,
+                "owner_basis": "missing",
+                "deadline": null,
+                "deadline_basis": "missing",
+                "status": "proposed",
+                "candidate_indexes": [
+                  4,
+                  5,
+                  6
+                ]
+              }
+            ],
+            [
+              {
+                "type": "decisions",
+                "text": "The selling price will be 25 Euros; the revenue target is 50 million Euros; production costs should be half of the selling price.",
+                "evidence_da_ids": [
+                  "TS3006a.A.dialog-act.vkaraisk.130",
+                  "TS3006a.A.dialog-act.vkaraisk.131",
+                  "TS3006a.A.dialog-act.vkaraisk.132",
+                  "TS3006a.A.dialog-act.vkaraisk.133"
+                ],
+                "owner_ids": [],
+                "owner_cue": null,
+                "deadline_cue": null,
+                "owner_basis": "missing",
+                "deadline": null,
+                "deadline_basis": "missing",
+                "status": "proposed",
+                "candidate_indexes": [
+                  4,
+                  5,
+                  6
+                ]
+              }
+            ],
+            [
+              {
+                "type": "decisions",
+                "text": "The revenue target is fifty million Euros.",
+                "evidence_da_ids": [
+                  "TS3006a.A.dialog-act.vkaraisk.131",
+                  "TS3006a.A.dialog-act.vkaraisk.132"
+                ],
+                "owner_ids": [],
+                "owner_cue": null,
+                "deadline_cue": null,
+                "owner_basis": "missing",
+                "deadline": null,
+                "deadline_basis": "missing",
+                "status": "proposed",
+                "candidate_indexes": [
+                  5
+                ]
+              }
+            ]
+          ],
+          "after_vote": [
+            {
+              "type": "decisions",
+              "text": "The selling price is proposed to be twenty five Euros; the revenue target is fifty million Euros; production costs should be half of the selling price.",
+              "evidence_da_ids": [
+                "TS3006a.A.dialog-act.vkaraisk.130",
+                "TS3006a.A.dialog-act.vkaraisk.131",
+                "TS3006a.A.dialog-act.vkaraisk.132",
+                "TS3006a.A.dialog-act.vkaraisk.133"
+              ],
+              "owner_ids": [],
+              "owner_cue": null,
+              "deadline_cue": null,
+              "owner_basis": "missing",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "proposed",
+              "candidate_indexes": [
+                4,
+                5,
+                6
+              ]
+            }
+          ],
+          "after_final_cap_and_normalize": [
+            {
+              "type": "decisions",
+              "text": "The selling price is proposed to be twenty five Euros; the revenue target is fifty million Euros; production costs should be half of the selling price.",
+              "evidence_da_ids": [
+                "TS3006a.A.dialog-act.vkaraisk.130",
+                "TS3006a.A.dialog-act.vkaraisk.131",
+                "TS3006a.A.dialog-act.vkaraisk.132",
+                "TS3006a.A.dialog-act.vkaraisk.133"
+              ],
+              "owner_ids": [],
+              "owner_cue": null,
+              "deadline_cue": null,
+              "owner_basis": "missing",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "proposed",
+              "candidate_indexes": [
+                4,
+                5,
+                6
+              ]
+            }
+          ]
+        },
+        {
+          "gold_id": "TS3006a.elana.s.15",
+          "gold_text": "Allow production costs of half the EUR 25 selling price, i.e. EUR 12.50 per remote.",
+          "matched": false,
+          "attribution": "merge_granularity_or_wording",
+          "candidate_witnesses": [
+            6
+          ],
+          "candidate_items": [
+            {
+              "type": "decisions",
+              "text": "Production costs should be half of the selling price.",
+              "evidence_da_ids": [
+                "TS3006a.A.dialog-act.vkaraisk.133"
+              ],
+              "owner_ids": [],
+              "owner_cue": null,
+              "deadline_cue": null,
+              "owner_basis": "missing",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "proposed"
+            }
+          ],
+          "merged_samples": [
+            [
+              {
+                "type": "decisions",
+                "text": "The selling price is proposed to be twenty five Euros; the revenue target is fifty million Euros; production costs should be half of the selling price.",
+                "evidence_da_ids": [
+                  "TS3006a.A.dialog-act.vkaraisk.130",
+                  "TS3006a.A.dialog-act.vkaraisk.131",
+                  "TS3006a.A.dialog-act.vkaraisk.132",
+                  "TS3006a.A.dialog-act.vkaraisk.133"
+                ],
+                "owner_ids": [],
+                "owner_cue": null,
+                "deadline_cue": null,
+                "owner_basis": "missing",
+                "deadline": null,
+                "deadline_basis": "missing",
+                "status": "proposed",
+                "candidate_indexes": [
+                  4,
+                  5,
+                  6
+                ]
+              }
+            ],
+            [
+              {
+                "type": "decisions",
+                "text": "The selling price will be 25 Euros; the revenue target is 50 million Euros; production costs should be half of the selling price.",
+                "evidence_da_ids": [
+                  "TS3006a.A.dialog-act.vkaraisk.130",
+                  "TS3006a.A.dialog-act.vkaraisk.131",
+                  "TS3006a.A.dialog-act.vkaraisk.132",
+                  "TS3006a.A.dialog-act.vkaraisk.133"
+                ],
+                "owner_ids": [],
+                "owner_cue": null,
+                "deadline_cue": null,
+                "owner_basis": "missing",
+                "deadline": null,
+                "deadline_basis": "missing",
+                "status": "proposed",
+                "candidate_indexes": [
+                  4,
+                  5,
+                  6
+                ]
+              }
+            ],
+            [
+              {
+                "type": "decisions",
+                "text": "The selling price is proposed to be twenty five Euros and production costs should be half of the selling price.",
+                "evidence_da_ids": [
+                  "TS3006a.A.dialog-act.vkaraisk.130",
+                  "TS3006a.A.dialog-act.vkaraisk.133"
+                ],
+                "owner_ids": [],
+                "owner_cue": null,
+                "deadline_cue": null,
+                "owner_basis": "missing",
+                "deadline": null,
+                "deadline_basis": "missing",
+                "status": "proposed",
+                "candidate_indexes": [
+                  4,
+                  6
+                ]
+              }
+            ]
+          ],
+          "after_sample_caps": [
+            [
+              {
+                "type": "decisions",
+                "text": "The selling price is proposed to be twenty five Euros; the revenue target is fifty million Euros; production costs should be half of the selling price.",
+                "evidence_da_ids": [
+                  "TS3006a.A.dialog-act.vkaraisk.130",
+                  "TS3006a.A.dialog-act.vkaraisk.131",
+                  "TS3006a.A.dialog-act.vkaraisk.132",
+                  "TS3006a.A.dialog-act.vkaraisk.133"
+                ],
+                "owner_ids": [],
+                "owner_cue": null,
+                "deadline_cue": null,
+                "owner_basis": "missing",
+                "deadline": null,
+                "deadline_basis": "missing",
+                "status": "proposed",
+                "candidate_indexes": [
+                  4,
+                  5,
+                  6
+                ]
+              }
+            ],
+            [
+              {
+                "type": "decisions",
+                "text": "The selling price will be 25 Euros; the revenue target is 50 million Euros; production costs should be half of the selling price.",
+                "evidence_da_ids": [
+                  "TS3006a.A.dialog-act.vkaraisk.130",
+                  "TS3006a.A.dialog-act.vkaraisk.131",
+                  "TS3006a.A.dialog-act.vkaraisk.132",
+                  "TS3006a.A.dialog-act.vkaraisk.133"
+                ],
+                "owner_ids": [],
+                "owner_cue": null,
+                "deadline_cue": null,
+                "owner_basis": "missing",
+                "deadline": null,
+                "deadline_basis": "missing",
+                "status": "proposed",
+                "candidate_indexes": [
+                  4,
+                  5,
+                  6
+                ]
+              }
+            ],
+            [
+              {
+                "type": "decisions",
+                "text": "The selling price is proposed to be twenty five Euros and production costs should be half of the selling price.",
+                "evidence_da_ids": [
+                  "TS3006a.A.dialog-act.vkaraisk.130",
+                  "TS3006a.A.dialog-act.vkaraisk.133"
+                ],
+                "owner_ids": [],
+                "owner_cue": null,
+                "deadline_cue": null,
+                "owner_basis": "missing",
+                "deadline": null,
+                "deadline_basis": "missing",
+                "status": "proposed",
+                "candidate_indexes": [
+                  4,
+                  6
+                ]
+              }
+            ]
+          ],
+          "after_vote": [
+            {
+              "type": "decisions",
+              "text": "The selling price is proposed to be twenty five Euros; the revenue target is fifty million Euros; production costs should be half of the selling price.",
+              "evidence_da_ids": [
+                "TS3006a.A.dialog-act.vkaraisk.130",
+                "TS3006a.A.dialog-act.vkaraisk.131",
+                "TS3006a.A.dialog-act.vkaraisk.132",
+                "TS3006a.A.dialog-act.vkaraisk.133"
+              ],
+              "owner_ids": [],
+              "owner_cue": null,
+              "deadline_cue": null,
+              "owner_basis": "missing",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "proposed",
+              "candidate_indexes": [
+                4,
+                5,
+                6
+              ]
+            }
+          ],
+          "after_final_cap_and_normalize": [
+            {
+              "type": "decisions",
+              "text": "The selling price is proposed to be twenty five Euros; the revenue target is fifty million Euros; production costs should be half of the selling price.",
+              "evidence_da_ids": [
+                "TS3006a.A.dialog-act.vkaraisk.130",
+                "TS3006a.A.dialog-act.vkaraisk.131",
+                "TS3006a.A.dialog-act.vkaraisk.132",
+                "TS3006a.A.dialog-act.vkaraisk.133"
+              ],
+              "owner_ids": [],
+              "owner_cue": null,
+              "deadline_cue": null,
+              "owner_basis": "missing",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "proposed",
+              "candidate_indexes": [
+                4,
+                5,
+                6
+              ]
+            }
+          ]
+        },
+        {
+          "gold_id": "TS3006a.elana.s.16",
+          "gold_text": "Use television and video control as a provisional starting scope while reserving the possibility of additional features.",
+          "matched": true,
+          "attribution": "recovered",
+          "candidate_witnesses": [
+            11
+          ],
+          "candidate_items": [
+            {
+              "type": "decisions",
+              "text": "We will start with the assumption that it's only for TV and video, and reserve the possibility to add other features.",
+              "evidence_da_ids": [
+                "TS3006a.A.dialog-act.vkaraisk.243",
+                "TS3006a.A.dialog-act.vkaraisk.244"
+              ],
+              "owner_ids": [],
+              "owner_cue": null,
+              "deadline_cue": null,
+              "owner_basis": "missing",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "adopted"
+            }
+          ],
+          "merged_samples": [
+            [
+              {
+                "type": "decisions",
+                "text": "We will go ahead with the current plan; we are adopting a three-phase approach and will start with TV and video only, with the possibility to add other features.",
+                "evidence_da_ids": [
+                  "TS3006a.A.dialog-act.vkaraisk.196",
+                  "TS3006a.A.dialog-act.vkaraisk.197",
+                  "TS3006a.A.dialog-act.vkaraisk.198",
+                  "TS3006a.D.dialog-act.vkaraisk.147",
+                  "TS3006a.A.dialog-act.vkaraisk.243",
+                  "TS3006a.A.dialog-act.vkaraisk.244"
+                ],
+                "owner_ids": [],
+                "owner_cue": null,
+                "deadline_cue": null,
+                "owner_basis": "missing",
+                "deadline": null,
+                "deadline_basis": "missing",
+                "status": "adopted",
+                "candidate_indexes": [
+                  7,
+                  10,
+                  11
+                ]
+              }
+            ],
+            [
+              {
+                "type": "decisions",
+                "text": "We will proceed with the current plan, in three phases, and assume the product is only for TV and video with the possibility to add other features.",
+                "evidence_da_ids": [
+                  "TS3006a.A.dialog-act.vkaraisk.196",
+                  "TS3006a.A.dialog-act.vkaraisk.197",
+                  "TS3006a.A.dialog-act.vkaraisk.198",
+                  "TS3006a.D.dialog-act.vkaraisk.147",
+                  "TS3006a.A.dialog-act.vkaraisk.243",
+                  "TS3006a.A.dialog-act.vkaraisk.244"
+                ],
+                "owner_ids": [],
+                "owner_cue": null,
+                "deadline_cue": null,
+                "owner_basis": "missing",
+                "deadline": null,
+                "deadline_basis": "missing",
+                "status": "adopted",
+                "candidate_indexes": [
+                  7,
+                  10,
+                  11
+                ]
+              }
+            ],
+            [
+              {
+                "type": "decisions",
+                "text": "We will start with the assumption that it's only for TV and video, and reserve the possibility to add other features.",
+                "evidence_da_ids": [
+                  "TS3006a.A.dialog-act.vkaraisk.243",
+                  "TS3006a.A.dialog-act.vkaraisk.244"
+                ],
+                "owner_ids": [],
+                "owner_cue": null,
+                "deadline_cue": null,
+                "owner_basis": "missing",
+                "deadline": null,
+                "deadline_basis": "missing",
+                "status": "adopted",
+                "candidate_indexes": [
+                  11
+                ]
+              }
+            ]
+          ],
+          "after_sample_caps": [
+            [
+              {
+                "type": "decisions",
+                "text": "We will go ahead with the current plan; we are adopting a three-phase approach and will start with TV and video only, with the possibility to add other features.",
+                "evidence_da_ids": [
+                  "TS3006a.A.dialog-act.vkaraisk.196",
+                  "TS3006a.A.dialog-act.vkaraisk.197",
+                  "TS3006a.A.dialog-act.vkaraisk.198",
+                  "TS3006a.D.dialog-act.vkaraisk.147",
+                  "TS3006a.A.dialog-act.vkaraisk.243",
+                  "TS3006a.A.dialog-act.vkaraisk.244"
+                ],
+                "owner_ids": [],
+                "owner_cue": null,
+                "deadline_cue": null,
+                "owner_basis": "missing",
+                "deadline": null,
+                "deadline_basis": "missing",
+                "status": "adopted",
+                "candidate_indexes": [
+                  7,
+                  10,
+                  11
+                ]
+              }
+            ],
+            [
+              {
+                "type": "decisions",
+                "text": "We will proceed with the current plan, in three phases, and assume the product is only for TV and video with the possibility to add other features.",
+                "evidence_da_ids": [
+                  "TS3006a.A.dialog-act.vkaraisk.196",
+                  "TS3006a.A.dialog-act.vkaraisk.197",
+                  "TS3006a.A.dialog-act.vkaraisk.198",
+                  "TS3006a.D.dialog-act.vkaraisk.147",
+                  "TS3006a.A.dialog-act.vkaraisk.243",
+                  "TS3006a.A.dialog-act.vkaraisk.244"
+                ],
+                "owner_ids": [],
+                "owner_cue": null,
+                "deadline_cue": null,
+                "owner_basis": "missing",
+                "deadline": null,
+                "deadline_basis": "missing",
+                "status": "adopted",
+                "candidate_indexes": [
+                  7,
+                  10,
+                  11
+                ]
+              }
+            ],
+            [
+              {
+                "type": "decisions",
+                "text": "We will start with the assumption that it's only for TV and video, and reserve the possibility to add other features.",
+                "evidence_da_ids": [
+                  "TS3006a.A.dialog-act.vkaraisk.243",
+                  "TS3006a.A.dialog-act.vkaraisk.244"
+                ],
+                "owner_ids": [],
+                "owner_cue": null,
+                "deadline_cue": null,
+                "owner_basis": "missing",
+                "deadline": null,
+                "deadline_basis": "missing",
+                "status": "adopted",
+                "candidate_indexes": [
+                  11
+                ]
+              }
+            ]
+          ],
+          "after_vote": [
+            {
+              "type": "decisions",
+              "text": "We will go ahead with the current plan; we are adopting a three-phase approach and will start with TV and video only, with the possibility to add other features.",
+              "evidence_da_ids": [
+                "TS3006a.A.dialog-act.vkaraisk.196",
+                "TS3006a.A.dialog-act.vkaraisk.197",
+                "TS3006a.A.dialog-act.vkaraisk.198",
+                "TS3006a.D.dialog-act.vkaraisk.147",
+                "TS3006a.A.dialog-act.vkaraisk.243",
+                "TS3006a.A.dialog-act.vkaraisk.244"
+              ],
+              "owner_ids": [],
+              "owner_cue": null,
+              "deadline_cue": null,
+              "owner_basis": "missing",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "adopted",
+              "candidate_indexes": [
+                7,
+                10,
+                11
+              ]
+            }
+          ],
+          "after_final_cap_and_normalize": [
+            {
+              "type": "decisions",
+              "text": "We will go ahead with the current plan; we are adopting a three-phase approach and will start with TV and video only, with the possibility to add other features.",
+              "evidence_da_ids": [
+                "TS3006a.A.dialog-act.vkaraisk.196",
+                "TS3006a.A.dialog-act.vkaraisk.197",
+                "TS3006a.A.dialog-act.vkaraisk.198",
+                "TS3006a.D.dialog-act.vkaraisk.147",
+                "TS3006a.A.dialog-act.vkaraisk.243",
+                "TS3006a.A.dialog-act.vkaraisk.244"
+              ],
+              "owner_ids": [],
+              "owner_cue": null,
+              "deadline_cue": null,
+              "owner_basis": "missing",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "adopted",
+              "candidate_indexes": [
+                7,
+                10,
+                11
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "after": {
+      "metrics": {
+        "actions": {
+          "tp": 4,
+          "sys": 5,
+          "gold": 4,
+          "precision": 0.8,
+          "recall": 1.0,
+          "f1": 0.889
+        },
+        "decisions": {
+          "tp": 4,
+          "sys": 7,
+          "gold": 4,
+          "precision": 0.571,
+          "recall": 1.0,
+          "f1": 0.727
+        },
+        "problems": {
+          "tp": 0,
+          "sys": 1,
+          "gold": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "pairs": {
+        "2": "TS3006a.elana.s.9",
+        "3": "TS3006a.elana.s.10",
+        "4": "TS3006a.manual.s.1",
+        "5": "TS3006a.elana.s.11",
+        "6": "TS3006a.elana.s.13",
+        "7": "TS3006a.elana.s.14",
+        "8": "TS3006a.elana.s.15",
+        "10": "TS3006a.elana.s.16"
+      },
+      "diagnosis": [
+        {
+          "gold_id": "TS3006a.elana.s.13",
+          "gold_text": "Use EUR 25 as the product selling-price target.",
+          "matched": true,
+          "attribution": "recovered",
+          "candidate_witnesses": [
+            4
+          ],
+          "candidate_items": [
+            {
+              "type": "decisions",
+              "text": "The selling price is proposed to be twenty five Euros.",
+              "evidence_da_ids": [
+                "TS3006a.A.dialog-act.vkaraisk.130"
+              ],
+              "owner_ids": [],
+              "owner_cue": null,
+              "deadline_cue": null,
+              "owner_basis": "missing",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "proposed"
+            }
+          ],
+          "merged_samples": [
+            [
+              {
+                "type": "decisions",
+                "text": "The selling price is proposed to be twenty five Euros; the revenue target is fifty million Euros; production costs should be half of the selling price.",
+                "evidence_da_ids": [
+                  "TS3006a.A.dialog-act.vkaraisk.130",
+                  "TS3006a.A.dialog-act.vkaraisk.131",
+                  "TS3006a.A.dialog-act.vkaraisk.132",
+                  "TS3006a.A.dialog-act.vkaraisk.133"
+                ],
+                "owner_ids": [],
+                "owner_cue": null,
+                "deadline_cue": null,
+                "owner_basis": "missing",
+                "deadline": null,
+                "deadline_basis": "missing",
+                "status": "proposed",
+                "candidate_indexes": [
+                  4,
+                  5,
+                  6
+                ]
+              }
+            ],
+            [
+              {
+                "type": "decisions",
+                "text": "The selling price will be 25 Euros; the revenue target is 50 million Euros; production costs should be half of the selling price.",
+                "evidence_da_ids": [
+                  "TS3006a.A.dialog-act.vkaraisk.130",
+                  "TS3006a.A.dialog-act.vkaraisk.131",
+                  "TS3006a.A.dialog-act.vkaraisk.132",
+                  "TS3006a.A.dialog-act.vkaraisk.133"
+                ],
+                "owner_ids": [],
+                "owner_cue": null,
+                "deadline_cue": null,
+                "owner_basis": "missing",
+                "deadline": null,
+                "deadline_basis": "missing",
+                "status": "proposed",
+                "candidate_indexes": [
+                  4,
+                  5,
+                  6
+                ]
+              }
+            ],
+            [
+              {
+                "type": "decisions",
+                "text": "The selling price is proposed to be twenty five Euros and production costs should be half of the selling price.",
+                "evidence_da_ids": [
+                  "TS3006a.A.dialog-act.vkaraisk.130",
+                  "TS3006a.A.dialog-act.vkaraisk.133"
+                ],
+                "owner_ids": [],
+                "owner_cue": null,
+                "deadline_cue": null,
+                "owner_basis": "missing",
+                "deadline": null,
+                "deadline_basis": "missing",
+                "status": "proposed",
+                "candidate_indexes": [
+                  4,
+                  6
+                ]
+              }
+            ]
+          ],
+          "after_sample_caps": [
+            [
+              {
+                "type": "decisions",
+                "text": "The selling price is proposed to be twenty five Euros; the revenue target is fifty million Euros; production costs should be half of the selling price.",
+                "evidence_da_ids": [
+                  "TS3006a.A.dialog-act.vkaraisk.130",
+                  "TS3006a.A.dialog-act.vkaraisk.131",
+                  "TS3006a.A.dialog-act.vkaraisk.132",
+                  "TS3006a.A.dialog-act.vkaraisk.133"
+                ],
+                "owner_ids": [],
+                "owner_cue": null,
+                "deadline_cue": null,
+                "owner_basis": "missing",
+                "deadline": null,
+                "deadline_basis": "missing",
+                "status": "proposed",
+                "candidate_indexes": [
+                  4,
+                  5,
+                  6
+                ]
+              }
+            ],
+            [
+              {
+                "type": "decisions",
+                "text": "The selling price will be 25 Euros; the revenue target is 50 million Euros; production costs should be half of the selling price.",
+                "evidence_da_ids": [
+                  "TS3006a.A.dialog-act.vkaraisk.130",
+                  "TS3006a.A.dialog-act.vkaraisk.131",
+                  "TS3006a.A.dialog-act.vkaraisk.132",
+                  "TS3006a.A.dialog-act.vkaraisk.133"
+                ],
+                "owner_ids": [],
+                "owner_cue": null,
+                "deadline_cue": null,
+                "owner_basis": "missing",
+                "deadline": null,
+                "deadline_basis": "missing",
+                "status": "proposed",
+                "candidate_indexes": [
+                  4,
+                  5,
+                  6
+                ]
+              }
+            ],
+            [
+              {
+                "type": "decisions",
+                "text": "The selling price is proposed to be twenty five Euros and production costs should be half of the selling price.",
+                "evidence_da_ids": [
+                  "TS3006a.A.dialog-act.vkaraisk.130",
+                  "TS3006a.A.dialog-act.vkaraisk.133"
+                ],
+                "owner_ids": [],
+                "owner_cue": null,
+                "deadline_cue": null,
+                "owner_basis": "missing",
+                "deadline": null,
+                "deadline_basis": "missing",
+                "status": "proposed",
+                "candidate_indexes": [
+                  4,
+                  6
+                ]
+              }
+            ]
+          ],
+          "after_vote": [
+            {
+              "type": "decisions",
+              "text": "The selling price is proposed to be twenty five Euros; the revenue target is fifty million Euros; production costs should be half of the selling price.",
+              "evidence_da_ids": [
+                "TS3006a.A.dialog-act.vkaraisk.130",
+                "TS3006a.A.dialog-act.vkaraisk.131",
+                "TS3006a.A.dialog-act.vkaraisk.132",
+                "TS3006a.A.dialog-act.vkaraisk.133"
+              ],
+              "owner_ids": [],
+              "owner_cue": null,
+              "deadline_cue": null,
+              "owner_basis": "missing",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "proposed",
+              "candidate_indexes": [
+                4,
+                5,
+                6
+              ]
+            }
+          ],
+          "after_final_cap_and_normalize": [
+            {
+              "type": "decisions",
+              "text": "The selling price is set at twenty-five Euros.",
+              "evidence_da_ids": [
+                "TS3006a.A.dialog-act.vkaraisk.130"
+              ],
+              "owner_ids": [],
+              "owner_cue": null,
+              "deadline_cue": null,
+              "owner_basis": "missing",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "adopted",
+              "candidate_indexes": [
+                4
+              ]
+            }
+          ]
+        },
+        {
+          "gold_id": "TS3006a.elana.s.14",
+          "gold_text": "The project manager stated an aim to sell EUR 50 million worth of product.",
+          "matched": true,
+          "attribution": "recovered",
+          "candidate_witnesses": [
+            5
+          ],
+          "candidate_items": [
+            {
+              "type": "decisions",
+              "text": "The revenue target is fifty million Euros.",
+              "evidence_da_ids": [
+                "TS3006a.A.dialog-act.vkaraisk.131",
+                "TS3006a.A.dialog-act.vkaraisk.132"
+              ],
+              "owner_ids": [],
+              "owner_cue": null,
+              "deadline_cue": null,
+              "owner_basis": "missing",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "proposed"
+            }
+          ],
+          "merged_samples": [
+            [
+              {
+                "type": "decisions",
+                "text": "The selling price is proposed to be twenty five Euros; the revenue target is fifty million Euros; production costs should be half of the selling price.",
+                "evidence_da_ids": [
+                  "TS3006a.A.dialog-act.vkaraisk.130",
+                  "TS3006a.A.dialog-act.vkaraisk.131",
+                  "TS3006a.A.dialog-act.vkaraisk.132",
+                  "TS3006a.A.dialog-act.vkaraisk.133"
+                ],
+                "owner_ids": [],
+                "owner_cue": null,
+                "deadline_cue": null,
+                "owner_basis": "missing",
+                "deadline": null,
+                "deadline_basis": "missing",
+                "status": "proposed",
+                "candidate_indexes": [
+                  4,
+                  5,
+                  6
+                ]
+              }
+            ],
+            [
+              {
+                "type": "decisions",
+                "text": "The selling price will be 25 Euros; the revenue target is 50 million Euros; production costs should be half of the selling price.",
+                "evidence_da_ids": [
+                  "TS3006a.A.dialog-act.vkaraisk.130",
+                  "TS3006a.A.dialog-act.vkaraisk.131",
+                  "TS3006a.A.dialog-act.vkaraisk.132",
+                  "TS3006a.A.dialog-act.vkaraisk.133"
+                ],
+                "owner_ids": [],
+                "owner_cue": null,
+                "deadline_cue": null,
+                "owner_basis": "missing",
+                "deadline": null,
+                "deadline_basis": "missing",
+                "status": "proposed",
+                "candidate_indexes": [
+                  4,
+                  5,
+                  6
+                ]
+              }
+            ],
+            [
+              {
+                "type": "decisions",
+                "text": "The revenue target is fifty million Euros.",
+                "evidence_da_ids": [
+                  "TS3006a.A.dialog-act.vkaraisk.131",
+                  "TS3006a.A.dialog-act.vkaraisk.132"
+                ],
+                "owner_ids": [],
+                "owner_cue": null,
+                "deadline_cue": null,
+                "owner_basis": "missing",
+                "deadline": null,
+                "deadline_basis": "missing",
+                "status": "proposed",
+                "candidate_indexes": [
+                  5
+                ]
+              }
+            ]
+          ],
+          "after_sample_caps": [
+            [
+              {
+                "type": "decisions",
+                "text": "The selling price is proposed to be twenty five Euros; the revenue target is fifty million Euros; production costs should be half of the selling price.",
+                "evidence_da_ids": [
+                  "TS3006a.A.dialog-act.vkaraisk.130",
+                  "TS3006a.A.dialog-act.vkaraisk.131",
+                  "TS3006a.A.dialog-act.vkaraisk.132",
+                  "TS3006a.A.dialog-act.vkaraisk.133"
+                ],
+                "owner_ids": [],
+                "owner_cue": null,
+                "deadline_cue": null,
+                "owner_basis": "missing",
+                "deadline": null,
+                "deadline_basis": "missing",
+                "status": "proposed",
+                "candidate_indexes": [
+                  4,
+                  5,
+                  6
+                ]
+              }
+            ],
+            [
+              {
+                "type": "decisions",
+                "text": "The selling price will be 25 Euros; the revenue target is 50 million Euros; production costs should be half of the selling price.",
+                "evidence_da_ids": [
+                  "TS3006a.A.dialog-act.vkaraisk.130",
+                  "TS3006a.A.dialog-act.vkaraisk.131",
+                  "TS3006a.A.dialog-act.vkaraisk.132",
+                  "TS3006a.A.dialog-act.vkaraisk.133"
+                ],
+                "owner_ids": [],
+                "owner_cue": null,
+                "deadline_cue": null,
+                "owner_basis": "missing",
+                "deadline": null,
+                "deadline_basis": "missing",
+                "status": "proposed",
+                "candidate_indexes": [
+                  4,
+                  5,
+                  6
+                ]
+              }
+            ],
+            [
+              {
+                "type": "decisions",
+                "text": "The revenue target is fifty million Euros.",
+                "evidence_da_ids": [
+                  "TS3006a.A.dialog-act.vkaraisk.131",
+                  "TS3006a.A.dialog-act.vkaraisk.132"
+                ],
+                "owner_ids": [],
+                "owner_cue": null,
+                "deadline_cue": null,
+                "owner_basis": "missing",
+                "deadline": null,
+                "deadline_basis": "missing",
+                "status": "proposed",
+                "candidate_indexes": [
+                  5
+                ]
+              }
+            ]
+          ],
+          "after_vote": [
+            {
+              "type": "decisions",
+              "text": "The selling price is proposed to be twenty five Euros; the revenue target is fifty million Euros; production costs should be half of the selling price.",
+              "evidence_da_ids": [
+                "TS3006a.A.dialog-act.vkaraisk.130",
+                "TS3006a.A.dialog-act.vkaraisk.131",
+                "TS3006a.A.dialog-act.vkaraisk.132",
+                "TS3006a.A.dialog-act.vkaraisk.133"
+              ],
+              "owner_ids": [],
+              "owner_cue": null,
+              "deadline_cue": null,
+              "owner_basis": "missing",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "proposed",
+              "candidate_indexes": [
+                4,
+                5,
+                6
+              ]
+            }
+          ],
+          "after_final_cap_and_normalize": [
+            {
+              "type": "decisions",
+              "text": "The revenue target is fifty million Euros.",
+              "evidence_da_ids": [
+                "TS3006a.A.dialog-act.vkaraisk.131",
+                "TS3006a.A.dialog-act.vkaraisk.132"
+              ],
+              "owner_ids": [],
+              "owner_cue": null,
+              "deadline_cue": null,
+              "owner_basis": "missing",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "adopted",
+              "candidate_indexes": [
+                5
+              ]
+            }
+          ]
+        },
+        {
+          "gold_id": "TS3006a.elana.s.15",
+          "gold_text": "Allow production costs of half the EUR 25 selling price, i.e. EUR 12.50 per remote.",
+          "matched": true,
+          "attribution": "recovered",
+          "candidate_witnesses": [
+            6
+          ],
+          "candidate_items": [
+            {
+              "type": "decisions",
+              "text": "Production costs should be half of the selling price.",
+              "evidence_da_ids": [
+                "TS3006a.A.dialog-act.vkaraisk.133"
+              ],
+              "owner_ids": [],
+              "owner_cue": null,
+              "deadline_cue": null,
+              "owner_basis": "missing",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "proposed"
+            }
+          ],
+          "merged_samples": [
+            [
+              {
+                "type": "decisions",
+                "text": "The selling price is proposed to be twenty five Euros; the revenue target is fifty million Euros; production costs should be half of the selling price.",
+                "evidence_da_ids": [
+                  "TS3006a.A.dialog-act.vkaraisk.130",
+                  "TS3006a.A.dialog-act.vkaraisk.131",
+                  "TS3006a.A.dialog-act.vkaraisk.132",
+                  "TS3006a.A.dialog-act.vkaraisk.133"
+                ],
+                "owner_ids": [],
+                "owner_cue": null,
+                "deadline_cue": null,
+                "owner_basis": "missing",
+                "deadline": null,
+                "deadline_basis": "missing",
+                "status": "proposed",
+                "candidate_indexes": [
+                  4,
+                  5,
+                  6
+                ]
+              }
+            ],
+            [
+              {
+                "type": "decisions",
+                "text": "The selling price will be 25 Euros; the revenue target is 50 million Euros; production costs should be half of the selling price.",
+                "evidence_da_ids": [
+                  "TS3006a.A.dialog-act.vkaraisk.130",
+                  "TS3006a.A.dialog-act.vkaraisk.131",
+                  "TS3006a.A.dialog-act.vkaraisk.132",
+                  "TS3006a.A.dialog-act.vkaraisk.133"
+                ],
+                "owner_ids": [],
+                "owner_cue": null,
+                "deadline_cue": null,
+                "owner_basis": "missing",
+                "deadline": null,
+                "deadline_basis": "missing",
+                "status": "proposed",
+                "candidate_indexes": [
+                  4,
+                  5,
+                  6
+                ]
+              }
+            ],
+            [
+              {
+                "type": "decisions",
+                "text": "The selling price is proposed to be twenty five Euros and production costs should be half of the selling price.",
+                "evidence_da_ids": [
+                  "TS3006a.A.dialog-act.vkaraisk.130",
+                  "TS3006a.A.dialog-act.vkaraisk.133"
+                ],
+                "owner_ids": [],
+                "owner_cue": null,
+                "deadline_cue": null,
+                "owner_basis": "missing",
+                "deadline": null,
+                "deadline_basis": "missing",
+                "status": "proposed",
+                "candidate_indexes": [
+                  4,
+                  6
+                ]
+              }
+            ]
+          ],
+          "after_sample_caps": [
+            [
+              {
+                "type": "decisions",
+                "text": "The selling price is proposed to be twenty five Euros; the revenue target is fifty million Euros; production costs should be half of the selling price.",
+                "evidence_da_ids": [
+                  "TS3006a.A.dialog-act.vkaraisk.130",
+                  "TS3006a.A.dialog-act.vkaraisk.131",
+                  "TS3006a.A.dialog-act.vkaraisk.132",
+                  "TS3006a.A.dialog-act.vkaraisk.133"
+                ],
+                "owner_ids": [],
+                "owner_cue": null,
+                "deadline_cue": null,
+                "owner_basis": "missing",
+                "deadline": null,
+                "deadline_basis": "missing",
+                "status": "proposed",
+                "candidate_indexes": [
+                  4,
+                  5,
+                  6
+                ]
+              }
+            ],
+            [
+              {
+                "type": "decisions",
+                "text": "The selling price will be 25 Euros; the revenue target is 50 million Euros; production costs should be half of the selling price.",
+                "evidence_da_ids": [
+                  "TS3006a.A.dialog-act.vkaraisk.130",
+                  "TS3006a.A.dialog-act.vkaraisk.131",
+                  "TS3006a.A.dialog-act.vkaraisk.132",
+                  "TS3006a.A.dialog-act.vkaraisk.133"
+                ],
+                "owner_ids": [],
+                "owner_cue": null,
+                "deadline_cue": null,
+                "owner_basis": "missing",
+                "deadline": null,
+                "deadline_basis": "missing",
+                "status": "proposed",
+                "candidate_indexes": [
+                  4,
+                  5,
+                  6
+                ]
+              }
+            ],
+            [
+              {
+                "type": "decisions",
+                "text": "The selling price is proposed to be twenty five Euros and production costs should be half of the selling price.",
+                "evidence_da_ids": [
+                  "TS3006a.A.dialog-act.vkaraisk.130",
+                  "TS3006a.A.dialog-act.vkaraisk.133"
+                ],
+                "owner_ids": [],
+                "owner_cue": null,
+                "deadline_cue": null,
+                "owner_basis": "missing",
+                "deadline": null,
+                "deadline_basis": "missing",
+                "status": "proposed",
+                "candidate_indexes": [
+                  4,
+                  6
+                ]
+              }
+            ]
+          ],
+          "after_vote": [
+            {
+              "type": "decisions",
+              "text": "The selling price is proposed to be twenty five Euros; the revenue target is fifty million Euros; production costs should be half of the selling price.",
+              "evidence_da_ids": [
+                "TS3006a.A.dialog-act.vkaraisk.130",
+                "TS3006a.A.dialog-act.vkaraisk.131",
+                "TS3006a.A.dialog-act.vkaraisk.132",
+                "TS3006a.A.dialog-act.vkaraisk.133"
+              ],
+              "owner_ids": [],
+              "owner_cue": null,
+              "deadline_cue": null,
+              "owner_basis": "missing",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "proposed",
+              "candidate_indexes": [
+                4,
+                5,
+                6
+              ]
+            }
+          ],
+          "after_final_cap_and_normalize": [
+            {
+              "type": "decisions",
+              "text": "Production costs should be half of the selling price.",
+              "evidence_da_ids": [
+                "TS3006a.A.dialog-act.vkaraisk.133"
+              ],
+              "owner_ids": [],
+              "owner_cue": null,
+              "deadline_cue": null,
+              "owner_basis": "missing",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "adopted",
+              "candidate_indexes": [
+                6
+              ]
+            }
+          ]
+        },
+        {
+          "gold_id": "TS3006a.elana.s.16",
+          "gold_text": "Use television and video control as a provisional starting scope while reserving the possibility of additional features.",
+          "matched": true,
+          "attribution": "recovered",
+          "candidate_witnesses": [
+            11
+          ],
+          "candidate_items": [
+            {
+              "type": "decisions",
+              "text": "We will start with the assumption that it's only for TV and video, and reserve the possibility to add other features.",
+              "evidence_da_ids": [
+                "TS3006a.A.dialog-act.vkaraisk.243",
+                "TS3006a.A.dialog-act.vkaraisk.244"
+              ],
+              "owner_ids": [],
+              "owner_cue": null,
+              "deadline_cue": null,
+              "owner_basis": "missing",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "adopted"
+            }
+          ],
+          "merged_samples": [
+            [
+              {
+                "type": "decisions",
+                "text": "We will go ahead with the current plan; we are adopting a three-phase approach and will start with TV and video only, with the possibility to add other features.",
+                "evidence_da_ids": [
+                  "TS3006a.A.dialog-act.vkaraisk.196",
+                  "TS3006a.A.dialog-act.vkaraisk.197",
+                  "TS3006a.A.dialog-act.vkaraisk.198",
+                  "TS3006a.D.dialog-act.vkaraisk.147",
+                  "TS3006a.A.dialog-act.vkaraisk.243",
+                  "TS3006a.A.dialog-act.vkaraisk.244"
+                ],
+                "owner_ids": [],
+                "owner_cue": null,
+                "deadline_cue": null,
+                "owner_basis": "missing",
+                "deadline": null,
+                "deadline_basis": "missing",
+                "status": "adopted",
+                "candidate_indexes": [
+                  7,
+                  10,
+                  11
+                ]
+              }
+            ],
+            [
+              {
+                "type": "decisions",
+                "text": "We will proceed with the current plan, in three phases, and assume the product is only for TV and video with the possibility to add other features.",
+                "evidence_da_ids": [
+                  "TS3006a.A.dialog-act.vkaraisk.196",
+                  "TS3006a.A.dialog-act.vkaraisk.197",
+                  "TS3006a.A.dialog-act.vkaraisk.198",
+                  "TS3006a.D.dialog-act.vkaraisk.147",
+                  "TS3006a.A.dialog-act.vkaraisk.243",
+                  "TS3006a.A.dialog-act.vkaraisk.244"
+                ],
+                "owner_ids": [],
+                "owner_cue": null,
+                "deadline_cue": null,
+                "owner_basis": "missing",
+                "deadline": null,
+                "deadline_basis": "missing",
+                "status": "adopted",
+                "candidate_indexes": [
+                  7,
+                  10,
+                  11
+                ]
+              }
+            ],
+            [
+              {
+                "type": "decisions",
+                "text": "We will start with the assumption that it's only for TV and video, and reserve the possibility to add other features.",
+                "evidence_da_ids": [
+                  "TS3006a.A.dialog-act.vkaraisk.243",
+                  "TS3006a.A.dialog-act.vkaraisk.244"
+                ],
+                "owner_ids": [],
+                "owner_cue": null,
+                "deadline_cue": null,
+                "owner_basis": "missing",
+                "deadline": null,
+                "deadline_basis": "missing",
+                "status": "adopted",
+                "candidate_indexes": [
+                  11
+                ]
+              }
+            ]
+          ],
+          "after_sample_caps": [
+            [
+              {
+                "type": "decisions",
+                "text": "We will go ahead with the current plan; we are adopting a three-phase approach and will start with TV and video only, with the possibility to add other features.",
+                "evidence_da_ids": [
+                  "TS3006a.A.dialog-act.vkaraisk.196",
+                  "TS3006a.A.dialog-act.vkaraisk.197",
+                  "TS3006a.A.dialog-act.vkaraisk.198",
+                  "TS3006a.D.dialog-act.vkaraisk.147",
+                  "TS3006a.A.dialog-act.vkaraisk.243",
+                  "TS3006a.A.dialog-act.vkaraisk.244"
+                ],
+                "owner_ids": [],
+                "owner_cue": null,
+                "deadline_cue": null,
+                "owner_basis": "missing",
+                "deadline": null,
+                "deadline_basis": "missing",
+                "status": "adopted",
+                "candidate_indexes": [
+                  7,
+                  10,
+                  11
+                ]
+              }
+            ],
+            [
+              {
+                "type": "decisions",
+                "text": "We will proceed with the current plan, in three phases, and assume the product is only for TV and video with the possibility to add other features.",
+                "evidence_da_ids": [
+                  "TS3006a.A.dialog-act.vkaraisk.196",
+                  "TS3006a.A.dialog-act.vkaraisk.197",
+                  "TS3006a.A.dialog-act.vkaraisk.198",
+                  "TS3006a.D.dialog-act.vkaraisk.147",
+                  "TS3006a.A.dialog-act.vkaraisk.243",
+                  "TS3006a.A.dialog-act.vkaraisk.244"
+                ],
+                "owner_ids": [],
+                "owner_cue": null,
+                "deadline_cue": null,
+                "owner_basis": "missing",
+                "deadline": null,
+                "deadline_basis": "missing",
+                "status": "adopted",
+                "candidate_indexes": [
+                  7,
+                  10,
+                  11
+                ]
+              }
+            ],
+            [
+              {
+                "type": "decisions",
+                "text": "We will start with the assumption that it's only for TV and video, and reserve the possibility to add other features.",
+                "evidence_da_ids": [
+                  "TS3006a.A.dialog-act.vkaraisk.243",
+                  "TS3006a.A.dialog-act.vkaraisk.244"
+                ],
+                "owner_ids": [],
+                "owner_cue": null,
+                "deadline_cue": null,
+                "owner_basis": "missing",
+                "deadline": null,
+                "deadline_basis": "missing",
+                "status": "adopted",
+                "candidate_indexes": [
+                  11
+                ]
+              }
+            ]
+          ],
+          "after_vote": [
+            {
+              "type": "decisions",
+              "text": "We will go ahead with the current plan; we are adopting a three-phase approach and will start with TV and video only, with the possibility to add other features.",
+              "evidence_da_ids": [
+                "TS3006a.A.dialog-act.vkaraisk.196",
+                "TS3006a.A.dialog-act.vkaraisk.197",
+                "TS3006a.A.dialog-act.vkaraisk.198",
+                "TS3006a.D.dialog-act.vkaraisk.147",
+                "TS3006a.A.dialog-act.vkaraisk.243",
+                "TS3006a.A.dialog-act.vkaraisk.244"
+              ],
+              "owner_ids": [],
+              "owner_cue": null,
+              "deadline_cue": null,
+              "owner_basis": "missing",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "adopted",
+              "candidate_indexes": [
+                7,
+                10,
+                11
+              ]
+            }
+          ],
+          "after_final_cap_and_normalize": [
+            {
+              "type": "decisions",
+              "text": "We will start with the assumption that it's only for TV and video, and reserve the possibility to add other features.",
+              "evidence_da_ids": [
+                "TS3006a.A.dialog-act.vkaraisk.243",
+                "TS3006a.A.dialog-act.vkaraisk.244"
+              ],
+              "owner_ids": [],
+              "owner_cue": null,
+              "deadline_cue": null,
+              "owner_basis": "missing",
+              "deadline": null,
+              "deadline_basis": "missing",
+              "status": "adopted",
+              "candidate_indexes": [
+                11
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "unscored_types": {},
+  "usage": {
+    "calls": 3,
+    "in": 1230,
+    "out": 4261,
+    "stages": {
+      "other": {
+        "calls": 3,
+        "in": 1230,
+        "out": 4261
+      }
+    }
+  },
+  "runtime_control": {
+    "limits": {
+      "calls": 80,
+      "tokens": 1000000,
+      "request_seconds": 300.0,
+      "meeting_seconds": 1200.0,
+      "inflight": 4,
+      "retries": 2,
+      "backoff": 0.5
+    },
+    "attempted_calls": 3,
+    "charged_tokens": 5491,
+    "unknown_usage_tokens": 0,
+    "reserved_tokens": 0,
+    "max_inflight_seen": 1,
+    "failure": null,
+    "attempts": [
+      {
+        "attempt": 0,
+        "stage": "other",
+        "reserved_tokens": 34695,
+        "input_bound": 2695,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 1425,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 410,
+        "output_tokens": 1015
+      },
+      {
+        "attempt": 1,
+        "stage": "other",
+        "reserved_tokens": 34695,
+        "input_bound": 2695,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 2321,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 410,
+        "output_tokens": 1911
+      },
+      {
+        "attempt": 2,
+        "stage": "other",
+        "reserved_tokens": 34695,
+        "input_bound": 2695,
+        "output_cap": 32000,
+        "outcome": "completed",
+        "charged_tokens": 1745,
+        "usage_known": true,
+        "error_type": null,
+        "input_tokens": 410,
+        "output_tokens": 1335
+      }
+    ],
+    "input_bound_method": "utf8_request_bytes_plus_padding",
+    "unknown_usage_policy": "charge_full_reservation"
+  }
+}

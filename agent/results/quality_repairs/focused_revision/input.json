@@ -1,0 +1,34 @@
+{
+  "kind": "SYNTHETIC_UNSUPPORTED_SUFFIX_ON_REAL_DIALOGUE",
+  "source_text": "The project manager will send a copy of the slides to all attendees at the conclusion of the meeting.",
+  "injected_item": {
+    "type": "actions",
+    "text": "The project manager will send a copy of the slides to all attendees by Friday.",
+    "evidence_da_ids": [
+      "IS1008a.C.dialog-act.s9553330.42",
+      "IS1008a.A.dialog-act.s9553330.130",
+      "IS1008a.B.dialog-act.s9553330.30",
+      "IS1008a.B.dialog-act.s9553330.31",
+      "IS1008a.A.dialog-act.s9553330.131"
+    ],
+    "owner_ids": [
+      "MIO086"
+    ],
+    "owner_cue": "at the conclusion of our meeting",
+    "deadline_cue": "at the conclusion of our meeting",
+    "owner_basis": "explicit",
+    "deadline": "by Friday",
+    "deadline_basis": "explicit",
+    "status": "open",
+    "restored": true,
+    "source_item_indexes": [
+      10
+    ],
+    "candidate_indexes": [],
+    "selection_priority": 2,
+    "selection_reason": "Post-meeting dissemination of slides to attendees.",
+    "flags": [],
+    "verification_request": "This is a controlled fault injection: verify the trailing by Friday claim against delivered dialogue, which states the conclusion of the meeting. Preserve the real actor/task. You may choose the bounded revise_statement tool or remain pending; no unsupported time may be accepted."
+  },
+  "scope": "Tool/control validation only; excluded from all natural-case and F1 comparisons."
+}

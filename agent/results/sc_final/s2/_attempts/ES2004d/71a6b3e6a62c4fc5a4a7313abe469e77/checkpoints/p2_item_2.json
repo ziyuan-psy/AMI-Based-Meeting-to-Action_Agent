@@ -1,0 +1,687 @@
+{
+  "item_key": "ES2004d#2",
+  "record_id": null,
+  "item_type": "problems",
+  "item_text": "Pricing currency is unclear; pricing may be in Euros or Dollars.",
+  "state": "pending",
+  "recordable": true,
+  "fields": {
+    "status": "unknown",
+    "prior_context_needed": false,
+    "related_items": [],
+    "reference": [
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/ES2004d.json",
+        "locator": "ES2004d.C.dialog-act.vkaraisk.192"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/ES2004d.json",
+        "locator": "ES2004d.C.dialog-act.vkaraisk.195"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/ES2004d.json",
+        "locator": "ES2004d.A.dialog-act.vkaraisk.129"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/ES2004d.json",
+        "locator": "ES2004d.B.dialog-act.vkaraisk.170"
+      }
+    ]
+  },
+  "draft_fields": {
+    "status": "open",
+    "related_items": [],
+    "prior_context_needed": false,
+    "used_participant_lookup": false,
+    "evidence_da_ids": [
+      "ES2004d.C.dialog-act.vkaraisk.192",
+      "ES2004d.C.dialog-act.vkaraisk.195",
+      "ES2004d.A.dialog-act.vkaraisk.129",
+      "ES2004d.B.dialog-act.vkaraisk.170"
+    ],
+    "owner": null,
+    "owner_basis": "missing",
+    "deadline": null,
+    "deadline_basis": "missing"
+  },
+  "checks": {
+    "statement": {
+      "result": "pass",
+      "reason": "The dialogue shows explicit consideration of Euros and Dollars as possible currencies; there is no definitive currency specified in the current discussion, indicating currency pricing is unclear.",
+      "quotes": [
+        {
+          "da_id": "ES2004d.C.dialog-act.vkaraisk.192",
+          "quote": "you might you might be assuming that that is in Euros ."
+        },
+        {
+          "da_id": "ES2004d.C.dialog-act.vkaraisk.195",
+          "quote": "because the exchange range would make it about twelve ."
+        },
+        {
+          "da_id": "ES2004d.A.dialog-act.vkaraisk.129",
+          "quote": "I think it's in Euro <gap> ."
+        },
+        {
+          "da_id": "ES2004d.B.dialog-act.vkaraisk.170",
+          "quote": "so the highest we've got is the electronics here . Um <vocalsound> and the interface ."
+        }
+      ],
+      "fields": [
+        "statement"
+      ]
+    },
+    "status": {
+      "result": "uncertain",
+      "reason": "No explicit end-of-meeting decision or confirmation about the currency/pricing in the provided dialogue; the item remains open.",
+      "quotes": [],
+      "fields": [
+        "status"
+      ]
+    },
+    "conflict": {
+      "result": "pass",
+      "reason": "No contradictions regarding currency are present in the cited dialogue; multiple currencies are discussed as possibilities without a final resolution.",
+      "quotes": [
+        {
+          "da_id": "ES2004d.C.dialog-act.vkaraisk.192",
+          "quote": "you might you might be assuming that that is in Euros ."
+        },
+        {
+          "da_id": "ES2004d.C.dialog-act.vkaraisk.195",
+          "quote": "because the exchange range would make it about twelve ."
+        },
+        {
+          "da_id": "ES2004d.A.dialog-act.vkaraisk.129",
+          "quote": "I think it's in Euro <gap> ."
+        },
+        {
+          "da_id": "ES2004d.B.dialog-act.vkaraisk.170",
+          "quote": "so the highest we've got is the electronics here . Um <vocalsound> and the interface ."
+        }
+      ],
+      "fields": [
+        "statement"
+      ]
+    },
+    "relation": {
+      "result": "uncertain",
+      "reason": "prior_context_not_checked",
+      "links": [],
+      "quotes": [],
+      "fields": [
+        "related_items"
+      ]
+    },
+    "owner": {
+      "result": "not_applicable",
+      "reason": "field_not_applicable",
+      "quotes": [],
+      "fields": [
+        "owner"
+      ]
+    },
+    "deadline": {
+      "result": "not_applicable",
+      "reason": "field_not_applicable",
+      "quotes": [],
+      "fields": [
+        "deadline"
+      ]
+    }
+  },
+  "unresolved_fields": [
+    "status",
+    "related_items"
+  ],
+  "observed_evidence_da_ids": [
+    "ES2004d.C.dialog-act.vkaraisk.192",
+    "ES2004d.C.dialog-act.vkaraisk.195",
+    "ES2004d.A.dialog-act.vkaraisk.129",
+    "ES2004d.B.dialog-act.vkaraisk.170",
+    "ES2004d.A.dialog-act.vkaraisk.127",
+    "ES2004d.C.dialog-act.vkaraisk.193",
+    "ES2004d.C.dialog-act.vkaraisk.194",
+    "ES2004d.D.dialog-act.vkaraisk.226",
+    "ES2004d.A.dialog-act.vkaraisk.128",
+    "ES2004d.B.dialog-act.vkaraisk.169",
+    "ES2004d.D.dialog-act.vkaraisk.228"
+  ],
+  "initial_context": {
+    "item": {
+      "type": "problems",
+      "text": "Pricing currency is unclear; pricing may be in Euros or Dollars.",
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ]
+    },
+    "current_meeting": "ES2004d",
+    "earlier_meetings": [
+      "ES2004a",
+      "ES2004b",
+      "ES2004c"
+    ],
+    "roster": [
+      {
+        "speaker": "A",
+        "participant_id": "MEO015",
+        "role": "UI"
+      },
+      {
+        "speaker": "B",
+        "participant_id": "FEE013",
+        "role": "PM"
+      },
+      {
+        "speaker": "C",
+        "participant_id": "MEE014",
+        "role": "ID"
+      },
+      {
+        "speaker": "D",
+        "participant_id": "FEE016",
+        "role": "ME"
+      }
+    ],
+    "observed_dialogue": [
+      {
+        "da_id": "ES2004d.C.dialog-act.vkaraisk.192",
+        "meeting_id": "ES2004d",
+        "text": "you might you might be assuming that that is in Euros .",
+        "participant": "MEE014",
+        "role": "ID"
+      },
+      {
+        "da_id": "ES2004d.C.dialog-act.vkaraisk.195",
+        "meeting_id": "ES2004d",
+        "text": "because the exchange range would make it about twelve .",
+        "participant": "MEE014",
+        "role": "ID"
+      },
+      {
+        "da_id": "ES2004d.A.dialog-act.vkaraisk.129",
+        "meeting_id": "ES2004d",
+        "text": "I think it's in Euro <gap> .",
+        "participant": "MEO015",
+        "role": "UI"
+      },
+      {
+        "da_id": "ES2004d.B.dialog-act.vkaraisk.170",
+        "meeting_id": "ES2004d",
+        "text": "so the highest we've got is the electronics here . Um <vocalsound> and the interface .",
+        "participant": "FEE013",
+        "role": "PM"
+      },
+      {
+        "da_id": "ES2004d.A.dialog-act.vkaraisk.127",
+        "participant": "MEO015",
+        "role": "UI",
+        "text": "<gap> . <vocalsound> I don't think so ."
+      },
+      {
+        "da_id": "ES2004d.C.dialog-act.vkaraisk.193",
+        "participant": "MEE014",
+        "role": "ID",
+        "text": "It could be in Dollars ."
+      },
+      {
+        "da_id": "ES2004d.C.dialog-act.vkaraisk.194",
+        "participant": "MEE014",
+        "role": "ID",
+        "text": "And then it would be fine ,"
+      },
+      {
+        "da_id": "ES2004d.D.dialog-act.vkaraisk.226",
+        "participant": "FEE016",
+        "role": "ME",
+        "text": "Is there anything on the menu <disfmarker>"
+      },
+      {
+        "da_id": "ES2004d.A.dialog-act.vkaraisk.128",
+        "participant": "MEO015",
+        "role": "UI",
+        "text": "Ri"
+      },
+      {
+        "da_id": "ES2004d.B.dialog-act.vkaraisk.169",
+        "participant": "FEE013",
+        "role": "PM",
+        "text": "Okay ,"
+      },
+      {
+        "da_id": "ES2004d.D.dialog-act.vkaraisk.228",
+        "participant": "FEE016",
+        "role": "ME",
+        "text": "If we tr um ."
+      }
+    ],
+    "peer_items": [
+      {
+        "item_key": "ES2004d#0",
+        "type": "actions",
+        "text": "Provide recommendations for head office specifications."
+      },
+      {
+        "item_key": "ES2004d#1",
+        "type": "actions",
+        "text": "All team members will provide individual ratings for the evaluation criteria."
+      }
+    ],
+    "item_type_contract": "This is a Problem, not a task or decision. Verify that the stated obstacle/concern and its impact were actually raised. It need not have an owner, deadline, accepted remedy or resolution. A supported information gap can remain open. Assess end status separately; uncertainty about a cause or remedy is not absence of evidence that the concern exists. Do not infer project-document content or cite a passage that was not delivered.",
+    "provisional_values": {
+      "owner": null,
+      "owner_basis": "missing",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "status": "open",
+      "related_items": []
+    },
+    "candidate_evidence_da_ids": [
+      "ES2004d.C.dialog-act.vkaraisk.192",
+      "ES2004d.C.dialog-act.vkaraisk.195",
+      "ES2004d.A.dialog-act.vkaraisk.129",
+      "ES2004d.B.dialog-act.vkaraisk.170"
+    ]
+  },
+  "observed_documents": [],
+  "document_evidence": [],
+  "relation_evidence": [],
+  "history": [
+    {
+      "item": "ES2004d#2",
+      "step": 1,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "assess_item",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue shows explicit consideration of Euros and Dollars as possible currencies; there is no definitive currency specified in the current discussion, indicating currency pricing is unclear.",
+          "quotes": [
+            {
+              "da_id": "ES2004d.C.dialog-act.vkaraisk.192",
+              "quote": "you might you might be assuming that that is in Euros ."
+            },
+            {
+              "da_id": "ES2004d.C.dialog-act.vkaraisk.195",
+              "quote": "because the exchange range would make it about twelve ."
+            },
+            {
+              "da_id": "ES2004d.A.dialog-act.vkaraisk.129",
+              "quote": "I think it's in Euro <gap> ."
+            },
+            {
+              "da_id": "ES2004d.B.dialog-act.vkaraisk.170",
+              "quote": "so the highest we've got is the electronics here . Um <vocalsound> and the interface ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "status": {
+          "result": "uncertain",
+          "reason": "No explicit end-of-meeting decision or confirmation about the currency/pricing in the provided dialogue; the item remains open.",
+          "quotes": [],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions regarding currency are present in the cited dialogue; multiple currencies are discussed as possibilities without a final resolution.",
+          "quotes": [
+            {
+              "da_id": "ES2004d.C.dialog-act.vkaraisk.192",
+              "quote": "you might you might be assuming that that is in Euros ."
+            },
+            {
+              "da_id": "ES2004d.C.dialog-act.vkaraisk.195",
+              "quote": "because the exchange range would make it about twelve ."
+            },
+            {
+              "da_id": "ES2004d.A.dialog-act.vkaraisk.129",
+              "quote": "I think it's in Euro <gap> ."
+            },
+            {
+              "da_id": "ES2004d.B.dialog-act.vkaraisk.170",
+              "quote": "so the highest we've got is the electronics here . Um <vocalsound> and the interface ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "prior_context_not_checked",
+          "links": [],
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        },
+        "owner": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "not_applicable",
+          "reason": "field_not_applicable",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        }
+      },
+      "decision": "retrieve",
+      "reason": "unresolved_checks",
+      "assessed_text": "Pricing currency is unclear; pricing may be in Euros or Dollars.",
+      "requested_action": "retrieve",
+      "proposed_fields": {
+        "status": "open",
+        "related_items": [],
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "ES2004d.C.dialog-act.vkaraisk.192",
+          "ES2004d.C.dialog-act.vkaraisk.195",
+          "ES2004d.A.dialog-act.vkaraisk.129",
+          "ES2004d.B.dialog-act.vkaraisk.170"
+        ],
+        "owner": null,
+        "owner_basis": "missing",
+        "deadline": null,
+        "deadline_basis": "missing"
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue shows explicit consideration of Euros and Dollars as possible currencies; there is no definitive currency specified in the current discussion, indicating currency pricing is unclear.",
+          "quotes": [
+            "ES2004d.C.dialog-act.vkaraisk.192",
+            "ES2004d.C.dialog-act.vkaraisk.195",
+            "ES2004d.A.dialog-act.vkaraisk.129",
+            "ES2004d.B.dialog-act.vkaraisk.170"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "status": {
+          "result": "uncertain",
+          "reason": "No explicit end-of-meeting decision or confirmation about the currency/pricing in the provided dialogue; the item remains open.",
+          "quotes": [],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions regarding currency are present in the cited dialogue; multiple currencies are discussed as possibilities without a final resolution.",
+          "quotes": [
+            "ES2004d.C.dialog-act.vkaraisk.192",
+            "ES2004d.C.dialog-act.vkaraisk.195",
+            "ES2004d.A.dialog-act.vkaraisk.129",
+            "ES2004d.B.dialog-act.vkaraisk.170"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "relation": {
+          "result": "uncertain",
+          "reason": "There is no explicit reference in the current evidence to prior items; cannot determine if this is a continuation or a new issue.",
+          "links": [],
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "status": "open",
+        "related_items": [],
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue shows explicit consideration of Euros and Dollars as possible currencies; there is no definitive currency specified in the current discussion, indicating currency pricing is unclear.",
+          "evidence_da_ids": [
+            "ES2004d.C.dialog-act.vkaraisk.192",
+            "ES2004d.C.dialog-act.vkaraisk.195",
+            "ES2004d.A.dialog-act.vkaraisk.129",
+            "ES2004d.B.dialog-act.vkaraisk.170"
+          ]
+        },
+        "status_check": {
+          "result": "uncertain",
+          "reason": "No explicit end-of-meeting decision or confirmation about the currency/pricing in the provided dialogue; the item remains open.",
+          "evidence_da_ids": []
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No contradictions regarding currency are present in the cited dialogue; multiple currencies are discussed as possibilities without a final resolution.",
+          "evidence_da_ids": [
+            "ES2004d.C.dialog-act.vkaraisk.192",
+            "ES2004d.C.dialog-act.vkaraisk.195",
+            "ES2004d.A.dialog-act.vkaraisk.129",
+            "ES2004d.B.dialog-act.vkaraisk.170"
+          ],
+          "affected_fields": [
+            "statement"
+          ]
+        },
+        "relation_check": {
+          "result": "uncertain",
+          "reason": "There is no explicit reference in the current evidence to prior items; cannot determine if this is a continuation or a new issue.",
+          "evidence_da_ids": [],
+          "links": []
+        },
+        "next_action": "retrieve"
+      },
+      "evidence_bindings": {
+        "statement": [
+          "ES2004d.C.dialog-act.vkaraisk.192",
+          "ES2004d.C.dialog-act.vkaraisk.195",
+          "ES2004d.A.dialog-act.vkaraisk.129",
+          "ES2004d.B.dialog-act.vkaraisk.170"
+        ],
+        "conflict": [
+          "ES2004d.C.dialog-act.vkaraisk.192",
+          "ES2004d.C.dialog-act.vkaraisk.195",
+          "ES2004d.A.dialog-act.vkaraisk.129",
+          "ES2004d.B.dialog-act.vkaraisk.170"
+        ]
+      },
+      "raw_tool_input": {
+        "status": "open",
+        "related_items": [],
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue shows explicit consideration of Euros and Dollars as possible currencies; there is no definitive currency specified in the current discussion, indicating currency pricing is unclear.",
+          "evidence_da_ids": [
+            "ES2004d.C.dialog-act.vkaraisk.192",
+            "ES2004d.C.dialog-act.vkaraisk.195",
+            "ES2004d.A.dialog-act.vkaraisk.129",
+            "ES2004d.B.dialog-act.vkaraisk.170"
+          ]
+        },
+        "status_check": {
+          "result": "uncertain",
+          "reason": "No explicit end-of-meeting decision or confirmation about the currency/pricing in the provided dialogue; the item remains open.",
+          "evidence_da_ids": []
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No contradictions regarding currency are present in the cited dialogue; multiple currencies are discussed as possibilities without a final resolution.",
+          "evidence_da_ids": [
+            "ES2004d.C.dialog-act.vkaraisk.192",
+            "ES2004d.C.dialog-act.vkaraisk.195",
+            "ES2004d.A.dialog-act.vkaraisk.129",
+            "ES2004d.B.dialog-act.vkaraisk.170"
+          ],
+          "affected_fields": [
+            "statement"
+          ]
+        },
+        "relation_check": {
+          "result": "uncertain",
+          "reason": "There is no explicit reference in the current evidence to prior items; cannot determine if this is a continuation or a new issue.",
+          "evidence_da_ids": [],
+          "links": []
+        },
+        "next_action": "retrieve"
+      },
+      "protocol_normalizations": [],
+      "unresolved_before": [
+        "related_items",
+        "statement",
+        "status"
+      ],
+      "unresolved_after": [
+        "related_items",
+        "status"
+      ],
+      "semantic_stalls": 0,
+      "validation_codes": {
+        "relation": [
+          "prior_context_not_checked"
+        ]
+      }
+    },
+    {
+      "item": "ES2004d#2",
+      "step": 2,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "history_context_focused",
+      "outcome": "delivered",
+      "evidence_da_ids": [
+        "ES2004d.C.dialog-act.vkaraisk.192",
+        "ES2004d.C.dialog-act.vkaraisk.195",
+        "ES2004d.A.dialog-act.vkaraisk.129",
+        "ES2004d.B.dialog-act.vkaraisk.170",
+        "ES2004d.A.dialog-act.vkaraisk.127",
+        "ES2004d.C.dialog-act.vkaraisk.193",
+        "ES2004d.C.dialog-act.vkaraisk.194",
+        "ES2004d.D.dialog-act.vkaraisk.226",
+        "ES2004d.A.dialog-act.vkaraisk.128",
+        "ES2004d.B.dialog-act.vkaraisk.169",
+        "ES2004d.D.dialog-act.vkaraisk.228"
+      ]
+    },
+    {
+      "item": "ES2004d#2",
+      "step": 2,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "get_prior_items",
+      "outcome": "lookup",
+      "decision": "retrieve",
+      "args": {
+        "query": "pricing currency euros dollars",
+        "item_type": "problems"
+      },
+      "tool_result": {
+        "results": []
+      },
+      "new_info": false
+    },
+    {
+      "item": "ES2004d#2",
+      "step": 3,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "get_prior_items",
+      "outcome": "lookup",
+      "decision": "search_again",
+      "args": {
+        "query": "currency euros dollars",
+        "item_type": "problems"
+      },
+      "tool_result": {
+        "results": []
+      },
+      "new_info": false
+    },
+    {
+      "item": "ES2004d#2",
+      "step": 3,
+      "flags": [
+        "POSSIBLE_PRIOR"
+      ],
+      "action": "stop",
+      "outcome": "pending",
+      "termination_reason": "no_progress",
+      "unresolved_fields": [
+        "status",
+        "related_items"
+      ]
+    }
+  ],
+  "lookups": 2,
+  "termination_reason": "no_progress",
+  "clarifications": [
+    {
+      "request_id": "e75b508bd34335f8",
+      "item_key": "ES2004d#2",
+      "record_id": null,
+      "field": "status",
+      "question": "What is this item's status at the end of the current meeting?",
+      "item_text": "Pricing currency is unclear; pricing may be in Euros or Dollars.",
+      "reason": "No explicit end-of-meeting decision or confirmation about the currency/pricing in the provided dialogue; the item remains open.",
+      "evidence_da_ids": [],
+      "available_evidence_da_ids": [
+        "ES2004d.C.dialog-act.vkaraisk.192",
+        "ES2004d.C.dialog-act.vkaraisk.195",
+        "ES2004d.A.dialog-act.vkaraisk.129",
+        "ES2004d.B.dialog-act.vkaraisk.170",
+        "ES2004d.A.dialog-act.vkaraisk.127",
+        "ES2004d.C.dialog-act.vkaraisk.193",
+        "ES2004d.C.dialog-act.vkaraisk.194",
+        "ES2004d.D.dialog-act.vkaraisk.226",
+        "ES2004d.A.dialog-act.vkaraisk.128",
+        "ES2004d.B.dialog-act.vkaraisk.169",
+        "ES2004d.D.dialog-act.vkaraisk.228"
+      ],
+      "status": "open",
+      "termination_reason": "no_progress"
+    },
+    {
+      "request_id": "dbc43f22c369a4b4",
+      "item_key": "ES2004d#2",
+      "record_id": null,
+      "field": "related_items",
+      "question": "Which earlier record does this item continue or change, and how?",
+      "item_text": "Pricing currency is unclear; pricing may be in Euros or Dollars.",
+      "reason": "prior_context_not_checked",
+      "evidence_da_ids": [],
+      "available_evidence_da_ids": [
+        "ES2004d.C.dialog-act.vkaraisk.192",
+        "ES2004d.C.dialog-act.vkaraisk.195",
+        "ES2004d.A.dialog-act.vkaraisk.129",
+        "ES2004d.B.dialog-act.vkaraisk.170",
+        "ES2004d.A.dialog-act.vkaraisk.127",
+        "ES2004d.C.dialog-act.vkaraisk.193",
+        "ES2004d.C.dialog-act.vkaraisk.194",
+        "ES2004d.D.dialog-act.vkaraisk.226",
+        "ES2004d.A.dialog-act.vkaraisk.128",
+        "ES2004d.B.dialog-act.vkaraisk.169",
+        "ES2004d.D.dialog-act.vkaraisk.228"
+      ],
+      "status": "open",
+      "termination_reason": "no_progress"
+    }
+  ]
+}

@@ -1,0 +1,681 @@
+{
+  "item": 3,
+  "fields": {
+    "item_key": "TS3007c#3",
+    "record_id": null,
+    "item_type": "decisions",
+    "item_text": "Charge the battery when the remote is moved.",
+    "state": "accepted",
+    "recordable": true,
+    "fields": {
+      "status": "adopted",
+      "prior_context_needed": false,
+      "related_items": [],
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3007c.json",
+          "locator": "TS3007c.B.dialog-act.dharshi.32"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3007c.json",
+          "locator": "TS3007c.C.dialog-act.dharshi.132"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3007c.json",
+          "locator": "TS3007c.D.dialog-act.dharshi.54"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3007c.json",
+          "locator": "TS3007c.B.dialog-act.dharshi.33"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3007c.json",
+          "locator": "TS3007c.C.dialog-act.dharshi.131"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3007c.json",
+          "locator": "TS3007c.C.dialog-act.dharshi.133"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3007c.json",
+          "locator": "TS3007c.C.dialog-act.dharshi.134"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3007c.json",
+          "locator": "TS3007c.A.dialog-act.dharshi.191"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3007c.json",
+          "locator": "TS3007c.D.dialog-act.dharshi.53"
+        },
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3007c.json",
+          "locator": "TS3007c.D.dialog-act.dharshi.55"
+        }
+      ]
+    },
+    "draft_fields": {
+      "status": "adopted",
+      "related_items": [],
+      "prior_context_needed": false,
+      "used_participant_lookup": false,
+      "evidence_da_ids": [
+        "TS3007c.B.dialog-act.dharshi.32",
+        "TS3007c.C.dialog-act.dharshi.132",
+        "TS3007c.D.dialog-act.dharshi.54",
+        "TS3007c.B.dialog-act.dharshi.33",
+        "TS3007c.C.dialog-act.dharshi.131",
+        "TS3007c.C.dialog-act.dharshi.133",
+        "TS3007c.C.dialog-act.dharshi.134",
+        "TS3007c.A.dialog-act.dharshi.191"
+      ],
+      "owner": null,
+      "owner_basis": "missing",
+      "deadline": null,
+      "deadline_basis": "missing"
+    },
+    "checks": {
+      "statement": {
+        "result": "pass",
+        "reason": "The current dialogue establishes a decision to adopt a combined power system using a rechargeable battery with kinetic energy as a back-up, including references in the peer_items and the discussion in TS3007c where the PM mentions the combination energy approach.",
+        "quotes": [
+          {
+            "da_id": "TS3007c.B.dialog-act.dharshi.32",
+            "quote": "Um , I think you should use kinetic as a back-up ."
+          },
+          {
+            "da_id": "TS3007c.C.dialog-act.dharshi.132",
+            "quote": "Yeah , you you you should <disfmarker> we should <disfmarker>"
+          },
+          {
+            "da_id": "TS3007c.D.dialog-act.dharshi.54",
+            "quote": "Yeah , a combination ."
+          },
+          {
+            "da_id": "TS3007c.B.dialog-act.dharshi.33",
+            "quote": "A combination , yeah ."
+          },
+          {
+            "da_id": "TS3007c.C.dialog-act.dharshi.131",
+            "quote": "A combination ."
+          },
+          {
+            "da_id": "TS3007c.C.dialog-act.dharshi.133",
+            "quote": "Uh , <gap> you use the battery and w charge it up with kinetic ."
+          },
+          {
+            "da_id": "TS3007c.C.dialog-act.dharshi.134",
+            "quote": "When you pick it up , it charges up ."
+          },
+          {
+            "da_id": "TS3007c.A.dialog-act.dharshi.191",
+            "quote": "<vocalsound> Okay . So uh I think we have decided on the things that <disfmarker> Uh from Janus , the energy , the combination between battery and kinetic ."
+          }
+        ],
+        "fields": [
+          "statement"
+        ]
+      },
+      "status": {
+        "result": "pass",
+        "reason": "Status inferred as adopted based on provisional_values.status and dialogue indicating agreement on the energy combination; no contrary evidence.",
+        "quotes": [
+          {
+            "da_id": "TS3007c.A.dialog-act.dharshi.191",
+            "quote": "<vocalsound> Okay . So uh I think we have decided on the things that <disfmarker> Uh from Janus , the energy , the combination between battery and kinetic ."
+          },
+          {
+            "da_id": "TS3007c.D.dialog-act.dharshi.53",
+            "quote": "<vocalsound>"
+          },
+          {
+            "da_id": "TS3007c.D.dialog-act.dharshi.55",
+            "quote": "Yeah ."
+          }
+        ],
+        "fields": [
+          "status"
+        ]
+      },
+      "conflict": {
+        "result": "pass",
+        "reason": "No conflicts detected among provided dialogue; no contradictory statements about the decision to adopt combined power system.",
+        "quotes": [
+          {
+            "da_id": "TS3007c.A.dialog-act.dharshi.191",
+            "quote": "<vocalsound> Okay . So uh I think we have decided on the things that <disfmarker> Uh from Janus , the energy , the combination between battery and kinetic ."
+          },
+          {
+            "da_id": "TS3007c.D.dialog-act.dharshi.53",
+            "quote": "<vocalsound>"
+          },
+          {
+            "da_id": "TS3007c.D.dialog-act.dharshi.55",
+            "quote": "Yeah ."
+          }
+        ],
+        "fields": []
+      },
+      "relation": {
+        "result": "not_applicable",
+        "reason": "No prior related item linkage required; this is a continuation of a decision already discussed in TS3007c with peer_items referencing TS3007c#2.",
+        "quotes": [],
+        "fields": [
+          "related_items"
+        ]
+      },
+      "owner": {
+        "result": "not_applicable",
+        "reason": "field_not_applicable",
+        "quotes": [],
+        "fields": [
+          "owner"
+        ]
+      },
+      "deadline": {
+        "result": "not_applicable",
+        "reason": "field_not_applicable",
+        "quotes": [],
+        "fields": [
+          "deadline"
+        ]
+      }
+    },
+    "unresolved_fields": [],
+    "observed_evidence_da_ids": [
+      "TS3007c.B.dialog-act.dharshi.32",
+      "TS3007c.C.dialog-act.dharshi.132",
+      "TS3007c.D.dialog-act.dharshi.54",
+      "TS3007c.B.dialog-act.dharshi.33",
+      "TS3007c.C.dialog-act.dharshi.131",
+      "TS3007c.C.dialog-act.dharshi.133",
+      "TS3007c.C.dialog-act.dharshi.134",
+      "TS3007c.A.dialog-act.dharshi.191",
+      "TS3007c.D.dialog-act.dharshi.53",
+      "TS3007c.D.dialog-act.dharshi.55",
+      "TS3007c.B.dialog-act.dharshi.210",
+      "TS3007c.C.dialog-act.dharshi.257"
+    ],
+    "initial_context": {
+      "item": {
+        "type": "decisions",
+        "text": "Charge the battery when the remote is moved.",
+        "flags": []
+      },
+      "current_meeting": "TS3007c",
+      "earlier_meetings": [
+        "TS3007a",
+        "TS3007b"
+      ],
+      "roster": [
+        {
+          "speaker": "A",
+          "participant_id": "MTD025PM",
+          "role": "PM"
+        },
+        {
+          "speaker": "B",
+          "participant_id": "MTD027ID",
+          "role": "UI"
+        },
+        {
+          "speaker": "C",
+          "participant_id": "MTD026UID",
+          "role": "ID"
+        },
+        {
+          "speaker": "D",
+          "participant_id": "MTD028ME",
+          "role": "ME"
+        }
+      ],
+      "observed_dialogue": [
+        {
+          "da_id": "TS3007c.B.dialog-act.dharshi.32",
+          "meeting_id": "TS3007c",
+          "text": "Um , I think you should use kinetic as a back-up .",
+          "participant": "MTD027ID",
+          "role": "UI"
+        },
+        {
+          "da_id": "TS3007c.C.dialog-act.dharshi.132",
+          "meeting_id": "TS3007c",
+          "text": "Yeah , you you you should <disfmarker> we should <disfmarker>",
+          "participant": "MTD026UID",
+          "role": "ID"
+        },
+        {
+          "da_id": "TS3007c.D.dialog-act.dharshi.54",
+          "meeting_id": "TS3007c",
+          "text": "Yeah , a combination .",
+          "participant": "MTD028ME",
+          "role": "ME"
+        },
+        {
+          "da_id": "TS3007c.B.dialog-act.dharshi.33",
+          "meeting_id": "TS3007c",
+          "text": "A combination , yeah .",
+          "participant": "MTD027ID",
+          "role": "UI"
+        },
+        {
+          "da_id": "TS3007c.C.dialog-act.dharshi.131",
+          "meeting_id": "TS3007c",
+          "text": "A combination .",
+          "participant": "MTD026UID",
+          "role": "ID"
+        },
+        {
+          "da_id": "TS3007c.C.dialog-act.dharshi.133",
+          "meeting_id": "TS3007c",
+          "text": "Uh , <gap> you use the battery and w charge it up with kinetic .",
+          "participant": "MTD026UID",
+          "role": "ID"
+        },
+        {
+          "da_id": "TS3007c.C.dialog-act.dharshi.134",
+          "meeting_id": "TS3007c",
+          "text": "When you pick it up , it charges up .",
+          "participant": "MTD026UID",
+          "role": "ID"
+        },
+        {
+          "da_id": "TS3007c.A.dialog-act.dharshi.191",
+          "meeting_id": "TS3007c",
+          "text": "<vocalsound> Okay . So uh I think we have decided on the things that <disfmarker> Uh from Janus , the energy , the combination between battery and kinetic .",
+          "participant": "MTD025PM",
+          "role": "PM"
+        },
+        {
+          "da_id": "TS3007c.D.dialog-act.dharshi.53",
+          "participant": "MTD028ME",
+          "role": "ME",
+          "text": "<vocalsound>"
+        },
+        {
+          "da_id": "TS3007c.D.dialog-act.dharshi.55",
+          "participant": "MTD028ME",
+          "role": "ME",
+          "text": "Yeah ."
+        },
+        {
+          "da_id": "TS3007c.B.dialog-act.dharshi.210",
+          "participant": "MTD027ID",
+          "role": "UI",
+          "text": "<vocalsound>"
+        },
+        {
+          "da_id": "TS3007c.C.dialog-act.dharshi.257",
+          "participant": "MTD026UID",
+          "role": "ID",
+          "text": "<vocalsound>"
+        }
+      ],
+      "peer_items": [
+        {
+          "item_key": "TS3007c#0",
+          "type": "problems",
+          "text": "Open problem: UI's laptop failure (Windows hang) reduced time available to complete tasks."
+        },
+        {
+          "item_key": "TS3007c#1",
+          "type": "problems",
+          "text": "Solar panels are impractical due to limited space on the remote, reducing space for the interface and for harvesting energy."
+        },
+        {
+          "item_key": "TS3007c#2",
+          "type": "decisions",
+          "text": "Adopt a combined power system using a rechargeable battery with kinetic energy as a back-up."
+        }
+      ],
+      "provisional_values": {
+        "owner": null,
+        "owner_basis": "missing",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "adopted",
+        "related_items": []
+      },
+      "candidate_evidence_da_ids": [
+        "TS3007c.B.dialog-act.dharshi.32",
+        "TS3007c.C.dialog-act.dharshi.132",
+        "TS3007c.D.dialog-act.dharshi.54",
+        "TS3007c.B.dialog-act.dharshi.33",
+        "TS3007c.C.dialog-act.dharshi.131",
+        "TS3007c.C.dialog-act.dharshi.133",
+        "TS3007c.C.dialog-act.dharshi.134",
+        "TS3007c.A.dialog-act.dharshi.191"
+      ]
+    },
+    "observed_documents": [],
+    "document_evidence": [],
+    "relation_evidence": [],
+    "history": [
+      {
+        "item": "TS3007c#3",
+        "step": 1,
+        "flags": [],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "The current dialogue establishes a decision to adopt a combined power system using a rechargeable battery with kinetic energy as a back-up, including references in the peer_items and the discussion in TS3007c where the PM mentions the combination energy approach.",
+            "quotes": [
+              {
+                "da_id": "TS3007c.B.dialog-act.dharshi.32",
+                "quote": "Um , I think you should use kinetic as a back-up ."
+              },
+              {
+                "da_id": "TS3007c.C.dialog-act.dharshi.132",
+                "quote": "Yeah , you you you should <disfmarker> we should <disfmarker>"
+              },
+              {
+                "da_id": "TS3007c.D.dialog-act.dharshi.54",
+                "quote": "Yeah , a combination ."
+              },
+              {
+                "da_id": "TS3007c.B.dialog-act.dharshi.33",
+                "quote": "A combination , yeah ."
+              },
+              {
+                "da_id": "TS3007c.C.dialog-act.dharshi.131",
+                "quote": "A combination ."
+              },
+              {
+                "da_id": "TS3007c.C.dialog-act.dharshi.133",
+                "quote": "Uh , <gap> you use the battery and w charge it up with kinetic ."
+              },
+              {
+                "da_id": "TS3007c.C.dialog-act.dharshi.134",
+                "quote": "When you pick it up , it charges up ."
+              },
+              {
+                "da_id": "TS3007c.A.dialog-act.dharshi.191",
+                "quote": "<vocalsound> Okay . So uh I think we have decided on the things that <disfmarker> Uh from Janus , the energy , the combination between battery and kinetic ."
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Status inferred as adopted based on provisional_values.status and dialogue indicating agreement on the energy combination; no contrary evidence.",
+            "quotes": [
+              {
+                "da_id": "TS3007c.A.dialog-act.dharshi.191",
+                "quote": "<vocalsound> Okay . So uh I think we have decided on the things that <disfmarker> Uh from Janus , the energy , the combination between battery and kinetic ."
+              },
+              {
+                "da_id": "TS3007c.D.dialog-act.dharshi.53",
+                "quote": "<vocalsound>"
+              },
+              {
+                "da_id": "TS3007c.D.dialog-act.dharshi.55",
+                "quote": "Yeah ."
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicts detected among provided dialogue; no contradictory statements about the decision to adopt combined power system.",
+            "quotes": [
+              {
+                "da_id": "TS3007c.A.dialog-act.dharshi.191",
+                "quote": "<vocalsound> Okay . So uh I think we have decided on the things that <disfmarker> Uh from Janus , the energy , the combination between battery and kinetic ."
+              },
+              {
+                "da_id": "TS3007c.D.dialog-act.dharshi.53",
+                "quote": "<vocalsound>"
+              },
+              {
+                "da_id": "TS3007c.D.dialog-act.dharshi.55",
+                "quote": "Yeah ."
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related item linkage required; this is a continuation of a decision already discussed in TS3007c with peer_items referencing TS3007c#2.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          }
+        },
+        "decision": "accept",
+        "reason": "all_required_checks_passed",
+        "assessed_text": "Charge the battery when the remote is moved.",
+        "requested_action": null,
+        "proposed_fields": {
+          "status": "adopted",
+          "related_items": [],
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "TS3007c.B.dialog-act.dharshi.32",
+            "TS3007c.C.dialog-act.dharshi.132",
+            "TS3007c.D.dialog-act.dharshi.54",
+            "TS3007c.B.dialog-act.dharshi.33",
+            "TS3007c.C.dialog-act.dharshi.131",
+            "TS3007c.C.dialog-act.dharshi.133",
+            "TS3007c.C.dialog-act.dharshi.134",
+            "TS3007c.A.dialog-act.dharshi.191"
+          ],
+          "owner": null,
+          "owner_basis": "missing",
+          "deadline": null,
+          "deadline_basis": "missing"
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "The current dialogue establishes a decision to adopt a combined power system using a rechargeable battery with kinetic energy as a back-up, including references in the peer_items and the discussion in TS3007c where the PM mentions the combination energy approach.",
+            "quotes": [
+              "TS3007c.B.dialog-act.dharshi.32",
+              "TS3007c.C.dialog-act.dharshi.132",
+              "TS3007c.D.dialog-act.dharshi.54",
+              "TS3007c.B.dialog-act.dharshi.33",
+              "TS3007c.C.dialog-act.dharshi.131",
+              "TS3007c.C.dialog-act.dharshi.133",
+              "TS3007c.C.dialog-act.dharshi.134",
+              "TS3007c.A.dialog-act.dharshi.191"
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Status inferred as adopted based on provisional_values.status and dialogue indicating agreement on the energy combination; no contrary evidence.",
+            "quotes": [
+              "TS3007c.A.dialog-act.dharshi.191",
+              "TS3007c.D.dialog-act.dharshi.53",
+              "TS3007c.D.dialog-act.dharshi.55"
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicts detected among provided dialogue; no contradictory statements about the decision to adopt combined power system.",
+            "quotes": [
+              "TS3007c.A.dialog-act.dharshi.191",
+              "TS3007c.D.dialog-act.dharshi.53",
+              "TS3007c.D.dialog-act.dharshi.55"
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related item linkage required; this is a continuation of a decision already discussed in TS3007c with peer_items referencing TS3007c#2.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "status": "adopted",
+          "related_items": [],
+          "statement": {
+            "result": "pass",
+            "reason": "The current dialogue establishes a decision to adopt a combined power system using a rechargeable battery with kinetic energy as a back-up, including references in the peer_items and the discussion in TS3007c where the PM mentions the combination energy approach.",
+            "evidence_da_ids": [
+              "TS3007c.B.dialog-act.dharshi.32",
+              "TS3007c.C.dialog-act.dharshi.132",
+              "TS3007c.D.dialog-act.dharshi.54",
+              "TS3007c.B.dialog-act.dharshi.33",
+              "TS3007c.C.dialog-act.dharshi.131",
+              "TS3007c.C.dialog-act.dharshi.133",
+              "TS3007c.C.dialog-act.dharshi.134",
+              "TS3007c.A.dialog-act.dharshi.191"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Status inferred as adopted based on provisional_values.status and dialogue indicating agreement on the energy combination; no contrary evidence.",
+            "evidence_da_ids": [
+              "TS3007c.A.dialog-act.dharshi.191",
+              "TS3007c.D.dialog-act.dharshi.53",
+              "TS3007c.D.dialog-act.dharshi.55"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No conflicts detected among provided dialogue; no contradictory statements about the decision to adopt combined power system.",
+            "evidence_da_ids": [
+              "TS3007c.A.dialog-act.dharshi.191",
+              "TS3007c.D.dialog-act.dharshi.53",
+              "TS3007c.D.dialog-act.dharshi.55"
+            ],
+            "affected_fields": []
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior related item linkage required; this is a continuation of a decision already discussed in TS3007c with peer_items referencing TS3007c#2.",
+            "evidence_da_ids": []
+          }
+        },
+        "evidence_bindings": {
+          "statement": [
+            "TS3007c.B.dialog-act.dharshi.32",
+            "TS3007c.C.dialog-act.dharshi.132",
+            "TS3007c.D.dialog-act.dharshi.54",
+            "TS3007c.B.dialog-act.dharshi.33",
+            "TS3007c.C.dialog-act.dharshi.131",
+            "TS3007c.C.dialog-act.dharshi.133",
+            "TS3007c.C.dialog-act.dharshi.134",
+            "TS3007c.A.dialog-act.dharshi.191"
+          ],
+          "status": [
+            "TS3007c.A.dialog-act.dharshi.191",
+            "TS3007c.D.dialog-act.dharshi.53",
+            "TS3007c.D.dialog-act.dharshi.55"
+          ],
+          "conflict": [
+            "TS3007c.A.dialog-act.dharshi.191",
+            "TS3007c.D.dialog-act.dharshi.53",
+            "TS3007c.D.dialog-act.dharshi.55"
+          ]
+        },
+        "raw_tool_input": {
+          "status": "adopted",
+          "related_items": [],
+          "statement": {
+            "result": "pass",
+            "reason": "The current dialogue establishes a decision to adopt a combined power system using a rechargeable battery with kinetic energy as a back-up, including references in the peer_items and the discussion in TS3007c where the PM mentions the combination energy approach.",
+            "evidence_da_ids": [
+              "TS3007c.B.dialog-act.dharshi.32",
+              "TS3007c.C.dialog-act.dharshi.132",
+              "TS3007c.D.dialog-act.dharshi.54",
+              "TS3007c.B.dialog-act.dharshi.33",
+              "TS3007c.C.dialog-act.dharshi.131",
+              "TS3007c.C.dialog-act.dharshi.133",
+              "TS3007c.C.dialog-act.dharshi.134",
+              "TS3007c.A.dialog-act.dharshi.191"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Status inferred as adopted based on provisional_values.status and dialogue indicating agreement on the energy combination; no contrary evidence.",
+            "evidence_da_ids": [
+              "TS3007c.A.dialog-act.dharshi.191",
+              "TS3007c.D.dialog-act.dharshi.53",
+              "TS3007c.D.dialog-act.dharshi.55"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No conflicts detected among provided dialogue; no contradictory statements about the decision to adopt combined power system.",
+            "evidence_da_ids": [
+              "TS3007c.A.dialog-act.dharshi.191",
+              "TS3007c.D.dialog-act.dharshi.53",
+              "TS3007c.D.dialog-act.dharshi.55"
+            ]
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior related item linkage required; this is a continuation of a decision already discussed in TS3007c with peer_items referencing TS3007c#2.",
+            "evidence_da_ids": []
+          }
+        },
+        "protocol_normalizations": [
+          "empty_affected_fields_for_no_conflict",
+          "controller_action_for_missing_hint:request_clarification"
+        ],
+        "unresolved_before": [
+          "statement",
+          "status"
+        ],
+        "unresolved_after": [],
+        "semantic_stalls": 0,
+        "validation_codes": {}
+      },
+      {
+        "item": "TS3007c#3",
+        "step": 1,
+        "flags": [],
+        "action": "accept",
+        "outcome": "accepted",
+        "termination_reason": "all_required_checks_passed",
+        "unresolved_fields": []
+      }
+    ],
+    "lookups": 0,
+    "termination_reason": "all_required_checks_passed",
+    "clarifications": []
+  }
+}

@@ -1,0 +1,594 @@
+{
+  "item": 11,
+  "fields": {
+    "item_key": "ES2004d#11",
+    "record_id": null,
+    "item_type": "actions",
+    "item_text": "Delegate tasks as Project Supervisor.",
+    "state": "pending",
+    "recordable": true,
+    "fields": {
+      "status": "open",
+      "prior_context_needed": false,
+      "related_items": [],
+      "owner": [
+        "FEE013"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/ES2004d.json",
+          "locator": "ES2004d.B.dialog-act.vkaraisk.316"
+        }
+      ]
+    },
+    "draft_fields": {
+      "status": "open",
+      "related_items": [],
+      "owner": [
+        "FEE013"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "prior_context_needed": false,
+      "used_participant_lookup": false,
+      "evidence_da_ids": [
+        "ES2004d.B.dialog-act.vkaraisk.316"
+      ]
+    },
+    "checks": {
+      "statement": {
+        "result": "pass",
+        "reason": "Current dialogue explicitly frames FEE013 as taking the Project Supervisor role with delegation implied in the statement.",
+        "quotes": [
+          {
+            "da_id": "ES2004d.B.dialog-act.vkaraisk.316",
+            "quote": "so I'll be delegating in my um role as Project Supervisor ,"
+          }
+        ],
+        "fields": [
+          "statement"
+        ]
+      },
+      "owner": {
+        "result": "pass",
+        "reason": "The only explicit owner stated is FEE013 as PM who announces delegation in his role asProject Supervisor.",
+        "quotes": [
+          {
+            "da_id": "ES2004d.B.dialog-act.vkaraisk.316",
+            "quote": "so I'll be delegating in my um role as Project Supervisor ,"
+          }
+        ],
+        "fields": [
+          "owner"
+        ]
+      },
+      "deadline": {
+        "result": "uncertain",
+        "reason": "deadline_unresolved",
+        "quotes": [],
+        "fields": [
+          "deadline"
+        ]
+      },
+      "status": {
+        "result": "pass",
+        "reason": "Status of the item is open in provisional values and echoed in dialogue.",
+        "quotes": [
+          {
+            "da_id": "ES2004d.B.dialog-act.vkaraisk.316",
+            "quote": "so I'll be delegating in my um role as Project Supervisor ,"
+          }
+        ],
+        "fields": [
+          "status"
+        ]
+      },
+      "conflict": {
+        "result": "pass",
+        "reason": "No conflicting statements found in observed_dialogue for this item.",
+        "quotes": [
+          {
+            "da_id": "ES2004d.B.dialog-act.vkaraisk.316",
+            "quote": "so I'll be delegating in my um role as Project Supervisor ,"
+          }
+        ],
+        "fields": []
+      },
+      "relation": {
+        "result": "not_applicable",
+        "reason": "No prior item relationship needed to establish this standalone delegation action.",
+        "quotes": [],
+        "fields": [
+          "related_items"
+        ]
+      }
+    },
+    "unresolved_fields": [
+      "deadline"
+    ],
+    "observed_evidence_da_ids": [
+      "ES2004d.C.dialog-act.vkaraisk.308",
+      "ES2004d.B.dialog-act.vkaraisk.316",
+      "ES2004d.C.dialog-act.vkaraisk.309",
+      "ES2004d.B.dialog-act.vkaraisk.317",
+      "ES2004d.B.dialog-act.vkaraisk.315",
+      "ES2004d.A.dialog-act.vkaraisk.195"
+    ],
+    "initial_context": {
+      "item": {
+        "type": "actions",
+        "text": "Delegate tasks as Project Supervisor.",
+        "flags": []
+      },
+      "current_meeting": "ES2004d",
+      "earlier_meetings": [
+        "ES2004a",
+        "ES2004b",
+        "ES2004c"
+      ],
+      "roster": [
+        {
+          "speaker": "A",
+          "participant_id": "MEO015",
+          "role": "UI"
+        },
+        {
+          "speaker": "B",
+          "participant_id": "FEE013",
+          "role": "PM"
+        },
+        {
+          "speaker": "C",
+          "participant_id": "MEE014",
+          "role": "ID"
+        },
+        {
+          "speaker": "D",
+          "participant_id": "FEE016",
+          "role": "ME"
+        }
+      ],
+      "observed_dialogue": [
+        {
+          "da_id": "ES2004d.C.dialog-act.vkaraisk.308",
+          "meeting_id": "ES2004d",
+          "text": "<vocalsound> <vocalsound> In your <disfmarker>",
+          "participant": "MEE014",
+          "role": "ID"
+        },
+        {
+          "da_id": "ES2004d.B.dialog-act.vkaraisk.316",
+          "meeting_id": "ES2004d",
+          "text": "so I'll be delegating in my um role as Project Supervisor ,",
+          "participant": "FEE013",
+          "role": "PM"
+        },
+        {
+          "da_id": "ES2004d.C.dialog-act.vkaraisk.309",
+          "meeting_id": "ES2004d",
+          "text": "yeah . <vocalsound>",
+          "participant": "MEE014",
+          "role": "ID"
+        },
+        {
+          "da_id": "ES2004d.B.dialog-act.vkaraisk.317",
+          "meeting_id": "ES2004d",
+          "text": "so good luck .",
+          "participant": "FEE013",
+          "role": "PM"
+        },
+        {
+          "da_id": "ES2004d.B.dialog-act.vkaraisk.315",
+          "participant": "FEE013",
+          "role": "PM",
+          "text": "we've got about fifty minutes to catch up with <vocalsound> <vocalsound> everything that I fell behind with ,"
+        },
+        {
+          "da_id": "ES2004d.A.dialog-act.vkaraisk.195",
+          "participant": "MEO015",
+          "role": "UI",
+          "text": "Celebration , you didn't talk about that ."
+        }
+      ],
+      "peer_items": [
+        {
+          "item_key": "ES2004d#0",
+          "type": "actions",
+          "text": "Provide recommendations for head office specifications."
+        },
+        {
+          "item_key": "ES2004d#1",
+          "type": "actions",
+          "text": "All team members will provide individual ratings for the evaluation criteria."
+        },
+        {
+          "item_key": "ES2004d#2",
+          "type": "problems",
+          "text": "Pricing currency is unclear; pricing may be in Euros or Dollars."
+        },
+        {
+          "item_key": "ES2004d#3",
+          "type": "problems",
+          "text": "Projected profitability is uncertain because overheads remain to be accounted for beyond a stated 50 percent profit."
+        },
+        {
+          "item_key": "ES2004d#4",
+          "type": "problems",
+          "text": "There is concern that the budget may not include all overhead costs, including salaries and heating."
+        },
+        {
+          "item_key": "ES2004d#5",
+          "type": "decisions",
+          "text": "We decided to use a kinetic charger."
+        },
+        {
+          "item_key": "ES2004d#6",
+          "type": "decisions",
+          "text": "Kinetic batteries will be placed in the top section near the hinge."
+        },
+        {
+          "item_key": "ES2004d#7",
+          "type": "decisions",
+          "text": "Proceed to produce a prototype and bring it to market based on evaluation results."
+        },
+        {
+          "item_key": "ES2004d#8",
+          "type": "decisions",
+          "text": "Rubber used in the casing will be counted as one unit in total cost."
+        },
+        {
+          "item_key": "ES2004d#9",
+          "type": "decisions",
+          "text": "Interface will use push-buttons."
+        },
+        {
+          "item_key": "ES2004d#10",
+          "type": "problems",
+          "text": "Cost information for voice recognition integration is not known; feasibility/expense needs to be assessed."
+        }
+      ],
+      "provisional_values": {
+        "owner": [
+          "FEE013"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "open",
+        "related_items": []
+      },
+      "candidate_evidence_da_ids": [
+        "ES2004d.C.dialog-act.vkaraisk.308",
+        "ES2004d.B.dialog-act.vkaraisk.316",
+        "ES2004d.C.dialog-act.vkaraisk.309",
+        "ES2004d.B.dialog-act.vkaraisk.317"
+      ]
+    },
+    "observed_documents": [],
+    "document_evidence": [],
+    "relation_evidence": [],
+    "history": [
+      {
+        "item": "ES2004d#11",
+        "step": 1,
+        "flags": [],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Current dialogue explicitly frames FEE013 as taking the Project Supervisor role with delegation implied in the statement.",
+            "quotes": [
+              {
+                "da_id": "ES2004d.B.dialog-act.vkaraisk.316",
+                "quote": "so I'll be delegating in my um role as Project Supervisor ,"
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "The only explicit owner stated is FEE013 as PM who announces delegation in his role asProject Supervisor.",
+            "quotes": [
+              {
+                "da_id": "ES2004d.B.dialog-act.vkaraisk.316",
+                "quote": "so I'll be delegating in my um role as Project Supervisor ,"
+              }
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "deadline_unresolved",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Status of the item is open in provisional values and echoed in dialogue.",
+            "quotes": [
+              {
+                "da_id": "ES2004d.B.dialog-act.vkaraisk.316",
+                "quote": "so I'll be delegating in my um role as Project Supervisor ,"
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting statements found in observed_dialogue for this item.",
+            "quotes": [
+              {
+                "da_id": "ES2004d.B.dialog-act.vkaraisk.316",
+                "quote": "so I'll be delegating in my um role as Project Supervisor ,"
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior item relationship needed to establish this standalone delegation action.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "decision": "request_clarification",
+        "reason": "supported_statement_with_unresolved_fields",
+        "assessed_text": "Delegate tasks as Project Supervisor.",
+        "requested_action": "accept",
+        "proposed_fields": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "FEE013"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "ES2004d.B.dialog-act.vkaraisk.316"
+          ]
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Current dialogue explicitly frames FEE013 as taking the Project Supervisor role with delegation implied in the statement.",
+            "quotes": [
+              "ES2004d.B.dialog-act.vkaraisk.316"
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "owner": {
+            "result": "pass",
+            "reason": "The only explicit owner stated is FEE013 as PM who announces delegation in his role asProject Supervisor.",
+            "quotes": [
+              "ES2004d.B.dialog-act.vkaraisk.316"
+            ],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "uncertain",
+            "reason": "No deadline is stated for delegation; deadline_basis is missing.",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Status of the item is open in provisional values and echoed in dialogue.",
+            "quotes": [
+              "ES2004d.B.dialog-act.vkaraisk.316"
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting statements found in observed_dialogue for this item.",
+            "quotes": [
+              "ES2004d.B.dialog-act.vkaraisk.316"
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior item relationship needed to establish this standalone delegation action.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "FEE013"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "statement": {
+            "result": "pass",
+            "reason": "Current dialogue explicitly frames FEE013 as taking the Project Supervisor role with delegation implied in the statement.",
+            "evidence_da_ids": [
+              "ES2004d.B.dialog-act.vkaraisk.316"
+            ]
+          },
+          "owner_check": {
+            "result": "pass",
+            "reason": "The only explicit owner stated is FEE013 as PM who announces delegation in his role asProject Supervisor.",
+            "evidence_da_ids": [
+              "ES2004d.B.dialog-act.vkaraisk.316"
+            ]
+          },
+          "deadline_check": {
+            "result": "uncertain",
+            "reason": "No deadline is stated for delegation; deadline_basis is missing.",
+            "evidence_da_ids": []
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Status of the item is open in provisional values and echoed in dialogue.",
+            "evidence_da_ids": [
+              "ES2004d.B.dialog-act.vkaraisk.316"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No conflicting statements found in observed_dialogue for this item.",
+            "evidence_da_ids": [
+              "ES2004d.B.dialog-act.vkaraisk.316"
+            ],
+            "affected_fields": []
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior item relationship needed to establish this standalone delegation action.",
+            "evidence_da_ids": []
+          },
+          "next_action": "accept"
+        },
+        "evidence_bindings": {
+          "statement": [
+            "ES2004d.B.dialog-act.vkaraisk.316"
+          ],
+          "owner": [
+            "ES2004d.B.dialog-act.vkaraisk.316"
+          ],
+          "status": [
+            "ES2004d.B.dialog-act.vkaraisk.316"
+          ],
+          "conflict": [
+            "ES2004d.B.dialog-act.vkaraisk.316"
+          ]
+        },
+        "raw_tool_input": {
+          "status": "open",
+          "related_items": [],
+          "owner": [
+            "FEE013"
+          ],
+          "owner_basis": "explicit",
+          "deadline": null,
+          "deadline_basis": "missing",
+          "statement": {
+            "result": "pass",
+            "reason": "Current dialogue explicitly frames FEE013 as taking the Project Supervisor role with delegation implied in the statement.",
+            "evidence_da_ids": [
+              "ES2004d.B.dialog-act.vkaraisk.316"
+            ]
+          },
+          "owner_check": {
+            "result": "pass",
+            "reason": "The only explicit owner stated is FEE013 as PM who announces delegation in his role asProject Supervisor.",
+            "evidence_da_ids": [
+              "ES2004d.B.dialog-act.vkaraisk.316"
+            ]
+          },
+          "deadline_check": {
+            "result": "uncertain",
+            "reason": "No deadline is stated for delegation; deadline_basis is missing.",
+            "evidence_da_ids": []
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Status of the item is open in provisional values and echoed in dialogue.",
+            "evidence_da_ids": [
+              "ES2004d.B.dialog-act.vkaraisk.316"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No conflicting statements found in observed_dialogue for this item.",
+            "evidence_da_ids": [
+              "ES2004d.B.dialog-act.vkaraisk.316"
+            ]
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior item relationship needed to establish this standalone delegation action.",
+            "evidence_da_ids": []
+          },
+          "next_action": "accept"
+        },
+        "protocol_normalizations": [
+          "empty_affected_fields_for_no_conflict"
+        ],
+        "unresolved_before": [
+          "deadline",
+          "owner",
+          "statement",
+          "status"
+        ],
+        "unresolved_after": [
+          "deadline"
+        ],
+        "semantic_stalls": 0,
+        "validation_codes": {
+          "deadline": [
+            "deadline_unresolved"
+          ]
+        }
+      },
+      {
+        "item": "ES2004d#11",
+        "step": 1,
+        "flags": [],
+        "action": "stop",
+        "outcome": "pending",
+        "termination_reason": "supported_statement_with_unresolved_fields",
+        "unresolved_fields": [
+          "deadline"
+        ]
+      }
+    ],
+    "lookups": 0,
+    "termination_reason": "supported_statement_with_unresolved_fields",
+    "clarifications": [
+      {
+        "request_id": "a709a1fb973c4975",
+        "item_key": "ES2004d#11",
+        "record_id": null,
+        "field": "deadline",
+        "question": "What is the agreed deadline, in its original wording?",
+        "item_text": "Delegate tasks as Project Supervisor.",
+        "reason": "deadline_unresolved",
+        "evidence_da_ids": [],
+        "available_evidence_da_ids": [
+          "ES2004d.C.dialog-act.vkaraisk.308",
+          "ES2004d.B.dialog-act.vkaraisk.316",
+          "ES2004d.C.dialog-act.vkaraisk.309",
+          "ES2004d.B.dialog-act.vkaraisk.317",
+          "ES2004d.B.dialog-act.vkaraisk.315",
+          "ES2004d.A.dialog-act.vkaraisk.195"
+        ],
+        "status": "open",
+        "termination_reason": "supported_statement_with_unresolved_fields"
+      }
+    ]
+  }
+}

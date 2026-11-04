@@ -1,0 +1,465 @@
+{
+  "item": 10,
+  "fields": {
+    "item_key": "TS3007c#10",
+    "record_id": null,
+    "item_type": "problems",
+    "item_text": "Using a combination battery and kinetic charging may increase costs.",
+    "state": "accepted",
+    "recordable": true,
+    "fields": {
+      "status": "open",
+      "prior_context_needed": false,
+      "related_items": [],
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/TS3007c.json",
+          "locator": "TS3007c.C.dialog-act.dharshi.142"
+        }
+      ]
+    },
+    "draft_fields": {
+      "status": "open",
+      "related_items": [],
+      "prior_context_needed": false,
+      "used_participant_lookup": false,
+      "evidence_da_ids": [
+        "TS3007c.C.dialog-act.dharshi.142"
+      ],
+      "owner": null,
+      "owner_basis": "missing",
+      "deadline": null,
+      "deadline_basis": "missing"
+    },
+    "checks": {
+      "statement": {
+        "result": "pass",
+        "reason": "Dialogue indicates that costs would increase due to combining battery and kinetic charging; the observed dialogue explicitly mentions 'more costs' in relation to the idea.",
+        "quotes": [
+          {
+            "da_id": "TS3007c.C.dialog-act.dharshi.142",
+            "quote": "Uh , well that would bring the m m some more costs ,"
+          }
+        ],
+        "fields": [
+          "statement"
+        ]
+      },
+      "status": {
+        "result": "pass",
+        "reason": "Evidence supports that the concern about cost is present and not contradicted by other dialogue.",
+        "quotes": [
+          {
+            "da_id": "TS3007c.C.dialog-act.dharshi.142",
+            "quote": "Uh , well that would bring the m m some more costs ,"
+          }
+        ],
+        "fields": [
+          "status"
+        ]
+      },
+      "conflict": {
+        "result": "pass",
+        "reason": "No conflicting statements found about the cost concern in the provided dialogue.",
+        "quotes": [
+          {
+            "da_id": "TS3007c.C.dialog-act.dharshi.142",
+            "quote": "Uh , well that would bring the m m some more costs ,"
+          }
+        ],
+        "fields": [
+          "statement"
+        ]
+      },
+      "relation": {
+        "result": "not_applicable",
+        "reason": "No prior related item to relate to in this assessment.",
+        "quotes": [],
+        "fields": [
+          "related_items"
+        ]
+      },
+      "owner": {
+        "result": "not_applicable",
+        "reason": "field_not_applicable",
+        "quotes": [],
+        "fields": [
+          "owner"
+        ]
+      },
+      "deadline": {
+        "result": "not_applicable",
+        "reason": "field_not_applicable",
+        "quotes": [],
+        "fields": [
+          "deadline"
+        ]
+      }
+    },
+    "unresolved_fields": [],
+    "observed_evidence_da_ids": [
+      "TS3007c.C.dialog-act.dharshi.142",
+      "TS3007c.C.dialog-act.dharshi.143",
+      "TS3007c.C.dialog-act.dharshi.141",
+      "TS3007c.D.dialog-act.dharshi.60"
+    ],
+    "initial_context": {
+      "item": {
+        "type": "problems",
+        "text": "Using a combination battery and kinetic charging may increase costs.",
+        "flags": []
+      },
+      "current_meeting": "TS3007c",
+      "earlier_meetings": [],
+      "roster": [
+        {
+          "speaker": "A",
+          "participant_id": "MTD025PM",
+          "role": "PM"
+        },
+        {
+          "speaker": "B",
+          "participant_id": "MTD027ID",
+          "role": "UI"
+        },
+        {
+          "speaker": "C",
+          "participant_id": "MTD026UID",
+          "role": "ID"
+        },
+        {
+          "speaker": "D",
+          "participant_id": "MTD028ME",
+          "role": "ME"
+        }
+      ],
+      "observed_dialogue": [
+        {
+          "da_id": "TS3007c.C.dialog-act.dharshi.142",
+          "meeting_id": "TS3007c",
+          "text": "Uh , well that would bring the m m some more costs ,",
+          "participant": "MTD026UID",
+          "role": "ID"
+        },
+        {
+          "da_id": "TS3007c.C.dialog-act.dharshi.143",
+          "meeting_id": "TS3007c",
+          "text": "but I mean the <disfmarker>",
+          "participant": "MTD026UID",
+          "role": "ID"
+        },
+        {
+          "da_id": "TS3007c.C.dialog-act.dharshi.141",
+          "participant": "MTD026UID",
+          "role": "ID",
+          "text": "Okay ."
+        },
+        {
+          "da_id": "TS3007c.D.dialog-act.dharshi.60",
+          "participant": "MTD028ME",
+          "role": "ME",
+          "text": "<vocalsound> Okay . <vocalsound>"
+        }
+      ],
+      "peer_items": [
+        {
+          "item_key": "TS3007c#0",
+          "type": "problems",
+          "text": "Open problem: UI's laptop failure (Windows hang) reduced time available to complete tasks."
+        },
+        {
+          "item_key": "TS3007c#1",
+          "type": "problems",
+          "text": "Solar panels are impractical due to limited space on the remote, reducing space for the interface and for harvesting energy."
+        },
+        {
+          "item_key": "TS3007c#2",
+          "type": "decisions",
+          "text": "Adopt a combined power system using a rechargeable battery with kinetic energy as a back-up."
+        },
+        {
+          "item_key": "TS3007c#3",
+          "type": "decisions",
+          "text": "Charge the battery when the remote is moved."
+        },
+        {
+          "item_key": "TS3007c#4",
+          "type": "decisions",
+          "text": "The remote will use rubber casing material."
+        },
+        {
+          "item_key": "TS3007c#5",
+          "type": "decisions",
+          "text": "The casing must be firm and not bendable."
+        },
+        {
+          "item_key": "TS3007c#6",
+          "type": "decisions",
+          "text": "The touch-screen concept will be housed in a protective case to prevent breakage."
+        },
+        {
+          "item_key": "TS3007c#7",
+          "type": "decisions",
+          "text": "Parental control will be incorporated but not too complex and offered as a menu option."
+        },
+        {
+          "item_key": "TS3007c#8",
+          "type": "decisions",
+          "text": "The remote will use a square LCD as the standard touch-screen; if LCD is used, include an advanced LCD option."
+        },
+        {
+          "item_key": "TS3007c#9",
+          "type": "problems",
+          "text": "Budget constraints may force moving from advanced chip sets to simpler button solutions if costs are not manageable."
+        }
+      ],
+      "item_type_contract": "This is a Problem, not a task or decision. Verify that the stated obstacle/concern and its impact were actually raised. It need not have an owner, deadline, accepted remedy or resolution. A supported information gap can remain open. Assess end status separately; uncertainty about a cause or remedy is not absence of evidence that the concern exists. Do not infer project-document content or cite a passage that was not delivered.",
+      "provisional_values": {
+        "owner": null,
+        "owner_basis": "missing",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "open",
+        "related_items": []
+      },
+      "candidate_evidence_da_ids": [
+        "TS3007c.C.dialog-act.dharshi.142",
+        "TS3007c.C.dialog-act.dharshi.143"
+      ]
+    },
+    "observed_documents": [],
+    "document_evidence": [],
+    "relation_evidence": [],
+    "history": [
+      {
+        "item": "TS3007c#10",
+        "step": 1,
+        "flags": [],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue indicates that costs would increase due to combining battery and kinetic charging; the observed dialogue explicitly mentions 'more costs' in relation to the idea.",
+            "quotes": [
+              {
+                "da_id": "TS3007c.C.dialog-act.dharshi.142",
+                "quote": "Uh , well that would bring the m m some more costs ,"
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Evidence supports that the concern about cost is present and not contradicted by other dialogue.",
+            "quotes": [
+              {
+                "da_id": "TS3007c.C.dialog-act.dharshi.142",
+                "quote": "Uh , well that would bring the m m some more costs ,"
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting statements found about the cost concern in the provided dialogue.",
+            "quotes": [
+              {
+                "da_id": "TS3007c.C.dialog-act.dharshi.142",
+                "quote": "Uh , well that would bring the m m some more costs ,"
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related item to relate to in this assessment.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          }
+        },
+        "decision": "accept",
+        "reason": "all_required_checks_passed",
+        "assessed_text": "Using a combination battery and kinetic charging may increase costs.",
+        "requested_action": "accept",
+        "proposed_fields": {
+          "status": "open",
+          "related_items": [],
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "TS3007c.C.dialog-act.dharshi.142"
+          ],
+          "owner": null,
+          "owner_basis": "missing",
+          "deadline": null,
+          "deadline_basis": "missing"
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue indicates that costs would increase due to combining battery and kinetic charging; the observed dialogue explicitly mentions 'more costs' in relation to the idea.",
+            "quotes": [
+              "TS3007c.C.dialog-act.dharshi.142"
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Evidence supports that the concern about cost is present and not contradicted by other dialogue.",
+            "quotes": [
+              "TS3007c.C.dialog-act.dharshi.142"
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting statements found about the cost concern in the provided dialogue.",
+            "quotes": [
+              "TS3007c.C.dialog-act.dharshi.142"
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "relation": {
+            "result": "not_applicable",
+            "reason": "No prior related item to relate to in this assessment.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "status": "open",
+          "related_items": [],
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue indicates that costs would increase due to combining battery and kinetic charging; the observed dialogue explicitly mentions 'more costs' in relation to the idea.",
+            "evidence_da_ids": [
+              "TS3007c.C.dialog-act.dharshi.142"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Evidence supports that the concern about cost is present and not contradicted by other dialogue.",
+            "evidence_da_ids": [
+              "TS3007c.C.dialog-act.dharshi.142"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No conflicting statements found about the cost concern in the provided dialogue.",
+            "evidence_da_ids": [
+              "TS3007c.C.dialog-act.dharshi.142"
+            ],
+            "affected_fields": [
+              "statement"
+            ]
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior related item to relate to in this assessment.",
+            "evidence_da_ids": []
+          },
+          "next_action": "accept"
+        },
+        "evidence_bindings": {
+          "statement": [
+            "TS3007c.C.dialog-act.dharshi.142"
+          ],
+          "status": [
+            "TS3007c.C.dialog-act.dharshi.142"
+          ],
+          "conflict": [
+            "TS3007c.C.dialog-act.dharshi.142"
+          ]
+        },
+        "raw_tool_input": {
+          "status": "open",
+          "related_items": [],
+          "statement": {
+            "result": "pass",
+            "reason": "Dialogue indicates that costs would increase due to combining battery and kinetic charging; the observed dialogue explicitly mentions 'more costs' in relation to the idea.",
+            "evidence_da_ids": [
+              "TS3007c.C.dialog-act.dharshi.142"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Evidence supports that the concern about cost is present and not contradicted by other dialogue.",
+            "evidence_da_ids": [
+              "TS3007c.C.dialog-act.dharshi.142"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No conflicting statements found about the cost concern in the provided dialogue.",
+            "evidence_da_ids": [
+              "TS3007c.C.dialog-act.dharshi.142"
+            ],
+            "affected_fields": [
+              "statement"
+            ]
+          },
+          "relation_check": {
+            "result": "not_applicable",
+            "reason": "No prior related item to relate to in this assessment.",
+            "evidence_da_ids": []
+          },
+          "next_action": "accept"
+        },
+        "protocol_normalizations": [],
+        "unresolved_before": [
+          "statement",
+          "status"
+        ],
+        "unresolved_after": [],
+        "semantic_stalls": 0,
+        "validation_codes": {}
+      },
+      {
+        "item": "TS3007c#10",
+        "step": 1,
+        "flags": [],
+        "action": "accept",
+        "outcome": "accepted",
+        "termination_reason": "all_required_checks_passed",
+        "unresolved_fields": []
+      }
+    ],
+    "lookups": 0,
+    "termination_reason": "all_required_checks_passed",
+    "clarifications": []
+  }
+}

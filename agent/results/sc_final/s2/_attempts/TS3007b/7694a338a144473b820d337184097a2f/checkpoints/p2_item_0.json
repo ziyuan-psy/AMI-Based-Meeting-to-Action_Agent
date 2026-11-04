@@ -1,0 +1,621 @@
+{
+  "item_key": "TS3007b#0",
+  "record_id": null,
+  "item_type": "actions",
+  "item_text": "Take minutes and place them in the shared folder by end of session.",
+  "state": "pending",
+  "recordable": true,
+  "fields": {
+    "status": "unknown",
+    "prior_context_needed": false,
+    "related_items": [],
+    "owner": [
+      "MTD025PM"
+    ],
+    "owner_basis": "explicit",
+    "deadline": "by the end of the session",
+    "deadline_basis": "explicit",
+    "reference": [
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3007b.json",
+        "locator": "TS3007b.A.dialog-act.vkaraisk.14"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/TS3007b.json",
+        "locator": "TS3007b.A.dialog-act.vkaraisk.15"
+      }
+    ]
+  },
+  "draft_fields": {
+    "status": "open",
+    "related_items": [],
+    "owner": [
+      "MTD025PM"
+    ],
+    "owner_basis": "explicit",
+    "deadline": "by the end of the session",
+    "deadline_basis": "explicit",
+    "prior_context_needed": false,
+    "used_participant_lookup": false,
+    "evidence_da_ids": [
+      "TS3007b.A.dialog-act.vkaraisk.14",
+      "TS3007b.A.dialog-act.vkaraisk.15"
+    ]
+  },
+  "checks": {
+    "statement": {
+      "result": "pass",
+      "reason": "The dialogue shows PM committing to take minutes and place in shared folder by end of session; explicit plan aligns with the action text.",
+      "quotes": [
+        {
+          "da_id": "TS3007b.A.dialog-act.vkaraisk.14",
+          "quote": "I will uh take minutes"
+        },
+        {
+          "da_id": "TS3007b.A.dialog-act.vkaraisk.15",
+          "quote": "and will put uh the minutes that I have uh at the end of the session in the shared folder ."
+        }
+      ],
+      "fields": [
+        "statement"
+      ]
+    },
+    "owner": {
+      "result": "pass",
+      "reason": "Evidence shows owner is MTD025PM who announced taking minutes and placing in shared folder.",
+      "quotes": [
+        {
+          "da_id": "TS3007b.A.dialog-act.vkaraisk.14",
+          "quote": "I will uh take minutes"
+        }
+      ],
+      "fields": [
+        "owner"
+      ]
+    },
+    "deadline": {
+      "result": "pass",
+      "reason": "Deadline wording matches explicit deadline 'by the end of the session'.",
+      "quotes": [
+        {
+          "da_id": "TS3007b.A.dialog-act.vkaraisk.15",
+          "quote": "and will put uh the minutes that I have uh at the end of the session in the shared folder ."
+        }
+      ],
+      "fields": [
+        "deadline"
+      ]
+    },
+    "status": {
+      "result": "uncertain",
+      "reason": "Status remains open as this is an ongoing action and no completion noted in dialogue.",
+      "quotes": [
+        {
+          "da_id": "TS3007b.A.dialog-act.vkaraisk.15",
+          "quote": "and will put uh the minutes that I have uh at the end of the session in the shared folder ."
+        }
+      ],
+      "fields": [
+        "status"
+      ]
+    },
+    "conflict": {
+      "result": "pass",
+      "reason": "No contradictions found within provided dialogue regarding ownership, deadline, or status.",
+      "quotes": [
+        {
+          "da_id": "TS3007b.A.dialog-act.vkaraisk.14",
+          "quote": "I will uh take minutes"
+        },
+        {
+          "da_id": "TS3007b.A.dialog-act.vkaraisk.15",
+          "quote": "and will put uh the minutes that I have uh at the end of the session in the shared folder ."
+        }
+      ],
+      "fields": []
+    },
+    "relation": {
+      "result": "not_applicable",
+      "reason": "No prior related item to update; this is a new action.",
+      "quotes": [],
+      "fields": [
+        "related_items"
+      ]
+    }
+  },
+  "unresolved_fields": [
+    "status"
+  ],
+  "observed_evidence_da_ids": [
+    "TS3007b.A.dialog-act.vkaraisk.14",
+    "TS3007b.A.dialog-act.vkaraisk.15",
+    "TS3007b.A.dialog-act.vkaraisk.13",
+    "TS3007b.A.dialog-act.vkaraisk.16"
+  ],
+  "initial_context": {
+    "item": {
+      "type": "actions",
+      "text": "Take minutes and place them in the shared folder by end of session.",
+      "flags": []
+    },
+    "current_meeting": "TS3007b",
+    "earlier_meetings": [
+      "TS3007a"
+    ],
+    "roster": [
+      {
+        "speaker": "A",
+        "participant_id": "MTD025PM",
+        "role": "PM"
+      },
+      {
+        "speaker": "B",
+        "participant_id": "MTD027ID",
+        "role": "UI"
+      },
+      {
+        "speaker": "C",
+        "participant_id": "MTD026UID",
+        "role": "ID"
+      },
+      {
+        "speaker": "D",
+        "participant_id": "MTD028ME",
+        "role": "ME"
+      }
+    ],
+    "observed_dialogue": [
+      {
+        "da_id": "TS3007b.A.dialog-act.vkaraisk.14",
+        "meeting_id": "TS3007b",
+        "text": "I will uh take minutes",
+        "participant": "MTD025PM",
+        "role": "PM"
+      },
+      {
+        "da_id": "TS3007b.A.dialog-act.vkaraisk.15",
+        "meeting_id": "TS3007b",
+        "text": "and will put uh the minutes that I have uh at the end of the session in the shared folder .",
+        "participant": "MTD025PM",
+        "role": "PM"
+      },
+      {
+        "da_id": "TS3007b.A.dialog-act.vkaraisk.13",
+        "participant": "MTD025PM",
+        "role": "PM",
+        "text": "the plan is uh that uh each one of you , so not me but only you uh will uh present uh the the things you worked on uh the last uh half hour ."
+      },
+      {
+        "da_id": "TS3007b.A.dialog-act.vkaraisk.16",
+        "participant": "MTD025PM",
+        "role": "PM",
+        "text": "<vocalsound> Also the minutes of the previous session are also in the shared folder now ,"
+      }
+    ],
+    "peer_items": [],
+    "provisional_values": {
+      "owner": [
+        "MTD025PM"
+      ],
+      "owner_basis": "explicit",
+      "deadline": "by the end of the session",
+      "deadline_basis": "explicit",
+      "status": "open",
+      "related_items": []
+    },
+    "candidate_evidence_da_ids": [
+      "TS3007b.A.dialog-act.vkaraisk.14",
+      "TS3007b.A.dialog-act.vkaraisk.15"
+    ]
+  },
+  "observed_documents": [],
+  "document_evidence": [],
+  "relation_evidence": [],
+  "history": [
+    {
+      "item": "TS3007b#0",
+      "step": 1,
+      "flags": [],
+      "action": "assess_item",
+      "outcome": "invalid_action",
+      "error": "Correct these argument fields: status_check/result: 'open' is not one of ['pass', 'fail', 'uncertain'] Tool assess_item accepts root keys: status, related_items, owner, owner_basis, deadline, deadline_basis, statement, owner_check, deadline_check, status_check, conflict_check, relation_check, next_action. Check keys: status_check={result, reason, evidence_da_ids, documents}. Resubmit the complete advertised object. Select only delivered supporting dialogue IDs; if support is unavailable use uncertain with an explanation, never invent an ID or mark pass with no evidence. Documents belong inside the check they inform.",
+      "raw_tool_input": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD025PM"
+        ],
+        "owner_basis": "explicit",
+        "deadline": "by the end of the session",
+        "deadline_basis": "explicit",
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue shows PM committing to take minutes and place in shared folder by end of session; explicit plan aligns with the action text.",
+          "evidence_da_ids": [
+            "TS3007b.A.dialog-act.vkaraisk.14",
+            "TS3007b.A.dialog-act.vkaraisk.15"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "Evidence shows owner is MTD025PM who announced taking minutes and placing in shared folder.",
+          "evidence_da_ids": [
+            "TS3007b.A.dialog-act.vkaraisk.14"
+          ]
+        },
+        "deadline_check": {
+          "result": "pass",
+          "reason": "Deadline wording matches explicit deadline 'by the end of the session'.",
+          "evidence_da_ids": [
+            "TS3007b.A.dialog-act.vkaraisk.15"
+          ]
+        },
+        "status_check": {
+          "result": "open",
+          "reason": "Status remains open as this is an ongoing action and no completion noted in dialogue.",
+          "evidence_da_ids": [
+            "TS3007b.A.dialog-act.vkaraisk.15"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No contradictions found within provided dialogue regarding ownership, deadline, or status.",
+          "evidence_da_ids": [
+            "TS3007b.A.dialog-act.vkaraisk.14",
+            "TS3007b.A.dialog-act.vkaraisk.15"
+          ],
+          "affected_fields": []
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No prior related item to update; this is a new action.",
+          "evidence_da_ids": []
+        }
+      }
+    },
+    {
+      "item": "TS3007b#0",
+      "step": 2,
+      "flags": [],
+      "action": "assess_item",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue shows PM committing to take minutes and place in shared folder by end of session; explicit plan aligns with the action text.",
+          "quotes": [
+            {
+              "da_id": "TS3007b.A.dialog-act.vkaraisk.14",
+              "quote": "I will uh take minutes"
+            },
+            {
+              "da_id": "TS3007b.A.dialog-act.vkaraisk.15",
+              "quote": "and will put uh the minutes that I have uh at the end of the session in the shared folder ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Evidence shows owner is MTD025PM who announced taking minutes and placing in shared folder.",
+          "quotes": [
+            {
+              "da_id": "TS3007b.A.dialog-act.vkaraisk.14",
+              "quote": "I will uh take minutes"
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "pass",
+          "reason": "Deadline wording matches explicit deadline 'by the end of the session'.",
+          "quotes": [
+            {
+              "da_id": "TS3007b.A.dialog-act.vkaraisk.15",
+              "quote": "and will put uh the minutes that I have uh at the end of the session in the shared folder ."
+            }
+          ],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "uncertain",
+          "reason": "Status remains open as this is an ongoing action and no completion noted in dialogue.",
+          "quotes": [
+            {
+              "da_id": "TS3007b.A.dialog-act.vkaraisk.15",
+              "quote": "and will put uh the minutes that I have uh at the end of the session in the shared folder ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions found within provided dialogue regarding ownership, deadline, or status.",
+          "quotes": [
+            {
+              "da_id": "TS3007b.A.dialog-act.vkaraisk.14",
+              "quote": "I will uh take minutes"
+            },
+            {
+              "da_id": "TS3007b.A.dialog-act.vkaraisk.15",
+              "quote": "and will put uh the minutes that I have uh at the end of the session in the shared folder ."
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No prior related item to update; this is a new action.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "decision": "request_clarification",
+      "reason": "supported_statement_with_unresolved_fields",
+      "assessed_text": "Take minutes and place them in the shared folder by end of session.",
+      "requested_action": "accept",
+      "proposed_fields": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD025PM"
+        ],
+        "owner_basis": "explicit",
+        "deadline": "by the end of the session",
+        "deadline_basis": "explicit",
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "TS3007b.A.dialog-act.vkaraisk.14",
+          "TS3007b.A.dialog-act.vkaraisk.15"
+        ]
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue shows PM committing to take minutes and place in shared folder by end of session; explicit plan aligns with the action text.",
+          "quotes": [
+            "TS3007b.A.dialog-act.vkaraisk.14",
+            "TS3007b.A.dialog-act.vkaraisk.15"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Evidence shows owner is MTD025PM who announced taking minutes and placing in shared folder.",
+          "quotes": [
+            "TS3007b.A.dialog-act.vkaraisk.14"
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "pass",
+          "reason": "Deadline wording matches explicit deadline 'by the end of the session'.",
+          "quotes": [
+            "TS3007b.A.dialog-act.vkaraisk.15"
+          ],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "uncertain",
+          "reason": "Status remains open as this is an ongoing action and no completion noted in dialogue.",
+          "quotes": [
+            "TS3007b.A.dialog-act.vkaraisk.15"
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No contradictions found within provided dialogue regarding ownership, deadline, or status.",
+          "quotes": [
+            "TS3007b.A.dialog-act.vkaraisk.14",
+            "TS3007b.A.dialog-act.vkaraisk.15"
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No prior related item to update; this is a new action.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD025PM"
+        ],
+        "owner_basis": "explicit",
+        "deadline": "by the end of the session",
+        "deadline_basis": "explicit",
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue shows PM committing to take minutes and place in shared folder by end of session; explicit plan aligns with the action text.",
+          "evidence_da_ids": [
+            "TS3007b.A.dialog-act.vkaraisk.14",
+            "TS3007b.A.dialog-act.vkaraisk.15"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "Evidence shows owner is MTD025PM who announced taking minutes and placing in shared folder.",
+          "evidence_da_ids": [
+            "TS3007b.A.dialog-act.vkaraisk.14"
+          ]
+        },
+        "deadline_check": {
+          "result": "pass",
+          "reason": "Deadline wording matches explicit deadline 'by the end of the session'.",
+          "evidence_da_ids": [
+            "TS3007b.A.dialog-act.vkaraisk.15"
+          ]
+        },
+        "status_check": {
+          "result": "uncertain",
+          "reason": "Status remains open as this is an ongoing action and no completion noted in dialogue.",
+          "evidence_da_ids": [
+            "TS3007b.A.dialog-act.vkaraisk.15"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No contradictions found within provided dialogue regarding ownership, deadline, or status.",
+          "evidence_da_ids": [
+            "TS3007b.A.dialog-act.vkaraisk.14",
+            "TS3007b.A.dialog-act.vkaraisk.15"
+          ],
+          "affected_fields": []
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No prior related item to update; this is a new action.",
+          "evidence_da_ids": []
+        },
+        "next_action": "accept"
+      },
+      "evidence_bindings": {
+        "statement": [
+          "TS3007b.A.dialog-act.vkaraisk.14",
+          "TS3007b.A.dialog-act.vkaraisk.15"
+        ],
+        "owner": [
+          "TS3007b.A.dialog-act.vkaraisk.14"
+        ],
+        "deadline": [
+          "TS3007b.A.dialog-act.vkaraisk.15"
+        ],
+        "status": [
+          "TS3007b.A.dialog-act.vkaraisk.15"
+        ],
+        "conflict": [
+          "TS3007b.A.dialog-act.vkaraisk.14",
+          "TS3007b.A.dialog-act.vkaraisk.15"
+        ]
+      },
+      "raw_tool_input": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MTD025PM"
+        ],
+        "owner_basis": "explicit",
+        "deadline": "by the end of the session",
+        "deadline_basis": "explicit",
+        "statement": {
+          "result": "pass",
+          "reason": "The dialogue shows PM committing to take minutes and place in shared folder by end of session; explicit plan aligns with the action text.",
+          "evidence_da_ids": [
+            "TS3007b.A.dialog-act.vkaraisk.14",
+            "TS3007b.A.dialog-act.vkaraisk.15"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "Evidence shows owner is MTD025PM who announced taking minutes and placing in shared folder.",
+          "evidence_da_ids": [
+            "TS3007b.A.dialog-act.vkaraisk.14"
+          ]
+        },
+        "deadline_check": {
+          "result": "pass",
+          "reason": "Deadline wording matches explicit deadline 'by the end of the session'.",
+          "evidence_da_ids": [
+            "TS3007b.A.dialog-act.vkaraisk.15"
+          ]
+        },
+        "status_check": {
+          "result": "uncertain",
+          "reason": "Status remains open as this is an ongoing action and no completion noted in dialogue.",
+          "evidence_da_ids": [
+            "TS3007b.A.dialog-act.vkaraisk.15"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No contradictions found within provided dialogue regarding ownership, deadline, or status.",
+          "evidence_da_ids": [
+            "TS3007b.A.dialog-act.vkaraisk.14",
+            "TS3007b.A.dialog-act.vkaraisk.15"
+          ],
+          "affected_fields": []
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No prior related item to update; this is a new action.",
+          "evidence_da_ids": []
+        },
+        "next_action": "accept"
+      },
+      "protocol_normalizations": [],
+      "unresolved_before": [
+        "deadline",
+        "owner",
+        "statement",
+        "status"
+      ],
+      "unresolved_after": [
+        "status"
+      ],
+      "semantic_stalls": 0,
+      "validation_codes": {}
+    },
+    {
+      "item": "TS3007b#0",
+      "step": 2,
+      "flags": [],
+      "action": "stop",
+      "outcome": "pending",
+      "termination_reason": "supported_statement_with_unresolved_fields",
+      "unresolved_fields": [
+        "status"
+      ]
+    }
+  ],
+  "lookups": 0,
+  "termination_reason": "supported_statement_with_unresolved_fields",
+  "clarifications": [
+    {
+      "request_id": "242aea924b1500ba",
+      "item_key": "TS3007b#0",
+      "record_id": null,
+      "field": "status",
+      "question": "What is this item's status at the end of the current meeting?",
+      "item_text": "Take minutes and place them in the shared folder by end of session.",
+      "reason": "Status remains open as this is an ongoing action and no completion noted in dialogue.",
+      "evidence_da_ids": [
+        "TS3007b.A.dialog-act.vkaraisk.15"
+      ],
+      "available_evidence_da_ids": [
+        "TS3007b.A.dialog-act.vkaraisk.14",
+        "TS3007b.A.dialog-act.vkaraisk.15",
+        "TS3007b.A.dialog-act.vkaraisk.13",
+        "TS3007b.A.dialog-act.vkaraisk.16"
+      ],
+      "status": "open",
+      "termination_reason": "supported_statement_with_unresolved_fields"
+    }
+  ]
+}

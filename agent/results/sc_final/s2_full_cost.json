@@ -1,0 +1,189 @@
+{
+ "cached_stages": [
+  "extract",
+  "consolidate",
+  "decision_consolidate",
+  "select"
+ ],
+ "note": "S2 cost with the S1 stages it read from cache added back; latency adds S1's wall time from extract start to normalize start and removes S2's cache-read time for the same span",
+ "summary": {
+  "latency_mean": 589.6,
+  "latency_max": 898.8,
+  "in_mean": 307176,
+  "out_mean": 204023,
+  "total_mean": 511199,
+  "total_max": 948523,
+  "calls_mean": 51.6,
+  "calls_max": 89
+ },
+ "per_meeting": [
+  {
+   "meeting": "ES2004a",
+   "s2_incremental": {
+    "sec": 51.7,
+    "calls": 17,
+    "tin": 89385,
+    "tout": 15942
+   },
+   "s1_reused": {
+    "sec": 322.9,
+    "calls": 15,
+    "in": 55515,
+    "out": 93955
+   },
+   "s2_full": {
+    "sec": 374.6,
+    "calls": 32,
+    "tin": 144900,
+    "tout": 109897
+   }
+  },
+  {
+   "meeting": "ES2004b",
+   "s2_incremental": {
+    "sec": 25.5,
+    "calls": 9,
+    "tin": 45265,
+    "tout": 7673
+   },
+   "s1_reused": {
+    "sec": 319.1,
+    "calls": 16,
+    "in": 89966,
+    "out": 122608
+   },
+   "s2_full": {
+    "sec": 344.6,
+    "calls": 25,
+    "tin": 135231,
+    "tout": 130281
+   }
+  },
+  {
+   "meeting": "ES2004c",
+   "s2_incremental": {
+    "sec": 190.3,
+    "calls": 28,
+    "tin": 183616,
+    "tout": 51264
+   },
+   "s1_reused": {
+    "sec": 429.2,
+    "calls": 19,
+    "in": 118921,
+    "out": 151162
+   },
+   "s2_full": {
+    "sec": 619.4,
+    "calls": 47,
+    "tin": 302537,
+    "tout": 202426
+   }
+  },
+  {
+   "meeting": "ES2004d",
+   "s2_incremental": {
+    "sec": 385.4,
+    "calls": 56,
+    "tin": 358468,
+    "tout": 129944
+   },
+   "s1_reused": {
+    "sec": 412.9,
+    "calls": 20,
+    "in": 106555,
+    "out": 148003
+   },
+   "s2_full": {
+    "sec": 798.2,
+    "calls": 76,
+    "tin": 465023,
+    "tout": 277947
+   }
+  },
+  {
+   "meeting": "TS3007a",
+   "s2_incremental": {
+    "sec": 42.8,
+    "calls": 15,
+    "tin": 74642,
+    "tout": 11206
+   },
+   "s1_reused": {
+    "sec": 373.2,
+    "calls": 17,
+    "in": 71362,
+    "out": 91678
+   },
+   "s2_full": {
+    "sec": 415.9,
+    "calls": 32,
+    "tin": 146004,
+    "tout": 102884
+   }
+  },
+  {
+   "meeting": "TS3007b",
+   "s2_incremental": {
+    "sec": 265.9,
+    "calls": 36,
+    "tin": 211229,
+    "tout": 75158
+   },
+   "s1_reused": {
+    "sec": 423.5,
+    "calls": 18,
+    "in": 109918,
+    "out": 158231
+   },
+   "s2_full": {
+    "sec": 689.3,
+    "calls": 54,
+    "tin": 321147,
+    "tout": 233389
+   }
+  },
+  {
+   "meeting": "TS3007c",
+   "s2_incremental": {
+    "sec": 143.4,
+    "calls": 40,
+    "tin": 228171,
+    "tout": 69174
+   },
+   "s1_reused": {
+    "sec": 432.9,
+    "calls": 18,
+    "in": 117930,
+    "out": 154125
+   },
+   "s2_full": {
+    "sec": 576.2,
+    "calls": 58,
+    "tin": 346101,
+    "tout": 223299
+   }
+  },
+  {
+   "meeting": "TS3007d",
+   "s2_incremental": {
+    "sec": 315.5,
+    "calls": 65,
+    "tin": 440296,
+    "tout": 138800
+   },
+   "s1_reused": {
+    "sec": 583.3,
+    "calls": 24,
+    "in": 156166,
+    "out": 213261
+   },
+   "s2_full": {
+    "sec": 898.8,
+    "calls": 89,
+    "tin": 596462,
+    "tout": 352061
+   }
+  }
+ ]
+}

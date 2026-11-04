@@ -1,0 +1,1369 @@
+{
+  "item": 4,
+  "fields": {
+    "item_key": "ES2004c#4",
+    "record_id": null,
+    "item_type": "decisions",
+    "item_text": "Market research will be conducted on the closing feature attachment before including.",
+    "state": "pending",
+    "recordable": true,
+    "fields": {
+      "status": "adopted",
+      "prior_context_needed": false,
+      "related_items": [],
+      "reference": [
+        {
+          "source_type": "dialogue",
+          "source": "ami-corpus/dialogueActs/ES2004c.json",
+          "locator": "ES2004c.D.dialog-act.dharshi.70"
+        }
+      ]
+    },
+    "draft_fields": {
+      "status": "adopted",
+      "related_items": [],
+      "prior_context_needed": false,
+      "used_participant_lookup": false,
+      "evidence_da_ids": [
+        "ES2004c.D.dialog-act.dharshi.70",
+        "ES2004a.D.dialog-act.s9553330.79"
+      ],
+      "owner": null,
+      "owner_basis": "missing",
+      "deadline": null,
+      "deadline_basis": "missing"
+    },
+    "checks": {
+      "statement": {
+        "result": "pass",
+        "reason": "The dialogue includes a direct suggestion to perform market research on the closing feature before including it.",
+        "quotes": [
+          {
+            "da_id": "ES2004c.D.dialog-act.dharshi.70",
+            "quote": "Shouldn't we do some market research on that first before we add it in"
+          }
+        ],
+        "fields": [
+          "statement"
+        ]
+      },
+      "status": {
+        "result": "pass",
+        "reason": "Current dialogue supports that market research should occur prior to adding the closing feature attachment.",
+        "quotes": [
+          {
+            "da_id": "ES2004c.D.dialog-act.dharshi.70",
+            "quote": "Shouldn't we do some market research on that first before we add it in"
+          }
+        ],
+        "fields": [
+          "status"
+        ]
+      },
+      "conflict": {
+        "result": "pass",
+        "reason": "No conflicting statements found in the observed dialogue regarding market research vs. adding the feature.",
+        "quotes": [
+          {
+            "da_id": "ES2004c.D.dialog-act.dharshi.70",
+            "quote": "Shouldn't we do some market research on that first before we add it in"
+          }
+        ],
+        "fields": []
+      },
+      "relation": {
+        "result": "uncertain",
+        "reason": "The prior item ES2004a.sys.s.6 concerns market range international; the current item ES2004c discusses adding an attachment to the closing feature and performing market research before including it. While both touch on market considerations, there is no explicit evidence that the current item continues or changes the prior item. The current dialogue mentions market research as a prerequisite, which could relate to the broader market scope but does not clearly modify or follow up the earlier decision. Evidence from both items is about market considerations, but the linkage is not explicit.",
+        "quotes": [
+          {
+            "da_id": "ES2004c.D.dialog-act.dharshi.70",
+            "quote": "Shouldn't we do some market research on that first before we add it in"
+          },
+          {
+            "da_id": "ES2004a.D.dialog-act.s9553330.79",
+            "quote": "You've got market range international"
+          }
+        ],
+        "links": [],
+        "fields": [
+          "related_items"
+        ]
+      },
+      "owner": {
+        "result": "not_applicable",
+        "reason": "field_not_applicable",
+        "quotes": [],
+        "fields": [
+          "owner"
+        ]
+      },
+      "deadline": {
+        "result": "not_applicable",
+        "reason": "field_not_applicable",
+        "quotes": [],
+        "fields": [
+          "deadline"
+        ]
+      }
+    },
+    "unresolved_fields": [
+      "related_items"
+    ],
+    "observed_evidence_da_ids": [
+      "ES2004c.B.dialog-act.dharshi.86",
+      "ES2004c.B.dialog-act.dharshi.87",
+      "ES2004c.D.dialog-act.dharshi.70",
+      "ES2004c.B.dialog-act.dharshi.90",
+      "ES2004c.D.dialog-act.dharshi.69",
+      "ES2004c.A.dialog-act.dharshi.37",
+      "ES2004c.B.dialog-act.dharshi.88",
+      "ES2004c.B.dialog-act.dharshi.89",
+      "ES2004c.D.dialog-act.dharshi.71",
+      "ES2004c.D.dialog-act.dharshi.72",
+      "ES2004a.D.dialog-act.s9553330.78",
+      "ES2004a.A.dialog-act.s9553330.43",
+      "ES2004a.D.dialog-act.s9553330.79",
+      "ES2004a.D.dialog-act.s9553330.80",
+      "ES2004a.B.dialog-act.s9553330.111",
+      "ES2004a.D.dialog-act.s9553330.81",
+      "ES2004a.B.dialog-act.s9553330.109"
+    ],
+    "initial_context": {
+      "item": {
+        "type": "decisions",
+        "text": "Market research will be conducted on the closing feature attachment before including.",
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ]
+      },
+      "current_meeting": "ES2004c",
+      "earlier_meetings": [
+        "ES2004a",
+        "ES2004b"
+      ],
+      "roster": [
+        {
+          "speaker": "A",
+          "participant_id": "MEO015",
+          "role": "UI"
+        },
+        {
+          "speaker": "B",
+          "participant_id": "FEE013",
+          "role": "PM"
+        },
+        {
+          "speaker": "C",
+          "participant_id": "MEE014",
+          "role": "ID"
+        },
+        {
+          "speaker": "D",
+          "participant_id": "FEE016",
+          "role": "ME"
+        }
+      ],
+      "observed_dialogue": [
+        {
+          "da_id": "ES2004c.B.dialog-act.dharshi.86",
+          "meeting_id": "ES2004c",
+          "text": "Okay , can we add in uh an attachment to closing feature ?",
+          "participant": "FEE013",
+          "role": "PM"
+        },
+        {
+          "da_id": "ES2004c.B.dialog-act.dharshi.87",
+          "meeting_id": "ES2004c",
+          "text": "Can we think about that ?",
+          "participant": "FEE013",
+          "role": "PM"
+        },
+        {
+          "da_id": "ES2004c.D.dialog-act.dharshi.70",
+          "meeting_id": "ES2004c",
+          "text": "Shouldn't we do some market research on that first before we add it in",
+          "participant": "FEE016",
+          "role": "ME"
+        },
+        {
+          "da_id": "ES2004c.B.dialog-act.dharshi.90",
+          "meeting_id": "ES2004c",
+          "text": "Well add it in to think about um",
+          "participant": "FEE013",
+          "role": "PM"
+        },
+        {
+          "da_id": "ES2004c.D.dialog-act.dharshi.69",
+          "participant": "FEE016",
+          "role": "ME",
+          "text": "i <vocalsound> it's not gonna add anything , okay ."
+        },
+        {
+          "da_id": "ES2004c.A.dialog-act.dharshi.37",
+          "participant": "MEO015",
+          "role": "UI",
+          "text": "Okay ."
+        },
+        {
+          "da_id": "ES2004c.B.dialog-act.dharshi.88",
+          "participant": "FEE013",
+          "role": "PM",
+          "text": "'Cause if we're doing the kinetic thing"
+        },
+        {
+          "da_id": "ES2004c.B.dialog-act.dharshi.89",
+          "participant": "FEE013",
+          "role": "PM",
+          "text": "and it's <disfmarker>"
+        },
+        {
+          "da_id": "ES2004c.D.dialog-act.dharshi.71",
+          "participant": "FEE016",
+          "role": "ME",
+          "text": "because I I personally <disfmarker>"
+        },
+        {
+          "da_id": "ES2004c.D.dialog-act.dharshi.72",
+          "participant": "FEE016",
+          "role": "ME",
+          "text": "right , okay ."
+        }
+      ],
+      "peer_items": [
+        {
+          "item_key": "ES2004c#0",
+          "type": "actions",
+          "text": "MEE014 will look into rechargeable batteries."
+        },
+        {
+          "item_key": "ES2004c#1",
+          "type": "problems",
+          "text": "Stock shortages of components and materials."
+        },
+        {
+          "item_key": "ES2004c#2",
+          "type": "problems",
+          "text": "No rechargeable battery option currently available."
+        },
+        {
+          "item_key": "ES2004c#3",
+          "type": "problems",
+          "text": "Uncertain life/duration of kinetic charging; not sure how long it lasts."
+        }
+      ],
+      "provisional_values": {
+        "owner": null,
+        "owner_basis": "missing",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "status": "adopted",
+        "related_items": []
+      },
+      "candidate_evidence_da_ids": [
+        "ES2004c.B.dialog-act.dharshi.86",
+        "ES2004c.B.dialog-act.dharshi.87",
+        "ES2004c.D.dialog-act.dharshi.70",
+        "ES2004c.B.dialog-act.dharshi.90"
+      ]
+    },
+    "observed_documents": [],
+    "document_evidence": [],
+    "relation_evidence": [],
+    "history": [
+      {
+        "item": "ES2004c#4",
+        "step": 1,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "assess_item",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "The dialogue includes a direct suggestion to perform market research on the closing feature before including it.",
+            "quotes": [
+              {
+                "da_id": "ES2004c.D.dialog-act.dharshi.70",
+                "quote": "Shouldn't we do some market research on that first before we add it in"
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Current dialogue supports that market research should occur prior to adding the closing feature attachment.",
+            "quotes": [
+              {
+                "da_id": "ES2004c.D.dialog-act.dharshi.70",
+                "quote": "Shouldn't we do some market research on that first before we add it in"
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting statements found in the observed dialogue regarding market research vs. adding the feature.",
+            "quotes": [
+              {
+                "da_id": "ES2004c.D.dialog-act.dharshi.70",
+                "quote": "Shouldn't we do some market research on that first before we add it in"
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "prior_context_not_checked",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          }
+        },
+        "decision": "retrieve",
+        "reason": "required_history_check_before_partial_accept",
+        "assessed_text": "Market research will be conducted on the closing feature attachment before including.",
+        "requested_action": "accept",
+        "proposed_fields": {
+          "status": "adopted",
+          "related_items": [],
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "ES2004c.D.dialog-act.dharshi.70"
+          ],
+          "owner": null,
+          "owner_basis": "missing",
+          "deadline": null,
+          "deadline_basis": "missing"
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "The dialogue includes a direct suggestion to perform market research on the closing feature before including it.",
+            "quotes": [
+              "ES2004c.D.dialog-act.dharshi.70"
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Current dialogue supports that market research should occur prior to adding the closing feature attachment.",
+            "quotes": [
+              "ES2004c.D.dialog-act.dharshi.70"
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting statements found in the observed dialogue regarding market research vs. adding the feature.",
+            "quotes": [
+              "ES2004c.D.dialog-act.dharshi.70"
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "No explicit linkage to prior related items provided in the current dialogue; prior item IDs are not identified here.",
+            "quotes": [],
+            "fields": [
+              "related_items"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "status": "adopted",
+          "related_items": [],
+          "statement": {
+            "result": "pass",
+            "reason": "The dialogue includes a direct suggestion to perform market research on the closing feature before including it.",
+            "evidence_da_ids": [
+              "ES2004c.D.dialog-act.dharshi.70"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Current dialogue supports that market research should occur prior to adding the closing feature attachment.",
+            "evidence_da_ids": [
+              "ES2004c.D.dialog-act.dharshi.70"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No conflicting statements found in the observed dialogue regarding market research vs. adding the feature.",
+            "evidence_da_ids": [
+              "ES2004c.D.dialog-act.dharshi.70"
+            ],
+            "affected_fields": []
+          },
+          "relation_check": {
+            "result": "uncertain",
+            "reason": "No explicit linkage to prior related items provided in the current dialogue; prior item IDs are not identified here.",
+            "evidence_da_ids": []
+          },
+          "next_action": "accept"
+        },
+        "evidence_bindings": {
+          "statement": [
+            "ES2004c.D.dialog-act.dharshi.70"
+          ],
+          "status": [
+            "ES2004c.D.dialog-act.dharshi.70"
+          ],
+          "conflict": [
+            "ES2004c.D.dialog-act.dharshi.70"
+          ]
+        },
+        "raw_tool_input": {
+          "status": "adopted",
+          "related_items": [],
+          "statement": {
+            "result": "pass",
+            "reason": "The dialogue includes a direct suggestion to perform market research on the closing feature before including it.",
+            "evidence_da_ids": [
+              "ES2004c.D.dialog-act.dharshi.70"
+            ]
+          },
+          "status_check": {
+            "result": "pass",
+            "reason": "Current dialogue supports that market research should occur prior to adding the closing feature attachment.",
+            "evidence_da_ids": [
+              "ES2004c.D.dialog-act.dharshi.70"
+            ]
+          },
+          "conflict_check": {
+            "result": "pass",
+            "reason": "No conflicting statements found in the observed dialogue regarding market research vs. adding the feature.",
+            "evidence_da_ids": [
+              "ES2004c.D.dialog-act.dharshi.70"
+            ],
+            "affected_fields": []
+          },
+          "relation_check": {
+            "result": "uncertain",
+            "reason": "No explicit linkage to prior related items provided in the current dialogue; prior item IDs are not identified here.",
+            "evidence_da_ids": []
+          },
+          "next_action": "accept"
+        },
+        "protocol_normalizations": [],
+        "unresolved_before": [
+          "related_items",
+          "statement",
+          "status"
+        ],
+        "unresolved_after": [
+          "related_items"
+        ],
+        "semantic_stalls": 0,
+        "validation_codes": {
+          "relation": [
+            "prior_context_not_checked"
+          ]
+        }
+      },
+      {
+        "item": "ES2004c#4",
+        "step": 2,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "history_context_focused",
+        "outcome": "delivered",
+        "evidence_da_ids": [
+          "ES2004c.B.dialog-act.dharshi.86",
+          "ES2004c.B.dialog-act.dharshi.87",
+          "ES2004c.D.dialog-act.dharshi.70",
+          "ES2004c.B.dialog-act.dharshi.90",
+          "ES2004c.D.dialog-act.dharshi.69",
+          "ES2004c.A.dialog-act.dharshi.37",
+          "ES2004c.B.dialog-act.dharshi.88",
+          "ES2004c.B.dialog-act.dharshi.89",
+          "ES2004c.D.dialog-act.dharshi.71",
+          "ES2004c.D.dialog-act.dharshi.72"
+        ]
+      },
+      {
+        "item": "ES2004c#4",
+        "step": 2,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "get_prior_items",
+        "outcome": "lookup",
+        "decision": "retrieve",
+        "args": {
+          "query": "closing feature attachment market research",
+          "item_type": "decisions"
+        },
+        "tool_result": {
+          "results": [
+            {
+              "id": "ES2004a.sys.s.6",
+              "meeting_id": "ES2004a",
+              "type": "decisions",
+              "text": "Market range international.",
+              "owner": null,
+              "owner_basis": null,
+              "deadline": null,
+              "deadline_basis": null,
+              "status": "adopted",
+              "evidence": [
+                "ES2004a.A.dialog-act.s9553330.43",
+                "ES2004a.D.dialog-act.s9553330.79",
+                "ES2004a.D.dialog-act.s9553330.80",
+                "ES2004a.B.dialog-act.s9553330.111",
+                "ES2004a.D.dialog-act.s9553330.81"
+              ],
+              "source_file": "ES2004a.json",
+              "source_sha256": "a4e869f0d9690efd06f9672d7327e7a14f518f9c399717761fb009768fc31a06",
+              "review_state": "accepted",
+              "unresolved_fields": [],
+              "unreadable_reference_ids": [],
+              "score": 1.74
+            }
+          ]
+        },
+        "new_info": true
+      },
+      {
+        "item": "ES2004c#4",
+        "step": 3,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "read_prior_item",
+        "outcome": "lookup",
+        "decision": "retrieve",
+        "args": {
+          "item_id": "ES2004a.sys.s.6"
+        },
+        "tool_result": {
+          "results": [
+            {
+              "kind": "prior_item",
+              "id": "ES2004a.sys.s.6",
+              "meeting_id": "ES2004a",
+              "type": "decisions",
+              "text": "Market range international.",
+              "owner": null,
+              "owner_basis": null,
+              "deadline": null,
+              "deadline_basis": null,
+              "status": "adopted",
+              "evidence": [
+                "ES2004a.A.dialog-act.s9553330.43",
+                "ES2004a.D.dialog-act.s9553330.79",
+                "ES2004a.D.dialog-act.s9553330.80",
+                "ES2004a.B.dialog-act.s9553330.111",
+                "ES2004a.D.dialog-act.s9553330.81"
+              ],
+              "source_file": "ES2004a.json",
+              "source_sha256": "a4e869f0d9690efd06f9672d7327e7a14f518f9c399717761fb009768fc31a06",
+              "review_state": "accepted",
+              "unresolved_fields": [],
+              "unreadable_reference_ids": [],
+              "selected_reference_ids": [
+                "ES2004a.A.dialog-act.s9553330.43",
+                "ES2004a.D.dialog-act.s9553330.79",
+                "ES2004a.D.dialog-act.s9553330.80",
+                "ES2004a.B.dialog-act.s9553330.111",
+                "ES2004a.D.dialog-act.s9553330.81"
+              ],
+              "next_offset": null
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "ES2004a.D.dialog-act.s9553330.78",
+              "meeting_id": "ES2004a",
+              "text": "Mm-hmm .",
+              "participant": "FEE016",
+              "role": "ME",
+              "supports_item_id": "ES2004a.sys.s.6",
+              "is_reference": false
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "ES2004a.A.dialog-act.s9553330.43",
+              "meeting_id": "ES2004a",
+              "text": "So then <disfmarker>",
+              "participant": "MEO015",
+              "role": "UI",
+              "supports_item_id": "ES2004a.sys.s.6",
+              "is_reference": true
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "ES2004a.D.dialog-act.s9553330.79",
+              "meeting_id": "ES2004a",
+              "text": "You've got market range international",
+              "participant": "FEE016",
+              "role": "ME",
+              "supports_item_id": "ES2004a.sys.s.6",
+              "is_reference": true
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "ES2004a.D.dialog-act.s9553330.80",
+              "meeting_id": "ES2004a",
+              "text": "and you did say earlier it's got to be a <disfmarker> um accessible and usable by sort of all age groups",
+              "participant": "FEE016",
+              "role": "ME",
+              "supports_item_id": "ES2004a.sys.s.6",
+              "is_reference": true
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "ES2004a.B.dialog-act.s9553330.111",
+              "meeting_id": "ES2004a",
+              "text": "Mm-hmm .",
+              "participant": "FEE013",
+              "role": "PM",
+              "supports_item_id": "ES2004a.sys.s.6",
+              "is_reference": true
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "ES2004a.D.dialog-act.s9553330.81",
+              "meeting_id": "ES2004a",
+              "text": "just t we're not focusing on business market , any particular thing , it's everyone",
+              "participant": "FEE016",
+              "role": "ME",
+              "supports_item_id": "ES2004a.sys.s.6",
+              "is_reference": true
+            },
+            {
+              "kind": "dialogue",
+              "da_id": "ES2004a.B.dialog-act.s9553330.109",
+              "meeting_id": "ES2004a",
+              "text": "No ,",
+              "participant": "FEE013",
+              "role": "PM",
+              "supports_item_id": "ES2004a.sys.s.6",
+              "is_reference": false
+            }
+          ]
+        },
+        "new_info": true
+      },
+      {
+        "item": "ES2004c#4",
+        "step": 4,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "assess_relation",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "The dialogue includes a direct suggestion to perform market research on the closing feature before including it.",
+            "quotes": [
+              {
+                "da_id": "ES2004c.D.dialog-act.dharshi.70",
+                "quote": "Shouldn't we do some market research on that first before we add it in"
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Current dialogue supports that market research should occur prior to adding the closing feature attachment.",
+            "quotes": [
+              {
+                "da_id": "ES2004c.D.dialog-act.dharshi.70",
+                "quote": "Shouldn't we do some market research on that first before we add it in"
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting statements found in the observed dialogue regarding market research vs. adding the feature.",
+            "quotes": [
+              {
+                "da_id": "ES2004c.D.dialog-act.dharshi.70",
+                "quote": "Shouldn't we do some market research on that first before we add it in"
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "The prior item (ES2004a.sys.s.6) concerns market range international; the current item (ES2004c) discusses adding an attachment to the closing feature and performing market research before including it. While both touch on market-related topics, there is no explicit evidence that the current item continues or changes the prior item. The current dialogue mentions market research as a prerequisite, which could relate to the broader market scope but does not clearly modify or follow up the earlier decision. Evidence from both items is about market considerations, but the linkage is not explicit.",
+            "quotes": [
+              {
+                "da_id": "ES2004a.D.dialog-act.s9553330.79",
+                "quote": "You've got market range international"
+              },
+              {
+                "da_id": "ES2004c.D.dialog-act.dharshi.70",
+                "quote": "Shouldn't we do some market research on that first before we add it in"
+              }
+            ],
+            "links": [],
+            "fields": [
+              "related_items"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          }
+        },
+        "decision": "retrieve",
+        "reason": "unresolved_checks",
+        "assessed_text": "Market research will be conducted on the closing feature attachment before including.",
+        "requested_action": null,
+        "proposed_fields": {
+          "status": "adopted",
+          "related_items": [],
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "ES2004c.D.dialog-act.dharshi.70",
+            "ES2004a.D.dialog-act.s9553330.79"
+          ],
+          "owner": null,
+          "owner_basis": "missing",
+          "deadline": null,
+          "deadline_basis": "missing"
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "The dialogue includes a direct suggestion to perform market research on the closing feature before including it.",
+            "quotes": [
+              {
+                "da_id": "ES2004c.D.dialog-act.dharshi.70",
+                "quote": "Shouldn't we do some market research on that first before we add it in"
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Current dialogue supports that market research should occur prior to adding the closing feature attachment.",
+            "quotes": [
+              {
+                "da_id": "ES2004c.D.dialog-act.dharshi.70",
+                "quote": "Shouldn't we do some market research on that first before we add it in"
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting statements found in the observed dialogue regarding market research vs. adding the feature.",
+            "quotes": [
+              {
+                "da_id": "ES2004c.D.dialog-act.dharshi.70",
+                "quote": "Shouldn't we do some market research on that first before we add it in"
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "The prior item (ES2004a.sys.s.6) concerns market range international; the current item (ES2004c) discusses adding an attachment to the closing feature and performing market research before including it. While both touch on market-related topics, there is no explicit evidence that the current item continues or changes the prior item. The current dialogue mentions market research as a prerequisite, which could relate to the broader market scope but does not clearly modify or follow up the earlier decision. Evidence from both items is about market considerations, but the linkage is not explicit.",
+            "quotes": [
+              {
+                "da_id": "ES2004a.D.dialog-act.s9553330.79"
+              },
+              {
+                "da_id": "ES2004c.D.dialog-act.dharshi.70"
+              }
+            ],
+            "links": [],
+            "fields": [
+              "related_items"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "result": "uncertain",
+          "reason": "The prior item (ES2004a.sys.s.6) concerns market range international; the current item (ES2004c) discusses adding an attachment to the closing feature and performing market research before including it. While both touch on market-related topics, there is no explicit evidence that the current item continues or changes the prior item. The current dialogue mentions market research as a prerequisite, which could relate to the broader market scope but does not clearly modify or follow up the earlier decision. Evidence from both items is about market considerations, but the linkage is not explicit.",
+          "quotes": [
+            {
+              "da_id": "ES2004a.D.dialog-act.s9553330.79"
+            },
+            {
+              "da_id": "ES2004c.D.dialog-act.dharshi.70"
+            }
+          ],
+          "links": []
+        },
+        "evidence_bindings": {
+          "relation": [
+            "ES2004a.D.dialog-act.s9553330.79",
+            "ES2004c.D.dialog-act.dharshi.70"
+          ]
+        },
+        "raw_tool_input": {
+          "result": "uncertain",
+          "reason": "The prior item (ES2004a.sys.s.6) concerns market range international; the current item (ES2004c) discusses adding an attachment to the closing feature and performing market research before including it. While both touch on market-related topics, there is no explicit evidence that the current item continues or changes the prior item. The current dialogue mentions market research as a prerequisite, which could relate to the broader market scope but does not clearly modify or follow up the earlier decision. Evidence from both items is about market considerations, but the linkage is not explicit.",
+          "quotes": [
+            {
+              "da_id": "ES2004a.D.dialog-act.s9553330.79"
+            },
+            {
+              "da_id": "ES2004c.D.dialog-act.dharshi.70"
+            }
+          ],
+          "links": []
+        },
+        "protocol_normalizations": [
+          "controller_action_for_missing_hint:retrieve"
+        ],
+        "unresolved_before": [
+          "related_items"
+        ],
+        "unresolved_after": [
+          "related_items"
+        ],
+        "semantic_stalls": 0,
+        "validation_codes": {}
+      },
+      {
+        "item": "ES2004c#4",
+        "step": 5,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "assess_relation",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "The dialogue includes a direct suggestion to perform market research on the closing feature before including it.",
+            "quotes": [
+              {
+                "da_id": "ES2004c.D.dialog-act.dharshi.70",
+                "quote": "Shouldn't we do some market research on that first before we add it in"
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Current dialogue supports that market research should occur prior to adding the closing feature attachment.",
+            "quotes": [
+              {
+                "da_id": "ES2004c.D.dialog-act.dharshi.70",
+                "quote": "Shouldn't we do some market research on that first before we add it in"
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting statements found in the observed dialogue regarding market research vs. adding the feature.",
+            "quotes": [
+              {
+                "da_id": "ES2004c.D.dialog-act.dharshi.70",
+                "quote": "Shouldn't we do some market research on that first before we add it in"
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "The prior item (ES2004a.sys.s.6) concerns market range international; the current item (ES2004c) discusses adding an attachment to the closing feature and performing market research before including it. While both touch on market-related topics, there is no explicit evidence that the current item continues or changes the prior item. The current dialogue mentions market research as a prerequisite, which could relate to the broader market scope but does not clearly modify or follow up the earlier decision. Evidence from both items is about market considerations, but the linkage is not explicit.",
+            "quotes": [
+              {
+                "da_id": "ES2004a.D.dialog-act.s9553330.79",
+                "quote": "You've got market range international"
+              },
+              {
+                "da_id": "ES2004c.D.dialog-act.dharshi.70",
+                "quote": "Shouldn't we do some market research on that first before we add it in"
+              }
+            ],
+            "links": [],
+            "fields": [
+              "related_items"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          }
+        },
+        "decision": "retrieve",
+        "reason": "unresolved_checks",
+        "assessed_text": "Market research will be conducted on the closing feature attachment before including.",
+        "requested_action": null,
+        "proposed_fields": {
+          "status": "adopted",
+          "related_items": [],
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "ES2004c.D.dialog-act.dharshi.70",
+            "ES2004a.D.dialog-act.s9553330.79"
+          ],
+          "owner": null,
+          "owner_basis": "missing",
+          "deadline": null,
+          "deadline_basis": "missing"
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "The dialogue includes a direct suggestion to perform market research on the closing feature before including it.",
+            "quotes": [
+              {
+                "da_id": "ES2004c.D.dialog-act.dharshi.70",
+                "quote": "Shouldn't we do some market research on that first before we add it in"
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Current dialogue supports that market research should occur prior to adding the closing feature attachment.",
+            "quotes": [
+              {
+                "da_id": "ES2004c.D.dialog-act.dharshi.70",
+                "quote": "Shouldn't we do some market research on that first before we add it in"
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting statements found in the observed dialogue regarding market research vs. adding the feature.",
+            "quotes": [
+              {
+                "da_id": "ES2004c.D.dialog-act.dharshi.70",
+                "quote": "Shouldn't we do some market research on that first before we add it in"
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "The prior item (ES2004a.sys.s.6) concerns market range international; the current item (ES2004c) discusses adding an attachment to the closing feature and performing market research before including it. While both touch on market-related topics, there is no explicit evidence that the current item continues or changes the prior item. The current dialogue mentions market research as a prerequisite, which could relate to the broader market scope but does not clearly modify or follow up the earlier decision. Evidence from both items is about market considerations, but the linkage is not explicit.",
+            "quotes": [
+              {
+                "da_id": "ES2004a.D.dialog-act.s9553330.79"
+              },
+              {
+                "da_id": "ES2004c.D.dialog-act.dharshi.70"
+              }
+            ],
+            "links": [],
+            "fields": [
+              "related_items"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "result": "uncertain",
+          "reason": "The prior item (ES2004a.sys.s.6) concerns market range international; the current item (ES2004c) discusses adding an attachment to the closing feature and performing market research before including it. While both touch on market-related topics, there is no explicit evidence that the current item continues or changes the prior item. The current dialogue mentions market research as a prerequisite, which could relate to the broader market scope but does not clearly modify or follow up the earlier decision. Evidence from both items is about market considerations, but the linkage is not explicit.",
+          "quotes": [
+            {
+              "da_id": "ES2004a.D.dialog-act.s9553330.79"
+            },
+            {
+              "da_id": "ES2004c.D.dialog-act.dharshi.70"
+            }
+          ],
+          "links": []
+        },
+        "evidence_bindings": {
+          "relation": [
+            "ES2004a.D.dialog-act.s9553330.79",
+            "ES2004c.D.dialog-act.dharshi.70"
+          ]
+        },
+        "raw_tool_input": {
+          "result": "uncertain",
+          "reason": "The prior item (ES2004a.sys.s.6) concerns market range international; the current item (ES2004c) discusses adding an attachment to the closing feature and performing market research before including it. While both touch on market-related topics, there is no explicit evidence that the current item continues or changes the prior item. The current dialogue mentions market research as a prerequisite, which could relate to the broader market scope but does not clearly modify or follow up the earlier decision. Evidence from both items is about market considerations, but the linkage is not explicit.",
+          "quotes": [
+            {
+              "da_id": "ES2004a.D.dialog-act.s9553330.79"
+            },
+            {
+              "da_id": "ES2004c.D.dialog-act.dharshi.70"
+            }
+          ],
+          "links": []
+        },
+        "protocol_normalizations": [
+          "controller_action_for_missing_hint:retrieve"
+        ],
+        "unresolved_before": [
+          "related_items"
+        ],
+        "unresolved_after": [
+          "related_items"
+        ],
+        "semantic_stalls": 1,
+        "validation_codes": {}
+      },
+      {
+        "item": "ES2004c#4",
+        "step": 6,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "assess_relation",
+        "outcome": "checked",
+        "checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "The dialogue includes a direct suggestion to perform market research on the closing feature before including it.",
+            "quotes": [
+              {
+                "da_id": "ES2004c.D.dialog-act.dharshi.70",
+                "quote": "Shouldn't we do some market research on that first before we add it in"
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Current dialogue supports that market research should occur prior to adding the closing feature attachment.",
+            "quotes": [
+              {
+                "da_id": "ES2004c.D.dialog-act.dharshi.70",
+                "quote": "Shouldn't we do some market research on that first before we add it in"
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting statements found in the observed dialogue regarding market research vs. adding the feature.",
+            "quotes": [
+              {
+                "da_id": "ES2004c.D.dialog-act.dharshi.70",
+                "quote": "Shouldn't we do some market research on that first before we add it in"
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "The prior item ES2004a.sys.s.6 concerns market range international; the current item ES2004c discusses adding an attachment to the closing feature and performing market research before including it. While both touch on market considerations, there is no explicit evidence that the current item continues or changes the prior item. The current dialogue mentions market research as a prerequisite, which could relate to the broader market scope but does not clearly modify or follow up the earlier decision. Evidence from both items is about market considerations, but the linkage is not explicit.",
+            "quotes": [
+              {
+                "da_id": "ES2004c.D.dialog-act.dharshi.70",
+                "quote": "Shouldn't we do some market research on that first before we add it in"
+              },
+              {
+                "da_id": "ES2004a.D.dialog-act.s9553330.79",
+                "quote": "You've got market range international"
+              }
+            ],
+            "links": [],
+            "fields": [
+              "related_items"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          }
+        },
+        "decision": "request_clarification",
+        "reason": "no_progress",
+        "assessed_text": "Market research will be conducted on the closing feature attachment before including.",
+        "requested_action": null,
+        "proposed_fields": {
+          "status": "adopted",
+          "related_items": [],
+          "prior_context_needed": false,
+          "used_participant_lookup": false,
+          "evidence_da_ids": [
+            "ES2004c.D.dialog-act.dharshi.70",
+            "ES2004a.D.dialog-act.s9553330.79"
+          ],
+          "owner": null,
+          "owner_basis": "missing",
+          "deadline": null,
+          "deadline_basis": "missing"
+        },
+        "submitted_checks": {
+          "statement": {
+            "result": "pass",
+            "reason": "The dialogue includes a direct suggestion to perform market research on the closing feature before including it.",
+            "quotes": [
+              {
+                "da_id": "ES2004c.D.dialog-act.dharshi.70",
+                "quote": "Shouldn't we do some market research on that first before we add it in"
+              }
+            ],
+            "fields": [
+              "statement"
+            ]
+          },
+          "status": {
+            "result": "pass",
+            "reason": "Current dialogue supports that market research should occur prior to adding the closing feature attachment.",
+            "quotes": [
+              {
+                "da_id": "ES2004c.D.dialog-act.dharshi.70",
+                "quote": "Shouldn't we do some market research on that first before we add it in"
+              }
+            ],
+            "fields": [
+              "status"
+            ]
+          },
+          "conflict": {
+            "result": "pass",
+            "reason": "No conflicting statements found in the observed dialogue regarding market research vs. adding the feature.",
+            "quotes": [
+              {
+                "da_id": "ES2004c.D.dialog-act.dharshi.70",
+                "quote": "Shouldn't we do some market research on that first before we add it in"
+              }
+            ],
+            "fields": []
+          },
+          "relation": {
+            "result": "uncertain",
+            "reason": "The prior item ES2004a.sys.s.6 concerns market range international; the current item ES2004c discusses adding an attachment to the closing feature and performing market research before including it. While both touch on market considerations, there is no explicit evidence that the current item continues or changes the prior item. The current dialogue mentions market research as a prerequisite, which could relate to the broader market scope but does not clearly modify or follow up the earlier decision. Evidence from both items is about market considerations, but the linkage is not explicit.",
+            "quotes": [
+              {
+                "da_id": "ES2004c.D.dialog-act.dharshi.70"
+              },
+              {
+                "da_id": "ES2004a.D.dialog-act.s9553330.79"
+              }
+            ],
+            "links": [],
+            "fields": [
+              "related_items"
+            ]
+          },
+          "owner": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "owner"
+            ]
+          },
+          "deadline": {
+            "result": "not_applicable",
+            "reason": "field_not_applicable",
+            "quotes": [],
+            "fields": [
+              "deadline"
+            ]
+          }
+        },
+        "submitted_assessment": {
+          "result": "uncertain",
+          "reason": "The prior item ES2004a.sys.s.6 concerns market range international; the current item ES2004c discusses adding an attachment to the closing feature and performing market research before including it. While both touch on market considerations, there is no explicit evidence that the current item continues or changes the prior item. The current dialogue mentions market research as a prerequisite, which could relate to the broader market scope but does not clearly modify or follow up the earlier decision. Evidence from both items is about market considerations, but the linkage is not explicit.",
+          "quotes": [
+            {
+              "da_id": "ES2004c.D.dialog-act.dharshi.70"
+            },
+            {
+              "da_id": "ES2004a.D.dialog-act.s9553330.79"
+            }
+          ],
+          "links": []
+        },
+        "evidence_bindings": {
+          "relation": [
+            "ES2004c.D.dialog-act.dharshi.70",
+            "ES2004a.D.dialog-act.s9553330.79"
+          ]
+        },
+        "raw_tool_input": {
+          "result": "uncertain",
+          "reason": "The prior item ES2004a.sys.s.6 concerns market range international; the current item ES2004c discusses adding an attachment to the closing feature and performing market research before including it. While both touch on market considerations, there is no explicit evidence that the current item continues or changes the prior item. The current dialogue mentions market research as a prerequisite, which could relate to the broader market scope but does not clearly modify or follow up the earlier decision. Evidence from both items is about market considerations, but the linkage is not explicit.",
+          "quotes": [
+            {
+              "da_id": "ES2004c.D.dialog-act.dharshi.70"
+            },
+            {
+              "da_id": "ES2004a.D.dialog-act.s9553330.79"
+            }
+          ],
+          "links": []
+        },
+        "protocol_normalizations": [
+          "controller_action_for_missing_hint:retrieve"
+        ],
+        "unresolved_before": [
+          "related_items"
+        ],
+        "unresolved_after": [
+          "related_items"
+        ],
+        "semantic_stalls": 2,
+        "validation_codes": {}
+      },
+      {
+        "item": "ES2004c#4",
+        "step": 6,
+        "flags": [
+          "POSSIBLE_PRIOR"
+        ],
+        "action": "stop",
+        "outcome": "pending",
+        "termination_reason": "no_progress",
+        "unresolved_fields": [
+          "related_items"
+        ]
+      }
+    ],
+    "lookups": 2,
+    "termination_reason": "no_progress",
+    "clarifications": [
+      {
+        "request_id": "4871ed0d74b623b2",
+        "item_key": "ES2004c#4",
+        "record_id": null,
+        "field": "related_items",
+        "question": "Which earlier record does this item continue or change, and how?",
+        "item_text": "Market research will be conducted on the closing feature attachment before including.",
+        "reason": "The prior item ES2004a.sys.s.6 concerns market range international; the current item ES2004c discusses adding an attachment to the closing feature and performing market research before including it. While both touch on market considerations, there is no explicit evidence that the current item continues or changes the prior item. The current dialogue mentions market research as a prerequisite, which could relate to the broader market scope but does not clearly modify or follow up the earlier decision. Evidence from both items is about market considerations, but the linkage is not explicit.",
+        "evidence_da_ids": [
+          "ES2004c.D.dialog-act.dharshi.70",
+          "ES2004a.D.dialog-act.s9553330.79"
+        ],
+        "available_evidence_da_ids": [
+          "ES2004c.B.dialog-act.dharshi.86",
+          "ES2004c.B.dialog-act.dharshi.87",
+          "ES2004c.D.dialog-act.dharshi.70",
+          "ES2004c.B.dialog-act.dharshi.90",
+          "ES2004c.D.dialog-act.dharshi.69",
+          "ES2004c.A.dialog-act.dharshi.37",
+          "ES2004c.B.dialog-act.dharshi.88",
+          "ES2004c.B.dialog-act.dharshi.89",
+          "ES2004c.D.dialog-act.dharshi.71",
+          "ES2004c.D.dialog-act.dharshi.72",
+          "ES2004a.D.dialog-act.s9553330.78",
+          "ES2004a.A.dialog-act.s9553330.43",
+          "ES2004a.D.dialog-act.s9553330.79",
+          "ES2004a.D.dialog-act.s9553330.80",
+          "ES2004a.B.dialog-act.s9553330.111",
+          "ES2004a.D.dialog-act.s9553330.81",
+          "ES2004a.B.dialog-act.s9553330.109"
+        ],
+        "status": "open",
+        "termination_reason": "no_progress"
+      }
+    ]
+  }
+}

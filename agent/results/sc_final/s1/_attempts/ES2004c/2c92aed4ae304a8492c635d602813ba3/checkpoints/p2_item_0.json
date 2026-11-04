@@ -1,0 +1,557 @@
+{
+  "item_key": "ES2004c#0",
+  "record_id": null,
+  "item_type": "actions",
+  "item_text": "MEE014 will look into rechargeable batteries.",
+  "state": "pending",
+  "recordable": true,
+  "fields": {
+    "status": "open",
+    "prior_context_needed": false,
+    "related_items": [],
+    "owner": [
+      "MEE014"
+    ],
+    "owner_basis": "explicit",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "reference": [
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/ES2004c.json",
+        "locator": "ES2004c.B.dialog-act.dharshi.26"
+      },
+      {
+        "source_type": "dialogue",
+        "source": "ami-corpus/dialogueActs/ES2004c.json",
+        "locator": "ES2004c.C.dialog-act.dharshi.4"
+      }
+    ]
+  },
+  "draft_fields": {
+    "status": "open",
+    "related_items": [],
+    "owner": [
+      "MEE014"
+    ],
+    "owner_basis": "explicit",
+    "deadline": null,
+    "deadline_basis": "missing",
+    "prior_context_needed": false,
+    "used_participant_lookup": false,
+    "evidence_da_ids": [
+      "ES2004c.B.dialog-act.dharshi.26",
+      "ES2004c.C.dialog-act.dharshi.4"
+    ]
+  },
+  "checks": {
+    "statement": {
+      "result": "pass",
+      "reason": "Dialogue confirms the action: 'You were going to look into the rechargeable batteries' and the ID MEE014 responded 'Yeah.' Evidence includes ES2004c.B.dialog-act.dharshi.26 and ES2004c.C.dialog-act.dharshi.4.",
+      "quotes": [
+        {
+          "da_id": "ES2004c.B.dialog-act.dharshi.26",
+          "quote": "You were going to look into the rechargeable batteries"
+        },
+        {
+          "da_id": "ES2004c.C.dialog-act.dharshi.4",
+          "quote": "Yeah ."
+        }
+      ],
+      "fields": [
+        "statement"
+      ]
+    },
+    "owner": {
+      "result": "pass",
+      "reason": "Owner is explicitly MEE014 as the announcer of the action and matches the assigned owner in provisional values.",
+      "quotes": [
+        {
+          "da_id": "ES2004c.B.dialog-act.dharshi.26",
+          "quote": "You were going to look into the rechargeable batteries"
+        },
+        {
+          "da_id": "ES2004c.C.dialog-act.dharshi.4",
+          "quote": "Yeah ."
+        }
+      ],
+      "fields": [
+        "owner"
+      ]
+    },
+    "deadline": {
+      "result": "uncertain",
+      "reason": "deadline_unresolved",
+      "quotes": [],
+      "fields": [
+        "deadline"
+      ]
+    },
+    "status": {
+      "result": "pass",
+      "reason": "Status is open per provisional values; action not yet completed.",
+      "quotes": [
+        {
+          "da_id": "ES2004c.B.dialog-act.dharshi.26",
+          "quote": "You were going to look into the rechargeable batteries"
+        },
+        {
+          "da_id": "ES2004c.C.dialog-act.dharshi.4",
+          "quote": "Yeah ."
+        }
+      ],
+      "fields": [
+        "status"
+      ]
+    },
+    "conflict": {
+      "result": "pass",
+      "reason": "No conflicting evidence found in current dialogue.",
+      "quotes": [
+        {
+          "da_id": "ES2004c.B.dialog-act.dharshi.26",
+          "quote": "You were going to look into the rechargeable batteries"
+        },
+        {
+          "da_id": "ES2004c.C.dialog-act.dharshi.4",
+          "quote": "Yeah ."
+        }
+      ],
+      "fields": []
+    },
+    "relation": {
+      "result": "not_applicable",
+      "reason": "No prior related item to relate to in current context.",
+      "quotes": [],
+      "fields": [
+        "related_items"
+      ]
+    }
+  },
+  "unresolved_fields": [
+    "deadline"
+  ],
+  "observed_evidence_da_ids": [
+    "ES2004c.B.dialog-act.dharshi.26",
+    "ES2004c.C.dialog-act.dharshi.4",
+    "ES2004c.B.dialog-act.dharshi.25",
+    "ES2004c.B.dialog-act.dharshi.29"
+  ],
+  "initial_context": {
+    "item": {
+      "type": "actions",
+      "text": "MEE014 will look into rechargeable batteries.",
+      "flags": []
+    },
+    "current_meeting": "ES2004c",
+    "earlier_meetings": [],
+    "roster": [
+      {
+        "speaker": "A",
+        "participant_id": "MEO015",
+        "role": "UI"
+      },
+      {
+        "speaker": "B",
+        "participant_id": "FEE013",
+        "role": "PM"
+      },
+      {
+        "speaker": "C",
+        "participant_id": "MEE014",
+        "role": "ID"
+      },
+      {
+        "speaker": "D",
+        "participant_id": "FEE016",
+        "role": "ME"
+      }
+    ],
+    "observed_dialogue": [
+      {
+        "da_id": "ES2004c.B.dialog-act.dharshi.26",
+        "meeting_id": "ES2004c",
+        "text": "You were going to look into the rechargeable batteries",
+        "participant": "FEE013",
+        "role": "PM"
+      },
+      {
+        "da_id": "ES2004c.C.dialog-act.dharshi.4",
+        "meeting_id": "ES2004c",
+        "text": "Yeah .",
+        "participant": "MEE014",
+        "role": "ID"
+      },
+      {
+        "da_id": "ES2004c.B.dialog-act.dharshi.25",
+        "participant": "FEE013",
+        "role": "PM",
+        "text": "just a different shape from what's normal , um ."
+      },
+      {
+        "da_id": "ES2004c.B.dialog-act.dharshi.29",
+        "participant": "FEE013",
+        "role": "PM",
+        "text": "and we were gonna think about the port and an alarm for getting it lost ,"
+      }
+    ],
+    "peer_items": [],
+    "provisional_values": {
+      "owner": [
+        "MEE014"
+      ],
+      "owner_basis": "explicit",
+      "deadline": null,
+      "deadline_basis": "missing",
+      "status": "open",
+      "related_items": []
+    },
+    "candidate_evidence_da_ids": [
+      "ES2004c.B.dialog-act.dharshi.26",
+      "ES2004c.C.dialog-act.dharshi.4"
+    ]
+  },
+  "observed_documents": [],
+  "document_evidence": [],
+  "relation_evidence": [],
+  "history": [
+    {
+      "item": "ES2004c#0",
+      "step": 1,
+      "flags": [],
+      "action": "assess_item",
+      "outcome": "checked",
+      "checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue confirms the action: 'You were going to look into the rechargeable batteries' and the ID MEE014 responded 'Yeah.' Evidence includes ES2004c.B.dialog-act.dharshi.26 and ES2004c.C.dialog-act.dharshi.4.",
+          "quotes": [
+            {
+              "da_id": "ES2004c.B.dialog-act.dharshi.26",
+              "quote": "You were going to look into the rechargeable batteries"
+            },
+            {
+              "da_id": "ES2004c.C.dialog-act.dharshi.4",
+              "quote": "Yeah ."
+            }
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Owner is explicitly MEE014 as the announcer of the action and matches the assigned owner in provisional values.",
+          "quotes": [
+            {
+              "da_id": "ES2004c.B.dialog-act.dharshi.26",
+              "quote": "You were going to look into the rechargeable batteries"
+            },
+            {
+              "da_id": "ES2004c.C.dialog-act.dharshi.4",
+              "quote": "Yeah ."
+            }
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "deadline_unresolved",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Status is open per provisional values; action not yet completed.",
+          "quotes": [
+            {
+              "da_id": "ES2004c.B.dialog-act.dharshi.26",
+              "quote": "You were going to look into the rechargeable batteries"
+            },
+            {
+              "da_id": "ES2004c.C.dialog-act.dharshi.4",
+              "quote": "Yeah ."
+            }
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No conflicting evidence found in current dialogue.",
+          "quotes": [
+            {
+              "da_id": "ES2004c.B.dialog-act.dharshi.26",
+              "quote": "You were going to look into the rechargeable batteries"
+            },
+            {
+              "da_id": "ES2004c.C.dialog-act.dharshi.4",
+              "quote": "Yeah ."
+            }
+          ],
+          "fields": []
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No prior related item to relate to in current context.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "decision": "request_clarification",
+      "reason": "supported_statement_with_unresolved_fields",
+      "assessed_text": "MEE014 will look into rechargeable batteries.",
+      "requested_action": "accept",
+      "proposed_fields": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MEE014"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "prior_context_needed": false,
+        "used_participant_lookup": false,
+        "evidence_da_ids": [
+          "ES2004c.B.dialog-act.dharshi.26",
+          "ES2004c.C.dialog-act.dharshi.4"
+        ]
+      },
+      "submitted_checks": {
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue confirms the action: 'You were going to look into the rechargeable batteries' and the ID MEE014 responded 'Yeah.' Evidence includes ES2004c.B.dialog-act.dharshi.26 and ES2004c.C.dialog-act.dharshi.4.",
+          "quotes": [
+            "ES2004c.B.dialog-act.dharshi.26",
+            "ES2004c.C.dialog-act.dharshi.4"
+          ],
+          "fields": [
+            "statement"
+          ]
+        },
+        "owner": {
+          "result": "pass",
+          "reason": "Owner is explicitly MEE014 as the announcer of the action and matches the assigned owner in provisional values.",
+          "quotes": [
+            "ES2004c.B.dialog-act.dharshi.26",
+            "ES2004c.C.dialog-act.dharshi.4"
+          ],
+          "fields": [
+            "owner"
+          ]
+        },
+        "deadline": {
+          "result": "uncertain",
+          "reason": "No deadline provided in current dialogue or provisional values.",
+          "quotes": [],
+          "fields": [
+            "deadline"
+          ]
+        },
+        "status": {
+          "result": "pass",
+          "reason": "Status is open per provisional values; action not yet completed.",
+          "quotes": [
+            "ES2004c.B.dialog-act.dharshi.26",
+            "ES2004c.C.dialog-act.dharshi.4"
+          ],
+          "fields": [
+            "status"
+          ]
+        },
+        "conflict": {
+          "result": "pass",
+          "reason": "No conflicting evidence found in current dialogue.",
+          "quotes": [],
+          "fields": []
+        },
+        "relation": {
+          "result": "not_applicable",
+          "reason": "No prior related item to relate to in current context.",
+          "quotes": [],
+          "fields": [
+            "related_items"
+          ]
+        }
+      },
+      "submitted_assessment": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MEE014"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue confirms the action: 'You were going to look into the rechargeable batteries' and the ID MEE014 responded 'Yeah.' Evidence includes ES2004c.B.dialog-act.dharshi.26 and ES2004c.C.dialog-act.dharshi.4.",
+          "evidence_da_ids": [
+            "ES2004c.B.dialog-act.dharshi.26",
+            "ES2004c.C.dialog-act.dharshi.4"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "Owner is explicitly MEE014 as the announcer of the action and matches the assigned owner in provisional values.",
+          "evidence_da_ids": [
+            "ES2004c.B.dialog-act.dharshi.26",
+            "ES2004c.C.dialog-act.dharshi.4"
+          ]
+        },
+        "deadline_check": {
+          "result": "uncertain",
+          "reason": "No deadline provided in current dialogue or provisional values.",
+          "evidence_da_ids": []
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "Status is open per provisional values; action not yet completed.",
+          "evidence_da_ids": [
+            "ES2004c.B.dialog-act.dharshi.26",
+            "ES2004c.C.dialog-act.dharshi.4"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No conflicting evidence found in current dialogue.",
+          "evidence_da_ids": [],
+          "affected_fields": []
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No prior related item to relate to in current context.",
+          "evidence_da_ids": []
+        },
+        "next_action": "accept"
+      },
+      "evidence_bindings": {
+        "statement": [
+          "ES2004c.B.dialog-act.dharshi.26",
+          "ES2004c.C.dialog-act.dharshi.4"
+        ],
+        "owner": [
+          "ES2004c.B.dialog-act.dharshi.26",
+          "ES2004c.C.dialog-act.dharshi.4"
+        ],
+        "status": [
+          "ES2004c.B.dialog-act.dharshi.26",
+          "ES2004c.C.dialog-act.dharshi.4"
+        ],
+        "conflict_scope": [
+          "ES2004c.B.dialog-act.dharshi.26",
+          "ES2004c.C.dialog-act.dharshi.4"
+        ]
+      },
+      "raw_tool_input": {
+        "status": "open",
+        "related_items": [],
+        "owner": [
+          "MEE014"
+        ],
+        "owner_basis": "explicit",
+        "deadline": null,
+        "deadline_basis": "missing",
+        "statement": {
+          "result": "pass",
+          "reason": "Dialogue confirms the action: 'You were going to look into the rechargeable batteries' and the ID MEE014 responded 'Yeah.' Evidence includes ES2004c.B.dialog-act.dharshi.26 and ES2004c.C.dialog-act.dharshi.4.",
+          "evidence_da_ids": [
+            "ES2004c.B.dialog-act.dharshi.26",
+            "ES2004c.C.dialog-act.dharshi.4"
+          ]
+        },
+        "owner_check": {
+          "result": "pass",
+          "reason": "Owner is explicitly MEE014 as the announcer of the action and matches the assigned owner in provisional values.",
+          "evidence_da_ids": [
+            "ES2004c.B.dialog-act.dharshi.26",
+            "ES2004c.C.dialog-act.dharshi.4"
+          ]
+        },
+        "deadline_check": {
+          "result": "uncertain",
+          "reason": "No deadline provided in current dialogue or provisional values.",
+          "evidence_da_ids": []
+        },
+        "status_check": {
+          "result": "pass",
+          "reason": "Status is open per provisional values; action not yet completed.",
+          "evidence_da_ids": [
+            "ES2004c.B.dialog-act.dharshi.26",
+            "ES2004c.C.dialog-act.dharshi.4"
+          ]
+        },
+        "conflict_check": {
+          "result": "pass",
+          "reason": "No conflicting evidence found in current dialogue.",
+          "evidence_da_ids": []
+        },
+        "relation_check": {
+          "result": "not_applicable",
+          "reason": "No prior related item to relate to in current context.",
+          "evidence_da_ids": []
+        },
+        "next_action": "accept"
+      },
+      "protocol_normalizations": [
+        "empty_affected_fields_for_no_conflict"
+      ],
+      "unresolved_before": [
+        "deadline",
+        "owner",
+        "statement",
+        "status"
+      ],
+      "unresolved_after": [
+        "deadline"
+      ],
+      "semantic_stalls": 0,
+      "validation_codes": {
+        "deadline": [
+          "deadline_unresolved"
+        ]
+      }
+    },
+    {
+      "item": "ES2004c#0",
+      "step": 1,
+      "flags": [],
+      "action": "stop",
+      "outcome": "pending",
+      "termination_reason": "supported_statement_with_unresolved_fields",
+      "unresolved_fields": [
+        "deadline"
+      ]
+    }
+  ],
+  "lookups": 0,
+  "termination_reason": "supported_statement_with_unresolved_fields",
+  "clarifications": [
+    {
+      "request_id": "a2816c98803c07a1",
+      "item_key": "ES2004c#0",
+      "record_id": null,
+      "field": "deadline",
+      "question": "What is the agreed deadline, in its original wording?",
+      "item_text": "MEE014 will look into rechargeable batteries.",
+      "reason": "deadline_unresolved",
+      "evidence_da_ids": [],
+      "available_evidence_da_ids": [
+        "ES2004c.B.dialog-act.dharshi.26",
+        "ES2004c.C.dialog-act.dharshi.4",
+        "ES2004c.B.dialog-act.dharshi.25",
+        "ES2004c.B.dialog-act.dharshi.29"
+      ],
+      "status": "open",
+      "termination_reason": "supported_statement_with_unresolved_fields"
+    }
+  ]
+}
